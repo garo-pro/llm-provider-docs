@@ -1,4 +1,4 @@
-Title: Natural Language Autoencoders
+Title: Natural Language Autoencoders: Turning Claude’s thoughts into text
 
 URL Source: https://www.anthropic.com/research/natural-language-autoencoders
 

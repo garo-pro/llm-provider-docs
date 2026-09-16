@@ -1,4 +1,4 @@
-Title: How Canada uses Claude
+Title: How Canada uses Claude: Findings from the Anthropic Economic Index
 
 URL Source: https://www.anthropic.com/research/how-canada-uses-claude
 

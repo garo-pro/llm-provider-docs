@@ -1,4 +1,4 @@
-Title: Moral self-correction in large language models
+Title: The Capacity for Moral Self-Correction in Large Language Models
 
 URL Source: https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models
 

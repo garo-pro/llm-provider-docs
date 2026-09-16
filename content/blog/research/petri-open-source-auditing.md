@@ -1,4 +1,4 @@
-Title: Petri: An open-source AI auditing tool
+Title: Petri: An open-source auditing tool to accelerate AI safety research
 
 URL Source: https://www.anthropic.com/research/petri-open-source-auditing
 

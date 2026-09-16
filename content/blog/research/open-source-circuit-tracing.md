@@ -1,4 +1,4 @@
-Title: Open-sourcing circuit-tracing tools
+Title: Open-sourcing circuit tracing tools
 
 URL Source: https://www.anthropic.com/research/open-source-circuit-tracing
 
