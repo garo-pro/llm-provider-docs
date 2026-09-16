@@ -1,4 +1,4 @@
-Title: Towards measuring the representation of subjective global opinions in language models
+Title: Measuring subjective global opinions in LLMs
 
 URL Source: https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models
 

@@ -1,4 +1,4 @@
-Title: Introducing Claude for Nonprofits
+Title: Claude for Nonprofits
 
 URL Source: https://www.anthropic.com/news/claude-for-nonprofits
 
