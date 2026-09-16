@@ -1,4 +1,4 @@
-Title: Iceland launches a national AI education pilot
+Title: Anthropic and Iceland announce one of the world’s first national AI education pilots
 
 URL Source: https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots
 

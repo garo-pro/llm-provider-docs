@@ -1,4 +1,4 @@
-Title: Anthropic raises Series B to build robust AI
+Title: Anthropic Raises Series B to build steerable, interpretable, robust AI systems
 
 URL Source: https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai
 
