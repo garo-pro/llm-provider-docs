@@ -1,4 +1,4 @@
-Title: Dario Amodei on the Department of War discussions
+Title: Statement from Dario Amodei on our discussions with the Department of War
 
 URL Source: https://www.anthropic.com/news/statement-department-of-war
 

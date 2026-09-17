@@ -1,4 +1,4 @@
-Title: Collective Constitutional AI
+Title: Collective Constitutional AI: Aligning a language model with public input
 
 URL Source: https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input
 
