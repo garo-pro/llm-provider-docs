@@ -69,14 +69,11 @@ jobs:
             SIGNAL=high
             REASONS+=("discovery.json changed (a new source may exist)")
           fi
-          if ! git diff --quiet -- content/claude-code-manifest.json 2>/dev/null; then
-            SIGNAL=high
-            REASONS+=("Claude Code manifest version changed")
-          fi
-          if ! git diff --quiet -- content/CHANGELOG.md 2>/dev/null; then
-            SIGNAL=high
-            REASONS+=("CHANGELOG.md changed")
-          fi
+          # A Claude Code version bump / CHANGELOG update is routine (ships
+          # almost every run) and not risky on its own -- it self-merges like
+          # any other minor content change. Only reap/tombstones/discovery
+          # (something disappearing, dying, or a new source appearing) holds
+          # for a human look.
 
           VERSION=$(jq -r '.version // empty' content/claude-code-manifest.json 2>/dev/null || true)
           VERSION=${VERSION:-unknown}
