@@ -44,7 +44,7 @@ This article provides information on how to enable the Claude LTI integration in
 
 5. Click "Install" and refresh the course page.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1611422430/c8e0875feac1f2c7cb033be74fc9/AD_4nXfLU_bui3EXcCjQ0qm70HD97neqjGayKeDer_t76utlci8gZSUjYRhw6ZSOlDdqSEcwXBzd_shAh7pQEJ-8OoE0O21DM5coOgxmO_WD5hlwiuwtS2iYXcTavhIRyQT5zKFWvfn3NA?expires=1789488000&amp;signature=6a5529b542c326590916cc2c20255bc199a10ec331b2ce6f7fcee176774659fc&amp;req=dSYmF818n4VcWfMW1HO4zTEDauIak%2FuBEv2ojHLMylaNJAM6MrBUTFxoUeSZ%0AjMAM1Y4UjJ5363zb2Dk%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1611422430/c8e0875feac1f2c7cb033be74fc9/AD_4nXfLU_bui3EXcCjQ0qm70HD97neqjGayKeDer_t76utlci8gZSUjYRhw6ZSOlDdqSEcwXBzd_shAh7pQEJ-8OoE0O21DM5coOgxmO_WD5hlwiuwtS2iYXcTavhIRyQT5zKFWvfn3NA?expires=1789625700&amp;signature=609aaa393ccc87f417d966784d460ffdc886c513078a3fff45bb2f3d8279d610&amp;req=dSYmF818n4VcWfMW1HO4zTEDauIYmfaGEv2ojHLMylYoj1YCGI9oiP59svV6%0A%2FSI474w6wswXTLT1nhA%3D%0A)
 
 ## Turn on the Claude LTI Integration in Claude for Education organization settings
 

@@ -20,27 +20,27 @@ In the Console, programs are issued to your organization and apply to workspaces
 
 1. **[Sign in to the Console](https://platform.claude.com/)** as an organization Admin. Go to **[Organization settings > Programs](https://platform.claude.com/settings/organization/programs)**. The program card shows whether it applies automatically or needs workspaces assigned.
 
-  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642744587/d4584e035604f3b7c08afa53a1c6/ee1183ff-e591-4484-a989-1f754245d39c?expires=1789488000&amp;signature=c908e35ed21e947dedf26aabef218fea3273a71e7a8d0d061b67d66eeca434ab&amp;req=diYjFM56mYRXXvMW1HO4zT%2FymECDHAGnktHcEoeKC4e0%2Fo%2BzaMXZ%2BlvRzqjf%0AdH2D%0A)
+  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642744587/d4584e035604f3b7c08afa53a1c6/ee1183ff-e591-4484-a989-1f754245d39c?expires=1789625700&amp;signature=cee9f60cc1756ad1623d80ac3745423886b6e0059d47da4d9099bd849e9f7eee&amp;req=diYjFM56mYRXXvMW1HO4zT%2FymECBFgygktHcEoeKC4eVh5TtYU8K6qc5d2Pt%0AQxfq%0A)
 
 2. Select the program to open its page. The **Workspaces** table shows each workspace's status. A workspace marked with an issue does not meet a requirement yet.
 
-  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642745562/253e55a3292b35f728fb5dc89fb2/0878a8a9-dce5-4df2-9826-3796605b52a0?expires=1789488000&amp;signature=880903587a295ce18bf67e06cd86909da057f91c59a9c242c0ea11a64081dc66&amp;req=diYjFM56mIRZW%2FMW1HO4zc116gdsSFixMCr%2B42fbmkZ2vnfcuAvb98TEiRi3%0Aoro7%0A)
+  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642745562/253e55a3292b35f728fb5dc89fb2/0878a8a9-dce5-4df2-9826-3796605b52a0?expires=1789625700&amp;signature=fc3763d092056c8c2acce31ed8fdeb1aec85edea67bfb83f30d530644d053ddc&amp;req=diYjFM56mIRZW%2FMW1HO4zc116gduQlW2MCr%2B42fbmkZMzLRJ1mKUuj4cz33X%0AnYsA%0A)
 
 Hover over the issue to see which requirement is not met.
 
-  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642746466/c49291119729e99f4dba8ec924e4/3f802c0e-7fbc-4e80-935a-05da58f65bde?expires=1789488000&amp;signature=106fa58420c2dbfa953c7ca3a0457b88fae720fad2a79be243c9f73fa185b0ce&amp;req=diYjFM56m4VZX%2FMW1HO4zaveae9mnnXAVPpeIJbmktSnujZ1r6CrouowEjJ3%0A6eGF%0A)
+  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642746466/c49291119729e99f4dba8ec924e4/3f802c0e-7fbc-4e80-935a-05da58f65bde?expires=1789625700&amp;signature=aeed6bd573d62fa712deca01ebda7fa799c04b2ed64c6d5f8b4743ff3b0b362a&amp;req=diYjFM56m4VZX%2FMW1HO4zaveae9klHjHVPpeIJbmktRgaBi1I%2FMpoV%2F1N%2FXh%0A%2Fn%2Bh%0A)
 
 3. To give a workspace access, make it meet the requirements. Open the workspace, select "Manage," then "Programs," and check the **Qualifications** panel.
 
-  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642768117/1304e6b1350fc9bd88c4238a00e3/db606eb5-39d5-4309-a5a9-ee33847fc233?expires=1789488000&amp;signature=f45727ed46417331f5a4584f5ad23a12db599c1f0ee333c489a727b81d7e08b6&amp;req=diYjFM54lYBeXvMW1HO4zTU0lNKUI05H9BWcjfiNKI3q7zEbgk4ddGxfx30V%0AdcOx%0A)
+  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642768117/1304e6b1350fc9bd88c4238a00e3/db606eb5-39d5-4309-a5a9-ee33847fc233?expires=1789625700&amp;signature=8c58803deb507d0041d3376031835a3fbfd5e131913d7918e4391d66bcb2441c&amp;req=diYjFM54lYBeXvMW1HO4zTU0lNKWKUNA9BWcjfiNKI11XSekHTPBBhp%2Fiq8B%0AptIJ%0A)
 
 4. Fix the requirement. For the Cyber Verification Program, turn on data retention under Manage, then Privacy controls. Then select "Rerun."
 
-  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642746995/87151a11687a9c631b7a9d681390/d40a6c12-283d-4b3b-b6d6-9f631a73e7c0?expires=1789488000&amp;signature=3b33968802241e749687333cd28ec130206289320fc23f56dfcd0551d2eba5b3&amp;req=diYjFM56m4hWXPMW1HO4zQfcHTKq53Yr9apHi%2BiM8ojAzhYSLpzOXIueLbYU%0AxpR4%0A)
+  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642746995/87151a11687a9c631b7a9d681390/d40a6c12-283d-4b3b-b6d6-9f631a73e7c0?expires=1789625700&amp;signature=63bde9ea44b32669583c6ad0da33f6d47d444c5fab6a82346b6d456fafaa7af1&amp;req=diYjFM56m4hWXPMW1HO4zQfcHTKo7Xss9apHi%2BiM8oikuzbiPv2qv2ZviZEM%0AFfm7%0A)
 
 5. The program shows **Active** for the workspace.
 
-  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642747200/a18bdccde474c9f4eba371cf6050/b0e9d5e3-1e5f-4f27-b682-5684084f92e8?expires=1789488000&amp;signature=ac86ceda5c9ba8e9990e315ab4bab36e79a9ae56daf26a75642596436d23ebfe&amp;req=diYjFM56moNfWfMW1HO4zaUR8q9j%2FvY4fTukdAE3MWvsWPEXHbfOe1C8f0DS%0ADliR%0A)
+  ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2642747200/a18bdccde474c9f4eba371cf6050/b0e9d5e3-1e5f-4f27-b682-5684084f92e8?expires=1789625700&amp;signature=b7af0bbfcc2cb48b8a29dd2e05d4ca83150198a7cbe7c2ebab1511f0152aa674&amp;req=diYjFM56moNfWfMW1HO4zaUR8q9h9Ps%2FfTukdAE3MWssX7JMdlhozxE7gj0z%0Arcab%0A)
 
 ## Troubleshooting
 

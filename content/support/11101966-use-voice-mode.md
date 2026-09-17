@@ -24,7 +24,7 @@ Voice mode transforms how you interact with Claude by:
 
 2. Tap the sound wave symbol in the lower right corner of the chat window to activate voice mode:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042358620/1bf2311353615c1c494da1312a17/124b93a8-0a9b-4c84-9d1f-ede6ca3498dd?expires=1789488000&amp;signature=aeb4931ae42c4b971174f540428f83d782500d827678e37b017d62a443ba8b31&amp;req=diAjFMp7lYddWfMW1HO4zZyGrsd2s18QF6uXnTLMvvA7sDM5pOTX09KkFdUh%0AAwHX%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042358620/1bf2311353615c1c494da1312a17/124b93a8-0a9b-4c84-9d1f-ede6ca3498dd?expires=1789711200&amp;signature=6d5dc52c13b3f88a618852adc5eba1a027263e39205613cd357591981d76158c&amp;req=diAjFMp7lYddWfMW3nq%2BgVqEjrDY1PcuUJLr7xpnfP1s%2FX52VOI4mQt7x7xw%0Ax83S4S6kiCxi4sERSawujbcmBOk%3D%0A)
 
 3. Start talking and see your prompt automatically populate in the chat input.
 
@@ -32,7 +32,7 @@ Voice mode transforms how you interact with Claude by:
 
 5. Claude will remain in voice mode until you click the “Stop” button in the lower right corner of the chat window:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042352060/162f9e61f7fbeb689201dfc1cac1/6a7fafb2-31df-43be-a43f-0059d735e3c4?expires=1789488000&amp;signature=5ae030a1165c8b67cefb353cbc38687dc05ff9660ba34356fbe147574af4c80d&amp;req=diAjFMp7n4FZWfMW1HO4zU6VRfTOQLRpxNdRzYWrfF6AIlCvdJhfG5QalnCn%0A5kL4DdSeiuo4dvFYHkU%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042352060/162f9e61f7fbeb689201dfc1cac1/6a7fafb2-31df-43be-a43f-0059d735e3c4?expires=1789711200&amp;signature=338ad10abfa131dcc44a273ff0b8f52a17ebde514629840ae97e71e8f6b4376f&amp;req=diAjFMp7n4FZWfMW3nq%2BgcPTdC%2BQcZfGg2xq1qMmRNsx%2FKw5j7kiAncomtvJ%0AHyuZCA7EWWBvPTC%2BLS%2BCWJQ%2Bqtc%3D%0A)
 
 ### On mobile (iOS and Android)
 
@@ -40,7 +40,7 @@ Voice mode transforms how you interact with Claude by:
 
 2. Tap the voice mode icon (sound wave symbol next to the microphone icon) in the text input field:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042359690/68879db64559ecf87991f73ce058/671ff972-9e08-4686-bc04-955dab4b2de3?expires=1789488000&amp;signature=8a216c525e004a72a33a67b6c23591c0e7a7238724795d55d8480b36e5f5b764&amp;req=diAjFMp7lIdWWfMW1HO4zQTUIf1%2BmNBOD%2FRXAPlQ7LZ1OyR2Vhl870OfSp66%0AFof2%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042359690/68879db64559ecf87991f73ce058/671ff972-9e08-4686-bc04-955dab4b2de3?expires=1789711200&amp;signature=e50b1d8549c8d649d7fff949156851e39d5b77dea3d9c8f5f797f695222b5750&amp;req=diAjFMp7lIdWWfMW3nq%2BgbSmcSbQ02Emk9sUGEAmwhJaFJyxWKNDNRxwBH5v%0A2U4%2FmcwoONm%2BkR9kJE4m4ZXuY84%3D%0A)
 
 3. Choose a voice to personalize your experience.
 
@@ -78,7 +78,7 @@ To change the voice later:
 
 - **On mobile:** Click the settings button in the bottom left corner while chatting with Claude in voice mode, then tap your preferred voice and pace:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042352063/25eca25bcfd573ecab30dd53158c/074454a6-fa5a-4c49-8b19-02d434b4ca50?expires=1789488000&amp;signature=ef5a4af716a24945b753c60e011757b71531be157c908431b88c83aefc6d0e8f&amp;req=diAjFMp7n4FZWvMW1HO4zZ3%2FGGORaFgKy8OQfYsvK3zNYjMtgtb41Zorp%2B0c%0AHnbvnZ1R%2BfjWziFmfvs%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2042352063/25eca25bcfd573ecab30dd53158c/074454a6-fa5a-4c49-8b19-02d434b4ca50?expires=1789711200&amp;signature=86d843a41047763fc8e6767882d3b5c9950369581f552c602cf7c60a166a9f91&amp;req=diAjFMp7n4FZWvMW3nq%2Bgb4g782ea5HHNIzwZcbnIM0lbI1rQL25uZI5P75J%0APAtpi5SmgYhTwSxYhdRPqAcY6%2FE%3D%0A)
 
 ## Choose a model
 
@@ -186,7 +186,7 @@ To set your voice language, go to **[Settings > General](https://claude.ai/new#s
 
 ### Can I use voice mode with Claude Cowork or Claude Code?
 
-No. While dictation is available in Claude Cowork and Code, voice mode is not. This also means Claude voice mode will not be able to reference the projects and skills you have set up in Cowork.
+In the new Claude experience, voice mode works in any conversation, including ones where Claude is working on a task. In Claude Cowork and Claude Code, dictation is available but voice mode isn't.
 
 ### Can Enterprise Admins disable voice mode for their organizations?
 

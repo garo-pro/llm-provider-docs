@@ -12,6 +12,8 @@ The Threat Intelligence team investigates real-world cases of misuse of Claude, 
 
 ## Detecting and countering misuse of AI: September 2026
 
+Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025.
+
 
 #### What we learned mapping a year’s worth of AI-enabled cyber threats
 
