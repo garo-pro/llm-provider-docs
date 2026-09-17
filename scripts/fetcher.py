@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Fetch Anthropic documentation from all known sources.
+Fetch AI provider documentation from all known sources.
 
-Sources (see sources.json for the complete registry):
+One archive, three providers so far, one registry file per provider
+(sources.anthropic.json, sources.openai.json, sources.zai.json). Adding a
+provider means adding fetch logic here, not switching frameworks -- see
+CLAUDE.md's "When adding new sections" for the checklist.
+
+Anthropic (content/anthropic/, see sources.anthropic.json):
   - platform.claude.com     -> API/platform docs (sitemap + .md suffix)
   - code.claude.com         -> Claude Code + Agent SDK (llms.txt + .md suffix)
   - modelcontextprotocol.io -> MCP spec (sitemap + .md suffix)
@@ -17,13 +22,27 @@ Sources (see sources.json for the complete registry):
   - transformer-circuits.pub -> Interpretability research (Atom feed + scrape)
   - github.com/anthropics/* -> Repos (raw.githubusercontent.com)
 
+OpenAI (content/openai/, see sources.openai.json):
+  - developers.openai.com   -> API, Codex, Cookbook, Ads, Plugins, Workspace
+                               Agents, dev blog, and more (single sitemap +
+                               .md suffix; migrated off platform.openai.com,
+                               which now just redirects here)
+  - github.com/openai/*    -> Cookbook + Python/Node SDK repos
+
+Z.AI (content/zai/, see sources.zai.json):
+  - docs.z.ai               -> GLM model guides, API reference, SDKs
+                               (llms.txt with direct .md links)
+  - github.com/zai-org/*   -> GLM-skills repo
+
 Usage:
   uv run scripts/fetcher.py                       # Fetch all
   uv run scripts/fetcher.py --tree                 # Show source structure
-  uv run scripts/fetcher.py --discover             # Probe domains for new sources
+  uv run scripts/fetcher.py --discover             # Probe Anthropic domains for new sources
   uv run scripts/fetcher.py --section claude-code  # Single section
   uv run scripts/fetcher.py --section mcp          # MCP spec docs
-  uv run scripts/fetcher.py --section github       # GitHub repos
+  uv run scripts/fetcher.py --section github       # Anthropic GitHub repos
+  uv run scripts/fetcher.py --section openai       # OpenAI docs + repos
+  uv run scripts/fetcher.py --section zai          # Z.AI docs + repos
 """
 # /// script
 # requires-python = ">=3.14"
@@ -69,6 +88,20 @@ GITHUB_REPOS = [
     ("anthropics/cwc-long-running-agents", "main",   [".md"]),
     ("anthropics/anthropic-sdk-python",    "main",   [".md"]),
     ("anthropics/anthropic-sdk-typescript","main",   [".md"]),
+]
+
+GITHUB_REPOS_OPENAI = [
+    ("openai/openai-cookbook", "main", [".md", ".ipynb"]),
+    ("openai/openai-python",   "main", [".md"]),
+    ("openai/openai-node",     "main", [".md"]),
+]
+
+# zai-org (formerly THUDM) is mostly model-weights/inference-code repos, not
+# doc-cookbook-dense like openai/openai-cookbook. GLM-skills is the one repo
+# that's primarily markdown skill definitions; others were checked (GLM-OCR,
+# ChatGLM-6B) and skipped as out of scope for a docs archive.
+GITHUB_REPOS_ZAI = [
+    ("zai-org/GLM-skills", "main", [".md"]),
 ]
 
 # Standalone anthropic.com pages that matter but sit outside the /news/,
@@ -165,6 +198,14 @@ class Fetcher:
         self.section = section
         self.no_reap = no_reap
 
+        # Provider-scoped roots. Anthropic used to own all of content/
+        # outright; it's now one of several, at content/anthropic/, so every
+        # Anthropic-specific path below builds on anthropic_dir rather than
+        # output_dir directly.
+        self.anthropic_dir = self.output_dir / "anthropic"
+        self.openai_dir = self.output_dir / "openai"
+        self.zai_dir = self.output_dir / "zai"
+
         self.platform_sitemap_url = "https://platform.claude.com/sitemap.xml"
         self.claude_code_llms_url = "https://code.claude.com/docs/llms.txt"
         self.mcp_sitemap_url = "https://modelcontextprotocol.io/sitemap.xml"
@@ -185,6 +226,17 @@ class Fetcher:
         # to 2021, which is the more reliable of the two.
         self.alignment_index_url = "https://alignment.anthropic.com/"
         self.transformer_circuits_feed_url = "https://transformer-circuits.pub/feed.xml"
+
+        # OpenAI migrated its docs off platform.openai.com to
+        # developers.openai.com in 2026; the old path now just redirects
+        # here. One sitemap covers the whole site (api, cookbook, codex,
+        # ads, plugins, workspace-agents, blog, learn, showcase, ...) --
+        # verified 2026-09-17 that every URL serves a .md variant.
+        self.openai_sitemap_url = "https://developers.openai.com/sitemap-0.xml"
+        # docs.z.ai's llms.txt already lists direct .md links (same shape as
+        # code.claude.com's) and covers the same set as its sitemap.xml, so
+        # it's used directly rather than the sitemap.
+        self.zai_llms_url = "https://docs.z.ai/llms.txt"
 
         self.stats = {"total": 0, "downloaded": 0, "skipped": 0,
                       "failed": 0, "dead": 0, "reaped": 0}
@@ -323,6 +375,16 @@ class Fetcher:
                 urls.append(full)
         return urls
 
+    def extract_llms_txt_urls(self, content: str, prefix: str) -> List[str]:
+        """Direct .md links out of an llms.txt index whose links start with
+        `prefix` (e.g. docs.z.ai's own domain) -- same shape as
+        fetch_claude_code_urls, generalized for a second llms.txt-based source.
+        """
+        urls = []
+        for match in re.findall(rf"\({re.escape(prefix)}[^)]+\.md\)", content):
+            urls.append(match[1:-4])  # strip parens and .md
+        return urls
+
     def extract_support_urls(self, sitemap_xml: str) -> List[str]:
         # Articles serve a .md variant directly (since ~2026-07), so plain
         # download_doc applies; sitemap covers more articles than llms.txt.
@@ -355,11 +417,11 @@ class Fetcher:
         """
         urls = []
         for section in self._REFETCHABLE:
-            base = self.output_dir / section
+            base = self.anthropic_dir / section
             if not base.is_dir():
                 continue
             for path in base.rglob("*.md"):
-                rel = path.relative_to(self.output_dir).with_suffix("")
+                rel = path.relative_to(self.anthropic_dir).with_suffix("")
                 parts = rel.parts
                 if parts[0] == "en":
                     if parts[1:3] == ("docs", "claude-code"):
@@ -390,6 +452,22 @@ class Fetcher:
                     elif parts[1] == "interpretability":
                         tail = "/".join(parts[2:])
                         urls.append(f"https://transformer-circuits.pub/{tail}")
+
+        # openai/ and zai/ map 1:1 onto their site's URL path, so the
+        # reconstruction is direct -- no per-section dispatch needed. github/
+        # is excluded the same way as Anthropic's, above: those files come
+        # from a repo tree walk, not a URL this loop can reconstruct.
+        for provider_dir, host in (
+            (self.openai_dir, "https://developers.openai.com"),
+            (self.zai_dir, "https://docs.z.ai"),
+        ):
+            if not provider_dir.is_dir():
+                continue
+            for path in provider_dir.rglob("*.md"):
+                rel = path.relative_to(provider_dir).with_suffix("")
+                if rel.parts[0] == "github":
+                    continue
+                urls.append(f"{host}/{'/'.join(rel.parts)}")
         return urls
 
     # -- Output path mapping ----------------------------------------------
@@ -399,36 +477,44 @@ class Fetcher:
             path = url.replace("https://code.claude.com/docs/", "")
             parts = path.split("/", 1)
             if len(parts) == 2:
-                return self.output_dir / parts[0] / "docs" / "claude-code" / f"{parts[1]}.md"
-            return self.output_dir / f"{path}.md"
+                return self.anthropic_dir / parts[0] / "docs" / "claude-code" / f"{parts[1]}.md"
+            return self.anthropic_dir / f"{path}.md"
         elif "platform.claude.com" in url:
             path = url.replace("https://platform.claude.com/docs/", "")
-            return self.output_dir / f"{path}.md"
+            return self.anthropic_dir / f"{path}.md"
         elif "modelcontextprotocol.io" in url:
             path = url.replace("https://modelcontextprotocol.io/", "")
-            return self.output_dir / "mcp" / f"{path}.md"
+            return self.anthropic_dir / "mcp" / f"{path}.md"
         elif "support.claude.com" in url:
             path = url.replace("https://support.claude.com/en/articles/", "")
-            return self.output_dir / "support" / f"{path}.md"
+            return self.anthropic_dir / "support" / f"{path}.md"
         elif "claude.com/docs" in url:
             path = url.replace("https://claude.com/docs/", "")
-            return self.output_dir / "claude" / f"{path}.md"
+            return self.anthropic_dir / "claude" / f"{path}.md"
         elif "alignment.anthropic.com" in url:
             # Checked before the generic "anthropic.com" branch below, whose
             # substring match would otherwise swallow this host too.
             path = urlsplit(url).path.strip("/")
-            return self.output_dir / "blog" / "alignment" / f"{path}.md"
+            return self.anthropic_dir / "blog" / "alignment" / f"{path}.md"
         elif "transformer-circuits.pub" in url:
             path = urlsplit(url).path.strip("/")
-            return self.output_dir / "blog" / "interpretability" / f"{path}.md"
+            return self.anthropic_dir / "blog" / "interpretability" / f"{path}.md"
         elif "anthropic.com" in url:
             path = urlsplit(url).path.strip("/")
             parts = path.split("/", 1)
             if parts[0] in ("news", "research", "engineering") and len(parts) == 2:
-                return self.output_dir / "blog" / parts[0] / f"{parts[1]}.md"
+                return self.anthropic_dir / "blog" / parts[0] / f"{parts[1]}.md"
             # Standalone allowlisted page (BLOG_STANDALONE_PAGES): lives at
             # the site root, so the last path segment is the whole slug.
-            return self.output_dir / "blog" / "policy" / f"{path}.md"
+            return self.anthropic_dir / "blog" / "policy" / f"{path}.md"
+        elif "developers.openai.com" in url:
+            # Full-site sitemap crawl, 1:1 path mapping -- same approach as
+            # claude.com/docs above, just with no /docs/ prefix to strip.
+            path = urlsplit(url).path.strip("/")
+            return self.openai_dir / f"{path}.md"
+        elif "docs.z.ai" in url:
+            path = urlsplit(url).path.strip("/")
+            return self.zai_dir / f"{path}.md"
         else:
             path = url.replace("https://", "").split("/", 1)[-1]
             return self.output_dir / f"{path}.md"
@@ -683,10 +769,10 @@ class Fetcher:
                 self.stats["failed"] += 1
                 return {"url": url, "status": "failed", "error": str(e)}
 
-    async def download_github_file(self, session, repo, branch, filepath, semaphore) -> Dict:
+    async def download_github_file(self, session, repo, branch, filepath, semaphore, output_base: str) -> Dict:
         async with semaphore:
             repo_short = repo.split("/")[1]
-            output_path = self.output_dir / "github" / repo_short / filepath
+            output_path = self.output_dir / output_base / repo_short / filepath
             url = f"https://raw.githubusercontent.com/{repo}/{branch}/{filepath}"
             if self.incremental and output_path.exists():
                 self.stats["skipped"] += 1
@@ -885,7 +971,7 @@ class Fetcher:
                               if "anthropic.com" in url or "transformer-circuits.pub" in url
                               else None)
 
-            # -- GitHub repos --
+            # -- GitHub repos (Anthropic) --
             if self.want("github"):
                 print("Source: github.com/anthropics/*")
                 for repo, branch, exts in GITHUB_REPOS:
@@ -895,7 +981,51 @@ class Fetcher:
                     print(f"  {repo_short}: {len(files)} files")
                     for filepath in files:
                         tasks.append(self.download_github_file(
-                            session, repo, branch, filepath, semaphore))
+                            session, repo, branch, filepath, semaphore,
+                            output_base="anthropic/github"))
+
+            # -- OpenAI docs --
+            if self.want("openai"):
+                print("Source: developers.openai.com/sitemap-0.xml")
+                xml = await self.fetch_text(session, self.openai_sitemap_url)
+                urls = [u for u in self.extract_sitemap_urls(xml)
+                        if urlsplit(u).path.strip("/")]
+                counts["openai"] = len(urls)
+                print(f"  {len(urls)} docs")
+                for url in urls:
+                    queue(url)
+
+                print("Source: github.com/openai/*")
+                for repo, branch, exts in GITHUB_REPOS_OPENAI:
+                    files = await self.list_github_files(session, repo, branch, exts)
+                    repo_short = repo.split("/")[1]
+                    counts[f"openai-github/{repo_short}"] = len(files)
+                    print(f"  {repo_short}: {len(files)} files")
+                    for filepath in files:
+                        tasks.append(self.download_github_file(
+                            session, repo, branch, filepath, semaphore,
+                            output_base="openai/github"))
+
+            # -- Z.AI docs --
+            if self.want("zai"):
+                print("Source: docs.z.ai/llms.txt")
+                llms = await self.fetch_text(session, self.zai_llms_url)
+                urls = self.extract_llms_txt_urls(llms, "https://docs.z.ai/")
+                counts["zai"] = len(urls)
+                print(f"  {len(urls)} docs")
+                for url in urls:
+                    queue(url)
+
+                print("Source: github.com/zai-org/*")
+                for repo, branch, exts in GITHUB_REPOS_ZAI:
+                    files = await self.list_github_files(session, repo, branch, exts)
+                    repo_short = repo.split("/")[1]
+                    counts[f"zai-github/{repo_short}"] = len(files)
+                    print(f"  {repo_short}: {len(files)} files")
+                    for filepath in files:
+                        tasks.append(self.download_github_file(
+                            session, repo, branch, filepath, semaphore,
+                            output_base="zai/github"))
 
             # -- Execute --
             self.stats["total"] = len(tasks)
@@ -999,7 +1129,7 @@ class Fetcher:
         print("Meta: NPM manifest + CHANGELOG")
         try:
             manifest = await self.fetch_npm_manifest(session)
-            path = self.output_dir / "claude-code-manifest.json"
+            path = self.anthropic_dir / "claude-code-manifest.json"
             path.parent.mkdir(parents=True, exist_ok=True)
             async with aiofiles.open(path, "w") as f:
                 await f.write(json.dumps(manifest, indent=2))
@@ -1009,7 +1139,7 @@ class Fetcher:
 
         try:
             changelog = await self.fetch_github_changelog(session)
-            path = self.output_dir / "CHANGELOG.md"
+            path = self.anthropic_dir / "CHANGELOG.md"
             path.parent.mkdir(parents=True, exist_ok=True)
             async with aiofiles.open(path, "wb") as f:
                 await f.write(changelog)
@@ -1367,6 +1497,7 @@ class Fetcher:
             "platform.claude.com", "code.claude.com",
             "modelcontextprotocol.io", "claude.com/docs",
             "anthropic.com", "transformer-circuits.pub",
+            "developers.openai.com", "docs.z.ai",
         ]
         return any(f"https://{d}" in url for d in allowed)
 
@@ -1378,7 +1509,8 @@ class Fetcher:
                 print(f"  {u}", file=sys.stderr)
             print("Allowed: platform.claude.com, code.claude.com, "
               "modelcontextprotocol.io, claude.com/docs, anthropic.com, "
-              "transformer-circuits.pub", file=sys.stderr)
+              "transformer-circuits.pub, developers.openai.com, docs.z.ai",
+              file=sys.stderr)
             sys.exit(1)
 
         normalized = [u[:-3] if u.endswith(".md") else u for u in urls]
@@ -1431,6 +1563,13 @@ class Fetcher:
                 await self.fetch_text(session, self.alignment_index_url))
             tc_urls = self.extract_transformer_circuits_urls(
                 await self.fetch_text(session, self.transformer_circuits_feed_url))
+            openai_urls = [
+                u for u in self.extract_sitemap_urls(
+                    await self.fetch_text(session, self.openai_sitemap_url))
+                if urlsplit(u).path.strip("/")
+            ]
+            zai_urls = self.extract_llms_txt_urls(
+                await self.fetch_text(session, self.zai_llms_url), "https://docs.z.ai/")
 
         def show_grouped(title, urls, strip_prefix):
             print(f"{title} ({len(urls)})")
@@ -1453,15 +1592,27 @@ class Fetcher:
               f"{len(BLOG_STANDALONE_PAGES)} standalone pages")
         print(f"alignment.anthropic.com: {len(alignment_urls)} posts")
         print(f"transformer-circuits.pub: {len(tc_urls)} posts")
-        print(f"GitHub repos: {len(GITHUB_REPOS)} repos configured")
+        print(f"GitHub repos (Anthropic): {len(GITHUB_REPOS)} repos configured")
+        print()
+
+        show_grouped("developers.openai.com", openai_urls, "https://developers.openai.com/")
+        print(f"docs.z.ai: {len(zai_urls)} docs")
+        print(f"GitHub repos (OpenAI): {len(GITHUB_REPOS_OPENAI)} repos configured")
+        print(f"GitHub repos (Z.AI): {len(GITHUB_REPOS_ZAI)} repos configured")
         print()
 
         total = (len(cc_urls) + len(platform_urls) + len(mcp_urls) + len(support_urls)
                  + len(blog_urls) + len(BLOG_STANDALONE_PAGES)
-                 + len(alignment_urls) + len(tc_urls))
+                 + len(alignment_urls) + len(tc_urls)
+                 + len(openai_urls) + len(zai_urls))
         print(f"Total fetchable: {total}+ (excludes GitHub repos)")
 
     # -- Discovery ---------------------------------------------------------
+    # Anthropic-only tooling: DISCOVER_DOMAINS and the org-repo listing below
+    # are both hardcoded to anthropics. OpenAI and Z.AI sources were verified
+    # by hand (see sources.openai.json / sources.zai.json notes_on_discovery)
+    # rather than added here -- generalizing --discover across providers is
+    # a bigger refactor than adding two known-good sources warranted.
 
     async def discover(self):
         print("Probing Anthropic domains for content sources...")
@@ -1572,26 +1723,33 @@ class Fetcher:
 
 async def main():
     parser = ArgumentParser(
-        description="Fetch Anthropic documentation from all known sources",
+        description="Fetch AI provider documentation from all known sources",
         formatter_class=RawDescriptionHelpFormatter,
         epilog="""
-Sections:
+Sections (Anthropic, content/anthropic/):
   claude-code   Claude Code + Agent SDK docs (code.claude.com)
   api/platform  API and platform docs (platform.claude.com)
   mcp           MCP protocol spec (modelcontextprotocol.io)
-  github        All configured GitHub repos
+  github        All configured Anthropic GitHub repos
   support       Support articles (support.claude.com, sitemap + .md)
   products      Product docs (claude.com/docs: Claude Tag, Cowork, connectors)
   blog          anthropic.com news/research/engineering + standalone pages
                 (sitemap + HTML scrape via trafilatura; no .md variant)
-  all           Everything (default)
+
+Sections (other providers):
+  openai        developers.openai.com docs + openai/* GitHub repos (content/openai/)
+  zai           docs.z.ai (GLM models) + zai-org/* GitHub repos (content/zai/)
+
+  all           Everything, all providers (default)
 
 Examples:
   fetcher.py                               Fetch everything
   fetcher.py --section mcp                 MCP spec only
-  fetcher.py --section github              GitHub repos only
+  fetcher.py --section github              Anthropic GitHub repos only
+  fetcher.py --section openai              OpenAI docs + repos only
+  fetcher.py --section zai                 Z.AI docs + repos only
   fetcher.py --tree                         Show all sources
-  fetcher.py --discover                     Probe domains for new sources
+  fetcher.py --discover                     Probe Anthropic domains for new sources
   fetcher.py --incremental                  Skip existing files
   fetcher.py --no-reap                      Report pages gone upstream, delete nothing
   fetcher.py URL [URL ...]                  Fetch specific URLs
@@ -1604,7 +1762,8 @@ Examples:
         "--section", "-s",
         choices=[
             "claude-code", "api", "platform", "mcp",
-            "github", "support", "products", "blog", "all",
+            "github", "support", "products", "blog",
+            "openai", "zai", "all",
         ],
     )
     parser.add_argument("--incremental", action="store_true", help="Skip existing files")

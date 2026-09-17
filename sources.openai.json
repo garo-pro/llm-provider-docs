@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-17",
+  "description": "OpenAI developer content source registry. developers.openai.com (the successor to platform.claude.com's old platform.openai.com/docs path -- that path now just 301-redirects here) serves a full sitemap and a .md variant of every page, verified by direct fetch. Output paths below are relative to content/openai/. learn.chatgpt.com (ChatGPT product docs, linked from the root llms.txt hub) is a known gap: a separate domain, not yet added.",
+  "domains": {
+    "developers.openai.com": {
+      "robots": true,
+      "sitemap": true,
+      "llms_txt": true,
+      "llms_full": true,
+      "notes": "Migrated off platform.claude.com/docs in 2026; that path is now a redirect shell only. Single sitemap-index -> sitemap-0.xml, 1,321 URLs across api/ (726), cookbook/ (328), showcase/ (80), blog/ (36), ads/ (31), plugins/ (30), training/ (24), resources/ (16), learn/ (16), community/ (6), tracks/ (4), workspace-agents/ (3). Every page serves a .md variant by appending .md to the URL (after stripping the trailing slash sitemap URLs carry)."
+    }
+  },
+  "sources": [
+    {
+      "name": "openai-docs",
+      "type": "sitemap-md",
+      "sitemap": "https://developers.openai.com/sitemap-0.xml",
+      "output": "openai/",
+      "pages": 1321,
+      "enabled": true,
+      "section": ["openai"],
+      "notes": "Full-site sitemap crawl, 1:1 URL-path-to-file mapping (mirrors claude.com/docs' approach). Covers API guides+reference, Codex, Cookbook, Ads, Plugins/Apps SDK, Workspace Agents, Agentic Commerce, dev blog, learning resources, showcase."
+    },
+    {
+      "name": "openai-github-cookbook",
+      "type": "github-repo",
+      "repo": "openai/openai-cookbook",
+      "branch": "main",
+      "extensions": [".md", ".ipynb"],
+      "output": "openai/github/cookbook/",
+      "enabled": true,
+      "section": ["openai"]
+    },
+    {
+      "name": "openai-github-python-sdk",
+      "type": "github-repo",
+      "repo": "openai/openai-python",
+      "branch": "main",
+      "extensions": [".md"],
+      "output": "openai/github/openai-python/",
+      "enabled": true,
+      "section": ["openai"]
+    },
+    {
+      "name": "openai-github-node-sdk",
+      "type": "github-repo",
+      "repo": "openai/openai-node",
+      "branch": "main",
+      "extensions": [".md"],
+      "output": "openai/github/openai-node/",
+      "enabled": true,
+      "section": ["openai"]
+    }
+  ],
+  "notes_on_discovery": "Verified by direct fetch 2026-09-17 (not yet wired into --discover, which is Anthropic-only tooling -- see fetcher.py). robots.txt points at sitemap-index.xml -> sitemap-0.xml; llms.txt is a hub linking out to per-product llms.txt indexes (api/, ads/, plugins/, workspace-agents/, codex/, commerce/, blog/, cookbook/, learn/, showcase/), each with its own llms-full.txt combined export. The sitemap already covers everything those indexes do, so the sitemap is used as the single discovery surface rather than crawling every sub-index."
+}

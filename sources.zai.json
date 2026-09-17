@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-17",
+  "description": "Z.AI (GLM models) developer content source registry. docs.z.ai serves a compact llms.txt with direct .md links, a matching sitemap.xml, and an explicit AI-scraping-friendly robots.txt (Content-Signal: ai-train=yes). Output paths below are relative to content/zai/.",
+  "domains": {
+    "docs.z.ai": {
+      "robots": true,
+      "sitemap": true,
+      "llms_txt": true,
+      "llms_full": true,
+      "notes": "68 pages via llms.txt (direct .md links), 67 via sitemap.xml -- effectively the same set, so llms.txt is used directly rather than the sitemap. Sections: guides/ (27), devpack/ (18), api-reference/ (18), legal-agreement/ (3), release-notes/ (1), help/ (1)."
+    }
+  },
+  "sources": [
+    {
+      "name": "zai-docs",
+      "type": "llms-txt-md",
+      "url": "https://docs.z.ai/llms.txt",
+      "alt_sitemap": "https://docs.z.ai/sitemap.xml",
+      "output": "zai/",
+      "pages": 68,
+      "enabled": true,
+      "section": ["zai"],
+      "notes": "Direct .md links out of llms.txt, same pattern as code.claude.com. GLM model guides, API reference, SDKs (Python/Java/OpenAI-compat/LangChain), devpack, release notes."
+    },
+    {
+      "name": "zai-github-skills",
+      "type": "github-repo",
+      "repo": "zai-org/GLM-skills",
+      "branch": "main",
+      "extensions": [".md"],
+      "output": "zai/github/GLM-skills/",
+      "enabled": true,
+      "section": ["zai"],
+      "notes": "zai-org (formerly THUDM) is mostly model-weights/inference-code repos, not doc-cookbook-dense like openai/openai-cookbook. GLM-skills is the one repo that's primarily markdown skill definitions -- other repos (GLM-OCR, ChatGLM-6B, etc.) were checked and skipped as out of scope for a docs archive."
+    }
+  ],
+  "notes_on_discovery": "Verified by direct fetch 2026-09-17 (not yet wired into --discover, which is Anthropic-only tooling -- see fetcher.py)."
+}

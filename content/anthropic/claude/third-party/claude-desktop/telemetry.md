@@ -1,0 +1,285 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://claude.com/docs/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Telemetry and egress
+
+> What Claude Desktop on 3P sends to Anthropic, how to disable it, and the network paths your firewall needs to allow
+
+When Claude Desktop on third-party (3P) is configured with Google Cloud's Agent Platform, Amazon Bedrock, or Microsoft Foundry, the app sends conversation content only to your configured inference endpoint. The app does, by default, send a small amount of operational telemetry (crash reports and product analytics) that helps Anthropic diagnose issues and improve the product. Each category can be disabled independently via managed configuration.
+
+Data handling at the inference endpoint depends on the provider. For Google Cloud's Agent Platform and Amazon Bedrock, data handling is governed by the cloud provider. For Microsoft Foundry, Anthropic operates the Claude models and handles conversation data as an independent processor for Microsoft. See [Data handling by provider](/docs/third-party/claude-desktop/overview#data-handling-by-provider) on the Overview page for each provider's data path.
+
+This page covers what each telemetry category contains, how to turn it off, and the complete set of outbound hostnames the app uses so you can configure your perimeter firewall.
+
+## Telemetry categories
+
+### Essential telemetry
+
+Crash reports, error stack traces, and performance timings. Contains diagnostic metadata (app version, OS, error type, redacted stack frames) but **never prompt or response content**. Attributed to your organization via `deploymentOrganizationUuid` so Anthropic support can find issues you report.
+
+| Setting                     | Default | Effect when `true`                        |
+| --------------------------- | ------- | ----------------------------------------- |
+| `disableEssentialTelemetry` | `false` | No crash or error data leaves the device. |
+
+<Warning>
+  Disabling essential telemetry opts you into a **manual support model**. Anthropic will have zero remote visibility into failures on your fleet, so to get help with an issue your team will need to collect application logs from affected machines and send them to Anthropic directly. Leave this enabled during initial rollout.
+</Warning>
+
+### Non-essential telemetry
+
+Product-usage analytics: feature adoption, session counts, UI interactions. Used to understand how Claude Desktop is used in aggregate. Contains no prompt or response content. Also gates the **Send** button in Help → Generate Diagnostic Report; with this disabled, diagnostic bundles can only be saved locally.
+
+| Setting                        | Default | Effect when `true`                     |
+| ------------------------------ | ------- | -------------------------------------- |
+| `disableNonessentialTelemetry` | `false` | No product analytics leave the device. |
+
+Leaving this enabled also adds `api.anthropic.com` to the [agent egress allowlist](#required-egress-paths) automatically, so Claude Code can deliver its usage telemetry from inside the sandbox. Allow that host at the perimeter too; it appears in the non-essential telemetry table below.
+
+### Non-essential services
+
+Cosmetic third-party fetches: favicons for connectors shown in the UI, the sandboxed iframe that renders interactive artifact previews, and the sandboxed iframes that render [MCP Apps](/docs/connectors/building/mcp-apps/getting-started), the interactive widgets connectors can display. Disabling these degrades the UI (generic icons, static artifact previews, and connector tool results shown as text instead of widgets) but doesn't affect functionality.
+
+| Setting                       | Default | Effect when `true`                                                                                                                                    |
+| ----------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `disableNonessentialServices` | `false` | Favicon, artifact-preview, and MCP App widget fetches are blocked. Connectors that return MCP Apps show the tool's text result instead of the widget. |
+
+### Auto-updates
+
+Checks Anthropic's update feed and downloads new builds.
+
+| Setting              | Default | Effect when `true`                                                                        |
+| -------------------- | ------- | ----------------------------------------------------------------------------------------- |
+| `disableAutoUpdates` | `false` | The app never checks for or downloads updates. Your IT team must redistribute new builds. |
+
+## Sending telemetry to your own collector
+
+Independently of what's sent to Anthropic, you can export session activity to your own OpenTelemetry collector by setting `otlpEndpoint`. This is the recommended way to retain an audit trail in environments that disable Anthropic-bound telemetry.
+
+For third-party deployments, the export includes session metadata (event names, durations, token counts, result counts, errors) by default, but not message content. It also identifies the signed-in user; see [User attribution](#user-attribution). See [Monitoring](/docs/cowork/monitoring) for the event schema and the [`otlp*` keys](/docs/third-party/claude-desktop/configuration#otlpendpoint) in the configuration reference.
+
+The export carries logs and metrics. Cowork sessions, Code sessions, and the desktop application's own events arrive under the `service.name` values `cowork`, `claude-code-desktop`, and `claude-desktop` respectively. The app adds the collector host to the sandbox egress allowlist automatically, so `otlpEndpoint` does not need an entry in `coworkEgressAllowedHosts`; your perimeter firewall still needs to allow the host.
+
+For collector authentication headers, extra resource attributes, and the log level of the desktop application's own event stream, see [`otlpHeaders`, `otlpResourceAttributes`, and `otlpDesktopLogLevel`](/docs/third-party/claude-desktop/configuration#otlpheaders) in the configuration reference.
+
+### Collector endpoint and headers
+
+Set [`otlpEndpoint`](/docs/third-party/claude-desktop/configuration#otlpendpoint) to the base address of your collector's OTLP/HTTP receiver, for example `https://otel-collector.example.com:4318`. The app appends the OpenTelemetry request paths itself (`/v1/logs`, `/v1/metrics`, and `/v1/traces` when [traces](#traces-beta) are enabled), so enter the address without those suffixes. A path prefix in front of them, such as `https://observability.example.com/otlp`, is kept.
+
+The receiver must implement the OpenTelemetry protocol (OTLP) over HTTP in both its protobuf and JSON encodings, as an OpenTelemetry Collector does by default. If your logging or SIEM platform accepts only its own HTTP ingestion format, run an OpenTelemetry Collector that receives OTLP and forwards to that platform, and set `otlpEndpoint` to the collector's address. Each device opens its own connection to the collector, so the collector must present a TLS certificate the operating system trusts. See [TLS-intercepting proxies](/docs/third-party/claude-desktop/network-proxy#tls-intercepting-proxies) if a TLS-intercepting proxy sits in between.
+
+[`otlpHeaders`](/docs/third-party/claude-desktop/configuration#otlpheaders) is a JSON object that maps each header name to its value, for example `{"Authorization":"Bearer <token>","X-Tenant":"agency"}`. As with the other object-typed keys described under [Value types](/docs/third-party/claude-desktop/configuration#value-types), write it as a JSON string.
+
+The app reads both keys at launch, so users must restart it after a change. If the collector refuses requests or cannot be reached, the app keeps working, shows no error, and drops the affected telemetry batches. Check the collector's own request logs to confirm data is arriving.
+
+For a collector credential that cannot be a static header, [`otlpHeadersHelper`](/docs/third-party/claude-desktop/configuration#otlpheadershelper) names a script on the device that prints the headers, and [`otlpAuthMode`](/docs/third-party/claude-desktop/configuration#otlpauthmode) set to `inference-credential` sends the user's own inference bearer token, which suits only a collector you operate. The configuration reference describes both.
+
+### User attribution
+
+Every record sent to your collector carries the user's identity as two resource attributes, on all three `service.name` streams:
+
+* `enduser.id` — the signed-in user's identity. With an interactive sign-in flow (for example, Workforce Identity Federation or Google sign-in on Google Cloud's Agent Platform), this is the identity from the provider's claims, normally the user's email address. With credential methods that carry no identity claims (a static key, a credential helper, or an application default credentials file), it is the operating-system login name.
+* `process.owner` — the operating-system login name.
+
+`enduser.id` is the same identity the app shows in the sidebar and account menu, and is controlled by the [`endUserAttribution`](/docs/third-party/claude-desktop/configuration#enduserattribution) key: set it to `false` to remove the identity from both the app and the export. `process.owner` is not gated by that key — it is standard OpenTelemetry process metadata and is always present. A static value set under [`otlpResourceAttributes`](/docs/third-party/claude-desktop/configuration#otlpresourceattributes) overrides either attribute: a static `enduser.id` is always passed through — taking precedence over the signed-in identity, and surviving `endUserAttribution: false` — and a static `process.owner` replaces the login name.
+
+These attributes are attached only to the OpenTelemetry export; the Anthropic-bound telemetry described earlier on this page does not carry them.
+
+### Exporter protocol
+
+The `otlpProtocol` key selects the transport for the telemetry export to your collector: `http/protobuf` (the default), `http/json`, or `grpc`. The protocol applies per session type:
+
+* [Code](/docs/third-party/claude-desktop/code) sessions export over the protocol as configured, including `grpc`.
+* Cowork and [Chat](/docs/third-party/claude-desktop/chat) sessions export over the protocol as configured, except that when `otlpProtocol` is `grpc` they export over `http/protobuf` instead on Windows, and on other platforms whenever the Claude Code engine is given an HTTP proxy (from the operating system's proxy settings, a [pinned proxy](/docs/third-party/claude-desktop/network-proxy#pin-a-proxy-from-managed-configuration), or `HTTPS_PROXY`/`HTTP_PROXY` in a Claude Code settings file).
+* The desktop application's own event stream (`claude-desktop`) always exports over `http/json`, whatever `otlpProtocol` is set to.
+
+These substitutions change the protocol only, not the endpoint. A stream that exports over HTTP while `otlpProtocol` is `grpc` still goes to the same `otlpEndpoint`; if that address is your collector's OTLP/gRPC receiver (conventionally port 4317), that telemetry never reaches the collector. To receive all three streams with one collector, set `otlpProtocol` to `http/protobuf` and point `otlpEndpoint` at the collector's OTLP/HTTP receiver (conventionally port 4318).
+
+### Content capture
+
+To include content in the export, set `otlpContentCapture` to an array of categories:
+
+| Category             | Captures                                                        |
+| -------------------- | --------------------------------------------------------------- |
+| `userPrompts`        | User message text and conversation titles                       |
+| `assistantResponses` | Model response text                                             |
+| `toolDetails`        | Tool input arguments (for example, the web-search query string) |
+| `toolContent`        | Tool output content                                             |
+| `rawApiBodies`       | Full inference request and response bodies                      |
+
+On Claude Desktop version 1.17377 or later, enabling `userPrompts` also captures model responses, even if `assistantResponses` is not listed. On those versions, no `otlpContentCapture` configuration captures user prompts without model responses.
+
+Conversation titles arrive on the desktop application's own stream (`claude-desktop`) as a `desktop_session_title_set` event that carries each Cowork and Code session's title and the Claude Code `session.id` to join on. The event is exported only when [`otlpDesktopLogLevel`](/docs/third-party/claude-desktop/configuration#otlpdesktoploglevel) is `info` or `debug`, and the title text is included only when `otlpContentCapture` includes `userPrompts`. Requires Claude Desktop 1.44121.1 or later.
+
+Content is exported only to your configured `otlpEndpoint`. Anthropic does not receive it.
+
+### Traces (beta)
+
+The export carries logs (events) and metrics; it does not include traces unless you enable them. To export OpenTelemetry traces as well, set `otlpTracesEnabled` to `true`. Cowork and Code sessions then record a trace for each user interaction, with spans for model requests and tool executions, and every event emitted during a span carries that span's `trace_id` and `span_id`. This lets your backend correlate a prompt's events end-to-end natively, with no transformation on ingest.
+
+Traces use the same `otlpEndpoint` and `otlpProtocol` as the rest of the export, including the gRPC fallbacks described in [Exporter protocol](#exporter-protocol). Span and span-event content is gated by the same `otlpContentCapture` categories as events: with no categories enabled, traces carry metadata only (timing, tool names, durations, token counts). Captured content appears primarily on events; spans stay close to metadata.
+
+Two scope notes:
+
+* The metrics in this export don't carry trace context, so trace-based correlation covers traces and events. Correlate metrics with a session via the `session.id` attribute.
+* Trace export uses Claude Code's session-tracing beta, and the span structure may change while the feature is in beta.
+
+With `otlpEndpoint` set, `otlpTracesEnabled` alone decides whether Cowork and Code sessions export traces. Leaving it unset or `false` keeps traces off even when Claude Code's own settings on the device, including managed settings, turn tracing on (Claude Desktop 1.52386.0 or later).
+
+`otlpTracesEnabled` requires Claude Desktop **1.22209.0** or later.
+
+## Required egress paths
+
+Claude Desktop on 3P has **two** independent network boundaries:
+
+1. **Perimeter firewall:** your corporate network controls what the device can reach. The hostnames below are what you allowlist here.
+2. **Agent egress allowlist:** the [`coworkEgressAllowedHosts`](/docs/third-party/claude-desktop/configuration#coworkegressallowedhosts) key controls what the agent's web-fetch and shell tools can reach. This is independent of, and stricter than, the perimeter.
+
+<Note>
+  The **Egress** section of the in-app configuration window is the authoritative source for your deployment. It computes the exact allowlist from your current settings, updates as you change them, and can export the list as a text file for your firewall team. Use the tables below as a static reference; defer to the configuration window for the precise set your build requires.
+</Note>
+
+All traffic is HTTPS on port 443. Allowlist by hostname (SNI); path-level rules aren't required.
+
+### Always required
+
+| Host                  | Purpose                                                                       |
+| --------------------- | ----------------------------------------------------------------------------- |
+| `downloads.claude.ai` | VM workspace bundle and Claude CLI binary, fetched at session start           |
+| `downloads.claude.ai` | Claude Code model catalog (signed picker metadata), polled every 5–15 minutes |
+
+Without this host reachable, Chat conversations, Cowork tasks, and Code sessions cannot start on a device that has not yet downloaded these components. App updates often change one or both of these components, and the app then downloads the new versions from the same host. Devices installed with the [offline installer variant](/docs/third-party/claude-desktop/installation#offline-installation), which includes both components in the installer package, are not affected. The model catalog fetch is not needed to run the app: set [`modelCatalogEnabled`](/docs/third-party/claude-desktop/configuration#modelcatalogenabled) to `false` to turn it off, or [`modelCatalogUrl`](/docs/third-party/claude-desktop/configuration#modelcatalogurl) to fetch the catalog from a mirror inside your network. While the catalog is unreachable, sessions still start and the model picker keeps the names and effort options the app last fetched or shipped with.
+
+### Inference provider
+
+The host(s) for your configured provider. These carry conversation content.
+
+<Tabs>
+  <Tab title="Google Cloud's Agent Platform">
+    | Host                                 | Purpose                                                                                                                                                                                                                                                           |
+    | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | `<region>-aiplatform.googleapis.com` | Model inference for single regions. The `global` region uses `aiplatform.googleapis.com`, and the `eu` / `us` multi-regions use `aiplatform.eu.rep.googleapis.com` / `aiplatform.us.rep.googleapis.com`. Replaced by the host of `inferenceVertexBaseUrl` if set. |
+    | `oauth2.googleapis.com`              | Google auth token exchange                                                                                                                                                                                                                                        |
+    | `sts.googleapis.com`                 | Google auth token exchange                                                                                                                                                                                                                                        |
+    | `accounts.google.com`                | Google auth token exchange                                                                                                                                                                                                                                        |
+    | `iamcredentials.googleapis.com`      | Google auth token exchange                                                                                                                                                                                                                                        |
+  </Tab>
+
+  <Tab title="Amazon Bedrock">
+    | Host                                                                       | Purpose                                                                                                                                                                                                                                                                                                      |
+    | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | `bedrock-runtime.<region>.amazonaws.com`                                   | Model inference. Replaced by the host of `inferenceBedrockBaseUrl` if set.                                                                                                                                                                                                                                   |
+    | `bedrock.<region>.amazonaws.com`                                           | Control plane (model discovery)                                                                                                                                                                                                                                                                              |
+    | `sts.amazonaws.com`, `sts.<region>.amazonaws.com`                          | STS token exchange (profile auth only)                                                                                                                                                                                                                                                                       |
+    | `portal.sso.<sso-region>.amazonaws.com`, `oidc.<sso-region>.amazonaws.com` | IAM Identity Center sign-in and token refresh, for [in-app AWS sign-in](/docs/third-party/claude-desktop/bedrock#in-app-aws-sign-in) and for named profiles that use IAM Identity Center. `<sso-region>` is `inferenceBedrockSsoRegion` (or the profile's `sso_region`) and can differ from the inference region. |
+
+    With `inferenceBedrockBearerToken` set, the runtime and control-plane hosts are required.
+
+    For AWS GovCloud regions (`us-gov-*`), the app automatically uses the FIPS endpoints instead: `bedrock-runtime-fips.<region>.amazonaws.com` and `bedrock-fips.<region>.amazonaws.com`.
+  </Tab>
+
+  <Tab title="Amazon Bedrock Mantle">
+    | Host                              | Purpose                                                                    |
+    | --------------------------------- | -------------------------------------------------------------------------- |
+    | `bedrock-mantle.<region>.api.aws` | Model inference. Replaced by the host of `inferenceBedrockBaseUrl` if set. |
+  </Tab>
+
+  <Tab title="Microsoft Foundry">
+    | Host                               | Purpose                                                                    |
+    | ---------------------------------- | -------------------------------------------------------------------------- |
+    | `<resource>.services.ai.azure.com` | Model inference. Replaced by the host of `inferenceFoundryBaseUrl` if set. |
+    | `login.microsoftonline.com`        | Entra ID auth (interactive sign-in only)                                   |
+  </Tab>
+
+  <Tab title="Gateway">
+    | Host                              | Purpose         |
+    | --------------------------------- | --------------- |
+    | Host of `inferenceGatewayBaseUrl` | Model inference |
+  </Tab>
+
+  <Tab title="Claude API">
+    | Host                  | Purpose                                                                                                                                                      |
+    | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | `api.anthropic.com`   | Model inference; token exchange and API-key creation during browser sign-in                                                                                  |
+    | `platform.claude.com` | Browser sign-in page. Dialed only when no static key or credential helper is configured; the in-app Egress list includes it for every Claude API deployment. |
+  </Tab>
+</Tabs>
+
+### Auto-updates (`disableAutoUpdates: false`)
+
+| Host                  | Purpose                                                            |
+| --------------------- | ------------------------------------------------------------------ |
+| `claude.ai`           | Update feed                                                        |
+| `api.anthropic.com`   | Update feed (releases.claude.com when updateViaUpdatesHost is set) |
+| `downloads.claude.ai` | Update binaries                                                    |
+
+With [`updateViaUpdatesHost`](/docs/third-party/claude-desktop/configuration#updateviaupdateshost) set to `true`, the app reads the update feed from `releases.claude.com` instead of `claude.ai` and `api.anthropic.com`, so those two hosts are no longer needed for updates. Update binaries still come from `downloads.claude.ai`.
+
+### Essential telemetry (`disableEssentialTelemetry: false`)
+
+| Host                               | Purpose                   |
+| ---------------------------------- | ------------------------- |
+| `*.sentry.io`                      | Crash and error reporting |
+| `*.ingest.us.sentry.io`            | Crash and error reporting |
+| `sentry.io`                        | Crash and error reporting |
+| `browser-intake-datadoghq.com`     | Performance timing        |
+| `browser-intake-us3-datadoghq.com` | Performance timing        |
+| `browser-intake-us5-datadoghq.com` | Performance timing        |
+| `browser-intake-ap1-datadoghq.com` | Performance timing        |
+| `browser-intake-ap2-datadoghq.com` | Performance timing        |
+| `browser-intake-datadoghq.eu`      | Performance timing        |
+| `browser-intake-ddog-gov.com`      | Performance timing        |
+
+The `sentry.io` apex is listed alongside the wildcards because some firewalls don't match it under `*.sentry.io`, and `*.ingest.us.sentry.io` is listed separately for firewalls that match wildcards one label deep.
+
+### Non-essential telemetry (`disableNonessentialTelemetry: false`)
+
+| Host                  | Purpose                                                         |
+| --------------------- | --------------------------------------------------------------- |
+| `a-cdn.anthropic.com` | Analytics SDK                                                   |
+| `a-api.anthropic.com` | Analytics events                                                |
+| `claude.ai`           | Analytics events                                                |
+| `api.anthropic.com`   | Claude Code usage telemetry, sent from inside the agent sandbox |
+
+### Non-essential services (`disableNonessentialServices: false`)
+
+| Host                        | Purpose                                |
+| --------------------------- | -------------------------------------- |
+| `www.google.com`            | Connector favicons                     |
+| `*.gstatic.com`             | Connector favicons                     |
+| `www.claudeusercontent.com` | Artifact preview iframe                |
+| `cdnjs.cloudflare.com`      | Artifact preview asset CDNs            |
+| `fonts.googleapis.com`      | Artifact preview asset CDNs            |
+| `cdn.jsdelivr.net`          | Artifact preview asset CDNs            |
+| `*.claudemcpcontent.com`    | MCP App widget iframe                  |
+| `assets.claude.ai`          | Fonts loaded by MCP App widget iframes |
+
+`*.claudemcpcontent.com` serves [MCP Apps](/docs/connectors/building/mcp-apps/getting-started), the interactive widgets connectors can render. Each widget loads in a sandboxed iframe on its own generated subdomain, so allowlist the wildcard.
+
+### Optional features
+
+| Host                                                                                                                                            | Required when                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Host of `otlpEndpoint`                                                                                                                          | OpenTelemetry export is configured                                                                                                                                                                                                                                                                                                                                              |
+| `github.com`, `objects.githubusercontent.com`, `pypi.org`, `files.pythonhosted.org`                                                             | Python-based desktop extensions are enabled                                                                                                                                                                                                                                                                                                                                     |
+| Hosts of each entry in `managedMcpServers` (server URL, plus `oauth.authorizationServer` and `login.microsoftonline.com` if configured)         | Managed MCP servers are configured                                                                                                                                                                                                                                                                                                                                              |
+| Search provider host of a built-in `websearch` server (`api.search.brave.com`, `api.tavily.com`, `api.exa.ai`, or the host of your `customUrl`) | [Built-in web search](/docs/third-party/claude-desktop/web-tools#built-in-web-search) is configured                                                                                                                                                                                                                                                                                  |
+| Hosts in `coworkEgressAllowedHosts`                                                                                                             | Sandbox web access is configured                                                                                                                                                                                                                                                                                                                                                |
+| `api.anthropic.com`                                                                                                                             | [Code](/docs/third-party/claude-desktop/code) sessions can use Web Fetch and [`skipWebFetchPreflight`](/docs/third-party/claude-desktop/configuration#skipwebfetchpreflight) is not `true` (Claude Code's Web Fetch [domain check](/docs/third-party/claude-desktop/web-tools#web-fetch))                                                                                                      |
+| `claude.ai`, `api.anthropic.com`, `storage.googleapis.com`                                                                                      | [Import from claude.ai](/docs/third-party/claude-desktop/import) is enabled (`claudeAiImport` with `enabled` set to `true`). Used only while a user signs in to claude.ai and fetches an export in the import wizard; importing a downloaded export file needs none of them                                                                                                          |
+| `releases.claude.com`                                                                                                                           | The [built-in browser](/docs/third-party/claude-desktop/browser) is turned on (`builtinBrowserEnabled` set to `true`), for its [site safety check](/docs/third-party/claude-desktop/browser#site-safety-check)                                                                                                                                                                            |
+| `downloads.claude.ai`                                                                                                                           | [SSH remote sessions](/docs/third-party/claude-desktop/ssh-remote-sessions) are enabled (`sshHostAllowlist` set). With the offline installer, needed only for connections to hosts other than Linux x64 and arm64, because that installer bundles the remote components for those hosts (see [Host requirements](/docs/third-party/claude-desktop/ssh-remote-sessions#host-requirements)) |
+
+## Disabling all Anthropic-bound connections
+
+With `disableEssentialTelemetry`, `disableNonessentialTelemetry`, `disableNonessentialServices`, and `disableAutoUpdates` all set to `true`, and [`modelCatalogEnabled`](/docs/third-party/claude-desktop/configuration#modelcatalogenabled) set to `false`, the desktop application makes **no outbound connections to Anthropic-operated hosts at runtime**. Without `modelCatalogEnabled: false`, the app also fetches the signed model catalog from `downloads.claude.ai` at launch and then every 5 to 15 minutes, regardless of the four telemetry and update keys, and on devices installed with the offline installer too. A blocked catalog request affects nothing else, and the model picker keeps the names and effort options the app last fetched or shipped with. To keep the catalog without reaching `downloads.claude.ai`, set [`modelCatalogUrl`](/docs/third-party/claude-desktop/configuration#modelcatalogurl) to a mirror inside your network. If Code sessions can use Web Fetch, also set [`skipWebFetchPreflight`](/docs/third-party/claude-desktop/configuration#skipwebfetchpreflight) to `true` (or add `WebFetch` to `disabledBuiltinTools`), because Claude Code in [Code](/docs/third-party/claude-desktop/code) sessions otherwise checks each fetched domain with `api.anthropic.com`. The only required egress is `downloads.claude.ai` (for the VM workspace bundle and Claude CLI binary at session start) and your inference provider. With the [offline installer variant](/docs/third-party/claude-desktop/installation#offline-installation), `downloads.claude.ai` is not needed either, and your inference provider is the only required egress. Enabling [SSH remote sessions](/docs/third-party/claude-desktop/ssh-remote-sessions) adds `downloads.claude.ai` back, except on devices installed with the offline installer that connect only to Linux x64 or arm64 hosts: that installer bundles the remote-session components for those hosts, and connections to hosts on other platforms still download them. Enabling [import from claude.ai](/docs/third-party/claude-desktop/import) likewise lets the app reach `claude.ai` and `api.anthropic.com` (and `storage.googleapis.com` for the export download), but only while a user runs a sign-in import from the wizard. Turning on the [built-in browser](/docs/third-party/claude-desktop/browser) adds `releases.claude.com`, which the app contacts for the built-in browser's site safety check.
+
+An app that receives its configuration from the [Enterprise Admin Console](/docs/third-party/claude-desktop/admin-console) still connects to Anthropic with all of these keys set. It never fetches the model catalog (its model names and options come from the console's settings), and it contacts `api.anthropic.com` at every launch and at each configuration check (every 10 minutes by default) to download its configuration. The app contacts `claude.ai` when the user signs in. While the organization's **Report desktop usage to this organization** switch is on, the app also sends [usage analytics](/docs/third-party/claude-desktop/admin-console#usage-analytics) counts to `api.anthropic.com` every few minutes during use. You turn the telemetry categories for these apps on and off on the console's **Telemetry & updates** page.
+
+These settings control only the application's telemetry, update, and non-essential service connections. They do not change how your inference provider handles conversation content at the endpoint. On Microsoft Foundry, the Claude models behind your inference endpoint run in an Anthropic-operated service, so conversation content reaches Anthropic-operated infrastructure regardless of these settings. See [Data handling by provider](/docs/third-party/claude-desktop/overview#data-handling-by-provider) on the Overview page.
+
+See the [Locked down profile](/docs/third-party/claude-desktop/configuration#recommended-security-profiles) for a complete configuration.
+
+## Proxy support
+
+Claude Desktop and the Claude Code engine it runs follow the operating system's proxy settings by default, including PAC files, and on macOS and Windows so does the Cowork sandbox. You can also pin a specific proxy for all three from managed configuration. See [Network proxy](/docs/third-party/claude-desktop/network-proxy) for the default behavior, the pinned-proxy keys, the traffic that bypasses the proxy, and [TLS-intercepting proxies](/docs/third-party/claude-desktop/network-proxy#tls-intercepting-proxies).

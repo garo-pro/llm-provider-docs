@@ -31,6 +31,1998 @@
       "since": "2026-08-25",
       "reason": "soft-404 (HTML shell)"
     },
+    "https://developers.openai.com/api/docs/guides/model-guidance": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/guides/latest-model"
+    },
+    "https://developers.openai.com/api/docs/guides/prompt-guidance": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/guides/latest-model"
+    },
+    "https://developers.openai.com/api/reference/cli": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/go": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/java": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/python": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/$client": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/$shared": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/audit_logs": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/audit_logs/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/activate": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/deactivate": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/data_retention": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/archive": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/activate": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/deactivate": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/list_rate_limits": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/update_rate_limit": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/subresources/api_keys": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/subresources/api_keys/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_limit": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_limit/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_limit/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_limit/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/audio_speeches": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/audio_transcriptions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/code_interpreter_sessions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/completions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/costs": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/embeddings": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/file_search_calls": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/images": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/moderations": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/vector_stores": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage/methods/web_search_calls": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/audio/subresources/speech": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/audio/subresources/translations": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/audio/subresources/voices": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/artifacts": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/artifacts/methods/content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/artifacts/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/artifacts/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/artifacts/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/stream": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/items/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/items/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns/subresources/items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents/subresources/turns/subresources/items/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/turns": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/turns/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/turns/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/assistants": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/create": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/list": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/assistants/methods/update": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/cancel": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/compact": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/connect": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/subresources/input_items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/subresources/input_items/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/subresources/input_tokens": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/responses/subresources/input_tokens/methods/count": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/methods/create": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/methods/create_and_run": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/methods/update": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/create": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/list": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/messages/methods/update": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/cancel": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/create": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/list": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/submit_tool_outputs": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/methods/update": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/list": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/threads/subresources/runs/subresources/steps/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/assistants/migration"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/subresources/messages": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/chat/subresources/completions/subresources/messages/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/containers/subresources/files/subresources/content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/content_provenance_checks": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/content_provenance_checks/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/conversations/subresources/items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/subresources/output_items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/subresources/output_items/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/evals/subresources/runs/subresources/output_items/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/files/methods/content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/files/methods/retrieve_content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/run": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/validate": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/cancel": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/list_events": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/pause": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/resume": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/methods": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/graders/subresources/grader_models": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/images/methods/edit": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/images/methods/generate": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/methods/connect": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/forks": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/forks/methods/connect": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/accept": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/download_recording": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/fork": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/hangup": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/refer": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/reject": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sideband": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/live/subresources/sideband/methods/connect": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/methods/connect": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/sessions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/sessions/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/transcription_sessions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/transcription_sessions/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/translations": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/subresources/client_secrets": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/subresources/client_secrets/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/responses/methods/connect": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/responses/subresources/input_items": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/responses/subresources/input_tokens/methods/count": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/safety": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/safety/subresources/alerts": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/safety/subresources/alerts/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/content/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions/subresources/content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/skills/subresources/versions/subresources/content/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/uploads/methods/complete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/uploads/subresources/parts": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/videos/methods/create_character": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/videos/methods/download_content": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/videos/methods/edit": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/videos/methods/extend": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/videos/methods/get_character": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/videos/methods/remix": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/delete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/retrieve": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/rotate_secret": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/test": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/methods/update": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/subresources/event_types": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/webhooks/subresources/event_types/methods/list": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/ruby": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/typescript": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/auth/callback": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/chatgpt": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/commerce/specs/file-upload/products-fragments/currently-stable": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/commerce/specs/file-upload/products-fragments/upcoming-draft": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/community": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/community/codex-ambassadors": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/community/codex-for-oss": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/community/hackathons": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/community/meetups": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/community/students": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/agents": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/audio": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/code": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/codex": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/cookbooks": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/cua": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/docs-mcp": {
+      "since": "2026-09-17",
+      "reason": "soft-404 (HTML shell)"
+    },
+    "https://developers.openai.com/resources/evals": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/fine-tuning": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/gpt-oss": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/guides": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/imagegen": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/scaling": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/tools": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/videogen": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/resources/videos": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/abyssal-bioluminescent-ecosystem": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/all": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/api": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/apps": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/arcade-landing-page": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/architecture-studio": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/asterism": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/backroom-center-corrupted": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/below-the-surface": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/biome-lab": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/brick-platformer": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/chatkit-world": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/codex-101": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/codex-modeling-studio": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/codex-pet-arena": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/coffee-house-landing-page": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/courtyard-house": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/crossword-desk": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/cubecade-rubiks": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/e-commerce-website": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/enablement-hub": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/event-planning-hub": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/field-day": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/forged-in-silence": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/frame-studio": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/games": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/glass-towers": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/golden-gate-flight-experience": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/hollowflux": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/idea-intake": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/impossible-kinetic-architecture": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/kiln": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/ko-field-beat-machine": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/launch-cal": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/little-ritual": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/living-cell-cross-section": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/london-train": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/margin-editor": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/material-lab": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/minitown": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/nightjar-listening-room": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/onboarding-hub": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/openai-fm": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/openai-imagegen-demo": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/paper-glider": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/paperie": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/pattern-studio": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/phantasy-codex-adventure": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/physics-museum": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/procedural-city-generator": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/prototypes/little-tasks": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/pulse-dashboard": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/real-estate-data-viz": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/ridge-pack": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/rift-vox": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/scent-cartography": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/solar-system-demo": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/stop-motion-desk": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/sunday-table": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/sunwake": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/swifty-dungeon": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/swifty-roguelike": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/terrain-mixer": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/theme-park-builder": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/tidal-house": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/tidegarden": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/time-to-fly": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/tiny-rails-rollercoaster": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/turn-based-rpg": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/type-field": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/typewriterweb": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/velocity-loop": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/verdant-market": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/void-explorer": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/wandernote": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/watchmaker-landing-page": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/waveform-studio": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/webroom": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/websites": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/codex": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/complete": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/course-finish": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/create": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/hands-on/codex": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/hands-on/work": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/learn/builder": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/learn/work": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/my-training": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/build-a-shareable-site": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/building-a-shareable-site": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/computer-and-browser": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/create-slides-and-docs": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/creating-slides-and-docs": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/getting-started": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/plugins-and-skills": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/scheduled-tasks": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/talk-to-chatgpt-work": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/using-voice": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/using-your-computer-and-browser": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/work-on-your-phone": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/walkthroughs/working-on-your-phone": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/training/work-lab": {
+      "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://docs.z.ai/api-reference/rate-limit": {
+      "since": "2026-09-17",
+      "reason": "moved -> https://z.ai/manage-apikey/rate-limits"
+    },
     "https://modelcontextprotocol.io/community/auth/charter": {
       "since": "2026-08-25",
       "reason": "moved -> https://modelcontextprotocol.io/community/interest-groups/auth"
