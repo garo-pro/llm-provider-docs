@@ -1,4 +1,4 @@
-Title: Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned
+Title: Red teaming language models to reduce harms
 
 URL Source: https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned
 
