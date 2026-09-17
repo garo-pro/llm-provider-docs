@@ -1,0 +1,9 @@
+# Dependabot-only manifest: mirrors the inline PEP 723 metadata block at the
+# top of fetcher.py, which is what `uv run scripts/fetcher.py` actually
+# installs from. This file exists solely so Dependabot has something to
+# scan; update fetcher.py's dependency list to match whenever this changes.
+aiohttp==3.14.3
+aiofiles==25.1.0
+tqdm==4.70.1
+trafilatura==2.2.0
+lxml==6.1.3

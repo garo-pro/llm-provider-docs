@@ -28,13 +28,15 @@ Usage:
 # /// script
 # requires-python = ">=3.14"
 # dependencies = [
-#   "aiohttp",
-#   "aiofiles",
-#   "tqdm",
-#   "trafilatura",
-#   "lxml",
+#   "aiohttp==3.14.3",
+#   "aiofiles==25.1.0",
+#   "tqdm==4.70.1",
+#   "trafilatura==2.2.0",
+#   "lxml==6.1.3",
 # ]
 # ///
+# Versions pinned to match scripts/requirements.txt, which exists only so
+# Dependabot has a manifest to scan -- keep both in sync when bumping.
 
 import asyncio
 import hashlib
