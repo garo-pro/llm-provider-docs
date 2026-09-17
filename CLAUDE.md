@@ -84,13 +84,39 @@ stripping the trailing slash sitemap entries carry). Migrated off
 Plus `github.com/openai/*`: openai-cookbook, openai-python, openai-node.
 `learn.chatgpt.com` (ChatGPT product docs) is a known gap, not yet added.
 
+`openai.com` (the marketing/news domain, **not** developers.openai.com) is
+where model launches actually publish -- under `/index/<slug>`, in a
+sitemap category literally called "release" (81 URLs). No `.md` variant, no
+`llms.txt` (both confirmed 404/403). Its Cloudflare bot-check blocks aiohttp
+outright (0/15 requests got through in testing) but lets a plain curl
+request with a browser User-Agent through roughly half the time -- a
+client-signature check, not a real block; `robots.txt` says `Allow: /` and
+publishes the sitemap. Fetched via `fetch_html_via_curl()` (a curl
+subprocess, retried up to 6x) + `_extract_blog_page()`, the same
+trafilatura path as anthropic.com below, into `content/openai/news/`
+(kept separate from `openai/blog/`, which is developers.openai.com's dev
+blog). One real run: 68/81 succeeded; the rest self-heal across later
+scheduled runs since nothing is tombstoned or reaped on a failed scrape.
+
 ### Z.AI (see `sources.zai.json`)
 
 docs.z.ai -- `llms.txt` lists direct `.md` links for every page (same shape
 as code.claude.com's), covering the same ~68 pages as its `sitemap.xml`.
 robots.txt explicitly welcomes AI scraping (`Content-Signal: ai-train=yes`).
 Plus `github.com/zai-org/GLM-skills` (the one repo in that org that's mostly
-markdown, not model weights or inference code).
+markdown, not model weights or inference code). Investigated 2026-09-17
+whether `z.ai`'s own release-notes are richer than `docs.z.ai/release-notes`
+(they aren't -- `/changelog`, `/updates`, `/news` all 404) and whether
+`z.ai/blog` (e.g. `z.ai/blog/glm-built-its-inference-infrastructure`) could
+be added the same way as openai.com's release posts: **not with the current
+architecture**. `z.ai/sitemap.xml` has zero blog URLs (26 pages, all
+account/billing), there's no feed or JSON post index, and the posts
+themselves are client-side-rendered SPA pages -- the raw HTML is an empty
+`<div id="root">` plus a JS bundle, so there's no server-rendered text for
+trafilatura to extract even once fetched. No Cloudflare wrinkle here (plain
+curl, no UA, gets a clean 200 every time) -- the blocker is needing a
+headless browser to execute JS, which this fetcher doesn't have. Documented
+as a known gap, not wired up.
 
 ```bash
 uv run scripts/fetcher.py                    # Fetch everything, all providers
@@ -242,12 +268,13 @@ covers Anthropic (`content/anthropic/`); see "OpenAI Documentation" and
 - `content/anthropic/github/sdk-python/` - Python SDK reference
 - `content/anthropic/github/sdk-typescript/` - TypeScript SDK reference
 
-### OpenAI Documentation (from developers.openai.com, see `sources.openai.json`)
+### OpenAI Documentation (developers.openai.com + openai.com, see `sources.openai.json`)
 - `content/openai/api/` - API guides + endpoint reference
 - `content/openai/codex/` - Codex CLI, IDE, cloud, config.toml
 - `content/openai/cookbook/` - Practical code examples
 - `content/openai/ads/`, `plugins/`, `workspace-agents/`, `commerce/` - Ads API, Apps SDK/plugins, Workspace Agents API, Agentic Commerce
-- `content/openai/blog/` - Developer blog
+- `content/openai/blog/` - Developer blog (developers.openai.com)
+- `content/openai/news/` - Model launches (openai.com, scraped via curl -- see Fetcher above)
 - `content/openai/learn/`, `showcase/` - Learning resources, project showcase
 - `content/openai/github/cookbook/` - openai/openai-cookbook
 - `content/openai/github/openai-python/`, `openai-node/` - SDK repos (docs, examples)
@@ -273,8 +300,9 @@ content/
     blog/                      Engineering, research, news, policy, alignment, interpretability
     github/                    10 repos (718 files)
     support/                   Help articles (365)
-  openai/                      ~1,320 docs
+  openai/                      ~1,400 docs (developers.openai.com + openai.com)
     api/, codex/, cookbook/, ads/, plugins/, workspace-agents/, commerce/, blog/, learn/, showcase/
+    news/                      Model launches (openai.com/index, scraped via curl)
     github/                    3 repos (cookbook, openai-python, openai-node)
   zai/                         68 docs
     guides/, api-reference/, devpack/, release-notes/

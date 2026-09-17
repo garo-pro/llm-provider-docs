@@ -1,0 +1,34 @@
+Title: GPT-2: 1.5B release
+
+URL Source: https://openai.com/index/gpt-2-1-5b-release
+
+Markdown Content:
+![GPT-2 1.5B Release](https://images.ctfassets.net/kftzwdyauwt9/5ca4df8a-bd0c-47e0-7efe1b15187a/f891c43eaec1e52760e3cf7c9902a819/gpt-2-1-5b-release.jpg?w=3840&q=90&fm=webp)
+
+Illustration: Ben Barry
+
+As the final model release of [GPT‑2](https://openai.com/index/better-language-models/)’s [staged release](https://openai.com/index/gpt-2-6-month-follow-up/), we’re releasing the largest version (1.5B parameters) of GPT‑2 along with [code and model weights(opens in a new window)](https://github.com/openai/gpt-2-output-dataset) to facilitate detection of outputs of GPT‑2 models. While there have been larger language models released since August, we’ve continued with our original staged release plan in order to provide the community with a test case of a full staged release process. We hope that this test case will be useful to developers of future powerful models, and we’re actively continuing the conversation with the AI community on responsible publication.
+
+While there have been larger language models released since August, we’ve continued with our original staged release plan in order to provide the community with a test case of a full staged release process. We hope that this test case will be useful to developers of future powerful models, and we’re actively continuing the conversation with the AI community on responsible publication.
+
+**1. Humans find GPT‑2 outputs convincing**. Our partners at Cornell University surveyed people to assign GPT‑2 text a credibility score across model sizes. People gave the 1.5B model a “credibility score” of 6.91 out of 10. This is marginally greater than outputs from the 774M model (6.72) and significantly above the medium 355M model (6.07). These results make us more inclined to release the 1.5B model, as the incremental increase in human-perceived credibility relative to 774M seems low.
+
+**2. GPT‑2 can be fine-tuned for misuse**. Our partners at the Middlebury Institute of International Studies’ Center on Terrorism, Extremism, and Counterterrorism (CTEC) found that extremist groups can use GPT‑2 for misuse, specifically by fine-tuning GPT‑2 models on four ideological positions: white supremacy, Marxism, jihadist Islamism, and anarchism. CTEC demonstrated that it’s possible to create models that can generate synthetic propaganda for these ideologies. They also show that, despite having low detection accuracy on synthetic outputs, ML-based detection methods can give experts reasonable suspicion that an actor is generating synthetic text.
+
+**3. Detection is challenging**. We expect that content-based detection of synthetic text is a long-term challenge. To test whether machine learning approaches may help today, we conducted in-house detection research and developed a [detection model(opens in a new window)](https://github.com/openai/gpt-2-output-dataset) that has detection rates of ~95% for detecting 1.5B GPT‑2‑generated text. <sup>We believe this is not high enough accuracy for standalone detection and needs to be paired with metadata-based approaches, human judgment, and public education to be more effective. We are releasing this model to aid the study of research into the detection of synthetic text, although this does let adversaries with access better evade detection.</sup>
+
+While we found detection accuracy depends heavily on the sampling methods used in training and testing, we also found detection to be more reliable when training across a range of sampling techniques. As seen in the figure below, we observed that larger models’ outputs are more difficult to classify, but training on larger models’ outputs makes detection results more accurate and robust. We expect this trend to continue and that detection will be more challenging with increased model size.
+
+**4. We’ve seen no strong evidence of misuse so far**. While we’ve seen some discussion around GPT‑2’s potential to augment high-volume/low-yield operations like spam and phishing, we haven’t seen evidence of writing code, documentation, or instances of misuse. We think synthetic text generators have a higher chance of being misused if their outputs become more reliable and coherent. We acknowledge that we cannot be aware of all threats, and that motivated actors can replicate language models without model release.
+
+**5. We need standards for studying bias**. Language models have biases. Working out how to study these biases, discuss them, and address them, is a challenge for the AI research community. We’ve approached the challenge of bias in two ways:
+
+- Publishing a [model card(opens in a new window)](https://github.com/openai/gpt-2/blob/master/model_card.md)- Performing a qualitative, in-house evaluation of some of the biases in GPT‑2: We probed GPT‑2 for some gender, race, and religious biases, using those findings to inform our model card. These probes are not comprehensive and raise the need for collaboration on bias analysis frameworks.
+
+Our experience with GPT‑2 over the past 9 months has given us valuable insight into the challenges and opportunities for creating responsible publication norms in AI. We’re continuing our work on this issue via participation in the Partnership on AI’s “Responsible Publication Norms for Machine Learning” project and discussions with our colleagues in the research community.
+
+*If you’d like to develop large-scale AI systems and think about their implications,* *we’re hiring**.*
+
+## Related articles
+
+[View all](https://openai.com/news/)

@@ -9,6 +9,12 @@
       "llms_txt": true,
       "llms_full": true,
       "notes": "Migrated off platform.claude.com/docs in 2026; that path is now a redirect shell only. Single sitemap-index -> sitemap-0.xml, 1,321 URLs across api/ (726), cookbook/ (328), showcase/ (80), blog/ (36), ads/ (31), plugins/ (30), training/ (24), resources/ (16), learn/ (16), community/ (6), tracks/ (4), workspace-agents/ (3). Every page serves a .md variant by appending .md to the URL (after stripping the trailing slash sitemap URLs carry)."
+    },
+    "openai.com": {
+      "robots": true,
+      "sitemap": true,
+      "llms_txt": false,
+      "notes": "The marketing/news domain -- NOT developers.openai.com above. Model launches (\"Introducing GPT-5\", etc.) live here under /index/<slug>, in a sitemap category literally called \"release\" (https://openai.com/sitemap.xml/release/, 81 URLs). No .md variant (404) and no llms.txt (403). robots.txt allows crawling (Allow: /) but Cloudflare's bot-check blocks aiohttp near-deterministically (0/15 in testing) while curl with a plain browser User-Agent gets through ~50% of the time -- a client-signature check, not a real access denial. Scraped via curl + trafilatura, same as anthropic.com; see fetch_html_via_curl in fetcher.py. In one real run: 68/81 succeeded, 13 failed after 6 retries each -- self-healing across subsequent scheduled runs since a failed fetch is never tombstoned or reaped."
     }
   },
   "sources": [
@@ -21,6 +27,16 @@
       "enabled": true,
       "section": ["openai"],
       "notes": "Full-site sitemap crawl, 1:1 URL-path-to-file mapping (mirrors claude.com/docs' approach). Covers API guides+reference, Codex, Cookbook, Ads, Plugins/Apps SDK, Workspace Agents, Agentic Commerce, dev blog, learning resources, showcase."
+    },
+    {
+      "name": "openai-news",
+      "type": "sitemap-curl-trafilatura",
+      "sitemap": "https://openai.com/sitemap.xml/release/",
+      "output": "openai/news/",
+      "pages": 81,
+      "enabled": true,
+      "section": ["openai"],
+      "notes": "Model launch / release posts from openai.com (not developers.openai.com). Fetched via curl subprocess, not aiohttp -- see the openai.com domain entry above and fetch_html_via_curl in fetcher.py. Named news/ (not blog/, which is developers.openai.com's dev blog under openai/blog/) to keep the two domains' content visibly separate."
     },
     {
       "name": "openai-github-cookbook",

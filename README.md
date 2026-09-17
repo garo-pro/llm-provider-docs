@@ -58,6 +58,7 @@ server-rendered, so no headless browser is needed.
 | Source | Section | Files | What |
 |--------|---------|------:|------|
 | developers.openai.com | `--section openai` | ~1,320 | API guides+reference, Codex, Cookbook, Ads, Plugins/Apps SDK, Workspace Agents, Agentic Commerce, dev blog, learning resources, showcase |
+| openai.com | `--section openai` | ~70-80 | Model launches ("release" sitemap category), scraped via curl |
 | github.com/openai | `--section openai` | ~480 | openai-cookbook, openai-python, openai-node |
 
 developers.openai.com is the successor to the old `platform.openai.com/docs`
@@ -65,6 +66,17 @@ path (now just a redirect shell) -- a single sitemap covers the whole site,
 and every page serves a `.md` variant directly. `learn.chatgpt.com` (ChatGPT
 product docs, linked from the root `llms.txt` hub) is a known gap: a separate
 domain, not yet added.
+
+`openai.com` (the marketing/news domain -- a different site from
+developers.openai.com) is where model launches actually publish, under
+`/index/<slug>`. No `.md` variant, no `llms.txt`. Its Cloudflare bot-check
+blocks `aiohttp` outright but lets `curl` with a browser User-Agent through
+roughly half the time, so this source is fetched via a `curl` subprocess
+(retried up to 6x) and converted with [trafilatura](https://trafilatura.readthedocs.io/),
+the same approach used for anthropic.com. `robots.txt` allows crawling
+(`Allow: /`) and publishes the sitemap this uses. Output lands in
+`content/openai/news/`, kept separate from `content/openai/blog/` (the
+developers.openai.com dev blog).
 
 ### Z.AI -- `content/zai/` (see `sources.zai.json`)
 
@@ -76,6 +88,19 @@ domain, not yet added.
 docs.z.ai's `llms.txt` lists direct `.md` links for every page (same shape as
 code.claude.com's), and its `robots.txt` explicitly welcomes AI scraping
 (`Content-Signal: ai-train=yes`).
+
+`z.ai/blog` (the marketing site's announcement blog, e.g.
+`z.ai/blog/glm-built-its-inference-infrastructure`) is a known gap, and a
+harder one than openai.com's: its `sitemap.xml` has zero blog URLs (26
+pages, all account/billing) and there's no feed or JSON post index, so
+there's no discovery surface at all. Worse, the posts are client-side-
+rendered SPA pages -- the raw HTML is an empty `<div id="root">` plus a JS
+bundle, so there's no server-rendered text for trafilatura even once
+fetched (no Cloudflare wrinkle here; plain curl gets a clean 200 every
+time). Fixing this needs a headless browser, which this fetcher doesn't
+have. `docs.z.ai/release-notes` was checked against `z.ai/changelog`,
+`/updates`, `/news` for a richer separate surface -- all 404, so the
+existing release-notes coverage is already complete.
 
 ```
 content/
@@ -110,6 +135,7 @@ content/
     codex/                 Codex CLI, IDE, cloud, config
     cookbook/              Practical code examples
     ads/, plugins/, workspace-agents/, commerce/, blog/, learn/, showcase/
+    news/                  Model launches (openai.com, scraped via curl)
     github/
       cookbook/            openai/openai-cookbook
       openai-python/       Python SDK repo (docs, examples)

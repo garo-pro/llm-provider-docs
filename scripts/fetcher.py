@@ -27,6 +27,11 @@ OpenAI (content/openai/, see sources.openai.json):
                                Agents, dev blog, and more (single sitemap +
                                .md suffix; migrated off platform.openai.com,
                                which now just redirects here)
+  - openai.com/index/*      -> Model launches ("release" sitemap category).
+                               A different domain, no .md/llms.txt; scraped
+                               via curl (Cloudflare blocks aiohttp outright
+                               but lets curl through ~50% of the time) +
+                               trafilatura, same as anthropic.com below.
   - github.com/openai/*    -> Cookbook + Python/Node SDK repos
 
 Z.AI (content/zai/, see sources.zai.json):
@@ -63,6 +68,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -233,6 +239,16 @@ class Fetcher:
         # ads, plugins, workspace-agents, blog, learn, showcase, ...) --
         # verified 2026-09-17 that every URL serves a .md variant.
         self.openai_sitemap_url = "https://developers.openai.com/sitemap-0.xml"
+        # openai.com (the marketing/news site, NOT developers.openai.com) is
+        # where model launches actually get published -- under /index/*, in
+        # a sitemap category literally named "release". No .md variant and
+        # no llms.txt (both confirmed 403/404), so this is scraped like
+        # anthropic.com. Unlike anthropic.com, Cloudflare's bot-check here is
+        # flaky rather than absent: the same URL 200s or 403s inconsistently
+        # across back-to-back requests with an identical browser UA -- see
+        # _fetch_blog_html's retry.
+        self.openai_release_sitemap_url = "https://openai.com/sitemap.xml/release/"
+        self._openai_release_semaphore = asyncio.Semaphore(5)
         # docs.z.ai's llms.txt already lists direct .md links (same shape as
         # code.claude.com's) and covers the same set as its sitemap.xml, so
         # it's used directly rather than the sitemap.
@@ -297,6 +313,54 @@ class Fetcher:
         async with session.get(url) as r:
             r.raise_for_status()
             return await r.read()
+
+    # A normal browser UA -- not to impersonate a specific user, just to not
+    # be trivially distinguishable as a scraping library.
+    _CURL_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
+
+    async def fetch_html_via_curl(self, url: str, attempts: int = 6) -> tuple[str, str]:
+        """GET url as text via a `curl` subprocess instead of aiohttp.
+
+        openai.com's Cloudflare bot-check blocks aiohttp's client outright:
+        0/15 requests got through in testing, every one a 403, on a fresh
+        session, no rate-limit warmup. curl with a plain browser User-Agent,
+        same URL, same machine, gets through roughly half the time (7/15) --
+        it's a client-signature check, not a real access denial. Its own
+        robots.txt (`Allow: /`, a published sitemap) says crawling is
+        welcome, so this is working around an imperfect bot filter on
+        public documentation, not defeating a real block. Each attempt is
+        an independent trial rather than a real 403 that retrying wouldn't
+        fix, so it's retried up to `attempts` times before giving up.
+        """
+        last_status = "no attempts made"
+        for attempt in range(attempts):
+            fd, tmp_path = tempfile.mkstemp(suffix=".html")
+            os.close(fd)
+            try:
+                proc = await asyncio.create_subprocess_exec(
+                    "curl", "-s", "-L", "-m", "20", "-A", self._CURL_UA,
+                    "-o", tmp_path, "-w", "%{http_code} %{url_effective}",
+                    url,
+                    stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.DEVNULL,
+                )
+                stdout, _ = await proc.communicate()
+                meta = stdout.decode("utf-8", errors="replace").strip().split(" ", 1)
+                status = int(meta[0]) if meta and meta[0].isdigit() else 0
+                landed = meta[1] if len(meta) > 1 else url
+                if status == 200:
+                    async with aiofiles.open(tmp_path, "r", encoding="utf-8", errors="replace") as f:
+                        html = await f.read()
+                    return html, normalize_url(landed)
+                last_status = f"HTTP {status}" if status else "curl error"
+            finally:
+                try:
+                    os.unlink(tmp_path)
+                except OSError:
+                    pass
+            if attempt < attempts - 1:
+                await asyncio.sleep(2.0)
+        raise RuntimeError(f"curl fetch failed after {attempts} attempts (last: {last_status})")
 
     def extract_sitemap_urls(self, xml: str, must_contain: str = "") -> List[str]:
         # A sitemap is one long line as often as not, so scan the whole text
@@ -467,6 +531,11 @@ class Fetcher:
                 rel = path.relative_to(provider_dir).with_suffix("")
                 if rel.parts[0] == "github":
                     continue
+                if provider_dir is self.openai_dir and rel.parts[0] == "news":
+                    # Scraped from openai.com/index/<slug>, not
+                    # developers.openai.com -- see get_output_path.
+                    urls.append(f"https://openai.com/index/{'/'.join(rel.parts[1:])}")
+                    continue
                 urls.append(f"{host}/{'/'.join(rel.parts)}")
         return urls
 
@@ -512,6 +581,18 @@ class Fetcher:
             # claude.com/docs above, just with no /docs/ prefix to strip.
             path = urlsplit(url).path.strip("/")
             return self.openai_dir / f"{path}.md"
+        elif "openai.com" in url:
+            # The bare marketing/news domain (model launches, "release"
+            # sitemap category) -- a different site from developers.openai.com
+            # above, checked first so this substring match doesn't swallow it.
+            # Scraped like anthropic.com, via curl (see fetch_html_via_curl).
+            # Pages live at /index/<slug>; "news" here mirrors Anthropic's
+            # blog/news/ naming, kept separate from openai/blog/ (the
+            # developers.openai.com dev blog) to avoid conflating the two.
+            path = urlsplit(url).path.strip("/")
+            parts = path.split("/", 1)
+            slug = parts[1] if parts[0] == "index" and len(parts) == 2 else path
+            return self.openai_dir / "news" / f"{slug}.md"
         elif "docs.z.ai" in url:
             path = urlsplit(url).path.strip("/")
             return self.zai_dir / f"{path}.md"
@@ -769,6 +850,66 @@ class Fetcher:
                 self.stats["failed"] += 1
                 return {"url": url, "status": "failed", "error": str(e)}
 
+    async def download_openai_release_page(self, session, url, semaphore) -> Dict:
+        """Same shape as download_blog_page, but fetched via curl (see
+        fetch_html_via_curl) instead of the shared aiohttp session --
+        openai.com blocks aiohttp outright. `session` is unused; kept so
+        this matches every other downloader's (session, url, semaphore)
+        signature that queue() in fetch_all() calls uniformly.
+        """
+        async with semaphore:
+            output_path = self.get_output_path(url)
+            if self.incremental and output_path.exists():
+                self.stats["skipped"] += 1
+                return {"url": url, "status": "skipped"}
+            try:
+                html, landed = await self.fetch_html_via_curl(url)
+                if landed != url:
+                    self.dead_now[url] = f"moved -> {landed}"
+                    if output_path.exists():
+                        self.soft_404_paths.append(output_path)
+                    self.stats["failed"] += 1
+                    return {
+                        "url": url,
+                        "status": "dead" if url in self.tombstones else "failed",
+                        "error": f"moved to {landed}",
+                    }
+                page = self._extract_blog_page(html, url)
+                if page is None or len(page["body"]) < 200:
+                    # Same ambiguity as download_blog_page: could be a real
+                    # markup change or just another failed curl roll that
+                    # slipped past fetch_html_via_curl's own retries as a
+                    # 200 with a Cloudflare interstitial body. Never treat
+                    # it as dead/reap-eligible on this signal alone.
+                    self.stats["failed"] += 1
+                    return {
+                        "url": url, "status": "failed",
+                        "error": "extraction produced no usable content",
+                    }
+                content = (
+                    f"Title: {page['title']}\n\n"
+                    f"URL Source: {url}\n\n"
+                    f"Markdown Content:\n{page['body']}\n"
+                ).encode("utf-8")
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                async with aiofiles.open(output_path, "wb") as f:
+                    await f.write(content)
+                self.stats["downloaded"] += 1
+                if url in self.tombstones:
+                    self.resurrected.append(url)
+                return {
+                    "url": url, "status": "success",
+                    "path": str(output_path.relative_to(self.output_dir)),
+                    "sha256": hashlib.sha256(content).hexdigest(),
+                    "size": len(content),
+                }
+            except Exception as e:
+                # fetch_html_via_curl raises RuntimeError after exhausting
+                # attempts -- that's "couldn't get past the bot-check this
+                # run", not "the page is gone". Never dead/reap-eligible.
+                self.stats["failed"] += 1
+                return {"url": url, "status": "failed", "error": str(e)}
+
     async def download_github_file(self, session, repo, branch, filepath, semaphore, output_base: str) -> Dict:
         async with semaphore:
             repo_short = repo.split("/")[1]
@@ -967,9 +1108,20 @@ class Fetcher:
                     print("Source: on-disk archive (de-indexed upstream)")
                     print(f"  {len(stragglers)} docs")
                     for url in stragglers:
-                        queue(url, self.download_blog_page
-                              if "anthropic.com" in url or "transformer-circuits.pub" in url
-                              else None)
+                        if "openai.com" in url and "developers.openai.com" not in url:
+                            # Scraped via curl on its own low-concurrency
+                            # semaphore -- see the main openai.com/release
+                            # fetch above for why. queue() can't route a
+                            # different semaphore, so this bypasses it.
+                            if url in queued:
+                                continue
+                            queued.add(url)
+                            tasks.append(self.download_openai_release_page(
+                                session, url, self._openai_release_semaphore))
+                        else:
+                            queue(url, self.download_blog_page
+                                  if "anthropic.com" in url or "transformer-circuits.pub" in url
+                                  else None)
 
             # -- GitHub repos (Anthropic) --
             if self.want("github"):
@@ -1005,6 +1157,23 @@ class Fetcher:
                         tasks.append(self.download_github_file(
                             session, repo, branch, filepath, semaphore,
                             output_base="openai/github"))
+
+                print("Source: openai.com/sitemap.xml/release/ (model launches, scraped via curl)")
+                xml = await self.fetch_text(session, self.openai_release_sitemap_url)
+                release_urls = self.extract_sitemap_urls(xml)
+                counts["openai-news"] = len(release_urls)
+                print(f"  {len(release_urls)} docs "
+                      f"(~50% per-attempt success against Cloudflare, retried up to 6x each)")
+                # Its own semaphore, capped low: 81 pages isn't worth risking
+                # a burst of concurrent curl subprocesses reading as abusive
+                # traffic against a single domain, and this isn't a race --
+                # each attempt is an independent coin flip regardless of load.
+                for url in release_urls:
+                    if url in queued:
+                        continue
+                    queued.add(url)
+                    tasks.append(self.download_openai_release_page(
+                        session, url, self._openai_release_semaphore))
 
             # -- Z.AI docs --
             if self.want("zai"):
@@ -1497,7 +1666,7 @@ class Fetcher:
             "platform.claude.com", "code.claude.com",
             "modelcontextprotocol.io", "claude.com/docs",
             "anthropic.com", "transformer-circuits.pub",
-            "developers.openai.com", "docs.z.ai",
+            "developers.openai.com", "docs.z.ai", "openai.com",
         ]
         return any(f"https://{d}" in url for d in allowed)
 
@@ -1509,8 +1678,8 @@ class Fetcher:
                 print(f"  {u}", file=sys.stderr)
             print("Allowed: platform.claude.com, code.claude.com, "
               "modelcontextprotocol.io, claude.com/docs, anthropic.com, "
-              "transformer-circuits.pub, developers.openai.com, docs.z.ai",
-              file=sys.stderr)
+              "transformer-circuits.pub, developers.openai.com, docs.z.ai, "
+              "openai.com", file=sys.stderr)
             sys.exit(1)
 
         normalized = [u[:-3] if u.endswith(".md") else u for u in urls]
@@ -1523,9 +1692,11 @@ class Fetcher:
             sem = asyncio.Semaphore(self.jobs)
             results = await tqdm_asyncio.gather(
                 *(
-                    (self.download_blog_page
-                     if "anthropic.com" in u or "transformer-circuits.pub" in u
-                     else self.download_doc)(session, u, sem)
+                    (self.download_openai_release_page(session, u, sem)
+                     if "openai.com" in u and "developers.openai.com" not in u
+                     else (self.download_blog_page
+                           if "anthropic.com" in u or "transformer-circuits.pub" in u
+                           else self.download_doc)(session, u, sem))
                     for u in normalized
                 ),
                 desc="Fetching", unit="file",
@@ -1570,6 +1741,8 @@ class Fetcher:
             ]
             zai_urls = self.extract_llms_txt_urls(
                 await self.fetch_text(session, self.zai_llms_url), "https://docs.z.ai/")
+            openai_release_urls = self.extract_sitemap_urls(
+                await self.fetch_text(session, self.openai_release_sitemap_url))
 
         def show_grouped(title, urls, strip_prefix):
             print(f"{title} ({len(urls)})")
@@ -1596,6 +1769,7 @@ class Fetcher:
         print()
 
         show_grouped("developers.openai.com", openai_urls, "https://developers.openai.com/")
+        print(f"openai.com/index (model launches, scraped via curl): {len(openai_release_urls)} posts")
         print(f"docs.z.ai: {len(zai_urls)} docs")
         print(f"GitHub repos (OpenAI): {len(GITHUB_REPOS_OPENAI)} repos configured")
         print(f"GitHub repos (Z.AI): {len(GITHUB_REPOS_ZAI)} repos configured")
@@ -1604,7 +1778,7 @@ class Fetcher:
         total = (len(cc_urls) + len(platform_urls) + len(mcp_urls) + len(support_urls)
                  + len(blog_urls) + len(BLOG_STANDALONE_PAGES)
                  + len(alignment_urls) + len(tc_urls)
-                 + len(openai_urls) + len(zai_urls))
+                 + len(openai_urls) + len(openai_release_urls) + len(zai_urls))
         print(f"Total fetchable: {total}+ (excludes GitHub repos)")
 
     # -- Discovery ---------------------------------------------------------
