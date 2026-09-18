@@ -108,8 +108,8 @@ Ultimately, experiments like entering Claude into cyber competitions to understa
 
 We thank Artem Petrov and Dmitrii Volkov from Palisade Research for providing data from the HackTheBox AI vs Human CTF Challenge. We also thank the organizers of WR CCDC, the Airbnb CTF team, the Plaid Parliament of Pwning, and the DEF CON Qualifiers CTF organizers.
 
+Claude made the open-source models that scientists use to predict and design biomolecules faster and more memory-efficient. Claude optimized more than 30 of these models in just under four weeks, speeding them up roughly 4x on average. It also created a low-memory mode that enables the accurate prediction of biomolecular systems larger than 10,000 tokens (amino acids, nucleotides, and atoms from small molecules and ions) on a single NVIDIA GPU node.
+
 Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
 
 We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
-
-We are sharing the first complete computer-checked proof of Fermat’s Last Theorem. Claude worked largely autonomously over 11 days to write the proof in the Lean programming language.

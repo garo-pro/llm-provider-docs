@@ -50,8 +50,8 @@ These are not all on the same maturity curve. Where spectral analysis is far eno
 
 We are expanding the [AI for Science program](https://www.anthropic.com/news/ai-for-science-program) to more explicitly support chemistry research. If you are a researcher working on a problem where Claude could plausibly help, especially one that involves the kinds of multimodal reasoning we have described, we would like to hear from you at [scienceblog@anthropic.com](mailto:scienceblog@anthropic.com), or through the AI for Science application.
 
+Claude made the open-source models that scientists use to predict and design biomolecules faster and more memory-efficient. Claude optimized more than 30 of these models in just under four weeks, speeding them up roughly 4x on average. It also created a low-memory mode that enables the accurate prediction of biomolecular systems larger than 10,000 tokens (amino acids, nucleotides, and atoms from small molecules and ions) on a single NVIDIA GPU node.
+
 Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
 
 We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
-
-We are sharing the first complete computer-checked proof of Fermat’s Last Theorem. Claude worked largely autonomously over 11 days to write the proof in the Lean programming language.

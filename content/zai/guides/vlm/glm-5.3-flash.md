@@ -2,7 +2,7 @@
 > Fetch the complete documentation index at: https://docs.z.ai/llms.txt
 > Use this file to discover all available pages before exploring further.
 
-# GLM-5.3-Flash
+# GLM-5.3-Flash/FlashX
 
 <Tip>
   GLM-5.3-Flash is now fully available on the [GLM Coding Plan](https://z.ai/subscribe). With native multimodal capabilities and 3× the quota, it delivers a smoother and more cost-effective coding experience.
@@ -10,7 +10,7 @@
 
 ## Model Overview
 
-GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost.
+**GLM-5.3-Flash/GLM-5.3-FlashX** is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost.
 
 * **Highly Efficient Hybrid Architecture**
 
@@ -23,6 +23,8 @@ Visual capabilities are built into the coding loop: the model observes interface
 * **A Professional Work Partner Beyond Coding**
 
 Beyond coding, GLM-5.3-Flash supports professional workflows such as Office tasks, financial research, and document processing. It autonomously breaks down goals, invokes tools, and reviews outputs — from research and analysis to finished PPTX, PDF, DOCX, and XLSX deliverables.
+
+**GLM-5.3-FlashX** is now live, delivering inference speeds of **200 tokens/s** for faster responses and a smoother experience.
 
 [↗ blog](https://z.ai/blog/glm-5.3-flash)
 
@@ -48,7 +50,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 
 #### **Model API**
 
-* **Model Code**：`glm-5.3-flash`
+* **Model Code**：`glm-5.3-flash`/`glm-5.3-flashx`
 * **API Documentation**：[Chat Completion API](https://docs.z.ai/api-reference/introduction)
 * **Parameter Settings**：Text parameters are consistent with GLM-5.3, with support for a 1M-token context window.
 * **Image Parameters**：Add a content block with `type: image_url` to` messages[].content[]`, and pass the image URL (recommended) or a Base64 Data URL through `image_url.url`. Multiple images can be added by including multiple `image_url` content blocks.
@@ -56,7 +58,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 
 #### **GLM Coding Plan**
 
-* Now fully available, GLM-5.3-Flash can be used with your preferred tools, with 3× the available quota compared with GLM-5.3.\\
+* Now fully available, GLM-5.3-Flash can be used with your preferred tools, with 3× the available quota compared with GLM-5.3. (GLM-5.3-FlashX is not yet available on the plan)
 * The new GLM Coding Plan adopts a points-based quota system with transparent usage limits. Model calls made during off-peak hours, including all day on weekends, consume only 50% of the standard points.\
   Subscribe now: [Personal Plan](https://z.ai/subscribe?plantype=individual)、[Team Plan](https://z.ai/subscribe?plantype=team)
 

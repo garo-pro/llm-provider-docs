@@ -1,4 +1,4 @@
-Title: Finding bugs with Claude and property-based testing
+Title: Finding bugs across the Python ecosystem with Claude and property-based testing
 
 URL Source: https://www.anthropic.com/research/property-based-testing
 
@@ -95,8 +95,8 @@ Going forward, we believe that applying LLM to testing and bugfinding is an impo
 
 While we do not focus on the automatic generation of patches in this work, this is a clear direction for future work. If it is possible to (nearly) completely specify the correctness properties of a block of code, then correcting the bug becomes significantly easier, and we believe that in the near future LLMs will be able to effectively propose high-quality patches that are worth the consideration of maintainers.
 
+Claude made the open-source models that scientists use to predict and design biomolecules faster and more memory-efficient. Claude optimized more than 30 of these models in just under four weeks, speeding them up roughly 4x on average. It also created a low-memory mode that enables the accurate prediction of biomolecular systems larger than 10,000 tokens (amino acids, nucleotides, and atoms from small molecules and ions) on a single NVIDIA GPU node.
+
 Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
 
 We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
-
-We are sharing the first complete computer-checked proof of Fermat’s Last Theorem. Claude worked largely autonomously over 11 days to write the proof in the Lean programming language.

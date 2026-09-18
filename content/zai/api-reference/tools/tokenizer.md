@@ -323,13 +323,13 @@ components:
                   description: >-
                     The ID returned by the [File Upload
                     API](/api-reference/agents/file-upload), only GLM-5.3-Flash
-                    supported.
+                    series supported.
                 file_url:
                   type: string
                   description: >-
-                    File URL address. Only GLM-5.3-Flash, GLM-4.6V, GLM-4.5V
-                    supported. Supports formats such as pdf, txt, word, jsonl,
-                    xlsx, pptx, with a maximum of 50.
+                    File URL address. Only GLM-5.3-Flash series, GLM-4.6V,
+                    GLM-4.5V supported. Supports formats such as pdf, txt, word,
+                    jsonl, xlsx, pptx, with a maximum of 50.
                 file_data:
                   type: string
                   description: >-

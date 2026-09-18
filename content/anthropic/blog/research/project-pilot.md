@@ -61,8 +61,8 @@ It is important to take seriously the parallel between AI models’ use of softw
 
 More generally, at low levels of capability and reliability, keeping a human in the loop is an easy decision because it saves time and resources by augmenting model capabilities or preventing costly mistakes. Once models pass capability and reliability thresholds (such as the human-AI team baseline we used in this experiment), there will be real pressure to treat human oversight as a cost rather than a safeguard. That is exactly why these decisions must be made deliberately, particularly in domains like this one that implicate physical security and privacy and where efficiency alone should not be the governing consideration. As Anthropic has long argued, the requirements for investing in AI alignment, governance, and safety increase with the scale of capabilities. Robotics is no different than other domains in this regard, especially since it implicates physical security and individual privacy.
 
+Claude made the open-source models that scientists use to predict and design biomolecules faster and more memory-efficient. Claude optimized more than 30 of these models in just under four weeks, speeding them up roughly 4x on average. It also created a low-memory mode that enables the accurate prediction of biomolecular systems larger than 10,000 tokens (amino acids, nucleotides, and atoms from small molecules and ions) on a single NVIDIA GPU node.
+
 Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
 
 We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
-
-We are sharing the first complete computer-checked proof of Fermat’s Last Theorem. Claude worked largely autonomously over 11 days to write the proof in the Lean programming language.

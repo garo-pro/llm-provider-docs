@@ -75,8 +75,8 @@ We are heartened to see investment in biosecurity as a key component of the new 
 
 The topic of AI and biorisk is rife with uncertainty—about threat actors, the capabilities of models, and how exactly those capabilities translate to risk. But we believe that a growing body of evidence about AI and the underlying gravity of biological threats mean that this is a topic to which AI developers and policymakers must attend. We will be sharing more about our work on biorisk to advance this critical conversation.
 
+Claude made the open-source models that scientists use to predict and design biomolecules faster and more memory-efficient. Claude optimized more than 30 of these models in just under four weeks, speeding them up roughly 4x on average. It also created a low-memory mode that enables the accurate prediction of biomolecular systems larger than 10,000 tokens (amino acids, nucleotides, and atoms from small molecules and ions) on a single NVIDIA GPU node.
+
 Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
 
 We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
-
-We are sharing the first complete computer-checked proof of Fermat’s Last Theorem. Claude worked largely autonomously over 11 days to write the proof in the Lean programming language.
