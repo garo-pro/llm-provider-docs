@@ -39,6 +39,10 @@
       "since": "2026-09-17",
       "reason": "moved -> https://developers.openai.com/api/docs/guides/latest-model"
     },
+    "https://developers.openai.com/api/docs/guides/workload-identity-federation/admin-api": {
+      "since": "2026-09-18",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/api/reference/cli": {
       "since": "2026-09-17",
       "reason": "HTTP 404"

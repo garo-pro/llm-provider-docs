@@ -1,4 +1,4 @@
-Title: Question decomposition improves the faithfulness of model-generated reasoning
+Title: Question decomposition improves reasoning faithfulness
 
 URL Source: https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning
 

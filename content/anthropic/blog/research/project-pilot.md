@@ -1,4 +1,4 @@
-Title: Project Pilot: Can AI control a drone?
+Title: Project Pilot: Can AI models fly drones?
 
 URL Source: https://www.anthropic.com/research/project-pilot
 
