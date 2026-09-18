@@ -1,4 +1,4 @@
-Title: Learning more about Claude's mathematical capabilities
+Title: Claude's progress on the Riemann hypothesis
 
 URL Source: https://www.anthropic.com/research/riemann-zeta
 

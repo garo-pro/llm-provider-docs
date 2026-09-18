@@ -1,4 +1,4 @@
-Title: Anthropic is donating another $20 million to Public First Action
+Title: Donating another $20 million to Public First Action
 
 URL Source: https://www.anthropic.com/news/donation-public-first-action
 

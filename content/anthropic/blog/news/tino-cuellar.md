@@ -1,4 +1,4 @@
-Title: Mariano-Florentino (Tino) Cuéllar to join Anthropic as Chief Global Affairs Officer
+Title: Tino Cuéllar joins as Chief Global Affairs Officer
 
 URL Source: https://www.anthropic.com/news/tino-cuellar
 
