@@ -1,4 +1,4 @@
-Title: Mapping AI-enabled cyber threats
+Title: Mapping AI-enabled cyber threats: Insights from the LLM ATT&CK Navigator
 
 URL Source: https://www.anthropic.com/research/attack-navigator
 

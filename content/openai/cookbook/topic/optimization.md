@@ -4,6 +4,7 @@
 
 > Optimize usage and costs with batch requests, fine-tuning, and evals.
 
+- [Optimizing Customer Support Agents for Cost and Quality](/cookbook/examples/agent_optimization/optimizing_agents_for_cost_and_quality.md): Optimize agents on cost, latency and performance.
 - [GPT-Live evaluation guide](/cookbook/examples/audio/voice_agent_evaluation.md): Evaluate full-duplex voice agents with controlled requests, recorded audio, and simulated conversations, measuring interaction quality and verified task outcomes.
 - [Build a ChatGPT plugin with the OpenAI Agents SDK and Amazon Bedrock AgentCore](/cookbook/examples/partners/aws/chatgpt_agents_sdk_aws_agentcore_cookbook/notebooks/chatgpt_agents_sdk_aws_agentcore_cookbook.md): Build a private ChatGPT flight-assistant plugin with the OpenAI Agents SDK on Amazon Bedrock, connect it through Secure MCP Tunnel, and validate tracing and Promptfoo evaluations.
 - [Build a per-run spending controller with the Responses API](/cookbook/articles/per_run_spending_controller_responses_api.md): Enforce an application-owned model-token budget for each Responses API run using token counts, maximum-cost estimates, usage tracking, and safe error handling.
@@ -17,6 +18,7 @@
 - [Build iterative repair loops with Codex](/cookbook/examples/codex/build_iterative_repair_loops_with_codex.md): A Codex cookbook showing how to use review, repair, and validation loops to improve technical documentation artifacts.
 - [Migrate a Legacy Codebase with Sandbox Agents](/cookbook/examples/agents_sdk/sandboxed-code-migration/sandboxed_code_migration_agent.md): Build a sandboxed code-migration agent that splits a modernization campaign into isolated tasks and returns validated patch bundles.
 - [Codex Prompting Guide](/cookbook/examples/gpt-5/codex_prompting_guide.md)
+- [Skills in OpenAI API](/cookbook/examples/skills_in_api.md): Cookbook for building skills with the OpenAI API.
 - [Image Evals for Image Generation and Editing Use Cases](/cookbook/examples/multimodal/image_evals.md): Cookbook to build image evals for image generation and editing use cases.
 - [Realtime Eval Guide](/cookbook/examples/realtime_eval_guide.md)
 - [GPT-5 Prompt Migration and Improvement Using the New Optimizer](/cookbook/examples/gpt-5/prompt-optimization-cookbook.md)

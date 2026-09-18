@@ -2,7 +2,7 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
-Upload, manage, and attach reusable skills to hosted environments. Agent Skills let you upload and reuse versioned bundles of files in hosted and local shell environments. For the full reference, see the [Skills documentation](https://developers.openai.com/api/docs/guides/tools-skills).
+Package a CSV analysis workflow as a skill, upload it, and run it with GPT-6 Astra in hosted shell. You can also expose the same files to a local shell runtime. For the full reference, see the [Skills documentation](https://developers.openai.com/api/docs/guides/tools-skills).
 
 ## What is a skill?
 
@@ -12,8 +12,10 @@ In hosted shell, here's what happens when you attach skills to the shell tool en
 
 
 - The service uploads and unzips skills into the runtime
-- The service reads `SKILL.md` frontmatter (name/description), then adds each skill’s `name`, `description`, and `path` to the hidden system prompt context, which lets the model know the skill exists
+- The service reads `SKILL.md` frontmatter (name/description), then adds each skill’s `name`, `description`, and `path` to user prompt context, which lets the model know the skill exists
 - If the model decides to invoke a skill, it uses the `path` to read `SKILL.md`, then explores files and executes scripts via the shell tool
+
+Skill instructions have the same priority as other user-provided instructions.
 
 Skills are for procedures: repeatable workflows where the _how_ matters (steps, branching logic, formatting rules, scripts). Skills are useful for when you want your procedure:
 
@@ -117,11 +119,13 @@ Use `POST /v1/skills` to upload and validate your skill, extracting name and des
 
 
 
-```
-curl -X POST 'https://api.openai.com/v1/skills' \
+```bash
+curl --fail-with-body 'https://api.openai.com/v1/skills' \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -F 'files[]=@./csv_insights_skill/SKILL.md;filename=csv_insights_skill/SKILL.md;type=text/markdown' \
-  -F 'files[]=@./csv_insights_skill/calculate.py;filename=csv_insights_skill/calculate.py;type=text/plain'
+  -F 'files[]=@./csv_insights_skill/run.py;filename=csv_insights_skill/run.py;type=text/plain' \
+  -F 'files[]=@./csv_insights_skill/requirements.txt;filename=csv_insights_skill/requirements.txt;type=text/plain' \
+  -F 'files[]=@./csv_insights_skill/assets/example.csv;filename=csv_insights_skill/assets/example.csv;type=text/csv'
 ```
 
 **Option B: Upload zip**
@@ -132,42 +136,63 @@ curl -X POST 'https://api.openai.com/v1/skills' \
   -F 'files=@./csv_insights_skill.zip;type=application/zip'
 ```
 
-If you hit server errors, **zip locally and upload the zip**. We ran into this internally and found this to be a practical workaround.
+Use one upload method per skill. A zip keeps the instructions, script, dependencies, and sample input together.
 
 
 
 **Skill object and version pointers**
 
-A skill returns identifiers and version pointers (e.g., default, latest). Version pointers show up in platform changes and tests.
+The response includes the skill `id`, `default_version`, and `latest_version`. Save the `id` and a version to attach the uploaded skill to hosted shell.
 
 ## Mounting skills into execution
 
-Models use skills via the shell and container. To use skills in the Responses API, attach them to the shell tool with `tools[].environment.skills`.
+To use skills in the Responses API, attach them to the shell tool with `tools[].environment.skills`.
 
 ### How to reference skills
 
-Specify the environment, either hosted or local shell.
-**Hosted vs. local**
-
-- Hosted shell: `environment.type="container_auto"`
-- Local shell: `environment.type="local"`
-
-**Skills can be referenced as**:
-
-- `skill_reference` (by `skill_id`, optionally with `version` or `"latest"`)
-- `inline` (base64 zip bundle) when you don’t want to create a hosted skill
+- **Hosted shell** (`environment.type="container_auto"`): use `skill_reference` with a `skill_id` and optional `version`, or an `inline` base64 zip bundle.
+- **Local shell** (`environment.type="local"`): provide `name`, `description`, and `path` for files available in your runtime. Local shell does not accept hosted `skill_reference` attachments. Your application executes the requested commands and returns their outputs.
 
 ## Runnable example: `csv_insights_skill` Skill
 
-**1) Create the skill folder.**
+This walkthrough creates files on disk and then runs Python snippets; it is not a notebook to execute with **Run All**. Save the script below as `csv_insights_skill/run.py`.
 
+Prerequisites: Python 3.10 or later, `curl`, `zip`, and an `OPENAI_API_KEY` environment variable for a project with access to `gpt-6-astra` and hosted shell. Install the current Python SDK with `python -m pip install --upgrade openai`.
+
+The upload commands create a skill in your API project. Responses API calls incur [model and container charges](https://developers.openai.com/api/docs/pricing). The Python API examples are disabled unless you set `RUN_SKILLS_API=1`. Run the local checks first, then opt in when you are ready to make API requests.
+
+**1) Create the skill folder and sample input.**
+
+```bash
+mkdir -p csv_insights_skill/assets
 ```
+
+The finished folder should contain:
+
+```text
 csv_insights_skill/
 ├── SKILL.md
 ├── requirements.txt
 ├── run.py
 └── assets/
     └── example.csv
+```
+
+Save these dependencies as `csv_insights_skill/requirements.txt`. `tabulate` is required by pandas' `to_markdown()` method.
+
+```text
+pandas
+matplotlib
+tabulate
+```
+
+Save this synthetic input as `csv_insights_skill/assets/example.csv`:
+
+```csv
+quantity,price,category
+2,10,books
+3,15,games
+,20,books
 ```
 
 
@@ -193,12 +218,18 @@ Use this skill when the user provides a CSV file and wants:
 
 ## Outputs
 - `output/report.md`
-- `output/plot.png`
+- `output/plot.png` (when the CSV has a numeric column)
 
 ## How to run
 
-python -m pip install -r requirements.txt
+Run from the directory containing this SKILL.md. The environment must have
+pandas, matplotlib, and tabulate installed. If a dependency is unavailable,
+report it rather than attempting an unapproved network install.
+
 python run.py --input assets/example.csv --outdir output
+
+Use the output directory requested by the user when one is provided.
+Check that report.md exists and that plot.png exists for numeric input.
 
 ```
 
@@ -273,79 +304,124 @@ if __name__ == "__main__":
     main()
 ```
 
-**4) Zip it (recommended)**
+**4) Test locally, then zip the skill.**
 
-```
-zip -r csv_insights_skill.zip csv_insights_skill
+From the directory containing `csv_insights_skill`, install dependencies and run the script:
+
+```bash
+python -m pip install -r csv_insights_skill/requirements.txt
+python csv_insights_skill/run.py --input csv_insights_skill/assets/example.csv --outdir local-output
 ```
 
-**5) Upload the skill**
+`local-output/report.md` should report three rows, three columns, and one missing `quantity` value. `local-output/plot.png` should contain a histogram of `quantity`.
 
+Package only the skill files, not the generated output:
+
+```bash
+zip -r csv_insights_skill.zip csv_insights_skill/SKILL.md csv_insights_skill/requirements.txt csv_insights_skill/run.py csv_insights_skill/assets
 ```
-curl -X POST 'https://api.openai.com/v1/skills' \
+
+**5) Upload the skill (live API request).**
+
+Run this command only when you are ready to create the skill. It saves the response to `skill.json` for the next step.
+
+```bash
+curl --fail-with-body 'https://api.openai.com/v1/skills' \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -F 'files=@./csv_insights_skill.zip;type=application/zip'
+  -F 'files=@./csv_insights_skill.zip;type=application/zip' \
+  -o skill.json
 ```
 
-**6) Run the skill via the API (hosted shell pattern)**
+**6) Run the skill via hosted shell (live API request).**
 
+Set `RUN_SKILLS_API=1`, then run this snippet from the same directory as `skill.json`. It pins the uploaded skill's default version and analyzes the CSV bundled inside the skill. No separate CSV upload is needed.
 
-This follows the flow: create skill → call Responses API with the shell tool, with `environment.skills` referencing the skill
-
-Conceptually:
-
+Hosted shell uses its installed dependencies; outbound network access is disabled by default. The skill reports missing dependencies rather than enabling network access automatically. Save downloadable artifacts under `/mnt/data`, as described in the [Shell guide](https://developers.openai.com/api/docs/guides/tools-shell#hosted-runtime-details).
 
 ```python
+import json
+import os
+from pathlib import Path
+
 from openai import OpenAI
-client = OpenAI()
 
-response = client.responses.create(
-  model="gpt-5.2",
-  tools=[{
-    "type": "shell",
-    "environment": {
-      "type": "container_auto",
-      "skills": [
-        {"type": "skill_reference", "skill_id": "<skill_id>"},
-        {"type": "skill_reference", "skill_id": "<skill_id>", "version": 2},
-      ],
-    },
-  }],
-  input="Use the skills to analyze the uploaded CSV and write outputs to /mnt/output."
-)
-
-print(response.output_text)
+if os.environ.get("RUN_SKILLS_API") == "1":
+    client = OpenAI()
+    skill = json.loads(Path("skill.json").read_text())
+    response = client.responses.create(
+        model="gpt-6-astra",
+        tools=[
+            {
+                "type": "shell",
+                "environment": {
+                    "type": "container_auto",
+                    "skills": [
+                        {
+                            "type": "skill_reference",
+                            "skill_id": skill["id"],
+                            "version": str(skill["default_version"]),
+                        }
+                    ],
+                },
+            }
+        ],
+        input=(
+            "Use the csv-insights skill to analyze its bundled assets/example.csv. "
+            "Run the skill's run.py and write outputs to /mnt/data/csv-insights-output. "
+            "Verify the row count and missing values, and link to report.md and plot.png."
+        ),
+    )
+    print(response.output_text)
+else:
+    print("Skipped live API request. Set RUN_SKILLS_API=1 to run.")
 ```
 
-**7) Use this skill via the API (local container pattern)**
+**7) Request a local shell call (optional, live API request).**
 
-Skills also work with local shell mode. The skill selection and prompt behavior are the same as hosted shell mode, but command execution and filesystem access are still handled by your local runtime.
+Local shell uses the files you created above, without uploading or referencing a hosted skill. Run this snippet from the directory containing `csv_insights_skill` in your execution environment.
 
-Conceptually:
+This snippet only requests and displays commands. It does not execute them or complete the analysis. To complete the workflow, your application must review and execute `shell_call` commands in a sandbox, capture stdout, stderr, and the exit outcome, and return `shell_call_output` with the matching `call_id`. Continue until the model returns its final answer. See [Local shell mode](https://developers.openai.com/api/docs/guides/tools-shell#local-shell-mode) for the execution loop and output format.
 
 ```python
+import os
+from pathlib import Path
+
 from openai import OpenAI
 
-client = OpenAI()
-
-response = client.responses.create(
-    model="gpt-5.2",
-    tools=[
-        {
-            "type": "shell",
-            "environment": {
-                "type": "local",
-                "skills": [
-                    {"type": "skill_reference", "skill_id": "<skill_id>"},
-                    {"type": "skill_reference", "skill_id": "<skill_id>", "version": 2},
-                ],
-            },
-        }
-    ],
-    input="Use the configured skills and run locally to summarize today's CSV reports in this repo.",
-)
-
-print(response.output_text)
+if os.environ.get("RUN_SKILLS_API") == "1":
+    client = OpenAI()
+    skill_path = Path("csv_insights_skill").resolve()
+    response = client.responses.create(
+        model="gpt-6-astra",
+        tools=[
+            {
+                "type": "shell",
+                "environment": {
+                    "type": "local",
+                    "skills": [
+                        {
+                            "name": "csv-insights",
+                            "description": (
+                                "Summarize a CSV, compute basic stats, and produce "
+                                "a markdown report + a plot image."
+                            ),
+                            "path": str(skill_path),
+                        }
+                    ],
+                },
+            }
+        ],
+        input=(
+            "Use the csv-insights skill to analyze its bundled assets/example.csv "
+            "and write outputs to local-output."
+        ),
+    )
+    for item in response.output:
+        if item.type == "shell_call":
+            print(item.action.commands)
+    print(response.output_text)
+else:
+    print("Skipped live API request. Set RUN_SKILLS_API=1 to run.")
 ```
 
 ## Operational best practices
@@ -369,9 +445,9 @@ This came up in “bulk upload” discussions: name and description should come 
 
 **3) Version pin in production**
 
-You want to be able to say, “Run this procedure version,” not, “Run whatever the latest is.” Skills are trending toward explicit versions (**default_version**, **latest_version**), and there’s active work on version creation endpoints.
+You want to be able to say, “Run this procedure version,” not, “Run whatever the latest is.” Uploaded skills have **default_version** and **latest_version** pointers. Create new versions with `POST /v1/skills/{skill_id}/versions`; see [versioning and management](https://developers.openai.com/api/docs/guides/tools-skills#versioning-and-management).
 
-* How to pin: `version: 2`
+* How to pin: `version: "2"`
 * How to float: `version: "latest"`
 * What happens when omitted: defaults to `default_version`
 
@@ -386,7 +462,7 @@ A good skill script:
 * Fails loudly with usage/errors
 * Writes outputs to known file paths when needed
 
-Add concrete templates and worked examples inside the skill (inputs → commands → expected outputs); they cost nothing on turns where the skill isn’t invoked. When examples are workflow-specific, prefer examples and templates in skills over system-level, few-shot prompting.
+Add concrete templates and worked examples inside the skill (inputs → commands → expected outputs); the model reads these details when it invokes the skill, while discovery metadata remains part of the input context. When examples are workflow-specific, prefer examples and templates in skills over system-level, few-shot prompting.
 
 **5) Avoid duplicating skills in system prompts**
 
