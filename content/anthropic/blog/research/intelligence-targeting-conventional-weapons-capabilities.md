@@ -115,8 +115,8 @@ As model capabilities and adoption advance, the scale of this risk does as well.
 
 Finally, as model progress continues, we expect more aspects of military and intelligence work to be dramatically accelerated by AI. For instance, drones are not the only platform on which it is valuable to have better algorithms for sensing and responding to the environment. The same is true in space and undersea warfare. If models become more innovative researchers in these domains, they could be the source of geopolitical disruption. Enumerating these possibilities and developing tests to provide early warning will be a crucial area of work for us. The link between AI and national security goes far beyond cyber and bio, and it is not limited to proprietary models developed in the US.
 
+Claude made the open-source models that scientists use to predict and design biomolecules faster and more memory-efficient. Claude optimized more than 30 of these models in just under four weeks, speeding them up roughly 4x on average. It also created a low-memory mode that enables the accurate prediction of biomolecular systems larger than 10,000 tokens (amino acids, nucleotides, and atoms from small molecules and ions) on a single NVIDIA GPU node.
+
 We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
 
 We are sharing the first complete computer-checked proof of Fermat’s Last Theorem. Claude worked largely autonomously over 11 days to write the proof in the Lean programming language.
-
-We had Claude autonomously train models to improve their performance on several public benchmarks that measure 10 categories of alignment failure. For all 10, Claude found fixes that improved the target benchmarks without degrading capabilities.

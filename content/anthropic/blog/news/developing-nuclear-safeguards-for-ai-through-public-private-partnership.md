@@ -21,6 +21,6 @@ Along with the concrete importance of securing frontier AI models against nuclea
 
 *Full details about our NNSA partnership and the safeguards development can be found on our [red.anthropic.com](https://red.anthropic.com/) blog, the home for research from Anthropic’s Frontier Red Team (and occasionally other teams at Anthropic) on what frontier AI models mean for national security. Click [here](http://red.anthropic.com/2025/nuclear-safeguards/) to read more.*
 
-On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.
+The Life Sciences Verification Program (LSVP) gives life science professionals access to Claude Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work.
 
-We’re opening a research preview of the Model Hardware Standard (MHS), a shared specification for AI agents to safely operate physical devices, to a first group of scientific research labs and advanced manufacturers.
+On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.
