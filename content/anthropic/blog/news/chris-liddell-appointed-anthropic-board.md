@@ -1,4 +1,4 @@
-Title: Chris Liddell appointed to Anthropic’s board of directors
+Title: Chris Liddell appointed to Anthropic's board
 
 URL Source: https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board
 
