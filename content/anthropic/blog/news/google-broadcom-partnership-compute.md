@@ -1,4 +1,4 @@
-Title: Anthropic expands Google and Broadcom compute deal
+Title: Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute
 
 URL Source: https://www.anthropic.com/news/google-broadcom-partnership-compute
 
@@ -19,6 +19,10 @@ We train and run Claude on a range of AI hardware—AWS Trainium, Google TPUs, a
 
 ## Related content
 
+### Partnering with Accenture on embedded evaluation
+
+[Read more](https://www.anthropic.com/news/accenture-embedded-evaluation)
+
 ### Introducing the Life Sciences Verification Program
 
 The Life Sciences Verification Program (LSVP) gives life science professionals access to Claude Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work.
@@ -28,9 +32,3 @@ The Life Sciences Verification Program (LSVP) gives life science professionals a
 ### Developing Enterprise Frontier Safeguards with our customers
 
 [Read more](https://www.anthropic.com/news/enterprise-frontier-safeguards)
-
-### Improving our alignment and security efforts
-
-On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.
-
-[Read more](https://www.anthropic.com/news/improving-alignment-security-efforts)
