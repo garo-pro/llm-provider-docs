@@ -1,4 +1,4 @@
-Title: SHADE-Arena: Evaluating sabotage and monitoring in LLM agents
+Title: SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents
 
 URL Source: https://www.anthropic.com/research/shade-arena-sabotage-monitoring
 
