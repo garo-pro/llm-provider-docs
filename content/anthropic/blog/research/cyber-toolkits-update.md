@@ -1,4 +1,4 @@
-Title: AI models are showing a greater ability to find and exploit vulnerabilities on realistic cyber ranges
+Title: AI models on realistic cyber ranges
 
 URL Source: https://www.anthropic.com/research/cyber-toolkits-update
 

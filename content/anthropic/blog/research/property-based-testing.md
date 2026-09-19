@@ -1,4 +1,4 @@
-Title: Finding bugs with Claude and property-based testing
+Title: Finding bugs across the Python ecosystem with Claude and property-based testing
 
 URL Source: https://www.anthropic.com/research/property-based-testing
 

@@ -1,4 +1,4 @@
-Title: Partnering with Mozilla on Firefox security
+Title: Partnering with Mozilla to improve Firefox’s security
 
 URL Source: https://www.anthropic.com/news/mozilla-firefox-security
 
@@ -62,5 +62,3 @@ We urge developers to take advantage of this window to redouble their efforts to
 *If you’re interested in supporting our security efforts—writing new scaffolds to identify vulnerabilities in open-source software; triaging, patching, and reporting vulnerabilities; and developing a robust CVD process for the AI era—[apply to work at Anthropic here](https://job-boards.greenhouse.io/anthropic/jobs/5123011008).*
 
 The Life Sciences Verification Program (LSVP) gives life science professionals access to Claude Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work.
-
-On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.
