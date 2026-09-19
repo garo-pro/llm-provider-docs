@@ -1,4 +1,4 @@
-Title: India Country Brief: The Anthropic Economic Index
+Title: India Country Brief: Anthropic Economic Index
 
 URL Source: https://www.anthropic.com/research/india-brief-economic-index
 

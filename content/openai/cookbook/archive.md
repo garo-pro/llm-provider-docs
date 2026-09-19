@@ -9,7 +9,6 @@
 - [Realtime Prompting Guide](/cookbook/examples/realtime_prompting_guide.md)
 - [Building Governed AI Agents - A Practical Guide to Agentic Scaffolding](/cookbook/examples/partners/agentic_governance_guide/agentic_governance_cookbook.md): A practical guide to building governed AI agents with OpenAI Agents SDK and Guardrails.
 - [Prompt Caching 201](/cookbook/examples/prompt_caching_201.md): Cookbook for improving prompt caching hit rate, latency, and cost.
-- [Skills in OpenAI API](/cookbook/examples/skills_in_api.md): Cookbook for building skills with the OpenAI API.
 - [Gpt-image-1.5 Prompting Guide](/cookbook/examples/multimodal/image-gen-1.5-prompting_guide.md): Cookbook to prompt gpt-image-1.5 for reliable image generation results.
 - [OpenAI Compliance Logs Platform quickstart](/cookbook/examples/chatgpt/compliance_api/logs_platform.md)
 - [GPT-5.2 Prompting Guide](/cookbook/examples/gpt-5/gpt-5-2_prompting_guide.md): Cookbook to prompt GPT-5.2 for accurate, concise enterprise workflows.
