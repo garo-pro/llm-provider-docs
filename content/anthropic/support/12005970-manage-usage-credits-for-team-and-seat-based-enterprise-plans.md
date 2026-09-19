@@ -70,7 +70,7 @@ After navigating to **[Organization settings > Usage](https://claude.ai/admin-se
 
 The **Usage and spend limits** section will show the current limit (if any) or **Unlimited**. Clicking on "Adjust limit" opens a modal where you can either input an amount and click "Set spend limit," or click "Set to unlimited" to remove the organization-wide monthly spend limit.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149347604/936ac4eb025d3ef1f00c3b8a26b0/image.png?expires=1789744500&amp;signature=25f59524525fef0e6853a23971f1274d8ee0de42fa16a574bcbd345ce89de33b&amp;req=diEjH8p6modfXfMW1HO4zQHwg6jQkiqj6DwhVVpk1mCRTR2tu537UcpaPMj%2F%0AgmIo26vEk9R%2FYZ5glZY%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149347604/936ac4eb025d3ef1f00c3b8a26b0/image.png?expires=1789843500&amp;signature=e39cc9ccef31a9786ca23405cede6088b8789adc30b317300a518a46e2b38831&amp;req=diEjH8p6modfXfMW1HO4zQHwg6jfki2j6DwhVVpk1mDpADwCUVxjNed7tr8D%0AF9bKOmgSrQ0%2FIPJxoEQ%3D%0A)
 
 Changes to your organization’s overall spend limit go into effect immediately.
 
@@ -78,11 +78,11 @@ Changes to your organization’s overall spend limit go into effect immediately.
 
 Owners and Primary Owners on **seat-based Enterprise plans only** can set spend limits that apply to all users within a specific seat tier.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149351600/c5b979c366ac2738f60ea84e85b3/CleanShot+2026-03-10+at+15_37_41%402x.png?expires=1789744500&amp;signature=b0da35702f288ec012c7f3bc92acd400505adc8e1496523b827018cba4e3d8ad&amp;req=diEjH8p7nIdfWfMW1HO4zYnqMIyTJ3SM0wfO62ivdG%2BrYsd2j%2Fm%2FYZMG58O7%0AtW4fqZ3uxQdN5VfMnQE%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149351600/c5b979c366ac2738f60ea84e85b3/CleanShot+2026-03-10+at+15_37_41%402x.png?expires=1789843500&amp;signature=69fa8e5760b9d51ac3f1a2cc8b339a762e956bdd5cbb68cbe961827454f4075d&amp;req=diEjH8p7nIdfWfMW1HO4zYnqMIycJ3OM0wfO62ivdG%2FDJRwldRn8thAlHmAU%0AXZoSRyGrF5UUnlJJM%2BM%3D%0A)
 
 Select the "By group" tab to see **Standard seats** and **Premium seats** groups. Click the "..." icon next to the current limit, then "Edit limit." This opens a modal where you can either select "Set dollar amount" and input an amount, or click "Unlimited" to remove the limit for that seat type. Click "Set limit" to save your changes.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149362056/44993661ca2db771fe924d0346f6/image.png?expires=1789744500&amp;signature=da9d4b3c0fc7ae87813bae4c9c23dcef1ba80f55de9d6bfdc0203a7a1912d7a7&amp;req=diEjH8p4n4FaX%2FMW1HO4zRzvvIwMdElDq7nEDCGq9G6FMIBNwDk3HIxR0DZI%0A8%2F7xmNXk9Tp3TQongvY%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149362056/44993661ca2db771fe924d0346f6/image.png?expires=1789843500&amp;signature=542f21e66a3459ae6dcf633a73bb28f3c49aa8939305b82d9646840df4194bb8&amp;req=diEjH8p4n4FaX%2FMW1HO4zRzvvIwDdE5Dq7nEDCGq9G71wTVenqb1IWIhKGTb%0AFAoKu1hvqsWVOA8yA7Q%3D%0A)
 
 ---
 
@@ -90,11 +90,11 @@ Select the "By group" tab to see **Standard seats** and **Premium seats** groups
 
 Owners and Primary Owners can also set individual monthly spend limits for each member by finding **Spend limits by user** and clicking the "..." button next to the user, then "Edit limit."
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149370853/db66f5cd03683b9cc119d0dcd6b8/image.png?expires=1789744500&amp;signature=5acec1e43a467d63cdbe8aa81fc44c929c31b91248c2b4466001ebaf7af6375c&amp;req=diEjH8p5nYlaWvMW1HO4zaPdGQ5QUStDe9HwvwG7ubg%2BqyYzOdR66%2FQiHChe%0A7jTwWxSpOUY2rz9w7zM%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149370853/db66f5cd03683b9cc119d0dcd6b8/image.png?expires=1789843500&amp;signature=f2fa9c514cdb874f2d79be67c06ceeafaba6ba799a7d6177e3f793f589f4eb2c&amp;req=diEjH8p5nYlaWvMW1HO4zaPdGQ5fUSxDe9HwvwG7ubgCwPON132Uqspzt23t%0AKdkVZXmWt3YuL33Fvww%3D%0A)
 
 Enter the amount and click "Set limit." Alternatively, selecting "Set to unlimited" will remove that member's monthly spend limit (they will still be subject to any organization or seat-level spend limits).
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149374028/97813fe3b515c2e839d8d92abd79/image.png?expires=1789744500&amp;signature=cdf85ddec91892dceaa9557e6cec2bdabbaee98cf6467191b8d10633af3af08f&amp;req=diEjH8p5mYFdUfMW1HO4zevsAv6NN%2B%2BPw6z2wGSwkbuGKqX2%2B6W4wKkcPH4v%0AE9t16%2Bb7H1nq1I%2Fbpa0%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2149374028/97813fe3b515c2e839d8d92abd79/image.png?expires=1789843500&amp;signature=6817c9e8fa330f4a3a8ba1f6514b0a943da8352e0dbd08d4ae8324bf0004943b&amp;req=diEjH8p5mYFdUfMW1HO4zevsAv6CN%2BiPw6z2wGSwkbufqBKDM3WwlWSyiJBd%0A653cM6QcMd25yAJWScM%3D%0A)
 
 This allows owners fine control over usage credits, so you can set limits for different members based on their roles or individual needs. Once a user reaches their defined spend limit, this will automatically pause their usage credits until the end of the month. They will need to wait for their usage limits to reset before using Claude again.
 
