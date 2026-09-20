@@ -1,4 +1,4 @@
-Title: Agentic coding and persistent returns to expertise
+Title: How Claude Code is used in practice
 
 URL Source: https://www.anthropic.com/research/claude-code-expertise
 

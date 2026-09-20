@@ -1,4 +1,4 @@
-Title: Anthropic raises $65B in Series H funding at $965B post-money valuation
+Title: Anthropic raises $65B Series H at $965B valuation
 
 URL Source: https://www.anthropic.com/news/series-h
 

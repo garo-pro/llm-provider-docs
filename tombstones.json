@@ -1391,6 +1391,14 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/api/reference/resources/safety/subresources/cases": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/safety/subresources/cases/methods/retrieve": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/api/reference/resources/skills": {
       "since": "2026-09-17",
       "reason": "HTTP 404"

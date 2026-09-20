@@ -1,4 +1,4 @@
-Title: From shortcuts to sabotage: natural emergent misalignment from reward hacking
+Title: Natural emergent misalignment from reward hacking
 
 URL Source: https://www.anthropic.com/research/emergent-misalignment-reward-hacking
 

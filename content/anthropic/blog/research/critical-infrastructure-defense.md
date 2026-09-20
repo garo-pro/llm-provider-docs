@@ -1,4 +1,4 @@
-Title: Experimenting with AI to defend critical infrastructure
+Title: AI to defend critical infrastructure
 
 URL Source: https://www.anthropic.com/research/critical-infrastructure-defense
 

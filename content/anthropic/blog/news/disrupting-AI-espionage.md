@@ -1,4 +1,4 @@
-Title: Disrupting the first reported AI-orchestrated cyber espionage campaign
+Title: Disrupting an AI-orchestrated cyber espionage campaign
 
 URL Source: https://www.anthropic.com/news/disrupting-AI-espionage
 
