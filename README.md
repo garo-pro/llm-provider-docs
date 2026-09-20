@@ -198,9 +198,10 @@ discovery that isn't a diff doesn't reach anyone.
 
 So a new domain, a new `anthropics` repo, or a domain that starts serving
 markdown now shows up as a tracked change, gets classified as high-signal, and
-opens a PR -- the same path a new doc takes. `discovery.json.review` is the
-actionable list: reachable, serves markdown, nothing fetches it. Empty is
-healthy. Adding a source stays a human decision.
+is committed straight to main with a heads-up push notification -- the same
+path a new doc takes. `discovery.json.review` is the actionable list:
+reachable, serves markdown, nothing fetches it. Empty is healthy. Adding a
+source stays a human decision.
 
 ```bash
 uv run scripts/fetcher.py --discover   # manual probe; writes the same file
@@ -222,7 +223,8 @@ the site's HTML shell, with two guardrails:
 
 - **Only markup is deleted automatically.** A file holding real markdown whose
   URL has died is content the provider removed and we may hold the only copy; it
-  is reported for a human instead of destroyed by a job that merges its own PRs.
+  is reported for a human instead of destroyed by a job that commits straight
+  to main.
 - **A mass-deletion circuit breaker.** More than 200 pages vanishing at once
   means an upstream outage, not 200 real deletions -- nothing is deleted and the
   run fails loudly.
@@ -243,12 +245,13 @@ rate is computed over live docs, so it means something.
 One GitHub Actions workflow powers this repo:
 
 **[fetch-docs.yml](.github/workflows/fetch-docs.yml)** -- Scheduled four times
-daily. Runs the fetcher across all providers, then classifies the diff:
-deletions or a `tombstones.json`/`discovery.json` change mean a PR is opened
-for human review; everything else (including routine version/CHANGELOG
-bumps) self-merges as a minor freshness update. Optionally sends push
-notifications via [barkme](https://github.com/nickchou/barkme-mcp-server)
-for PRs left open. Needs no repo secrets -- it runs on the default
+daily. Runs the fetcher across all providers, then classifies the diff and
+commits straight to main either way: deletions or a
+`tombstones.json`/`discovery.json` change are classified high-signal and
+trigger an optional push notification via
+[barkme](https://github.com/nickchou/barkme-mcp-server) as a heads-up;
+everything else (including routine version/CHANGELOG bumps) commits quietly
+as a minor freshness update. Needs no repo secrets -- it runs on the default
 `GITHUB_TOKEN`.
 
 ## Contributing

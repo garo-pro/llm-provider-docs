@@ -1,7 +1,6 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh pr:*)",
       "Bash(gh issue:*)",
       "Bash(gh release:*)",
       "Bash(git:*)",
@@ -16,7 +15,6 @@
       "Bash(wc:*)",
       "Bash(echo:*)",
       "Bash(uv run scripts/fetcher.py:*)",
-      "Bash(./scripts/create-docs-pr.sh:*)",
       "Edit(.decision/**)",
       "Write(.decision/**)",
       "Bash(mkdir:*)",

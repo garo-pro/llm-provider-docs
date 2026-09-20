@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
-      issues: write
 
     steps:
       - name: Checkout repository
@@ -28,9 +26,8 @@ jobs:
       - name: Fetch all docs (Anthropic, OpenAI, Z.AI)
         run: uv run scripts/fetcher.py
 
-      - name: Setup GitHub CLI and Git
+      - name: Setup Git
         run: |
-          gh --version
           git --version
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -110,12 +107,11 @@ jobs:
 
       # Deterministic publisher: everything with side effects lives here, in
       # plain bash with real error propagation - no agent permissions involved.
+      # No PR flow: every run commits straight to main. "high" signal still
+      # gets a Bark push (if configured) since there's no PR to hold it for
+      # review -- it's just a heads-up after the fact.
       - name: Publish decision
         env:
-          # Auto-provided per job -- no repo secret to configure. gh (unlike
-          # git push, which actions/checkout wires up on its own) needs this
-          # set explicitly to authenticate.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BARK_SERVER: ${{ secrets.BARK_SERVER }}
           BARK_DEVICES: ${{ secrets.BARK_DEVICES }}
         run: |
@@ -142,53 +138,33 @@ jobs:
             echo "::error::Invalid signal '$SIGNAL' (want high|minor)"; exit 1;;
           esac
 
-          BRANCH="docs/claude-code-v${VERSION}-$(date +%Y%m%d-%H%M)"
-          git checkout -b "$BRANCH"
           git add -A
           git commit -m "docs: ${TITLE}"
-          git push -u origin HEAD
+          git push origin HEAD:main
+          COMMIT_URL="${{ github.server_url }}/${{ github.repository }}/commit/$(git rev-parse HEAD)"
+          echo "Committed to main: $COMMIT_URL"
 
-          PR_URL=$(gh pr create --title "docs: ${TITLE}" --body-file "$D/body.md")
-          echo "PR created: $PR_URL"
-          echo "PR_URL=$PR_URL" >> "$GITHUB_ENV"
-
-          if [ "$SIGNAL" = "minor" ]; then
-            gh pr merge "$PR_URL" --rebase
-            echo "Minor change - self-merged."
-          elif [ -n "${BARK_SERVER:-}" ] && [ -n "${BARK_DEVICES:-}" ]; then
+          if [ "$SIGNAL" = "high" ] && [ -n "${BARK_SERVER:-}" ] && [ -n "${BARK_DEVICES:-}" ]; then
             IFS=',' read -ra DEVICES <<< "$BARK_DEVICES"
             for dev in "${DEVICES[@]}"; do
               jq -n --arg k "$dev" --arg t "📦 Claude Code v${VERSION}" \
-                --arg b "$TITLE" --arg u "$PR_URL" \
+                --arg b "$TITLE" --arg u "$COMMIT_URL" \
                 '{device_key:$k, title:$t, body:$b, url:$u, group:"Claude YOLO",
                   icon:"https://avatars.githubusercontent.com/in/1452392"}' \
               | curl -sS -X POST "$BARK_SERVER/push" \
                   -H 'Content-Type: application/json' -d @- \
-              || echo "::warning::bark notification failed (PR is fine: $PR_URL)"
+              || echo "::warning::bark notification failed (commit is fine: $COMMIT_URL)"
             done
           fi
 
-      # Tripwire kept as belt-and-suspenders: a pushed branch without a PR, or
-      # changes left uncommitted, means publishing silently failed. Fail loudly
-      # instead of lying green. (June 2026: 31 orphan branches, all runs green.)
+      # Tripwire kept as belt-and-suspenders: changes left uncommitted means
+      # publishing silently failed. Fail loudly instead of lying green.
       - name: Verify outcome
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          BRANCH=$(git branch --show-current)
           if [ -n "$(git status --porcelain)" ]; then
             echo "::error::Workspace has uncommitted changes after publish step"
             git status --short | head -20
             exit 1
-          fi
-          if [ "$BRANCH" != "main" ] && [ -n "$BRANCH" ]; then
-            # --state all: minor PRs are already self-merged (branch
-            # auto-deleted) - that is success, not failure
-            PRS=$(gh pr list --head "$BRANCH" --state all --json number --jq 'length')
-            if [ "$PRS" = "0" ]; then
-              echo "::error::Branch $BRANCH pushed but no PR exists - PR creation silently failed"
-              exit 1
-            fi
           fi
 
       - name: Alert on failure
