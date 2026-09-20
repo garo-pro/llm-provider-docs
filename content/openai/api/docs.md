@@ -124,7 +124,6 @@ Each entry has a Markdown twin at `/api/docs/<slug>.md`.
 - [IP egress ranges](https://developers.openai.com/api/docs/guides/ip-addresses.md): Find the published IP egress ranges used by OpenAI products.
 - [Latency optimization](https://developers.openai.com/api/docs/guides/latency-optimization.md): Improve latency across a wide variety of LLM-related use cases.
 - [Local shell](https://developers.openai.com/api/docs/guides/tools-local-shell.md): Enable agents to run commands in a local shell.
-- [Manage Codex workload identity with the Admin API](https://developers.openai.com/api/docs/guides/workload-identity-federation/admin-api.md): Programmatically create, list, update, disable, and archive Codex workload identity providers and federation rules.
 - [Manage permissions in the OpenAI platform](https://developers.openai.com/api/docs/guides/rbac.md): Learn how to use role-based access control to assign permissions, create custom roles, group users, and scope access across both the OpenAI API and dashboard.
 - [Manage projects and access with Terraform](https://developers.openai.com/api/docs/guides/terraform/projects-and-access.md): Create an OpenAI project, define least-privilege roles, and manage group and user access with Terraform.
 - [Manage service accounts with Terraform](https://developers.openai.com/api/docs/guides/terraform/service-accounts.md): Create OpenAI project service accounts, assign least-privilege roles, and manage API keys outside Terraform state.
@@ -224,7 +223,7 @@ Each entry has a Markdown twin at `/api/docs/<slug>.md`.
 - [Using GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model/gpt-5.6.md): Learn how to use and migrate to GPT-5.6, the latest model family in the OpenAI API.
 - [Using GPT-6 Astra](https://developers.openai.com/api/docs/guides/latest-model/gpt-6-astra.md): Learn how to use GPT-6 Astra for reasoning, coding, professional work, and tool-using workflows, and how to migrate from GPT-5.6.
 - [Using tools](https://developers.openai.com/api/docs/guides/tools.md): Use powerful tools like remote MCP servers, or built-in tools like web search and file search to extend the model's capabilities.
-- [Vaults](https://developers.openai.com/api/docs/guides/agents-api/tools/vaults.md): Store MCP credentials and attach them to agent sessions.
+- [Vaults](https://developers.openai.com/api/docs/guides/agents-api/tools/vaults.md): Store secrets for MCPs or requests originating from the sandbox.
 - [Vector embeddings](https://developers.openai.com/api/docs/guides/embeddings.md): Learn how to turn text into numbers, unlocking use cases like search, clustering, and more with OpenAI API embeddings.
 - [Vercel](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/vercel.md): Run an Agents API session in a Vercel Sandbox.
 - [Video generation with Sora](https://developers.openai.com/api/docs/guides/video-generation.md): Learn how to generate, refine, and manage videos using the OpenAI Videos API.

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "note": "URLs confirmed gone upstream. Kept so a page that died once does not report as a fresh failure on every later run, which would bury the failure that is actually new. An entry clears itself if the URL answers again -- but only while something still probes it. Entries whose local file was removed are no longer fetched, so they stay as a record of the restructure rather than a live check.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-20",
   "urls": {
     "https://claude.com/docs/claude-science/annotations": {
       "since": "2026-09-01",
@@ -38,6 +38,10 @@
     "https://developers.openai.com/api/docs/guides/prompt-guidance": {
       "since": "2026-09-17",
       "reason": "moved -> https://developers.openai.com/api/docs/guides/latest-model"
+    },
+    "https://developers.openai.com/api/docs/guides/workload-identity-federation/admin-api": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
     },
     "https://developers.openai.com/api/reference/cli": {
       "since": "2026-09-17",
@@ -141,6 +145,30 @@
     },
     "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/create": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/delete": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/list": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/retrieve": {
+      "since": "2026-09-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/validate": {
+      "since": "2026-09-20",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups": {

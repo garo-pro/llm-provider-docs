@@ -4,6 +4,7 @@
 
 > Improve your LLM integrations with evals.
 
+- [Optimizing Customer Support Agents for Cost and Quality](/cookbook/examples/agent_optimization/optimizing_agents_for_cost_and_quality.md): Optimize agents on cost, latency and performance.
 - [GPT-Live evaluation guide](/cookbook/examples/audio/voice_agent_evaluation.md): Evaluate full-duplex voice agents with controlled requests, recorded audio, and simulated conversations, measuring interaction quality and verified task outcomes.
 - [Build a ChatGPT plugin with the OpenAI Agents SDK and Amazon Bedrock AgentCore](/cookbook/examples/partners/aws/chatgpt_agents_sdk_aws_agentcore_cookbook/notebooks/chatgpt_agents_sdk_aws_agentcore_cookbook.md): Build a private ChatGPT flight-assistant plugin with the OpenAI Agents SDK on Amazon Bedrock, connect it through Secure MCP Tunnel, and validate tracing and Promptfoo evaluations.
 - [AML Analysis with the Agents SDK on Amazon Bedrock](/cookbook/examples/partners/aws/evidence_grounded_aml_agent_with_bedrock.md): Run a synthetic AML analysis with the OpenAI Agents SDK and GPT-5.6 Sol on Amazon Bedrock, verify structured claims against deterministic evidence, test failure cases, and enforce an application-owned human review gate.
