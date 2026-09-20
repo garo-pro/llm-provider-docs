@@ -4,10 +4,6 @@
 
 # Overview
 
-<Tip>
-  **GLM-5.3-Flash Usage Campaign** is here: During the campaign period, daily from 23:00 to 09:00 the following day, paid plan users can use GLM-5.3-Flash via ZCode with unlimited usage, and enjoy doubled quota on other Agents! [View details](/devpack/notice/event-glm-5.3-flash)
-</Tip>
-
 The GLM Coding Plan is a subscription package designed specifically for AI-powered coding.
 
 ## Usage
@@ -157,10 +153,6 @@ Token usage varies depending on the cache hit rate, as shown below:
 * Minimum token allowance: All usage occurs during peak hours and is charged at 1× the standard credit rate.
 
 **By fully utilizing the off-peak discounts, you can save up to 92% compared with pay-as-you-go calls to the GLM-5.3 standard API**
-
-<Tip>
-  Plus, with the **GLM-5.3-Flash Usage Campaign** now on, your actual available quota can go far beyond these figures. [View details](/devpack/notice/event-glm-5.3-flash)
-</Tip>
 
 ### Exclusive MCP Access
 
