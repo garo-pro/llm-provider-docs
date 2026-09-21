@@ -1,4 +1,4 @@
-Title: Higher usage limits for Claude and a compute deal with SpaceX
+Title: Higher usage limits and a SpaceX compute deal
 
 URL Source: https://www.anthropic.com/news/higher-limits-spacex
 

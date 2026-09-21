@@ -1,4 +1,4 @@
-Title: More details on Fable 5’s cyber safeguards and our jailbreak framework
+Title: Fable 5's cyber safeguards and our jailbreak framework
 
 URL Source: https://www.anthropic.com/news/fable-safeguards-jailbreak-framework
 

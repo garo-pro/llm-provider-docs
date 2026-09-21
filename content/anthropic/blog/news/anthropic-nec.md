@@ -1,4 +1,4 @@
-Title: Anthropic and NEC collaborate to build Japan’s largest AI engineering workforce
+Title: Anthropic and NEC build AI engineering in Japan
 
 URL Source: https://www.anthropic.com/news/anthropic-nec
 

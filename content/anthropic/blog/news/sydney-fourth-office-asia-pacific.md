@@ -1,4 +1,4 @@
-Title: Sydney will become Anthropic’s fourth office in Asia-Pacific
+Title: Sydney becomes Anthropic's fourth APAC office
 
 URL Source: https://www.anthropic.com/news/sydney-fourth-office-asia-pacific
 

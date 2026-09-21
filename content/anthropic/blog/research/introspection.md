@@ -1,4 +1,4 @@
-Title: Signs of introspection in large language models
+Title: Emergent introspective awareness in LLMs
 
 URL Source: https://www.anthropic.com/research/introspection
 

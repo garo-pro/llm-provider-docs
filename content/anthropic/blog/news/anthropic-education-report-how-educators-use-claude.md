@@ -1,4 +1,4 @@
-Title: Anthropic Education Report: How educators use Claude
+Title: Education Report: How educators use Claude
 
 URL Source: https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude
 

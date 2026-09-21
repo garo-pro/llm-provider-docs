@@ -1,4 +1,4 @@
-Title: Dario Amodei’s prepared remarks from the AI Safety Summit on Anthropic’s Responsible Scaling Policy
+Title: Dario Amodei's remarks at the AI Safety Summit
 
 URL Source: https://www.anthropic.com/news/uk-ai-safety-summit
 

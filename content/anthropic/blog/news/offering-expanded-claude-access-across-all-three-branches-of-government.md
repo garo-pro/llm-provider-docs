@@ -1,4 +1,4 @@
-Title: Offering expanded Claude access across all three branches of the U.S. government
+Title: Offering expanded Claude access across all three branches of government
 
 URL Source: https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government
 

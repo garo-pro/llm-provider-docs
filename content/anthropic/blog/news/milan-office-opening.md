@@ -1,4 +1,4 @@
-Title: Anthropic opens Milan office to support Italian enterprise, research, and developers
+Title: Anthropic opens Milan office
 
 URL Source: https://www.anthropic.com/news/milan-office-opening
 

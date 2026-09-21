@@ -1,4 +1,4 @@
-Title: Australian government and Anthropic sign MOU for AI safety and research
+Title: Australia and Anthropic sign AI safety MOU
 
 URL Source: https://www.anthropic.com/news/australia-MOU
 

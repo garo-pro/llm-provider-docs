@@ -1,4 +1,4 @@
-Title: Claude’s constitution
+Title: Claude's constitution
 
 URL Source: https://www.anthropic.com/news/claudes-constitution
 

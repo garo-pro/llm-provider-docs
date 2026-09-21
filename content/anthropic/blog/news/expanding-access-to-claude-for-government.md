@@ -1,4 +1,4 @@
-Title: Expanding access to Claude for government
+Title: Expanding Access to Claude for Government
 
 URL Source: https://www.anthropic.com/news/expanding-access-to-claude-for-government
 

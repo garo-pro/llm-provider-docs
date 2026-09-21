@@ -1,4 +1,4 @@
-Title: Automated Alignment Researchers: Using large language models to scale scalable oversight
+Title: Automated Alignment Researchers
 
 URL Source: https://www.anthropic.com/research/automated-alignment-researchers
 

@@ -1,4 +1,4 @@
-Title: Seoul becomes Anthropic’s third office in Asia-Pacific as we continue our international growth
+Title: Seoul becomes Anthropic's third APAC office
 
 URL Source: https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific
 

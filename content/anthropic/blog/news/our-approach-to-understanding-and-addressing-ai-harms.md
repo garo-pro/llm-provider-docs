@@ -1,4 +1,4 @@
-Title: Our approach to understanding and addressing AI harms
+Title: Understanding and addressing AI harms
 
 URL Source: https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms
 

@@ -1,4 +1,4 @@
-Title: Anthropic officially opens Tokyo office, signs Memorandum of Cooperation with the Japan AI Safety Institute
+Title: Anthropic opens Tokyo office
 
 URL Source: https://www.anthropic.com/news/opening-our-tokyo-office
 

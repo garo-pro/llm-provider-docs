@@ -1,4 +1,4 @@
-Title: The Anthropic Economic Index
+Title: Introducing the Anthropic Economic Index
 
 URL Source: https://www.anthropic.com/research/the-anthropic-economic-index
 

@@ -1,4 +1,4 @@
-Title: Introducing Anthropic Interviewer: What 1,250 professionals told us about working with AI
+Title: Introducing Anthropic Interviewer
 
 URL Source: https://www.anthropic.com/research/anthropic-interviewer
 

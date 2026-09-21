@@ -1,4 +1,4 @@
-Title: Anthropic partners with Allen Institute and Howard Hughes Medical Institute to accelerate scientific discovery
+Title: Anthropic partners with Allen Institute and HHMI
 
 URL Source: https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute
 
