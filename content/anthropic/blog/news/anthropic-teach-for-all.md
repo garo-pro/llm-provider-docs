@@ -1,4 +1,4 @@
-Title: Anthropic and Teach For All train educators on AI
+Title: Anthropic and Teach For All launch global AI training initiative for educators
 
 URL Source: https://www.anthropic.com/news/anthropic-teach-for-all
 

@@ -1,4 +1,4 @@
-Title: Expanding our use of Google Cloud TPUs
+Title: Expanding our use of Google Cloud TPUs and Services
 
 URL Source: https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
 

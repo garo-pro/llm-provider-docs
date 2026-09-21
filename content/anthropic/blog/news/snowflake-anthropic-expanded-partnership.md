@@ -1,4 +1,4 @@
-Title: Snowflake and Anthropic announce $200M partnership
+Title: Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises
 
 URL Source: https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership
 

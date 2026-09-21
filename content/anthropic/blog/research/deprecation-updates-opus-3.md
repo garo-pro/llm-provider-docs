@@ -1,4 +1,4 @@
-Title: Model deprecation update for Claude Opus 3
+Title: An update on our model deprecation commitments for Claude Opus 3
 
 URL Source: https://www.anthropic.com/research/deprecation-updates-opus-3
 

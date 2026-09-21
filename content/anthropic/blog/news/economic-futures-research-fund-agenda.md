@@ -1,4 +1,4 @@
-Title: Economic Futures Research Fund agenda
+Title: A research agenda for the Economic Futures Research Fund
 
 URL Source: https://www.anthropic.com/news/economic-futures-research-fund-agenda
 

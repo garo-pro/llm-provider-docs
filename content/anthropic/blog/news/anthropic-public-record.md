@@ -1,4 +1,4 @@
-Title: Results from first Anthropic Public Record
+Title: Results from the first Anthropic Public Record
 
 URL Source: https://www.anthropic.com/news/anthropic-public-record
 

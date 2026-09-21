@@ -1,4 +1,4 @@
-Title: Code with Claude - Anthropic's First Developer Conference
+Title: Introducing Anthropic's first developer conference: Code with Claude
 
 URL Source: https://www.anthropic.com/news/Introducing-code-with-claude
 

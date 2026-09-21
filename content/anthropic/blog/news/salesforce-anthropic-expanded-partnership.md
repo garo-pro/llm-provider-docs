@@ -1,4 +1,4 @@
-Title: Salesforce and Anthropic expand partnership
+Title: Anthropic and Salesforce expand partnership to bring Claude to regulated industries
 
 URL Source: https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership
 

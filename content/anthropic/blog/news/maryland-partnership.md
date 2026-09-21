@@ -1,4 +1,4 @@
-Title: Maryland partners with Anthropic to serve residents
+Title: The state of Maryland partners with Anthropic to better serve residents
 
 URL Source: https://www.anthropic.com/news/maryland-partnership
 
