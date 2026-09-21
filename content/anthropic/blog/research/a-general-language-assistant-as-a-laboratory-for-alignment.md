@@ -1,4 +1,4 @@
-Title: A General Language Assistant as a Laboratory for Alignment
+Title: A general language assistant as a lab for alignment
 
 URL Source: https://www.anthropic.com/research/a-general-language-assistant-as-a-laboratory-for-alignment
 

@@ -1,4 +1,4 @@
-Title: Economic Index report: Economic primitives
+Title: Anthropic Economic Index report: Economic primitives
 
 URL Source: https://www.anthropic.com/research/anthropic-economic-index-january-2026-report
 

@@ -1,4 +1,4 @@
-Title: A “diff” tool for AI: Finding behavioral differences in new models
+Title: A "diff" tool for AI models
 
 URL Source: https://www.anthropic.com/research/diff-tool
 
