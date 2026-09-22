@@ -1,4 +1,4 @@
-Title: DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on
+Title: DXC integrates Claude for regulated industries
 
 URL Source: https://www.anthropic.com/news/dxc-anthropic-alliance
 

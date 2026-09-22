@@ -19,26 +19,11 @@ Alongside its increased capabilities, Fable 5.1 takes important steps towards ad
 
 Claude Fable 5.1 sets a new standard for coding, knowledge work, and long-running problem-solving tasks. The charts below show that Fable 5.1 is capable of much higher performance than its predecessor, Fable 5. And when set to Low or Medium effort, Fable 5.1 achieves results similar to or better than Fable 5’s at a much lower cost. (Note that Fable 5.1 defaults to High effort in Claude Code, and to Medium in Claude Cowork and on Claude.ai.)
 
-- **Fable 5.1**
-- **Fable 5**
-
 Terminal-Bench-Science 0.1: The standard error is ±3.5–4.5 pts per model. The public leaderboard (3 trials/task, Claude Code harness) reports Claude Opus 5 at 30.0% and Claude Fable 5 at 21.4%; our setup reproduces them at 29.0% and 24.7%, respectively, both within noise.
-
-- **Mythos 5.1**
-- **Fable 5.1**
-- **Mythos 5**
 
 Terminal-Bench 4.0 scores by cost (log scale), at each effort level. Claude Fable 5.1 and Claude Mythos 5.1 are the same underlying model; the gap between them reflects the tasks on which our earlier, less precise cyber safeguards intervened. With the improvements we’re making to these safeguards today, we expect the difference between the models to be much smaller.
 
-- **Fable 5.1** (with tools)
-- **Fable 5.1** (no tools)
-- **Fable 5** (with tools)
-- **Fable 5** (no tools)
-
 Humanity’s Last Exam scores by cost (log scale), at each effort level. CursorBench 3.2.0 scores by cost (log scale), at each effort level.
-
-- **Fable 5.1**
-- **Fable 5**
 
 CursorBench 3.2.0 by cost (log scale), at each effort level.
 
@@ -51,12 +36,14 @@ Here, you can see how Fable 5.1 compares across various benchmarks:
 | Agentic scientific researchTerminal-Bench-Science 0.1 [1] | 52.6% | 24.7% | 29.0% | 22.4% | 
 | Agentic codingTerminal-Bench 4.0 | 55.8%60.9% (Mythos 5.1) | 42.0% | 52.3% | 37.3% | 
 | Knowledge workGDPval-AA v2 | 1853 | 1723 | 1824 | 1711 | 
-| Computer useOSWorld 2.0 [2] | 77.9%partial | 72.9%partial | 75.4%partial | —partial | 
-| Computer useOSWorld 2.0 | 41.7%strict | 36.1%strict | 39.6%strict | —strict | 
-| Multidisciplinary reasoningHumanity's Last Exam | 60.9%no tools | 57.8%no tools | 56.6%no tools | —no tools | 
-|  | 65.0%with tools | 63.8%with tools | 63.6%with tools | —with tools | 
+| Computer useOSWorld 2.0 [2] | 77.9%partial | 72.9%partial | 75.4%partial | — | 
+| Computer useOSWorld 2.0 | 41.7%strict | 36.1%strict | 39.6%strict | — | 
+| Multidisciplinary reasoningHumanity's Last Exam | 60.9%no tools | 57.8%no tools | 56.6%no tools | — | 
+|  | 65.0%with tools | 63.8%with tools | 63.6%with tools | — | 
 | Business workflowsAutomationBench | 31.4% | 17.1% | 26.9% | 19.6% | 
 | Agentic codingCursorBench 3.2.0 | 73.4% | 70.5% | 70.0% | 67.2% | 
+
+Fable 5.1 was evaluated with its production safeguards enabled. On tasks where these safeguards intervened, Fable 5.1 and Fable 5 scored a zero on OSWorld 2.0, and Fable 5 scored a zero on AutomationBench. In all other interventions from our safeguards, cybersecurity tasks were completed by Claude Opus 4.8, and biology tasks were completed by Claude Opus 5. This likely reduces the performance of Fable 5.1 and Fable 5 on these benchmarks.
 
 Our early-access partners noticed these performance upgrades, and also picked up on more qualitative improvements in the model’s outputs. Here’s what they told us:
 
