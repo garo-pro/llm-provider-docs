@@ -19,7 +19,7 @@ During the campaign period, every day from **23:00 to 09:00 the following day**,
 
 ## II. Campaign Rules
 
-* **Campaign period: September 3, 2026 to September 20, 2026**.
+* **Campaign period: September 3, 2026 to October 7, 2026** (the campaign end date has been extended from September 20 to October 7).
 * **All times are based on Singapore Time**, and the campaign time window applies on weekends and public holidays as well.
 * This campaign **applies only to GLM-5.3-Flash**. If GLM-5.3 is selected, quota will still be consumed according to the standard rules of your plan.
 * Due to system limitations, if your usage during the campaign window has already reached the **5 hours/week quota limit**, you will temporarily be unable to participate in this campaign. You can continue to participate once the quota limit is refreshed and reset.

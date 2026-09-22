@@ -82,6 +82,14 @@ Plans are not switched automatically. You must subscribe or switch manually.
 
 ## Usage Reference for Legacy Plans
 
+<Tip>
+  From September 25 to October 7, 2026, all-day usage will be charged at the **off-peak rate**.
+</Tip>
+
+<Tip>
+  Plus, with the **GLM-5.3-Flash Usage Campaign** now on, your actual available quota can go far beyond these figures. [View details](/devpack/notice/event-glm-5.3-flash)
+</Tip>
+
 ### Legacy Plan V2
 
 To manage resources and ensure fair access for all users, we apply usage limits on a 5-hour and weekly basis. You can check your quota consumption progress in [Usage Statistics](https://z.ai/manage-apikey/subscription).

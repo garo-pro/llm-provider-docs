@@ -4,6 +4,10 @@
 
 # Overview
 
+<Tip>
+  **GLM-5.3-Flash Usage Campaign** : During September 3 – October 7, daily from 23:00 to 09:00 the following day, paid plan users can use GLM-5.3-Flash via ZCode with unlimited usage, and enjoy doubled quota on other agents! [View details](/devpack/notice/event-glm-5.3-flash)
+</Tip>
+
 The GLM Coding Plan is a subscription package designed specifically for AI-powered coding.
 
 ## Usage
@@ -133,6 +137,14 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit.
 <Info>
   **Peak hours**: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
 </Info>
+
+<Tip>
+  From September 25 to October 7, 2026, all-day usage will be charged at the **off-peak rate** — enjoy 50% credit consumption around the clock!
+</Tip>
+
+<Tip>
+  Plus, with the **GLM-5.3-Flash Usage Campaign** now on, your actual available quota can go far beyond these figures. [View details](/devpack/notice/event-glm-5.3-flash)
+</Tip>
 
 #### Estimated Token Allowance
 
