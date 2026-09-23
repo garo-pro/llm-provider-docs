@@ -63,3 +63,9 @@ We’re also exploring how AI can help extend high-quality instruction. One-on-o
 At the university level, educators are considering how AI might speed up scientific research, and how they can prepare students for a fast-changing labor market. We partner closely with institutions like [Western Governors University](https://www.wgu.edu/) to study these areas, including new approaches to learning and credentialing that keep up with the pace of change. In parallel, [Claude for Higher Education](https://claude.com/solutions/education) brings Claude to campuses with a tutor-like “learning mode” for students and training resources for educators.
 
 ![Education focus area artwork](https://cdn.sanity.io/images/4zrzovbb/website/c7fa12b2520aab733d8a88832cb2936ca82a32f2-1920x1280.png)
+
+## Latest news
+
+## The Situation Report
+
+![View of the Democratic Republic of the Congo](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F01a7f8f55e83f615a5d9c0fad56863f1863a41d9-1200x630.jpg&w=3840&q=75)

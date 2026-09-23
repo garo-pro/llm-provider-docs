@@ -1,4 +1,4 @@
-Title: How scientists are using Claude to accelerate research and discovery
+Title: How scientists use Claude to accelerate research
 
 URL Source: https://www.anthropic.com/news/accelerating-scientific-research
 

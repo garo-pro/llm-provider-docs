@@ -1,4 +1,4 @@
-Title: Anthropic acquires Bun as Claude Code reaches $1B milestone
+Title: Anthropic acquires Bun as Claude Code hits $1B
 
 URL Source: https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone
 
