@@ -2,7 +2,7 @@
 
 If you see the following pop-up when you log in to your Claude account, you’ll need to click the “Verify now” button to verify your payment method:
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1631413861/42c3b13d7fc44a11a88ec2b9cd03/AD_4nXeMx8QXpeZZCkfAnVSwx8KZ9n4Vr2rvPdQddyE6ZNxch__F6ZqFs1G4ZmU52Wvb7gRlwRqquTLdw8IQv-gICDyP-MXqiQK_Oe7gX3SKsCKKt2IEpMx4qDeMeeZufMaJfv16XgOH5g?expires=1790160300&amp;signature=7e86dc2c3d10d0b204407a4e9329a67ab92688e070bb2dece2fd265b634e0442&amp;req=dSYkF81%2FnolZWPMW1HO4zf7%2BjUTv7oDxn6MrEicvimAqYa5Nq0%2FnmQJqTyPa%0Ai3NDJ9bMZ%2FeYp2PLooo%3D%0A)
+![](https://downloads.intercomcdn.com/i/o/lupk8zyo/1631413861/42c3b13d7fc44a11a88ec2b9cd03/AD_4nXeMx8QXpeZZCkfAnVSwx8KZ9n4Vr2rvPdQddyE6ZNxch__F6ZqFs1G4ZmU52Wvb7gRlwRqquTLdw8IQv-gICDyP-MXqiQK_Oe7gX3SKsCKKt2IEpMx4qDeMeeZufMaJfv16XgOH5g?expires=1790178300&amp;signature=e4f41e38ac6dda2424c0ea9f7429f8cf8d059009a70d6511dfbc7a20548c1412&amp;req=dSYkF81%2FnolZWPMW1HO4zf7%2BjUTv74jxn6MrEicvimB%2F5lLCCGJrFlPAjPwS%0A94ni7ToLtk%2BL48Y2ypg%3D%0A)
 
 ## What happens if I click “Remind me later?”
 

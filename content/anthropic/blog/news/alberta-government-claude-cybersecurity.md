@@ -1,4 +1,4 @@
-Title: Alberta uses Claude to find and fix security vulnerabilities
+Title: Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems
 
 URL Source: https://www.anthropic.com/news/alberta-government-claude-cybersecurity
 

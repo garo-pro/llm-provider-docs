@@ -1,4 +1,4 @@
-Title: Prompt engineering for Claude's long context window
+Title: Prompting Claude's long context window
 
 URL Source: https://www.anthropic.com/news/prompting-long-context
 

@@ -111,6 +111,8 @@ On Claude Desktop version 1.17377 or later, enabling `userPrompts` also captures
 
 Conversation titles arrive on the desktop application's own stream (`claude-desktop`) as a `desktop_session_title_set` event that carries each Cowork and Code session's title and the Claude Code `session.id` to join on. The event is exported only when [`otlpDesktopLogLevel`](/docs/third-party/claude-desktop/configuration#otlpdesktoploglevel) is `info` or `debug`, and the title text is included only when `otlpContentCapture` includes `userPrompts`. Requires Claude Desktop 1.44121.1 or later.
 
+With `rawApiBodies`, Claude Code truncates each request or response body at 60 KB by default and always redacts Claude's extended-thinking content. See [API request body event](https://code.claude.com/docs/en/monitoring-usage#api-request-body-event) in the Claude Code documentation.
+
 Content is exported only to your configured `otlpEndpoint`. Anthropic does not receive it.
 
 ### Traces (beta)

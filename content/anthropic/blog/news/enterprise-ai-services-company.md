@@ -1,4 +1,4 @@
-Title: Building a new enterprise AI services company
+Title: Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs
 
 URL Source: https://www.anthropic.com/news/enterprise-ai-services-company
 

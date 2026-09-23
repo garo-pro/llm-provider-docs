@@ -1,4 +1,4 @@
-Title: Anthropic’s Responsible Scaling Policy: Version 3.0
+Title: Responsible Scaling Policy Version 3.0
 
 URL Source: https://www.anthropic.com/news/responsible-scaling-policy-v3
 
