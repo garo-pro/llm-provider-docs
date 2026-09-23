@@ -126,8 +126,15 @@ BLOG_STANDALONE_PAGES = [
     "https://www.anthropic.com/transparency",
     "https://www.anthropic.com/beneficial-deployments",
     "https://www.anthropic.com/policy-on-the-ai-exponential",
-    "https://www.anthropic.com/claude-fable-and-mythos-5-1",
 ]
+
+# Model launch posts. Through Opus 5 these went out under /news/; starting
+# with Fable/Mythos 5.1 (2026-09) Anthropic publishes them at the site root
+# (/claude-opus-5-5, with /news/claude-opus-5-5 redirecting there), where
+# the prefix crawl can't see them. A versioned claude-* root slug is a launch;
+# the unversioned ones (claude-corps) and system cards are not. Archived under
+# blog/news/ beside the older launches, not blog/policy/.
+BLOG_ROOT_LAUNCH_RE = re.compile(r"^claude-[a-z-]+-\d+(?:-\d+)*$")
 
 DISCOVER_DOMAINS = [
     ("anthropic.com",           "Main site"),
@@ -384,6 +391,17 @@ class Fetcher:
             urls.append(match[1:-4])  # strip parens and .md
         return urls
 
+    @staticmethod
+    def _blog_url_source(path: Path) -> Optional[str]:
+        """The "URL Source:" header a scraped blog page was written with."""
+        try:
+            with open(path, encoding="utf-8") as f:
+                head = f.read(512)
+        except OSError:
+            return None
+        m = re.search(r"^URL Source: (https://www\.anthropic\.com/\S+)$", head, re.M)
+        return m.group(1) if m else None
+
     def extract_blog_urls(self, sitemap_xml: str) -> List[str]:
         """News/research/engineering posts. Standalone pages are a fixed
         allowlist (BLOG_STANDALONE_PAGES), not discoverable by prefix.
@@ -394,8 +412,9 @@ class Fetcher:
         urls = self.extract_sitemap_urls(sitemap_xml)
         return [
             u for u in urls
-            if any(f"/{p}/" in u for p in ("news", "research", "engineering"))
-            and "/research/team/" not in u
+            if (any(f"/{p}/" in u for p in ("news", "research", "engineering"))
+                and "/research/team/" not in u)
+            or BLOG_ROOT_LAUNCH_RE.match(urlsplit(u).path.strip("/"))
         ]
 
     def extract_alignment_urls(self, html: str) -> List[str]:
@@ -504,7 +523,13 @@ class Fetcher:
                     tail = "/".join(parts[1:])
                     urls.append(f"https://claude.com/docs/{tail}")
                 elif parts[0] == "blog":
-                    if parts[1] in ("news", "research", "engineering"):
+                    if parts[1] == "news" and (src := self._blog_url_source(path)):
+                        # blog/news/ mixes /news/<slug> posts with root-level
+                        # launches (BLOG_ROOT_LAUNCH_RE), and the slug alone
+                        # can't tell them apart (claude-opus-5 vs -5-5), so
+                        # trust the URL the file was written from.
+                        urls.append(src)
+                    elif parts[1] in ("news", "research", "engineering"):
                         tail = "/".join(parts[2:])
                         urls.append(f"https://www.anthropic.com/{parts[1]}/{tail}")
                     elif parts[1] == "policy":
@@ -573,6 +598,8 @@ class Fetcher:
             parts = path.split("/", 1)
             if parts[0] in ("news", "research", "engineering") and len(parts) == 2:
                 return self.anthropic_dir / "blog" / parts[0] / f"{parts[1]}.md"
+            if BLOG_ROOT_LAUNCH_RE.match(path):
+                return self.anthropic_dir / "blog" / "news" / f"{path}.md"
             # Standalone allowlisted page (BLOG_STANDALONE_PAGES): lives at
             # the site root, so the last path segment is the whole slug.
             return self.anthropic_dir / "blog" / "policy" / f"{path}.md"

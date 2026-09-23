@@ -244,7 +244,10 @@ covers Anthropic (`content/anthropic/`); see "OpenAI Documentation" and
 #### Engineering & Research (from anthropic.com)
 - `content/anthropic/blog/engineering/` - "Building Effective Agents", tool use, harness design
 - `content/anthropic/blog/research/` - Research papers
-- `content/anthropic/blog/news/` - Model releases, announcements
+- `content/anthropic/blog/news/` - Model releases, announcements. Since Fable/Mythos 5.1
+  (2026-09), launch posts publish at the site root (`/claude-opus-5-5`), not
+  `/news/`; `BLOG_ROOT_LAUNCH_RE` in `fetcher.py` picks up versioned `claude-*`
+  root slugs from the sitemap and files them here too
 - `content/anthropic/blog/policy/` - Standalone pages: constitution, responsible scaling
   policy, transparency, threat intelligence reports, economic index/futures,
   system cards (fixed allowlist, `BLOG_STANDALONE_PAGES` in `fetcher.py` --
