@@ -1,0 +1,6 @@
+# Store and check out every file byte-for-byte, no line-ending conversion.
+# This is an archive: files should match what upstream served. Without this,
+# Git for Windows' system-wide core.autocrlf=true checks files out as CRLF
+# while fetcher.py writes LF, and every local fetch shows hundreds of
+# phantom modifications.
+* -text
