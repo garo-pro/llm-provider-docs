@@ -75,7 +75,7 @@ df.head()
       <td>GOYMFK</td>
       <td>$24.99</td>
       <td>Only 13 left in stock - order soon.</td>
-      <td>['Home &amp; Kitchen', 'Storage &amp; Organization', '...</td>
+      <td>['Home &#x26; Kitchen', 'Storage &#x26; Organization', '...</td>
       <td>https://m.media-amazon.com/images/I/416WaLx10j...</td>
       <td>['https://m.media-amazon.com/images/I/416WaLx1...</td>
       <td>NaN</td>
@@ -99,7 +99,7 @@ df.head()
       <td>subrtex</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>['Home &amp; Kitchen', 'Furniture', 'Dining Room F...</td>
+      <td>['Home &#x26; Kitchen', 'Furniture', 'Dining Room F...</td>
       <td>https://m.media-amazon.com/images/I/31SejUEWY7...</td>
       <td>['https://m.media-amazon.com/images/I/31SejUEW...</td>
       <td>NaN</td>
@@ -123,7 +123,7 @@ df.head()
       <td>MUYETOL</td>
       <td>$5.98</td>
       <td>In Stock</td>
-      <td>['Patio, Lawn &amp; Garden', 'Outdoor Décor', 'Doo...</td>
+      <td>['Patio, Lawn &#x26; Garden', 'Outdoor Décor', 'Doo...</td>
       <td>https://m.media-amazon.com/images/I/41RgefVq70...</td>
       <td>['https://m.media-amazon.com/images/I/41RgefVq...</td>
       <td>NaN</td>
@@ -147,7 +147,7 @@ df.head()
       <td>VEWETOL</td>
       <td>$13.99</td>
       <td>Only 10 left in stock - order soon.</td>
-      <td>['Patio, Lawn &amp; Garden', 'Outdoor Décor', 'Doo...</td>
+      <td>['Patio, Lawn &#x26; Garden', 'Outdoor Décor', 'Doo...</td>
       <td>https://m.media-amazon.com/images/I/61vz1Igler...</td>
       <td>['https://m.media-amazon.com/images/I/61vz1Igl...</td>
       <td>NaN</td>
@@ -171,7 +171,7 @@ df.head()
       <td>JOIN IRON Store</td>
       <td>$89.99</td>
       <td>Usually ships within 5 to 6 weeks</td>
-      <td>['Home &amp; Kitchen', 'Furniture', 'Game &amp; Recrea...</td>
+      <td>['Home &#x26; Kitchen', 'Furniture', 'Game &#x26; Recrea...</td>
       <td>https://m.media-amazon.com/images/I/41p4d4VJnN...</td>
       <td>['https://m.media-amazon.com/images/I/41p4d4VJ...</td>
       <td>NaN</td>
@@ -270,31 +270,31 @@ for index, ex in examples.iterrows():
     print("\n\n")
 ```
 
-<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg">
 
 ```text
 ['shoe rack', 'metal', 'white', 'multi-layer', 'hooks']
 ```
 
-<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg">
 
 ```text
 ['dining chair', 'leather', 'black']
 ```
 
-<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg">
 
 ```text
 ['repotting mat', 'waterproof', 'portable', 'foldable', 'green']
 ```
 
-<img src="https://m.media-amazon.com/images/I/61vz1IglerL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/61vz1IglerL._SS522_.jpg">
 
 ```text
 ['doormat', 'absorbent', 'non-slip', 'coconut fiber', 'welcome', 'pickleball', 'outdoor']
 ```
 
-<img src="https://m.media-amazon.com/images/I/41p4d4VJnNL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41p4d4VJnNL._SS522_.jpg">
 
 ```text
 ['tv tray', 'foldable', 'metal', 'grey']
@@ -3693,7 +3693,7 @@ Input: shoe storage
 GOYMFK 1pc Free Standing Shoe Rack, Multi-layer Me... (https://www.amazon.com/dp/B0CJHKVG6P) - Similarity: 0.57
 ```
 
-<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg">
 
 ```text
 
@@ -3702,7 +3702,7 @@ GOYMFK 1pc Free Standing Shoe Rack, Multi-layer Me... (https://www.amazon.com/dp
 MAEPA RV Shoe Storage for Bedside - 8 Extra Large ... (https://www.amazon.com/dp/B0C4PL1R3F) - Similarity: 0.55
 ```
 
-<img src="https://m.media-amazon.com/images/I/31bcwiowcBL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31bcwiowcBL._SS522_.jpg">
 
 ```text
 
@@ -3713,7 +3713,7 @@ Input: black metal side table
 FLYJOE Narrow Side Table with PU Leather Magazine ... (https://www.amazon.com/dp/B0CHYDTQKN) - Similarity: 0.58
 ```
 
-<img src="https://m.media-amazon.com/images/I/41Hsse9SYsL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41Hsse9SYsL._SS522_.jpg">
 
 ```text
 
@@ -3722,7 +3722,7 @@ FLYJOE Narrow Side Table with PU Leather Magazine ... (https://www.amazon.com/dp
 HomePop Metal Accent Table Triangle Base Round Mir... (https://www.amazon.com/dp/B08N5H868H) - Similarity: 0.57
 ```
 
-<img src="https://m.media-amazon.com/images/I/41cG70UIWTL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41cG70UIWTL._SS522_.jpg">
 
 ```text
 
@@ -3733,7 +3733,7 @@ Input: doormat
 GXFC ZHAO Welcome Funny Door Mat Shoes and Bras Of... (https://www.amazon.com/dp/B07X61R7N8) - Similarity: 0.52
 ```
 
-<img src="https://m.media-amazon.com/images/I/51z8ko3rsiL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/51z8ko3rsiL._SS522_.jpg">
 
 ```text
 
@@ -3742,7 +3742,7 @@ GXFC ZHAO Welcome Funny Door Mat Shoes and Bras Of... (https://www.amazon.com/dp
 Pickleball Doormat, Welcome Doormat Absorbent Non-... (https://www.amazon.com/dp/B0C1MRB2M8) - Similarity: 0.49
 ```
 
-<img src="https://m.media-amazon.com/images/I/61vz1IglerL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/61vz1IglerL._SS522_.jpg">
 
 ```text
 
@@ -3753,7 +3753,7 @@ Input: step bookshelf
 Leick Home 70007-WTGD Mixed Metal and Wood Stepped... (https://www.amazon.com/dp/B098KNRNLQ) - Similarity: 0.57
 ```
 
-<img src="https://m.media-amazon.com/images/I/31XhtLE1F1L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31XhtLE1F1L._SS522_.jpg">
 
 ```text
 
@@ -3762,7 +3762,7 @@ Leick Home 70007-WTGD Mixed Metal and Wood Stepped... (https://www.amazon.com/dp
 Wildkin Kids Canvas Sling Bookshelf with Storage f... (https://www.amazon.com/dp/B07GBVFZ1Y) - Similarity: 0.46
 ```
 
-<img src="https://m.media-amazon.com/images/I/51-GsdoM+IS._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/51-GsdoM+IS._SS522_.jpg">
 
 ```text
 
@@ -3773,7 +3773,7 @@ Input: ottoman
 Moroccan Leather Pouf Ottoman for Living Room - Ro... (https://www.amazon.com/dp/B0CP45784G) - Similarity: 0.49
 ```
 
-<img src="https://m.media-amazon.com/images/I/51UKACPPL9L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/51UKACPPL9L._SS522_.jpg">
 
 ```text
 
@@ -3782,7 +3782,7 @@ Moroccan Leather Pouf Ottoman for Living Room - Ro... (https://www.amazon.com/dp
 HomePop Home Decor | K2380-YDQY-2 | Luxury Large F... (https://www.amazon.com/dp/B0B94T1TZ1) - Similarity: 0.46
 ```
 
-<img src="https://m.media-amazon.com/images/I/416lZwKs-SL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/416lZwKs-SL._SS522_.jpg">
 
 ### Search from image
 
@@ -3814,13 +3814,13 @@ for i in example_images:
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/31dCSKQ14YL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31dCSKQ14YL._SS522_.jpg">
 
 ```text
 Black Leather Office Chair Mid Back Leather Desk C... (https://www.amazon.com/dp/B0BVQSPCCF) - Similarity: 0.54
 ```
 
-<img src="https://m.media-amazon.com/images/I/317sVlhzMLL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/317sVlhzMLL._SS522_.jpg">
 
 ```text
 
@@ -3829,13 +3829,13 @@ Black Leather Office Chair Mid Back Leather Desk C... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/41CPL03Y-WL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41CPL03Y-WL._SS522_.jpg">
 
 ```text
 subrtex Leather ding Room, Dining Chairs Set of 2,... (https://www.amazon.com/dp/B0B66QHB23) - Similarity: 0.52
 ```
 
-<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg">
 
 ```text
 
@@ -3844,13 +3844,13 @@ subrtex Leather ding Room, Dining Chairs Set of 2,... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/31qQ2tZPv-L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31qQ2tZPv-L._SS522_.jpg">
 
 ```text
 MAEPA RV Shoe Storage for Bedside - 8 Extra Large ... (https://www.amazon.com/dp/B0C4PL1R3F) - Similarity: 0.65
 ```
 
-<img src="https://m.media-amazon.com/images/I/31bcwiowcBL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31bcwiowcBL._SS522_.jpg">
 
 ```text
 
@@ -3859,13 +3859,13 @@ MAEPA RV Shoe Storage for Bedside - 8 Extra Large ... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/41TkLI3K2-L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41TkLI3K2-L._SS522_.jpg">
 
 ```text
 Chief Mfg.Swing-Arm Wall Mount Hardware Mount Blac... (https://www.amazon.com/dp/B007E40Z5K) - Similarity: 0.66
 ```
 
-<img src="https://m.media-amazon.com/images/I/41HxUoRXloL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41HxUoRXloL._SS522_.jpg">
 
 ```text
 
@@ -3874,13 +3874,13 @@ Chief Mfg.Swing-Arm Wall Mount Hardware Mount Blac... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/21Uq9uJEE5L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/21Uq9uJEE5L._SS522_.jpg">
 
 ```text
 Homebeez 39.1" Length Bedroom Storage Bench, End B... (https://www.amazon.com/dp/B0BWQ8M4Q3) - Similarity: 0.52
 ```
 
-<img src="https://m.media-amazon.com/images/I/31eBuhJ0NDL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31eBuhJ0NDL._SS522_.jpg">
 
 ```text
 
@@ -3889,13 +3889,13 @@ Homebeez 39.1" Length Bedroom Storage Bench, End B... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/41f8WNXejUL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41f8WNXejUL._SS522_.jpg">
 
 ```text
 subrtex Leather ding Room, Dining Chairs Set of 2,... (https://www.amazon.com/dp/B0B66QHB23) - Similarity: 0.51
 ```
 
-<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg">
 
 ```text
 
@@ -3904,13 +3904,13 @@ subrtex Leather ding Room, Dining Chairs Set of 2,... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/41zMuj2wvvL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41zMuj2wvvL._SS522_.jpg">
 
 ```text
 LOVMOR 30'' Bathroom Vanity Sink Base Cabine, Stor... (https://www.amazon.com/dp/B0C9WYYFLB) - Similarity: 0.58
 ```
 
-<img src="https://m.media-amazon.com/images/I/41zMuj2wvvL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41zMuj2wvvL._SS522_.jpg">
 
 ```text
 
@@ -3919,13 +3919,13 @@ LOVMOR 30'' Bathroom Vanity Sink Base Cabine, Stor... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/41ixgM73DgL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41ixgM73DgL._SS522_.jpg">
 
 ```text
 Folews Bathroom Organizer Over The Toilet Storage,... (https://www.amazon.com/dp/B09NZY3R1T) - Similarity: 0.73
 ```
 
-<img src="https://m.media-amazon.com/images/I/41ixgM73DgL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41ixgM73DgL._SS522_.jpg">
 
 ```text
 
@@ -3934,13 +3934,13 @@ Folews Bathroom Organizer Over The Toilet Storage,... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg">
 
 ```text
 GOYMFK 1pc Free Standing Shoe Rack, Multi-layer Me... (https://www.amazon.com/dp/B0CJHKVG6P) - Similarity: 0.72
 ```
 
-<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg">
 
 ```text
 
@@ -3949,13 +3949,13 @@ GOYMFK 1pc Free Standing Shoe Rack, Multi-layer Me... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg">
 
 ```text
 subrtex Leather ding Room, Dining Chairs Set of 2,... (https://www.amazon.com/dp/B0B66QHB23) - Similarity: 0.77
 ```
 
-<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg">
 
 ```text
 
@@ -3964,13 +3964,13 @@ subrtex Leather ding Room, Dining Chairs Set of 2,... (https://www.amazon.com/dp
 Input:
 ```
 
-<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg">
 
 ```text
 Plant Repotting Mat MUYETOL Waterproof Transplanti... (https://www.amazon.com/dp/B0BXRTWLYK) - Similarity: 0.64
 ```
 
-<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg">
 
 ## Wrapping up
 

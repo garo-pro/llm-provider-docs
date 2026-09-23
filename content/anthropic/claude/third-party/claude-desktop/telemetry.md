@@ -22,6 +22,8 @@ Crash reports, error stack traces, and performance timings. Contains diagnostic 
 | --------------------------- | ------- | ----------------------------------------- |
 | `disableEssentialTelemetry` | `false` | No crash or error data leaves the device. |
 
+On Claude Desktop 2.7032.0 and later, the [**Keep only your organization ID and restrictions on disk**](/docs/third-party/claude-desktop/admin-console#configuration-kept-on-devices) switch in the [Enterprise Admin Console](/docs/third-party/claude-desktop/admin-console) also stops the app's crash and performance reports, even while `disableEssentialTelemetry` is `false`.
+
 <Warning>
   Disabling essential telemetry opts you into a **manual support model**. Anthropic will have zero remote visibility into failures on your fleet, so to get help with an issue your team will need to collect application logs from affected machines and send them to Anthropic directly. Leave this enabled during initial rollout.
 </Warning>

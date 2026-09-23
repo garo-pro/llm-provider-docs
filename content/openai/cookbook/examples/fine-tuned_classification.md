@@ -115,7 +115,7 @@ df.head()
     </tr>
     <tr>
       <th>4</th>
-      <td>Subject: Let it be Known\nFrom: &lt;ISSBTL@BYUVM....</td>
+      <td>Subject: Let it be Known\nFrom: &#x3C;ISSBTL@BYUVM....</td>
       <td>baseball</td>
     </tr>
   </tbody>

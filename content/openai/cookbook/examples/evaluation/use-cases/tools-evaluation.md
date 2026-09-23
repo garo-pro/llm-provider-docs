@@ -213,11 +213,11 @@ def poll_runs(eval_id, run_ids):
 poll_runs(logs_eval.id, [gpt_4one_completions_run.id, gpt_4one_responses_run.id])
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">evalrun_6848e2269570819198b757fe12b979da completed
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">evalrun_6848e2269570819198b757fe12b979da completed
 <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ResultCounts</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">errored</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">failed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #808000; text-decoration-color: #808000">passed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">total</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">)</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">evalrun_6848e227d3a481918a9b970c897b5998 completed
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">evalrun_6848e227d3a481918a9b970c897b5998 completed
 <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ResultCounts</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">errored</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">failed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #808000; text-decoration-color: #808000">passed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">total</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">)</span>
 </pre>
 
@@ -338,38 +338,38 @@ display(HTML(table_html))
 <table id="T_f295b">
   <thead>
     <tr>
-      <th id="T_f295b_level0_col0" class="col_heading level0 col0" >name</th>
-      <th id="T_f295b_level0_col1" class="col_heading level0 col1" >symbol_type</th>
+      <th id="T_f295b_level0_col0" class="col_heading level0 col0">name</th>
+      <th id="T_f295b_level0_col1" class="col_heading level0 col1">symbol_type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_f295b_row0_col0" class="data row0 col0" >Evals</td>
-      <td id="T_f295b_row0_col1" class="data row0 col1" >class</td>
+      <td id="T_f295b_row0_col0" class="data row0 col0">Evals</td>
+      <td id="T_f295b_row0_col1" class="data row0 col1">class</td>
     </tr>
     <tr>
-      <td id="T_f295b_row1_col0" class="data row1 col0" >AsyncEvals</td>
-      <td id="T_f295b_row1_col1" class="data row1 col1" >class</td>
+      <td id="T_f295b_row1_col0" class="data row1 col0">AsyncEvals</td>
+      <td id="T_f295b_row1_col1" class="data row1 col1">class</td>
     </tr>
     <tr>
-      <td id="T_f295b_row2_col0" class="data row2 col0" >EvalsWithRawResponse</td>
-      <td id="T_f295b_row2_col1" class="data row2 col1" >class</td>
+      <td id="T_f295b_row2_col0" class="data row2 col0">EvalsWithRawResponse</td>
+      <td id="T_f295b_row2_col1" class="data row2 col1">class</td>
     </tr>
     <tr>
-      <td id="T_f295b_row3_col0" class="data row3 col0" >AsyncEvalsWithRawResponse</td>
-      <td id="T_f295b_row3_col1" class="data row3 col1" >class</td>
+      <td id="T_f295b_row3_col0" class="data row3 col0">AsyncEvalsWithRawResponse</td>
+      <td id="T_f295b_row3_col1" class="data row3 col1">class</td>
     </tr>
     <tr>
-      <td id="T_f295b_row4_col0" class="data row4 col0" >EvalsWithStreamingResponse</td>
-      <td id="T_f295b_row4_col1" class="data row4 col1" >class</td>
+      <td id="T_f295b_row4_col0" class="data row4 col0">EvalsWithStreamingResponse</td>
+      <td id="T_f295b_row4_col1" class="data row4 col1">class</td>
     </tr>
     <tr>
-      <td id="T_f295b_row5_col0" class="data row5 col0" >AsyncEvalsWithStreamingResponse</td>
-      <td id="T_f295b_row5_col1" class="data row5 col1" >class</td>
+      <td id="T_f295b_row5_col0" class="data row5 col0">AsyncEvalsWithStreamingResponse</td>
+      <td id="T_f295b_row5_col1" class="data row5 col1">class</td>
     </tr>
     <tr>
-      <td id="T_f295b_row6_col0" class="data row6 col0" >__all__</td>
-      <td id="T_f295b_row6_col1" class="data row6 col1" >variable</td>
+      <td id="T_f295b_row6_col0" class="data row6 col0">__all__</td>
+      <td id="T_f295b_row6_col1" class="data row6 col1">variable</td>
     </tr>
   </tbody>
 </table>
@@ -378,130 +378,130 @@ display(HTML(table_html))
 <table id="T_c1589">
   <thead>
     <tr>
-      <th id="T_c1589_level0_col0" class="col_heading level0 col0" >name</th>
-      <th id="T_c1589_level0_col1" class="col_heading level0 col1" >symbol_type</th>
+      <th id="T_c1589_level0_col0" class="col_heading level0 col0">name</th>
+      <th id="T_c1589_level0_col1" class="col_heading level0 col1">symbol_type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_c1589_row0_col0" class="data row0 col0" >Evals</td>
-      <td id="T_c1589_row0_col1" class="data row0 col1" >class</td>
+      <td id="T_c1589_row0_col0" class="data row0 col0">Evals</td>
+      <td id="T_c1589_row0_col1" class="data row0 col1">class</td>
     </tr>
     <tr>
-      <td id="T_c1589_row1_col0" class="data row1 col0" >runs</td>
-      <td id="T_c1589_row1_col1" class="data row1 col1" >function</td>
+      <td id="T_c1589_row1_col0" class="data row1 col0">runs</td>
+      <td id="T_c1589_row1_col1" class="data row1 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row2_col0" class="data row2 col0" >with_raw_response</td>
-      <td id="T_c1589_row2_col1" class="data row2 col1" >function</td>
+      <td id="T_c1589_row2_col0" class="data row2 col0">with_raw_response</td>
+      <td id="T_c1589_row2_col1" class="data row2 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row3_col0" class="data row3 col0" >with_streaming_response</td>
-      <td id="T_c1589_row3_col1" class="data row3 col1" >function</td>
+      <td id="T_c1589_row3_col0" class="data row3 col0">with_streaming_response</td>
+      <td id="T_c1589_row3_col1" class="data row3 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row4_col0" class="data row4 col0" >create</td>
-      <td id="T_c1589_row4_col1" class="data row4 col1" >function</td>
+      <td id="T_c1589_row4_col0" class="data row4 col0">create</td>
+      <td id="T_c1589_row4_col1" class="data row4 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row5_col0" class="data row5 col0" >retrieve</td>
-      <td id="T_c1589_row5_col1" class="data row5 col1" >function</td>
+      <td id="T_c1589_row5_col0" class="data row5 col0">retrieve</td>
+      <td id="T_c1589_row5_col1" class="data row5 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row6_col0" class="data row6 col0" >update</td>
-      <td id="T_c1589_row6_col1" class="data row6 col1" >function</td>
+      <td id="T_c1589_row6_col0" class="data row6 col0">update</td>
+      <td id="T_c1589_row6_col1" class="data row6 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row7_col0" class="data row7 col0" >list</td>
-      <td id="T_c1589_row7_col1" class="data row7 col1" >function</td>
+      <td id="T_c1589_row7_col0" class="data row7 col0">list</td>
+      <td id="T_c1589_row7_col1" class="data row7 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row8_col0" class="data row8 col0" >delete</td>
-      <td id="T_c1589_row8_col1" class="data row8 col1" >function</td>
+      <td id="T_c1589_row8_col0" class="data row8 col0">delete</td>
+      <td id="T_c1589_row8_col1" class="data row8 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row9_col0" class="data row9 col0" >AsyncEvals</td>
-      <td id="T_c1589_row9_col1" class="data row9 col1" >class</td>
+      <td id="T_c1589_row9_col0" class="data row9 col0">AsyncEvals</td>
+      <td id="T_c1589_row9_col1" class="data row9 col1">class</td>
     </tr>
     <tr>
-      <td id="T_c1589_row10_col0" class="data row10 col0" >runs</td>
-      <td id="T_c1589_row10_col1" class="data row10 col1" >function</td>
+      <td id="T_c1589_row10_col0" class="data row10 col0">runs</td>
+      <td id="T_c1589_row10_col1" class="data row10 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row11_col0" class="data row11 col0" >with_raw_response</td>
-      <td id="T_c1589_row11_col1" class="data row11 col1" >function</td>
+      <td id="T_c1589_row11_col0" class="data row11 col0">with_raw_response</td>
+      <td id="T_c1589_row11_col1" class="data row11 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row12_col0" class="data row12 col0" >with_streaming_response</td>
-      <td id="T_c1589_row12_col1" class="data row12 col1" >function</td>
+      <td id="T_c1589_row12_col0" class="data row12 col0">with_streaming_response</td>
+      <td id="T_c1589_row12_col1" class="data row12 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row13_col0" class="data row13 col0" >create</td>
-      <td id="T_c1589_row13_col1" class="data row13 col1" >function</td>
+      <td id="T_c1589_row13_col0" class="data row13 col0">create</td>
+      <td id="T_c1589_row13_col1" class="data row13 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row14_col0" class="data row14 col0" >retrieve</td>
-      <td id="T_c1589_row14_col1" class="data row14 col1" >function</td>
+      <td id="T_c1589_row14_col0" class="data row14 col0">retrieve</td>
+      <td id="T_c1589_row14_col1" class="data row14 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row15_col0" class="data row15 col0" >update</td>
-      <td id="T_c1589_row15_col1" class="data row15 col1" >function</td>
+      <td id="T_c1589_row15_col0" class="data row15 col0">update</td>
+      <td id="T_c1589_row15_col1" class="data row15 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row16_col0" class="data row16 col0" >list</td>
-      <td id="T_c1589_row16_col1" class="data row16 col1" >function</td>
+      <td id="T_c1589_row16_col0" class="data row16 col0">list</td>
+      <td id="T_c1589_row16_col1" class="data row16 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row17_col0" class="data row17 col0" >delete</td>
-      <td id="T_c1589_row17_col1" class="data row17 col1" >function</td>
+      <td id="T_c1589_row17_col0" class="data row17 col0">delete</td>
+      <td id="T_c1589_row17_col1" class="data row17 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row18_col0" class="data row18 col0" >EvalsWithRawResponse</td>
-      <td id="T_c1589_row18_col1" class="data row18 col1" >class</td>
+      <td id="T_c1589_row18_col0" class="data row18 col0">EvalsWithRawResponse</td>
+      <td id="T_c1589_row18_col1" class="data row18 col1">class</td>
     </tr>
     <tr>
-      <td id="T_c1589_row19_col0" class="data row19 col0" >__init__</td>
-      <td id="T_c1589_row19_col1" class="data row19 col1" >function</td>
+      <td id="T_c1589_row19_col0" class="data row19 col0">__init__</td>
+      <td id="T_c1589_row19_col1" class="data row19 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row20_col0" class="data row20 col0" >runs</td>
-      <td id="T_c1589_row20_col1" class="data row20 col1" >function</td>
+      <td id="T_c1589_row20_col0" class="data row20 col0">runs</td>
+      <td id="T_c1589_row20_col1" class="data row20 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row21_col0" class="data row21 col0" >AsyncEvalsWithRawResponse</td>
-      <td id="T_c1589_row21_col1" class="data row21 col1" >class</td>
+      <td id="T_c1589_row21_col0" class="data row21 col0">AsyncEvalsWithRawResponse</td>
+      <td id="T_c1589_row21_col1" class="data row21 col1">class</td>
     </tr>
     <tr>
-      <td id="T_c1589_row22_col0" class="data row22 col0" >__init__</td>
-      <td id="T_c1589_row22_col1" class="data row22 col1" >function</td>
+      <td id="T_c1589_row22_col0" class="data row22 col0">__init__</td>
+      <td id="T_c1589_row22_col1" class="data row22 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row23_col0" class="data row23 col0" >runs</td>
-      <td id="T_c1589_row23_col1" class="data row23 col1" >function</td>
+      <td id="T_c1589_row23_col0" class="data row23 col0">runs</td>
+      <td id="T_c1589_row23_col1" class="data row23 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row24_col0" class="data row24 col0" >EvalsWithStreamingResponse</td>
-      <td id="T_c1589_row24_col1" class="data row24 col1" >class</td>
+      <td id="T_c1589_row24_col0" class="data row24 col0">EvalsWithStreamingResponse</td>
+      <td id="T_c1589_row24_col1" class="data row24 col1">class</td>
     </tr>
     <tr>
-      <td id="T_c1589_row25_col0" class="data row25 col0" >__init__</td>
-      <td id="T_c1589_row25_col1" class="data row25 col1" >function</td>
+      <td id="T_c1589_row25_col0" class="data row25 col0">__init__</td>
+      <td id="T_c1589_row25_col1" class="data row25 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row26_col0" class="data row26 col0" >runs</td>
-      <td id="T_c1589_row26_col1" class="data row26 col1" >function</td>
+      <td id="T_c1589_row26_col0" class="data row26 col0">runs</td>
+      <td id="T_c1589_row26_col1" class="data row26 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row27_col0" class="data row27 col0" >AsyncEvalsWithStreamingResponse</td>
-      <td id="T_c1589_row27_col1" class="data row27 col1" >class</td>
+      <td id="T_c1589_row27_col0" class="data row27 col0">AsyncEvalsWithStreamingResponse</td>
+      <td id="T_c1589_row27_col1" class="data row27 col1">class</td>
     </tr>
     <tr>
-      <td id="T_c1589_row28_col0" class="data row28 col0" >__init__</td>
-      <td id="T_c1589_row28_col1" class="data row28 col1" >function</td>
+      <td id="T_c1589_row28_col0" class="data row28 col0">__init__</td>
+      <td id="T_c1589_row28_col1" class="data row28 col1">function</td>
     </tr>
     <tr>
-      <td id="T_c1589_row29_col0" class="data row29 col0" >runs</td>
-      <td id="T_c1589_row29_col1" class="data row29 col1" >function</td>
+      <td id="T_c1589_row29_col0" class="data row29 col0">runs</td>
+      <td id="T_c1589_row29_col1" class="data row29 col1">function</td>
     </tr>
   </tbody>
 </table>

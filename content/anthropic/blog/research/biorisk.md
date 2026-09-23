@@ -1,4 +1,4 @@
-Title: LLMs and biorisk
+Title: Why do we take LLMs seriously as a potential source of biorisk?
 
 URL Source: https://www.anthropic.com/research/biorisk
 

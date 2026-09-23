@@ -147,11 +147,11 @@ Output 1
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Mars mission reaches critical stage as spacecraft successfully enters orbit around the red planet. The historic journey, which began over a year ago, has captured the world's attention as scientists and astronauts prepare to land on Mars for the first time. The mission is expected to provide valuable insights into the planet's geology, atmosphere, and potential for sustaining human life in the future."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's Mars mission reaches critical stage as spacecraft successfully enters orbit around the red planet. The historic journey, which began over a year ago, has captured the world's attention as scientists and astronauts prepare to land on Mars for the first time. The mission is expected to provide valuable insights into the planet's geology, atmosphere, and potential for sustaining human life in the future."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>76</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 2
@@ -159,11 +159,11 @@ Output 2
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance rover successfully landed on Mars, marking a major milestone in the mission to explore the red planet. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples of rock and soil for future return to Earth. This historic achievement paves the way for further exploration and potential human missions to Mars in the near future."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance rover successfully landed on Mars, marking a major milestone in the mission to explore the red planet. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples of rock and soil for future return to Earth. This historic achievement paves the way for further exploration and potential human missions to Mars in the near future."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>76</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 3
@@ -171,11 +171,11 @@ Output 3
 ```
 
 <table>
-        <tr><th>Response</th><td>"SpaceX successfully launched the first manned mission to Mars yesterday, marking a historic milestone in space exploration. The crew of four astronauts will spend the next six months traveling to the red planet, where they will conduct groundbreaking research and experiments. This mission represents a significant step towards establishing a human presence on Mars and paves the way for future interplanetary travel."</td></tr>
+        <tbody><tr><th>Response</th><td>"SpaceX successfully launched the first manned mission to Mars yesterday, marking a historic milestone in space exploration. The crew of four astronauts will spend the next six months traveling to the red planet, where they will conduct groundbreaking research and experiments. This mission represents a significant step towards establishing a human presence on Mars and paves the way for future interplanetary travel."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>72</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 4
@@ -183,11 +183,11 @@ Output 4
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's latest Mars mission exceeds expectations as the Perseverance rover uncovers tantalizing clues about the Red Planet's past. Scientists are thrilled by the discovery of ancient riverbeds and sedimentary rocks, raising hopes of finding signs of past life on Mars. With this exciting progress, the dream of sending humans to Mars feels closer than ever before."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's latest Mars mission exceeds expectations as the Perseverance rover uncovers tantalizing clues about the Red Planet's past. Scientists are thrilled by the discovery of ancient riverbeds and sedimentary rocks, raising hopes of finding signs of past life on Mars. With this exciting progress, the dream of sending humans to Mars feels closer than ever before."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>72</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 5
@@ -195,7 +195,7 @@ Output 5
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance Rover Successfully Lands on Mars, Begins Exploration Mission
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance Rover Successfully Lands on Mars, Begins Exploration Mission
 
 In a historic moment for space exploration, NASA's Perseverance rover has successfully landed on the surface of Mars. After a seven-month journey, the rover touched down in the Jezero Crater, a location scientists believe may have once held a lake and could potentially contain signs of ancient microbial life.
 
@@ -205,7 +205,7 @@ This successful landing marks a significant milestone in humanity's quest to und
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>200</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 The average similarity between responses is: 0.1136714512418833
@@ -241,13 +241,13 @@ Output 1
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance Rover Successfully Lands on Mars
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance Rover Successfully Lands on Mars
 
 In a historic achievement, NASA's Perseverance rover has successfully landed on the surface of Mars, marking a major milestone in the exploration of the red planet. The rover, which traveled over 293 million miles from Earth, is equipped with state-of-the-art instruments designed to search for signs of ancient microbial life and collect rock and soil samples for future return to Earth. This mission represents a significant step forward in our understanding of Mars and the potential for human exploration of the planet in the future."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>113</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 2
@@ -255,11 +255,11 @@ Output 2
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as scientists and engineers continue to push the boundaries of space travel and expand our understanding of the universe."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as scientists and engineers continue to push the boundaries of space travel and expand our understanding of the universe."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>81</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 3
@@ -267,11 +267,11 @@ Output 3
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as NASA continues to push the boundaries of space exploration."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as NASA continues to push the boundaries of space exploration."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>72</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 4
@@ -279,11 +279,11 @@ Output 4
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as scientists and engineers continue to push the boundaries of space travel and expand our understanding of the universe."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as scientists and engineers continue to push the boundaries of space travel and expand our understanding of the universe."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>81</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 Output 5
@@ -291,11 +291,11 @@ Output 5
 ```
 
 <table>
-        <tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as scientists and engineers continue to push the boundaries of space travel."</td></tr>
+        <tbody><tr><th>Response</th><td>"NASA's Perseverance rover successfully lands on Mars, marking a historic milestone in space exploration. The rover is equipped with advanced scientific instruments to search for signs of ancient microbial life and collect samples for future return to Earth. This mission paves the way for future human exploration of the red planet, as scientists and engineers continue to push the boundaries of space travel."</td></tr>
         <tr><th>System Fingerprint</th><td>fp_772e8125bb</td></tr>
         <tr><th>Number of prompt tokens</th><td>29</td></tr>
         <tr><th>Number of completion tokens</th><td>74</td></tr>
-        </table>
+        </tbody></table>
 
 ```text
 The average distance between responses is: 0.0449054397632461

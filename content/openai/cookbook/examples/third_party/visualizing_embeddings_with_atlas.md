@@ -48,16 +48,4 @@ map = project.maps[0]
 map
 ```
 
-<h3>Project: meek-laborer</h3>
-            
-
-        <h4>Projection ID: 463f4614-7689-47e4-b55b-1da0cc679559</h4>
-        <div class="actions">
-            <div id="hide" class="action" onclick="destroy()">Hide embedded project</div>
-            <div class="action" id="out">
-                <a href="https://atlas.nomic.ai/map/fddc0e07-97c5-477c-827c-96bca44519aa/463f4614-7689-47e4-b55b-1da0cc679559" target="_blank">Explore on atlas.nomic.ai</a>
-            </div>
-        </div>
-        
-        <iframe class="iframe" id="iframe463f4614-7689-47e4-b55b-1da0cc679559" allow="clipboard-read; clipboard-write" src="https://atlas.nomic.ai/map/fddc0e07-97c5-477c-827c-96bca44519aa/463f4614-7689-47e4-b55b-1da0cc679559">
-        </iframe>
+<p>Run this notebook locally to view this interactive output.</p>

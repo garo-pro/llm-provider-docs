@@ -66,10 +66,10 @@ df.head()
     <tr>
       <th>0</th>
       <td>21/04/2016</td>
-      <td>M &amp; J Ballantyne Ltd</td>
+      <td>M &#x26; J Ballantyne Ltd</td>
       <td>George IV Bridge Work</td>
       <td>35098.0</td>
-      <td>Supplier: M &amp; J Ballantyne Ltd; Description: G...</td>
+      <td>Supplier: M &#x26; J Ballantyne Ltd; Description: G...</td>
       <td>118</td>
       <td>[-0.013169967569410801, -0.004833734128624201,...</td>
     </tr>
@@ -77,7 +77,7 @@ df.head()
       <th>1</th>
       <td>26/04/2016</td>
       <td>Private Sale</td>
-      <td>Literary &amp; Archival Items</td>
+      <td>Literary &#x26; Archival Items</td>
       <td>30000.0</td>
       <td>Supplier: Private Sale; Description: Literary ...</td>
       <td>114</td>

@@ -136,7 +136,7 @@ df_france_subset.head()
       <td>27484</td>
       <td>France</td>
       <td>The medium-intense nose of this solid and easy...</td>
-      <td>Authentic &amp; Chic</td>
+      <td>Authentic &#x26; Chic</td>
       <td>86</td>
       <td>10.0</td>
       <td>France Other</td>
@@ -144,7 +144,7 @@ df_france_subset.head()
       <td>NaN</td>
       <td>Lauren Buzzeo</td>
       <td>@laurbuzz</td>
-      <td>Romantic 2014 Authentic &amp; Chic Cabernet Sauvig...</td>
+      <td>Romantic 2014 Authentic &#x26; Chic Cabernet Sauvig...</td>
       <td>Cabernet Sauvignon</td>
       <td>Romantic</td>
     </tr>

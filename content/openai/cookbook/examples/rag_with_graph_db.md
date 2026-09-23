@@ -118,7 +118,7 @@ df.head()
       <td>home decoration</td>
       <td>1925202</td>
       <td>ArtzFolio Tulip Flowers Blackout Curtain for D...</td>
-      <td>[LUXURIOUS &amp; APPEALING: Beautiful custom-made ...</td>
+      <td>[LUXURIOUS &#x26; APPEALING: Beautiful custom-made ...</td>
       <td>None</td>
       <td>1650</td>
       <td>2125.98</td>
@@ -132,7 +132,7 @@ df.head()
       <td>ArtzFolio</td>
       <td>1925202</td>
       <td>ArtzFolio Tulip Flowers Blackout Curtain for D...</td>
-      <td>[LUXURIOUS &amp; APPEALING: Beautiful custom-made ...</td>
+      <td>[LUXURIOUS &#x26; APPEALING: Beautiful custom-made ...</td>
       <td>None</td>
       <td>1650</td>
       <td>2125.98</td>
@@ -146,7 +146,7 @@ df.head()
       <td>Eyelets</td>
       <td>1925202</td>
       <td>ArtzFolio Tulip Flowers Blackout Curtain for D...</td>
-      <td>[LUXURIOUS &amp; APPEALING: Beautiful custom-made ...</td>
+      <td>[LUXURIOUS &#x26; APPEALING: Beautiful custom-made ...</td>
       <td>None</td>
       <td>1650</td>
       <td>2125.98</td>
@@ -160,7 +160,7 @@ df.head()
       <td>Tie Back</td>
       <td>1925202</td>
       <td>ArtzFolio Tulip Flowers Blackout Curtain for D...</td>
-      <td>[LUXURIOUS &amp; APPEALING: Beautiful custom-made ...</td>
+      <td>[LUXURIOUS &#x26; APPEALING: Beautiful custom-made ...</td>
       <td>None</td>
       <td>1650</td>
       <td>2125.98</td>
@@ -174,7 +174,7 @@ df.head()
       <td>100% opaque</td>
       <td>1925202</td>
       <td>ArtzFolio Tulip Flowers Blackout Curtain for D...</td>
-      <td>[LUXURIOUS &amp; APPEALING: Beautiful custom-made ...</td>
+      <td>[LUXURIOUS &#x26; APPEALING: Beautiful custom-made ...</td>
       <td>None</td>
       <td>1650</td>
       <td>2125.98</td>

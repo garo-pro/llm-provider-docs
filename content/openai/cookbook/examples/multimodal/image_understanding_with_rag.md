@@ -662,36 +662,36 @@ display(failed_df.style.set_properties(**{'text-align': 'left'}))
 <table id="T_02ac6">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_02ac6_level0_col0" class="col_heading level0 col0" >Input</th>
-      <th id="T_02ac6_level0_col1" class="col_heading level0 col1" >Model Output</th>
+      <th class="blank level0"> </th>
+      <th id="T_02ac6_level0_col0" class="col_heading level0 col0">Input</th>
+      <th id="T_02ac6_level0_col1" class="col_heading level0 col1">Model Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_02ac6_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_02ac6_row0_col0" class="data row0 col0" >[{'content': 'Classify the sentiment of this food delivery review: The food came looking like this... Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
-      <td id="T_02ac6_row0_col1" class="data row0 col1" >[{'content': 'negative', 'role': 'assistant'}]</td>
+      <th id="T_02ac6_level0_row0" class="row_heading level0 row0">0</th>
+      <td id="T_02ac6_row0_col0" class="data row0 col0">[{'content': 'Classify the sentiment of this food delivery review: The food came looking like this... Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
+      <td id="T_02ac6_row0_col1" class="data row0 col1">[{'content': 'negative', 'role': 'assistant'}]</td>
     </tr>
     <tr>
-      <th id="T_02ac6_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_02ac6_row1_col0" class="data row1 col0" >[{'content': 'Classify the sentiment of this food delivery review: nan. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
-      <td id="T_02ac6_row1_col1" class="data row1 col1" >[{'content': 'unclear', 'role': 'assistant'}]</td>
+      <th id="T_02ac6_level0_row1" class="row_heading level0 row1">1</th>
+      <td id="T_02ac6_row1_col0" class="data row1 col0">[{'content': 'Classify the sentiment of this food delivery review: nan. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
+      <td id="T_02ac6_row1_col1" class="data row1 col1">[{'content': 'unclear', 'role': 'assistant'}]</td>
     </tr>
     <tr>
-      <th id="T_02ac6_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_02ac6_row2_col0" class="data row2 col0" >[{'content': 'Classify the sentiment of this food delivery review: nan. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
-      <td id="T_02ac6_row2_col1" class="data row2 col1" >[{'content': 'unclear', 'role': 'assistant'}]</td>
+      <th id="T_02ac6_level0_row2" class="row_heading level0 row2">2</th>
+      <td id="T_02ac6_row2_col0" class="data row2 col0">[{'content': 'Classify the sentiment of this food delivery review: nan. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
+      <td id="T_02ac6_row2_col1" class="data row2 col1">[{'content': 'unclear', 'role': 'assistant'}]</td>
     </tr>
     <tr>
-      <th id="T_02ac6_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_02ac6_row3_col0" class="data row3 col0" >[{'content': 'Classify the sentiment of this food delivery review: nan. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
-      <td id="T_02ac6_row3_col1" class="data row3 col1" >[{'content': 'unclear', 'role': 'assistant'}]</td>
+      <th id="T_02ac6_level0_row3" class="row_heading level0 row3">3</th>
+      <td id="T_02ac6_row3_col0" class="data row3 col0">[{'content': 'Classify the sentiment of this food delivery review: nan. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
+      <td id="T_02ac6_row3_col1" class="data row3 col1">[{'content': 'unclear', 'role': 'assistant'}]</td>
     </tr>
     <tr>
-      <th id="T_02ac6_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_02ac6_row4_col0" class="data row4 col0" >[{'content': 'Classify the sentiment of this food delivery review: Wow look at this pizza!. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
-      <td id="T_02ac6_row4_col1" class="data row4 col1" >[{'content': 'positive', 'role': 'assistant'}]</td>
+      <th id="T_02ac6_level0_row4" class="row_heading level0 row4">4</th>
+      <td id="T_02ac6_row4_col0" class="data row4 col0">[{'content': 'Classify the sentiment of this food delivery review: Wow look at this pizza!. Categorize the request into one of "positive", "negative" or "unclear". Respond with only one of those words.', 'role': 'user'}]</td>
+      <td id="T_02ac6_row4_col1" class="data row4 col1">[{'content': 'positive', 'role': 'assistant'}]</td>
     </tr>
   </tbody>
 </table>

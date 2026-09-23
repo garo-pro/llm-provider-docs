@@ -69,7 +69,7 @@ df.head()
       <td>298</td>
       <td>2020 Summer Olympics\nQualifying event cancell...</td>
       <td>1. What was the original location of the Asia ...</td>
-      <td>1. The original location of the Asia &amp; Oceania...</td>
+      <td>1. The original location of the Asia &#x26; Oceania...</td>
     </tr>
     <tr>
       <th>4</th>

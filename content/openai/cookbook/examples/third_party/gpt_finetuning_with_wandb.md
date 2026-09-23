@@ -382,19 +382,19 @@ Tracking run with wandb version 0.15.9
 
 Run data is saved locally in <code>/Users/tcapelle/work/examples/colabs/openai/wandb/run-20230830_113853-ivu21mjl</code>
 
-Syncing run <strong><a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl' target="_blank">mild-surf-1</a></strong> to <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune' target="_blank">Weights & Biases</a> (<a href='https://wandb.me/run' target="_blank">docs</a>)<br/>
+Syncing run <strong><a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl" target="_blank">mild-surf-1</a></strong> to <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune" target="_blank">Weights &#x26; Biases</a> (<a href="https://wandb.me/run" target="_blank">docs</a>)<br>
 
-View project at <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune</a>
+View project at <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune</a>
 
-View run at <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl</a>
+View run at <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl</a>
 
-Waiting for W&B process to finish... <strong style="color:green">(success).</strong>
+Waiting for W&#x26;B process to finish... <strong style="color:green">(success).</strong>
 
 ```text
 wandb: WARNING Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
 ```
 
-View run <strong style="color:#cdcd00">mild-surf-1</strong> at: <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl</a><br/>Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 1 other file(s)
+View run <strong style="color:#cdcd00">mild-surf-1</strong> at: <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/ivu21mjl</a><br>Synced 6 W&#x26;B file(s), 0 media file(s), 2 artifact file(s) and 1 other file(s)
 
 Find logs at: <code>./wandb/run-20230830_113853-ivu21mjl/logs</code>
 
@@ -425,11 +425,11 @@ Tracking run with wandb version 0.15.9
 
 Run data is saved locally in <code>/Users/tcapelle/work/examples/colabs/openai/wandb/run-20230830_113907-1ili9l51</code>
 
-Syncing run <strong><a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51' target="_blank">jumping-water-2</a></strong> to <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune' target="_blank">Weights & Biases</a> (<a href='https://wandb.me/run' target="_blank">docs</a>)<br/>
+Syncing run <strong><a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51" target="_blank">jumping-water-2</a></strong> to <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune" target="_blank">Weights &#x26; Biases</a> (<a href="https://wandb.me/run" target="_blank">docs</a>)<br>
 
-View project at <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune</a>
+View project at <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune</a>
 
-View run at <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51</a>
+View run at <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51</a>
 
 ```text
 'my_data/encoded_train_data.jsonl'
@@ -666,7 +666,7 @@ Retrieving fine-tune job...
 wandb.finish()
 ```
 
-Waiting for W&B process to finish... <strong style="color:green">(success).</strong>
+Waiting for W&#x26;B process to finish... <strong style="color:green">(success).</strong>
 
 ```text
 VBox(children=(Label(value='0.050 MB of 0.050 MB uploaded (0.000 MB deduped)\r'), FloatProgress(value=1.0, max…
@@ -682,7 +682,7 @@ upload_file request headers: {'User-Agent': 'python-requests/2.28.2', 'Accept-En
 upload_file response body:
 ```
 
-View run <strong style="color:#cdcd00">jumping-water-2</strong> at: <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51</a><br/>Synced 7 W&B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
+View run <strong style="color:#cdcd00">jumping-water-2</strong> at: <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/1ili9l51</a><br>Synced 7 W&#x26;B file(s), 0 media file(s), 0 artifact file(s) and 1 other file(s)
 
 Find logs at: <code>./wandb/run-20230830_113907-1ili9l51/logs</code>
 
@@ -718,11 +718,11 @@ Tracking run with wandb version 0.15.9
 
 Run data is saved locally in <code>/Users/tcapelle/work/examples/colabs/openai/wandb/run-20230830_115947-iepk19m2</code>
 
-Syncing run <strong><a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2' target="_blank">ethereal-energy-4</a></strong> to <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune' target="_blank">Weights & Biases</a> (<a href='https://wandb.me/run' target="_blank">docs</a>)<br/>
+Syncing run <strong><a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2" target="_blank">ethereal-energy-4</a></strong> to <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune" target="_blank">Weights &#x26; Biases</a> (<a href="https://wandb.me/run" target="_blank">docs</a>)<br>
 
-View project at <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune</a>
+View project at <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune</a>
 
-View run at <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2</a>
+View run at <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2</a>
 
 ```text
 There are 87 test examples
@@ -841,7 +841,7 @@ Baseline Accurcy is: 0.7931034482758621
 wandb.finish()
 ```
 
-Waiting for W&B process to finish... <strong style="color:green">(success).</strong>
+Waiting for W&#x26;B process to finish... <strong style="color:green">(success).</strong>
 
 ```text
 VBox(children=(Label(value='0.248 MB of 0.248 MB uploaded (0.000 MB deduped)\r'), FloatProgress(value=1.0, max…
@@ -851,9 +851,9 @@ VBox(children=(Label(value='0.248 MB of 0.248 MB uploaded (0.000 MB deduped)\r')
 wandb: WARNING Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
 ```
 
-<div class="wandb-row"><div class="wandb-col"><h3>Run history:</h3><br/><table class="wandb"><tr><td>eval/accuracy</td><td>▁</td></tr><tr><td>eval/baseline_accuracy</td><td>▁</td></tr></table><br/></div><div class="wandb-col"><h3>Run summary:</h3><br/><table class="wandb"><tr><td>eval/accuracy</td><td>0.83908</td></tr><tr><td>eval/baseline_accuracy</td><td>0.7931</td></tr></table><br/></div></div>
+<div class="wandb-row"><div class="wandb-col"><h3>Run history:</h3><br><table class="wandb"><tbody><tr><td>eval/accuracy</td><td>▁</td></tr><tr><td>eval/baseline_accuracy</td><td>▁</td></tr></tbody></table><br></div><div class="wandb-col"><h3>Run summary:</h3><br><table class="wandb"><tbody><tr><td>eval/accuracy</td><td>0.83908</td></tr><tr><td>eval/baseline_accuracy</td><td>0.7931</td></tr></tbody></table><br></div></div>
 
-View run <strong style="color:#cdcd00">ethereal-energy-4</strong> at: <a href='https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2' target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2</a><br/>Synced 7 W&B file(s), 2 media file(s), 2 artifact file(s) and 1 other file(s)
+View run <strong style="color:#cdcd00">ethereal-energy-4</strong> at: <a href="https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2" target="_blank">https://wandb.ai/capecape/OpenAI-Fine-Tune/runs/iepk19m2</a><br>Synced 7 W&#x26;B file(s), 2 media file(s), 2 artifact file(s) and 1 other file(s)
 
 Find logs at: <code>./wandb/run-20230830_115947-iepk19m2/logs</code>
 

@@ -565,7 +565,7 @@ df.head()
       <td>GOYMFK</td>
       <td>$24.99</td>
       <td>Only 13 left in stock - order soon.</td>
-      <td>['Home &amp; Kitchen', 'Storage &amp; Organization', '...</td>
+      <td>['Home &#x26; Kitchen', 'Storage &#x26; Organization', '...</td>
       <td>https://m.media-amazon.com/images/I/416WaLx10j...</td>
       <td>['https://m.media-amazon.com/images/I/416WaLx1...</td>
       <td>NaN</td>
@@ -589,7 +589,7 @@ df.head()
       <td>subrtex</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>['Home &amp; Kitchen', 'Furniture', 'Dining Room F...</td>
+      <td>['Home &#x26; Kitchen', 'Furniture', 'Dining Room F...</td>
       <td>https://m.media-amazon.com/images/I/31SejUEWY7...</td>
       <td>['https://m.media-amazon.com/images/I/31SejUEW...</td>
       <td>NaN</td>
@@ -613,7 +613,7 @@ df.head()
       <td>MUYETOL</td>
       <td>$5.98</td>
       <td>In Stock</td>
-      <td>['Patio, Lawn &amp; Garden', 'Outdoor Décor', 'Doo...</td>
+      <td>['Patio, Lawn &#x26; Garden', 'Outdoor Décor', 'Doo...</td>
       <td>https://m.media-amazon.com/images/I/41RgefVq70...</td>
       <td>['https://m.media-amazon.com/images/I/41RgefVq...</td>
       <td>NaN</td>
@@ -637,7 +637,7 @@ df.head()
       <td>VEWETOL</td>
       <td>$13.99</td>
       <td>Only 10 left in stock - order soon.</td>
-      <td>['Patio, Lawn &amp; Garden', 'Outdoor Décor', 'Doo...</td>
+      <td>['Patio, Lawn &#x26; Garden', 'Outdoor Décor', 'Doo...</td>
       <td>https://m.media-amazon.com/images/I/61vz1Igler...</td>
       <td>['https://m.media-amazon.com/images/I/61vz1Igl...</td>
       <td>NaN</td>
@@ -661,7 +661,7 @@ df.head()
       <td>JOIN IRON Store</td>
       <td>$89.99</td>
       <td>Usually ships within 5 to 6 weeks</td>
-      <td>['Home &amp; Kitchen', 'Furniture', 'Game &amp; Recrea...</td>
+      <td>['Home &#x26; Kitchen', 'Furniture', 'Game &#x26; Recrea...</td>
       <td>https://m.media-amazon.com/images/I/41p4d4VJnN...</td>
       <td>['https://m.media-amazon.com/images/I/41p4d4VJ...</td>
       <td>NaN</td>
@@ -738,31 +738,31 @@ for _, row in df[:5].iterrows():
     print(f"CAPTION: {caption}\n\n")
 ```
 
-<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/416WaLx10jL._SS522_.jpg">
 
 ```text
 CAPTION: A stylish white free-standing shoe rack featuring multiple layers and eight double hooks, perfect for organizing shoes and accessories in living rooms, bathrooms, or hallways.
 ```
 
-<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31SejUEWY7L._SS522_.jpg">
 
 ```text
 CAPTION: Set of 2 black leather dining chairs featuring a sleek design with vertical stitching and sturdy wooden legs.
 ```
 
-<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41RgefVq70L._SS522_.jpg">
 
 ```text
 CAPTION: The MUYETOL Plant Repotting Mat is a waterproof, portable, and foldable gardening work mat measuring 26.8" x 26.8", designed for easy soil changing and indoor transplanting.
 ```
 
-<img src="https://m.media-amazon.com/images/I/61vz1IglerL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/61vz1IglerL._SS522_.jpg">
 
 ```text
 CAPTION: Absorbent non-slip doormat featuring the phrase "It's a good day to play PICKLEBALL" with paddle graphics, measuring 16x24 inches.
 ```
 
-<img src="https://m.media-amazon.com/images/I/41p4d4VJnNL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41p4d4VJnNL._SS522_.jpg">
 
 ```text
 CAPTION: Set of 4 foldable TV trays in grey, featuring a compact design with a stand for easy storage, perfect for small spaces.
@@ -898,31 +898,31 @@ for res in results[:5]:
     print(f"CAPTION: {result}\n\n")
 ```
 
-<img src="https://m.media-amazon.com/images/I/31FOa-k+EtL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31FOa-k+EtL._SS522_.jpg">
 
 ```text
 CAPTION: Brushed brass pedestal towel rack with a sleek, modern design, featuring multiple bars for hanging towels, measuring 25.75 x 14.44 x 32 inches.
 ```
 
-<img src="https://m.media-amazon.com/images/I/41z8YktAkGL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/41z8YktAkGL._SS522_.jpg">
 
 ```text
 CAPTION: Black round end table featuring a tempered glass top and a metal frame, with a lower shelf for additional storage.
 ```
 
-<img src="https://m.media-amazon.com/images/I/511N0PuE9EL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/511N0PuE9EL._SS522_.jpg">
 
 ```text
 CAPTION: Black collapsible and height-adjustable telescoping stool, portable and designed for makeup artists and hairstylists, shown in various stages of folding for easy transport.
 ```
 
-<img src="https://m.media-amazon.com/images/I/31dCSKQ14YL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/31dCSKQ14YL._SS522_.jpg">
 
 ```text
 CAPTION: Ergonomic pink gaming chair featuring breathable fabric, adjustable height, lumbar support, a footrest, and a swivel recliner function.
 ```
 
-<img src="https://m.media-amazon.com/images/I/51OPfpn9ovL._SS522_.jpg"/>
+<img src="https://m.media-amazon.com/images/I/51OPfpn9ovL._SS522_.jpg">
 
 ```text
 CAPTION: A set of two Glitzhome adjustable bar stools featuring a mid-century modern design with swivel seats, PU leather upholstery, and wooden backrests.

@@ -208,7 +208,7 @@ response_multimodal = client.responses.create(
 )
 ```
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/2880px-Cat_August_2010-4.jpg" width="400"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/2880px-Cat_August_2010-4.jpg" width="400">
 
 ```python
 import json

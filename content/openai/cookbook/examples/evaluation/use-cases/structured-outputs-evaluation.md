@@ -325,11 +325,11 @@ def poll_runs(eval_id, run_ids):
 poll_runs(logs_eval.id, [gpt_4one_completions_run.id, gpt_4one_responses_run.id])
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">evalrun_68487dcc749081918ec2571e76cc9ef6 completed
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">evalrun_68487dcc749081918ec2571e76cc9ef6 completed
 <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ResultCounts</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">errored</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">failed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #808000; text-decoration-color: #808000">passed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">total</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">)</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">evalrun_68487dcdaba0819182db010fe5331f2e completed
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">evalrun_68487dcdaba0819182db010fe5331f2e completed
 <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">ResultCounts</span><span style="font-weight: bold">(</span><span style="color: #808000; text-decoration-color: #808000">errored</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">failed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #808000; text-decoration-color: #808000">passed</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>, <span style="color: #808000; text-decoration-color: #808000">total</span>=<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">)</span>
 </pre>
 
@@ -394,14 +394,14 @@ Completions vs Responses Output
 <table id="T_ac15e">
   <thead>
     <tr>
-      <th id="T_ac15e_level0_col0" class="col_heading level0 col0" >Completions Output</th>
-      <th id="T_ac15e_level0_col1" class="col_heading level0 col1" >Responses Output</th>
+      <th id="T_ac15e_level0_col0" class="col_heading level0 col0">Completions Output</th>
+      <th id="T_ac15e_level0_col1" class="col_heading level0 col1">Responses Output</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td id="T_ac15e_row0_col0" class="data row0 col0" >{"symbols":[{"name":"Evals","symbol_type":"class"},{"name":"AsyncEvals","symbol_type":"class"},{"name":"EvalsWithRawResponse","symbol_type":"class"},{"name":"AsyncEvalsWithRawResponse","symbol_type":"class"},{"name":"EvalsWithStreamingResponse","symb...</td>
-      <td id="T_ac15e_row0_col1" class="data row0 col1" >{"symbols":[{"name":"Evals","symbol_type":"class"},{"name":"runs","symbol_type":"property"},{"name":"with_raw_response","symbol_type":"property"},{"name":"with_streaming_response","symbol_type":"property"},{"name":"create","symbol_type":"function"},{...</td>
+      <td id="T_ac15e_row0_col0" class="data row0 col0">{"symbols":[{"name":"Evals","symbol_type":"class"},{"name":"AsyncEvals","symbol_type":"class"},{"name":"EvalsWithRawResponse","symbol_type":"class"},{"name":"AsyncEvalsWithRawResponse","symbol_type":"class"},{"name":"EvalsWithStreamingResponse","symb...</td>
+      <td id="T_ac15e_row0_col1" class="data row0 col1">{"symbols":[{"name":"Evals","symbol_type":"class"},{"name":"runs","symbol_type":"property"},{"name":"with_raw_response","symbol_type":"property"},{"name":"with_streaming_response","symbol_type":"property"},{"name":"create","symbol_type":"function"},{...</td>
     </tr>
   </tbody>
 </table>

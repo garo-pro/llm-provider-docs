@@ -100,7 +100,7 @@ sql_df.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>SELECT COUNT(*) FROM head WHERE age &gt; 56</td>
+      <td>SELECT COUNT(*) FROM head WHERE age > 56</td>
       <td>How many heads of the departments are older th...</td>
       <td>CREATE TABLE head (age INTEGER)</td>
     </tr>

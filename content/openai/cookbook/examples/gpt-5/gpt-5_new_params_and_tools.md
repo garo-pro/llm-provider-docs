@@ -105,17 +105,17 @@ display(styled_df)
 <table id="T_50bc1">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_50bc1_level0_col0" class="col_heading level0 col0" >Verbosity</th>
-      <th id="T_50bc1_level0_col1" class="col_heading level0 col1" >Sample Output</th>
-      <th id="T_50bc1_level0_col2" class="col_heading level0 col2" >Output Tokens</th>
+      <th class="blank level0"> </th>
+      <th id="T_50bc1_level0_col0" class="col_heading level0 col0">Verbosity</th>
+      <th id="T_50bc1_level0_col1" class="col_heading level0 col1">Sample Output</th>
+      <th id="T_50bc1_level0_col2" class="col_heading level0 col2">Output Tokens</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_50bc1_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_50bc1_row0_col0" class="data row0 col0" >low</td>
-      <td id="T_50bc1_row0_col1" class="data row0 col1" >He found a scruff of fur behind the shed one spring afternoon,
+      <th id="T_50bc1_level0_row0" class="row_heading level0 row0">0</th>
+      <td id="T_50bc1_row0_col0" class="data row0 col0">low</td>
+      <td id="T_50bc1_row0_col1" class="data row0 col1">He found a scruff of fur behind the shed one spring afternoon,
 a heartbeat small and fast beneath a coat of dust and light.
 The world shrank to two—mud on sneakers, a wag, a clumsy tune—
 names rolled off his tongue like marbles, simple, sure, and bright.
@@ -134,12 +134,12 @@ When time unlatched its gates, the boy still carried small things:
 a collar, a chewed shoe, the echo of a bark that taught him how to hope.
 He learned that love can look like leaving crumbs of ordinary kings,
 and that some firsts fit in your pockets long after they have gone.</td>
-      <td id="T_50bc1_row0_col2" class="data row0 col2" >560</td>
+      <td id="T_50bc1_row0_col2" class="data row0 col2">560</td>
     </tr>
     <tr>
-      <th id="T_50bc1_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_50bc1_row1_col0" class="data row1 col0" >medium</td>
-      <td id="T_50bc1_row1_col1" class="data row1 col1" >He found him folded in the crook of a cardboard box,
+      <th id="T_50bc1_level0_row1" class="row_heading level0 row1">1</th>
+      <td id="T_50bc1_row1_col0" class="data row1 col0">medium</td>
+      <td id="T_50bc1_row1_col1" class="data row1 col1">He found him folded in the crook of a cardboard box,
 a tiny ribcage hitching like a thought.
 The boy had pockets full of pennies and promises;
 the dog had eyes like two small questions.
@@ -196,12 +196,12 @@ Some bonds refuse to be folded away.
 In the quiet hum of rememberings,
 he can still hear a collar's jingle and a small, glad bark:
 first home, first friend, first forever.</td>
-      <td id="T_50bc1_row1_col2" class="data row1 col2" >849</td>
+      <td id="T_50bc1_row1_col2" class="data row1 col2">849</td>
     </tr>
     <tr>
-      <th id="T_50bc1_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_50bc1_row2_col0" class="data row2 col0" >high</td>
-      <td id="T_50bc1_row2_col1" class="data row2 col1" >The day the boy met his dog the world grew wider—
+      <th id="T_50bc1_level0_row2" class="row_heading level0 row2">2</th>
+      <td id="T_50bc1_row2_col0" class="data row2 col0">high</td>
+      <td id="T_50bc1_row2_col1" class="data row2 col1">The day the boy met his dog the world grew wider—
 a small breath of fur and a damp, earnest nose
 pressed like a secret against his palm.
 They stood on the porch and the sun tilted curious,
@@ -285,7 +285,7 @@ He taught a boy how to stand steady under weather,
 how to be brave by being kind, and how to keep a place warm.
 If you listen, sometimes the past still answers,
 with a jingle, a wag, and the echo of a small, perfect breath.</td>
-      <td id="T_50bc1_row2_col2" class="data row2 col2" >1288</td>
+      <td id="T_50bc1_row2_col2" class="data row2 col2">1288</td>
     </tr>
   </tbody>
 </table>

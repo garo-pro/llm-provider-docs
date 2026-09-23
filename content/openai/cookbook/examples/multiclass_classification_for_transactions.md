@@ -169,7 +169,7 @@ test_transactions.head(25)
     <tr>
       <th>0</th>
       <td>21/04/2016</td>
-      <td>M &amp; J Ballantyne Ltd</td>
+      <td>M &#x26; J Ballantyne Ltd</td>
       <td>George IV Bridge Work</td>
       <td>35098.0</td>
       <td>Building Improvement</td>
@@ -178,9 +178,9 @@ test_transactions.head(25)
       <th>1</th>
       <td>26/04/2016</td>
       <td>Private Sale</td>
-      <td>Literary &amp; Archival Items</td>
+      <td>Literary &#x26; Archival Items</td>
       <td>30000.0</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>2</th>
@@ -306,17 +306,17 @@ test_transactions.head(25)
       <th>17</th>
       <td>15/07/2016</td>
       <td>Sotheby'S</td>
-      <td>Literary &amp; Archival Items</td>
+      <td>Literary &#x26; Archival Items</td>
       <td>28500.0</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>18</th>
       <td>18/07/2016</td>
       <td>Christies</td>
-      <td>Literary &amp; Archival Items</td>
+      <td>Literary &#x26; Archival Items</td>
       <td>33800.0</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>19</th>
@@ -418,7 +418,7 @@ df.head()
     <tr>
       <th>2</th>
       <td>29/05/2017</td>
-      <td>Morris &amp; Spottiswood Ltd</td>
+      <td>Morris &#x26; Spottiswood Ltd</td>
       <td>George IV Bridge Work</td>
       <td>56448</td>
       <td>Building Improvement</td>
@@ -574,11 +574,11 @@ fs_df.head()
       <th>2</th>
       <td>2</td>
       <td>29/05/2017</td>
-      <td>Morris &amp; Spottiswood Ltd</td>
+      <td>Morris &#x26; Spottiswood Ltd</td>
       <td>George IV Bridge Work</td>
       <td>56448</td>
       <td>Building Improvement</td>
-      <td>Supplier: Morris &amp; Spottiswood Ltd; Descriptio...</td>
+      <td>Supplier: Morris &#x26; Spottiswood Ltd; Descriptio...</td>
       <td>141</td>
       <td>[0.013581369072198868, -0.003978211898356676, ...</td>
       <td>[0.013593776151537895, -0.0037341134157031775,...</td>
@@ -726,11 +726,11 @@ ft_prep_df.head()
       <th>2</th>
       <td>2</td>
       <td>29/05/2017</td>
-      <td>Morris &amp; Spottiswood Ltd</td>
+      <td>Morris &#x26; Spottiswood Ltd</td>
       <td>George IV Bridge Work</td>
       <td>56448</td>
       <td>Building Improvement</td>
-      <td>Supplier: Morris &amp; Spottiswood Ltd; Descriptio...</td>
+      <td>Supplier: Morris &#x26; Spottiswood Ltd; Descriptio...</td>
       <td>141</td>
       <td>[0.013593776151537895, -0.0037341134157031775,...</td>
       <td>[0.013561442494392395, -0.004199974238872528, ...</td>
@@ -904,17 +904,17 @@ test_set.head()
     <tr>
       <th>1</th>
       <td>[{'role': 'user', 'content': 'You are a data e...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>2</th>
       <td>[{'role': 'user', 'content': 'You are a data e...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>3</th>
       <td>[{'role': 'user', 'content': 'You are a data e...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>4</th>
@@ -956,23 +956,23 @@ test_set.head()
     <tr>
       <th>1</th>
       <td>[{'role': 'user', 'content': 'You are a data e...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
       <td>ChatCompletion(id='chatcmpl-BKrC1BTr0DagbDkC2s...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>2</th>
       <td>[{'role': 'user', 'content': 'You are a data e...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
       <td>ChatCompletion(id='chatcmpl-BKrC1H3ZeIW5cz2Owr...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>3</th>
       <td>[{'role': 'user', 'content': 'You are a data e...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
       <td>ChatCompletion(id='chatcmpl-BKrC1wdhaMP0Q7YmYx...</td>
-      <td>Literature &amp; Archive</td>
+      <td>Literature &#x26; Archive</td>
     </tr>
     <tr>
       <th>4</th>

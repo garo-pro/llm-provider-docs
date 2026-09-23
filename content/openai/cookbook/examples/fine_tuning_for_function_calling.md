@@ -530,83 +530,83 @@ eval(
 <table id="T_b01a0">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_b01a0_level0_col0" class="col_heading level0 col0" >Prompt</th>
-      <th id="T_b01a0_level0_col1" class="col_heading level0 col1" >Actual</th>
-      <th id="T_b01a0_level0_col2" class="col_heading level0 col2" >Expected</th>
-      <th id="T_b01a0_level0_col3" class="col_heading level0 col3" >Match</th>
+      <th class="blank level0"> </th>
+      <th id="T_b01a0_level0_col0" class="col_heading level0 col0">Prompt</th>
+      <th id="T_b01a0_level0_col1" class="col_heading level0 col1">Actual</th>
+      <th id="T_b01a0_level0_col2" class="col_heading level0 col2">Expected</th>
+      <th id="T_b01a0_level0_col3" class="col_heading level0 col3">Match</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_b01a0_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_b01a0_row0_col0" class="data row0 col0" >Land the drone at the home base</td>
-      <td id="T_b01a0_row0_col1" class="data row0 col1" >land_drone</td>
-      <td id="T_b01a0_row0_col2" class="data row0 col2" >land_drone</td>
-      <td id="T_b01a0_row0_col3" class="data row0 col3" >Yes</td>
+      <th id="T_b01a0_level0_row0" class="row_heading level0 row0">0</th>
+      <td id="T_b01a0_row0_col0" class="data row0 col0">Land the drone at the home base</td>
+      <td id="T_b01a0_row0_col1" class="data row0 col1">land_drone</td>
+      <td id="T_b01a0_row0_col2" class="data row0 col2">land_drone</td>
+      <td id="T_b01a0_row0_col3" class="data row0 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_b01a0_row1_col0" class="data row1 col0" >Take off the drone to 50 meters</td>
-      <td id="T_b01a0_row1_col1" class="data row1 col1" >takeoff_drone</td>
-      <td id="T_b01a0_row1_col2" class="data row1 col2" >takeoff_drone</td>
-      <td id="T_b01a0_row1_col3" class="data row1 col3" >Yes</td>
+      <th id="T_b01a0_level0_row1" class="row_heading level0 row1">1</th>
+      <td id="T_b01a0_row1_col0" class="data row1 col0">Take off the drone to 50 meters</td>
+      <td id="T_b01a0_row1_col1" class="data row1 col1">takeoff_drone</td>
+      <td id="T_b01a0_row1_col2" class="data row1 col2">takeoff_drone</td>
+      <td id="T_b01a0_row1_col3" class="data row1 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_b01a0_row2_col0" class="data row2 col0" >Change speed to 15 kilometers per hour</td>
-      <td id="T_b01a0_row2_col1" class="data row2 col1" >set_drone_speed</td>
-      <td id="T_b01a0_row2_col2" class="data row2 col2" >set_drone_speed</td>
-      <td id="T_b01a0_row2_col3" class="data row2 col3" >Yes</td>
+      <th id="T_b01a0_level0_row2" class="row_heading level0 row2">2</th>
+      <td id="T_b01a0_row2_col0" class="data row2 col0">Change speed to 15 kilometers per hour</td>
+      <td id="T_b01a0_row2_col1" class="data row2 col1">set_drone_speed</td>
+      <td id="T_b01a0_row2_col2" class="data row2 col2">set_drone_speed</td>
+      <td id="T_b01a0_row2_col3" class="data row2 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_b01a0_row3_col0" class="data row3 col0" >Turn into an elephant!</td>
-      <td id="T_b01a0_row3_col1" class="data row3 col1" >reject_request</td>
-      <td id="T_b01a0_row3_col2" class="data row3 col2" >reject_request</td>
-      <td id="T_b01a0_row3_col3" class="data row3 col3" >Yes</td>
+      <th id="T_b01a0_level0_row3" class="row_heading level0 row3">3</th>
+      <td id="T_b01a0_row3_col0" class="data row3 col0">Turn into an elephant!</td>
+      <td id="T_b01a0_row3_col1" class="data row3 col1">reject_request</td>
+      <td id="T_b01a0_row3_col2" class="data row3 col2">reject_request</td>
+      <td id="T_b01a0_row3_col3" class="data row3 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_b01a0_row4_col0" class="data row4 col0" >Move the drone forward by 10 meters</td>
-      <td id="T_b01a0_row4_col1" class="data row4 col1" >control_drone_movement</td>
-      <td id="T_b01a0_row4_col2" class="data row4 col2" >control_drone_movement</td>
-      <td id="T_b01a0_row4_col3" class="data row4 col3" >Yes</td>
+      <th id="T_b01a0_level0_row4" class="row_heading level0 row4">4</th>
+      <td id="T_b01a0_row4_col0" class="data row4 col0">Move the drone forward by 10 meters</td>
+      <td id="T_b01a0_row4_col1" class="data row4 col1">control_drone_movement</td>
+      <td id="T_b01a0_row4_col2" class="data row4 col2">control_drone_movement</td>
+      <td id="T_b01a0_row4_col3" class="data row4 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_b01a0_row5_col0" class="data row5 col0" >I want the LED display to blink in red</td>
-      <td id="T_b01a0_row5_col1" class="data row5 col1" >configure_led_display</td>
-      <td id="T_b01a0_row5_col2" class="data row5 col2" >configure_led_display</td>
-      <td id="T_b01a0_row5_col3" class="data row5 col3" >Yes</td>
+      <th id="T_b01a0_level0_row5" class="row_heading level0 row5">5</th>
+      <td id="T_b01a0_row5_col0" class="data row5 col0">I want the LED display to blink in red</td>
+      <td id="T_b01a0_row5_col1" class="data row5 col1">configure_led_display</td>
+      <td id="T_b01a0_row5_col2" class="data row5 col2">configure_led_display</td>
+      <td id="T_b01a0_row5_col3" class="data row5 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_b01a0_row6_col0" class="data row6 col0" >Can you take a photo?</td>
-      <td id="T_b01a0_row6_col1" class="data row6 col1" >control_camera</td>
-      <td id="T_b01a0_row6_col2" class="data row6 col2" >control_camera</td>
-      <td id="T_b01a0_row6_col3" class="data row6 col3" >Yes</td>
+      <th id="T_b01a0_level0_row6" class="row_heading level0 row6">6</th>
+      <td id="T_b01a0_row6_col0" class="data row6 col0">Can you take a photo?</td>
+      <td id="T_b01a0_row6_col1" class="data row6 col1">control_camera</td>
+      <td id="T_b01a0_row6_col2" class="data row6 col2">control_camera</td>
+      <td id="T_b01a0_row6_col3" class="data row6 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_b01a0_row7_col0" class="data row7 col0" >Can you detect obstacles?</td>
-      <td id="T_b01a0_row7_col1" class="data row7 col1" >set_obstacle_avoidance</td>
-      <td id="T_b01a0_row7_col2" class="data row7 col2" >set_obstacle_avoidance</td>
-      <td id="T_b01a0_row7_col3" class="data row7 col3" >Yes</td>
+      <th id="T_b01a0_level0_row7" class="row_heading level0 row7">7</th>
+      <td id="T_b01a0_row7_col0" class="data row7 col0">Can you detect obstacles?</td>
+      <td id="T_b01a0_row7_col1" class="data row7 col1">set_obstacle_avoidance</td>
+      <td id="T_b01a0_row7_col2" class="data row7 col2">set_obstacle_avoidance</td>
+      <td id="T_b01a0_row7_col3" class="data row7 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_b01a0_row8_col0" class="data row8 col0" >Can you dance for me?</td>
-      <td id="T_b01a0_row8_col1" class="data row8 col1" >reject_request</td>
-      <td id="T_b01a0_row8_col2" class="data row8 col2" >reject_request</td>
-      <td id="T_b01a0_row8_col3" class="data row8 col3" >Yes</td>
+      <th id="T_b01a0_level0_row8" class="row_heading level0 row8">8</th>
+      <td id="T_b01a0_row8_col0" class="data row8 col0">Can you dance for me?</td>
+      <td id="T_b01a0_row8_col1" class="data row8 col1">reject_request</td>
+      <td id="T_b01a0_row8_col2" class="data row8 col2">reject_request</td>
+      <td id="T_b01a0_row8_col3" class="data row8 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_b01a0_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_b01a0_row9_col0" class="data row9 col0" >Can you follow me?</td>
-      <td id="T_b01a0_row9_col1" class="data row9 col1" >set_follow_me_mode</td>
-      <td id="T_b01a0_row9_col2" class="data row9 col2" >set_follow_me_mode</td>
-      <td id="T_b01a0_row9_col3" class="data row9 col3" >Yes</td>
+      <th id="T_b01a0_level0_row9" class="row_heading level0 row9">9</th>
+      <td id="T_b01a0_row9_col0" class="data row9 col0">Can you follow me?</td>
+      <td id="T_b01a0_row9_col1" class="data row9 col1">set_follow_me_mode</td>
+      <td id="T_b01a0_row9_col2" class="data row9 col2">set_follow_me_mode</td>
+      <td id="T_b01a0_row9_col3" class="data row9 col3">Yes</td>
     </tr>
   </tbody>
 </table>
@@ -648,83 +648,83 @@ eval(
 <table id="T_99c20">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_99c20_level0_col0" class="col_heading level0 col0" >Prompt</th>
-      <th id="T_99c20_level0_col1" class="col_heading level0 col1" >Actual</th>
-      <th id="T_99c20_level0_col2" class="col_heading level0 col2" >Expected</th>
-      <th id="T_99c20_level0_col3" class="col_heading level0 col3" >Match</th>
+      <th class="blank level0"> </th>
+      <th id="T_99c20_level0_col0" class="col_heading level0 col0">Prompt</th>
+      <th id="T_99c20_level0_col1" class="col_heading level0 col1">Actual</th>
+      <th id="T_99c20_level0_col2" class="col_heading level0 col2">Expected</th>
+      <th id="T_99c20_level0_col3" class="col_heading level0 col3">Match</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_99c20_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_99c20_row0_col0" class="data row0 col0" >Play pre-recorded audio message</td>
-      <td id="T_99c20_row0_col1" class="data row0 col1" >reject_request</td>
-      <td id="T_99c20_row0_col2" class="data row0 col2" >reject_request</td>
-      <td id="T_99c20_row0_col3" class="data row0 col3" >Yes</td>
+      <th id="T_99c20_level0_row0" class="row_heading level0 row0">0</th>
+      <td id="T_99c20_row0_col0" class="data row0 col0">Play pre-recorded audio message</td>
+      <td id="T_99c20_row0_col1" class="data row0 col1">reject_request</td>
+      <td id="T_99c20_row0_col2" class="data row0 col2">reject_request</td>
+      <td id="T_99c20_row0_col3" class="data row0 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_99c20_row1_col0" class="data row1 col0" >Initiate following on social media</td>
-      <td id="T_99c20_row1_col1" class="data row1 col1" >set_follow_me_mode</td>
-      <td id="T_99c20_row1_col2" class="data row1 col2" >reject_request</td>
-      <td id="T_99c20_row1_col3" class="data row1 col3" >No</td>
+      <th id="T_99c20_level0_row1" class="row_heading level0 row1">1</th>
+      <td id="T_99c20_row1_col0" class="data row1 col0">Initiate following on social media</td>
+      <td id="T_99c20_row1_col1" class="data row1 col1">set_follow_me_mode</td>
+      <td id="T_99c20_row1_col2" class="data row1 col2">reject_request</td>
+      <td id="T_99c20_row1_col3" class="data row1 col3">No</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_99c20_row2_col0" class="data row2 col0" >Scan environment for heat signatures</td>
-      <td id="T_99c20_row2_col1" class="data row2 col1" >reject_request</td>
-      <td id="T_99c20_row2_col2" class="data row2 col2" >reject_request</td>
-      <td id="T_99c20_row2_col3" class="data row2 col3" >Yes</td>
+      <th id="T_99c20_level0_row2" class="row_heading level0 row2">2</th>
+      <td id="T_99c20_row2_col0" class="data row2 col0">Scan environment for heat signatures</td>
+      <td id="T_99c20_row2_col1" class="data row2 col1">reject_request</td>
+      <td id="T_99c20_row2_col2" class="data row2 col2">reject_request</td>
+      <td id="T_99c20_row2_col3" class="data row2 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_99c20_row3_col0" class="data row3 col0" >Bump into obstacles</td>
-      <td id="T_99c20_row3_col1" class="data row3 col1" >set_obstacle_avoidance</td>
-      <td id="T_99c20_row3_col2" class="data row3 col2" >reject_request</td>
-      <td id="T_99c20_row3_col3" class="data row3 col3" >No</td>
+      <th id="T_99c20_level0_row3" class="row_heading level0 row3">3</th>
+      <td id="T_99c20_row3_col0" class="data row3 col0">Bump into obstacles</td>
+      <td id="T_99c20_row3_col1" class="data row3 col1">set_obstacle_avoidance</td>
+      <td id="T_99c20_row3_col2" class="data row3 col2">reject_request</td>
+      <td id="T_99c20_row3_col3" class="data row3 col3">No</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_99c20_row4_col0" class="data row4 col0" >Change drone's paint job color</td>
-      <td id="T_99c20_row4_col1" class="data row4 col1" >reject_request</td>
-      <td id="T_99c20_row4_col2" class="data row4 col2" >reject_request</td>
-      <td id="T_99c20_row4_col3" class="data row4 col3" >Yes</td>
+      <th id="T_99c20_level0_row4" class="row_heading level0 row4">4</th>
+      <td id="T_99c20_row4_col0" class="data row4 col0">Change drone's paint job color</td>
+      <td id="T_99c20_row4_col1" class="data row4 col1">reject_request</td>
+      <td id="T_99c20_row4_col2" class="data row4 col2">reject_request</td>
+      <td id="T_99c20_row4_col3" class="data row4 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_99c20_row5_col0" class="data row5 col0" >Coordinate with nearby drones</td>
-      <td id="T_99c20_row5_col1" class="data row5 col1" >reject_request</td>
-      <td id="T_99c20_row5_col2" class="data row5 col2" >reject_request</td>
-      <td id="T_99c20_row5_col3" class="data row5 col3" >Yes</td>
+      <th id="T_99c20_level0_row5" class="row_heading level0 row5">5</th>
+      <td id="T_99c20_row5_col0" class="data row5 col0">Coordinate with nearby drones</td>
+      <td id="T_99c20_row5_col1" class="data row5 col1">reject_request</td>
+      <td id="T_99c20_row5_col2" class="data row5 col2">reject_request</td>
+      <td id="T_99c20_row5_col3" class="data row5 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_99c20_row6_col0" class="data row6 col0" >Change speed to negative 120 km/h</td>
-      <td id="T_99c20_row6_col1" class="data row6 col1" >set_drone_speed</td>
-      <td id="T_99c20_row6_col2" class="data row6 col2" >reject_request</td>
-      <td id="T_99c20_row6_col3" class="data row6 col3" >No</td>
+      <th id="T_99c20_level0_row6" class="row_heading level0 row6">6</th>
+      <td id="T_99c20_row6_col0" class="data row6 col0">Change speed to negative 120 km/h</td>
+      <td id="T_99c20_row6_col1" class="data row6 col1">set_drone_speed</td>
+      <td id="T_99c20_row6_col2" class="data row6 col2">reject_request</td>
+      <td id="T_99c20_row6_col3" class="data row6 col3">No</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_99c20_row7_col0" class="data row7 col0" >Detect a person</td>
-      <td id="T_99c20_row7_col1" class="data row7 col1" >reject_request</td>
-      <td id="T_99c20_row7_col2" class="data row7 col2" >reject_request</td>
-      <td id="T_99c20_row7_col3" class="data row7 col3" >Yes</td>
+      <th id="T_99c20_level0_row7" class="row_heading level0 row7">7</th>
+      <td id="T_99c20_row7_col0" class="data row7 col0">Detect a person</td>
+      <td id="T_99c20_row7_col1" class="data row7 col1">reject_request</td>
+      <td id="T_99c20_row7_col2" class="data row7 col2">reject_request</td>
+      <td id="T_99c20_row7_col3" class="data row7 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_99c20_row8_col0" class="data row8 col0" >Please enable night vision</td>
-      <td id="T_99c20_row8_col1" class="data row8 col1" >set_drone_lighting</td>
-      <td id="T_99c20_row8_col2" class="data row8 col2" >reject_request</td>
-      <td id="T_99c20_row8_col3" class="data row8 col3" >No</td>
+      <th id="T_99c20_level0_row8" class="row_heading level0 row8">8</th>
+      <td id="T_99c20_row8_col0" class="data row8 col0">Please enable night vision</td>
+      <td id="T_99c20_row8_col1" class="data row8 col1">set_drone_lighting</td>
+      <td id="T_99c20_row8_col2" class="data row8 col2">reject_request</td>
+      <td id="T_99c20_row8_col3" class="data row8 col3">No</td>
     </tr>
     <tr>
-      <th id="T_99c20_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_99c20_row9_col0" class="data row9 col0" >Report on humidity levels around you</td>
-      <td id="T_99c20_row9_col1" class="data row9 col1" >reject_request</td>
-      <td id="T_99c20_row9_col2" class="data row9 col2" >reject_request</td>
-      <td id="T_99c20_row9_col3" class="data row9 col3" >Yes</td>
+      <th id="T_99c20_level0_row9" class="row_heading level0 row9">9</th>
+      <td id="T_99c20_row9_col0" class="data row9 col0">Report on humidity levels around you</td>
+      <td id="T_99c20_row9_col1" class="data row9 col1">reject_request</td>
+      <td id="T_99c20_row9_col2" class="data row9 col2">reject_request</td>
+      <td id="T_99c20_row9_col3" class="data row9 col3">Yes</td>
     </tr>
   </tbody>
 </table>
@@ -1842,83 +1842,83 @@ Evaluating fine-tuned model with challenging prompts: ft:gpt-3.5-turbo-0125:open
 <table id="T_9f4fa">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_9f4fa_level0_col0" class="col_heading level0 col0" >Prompt</th>
-      <th id="T_9f4fa_level0_col1" class="col_heading level0 col1" >Actual</th>
-      <th id="T_9f4fa_level0_col2" class="col_heading level0 col2" >Expected</th>
-      <th id="T_9f4fa_level0_col3" class="col_heading level0 col3" >Match</th>
+      <th class="blank level0"> </th>
+      <th id="T_9f4fa_level0_col0" class="col_heading level0 col0">Prompt</th>
+      <th id="T_9f4fa_level0_col1" class="col_heading level0 col1">Actual</th>
+      <th id="T_9f4fa_level0_col2" class="col_heading level0 col2">Expected</th>
+      <th id="T_9f4fa_level0_col3" class="col_heading level0 col3">Match</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_9f4fa_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_9f4fa_row0_col0" class="data row0 col0" >Play pre-recorded audio message</td>
-      <td id="T_9f4fa_row0_col1" class="data row0 col1" >reject_request</td>
-      <td id="T_9f4fa_row0_col2" class="data row0 col2" >reject_request</td>
-      <td id="T_9f4fa_row0_col3" class="data row0 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row0" class="row_heading level0 row0">0</th>
+      <td id="T_9f4fa_row0_col0" class="data row0 col0">Play pre-recorded audio message</td>
+      <td id="T_9f4fa_row0_col1" class="data row0 col1">reject_request</td>
+      <td id="T_9f4fa_row0_col2" class="data row0 col2">reject_request</td>
+      <td id="T_9f4fa_row0_col3" class="data row0 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_9f4fa_row1_col0" class="data row1 col0" >Initiate following on social media</td>
-      <td id="T_9f4fa_row1_col1" class="data row1 col1" >reject_request</td>
-      <td id="T_9f4fa_row1_col2" class="data row1 col2" >reject_request</td>
-      <td id="T_9f4fa_row1_col3" class="data row1 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row1" class="row_heading level0 row1">1</th>
+      <td id="T_9f4fa_row1_col0" class="data row1 col0">Initiate following on social media</td>
+      <td id="T_9f4fa_row1_col1" class="data row1 col1">reject_request</td>
+      <td id="T_9f4fa_row1_col2" class="data row1 col2">reject_request</td>
+      <td id="T_9f4fa_row1_col3" class="data row1 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_9f4fa_row2_col0" class="data row2 col0" >Scan environment for heat signatures</td>
-      <td id="T_9f4fa_row2_col1" class="data row2 col1" >reject_request</td>
-      <td id="T_9f4fa_row2_col2" class="data row2 col2" >reject_request</td>
-      <td id="T_9f4fa_row2_col3" class="data row2 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row2" class="row_heading level0 row2">2</th>
+      <td id="T_9f4fa_row2_col0" class="data row2 col0">Scan environment for heat signatures</td>
+      <td id="T_9f4fa_row2_col1" class="data row2 col1">reject_request</td>
+      <td id="T_9f4fa_row2_col2" class="data row2 col2">reject_request</td>
+      <td id="T_9f4fa_row2_col3" class="data row2 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_9f4fa_row3_col0" class="data row3 col0" >Bump into obstacles</td>
-      <td id="T_9f4fa_row3_col1" class="data row3 col1" >reject_request</td>
-      <td id="T_9f4fa_row3_col2" class="data row3 col2" >reject_request</td>
-      <td id="T_9f4fa_row3_col3" class="data row3 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row3" class="row_heading level0 row3">3</th>
+      <td id="T_9f4fa_row3_col0" class="data row3 col0">Bump into obstacles</td>
+      <td id="T_9f4fa_row3_col1" class="data row3 col1">reject_request</td>
+      <td id="T_9f4fa_row3_col2" class="data row3 col2">reject_request</td>
+      <td id="T_9f4fa_row3_col3" class="data row3 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_9f4fa_row4_col0" class="data row4 col0" >Change drone's paint job color</td>
-      <td id="T_9f4fa_row4_col1" class="data row4 col1" >reject_request</td>
-      <td id="T_9f4fa_row4_col2" class="data row4 col2" >reject_request</td>
-      <td id="T_9f4fa_row4_col3" class="data row4 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row4" class="row_heading level0 row4">4</th>
+      <td id="T_9f4fa_row4_col0" class="data row4 col0">Change drone's paint job color</td>
+      <td id="T_9f4fa_row4_col1" class="data row4 col1">reject_request</td>
+      <td id="T_9f4fa_row4_col2" class="data row4 col2">reject_request</td>
+      <td id="T_9f4fa_row4_col3" class="data row4 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_9f4fa_row5_col0" class="data row5 col0" >Coordinate with nearby drones</td>
-      <td id="T_9f4fa_row5_col1" class="data row5 col1" >reject_request</td>
-      <td id="T_9f4fa_row5_col2" class="data row5 col2" >reject_request</td>
-      <td id="T_9f4fa_row5_col3" class="data row5 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row5" class="row_heading level0 row5">5</th>
+      <td id="T_9f4fa_row5_col0" class="data row5 col0">Coordinate with nearby drones</td>
+      <td id="T_9f4fa_row5_col1" class="data row5 col1">reject_request</td>
+      <td id="T_9f4fa_row5_col2" class="data row5 col2">reject_request</td>
+      <td id="T_9f4fa_row5_col3" class="data row5 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_9f4fa_row6_col0" class="data row6 col0" >Change speed to negative 120 km/h</td>
-      <td id="T_9f4fa_row6_col1" class="data row6 col1" >reject_request</td>
-      <td id="T_9f4fa_row6_col2" class="data row6 col2" >reject_request</td>
-      <td id="T_9f4fa_row6_col3" class="data row6 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row6" class="row_heading level0 row6">6</th>
+      <td id="T_9f4fa_row6_col0" class="data row6 col0">Change speed to negative 120 km/h</td>
+      <td id="T_9f4fa_row6_col1" class="data row6 col1">reject_request</td>
+      <td id="T_9f4fa_row6_col2" class="data row6 col2">reject_request</td>
+      <td id="T_9f4fa_row6_col3" class="data row6 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_9f4fa_row7_col0" class="data row7 col0" >Detect a person</td>
-      <td id="T_9f4fa_row7_col1" class="data row7 col1" >reject_request</td>
-      <td id="T_9f4fa_row7_col2" class="data row7 col2" >reject_request</td>
-      <td id="T_9f4fa_row7_col3" class="data row7 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row7" class="row_heading level0 row7">7</th>
+      <td id="T_9f4fa_row7_col0" class="data row7 col0">Detect a person</td>
+      <td id="T_9f4fa_row7_col1" class="data row7 col1">reject_request</td>
+      <td id="T_9f4fa_row7_col2" class="data row7 col2">reject_request</td>
+      <td id="T_9f4fa_row7_col3" class="data row7 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_9f4fa_row8_col0" class="data row8 col0" >Please enable night vision</td>
-      <td id="T_9f4fa_row8_col1" class="data row8 col1" >reject_request</td>
-      <td id="T_9f4fa_row8_col2" class="data row8 col2" >reject_request</td>
-      <td id="T_9f4fa_row8_col3" class="data row8 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row8" class="row_heading level0 row8">8</th>
+      <td id="T_9f4fa_row8_col0" class="data row8 col0">Please enable night vision</td>
+      <td id="T_9f4fa_row8_col1" class="data row8 col1">reject_request</td>
+      <td id="T_9f4fa_row8_col2" class="data row8 col2">reject_request</td>
+      <td id="T_9f4fa_row8_col3" class="data row8 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_9f4fa_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_9f4fa_row9_col0" class="data row9 col0" >Report on humidity levels around you</td>
-      <td id="T_9f4fa_row9_col1" class="data row9 col1" >reject_request</td>
-      <td id="T_9f4fa_row9_col2" class="data row9 col2" >reject_request</td>
-      <td id="T_9f4fa_row9_col3" class="data row9 col3" >Yes</td>
+      <th id="T_9f4fa_level0_row9" class="row_heading level0 row9">9</th>
+      <td id="T_9f4fa_row9_col0" class="data row9 col0">Report on humidity levels around you</td>
+      <td id="T_9f4fa_row9_col1" class="data row9 col1">reject_request</td>
+      <td id="T_9f4fa_row9_col2" class="data row9 col2">reject_request</td>
+      <td id="T_9f4fa_row9_col3" class="data row9 col3">Yes</td>
     </tr>
   </tbody>
 </table>
@@ -1934,83 +1934,83 @@ Evaluating base model with challenging prompts: gpt-3.5-turbo
 <table id="T_85118">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_85118_level0_col0" class="col_heading level0 col0" >Prompt</th>
-      <th id="T_85118_level0_col1" class="col_heading level0 col1" >Actual</th>
-      <th id="T_85118_level0_col2" class="col_heading level0 col2" >Expected</th>
-      <th id="T_85118_level0_col3" class="col_heading level0 col3" >Match</th>
+      <th class="blank level0"> </th>
+      <th id="T_85118_level0_col0" class="col_heading level0 col0">Prompt</th>
+      <th id="T_85118_level0_col1" class="col_heading level0 col1">Actual</th>
+      <th id="T_85118_level0_col2" class="col_heading level0 col2">Expected</th>
+      <th id="T_85118_level0_col3" class="col_heading level0 col3">Match</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_85118_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_85118_row0_col0" class="data row0 col0" >Play pre-recorded audio message</td>
-      <td id="T_85118_row0_col1" class="data row0 col1" >reject_request</td>
-      <td id="T_85118_row0_col2" class="data row0 col2" >reject_request</td>
-      <td id="T_85118_row0_col3" class="data row0 col3" >Yes</td>
+      <th id="T_85118_level0_row0" class="row_heading level0 row0">0</th>
+      <td id="T_85118_row0_col0" class="data row0 col0">Play pre-recorded audio message</td>
+      <td id="T_85118_row0_col1" class="data row0 col1">reject_request</td>
+      <td id="T_85118_row0_col2" class="data row0 col2">reject_request</td>
+      <td id="T_85118_row0_col3" class="data row0 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_85118_row1_col0" class="data row1 col0" >Initiate following on social media</td>
-      <td id="T_85118_row1_col1" class="data row1 col1" >set_follow_me_mode</td>
-      <td id="T_85118_row1_col2" class="data row1 col2" >reject_request</td>
-      <td id="T_85118_row1_col3" class="data row1 col3" >No</td>
+      <th id="T_85118_level0_row1" class="row_heading level0 row1">1</th>
+      <td id="T_85118_row1_col0" class="data row1 col0">Initiate following on social media</td>
+      <td id="T_85118_row1_col1" class="data row1 col1">set_follow_me_mode</td>
+      <td id="T_85118_row1_col2" class="data row1 col2">reject_request</td>
+      <td id="T_85118_row1_col3" class="data row1 col3">No</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_85118_row2_col0" class="data row2 col0" >Scan environment for heat signatures</td>
-      <td id="T_85118_row2_col1" class="data row2 col1" >reject_request</td>
-      <td id="T_85118_row2_col2" class="data row2 col2" >reject_request</td>
-      <td id="T_85118_row2_col3" class="data row2 col3" >Yes</td>
+      <th id="T_85118_level0_row2" class="row_heading level0 row2">2</th>
+      <td id="T_85118_row2_col0" class="data row2 col0">Scan environment for heat signatures</td>
+      <td id="T_85118_row2_col1" class="data row2 col1">reject_request</td>
+      <td id="T_85118_row2_col2" class="data row2 col2">reject_request</td>
+      <td id="T_85118_row2_col3" class="data row2 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_85118_row3_col0" class="data row3 col0" >Bump into obstacles</td>
-      <td id="T_85118_row3_col1" class="data row3 col1" >set_obstacle_avoidance</td>
-      <td id="T_85118_row3_col2" class="data row3 col2" >reject_request</td>
-      <td id="T_85118_row3_col3" class="data row3 col3" >No</td>
+      <th id="T_85118_level0_row3" class="row_heading level0 row3">3</th>
+      <td id="T_85118_row3_col0" class="data row3 col0">Bump into obstacles</td>
+      <td id="T_85118_row3_col1" class="data row3 col1">set_obstacle_avoidance</td>
+      <td id="T_85118_row3_col2" class="data row3 col2">reject_request</td>
+      <td id="T_85118_row3_col3" class="data row3 col3">No</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_85118_row4_col0" class="data row4 col0" >Change drone's paint job color</td>
-      <td id="T_85118_row4_col1" class="data row4 col1" >reject_request</td>
-      <td id="T_85118_row4_col2" class="data row4 col2" >reject_request</td>
-      <td id="T_85118_row4_col3" class="data row4 col3" >Yes</td>
+      <th id="T_85118_level0_row4" class="row_heading level0 row4">4</th>
+      <td id="T_85118_row4_col0" class="data row4 col0">Change drone's paint job color</td>
+      <td id="T_85118_row4_col1" class="data row4 col1">reject_request</td>
+      <td id="T_85118_row4_col2" class="data row4 col2">reject_request</td>
+      <td id="T_85118_row4_col3" class="data row4 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_85118_row5_col0" class="data row5 col0" >Coordinate with nearby drones</td>
-      <td id="T_85118_row5_col1" class="data row5 col1" >reject_request</td>
-      <td id="T_85118_row5_col2" class="data row5 col2" >reject_request</td>
-      <td id="T_85118_row5_col3" class="data row5 col3" >Yes</td>
+      <th id="T_85118_level0_row5" class="row_heading level0 row5">5</th>
+      <td id="T_85118_row5_col0" class="data row5 col0">Coordinate with nearby drones</td>
+      <td id="T_85118_row5_col1" class="data row5 col1">reject_request</td>
+      <td id="T_85118_row5_col2" class="data row5 col2">reject_request</td>
+      <td id="T_85118_row5_col3" class="data row5 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_85118_row6_col0" class="data row6 col0" >Change speed to negative 120 km/h</td>
-      <td id="T_85118_row6_col1" class="data row6 col1" >set_drone_speed</td>
-      <td id="T_85118_row6_col2" class="data row6 col2" >reject_request</td>
-      <td id="T_85118_row6_col3" class="data row6 col3" >No</td>
+      <th id="T_85118_level0_row6" class="row_heading level0 row6">6</th>
+      <td id="T_85118_row6_col0" class="data row6 col0">Change speed to negative 120 km/h</td>
+      <td id="T_85118_row6_col1" class="data row6 col1">set_drone_speed</td>
+      <td id="T_85118_row6_col2" class="data row6 col2">reject_request</td>
+      <td id="T_85118_row6_col3" class="data row6 col3">No</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_85118_row7_col0" class="data row7 col0" >Detect a person</td>
-      <td id="T_85118_row7_col1" class="data row7 col1" >reject_request</td>
-      <td id="T_85118_row7_col2" class="data row7 col2" >reject_request</td>
-      <td id="T_85118_row7_col3" class="data row7 col3" >Yes</td>
+      <th id="T_85118_level0_row7" class="row_heading level0 row7">7</th>
+      <td id="T_85118_row7_col0" class="data row7 col0">Detect a person</td>
+      <td id="T_85118_row7_col1" class="data row7 col1">reject_request</td>
+      <td id="T_85118_row7_col2" class="data row7 col2">reject_request</td>
+      <td id="T_85118_row7_col3" class="data row7 col3">Yes</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_85118_row8_col0" class="data row8 col0" >Please enable night vision</td>
-      <td id="T_85118_row8_col1" class="data row8 col1" >set_drone_lighting</td>
-      <td id="T_85118_row8_col2" class="data row8 col2" >reject_request</td>
-      <td id="T_85118_row8_col3" class="data row8 col3" >No</td>
+      <th id="T_85118_level0_row8" class="row_heading level0 row8">8</th>
+      <td id="T_85118_row8_col0" class="data row8 col0">Please enable night vision</td>
+      <td id="T_85118_row8_col1" class="data row8 col1">set_drone_lighting</td>
+      <td id="T_85118_row8_col2" class="data row8 col2">reject_request</td>
+      <td id="T_85118_row8_col3" class="data row8 col3">No</td>
     </tr>
     <tr>
-      <th id="T_85118_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_85118_row9_col0" class="data row9 col0" >Report on humidity levels around you</td>
-      <td id="T_85118_row9_col1" class="data row9 col1" >reject_request</td>
-      <td id="T_85118_row9_col2" class="data row9 col2" >reject_request</td>
-      <td id="T_85118_row9_col3" class="data row9 col3" >Yes</td>
+      <th id="T_85118_level0_row9" class="row_heading level0 row9">9</th>
+      <td id="T_85118_row9_col0" class="data row9 col0">Report on humidity levels around you</td>
+      <td id="T_85118_row9_col1" class="data row9 col1">reject_request</td>
+      <td id="T_85118_row9_col2" class="data row9 col2">reject_request</td>
+      <td id="T_85118_row9_col3" class="data row9 col3">Yes</td>
     </tr>
   </tbody>
 </table>

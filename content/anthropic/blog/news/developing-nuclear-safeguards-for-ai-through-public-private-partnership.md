@@ -21,4 +21,6 @@ Along with the concrete importance of securing frontier AI models against nuclea
 
 *Full details about our NNSA partnership and the safeguards development can be found on our [red.anthropic.com](https://red.anthropic.com/) blog, the home for research from Anthropic’s Frontier Red Team (and occasionally other teams at Anthropic) on what frontier AI models mean for national security. Click [here](http://red.anthropic.com/2025/nuclear-safeguards/) to read more.*
 
+We’re announcing a new life sciences research group and laboratory at Anthropic. This post introduces the team behind this work and shares early results in which Claude discovered a novel enzyme system with properties reminiscent of CRISPR, with only high-level direction from our scientists.
+
 The Life Sciences Verification Program (LSVP) gives life science professionals access to Claude Mythos, Opus, and Sonnet models with a refined set of safeguards more permissive for biology-related work.

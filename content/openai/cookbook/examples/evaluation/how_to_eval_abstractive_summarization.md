@@ -120,31 +120,31 @@ rouge_scores_out
 <table id="T_7e6ac">
   <thead>
     <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_7e6ac_level0_col0" class="col_heading level0 col0" >Summary 1</th>
-      <th id="T_7e6ac_level0_col1" class="col_heading level0 col1" >Summary 2</th>
+      <th class="blank level0"> </th>
+      <th id="T_7e6ac_level0_col0" class="col_heading level0 col0">Summary 1</th>
+      <th id="T_7e6ac_level0_col1" class="col_heading level0 col1">Summary 2</th>
     </tr>
     <tr>
-      <th class="index_name level0" >Metric</th>
-      <th class="blank col0" >&nbsp;</th>
-      <th class="blank col1" >&nbsp;</th>
+      <th class="index_name level0">Metric</th>
+      <th class="blank col0"> </th>
+      <th class="blank col1"> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_7e6ac_level0_row0" class="row_heading level0 row0" >rouge-1 (F-Score)</th>
-      <td id="T_7e6ac_row0_col0" class="data row0 col0" >0.488889</td>
-      <td id="T_7e6ac_row0_col1" class="data row0 col1" >0.511628</td>
+      <th id="T_7e6ac_level0_row0" class="row_heading level0 row0">rouge-1 (F-Score)</th>
+      <td id="T_7e6ac_row0_col0" class="data row0 col0">0.488889</td>
+      <td id="T_7e6ac_row0_col1" class="data row0 col1">0.511628</td>
     </tr>
     <tr>
-      <th id="T_7e6ac_level0_row1" class="row_heading level0 row1" >rouge-2 (F-Score)</th>
-      <td id="T_7e6ac_row1_col0" class="data row1 col0" >0.230769</td>
-      <td id="T_7e6ac_row1_col1" class="data row1 col1" >0.163265</td>
+      <th id="T_7e6ac_level0_row1" class="row_heading level0 row1">rouge-2 (F-Score)</th>
+      <td id="T_7e6ac_row1_col0" class="data row1 col0">0.230769</td>
+      <td id="T_7e6ac_row1_col1" class="data row1 col1">0.163265</td>
     </tr>
     <tr>
-      <th id="T_7e6ac_level0_row2" class="row_heading level0 row2" >rouge-l (F-Score)</th>
-      <td id="T_7e6ac_row2_col0" class="data row2 col0" >0.488889</td>
-      <td id="T_7e6ac_row2_col1" class="data row2 col1" >0.511628</td>
+      <th id="T_7e6ac_level0_row2" class="row_heading level0 row2">rouge-l (F-Score)</th>
+      <td id="T_7e6ac_row2_col0" class="data row2 col0">0.488889</td>
+      <td id="T_7e6ac_row2_col1" class="data row2 col1">0.511628</td>
     </tr>
   </tbody>
 </table>
@@ -354,36 +354,36 @@ display(styled_pivot_df)
 <table id="T_94fab">
   <thead>
     <tr>
-      <th class="index_name level0" >Summary Type</th>
-      <th id="T_94fab_level0_col0" class="col_heading level0 col0" >Summary 1</th>
-      <th id="T_94fab_level0_col1" class="col_heading level0 col1" >Summary 2</th>
+      <th class="index_name level0">Summary Type</th>
+      <th id="T_94fab_level0_col0" class="col_heading level0 col0">Summary 1</th>
+      <th id="T_94fab_level0_col1" class="col_heading level0 col1">Summary 2</th>
     </tr>
     <tr>
-      <th class="index_name level0" >Evaluation Type</th>
-      <th class="blank col0" >&nbsp;</th>
-      <th class="blank col1" >&nbsp;</th>
+      <th class="index_name level0">Evaluation Type</th>
+      <th class="blank col0"> </th>
+      <th class="blank col1"> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_94fab_level0_row0" class="row_heading level0 row0" >Coherence</th>
-      <td id="T_94fab_row0_col0" class="data row0 col0" >5</td>
-      <td id="T_94fab_row0_col1" class="data row0 col1" >3</td>
+      <th id="T_94fab_level0_row0" class="row_heading level0 row0">Coherence</th>
+      <td id="T_94fab_row0_col0" class="data row0 col0">5</td>
+      <td id="T_94fab_row0_col1" class="data row0 col1">3</td>
     </tr>
     <tr>
-      <th id="T_94fab_level0_row1" class="row_heading level0 row1" >Consistency</th>
-      <td id="T_94fab_row1_col0" class="data row1 col0" >5</td>
-      <td id="T_94fab_row1_col1" class="data row1 col1" >5</td>
+      <th id="T_94fab_level0_row1" class="row_heading level0 row1">Consistency</th>
+      <td id="T_94fab_row1_col0" class="data row1 col0">5</td>
+      <td id="T_94fab_row1_col1" class="data row1 col1">5</td>
     </tr>
     <tr>
-      <th id="T_94fab_level0_row2" class="row_heading level0 row2" >Fluency</th>
-      <td id="T_94fab_row2_col0" class="data row2 col0" >3</td>
-      <td id="T_94fab_row2_col1" class="data row2 col1" >2</td>
+      <th id="T_94fab_level0_row2" class="row_heading level0 row2">Fluency</th>
+      <td id="T_94fab_row2_col0" class="data row2 col0">3</td>
+      <td id="T_94fab_row2_col1" class="data row2 col1">2</td>
     </tr>
     <tr>
-      <th id="T_94fab_level0_row3" class="row_heading level0 row3" >Relevance</th>
-      <td id="T_94fab_row3_col0" class="data row3 col0" >5</td>
-      <td id="T_94fab_row3_col1" class="data row3 col1" >4</td>
+      <th id="T_94fab_level0_row3" class="row_heading level0 row3">Relevance</th>
+      <td id="T_94fab_row3_col0" class="data row3 col0">5</td>
+      <td id="T_94fab_row3_col1" class="data row3 col1">4</td>
     </tr>
   </tbody>
 </table>

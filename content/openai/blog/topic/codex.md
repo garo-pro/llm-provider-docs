@@ -2,6 +2,7 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
+- [Bringing my LED display to life with GPT-Live-1 and Codex](/blog/bringing-my-led-display-to-life.md): How I used Codex, GPT-Live-1, and a Raspberry Pi to turn an LED display into a voice-controlled assistant.
 - [Rethinking skills and prompts for GPT-6 Astra](/blog/rethinking-skills-and-prompts-for-gpt-6-astra.md): Revisit skill descriptions, AGENTS.md, and task prompts to avoid bloated context.
 - [Architectural visualization with Astra](/blog/architectural-visualization-with-astra.md): How I used Astra to design a house, refine its everyday details, and explore it through Blender camera tours and an Unreal Engine 5 walkthrough.
 - [Building games with Astra](/blog/how-to-build-games-with-astra.md): How I built a procedural space exploration game in Codex, from concept art to planets you can land on.

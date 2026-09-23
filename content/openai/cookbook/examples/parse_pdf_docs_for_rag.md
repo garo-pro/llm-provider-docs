@@ -220,7 +220,7 @@ res = analyze_image(data_uri)
 print(res)
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What is Fine-tuning
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What is Fine-tuning
 
 Fine-tuning is a process where a pre-existing model, known as a public model, is trained using specific training 
 data. This involves providing the model with a set of input/output examples to learn from. The goal is to adjust 
@@ -293,28 +293,28 @@ for f in files:
     docs.append(doc)
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Analyzing pages for doc rag-deck.pdf
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Analyzing pages for doc rag-deck.pdf
 </pre>
 
 ```text
 100%|██████████| 19/19 [00:20<00:00,  1.07s/it]
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Analyzing pages for doc models-page.pdf
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Analyzing pages for doc models-page.pdf
 </pre>
 
 ```text
 100%|██████████| 9/9 [00:15<00:00,  1.76s/it]
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Analyzing pages for doc evals-decks.pdf
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Analyzing pages for doc evals-decks.pdf
 </pre>
 
 ```text
 100%|██████████| 12/12 [00:12<00:00,  1.08s/it]
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Analyzing pages for doc fine-tuning-deck.pdf
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Analyzing pages for doc fine-tuning-deck.pdf
 </pre>
 
 ```text
@@ -375,7 +375,7 @@ for c in content:
     print("\n\n-------------------------------\n\n")
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Overview
 
 Retrieval-Augmented Generation 
 enhances the capabilities of language 
@@ -409,14 +409,13 @@ What we’ll cover
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What is RAG
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What is RAG
 
 Retrieve information to Augment the model’s knowledge and Generate the output
 
@@ -435,7 +434,7 @@ return information
 
 Total refunds: <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span> days
 <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">50</span>% of value vouchers: <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days
-$<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">5</span> discount on next order: &gt; <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days
+$<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">5</span> discount on next order: > <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days
 
 “You can get a full refund up 
 to <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span> days after the 
@@ -474,14 +473,13 @@ For instance, it might say, <span style="color: #008000; text-decoration-color: 
 This method allows the model to provide accurate and up-to-date answers by leveraging external data sources.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">When to use RAG
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">When to use RAG
 
 Good for  ✅
 
@@ -536,14 +534,13 @@ custom models.
 - **Reducing token usage:** If token usage is a concern, consider fine-tuning based on the specific use case.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 
 Data preparation
 
@@ -598,14 +595,13 @@ Embeddings
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation
 
 chunk documents into multiple 
@@ -624,7 +620,7 @@ embeddings
 Augment content 
 using LLMs
 
-Ex: parse text only, ask gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> to rephrase &amp; 
+Ex: parse text only, ask gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> to rephrase &#x26; 
 summarize each part, generate bullet points…
 
 BEST PRACTICES
@@ -652,14 +648,13 @@ content
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation: chunking
 
 Why chunking?
@@ -669,7 +664,7 @@ entire documents to provide
 relevant answers, you can 
 chunk them into multiple pieces 
 for easier consumption <span style="font-weight: bold">(</span>reduced 
-cost &amp; latency<span style="font-weight: bold">)</span>.
+cost &#x26; latency<span style="font-weight: bold">)</span>.
 
 Other approaches: graphs or 
 map-reduce
@@ -726,14 +721,13 @@ indicate common properties?
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation: embeddings
 
 What to embed?
@@ -749,7 +743,7 @@ search
 
 Examples
 
-Embedding Q&amp;A posts in a forum
+Embedding Q&#x26;A posts in a forum
 You might want to embed the title of the posts, 
 the text of the original question and the content of 
 the top answers.
@@ -769,14 +763,13 @@ embeddings.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation: augmenting content
 
 What does “Augmenting 
@@ -826,21 +819,20 @@ describe slides.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Input processing
 
 Process input according to task
 
-Q&amp;A
+Q&#x26;A
 HyDE:  Ask LLM to hypothetically answer the 
-question &amp; use the answer to search the KB
+question &#x26; use the answer to search the KB
 
 embeddings
 
@@ -849,7 +841,7 @@ embeddings
 <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.876</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.145</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.179</span>…
 
 Content search
-Prompt LLM to rephrase input &amp; optionally add 
+Prompt LLM to rephrase input &#x26; optionally add 
 more context
 
 query
@@ -887,14 +879,13 @@ speciﬁcities
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Input processing: input augmentation
 
 What is input augmentation?
@@ -919,7 +910,7 @@ descriptive
 HyDE*
 Hypothetically 
 answer the 
-question &amp; use 
+question &#x26; use 
 the answer to 
 search the KB
 
@@ -949,14 +940,13 @@ with tool usage<span style="font-weight: bold">)</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Input processing: NER
 
 Why use NER?
@@ -986,14 +976,13 @@ having extracted the relevant entities
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval
 
 re-ranking
@@ -1054,14 +1043,13 @@ re-ranking is important
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval: search
 
 How to search?
@@ -1109,14 +1097,13 @@ search for keywords with their embeddings for example.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval: multi-step retrieval
 
 What is multi-step retrieval?
@@ -1138,7 +1125,7 @@ yourself or use a framework to make it easier
 
 ●
 
-Cost &amp; Latency:
+Cost &#x26; Latency:
 
 ○
 
@@ -1173,14 +1160,13 @@ this didn’t work, then do this”
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval: re-ranking
 
 What is re-ranking?
@@ -1209,14 +1195,13 @@ cross-encoder re-ranking, TF-IDF algorithms…
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation
 
 FINAL RESULT
@@ -1252,14 +1237,13 @@ way the model is prompted
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation: context window
 
 How to manage context?
@@ -1287,7 +1271,7 @@ as well and will add to that size
 
 ●
 
-Cost &amp; Latency vs Accuracy:
+Cost &#x26; Latency vs Accuracy:
 
 ○ More context results in increased 
 
@@ -1313,14 +1297,13 @@ important information.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation: optimisation
 
 How to optimise?
@@ -1372,14 +1355,13 @@ or output format.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation: safety checks
 
 Why include safety checks?
@@ -1399,25 +1381,22 @@ Example evaluation framework: RAGAS
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Overview**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Overview**
 
 Retrieval-Augmented Generation <span style="font-weight: bold">(</span>RAG<span style="font-weight: bold">)</span> enhances language models by integrating them with a retrieval system. This 
 combination allows the model to access external knowledge sources, resulting in more accurate and contextually 
@@ -1434,14 +1413,13 @@ relevant responses.
 - Resources
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns**
 
 This image outlines four key technical patterns involved in data processing and answer generation:
 
@@ -1469,14 +1447,13 @@ suitable for processing.
    - **Safety Checks**: Ensuring that the generated answers are safe and appropriate for use.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Data Preparation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Data Preparation**
 
 This presentation focuses on the process of preparing data for easier consumption by large language models <span style="font-weight: bold">(</span>LLMs<span style="font-weight: bold">)</span>. 
 
@@ -1503,14 +1480,13 @@ points from the text.
 This approach helps in organizing and optimizing data for better performance and understanding by LLMs.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Data Preparation - Chunking**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Data Preparation - Chunking**
 
 **Why Chunking?**
 
@@ -1541,14 +1517,13 @@ These considerations help in designing an efficient chunking strategy that align
 and goals.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"># Technical Patterns: Data Preparation - Embeddings
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"># Technical Patterns: Data Preparation - Embeddings
 
 ## What to Embed?
 
@@ -1557,7 +1532,7 @@ approach can enhance the searchability and relevance of the data. Here are some 
 
 ### Examples
 
-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>. **Embedding Q&amp;A Posts in a Forum**
+<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>. **Embedding Q&#x26;A Posts in a Forum**
    - You might want to include the title of the posts, the original question, and the top answers.
    - Additionally, if the posts are tagged by topic or keywords, these can be embedded as well.
 
@@ -1569,14 +1544,13 @@ By embedding both text and metadata, you can improve the ability to surface spec
 search.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Data Preparation - Augmenting Content**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Data Preparation - Augmenting Content**
 
 **What does “Augmenting content” mean?**
 
@@ -1600,19 +1574,18 @@ helps in making the content more searchable and relevant.
 generate tags for images or describe slides, enhancing the content's accessibility and utility.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Input Processing**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Input Processing**
 
 This slide discusses methods for processing input data according to specific tasks, focusing on three main areas: 
-Q&amp;A, content search, and database <span style="font-weight: bold">(</span>DB<span style="font-weight: bold">)</span> search.
+Q&#x26;A, content search, and database <span style="font-weight: bold">(</span>DB<span style="font-weight: bold">)</span> search.
 
-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>. **Q&amp;A**: 
+<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>. **Q&#x26;A**: 
    - Uses a technique called HyDE, where a large language model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span> is asked to hypothetically answer a question.
 This answer is then used to search the knowledge base <span style="font-weight: bold">(</span>KB<span style="font-weight: bold">)</span>.
 
@@ -1636,14 +1609,13 @@ The slide also highlights different output formats:
 - Avoid directly comparing input to the database without considering the specific requirements of the task.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Input Processing - Input Augmentation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Input Processing - Input Augmentation**
 
 **What is input augmentation?**
 
@@ -1672,14 +1644,13 @@ This is particularly useful when using tools that require precise input.
 *Note: GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> can perform these tasks with the appropriate prompt.*
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Input Processing - NER
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Input Processing - NER
 
 **Why use NER?**
 
@@ -1698,14 +1669,13 @@ more effectively.
 process.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Retrieval
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Retrieval
 
 This diagram illustrates a retrieval process using technical patterns. The process begins with three types of 
 input: embeddings, queries, and keywords.
@@ -1731,14 +1701,13 @@ output.
 to ensure accurate results.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Retrieval - Search
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Retrieval - Search
 
 **How to search?**
 
@@ -1760,14 +1729,13 @@ Additionally, you can use a hybrid approach by combining several methods. This c
 searches in parallel or in sequence, or searching for keywords along with their embeddings.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Retrieval - Multi-step Retrieval**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Retrieval - Multi-step Retrieval**
 
 **What is multi-step retrieval?**
 
@@ -1780,7 +1748,7 @@ This approach is useful when a single step is insufficient to gather all require
    - When multiple steps are needed, decide whether to manage this process yourself or use a framework to simplify 
 the task.
 
-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>. **Cost &amp; Latency:**
+<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2</span>. **Cost &#x26; Latency:**
    - Performing multiple steps can significantly increase both latency and cost.
    - To mitigate latency, consider executing actions in parallel.
 
@@ -1791,14 +1759,13 @@ guidelines on whether to continue, stop, or take alternative actions.
 <span style="color: #008000; text-decoration-color: #008000">work, then do this."</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Retrieval - Re-ranking**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Retrieval - Re-ranking**
 
 **What is re-ranking?**
 
@@ -1817,14 +1784,13 @@ re-rankers, cross-encoder re-ranking, and TF-IDF algorithms. These methods apply
 order the relevance of search results.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Answer Generation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Answer Generation**
 
 This diagram illustrates the process of generating answers using a language model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span>. Here's a breakdown of the 
 components and concepts:
@@ -1847,14 +1813,13 @@ effective or efficient.
 By following these guidelines, you can optimize the use of LLMs for generating accurate and useful answers.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"># Technical Patterns: Answer Generation - Context Window
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"># Technical Patterns: Answer Generation - Context Window
 
 ## How to Manage Context?
 
@@ -1868,7 +1833,7 @@ use case. Here are key points to keep in mind:
   - In conversational scenarios, the conversation itself becomes part of the context, contributing to the overall 
 size.
 
-- **Cost &amp; Latency vs. Accuracy:**
+- **Cost &#x26; Latency vs. Accuracy:**
   - Including more context can lead to increased latency and higher costs due to the additional input tokens 
 required.
   - Conversely, using less context might reduce accuracy.
@@ -1878,14 +1843,13 @@ required.
 of the content, potentially missing important details.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Answer Generation Optimisation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Answer Generation Optimisation**
 
 **How to optimise?**
 
@@ -1906,14 +1870,13 @@ relevant output.
    - Fine-tuning can help achieve a specific input processing or output format.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Answer Generation - Safety Checks
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Answer Generation - Safety Checks
 
 **Why include safety checks?**
 
@@ -1938,14 +1901,13 @@ information is precise.
 By using this framework, one can systematically evaluate and improve the quality of generated answers.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2048,14 +2010,13 @@ Apr <span style="color: #008080; text-decoration-color: #008080; font-weight: bo
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2190,14 +2151,13 @@ capable than any of our previous models.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2303,14 +2263,13 @@ output tokens. Learn more.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2423,14 +2382,13 @@ endpoint in the Audio API.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2520,14 +2478,13 @@ Moderation
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2625,14 +2582,13 @@ How we use your data
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2775,14 +2731,13 @@ Yes
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 Models - OpenAI API
 
@@ -2899,14 +2854,13 @@ releases, gpt-<span style="color: #008080; text-decoration-color: #008080; font-
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 
 ENDP OINT
 
@@ -2944,25 +2898,22 @@ text-moderation-stable, text-
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> Turbo**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> Turbo**
 
 GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> is a sophisticated multimodal model capable of processing both text and image inputs to produce text outputs.
 It is designed to tackle complex problems with higher accuracy than previous models, leveraging its extensive 
@@ -2993,14 +2944,13 @@ These models are part of OpenAI's ongoing efforts to provide developers with rob
 ensuring flexibility and improved performance across different use cases.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Models - OpenAI API Overview**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Models - OpenAI API Overview**
 
 This document provides an overview of various GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> models, highlighting their capabilities, context windows, and 
 training data timelines.
@@ -3040,14 +2990,13 @@ gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bo
    - **Training Data**: Up to September 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Multilingual Capabilities and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span> Turbo**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Multilingual Capabilities and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span> Turbo**
 
 **Multilingual Capabilities**
 
@@ -3081,14 +3030,13 @@ function calling. It returns up to <span style="color: #008080; text-decoration-
    - **Training Data:** Up to September <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Models - OpenAI API**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Models - OpenAI API**
 
 **GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span> Models:**
 
@@ -3135,14 +3083,13 @@ images than the original.
 - These models can be used with the Speech endpoint in
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Models - OpenAI API**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Models - OpenAI API**
 
 **Text-to-Speech Models:**
 
@@ -3178,14 +3125,13 @@ The document mentions a section on moderation, likely related to content moderat
 details are not provided in the visible content.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Moderation Models and GPT Base**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Moderation Models and GPT Base**
 
 **Moderation Models**
 
@@ -3213,14 +3159,13 @@ September <span style="color: #008080; text-decoration-color: #008080; font-weig
 September <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Your Data is Your Data
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Your Data is Your Data
 
 As of March <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2023</span>, data sent to the OpenAI API is not used to train or improve OpenAI models unless you 
 explicitly opt in. Opting in can help models improve for your specific use case over time.
@@ -3250,14 +3195,13 @@ retention option.
 - **<span style="color: #800080; text-decoration-color: #800080">/v1/audio/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">transcriptions</span>**: Data is not used for training
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">### Model Endpoint Compatibility and Data Retention
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">### Model Endpoint Compatibility and Data Retention
 
 #### Data Retention Details
 
@@ -3292,14 +3236,13 @@ For more details, users are encouraged to refer to the API data usage policies o
 information on zero retention.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">LATEST MODELS
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">LATEST MODELS
 
 This document outlines the latest models available for different endpoints in the OpenAI API:
 
@@ -3326,14 +3269,13 @@ Additionally, the document mentions the availability of `gpt-<span style="color:
 `gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span>-turbo`, indicating enhancements in model capabilities and performance.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Overview
 
 Evaluation is the process of validating 
 and testing the outputs that your LLM 
@@ -3370,14 +3312,13 @@ What we’ll cover
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What are evals
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What are evals
 Example
 
 An evaluation contains a question and a correct answer. We call this the ground truth.
@@ -3436,14 +3377,13 @@ Since the predicted answer matches the ground truth, the evaluation is successfu
 This process is crucial for verifying the accuracy of predictions in various applications.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What are evals
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What are evals
 Example
 
 Our ground truth matches the predicted answer, so the evaluation passes!
@@ -3495,14 +3435,13 @@ Since the predicted answer matches the ground truth, the evaluation is successfu
 This process is crucial for verifying the accuracy of predictions in various applications.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 
 Metric-based evaluations
 
@@ -3545,14 +3484,13 @@ have a Pass/Fail
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 
 ROUGE is a common metric for evaluating machine summarizations of text
@@ -3605,14 +3543,13 @@ Score
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 
 BLEU score is another standard metric, this time focusing on machine translation tasks
@@ -3658,14 +3595,13 @@ Score
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 
 What they’re good for
@@ -3702,14 +3638,13 @@ production
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Component evaluations
 
 Component evaluations <span style="font-weight: bold">(</span>or “unit tests”<span style="font-weight: bold">)</span> cover a single input/output of the application. They check 
@@ -3763,14 +3698,13 @@ the retrieval.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Subjective evaluations
 
 Building up a good scorecard for automated testing beneﬁts from a few rounds of detailed human 
@@ -3812,14 +3746,13 @@ Evaluation: <span style="font-weight: bold">{</span>relevance: <span style="colo
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Example framework
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Example framework
 
 Your evaluations can be grouped up into test suites called runs and executed in a batch to test 
 the eﬀectiveness of your system.
@@ -3910,14 +3843,13 @@ The framework uses both component evaluations <span style="font-weight: bold">(<
 to ensure the process is accurate and user-friendly.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Example framework
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Example framework
 
 I want to return a 
 T-shirt I bought on 
@@ -3994,14 +3926,13 @@ The framework uses both component evaluations <span style="font-weight: bold">(<
 to ensure the process is accurate and user-friendly.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Best practices
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Best practices
 
 Log everything
 
@@ -4049,25 +3980,22 @@ evaluation cases.
    - Early evaluations help you understand what a good response looks like, facilitating better engagement.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">## Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">## Overview
 
 Evaluation is the process of validating and testing the outputs that your Large Language Model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span> applications 
 are producing. Strong evaluations, referred to as <span style="color: #008000; text-decoration-color: #008000">"evals,"</span> contribute to creating a more stable and reliable 
@@ -4087,14 +4015,13 @@ scenarios.
 - **Resources**: Offering additional materials for further learning and exploration.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns**
 
 This slide outlines three types of evaluation methods used in technical assessments:
 
@@ -4114,14 +4041,13 @@ required standards.
 qualitative aspects.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Metric-based Evaluations
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Metric-based Evaluations
 
 ROUGE is a common metric for evaluating machine summarizations of text. It is specifically used to assess the 
 quality of summaries by comparing them to reference summaries. The slide provides an example of how ROUGE is 
@@ -4140,14 +4066,13 @@ summary and the original text. A higher score indicates a closer match to the re
 Overall, ROUGE helps in evaluating how well a machine-generated summary captures the essence of the original text.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"># Technical Patterns: Metric-based Evaluations
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"># Technical Patterns: Metric-based Evaluations
 
 The slide discusses the BLEU score, a standard metric used to evaluate machine translation tasks. BLEU stands for 
 Bilingual Evaluation Understudy and is a method for assessing the quality of text that has been machine-translated 
@@ -4173,14 +4098,13 @@ The BLEU score is widely used in the field of natural language processing to pro
 translation quality.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Metric-based Evaluations
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Metric-based Evaluations
 
 **What they’re good for:**
 
@@ -4198,14 +4122,13 @@ effectiveness in certain situations.
 indicating that metric-based evaluations might not be sufficient on their own for final decision-making.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Component Evaluations**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Component Evaluations**
 
 Component evaluations, also known as <span style="color: #008000; text-decoration-color: #008000">"unit tests,"</span> focus on assessing a single input/output of an application. The 
 goal is to verify that each component functions correctly in isolation by comparing the input to a predefined ideal
@@ -4240,14 +4163,13 @@ This process ensures that each component of the application is functioning corre
 by systematically evaluating each step against the ground truth.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Subjective Evaluations**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Subjective Evaluations**
 
 Building an effective scorecard for automated testing is enhanced by incorporating detailed human reviews. This 
 process helps identify what is truly valuable. The approach of <span style="color: #008000; text-decoration-color: #008000">"show rather than tell"</span> is recommended for GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>, 
@@ -4277,14 +4199,13 @@ question. Acceptable values are <span style="color: #008000; text-decoration-col
 This structured approach ensures clarity and consistency in evaluating the performance of automated systems.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Example Framework**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Example Framework**
 
 This framework outlines a method for evaluating the effectiveness of a system by grouping evaluations into test 
 suites called <span style="color: #008000; text-decoration-color: #008000">"runs."</span> These runs are executed in batches, and each run's contents are logged and stored at a 
@@ -4327,14 +4248,13 @@ This framework emphasizes the importance of detailed logging and iterative impro
 performance.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Overview
 
 Fine-tuning involves adjusting the 
 parameters of pre-trained models on a 
@@ -4375,14 +4295,13 @@ What we’ll cover
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What is Fine-tuning
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What is Fine-tuning
 
 Public Model
 
@@ -4422,14 +4341,13 @@ It is recommended to use <span style="color: #008080; text-decoration-color: #00
 examples. This ensures the model learns adequately from the examples provided.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">When to ﬁne-tune
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">When to ﬁne-tune
 
 Good for  ✅
 
@@ -4478,14 +4396,13 @@ Include up-to-date content in responses
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Preparing the dataset
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Preparing the dataset
 
 Example format
 
@@ -4541,14 +4458,13 @@ even if the minimum is <span style="color: #008080; text-decoration-color: #0080
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Best practices
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Best practices
 
 Curate examples carefully
 
@@ -4567,7 +4483,7 @@ your examples are representative
 
 in evaluation
 
-● Consider the balance &amp; diversity of data
+● Consider the balance &#x26; diversity of data
 ● Make sure your examples contain all the 
 
 information needed in the response
@@ -4629,14 +4545,13 @@ model versions.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Hyperparameters
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Hyperparameters
 
 Epochs
 Refers to <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span> full cycle through the training dataset
@@ -4647,7 +4562,7 @@ default: auto <span style="font-weight: bold">(</span>standard is <span style="c
 
 Batch size
 Number of training examples used to train a single 
-forward &amp; backward pass
+forward &#x26; backward pass
 In general, we've found that larger batch sizes tend to work better for larger datasets
 
 default: ~<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.2</span>% x N* <span style="font-weight: bold">(</span>max <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">256</span><span style="font-weight: bold">)</span>
@@ -4686,25 +4601,22 @@ prevent overfitting.
 - Default values are <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.05</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.1</span>, or <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.2</span>, depending on the final batch size.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Overview**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Overview**
 
 Fine-tuning involves adjusting the parameters of pre-trained models on a specific dataset or task. This process 
 enhances the model's ability to generate more accurate and relevant responses for the given context by adapting it 
@@ -4723,14 +4635,13 @@ to the nuances and specific requirements of the task at hand.
 - Resources
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">When to Fine-Tune
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">When to Fine-Tune
 
 **Good for:**
 
@@ -4756,14 +4667,13 @@ create multiple fine-tuned models.
 information. RAG is recommended for this purpose.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Preparing the Dataset**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Preparing the Dataset**
 
 This slide provides guidance on preparing a dataset for training a chatbot model. It includes an example format 
 using JSONL <span style="font-weight: bold">(</span>JSON Lines<span style="font-weight: bold">)</span> to structure the data. The example shows a conversation with three roles:
@@ -4781,14 +4691,13 @@ good results.
 - It is recommended to use <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">50</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">100</span> examples, even though the minimum required is <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span>.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Best Practices**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Best Practices**
 
 <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>. **Curate Examples Carefully**
    - Building datasets can be challenging, so start small and focus on high-quality examples.
@@ -4817,8 +4726,7 @@ latency.
    - Experiment with reducing or removing system instructions in subsequent fine-tuned versions.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
@@ -4841,7 +4749,7 @@ for c in clean_content:
     print("\n\n-------------------------------\n\n")
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Overview
 Retrieval-Augmented Generationenhances the capabilities of languagemodels by combining them with aretrieval system.
 This allows the modelto leverage external knowledge sourcesto generate more accurate andcontextually relevant 
 responses.
@@ -4857,14 +4765,13 @@ What we’ll cover
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What is RAG
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What is RAG
 Retrieve information to Augment the model’s knowledge and Generate the output
 “What is yourreturn policy?”
 ask
@@ -4874,7 +4781,7 @@ LLM
 return information
 Total refunds: <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span> days
 % of value vouchers: <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days
-$<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">5</span> discount on next order: &gt; <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days
+$<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">5</span> discount on next order: > <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days
 “You can get a full refund upto <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">14</span> days after thepurchase, then up to <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> daysyou would get a voucher forhalf the 
 value of your order”
 KnowledgeBase <span style="color: #800080; text-decoration-color: #800080">/</span> Externalsources
@@ -4895,14 +4802,13 @@ instance, it might say, <span style="color: #008000; text-decoration-color: #008
 This method allows the model to provide accurate and up-to-date answers by leveraging external data sources.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">When to use RAG
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">When to use RAG
 Good for  ✅
 Not good for  ❌
 ●
@@ -4932,14 +4838,13 @@ custom models.
 - **Reducing token usage:** If token usage is a concern, consider fine-tuning based on the specific use case.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation
 Input processing
 Retrieval
@@ -4965,14 +4870,13 @@ Embeddings
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation
 chunk documents into multiplepieces for easier consumption
 content
@@ -4981,7 +4885,7 @@ embeddings
 .<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">876</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.145</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.179</span>…
 .<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">983</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.123</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.289</span>…
 Augment contentusing LLMs
-Ex: parse text only, ask gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> to rephrase &amp;summarize each part, generate bullet points…
+Ex: parse text only, ask gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> to rephrase &#x26;summarize each part, generate bullet points…
 BEST PRACTICES
 Pre-process content for LLMconsumption:Add summary, headers for eachpart, etc.
 + curate relevant data sources
@@ -4993,18 +4897,17 @@ content
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation: chunking
 Why chunking?
 If your system doesn’t requireentire documents to providerelevant answers, you canchunk them into multiple 
-piecesfor easier consumption <span style="font-weight: bold">(</span>reducedcost &amp; latency<span style="font-weight: bold">)</span>.
+piecesfor easier consumption <span style="font-weight: bold">(</span>reducedcost &#x26; latency<span style="font-weight: bold">)</span>.
 Other approaches: graphs ormap-reduce
 Things to consider
 ●
@@ -5031,20 +4934,19 @@ Should chunks be linked together with metadata toindicate common properties?
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation: embeddings
 What to embed?
 Depending on your use caseyou might not want just toembed the text in thedocuments but metadata as well- anything 
 that will make it easierto surface this speciﬁc chunk ordocument when performing asearch
 Examples
-Embedding Q&amp;A posts in a forum
+Embedding Q&#x26;A posts in a forum
 You might want to embed the title of the posts,the text of the original question and the content ofthe top answers.
 Additionally, if the posts are tagged by topic orwith keywords, you can embed those too.
 Embedding product specs
@@ -5053,14 +4955,13 @@ that you have on theproduct such as the color, size, etc. in yourembeddings.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Data preparation: augmenting content
 What does “Augmentingcontent” mean?
 Augmenting content refers tomodiﬁcations of the original contentto make it more digestible for asystem relying on 
@@ -5079,23 +4980,22 @@ For example, youcan use GPT-4V togenerate tags forimages or todescribe slides.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Input processing
 Process input according to task
-Q&amp;A
-HyDE:  Ask LLM to hypothetically answer thequestion &amp; use the answer to search the KB
+Q&#x26;A
+HyDE:  Ask LLM to hypothetically answer thequestion &#x26; use the answer to search the KB
 embeddings
 .<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">983</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.123</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.289</span>…
 .<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">876</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.145</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.179</span>…
 Content search
-Prompt LLM to rephrase input &amp; optionally addmore context
+Prompt LLM to rephrase input &#x26; optionally addmore context
 query
 SELECT * from items…
 DB search
@@ -5111,14 +5011,13 @@ COMMON PITFALLS
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Input processing: input augmentation
 What is input augmentation?
 Example approaches
@@ -5128,7 +5027,7 @@ This helps boost performance asthe LLM might understand betterthe user intent.
 Queryexpansion*
 Rephrase thequery to bemoredescriptive
 HyDE*
-Hypotheticallyanswer thequestion &amp; usethe answer tosearch the KB
+Hypotheticallyanswer thequestion &#x26; usethe answer tosearch the KB
 Splitting a query in N*
 When there is more than <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span> question orintent in a user query, considersplitting it in several queries
 Fallback
@@ -5139,14 +5038,13 @@ user queryto get a result
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Input processing: NER
 Why use NER?
 Using NER <span style="font-weight: bold">(</span>Named EntityRecognition<span style="font-weight: bold">)</span> allows to extractrelevant entities from the input, thatcan then be used for 
@@ -5159,14 +5057,13 @@ Note: You can use exact values or embeddings afterhaving extracted the relevant 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval
 re-ranking
 INPUT
@@ -5193,14 +5090,13 @@ COMMON PITFALLS
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval: search
 How to search?
 Semantic search
@@ -5218,14 +5114,13 @@ example.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval: multi-step retrieval
 What is multi-step retrieval?
 In some cases, there might beseveral actions to be performed toget the required information togenerate an answer.
@@ -5235,7 +5130,7 @@ Framework to be used:
 ○ When there are multiple steps to perform,consider whether you want to handle thisyourself or use a framework to 
 make it easier
 ●
-Cost &amp; Latency:
+Cost &#x26; Latency:
 ○
 ○
 Performing multiple steps at the retrievalstage can increase latency and costsigniﬁcantly
@@ -5250,14 +5145,13 @@ sequentially - for example: “ifthis didn’t work, then do this”
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Retrieval: re-ranking
 What is re-ranking?
 Example approaches
@@ -5272,14 +5166,13 @@ re-rankers,cross-encoder re-ranking, TF-IDF algorithms…
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation
 FINAL RESULT
 Piece of contentretrieved
@@ -5295,14 +5188,13 @@ COMMON PITFALLS
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation: context window
 How to manage context?
 Depending on your use case, there areseveral things to consider whenincluding retrieved content into thecontext 
@@ -5315,7 +5207,7 @@ Context window max size:
 There is a maximum size, so putting toomuch content is not ideal
 In conversation use cases, theconversation will be part of the contextas well and will add to that size
 ●
-Cost &amp; Latency vs Accuracy:
+Cost &#x26; Latency vs Accuracy:
 ○ More context results in increased
 latency and additional costs since therewill be more input tokens
 Less context might also result indecreased accuracy
@@ -5327,14 +5219,13 @@ someimportant information.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation: optimisation
 How to optimise?
 There are a few diﬀerentmethods to consider whenoptimising a RAG application.
@@ -5352,14 +5243,13 @@ youcan ﬁne-tune to get aspeciﬁc input processingor output format.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Answer Generation: safety checks
 Why include safety checks?
 Just because you provide the modelwith <span style="font-weight: bold">(</span>supposedly<span style="font-weight: bold">)</span> relevant contextdoesn’t mean the answer willsystematically be 
@@ -5369,24 +5259,21 @@ Example evaluation framework: RAGAS
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-</pre>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"></pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Overview**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Overview**
 Retrieval-Augmented Generation <span style="font-weight: bold">(</span>RAG<span style="font-weight: bold">)</span> enhances language models by integrating them with a retrieval system. This 
 combination allows the model to access external knowledge sources, resulting in more accurate and contextually 
 relevant responses.
@@ -5400,14 +5287,13 @@ relevant responses.
 - Resources
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns**
 This image outlines four key technical patterns involved in data processing and answer generation:
 . **Data Preparation**
    - **Chunking**: Breaking down data into smaller, manageable pieces.
@@ -5430,14 +5316,13 @@ suitable for processing.
    - **Safety Checks**: Ensuring that the generated answers are safe and appropriate for use.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Data Preparation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Data Preparation**
 This presentation focuses on the process of preparing data for easier consumption by large language models <span style="font-weight: bold">(</span>LLMs<span style="font-weight: bold">)</span>.
 . **Content Chunking**:   - Documents are divided into smaller, manageable pieces. This makes it easier for LLMs to
 process the information.
@@ -5456,14 +5341,13 @@ points from the text.
 This approach helps in organizing and optimizing data for better performance and understanding by LLMs.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Data Preparation - Chunking**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Data Preparation - Chunking**
 **Why Chunking?**
 Chunking is a technique used when your system doesn't need entire documents to provide relevant answers. By 
 breaking documents into smaller pieces, you can make data easier to process, which reduces cost and latency. This 
@@ -5486,19 +5370,18 @@ These considerations help in designing an efficient chunking strategy that align
 and goals.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"># Technical Patterns: Data Preparation - Embeddings
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"># Technical Patterns: Data Preparation - Embeddings
 ## What to Embed?
 When preparing data for embedding, it's important to consider not just the text but also the metadata. This 
 approach can enhance the searchability and relevance of the data. Here are some examples:
 ### Examples
-. **Embedding Q&amp;A Posts in a Forum**
+. **Embedding Q&#x26;A Posts in a Forum**
    - You might want to include the title of the posts, the original question, and the top answers.
    - Additionally, if the posts are tagged by topic or keywords, these can be embedded as well.
 . **Embedding Product Specs**
@@ -5508,14 +5391,13 @@ By embedding both text and metadata, you can improve the ability to surface spec
 search.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Data Preparation - Augmenting Content**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Data Preparation - Augmenting Content**
 **What does “Augmenting content” mean?**
 Augmenting content involves modifying the original material to make it more accessible and understandable for 
 systems that rely on Retrieval-Augmented Generation <span style="font-weight: bold">(</span>RAG<span style="font-weight: bold">)</span>. These modifications can include changes in format, 
@@ -5533,17 +5415,16 @@ helps in making the content more searchable and relevant.
 generate tags for images or describe slides, enhancing the content's accessibility and utility.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Input Processing**
- methods for processing input data according to specific tasks, focusing on three main areas: Q&amp;A, content search, 
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Input Processing**
+ methods for processing input data according to specific tasks, focusing on three main areas: Q&#x26;A, content search, 
 and database <span style="font-weight: bold">(</span>DB<span style="font-weight: bold">)</span> search.
-. **Q&amp;A**:   - Uses a technique called HyDE, where a large language model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span> is asked to hypothetically answer a
+. **Q&#x26;A**:   - Uses a technique called HyDE, where a large language model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span> is asked to hypothetically answer a
 question. This answer is then used to search the knowledge base <span style="font-weight: bold">(</span>KB<span style="font-weight: bold">)</span>.
 . **Content Search**:
    - Involves prompting the LLM to rephrase the input and optionally add more context to improve search results.
@@ -5561,14 +5442,13 @@ searches or to construct a search query.
 - Avoid directly comparing input to the database without considering the specific requirements of the task.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Input Processing - Input Augmentation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Input Processing - Input Augmentation**
 **What is input augmentation?**
 Input augmentation involves transforming the input into something different, such as rephrasing it, splitting it 
 into several inputs, or expanding it. This process enhances performance by helping the language model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span> better 
@@ -5589,14 +5469,13 @@ This is particularly useful when using tools that require precise input.
 *Note: GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> can perform these tasks with the appropriate prompt.*
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Input Processing - NER
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Input Processing - NER
 **Why use NER?**
 Named Entity Recognition <span style="font-weight: bold">(</span>NER<span style="font-weight: bold">)</span> is a technique used to extract relevant entities from input data. This process is 
 beneficial for creating more deterministic search queries, especially when the scope is very constrained. By 
@@ -5610,14 +5489,13 @@ more effectively.
 process.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Retrieval
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Retrieval
 This diagram illustrates a retrieval process using technical patterns. The process begins with three types of 
 input: embeddings, queries, and keywords.
 . **Embeddings**: These are numerical representations <span style="font-weight: bold">(</span>e.g., <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.983</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.123</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.289</span><span style="font-weight: bold">)</span> used for semantic search. They 
@@ -5636,14 +5514,13 @@ output.
 to ensure accurate results.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Retrieval - Search
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Retrieval - Search
 **How to search?**
 There are various approaches to searching, which depend on the use case and the existing system. Here are three 
 main methods:
@@ -5659,14 +5536,13 @@ Additionally, you can use a hybrid approach by combining several methods. This c
 searches in parallel or in sequence, or searching for keywords along with their embeddings.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Retrieval - Multi-step Retrieval**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Retrieval - Multi-step Retrieval**
 **What is multi-step retrieval?**
 Multi-step retrieval involves performing several actions to obtain the necessary information to generate an answer.
 This approach is useful when a single step is insufficient to gather all required data.
@@ -5674,7 +5550,7 @@ This approach is useful when a single step is insufficient to gather all require
 . **Framework to be Used:**
    - When multiple steps are needed, decide whether to manage this process yourself or use a framework to simplify 
 the task.
-. **Cost &amp; Latency:**
+. **Cost &#x26; Latency:**
    - Performing multiple steps can significantly increase both latency and cost.
    - To mitigate latency, consider executing actions in parallel.
 . **Chain of Thought:**
@@ -5684,14 +5560,13 @@ guidelines on whether to continue, stop, or take alternative actions.
 <span style="color: #008000; text-decoration-color: #008000">work, then do this."</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Retrieval - Re-ranking**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Retrieval - Re-ranking**
 **What is re-ranking?**
 Re-ranking involves re-ordering the results of a retrieval process to highlight more relevant outcomes. This is 
 especially crucial in semantic searches, where understanding the context and meaning of queries is important.
@@ -5705,14 +5580,13 @@ re-rankers, cross-encoder re-ranking, and TF-IDF algorithms. These methods apply
 order the relevance of search results.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Answer Generation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Answer Generation**
 This diagram illustrates the process of generating answers using a language model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span>. Here's a breakdown of the 
 components and concepts:
 . **Process Flow:**
@@ -5730,14 +5604,13 @@ effective or efficient.
 By following these guidelines, you can optimize the use of LLMs for generating accurate and useful answers.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"># Technical Patterns: Answer Generation - Context Window
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"># Technical Patterns: Answer Generation - Context Window
 ## How to Manage Context?
 When generating answers using a context window, it's important to consider several factors based on your specific 
 use case. Here are key points to keep in mind:
@@ -5746,7 +5619,7 @@ use case. Here are key points to keep in mind:
   - The context window has a maximum size, so overloading it with too much content is not ideal.
   - In conversational scenarios, the conversation itself becomes part of the context, contributing to the overall 
 size.
-- **Cost &amp; Latency vs. Accuracy:**
+- **Cost &#x26; Latency vs. Accuracy:**
   - Including more context can lead to increased latency and higher costs due to the additional input tokens 
 required.
   - Conversely, using less context might reduce accuracy.
@@ -5755,14 +5628,13 @@ required.
 of the content, potentially missing important details.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Answer Generation Optimisation**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Answer Generation Optimisation**
 **How to optimise?**
 When optimising a Retrieval-Augmented Generation <span style="font-weight: bold">(</span>RAG<span style="font-weight: bold">)</span> application, there are several methods to consider. These 
 methods should be tried sequentially from left to right, and multiple approaches can be iterated if necessary.
@@ -5778,14 +5650,13 @@ relevant output.
    - Fine-tuning can help achieve a specific input processing or output format.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Answer Generation - Safety Checks
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Answer Generation - Safety Checks
 **Why include safety checks?**
 Safety checks are crucial because providing a model with supposedly relevant context does not guarantee that the 
 generated answer will be truthful or accurate. Depending on the use case, it is important to double-check the 
@@ -5803,14 +5674,13 @@ information is precise.
 By using this framework, one can systematically evaluate and improve the quality of generated answers.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span>-turbo ,  gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> , and  gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>-turbo-preview  point to the latest model
 version. You can verify this by looking at the response object after sending a request.
@@ -5873,14 +5743,13 @@ Apr <span style="color: #008080; text-decoration-color: #008080; font-weight: bo
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 MODEL
 DE S CRIPTION
@@ -5958,14 +5827,13 @@ capable than any of our previous models.
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 Multilingual capabilities
 GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> outperforms both previous large language models and as of <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2023</span>, most state-
@@ -6027,14 +5895,13 @@ output tokens. Learn more.
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 MODEL
 DE S CRIPTION
@@ -6099,14 +5966,13 @@ endpoint in the Audio API.
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 MODEL
 DE S CRIPTION
@@ -6157,14 +6023,13 @@ Moderation
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 The Moderation models are designed to check whether content complies with
 OpenAI's usage policies. The models provide classification capabilities that look for
@@ -6221,14 +6086,13 @@ How we use your data
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 Your data is your data.
 As of March <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2023</span>, data sent to the OpenAI API will not be used to train or improve
@@ -6304,14 +6168,13 @@ Yes
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 Models - OpenAI API
 ENDP OINT
 DATA USED
@@ -6373,14 +6236,13 @@ releases, gpt-<span style="color: #008080; text-decoration-color: #008080; font-
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">26</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">02</span>/<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2024</span>, <span style="color: #00ff00; text-decoration-color: #00ff00; font-weight: bold">17:58</span>
 ENDP OINT
 Models - OpenAI API
 L ATE ST MODEL S
@@ -6399,24 +6261,21 @@ text-moderation-stable, text-
 <span style="color: #800080; text-decoration-color: #800080">/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">10</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-</pre>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"></pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> Turbo**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> Turbo**
 GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> is a sophisticated multimodal model capable of processing both text and image inputs to produce text outputs.
 It is designed to tackle complex problems with higher accuracy than previous models, leveraging its extensive 
 general knowledge and advanced reasoning skills. GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> is accessible through the OpenAI API for paying customers 
@@ -6441,14 +6300,13 @@ These models are part of OpenAI's ongoing efforts to provide developers with rob
 ensuring flexibility and improved performance across different use cases.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Models - OpenAI API Overview**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Models - OpenAI API Overview**
 This document provides an overview of various GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> models, highlighting their capabilities, context windows, and 
 training data timelines.
 . **gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>-vision-preview**
@@ -6481,14 +6339,13 @@ gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bo
    - **Training Data**: Up to September
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Multilingual Capabilities and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span> Turbo**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Multilingual Capabilities and GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span> Turbo**
 **Multilingual Capabilities**
 GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> surpasses previous large language models and, as of <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2023</span>, most state-of-the-art systems. It excels in the 
 MMLU benchmark, which involves English-language multiple-choice questions across <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">57</span> subjects. GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span> not only 
@@ -6514,14 +6371,13 @@ function calling. It returns up to <span style="color: #008080; text-decoration-
    - **Training Data:** Up to September <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Models - OpenAI API**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Models - OpenAI API**
 **GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span> Models:**
 . **gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span>-turbo-instruct**
    - **Description:** Similar capabilities to GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span> era models. Compatible with legacy Completions endpoint, not 
@@ -6557,14 +6413,13 @@ images than the original.
 - These models can be used with the Speech endpoint in
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Models - OpenAI API**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Models - OpenAI API**
 **Text-to-Speech Models:**
 . **tts-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>**: This is a new text-to-speech model optimized for speed, providing efficient conversion of text into 
 spoken words.
@@ -6588,14 +6443,13 @@ The document mentions a section on moderation, likely related to content moderat
 details are not provided in the visible content.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Moderation Models and GPT Base**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Moderation Models and GPT Base**
 **Moderation Models**
 The moderation models are designed to ensure content compliance with OpenAI's usage policies. They classify content
 into categories such as hate, hate/threatening, self-harm, sexual, sexual/minors, violence, and violence/graphic. 
@@ -6616,14 +6470,13 @@ September <span style="color: #008080; text-decoration-color: #008080; font-weig
 September <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2021</span>.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Your Data is Your Data
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Your Data is Your Data
 As of March <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2023</span>, data sent to the OpenAI API is not used to train or improve OpenAI models unless you 
 explicitly opt in. Opting in can help models improve for your specific use case over time.
 To prevent abuse, API data may be retained for up to <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">30</span> days before deletion, unless legally required otherwise. 
@@ -6648,14 +6501,13 @@ retention option.
 - **<span style="color: #800080; text-decoration-color: #800080">/v1/audio/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">transcriptions</span>**: Data is not used for training
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">### Model Endpoint Compatibility and Data Retention
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">### Model Endpoint Compatibility and Data Retention
 #### Data Retention Details
 The table outlines the data retention policies for various API endpoints:
 - **<span style="color: #800080; text-decoration-color: #800080">/v1/audio/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">translations</span>**: No data is used for training, and there is zero data retention.
@@ -6682,14 +6534,13 @@ For more details, users are encouraged to refer to the API data usage policies o
 information on zero retention.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">LATEST MODELS
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">LATEST MODELS
 This document outlines the latest models available for different endpoints in the OpenAI API:
 . **<span style="color: #800080; text-decoration-color: #800080">/v1/</span><span style="color: #ff00ff; text-decoration-color: #ff00ff">completions</span> <span style="font-weight: bold">(</span>Legacy<span style="font-weight: bold">)</span>**:
    - Models: `gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span>-turbo-instruct`, `babbage-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">002</span>`, `davinci-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">002</span>`
@@ -6710,14 +6561,13 @@ Additionally, the document mentions the availability of `gpt-<span style="color:
 `gpt-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.5</span>-turbo`, indicating enhancements in model capabilities and performance.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Overview
 Evaluation is the process of validatingand testing the outputs that your LLMapplications are producing. 
 Havingstrong evaluations <span style="font-weight: bold">(</span>“evals”<span style="font-weight: bold">)</span> will mean amore stable, reliable application which isresilient to code and model
 changes.
@@ -6736,14 +6586,13 @@ What we’ll cover
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What are evals
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What are evals
 Example
 An evaluation contains a question and a correct answer. We call this the ground truth.
 Question
@@ -6776,14 +6625,13 @@ Since the predicted answer matches the ground truth, the evaluation is successfu
 This process is crucial for verifying the accuracy of predictions in various applications.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What are evals
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What are evals
 Example
 Our ground truth matches the predicted answer, so the evaluation passes!
 Evaluation
@@ -6813,14 +6661,13 @@ Since the predicted answer matches the ground truth, the evaluation is successfu
 This process is crucial for verifying the accuracy of predictions in various applications.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 Component evaluations
 Subjective evaluations
@@ -6839,14 +6686,13 @@ Scorecard may alsohave a Pass/Fail
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 ROUGE is a common metric for evaluating machine summarizations of text
 ROUGE
@@ -6865,14 +6711,13 @@ ROUGEScore
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 BLEU score is another standard metric, this time focusing on machine translation tasks
 BLEU
@@ -6889,14 +6734,13 @@ BLEUScore
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Metric-based evaluations
 What they’re good for
 What to be aware of
@@ -6915,14 +6759,13 @@ production
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Component evaluations
 Component evaluations <span style="font-weight: bold">(</span>or “unit tests”<span style="font-weight: bold">)</span> cover a single input/output of the application. They checkwhether each 
 component works in isolation, comparing the input to a ground truth ideal result
@@ -6943,14 +6786,13 @@ Tag the rightanswer and doan exact matchcomparison withthe retrieval.
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical patterns
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical patterns
 Subjective evaluations
 Building up a good scorecard for automated testing beneﬁts from a few rounds of detailed humanreview so we can 
 learn what is valuable.
@@ -6974,14 +6816,13 @@ Evaluation: <span style="font-weight: bold">{</span>relevance: <span style="colo
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Example framework
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Example framework
 Your evaluations can be grouped up into test suites called runs and executed in a batch to testthe eﬀectiveness of 
 your system.
 Each run should have its contents logged and stored at the most granular level <span style="color: #800080; text-decoration-color: #800080; font-weight: bold">possible</span><span style="font-weight: bold">(</span>“tracing”<span style="font-weight: bold">)</span> so you can 
@@ -7033,14 +6874,13 @@ The framework uses both component evaluations <span style="font-weight: bold">(<
 to ensure the process is accurate and user-friendly.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Example framework
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Example framework
 I want to return aT-shirt I bought onAmazon on March 3rd.
 User
 Router
@@ -7082,14 +6922,13 @@ The framework uses both component evaluations <span style="font-weight: bold">(<
 to ensure the process is accurate and user-friendly.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Best practices
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Best practices
 Log everything
 ●
 Evals need test cases - log everything as you develop so you can mine your logs for good eval cases
@@ -7118,24 +6957,21 @@ evaluation cases.
    - Early evaluations help you understand what a good response looks like, facilitating better engagement.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-</pre>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"></pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">## Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">## Overview
 Evaluation is the process of validating and testing the outputs that your Large Language Model <span style="font-weight: bold">(</span>LLM<span style="font-weight: bold">)</span> applications 
 are producing. Strong evaluations, referred to as <span style="color: #008000; text-decoration-color: #008000">"evals,"</span> contribute to creating a more stable and reliable 
 application that can withstand changes in code and model updates.
@@ -7152,14 +6988,13 @@ scenarios.
 - **Resources**: Offering additional materials for further learning and exploration.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns**
  three types of evaluation methods used in technical assessments:
 . **Metric-based Evaluations**:
    - These evaluations use comparison metrics such as BLEU and ROUGE.   - They provide a score that helps in 
@@ -7174,14 +7009,13 @@ required standards.
 qualitative aspects.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Metric-based Evaluations
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Metric-based Evaluations
 ROUGE is a common metric for evaluating machine summarizations of text. It is specifically used to assess the 
 quality of summaries by comparing them to reference summaries.  an example of how ROUGE is applied:
 - **Original Text**: This is a detailed description of OpenAI's mission, emphasizing the development of artificial 
@@ -7194,14 +7028,13 @@ summary and the original text. A higher score indicates a closer match to the re
 Overall, ROUGE helps in evaluating how well a machine-generated summary captures the essence of the original text.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"># Technical Patterns: Metric-based Evaluations
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"># Technical Patterns: Metric-based Evaluations
  the BLEU score, a standard metric used to evaluate machine translation tasks. BLEU stands for Bilingual Evaluation
 Understudy and is a method for assessing the quality of text that has been machine-translated from one language to 
 another.
@@ -7219,14 +7052,13 @@ The BLEU score is widely used in the field of natural language processing to pro
 translation quality.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Technical Patterns: Metric-based Evaluations
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Technical Patterns: Metric-based Evaluations
 **What they’re good for:**
 - **Starting Point**: They provide a good starting point for evaluating a new solution, helping to establish 
 initial benchmarks.
@@ -7240,14 +7072,13 @@ effectiveness in certain situations.
 indicating that metric-based evaluations might not be sufficient on their own for final decision-making.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Component Evaluations**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Component Evaluations**
 Component evaluations, also known as <span style="color: #008000; text-decoration-color: #008000">"unit tests,"</span> focus on assessing a single input/output of an application. The 
 goal is to verify that each component functions correctly in isolation by comparing the input to a predefined ideal
 result, known as the ground truth.
@@ -7273,14 +7104,13 @@ This process ensures that each component of the application is functioning corre
 by systematically evaluating each step against the ground truth.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Technical Patterns: Subjective Evaluations**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Technical Patterns: Subjective Evaluations**
 Building an effective scorecard for automated testing is enhanced by incorporating detailed human reviews. This 
 process helps identify what is truly valuable. The approach of <span style="color: #008000; text-decoration-color: #008000">"show rather than tell"</span> is recommended for GPT-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span>, 
 meaning that examples of scores like <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3</span>, and <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">8</span> out of <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span> should be provided to help the model understand the 
@@ -7303,14 +7133,13 @@ question. Acceptable values are <span style="color: #008000; text-decoration-col
 This structured approach ensures clarity and consistency in evaluating the performance of automated systems.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Example Framework**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Example Framework**
 This framework outlines a method for evaluating the effectiveness of a system by grouping evaluations into test 
 suites called <span style="color: #008000; text-decoration-color: #008000">"runs."</span> These runs are executed in batches, and each run's contents are logged and stored at a 
 detailed level, known as <span style="color: #008000; text-decoration-color: #008000">"tracing."</span> This allows for investigation of failures, making adjustments, and rerunning 
@@ -7340,14 +7169,13 @@ This framework emphasizes the importance of detailed logging and iterative impro
 performance.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Overview
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Overview
 Fine-tuning involves adjusting theparameters of pre-trained models on aspeciﬁc dataset or task. This 
 processenhances the model's ability to generatemore accurate and relevant responses forthe given context by 
 adapting it to thenuances and speciﬁc requirements of thetask at hand.
@@ -7366,14 +7194,13 @@ What we’ll cover
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">What is Fine-tuning
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">What is Fine-tuning
 Public Model
 Training data
 Training
@@ -7393,14 +7220,13 @@ It is recommended to use <span style="color: #008080; text-decoration-color: #00
 examples. This ensures the model learns adequately from the examples provided.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">When to ﬁne-tune
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">When to ﬁne-tune
 Good for  ✅
 Not good for  ❌
 ●
@@ -7426,14 +7252,13 @@ Include up-to-date content in responses
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Preparing the dataset
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Preparing the dataset
 Example format
 <span style="font-weight: bold">{</span>
 <span style="color: #008000; text-decoration-color: #008000">"messages"</span>: <span style="font-weight: bold">[</span>
@@ -7461,14 +7286,13 @@ even if the minimum is <span style="color: #008080; text-decoration-color: #0080
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Best practices
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Best practices
 Curate examples carefully
 Datasets can be diﬃcult to build, startsmall and invest intentionally.Optimize for fewer high-qualitytraining 
 examples.
@@ -7477,7 +7301,7 @@ examples.
 your examples are representative
 ● Collect examples to target issues detected
 in evaluation
-● Consider the balance &amp; diversity of data
+● Consider the balance &#x26; diversity of data
 ● Make sure your examples contain all the
 information needed in the response
 Iterate on hyperparameters
@@ -7500,21 +7324,20 @@ similarperformance for less cost andlatency.
 Experiment with reducing orremoving system instructionswith subsequent ﬁne-tunedmodel versions.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Hyperparameters
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">Hyperparameters
 Epochs
 Refers to <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span> full cycle through the training dataset
 If you have hundreds of thousands of examples, we would recommendexperimenting with two epochs <span style="font-weight: bold">(</span>or one<span style="font-weight: bold">)</span> to avoid 
 overﬁtting.
 default: auto <span style="font-weight: bold">(</span>standard is <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">4</span><span style="font-weight: bold">)</span>
 Batch size
-Number of training examples used to train a singleforward &amp; backward pass
+Number of training examples used to train a singleforward &#x26; backward pass
 In general, we've found that larger batch sizes tend to work better for larger datasets
 default: ~<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.2</span>% x N* <span style="font-weight: bold">(</span>max <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">256</span><span style="font-weight: bold">)</span>
 *N = number of training examples
@@ -7541,24 +7364,21 @@ prevent overfitting.
 - Default values are <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.05</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.1</span>, or <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">0.2</span>, depending on the final batch size.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-</pre>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"></pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Overview**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Overview**
 Fine-tuning involves adjusting the parameters of pre-trained models on a specific dataset or task. This process 
 enhances the model's ability to generate more accurate and relevant responses for the given context by adapting it 
 to the nuances and specific requirements of the task at hand.
@@ -7574,14 +7394,13 @@ to the nuances and specific requirements of the task at hand.
 - Resources
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">When to Fine-Tune
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">When to Fine-Tune
 **Good for:**
 - **Following a given format or tone for the output:** Fine-tuning is effective when you need the model to adhere 
 to a specific style or structure in its responses.
@@ -7598,14 +7417,13 @@ create multiple fine-tuned models.
 information. RAG is recommended for this purpose.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Preparing the Dataset**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Preparing the Dataset**
  guidance on preparing a dataset for training a chatbot model. It includes an example format using JSONL <span style="font-weight: bold">(</span>JSON 
 Lines<span style="font-weight: bold">)</span> to structure the data. The example shows a conversation with three roles:
 . **System**: Sets the context by describing the chatbot as <span style="color: #008000; text-decoration-color: #008000">"Marv is a factual chatbot that is also sarcastic."</span>
@@ -7619,14 +7437,13 @@ good results.
 - It is recommended to use <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">50</span>-<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">100</span> examples, even though the minimum required is <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">10</span>.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**Best Practices**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">**Best Practices**
 . **Curate Examples Carefully**
    - Building datasets can be challenging, so start small and focus on high-quality examples.
    - Use <span style="color: #008000; text-decoration-color: #008000">"prompt baking"</span> to generate initial examples.
@@ -7650,8 +7467,7 @@ latency.
    - Experiment with reducing or removing system instructions in subsequent fine-tuned versions.
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">
-
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace">
 -------------------------------
 
 
@@ -7665,7 +7481,7 @@ print(df.shape)
 df.head()
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="font-weight: bold">(</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">88</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">)</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="font-weight: bold">(</span><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">88</span>, <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">1</span><span style="font-weight: bold">)</span>
 </pre>
 
 <div>
@@ -7861,38 +7677,38 @@ for ex in example_inputs:
     print(f"[turquoise4][b]REPLY:[/b][/turquoise4]\n\n[spring_green4]{reply}[/spring_green4]\n\n--------------\n\n")
 ```
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> What are the main models you offer?</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> What are the main models you offer?</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.42</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.42</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">LATEST MODELS</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">LATEST MODELS</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">This document outlines the latest models available for different endpoints in the Open...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.39</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.39</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Models - OpenAI API</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">The Moderation models are designed to check whether content co...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.38</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.38</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Models - OpenAI API</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">MODEL</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">DE S CRIPTION</span>
@@ -7903,7 +7719,7 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">We offer the following main models:</span>
 
@@ -7919,29 +7735,29 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Do you have a speech recognition model?</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Do you have a speech recognition model?</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.51</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.51</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Models - OpenAI API**</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Models - OpenAI API**</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Text-to-Speech Models:**</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">. **tts-</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">1</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**: This is a new text-to-speech model o...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.50</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.50</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Models - OpenAI API</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">MODEL</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">DE S CRIPTION</span>
@@ -7952,10 +7768,10 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.44</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.44</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">26</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">02</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">2024</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">, </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">17:58</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Models - OpenAI API</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">ENDP OINT</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">DATA USED</span>
@@ -7967,7 +7783,7 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">Yes, there is a speech recognition model called Whisper, which is capable of handling diverse audio inputs and </span>
 <span style="color: #00875f; text-decoration-color: #00875f">supports multilingual speech recognition, speech translation, and language identification. The Whisper v2-large </span>
@@ -7978,29 +7794,29 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Which embedding model should I use for non-English use cases?</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Which embedding model should I use for non-English use cases?</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.49</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.49</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f"># Technical Patterns: Data Preparation - Embeddings</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f"># Technical Patterns: Data Preparation - Embeddings</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">## What to Embed?</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">When preparing data for embedd...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.48</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.48</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Data preparation: embeddings</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What to embed?</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Depending on your use caseyou might n...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
@@ -8008,17 +7824,17 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.48</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.48</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Models - OpenAI API**</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Models - OpenAI API**</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Text-to-Speech Models:**</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">. **tts-</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">1</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**: This is a new text-to-speech model o...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">The content provided does not address which embedding model to use for non-English use cases. For non-English use </span>
 <span style="color: #00875f; text-decoration-color: #00875f">cases, you might consider using multilingual models like Google's mBERT or Facebook's XLM-R, which are designed to </span>
@@ -8029,38 +7845,38 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Can I introduce new knowledge in my LLM app using RAG?</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Can I introduce new knowledge in my LLM app using RAG?</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.54</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.54</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What is RAG</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What is RAG</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Retrieve information to Augment the model’s knowledge and Generate the output</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">“What is y...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.50</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.50</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Overview**</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Overview**</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Retrieval-Augmented Generation </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">(</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">RAG</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">)</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f"> enhances language models by integrating them with ...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.49</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.49</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">When to use RAG</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">When to use RAG</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Good for  ✅</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Not good for  ❌</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">●</span>
@@ -8072,7 +7888,7 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">Yes, you can introduce new knowledge in your LLM app using Retrieval-Augmented Generation </span><span style="color: #00875f; text-decoration-color: #00875f; font-weight: bold">(</span><span style="color: #00875f; text-decoration-color: #00875f">RAG</span><span style="color: #00875f; text-decoration-color: #00875f; font-weight: bold">)</span><span style="color: #00875f; text-decoration-color: #00875f">. This method allows</span>
 <span style="color: #00875f; text-decoration-color: #00875f">the language model to access external knowledge sources, enhancing its responses with up-to-date and contextually </span>
@@ -8083,19 +7899,19 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> How many examples do I need to fine-tune a model?</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> How many examples do I need to fine-tune a model?</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.71</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.71</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What is Fine-tuning</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What is Fine-tuning</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Public Model</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Training data</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Training</span>
@@ -8105,27 +7921,27 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.62</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.62</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">When to Fine-Tune</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">When to Fine-Tune</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">**Good for:**</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">- **Following a given format or tone for the output:** Fine-tuning i...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.60</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.60</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Best practices</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Best practices</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Curate examples carefully</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Datasets can be diﬃcult to build, startsmall and invest int...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">For effective fine-tuning of a model, it is recommended to use </span><span style="color: #00875f; text-decoration-color: #00875f; font-weight: bold">50</span><span style="color: #00875f; text-decoration-color: #00875f">-</span><span style="color: #00875f; text-decoration-color: #00875f; font-weight: bold">100</span><span style="color: #00875f; text-decoration-color: #00875f"> examples. However, the minimum requirement is</span>
 <span style="color: #00875f; text-decoration-color: #00875f; font-weight: bold">10</span><span style="color: #00875f; text-decoration-color: #00875f"> examples.</span>
@@ -8135,38 +7951,38 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Which metric can I use to evaluate a summarization task?</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Which metric can I use to evaluate a summarization task?</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.61</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.61</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical Patterns: Metric-based Evaluations</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical Patterns: Metric-based Evaluations</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">ROUGE is a common metric for evaluating machine summari...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.54</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.54</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Metric-based evaluations</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">ROUGE is a common metric for evaluating machine summariz...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.48</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.48</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Metric-based evaluations</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Component evaluations</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Subjective evaluations</span>
@@ -8177,7 +7993,7 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">You can use the ROUGE metric to evaluate a summarization task. ROUGE assesses the quality of summaries by comparing</span>
 <span style="color: #00875f; text-decoration-color: #00875f">them to reference summaries, quantifying how well a machine-generated summary captures the essence of the original </span>
@@ -8188,20 +8004,20 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Give me a detailed example for an evaluation process where we are looking for a clear answer to compare to a</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #af005f; text-decoration-color: #af005f; font-weight: bold">QUERY:</span><span style="color: #af005f; text-decoration-color: #af005f"> Give me a detailed example for an evaluation process where we are looking for a clear answer to compare to a</span>
 <span style="color: #af005f; text-decoration-color: #af005f">ground truth.</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">Matching content:</span>
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.56</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.56</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What are evals</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What are evals</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Example</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Our ground truth matches the predicted answer, so the evaluation passes!</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Eval...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
@@ -8209,20 +8025,20 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.55</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.55</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What are evals</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">What are evals</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Example</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">An evaluation contains a question and a correct answer. We call this the grou...</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">[</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">/</span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold">]</span>
 
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.55</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-style: italic">Similarity: </span><span style="color: #5f5f5f; text-decoration-color: #5f5f5f; font-weight: bold; font-style: italic">0.55</span>
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Technical patterns</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Metric-based evaluations</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Component evaluations</span>
 <span style="color: #5f5f5f; text-decoration-color: #5f5f5f">Subjective evaluations</span>
@@ -8233,7 +8049,7 @@ for ex in example_inputs:
 
 </pre>
 
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,&#x27;DejaVu Sans Mono&#x27;,consolas,&#x27;Courier New&#x27;,monospace"><span style="color: #008787; text-decoration-color: #008787; font-weight: bold">REPLY:</span>
 
 <span style="color: #00875f; text-decoration-color: #00875f">An example of an evaluation process where we look for a clear answer to compare to a ground truth is when </span>
 <span style="color: #00875f; text-decoration-color: #00875f">determining the population of a country. In this case, the question is </span><span style="color: #00875f; text-decoration-color: #00875f">"What is the population of Canada?"</span><span style="color: #00875f; text-decoration-color: #00875f"> The </span>
