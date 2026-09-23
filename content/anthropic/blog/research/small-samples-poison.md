@@ -1,4 +1,4 @@
-Title: A small number of samples can poison LLMs of any size
+Title: A small number of samples can poison LLMs
 
 URL Source: https://www.anthropic.com/research/small-samples-poison
 

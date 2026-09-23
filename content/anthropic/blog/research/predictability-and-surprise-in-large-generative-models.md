@@ -1,4 +1,4 @@
-Title: Predictability and Surprise in Large Generative Models
+Title: Predictability and surprise in large generative models
 
 URL Source: https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models
 

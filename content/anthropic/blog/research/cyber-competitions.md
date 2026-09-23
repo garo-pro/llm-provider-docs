@@ -1,4 +1,4 @@
-Title: Claude is competitive with humans in (some) cyber competitions
+Title: Claude does cyber competitions
 
 URL Source: https://www.anthropic.com/research/cyber-competitions
 
