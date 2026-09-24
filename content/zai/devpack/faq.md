@@ -33,6 +33,20 @@ For usage details, see:
 
 ***
 
+**Q: What is a Quota Reset Card?**
+
+**A:** A **Quota Reset Card** is a benefit occasionally issued to GLM Coding Plan users during special campaigns. Once used, it restores your consumed plan quota to the full amount, so you do not need to wait for the next scheduled reset.
+
+The rules are as follows:
+
+1. **Reset Types**: Quota Reset Cards are available in two types: **5-hour quota reset** and **weekly quota reset**. When you use a weekly quota reset card, your 5-hour quota will also be restored to full without consuming an additional 5-hour reset.
+
+2. **Reset Cycle**: After a reset card is used, the corresponding quota reset cycle will also restart. The next reset time will be recalculated from the moment the card is used.
+
+3. **Validity Period**: Each reset card has its own expiration date. Unused cards will automatically expire after the validity period ends.
+
+***
+
 **Q: Which tools are supported?**
 
 **A:** The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools). The subscriber shall not use the subscription benefits in any unsupported tools or scenarios.<br />Please refer to our tool guide for step-by-step setup. All supported coding tools share the same usage quota under your subscription.

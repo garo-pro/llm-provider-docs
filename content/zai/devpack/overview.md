@@ -5,7 +5,7 @@
 # Overview
 
 <Tip>
-  **GLM-5.3-Flash Usage Campaign** : During September 3 – October 7, daily from 23:00 to 09:00 the following day, paid plan users can use GLM-5.3-Flash via ZCode with unlimited usage, and enjoy doubled quota on other agents! [View details](/devpack/notice/event-glm-5.3-flash)
+  **GLM-5.3-Flash Usage Campaign** : During September 3 – October 7, daily from 23:00 to 09:00 the following day, paid plan users can use GLM-5.3-Flash via [ZCode](https://zcode.z.ai/en)、[AutoClaw](https://autoclaw.z.ai/) with unlimited usage, and enjoy doubled quota on other agents! [View details](/devpack/notice/event-glm-5.3-flash)
 </Tip>
 
 The GLM Coding Plan is a subscription package designed specifically for AI-powered coding.

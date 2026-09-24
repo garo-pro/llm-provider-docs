@@ -12,10 +12,10 @@ To thank our users for their continued support, GLM Coding Plan is launching an 
 
 During the campaign period, every day from **23:00 to 09:00 the following day**, usage of GLM-5.3-Flash through GLM Coding Plan will follow the rules below:
 
-| Usage Method                   | Quota Consumption Rule                                                   |
-| :----------------------------- | :----------------------------------------------------------------------- |
-| Use via ZCode                  | **Zero quota consumption** for unlimited usage                           |
-| Use via other supported Agents | Available quota is **doubled** based on your plan’s standard quota rules |
+| Usage Method                                                              | Quota Consumption Rule                                                   |
+| :------------------------------------------------------------------------ | :----------------------------------------------------------------------- |
+| Use via [ZCode](https://zcode.z.ai/en)、[AutoClaw](https://autoclaw.z.ai/) | **Zero quota consumption** for unlimited usage                           |
+| Use via other supported Agents                                            | Available quota is **doubled** based on your plan’s standard quota rules |
 
 ## II. Campaign Rules
 
