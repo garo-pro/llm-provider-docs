@@ -1,4 +1,4 @@
-Title: Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation
+Title: Anthropic raises $30B Series G at $380B valuation
 
 URL Source: https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation
 

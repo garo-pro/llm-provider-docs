@@ -68,4 +68,4 @@ At the university level, educators are considering how AI might speed up scienti
 
 ## The Situation Report
 
-![View of the Democratic Republic of the Congo](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F01a7f8f55e83f615a5d9c0fad56863f1863a41d9-1200x630.jpg&w=3840&q=75)
+![Looking out between dark tree trunks toward the town of Butembo at dawn or dusk. A field of leafy cassava and banana plants fills the foreground, and a red dirt path runs off to the right. Beyond the field, a dense spread of low buildings with metal roofs sits in a haze of mist or smoke. Heavy gray clouds cover the sky, with a narrow band of orange light glowing along the hills on the horizon.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F01a7f8f55e83f615a5d9c0fad56863f1863a41d9-1200x630.jpg&w=3840&q=75)

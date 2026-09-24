@@ -1,4 +1,4 @@
-Title: Anthropic opens Bengaluru office and announces new partnerships across India
+Title: Anthropic opens Bengaluru office
 
 URL Source: https://www.anthropic.com/news/bengaluru-office-partnerships-across-india
 
