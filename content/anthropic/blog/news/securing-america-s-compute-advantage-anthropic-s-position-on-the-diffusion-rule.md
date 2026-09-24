@@ -1,4 +1,4 @@
-Title: Anthropic's AI Export Controls Framework Response
+Title: Securing America's compute advantage: Anthropic’s position on the diffusion rule
 
 URL Source: https://www.anthropic.com/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule
 

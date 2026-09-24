@@ -1,4 +1,4 @@
-Title: Irina Ghose named Managing Director of India
+Title: Anthropic appoints Irina Ghose as Managing Director of India ahead of Bengaluru office opening
 
 URL Source: https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india
 

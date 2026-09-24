@@ -1,4 +1,4 @@
-Title: Strengthening safeguards with US CAISI and UK AISI
+Title: Strengthening our safeguards through collaboration with US CAISI and UK AISI
 
 URL Source: https://www.anthropic.com/news/strengthening-our-safeguards-through-collaboration-with-us-caisi-and-uk-aisi
 

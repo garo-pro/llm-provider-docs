@@ -1,4 +1,4 @@
-Title: Threat Intelligence / Anthropic
+Title: Threat Intelligence
 
 URL Source: https://www.anthropic.com/threat-intelligence
 

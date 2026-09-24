@@ -227,7 +227,6 @@ Each entry has a Markdown twin at `/api/docs/<slug>.md`.
 - [Vaults](https://developers.openai.com/api/docs/guides/agents-api/tools/vaults.md): Store secrets for MCPs or requests originating from the sandbox.
 - [Vector embeddings](https://developers.openai.com/api/docs/guides/embeddings.md): Learn how to turn text into numbers, unlocking use cases like search, clustering, and more with OpenAI API embeddings.
 - [Vercel](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/vercel.md): Run an Agents API session in a Vercel Sandbox.
-- [Video generation with Sora](https://developers.openai.com/api/docs/guides/video-generation.md): Learn how to generate, refine, and manage videos using the OpenAI Videos API.
 - [Vision fine-tuning](https://developers.openai.com/api/docs/guides/vision-fine-tuning.md): Fine-tune models for better image understanding.
 - [Voice activity detection (VAD)](https://developers.openai.com/api/docs/guides/realtime-vad.md): Learn about automatic voice activity detection in the Realtime API.
 - [Voice agents](https://developers.openai.com/api/docs/guides/voice-agents.md): Choose a voice architecture and connect spoken conversations to your agent workflows.

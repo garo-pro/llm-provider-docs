@@ -47,8 +47,6 @@ Fable 5.1 was evaluated with its production safeguards enabled. On tasks where t
 
 Our early-access partners noticed these performance upgrades, and also picked up on more qualitative improvements in the model’s outputs. Here’s what they told us:
 
-1 of 22
-
 ## Scientific research
 
 We tested the scientific research capabilities of Claude Fable 5.1 and Claude Mythos 5.1 across a wide range of domains. What we found—which includes the early examples we share below—adds to the evidence that AI models will soon make important contributions to scientific discovery.

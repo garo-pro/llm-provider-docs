@@ -1,4 +1,4 @@
-Title: Vas Narasimhan appointed to Board of Directors
+Title: Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of Directors
 
 URL Source: https://www.anthropic.com/news/narasimhan-board
 
