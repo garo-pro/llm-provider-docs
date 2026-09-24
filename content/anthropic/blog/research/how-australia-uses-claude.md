@@ -1,4 +1,4 @@
-Title: How Australia uses Claude
+Title: How Australia uses Claude: Findings from the Anthropic Economic Index
 
 URL Source: https://www.anthropic.com/research/how-australia-uses-claude
 

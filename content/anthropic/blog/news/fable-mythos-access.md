@@ -1,4 +1,4 @@
-Title: Statement on the US government directive to suspend access to Fable 5 and Mythos 5
+Title: Statement on the directive to suspend Fable 5 access
 
 URL Source: https://www.anthropic.com/news/fable-mythos-access
 

@@ -1,4 +1,4 @@
-Title: Anthropic forms $200 million partnership with the Gates Foundation
+Title: Anthropic partners with the Gates Foundation
 
 URL Source: https://www.anthropic.com/news/gates-foundation-partnership
 
