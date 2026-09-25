@@ -1,4 +1,4 @@
-Title: An AI Policy Tool for Today: Ambitiously Invest in NIST
+Title: An AI policy tool for today: Invest in NIST
 
 URL Source: https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist
 

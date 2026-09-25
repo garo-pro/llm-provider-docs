@@ -1,4 +1,4 @@
-Title: Covering electricity price increases from our data centers
+Title: Covering electricity price increases
 
 URL Source: https://www.anthropic.com/news/covering-electricity-price-increases
 

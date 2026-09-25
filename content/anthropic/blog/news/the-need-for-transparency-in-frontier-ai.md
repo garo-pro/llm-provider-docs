@@ -1,4 +1,4 @@
-Title: The need for transparency in Frontier AI
+Title: A framework for AI development transparency
 
 URL Source: https://www.anthropic.com/news/the-need-for-transparency-in-frontier-ai
 
