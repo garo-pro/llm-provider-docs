@@ -50,6 +50,8 @@ We have also begun to provide frontier AI capabilities to life scientists for bi
 
 The following resources provide further technical depth and more detailed information about the results described above:
 
-Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
+Guest writer and physicist Matt von Hippel shares what happened when he issued a challenge to AI companies to solve a problem in his former subfield of theoretical physics.
 
-We present an alignment assessment of four incidents in which Claude models gained unauthorized access to real third-party systems.
+To see what works and what breaks when agents are sent into a market, we made a miniature market of Claudes—a more controlled sequel to Project Deal, our first experiment with agents interacting in a marketplace on people's behalf.
+
+Anthropic’s Frontier Red Team developed new evaluations to measure AI capabilities in tactical intelligence targeting and conventional weapons development.
