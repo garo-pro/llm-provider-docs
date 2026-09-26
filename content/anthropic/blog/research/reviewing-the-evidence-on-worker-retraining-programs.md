@@ -1,4 +1,4 @@
-Title: How well do job retraining programs work?
+Title: Reviewing the evidence on worker retraining programs
 
 URL Source: https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs
 

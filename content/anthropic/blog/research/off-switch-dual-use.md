@@ -1,4 +1,4 @@
-Title: An off switch for dual-use knowledge in AI models
+Title: An off switch for dual-use knowledge
 
 URL Source: https://www.anthropic.com/research/off-switch-dual-use
 
