@@ -1,4 +1,4 @@
-Title: Anthropic and Infosys collaborate to build AI agents for telecommunications and other regulated industries
+Title: Anthropic and Infosys build AI agents
 
 URL Source: https://www.anthropic.com/news/anthropic-infosys
 

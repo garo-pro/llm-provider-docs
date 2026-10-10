@@ -1,4 +1,4 @@
-Title: Evaluating and mitigating the growing risk of LLM-discovered 0-days
+Title: LLM-discovered 0 days
 
 URL Source: https://www.anthropic.com/research/zero-days
 

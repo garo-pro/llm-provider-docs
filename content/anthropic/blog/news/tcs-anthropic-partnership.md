@@ -1,4 +1,4 @@
-Title: TCS and Anthropic partner to bring Claude to regulated industries
+Title: TCS brings Claude to regulated industries
 
 URL Source: https://www.anthropic.com/news/tcs-anthropic-partnership
 

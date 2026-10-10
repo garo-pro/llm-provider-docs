@@ -1,4 +1,4 @@
-Title: Labor market impacts of AI: A new measure and early evidence
+Title: Labor market impacts of AI: A new measure
 
 URL Source: https://www.anthropic.com/research/labor-market-impacts
 
