@@ -1,4 +1,4 @@
-Title: Measuring LLMs’ impact on N-day exploits
+Title: Measuring LLMs' impact on N-day exploits
 
 URL Source: https://www.anthropic.com/research/n-days
 

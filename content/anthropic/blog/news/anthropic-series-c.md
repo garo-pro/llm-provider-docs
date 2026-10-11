@@ -1,4 +1,4 @@
-Title: Anthropic raises $450 million in Series C
+Title: Anthropic raises $450 million in Series C funding to scale reliable AI products
 
 URL Source: https://www.anthropic.com/news/anthropic-series-c
 

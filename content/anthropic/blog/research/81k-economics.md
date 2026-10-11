@@ -1,4 +1,4 @@
-Title: What 81,000 people told us about the economics of AI
+Title: What 81,000 people told us about AI economics
 
 URL Source: https://www.anthropic.com/research/81k-economics
 
