@@ -1,4 +1,4 @@
-Title: $100 million for the Claude Partner Network
+Title: Anthropic invests $100 million into the Claude Partner Network
 
 URL Source: https://www.anthropic.com/news/claude-partner-network
 

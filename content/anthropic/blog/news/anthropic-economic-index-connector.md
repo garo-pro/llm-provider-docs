@@ -1,4 +1,4 @@
-Title: The Anthropic Economic Index connector
+Title: Ask Claude about the Anthropic Economic Index
 
 URL Source: https://www.anthropic.com/news/anthropic-economic-index-connector
 
