@@ -136,8 +136,8 @@ As society begins to plug AI models into more and more important functions, desi
 
 Project Vend wouldn’t exist without our partners at [Andon Labs](https://andonlabs.com/), who built the hardware and software infrastructure behind the operation and kept our fridges and shelves stocked. We’re also very grateful to Keir Bradwell and Allison Lattanzio for doing the same in their respective offices, and to Amritha Kini and Ryan O’Holleran for some sales advice.
 
+Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+
 This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.
 
 Brice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.
-
-We’re making available OSS Scanner, an opt-in vulnerability scanner for the open-source ecosystem that’s informed by our experience using Claude to find vulnerabilities during Project Glasswing.

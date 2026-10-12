@@ -1,4 +1,4 @@
-Title: LLMs and biorisk
+Title: Why do we take LLMs seriously as a potential source of biorisk?
 
 URL Source: https://www.anthropic.com/research/biorisk
 
@@ -75,8 +75,8 @@ We are heartened to see investment in biosecurity as a key component of the new 
 
 The topic of AI and biorisk is rife with uncertainty—about threat actors, the capabilities of models, and how exactly those capabilities translate to risk. But we believe that a growing body of evidence about AI and the underlying gravity of biological threats mean that this is a topic to which AI developers and policymakers must attend. We will be sharing more about our work on biorisk to advance this critical conversation.
 
+Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+
 This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.
 
 Brice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.
-
-We’re making available OSS Scanner, an opt-in vulnerability scanner for the open-source ecosystem that’s informed by our experience using Claude to find vulnerabilities during Project Glasswing.

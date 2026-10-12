@@ -1,4 +1,4 @@
-Title: Donating the Model Context Protocol and establishing the Agentic AI Foundation
+Title: Donating MCP to the Agentic AI Foundation
 
 URL Source: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
 

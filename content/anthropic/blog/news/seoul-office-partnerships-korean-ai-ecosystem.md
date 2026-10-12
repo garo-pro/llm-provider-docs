@@ -1,4 +1,4 @@
-Title: Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem
+Title: Anthropic opens Seoul office
 
 URL Source: https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem
 

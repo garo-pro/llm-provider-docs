@@ -1,4 +1,4 @@
-Title: Distributed representations: Composition & superposition
+Title: Distributed representations: Composition and superposition
 
 URL Source: https://www.anthropic.com/research/distributed-representations-composition-superposition
 

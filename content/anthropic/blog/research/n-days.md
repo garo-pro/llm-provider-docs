@@ -1,4 +1,4 @@
-Title: Measuring LLMs’ impact on N-day exploits
+Title: Measuring LLMs' impact on N-day exploits
 
 URL Source: https://www.anthropic.com/research/n-days
 
@@ -75,8 +75,8 @@ Vendors are already moving to shrink the patch gap. Mozilla, for instance, has t
 
 At Anthropic, we’re actively exploring several directions for how language models themselves can mitigate N-days, and we hope to share more on this site once we’re ready. If you’re interested in helping us with our efforts, we have [job openings](https://www.anthropic.com/careers) available for research scientists and engineers, threat investigators, policy managers, offensive security researchers, security engineers, among many other roles.
 
+Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+
 This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.
 
 Brice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.
-
-We’re making available OSS Scanner, an opt-in vulnerability scanner for the open-source ecosystem that’s informed by our experience using Claude to find vulnerabilities during Project Glasswing.

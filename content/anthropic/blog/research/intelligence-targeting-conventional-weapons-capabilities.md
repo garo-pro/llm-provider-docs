@@ -115,8 +115,8 @@ As model capabilities and adoption advance, the scale of this risk does as well.
 
 Finally, as model progress continues, we expect more aspects of military and intelligence work to be dramatically accelerated by AI. For instance, drones are not the only platform on which it is valuable to have better algorithms for sensing and responding to the environment. The same is true in space and undersea warfare. If models become more innovative researchers in these domains, they could be the source of geopolitical disruption. Enumerating these possibilities and developing tests to provide early warning will be a crucial area of work for us. The link between AI and national security goes far beyond cyber and bio, and it is not limited to proprietary models developed in the US.
 
+Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+
 This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.
 
 Brice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.
-
-We’re making available OSS Scanner, an opt-in vulnerability scanner for the open-source ecosystem that’s informed by our experience using Claude to find vulnerabilities during Project Glasswing.

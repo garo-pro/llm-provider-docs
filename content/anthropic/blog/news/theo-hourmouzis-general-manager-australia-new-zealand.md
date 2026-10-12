@@ -1,4 +1,4 @@
-Title: Anthropic names Theo Hourmouzis General Manager of Australia & New Zealand and officially opens Sydney office
+Title: Anthropic opens Sydney office, names ANZ GM
 
 URL Source: https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand
 

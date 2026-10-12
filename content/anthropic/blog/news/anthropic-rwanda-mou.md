@@ -1,4 +1,4 @@
-Title: Rwanda and Anthropic sign MOU for health and education
+Title: Anthropic and the Government of Rwanda sign MOU for AI in health and education
 
 URL Source: https://www.anthropic.com/news/anthropic-rwanda-mou
 
