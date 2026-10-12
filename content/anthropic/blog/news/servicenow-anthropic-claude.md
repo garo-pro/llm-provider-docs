@@ -1,4 +1,4 @@
-Title: ServiceNow chooses Claude
+Title: ServiceNow chooses Claude to power customer apps and increase internal productivity
 
 URL Source: https://www.anthropic.com/news/servicenow-anthropic-claude
 

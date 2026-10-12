@@ -1,4 +1,4 @@
-Title: Deloitte brings Claude to 470,000 people
+Title: Deloitte will make Claude available to 470,000 people across its global network
 
 URL Source: https://www.anthropic.com/news/deloitte-anthropic-partnership
 

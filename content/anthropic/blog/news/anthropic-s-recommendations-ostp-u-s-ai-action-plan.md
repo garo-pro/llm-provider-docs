@@ -1,4 +1,4 @@
-Title: Anthropic’s Recommendations to OSTP for the U.S. AI Action Plan
+Title: Anthropic’s recommendations to OSTP for the U.S. AI action plan
 
 URL Source: https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan
 

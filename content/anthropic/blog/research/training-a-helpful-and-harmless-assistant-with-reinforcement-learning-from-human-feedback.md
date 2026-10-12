@@ -1,4 +1,4 @@
-Title: Training a helpful and harmless assistant with RLHF
+Title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
 
 URL Source: https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback
 

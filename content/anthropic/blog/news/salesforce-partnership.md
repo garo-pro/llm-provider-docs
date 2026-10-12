@@ -1,4 +1,4 @@
-Title: Salesforce integrates Anthropic's Claude AI to boost Einstein capabilities
+Title: Salesforce teams up with Anthropic to enhance Einstein capabilities with Claude
 
 URL Source: https://www.anthropic.com/news/salesforce-partnership
 

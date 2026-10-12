@@ -1,4 +1,4 @@
-Title: Elections and AI in 2024: Anthropic observations and learnings
+Title: Elections and AI in 2024: observations and learnings
 
 URL Source: https://www.anthropic.com/news/elections-ai-2024
 
