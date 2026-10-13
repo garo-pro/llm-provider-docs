@@ -2,7 +2,15 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
-The Conversions API is a more reliable tracking source than the pixel alone. Use the Conversions API when possible for more accurate insights.
+Conversions API (CAPI) sends conversion events directly from your server to OpenAI—for example, when your backend confirms a purchase. It complements the [Measurement Pixel](https://developers.openai.com/ads/measurement-pixel), which sends events from a visitor’s browser.
+
+Use both to combine browser activity with confirmed backend conversions. CAPI helps you:
+
+- Measure conversions without depending solely on browser event delivery.
+- Improve matching with [supported customer identifiers](#send-user-data).
+- Control event delivery and retries from your server.
+
+When both integrations report the same conversion, [deduplicate browser and server events](#deduplicate-browser-and-server-events) using the same event ID and Pixel ID. Follow the attribution guidance below to forward available click and browser references. Start with a key conversion, such as a purchase, then follow the setup instructions.
 
 ## Send events
 
