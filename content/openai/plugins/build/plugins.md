@@ -722,8 +722,8 @@ Remote HTTP server:
 ```
 
 For public submission, submit the remote HTTPS endpoint through **With MCP**.
-If your MCP server runs locally, deploy it to a public HTTPS URL. If you can't,
-reach out to your OpenAI contact for local MCP support.
+For local MCP servers, follow
+[Submit desktop-only plugins](https://developers.openai.com/plugins/deploy/desktop-only).
 
 #### Configure MCP authentication
 

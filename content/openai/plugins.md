@@ -32,6 +32,7 @@ Use this as a lightweight map for AI tools. Each Plugins page has a Markdown twi
 - [Connect and test your plugin](https://developers.openai.com/plugins/deploy/connect-chatgpt.md): Test an optional MCP server, then package and evaluate the complete plugin.
 - [Plugin submission errors](https://developers.openai.com/plugins/deploy/submission-errors.md): Find and fix validation errors for plugins submitted to the public directory
 - [Remote MCP server review requirements](https://developers.openai.com/plugins/deploy/app-review.md): Prepare a plugin's remote MCP server and optional UI for public review.
+- [Submit desktop-only plugins](https://developers.openai.com/plugins/deploy/desktop-only.md): Submit a plugin that runs a local MCP server or requires desktop execution.
 - [Troubleshooting](https://developers.openai.com/plugins/deploy/troubleshooting.md): Troubleshoot plugin tools and optional UI.
 - [Upload and submit your plugin](https://developers.openai.com/plugins/deploy/submission.md): Bring your plugin to the directory and keep it up to date.
 

@@ -14,6 +14,10 @@ Before submitting, follow the [plugin package guide](https://developers.openai.c
 
 **_Plugins overview._** _Start a submission and track publication, review progress, and MCP setup from the Plugins page._
 
+Submit remote MCP servers through **With MCP** using a stable, public HTTPS
+endpoint. If your plugin runs a local MCP server or requires desktop execution,
+see [Submit desktop-only plugins](https://developers.openai.com/plugins/deploy/desktop-only).
+
 ## 1. Upload your plugin ZIP
 
 ### Confirm access and publishing identity
@@ -72,6 +76,11 @@ Your package can declare multiple MCP servers, but **only one MCP server can be 
 ![Connect MCP server drawer showing a verified domain and pending OAuth authorization.](https://cdn.openai.com/devhub/docs/plugins/submission/mcp-connection-20260927.webp)
 
 **_MCP connection and domain verification._** _Connect the server and complete domain verification before checking the discovered tools._
+
+For an approved local MCP plugin, choose **Skills only** and follow the
+[desktop-only submission instructions](https://developers.openai.com/plugins/deploy/desktop-only).
+
+The portal saves the submission as a draft while you complete the form.
 
 If connecting or scanning fails, check endpoint availability and authentication, then reconnect or rescan. Resolve **Complete MCP setup** findings and connection failures before submitting. See the [plugin guidelines](https://developers.openai.com/plugins/plugin-guidelines) for MCP server URL, authentication, tool metadata, and UI requirements.
 
@@ -243,7 +252,7 @@ For troubleshooting, see [submission errors](https://developers.openai.com/plugi
 
 You can include listing, review, and publication details in your plugin manifest so they’re filled in when you upload your ZIP. The reference below covers supported fields, how uploads apply them, and examples for each package format.
 
-Plugin ZIPs containing app references (`apps` / `.app.json`) or lifecycle hooks cannot currently be submitted. Declare MCP server URLs in your MCP configuration and complete setup in the dashboard.
+Plugin ZIP packages containing app references (`apps` / `.app.json`) or lifecycle hooks cannot currently be submitted. Declare MCP server URLs in your MCP configuration and complete setup in the dashboard.
 
 Remove lifecycle hooks before public directory submission. If your plugin depends
 on lifecycle hooks, distribute it so users can install it manually in Codex desktop.
