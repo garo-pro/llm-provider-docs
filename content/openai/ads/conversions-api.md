@@ -14,6 +14,10 @@ When both integrations report the same conversion, [deduplicate browser and serv
 
 ## Send events
 
+We recommend sending all conversion events, not just those with an `oppref`,
+  to incorporate view-through conversions in your campaign's performance
+  metrics.
+
 Send events to the Conversions API from your server only.
 
 ```bash

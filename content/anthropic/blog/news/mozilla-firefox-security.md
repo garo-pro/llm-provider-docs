@@ -61,8 +61,8 @@ We urge developers to take advantage of this window to redouble their efforts to
 
 *If you’re interested in supporting our security efforts—writing new scaffolds to identify vulnerabilities in open-source software; triaging, patching, and reporting vulnerabilities; and developing a robust CVD process for the AI era—[apply to work at Anthropic here](https://job-boards.greenhouse.io/anthropic/jobs/5123011008).*
 
+Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
+
 We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
 
 Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.
-
-We’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on.

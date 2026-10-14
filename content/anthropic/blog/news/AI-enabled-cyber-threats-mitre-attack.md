@@ -43,8 +43,8 @@ Frontier models are rapidly changing the tools both attackers and defenders have
 
 In our [Red blog post](https://red.anthropic.com/2026/attack-navigator/), we share an interactive visualization of the techniques used by attackers, in order to help defenders stay ahead of AI-enabled threats. 
 
+Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
+
 We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
 
 Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.
-
-We’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on.
