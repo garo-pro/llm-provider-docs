@@ -1,4 +1,4 @@
-Title: Accenture, AWS, and Anthropic collaboration
+Title: Anthropic, AWS, and Accenture team up to build trusted solutions for enterprises
 
 URL Source: https://www.anthropic.com/news/accenture-aws-anthropic
 

@@ -1,4 +1,4 @@
-Title: Anthropic's core views on AI safety
+Title: Core views on AI safety: When, why, what, and how
 
 URL Source: https://www.anthropic.com/news/core-views-on-ai-safety
 

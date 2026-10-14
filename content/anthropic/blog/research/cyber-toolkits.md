@@ -1,4 +1,4 @@
-Title: LLMs with cyber toolkits can conduct multistage cyber operations on business-sized computer networks
+Title: Cyber toolkits for LLMs
 
 URL Source: https://www.anthropic.com/research/cyber-toolkits
 

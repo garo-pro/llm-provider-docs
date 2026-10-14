@@ -1,4 +1,4 @@
-Title: Claude plays robotics
+Title: How Claude performs on robotics tasks
 
 URL Source: https://www.anthropic.com/research/claude-plays-robotics
 
