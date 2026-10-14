@@ -1,4 +1,4 @@
-Title: Measuring AI capabilities in intelligence targeting and conventional weapons
+Title: Measuring tactical intelligence targeting and conventional weapons capabilities of AI models
 
 URL Source: https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities
 

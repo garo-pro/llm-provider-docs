@@ -1,4 +1,4 @@
-Title: Anthropic Appoints Guillaume Princen as Head of EMEA and Announces 100+ New Roles Across the Region
+Title: Anthropic appoints Guillaume Princen as Head of EMEA and announces 100+ new roles across the region
 
 URL Source: https://www.anthropic.com/news/head-of-EMEA-new-roles
 
@@ -19,6 +19,12 @@ For more information about current career opportunities at Anthropic visit [anth
 
 ## Related content
 
+### Preparing for the 2026 US midterms
+
+Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
+
+[Read more](https://www.anthropic.com/news/2026-us-midterms)
+
 ### Anthropic opens Singapore office and signs MOU with the Government of Singapore
 
 Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
@@ -30,9 +36,3 @@ Anthropic has opened an office in Singapore and signed an MOU with the country�
 We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
 
 [Read more](https://www.anthropic.com/news/2026-usage-policy-update)
-
-### Building on our commitment to American scientific discovery
-
-Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.
-
-[Read more](https://www.anthropic.com/news/genesis-mission-commitment)

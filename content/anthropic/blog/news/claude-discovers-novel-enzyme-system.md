@@ -46,8 +46,8 @@ You can find more detail in our technical report ([here](https://www.biorxiv.org
 
 We hope this work demonstrates the value of AI-driven hypothesis generation to the wider scientific community, and we would like to work with other scientists to extend this approach to a broad range of problems, in genomics and in other fields. If you have a proposal for a research question, we would like to hear from you.
 
+Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
+
 Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
 
 We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
-
-Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.

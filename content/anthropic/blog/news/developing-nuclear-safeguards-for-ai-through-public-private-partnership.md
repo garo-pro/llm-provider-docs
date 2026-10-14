@@ -21,8 +21,8 @@ Along with the concrete importance of securing frontier AI models against nuclea
 
 *Full details about our NNSA partnership and the safeguards development can be found on our [red.anthropic.com](https://red.anthropic.com/) blog, the home for research from Anthropic’s Frontier Red Team (and occasionally other teams at Anthropic) on what frontier AI models mean for national security. Click [here](http://red.anthropic.com/2025/nuclear-safeguards/) to read more.*
 
+Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
+
 Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
 
 We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
-
-Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.

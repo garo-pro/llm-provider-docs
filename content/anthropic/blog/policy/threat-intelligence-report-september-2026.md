@@ -1,4 +1,4 @@
-Title: Countering misuse of AI: September 2026 / Anthropic
+Title: Detecting and countering misuse of AI: September 2026
 
 URL Source: https://www.anthropic.com/threat-intelligence-report-september-2026
 
@@ -33,7 +33,7 @@ In the following report, we begin by discussing the key trends that we’ve obse
 
 ### Trends
 
-### Sophisticated attacks no longer require sophisticated attackers
+#### Sophisticated attacks no longer require sophisticated attackers
 
 The cybersecurity skills of AI models means that AI has collapsed the labor and tooling gap that used to separate well-resourced, state-sponsored operations from individual operators. In the case studies we report below, a hacktivist using stolen API keys, disparate financially motivated individuals, and a state espionage operator each sustained multi-victim campaigns that, even just a year ago, would have required many skilled operators and specialist knowledge.
 
@@ -41,7 +41,7 @@ For threat intelligence investigators, sophistication has stopped being a reliab
 
 In November 2025, we documented an operating model used by a suspected state-sponsored campaign to carry out autonomous attacks. That operating model has now proliferated across every class of actors we investigated. Publicly available offensive agent frameworks, like [PentAGI](https://github.com/vxcontrol/pentagi), reproduce much of the same scaffolding for anyone who downloads them. This scaffolding effectively automates each step of the cyber kill chain. The operators behind observed cases range from state services to lone individuals, across a widening set of countries. An example of this adoption of AI-enabled kill chains is documented in case study GTG-20006. As models continue to evolve and improve, we assess that more actors, from lone wolves to organized entities, will continue to adopt AI frameworks to enable more sophisticated cyber attacks at greater speed and scale.
 
-### AI’s role in cyber operations has become increasingly autonomous
+#### AI’s role in cyber operations has become increasingly autonomous
 
 A majority of the operations described in this report were enabled by AI via direct execution or orchestration. The use of AI went beyond simple questions and responses from a chatbot but rather involved the use of multi-agent frameworks executing reconnaissance, exploitation, and data exfiltration. Humans remained in the loop by setting the targets of attacks and reviewing exfiltration. An example of this trend is GTG-20006. This actor developed an AI-assisted workflow that automatically rebuilt and re-deployed their toolkit if it was detected by security products.
 

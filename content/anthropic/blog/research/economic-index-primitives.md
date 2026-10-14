@@ -1,4 +1,4 @@
-Title: Economic Index: New building blocks for AI use
+Title: Anthropic Economic Index: New building blocks for understanding AI use
 
 URL Source: https://www.anthropic.com/research/economic-index-primitives
 
