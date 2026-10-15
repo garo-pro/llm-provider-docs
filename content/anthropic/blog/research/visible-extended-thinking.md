@@ -1,4 +1,4 @@
-Title: Claude’s extended thinking
+Title: Claude's extended thinking
 
 URL Source: https://www.anthropic.com/research/visible-extended-thinking
 

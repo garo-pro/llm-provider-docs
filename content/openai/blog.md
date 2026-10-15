@@ -24,6 +24,7 @@ Each post has a Markdown twin at `/blog/<slug>.md`.
 - [Hello, world!](https://developers.openai.com/blog/intro.md): Introducing our developer blog
 - [How Codex ran OpenAI DevDay 2025](https://developers.openai.com/blog/codex-at-devday.md): Learn how Codex helped us build experiences, demos, products, and more
 - [How Perplexity Brought Voice Search to Millions Using the Realtime API](https://developers.openai.com/blog/realtime-perplexity-computer.md): Lessons from how Perplexity Computer's voice agent was built with the Realtime API.
+- [Maintaining software with the GPT-6 family](https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family.md): How OpenAI’s Core Experimentation team uses Codex to remove unused code, clean up stale experiments, and improve CI.
 - [Making private MCP servers reachable without making them public](https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products.md): How we preserved private network boundaries while supporting MCP streaming, authentication, and an inspectable client.
 - [Mastering remote engineering work from your phone](https://developers.openai.com/blog/mastering-codex-remote-for-engineering.md): Use Remote in the ChatGPT mobile app to start, steer, review, and organize engineering work.
 - [Meet Rosalind Workbench: Empowering every scientist to be their own research team](https://developers.openai.com/blog/rosalind-workbench.md): How guided tasks, scientific viewers, and sequencing analysis help researchers follow a question from data to evidence.

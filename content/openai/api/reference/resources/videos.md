@@ -136,6 +136,14 @@ Create a new video generation job from a prompt and optional reference assets.
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -235,7 +243,9 @@ curl https://api.openai.com/v1/videos \
       "steer": {
         "message": "message"
       }
-    }
+    },
+    "param": "param",
+    "type": "type"
   },
   "expires_at": 0,
   "model": "sora-2",
@@ -483,6 +493,14 @@ Create a new video generation job by editing a source video or existing generate
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -585,7 +603,9 @@ curl https://api.openai.com/v1/videos/edits \
       "steer": {
         "message": "message"
       }
-    }
+    },
+    "param": "param",
+    "type": "type"
   },
   "expires_at": 0,
   "model": "sora-2",
@@ -699,6 +719,14 @@ Create an extension of a completed video.
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -802,7 +830,9 @@ curl https://api.openai.com/v1/videos/extensions \
       "steer": {
         "message": "message"
       }
-    }
+    },
+    "param": "param",
+    "type": "type"
   },
   "expires_at": 0,
   "model": "sora-2",
@@ -951,6 +981,14 @@ List recently generated videos for the current project.
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -1066,7 +1104,9 @@ curl https://api.openai.com/v1/videos \
           "steer": {
             "message": "message"
           }
-        }
+        },
+        "param": "param",
+        "type": "type"
       },
       "expires_at": 0,
       "model": "sora-2",
@@ -1207,6 +1247,14 @@ Create a remix of a completed video using a refreshed prompt.
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -1306,7 +1354,9 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID/remix \
       "steer": {
         "message": "message"
       }
-    }
+    },
+    "param": "param",
+    "type": "type"
   },
   "expires_at": 0,
   "model": "sora-2",
@@ -1431,6 +1481,14 @@ Fetch the latest metadata for a generated video.
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -1526,7 +1584,9 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
       "steer": {
         "message": "message"
       }
-    }
+    },
+    "param": "param",
+    "type": "type"
   },
   "expires_at": 0,
   "model": "sora-2",
@@ -1622,6 +1682,14 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -1708,7 +1776,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
 ### Video Create Error
 
-- `VideoCreateError object { code, message, headers, misalignment }`
+- `VideoCreateError object { code, message, headers, 3 more }`
 
   An error that occurred while generating the response.
 
@@ -1759,6 +1827,14 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
       - `message: string`
 
         The public continuation instruction.
+
+  - `param: optional string or null`
+
+    The request parameter associated with the error, or null if none was recorded.
+
+  - `type: optional string or null`
+
+    The original error type, or null if it was not recorded.
 
 ### Video Delete Response
 

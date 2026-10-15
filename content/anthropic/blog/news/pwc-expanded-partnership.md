@@ -1,4 +1,4 @@
-Title: PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients
+Title: PwC deploys Claude across its business
 
 URL Source: https://www.anthropic.com/news/pwc-expanded-partnership
 

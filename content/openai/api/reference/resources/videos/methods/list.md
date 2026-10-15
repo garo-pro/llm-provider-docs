@@ -96,6 +96,14 @@ List recently generated videos for the current project.
 
           The public continuation instruction.
 
+    - `param: optional string or null`
+
+      The request parameter associated with the error, or null if none was recorded.
+
+    - `type: optional string or null`
+
+      The original error type, or null if it was not recorded.
+
   - `expires_at: number or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
@@ -211,7 +219,9 @@ curl https://api.openai.com/v1/videos \
           "steer": {
             "message": "message"
           }
-        }
+        },
+        "param": "param",
+        "type": "type"
       },
       "expires_at": 0,
       "model": "sora-2",

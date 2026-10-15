@@ -1,4 +1,4 @@
-Title: Introducing the Anthropic National Security and Public Sector Advisory Council
+Title: National Security and Public Sector Advisory Council
 
 URL Source: https://www.anthropic.com/news/introducing-the-anthropic-national-security-and-public-sector-advisory-council
 

@@ -1,4 +1,4 @@
-Title: Detecting and countering misuse of AI: September 2026
+Title: Countering misuse of AI: September 2026 / Anthropic
 
 URL Source: https://www.anthropic.com/threat-intelligence-report-september-2026
 
