@@ -1,4 +1,4 @@
-Title: Decomposing language models into components
+Title: Decomposing language models into understandable components
 
 URL Source: https://www.anthropic.com/research/decomposing-language-models-into-understandable-components
 
