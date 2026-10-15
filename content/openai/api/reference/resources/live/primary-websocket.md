@@ -890,7 +890,7 @@ Schema name: `LiveSessionStartEvent`
 
   - `input: optional array of InitialItem`
 
-    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and 8,192 rendered tokens in total.
+    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and a configured rendered-token limit (8,192 by default).
 
     - `Developer object { content, role, id, 2 more }`
 
@@ -7376,7 +7376,7 @@ Schema name: `LiveSessionStarted`
 
   - `input: optional array of InitialItem`
 
-    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and 8,192 rendered tokens in total.
+    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and a configured rendered-token limit (8,192 by default).
 
     - `Developer object { content, role, id, 2 more }`
 
@@ -8406,7 +8406,7 @@ Schema name: `LiveSessionUpdated`
 
   - `input: optional array of InitialItem`
 
-    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and 8,192 rendered tokens in total.
+    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and a configured rendered-token limit (8,192 by default).
 
     - `Developer object { content, role, id, 2 more }`
 
@@ -10038,7 +10038,7 @@ Schema name: `LiveSessionClosed`
 
   - `input: optional array of InitialItem`
 
-    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and 8,192 rendered tokens in total.
+    Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and a configured rendered-token limit (8,192 by default).
 
     - `Developer object { content, role, id, 2 more }`
 

@@ -1,4 +1,4 @@
-Title: Estimating AI productivity gains
+Title: Estimating AI productivity gains from Claude conversations
 
 URL Source: https://www.anthropic.com/research/estimating-productivity-gains
 

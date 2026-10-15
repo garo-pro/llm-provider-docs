@@ -1,4 +1,4 @@
-Title: Mitigating prompt injections in browser use
+Title: Mitigating the risk of prompt injections in browser use
 
 URL Source: https://www.anthropic.com/research/prompt-injection-defenses
 

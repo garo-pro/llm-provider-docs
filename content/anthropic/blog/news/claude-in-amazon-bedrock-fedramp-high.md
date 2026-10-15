@@ -1,4 +1,4 @@
-Title: Claude in Amazon Bedrock: Approved for Use in FedRAMP High and DoD IL4/5 Workloads
+Title: Claude in Amazon Bedrock: Approved for use in FedRAMP High and DoD IL4/5 workloads
 
 URL Source: https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high
 
@@ -37,6 +37,12 @@ Federal agency employees, defense contractors, and approved partners can access 
 
 ## Related content
 
+### An update on independent evaluators
+
+To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
+
+[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
+
 ### Preparing for the 2026 US midterms
 
 Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
@@ -48,9 +54,3 @@ Earlier this year, we shared an update on our election safeguards. Here, we outl
 Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
 
 [Read more](https://www.anthropic.com/news/singapore-office-opening)
-
-### 2026 Usage Policy update
-
-We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
-
-[Read more](https://www.anthropic.com/news/2026-usage-policy-update)

@@ -13,7 +13,7 @@ Sonnet 5.5 improves over Sonnet 5 on:
 
 **Collaboration.** Like Opus 5.5, Sonnet 5.5 writes more clearly than our previous generation of models; early testers described it as a better partner for collaboration than Sonnet 5. Its speed also makes it well suited to fast iteration on less complex tasks.
 
-**Cost.** Sonnet 5.5 is priced the same as Sonnet 5 at $2 per million input tokens, $10 per million output tokens, and $0.20 per million tokens for cache reads, but it typically needs far fewer tokens to do the same work. In our testing, it costs up to 30% less per task than its predecessor.
+**Cost.** Sonnet 5.5 is priced the same as Sonnet 5 at $2 per million input tokens and $10 per million output tokens, but it typically needs far fewer tokens to do the same work. Cache reads cost $0.10 per million tokens, half of Sonnet 5's $0.20. In our testing, it costs up to 30% less per task than its predecessor.
 
 **Speed.** Sonnet 5.5 generates outputs 30%+ faster than Sonnet 5, making it our fastest Sonnet model to date.
 
@@ -71,7 +71,7 @@ Pricing
 
 | Price per 1M tokens | **Claude Sonnet 5.5** | Claude Opus 5.5 | 
 |---|---|---|
-| Cache reads | $0.20 | $0.20 | 
+| Cache reads | $0.10 | $0.20 | 
 | Cache writes | $2.50 | $5 | 
 | Input tokens | $2 | $4 | 
 | Output tokens | $10 | $20 | 

@@ -1,4 +1,4 @@
-Title: AI agents find smart contract exploits
+Title: AI agents find $4.6M in blockchain smart contract exploits
 
 URL Source: https://www.anthropic.com/research/smart-contracts
 

@@ -1,4 +1,4 @@
-Title: Anthropic partners with the University of Chicago’s Becker Friedman Institute for Economics on AI economic research
+Title: Anthropic partners with the University of Chicago’s Becker Friedman Institute on AI economic research
 
 URL Source: https://www.anthropic.com/news/anthropic-partners-with-the-university-of-chicago-s-becker-friedman-institute-on-ai-economic
 
@@ -23,6 +23,12 @@ The partnership will help expand the methodologies used to study AI's economic i
 
 ## Related content
 
+### An update on independent evaluators
+
+To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
+
+[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
+
 ### Preparing for the 2026 US midterms
 
 Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
@@ -34,9 +40,3 @@ Earlier this year, we shared an update on our election safeguards. Here, we outl
 Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
 
 [Read more](https://www.anthropic.com/news/singapore-office-opening)
-
-### 2026 Usage Policy update
-
-We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
-
-[Read more](https://www.anthropic.com/news/2026-usage-policy-update)
