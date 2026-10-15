@@ -1,4 +1,4 @@
-Title: Anthropic Appoints Guillaume Princen as Head of EMEA and Announces 100+ New Roles Across the Region
+Title: Anthropic appoints Guillaume Princen as Head of EMEA and announces 100+ new roles across the region
 
 URL Source: https://www.anthropic.com/news/head-of-EMEA-new-roles
 

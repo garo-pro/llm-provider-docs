@@ -1,4 +1,4 @@
-Title: Measuring progress on scalable oversight
+Title: Measuring Progress on Scalable Oversight for Large Language Models
 
 URL Source: https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models
 
