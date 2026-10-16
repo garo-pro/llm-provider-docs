@@ -1,4 +1,4 @@
-Title: Anthropic raises $124 million to build more reliable, general AI systems
+Title: Anthropic raises $124 million Series A
 
 URL Source: https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems
 

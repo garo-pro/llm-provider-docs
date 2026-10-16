@@ -1,4 +1,4 @@
-Title: Claude now available in Microsoft Foundry and Microsoft 365 Copilot
+Title: Claude in Microsoft Foundry and 365 Copilot
 
 URL Source: https://www.anthropic.com/news/claude-in-microsoft-foundry
 

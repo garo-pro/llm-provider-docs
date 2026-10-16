@@ -1,4 +1,4 @@
-Title: Scaling Laws and Interpretability of Learning from Repeated Data
+Title: Scaling laws of learning from repeated data
 
 URL Source: https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data
 

@@ -1,4 +1,4 @@
-Title: Working with the US Department of Energy to unlock the next era of scientific discovery
+Title: Working with the US Department of Energy
 
 URL Source: https://www.anthropic.com/news/genesis-mission-partnership
 

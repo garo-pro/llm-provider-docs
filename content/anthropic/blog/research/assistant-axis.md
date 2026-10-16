@@ -1,4 +1,4 @@
-Title: The assistant axis: situating and stabilizing the character of large language models
+Title: The assistant axis
 
 URL Source: https://www.anthropic.com/research/assistant-axis
 

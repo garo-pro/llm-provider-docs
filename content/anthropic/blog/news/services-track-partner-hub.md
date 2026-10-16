@@ -1,4 +1,4 @@
-Title: Introducing the Services Track and Partner Hub of the Claude Partner Network
+Title: Claude Partner Network Services Track and Partner Hub
 
 URL Source: https://www.anthropic.com/news/services-track-partner-hub
 

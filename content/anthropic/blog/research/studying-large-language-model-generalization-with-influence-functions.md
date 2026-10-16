@@ -1,4 +1,4 @@
-Title: Studying large language model generalization with influence functions
+Title: LLM generalization with influence functions
 
 URL Source: https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions
 

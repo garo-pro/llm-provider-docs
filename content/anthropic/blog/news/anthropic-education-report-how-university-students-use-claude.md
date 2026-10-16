@@ -1,4 +1,4 @@
-Title: Anthropic Education Report: How university students use Claude
+Title: Anthropic Education Report: How University Students Use Claude
 
 URL Source: https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude
 

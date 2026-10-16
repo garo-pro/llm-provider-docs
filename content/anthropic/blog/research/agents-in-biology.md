@@ -1,4 +1,4 @@
-Title: Paving the way for agents in biology
+Title: Paving the way for AI agents in biology
 
 URL Source: https://www.anthropic.com/research/agents-in-biology
 

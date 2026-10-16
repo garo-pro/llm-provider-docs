@@ -1,4 +1,4 @@
-Title: A Mathematical Framework for Transformer Circuits
+Title: A mathematical framework for Transformer Circuits
 
 URL Source: https://www.anthropic.com/research/a-mathematical-framework-for-transformer-circuits
 

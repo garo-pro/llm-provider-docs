@@ -48,7 +48,7 @@ We’re developing three tiers of access for evaluators. Over time, we hope to h
 
 **The third tier** is the arrangement we’ve described with METR, with employee-like access and publication rights similar to those of the second tier.
 
-**SecureBio** is currently in the first tier. It’s in the process of reviewing the chemical and biological weapons chapter of our [August Risk Report](https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf), after completing and [publishing a pilot review](https://securebio.org/resources/anthropic_feb_2026_risk_review.pdf) of our previous risk report. After this review is complete, we will consider moving to projects with increased access and publication rights.
+**SecureBio** is in the process of reviewing the chemical and biological weapons chapter of our [August Risk Report](https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf), after completing and [publishing a pilot review](https://securebio.org/resources/anthropic_feb_2026_risk_review.pdf) of our previous risk report. After this review is complete, we will consider moving to projects with increased access.[2](https://www.anthropic.com#footnote-2)
 
 **With Accenture** and Faculty, we're working [toward an ambitious partnership](https://www.anthropic.com/news/accenture-embedded-evaluation) that includes evaluating and red-teaming models, conducting alignment assessments, testing model safeguards, and building capabilities across our organizations.
 

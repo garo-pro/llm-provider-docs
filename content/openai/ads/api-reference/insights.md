@@ -236,6 +236,10 @@ not change endpoint scope or `aggregation_level`.
 
 
 
+### Daily campaign totals across an ad account
+
+
+
 This request scopes to one ad account, groups rows by campaign, and returns one
 bucket per day. Because `aggregation_level=campaign`, each data row has a
 `campaign_id` instead of an `ad_id`.
@@ -291,6 +295,12 @@ Representative response:
 ```
 
 
+
+
+
+
+
+### Change aggregation level from campaigns to ads
 
 
 
@@ -352,6 +362,12 @@ Representative response:
 
 
 
+
+
+### Filter, sort, and limit to the top ad in a campaign
+
+
+
 `filters[]` removes rows that do not match `campaign.id`. `sort[]` ranks the
 remaining ads by clicks, and `limit=1` keeps only the top row on the page.
 
@@ -396,6 +412,12 @@ Representative response:
 ```
 
 
+
+
+
+
+
+### Product-segmented daily insights including zero-impression products
 
 
 

@@ -1,4 +1,4 @@
-Title: Claude in Amazon Bedrock: Approved for use in FedRAMP High and DoD IL4/5 workloads
+Title: Claude in Amazon Bedrock: Approved for Use in FedRAMP High and DoD IL4/5 Workloads
 
 URL Source: https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high
 

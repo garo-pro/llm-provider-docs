@@ -251,9 +251,10 @@ Place this object inside an event at `events[].user`:
 }
 ```
 
-Use the plural list fields below. For each list, the API uses the first three
-valid, unique values in the order provided. It ignores additional values without
-rejecting the event or request.
+Use the plural list fields below. Each submitted list must contain at most three
+values. When you supply both singular and plural forms, each merged field must
+contain at most three unique values. Exceeding either limit returns HTTP 400;
+the API does not truncate values.
 
 | Field                    | Type           | Description                                                                                                                    |
 | ------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |

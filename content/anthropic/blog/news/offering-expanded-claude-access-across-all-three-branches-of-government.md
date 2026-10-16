@@ -15,7 +15,7 @@ Government partners are already using Claude to improve and accelerate their wor
 
 Our partnership with the General Services Administration has been instrumental in making Claude accessible to federal agencies. Building on [last week's](https://www.anthropic.com/news/federal-government-departments-and-agencies-can-now-purchase-claude-through-the-gsa-schedule) addition of Claude to the GSA schedule, which streamlined procurement, we're now able to further expand access through this offer.
 
-We're offering both [Claude for Government](https://www.anthropic.com/solutions/government), which supports FedRAMP High workloads that enable federal workers to use Claude for sensitive unclassified work, and [Claude for Enterprise](https://www.anthropic.com/news/claude-for-enterprise). Agencies will have access to our frontier models with continuous updates as new capabilities are released.
+We're offering both [Claude for Government](https://claude.com/solutions/government), which supports FedRAMP High workloads that enable federal workers to use Claude for sensitive unclassified work, and [Claude for Enterprise](https://www.anthropic.com/news/claude-for-enterprise). Agencies will have access to our frontier models with continuous updates as new capabilities are released.
 
 To ensure successful adoption, we are also providing technical support to help agencies rapidly implement AI into their productivity and mission workflows. This package will be available for one year.
 
@@ -37,7 +37,7 @@ We hope other companies will join us in taking similar steps to ensure the U.S. 
 
 **Getting started**
 
-To gain access, department or agency leadership at eligible organizations should contact us at [pubsec@anthropic.com](mailto:pubsec@anthropic.com).
+To gain access, department or agency leadership at eligible organizations should contact us at [pubsec@anthropic.com](mailto:pubsec@anthropic.com). Also learn more by reading the [Claude for Government](https://claude.com/docs/government/overview) documentation.
 
 ## Related content
 

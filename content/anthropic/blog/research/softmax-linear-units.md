@@ -1,4 +1,4 @@
-Title: Softmax Linear Units
+Title: Softmax linear units
 
 URL Source: https://www.anthropic.com/research/softmax-linear-units
 

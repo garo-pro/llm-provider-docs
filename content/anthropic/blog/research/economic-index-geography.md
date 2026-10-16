@@ -1,4 +1,4 @@
-Title: Anthropic Economic Index: Tracking AI’s role in the US and global economy
+Title: Economic Index: AI's role in the US and global economy
 
 URL Source: https://www.anthropic.com/research/economic-index-geography
 

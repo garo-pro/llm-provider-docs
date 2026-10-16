@@ -16,6 +16,10 @@ Plugin extensions on the web are coming soon to ChatGPT Free and Go users.
   class="my-6 h-auto w-full rounded-xl"
 />
 
+
+
+[Watch: Build Plugins for ChatGPT](https://www.youtube.com/watch?v=LiNhqbetrbU)
+
 ## Try it out
 
 Get a feel for extensions with [Bits & Bolts](https://github.com/openai/mcp-extensions/tree/main/plugins/bits-and-bolts), our kitchen sink plugin. We'll keep it up to date as new extensions roll out.

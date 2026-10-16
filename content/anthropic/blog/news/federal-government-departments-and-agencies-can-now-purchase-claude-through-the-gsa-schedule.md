@@ -1,4 +1,4 @@
-Title: Federal government departments and agencies can now purchase Claude through the GSA schedule
+Title: U.S. federal departments and agencies can now more quickly and easily get access to Claude
 
 URL Source: https://www.anthropic.com/news/federal-government-departments-and-agencies-can-now-purchase-claude-through-the-gsa-schedule
 

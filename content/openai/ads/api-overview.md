@@ -224,6 +224,11 @@ ad account. See [Bulk API limits](https://developers.openai.com/ads/bulk-api#lim
 
 - Added custom audience Add, Remove, Replace, and Merge operations, automatic identifier matching, and support for small and empty exclusion-only audiences. See [Custom Audiences](https://developers.openai.com/ads/custom-audiences).
 
+### August 19th, 2026
+
+- Added phone, first name, last name, region, and postal code matching fields to the [JavaScript Pixel](https://developers.openai.com/ads/measurement-pixel).
+- Added plural customer-information fields and Android GAID support to the [Conversions API](https://developers.openai.com/ads/conversions-api).
+
 ### July 16th, 2026
 
 - Added support for passing the Pixel browser reference as `events[].user.obref` in [Conversions API](https://developers.openai.com/ads/conversions-api) requests.

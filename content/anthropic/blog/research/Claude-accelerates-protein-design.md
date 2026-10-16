@@ -1,4 +1,4 @@
-Title: How Claude is accelerating protein design and analytical chemistry
+Title: Claude accelerates protein design and analytical chemistry
 
 URL Source: https://www.anthropic.com/research/Claude-accelerates-protein-design
 

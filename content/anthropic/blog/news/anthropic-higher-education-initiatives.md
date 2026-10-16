@@ -1,4 +1,4 @@
-Title: Anthropic launches higher education advisory board and AI Fluency courses
+Title: Higher education advisory board and AI Fluency courses
 
 URL Source: https://www.anthropic.com/news/anthropic-higher-education-initiatives
 

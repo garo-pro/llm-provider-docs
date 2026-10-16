@@ -1,4 +1,4 @@
-Title: Detailed cyber evaluations of Claude 4
+Title: Cyber evaluations of Claude 4
 
 URL Source: https://www.anthropic.com/research/claude-4-cyber
 

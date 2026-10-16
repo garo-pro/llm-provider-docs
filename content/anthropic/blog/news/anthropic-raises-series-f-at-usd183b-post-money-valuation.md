@@ -1,4 +1,4 @@
-Title: Anthropic raises $13B Series F at $183B post-money valuation
+Title: Anthropic raises $13B Series F at $183B valuation
 
 URL Source: https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation
 

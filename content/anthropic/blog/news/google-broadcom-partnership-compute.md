@@ -1,4 +1,4 @@
-Title: Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute
+Title: Anthropic expands Google and Broadcom compute deal
 
 URL Source: https://www.anthropic.com/news/google-broadcom-partnership-compute
 

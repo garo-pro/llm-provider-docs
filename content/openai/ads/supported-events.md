@@ -22,7 +22,8 @@
 
 `app_installed` and `app_opened` are available through the Conversions API
 only. Send them with `action_source` set to `mobile_app`. They are not
-supported by the JavaScript Pixel currently.
+supported by the JavaScript Pixel currently. For Android app events, include
+`events[].user.android_advertising_id` when available. IDFA is not supported.
 
 Use `page_viewed` for page loads. Use `contents_viewed` when a user views a
 specific product or content item, including interactions that happen after the
