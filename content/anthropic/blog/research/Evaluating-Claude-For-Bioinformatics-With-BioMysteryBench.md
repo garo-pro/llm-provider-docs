@@ -1,4 +1,4 @@
-Title: Evaluating Claude with BioMysteryBench
+Title: Evaluating Claude’s bioinformatics research capabilities with BioMysteryBench
 
 URL Source: https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench
 

@@ -1,4 +1,4 @@
-Title: Anthropic expands to India with Bengaluru office
+Title: Expanding our global operations to India with our second Asia Pacific office
 
 URL Source: https://www.anthropic.com/news/expanding-global-operations-to-india
 

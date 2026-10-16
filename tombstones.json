@@ -1427,6 +1427,10 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/methods/connect": {
+      "since": "2026-10-16",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/subresources/client_secrets": {
       "since": "2026-09-17",
       "reason": "HTTP 404"

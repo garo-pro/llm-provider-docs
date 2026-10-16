@@ -1,4 +1,4 @@
-Title: Accenture and Anthropic launch multi-year partnership to move enterprises from AI pilots to production
+Title: Accenture and Anthropic launch partnership
 
 URL Source: https://www.anthropic.com/news/anthropic-accenture-partnership
 

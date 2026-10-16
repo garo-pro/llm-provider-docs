@@ -1,4 +1,4 @@
-Title: Build AI in America: Anthropic Energy Report
+Title: Build AI in America
 
 URL Source: https://www.anthropic.com/news/build-ai-in-america
 
