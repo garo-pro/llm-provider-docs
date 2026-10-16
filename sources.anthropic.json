@@ -44,7 +44,7 @@
       "robots": true,
       "sitemap": true,
       "llms_txt": true,
-      "notes": "Product docs since ~2026-08: Claude Tag, Cowork, office agents, connectors, government, claude-science, third-party. Serves .md variants under /docs/. Was recorded as cf-blocked marketing until 2026-08-24; support articles had been redirecting here for weeks. /resources/tutorials/ is HTML-only (no .md) and is not fetched."
+      "notes": "Product docs since ~2026-08: Claude Tag, Cowork, office agents, connectors, government, claude-science, third-party. Serves .md variants under /docs/. Was recorded as cf-blocked marketing until 2026-08-24; support articles had been redirecting here for weeks. /resources/tutorials/ is HTML-only (no .md) and is not fetched. /resources/articles/ (the claude.com blog; /blog/* 308s there) is HTML-only too but server-rendered: scraped via trafilatura since 2026-10-16, 260 English articles from the site-wide /sitemap.xml. /resources/guides/ (145 pages: 18 chaptered playbooks + chapters) scraped the same way into blog/claude-com-guides/. /webinars/ is not fetched."
     },
     "academy.claude.com": {
       "robots": true,
@@ -270,6 +270,32 @@
         "blog"
       ],
       "notes": "claude.dev builder blog. llms.txt lists a direct .md link for every post, so this is the plain download_doc path, no scraping."
+    },
+    {
+      "name": "claude-com-articles",
+      "type": "sitemap-html-scrape",
+      "sitemap": "https://claude.com/sitemap.xml",
+      "filter": "^https://claude.com/resources/articles/<slug>$ (English only)",
+      "output": "anthropic/blog/claude-com/",
+      "pages": 260,
+      "enabled": true,
+      "section": [
+        "blog"
+      ],
+      "notes": "claude.com's blog (claude.com/blog/* 308s to /resources/articles/*): product launches, engineering write-ups, playbooks. No .md, no llms.txt; server-rendered, so download_blog_page + trafilatura. Locale copies (/de/, /ja/, ...) skipped. Cloudflare 403s Python-urllib's UA, aiohttp's default passes. Added 2026-10-16."
+    },
+    {
+      "name": "claude-com-guides",
+      "type": "sitemap-html-scrape",
+      "sitemap": "https://claude.com/sitemap.xml",
+      "filter": "^https://claude.com/resources/guides/<guide>[/<chapter>]$ (English only)",
+      "output": "anthropic/blog/claude-com-guides/",
+      "pages": 145,
+      "enabled": true,
+      "section": [
+        "blog"
+      ],
+      "notes": "Long chaptered playbooks (code modernization, zero trust for AI agents, founder's playbook, ...). Each guide's landing page is saved as <guide>.md and its chapters under <guide>/<chapter>.md. Same scrape path as claude-com-articles. Added 2026-10-16."
     },
     {
       "name": "github-cookbooks",

@@ -21,6 +21,9 @@ Anthropic (content/anthropic/, see sources.anthropic.json):
                                same HTML-only situation as the main blog)
   - transformer-circuits.pub -> Interpretability research (Atom feed + scrape)
   - claude.dev              -> Builder blog (llms.txt + .md suffix)
+  - claude.com/resources/articles -> Product/customer blog (sitemap + HTML
+                               scrape, like anthropic.com; no .md variant)
+  - claude.com/resources/guides   -> Chaptered playbooks (same path as articles)
   - github.com/anthropics/* -> Repos (raw.githubusercontent.com)
 
 OpenAI (content/openai/, see sources.openai.json):
@@ -149,7 +152,7 @@ DISCOVER_DOMAINS = [
     ("support.claude.com",      "Support articles"),
     ("modelcontextprotocol.io", "MCP protocol spec"),
     ("claude.ai",               "Claude app"),
-    ("claude.com",              "Product docs"),
+    ("claude.com",              "Product docs + /resources/articles blog"),
     ("academy.claude.com",      "Courses/tutorials (HTML-only, not fetched)"),
     ("alignment.anthropic.com", "Alignment Science blog"),
     ("transformer-circuits.pub", "Interpretability research (Transformer Circuits Thread)"),
@@ -249,6 +252,19 @@ class Fetcher:
         # Unlike the two above, claude.dev serves real markdown: its llms.txt
         # links every post's /blog/<slug>.md directly, the docs.z.ai shape.
         self.claude_dev_llms_url = "https://claude.dev/llms.txt"
+        # claude.com's own blog, at /resources/articles/<slug> (/blog/<slug>
+        # 308s here). Product launches, engineering write-ups and playbooks that
+        # never appear on anthropic.com -- many anthropic.com posts moved here
+        # too (see tombstones.json "moved -> claude.com/blog/..."). The pages
+        # 404 on .md and there's no llms.txt, but they're server-rendered, so
+        # it's the trafilatura path. Note the site-wide sitemap, not
+        # claude_com_sitemap_url's /docs/ one; it also lists /de/, /ja/, ...
+        # copies of each article, which are skipped. Cloudflare 403s
+        # Python-urllib's UA but lets aiohttp's through. The same sitemap
+        # also yields /resources/guides/<guide>[/<chapter>], long chaptered
+        # playbooks (code modernization, zero trust for agents, ...), which
+        # are scraped the same way into their own directory.
+        self.claude_com_site_sitemap_url = "https://claude.com/sitemap.xml"
 
         # OpenAI migrated its docs off platform.openai.com to
         # developers.openai.com in 2026; the old path now just redirects
@@ -580,6 +596,27 @@ class Fetcher:
             urls.append(match[1:-4])  # strip parens and .md
         return urls
 
+    _CLAUDE_COM_ARTICLE_RE = re.compile(r"^https://claude\.com/resources/articles/[a-z0-9][a-z0-9-]*$")
+    # A guide is a landing page (/guides/<guide>) plus one page per chapter
+    # (/guides/<guide>/<chapter>); both are real prose and both are kept.
+    _CLAUDE_COM_GUIDE_RE = re.compile(
+        r"^https://claude\.com/resources/guides/[a-z0-9][a-z0-9-]*(?:/[a-z0-9][a-z0-9-]*)?$")
+
+    def extract_claude_com_article_urls(self, sitemap_xml: str) -> List[str]:
+        """English /resources/articles/<slug> posts off claude.com's sitemap.
+
+        Anchored at the host, so locale copies (/de/resources/articles/...)
+        and the bare /resources/articles index both fall out. /webinars are
+        not taken: video pages, little body text to archive.
+        """
+        return [u for u in self.extract_sitemap_urls(sitemap_xml)
+                if self._CLAUDE_COM_ARTICLE_RE.match(u)]
+
+    def extract_claude_com_guide_urls(self, sitemap_xml: str) -> List[str]:
+        """English /resources/guides/<guide>[/<chapter>] pages, same anchoring."""
+        return [u for u in self.extract_sitemap_urls(sitemap_xml)
+                if self._CLAUDE_COM_GUIDE_RE.match(u)]
+
     def extract_support_urls(self, sitemap_xml: str) -> List[str]:
         # Articles serve a .md variant directly (since ~2026-07), so plain
         # download_doc applies; sitemap covers more articles than llms.txt.
@@ -656,6 +693,12 @@ class Fetcher:
                     elif parts[1] == "claude-dev":
                         tail = "/".join(parts[2:])
                         urls.append(f"https://claude.dev/blog/{tail}")
+                    elif parts[1] == "claude-com":
+                        tail = "/".join(parts[2:])
+                        urls.append(f"https://claude.com/resources/articles/{tail}")
+                    elif parts[1] == "claude-com-guides":
+                        tail = "/".join(parts[2:])
+                        urls.append(f"https://claude.com/resources/guides/{tail}")
 
         # openai/ and zai/ map 1:1 onto their site's URL path, so the
         # reconstruction is direct -- no per-section dispatch needed. github/
@@ -713,6 +756,12 @@ class Fetcher:
         elif "support.claude.com" in url:
             path = url.replace("https://support.claude.com/en/articles/", "")
             return self.anthropic_dir / "support" / f"{path}.md"
+        elif url.startswith("https://claude.com/resources/articles/"):
+            path = url.removeprefix("https://claude.com/resources/articles/")
+            return self.anthropic_dir / "blog" / "claude-com" / f"{path}.md"
+        elif url.startswith("https://claude.com/resources/guides/"):
+            path = url.removeprefix("https://claude.com/resources/guides/")
+            return self.anthropic_dir / "blog" / "claude-com-guides" / f"{path}.md"
         elif "claude.com/docs" in url:
             path = url.replace("https://claude.com/docs/", "")
             return self.anthropic_dir / "claude" / f"{path}.md"
@@ -1271,6 +1320,19 @@ class Fetcher:
                 print(f"  {len(cd_urls)} posts")
                 for url in cd_urls:
                     queue(url)
+
+                print("Source: claude.com/sitemap.xml (/resources/articles/)")
+                xml = await self.fetch_text(session, self.claude_com_site_sitemap_url)
+                cc_article_urls = self.extract_claude_com_article_urls(xml)
+                counts["claude-com"] = len(cc_article_urls)
+                print(f"  {len(cc_article_urls)} articles")
+                for url in cc_article_urls:
+                    queue(url, self.download_blog_page)
+                cc_guide_urls = self.extract_claude_com_guide_urls(xml)
+                counts["claude-com-guides"] = len(cc_guide_urls)
+                print(f"  {len(cc_guide_urls)} guide pages (/resources/guides/)")
+                for url in cc_guide_urls:
+                    queue(url, self.download_blog_page)
 
             # -- Support articles --
             if self.want("support"):
@@ -2004,6 +2066,9 @@ class Fetcher:
                 await self.fetch_text(session, self.transformer_circuits_feed_url))
             cd_urls = self.extract_llms_txt_urls(
                 await self.fetch_text(session, self.claude_dev_llms_url), "https://claude.dev/blog/")
+            claude_com_xml = await self.fetch_text(session, self.claude_com_site_sitemap_url)
+            cca_urls = self.extract_claude_com_article_urls(claude_com_xml)
+            ccg_urls = self.extract_claude_com_guide_urls(claude_com_xml)
             openai_urls = [
                 u for u in self.extract_sitemap_urls(
                     await self.fetch_text(session, self.openai_sitemap_url))
@@ -2041,6 +2106,8 @@ class Fetcher:
         print(f"alignment.anthropic.com: {len(alignment_urls)} posts")
         print(f"transformer-circuits.pub: {len(tc_urls)} posts")
         print(f"claude.dev: {len(cd_urls)} posts")
+        print(f"claude.com/resources/articles: {len(cca_urls)} articles")
+        print(f"claude.com/resources/guides: {len(ccg_urls)} guide pages")
         print(f"GitHub repos (Anthropic): {len(GITHUB_REPOS)} repos configured")
         print()
 
@@ -2056,7 +2123,7 @@ class Fetcher:
 
         total = (len(cc_urls) + len(platform_urls) + len(mcp_urls) + len(support_urls)
                  + len(blog_urls) + len(BLOG_STANDALONE_PAGES)
-                 + len(alignment_urls) + len(tc_urls) + len(cd_urls)
+                 + len(alignment_urls) + len(tc_urls) + len(cd_urls) + len(cca_urls) + len(ccg_urls)
                  + len(openai_urls) + len(openai_release_urls) + len(zai_urls)
                  + len(openai_alignment_urls) + len(system_card_urls) + 1)
         print(f"Total fetchable: {total}+ (excludes GitHub repos)")

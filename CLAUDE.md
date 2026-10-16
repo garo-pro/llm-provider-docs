@@ -41,7 +41,13 @@ alignment.anthropic.com and transformer-circuits.pub -- neither has a
 discovery method (a homepage that lists every post, and an Atom feed,
 respectively). claude.dev (Anthropic's builder blog, added 2026-10-02) is
 the easy one: its `llms.txt` links a `.md` for every post, so it uses the
-plain markdown path like code.claude.com, no scraping.
+plain markdown path like code.claude.com, no scraping. claude.com's own
+blog (`/resources/articles/<slug>`; `/blog/*` 308s there, added 2026-10-16)
+is the opposite: no `.md`, no `llms.txt`, so it's discovered from the
+site-wide `claude.com/sitemap.xml` (English slugs only) and scraped through
+the same trafilatura path as anthropic.com; its `/resources/guides/`
+playbooks come from the same sitemap into their own directory. Many anthropic.com posts moved
+here, which is why some blog tombstones read "moved -> claude.com/blog/...".
 
 Five rules keep the archive honest, all learned the hard way:
 
@@ -287,6 +293,14 @@ covers Anthropic (`content/anthropic/`); see "OpenAI Documentation" and
   Code engineering, model playbooks (Opus/Sonnet 5.5), evals, mods. Fetched
   from `llms.txt` + `.md`; `/terminal/` and `/mods/` are HTML-only and skipped.
   Added 2026-10-02.
+- `content/anthropic/blog/claude-com/` - claude.com blog (claude.com/resources/articles,
+  260 articles): product launches, engineering write-ups (e.g. CI test impact
+  analysis), playbooks (AI-native SDLC). HTML-scraped. Webinars are not
+  fetched. Added 2026-10-16.
+- `content/anthropic/blog/claude-com-guides/` - claude.com/resources/guides (145 pages):
+  18 long chaptered playbooks (code modernization, zero trust for AI agents,
+  founder's playbook, ...). `<guide>.md` is the landing page, `<guide>/<chapter>.md`
+  each chapter. Same sitemap + scrape path as claude-com. Added 2026-10-16.
 
 #### GitHub Repos (from github.com/anthropics)
 - `content/anthropic/github/claude-cookbooks/` - 198 recipes + notebooks. This is
@@ -333,7 +347,7 @@ content/
     en/agents-and-tools/       Tool use, agent skills
     claude/                    Product docs (215)
     mcp/                       MCP protocol spec (373)
-    blog/                      Engineering, research, news, policy, alignment, interpretability, claude-dev
+    blog/                      Engineering, research, news, policy, alignment, interpretability, claude-dev, claude-com, claude-com-guides
     github/                    10 repos (718 files)
     support/                   Help articles (365)
   openai/                      ~1,400 docs (developers.openai.com + openai.com)
