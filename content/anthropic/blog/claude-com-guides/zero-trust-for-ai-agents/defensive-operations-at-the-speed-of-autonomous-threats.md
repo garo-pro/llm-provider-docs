@@ -1,4 +1,4 @@
-Title: Defensive operations at the speed of autonomous threats
+Title: Defensive operations at the speed of autonomous threats - Zero Trust for AI agents
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/defensive-operations-at-the-speed-of-autonomous-threats
 

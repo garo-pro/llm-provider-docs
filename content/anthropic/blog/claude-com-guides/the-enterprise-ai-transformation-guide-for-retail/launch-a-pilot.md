@@ -1,4 +1,4 @@
-Title: Step 2: Launch a pilot
+Title: Step 2: Launch a pilot - The enterprise AI transformation guide for retail
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail/launch-a-pilot
 

@@ -1,4 +1,4 @@
-Title: Claude is now available in the EU
+Title: Claude is now available in Europe
 
 URL Source: https://www.anthropic.com/news/claude-europe
 

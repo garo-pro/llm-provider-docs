@@ -25,7 +25,7 @@ https://api.z.ai/api/paas/v4
 ## Authentication
 
 The Z.AI API uses the standard **HTTP Bearer** for authentication.
-An API key is required, which you can create or manage on the [API Keys Page](https://z.ai/manage-apikey/apikey-list).
+A Standard API Key is required, which you can create or manage on the [API Keys Page](https://z.ai/manage-apikey/apikey-list).
 
 API keys should be provided via HTTP Bearer Authentication in HTTP Request Headers.
 

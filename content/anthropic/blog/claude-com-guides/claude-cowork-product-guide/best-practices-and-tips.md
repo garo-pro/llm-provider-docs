@@ -1,4 +1,4 @@
-Title: Best practices and tips
+Title: Best practices and tips - Claude Cowork product guide
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/best-practices-and-tips
 

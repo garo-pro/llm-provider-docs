@@ -1,4 +1,4 @@
-Title: What’s new in Claude: Turning Claude into your thinking partner
+Title: Claude: From chatbot to thinking partner
 
 URL Source: https://claude.com/resources/articles/your-thinking-partner
 

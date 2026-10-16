@@ -1,4 +1,4 @@
-Title: Foreword
+Title: Foreword - The 2026 state of AI agents report
 
 URL Source: https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/foreword
 

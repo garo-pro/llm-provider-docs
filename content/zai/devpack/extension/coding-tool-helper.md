@@ -56,7 +56,7 @@ The current coding tools supported are:
 
 <Steps>
   <Step title="Get Your API Key">
-    Visit the [Z.AI Open Platform](https://z.ai/model-api) to retrieve your API Key.
+    Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan).
   </Step>
 
   <Step title="Install & Launch">

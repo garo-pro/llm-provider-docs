@@ -1,4 +1,4 @@
-Title: The AI investment firm in practice
+Title: The AI investment firm in practice - The AI investment firm
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/the-ai-investment-firm-in-practice
 

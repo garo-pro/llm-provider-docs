@@ -1,4 +1,4 @@
-Title: Priorities for the year ahead
+Title: Priorities for the year ahead - 2026 agentic coding trends report
 
 URL Source: https://claude.com/resources/guides/2026-agentic-coding-trends-report/priorities-for-the-year-ahead
 

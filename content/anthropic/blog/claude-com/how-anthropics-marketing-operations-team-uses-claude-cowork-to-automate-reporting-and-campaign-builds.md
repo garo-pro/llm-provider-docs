@@ -1,4 +1,4 @@
-Title: How Anthropic's marketing operations team uses Claude Cowork to automate reporting and campaign builds
+Title: Using Claude Cowork in marketing operations to automate reporting and campaign building
 
 URL Source: https://claude.com/resources/articles/how-anthropics-marketing-operations-team-uses-claude-cowork-to-automate-reporting-and-campaign-builds
 

@@ -1,4 +1,4 @@
-Title: Working at the frontier: How Thomson Reuters builds AI for high- stakes professional work
+Title: Working at the frontier: How Thomson Reuters builds AI for high-stakes professional work
 
 URL Source: https://claude.com/resources/articles/working-at-the-frontier-how-thomson-reuters-builds-ai-for-high--stakes-professional-work
 

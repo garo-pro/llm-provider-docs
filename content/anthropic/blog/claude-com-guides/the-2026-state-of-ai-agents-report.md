@@ -1,4 +1,4 @@
-Title: The 2026 State of AI Agents Report
+Title: The 2026 state of AI agents report
 
 URL Source: https://claude.com/resources/guides/the-2026-state-of-ai-agents-report
 

@@ -1,4 +1,4 @@
-Title: From principles to practice - Zero Trust for AI agents
+Title: From principles to practice
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/from-principles-to-practice
 

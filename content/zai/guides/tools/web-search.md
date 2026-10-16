@@ -100,7 +100,7 @@ Access the [official MCP documentation](https://modelcontextprotocol.io/introduc
 **Installation Guide**
 
 * Use clients that support the MCP protocol, such as Cursor and Cherry Studio.
-* Obtain an [API Key](https://z.ai/manage-apikey/apikey-list) from the Z.AI Platform.
+* Obtain a [Standard API Key](https://z.ai/manage-apikey/apikey-list) from the Z.AI Platform.
 
 **Using in Cursor**
 

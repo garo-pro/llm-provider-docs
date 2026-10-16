@@ -56,7 +56,7 @@ This server implements the Model Context Protocol and works with any MCP-compati
 
 <Steps>
   <Step title="Get API Key">
-    Visit [Z.AI Console](https://z.ai/manage-apikey/apikey-list) to get your api key
+    Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan)
   </Step>
 
   <Step title="Configure MCP Server">

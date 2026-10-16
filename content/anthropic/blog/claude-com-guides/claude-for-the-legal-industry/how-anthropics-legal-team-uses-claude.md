@@ -1,4 +1,4 @@
-Title: How Anthropic's Legal team uses Claude
+Title: How Anthropic's Legal team uses Claude - Claude for the legal industry
 
 URL Source: https://claude.com/resources/guides/claude-for-the-legal-industry/how-anthropics-legal-team-uses-claude
 

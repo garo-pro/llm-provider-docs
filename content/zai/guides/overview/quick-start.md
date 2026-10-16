@@ -14,7 +14,7 @@
   <Step title="Get API Key">
     * Access [Z.AI Open Platform](https://z.ai/model-api), Register or Login.
     * Access [Billing Page](https://z.ai/manage-apikey/billing) to top up if needed.
-    * Create an API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
+    * Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
     * Copy your API Key for use.
 
           <CardGroup cols={2}>
@@ -23,7 +23,7 @@
             </Card>
 
             <Card title="API Keys Management" icon="link" href="https://z.ai/manage-apikey/apikey-list">
-              Create an API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
+              Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
             </Card>
           </CardGroup>
   </Step>

@@ -1,4 +1,4 @@
-Title: Claude on call: How Claude Tag serves as Anthropic’s first responder for CI/CD failures
+Title: How Claude Tag serves as Anthropic’s first responder for CI/CD failures
 
 URL Source: https://claude.com/resources/articles/ai-ci-cd-on-call
 

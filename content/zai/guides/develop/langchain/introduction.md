@@ -73,7 +73,7 @@ python -c "import langchain; print(langchain.__version__)"
 ### Get API Key
 
 1. Access [Z.AI Open Platform](https://z.ai/model-api), Register or Login.
-2. Create an API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
+2. Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
 3. Copy your API Key for use.
 
 <Tip>

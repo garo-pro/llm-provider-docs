@@ -1,4 +1,4 @@
-Title: Anthropic acquires Vercept
+Title: Anthropic acquires Vercept to advance Claude's computer use capabilities
 
 URL Source: https://www.anthropic.com/news/acquires-vercept
 

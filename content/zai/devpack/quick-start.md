@@ -22,9 +22,13 @@
   <Step title="Obtain API Key">
     After subscribing,
 
-    Individual Plan users can create an API Key under [Individual Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list).
+    Individual Plan users (including trial card recipients) can create an API Key under [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list).
 
-    Team Plan members can obtain their API Key under [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan). The Team Plan Key is not interchangeable with other Z.AI's API Keys. To use your Team Plan quota, make sure to use the Team Plan Key.
+    Team Plan members can create an API Key under [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan).
+
+    <Tip>
+      API Keys for Individual Plans, Team Plans, and the standard model API are now managed separately. Newly created API Keys for these three product types are not interchangeable—use the one that matches your needs. For details, see the [API Key Management Guide](/devpack/notice/api-key-management).
+    </Tip>
 
     <Warning>
       Safeguard your API Key by keeping it confidential and avoiding hard-coding it in your code.

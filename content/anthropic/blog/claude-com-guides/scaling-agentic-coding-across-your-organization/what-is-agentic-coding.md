@@ -1,4 +1,4 @@
-Title: What is agentic coding?
+Title: What is agentic coding? - Scaling agentic coding across your organization
 
 URL Source: https://claude.com/resources/guides/scaling-agentic-coding-across-your-organization/what-is-agentic-coding
 
