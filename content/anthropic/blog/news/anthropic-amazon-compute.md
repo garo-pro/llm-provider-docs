@@ -1,4 +1,4 @@
-Title: Anthropic and Amazon expand compute collaboration
+Title: Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute
 
 URL Source: https://www.anthropic.com/news/anthropic-amazon-compute
 
