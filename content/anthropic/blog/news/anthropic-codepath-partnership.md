@@ -1,4 +1,4 @@
-Title: Anthropic partners with CodePath to bring Claude to the US’s largest collegiate computer science program
+Title: Anthropic partners with CodePath
 
 URL Source: https://www.anthropic.com/news/anthropic-codepath-partnership
 

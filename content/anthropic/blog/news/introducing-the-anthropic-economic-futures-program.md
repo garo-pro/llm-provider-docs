@@ -1,4 +1,4 @@
-Title: Introducing the Anthropic Economic Futures Program
+Title: Anthropic Economic Futures Program Launch
 
 URL Source: https://www.anthropic.com/news/introducing-the-anthropic-economic-futures-program
 

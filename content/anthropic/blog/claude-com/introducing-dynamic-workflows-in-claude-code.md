@@ -1,4 +1,4 @@
-Title: Introducing dynamic workflows in Claude Code
+Title: Introducing dynamic workflows
 
 URL Source: https://claude.com/resources/articles/introducing-dynamic-workflows-in-claude-code
 

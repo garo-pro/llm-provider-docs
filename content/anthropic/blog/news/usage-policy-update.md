@@ -1,4 +1,4 @@
-Title: Usage policy update
+Title: Usage Policy update
 
 URL Source: https://www.anthropic.com/news/usage-policy-update
 

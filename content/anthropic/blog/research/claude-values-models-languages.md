@@ -1,4 +1,4 @@
-Title: Claude’s values across models and languages
+Title: How Claude's values vary by model and language
 
 URL Source: https://www.anthropic.com/research/claude-values-models-languages
 

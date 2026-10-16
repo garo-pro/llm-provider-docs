@@ -1,4 +1,4 @@
-Title: Claude for Enterprise powers LLNL research
+Title: Lawrence Livermore National Laboratory expands Claude for Enterprise use to empower scientists and researchers
 
 URL Source: https://www.anthropic.com/news/lawrence-livermore-national-laboratory-expands-claude-for-enterprise-to-empower-scientists-and
 

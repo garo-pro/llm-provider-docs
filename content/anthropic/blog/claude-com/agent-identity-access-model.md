@@ -1,4 +1,4 @@
-Title: Agent identity in Claude Tag: a new access model for autonomous, team-wide AI
+Title: Agent identity: a new access model for autonomous, team-wide AI
 
 URL Source: https://claude.com/resources/articles/agent-identity-access-model
 

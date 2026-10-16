@@ -1,4 +1,4 @@
-Title: Understand Claude Code’s impact with contribution metrics
+Title: Measure Claude Code's impact with contribution metrics
 
 URL Source: https://claude.com/resources/articles/contribution-metrics
 

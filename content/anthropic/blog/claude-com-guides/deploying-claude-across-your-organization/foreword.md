@@ -1,4 +1,4 @@
-Title: Foreword: The evolution of AI at work - Deploying Claude across your organization: How Anthropic uses Cowork
+Title: Foreword: The evolution of AI at work
 
 URL Source: https://claude.com/resources/guides/deploying-claude-across-your-organization/foreword
 

@@ -1,4 +1,4 @@
-Title: Foundation trends: The tectonic shift - 2026 agentic coding trends report
+Title: Foundation trends: The tectonic shift
 
 URL Source: https://claude.com/resources/guides/2026-agentic-coding-trends-report/foundation-trends-the-tectonic-shift
 

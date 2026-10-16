@@ -1,4 +1,4 @@
-Title: Common workflow patterns for AI agents—and when to use them
+Title: Common workflow patterns for AI agents
 
 URL Source: https://claude.com/resources/articles/common-workflow-patterns-for-ai-agents-and-when-to-use-them
 

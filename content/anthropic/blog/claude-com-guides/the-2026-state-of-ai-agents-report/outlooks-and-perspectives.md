@@ -1,4 +1,4 @@
-Title: Outlooks and perspectives - The 2026 state of AI agents report
+Title: Outlooks and perspectives
 
 URL Source: https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/outlooks-and-perspectives
 

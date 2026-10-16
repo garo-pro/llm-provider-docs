@@ -1,4 +1,4 @@
-Title: Step 2: Launch a pilot - The enterprise AI transformation guide
+Title: Step 2: Launch a pilot
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide/launch-a-pilot
 

@@ -1,4 +1,4 @@
-Title: Middle office: Compliance and legal - The AI investment firm
+Title: Middle office: Compliance and legal
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/middle-office-compliance-and-legal
 

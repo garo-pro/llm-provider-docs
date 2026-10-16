@@ -1,4 +1,4 @@
-Title: Executive summary - Building effective AI agents: Architecture patterns
+Title: Executive summary
 
 URL Source: https://claude.com/resources/guides/building-effective-ai-agents/executive-summary
 
