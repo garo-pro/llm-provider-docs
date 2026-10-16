@@ -1,4 +1,4 @@
-Title: Bringing Salesforce into Claude
+Title: Salesforce in Claude
 
 URL Source: https://claude.com/resources/articles/salesforce-in-claude
 

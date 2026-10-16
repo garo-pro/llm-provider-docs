@@ -61,8 +61,8 @@ It is important to take seriously the parallel between AI models’ use of softw
 
 More generally, at low levels of capability and reliability, keeping a human in the loop is an easy decision because it saves time and resources by augmenting model capabilities or preventing costly mistakes. Once models pass capability and reliability thresholds (such as the human-AI team baseline we used in this experiment), there will be real pressure to treat human oversight as a cost rather than a safeguard. That is exactly why these decisions must be made deliberately, particularly in domains like this one that implicate physical security and privacy and where efficiency alone should not be the governing consideration. As Anthropic has long argued, the requirements for investing in AI alignment, governance, and safety increase with the scale of capabilities. Robotics is no different than other domains in this regard, especially since it implicates physical security and individual privacy.
 
+We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+
 Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
 
 Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
-
-This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.

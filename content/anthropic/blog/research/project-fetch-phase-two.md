@@ -51,8 +51,8 @@ More research is needed to understand models’ ability to make these physical t
 
 *Updated Jun 18:* Corrected the date of the first phase of Project Fetch. 
 
+We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+
+The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
+
 Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
-
-Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
-
-This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.

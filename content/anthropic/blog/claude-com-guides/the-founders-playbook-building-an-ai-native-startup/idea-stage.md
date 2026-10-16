@@ -1,4 +1,4 @@
-Title: Idea stage
+Title: Idea stage - The founder's playbook: Building an AI-native startup
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/idea-stage
 

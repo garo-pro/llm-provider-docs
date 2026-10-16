@@ -1,4 +1,4 @@
-Title: Why do we take LLMs seriously as a potential source of biorisk?
+Title: LLMs and biorisk
 
 URL Source: https://www.anthropic.com/research/biorisk
 
@@ -75,8 +75,8 @@ We are heartened to see investment in biosecurity as a key component of the new 
 
 The topic of AI and biorisk is rife with uncertainty—about threat actors, the capabilities of models, and how exactly those capabilities translate to risk. But we believe that a growing body of evidence about AI and the underlying gravity of biological threats mean that this is a topic to which AI developers and policymakers must attend. We will be sharing more about our work on biorisk to advance this critical conversation.
 
+We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+
+The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
+
 Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
-
-Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
-
-This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.

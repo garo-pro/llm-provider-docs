@@ -1,4 +1,4 @@
-Title: Rahul Patil joins as Chief Technology Officer
+Title: Rahul Patil joins Anthropic as Chief Technology Officer
 
 URL Source: https://www.anthropic.com/news/rahul-patil-joins-anthropic
 

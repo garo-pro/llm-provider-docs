@@ -1,4 +1,4 @@
-Title: Introducing Claude Sonnet 4.6
+Title: Introducing Sonnet 4.6
 
 URL Source: https://www.anthropic.com/news/claude-sonnet-4-6
 

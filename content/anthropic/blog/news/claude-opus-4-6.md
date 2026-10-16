@@ -1,4 +1,4 @@
-Title: Introducing Claude Opus 4.6
+Title: Claude Opus 4.6
 
 URL Source: https://www.anthropic.com/news/claude-opus-4-6
 

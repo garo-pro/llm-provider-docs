@@ -1,4 +1,4 @@
-Title: CodeRabbit, Power Digital, ThoughtSpot on Claude Marketplace
+Title: How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace
 
 URL Source: https://claude.com/resources/articles/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace
 

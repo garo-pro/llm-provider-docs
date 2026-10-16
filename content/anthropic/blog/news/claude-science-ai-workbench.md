@@ -1,4 +1,4 @@
-Title: Claude Science, an AI workbench for scientists, is now available
+Title: Claude Science, an AI workbench for scientists
 
 URL Source: https://www.anthropic.com/news/claude-science-ai-workbench
 

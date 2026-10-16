@@ -89,7 +89,7 @@ Each entry has a Markdown twin at `/api/docs/<slug>.md`.
 - [Cost optimization](https://developers.openai.com/api/docs/guides/voice-latency-cost.md): Understand voice usage and manage costs for GPT-Live and the Realtime API.
 - [Counting tokens](https://developers.openai.com/api/docs/guides/token-counting.md): Use the Responses API to count input tokens for text, images, files, tools, and more—without estimation or tiktoken.
 - [CSAM guidance](https://developers.openai.com/api/docs/guides/csam-guidance.md): Learn practical guidance for addressing CSAM risks in products built with OpenAI.
-- [Custom voices](https://developers.openai.com/api/docs/guides/custom-voices.md): Create an approved custom voice and use it for speech generation and voice agents.
+- [Custom voices](https://developers.openai.com/api/docs/guides/custom-voices.md): Create a voice from a text prompt for GPT-Live, or use an approved recording for speech generation and voice agents.
 - [Cybersecurity checks](https://developers.openai.com/api/docs/guides/safety-checks/cybersecurity.md): Learn about API cybersecurity safeguards, authorized access, request-level checks, access restrictions, and appeals.
 - [Data controls in the OpenAI platform](https://developers.openai.com/api/docs/guides/your-data.md): Your data is your data. An overview of how OpenAI uses your data, including retention and usage policies.
 - [Daytona](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/daytona.md): Run an Agents API session in a Daytona Sandbox.

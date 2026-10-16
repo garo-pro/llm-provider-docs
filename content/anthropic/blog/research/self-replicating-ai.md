@@ -160,8 +160,8 @@ Each is running Android with an ADB port open without authentication. Upon sprea
 
 A more detailed breakdown of the runs in “replication across a 17 node network.” Each column is the median number of nodes reached under different amounts of guidance in the prompt, and the subscript denotes how many agents cross over the pivot node to the other side of the network.
 
+We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+
+The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
+
 Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
-
-This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.
-
-Brice Ménard, an astrophysicist at Johns Hopkins University and a researcher at Anthropic, explains how he worked with Claude Science to produce the first complete map of the sky in UV light.

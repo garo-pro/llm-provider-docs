@@ -1,4 +1,4 @@
-Title: Working at the frontier: How Rakuten builds agents overnight with Claude Fable 5
+Title: How Rakuten builds agents overnight with Claude Fable 5
 
 URL Source: https://claude.com/resources/articles/working-at-the-frontier-rakuten
 

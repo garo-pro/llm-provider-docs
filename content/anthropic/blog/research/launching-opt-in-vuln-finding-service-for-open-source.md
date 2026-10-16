@@ -1,4 +1,4 @@
-Title: Launching an opt-in vulnerability-finding service for open-source software
+Title: An opt-in vulnerability-finding service for open-source software
 
 URL Source: https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source
 
@@ -31,8 +31,8 @@ Core maintainers of eligible projects can enroll by submitting a PR to [this Git
 
 *Whether or not OSS Scanner is right for you, our new [Cyber Verification Program](https://www.anthropic.com/news/cyber-verification-program) makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. [Claude for OSS](https://claude.com/contact-sales/claude-for-oss) provides free Claude Max 20x subscriptions to help remediate vulnerabilities and improve OSS projects.*
 
+We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+
+The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
+
 Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
-
-Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
-
-This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.

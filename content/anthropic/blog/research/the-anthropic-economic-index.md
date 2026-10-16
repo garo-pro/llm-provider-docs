@@ -1,4 +1,4 @@
-Title: The Anthropic Economic Index
+Title: Introducing the Anthropic Economic Index
 
 URL Source: https://www.anthropic.com/research/the-anthropic-economic-index
 
@@ -114,6 +114,12 @@ If you’re interested in working at Anthropic to research the effects of AI on 
 
 ## Related content
 
+### Designing more efficient quantum circuits with Claude
+
+We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+
+[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
+
 ### AI models may be capable of self-replicating without access to a datacenter
 
 Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
@@ -125,9 +131,3 @@ Our experiments suggest that small AI models may be only months away from being 
 Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
 
 [Read more](https://www.anthropic.com/research/distillation-defenses)
-
-### Investigating unintended model actions in our evaluations and internal use
-
-This report describes examples of unintended model actions we’ve observed during evaluations and internal use of Claude.
-
-[Read more](https://www.anthropic.com/research/investigating-unintended-model-actions)

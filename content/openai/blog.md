@@ -19,6 +19,7 @@ Each post has a Markdown twin at `/blog/<slug>.md`.
 - [Codex as a platform: build on the open agent harness](https://developers.openai.com/blog/codex-as-a-platform.md): Build Codex into the products and workflows your users already know.
 - [Custom Code Review rules for Codex](https://developers.openai.com/blog/custom-code-review-rules-for-codex.md): Provide more detailed rules for Codex to spot issues and better adhere your conventions during code review.
 - [Designing delightful frontends with GPT-5.4](https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4.md): Practical techniques for steering GPT-5.4 toward polished, production-ready frontend designs.
+- [Designing failover across OpenAI model providers](https://developers.openai.com/blog/designing-failover-across-openai-model-providers.md): Why direct OpenAI access matters for previews and critical workloads.
 - [Developer notes on the Realtime API](https://developers.openai.com/blog/realtime-api.md): Details worth noticing in recent realtime speech-to-speech updates
 - [From prompts to products: One year of Responses](https://developers.openai.com/blog/one-year-of-responses.md): Five stories from developers building agentic products with the Responses API in its first year.
 - [Hello, world!](https://developers.openai.com/blog/intro.md): Introducing our developer blog

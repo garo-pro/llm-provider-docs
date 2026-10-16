@@ -1,4 +1,4 @@
-Title: Secure access to the Claude Platform with Workload Identity Federation
+Title: Workload Identity Federation (WIF) is now generally available on the Claude Platform.
 
 URL Source: https://claude.com/resources/articles/workload-identity-federation
 
