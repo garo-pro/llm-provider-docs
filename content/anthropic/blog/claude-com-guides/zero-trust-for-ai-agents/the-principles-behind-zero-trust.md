@@ -1,4 +1,4 @@
-Title: The principles behind Zero Trust
+Title: The principles behind Zero Trust - Zero Trust for AI agents
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/the-principles-behind-zero-trust
 

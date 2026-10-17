@@ -1,4 +1,4 @@
-Title: New offices in Paris and Munich expand Anthropic’s European presence
+Title: New offices in Paris and Munich
 
 URL Source: https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence
 

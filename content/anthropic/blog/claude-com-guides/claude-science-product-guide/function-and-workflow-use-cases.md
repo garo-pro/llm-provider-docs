@@ -1,4 +1,4 @@
-Title: Function and workflow use cases
+Title: Function and workflow use cases - Claude Science product guide
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/function-and-workflow-use-cases
 

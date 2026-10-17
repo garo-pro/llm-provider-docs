@@ -1,4 +1,4 @@
-Title: Lessons from Anthropic on building effective human-agent teams
+Title: Building effective human-agent teams
 
 URL Source: https://claude.com/resources/articles/building-effective-human-agent-teams
 
