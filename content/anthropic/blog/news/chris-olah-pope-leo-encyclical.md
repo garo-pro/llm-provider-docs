@@ -1,4 +1,4 @@
-Title: Chris Olah's remarks on Pope Leo XIV's encyclical
+Title: Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical "Magnifica humanitas
 
 URL Source: https://www.anthropic.com/news/chris-olah-pope-leo-encyclical
 

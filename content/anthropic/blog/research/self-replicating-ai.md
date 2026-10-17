@@ -164,4 +164,4 @@ We gave Claude plain-language specifications for eight quantum circuits, along w
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
 
-Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
+How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

@@ -1,4 +1,4 @@
-Title: What it means to be a founder is changing
+Title: What it means to be a founder is changing - The founder's playbook: Building an AI-native startup
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/what-it-means-to-be-a-founder-is-changing
 

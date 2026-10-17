@@ -1,4 +1,4 @@
-Title: Cognizant will make Claude available to 350,000 employees, accelerating enterprise AI adoption and internal transformation
+Title: Cognizant brings Claude to 350,000 employees
 
 URL Source: https://www.anthropic.com/news/cognizant-partnership
 

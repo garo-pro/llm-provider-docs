@@ -32,7 +32,7 @@ For the AI industry, this is a step toward [robust safety oversight](https://www
 
 We’ve onboarded six METR employees with company hardware, office space, and access to internal tools and systems that are roughly on par with what our own risk assessment teams have access to. Outside a small number of clearly defined categories (e.g., data about customers, attorney-client privileged information, or information about our model architectures), Anthropic employees are encouraged to share information with them just as they would with a fellow employee working on alignment risk.[1](https://www.anthropic.com#footnote-1)
 
-METR will publish its analysis of our risk levels, incidents, or practices. Anthropic can’t veto publication, but we can require them to redact information if it falls into predefined categories like the ones above. METR is free to characterize our redactions publicly, and say whether it believes the redactions were justified, as long as it does so without revealing the redacted information.
+METR will publish its analysis of our risk levels, incidents, or practices. Anthropic can’t veto publication, but we can require them to redact information if it falls into predefined categories like the ones above. (Anthropic ultimately decides what information does and does not fall into these categories, although METR reserves the right to make certain statements about the level of access and information it received.)[2](https://www.anthropic.com#footnote-2)
 
 Our engagement with METR is limited to a small team operating under enforceable agreements. Other METR employees are siloed from that team’s work, including researchers who work with us on other projects. Embedded evaluation gives a few qualified people working under Anthropic’s security standards a close view of how we operate. It’s not a way for other organizations to obtain our information, or that of our customers and partners.
 
@@ -48,7 +48,7 @@ We’re developing three tiers of access for evaluators. Over time, we hope to h
 
 **The third tier** is the arrangement we’ve described with METR, with employee-like access and publication rights similar to those of the second tier.
 
-**SecureBio** is in the process of reviewing the chemical and biological weapons chapter of our [August Risk Report](https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf), after completing and [publishing a pilot review](https://securebio.org/resources/anthropic_feb_2026_risk_review.pdf) of our previous risk report. After this review is complete, we will consider moving to projects with increased access.[2](https://www.anthropic.com#footnote-2)
+**SecureBio** is in the process of reviewing the chemical and biological weapons chapter of our [August Risk Report](https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf), after completing and [publishing a pilot review](https://securebio.org/resources/anthropic_feb_2026_risk_review.pdf) of our previous risk report. After this review is complete, we will consider moving to projects with increased access.[3](https://www.anthropic.com#footnote-3)
 
 **With Accenture** and Faculty, we're working [toward an ambitious partnership](https://www.anthropic.com/news/accenture-embedded-evaluation) that includes evaluating and red-teaming models, conducting alignment assessments, testing model safeguards, and building capabilities across our organizations.
 

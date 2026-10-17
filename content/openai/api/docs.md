@@ -60,6 +60,7 @@ Each entry has a Markdown twin at `/api/docs/<slug>.md`.
 - [Batch API](https://developers.openai.com/api/docs/guides/batch.md): Learn how to use OpenAI's Batch API for processing jobs with asynchronous requests, increased rate limits, and cost efficiency.
 - [Bedrock Managed Agents](https://developers.openai.com/api/docs/guides/agents-api/bedrock-managed-agents.md): Understand how Bedrock Managed Agents uses the Agents API on AWS, and compare execution environments and authentication.
 - [Blaxel](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/blaxel.md): Run an Agents API session in a Blaxel sandbox.
+- [Browser and desktop drivers](https://developers.openai.com/api/docs/guides/tools-computer-use-sdk-drivers.md): Implement browser reads, actions, approval, and desktop screenshots. Learn which methods the SDK calls and how to recover after an interrupted run.
 - [ChatKit](https://developers.openai.com/api/docs/guides/chatkit.md): Embed a widget to build your own chat experiences.
 - [ChatKit widgets](https://developers.openai.com/api/docs/guides/chatkit-widgets.md): Learn how to design widgets in your chat experience with ChatKit.
 - [Citation Formatting](https://developers.openai.com/api/docs/guides/citation-formatting.md): Learn practical citation formatting patterns that help models generate reliable citations.
@@ -70,7 +71,7 @@ Each entry has a Markdown twin at `/api/docs/<slug>.md`.
 - [Compaction](https://developers.openai.com/api/docs/guides/compaction.md): Manage long-running conversations with server-side and standalone compaction.
 - [Completions API](https://developers.openai.com/api/docs/guides/completions.md)
 - [Computer use](https://developers.openai.com/api/docs/guides/agents-api/tools/computer-use.md): Run a browser task, handle website approvals and sign-in, and recover an Agents API session.
-- [Computer use](https://developers.openai.com/api/docs/guides/tools-computer-use.md): Connect a code-execution harness or computer tool to operate browser and desktop interfaces through the Responses API.
+- [Computer use](https://developers.openai.com/api/docs/guides/tools-computer-use.md): Use the Python or Node SDK to run a browser or desktop task, or connect your own runtime through the Responses API.
 - [Computer use integration recipes](https://developers.openai.com/api/docs/guides/tools-computer-use-integration.md): Environment setup, action handlers, custom execution services, and consent guidance for computer use integrations.
 - [Configure workload identity federation with X.509 certificates](https://developers.openai.com/api/docs/guides/workload-identity-federation/x509.md): Configure an X.509 workload identity provider and exchange a TLS client certificate for a short-lived OpenAI access token.
 - [Configuring Agents](https://developers.openai.com/api/docs/guides/agents-api/configuration.md): Define an agent, reuse its configuration, and customize each session.

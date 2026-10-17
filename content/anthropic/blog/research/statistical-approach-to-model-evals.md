@@ -86,8 +86,8 @@ The decades-old mystery of the origins of one of the most popular cryptographic 
 
 [Read more](https://www.anthropic.com/research/ecdsa-curve-origins)
 
-### AI models may be capable of self-replicating without access to a datacenter
+### The AI expectations gap
 
-Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.
 
-[Read more](https://www.anthropic.com/research/self-replicating-ai)
+[Read more](https://www.anthropic.com/research/ai-expectations-gap)

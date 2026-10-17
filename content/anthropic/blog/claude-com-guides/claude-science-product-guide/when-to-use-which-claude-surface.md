@@ -1,4 +1,4 @@
-Title: When to use which Claude surface
+Title: When to use which Claude surface - Claude Science product guide
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/when-to-use-which-claude-surface
 

@@ -49,4 +49,4 @@ We gave Claude plain-language specifications for eight quantum circuits, along w
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
 
-Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

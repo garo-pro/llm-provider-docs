@@ -120,14 +120,14 @@ We gave Claude plain-language specifications for eight quantum circuits, along w
 
 [Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
 
-### AI models may be capable of self-replicating without access to a datacenter
+### Claude reveals ECDSA curve origins
 
-Our experiments suggest that small AI models may be only months away from being capable enough to self-replicate on commercial IoT devices, like Android TVs and smart ovens.
+The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
 
-[Read more](https://www.anthropic.com/research/self-replicating-ai)
+[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)
 
-### Strengthening our defenses against distillation attacks
+### The AI expectations gap
 
-Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of distillation by more than 90%.
+How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.
 
-[Read more](https://www.anthropic.com/research/distillation-defenses)
+[Read more](https://www.anthropic.com/research/ai-expectations-gap)

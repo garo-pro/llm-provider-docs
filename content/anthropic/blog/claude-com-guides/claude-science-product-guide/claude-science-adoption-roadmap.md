@@ -1,4 +1,4 @@
-Title: Claude Science adoption roadmap - Claude Science product guide
+Title: Claude Science adoption roadmap
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/claude-science-adoption-roadmap
 
