@@ -88,6 +88,7 @@ from typing import Dict, List, Optional
 import aiofiles
 import aiohttp
 import trafilatura
+from html import unescape
 from lxml.html import fromstring, tostring as html_tostring
 from tqdm.asyncio import tqdm_asyncio
 
@@ -880,6 +881,15 @@ class Fetcher:
                         "url": url, "status": "dead" if url in self.tombstones else "failed",
                         "error": "upstream returned HTML, not markdown (soft 404)",
                     }
+                if b"intercomcdn.com" in content:
+                    # Support images are signed URLs whose expires/signature/req
+                    # params are re-minted on every fetch -- same image, new
+                    # bytes -- which rewrote ~55 support articles per run. The
+                    # image path alone identifies it; drop the volatile query.
+                    content = re.sub(
+                        rb"(intercomcdn\.com/[^\s)?\"']+)\?expires=[^\s)]*",
+                        rb"\1", content,
+                    )
                 output_path.parent.mkdir(parents=True, exist_ok=True)
                 async with aiofiles.open(output_path, "wb") as f:
                     await f.write(content)
@@ -986,6 +996,18 @@ class Fetcher:
                 if line.startswith("title:"):
                     title = line[len("title:"):].strip().strip('"')
                     break
+        # trafilatura picks between the <h1> and og:title depending on tag
+        # order in the response, and anthropic.com / claude.com serve that
+        # order differently from request to request -- titles flip-flopped
+        # ("The assistant axis" <-> "The assistant axis: situating ...") and
+        # rewrote ~100 unchanged files per run. Pin to the <h1>, the fuller
+        # of the two and the one the page body itself shows.
+        if urlsplit(url).netloc.endswith(("anthropic.com", "claude.com")):
+            h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", html, re.DOTALL)
+            if h1:
+                text = " ".join(unescape(re.sub(r"<[^>]+>", "", h1.group(1))).split())
+                if text:
+                    title = text
         # Images/links come back host-relative (e.g. "/_next/image?url=...");
         # resolve against the page URL so the saved markdown is self-contained.
         body = re.sub(
