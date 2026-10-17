@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-17T15:29:45.897023Z",
+    "fetch_date": "2026-10-17T18:04:51.953046Z",
     "section": "all"
   },
   "items": [
@@ -31194,8 +31194,8 @@
       "url": "https://developers.openai.com/api/docs/deprecations",
       "status": "success",
       "path": "openai/api/docs/deprecations.md",
-      "sha256": "199d9bf98e262d0011f34c4c1b89e5803115040c49cf5179eb78296d721023b6",
-      "size": 40824
+      "sha256": "79a2e58476139c48e39bafa5f352f98c034bb4171f99c3aedff2e53368c0d33a",
+      "size": 40651
     },
     {
       "url": "https://developers.openai.com/api/docs/actions/getting-started",
