@@ -1,4 +1,4 @@
-Title: Middle office: Operations - The AI investment firm
+Title: Middle office: Operations
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/middle-office-operations
 

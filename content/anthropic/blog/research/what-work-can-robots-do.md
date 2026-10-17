@@ -1,4 +1,4 @@
-Title: Can we predict the jobs robots will do?
+Title: What work can robots do?
 
 URL Source: https://www.anthropic.com/research/what-work-can-robots-do
 

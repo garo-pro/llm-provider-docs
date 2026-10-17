@@ -1,4 +1,4 @@
-Title: Emotion concepts in a large language model
+Title: Emotion concepts and their function in a large language model
 
 URL Source: https://www.anthropic.com/research/emotion-concepts-function
 

@@ -1,4 +1,4 @@
-Title: Introducing Claude Haiku 5.5
+Title: Claude Haiku 5.5
 
 URL Source: https://www.anthropic.com/claude-haiku-5-5
 

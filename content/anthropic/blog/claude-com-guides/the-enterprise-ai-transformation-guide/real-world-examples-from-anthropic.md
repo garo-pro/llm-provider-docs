@@ -1,4 +1,4 @@
-Title: Building an AI-first enterprise: real-world examples from Anthropic - The enterprise AI transformation guide
+Title: Building an AI-first enterprise: real-world examples from Anthropic
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide/real-world-examples-from-anthropic
 

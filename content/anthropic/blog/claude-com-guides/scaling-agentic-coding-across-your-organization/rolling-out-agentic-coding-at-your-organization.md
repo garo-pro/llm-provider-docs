@@ -1,4 +1,4 @@
-Title: Rolling out agentic coding at your organization - Scaling agentic coding across your organization
+Title: Rolling out agentic coding at your organization
 
 URL Source: https://claude.com/resources/guides/scaling-agentic-coding-across-your-organization/rolling-out-agentic-coding-at-your-organization
 

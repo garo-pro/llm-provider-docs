@@ -1,4 +1,4 @@
-Title: Claude Cowork gets a built-in browser: nothing to install
+Title: Claude gets its own browser in Cowork
 
 URL Source: https://claude.com/resources/articles/cowork-built-in-browser
 

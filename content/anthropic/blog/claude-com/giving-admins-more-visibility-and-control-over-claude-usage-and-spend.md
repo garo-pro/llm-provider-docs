@@ -1,4 +1,4 @@
-Title: New analytics and cost controls are available for Claude Enterprise
+Title: Giving admins more visibility and control over Claude spend
 
 URL Source: https://claude.com/resources/articles/giving-admins-more-visibility-and-control-over-claude-usage-and-spend
 

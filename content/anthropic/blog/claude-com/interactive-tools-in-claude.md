@@ -1,4 +1,4 @@
-Title: Interactive connectors and MCP Apps
+Title: Your favorite work tools are now interactive connectors inside Claude
 
 URL Source: https://claude.com/resources/articles/interactive-tools-in-claude
 

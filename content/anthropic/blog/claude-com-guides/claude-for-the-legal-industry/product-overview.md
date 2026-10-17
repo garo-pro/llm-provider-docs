@@ -1,4 +1,4 @@
-Title: Product overview - Claude for the legal industry
+Title: Product overview
 
 URL Source: https://claude.com/resources/guides/claude-for-the-legal-industry/product-overview
 

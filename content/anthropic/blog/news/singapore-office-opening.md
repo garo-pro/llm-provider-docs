@@ -1,4 +1,4 @@
-Title: Singapore office and government MOU | Anthropic
+Title: Anthropic opens Singapore office and signs MOU with the Government of Singapore
 
 URL Source: https://www.anthropic.com/news/singapore-office-opening
 

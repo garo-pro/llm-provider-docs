@@ -1,4 +1,4 @@
-Title: Extending Claude's capabilities with skills and MCP
+Title: Extending Claude’s capabilities with skills and MCP servers
 
 URL Source: https://claude.com/resources/articles/extending-claude-capabilities-with-skills-mcp-servers
 

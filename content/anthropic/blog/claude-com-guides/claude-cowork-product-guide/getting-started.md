@@ -1,4 +1,4 @@
-Title: Getting started - Claude Cowork product guide
+Title: Getting started
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/getting-started
 

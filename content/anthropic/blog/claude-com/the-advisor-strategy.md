@@ -1,4 +1,4 @@
-Title: The advisor strategy: Give Sonnet an intelligence boost with Opus
+Title: The advisor strategy: Give agents an intelligence boost
 
 URL Source: https://claude.com/resources/articles/the-advisor-strategy
 

@@ -1,4 +1,4 @@
-Title: Claude has improved on a longstanding lower bound for the fraction of zeros of the Riemann zeta function that satisfy the Riemann hypothesis
+Title: Learning more about Claude's mathematical capabilities
 
 URL Source: https://www.anthropic.com/research/riemann-zeta
 

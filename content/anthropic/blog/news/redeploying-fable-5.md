@@ -1,4 +1,4 @@
-Title: Redeploying Claude Fable 5
+Title: Redeploying Fable 5
 
 URL Source: https://www.anthropic.com/news/redeploying-fable-5
 

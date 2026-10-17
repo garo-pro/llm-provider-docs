@@ -1,4 +1,4 @@
-Title: Scale stage - The founder's playbook: Building an AI-native startup
+Title: Scale stage
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/scale-stage
 

@@ -1,4 +1,4 @@
-Title: Improving our alignment and security practices
+Title: Improving our alignment and security efforts
 
 URL Source: https://www.anthropic.com/news/improving-alignment-security-efforts
 

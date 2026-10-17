@@ -1,4 +1,4 @@
-Title: Claude web search now available globally on all plans
+Title: Claude can now search the web
 
 URL Source: https://claude.com/resources/articles/web-search
 

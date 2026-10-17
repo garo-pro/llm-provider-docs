@@ -1,4 +1,4 @@
-Title: Introducing Claude Cowork - Deploying Claude across your organization: How Anthropic uses Cowork
+Title: Introducing Claude Cowork
 
 URL Source: https://claude.com/resources/guides/deploying-claude-across-your-organization/introducing-claude-cowork
 

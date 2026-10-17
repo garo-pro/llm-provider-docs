@@ -1,4 +1,4 @@
-Title: Economic Index: Uneven AI adoption
+Title: Anthropic Economic Index report: Uneven geographic and enterprise AI adoption
 
 URL Source: https://www.anthropic.com/research/anthropic-economic-index-september-2025-report
 

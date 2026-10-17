@@ -1,4 +1,4 @@
-Title: Your retail AI roadmap starts today - The enterprise AI transformation guide for retail
+Title: Your retail AI roadmap starts today
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail/your-retail-ai-roadmap-starts-today
 

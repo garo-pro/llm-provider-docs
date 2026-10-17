@@ -1,4 +1,4 @@
-Title: Introducing Bloom: Automated behavioral evals
+Title: Introducing Bloom: an open source tool for automated behavioral evaluations
 
 URL Source: https://www.anthropic.com/research/bloom
 

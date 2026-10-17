@@ -1,4 +1,4 @@
-Title: Foreword - Claude Science product guide
+Title: Foreword
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/foreword
 

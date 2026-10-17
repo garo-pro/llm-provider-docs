@@ -1,4 +1,4 @@
-Title: Upleveling your work with Claude Cowork - Claude Cowork product guide
+Title: Upleveling your work with Claude Cowork
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/upleveling-your-work-with-claude-cowork
 

@@ -1,4 +1,4 @@
-Title: Improved web search with dynamic filtering
+Title: Increase web search accuracy and efficiency with dynamic filtering
 
 URL Source: https://claude.com/resources/articles/improved-web-search-with-dynamic-filtering
 

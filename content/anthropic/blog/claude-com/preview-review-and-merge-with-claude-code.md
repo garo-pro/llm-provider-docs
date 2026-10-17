@@ -1,4 +1,4 @@
-Title: Preview, review, and merge with Claude Code
+Title: Bringing automated preview, review, and merge to Claude Code on desktop
 
 URL Source: https://claude.com/resources/articles/preview-review-and-merge-with-claude-code
 

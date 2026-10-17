@@ -1,4 +1,4 @@
-Title: Using CLAUDE.MD files: Customizing Claude Code for your codebase
+Title: Using CLAUDE.md files: Customizing Claude Code for your codebase
 
 URL Source: https://claude.com/resources/articles/using-claude-md-files
 

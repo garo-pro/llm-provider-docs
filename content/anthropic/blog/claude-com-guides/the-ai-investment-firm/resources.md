@@ -1,4 +1,4 @@
-Title: Resources - The AI investment firm
+Title: Resources
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/resources
 

@@ -1,4 +1,4 @@
-Title: Using Claude Science to produce the first complete map of the sky in UV light
+Title: The missing map of the sky
 
 URL Source: https://www.anthropic.com/research/the-missing-map-of-the-sky
 

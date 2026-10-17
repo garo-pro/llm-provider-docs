@@ -1,4 +1,4 @@
-Title: Testing and iteration - The complete guide to building Skills for Claude
+Title: Testing and iteration
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude/testing-and-iteration
 

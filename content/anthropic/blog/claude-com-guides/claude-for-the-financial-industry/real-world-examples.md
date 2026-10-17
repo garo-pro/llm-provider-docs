@@ -1,4 +1,4 @@
-Title: Building an AI-first financial enterprise: real-world examples - Claude for the financial industry
+Title: Building an AI-first financial enterprise: real-world examples
 
 URL Source: https://claude.com/resources/guides/claude-for-the-financial-industry/real-world-examples
 

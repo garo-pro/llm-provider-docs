@@ -1,4 +1,4 @@
-Title: Beyond the obvious: innovative agentic coding applications - Scaling agentic coding across your organization
+Title: Beyond the obvious: innovative agentic coding applications
 
 URL Source: https://claude.com/resources/guides/scaling-agentic-coding-across-your-organization/beyond-the-obvious-innovative-agentic-coding-applications
 

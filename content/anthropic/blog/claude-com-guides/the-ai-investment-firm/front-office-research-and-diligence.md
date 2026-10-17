@@ -1,4 +1,4 @@
-Title: Front office: Research and diligence - The AI investment firm
+Title: Front office: Research and diligence
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/front-office-research-and-diligence
 

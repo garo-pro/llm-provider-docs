@@ -1,4 +1,4 @@
-Title: Code w/ Claude SF 2026: Building on the AI exponential
+Title: Code w/ Claude SF 2026 recap: Building on the AI exponential
 
 URL Source: https://claude.com/resources/articles/code-w-claude-sf-2026-sf
 

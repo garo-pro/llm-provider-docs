@@ -1,4 +1,4 @@
-Title: Claude builds interactive visuals right in your conversation
+Title: Claude now creates interactive charts, diagrams and visualizations
 
 URL Source: https://claude.com/resources/articles/claude-builds-visuals
 

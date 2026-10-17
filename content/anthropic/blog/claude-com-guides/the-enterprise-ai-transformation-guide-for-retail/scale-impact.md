@@ -1,4 +1,4 @@
-Title: Step 3: Scale impact - The enterprise AI transformation guide for retail
+Title: Step 3: Scale impact
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail/scale-impact
 

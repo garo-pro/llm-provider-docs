@@ -1,4 +1,4 @@
-Title: Extending Claude Cowork with plugins - Claude Cowork product guide
+Title: Extending Claude Cowork with plugins
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/extending-claude-cowork-with-plugins
 

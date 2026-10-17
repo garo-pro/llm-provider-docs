@@ -1,4 +1,4 @@
-Title: Claude Cowork comes to the Chrome side panel
+Title: The Claude in Chrome side panel is now Claude Cowork
 
 URL Source: https://claude.com/resources/articles/cowork-chrome-side-panel
 

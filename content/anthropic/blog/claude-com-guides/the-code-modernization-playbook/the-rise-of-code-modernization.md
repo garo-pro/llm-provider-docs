@@ -1,4 +1,4 @@
-Title: The rise of code modernization - The code modernization playbook
+Title: The rise of code modernization
 
 URL Source: https://claude.com/resources/guides/the-code-modernization-playbook/the-rise-of-code-modernization
 

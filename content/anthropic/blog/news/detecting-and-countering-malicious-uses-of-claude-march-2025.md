@@ -1,4 +1,4 @@
-Title: Detecting and countering malicious uses of Claude
+Title: Detecting and countering malicious uses of Claude: March 2025
 
 URL Source: https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025
 

@@ -1,4 +1,4 @@
-Title: Getting started - The financial services guide to building autonomous AI agents
+Title: Getting started
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/getting-started
 

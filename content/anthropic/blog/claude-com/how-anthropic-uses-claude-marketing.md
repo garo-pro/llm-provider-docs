@@ -1,4 +1,4 @@
-Title: How Anthropic uses Claude in marketing
+Title: How Anthropic's Growth Marketing team cut ad creation time from 30 minutes to 30 seconds with Claude Code
 
 URL Source: https://claude.com/resources/articles/how-anthropic-uses-claude-marketing
 

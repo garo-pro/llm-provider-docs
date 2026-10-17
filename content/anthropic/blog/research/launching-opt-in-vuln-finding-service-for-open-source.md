@@ -1,4 +1,4 @@
-Title: An opt-in vulnerability-finding service for open-source software
+Title: Launching an opt-in vulnerability-finding service for open-source software
 
 URL Source: https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source
 

@@ -1,4 +1,4 @@
-Title: Claude SWE-Bench Performance
+Title: Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet
 
 URL Source: https://www.anthropic.com/engineering/swe-bench-sonnet
 

@@ -1,4 +1,4 @@
-Title: Anthropic brings AI education to Africa with Rwanda and ALX
+Title: Anthropic partners with Rwandan Government and ALX to bring AI education to hundreds of thousands of learners across Africa
 
 URL Source: https://www.anthropic.com/news/rwandan-government-partnership-ai-education
 

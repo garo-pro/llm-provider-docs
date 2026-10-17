@@ -1,4 +1,4 @@
-Title: Claude for legal adoption roadmap - Claude for the legal industry
+Title: Claude for legal adoption roadmap
 
 URL Source: https://claude.com/resources/guides/claude-for-the-legal-industry/claude-for-legal-adoption-roadmap
 

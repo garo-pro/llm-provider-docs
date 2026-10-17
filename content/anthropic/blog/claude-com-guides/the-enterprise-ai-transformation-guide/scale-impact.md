@@ -1,4 +1,4 @@
-Title: Step 3: Scale impact - The enterprise AI transformation guide
+Title: Step 3: Scale impact
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide/scale-impact
 

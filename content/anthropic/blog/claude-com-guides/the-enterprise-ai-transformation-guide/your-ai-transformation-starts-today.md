@@ -1,4 +1,4 @@
-Title: Your AI transformation starts today - The enterprise AI transformation guide
+Title: Your AI transformation starts today
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide/your-ai-transformation-starts-today
 

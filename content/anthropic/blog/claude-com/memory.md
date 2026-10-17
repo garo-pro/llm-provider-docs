@@ -1,4 +1,4 @@
-Title: Bringing memory to teams
+Title: Bringing memory to Claude
 
 URL Source: https://claude.com/resources/articles/memory
 

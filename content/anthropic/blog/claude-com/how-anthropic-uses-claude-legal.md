@@ -1,4 +1,4 @@
-Title: How Anthropic uses Claude in legal
+Title: How Anthropic's legal team cut review times from days to hours with Claude
 
 URL Source: https://claude.com/resources/articles/how-anthropic-uses-claude-legal
 

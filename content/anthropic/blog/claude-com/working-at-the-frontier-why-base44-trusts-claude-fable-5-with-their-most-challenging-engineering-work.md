@@ -1,4 +1,4 @@
-Title: Base44 uses Claude Fable 5 for its hardest engineering work
+Title: Working at the frontier: Why Base44 trusts Claude Fable 5 with their most challenging engineering work
 
 URL Source: https://claude.com/resources/articles/working-at-the-frontier-why-base44-trusts-claude-fable-5-with-their-most-challenging-engineering-work
 

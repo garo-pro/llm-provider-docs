@@ -1,4 +1,4 @@
-Title: Dario Amodei on American AI leadership
+Title: A statement from Dario Amodei on Anthropic's commitment to American AI leadership
 
 URL Source: https://www.anthropic.com/news/statement-dario-amodei-american-ai-leadership
 

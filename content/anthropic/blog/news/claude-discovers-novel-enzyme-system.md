@@ -1,4 +1,4 @@
-Title: Claude discovers a novel enzyme system
+Title: Claude discovers a novel enzyme system with CRISPR-like repeats
 
 URL Source: https://www.anthropic.com/news/claude-discovers-novel-enzyme-system
 

@@ -1,4 +1,4 @@
-Title: Mariano-Florentino Cuéllar appointed to Long-Term Benefit Trust
+Title: Mariano-Florentino Cuéllar appointed to Anthropic’s Long-Term Benefit Trust
 
 URL Source: https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust
 

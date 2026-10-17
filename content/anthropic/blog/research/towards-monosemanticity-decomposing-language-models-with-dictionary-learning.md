@@ -1,4 +1,4 @@
-Title: Towards monosemanticity
+Title: Towards monosemanticity: Decomposing language models with dictionary learning
 
 URL Source: https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning
 

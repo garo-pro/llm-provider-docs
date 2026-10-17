@@ -1,4 +1,4 @@
-Title: CISO's guide to agentic AI
+Title: Zero risk isn't the job: a CISO's guide to agentic AI
 
 URL Source: https://claude.com/resources/articles/ciso-guide-to-agentic-ai
 

@@ -1,4 +1,4 @@
-Title: The enterprise AI transformation guide for retail
+Title: The Enterprise AI Transformation Guide for Retail
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail
 

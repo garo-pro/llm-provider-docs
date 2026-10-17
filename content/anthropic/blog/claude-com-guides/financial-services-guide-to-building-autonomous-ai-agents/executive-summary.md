@@ -1,4 +1,4 @@
-Title: Executive summary - The financial services guide to building autonomous AI agents
+Title: Executive summary
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/executive-summary
 

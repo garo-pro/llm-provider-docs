@@ -1,4 +1,4 @@
-Title: Step 2: Launch a pilot - The Enterprise AI Transformation Guide for Life Sciences
+Title: Step 2: Launch a pilot
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-life-sciences/launch-a-pilot
 

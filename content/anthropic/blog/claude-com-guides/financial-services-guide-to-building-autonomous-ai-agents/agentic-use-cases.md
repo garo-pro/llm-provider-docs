@@ -1,4 +1,4 @@
-Title: Agentic use cases for financial services - The financial services guide to building autonomous AI agents
+Title: Agentic use cases for financial services
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/agentic-use-cases
 

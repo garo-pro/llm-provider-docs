@@ -1,4 +1,4 @@
-Title: AI for Science rare disease research grants
+Title: Apply for Anthropic’s AI for Science rare disease research grants
 
 URL Source: https://www.anthropic.com/news/rare-disease-research-grants
 

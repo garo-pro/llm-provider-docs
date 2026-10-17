@@ -1,4 +1,4 @@
-Title: Anthropic update on independent evaluators
+Title: An update on independent evaluators
 
 URL Source: https://www.anthropic.com/news/an-update-on-independent-evaluators
 

@@ -1,4 +1,4 @@
-Title: Back office: Engineering, data, and security - The AI investment firm
+Title: Back office: Engineering, data, and security
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/back-office-engineering-data-and-security
 

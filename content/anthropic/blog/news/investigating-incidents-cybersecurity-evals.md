@@ -1,4 +1,4 @@
-Title: Investigating three incidents in our cybersecurity evaluations
+Title: Investigating three real-world incidents in our cybersecurity evaluations
 
 URL Source: https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals
 

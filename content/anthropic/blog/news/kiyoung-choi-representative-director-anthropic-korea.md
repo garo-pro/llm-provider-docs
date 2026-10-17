@@ -1,4 +1,4 @@
-Title: KiYoung Choi named Representative Director of Korea
+Title: Anthropic appoints KiYoung Choi as Representative Director of Korea ahead of Seoul office opening
 
 URL Source: https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea
 

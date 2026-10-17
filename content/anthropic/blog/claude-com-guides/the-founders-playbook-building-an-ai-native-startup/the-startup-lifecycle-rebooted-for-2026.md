@@ -1,4 +1,4 @@
-Title: The startup lifecycle, rebooted for 2026 - The founder's playbook: Building an AI-native startup
+Title: The startup lifecycle, rebooted for 2026
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/the-startup-lifecycle-rebooted-for-2026
 

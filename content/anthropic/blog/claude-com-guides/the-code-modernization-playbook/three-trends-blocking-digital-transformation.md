@@ -1,4 +1,4 @@
-Title: Three trends blocking digital transformation - The code modernization playbook
+Title: Three trends blocking digital transformation
 
 URL Source: https://claude.com/resources/guides/the-code-modernization-playbook/three-trends-blocking-digital-transformation
 

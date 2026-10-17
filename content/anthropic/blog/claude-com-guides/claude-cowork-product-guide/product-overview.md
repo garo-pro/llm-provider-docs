@@ -1,4 +1,4 @@
-Title: Product overview - Claude Cowork product guide
+Title: Product overview
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/product-overview
 

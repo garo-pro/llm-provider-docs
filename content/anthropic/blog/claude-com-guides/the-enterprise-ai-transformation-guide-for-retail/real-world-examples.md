@@ -1,4 +1,4 @@
-Title: Building AI-first retail operations: real-world examples from Shopify, L'Oréal, and Lotte Homeshopping - The enterprise AI transformation guide for retail
+Title: Building AI-first retail operations: real-world examples from Shopify, L'Oréal, and Lotte Homeshopping
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail/real-world-examples
 

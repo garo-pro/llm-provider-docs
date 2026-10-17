@@ -1,4 +1,4 @@
-Title: Giving companies more control over their AI agents, with NVIDIA
+Title: A new approach to agent security with Claude Managed Agents and NVIDIA
 
 URL Source: https://claude.com/resources/articles/giving-companies-more-control-over-their-ai-agents-with-nvidia
 

@@ -1,4 +1,4 @@
-Title: Introducing Claude Opus 5.5
+Title: Claude Opus 5.5
 
 URL Source: https://www.anthropic.com/claude-opus-5-5
 

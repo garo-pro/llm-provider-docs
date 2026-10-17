@@ -1,4 +1,4 @@
-Title: Deploying AI from pilot to production: a practical blueprint for CIOs and technical leaders
+Title: Deploying AI from pilot to production
 
 URL Source: https://claude.com/resources/articles/deploying-ai-from-pilot-to-production
 

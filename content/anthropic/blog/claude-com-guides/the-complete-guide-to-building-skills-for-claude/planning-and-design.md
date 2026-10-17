@@ -1,4 +1,4 @@
-Title: Planning and design - The complete guide to building Skills for Claude
+Title: Planning and design
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude/planning-and-design
 

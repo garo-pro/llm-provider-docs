@@ -1,4 +1,4 @@
-Title: 2026 agentic coding trends report
+Title: 2026 Agentic Coding Trends Report
 
 URL Source: https://claude.com/resources/guides/2026-agentic-coding-trends-report
 

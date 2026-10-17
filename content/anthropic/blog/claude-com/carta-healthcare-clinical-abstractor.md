@@ -1,4 +1,4 @@
-Title: How Carta Healthcare built clinical AI with Claude
+Title: How Carta Healthcare gets AI to reason like a clinical abstractor
 
 URL Source: https://claude.com/resources/articles/carta-healthcare-clinical-abstractor
 

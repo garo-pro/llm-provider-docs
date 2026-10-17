@@ -1,4 +1,4 @@
-Title: The vision: AI-first enterprises that reshape life sciences - The Enterprise AI Transformation Guide for Life Sciences
+Title: The vision: AI-first enterprises that reshape life sciences
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-life-sciences/the-vision-ai-first-enterprises-that-reshape-life-sciences
 

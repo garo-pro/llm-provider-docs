@@ -1,4 +1,4 @@
-Title: Real-world code modernization use cases - The code modernization playbook
+Title: Real-world code modernization use cases
 
 URL Source: https://claude.com/resources/guides/the-code-modernization-playbook/real-world-code-modernization-use-cases
 

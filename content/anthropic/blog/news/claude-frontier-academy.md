@@ -1,4 +1,4 @@
-Title: Claude Frontier Academy: $100M to train 10,000 engineers
+Title: Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap
 
 URL Source: https://www.anthropic.com/news/claude-frontier-academy
 

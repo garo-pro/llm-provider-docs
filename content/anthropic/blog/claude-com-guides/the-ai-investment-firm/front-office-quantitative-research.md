@@ -1,4 +1,4 @@
-Title: Front office: Quantitative research - The AI investment firm
+Title: Front office: Quantitative research
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/front-office-quantitative-research
 

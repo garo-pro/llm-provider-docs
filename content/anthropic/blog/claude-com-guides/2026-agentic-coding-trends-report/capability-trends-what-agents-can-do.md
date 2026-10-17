@@ -1,4 +1,4 @@
-Title: Capability trends: What agents can do - 2026 agentic coding trends report
+Title: Capability trends: What agents can do
 
 URL Source: https://claude.com/resources/guides/2026-agentic-coding-trends-report/capability-trends-what-agents-can-do
 

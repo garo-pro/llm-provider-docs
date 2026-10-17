@@ -1,4 +1,4 @@
-Title: Your AI transformation starts today - The Enterprise AI Transformation Guide for Life Sciences
+Title: Your AI transformation starts today
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-life-sciences/your-ai-transformation-starts-today
 

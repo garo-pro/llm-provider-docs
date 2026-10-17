@@ -1,4 +1,4 @@
-Title: Improving Fable 5's safeguards
+Title: Improving Fable 5's biology safeguards
 
 URL Source: https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards
 

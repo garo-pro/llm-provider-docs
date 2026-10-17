@@ -1,4 +1,4 @@
-Title: A maturity model: Claude Cowork in five levels - Deploying Claude across your organization: How Anthropic uses Cowork
+Title: A maturity model: Claude Cowork in five levels
 
 URL Source: https://claude.com/resources/guides/deploying-claude-across-your-organization/maturity-model
 

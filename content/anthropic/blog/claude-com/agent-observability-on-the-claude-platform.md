@@ -1,4 +1,4 @@
-Title: Trace agents with OpenTelemetry on the Claude Platform
+Title: Agent observability on the Claude Platform
 
 URL Source: https://claude.com/resources/articles/agent-observability-on-the-claude-platform
 

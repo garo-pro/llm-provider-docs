@@ -1,4 +1,4 @@
-Title: Launch stage - The founder's playbook: Building an AI-native startup
+Title: Launch stage
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/launch-stage
 

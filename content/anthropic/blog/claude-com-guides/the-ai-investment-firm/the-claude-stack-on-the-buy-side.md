@@ -1,4 +1,4 @@
-Title: The Claude stack on the buy side - The AI investment firm
+Title: The Claude stack on the buy side
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/the-claude-stack-on-the-buy-side
 

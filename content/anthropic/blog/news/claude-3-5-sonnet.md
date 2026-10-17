@@ -1,4 +1,4 @@
-Title: Introducing Claude 3.5 Sonnet
+Title: Claude 3.5 Sonnet
 
 URL Source: https://www.anthropic.com/news/claude-3-5-sonnet
 

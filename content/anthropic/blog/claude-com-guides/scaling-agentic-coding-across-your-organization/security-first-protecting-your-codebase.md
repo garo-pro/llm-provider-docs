@@ -1,4 +1,4 @@
-Title: Security first: protecting your codebase - Scaling agentic coding across your organization
+Title: Security first: protecting your codebase
 
 URL Source: https://claude.com/resources/guides/scaling-agentic-coding-across-your-organization/security-first-protecting-your-codebase
 

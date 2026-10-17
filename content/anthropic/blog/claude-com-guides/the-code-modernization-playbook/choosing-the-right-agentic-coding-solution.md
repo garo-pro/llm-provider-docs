@@ -1,4 +1,4 @@
-Title: Choosing the right agentic coding solution - The code modernization playbook
+Title: Choosing the right agentic coding solution
 
 URL Source: https://claude.com/resources/guides/the-code-modernization-playbook/choosing-the-right-agentic-coding-solution
 

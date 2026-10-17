@@ -1,4 +1,4 @@
-Title: Foreword - The enterprise AI transformation guide for retail
+Title: Foreword
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail/foreword
 

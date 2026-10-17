@@ -1,4 +1,4 @@
-Title: How the work is controlled - The AI investment firm
+Title: How the work is controlled
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/how-the-work-is-controlled
 

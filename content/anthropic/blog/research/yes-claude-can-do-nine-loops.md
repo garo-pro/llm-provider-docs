@@ -1,4 +1,4 @@
-Title: Claude computes a nine-loop amplitude in N=4 super-Yang-Mills
+Title: Yes, Claude can do Nine Loops
 
 URL Source: https://www.anthropic.com/research/yes-claude-can-do-nine-loops
 

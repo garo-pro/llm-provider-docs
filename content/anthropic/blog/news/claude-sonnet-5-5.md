@@ -1,4 +1,4 @@
-Title: Introducing Claude Sonnet 5.5
+Title: Claude Sonnet 5.5
 
 URL Source: https://www.anthropic.com/claude-sonnet-5-5
 

@@ -1,4 +1,4 @@
-Title: Claude Desktop Extensions: One-click MCP server installation for Claude Desktop
+Title: Desktop Extensions: One-click MCP server installation for Claude Desktop
 
 URL Source: https://www.anthropic.com/engineering/desktop-extensions
 

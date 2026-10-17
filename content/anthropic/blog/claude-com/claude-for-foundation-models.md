@@ -1,4 +1,4 @@
-Title: Claude support for Apple's Foundation Models framework
+Title: Building intelligent apps for Apple platforms with Claude in the Foundation Models framework
 
 URL Source: https://claude.com/resources/articles/claude-for-foundation-models
 

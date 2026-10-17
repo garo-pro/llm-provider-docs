@@ -1,4 +1,4 @@
-Title: Claude Mythos Preview's cybersecurity capabilities
+Title: Assessing Claude Mythos Preview’s cybersecurity capabilities
 
 URL Source: https://www.anthropic.com/research/mythos-preview
 

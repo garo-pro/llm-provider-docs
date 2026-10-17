@@ -1,4 +1,4 @@
-Title: Foreword - Claude for the legal industry
+Title: Foreword
 
 URL Source: https://claude.com/resources/guides/claude-for-the-legal-industry/foreword
 

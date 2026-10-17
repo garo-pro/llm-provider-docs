@@ -1,4 +1,4 @@
-Title: The enterprise AI transformation guide
+Title: The Enterprise AI Transformation Guide
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide
 

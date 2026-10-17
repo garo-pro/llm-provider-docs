@@ -1,4 +1,4 @@
-Title: Popular use cases - Claude Cowork product guide
+Title: Popular use cases
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/popular-use-cases
 

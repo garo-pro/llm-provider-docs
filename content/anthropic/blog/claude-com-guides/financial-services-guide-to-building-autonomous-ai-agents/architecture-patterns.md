@@ -1,4 +1,4 @@
-Title: Architecture patterns and agentic system design - The financial services guide to building autonomous AI agents
+Title: Architecture patterns and agentic system design
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/architecture-patterns
 

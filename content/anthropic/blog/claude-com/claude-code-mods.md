@@ -1,4 +1,4 @@
-Title: Customize Claude Code with mods in TypeScript
+Title: Customize Claude Code with mods
 
 URL Source: https://claude.com/resources/articles/claude-code-mods
 

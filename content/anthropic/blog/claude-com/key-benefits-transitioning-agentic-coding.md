@@ -1,4 +1,4 @@
-Title: The key benefits of transitioning to agentic coding
+Title: What are the key benefits of transitioning to agentic coding for software development?
 
 URL Source: https://claude.com/resources/articles/key-benefits-transitioning-agentic-coding
 

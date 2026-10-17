@@ -1,4 +1,4 @@
-Title: The current landscape - The 2026 state of AI agents report
+Title: The current landscape
 
 URL Source: https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/research-insights-part-i-the-current-landscape
 

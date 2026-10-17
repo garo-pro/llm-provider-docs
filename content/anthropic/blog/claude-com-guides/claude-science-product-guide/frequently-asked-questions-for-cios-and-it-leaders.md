@@ -1,4 +1,4 @@
-Title: Frequently asked questions for CIOs and IT leaders - Claude Science product guide
+Title: Frequently asked questions for CIOs and IT leaders
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/frequently-asked-questions-for-cios-and-it-leaders
 

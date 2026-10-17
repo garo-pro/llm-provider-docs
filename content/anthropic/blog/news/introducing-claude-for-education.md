@@ -1,4 +1,4 @@
-Title: Introducing Claude for education
+Title: Introducing Claude for Education
 
 URL Source: https://www.anthropic.com/news/introducing-claude-for-education
 

@@ -1,4 +1,4 @@
-Title: The Anthropic Economic Index
+Title: Anthropic Economic Index Understanding AI’s effects on the economy
 
 URL Source: https://www.anthropic.com/economic-index
 

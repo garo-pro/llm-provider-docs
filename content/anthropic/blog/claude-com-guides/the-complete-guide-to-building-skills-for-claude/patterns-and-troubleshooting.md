@@ -1,4 +1,4 @@
-Title: Patterns and troubleshooting - The complete guide to building Skills for Claude
+Title: Patterns and troubleshooting
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude/patterns-and-troubleshooting
 

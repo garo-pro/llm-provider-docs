@@ -1,4 +1,4 @@
-Title: Scaling agentic coding across your organization
+Title: Scaling Agentic Coding Across Your Organization
 
 URL Source: https://claude.com/resources/guides/scaling-agentic-coding-across-your-organization
 

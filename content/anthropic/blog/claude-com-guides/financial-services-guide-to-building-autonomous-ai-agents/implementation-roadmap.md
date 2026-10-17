@@ -1,4 +1,4 @@
-Title: Building your implementation roadmap, timelines, and team - The financial services guide to building autonomous AI agents
+Title: Building your implementation roadmap, timelines, and team
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/implementation-roadmap
 

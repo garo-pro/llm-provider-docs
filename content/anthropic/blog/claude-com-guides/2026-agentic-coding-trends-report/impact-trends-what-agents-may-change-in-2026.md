@@ -1,4 +1,4 @@
-Title: Impact trends: What agents may change in 2026 - 2026 agentic coding trends report
+Title: Impact trends: What agents may change in 2026
 
 URL Source: https://claude.com/resources/guides/2026-agentic-coding-trends-report/impact-trends-what-agents-may-change-in-2026
 

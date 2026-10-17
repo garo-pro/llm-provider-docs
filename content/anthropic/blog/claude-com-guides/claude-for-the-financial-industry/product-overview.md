@@ -1,4 +1,4 @@
-Title: Product overview - Claude for the financial industry
+Title: Product overview
 
 URL Source: https://claude.com/resources/guides/claude-for-the-financial-industry/product-overview
 

@@ -1,4 +1,4 @@
-Title: Anthropic joins White House AI education pledge
+Title: Anthropic Signs White House Pledge to America's Youth: Investing in AI Education
 
 URL Source: https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education
 

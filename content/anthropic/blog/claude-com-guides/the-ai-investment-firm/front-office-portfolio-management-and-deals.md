@@ -1,4 +1,4 @@
-Title: Front office: Portfolio management and deals - The AI investment firm
+Title: Front office: Portfolio management and deals
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/front-office-portfolio-management-and-deals
 

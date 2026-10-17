@@ -1,4 +1,4 @@
-Title: Fundamentals - The complete guide to building Skills for Claude
+Title: Fundamentals
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude/fundamentals
 

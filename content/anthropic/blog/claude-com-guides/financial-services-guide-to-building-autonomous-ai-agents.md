@@ -1,4 +1,4 @@
-Title: The financial services guide to building autonomous AI agents
+Title: The Financial Services Guide to Building Autonomous AI Agents
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents
 

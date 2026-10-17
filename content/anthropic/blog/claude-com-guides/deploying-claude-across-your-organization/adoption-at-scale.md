@@ -1,4 +1,4 @@
-Title: Driving Claude Cowork adoption at scale - Deploying Claude across your organization: How Anthropic uses Cowork
+Title: Driving Claude Cowork adoption at scale
 
 URL Source: https://claude.com/resources/guides/deploying-claude-across-your-organization/adoption-at-scale
 

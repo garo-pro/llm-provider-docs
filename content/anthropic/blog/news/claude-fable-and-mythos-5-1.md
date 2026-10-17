@@ -1,4 +1,4 @@
-Title: Introducing Claude Fable 5.1 and Claude Mythos 5.1
+Title: :Claude: Fable 5.1and Mythos 5.1
 
 URL Source: https://www.anthropic.com/claude-fable-and-mythos-5-1
 

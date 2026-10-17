@@ -1,4 +1,4 @@
-Title: Agent harness design: 3 patterns for harnessing Claude's intelligence
+Title: Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence
 
 URL Source: https://claude.com/resources/articles/harnessing-claudes-intelligence
 

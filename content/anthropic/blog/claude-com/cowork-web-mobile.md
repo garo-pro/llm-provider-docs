@@ -1,4 +1,4 @@
-Title: Claude Cowork on web and mobile: hand off work anywhere
+Title: Claude Cowork is coming to mobile and web
 
 URL Source: https://claude.com/resources/articles/cowork-web-mobile
 

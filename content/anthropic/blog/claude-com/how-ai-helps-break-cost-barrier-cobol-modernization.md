@@ -1,4 +1,4 @@
-Title: How AI helps break the cost barrier to COBOL modernization
+Title: COBOL Modernization with AI: Breaking the Cost Barrier
 
 URL Source: https://claude.com/resources/articles/how-ai-helps-break-cost-barrier-cobol-modernization
 

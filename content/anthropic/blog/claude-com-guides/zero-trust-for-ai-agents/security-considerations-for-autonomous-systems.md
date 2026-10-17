@@ -1,4 +1,4 @@
-Title: Security considerations for autonomous systems - Zero Trust for AI agents
+Title: Security considerations for autonomous systems
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/security-considerations-for-autonomous-systems
 

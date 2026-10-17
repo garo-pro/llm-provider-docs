@@ -1,4 +1,4 @@
-Title: How the product designer who built Claude Design uses it
+Title: How the product designer who built Claude Design uses it to explore ideas before building them
 
 URL Source: https://claude.com/resources/articles/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them
 

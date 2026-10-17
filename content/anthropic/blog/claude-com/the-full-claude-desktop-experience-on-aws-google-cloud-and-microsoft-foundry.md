@@ -1,4 +1,4 @@
-Title: Claude Desktop on AWS, Google Cloud, and Microsoft Foundry
+Title: The full Claude Desktop experience on AWS, Google Cloud, and Microsoft Foundry
 
 URL Source: https://claude.com/resources/articles/the-full-claude-desktop-experience-on-aws-google-cloud-and-microsoft-foundry
 

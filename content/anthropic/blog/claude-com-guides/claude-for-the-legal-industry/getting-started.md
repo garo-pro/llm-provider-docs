@@ -1,4 +1,4 @@
-Title: Getting started - Claude for the legal industry
+Title: Getting started
 
 URL Source: https://claude.com/resources/guides/claude-for-the-legal-industry/getting-started
 

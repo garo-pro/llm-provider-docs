@@ -1,4 +1,4 @@
-Title: Updating sales restrictions for unsupported regions
+Title: Updating restrictions of sales to unsupported regions
 
 URL Source: https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions
 

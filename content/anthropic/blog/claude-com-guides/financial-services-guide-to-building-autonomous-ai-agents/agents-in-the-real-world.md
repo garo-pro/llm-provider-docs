@@ -1,4 +1,4 @@
-Title: Financial services agents in the real world - The financial services guide to building autonomous AI agents
+Title: Financial services agents in the real world
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/agents-in-the-real-world
 

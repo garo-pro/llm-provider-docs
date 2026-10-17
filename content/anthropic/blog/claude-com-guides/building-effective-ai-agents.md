@@ -1,4 +1,4 @@
-Title: Building effective AI agents: Architecture patterns
+Title: Building Effective AI Agents: Architecture Patterns and Implementation Frameworks
 
 URL Source: https://claude.com/resources/guides/building-effective-ai-agents
 

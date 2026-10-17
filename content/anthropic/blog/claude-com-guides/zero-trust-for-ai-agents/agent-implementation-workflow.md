@@ -1,4 +1,4 @@
-Title: Agent implementation workflow - Zero Trust for AI agents
+Title: Agent implementation workflow
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/agent-implementation-workflow
 

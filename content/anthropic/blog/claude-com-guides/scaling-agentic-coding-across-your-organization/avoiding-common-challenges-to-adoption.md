@@ -1,4 +1,4 @@
-Title: Avoiding common challenges to adoption - Scaling agentic coding across your organization
+Title: Avoiding common challenges to adoption
 
 URL Source: https://claude.com/resources/guides/scaling-agentic-coding-across-your-organization/avoiding-common-challenges-to-adoption
 

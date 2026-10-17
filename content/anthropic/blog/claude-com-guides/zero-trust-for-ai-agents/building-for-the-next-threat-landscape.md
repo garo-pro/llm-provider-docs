@@ -1,4 +1,4 @@
-Title: Building for the next threat landscape - Zero Trust for AI agents
+Title: Building for the next threat landscape
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/building-for-the-next-threat-landscape
 

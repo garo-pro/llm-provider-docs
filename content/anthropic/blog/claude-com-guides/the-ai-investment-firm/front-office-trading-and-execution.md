@@ -1,4 +1,4 @@
-Title: Front office: Trading and execution - The AI investment firm
+Title: Front office: Trading and execution
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/front-office-trading-and-execution
 

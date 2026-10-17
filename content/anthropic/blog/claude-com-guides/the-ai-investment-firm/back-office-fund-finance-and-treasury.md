@@ -1,4 +1,4 @@
-Title: Back office: Fund finance and treasury - The AI investment firm
+Title: Back office: Fund finance and treasury
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/back-office-fund-finance-and-treasury
 

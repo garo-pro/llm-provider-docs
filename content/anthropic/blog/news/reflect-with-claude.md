@@ -1,4 +1,4 @@
-Title: A new way to reflect on how you use Claude
+Title: Introducing a way to reflect on how you use Claude
 
 URL Source: https://www.anthropic.com/news/reflect-with-claude
 

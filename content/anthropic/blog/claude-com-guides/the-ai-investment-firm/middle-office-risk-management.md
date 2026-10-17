@@ -1,4 +1,4 @@
-Title: Middle office: Risk management - The AI investment firm
+Title: Middle office: Risk management
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/middle-office-risk-management
 

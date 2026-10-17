@@ -1,4 +1,4 @@
-Title: The founder's playbook: Building an AI-native startup
+Title: The Founder's Playbook: Building an AI-Native Startup
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup
 

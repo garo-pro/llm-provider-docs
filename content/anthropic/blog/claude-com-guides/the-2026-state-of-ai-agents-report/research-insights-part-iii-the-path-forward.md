@@ -1,4 +1,4 @@
-Title: The path forward - The 2026 state of AI agents report
+Title: The path forward
 
 URL Source: https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/research-insights-part-iii-the-path-forward
 

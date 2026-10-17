@@ -1,4 +1,4 @@
-Title: The AI imperative for life sciences - The Enterprise AI Transformation Guide for Life Sciences
+Title: The AI imperative for life sciences
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-life-sciences/the-ai-imperative-for-life-sciences
 

@@ -1,4 +1,4 @@
-Title: Better together: How Anthropic and AWS power autonomous AI agents - The financial services guide to building autonomous AI agents
+Title: Better together: How Anthropic and AWS power autonomous AI agents
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/better-together
 

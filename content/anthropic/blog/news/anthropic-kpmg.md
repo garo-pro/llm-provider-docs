@@ -1,4 +1,4 @@
-Title: KPMG integrates Claude across its workforce
+Title: KPMG integrates Claude across its core business and workforce of more than 276,000 in strategic alliance
 
 URL Source: https://www.anthropic.com/news/anthropic-kpmg
 

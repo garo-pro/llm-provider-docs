@@ -1,4 +1,4 @@
-Title: The complete guide to building Skills for Claude
+Title: The Complete Guide to Building Skills for Claude
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude
 

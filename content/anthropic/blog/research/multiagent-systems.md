@@ -1,4 +1,4 @@
-Title: Patterns and problems in multiagent systems
+Title: Patterns and problems in emerging multiagent systems
 
 URL Source: https://www.anthropic.com/research/multiagent-systems
 

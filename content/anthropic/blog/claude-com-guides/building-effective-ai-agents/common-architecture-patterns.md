@@ -1,4 +1,4 @@
-Title: Common architecture patterns - Building effective AI agents: Architecture patterns
+Title: Common architecture patterns
 
 URL Source: https://claude.com/resources/guides/building-effective-ai-agents/common-architecture-patterns
 

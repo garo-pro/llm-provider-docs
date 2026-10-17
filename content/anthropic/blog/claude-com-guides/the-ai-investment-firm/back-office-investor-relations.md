@@ -1,4 +1,4 @@
-Title: Back office: Investor relations - The AI investment firm
+Title: Back office: Investor relations
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/back-office-investor-relations
 

@@ -1,4 +1,4 @@
-Title: Building an AI-first enterprise: real-world examples - The Enterprise AI Transformation Guide for Life Sciences
+Title: Building an AI-first enterprise: real-world examples
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-life-sciences/real-world-examples
 

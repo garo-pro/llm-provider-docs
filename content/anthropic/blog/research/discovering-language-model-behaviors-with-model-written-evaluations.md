@@ -1,4 +1,4 @@
-Title: Discovering behaviors with model-written evaluations
+Title: Discovering Language Model Behaviors with Model-Written Evaluations
 
 URL Source: https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations
 

@@ -1,4 +1,4 @@
-Title: Introducing the Anthropic Fellows Program
+Title: Introducing the Anthropic Fellows Program for AI Safety Research
 
 URL Source: https://alignment.anthropic.com/2024/anthropic-fellows-program
 

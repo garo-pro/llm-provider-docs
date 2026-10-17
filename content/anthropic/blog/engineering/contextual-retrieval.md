@@ -1,4 +1,4 @@
-Title: Contextual Retrieval in AI Systems
+Title: Introducing Contextual Retrieval
 
 URL Source: https://www.anthropic.com/engineering/contextual-retrieval
 

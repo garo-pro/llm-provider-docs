@@ -1,4 +1,4 @@
-Title: Step 1: Lay the foundation - The enterprise AI transformation guide for retail
+Title: Step 1: Lay the foundation
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-retail/lay-the-foundation
 

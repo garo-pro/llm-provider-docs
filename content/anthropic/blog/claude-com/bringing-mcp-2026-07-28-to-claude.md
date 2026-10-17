@@ -1,4 +1,4 @@
-Title: MCP 2026-07-28 spec: stateless core, coming to Claude
+Title: Bringing MCP 2026-07-28 to Claude
 
 URL Source: https://claude.com/resources/articles/bringing-mcp-2026-07-28-to-claude
 

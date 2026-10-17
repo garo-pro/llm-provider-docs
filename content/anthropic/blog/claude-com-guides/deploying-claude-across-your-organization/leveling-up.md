@@ -1,4 +1,4 @@
-Title: Leveling up with Claude Cowork - Deploying Claude across your organization: How Anthropic uses Cowork
+Title: Leveling up with Claude Cowork
 
 URL Source: https://claude.com/resources/guides/deploying-claude-across-your-organization/leveling-up
 

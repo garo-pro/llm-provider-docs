@@ -1,4 +1,4 @@
-Title: Connector observability and in-app directory submission
+Title: Observability for developers building connectors
 
 URL Source: https://claude.com/resources/articles/observability-for-developers-building-connectors
 

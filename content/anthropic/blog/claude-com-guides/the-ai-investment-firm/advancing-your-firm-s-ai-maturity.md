@@ -1,4 +1,4 @@
-Title: Advancing your firm’s AI maturity - The AI investment firm
+Title: Advancing your firm’s AI maturity
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/advancing-your-firm-s-ai-maturity
 

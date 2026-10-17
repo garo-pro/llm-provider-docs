@@ -1,4 +1,4 @@
-Title: Harvey, Bolt, Shopify & Lovable test Claude Opus 4.6 pre-launch
+Title: Behind the model launch: What customers discovered testing Claude Opus 4.6 early
 
 URL Source: https://claude.com/resources/articles/behind-model-launch-what-customers-discovered-testing-claude-opus-4-6-early
 

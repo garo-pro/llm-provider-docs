@@ -1,4 +1,4 @@
-Title: Introducing citations on the Anthropic API
+Title: Introducing Citations on the Anthropic API
 
 URL Source: https://claude.com/resources/articles/introducing-citations-api
 

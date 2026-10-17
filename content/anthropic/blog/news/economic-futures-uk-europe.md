@@ -1,4 +1,4 @@
-Title: Economic Futures Programme in the UK and Europe
+Title: Launching the Anthropic Economic Futures Programme in the UK and Europe
 
 URL Source: https://www.anthropic.com/news/economic-futures-uk-europe
 

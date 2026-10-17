@@ -1,4 +1,4 @@
-Title: Memory for Claude Managed Agents: agents that learn across sessions
+Title: Built-in memory for Claude Managed Agents
 
 URL Source: https://claude.com/resources/articles/claude-managed-agents-memory
 

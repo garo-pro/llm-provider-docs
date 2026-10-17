@@ -1,4 +1,4 @@
-Title: Modernize – or get left behind - The code modernization playbook
+Title: Modernize – or get left behind
 
 URL Source: https://claude.com/resources/guides/the-code-modernization-playbook/modernize-or-get-left-behind
 

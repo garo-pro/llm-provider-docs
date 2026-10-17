@@ -1,4 +1,4 @@
-Title: How Claude's text watermarking works
+Title: How Claude’s text watermark works
 
 URL Source: https://www.anthropic.com/news/claude-text-watermark
 

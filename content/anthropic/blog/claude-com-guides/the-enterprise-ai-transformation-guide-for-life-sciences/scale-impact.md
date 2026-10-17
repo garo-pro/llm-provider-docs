@@ -1,4 +1,4 @@
-Title: Step 3: Scale impact - The Enterprise AI Transformation Guide for Life Sciences
+Title: Step 3: Scale impact
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide-for-life-sciences/scale-impact
 

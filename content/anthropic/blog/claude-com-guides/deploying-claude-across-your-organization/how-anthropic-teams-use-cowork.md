@@ -1,4 +1,4 @@
-Title: How teams at Anthropic use Claude Cowork - Deploying Claude across your organization: How Anthropic uses Cowork
+Title: How teams at Anthropic use Claude Cowork
 
 URL Source: https://claude.com/resources/guides/deploying-claude-across-your-organization/how-anthropic-teams-use-cowork
 

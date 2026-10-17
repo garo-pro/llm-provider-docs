@@ -1,4 +1,4 @@
-Title: Common use cases and applications for AI agents - Building effective AI agents: Architecture patterns
+Title: Common use cases and applications for AI agents
 
 URL Source: https://claude.com/resources/guides/building-effective-ai-agents/common-use-cases-and-applications-for-ai-agents
 

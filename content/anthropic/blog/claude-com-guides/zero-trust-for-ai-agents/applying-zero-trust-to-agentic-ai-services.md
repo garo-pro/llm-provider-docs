@@ -1,4 +1,4 @@
-Title: Applying Zero Trust to agentic AI services - Zero Trust for AI agents
+Title: Applying Zero Trust to agentic AI services
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/applying-zero-trust-to-agentic-ai-services
 

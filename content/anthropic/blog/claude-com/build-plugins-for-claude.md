@@ -1,4 +1,4 @@
-Title: Build plugins for Claude with the directory submission portal
+Title: Build plugins for Claude
 
 URL Source: https://claude.com/resources/articles/build-plugins-for-claude
 

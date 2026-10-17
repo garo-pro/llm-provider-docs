@@ -1,4 +1,4 @@
-Title: Foreword: From assistance to collaboration - 2026 agentic coding trends report
+Title: Foreword: From assistance to collaboration
 
 URL Source: https://claude.com/resources/guides/2026-agentic-coding-trends-report/foreword-from-assistance-to-collaboration
 

@@ -1,4 +1,4 @@
-Title: AI agents in production - The 2026 state of AI agents report
+Title: AI agents in production
 
 URL Source: https://claude.com/resources/guides/the-2026-state-of-ai-agents-report/ai-agents-in-production
 

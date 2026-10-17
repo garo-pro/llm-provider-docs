@@ -1,4 +1,4 @@
-Title: Prompt engineering best practices for 2026
+Title: Best practices for prompt engineering for 2026
 
 URL Source: https://claude.com/resources/articles/best-practices-for-prompt-engineering
 

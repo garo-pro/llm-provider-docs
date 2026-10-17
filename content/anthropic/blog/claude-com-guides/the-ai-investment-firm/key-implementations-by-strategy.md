@@ -1,4 +1,4 @@
-Title: Key implementations by strategy - The AI investment firm
+Title: Key implementations by strategy
 
 URL Source: https://claude.com/resources/guides/the-ai-investment-firm/key-implementations-by-strategy
 

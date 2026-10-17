@@ -1,4 +1,4 @@
-Title: Building an AI-first life sciences organization: real-world examples - Claude Science product guide
+Title: Building an AI-first life sciences organization: real-world examples
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/building-an-ai-first-life-sciences-organization
 

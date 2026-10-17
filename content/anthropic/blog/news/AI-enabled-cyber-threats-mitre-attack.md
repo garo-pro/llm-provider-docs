@@ -1,4 +1,4 @@
-Title: Mapping AI-enabled cyber threats
+Title: What we learned mapping a year’s worth of AI-enabled cyber threats
 
 URL Source: https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack
 

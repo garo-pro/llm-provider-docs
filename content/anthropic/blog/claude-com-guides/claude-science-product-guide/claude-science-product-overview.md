@@ -1,4 +1,4 @@
-Title: Claude Science product overview - Claude Science product guide
+Title: Claude Science product overview
 
 URL Source: https://claude.com/resources/guides/claude-science-product-guide/claude-science-product-overview
 

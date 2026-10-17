@@ -1,4 +1,4 @@
-Title: Code Review for Claude Code
+Title: Bringing Code Review to Claude Code
 
 URL Source: https://claude.com/resources/articles/code-review
 

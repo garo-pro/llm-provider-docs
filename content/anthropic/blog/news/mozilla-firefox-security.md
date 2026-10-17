@@ -1,4 +1,4 @@
-Title: Partnering with Mozilla on Firefox security
+Title: Partnering with Mozilla to improve Firefox’s security
 
 URL Source: https://www.anthropic.com/news/mozilla-firefox-security
 

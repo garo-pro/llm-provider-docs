@@ -1,4 +1,4 @@
-Title: Current threats to agentic systems - Zero Trust for AI agents
+Title: Current threats to agentic systems
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents/current-threats-to-agentic-systems
 

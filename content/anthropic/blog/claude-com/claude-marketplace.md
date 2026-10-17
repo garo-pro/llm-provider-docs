@@ -1,4 +1,4 @@
-Title: Claude Marketplace: plugins and connectors, products and agents, and service partners
+Title: Claude Marketplace: one place to discover plugins, agents, and services from our partners
 
 URL Source: https://claude.com/resources/articles/claude-marketplace
 

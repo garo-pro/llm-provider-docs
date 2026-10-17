@@ -1,4 +1,4 @@
-Title: Self-hosted environments for Claude Code
+Title: Run Claude Code sessions on your own compute
 
 URL Source: https://claude.com/resources/articles/run-claude-code-sessions-on-your-own-compute
 

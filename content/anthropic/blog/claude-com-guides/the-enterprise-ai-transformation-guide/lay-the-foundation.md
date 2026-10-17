@@ -1,4 +1,4 @@
-Title: Step 1: Lay the foundation - The enterprise AI transformation guide
+Title: Step 1: Lay the foundation
 
 URL Source: https://claude.com/resources/guides/the-enterprise-ai-transformation-guide/lay-the-foundation
 

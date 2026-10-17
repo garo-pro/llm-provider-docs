@@ -1,4 +1,4 @@
-Title: Why financial services institutions need AI agents (now) - The financial services guide to building autonomous AI agents
+Title: Why financial services institutions need AI agents (now)
 
 URL Source: https://claude.com/resources/guides/financial-services-guide-to-building-autonomous-ai-agents/why-ai-agents-now
 

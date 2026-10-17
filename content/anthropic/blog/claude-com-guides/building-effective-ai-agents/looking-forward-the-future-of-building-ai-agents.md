@@ -1,4 +1,4 @@
-Title: Looking forward: the future of building AI agents - Building effective AI agents: Architecture patterns
+Title: Looking forward: the future of building AI agents
 
 URL Source: https://claude.com/resources/guides/building-effective-ai-agents/looking-forward-the-future-of-building-ai-agents
 

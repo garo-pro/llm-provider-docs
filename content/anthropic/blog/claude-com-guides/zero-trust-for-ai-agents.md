@@ -1,4 +1,4 @@
-Title: Zero Trust for AI agents
+Title: Zero Trust for AI Agents
 
 URL Source: https://claude.com/resources/guides/zero-trust-for-ai-agents
 

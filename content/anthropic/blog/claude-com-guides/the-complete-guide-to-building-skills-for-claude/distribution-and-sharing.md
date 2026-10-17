@@ -1,4 +1,4 @@
-Title: Distribution and sharing - The complete guide to building Skills for Claude
+Title: Distribution and sharing
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude/distribution-and-sharing
 

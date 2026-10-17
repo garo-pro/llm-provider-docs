@@ -1,4 +1,4 @@
-Title: What is Claude Cowork? - Claude Cowork product guide
+Title: What is Claude Cowork?
 
 URL Source: https://claude.com/resources/guides/claude-cowork-product-guide/what-is-claude-cowork
 

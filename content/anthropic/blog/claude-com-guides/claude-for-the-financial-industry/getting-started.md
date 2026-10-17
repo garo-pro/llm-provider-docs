@@ -1,4 +1,4 @@
-Title: Getting started - Claude for the financial industry
+Title: Getting started
 
 URL Source: https://claude.com/resources/guides/claude-for-the-financial-industry/getting-started
 

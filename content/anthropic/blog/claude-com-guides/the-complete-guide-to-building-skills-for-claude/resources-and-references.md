@@ -1,4 +1,4 @@
-Title: Resources and references - The complete guide to building Skills for Claude
+Title: Resources and references
 
 URL Source: https://claude.com/resources/guides/the-complete-guide-to-building-skills-for-claude/resources-and-references
 

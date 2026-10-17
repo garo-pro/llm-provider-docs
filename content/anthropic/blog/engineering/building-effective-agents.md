@@ -1,4 +1,4 @@
-Title: Building Effective AI Agents
+Title: Building effective agents
 
 URL Source: https://www.anthropic.com/engineering/building-effective-agents
 

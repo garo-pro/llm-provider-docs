@@ -1,4 +1,4 @@
-Title: How to create Skills for Claude: steps and examples
+Title: How to create Skills: Key steps, limitations, and examples
 
 URL Source: https://claude.com/resources/articles/how-to-create-skills-key-steps-limitations-and-examples
 

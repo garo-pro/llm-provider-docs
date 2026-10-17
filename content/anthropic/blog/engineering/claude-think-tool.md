@@ -1,4 +1,4 @@
-Title: The \"think\" tool: Enabling Claude to stop and think
+Title: The "think" tool: Enabling Claude to stop and think in complex tool use situations
 
 URL Source: https://www.anthropic.com/engineering/claude-think-tool
 
