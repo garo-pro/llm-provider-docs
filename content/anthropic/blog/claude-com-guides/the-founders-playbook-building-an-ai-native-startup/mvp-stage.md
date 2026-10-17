@@ -1,4 +1,4 @@
-Title: MVP stage - The founder's playbook: Building an AI-native startup
+Title: MVP stage
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/mvp-stage
 

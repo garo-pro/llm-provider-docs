@@ -1,4 +1,4 @@
-Title: Designing AI resistant technical evaluations
+Title: Designing AI-resistant technical evaluations
 
 URL Source: https://www.anthropic.com/engineering/AI-resistant-technical-evaluations
 

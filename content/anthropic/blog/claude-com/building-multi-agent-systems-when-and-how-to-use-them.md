@@ -1,4 +1,4 @@
-Title: When to use multi-agent systems (and when not to)
+Title: Building multi-agent systems: When and how to use them
 
 URL Source: https://claude.com/resources/articles/building-multi-agent-systems-when-and-how-to-use-them
 

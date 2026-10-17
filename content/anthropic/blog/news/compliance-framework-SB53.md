@@ -1,4 +1,4 @@
-Title: Our compliance framework for California's SB 53
+Title: Sharing our compliance framework for California's Transparency in Frontier AI Act
 
 URL Source: https://www.anthropic.com/news/compliance-framework-SB53
 

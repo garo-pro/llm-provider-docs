@@ -1,4 +1,4 @@
-Title: Foreword - Claude for the financial industry
+Title: Foreword
 
 URL Source: https://claude.com/resources/guides/claude-for-the-financial-industry/foreword
 

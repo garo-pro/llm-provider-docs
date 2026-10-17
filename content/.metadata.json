@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-17T09:52:43.217064Z",
+    "fetch_date": "2026-10-17T14:03:44.163787Z",
     "section": "all"
   },
   "items": [
@@ -9620,7 +9620,7 @@
       "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
       "status": "success",
       "path": "anthropic/blog/engineering/AI-resistant-technical-evaluations.md",
-      "sha256": "898f970e313c3326955e6663376ce7afae8092e7d9b887b38b22648336c9f913",
+      "sha256": "aed9ab99fb751abdb2a93868bd3ded8d445da186460fb73e2bd3f7d0a777a31b",
       "size": 18292
     },
     {
@@ -9655,8 +9655,8 @@
       "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
       "status": "success",
       "path": "anthropic/blog/engineering/claude-code-sandboxing.md",
-      "sha256": "fc529dad2a3b563e8e75f5feec77c6479cabda3fc367e524e65b987d8136dded",
-      "size": 8192
+      "sha256": "87f61fc48ca8a039a1841651a653d5b87ef629812197a4d806aa5f7ee4c8e950",
+      "size": 8203
     },
     {
       "url": "https://www.anthropic.com/engineering/claude-think-tool",
@@ -9774,8 +9774,8 @@
       "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
       "status": "success",
       "path": "anthropic/blog/engineering/writing-tools-for-agents.md",
-      "sha256": "0582ddc4343da6358d0940fcc30b9d5effa338c2881b6e456bfb3fc5602a2c4d",
-      "size": 24655
+      "sha256": "465dd5e3d86bac0d92c5621ff76d795c6c26014dc28bc9677d2a1a28d51c80dc",
+      "size": 24650
     },
     {
       "url": "https://www.anthropic.com/news/100k-context-windows",
@@ -9886,8 +9886,8 @@
       "url": "https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist",
       "status": "success",
       "path": "anthropic/blog/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist.md",
-      "sha256": "2011fbbebb5b7f4b4854b188a92c3224a26e7b53d84c5ff395a23414d9cbc68c",
-      "size": 8814
+      "sha256": "cf4253294731b49adb9ee6a497c1541a6c50d1d96bf7edde8c761f63c73754fa",
+      "size": 8826
     },
     {
       "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
@@ -9942,8 +9942,8 @@
       "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-amazon-compute.md",
-      "sha256": "fdbdaf594aa53f611570d2c9962ba2ced9f9a6ff7a1a6346762c4726b144de08",
-      "size": 5496
+      "sha256": "a2cff472359d738e5596f4afca492b27a8ae725570dc46b98688975cd4a995ae",
+      "size": 5525
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-amazon-trainium",
@@ -9963,8 +9963,8 @@
       "url": "https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations.md",
-      "sha256": "adec62f792538712505061361fc0b0e8e200286f80680a667d6e5e581c7bcbbe",
-      "size": 4758
+      "sha256": "9b52448097c31b413203857605a04454fc2b39ee4ace0ed543a34527c455ad28",
+      "size": 4788
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india",
@@ -9984,8 +9984,8 @@
       "url": "https://www.anthropic.com/news/anthropic-codepath-partnership",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-codepath-partnership.md",
-      "sha256": "4f34cb2b6f6202a7d504e57cbd84394f5757eddea6f79d8102d2f9930e1a31f2",
-      "size": 5408
+      "sha256": "f76379fdc1d5ad0c7010c37c0c97265227ac2c70c7214935faa835eb04098b4b",
+      "size": 5482
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
@@ -9998,14 +9998,14 @@
       "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-economic-index-connector.md",
-      "sha256": "95e796cb04dc01602dba49fb7f9e3d491c41700b678e595b353d8c7db010ed05",
-      "size": 2907
+      "sha256": "0fc4df7414d2432fa90968839e1a8bac70874e17881fc20a87e3f7e99b2a0ff3",
+      "size": 2914
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-education-report-how-university-students-use-claude.md",
-      "sha256": "6281b031e1766a52ac95dc2275e1022eda4d41c76ae53383a0c07073db32ce31",
+      "sha256": "d5c34e4ab82ed119e518469afa973038daa90f3fc98e44eaa23bd7cfcf88095e",
       "size": 21528
     },
     {
@@ -10110,8 +10110,8 @@
       "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation.md",
-      "sha256": "767a842882ff9f5beb7e11d70de03e91545a4a2dbad4937dfd7ed8ef753a7e46",
-      "size": 7882
+      "sha256": "2fa06ce781db1a4f6119ebaec8d1bfa5f99d6d84f938d17d3be04691536fbe28",
+      "size": 7918
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
@@ -10166,8 +10166,8 @@
       "url": "https://www.anthropic.com/news/anthropic-signs-cms-health-tech-ecosystem-pledge-to-advance-healthcare-interoperability",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-signs-cms-health-tech-ecosystem-pledge-to-advance-healthcare-interoperability.md",
-      "sha256": "f3a90465274b6e4bca18bb5a73baa434444a5c20443e1f46f3927048af67fd09",
-      "size": 3878
+      "sha256": "2dd07c9c312ad26ea58fb4b021a324f730c3db9486d6e2efbc65462a3036b192",
+      "size": 3927
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education",
@@ -10215,8 +10215,8 @@
       "url": "https://www.anthropic.com/news/ben-bernanke",
       "status": "success",
       "path": "anthropic/blog/news/ben-bernanke.md",
-      "sha256": "892a8141dfbd946b9055671b8636033f9f42f59532d0183224150d048dc6107a",
-      "size": 4958
+      "sha256": "8a4dce6a99a3af057a23d5b9e3329a1d1fac745dd227414f49d13d49a9bdad3f",
+      "size": 4975
     },
     {
       "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
@@ -10460,7 +10460,7 @@
       "url": "https://www.anthropic.com/news/claude-in-amazon-bedrock-fedramp-high",
       "status": "success",
       "path": "anthropic/blog/news/claude-in-amazon-bedrock-fedramp-high.md",
-      "sha256": "0c8282f2b1a11272389a6b737b853a026c6308db3ce123668b4a73bb2d7c3ec5",
+      "sha256": "56789106730ab30cbdd79592fec2421334f96879c9cc34990f86be359a1c809b",
       "size": 4294
     },
     {
@@ -10607,15 +10607,15 @@
       "url": "https://www.anthropic.com/news/compliance-framework-SB53",
       "status": "success",
       "path": "anthropic/blog/news/compliance-framework-SB53.md",
-      "sha256": "ca0a1a4ac8d56d8874cac4584a815b5616ec1300cf9b5593aaa8b11def73a9c6",
-      "size": 6342
+      "sha256": "da52c216c997189b3c90c914b70880ee9d34efcbef2c7baab58729a82460f676",
+      "size": 6376
     },
     {
       "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
       "status": "success",
       "path": "anthropic/blog/news/confidential-draft-s1-sec.md",
-      "sha256": "d984bc3f79c07840bb25db2c5dd78b8496ded1cda944223d5a3b4f320250627b",
-      "size": 1922
+      "sha256": "58406c8f68d6d2a19c35672ffdf6f556e1f08bed2e900a9b5dba41d57f7b6c8c",
+      "size": 1933
     },
     {
       "url": "https://www.anthropic.com/news/core-views-on-ai-safety",
@@ -10712,15 +10712,15 @@
       "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
       "status": "success",
       "path": "anthropic/blog/news/dxc-anthropic-alliance.md",
-      "sha256": "f013d2629ac28c97d25e03610dba506d2c18e2cdbafe646e8c4e28289b4d46e9",
-      "size": 5590
+      "sha256": "e324b3986adcce560da24ccd027eadc586cd7f73e10aaaae967c628e1cd0635d",
+      "size": 5642
     },
     {
       "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
       "status": "success",
       "path": "anthropic/blog/news/economic-futures-research-fund-agenda.md",
-      "sha256": "a51de78f2d27e428cb4c7511dc51f7ded546cfb363c24228120a8aa7c12b8639",
-      "size": 13407
+      "sha256": "55db48ae939094d80122fa29478bc9cf371c15b73fdb9c8f040aa0230952cee1",
+      "size": 13426
     },
     {
       "url": "https://www.anthropic.com/news/economic-futures-uk-europe",
@@ -10740,8 +10740,8 @@
       "url": "https://www.anthropic.com/news/elections-ai-2024",
       "status": "success",
       "path": "anthropic/blog/news/elections-ai-2024.md",
-      "sha256": "722e3136c2d15bbdf6a6c920dff5950eb6d3d88eb35eb25046ad0251eefce19b",
-      "size": 7436
+      "sha256": "2ce19034cf3a7f6e10250de8137b5af1a10a48169711536a13d232633370f7e7",
+      "size": 7426
     },
     {
       "url": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
@@ -10789,15 +10789,15 @@
       "url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
       "status": "success",
       "path": "anthropic/blog/news/expanding-global-operations-to-india.md",
-      "sha256": "b005b0be2faeae428d155188f1a7b176ea131ab432929ed082d502c3d7a21d3e",
-      "size": 4860
+      "sha256": "95ecb9f2bac6b3a07a4228fb47e182a1a38c9c3105a99afb3c782a19ab4f410d",
+      "size": 4888
     },
     {
       "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
       "status": "success",
       "path": "anthropic/blog/news/expanding-our-use-of-google-cloud-tpus-and-services.md",
-      "sha256": "8f33a8f4f8ffb43fe19d94bdba80593f32a8b460e184daad5e1192e77d1fa795",
-      "size": 3537
+      "sha256": "c43586d8d0106d24ad0afd02d1b506cca6e8da95fe9f56aef927ac92535f2f1f",
+      "size": 3550
     },
     {
       "url": "https://www.anthropic.com/news/expanding-project-glasswing",
@@ -10817,15 +10817,15 @@
       "url": "https://www.anthropic.com/news/fable-mythos-access",
       "status": "success",
       "path": "anthropic/blog/news/fable-mythos-access.md",
-      "sha256": "91aeec5b7cb5382318455e58068662142dc6d87f50fe3c8995799f03de4105b4",
-      "size": 6400
+      "sha256": "54136264c97b7433b2d084ea64f7510af1ff329b87c7a6076e503f9c584e09cb",
+      "size": 6430
     },
     {
       "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
       "status": "success",
       "path": "anthropic/blog/news/fable-safeguards-jailbreak-framework.md",
-      "sha256": "cedf09f6f2fd65789e2f4af70da8d64ead7d1a14be1b6a97b18cb4c6c5cfbc02",
-      "size": 32412
+      "sha256": "a8419c1d009b133720705b41362726040a07079825f3e8edd406b2a4b4cd6589",
+      "size": 32430
     },
     {
       "url": "https://www.anthropic.com/news/federal-government-departments-and-agencies-can-now-purchase-claude-through-the-gsa-schedule",
@@ -10894,8 +10894,8 @@
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
       "status": "success",
       "path": "anthropic/blog/news/google-broadcom-partnership-compute.md",
-      "sha256": "99c610a14c5dd05ec99ea2e5a450776248d04db90eb846b15fc564b9faa106cd",
-      "size": 3700
+      "sha256": "1670e989012241f4d57b821133004c57c4ff8ac0c4525dffd0d5865a01dea4ca",
+      "size": 3754
     },
     {
       "url": "https://www.anthropic.com/news/google-vertex-general-availability",
@@ -10922,7 +10922,7 @@
       "url": "https://www.anthropic.com/news/head-of-EMEA-new-roles",
       "status": "success",
       "path": "anthropic/blog/news/head-of-EMEA-new-roles.md",
-      "sha256": "8159926d5f966b6b5a55a896d1af609bcf98b8b1b86c045600ca3f42b5650fb3",
+      "sha256": "184ee049cab44a989a2be51b26958bde0fa183087f9d8a1f8de78a6e94cf78a4",
       "size": 4325
     },
     {
@@ -11202,8 +11202,8 @@
       "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
       "status": "success",
       "path": "anthropic/blog/news/our-approach-to-understanding-and-addressing-ai-harms.md",
-      "sha256": "aeaa55d1c22d8247dbcd27c3011c206917b1e480bfba3733edde2a052413e48e",
-      "size": 8301
+      "sha256": "30b0f53f56bb4ca54a81554a2c613eb122ef5fa19edb7bd6c94d4fcfbbe6ec7a",
+      "size": 8317
     },
     {
       "url": "https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents",
@@ -11279,8 +11279,8 @@
       "url": "https://www.anthropic.com/news/prompting-long-context",
       "status": "success",
       "path": "anthropic/blog/news/prompting-long-context.md",
-      "sha256": "b4d9d38365dcf8ce8313d9dfe17a97b9df96946aca8cb41bd6d0ed24b17fc018",
-      "size": 12920
+      "sha256": "e156363254bcc6d37b7f87ccf9c16bbf301c3a8bb32f32444b430755153ff8eb",
+      "size": 12933
     },
     {
       "url": "https://www.anthropic.com/news/protecting-well-being-of-users",
@@ -11300,8 +11300,8 @@
       "url": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
       "status": "success",
       "path": "anthropic/blog/news/rahul-patil-joins-anthropic.md",
-      "sha256": "f3042e41db07ead179429f7180ad9f46aaf0dd7a9b939e83ceef2bbd81426f19",
-      "size": 3156
+      "sha256": "8ca7d45acfaff95557cac5351a3613fb5dc587b5d0abd92857da755d4cf0204c",
+      "size": 3166
     },
     {
       "url": "https://www.anthropic.com/news/rare-disease-research-grants",
@@ -11370,15 +11370,15 @@
       "url": "https://www.anthropic.com/news/salesforce-partnership",
       "status": "success",
       "path": "anthropic/blog/news/salesforce-partnership.md",
-      "sha256": "bc9af6bb6c64990af6aeb03c68f94089e66ae7ae48580c73a051cfc4ef2ae902",
-      "size": 5866
+      "sha256": "0e43ef0a6cb9f9d974ea6eb088512b572b39349a3cd530362d2a1379e9f5a323",
+      "size": 5871
     },
     {
       "url": "https://www.anthropic.com/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule",
       "status": "success",
       "path": "anthropic/blog/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule.md",
-      "sha256": "141e5707daea81a35e441b1c636ca40fd846e851f33da0f4945eddbe792b34f7",
-      "size": 7821
+      "sha256": "6c76d5f58464245a6bb7417a13b6e56d4910aa5c37d1a4496afedc1364a074b3",
+      "size": 7854
     },
     {
       "url": "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
@@ -11398,22 +11398,22 @@
       "url": "https://www.anthropic.com/news/series-h",
       "status": "success",
       "path": "anthropic/blog/news/series-h.md",
-      "sha256": "2991130543e177c050f486666826f1f168f1b42ce0d77c060205614f07320faa",
-      "size": 5703
+      "sha256": "4f00754b0cad1101f1105cfb79e66677b0ef303fb10d6c9594ffc9b0cc5e07da",
+      "size": 5725
     },
     {
       "url": "https://www.anthropic.com/news/servicenow-anthropic-claude",
       "status": "success",
       "path": "anthropic/blog/news/servicenow-anthropic-claude.md",
-      "sha256": "89387430296e782148306829da1203dae60811c6d5fb272faf50e5fd8beae981",
-      "size": 7017
+      "sha256": "a6d3cd513787f09e49528855d58d809a6730095e7bb79a0f9286e3a4e7f3ce9b",
+      "size": 7075
     },
     {
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "status": "success",
       "path": "anthropic/blog/news/services-track-partner-hub.md",
-      "sha256": "4e6d3c3477ba2814e65457128a9b0e24ad0ff1fb53139cc84e6923a3c9a65057",
-      "size": 8757
+      "sha256": "9dad6abd01f8860ced01c4f97dfcaffc928a4a48ed5b54c21e71866150878e86",
+      "size": 8780
     },
     {
       "url": "https://www.anthropic.com/news/singapore-office-opening",
@@ -11433,8 +11433,8 @@
       "url": "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership",
       "status": "success",
       "path": "anthropic/blog/news/snowflake-anthropic-expanded-partnership.md",
-      "sha256": "d70a1e1d012724294cccff914077f9d4d9e593a3395d77e2a7f3d9e8663b9577",
-      "size": 7512
+      "sha256": "775380704e18a926c282d9a8f8e2fd7f64f1826df2f0a60b24aa00e0a7aa8cc6",
+      "size": 7561
     },
     {
       "url": "https://www.anthropic.com/news/statement-comments-secretary-war",
@@ -11482,8 +11482,8 @@
       "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
       "status": "success",
       "path": "anthropic/blog/news/tcs-anthropic-partnership.md",
-      "sha256": "422d6e6f6db53c527ccd240edaf3661fc63bac0e0f775fdeb8838e10a4889e5c",
-      "size": 4894
+      "sha256": "2b4fdba9b692668a2e88c029c1da4a0e312eabb518543c2aba8698902b6ce0ad",
+      "size": 4918
     },
     {
       "url": "https://www.anthropic.com/news/testing-and-mitigating-elections-related-risks",
@@ -11524,15 +11524,15 @@
       "url": "https://www.anthropic.com/news/the-need-for-transparency-in-frontier-ai",
       "status": "success",
       "path": "anthropic/blog/news/the-need-for-transparency-in-frontier-ai.md",
-      "sha256": "d05625a42013a6607cf564b3819b48a0022258d0c6746c4132b7fd6720256f39",
-      "size": 8292
+      "sha256": "bf0d1faeab735e96da54a9d0fadddaaaca3e76b3e5b16a7f4b6fe1e23365c79a",
+      "size": 8289
     },
     {
       "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
       "status": "success",
       "path": "anthropic/blog/news/theo-hourmouzis-general-manager-australia-new-zealand.md",
-      "sha256": "0f88cd86f93539de35d49fe6931829f4123e2fdcda2ee7352c75f87eed69ef89",
-      "size": 5441
+      "sha256": "f92f6681d9b6694e0be2f7664e7583f8ee16aa46dd89bb65ef01e325bde3a81e",
+      "size": 5507
     },
     {
       "url": "https://www.anthropic.com/news/third-party-testing",
@@ -11755,8 +11755,8 @@
       "url": "https://www.anthropic.com/research/assistant-axis",
       "status": "success",
       "path": "anthropic/blog/research/assistant-axis.md",
-      "sha256": "6f571ac3eb320d49833ccb75949d48dbcb51de7e6e121bf30dd919f1d1d6b55b",
-      "size": 22562
+      "sha256": "09264b299b7cdec12f06b76ead1e8d0bf5eed4123c539d5f39b5e2a2862974e5",
+      "size": 22628
     },
     {
       "url": "https://www.anthropic.com/research/attack-navigator",
@@ -11958,8 +11958,8 @@
       "url": "https://www.anthropic.com/research/critical-infrastructure-defense",
       "status": "success",
       "path": "anthropic/blog/research/critical-infrastructure-defense.md",
-      "sha256": "dfc77107d35f81a030507cbf2d78ca5963a82e905f940e31549b09a1a448718a",
-      "size": 6294
+      "sha256": "ca1cd957f6a66573a587288b3ffd95c03040940e183c69ba1ae786ce5a6db094",
+      "size": 6313
     },
     {
       "url": "https://www.anthropic.com/research/crosscoder-model-diffing",
@@ -11972,8 +11972,8 @@
       "url": "https://www.anthropic.com/research/cyber-competitions",
       "status": "success",
       "path": "anthropic/blog/research/cyber-competitions.md",
-      "sha256": "0e6435e2843ab4af35425e86490b261b5b5e6561c577d9d92c1be78595af0f70",
-      "size": 14176
+      "sha256": "e4c72fa6edc6ce028c9c880f6dfab53a6c42c4367755b5d261e43ee5887931fb",
+      "size": 14208
     },
     {
       "url": "https://www.anthropic.com/research/cyber-toolkits",
@@ -11993,8 +11993,8 @@
       "url": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components",
       "status": "success",
       "path": "anthropic/blog/research/decomposing-language-models-into-understandable-components.md",
-      "sha256": "f2441b8859d4b394ee0392a878fab00e37f292a6f12a11b329fabb148e73db67",
-      "size": 6672
+      "sha256": "c90d8585ad9040b75b3adf9e389d73ab610ac5b0c148728d5aa3c1e6b750aeeb",
+      "size": 6687
     },
     {
       "url": "https://www.anthropic.com/research/deprecation-commitments",
@@ -12056,8 +12056,8 @@
       "url": "https://www.anthropic.com/research/distributed-representations-composition-superposition",
       "status": "success",
       "path": "anthropic/blog/research/distributed-representations-composition-superposition.md",
-      "sha256": "27fb1bb7c7ec2dc56ca2c354223970a0cde055a6fee1abbc52f4202e4fdf1d93",
-      "size": 3455
+      "sha256": "2715f191acb3c0292c0e35b7e62bf47d8c412acb114fff24017d2e5099cb8df9",
+      "size": 3453
     },
     {
       "url": "https://www.anthropic.com/research/donating-open-source-petri",
@@ -12287,8 +12287,8 @@
       "url": "https://www.anthropic.com/research/impact-software-development",
       "status": "success",
       "path": "anthropic/blog/research/impact-software-development.md",
-      "sha256": "348d7a07263a0260ee9d2875517ba06bf30357b485aa33c063e4f6c6cbfc903b",
-      "size": 16826
+      "sha256": "03a652c20c9f44e211cabdc342eae8786217eaf08fec73adc5b1878582d028ed",
+      "size": 16828
     },
     {
       "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
@@ -12301,8 +12301,8 @@
       "url": "https://www.anthropic.com/research/india-brief-economic-index",
       "status": "success",
       "path": "anthropic/blog/research/india-brief-economic-index.md",
-      "sha256": "d2e96a4a580ae1bbe423bcf969496ab8ad9e6d69eb1b800bfc9035dda59adf17",
-      "size": 12359
+      "sha256": "2f21c6c4eb94718ff5b8d10754fcdbedf0dc38b2419b9ef9841b6113bbaaeeb5",
+      "size": 12363
     },
     {
       "url": "https://www.anthropic.com/research/influence-functions",
@@ -12420,8 +12420,8 @@
       "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
       "status": "success",
       "path": "anthropic/blog/research/measuring-progress-on-scalable-oversight-for-large-language-models.md",
-      "sha256": "dacc0cb43c689137e389d557fde37b306b9b0c5fe62f972ec19aa9c8c95c9e5c",
-      "size": 2519
+      "sha256": "1c3d5f69ae89b1a1575d3cc4885a3eab17f7aab58e959adf4d29d592ff5544bc",
+      "size": 2545
     },
     {
       "url": "https://www.anthropic.com/research/multiagent-systems",
@@ -12448,15 +12448,15 @@
       "url": "https://www.anthropic.com/research/natural-language-autoencoders",
       "status": "success",
       "path": "anthropic/blog/research/natural-language-autoencoders.md",
-      "sha256": "42665439d6013ecfd8003113191250740d3c35dd64b22539bb02137d14b5cb0a",
-      "size": 13854
+      "sha256": "70a4b9c51c9c04e9b2c56efeec3d8074ddda47657989388b16e3ac8e85f1210c",
+      "size": 13893
     },
     {
       "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
       "status": "success",
       "path": "anthropic/blog/research/next-generation-constitutional-classifiers.md",
-      "sha256": "6f7c0bde85db2d4bc3705962931450c4fcd26aec8a256dad3e80869728ec53b6",
-      "size": 11223
+      "sha256": "03ab457b5dd4a4525bcd6bd12d36a36284b1d3fda54a0a812e9fea61beeac884",
+      "size": 11279
     },
     {
       "url": "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
@@ -12476,7 +12476,7 @@
       "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
       "status": "success",
       "path": "anthropic/blog/research/open-source-circuit-tracing.md",
-      "sha256": "dc96d90b1a19e4b7e7c7474f9c32ecf2101f53bf3fcc20e50a61701a9eb63977",
+      "sha256": "86ab929cb9a21f39b60f09b7805d9c7ed5f1302533c6bfd24c4a4d2f657b5dd8",
       "size": 4785
     },
     {
@@ -12504,7 +12504,7 @@
       "url": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
       "status": "success",
       "path": "anthropic/blog/research/predictability-and-surprise-in-large-generative-models.md",
-      "sha256": "3727bb1a67be5a200efaed2929e309cfead3fe1619528b415606981d9ae022c7",
+      "sha256": "b63baddad4dd914bd7c6aeec05d1ab25e551bb65bd2aab92c82a8e3dd24af085",
       "size": 2820
     },
     {
@@ -12602,8 +12602,8 @@
       "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
       "status": "success",
       "path": "anthropic/blog/research/reviewing-the-evidence-on-worker-retraining-programs.md",
-      "sha256": "ef6b1d33cade7959e87d83fc73ce4dcbc685f2435b43622833840fb3b5d31591",
-      "size": 3957
+      "sha256": "d2469f6afb7164fd6afafc3bb605f6a6ff018f955c05ef6c85311f5eca63c374",
+      "size": 3968
     },
     {
       "url": "https://www.anthropic.com/research/reward-tampering",
@@ -12644,7 +12644,7 @@
       "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
       "status": "success",
       "path": "anthropic/blog/research/shade-arena-sabotage-monitoring.md",
-      "sha256": "2f1625eb08cf045f879843380390898ce8590ec3c6a3c8222cd34252aac313e0",
+      "sha256": "5e49869e258534d9d1b8e67952f335d24db3bb6503fabfad367bf5ac3f52c7ba",
       "size": 13587
     },
     {
@@ -12665,8 +12665,8 @@
       "url": "https://www.anthropic.com/research/smart-contracts",
       "status": "success",
       "path": "anthropic/blog/research/smart-contracts.md",
-      "sha256": "eeccfbcce200d0eb93be428f25341d078853e1215407bcf49ff2c553562c9756",
-      "size": 30838
+      "sha256": "54bec02158a2bb8d673f2f514e5b5174fad2bf36b4ee80950f68170d1e099f9a",
+      "size": 30858
     },
     {
       "url": "https://www.anthropic.com/research/softmax-linear-units",
@@ -12693,8 +12693,8 @@
       "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
       "status": "success",
       "path": "anthropic/blog/research/studying-large-language-model-generalization-with-influence-functions.md",
-      "sha256": "17ebd10ac8a229b2508fd53ba06fe77048db6be6df6c1d23f13bce6e98c9fad2",
-      "size": 2847
+      "sha256": "43df6f2f55fca280cc005b5605451d931e63b2c2d55950cb240f15fedf12dcaa",
+      "size": 2873
     },
     {
       "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
@@ -12721,8 +12721,8 @@
       "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
       "status": "success",
       "path": "anthropic/blog/research/the-capacity-for-moral-self-correction-in-large-language-models.md",
-      "sha256": "dad2dea6a604ede869d110e9ea1a2c128f69bb2d397fbc21c92fa0c930fc2373",
-      "size": 2248
+      "sha256": "49b8255301351516650ae9f4f8a6ef5aa4cd39470e5b0c1b25cc3e394dfb1def",
+      "size": 2265
     },
     {
       "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
@@ -12770,8 +12770,8 @@
       "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
       "status": "success",
       "path": "anthropic/blog/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback.md",
-      "sha256": "c171c6149dc931d25debb7c2a502ca0a8ec8df78b418434cf0d50f13af071345",
-      "size": 2793
+      "sha256": "2531c190c87fecaa03e2c0d90c92dfd6d0334d9e2da907ac7eace15755a51985",
+      "size": 2831
     },
     {
       "url": "https://www.anthropic.com/research/transformer-circuits",
@@ -14107,15 +14107,15 @@
       "url": "https://claude.com/resources/articles/building-effective-human-agent-teams",
       "status": "success",
       "path": "anthropic/blog/claude-com/building-effective-human-agent-teams.md",
-      "sha256": "0cc3421be647ccdf69f0d7640242b331987b1670aca7a93b6109944023918a79",
-      "size": 16870
+      "sha256": "bc3d1179042d03a39745d380714d4f2b2e41dec9f62f437a31c269456159fcd2",
+      "size": 16896
     },
     {
       "url": "https://claude.com/resources/articles/building-multi-agent-systems-when-and-how-to-use-them",
       "status": "success",
       "path": "anthropic/blog/claude-com/building-multi-agent-systems-when-and-how-to-use-them.md",
-      "sha256": "5feaf8d25d03ac2e6479abba7e8271b1e2772cc9aecf300459b4c4b4a3e2db13",
-      "size": 24098
+      "sha256": "1dbd9145fe0687ecb26b60dcba48aad69dee4815e8cd1302d3bf8eeb4f1f89d9",
+      "size": 24103
     },
     {
       "url": "https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills",
@@ -14366,8 +14366,8 @@
       "url": "https://claude.com/resources/articles/claude-model-and-effort-level-in-claude-code",
       "status": "success",
       "path": "anthropic/blog/claude-com/claude-model-and-effort-level-in-claude-code.md",
-      "sha256": "6c5d11b84323e6c9fbea2298ca82393016383722fe443bce829571fbcdc33a62",
-      "size": 13967
+      "sha256": "25a06da0e98cb9703f46f4bf6e83c448fa1ebd9e797528f984ee115f5406dab1",
+      "size": 13978
     },
     {
       "url": "https://claude.com/resources/articles/claude-models-explained-choosing-the-best-model-for-your-use-case",
@@ -14394,7 +14394,7 @@
       "url": "https://claude.com/resources/articles/claude-on-google-cloud-fedramp-high",
       "status": "success",
       "path": "anthropic/blog/claude-com/claude-on-google-cloud-fedramp-high.md",
-      "sha256": "8c9f0a0380247833abc3eb7f0a48ced949ca744b9591efd3a20df55015b0a4ab",
+      "sha256": "18e646af077d154e9b4c8d9032703adeb81741eae5e76af8a247d9a1a916ee57",
       "size": 3013
     },
     {
@@ -15178,8 +15178,8 @@
       "url": "https://claude.com/resources/articles/new-guide-deploying-claude-across-the-enterprise-with-claude-cowork",
       "status": "success",
       "path": "anthropic/blog/claude-com/new-guide-deploying-claude-across-the-enterprise-with-claude-cowork.md",
-      "sha256": "f6b32a6450becb931f86289fba9d2f053831bb839198ae1116509d64f6cfca2f",
-      "size": 2630
+      "sha256": "d3dd899d8b9f6e0bb1d508b4b8bc06cd15d36533645e10e591e274f9b398d16e",
+      "size": 2626
     },
     {
       "url": "https://claude.com/resources/articles/new-in-claude-managed-agents",
@@ -15549,8 +15549,8 @@
       "url": "https://claude.com/resources/articles/working-at-the-frontier-cursor",
       "status": "success",
       "path": "anthropic/blog/claude-com/working-at-the-frontier-cursor.md",
-      "sha256": "c468b0bbb5239ec596d4e25d1e84a22ca6765b747c379510253590ad6f4855fb",
-      "size": 7432
+      "sha256": "cd2f4eed06aad6c5856602e8d3ec21e4faa87bc44a355c86c6b09604bab57304",
+      "size": 7407
     },
     {
       "url": "https://claude.com/resources/articles/working-at-the-frontier-how-balyasny-asset-management-evaluates-and-governs-claude-fable-5",
@@ -15773,15 +15773,15 @@
       "url": "https://claude.com/resources/guides/claude-for-the-financial-industry/claude-adoption-roadmap",
       "status": "success",
       "path": "anthropic/blog/claude-com-guides/claude-for-the-financial-industry/claude-adoption-roadmap.md",
-      "sha256": "656dcc7a1d4cfd364933d8150d325257f110ed18c3e1b4db55ea31c4859002af",
-      "size": 8597
+      "sha256": "d5d678c6d06b47f37fff79af7af3a6520da31af7dc43ad24475fffb2a53c5f45",
+      "size": 8561
     },
     {
       "url": "https://claude.com/resources/guides/claude-for-the-financial-industry/foreword",
       "status": "success",
       "path": "anthropic/blog/claude-com-guides/claude-for-the-financial-industry/foreword.md",
-      "sha256": "9aa5f05ef8ff7e0f513493fbc27d9179fd080cccca43e51bfcd4fef010f648fa",
-      "size": 2010
+      "sha256": "b4183117aca3fcd44083ef12950fdc8440bf3947a255b1c7c392b20cd2fa752a",
+      "size": 1974
     },
     {
       "url": "https://claude.com/resources/guides/claude-for-the-financial-industry/getting-started",
@@ -16277,8 +16277,8 @@
       "url": "https://claude.com/resources/guides/the-code-modernization-playbook/getting-started-with-code-modernization",
       "status": "success",
       "path": "anthropic/blog/claude-com-guides/the-code-modernization-playbook/getting-started-with-code-modernization.md",
-      "sha256": "62755508a95cfb86be664c9f9ecac4a143a06b0a0bafd8bfccb3e98b40053078",
-      "size": 9830
+      "sha256": "793a27da6d93d16bfc0b25fa8cdec167489bcc234a0a9dc6520237f9cf1a52ec",
+      "size": 9864
     },
     {
       "url": "https://claude.com/resources/guides/the-code-modernization-playbook/modernize-or-get-left-behind",
@@ -16550,15 +16550,15 @@
       "url": "https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/mvp-stage",
       "status": "success",
       "path": "anthropic/blog/claude-com-guides/the-founders-playbook-building-an-ai-native-startup/mvp-stage.md",
-      "sha256": "f494c6be21f3b1992560aa8f214a004e66986c3e37a6badaf58b64bb0b9b7f25",
-      "size": 16894
+      "sha256": "f93a6f136c401634cdd3636f0e18b4f8fb8bf342fb60d604d5e9b710b0279ce4",
+      "size": 16838
     },
     {
       "url": "https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/same-job-new-rules",
       "status": "success",
       "path": "anthropic/blog/claude-com-guides/the-founders-playbook-building-an-ai-native-startup/same-job-new-rules.md",
-      "sha256": "60b032c74e4b4e8125038da1490905d9f9a102c17c388d5bd3419f82c10e8286",
-      "size": 6922
+      "sha256": "9d256a33cb975b522b7752a0965e5da3943f6583bc86d4c5ae8cb91a08c9e805",
+      "size": 6978
     },
     {
       "url": "https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/scale-stage",
@@ -16725,8 +16725,8 @@
       "url": "https://support.claude.com/en/articles/8114491-get-started-with-claude",
       "status": "success",
       "path": "anthropic/support/8114491-get-started-with-claude.md",
-      "sha256": "cfae4d953ccf91c9b296bc58e0d9b4400282c0ea49ce64b0771e66c3ee3fdce4",
-      "size": 5205
+      "sha256": "a9b4055422abae61bfe8fa8058d7d70da202d59e9a515dc696c27c8c99912e58",
+      "size": 5207
     },
     {
       "url": "https://support.claude.com/en/articles/8114494-how-up-to-date-is-claude-s-training-data",
@@ -16802,8 +16802,8 @@
       "url": "https://support.claude.com/en/articles/8230524-delete-or-rename-a-conversation",
       "status": "success",
       "path": "anthropic/support/8230524-delete-or-rename-a-conversation.md",
-      "sha256": "543baa43f2541cc6fdb5d6c4cdc20aa6660f204c362abd4166c94d609bc177db",
-      "size": 5895
+      "sha256": "dc9905b5e5f002b5264e16d7f54b5324aee087881841a97c4b92a0e61756a0f3",
+      "size": 5885
     },
     {
       "url": "https://support.claude.com/en/articles/8241126-upload-files-to-claude",
@@ -16872,8 +16872,8 @@
       "url": "https://support.claude.com/en/articles/8325618-paid-plan-billing-faqs",
       "status": "success",
       "path": "anthropic/support/8325618-paid-plan-billing-faqs.md",
-      "sha256": "0ae38f4cd84249ea29abe12af8d49578e8de639966b1a5e5d4f21341510ad6ae",
-      "size": 4949
+      "sha256": "d9288c5a9f0d5edef3792b4eddc44512caf884d22af77cf3ef564aab458bda46",
+      "size": 4953
     },
     {
       "url": "https://support.claude.com/en/articles/8325621-i-would-like-to-input-sensitive-data-into-my-chats-with-claude-who-can-view-my-conversations",
@@ -16935,8 +16935,8 @@
       "url": "https://support.claude.com/en/articles/8887527-customizing-your-appearance-settings",
       "status": "success",
       "path": "anthropic/support/8887527-customizing-your-appearance-settings.md",
-      "sha256": "a027871d2deb2a32e0f0ac12ff4c186bc02c6e502cfe0d025e3c1649c2514263",
-      "size": 1876
+      "sha256": "ace1156bad2b70458a87210349c97faaf497c1243928bbe28c75c2ad3d4d3eb3",
+      "size": 1874
     },
     {
       "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
@@ -17110,8 +17110,8 @@
       "url": "https://support.claude.com/en/articles/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization",
       "status": "success",
       "path": "anthropic/support/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization.md",
-      "sha256": "9ebc59b86a59b0f1231d16319ca594fef52070e2271a35c524d4fb2eb55048a1",
-      "size": 10264
+      "sha256": "818160894a0e0c993f6727174ef87d4a390a155df020d7756a267acb113d4f9e",
+      "size": 10266
     },
     {
       "url": "https://support.claude.com/en/articles/9301722-updates-to-our-acceptable-use-policy-now-usage-policy-consumer-terms-of-service-and-privacy-policy",
@@ -17152,8 +17152,8 @@
       "url": "https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects",
       "status": "success",
       "path": "anthropic/support/9519177-how-can-i-create-and-manage-projects.md",
-      "sha256": "137222053c231ad4144741f7a5365bbf81a5f42456123fe951ee2e9045d361f3",
-      "size": 9203
+      "sha256": "e8c39bbba0e02f742dc31ec87d07ebdfd99f02a058c4ba7a02118ac7bdcc14af",
+      "size": 9207
     },
     {
       "url": "https://support.claude.com/en/articles/9519189-manage-project-visibility-and-sharing",
@@ -17180,8 +17180,8 @@
       "url": "https://support.claude.com/en/articles/9534590-cost-and-usage-reporting-in-the-claude-console",
       "status": "success",
       "path": "anthropic/support/9534590-cost-and-usage-reporting-in-the-claude-console.md",
-      "sha256": "32066de5cd71701131072fb80e0e1ac7027a20efbfd9bae367ab969920dbf546",
-      "size": 5106
+      "sha256": "29491812c05de5301001ff9ca58751c4abc361f19d8d2d8f67f2513b04b6fdca",
+      "size": 5112
     },
     {
       "url": "https://support.claude.com/en/articles/9547008-share-artifacts",
@@ -17404,15 +17404,15 @@
       "url": "https://support.claude.com/en/articles/10310342-how-do-i-log-out-of-all-active-sessions",
       "status": "success",
       "path": "anthropic/support/10310342-how-do-i-log-out-of-all-active-sessions.md",
-      "sha256": "b53e08f0ae396cb3aaf9d20636300d328e0ecf6c44a19484f11b4de95d8efd12",
-      "size": 2494
+      "sha256": "ca2849a2630a2be79f1cec910d906acf31750a28f85bbd0ed5c12a688c575fc9",
+      "size": 2498
     },
     {
       "url": "https://support.claude.com/en/articles/10366376-how-can-i-delete-my-claude-console-account",
       "status": "success",
       "path": "anthropic/support/10366376-how-can-i-delete-my-claude-console-account.md",
-      "sha256": "584fbd7365c929d85995b2d1d26b25e44f68ccecfce7901430759e97eb69c2e1",
-      "size": 3165
+      "sha256": "ad02c3b5b09756d55c97e3167265c67afeb19bae2f670db0bc85bb3ad3010290",
+      "size": 3167
     },
     {
       "url": "https://support.claude.com/en/articles/10366389-how-can-i-get-higher-rate-limits-on-the-claude-api",
@@ -17453,15 +17453,15 @@
       "url": "https://support.claude.com/en/articles/10504844-manage-user-feedback-settings-on-team-and-enterprise-plans",
       "status": "success",
       "path": "anthropic/support/10504844-manage-user-feedback-settings-on-team-and-enterprise-plans.md",
-      "sha256": "220dbc32cf2bee93b2e65f04a7e98c6b6f1b18c41975d7a52c50aec205ea6635",
-      "size": 1038
+      "sha256": "7afd5f0849f790bfd89f5604726ad6a77151469bc12413315d4506c27a46210c",
+      "size": 1042
     },
     {
       "url": "https://support.claude.com/en/articles/10504853-manage-user-feedback-settings-on-claude-console",
       "status": "success",
       "path": "anthropic/support/10504853-manage-user-feedback-settings-on-claude-console.md",
-      "sha256": "2475a5793365f4967b2fd3f4ebc2fccb7064b8beabecff0ef41748801e608a80",
-      "size": 1003
+      "sha256": "1e78f1ed6c4dbd3c50f788a10294dbe851a4b82e7310de0178e4c0b78c889a59",
+      "size": 997
     },
     {
       "url": "https://support.claude.com/en/articles/10534883-use-the-claude-widget-on-android",
@@ -17474,7 +17474,7 @@
       "url": "https://support.claude.com/en/articles/10593882-share-and-unshare-chats",
       "status": "success",
       "path": "anthropic/support/10593882-share-and-unshare-chats.md",
-      "sha256": "74f3d48eb4e9cfb747a87d02ecf03b8acdb6704b9592e45403e32944b442365b",
+      "sha256": "0ea54b3834bbafdb8a3577327df667f51a2ceb7a2cb1de8f540da04cfa022aa1",
       "size": 4016
     },
     {
@@ -17502,8 +17502,8 @@
       "url": "https://support.claude.com/en/articles/10949351-getting-started-with-local-mcp-servers-on-claude-desktop",
       "status": "success",
       "path": "anthropic/support/10949351-getting-started-with-local-mcp-servers-on-claude-desktop.md",
-      "sha256": "aa6fad931dae039c74808d9135635c15127bc3b02405a811c6c4fa0591fae5a8",
-      "size": 8390
+      "sha256": "112cf6765dfd87c360300ae8d46668a7b13676ea62281be066ea8fe928b710b7",
+      "size": 8392
     },
     {
       "url": "https://support.claude.com/en/articles/11049741-what-is-the-max-plan",
@@ -17537,8 +17537,8 @@
       "url": "https://support.claude.com/en/articles/11101966-use-voice-mode",
       "status": "success",
       "path": "anthropic/support/11101966-use-voice-mode.md",
-      "sha256": "da09912e141e0767bc16451964f499f8906a2a81ac1d46bbecad91f6fa41325b",
-      "size": 10557
+      "sha256": "7f6b7d452252406ab26cc34ff7cea4c145810c81d288af793534bebff246bb4c",
+      "size": 10565
     },
     {
       "url": "https://support.claude.com/en/articles/11107691-why-is-a-coupon-or-promotion-not-available-for-my-account",
@@ -17670,8 +17670,8 @@
       "url": "https://support.claude.com/en/articles/11725453-set-up-the-claude-lti-in-canvas-by-instructure",
       "status": "success",
       "path": "anthropic/support/11725453-set-up-the-claude-lti-in-canvas-by-instructure.md",
-      "sha256": "f47e170bd560e15df571b541209ee0d301dd5bc1fc0f93e0511e943d8783e23f",
-      "size": 2748
+      "sha256": "b801e1ed696b9e0002440382d0863b3ad5d6d075a1c39f820c195ffc5d5ca195",
+      "size": 2750
     },
     {
       "url": "https://support.claude.com/en/articles/11732894-who-owns-and-manages-the-data-of-my-claude-for-education-account",
@@ -17684,14 +17684,14 @@
       "url": "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context",
       "status": "success",
       "path": "anthropic/support/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context.md",
-      "sha256": "2ba715eeaf7c550435383cdde0ea28561b164f7a890aae15f7859a9fd9b56ea8",
-      "size": 28556
+      "sha256": "9b3f7e3d99284065341c0c24d355998a2fc4f168015ae06bdbb7ff0bc7aed809",
+      "size": 28560
     },
     {
       "url": "https://support.claude.com/en/articles/11818288-why-am-i-being-asked-to-verify-my-payment-method",
       "status": "success",
       "path": "anthropic/support/11818288-why-am-i-being-asked-to-verify-my-payment-method.md",
-      "sha256": "1ed1b560f13528847863d9b308f4f89198d1638ef575c3c7094ed2c2a8809ca8",
+      "sha256": "5cdfffe8e54fbc44758dc4d16ae6d9ee9a205615ccb8de110acd4676ffc4163e",
       "size": 816
     },
     {
@@ -17726,7 +17726,7 @@
       "url": "https://support.claude.com/en/articles/11869629-use-claude-with-android-apps",
       "status": "success",
       "path": "anthropic/support/11869629-use-claude-with-android-apps.md",
-      "sha256": "d55af310a43349fbb3ddbf7bbb12eedaf192a955e29f148c9887dc9a7202a320",
+      "sha256": "6d1e6118f77b82ebc24386dfeda0129b1d294b2119e82fff81933c3b7dd79bc4",
       "size": 13993
     },
     {
@@ -17761,14 +17761,14 @@
       "url": "https://support.claude.com/en/articles/12005970-manage-usage-credits-for-team-and-seat-based-enterprise-plans",
       "status": "success",
       "path": "anthropic/support/12005970-manage-usage-credits-for-team-and-seat-based-enterprise-plans.md",
-      "sha256": "0a557ebec9db88adcd0235da48b0d14a9c12791567733578f197231462b4020e",
-      "size": 9711
+      "sha256": "e3b515db6f3861768da402b7cd367667954b3cf95089f4b81f43138f59645b51",
+      "size": 9707
     },
     {
       "url": "https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome",
       "status": "success",
       "path": "anthropic/support/12012173-get-started-with-claude-in-chrome.md",
-      "sha256": "15dc15a5b2393039b524c690c7409d1571a457f100b38069bd9f282ec8b2c05b",
+      "sha256": "c4c962bb4024a1791ecca343ed54e83ef6744e64a6f2b78abba4271e419ddffa",
       "size": 14857
     },
     {
@@ -17782,8 +17782,8 @@
       "url": "https://support.claude.com/en/articles/12083917-change-your-team-plan-from-monthly-to-annual-billing",
       "status": "success",
       "path": "anthropic/support/12083917-change-your-team-plan-from-monthly-to-annual-billing.md",
-      "sha256": "0d80716da785264414a62124c177e3287a9821d922a3504e8d73dc081b5cef52",
-      "size": 1396
+      "sha256": "0825a4192add3e4a97c6aae4eb0d8762f6d8cdde35ee5feffcdb19b6fbe2fdfd",
+      "size": 1398
     },
     {
       "url": "https://support.claude.com/en/articles/12109679-creating-a-new-account-after-deletion",
@@ -17796,8 +17796,8 @@
       "url": "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude",
       "status": "success",
       "path": "anthropic/support/12111783-create-and-edit-files-with-claude.md",
-      "sha256": "379f28ef750b85c8616ce65dcc7c781604a1c43f94990aaa6e9108a4b0065616",
-      "size": 17964
+      "sha256": "ef627206022390eb6042f539720ce4783933bb4c443ee478dfdff4ae3b6a5ce8",
+      "size": 17962
     },
     {
       "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
@@ -17824,22 +17824,22 @@
       "url": "https://support.claude.com/en/articles/12157520-claude-code-usage-analytics",
       "status": "success",
       "path": "anthropic/support/12157520-claude-code-usage-analytics.md",
-      "sha256": "85ac9888616280978dd4e107d514c4ae5f6895b114131892d44f034222c1d3e6",
+      "sha256": "f0df95ea45d8f5a79d8a76dc0b5f77742234e3a9cee9093510ca4b1331b3cef1",
       "size": 6425
     },
     {
       "url": "https://support.claude.com/en/articles/12260368-use-incognito-chats",
       "status": "success",
       "path": "anthropic/support/12260368-use-incognito-chats.md",
-      "sha256": "6eeb013c66cae5e7e196c2cd7f3cc5cc2067f53e7ef69abfe299576cd0410031",
+      "sha256": "d9155b8d0126ebcb2d2870bfb203278844db2ee44a9d3864711a0253b2dffa20",
       "size": 4376
     },
     {
       "url": "https://support.claude.com/en/articles/12293051-use-claude-in-xcode",
       "status": "success",
       "path": "anthropic/support/12293051-use-claude-in-xcode.md",
-      "sha256": "13d49968ea214637ccd3e4ca97cfdab83fffca0a1cc5115c6c8a5c66ded48ba0",
-      "size": 1911
+      "sha256": "ae81352fa31a019f6d782a4bf5ee6c7ce3cb95fb932b65436768c110d886b58d",
+      "size": 1909
     },
     {
       "url": "https://support.claude.com/en/articles/12304248-manage-api-key-environment-variables-in-claude-code",
@@ -17880,15 +17880,15 @@
       "url": "https://support.claude.com/en/articles/12429409-manage-usage-credits-for-paid-claude-plans",
       "status": "success",
       "path": "anthropic/support/12429409-manage-usage-credits-for-paid-claude-plans.md",
-      "sha256": "7ce7d002e46fdd1d1d34fa8ba6420b7d11bd2c7fb79e33ff7486716d2f72298a",
-      "size": 7968
+      "sha256": "ca9b701ee8c9b9b9069a75df23acdd54b8ace2b13eed8fb5dd7d761e2fc9c41d",
+      "size": 7972
     },
     {
       "url": "https://support.claude.com/en/articles/12466728-troubleshoot-claude-error-messages",
       "status": "success",
       "path": "anthropic/support/12466728-troubleshoot-claude-error-messages.md",
-      "sha256": "93d88280b3edb5ad9bcbc7c0a1fc9fed758ed41af3001f67cf3843ffb382d4d0",
-      "size": 5141
+      "sha256": "65d1873b784a2ddab348932458611b7e4811326ae6945708c474d0245830edb8",
+      "size": 5145
     },
     {
       "url": "https://support.claude.com/en/articles/12489464-use-enterprise-search",
@@ -17908,8 +17908,8 @@
       "url": "https://support.claude.com/en/articles/12512180-use-skills-in-claude",
       "status": "success",
       "path": "anthropic/support/12512180-use-skills-in-claude.md",
-      "sha256": "6f8d86ff0e62f71bde0757e17947230607622461a8888f826ca6432018f06b90",
-      "size": 19150
+      "sha256": "b1f4b64968714a55e0e740f9b26c119aa4c943da5bece69048e13e82a032584b",
+      "size": 19146
     },
     {
       "url": "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills",
@@ -17929,8 +17929,8 @@
       "url": "https://support.claude.com/en/articles/12592343-enabling-and-using-the-desktop-extension-allowlist",
       "status": "success",
       "path": "anthropic/support/12592343-enabling-and-using-the-desktop-extension-allowlist.md",
-      "sha256": "cd304a6c40dd2ccab9753ded741b7f698784f88474b213a8563a0c176f685219",
-      "size": 5718
+      "sha256": "b942dcd4cdb4d014591a98f250efecb7fc4d4fa1141cbb4df63b89ab38fb8570",
+      "size": 5712
     },
     {
       "url": "https://support.claude.com/en/articles/12611117-deploy-claude-desktop-for-macos",
@@ -17964,7 +17964,7 @@
       "url": "https://support.claude.com/en/articles/12626668-use-quick-entry-with-claude-desktop-on-mac",
       "status": "success",
       "path": "anthropic/support/12626668-use-quick-entry-with-claude-desktop-on-mac.md",
-      "sha256": "867cd73bb52cd82a61d6c469311a84d85a1b8beddce6124d31b95eb8b8af2092",
+      "sha256": "e11481ef9fdd6102f4b31163307469f15728c05fe8a57bd7067215a406fa8a4b",
       "size": 5970
     },
     {
@@ -17999,8 +17999,8 @@
       "url": "https://support.claude.com/en/articles/12883420-view-usage-analytics-for-team-and-enterprise-plans",
       "status": "success",
       "path": "anthropic/support/12883420-view-usage-analytics-for-team-and-enterprise-plans.md",
-      "sha256": "f24519cdd4bbce6a33ce0abe8cc915080dc01746478b7533bdce2c3d3e6f3ae2",
-      "size": 15095
+      "sha256": "98a1a06ac8fcbe399fda3f5e65471d02d7d31d71a88e5f5f76158c61aab9680a",
+      "size": 15097
     },
     {
       "url": "https://support.claude.com/en/articles/12902405-claude-in-chrome-troubleshooting",
@@ -18020,8 +18020,8 @@
       "url": "https://support.claude.com/en/articles/12902446-claude-in-chrome-permissions-guide",
       "status": "success",
       "path": "anthropic/support/12902446-claude-in-chrome-permissions-guide.md",
-      "sha256": "afb45c630fb5f5b134becaaa1e40703b65189e5fa562f1bcc80795fb14793bf2",
-      "size": 9561
+      "sha256": "44287379d3a10202266c117054f7dd45699e992852c247e9320f216cb964ef74",
+      "size": 9565
     },
     {
       "url": "https://support.claude.com/en/articles/12938627-how-to-gift-a-claude-subscription",
@@ -18048,8 +18048,8 @@
       "url": "https://support.claude.com/en/articles/12997503-team-plan-billing-faqs",
       "status": "success",
       "path": "anthropic/support/12997503-team-plan-billing-faqs.md",
-      "sha256": "090cce608f7b5b7f98a4a1e8b029fdec2180d0b0c0bc319b433625d07c7e875f",
-      "size": 5411
+      "sha256": "418e48e65d32dc8fbd2ff71ddd5ea33f09cbca311c1ca2f4e046860ff7db866f",
+      "size": 5413
     },
     {
       "url": "https://support.claude.com/en/articles/13015708-access-the-compliance-api",
@@ -18097,15 +18097,15 @@
       "url": "https://support.claude.com/en/articles/13132885-set-up-single-sign-on-sso",
       "status": "success",
       "path": "anthropic/support/13132885-set-up-single-sign-on-sso.md",
-      "sha256": "82be141027b8bd6a81a57df32a33d3bbc9a097393402e742f09533410bcfcc02",
-      "size": 13641
+      "sha256": "163d5571306872bcff691dba040e92d55959560e7957784e73a75181118d7293",
+      "size": 13645
     },
     {
       "url": "https://support.claude.com/en/articles/13133195-set-up-jit-or-scim-provisioning",
       "status": "success",
       "path": "anthropic/support/13133195-set-up-jit-or-scim-provisioning.md",
-      "sha256": "0445ee245ffb37f6041d13e0b4e8166d3ed0581267c0d92fa989f7d4b261df77",
-      "size": 22523
+      "sha256": "ffb88133e5e5ad0a87754c45c4e493926f5c4a8aa6470ef8feb08614dc5d2973",
+      "size": 22527
     },
     {
       "url": "https://support.claude.com/en/articles/13133750-manage-members-on-team-and-enterprise-plans",
@@ -18132,8 +18132,8 @@
       "url": "https://support.claude.com/en/articles/13163631-configuring-session-security-settings",
       "status": "success",
       "path": "anthropic/support/13163631-configuring-session-security-settings.md",
-      "sha256": "855b9814ae6e6003985522b96bb87bd66cda014778ac86427930da1c4dafa062",
-      "size": 3701
+      "sha256": "f84b2494e9a11159d791aca7ffa11b935327a0b49bfb8fa365165075c322d886",
+      "size": 3697
     },
     {
       "url": "https://support.claude.com/en/articles/13171706-crisis-helpline-support-in-claude",
@@ -18146,8 +18146,8 @@
       "url": "https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account",
       "status": "success",
       "path": "anthropic/support/13189465-log-in-to-your-claude-account.md",
-      "sha256": "63ac014383f898c7d2f8df8f447d052b112bd4a7ca87f786d156f9f0628ec308",
-      "size": 7041
+      "sha256": "04d34aa7c4ddcab0c9623029ac7a63c10667ba2e1d1e0c8bbfb9936074880123",
+      "size": 7037
     },
     {
       "url": "https://support.claude.com/en/articles/13198485-enforce-network-level-access-control-with-tenant-restrictions",
@@ -18174,22 +18174,22 @@
       "url": "https://support.claude.com/en/articles/13325567-account-management-faqs",
       "status": "success",
       "path": "anthropic/support/13325567-account-management-faqs.md",
-      "sha256": "45dde9f6e62d4743eebd88cebf2e6e607059716b16528f304eaca3c5029e3abf",
+      "sha256": "b5fee49ce70a0bd296d8402f17d8d5bbe5e52421b5f0e5675c8944b1886c9650",
       "size": 2636
     },
     {
       "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
       "status": "success",
       "path": "anthropic/support/13345190-get-started-with-claude-cowork.md",
-      "sha256": "704d42890262671f2420546a481527b17cdc32dd6d603e47607f714992d0bb28",
+      "sha256": "685764f4770b64bf13c9d22215bfd73755c8c2e074c3d1ae1e0447b0a0140595",
       "size": 23058
     },
     {
       "url": "https://support.claude.com/en/articles/13346458-customizing-your-console-appearance-settings",
       "status": "success",
       "path": "anthropic/support/13346458-customizing-your-console-appearance-settings.md",
-      "sha256": "f92d47785ae1f7dd1539973773f2e86fe2b64c57412b80ad052eed4b969de4bb",
-      "size": 609
+      "sha256": "e665bbfa75b0fa29028918e457ac2814549e31dd00e1c9ae2c8fbd2eae4c584c",
+      "size": 605
     },
     {
       "url": "https://support.claude.com/en/articles/13346720-export-your-organization-s-data",
@@ -18209,8 +18209,8 @@
       "url": "https://support.claude.com/en/articles/13371040-log-in-to-your-console-account",
       "status": "success",
       "path": "anthropic/support/13371040-log-in-to-your-console-account.md",
-      "sha256": "eee58c331ce9f82bc828c48285c33cf2262e8f2a027c41ad19320ed2ab32b857",
-      "size": 4613
+      "sha256": "7379933a4b312262773363940776db96634c7704dcb9291faf9c1d7e04d9e132",
+      "size": 4611
     },
     {
       "url": "https://support.claude.com/en/articles/13393991-purchase-and-manage-seats-on-enterprise-plans",
@@ -18265,8 +18265,8 @@
       "url": "https://support.claude.com/en/articles/13641943-visual-and-interactive-content",
       "status": "success",
       "path": "anthropic/support/13641943-visual-and-interactive-content.md",
-      "sha256": "49bd6946ed22a90e0844d0cc34f0bb2f19297bbb73dfe2564fe7b891d0ef2653",
-      "size": 6507
+      "sha256": "1c498df65d3bf31907b9bfe9edfa020bf85630d779d88b9f5cda039c53628620",
+      "size": 6515
     },
     {
       "url": "https://support.claude.com/en/articles/13663666-use-visual-and-interactive-content-on-team-and-enterprise-plans",
@@ -18321,8 +18321,8 @@
       "url": "https://support.claude.com/en/articles/13837440-use-plugins-in-claude",
       "status": "success",
       "path": "anthropic/support/13837440-use-plugins-in-claude.md",
-      "sha256": "10fb360099aef3fede4404f59dd095516049e80a04c32bed8adb0275caa3d632",
-      "size": 15199
+      "sha256": "e0d22901414f9806db1ae5747551a9ac457ce5b469639473582ff11f701cd199",
+      "size": 15195
     },
     {
       "url": "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork",
@@ -18419,8 +18419,8 @@
       "url": "https://support.claude.com/en/articles/13947068-assign-tasks-from-anywhere-in-claude-cowork",
       "status": "success",
       "path": "anthropic/support/13947068-assign-tasks-from-anywhere-in-claude-cowork.md",
-      "sha256": "2eb8a8ed78607263ce59723d946ed574b0489f4851577f8fd72c14b96d82199e",
-      "size": 9462
+      "sha256": "7b60f3ed0035ce1842404569e322ee9268e11e1d19e6b78a29218cc77f53ad5c",
+      "size": 9458
     },
     {
       "url": "https://support.claude.com/en/articles/13979539-custom-visuals-in-chat-and-cowork",
@@ -18440,8 +18440,8 @@
       "url": "https://support.claude.com/en/articles/14116274-organize-your-tasks-with-projects-in-claude-cowork",
       "status": "success",
       "path": "anthropic/support/14116274-organize-your-tasks-with-projects-in-claude-cowork.md",
-      "sha256": "b75a13ebcaf659b979b9119cefa97f2c483bbe771e9647eac25f9d2bb299ea2f",
-      "size": 8387
+      "sha256": "02064495c08b48450bda1669aee9e3e2981d1d0343d3aa9cddfb1f69c1a690f4",
+      "size": 8391
     },
     {
       "url": "https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork",
@@ -18510,8 +18510,8 @@
       "url": "https://support.claude.com/en/articles/14499648-how-scim-sync-works-for-enterprise-organizations",
       "status": "success",
       "path": "anthropic/support/14499648-how-scim-sync-works-for-enterprise-organizations.md",
-      "sha256": "f087e92ce281959a5037e7d374c32fef4e78455a9e63a9337dc1d4f4ec9f45b0",
-      "size": 7674
+      "sha256": "973e835a5c261f7d6dcd6fc74843ff67c82bcadac997972f9ccfa95afe25423d",
+      "size": 7670
     },
     {
       "url": "https://support.claude.com/en/articles/14503520-available-beta-and-research-preview-features",
@@ -18622,8 +18622,8 @@
       "url": "https://support.claude.com/en/articles/14604842-cyber-verification-program",
       "status": "success",
       "path": "anthropic/support/14604842-cyber-verification-program.md",
-      "sha256": "73335f04b7add84759087fc330fd2340e8f60f794ac462821d5cfd98a09b8397",
-      "size": 25124
+      "sha256": "0e5cc18b6e30f934a63a16543c5a1e9a6e4698aaa037e22a796daccb5b0eead7",
+      "size": 25126
     },
     {
       "url": "https://support.claude.com/en/articles/14625619-claim-and-migrate-accounts-on-your-domain",
@@ -18881,8 +18881,8 @@
       "url": "https://support.claude.com/en/articles/15936181-get-started-with-1password-for-claude",
       "status": "success",
       "path": "anthropic/support/15936181-get-started-with-1password-for-claude.md",
-      "sha256": "8d1b8b018a3c445af0941d3799f60662aacfd0d5c925ba3fed18c203c835e14c",
-      "size": 5058
+      "sha256": "a9216bbe5b888caadee0f8905dcccfc82bc2d37f3c74a664ff24c6cf98faf5bc",
+      "size": 5056
     },
     {
       "url": "https://support.claude.com/en/articles/16049681-why-claude-switched-models-in-your-conversation-with-opus-5-or-opus-5-5",
@@ -18930,8 +18930,8 @@
       "url": "https://support.claude.com/en/articles/16607638-understanding-your-pro-or-max-plan-invoices",
       "status": "success",
       "path": "anthropic/support/16607638-understanding-your-pro-or-max-plan-invoices.md",
-      "sha256": "f3ca624c9bfb16fce163f180dfaafd3bea9444ddf7349c744f94ed9616cd8cae",
-      "size": 5834
+      "sha256": "791f22b1ae30bc762fe204d1594f5d4a7529d90f08c14b88744980f1ea00f2cd",
+      "size": 5836
     },
     {
       "url": "https://support.claude.com/en/articles/16607668-understanding-your-team-plan-invoices",
@@ -19014,8 +19014,8 @@
       "url": "https://support.claude.com/en/articles/16893491-get-started-with-smart-reports",
       "status": "success",
       "path": "anthropic/support/16893491-get-started-with-smart-reports.md",
-      "sha256": "d3b1b777e970caf74115ab7ef379bb00f60eb5d06bd7228aac1b3448016a7d94",
-      "size": 15487
+      "sha256": "aa06e4c6f16f468901d204374447b63929637bde216072bdfd318cb84af0bebb",
+      "size": 15503
     },
     {
       "url": "https://support.claude.com/en/articles/16923645-get-started-with-claude-docs",
@@ -19035,8 +19035,8 @@
       "url": "https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides",
       "status": "success",
       "path": "anthropic/support/16951679-use-claude-in-google-docs-sheets-and-slides.md",
-      "sha256": "8b5a023750c1a174986e5c6a3d8d2753f1bad27623f21956bf2c2e510eab8d74",
-      "size": 21898
+      "sha256": "67c41639db324c2fd36907a2bbd775b103d490f80d5a3e19f5f5e7352771801c",
+      "size": 21890
     },
     {
       "url": "https://support.claude.com/en/articles/16952184-set-up-salesforce-in-claude-for-your-organization",
@@ -19063,7 +19063,7 @@
       "url": "https://support.claude.com/en/articles/17005973-manage-pooled-group-budgets-on-enterprise-plans",
       "status": "success",
       "path": "anthropic/support/17005973-manage-pooled-group-budgets-on-enterprise-plans.md",
-      "sha256": "12105a32dffcde8497f68ba8de3415d53e603e76054ed6fcb51966a4602ebc7b",
+      "sha256": "b1152fd09e81f3a86d7b38e079bd8b9628576cf08a3c3afe784a890d83039dc1",
       "size": 6980
     },
     {
@@ -19112,8 +19112,8 @@
       "url": "https://support.claude.com/en/articles/17203415-set-up-claude-for-intune",
       "status": "success",
       "path": "anthropic/support/17203415-set-up-claude-for-intune.md",
-      "sha256": "a490b892b122785f28caa53f271378d68d10cbaa18de4680747c1cfdadaac64e",
-      "size": 11381
+      "sha256": "c1839a22c91bfe3ccdaefef8b2ccc9477d7e46485f8904a36c6106bbfe90ae6b",
+      "size": 11379
     },
     {
       "url": "https://support.claude.com/en/articles/17318731-use-claude-code-local-mode-and-claude-cowork-local-mode-on-a-hipaa-ready-enterprise-plan",
@@ -19126,8 +19126,8 @@
       "url": "https://support.claude.com/en/articles/17440474-migrate-from-standalone-claude-design-to-claude",
       "status": "success",
       "path": "anthropic/support/17440474-migrate-from-standalone-claude-design-to-claude.md",
-      "sha256": "c6bcc6c7c1032e1f4ed5db94e3ab1c9b4b7fd62f3d099e869ea3ee002a3185d6",
-      "size": 15281
+      "sha256": "504287969ffff88c6bbc171a69525e5f985415b1030b35b9797c3a77a41cb85b",
+      "size": 15285
     },
     {
       "url": "https://support.claude.com/en/articles/17444146-claude-haiku-4-5-is-leaving-the-model-selector",
@@ -19140,8 +19140,8 @@
       "url": "https://support.claude.com/en/articles/17444462-set-up-and-manage-the-new-unified-claude-experience-for-your-enterprise-organization",
       "status": "success",
       "path": "anthropic/support/17444462-set-up-and-manage-the-new-unified-claude-experience-for-your-enterprise-organization.md",
-      "sha256": "b2ca2ded6c6afa36e8df76e9f6d6c8e223c634a67d20dbdd533a3cb1a5f86b2f",
-      "size": 22070
+      "sha256": "5a78f3e66d2b0a9b2f5f01c62d5dcf6691b0705c0d13a6753acc5e939bb0214d",
+      "size": 22008
     },
     {
       "url": "https://support.claude.com/en/articles/17454700-get-started-with-claude-dashboards",

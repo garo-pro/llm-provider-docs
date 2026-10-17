@@ -1,4 +1,4 @@
-Title: Anthropic Economic Index: AI's impact on software development
+Title: Anthropic Economic Index: AI’s impact on software development
 
 URL Source: https://www.anthropic.com/research/impact-software-development
 

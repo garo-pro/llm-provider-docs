@@ -1,4 +1,4 @@
-Title: Same job, new rules
+Title: Same job, new rules - The founder's playbook: Building an AI-native startup
 
 URL Source: https://claude.com/resources/guides/the-founders-playbook-building-an-ai-native-startup/same-job-new-rules
 

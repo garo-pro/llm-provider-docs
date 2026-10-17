@@ -1,4 +1,4 @@
-Title: Claude on Google Cloud’s Vertex AI: FedRAMP High and IL2 Authorized
+Title: Claude on Google Cloud’s Vertex AI: FedRAMP High and IL2 authorized
 
 URL Source: https://claude.com/resources/articles/claude-on-google-cloud-fedramp-high
 

@@ -1,4 +1,4 @@
-Title: Anthropic confidentially submits draft S-1
+Title: Anthropic confidentially submits draft S-1 to the SEC
 
 URL Source: https://www.anthropic.com/news/confidential-draft-s1-sec
 

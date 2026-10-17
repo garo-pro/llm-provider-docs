@@ -1,4 +1,4 @@
-Title: Claude adoption roadmap - Claude for the financial industry
+Title: Claude adoption roadmap
 
 URL Source: https://claude.com/resources/guides/claude-for-the-financial-industry/claude-adoption-roadmap
 

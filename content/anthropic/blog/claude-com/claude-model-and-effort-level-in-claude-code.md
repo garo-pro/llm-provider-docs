@@ -1,4 +1,4 @@
-Title: Claude Code effort level and model selection
+Title: Choosing a Claude model and effort level in Claude Code
 
 URL Source: https://claude.com/resources/articles/claude-model-and-effort-level-in-claude-code
 

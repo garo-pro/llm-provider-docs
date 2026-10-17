@@ -1,4 +1,4 @@
-Title: Next-generation Constitutional Classifiers
+Title: Next-generation Constitutional Classifiers: More efficient protection against universal jailbreaks
 
 URL Source: https://www.anthropic.com/research/next-generation-constitutional-classifiers
 

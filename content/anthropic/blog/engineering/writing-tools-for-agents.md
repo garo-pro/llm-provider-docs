@@ -1,4 +1,4 @@
-Title: Writing effective tools for AI agents—using AI agents
+Title: Writing effective tools for agents — with agents
 
 URL Source: https://www.anthropic.com/engineering/writing-tools-for-agents
 

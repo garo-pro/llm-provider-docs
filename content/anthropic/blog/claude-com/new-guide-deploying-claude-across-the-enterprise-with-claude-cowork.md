@@ -1,4 +1,4 @@
-Title: Deploying agentic AI across the enterprise with Claude Cowork
+Title: Deploying Claude across the enterprise with Claude Cowork
 
 URL Source: https://claude.com/resources/articles/new-guide-deploying-claude-across-the-enterprise-with-claude-cowork
 

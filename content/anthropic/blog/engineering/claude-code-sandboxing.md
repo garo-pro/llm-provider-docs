@@ -1,4 +1,4 @@
-Title: Making Claude Code more secure and autonomous with sandboxing
+Title: Beyond permission prompts: making Claude Code more secure and autonomous
 
 URL Source: https://www.anthropic.com/engineering/claude-code-sandboxing
 

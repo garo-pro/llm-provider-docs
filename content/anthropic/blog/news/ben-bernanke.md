@@ -1,4 +1,4 @@
-Title: Ben Bernanke joins the Long-Term Benefit Trust
+Title: Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust
 
 URL Source: https://www.anthropic.com/news/ben-bernanke
 

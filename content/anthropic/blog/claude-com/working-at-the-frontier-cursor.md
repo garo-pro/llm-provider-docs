@@ -1,4 +1,4 @@
-Title: Working at the frontier: How Cursor knew Claude Fable 5 was ready for the hardest 1% of problems
+Title: How Cursor knew Claude Fable 5 was ready for the hardest 1% of problems
 
 URL Source: https://claude.com/resources/articles/working-at-the-frontier-cursor
 
