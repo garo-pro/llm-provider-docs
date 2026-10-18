@@ -43,8 +43,8 @@ Frontier models are rapidly changing the tools both attackers and defenders have
 
 In our [Red blog post](https://red.anthropic.com/2026/attack-navigator/), we share an interactive visualization of the techniques used by attackers, in order to help defenders stay ahead of AI-enabled threats. 
 
+We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
+
 To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
 
 Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.

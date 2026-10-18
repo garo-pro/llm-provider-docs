@@ -56,6 +56,12 @@ We’re embedding evaluators voluntarily, and we believe every frontier AI compa
 
 ## Related content
 
+### Investing in the public benefit
+
+We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
+
+[Read more](https://www.anthropic.com/news/public-benefit-fund)
+
 ### Preparing for the 2026 US midterms
 
 Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
@@ -67,9 +73,3 @@ Earlier this year, we shared an update on our election safeguards. Here, we outl
 Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
 
 [Read more](https://www.anthropic.com/news/singapore-office-opening)
-
-### 2026 Usage Policy update
-
-We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.
-
-[Read more](https://www.anthropic.com/news/2026-usage-policy-update)
