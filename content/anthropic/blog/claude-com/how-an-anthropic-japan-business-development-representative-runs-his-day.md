@@ -1,9 +1,9 @@
-Title: How an Anthropic Japan BDR runs his day with a fleet of Claude agents
+Title: How an Anthropic BDR in Japan runs his day with Claude Managed Agents
 
 URL Source: https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day
 
 Markdown Content:
-# How an Anthropic Japan BDR runs his day with a fleet of Claude agents
+# How an Anthropic BDR in Japan runs his day with Claude Managed Agents
 
 How one business development representative clears his inbound queue and drafts bilingual customer emails with Claude Managed Agents and Claude Tag.
 

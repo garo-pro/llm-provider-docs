@@ -1,5 +1,33 @@
 # Changelog
 
+## [3.35.1](https://github.com/openai/openai-python/compare/v3.35.0...v3.35.1) (2026-10-18)
+
+
+### Bug Fixes
+
+* preserve beta Realtime byte reads on websockets 13 ([#4102](https://github.com/openai/openai-python/issues/4102)) ([5766349](https://github.com/openai/openai-python/commit/5766349b2eda3ef63389fe8a30b6a9a1082b33e9))
+
+## [3.35.0](https://github.com/openai/openai-python/compare/v3.34.0...v3.35.0) (2026-10-17)
+
+
+### Features
+
+* **api:** add typed Live sideband events ([#4099](https://github.com/openai/openai-python/issues/4099)) ([8d5cbf0](https://github.com/openai/openai-python/commit/8d5cbf07916b8f2409d940156135ce3c11ac1552))
+* **api:** add ultrafast service tier for Agents ([#4101](https://github.com/openai/openai-python/issues/4101)) ([100bf8f](https://github.com/openai/openai-python/commit/100bf8f7ab8409594258572fbf64bbde140c1c5f))
+
+
+### Bug Fixes
+
+* **realtime:** preserve byte receives with websockets 13 ([#4098](https://github.com/openai/openai-python/issues/4098)) ([309916e](https://github.com/openai/openai-python/commit/309916eb877132359ca2e37b0340a060580e39ee))
+
+## [3.34.0](https://github.com/openai/openai-python/compare/v3.33.0...v3.34.0) (2026-10-17)
+
+
+### Features
+
+* **api:** add degraded external storage status ([#4097](https://github.com/openai/openai-python/issues/4097)) ([b216cb2](https://github.com/openai/openai-python/commit/b216cb2fbdefebba6f3997a180510f9e2b6b41af))
+* **api:** add Realtime Translation WebSocket sessions ([#4095](https://github.com/openai/openai-python/issues/4095)) ([bfada50](https://github.com/openai/openai-python/commit/bfada5040b0171cd0ae61aefae8c78fcf83c804a))
+
 ## [3.33.0](https://github.com/openai/openai-python/compare/v3.32.0...v3.33.0) (2026-10-16)
 
 

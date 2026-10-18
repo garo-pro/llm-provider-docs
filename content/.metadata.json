@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-17T18:04:51.953046Z",
+    "fetch_date": "2026-10-18T05:18:26.468792Z",
     "section": "all"
   },
   "items": [
@@ -8507,8 +8507,8 @@
       "url": "https://modelcontextprotocol.io/seps/2640-skills-extension",
       "status": "success",
       "path": "anthropic/mcp/seps/2640-skills-extension.md",
-      "sha256": "1bc80e30817bda50fb8bbedb00f987c5d5c440118c63d2a9c0882b3f792dfc3c",
-      "size": 65770
+      "sha256": "5c319731264d31bb1ef6916bc20bb8e8f08db8ecb879fe74e550d040c4d4cbd4",
+      "size": 65776
     },
     {
       "url": "https://modelcontextprotocol.io/seps/2663-tasks-extension",
@@ -8577,7 +8577,7 @@
       "url": "https://modelcontextprotocol.io/seps",
       "status": "success",
       "path": "anthropic/mcp/seps.md",
-      "sha256": "aede25171daac11c397d9d5708524cb21b15cd27180496571c1d3782fa959a17",
+      "sha256": "5d1d0895015889d4bca065dab598dd265dde247f85a5f522ae293465ed072b6a",
       "size": 9751
     },
     {
@@ -14779,7 +14779,7 @@
       "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day",
       "status": "success",
       "path": "anthropic/blog/claude-com/how-an-anthropic-japan-business-development-representative-runs-his-day.md",
-      "sha256": "5e71ead704553b87d2606f2baa0c57ceba21cade038c756f735a0268aa3f70b2",
+      "sha256": "b94fa9e456612254c1cc80981c35765b92ebab54198631514be25a9da3769584",
       "size": 14996
     },
     {
@@ -31131,7 +31131,7 @@
       "url": "https://developers.openai.com/api/docs/quickstart",
       "status": "success",
       "path": "openai/api/docs/quickstart.md",
-      "sha256": "80348b266f68117a645dc2c9b39bc6b658a22271cfe8ff8a27eba6a347d2b86f",
+      "sha256": "27ae9f1d2ac5b3cdf9b11e43b8c89161df49d372073e87c15b3154ae567b6b2c",
       "size": 54832
     },
     {
@@ -31145,7 +31145,7 @@
       "url": "https://developers.openai.com/api/docs/libraries",
       "status": "success",
       "path": "openai/api/docs/libraries.md",
-      "sha256": "709d93df994ddeb9f20e7744af65d0a9f4d6e68b493f227e3e916bb5a3eeafd5",
+      "sha256": "b7fcddf5e2a5ae7ab31bfac845861585c778f154bbf16e9f43a3fa331b2fb6ea",
       "size": 12240
     },
     {
@@ -32825,15 +32825,15 @@
       "url": "https://developers.openai.com/api/reference/resources/moderations",
       "status": "success",
       "path": "openai/api/reference/resources/moderations.md",
-      "sha256": "2112c534120fe580fe8095a537d98090ee1e561b3aef9c86beebce588c8cb2d2",
-      "size": 27476
+      "sha256": "d44654a4b28a294d11d644bea3c5ccd6de3d1523e8a920fb31744f7136ea0287",
+      "size": 25500
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime",
       "status": "success",
       "path": "openai/api/reference/resources/realtime.md",
-      "sha256": "58e676780d3c9efb497ae9ed33d9add68dcb3fb4b1404470e31accc79446cca5",
-      "size": 976429
+      "sha256": "01abf3cc6111d61097eabfea8ab9ff8250d9d1b9cf612406b8c781053bd3efd3",
+      "size": 978428
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/webhooks",
@@ -32874,8 +32874,8 @@
       "url": "https://developers.openai.com/api/reference/resources/responses",
       "status": "success",
       "path": "openai/api/reference/resources/responses.md",
-      "sha256": "67b0b9f635b0a9ddd2daf83f5931eb2699eadadfebb09b72e1f0d33e705c7abb",
-      "size": 5176437
+      "sha256": "59d81e3b2d9fb702629ec463d90e64d40e99e17ae3f4b61c8a56178a3d2d9c15",
+      "size": 5177402
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio",
@@ -32993,8 +32993,8 @@
       "url": "https://developers.openai.com/api/reference/resources/moderations/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/moderations/methods/create.md",
-      "sha256": "1f5c93346cd91c7d1b3c4e6ee640203cc87d3c955f8ad692c433751b83f444af",
-      "size": 14837
+      "sha256": "f8cfccd1b2512795f80ef462048eee4e81165c78a3f5748bad7ee2fb8f48a00d",
+      "size": 12861
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/unwrap",
@@ -46706,8 +46706,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/CHANGELOG.md",
       "status": "success",
       "path": "openai/github/openai-python/CHANGELOG.md",
-      "sha256": "add1858446170607e4f0233004a4703f291d8c8f0f9bd0212c133fe7986f95c0",
-      "size": 275302
+      "sha256": "7284ffca23264f9dff58f5c2576f10bd7d204aabe00cc09fb5806e2eda3d3be3",
+      "size": 276936
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/CONTRIBUTING.md",
@@ -46979,8 +46979,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/CHANGELOG.md",
       "status": "success",
       "path": "openai/github/openai-node/CHANGELOG.md",
-      "sha256": "529afa9272d0b83052ca6cc8ecf984a28bdf3b33570f720e0fa7bf3d734851f5",
-      "size": 404846
+      "sha256": "44fdd1afb66ae6b14959d1c216c3d10f1ca2028ebd276a8894d49a7c9775cd9a",
+      "size": 405928
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/MIGRATION.md",
