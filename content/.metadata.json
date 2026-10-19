@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-19T05:30:49.051894Z",
+    "fetch_date": "2026-10-19T11:27:58.629535Z",
     "section": "all"
   },
   "items": [
@@ -31138,7 +31138,7 @@
       "url": "https://developers.openai.com/api/docs/quickstart",
       "status": "success",
       "path": "openai/api/docs/quickstart.md",
-      "sha256": "27ae9f1d2ac5b3cdf9b11e43b8c89161df49d372073e87c15b3154ae567b6b2c",
+      "sha256": "fc1344f72d90a7d1f28b311824315724350c859473226a7a3b28930b20bca7b0",
       "size": 54832
     },
     {
@@ -31152,7 +31152,7 @@
       "url": "https://developers.openai.com/api/docs/libraries",
       "status": "success",
       "path": "openai/api/docs/libraries.md",
-      "sha256": "b7fcddf5e2a5ae7ab31bfac845861585c778f154bbf16e9f43a3fa331b2fb6ea",
+      "sha256": "b96b56539c6f7c6504ab41b827a501556655750b262e9e95e9eeec76f93c0a4c",
       "size": 12240
     },
     {
