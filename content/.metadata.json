@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-18T18:24:19.987760Z",
+    "fetch_date": "2026-10-19T05:30:49.051894Z",
     "section": "all"
   },
   "items": [
@@ -5504,8 +5504,8 @@
       "url": "https://code.claude.com/docs/en/changelog",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/changelog.md",
-      "sha256": "6ffdcd0453c90a74d8542f1565f397198cab0a777716598ac35421e3347a5a52",
-      "size": 1114854
+      "sha256": "5ddb6cdac60cc7fd00512a71ab56e0fdda5f59faf1086f218c94dfc39d49f9f8",
+      "size": 1114964
     },
     {
       "url": "https://code.claude.com/docs/en/how-claude-code-works",
@@ -9809,8 +9809,8 @@
       "url": "https://www.anthropic.com/news/a-new-initiative-for-developing-third-party-model-evaluations",
       "status": "success",
       "path": "anthropic/blog/news/a-new-initiative-for-developing-third-party-model-evaluations.md",
-      "sha256": "72334f7c308a8f9836018a77354c25f558ffffc00cb7e7cbabe41716e354d070",
-      "size": 15279
+      "sha256": "ed6d8f169aacf341a9d5d8d9fb841ca7350311beec89838502a011646ad31361",
+      "size": 15258
     },
     {
       "url": "https://www.anthropic.com/news/accelerating-scientific-research",
@@ -9886,8 +9886,8 @@
       "url": "https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist",
       "status": "success",
       "path": "anthropic/blog/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist.md",
-      "sha256": "cf4253294731b49adb9ee6a497c1541a6c50d1d96bf7edde8c761f63c73754fa",
-      "size": 8826
+      "sha256": "56370fc3b43bbc9c1f71cda056501e634ff7c2fa544672e4edb3a467d254467b",
+      "size": 8805
     },
     {
       "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
@@ -9900,8 +9900,8 @@
       "url": "https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy",
       "status": "success",
       "path": "anthropic/blog/news/announcing-our-updated-responsible-scaling-policy.md",
-      "sha256": "855e45819205222344fdd2730750fccff7945465304d1c79a32758cb984c76d2",
-      "size": 11416
+      "sha256": "75cf0a85676192adec52432b79980fb7112c24035103760db808569cbe013af3",
+      "size": 11395
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-accenture-partnership",
@@ -9921,15 +9921,15 @@
       "url": "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone.md",
-      "sha256": "61264765dfe21b6ba420b5849d91d08bf09e9b4b5f5ab1740696c114859319ec",
-      "size": 4991
+      "sha256": "c7e71c128922467fc3eb2eaa8a4eda739445beedf729c57e1e3aa0f2d9518efa",
+      "size": 4970
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-acquires-stainless.md",
-      "sha256": "c2a0158ff0e50bd08e1368f955ccadbfd382491177aa4f642e72f8a18fe8d38d",
-      "size": 2835
+      "sha256": "84e7dd0fd5a5d3a6e39c6ee90a96c4cd822e3c31166afc02aeb78ea4a1d19fc6",
+      "size": 2814
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-amazon",
@@ -9949,8 +9949,8 @@
       "url": "https://www.anthropic.com/news/anthropic-amazon-trainium",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-amazon-trainium.md",
-      "sha256": "c22e85c8cdbaccc5c20cd3fc04391d80964924dbb340c47bf4103ef44a1540f1",
-      "size": 5191
+      "sha256": "725a0375b1dd7a43202dad1bdd07c1b36f036906bdfb6f17b2a54ce6f1690348",
+      "size": 5170
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots",
@@ -9998,15 +9998,15 @@
       "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-economic-index-connector.md",
-      "sha256": "0fc4df7414d2432fa90968839e1a8bac70874e17881fc20a87e3f7e99b2a0ff3",
-      "size": 2914
+      "sha256": "6768cb8c028126a8f19f77030017b0925dbc2f65e468f868ef2304adfd58c53e",
+      "size": 2893
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-education-report-how-university-students-use-claude.md",
-      "sha256": "d5c34e4ab82ed119e518469afa973038daa90f3fc98e44eaa23bd7cfcf88095e",
-      "size": 21528
+      "sha256": "81f4f89c2dc2c977c7149da6d4d7907b4802113c0f603cfcb002c5f040d73669",
+      "size": 21507
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of",
@@ -10033,8 +10033,8 @@
       "url": "https://www.anthropic.com/news/anthropic-invests-50-billion-in-american-ai-infrastructure",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-invests-50-billion-in-american-ai-infrastructure.md",
-      "sha256": "6e1deab88ea05bf89c61053eaa8e032aab6f6043270a4ffc60f7821ac5925c23",
-      "size": 3575
+      "sha256": "28e1e4e3a12e624438c95ce53498adfb239464dbb1f44104dd669a6fbef12092",
+      "size": 3554
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-is-endorsing-sb-53",
@@ -10047,22 +10047,22 @@
       "url": "https://www.anthropic.com/news/anthropic-kpmg",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-kpmg.md",
-      "sha256": "b3dd3bb73ea8a980c380634bc2d183c0a491934248172756ee032d8f1ddbba52",
-      "size": 7073
+      "sha256": "17b5512c37a69b65d20711711e0164c6373ce6b14fa8a8d3d18a6b28d015521d",
+      "size": 7052
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-nec",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-nec.md",
-      "sha256": "2591f305679daa3fa5ca8fc27fe55654da43ee047c09c33debc17457b10ff5e3",
-      "size": 3927
+      "sha256": "5ba04aef5ca1c1876791ca578baed822419639bf184afac7994714c3fa9d4800",
+      "size": 3906
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-partners-with-allen-institute-and-howard-hughes-medical-institute.md",
-      "sha256": "8851241c42a5a3089a447a9b7823ba08150f934983b8b5376e1facafc1049b38",
-      "size": 5988
+      "sha256": "bcc3fc2144fca9a6543b6f2162aab2b8ae46cb9a154e83a97fd4e7dbc0a90c5a",
+      "size": 5967
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-partners-with-google-cloud",
@@ -10075,8 +10075,8 @@
       "url": "https://www.anthropic.com/news/anthropic-partners-with-menlo-ventures-to-launch-anthology-fund",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-partners-with-menlo-ventures-to-launch-anthology-fund.md",
-      "sha256": "6c4cc2c42b159680abe11dfd4899f7dace2539cc68ed4896b2a0abcc1db983bb",
-      "size": 3162
+      "sha256": "3f2a551102fd72a713dd493756b986b3b75485be0b3c525d485467ea23fafdea",
+      "size": 3141
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-partners-with-the-university-of-chicago-s-becker-friedman-institute-on-ai-economic",
@@ -10089,15 +10089,15 @@
       "url": "https://www.anthropic.com/news/anthropic-partners-with-u-s-national-labs-for-first-1-000-scientist-ai-jam",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-partners-with-u-s-national-labs-for-first-1-000-scientist-ai-jam.md",
-      "sha256": "5ce4de5c2ebd33c476674ca7801c554c94c7e7f1242feb6f29fb8f875fe8f44e",
-      "size": 4449
+      "sha256": "b653cfe39751362adcc886f8d409d762ad629ac914cda5f5f6b4030f17bf9621",
+      "size": 4428
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-public-record",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-public-record.md",
-      "sha256": "9426f3eb248ca73ce9006f185dfb59d3bb11109ed6476e5fa466fde337d50d2b",
-      "size": 19022
+      "sha256": "fadff007052fa7848cc8268efc173be84de9b5e8249d2aad0ba409524981d45a",
+      "size": 19001
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
@@ -10110,8 +10110,8 @@
       "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation.md",
-      "sha256": "2fa06ce781db1a4f6119ebaec8d1bfa5f99d6d84f938d17d3be04691536fbe28",
-      "size": 7918
+      "sha256": "64671f6134e8edb3a4750e712d13b542253742293030e424d1d6cefeeed89f11",
+      "size": 7897
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai",
@@ -10131,8 +10131,8 @@
       "url": "https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-raises-series-f-at-usd183b-post-money-valuation.md",
-      "sha256": "72d6e50fd8687c37723dabece0041c3122afc1a2665f16b3898deaca1ea64152",
-      "size": 4976
+      "sha256": "3f4ce4fdb56ebe00c8a2fe6f5cbeca01629fa1b638ef14a3de7b7ecbdc7a9328",
+      "size": 4955
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-rwanda-mou",
@@ -10166,22 +10166,22 @@
       "url": "https://www.anthropic.com/news/anthropic-signs-cms-health-tech-ecosystem-pledge-to-advance-healthcare-interoperability",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-signs-cms-health-tech-ecosystem-pledge-to-advance-healthcare-interoperability.md",
-      "sha256": "2dd07c9c312ad26ea58fb4b021a324f730c3db9486d6e2efbc65462a3036b192",
-      "size": 3927
+      "sha256": "7e4b100048f5d84fd35a09e961af0d798b86aaffa74209f3168d86bfe1ae544a",
+      "size": 3906
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education.md",
-      "sha256": "64f8b048d58cc2b09713c554e615ccfd1fb854adba049e66f672cb2894557ce3",
-      "size": 6750
+      "sha256": "e6bb068a7c5288c50d10a180bb106c625703a0db3bb4d481e2c867f569c0b86d",
+      "size": 6729
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-teach-for-all",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-teach-for-all.md",
-      "sha256": "05fb9f1ff526134586015ab257a4bf9b3b580cd1e36c62c0ea89e9818e8fe505",
-      "size": 7156
+      "sha256": "b1bd3ad8b009e494ceba39b293253507873c1161b97575104fc9940e3bbf2ced",
+      "size": 7135
     },
     {
       "url": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy",
@@ -10215,8 +10215,8 @@
       "url": "https://www.anthropic.com/news/ben-bernanke",
       "status": "success",
       "path": "anthropic/blog/news/ben-bernanke.md",
-      "sha256": "8a4dce6a99a3af057a23d5b9e3329a1d1fac745dd227414f49d13d49a9bdad3f",
-      "size": 4975
+      "sha256": "f17cd09bc4799655468a56996ef8e7a6f4dc5e80f05e517a5b4c2980a647802c",
+      "size": 4954
     },
     {
       "url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
@@ -10236,8 +10236,8 @@
       "url": "https://www.anthropic.com/news/building-safeguards-for-claude",
       "status": "success",
       "path": "anthropic/blog/news/building-safeguards-for-claude.md",
-      "sha256": "bb7f6d864e12c433dc6a0b0b122ba6ff28966ac902df3f3da3927bac30d06afa",
-      "size": 13342
+      "sha256": "2537913bbc31a5843e4538d7bad417fe5ac467de460e60959f42e6210ddb4f79",
+      "size": 13321
     },
     {
       "url": "https://www.anthropic.com/news/canadian-ai-research",
@@ -10264,22 +10264,22 @@
       "url": "https://www.anthropic.com/news/child-safety-principles",
       "status": "success",
       "path": "anthropic/blog/news/child-safety-principles.md",
-      "sha256": "bbcb7ace1f95171e2755ac3c9c2e6c15bebf7de3fc2cbe0eb4f5c5441b4b7b2b",
-      "size": 4492
+      "sha256": "bc99f7a95c7ace450c16606d2a5598129385be14be59945d3fc71522a37d3d5f",
+      "size": 4471
     },
     {
       "url": "https://www.anthropic.com/news/chris-liddell-appointed-anthropic-board",
       "status": "success",
       "path": "anthropic/blog/news/chris-liddell-appointed-anthropic-board.md",
-      "sha256": "111a8cecd5ee3e26ee0d472884b5c5a753daec60faff4b08c3aac17c13546533",
-      "size": 3521
+      "sha256": "0801fb736b43f57c06e8066ed240a2c0942d777db0a0bc0bd29dfcb8af3483a6",
+      "size": 3500
     },
     {
       "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
       "status": "success",
       "path": "anthropic/blog/news/chris-olah-pope-leo-encyclical.md",
-      "sha256": "b046fbf8cc1b5791489eae1e66e86a0a12df7a63aa958d04fa17f6c3c0f78569",
-      "size": 7651
+      "sha256": "2fcfda37bb930c3178e1b57577621e1d077219ff392fc80b6c02148edb1598a2",
+      "size": 7630
     },
     {
       "url": "https://www.anthropic.com/news/claude-2",
@@ -10292,8 +10292,8 @@
       "url": "https://www.anthropic.com/news/claude-2-1",
       "status": "success",
       "path": "anthropic/blog/news/claude-2-1.md",
-      "sha256": "7665ea01ee477343c8c90f8fb5e2ca34057d410d86eff9cb4ef1e0981155dbce",
-      "size": 7558
+      "sha256": "0330fd1fc35cfb9bd372f437c0acf89cb25dafbeb34be83b3d5d6acefb5a002e",
+      "size": 7537
     },
     {
       "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
@@ -10320,22 +10320,22 @@
       "url": "https://www.anthropic.com/news/claude-3-haiku",
       "status": "success",
       "path": "anthropic/blog/news/claude-3-haiku.md",
-      "sha256": "409206037ed6a5b0f79aa562bdf9c34db30966b82c366c89d54c381c3e587abe",
-      "size": 3902
+      "sha256": "0c352eb99e8a3a140a4dc15d64ed9a238fbaabf2c43eab4a28f01637009f002e",
+      "size": 3881
     },
     {
       "url": "https://www.anthropic.com/news/claude-4",
       "status": "success",
       "path": "anthropic/blog/news/claude-4.md",
-      "sha256": "e50bb260ed7e3b22528f18952710c804c3d7daffd6f17809dc1a3219f1630502",
-      "size": 9594
+      "sha256": "9747d0560375e29fa9be541504e937d0615eb578640f3b463f7f81cd7ff3ddde",
+      "size": 9573
     },
     {
       "url": "https://www.anthropic.com/news/claude-and-alexa-plus",
       "status": "success",
       "path": "anthropic/blog/news/claude-and-alexa-plus.md",
-      "sha256": "cfbfba93fdd1b5ca382f8c0aae3e4e67995aeab5974c8e4713a48afd310c966f",
-      "size": 2032
+      "sha256": "6cb593921f95d92e7e00bc1468ee0a16d123c523aacab748b4ee22d69e5df350",
+      "size": 2011
     },
     {
       "url": "https://www.anthropic.com/news/claude-brazil",
@@ -10383,8 +10383,8 @@
       "url": "https://www.anthropic.com/news/claude-europe",
       "status": "success",
       "path": "anthropic/blog/news/claude-europe.md",
-      "sha256": "a19a01c4fa09fab885c28f41a6f9e2290c13b9248b0fad9db678bd0059fda5d2",
-      "size": 3662
+      "sha256": "101dbda7abd48cf66f259623e550ebcff9a30809aca5e1b4aadfc59840e38515",
+      "size": 3641
     },
     {
       "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
@@ -10404,8 +10404,8 @@
       "url": "https://www.anthropic.com/news/claude-for-financial-services",
       "status": "success",
       "path": "anthropic/blog/news/claude-for-financial-services.md",
-      "sha256": "f3bdaf12f2bee6304e1acd56996a481b244eeab95d0da72443bdc8110ba1145e",
-      "size": 9585
+      "sha256": "444577a6db780bfcdcace0efdd2fcfd70d6bcd1bd727defb93f8586c68c5b1f7",
+      "size": 9564
     },
     {
       "url": "https://www.anthropic.com/news/claude-for-life-sciences",
@@ -10474,8 +10474,8 @@
       "url": "https://www.anthropic.com/news/claude-in-xcode",
       "status": "success",
       "path": "anthropic/blog/news/claude-in-xcode.md",
-      "sha256": "659da347ea1dc8aa6839647c83a35caeb9d9178ad11af95a19c6e2ba762b0bee",
-      "size": 3600
+      "sha256": "8558f491138ccb336d717aa8ce64c559a86e985adf45f2a08420c6ccfba17a79",
+      "size": 3579
     },
     {
       "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
@@ -10586,8 +10586,8 @@
       "url": "https://www.anthropic.com/news/claudes-constitution",
       "status": "success",
       "path": "anthropic/blog/news/claudes-constitution.md",
-      "sha256": "49bf1dbde37ed634301233229e9057bbb2e3225cb1e2b20bcdf951fb6e13fa2c",
-      "size": 22653
+      "sha256": "ba0ceb13237692fba4d4285a2964e9992f3ab18fadf3b147b4ed46ecfd78abe5",
+      "size": 22632
     },
     {
       "url": "https://www.anthropic.com/news/cognizant-anthropic",
@@ -10600,15 +10600,15 @@
       "url": "https://www.anthropic.com/news/cognizant-partnership",
       "status": "success",
       "path": "anthropic/blog/news/cognizant-partnership.md",
-      "sha256": "c412912cbb9dd59acb5020540a7c14b9b934caa4813f803cd82d9071dcdaa802",
-      "size": 5451
+      "sha256": "fb73ca66eda9b5b94c0e664889109b3912befa5c776d0138e426d3d01eae05f4",
+      "size": 5430
     },
     {
       "url": "https://www.anthropic.com/news/compliance-framework-SB53",
       "status": "success",
       "path": "anthropic/blog/news/compliance-framework-SB53.md",
-      "sha256": "da52c216c997189b3c90c914b70880ee9d34efcbef2c7baab58729a82460f676",
-      "size": 6376
+      "sha256": "f91e7a17b7968c0ad894b0a2e556a5d2bf8385d15f20ef030cce93872ce92051",
+      "size": 6355
     },
     {
       "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
@@ -10719,8 +10719,8 @@
       "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
       "status": "success",
       "path": "anthropic/blog/news/economic-futures-research-fund-agenda.md",
-      "sha256": "55db48ae939094d80122fa29478bc9cf371c15b73fdb9c8f040aa0230952cee1",
-      "size": 13426
+      "sha256": "21a905295b58cae9e1f5bbb6022d618bd7c871fb6530828712d65e9cb9fac6d2",
+      "size": 13405
     },
     {
       "url": "https://www.anthropic.com/news/economic-futures-uk-europe",
@@ -10747,15 +10747,15 @@
       "url": "https://www.anthropic.com/news/enabling-claude-code-to-work-more-autonomously",
       "status": "success",
       "path": "anthropic/blog/news/enabling-claude-code-to-work-more-autonomously.md",
-      "sha256": "66183365c49b776d43a2e7be69a17f5009b386897c64eaacf20a353d1e06e2d6",
-      "size": 5374
+      "sha256": "f05e3ae811951efee8d294536290d334d6d1823e6ee5ce365ecd1765d81199ed",
+      "size": 5353
     },
     {
       "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
       "status": "success",
       "path": "anthropic/blog/news/enterprise-ai-services-company.md",
-      "sha256": "23ffef2a97029c04f2dc60b6193a323c6d5bea848af031bfd0b04472a60674c8",
-      "size": 4808
+      "sha256": "2f1f4d474faa492caa52951de59e8b088b2639da7ba557e432e26ca403eb4473",
+      "size": 4787
     },
     {
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
@@ -10789,8 +10789,8 @@
       "url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
       "status": "success",
       "path": "anthropic/blog/news/expanding-global-operations-to-india.md",
-      "sha256": "95ecb9f2bac6b3a07a4228fb47e182a1a38c9c3105a99afb3c782a19ab4f410d",
-      "size": 4888
+      "sha256": "67f5457bbf312d0ff6704417b2fa4aca972b28a389f703be757af673e732b6c8",
+      "size": 4867
     },
     {
       "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
@@ -10873,22 +10873,22 @@
       "url": "https://www.anthropic.com/news/genesis-mission-partnership",
       "status": "success",
       "path": "anthropic/blog/news/genesis-mission-partnership.md",
-      "sha256": "2eb8c5663a467fd3ab0dfb8958aa03d640a7d9c16561a8041dcf45a05497334c",
-      "size": 4956
+      "sha256": "97b71bc8e531f2b8c029dbc89da83886848aa070d3e72ad6e605b6b249517701",
+      "size": 4935
     },
     {
       "url": "https://www.anthropic.com/news/github-copilot",
       "status": "success",
       "path": "anthropic/blog/news/github-copilot.md",
-      "sha256": "240eef4c29a259c27c9d69f32b9c4b6067f45961a7fb78147f39554cdb2336f2",
-      "size": 3550
+      "sha256": "052c39c00b577fbc7e87f1f768586398996c6affb0e58fbba1a68a39d474fe9d",
+      "size": 3529
     },
     {
       "url": "https://www.anthropic.com/news/golden-gate-claude",
       "status": "success",
       "path": "anthropic/blog/news/golden-gate-claude.md",
-      "sha256": "2347b1495d8207b6489f770511e082aeedb53d2f9362ed3afb62b12b30aa2229",
-      "size": 4910
+      "sha256": "368e5408ab73ffc7679663ca6ebf3b949f081922c7ee173ee94d88b5f2fee2b1",
+      "size": 4889
     },
     {
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
@@ -10950,8 +10950,8 @@
       "url": "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship",
       "status": "success",
       "path": "anthropic/blog/news/how-people-use-claude-for-support-advice-and-companionship.md",
-      "sha256": "a9dc818c48696f024045b05be1f7e0fcf021df55ddaae83eb761fefc4440018b",
-      "size": 22893
+      "sha256": "c03e0ff20e4c3e806bbaaadd9ba2a901b26a6ca2849eac7b9d25c275d8a5c10b",
+      "size": 22872
     },
     {
       "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
@@ -11020,15 +11020,15 @@
       "url": "https://www.anthropic.com/news/introducing-the-anthropic-economic-advisory-council",
       "status": "success",
       "path": "anthropic/blog/news/introducing-the-anthropic-economic-advisory-council.md",
-      "sha256": "262fdcf0b554b105bae20452a074503ac64c068ae386a563204758b6d25df1d0",
-      "size": 6648
+      "sha256": "db56946646b0c8227b4c3579338dc6f96a1ea64891323567d5c74e2fb0009096",
+      "size": 6627
     },
     {
       "url": "https://www.anthropic.com/news/introducing-the-anthropic-economic-futures-program",
       "status": "success",
       "path": "anthropic/blog/news/introducing-the-anthropic-economic-futures-program.md",
-      "sha256": "c1378f36a387705b263731840172788528e7fa16f058aa8eb61c07f636fa889d",
-      "size": 7056
+      "sha256": "3b77a20db01c8150bf2183c80dcb7e923eb427ca5352014ee11392ddc2f5fce0",
+      "size": 7035
     },
     {
       "url": "https://www.anthropic.com/news/introducing-the-anthropic-national-security-and-public-sector-advisory-council",
@@ -11146,15 +11146,15 @@
       "url": "https://www.anthropic.com/news/model-safety-bug-bounty",
       "status": "success",
       "path": "anthropic/blog/news/model-safety-bug-bounty.md",
-      "sha256": "9a026131217303f741930a2c54965b2bef5656df95043d32e18e4a2474a7943a",
-      "size": 6193
+      "sha256": "8b995a3eaff5fa2817bf2f98283a0d16fe5430cd91ef71949df6fc043f396335",
+      "size": 6172
     },
     {
       "url": "https://www.anthropic.com/news/mou-uk-government",
       "status": "success",
       "path": "anthropic/blog/news/mou-uk-government.md",
-      "sha256": "e3cd7272cdc95da4127fa35965a6b45f33fa7510e234a4d9b9d0d55726f5ccbe",
-      "size": 5332
+      "sha256": "251abc50795e7bdf5819f9421ca9e867c911c5271154cdd5b5146fd69de7446d",
+      "size": 5311
     },
     {
       "url": "https://www.anthropic.com/news/mozilla-firefox-security",
@@ -11202,15 +11202,15 @@
       "url": "https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms",
       "status": "success",
       "path": "anthropic/blog/news/our-approach-to-understanding-and-addressing-ai-harms.md",
-      "sha256": "30b0f53f56bb4ca54a81554a2c613eb122ef5fa19edb7bd6c94d4fcfbbe6ec7a",
-      "size": 8317
+      "sha256": "32e239052ea84f99ecdbac999ee618d05dbcde7cff727e30ecafc8d367940a98",
+      "size": 8296
     },
     {
       "url": "https://www.anthropic.com/news/our-framework-for-developing-safe-and-trustworthy-agents",
       "status": "success",
       "path": "anthropic/blog/news/our-framework-for-developing-safe-and-trustworthy-agents.md",
-      "sha256": "0b867605a2fe74a6d554eb22f2dd9f7250ad4cc40ae8081771156b7079e1f205",
-      "size": 11383
+      "sha256": "1a8024f4d7d71a6e6c7ea57dc0d446e04318f2c102dfc8999caf476c4ee775f4",
+      "size": 11362
     },
     {
       "url": "https://www.anthropic.com/news/paris-ai-summit",
@@ -11230,15 +11230,15 @@
       "url": "https://www.anthropic.com/news/paul-smith-to-join-anthropic",
       "status": "success",
       "path": "anthropic/blog/news/paul-smith-to-join-anthropic.md",
-      "sha256": "0b15ccc674cc0a99b26c6f7e81bb022946fafe4ca32b27d186f8328cc948e7b4",
-      "size": 2990
+      "sha256": "cbed86546cd8c23028d6c6d8543f6c7bb94c9c33a90a1318e6ddf45be8093736",
+      "size": 2969
     },
     {
       "url": "https://www.anthropic.com/news/policy-recap-q4-2023",
       "status": "success",
       "path": "anthropic/blog/news/policy-recap-q4-2023.md",
-      "sha256": "35fe7b0bed9463a0b0b487d36877726222feaab0adcfa52299378d757cf6c9f1",
-      "size": 9176
+      "sha256": "4a90e3241f651acd18f44c1896777f89873cb628d6f8efe7f437e2a14c79dd30",
+      "size": 9155
     },
     {
       "url": "https://www.anthropic.com/news/political-even-handedness",
@@ -11279,15 +11279,15 @@
       "url": "https://www.anthropic.com/news/prompting-long-context",
       "status": "success",
       "path": "anthropic/blog/news/prompting-long-context.md",
-      "sha256": "e156363254bcc6d37b7f87ccf9c16bbf301c3a8bb32f32444b430755153ff8eb",
-      "size": 12933
+      "sha256": "a6eab0a85d56dd054b9198fa7e416c310adcc7446687d48d944fa41ed861bb04",
+      "size": 12912
     },
     {
       "url": "https://www.anthropic.com/news/protecting-well-being-of-users",
       "status": "success",
       "path": "anthropic/blog/news/protecting-well-being-of-users.md",
-      "sha256": "6475d0f3a38523a8596af988f47cab3e30563f83d0afcb1ccccad93ba92dd7cc",
-      "size": 16713
+      "sha256": "7f16c8b85551d9d737bdd432dfb02eed60d3e961166fc14072020c300ff3f410",
+      "size": 16692
     },
     {
       "url": "https://www.anthropic.com/news/public-benefit-fund",
@@ -11307,8 +11307,8 @@
       "url": "https://www.anthropic.com/news/rahul-patil-joins-anthropic",
       "status": "success",
       "path": "anthropic/blog/news/rahul-patil-joins-anthropic.md",
-      "sha256": "8ca7d45acfaff95557cac5351a3613fb5dc587b5d0abd92857da755d4cf0204c",
-      "size": 3166
+      "sha256": "eba10f667eaede4655e46f19bcaa758be78420bc46dde4781396487303c26152",
+      "size": 3145
     },
     {
       "url": "https://www.anthropic.com/news/rare-disease-research-grants",
@@ -11328,29 +11328,29 @@
       "url": "https://www.anthropic.com/news/reed-hastings",
       "status": "success",
       "path": "anthropic/blog/news/reed-hastings.md",
-      "sha256": "9a70773f4497db22d5bcb8dad0129fda67e2bf7c07b391940559e77f075f8a97",
-      "size": 4077
+      "sha256": "40906a860c0994504d8f4f49e39d854747dec6cb2be320bcba2d90c7c4a54312",
+      "size": 4056
     },
     {
       "url": "https://www.anthropic.com/news/reflect-with-claude",
       "status": "success",
       "path": "anthropic/blog/news/reflect-with-claude.md",
-      "sha256": "63e42f484510f7d929050502a5b29ee08e5cab8c5bf93473be54e80b9bfe48c3",
-      "size": 6104
+      "sha256": "7489e186d538a0a21e05810f76497c0129846959e4c1cf1dbd69aa8a1bf78000",
+      "size": 6083
     },
     {
       "url": "https://www.anthropic.com/news/reflections-on-our-responsible-scaling-policy",
       "status": "success",
       "path": "anthropic/blog/news/reflections-on-our-responsible-scaling-policy.md",
-      "sha256": "bab43622ba525bc5478fd9c65160cf49b191bddbf91f7531bb75906327cc716f",
-      "size": 21109
+      "sha256": "75f7492912cc794b24cad3c9981d885e961011c73679d873b150518eff419011",
+      "size": 21088
     },
     {
       "url": "https://www.anthropic.com/news/releasing-claude-instant-1-2",
       "status": "success",
       "path": "anthropic/blog/news/releasing-claude-instant-1-2.md",
-      "sha256": "8ca05263799ab876e2a9f536585877de57e3af02047f4bd139f58bb544457fb2",
-      "size": 3179
+      "sha256": "ac9f8eb64c8fb9d77fa25f1bd1c2a7c5bef4f8b303ad0bcb25e1b6b4d46f68f4",
+      "size": 3158
     },
     {
       "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
@@ -11384,8 +11384,8 @@
       "url": "https://www.anthropic.com/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule",
       "status": "success",
       "path": "anthropic/blog/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule.md",
-      "sha256": "6c76d5f58464245a6bb7417a13b6e56d4910aa5c37d1a4496afedc1364a074b3",
-      "size": 7854
+      "sha256": "b618288442fda93812dc5eeb88e5b72dfb14b4874624d98fcf7fbd53c52b7235",
+      "size": 7833
     },
     {
       "url": "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
@@ -11419,8 +11419,8 @@
       "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "status": "success",
       "path": "anthropic/blog/news/services-track-partner-hub.md",
-      "sha256": "9dad6abd01f8860ced01c4f97dfcaffc928a4a48ed5b54c21e71866150878e86",
-      "size": 8780
+      "sha256": "9366a89286f4fc0f4474b49c617025d1e21ede0885e7b54b4cf2ed1425800fed",
+      "size": 8759
     },
     {
       "url": "https://www.anthropic.com/news/singapore-office-opening",
@@ -11468,8 +11468,8 @@
       "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
       "status": "success",
       "path": "anthropic/blog/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team.md",
-      "sha256": "76e822c2f25e5039a9d0761f5b164bd2ef4ce307a8f1bf531d8652f4bafa1742",
-      "size": 16338
+      "sha256": "fb8382309fde76e2447dc0e87a49a76972bdcf8016d51133fdf1072ad5bc530c",
+      "size": 16317
     },
     {
       "url": "https://www.anthropic.com/news/strengthening-our-safeguards-through-collaboration-with-us-caisi-and-uk-aisi",
@@ -11517,8 +11517,8 @@
       "url": "https://www.anthropic.com/news/the-case-for-targeted-regulation",
       "status": "success",
       "path": "anthropic/blog/news/the-case-for-targeted-regulation.md",
-      "sha256": "1524b8f2e863e8ca5b0a10bfde150a421c3684f746cf549bec171064437daeab",
-      "size": 18686
+      "sha256": "bcdded3a1b6c99f7e5bdb36f97144209a2444f33bb5293963db1db378dd3a2c9",
+      "size": 18665
     },
     {
       "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
@@ -11552,8 +11552,8 @@
       "url": "https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan",
       "status": "success",
       "path": "anthropic/blog/news/thoughts-on-america-s-ai-action-plan.md",
-      "sha256": "787b69b022cab5bcf6a0618ca7d4dd6fb2254fd0561b29459f90980e8b3da2e9",
-      "size": 11888
+      "sha256": "eedc6713e161251e5032f70f6a26e6b49e58cd72e4d18da908902d2fbbf78c41",
+      "size": 11867
     },
     {
       "url": "https://www.anthropic.com/news/tino-cuellar",
@@ -11594,15 +11594,15 @@
       "url": "https://www.anthropic.com/news/us-elections-readiness",
       "status": "success",
       "path": "anthropic/blog/news/us-elections-readiness.md",
-      "sha256": "b466a491e2a8444e4a8addd47ac5aea0b054940b3612877799fb2315041c2689",
-      "size": 7320
+      "sha256": "d1a7145cdc50fee2524ecc383b192743c85d5775004f2aae8cdb0d3945ed7c25",
+      "size": 7299
     },
     {
       "url": "https://www.anthropic.com/news/usage-policy-update",
       "status": "success",
       "path": "anthropic/blog/news/usage-policy-update.md",
-      "sha256": "77b99e639b5bec57b48e4f583eb4b4d1d0dc0d5b118dd51234cc0efe2774c8f4",
-      "size": 5583
+      "sha256": "219288e1241bb6a5b0b6ab45b54fb940f2872bb7645f5602e2364752f5f6b255",
+      "size": 5562
     },
     {
       "url": "https://www.anthropic.com/news/ust-claude",
@@ -20274,8 +20274,8 @@
       "url": "https://claude.com/docs/cowork/changelog",
       "status": "success",
       "path": "anthropic/claude/cowork/changelog.md",
-      "sha256": "0823b34cf08b0b487acdfc4b995d2d85b703b45d770efc8c9e060def383fbab9",
-      "size": 215589
+      "sha256": "cfdb74211301aba98eab45fec24dff025fd0a86e1fcbb836cce5618036c0e8e0",
+      "size": 215630
     },
     {
       "url": "https://claude.com/docs/cowork/guide/dispatch",
@@ -46986,8 +46986,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/CHANGELOG.md",
       "status": "success",
       "path": "openai/github/openai-node/CHANGELOG.md",
-      "sha256": "44fdd1afb66ae6b14959d1c216c3d10f1ca2028ebd276a8894d49a7c9775cd9a",
-      "size": 405928
+      "sha256": "fec8ebfbe4c0fa72f5e882f981dc1a6dba16bb1278c9862c5c4ed04680ecd754",
+      "size": 406467
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/MIGRATION.md",
@@ -47007,8 +47007,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/README.md",
       "status": "success",
       "path": "openai/github/openai-node/README.md",
-      "sha256": "4ed0e79b7b3415fda8a39ac9a3c4491f8dfa3214b2a1b027abf0ac748bf46762",
-      "size": 32808
+      "sha256": "8cf814b6f272f795797087128d04669ad8bf8ea4521284128d486cf210f44303",
+      "size": 33002
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/api.md",
@@ -47119,8 +47119,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/realtime.md",
       "status": "success",
       "path": "openai/github/openai-node/docs/realtime.md",
-      "sha256": "60aa4b7625979b5bf3b132633bd4ae9520200d736388f727a15f61133357761b",
-      "size": 8305
+      "sha256": "b62221274119d066511d548a859938813e516940d8841795fd60c548548bdae6",
+      "size": 9312
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/responses-websocket-session.md",
@@ -47934,11 +47934,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
