@@ -328,7 +328,7 @@ while True:
                 "category": [item.datasource_item["category"] for item in output_items],
                 "official_answer": [item.datasource_item["official_answer"] for item in output_items],
                 "model_response": [item.sample.output[0].content for item in output_items],
-                "grading_results": ["passed" if item.results[0]["passed"] else "failed"
+                "grading_results": ["passed" if item.results[0].passed else "failed"
                                     for item in output_items]
             })
         display(df)

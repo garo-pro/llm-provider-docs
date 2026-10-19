@@ -26,11 +26,7 @@ Claude Code usage analytics are available to:
 
 1. Log in to your **[Claude Console account](https://platform.claude.com)**.
 
-2. Expand the left side panel.
-
-3. Click “Claude Code” under **Analytics**.
-
-4. View Claude Code usage analytics on **[Settings > Claude Code](https://platform.claude.com/claude-code)**.
+2. Go to the **Claude Code** page (platform.claude.com/claude-code).
 
 ---
 

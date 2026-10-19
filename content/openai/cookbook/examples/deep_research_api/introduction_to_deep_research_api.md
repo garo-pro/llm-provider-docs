@@ -305,7 +305,7 @@ To get strong, reliable outputs from the API, you can use two approaches.
 
 This setup gives developers full control over how research tasks are framed, but also places greater responsibility on the quality of the input prompt. Here's an example of a generic rewriting_prompt to better direct the subsequent deep research query.
 
-![../../images/intro_dr.png](https://developers.openai.com/cookbook/assets/images/intro_dr.png)
+![/cookbook/assets/images/intro_dr.png](https://developers.openai.com/cookbook/assets/images/intro_dr.png)
 
 Here's an example of a rewriting prompt:
 

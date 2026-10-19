@@ -153,17 +153,13 @@ Review agents also run nightly over existing code, helping us catch old bugs bef
 
 ## Where humans stay in the loop
 
-Pulling a senior engineer out of deep work to catch a routine mistake costs far more than an automated review. At Anthropic, our jobs have moved from reading every diff to the decisions machines are bad at:
+Pulling a senior engineer out of deep work to catch a routine mistake costs far more than an automated review. People on the team are still responsible for:
 
-- **Should we build this at all?** Direction, taste and scope. One team that declared its review bottleneck solved still kept human review for changes from outside the team, so someone asks "should we even do this?"
-- **Risky code** such as billing, the auto-updater and CI workflows.
-- **Architecture** that sets a pattern others will copy.
+- **Deciding whether to build it.** Direction, taste and scope. One team that declared its review bottleneck solved still kept human review for changes from outside the team, so someone asks "should we even do this?"
+- **Reviewing risky code** such as billing, the auto-updater and CI workflows.
+- **Reviewing architecture** that sets a pattern others will copy.
 - **Reading the evidence.** Test output, the command that ran and what it returned, a screenshot, the reviewer's findings. If you can't say what the checks would miss, ask for a real review rather than a quick approval.
 - **Owning the outcome.** A person is accountable for every change that ships, whoever typed it.
-
-*Figure: Automated checks run throughout, with five points where a person decides: should we build it, risky code, architecture, reading the evidence, and owning the outcome.*
-
-*People moved from reading every diff to the decisions machines are bad at*
 
 ## Sharing context across the team
 
