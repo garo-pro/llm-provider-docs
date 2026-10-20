@@ -95,8 +95,8 @@ Going forward, we believe that applying LLM to testing and bugfinding is an impo
 
 While we do not focus on the automatic generation of patches in this work, this is a clear direction for future work. If it is possible to (nearly) completely specify the correctness properties of a block of code, then correcting the bug becomes significantly easier, and we believe that in the near future LLMs will be able to effectively propose high-quality patches that are worth the consideration of maintainers.
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

@@ -25,8 +25,8 @@ In this research effort, Anthropic provided access to the cutting edge of model 
 
 We are grateful to Loc Truong and Kristopher Willis at PNNL for leading this project and sharing data with us for this post. You can read more about the project on PNNL’s [website](https://www.pnnl.gov/news-media/generative-ai-speeds-cybersecurity-defenses).
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

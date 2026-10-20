@@ -79,8 +79,8 @@ Protein minibinders are not a standard therapeutic modality for drugs and even f
 
 Below is a list of documents that provide further technical depth and more detailed information about the results described above:
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

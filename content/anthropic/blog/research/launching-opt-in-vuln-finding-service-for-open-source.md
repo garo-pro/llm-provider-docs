@@ -31,8 +31,8 @@ Core maintainers of eligible projects can enroll by submitting a PR to [this Git
 
 *Whether or not OSS Scanner is right for you, our new [Cyber Verification Program](https://www.anthropic.com/news/cyber-verification-program) makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals. [Claude for OSS](https://claude.com/contact-sales/claude-for-oss) provides free Claude Max 20x subscriptions to help remediate vulnerabilities and improve OSS projects.*
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

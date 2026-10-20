@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-20T10:35:40.611708Z",
+    "fetch_date": "2026-10-20T15:29:37.993277Z",
     "section": "all"
   },
   "items": [
@@ -11664,288 +11664,295 @@
       "url": "https://www.anthropic.com/research/2028-ai-leadership",
       "status": "success",
       "path": "anthropic/blog/research/2028-ai-leadership.md",
-      "sha256": "d1840923b69cc1e99d72f3494bafa7c1637f83cc40ab88514f2420315a1b4f5f",
-      "size": 45735
+      "sha256": "e3de9fc6eafd6183f7ebd5d98a4c0556501d0448ebdbd4653ba8e5b4ed821adf",
+      "size": 45744
     },
     {
       "url": "https://www.anthropic.com/research/81k-economics",
       "status": "success",
       "path": "anthropic/blog/research/81k-economics.md",
-      "sha256": "2a9fed3269dfaa48eb427faf0d2314627d5e93492ccc86b19937b5392cedc627",
-      "size": 18311
+      "sha256": "701b1fb299ae8ae6e67ae88e8a19d0baee610fd6b99aad4694e55924c36da54e",
+      "size": 18320
     },
     {
       "url": "https://www.anthropic.com/research/a-general-language-assistant-as-a-laboratory-for-alignment",
       "status": "success",
       "path": "anthropic/blog/research/a-general-language-assistant-as-a-laboratory-for-alignment.md",
-      "sha256": "2964df98b3984da43ec31b96fd59009481ed129d3b3205c76ff590c4ae59387d",
-      "size": 2304
+      "sha256": "2f87f44644263a5c8949974ef22b0bc2fed47c228f7a5afba14f6ff44b056eca",
+      "size": 2313
     },
     {
       "url": "https://www.anthropic.com/research/a-mathematical-framework-for-transformer-circuits",
       "status": "success",
       "path": "anthropic/blog/research/a-mathematical-framework-for-transformer-circuits.md",
-      "sha256": "34c8767b1416fe6c9b263960929fcc2b50bf975e6baf34d0213828690bb3bb21",
-      "size": 1195
+      "sha256": "6a4db08a67820e52e94b8a4c3faedebc0d0680d5c12f13ca95e496b7468d40ab",
+      "size": 1204
     },
     {
       "url": "https://www.anthropic.com/research/agentic-misalignment",
       "status": "success",
       "path": "anthropic/blog/research/agentic-misalignment.md",
-      "sha256": "e71ad7be689c4a5682373346faeb0ff66e116b16346733dbc5ea0b59b0dfd410",
-      "size": 48398
+      "sha256": "0e44ff2a79edcfed2fd15677e5152be37cab8262733a900d94726493b865bcac",
+      "size": 48407
     },
     {
       "url": "https://www.anthropic.com/research/agents-in-biology",
       "status": "success",
       "path": "anthropic/blog/research/agents-in-biology.md",
-      "sha256": "4c5c029688ba57a2a6c59a5382fe8f5534e537f62a77f426122d6e7753e55d91",
-      "size": 20840
+      "sha256": "e365b39f2955d7d067e1a97d5dfb7a94e4cafaf37e2e20fdea61723a9feb5548",
+      "size": 20792
     },
     {
       "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
       "status": "success",
       "path": "anthropic/blog/research/AI-assistance-coding-skills.md",
-      "sha256": "df4a2ea5fd9168d1a3d10bbe975f285ed270502cc3e19fbe1b8362d2bcdccbad",
-      "size": 16410
+      "sha256": "eee5d2db63fb1240a587815a4a59cc16b283fd4c75b4b11b0223806628355ef8",
+      "size": 16419
     },
     {
       "url": "https://www.anthropic.com/research/ai-expectations-gap",
       "status": "success",
       "path": "anthropic/blog/research/ai-expectations-gap.md",
-      "sha256": "2f0f0311dc25ae5557eade1a28e57091e3d64dadd4ca845ac689b77ffb9b124e",
-      "size": 26510
+      "sha256": "f69acbdf39dabd60dde732a998941d36db2a6dac340ce0c9e1c7c622f0c895c7",
+      "size": 26464
     },
     {
       "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
       "status": "success",
       "path": "anthropic/blog/research/alignment-assessment-cybersecurity-incidents.md",
-      "sha256": "76a488e0e466bbc7307aad396f474de6ad8596b01ffbeec85ed135c6d4cc0796",
-      "size": 117254
+      "sha256": "ad58c35e54f97b41eb461e4a385fee2b92a484d31d4de0706269d77a6cad1f47",
+      "size": 117263
     },
     {
       "url": "https://www.anthropic.com/research/alignment-faking",
       "status": "success",
       "path": "anthropic/blog/research/alignment-faking.md",
-      "sha256": "0399ee5c329aa223eb52aae8b12dbba396f28098991edc7e82a772b2ed2fbf83",
-      "size": 15533
+      "sha256": "50ac603fcf2f953ff4e98d4c1ce173b7460568731982229dbd7e098abc46dd32",
+      "size": 15542
     },
     {
       "url": "https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7",
       "status": "success",
       "path": "anthropic/blog/research/anthropic-economic-index-insights-from-claude-sonnet-3-7.md",
-      "sha256": "a10e8f17bba188094d5911baad57128f1a7fa8cf2ea340a889181374869f27a4",
-      "size": 21305
+      "sha256": "62b906b19791f546be09a17dd7f4557945fa2cd51c4b9506c9fa12b7d53cae3d",
+      "size": 21314
     },
     {
       "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
       "status": "success",
       "path": "anthropic/blog/research/anthropic-economic-index-january-2026-report.md",
-      "sha256": "1917f49a7c399bd96dbe92cd535f6eb5a39bc8e3c64e542f0064e883cb37f7f8",
-      "size": 97664
+      "sha256": "a0f876a3718e581096a608eddddd8b20b9183a9213837c96db8ce9430b53180a",
+      "size": 97673
     },
     {
       "url": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report",
       "status": "success",
       "path": "anthropic/blog/research/anthropic-economic-index-september-2025-report.md",
-      "sha256": "29d2cc3fe3ed017c0a6842172e51c9b10d8f0e35d86662ca0ced68069f415f38",
-      "size": 94908
+      "sha256": "471fdc67d8d7f5ef497f3bdffd25750138eb6172e7f08efe6fedeb7793b9f2b4",
+      "size": 94917
     },
     {
       "url": "https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude",
       "status": "success",
       "path": "anthropic/blog/research/anthropic-education-report-how-educators-use-claude.md",
-      "sha256": "9322920098d4625c9d383bad28c87acd310e402666d35d5627247c99d873437b",
-      "size": 21111
+      "sha256": "6afc78cd5770604d14a5ca08ef7aa0bf053b6a608e3ac2c708dd03b12edcc211",
+      "size": 21120
     },
     {
       "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
       "status": "success",
       "path": "anthropic/blog/research/anthropic-institute-agenda.md",
-      "sha256": "5935a863042327a0689ee14fa883e2c90e7b3fdf48b1369cbfcc7fe30ed68e2c",
-      "size": 19326
+      "sha256": "afe93bb14d356e0f6583801dbc692e9eb11671140e88cffabb0315601036856a",
+      "size": 19335
     },
     {
       "url": "https://www.anthropic.com/research/anthropic-interviewer",
       "status": "success",
       "path": "anthropic/blog/research/anthropic-interviewer.md",
-      "sha256": "80e01601b0078016a7224284308222d3d88774e3c77811dfab50249a728e9519",
-      "size": 42703
+      "sha256": "342ca7be368ff18740c281d23434fad59f8c7e3786649ad149a9306ebb3d2719",
+      "size": 42712
     },
     {
       "url": "https://www.anthropic.com/research/assistant-axis",
       "status": "success",
       "path": "anthropic/blog/research/assistant-axis.md",
-      "sha256": "09264b299b7cdec12f06b76ead1e8d0bf5eed4123c539d5f39b5e2a2862974e5",
-      "size": 22628
+      "sha256": "d5dd80889b3315034ce73313b4f05e40008d3029d3096c7b2973cbaa497a8c8e",
+      "size": 22637
     },
     {
       "url": "https://www.anthropic.com/research/attack-navigator",
       "status": "success",
       "path": "anthropic/blog/research/attack-navigator.md",
-      "sha256": "f1478d55185504a115971d01fffb282c75c102ac820553edd687ce0d3d6b86c8",
-      "size": 22181
+      "sha256": "b767ae67ee005cb1ea19232835cb53307b4118d10cee426106107172c916d996",
+      "size": 22133
     },
     {
       "url": "https://www.anthropic.com/research/auditing-hidden-objectives",
       "status": "success",
       "path": "anthropic/blog/research/auditing-hidden-objectives.md",
-      "sha256": "305d4fff5241a5d4d4d71bf6ece103095fc06441dda84986c1dd08e69bf9b982",
-      "size": 19198
+      "sha256": "eb59436069ec201e14dec31e4ad77467aef08cc42149f47c5bee2be70b76c6d5",
+      "size": 19207
     },
     {
       "url": "https://www.anthropic.com/research/automated-alignment-researchers",
       "status": "success",
       "path": "anthropic/blog/research/automated-alignment-researchers.md",
-      "sha256": "d1748b819779af2a0c6fca97c280a688e8f46c720baec774039d52f6382b073d",
-      "size": 15009
+      "sha256": "f99dab7cd1f92482c2462d58b07a238e5b7631bedf828219960e38027138297a",
+      "size": 15018
     },
     {
       "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
       "status": "success",
       "path": "anthropic/blog/research/automated-researchers-mitigate-alignment-failures.md",
-      "sha256": "80afe614f80e81e07c05ff9ee27d3025ad1e7a5f8b43f19141a9b9592132fb30",
-      "size": 10520
+      "sha256": "ab3babb85221efbff622034e95f734a9eb216a1d66d40198a1ea010bb349a774",
+      "size": 10529
     },
     {
       "url": "https://www.anthropic.com/research/biorisk",
       "status": "success",
       "path": "anthropic/blog/research/biorisk.md",
-      "sha256": "3d801c0e74d238c3e784eae78628fd0dcca3c0c2e6eb3e962d4b94af35ea017d",
-      "size": 15872
+      "sha256": "b8173196eb033e487b76791f9b8f735a228df053f3de7e0e9cd0fe77b90a8bf2",
+      "size": 15824
     },
     {
       "url": "https://www.anthropic.com/research/bloom",
       "status": "success",
       "path": "anthropic/blog/research/bloom.md",
-      "sha256": "fe37cbfa2679943be638a11e736fd3635cb98bb4ef342b669fc210aac6a12b7e",
-      "size": 11337
+      "sha256": "a3b7065ede7013eddbd0f992c6407e35e845b1ce1555349502b49702412e97ab",
+      "size": 11346
     },
     {
       "url": "https://www.anthropic.com/research/building-ai-cyber-defenders",
       "status": "success",
       "path": "anthropic/blog/research/building-ai-cyber-defenders.md",
-      "sha256": "bbe95eca832ae0208c000de0e2db3843d2d455eaba52f0ea055f921a9cf0d6e5",
-      "size": 14354
+      "sha256": "7878ca6cf155abe1dc925c4a7978f5977f375e9cb7137c876e4347680fb761b7",
+      "size": 14306
     },
     {
       "url": "https://www.anthropic.com/research/circuits-updates-april-2024",
       "status": "success",
       "path": "anthropic/blog/research/circuits-updates-april-2024.md",
-      "sha256": "c64674a9aa32520ca2ccfea0e64fbfcc2da66031c7036fea6a64cd8430ee6a08",
-      "size": 1705
+      "sha256": "2aad53d806139b90027f3ba29c65daefe4e320a3f3dcf80b19c73b0424d1ba01",
+      "size": 1714
     },
     {
       "url": "https://www.anthropic.com/research/circuits-updates-august-2024",
       "status": "success",
       "path": "anthropic/blog/research/circuits-updates-august-2024.md",
-      "sha256": "f5ae8a3bf83d25ad21e40aaf5278aa7d01f4062f96d93a97f177b9d03f332383",
-      "size": 1704
+      "sha256": "c915c6e0db8daaf172f9683638cbed784d18a1d122733a6ff482e4775244bfae",
+      "size": 1713
     },
     {
       "url": "https://www.anthropic.com/research/circuits-updates-july-2024",
       "status": "success",
       "path": "anthropic/blog/research/circuits-updates-july-2024.md",
-      "sha256": "e1d5c87e25ebcd6d690ff67007fefa37eb09d8c39292e41dec6fcf1a26a9330a",
-      "size": 1700
+      "sha256": "d8497097f1594cff0f88833d31cb3952c6460840578e9217b1050bf634c213f5",
+      "size": 1709
     },
     {
       "url": "https://www.anthropic.com/research/circuits-updates-june-2024",
       "status": "success",
       "path": "anthropic/blog/research/circuits-updates-june-2024.md",
-      "sha256": "f7b142d279b7c41d4f38966b0a6f35cb4fe81855e429af241dd4ee0f427954f0",
-      "size": 1703
+      "sha256": "e02b57d733d8e7e15925362e82ef89bf3a694d25eff1b484dacdf11c22452763",
+      "size": 1712
     },
     {
       "url": "https://www.anthropic.com/research/circuits-updates-may-2023",
       "status": "success",
       "path": "anthropic/blog/research/circuits-updates-may-2023.md",
-      "sha256": "ea81dd5da84a0775bb4a6c41144a619133e6b3cfd8422ec7381d8e48a24abf6c",
-      "size": 1519
+      "sha256": "8713371eeb51d3427e8b169f3805df12e799fb4a2e6568981c47a3f0c94777a8",
+      "size": 1528
     },
     {
       "url": "https://www.anthropic.com/research/circuits-updates-sept-2024",
       "status": "success",
       "path": "anthropic/blog/research/circuits-updates-sept-2024.md",
-      "sha256": "167d0afc94cc0eb1e0c2e5fefe119b979bbd24efeba514cee8f17f27018cb058",
-      "size": 1708
+      "sha256": "52981fda8eded22d45ae7f13d5fa3538a60af05a3ee31d41b1245317865b7029",
+      "size": 1717
     },
     {
       "url": "https://www.anthropic.com/research/claude-4-cyber",
       "status": "success",
       "path": "anthropic/blog/research/claude-4-cyber.md",
-      "sha256": "9edf60ae9a01eb0f3c1f0eadc4749ac80c5c4f595766a294175eb8077e95f758",
-      "size": 2352
+      "sha256": "6239f6af0db49606fbf7bf65af8bec6288a617f714cc07ec6c6ebb3353db79d4",
+      "size": 2304
     },
     {
       "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
       "status": "success",
       "path": "anthropic/blog/research/Claude-accelerates-protein-design.md",
-      "sha256": "e9b39882468e6ee1474abac942215501cbb80620ce01ba94d9f253fd47ed5c14",
-      "size": 21712
+      "sha256": "8ac17ae1a1f10d256073c95408338a1083672252ebb1d41e8f3d2ed29fd48d48",
+      "size": 21664
     },
     {
       "url": "https://www.anthropic.com/research/claude-character",
       "status": "success",
       "path": "anthropic/blog/research/claude-character.md",
-      "sha256": "ef10724c19dcc2f0b4b50947fa6ba69a6328bc7b509c97ce046c17f861e511d8",
-      "size": 11339
+      "sha256": "e5dcc5d5f61465733ee73f063721264b535bb5ee328159c3f6ad42fe040639ea",
+      "size": 11348
     },
     {
       "url": "https://www.anthropic.com/research/claude-code-expertise",
       "status": "success",
       "path": "anthropic/blog/research/claude-code-expertise.md",
-      "sha256": "cc728a09df95a307ac6d31fc6b08aa3955c3f495c61c0b550708475936358e9b",
-      "size": 30007
+      "sha256": "f9fb0475b8da68ea15c78b0694765db079c4acac256b472d4f91dbe15ce45964",
+      "size": 30016
     },
     {
       "url": "https://www.anthropic.com/research/claude-personal-guidance",
       "status": "success",
       "path": "anthropic/blog/research/claude-personal-guidance.md",
-      "sha256": "db551ec026b0aa34fbe3529a4c941f2727add369f40db3f38579287d5f9e41f8",
-      "size": 16008
+      "sha256": "822f8026450d1e95140625aed9c32f544758cd4c0b6ac07992053b2b6976b89d",
+      "size": 16017
     },
     {
       "url": "https://www.anthropic.com/research/claude-plays-robotics",
       "status": "success",
       "path": "anthropic/blog/research/claude-plays-robotics.md",
-      "sha256": "7cb844b56a34b501bd1d39625f075d90e7467b0b603ee4cf8b768d8b227ad13a",
-      "size": 47165
+      "sha256": "de2d9e3e63788d2d468ba3bfaac9e829b929c4ca52cb0943c112fa7af501ff12",
+      "size": 47117
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-scorpion-toxin-binder-design.md",
+      "sha256": "67a3af43864e2bbcf0ff3b8da21d4bb39ef28a646169671cd093faeb0a3a3569",
+      "size": 16095
     },
     {
       "url": "https://www.anthropic.com/research/claude-shaped-science",
       "status": "success",
       "path": "anthropic/blog/research/claude-shaped-science.md",
-      "sha256": "6e0326e898b9057dfc6d700134322ed104e86e3481811f3b1ef1212c9fbeb762",
-      "size": 25712
+      "sha256": "4f03f90b445779d52983598118af6306a383686d2eab7153d044cf36cc05f276",
+      "size": 25664
     },
     {
       "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
       "status": "success",
       "path": "anthropic/blog/research/claude-uplifts-biomolecular-modeling.md",
-      "sha256": "e5327e1d556c48d95eeda97c77c4cfc614c89f6059b58d4954d82bd90e5e1753",
-      "size": 13309
+      "sha256": "ade787d1c1ce7f2c1e82815c988860891d72121beefcb9fcf0b732d3428f7aa6",
+      "size": 13261
     },
     {
       "url": "https://www.anthropic.com/research/claude-values-models-languages",
       "status": "success",
       "path": "anthropic/blog/research/claude-values-models-languages.md",
-      "sha256": "90610117196338dd5e46b00a1594a8ddeca063bb0c11de9d14bba23fa8af12bd",
-      "size": 26284
+      "sha256": "f2067f04a632f7b8d29dac8c4597540dcac2d8b9a6715f59fd087881f949adbf",
+      "size": 26293
     },
     {
       "url": "https://www.anthropic.com/research/clio",
       "status": "success",
       "path": "anthropic/blog/research/clio.md",
-      "sha256": "1d775240be48cfdb678983d8dbcee3baab625f900bb053949e8e16629c2c843e",
-      "size": 16144
+      "sha256": "82b0be6ef9607a21e838bdf98491cb7550b717730c6450b434421cca8eb291e2",
+      "size": 16153
     },
     {
       "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
       "status": "success",
       "path": "anthropic/blog/research/coding-agents-social-sciences.md",
-      "sha256": "3eda7532fd4c1dab3af3c2535d58ac93969ce7d7e71d2aa2b8ce348d9bd7b61e",
-      "size": 20114
+      "sha256": "6c8b352ad4cdc25af4643f4e1e27cd79f993a79b035c0ae3f2bcf3195933d9e7",
+      "size": 20123
     },
     {
       "url": "https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input",
@@ -11958,57 +11965,57 @@
       "url": "https://www.anthropic.com/research/confidential-inference-trusted-vms",
       "status": "success",
       "path": "anthropic/blog/research/confidential-inference-trusted-vms.md",
-      "sha256": "ba9b8d561f474e8b846de3ee132f68c3e7ce4527cbfa393a7f8694e7711e3a21",
-      "size": 10037
+      "sha256": "529fb903db8400ebbccabf0c08fa22f4a024f8db63e54190ecd7974879c441f1",
+      "size": 10046
     },
     {
       "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
       "status": "success",
       "path": "anthropic/blog/research/constitutional-ai-harmlessness-from-ai-feedback.md",
-      "sha256": "a014f65865b77917ae658fc404ffbc75f9822280a08db46e4acdfe2318bf5f90",
-      "size": 2532
+      "sha256": "1bb24e0136448531af26fbf6a5ba3e99a89e6ed2a89bbb604db926f4e43725d4",
+      "size": 2541
     },
     {
       "url": "https://www.anthropic.com/research/constitutional-classifiers",
       "status": "success",
       "path": "anthropic/blog/research/constitutional-classifiers.md",
-      "sha256": "0e6ecdfd6a20b14a8ecba3a00699ab6c715acaa651899c50e43f16818e81d9e5",
-      "size": 20864
+      "sha256": "f49f2a51f38a5b1247e53a03f630541b6a0ab7ad921d0c48be4bce9126164dd4",
+      "size": 20873
     },
     {
       "url": "https://www.anthropic.com/research/critical-infrastructure-defense",
       "status": "success",
       "path": "anthropic/blog/research/critical-infrastructure-defense.md",
-      "sha256": "ca1cd957f6a66573a587288b3ffd95c03040940e183c69ba1ae786ce5a6db094",
-      "size": 6313
+      "sha256": "26ac0713c4cc5d41136753edeef80361f2d1231691a27f793dd1f400d5171847",
+      "size": 6265
     },
     {
       "url": "https://www.anthropic.com/research/crosscoder-model-diffing",
       "status": "success",
       "path": "anthropic/blog/research/crosscoder-model-diffing.md",
-      "sha256": "6fd055e06d60ab3cb4ef63e06925c41ecf2820ed9ab679b015059a66e494ee78",
-      "size": 1541
+      "sha256": "870d68031e0c15abf0d4c9a73e2484161c42a2300ef7af29dd04ead43e5b3899",
+      "size": 1550
     },
     {
       "url": "https://www.anthropic.com/research/cyber-competitions",
       "status": "success",
       "path": "anthropic/blog/research/cyber-competitions.md",
-      "sha256": "e4c72fa6edc6ce028c9c880f6dfab53a6c42c4367755b5d261e43ee5887931fb",
-      "size": 14208
+      "sha256": "b5e62e5582895859d7ea43eff360ee1f4b3010d06c8a32e96e8717a10f6ee66f",
+      "size": 14160
     },
     {
       "url": "https://www.anthropic.com/research/cyber-toolkits",
       "status": "success",
       "path": "anthropic/blog/research/cyber-toolkits.md",
-      "sha256": "b2c10ba584595f2bc4ac121e540aee3d336f09fd04253e18cefb4777ae477955",
-      "size": 2626
+      "sha256": "1285573c91c4cf942cd2c504a40f453dac592048de174ad7091b29097f5e73a4",
+      "size": 2578
     },
     {
       "url": "https://www.anthropic.com/research/cyber-toolkits-update",
       "status": "success",
       "path": "anthropic/blog/research/cyber-toolkits-update.md",
-      "sha256": "0aa3f47734bc3bc665510446dbac4025d487d644782c1eefdef8bb3dc4b29ea5",
-      "size": 231727
+      "sha256": "1a45eed9af327bde84ac077dd2c8976ee8fd9182a4f1d193343c909ea7830f73",
+      "size": 231679
     },
     {
       "url": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components",
@@ -12021,176 +12028,176 @@
       "url": "https://www.anthropic.com/research/deprecation-commitments",
       "status": "success",
       "path": "anthropic/blog/research/deprecation-commitments.md",
-      "sha256": "0b398da8a01fd4268786661517e897d4f02fc307406469bde8ac7c435a761ac0",
-      "size": 7308
+      "sha256": "32d27c60ab9a9e18130b527d8d03108fc96b465ace2d2a10e168bcb0e4e40b00",
+      "size": 7317
     },
     {
       "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
       "status": "success",
       "path": "anthropic/blog/research/deprecation-updates-opus-3.md",
-      "sha256": "300ba72c56c424369302dddea5ae380b4298236f8e50cdf816482a809133f14b",
-      "size": 8884
+      "sha256": "ca0b6d5375f39be99536ed07706388d6a02efaf769c6562f2ac66648e5555f62",
+      "size": 8893
     },
     {
       "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
       "status": "success",
       "path": "anthropic/blog/research/designing-efficient-quantum-circuits.md",
-      "sha256": "f5a4789859cf5c1cd88aa47514d0b024b206650c38764fc8b73b9e7d994338c1",
-      "size": 23374
+      "sha256": "b1c97066311065c61b248219c84f4d1758ed17ba361e4d3f56347f34b81f9587",
+      "size": 23291
     },
     {
       "url": "https://www.anthropic.com/research/diff-tool",
       "status": "success",
       "path": "anthropic/blog/research/diff-tool.md",
-      "sha256": "2d024144632c3d63013c8077ebdbbe57abf2865495cecfaae6be71ff735e1144",
-      "size": 15907
+      "sha256": "8f213491803c62c914cc6be3dffa8481dd7a071380add1c04227a370af48bc96",
+      "size": 15916
     },
     {
       "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
       "status": "success",
       "path": "anthropic/blog/research/discovering-cryptographic-weaknesses.md",
-      "sha256": "2eba6053272119f86d0263178afa6ea76a0809020104a0d4c699186af4850e26",
-      "size": 25654
+      "sha256": "efead9071bdd4608cd9798894f4b6d3b19e5ee5e5ecb713f2baa5ff1719d62bd",
+      "size": 25606
     },
     {
       "url": "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
       "status": "success",
       "path": "anthropic/blog/research/discovering-language-model-behaviors-with-model-written-evaluations.md",
-      "sha256": "ca8e1208c0a86a95a7500f42e4c606bc831f18d75ff606db7acb1cb158e5ff4b",
-      "size": 2558
+      "sha256": "c7f6409a1516cc48ca49ed2aace70d761c17feebd22e780a8955c792c7796e22",
+      "size": 2567
     },
     {
       "url": "https://www.anthropic.com/research/disempowerment-patterns",
       "status": "success",
       "path": "anthropic/blog/research/disempowerment-patterns.md",
-      "sha256": "ba3cc3874a127c31b76d7569c91fa37b0c6392a4ab88f22cf50fc1b754106b63",
-      "size": 18548
+      "sha256": "79c186e494719caf982ab6d7c0a93f8145e8e03f7d0bde5a2bb932752845b973",
+      "size": 18557
     },
     {
       "url": "https://www.anthropic.com/research/distillation-defenses",
       "status": "success",
       "path": "anthropic/blog/research/distillation-defenses.md",
-      "sha256": "f8093c59d5695254458f521b7df082bdc8d7c53b4c09cc23e378e6487373fad7",
-      "size": 17072
+      "sha256": "873d5f04ca52570731fccafed61585082cc812f73ce36c3767e8617cc676e80b",
+      "size": 17081
     },
     {
       "url": "https://www.anthropic.com/research/distributed-representations-composition-superposition",
       "status": "success",
       "path": "anthropic/blog/research/distributed-representations-composition-superposition.md",
-      "sha256": "2715f191acb3c0292c0e35b7e62bf47d8c412acb114fff24017d2e5099cb8df9",
-      "size": 3453
+      "sha256": "31e98fc9b9091972b67360ed50a9305ce47b0102aaa76dea485b048b4333c704",
+      "size": 3462
     },
     {
       "url": "https://www.anthropic.com/research/donating-open-source-petri",
       "status": "success",
       "path": "anthropic/blog/research/donating-open-source-petri.md",
-      "sha256": "b4d2c53ef3f98c17f9208b5ee1952a66cbb775c148417dfadea0486e5bcdd9f9",
-      "size": 4632
+      "sha256": "be2de85cae31c8483b52128b4bc8d62a9a23b2c86fbb013bf95d0affa18a3fb7",
+      "size": 4641
     },
     {
       "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
       "status": "success",
       "path": "anthropic/blog/research/ecdsa-curve-origins.md",
-      "sha256": "3f446967987a060f1140dc4f26f09f68f6e6df5d48356b4d2bb2828215ee238b",
-      "size": 17502
+      "sha256": "ecd1e852326d01ed6f29fdabaa906f7a949c5edb54a27ff829494fb3827e924b",
+      "size": 17419
     },
     {
       "url": "https://www.anthropic.com/research/economic-index-geography",
       "status": "success",
       "path": "anthropic/blog/research/economic-index-geography.md",
-      "sha256": "927ff5b6033e55ff40a39793fa14a0cdb772fde4ac2a38ad334c2b35de0cccdd",
-      "size": 20355
+      "sha256": "8ff35fe7a54ff97cc7569338c89bee27b02b6d9b0588348552b55eed09e6bf3c",
+      "size": 20364
     },
     {
       "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
       "status": "success",
       "path": "anthropic/blog/research/economic-index-june-2026-report.md",
-      "sha256": "273bb934686d4f606ca5073de854c09a56debea64532a510de824a3d9fdbff6c",
-      "size": 48167
+      "sha256": "25b9843657d6ca92dfb8931517748974b3e662b4aa4d00b5e9882a89dcbd5952",
+      "size": 48176
     },
     {
       "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
       "status": "success",
       "path": "anthropic/blog/research/economic-index-march-2026-report.md",
-      "sha256": "56f1973b41d24551024ab7a36442b8417028e84f01c5960ac0f12fe1a1deb79d",
-      "size": 32294
+      "sha256": "801df0e0ac896537ac3e444ca6953afb7e5016470f042a9bc122cab8d79daabf",
+      "size": 32303
     },
     {
       "url": "https://www.anthropic.com/research/economic-index-primitives",
       "status": "success",
       "path": "anthropic/blog/research/economic-index-primitives.md",
-      "sha256": "68f8b86dd911ffff091078870c279adbf1ef769b120d8bb9a1775c166fd89d65",
-      "size": 18197
+      "sha256": "852fa1fb1379f39ebe3adcc2928b6907131bb9d5353c91739ab9ad00ae2e8cbc",
+      "size": 18206
     },
     {
       "url": "https://www.anthropic.com/research/economic-index-survey-announcement",
       "status": "success",
       "path": "anthropic/blog/research/economic-index-survey-announcement.md",
-      "sha256": "cdab8acc9999dd3f1006c0887561c1df08485204bc3751de8322442bfd09a24e",
-      "size": 5476
+      "sha256": "92698bce24af5f661a82e9e42943de28519f56262cf49854dbc317a9cbd42888",
+      "size": 5485
     },
     {
       "url": "https://www.anthropic.com/research/economic-policy-responses",
       "status": "success",
       "path": "anthropic/blog/research/economic-policy-responses.md",
-      "sha256": "87d69c13d7ccbedd02704b47600b0e35f4b15e1d3d89322a45a7713022bcefdd",
-      "size": 18333
+      "sha256": "226ecce27ac2a1058a9b25360bc86ed98860fe0c2d059a124c9ba507ba644799",
+      "size": 18342
     },
     {
       "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking",
       "status": "success",
       "path": "anthropic/blog/research/emergent-misalignment-reward-hacking.md",
-      "sha256": "f814799217c68faca0931a72b01a5f897bb9003b395fdfc87c3aa2d746485897",
-      "size": 12857
+      "sha256": "c70ef4d36f22a36c3fcb7810dda9c585676dda7254c8ab0aac069aa033a5d7f2",
+      "size": 12866
     },
     {
       "url": "https://www.anthropic.com/research/emotion-concepts-function",
       "status": "success",
       "path": "anthropic/blog/research/emotion-concepts-function.md",
-      "sha256": "fa00330344eca60598da640f5f90d65807ab858f73425728f7e7dc1899ec3c44",
-      "size": 23210
+      "sha256": "3a71314659ccb1e297b2c18057e7abf5159fcea206a5025d7e3179603b7c5cfd",
+      "size": 23219
     },
     {
       "url": "https://www.anthropic.com/research/employment-at-anthropic",
       "status": "success",
       "path": "anthropic/blog/research/employment-at-anthropic.md",
-      "sha256": "3f4c9762a8c66a3b380dca340a7c9de042a9b021f6a79d39809be7eaf934a266",
-      "size": 39289
+      "sha256": "3c45e7cc20b8e7cac0ad4dc62fe51b896aa68ad201b0fde077add4be1012d945",
+      "size": 39298
     },
     {
       "url": "https://www.anthropic.com/research/enabling-independent-research",
       "status": "success",
       "path": "anthropic/blog/research/enabling-independent-research.md",
-      "sha256": "e7723e120f2d1191078f3a902a386eef2898dfaf21a8aa98ed7da8a4a8ad0b4a",
-      "size": 18696
+      "sha256": "0b888fbb247097760072c9f71ee184a10ff19c9df3f93774a1893cdbafb1dbbb",
+      "size": 18705
     },
     {
       "url": "https://www.anthropic.com/research/end-subset-conversations",
       "status": "success",
       "path": "anthropic/blog/research/end-subset-conversations.md",
-      "sha256": "a8605e538c162cfcb9b4fbc69539af1d3d9f57215bcb29fd8b072b24d9b11695",
-      "size": 4996
+      "sha256": "39340962e3031020f9c27372b1be1e8738965cb3360a9b9f12b102a7c3795475",
+      "size": 5005
     },
     {
       "url": "https://www.anthropic.com/research/engineering-challenges-interpretability",
       "status": "success",
       "path": "anthropic/blog/research/engineering-challenges-interpretability.md",
-      "sha256": "f6751148a910e1ebd7e3770ab9884eb5fdf09a397d2fbfc606ecf38abb2823fd",
-      "size": 12348
+      "sha256": "2bce724dd6ecdea4f87b42bb9f16bc1236f4b4d8c88d6564422305c88b99210c",
+      "size": 12357
     },
     {
       "url": "https://www.anthropic.com/research/estimating-productivity-gains",
       "status": "success",
       "path": "anthropic/blog/research/estimating-productivity-gains.md",
-      "sha256": "b5af23b556317a01fd1c2aa0cf2541f0f86efc2edaa6e18e6a54cf22ac1fe458",
-      "size": 37885
+      "sha256": "8f88899245a555938e7b143cf8d74cf25c64d54788c073f1071eb25ac979bfd6",
+      "size": 37894
     },
     {
       "url": "https://www.anthropic.com/research/evaluating-ai-systems",
       "status": "success",
       "path": "anthropic/blog/research/evaluating-ai-systems.md",
-      "sha256": "eb036799af18de303b56df74f94775c0be19ec90d157960d7af2c43011d07566",
-      "size": 24578
+      "sha256": "779ccd0e53ae7ce1623ddd239c37cbfb33f51cae9acf7984d01a71358fe65fe1",
+      "size": 24587
     },
     {
       "url": "https://www.anthropic.com/research/evaluating-and-mitigating-discrimination-in-language-model-decisions",
@@ -12203,148 +12210,148 @@
       "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
       "status": "success",
       "path": "anthropic/blog/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench.md",
-      "sha256": "1df5bbe1f9ff964cb41f96b8fba196dc4dcf3efd5e2f9a6e3e516ae99a9eb1f1",
-      "size": 19484
+      "sha256": "84161b78584b320b2e6115f59692706b4027fb67979e9328a54b0724b3eb959e",
+      "size": 19436
     },
     {
       "url": "https://www.anthropic.com/research/evaluating-feature-steering",
       "status": "success",
       "path": "anthropic/blog/research/evaluating-feature-steering.md",
-      "sha256": "2ca28a81d9ec88fbb4fb3c8432da770e8d9c166c22e25c41a9d837a7028aa762",
-      "size": 28807
+      "sha256": "7b82934f6eb5a23b22ab8b6521215401241a4f29cd9ef4e6d98b274b9633b9de",
+      "size": 28816
     },
     {
       "url": "https://www.anthropic.com/research/expectations-for-the-future",
       "status": "success",
       "path": "anthropic/blog/research/expectations-for-the-future.md",
-      "sha256": "3a6276c8a26ada2250f69f73c53f724ad202e6513806f44edb522cbed6b5ee81",
-      "size": 5055
+      "sha256": "32892a20e148adb286a7e2e3ac2500560e29abf68ad6532f394e473dcc493ce2",
+      "size": 5064
     },
     {
       "url": "https://www.anthropic.com/research/exploit",
       "status": "success",
       "path": "anthropic/blog/research/exploit.md",
-      "sha256": "1fc96043f2461591c386b034b1f21d525b90061ebfe744cd0b6c08fcb53e7da9",
-      "size": 27285
+      "sha256": "ff52d7019658dd039c2cbdfde6b93a3a9dac9181f982dbd347cc062b9bab6a79",
+      "size": 27237
     },
     {
       "url": "https://www.anthropic.com/research/exploit-evals",
       "status": "success",
       "path": "anthropic/blog/research/exploit-evals.md",
-      "sha256": "8c96b462c8002d0d345f6501c9090b3341ae86f76f54eabe49060cfc4c788d3b",
-      "size": 16390
+      "sha256": "1474d4aa24689d115deafe871594e14a78d16f8ecb1f30cfd67e01295b1652d9",
+      "size": 16342
     },
     {
       "url": "https://www.anthropic.com/research/exploring-model-welfare",
       "status": "success",
       "path": "anthropic/blog/research/exploring-model-welfare.md",
-      "sha256": "729733592dcf5c4d91865639442215d6dd4f47f0f71e7afb08b29d175132ea9e",
-      "size": 3905
+      "sha256": "85f3e8f54a04c4b617a0c5012d8d4a597e6967fb12b27176b666ea18ff8f7d29",
+      "size": 3914
     },
     {
       "url": "https://www.anthropic.com/research/features-as-classifiers",
       "status": "success",
       "path": "anthropic/blog/research/features-as-classifiers.md",
-      "sha256": "636697124a89e25bf29af2c7069b8ea77c0b4d0eab4ccbd5dc4018085d50cee8",
-      "size": 1553
+      "sha256": "67e80335413531182ee02d32efd3b59c2d460bbf6551d5aba79fb07c47a53822",
+      "size": 1562
     },
     {
       "url": "https://www.anthropic.com/research/forecasting-rare-behaviors",
       "status": "success",
       "path": "anthropic/blog/research/forecasting-rare-behaviors.md",
-      "sha256": "b99d50d3a06df755ba9fc7e45954dd126d957de21475c27192dc8bf81f2d0684",
-      "size": 7186
+      "sha256": "a4e2d3c61a8332c5426a81829094ff133c7c864d5b17babe1a0dd6a9f447e99c",
+      "size": 7195
     },
     {
       "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
       "status": "success",
       "path": "anthropic/blog/research/formalizing-fermats-last-theorem.md",
-      "sha256": "cf3af6890bb5322f432c4074edbbc26b85a2ac86bc03810c93e1b067126b2fda",
-      "size": 13111
+      "sha256": "b6a2cb0aceb62c9bd831fe3c23cb649ab437c286c39712da574dce5f4d3784a4",
+      "size": 13063
     },
     {
       "url": "https://www.anthropic.com/research/glasswing-initial-update",
       "status": "success",
       "path": "anthropic/blog/research/glasswing-initial-update.md",
-      "sha256": "3d445cc11b249542052c77c3955b29c21208ae8c5bd5d5c7d38ac5d2d0a13a7f",
-      "size": 20023
+      "sha256": "68a53582e64104025815be8ad13f21b1496b0c2db46e5fe02e58ef74df57a271",
+      "size": 20032
     },
     {
       "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
       "status": "success",
       "path": "anthropic/blog/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities.md",
-      "sha256": "fece33a5099088ed035f13c1591e755cf7c320a6f7f1d2c17ff0517dc02691f6",
-      "size": 13042
+      "sha256": "740a7b4470820f3319bee2ca4114a8a6c70f0208bab8e064edc5720b137d7313",
+      "size": 12994
     },
     {
       "url": "https://www.anthropic.com/research/global-workspace",
       "status": "success",
       "path": "anthropic/blog/research/global-workspace.md",
-      "sha256": "6dd2c43d6af024d3fa6bc81b45ac941ca782afcc6be707db1cf7f32996046b62",
-      "size": 34193
+      "sha256": "d3084411b2ee1785b5731e1c4bafaca944e965e113f0d24e6f841793181c54ca",
+      "size": 34202
     },
     {
       "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
       "status": "success",
       "path": "anthropic/blog/research/how-ai-is-transforming-work-at-anthropic.md",
-      "sha256": "0a37aecb941f742bfbca0a28b61c933c928ee52c63b6aa12b328feb17deb9b60",
-      "size": 51954
+      "sha256": "4ad62783a9ee4e382a5b1e56478cbb71ebc026514bb4f5df78bf4d3e8e45d4eb",
+      "size": 51963
     },
     {
       "url": "https://www.anthropic.com/research/how-australia-uses-claude",
       "status": "success",
       "path": "anthropic/blog/research/how-australia-uses-claude.md",
-      "sha256": "e6903dd05dc01285dd275eeac01530f8ea82d4bcd35db4384269719170e4cafa",
-      "size": 17544
+      "sha256": "03543bea46b5c96cd1cfbde69eb48e529de00935e17b0b467dabdc2ef594e999",
+      "size": 17553
     },
     {
       "url": "https://www.anthropic.com/research/how-canada-uses-claude",
       "status": "success",
       "path": "anthropic/blog/research/how-canada-uses-claude.md",
-      "sha256": "5f171c50dce465f5c16666b1fb522128cd6ecc9218b65798f3fb9129edff55e1",
-      "size": 30914
+      "sha256": "8da436b478a2593d259d757a041fc235937fd12524008099b18620c935873efb",
+      "size": 30923
     },
     {
       "url": "https://www.anthropic.com/research/impact-software-development",
       "status": "success",
       "path": "anthropic/blog/research/impact-software-development.md",
-      "sha256": "03a652c20c9f44e211cabdc342eae8786217eaf08fec73adc5b1878582d028ed",
-      "size": 16828
+      "sha256": "88c1c700c6c4b5ec2115140caeb969e43044617540ae7ef76fdded8045754e48",
+      "size": 16837
     },
     {
       "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
       "status": "success",
       "path": "anthropic/blog/research/in-context-learning-and-induction-heads.md",
-      "sha256": "f7e2d6b25a59dad61525d122d41d54809e492d5f17395873739c8d9b160f40a0",
-      "size": 1175
+      "sha256": "150c471b8534f40c8d8e00b139ba04be3c60eda2a92e40746b3e52926ab28cfd",
+      "size": 1184
     },
     {
       "url": "https://www.anthropic.com/research/india-brief-economic-index",
       "status": "success",
       "path": "anthropic/blog/research/india-brief-economic-index.md",
-      "sha256": "2f21c6c4eb94718ff5b8d10754fcdbedf0dc38b2419b9ef9841b6113bbaaeeb5",
-      "size": 12363
+      "sha256": "579a36d9874b043cf486616f8d0c4ef77b79ab6b9531dbd10cbd05ba359f4f7f",
+      "size": 12372
     },
     {
       "url": "https://www.anthropic.com/research/influence-functions",
       "status": "success",
       "path": "anthropic/blog/research/influence-functions.md",
-      "sha256": "74bf4d5dde94e87fca8f11eb2c5753bb7ddc72b29264df1319f506fdf5589ca2",
-      "size": 10354
+      "sha256": "fe8188455d4b08d7487a03f16e7b346325dedc633ce453a67045c96fe2717168",
+      "size": 10363
     },
     {
       "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
       "status": "success",
       "path": "anthropic/blog/research/intelligence-targeting-conventional-weapons-capabilities.md",
-      "sha256": "e098d991b05e3bdfe8db860289b6f87422370d58a4b1cc5d27c1db1599c452f4",
-      "size": 37012
+      "sha256": "7f4940fd3c3dd34ac2e23ee36079415a78c847ff6f79b2018f3786fe7efe59a4",
+      "size": 36964
     },
     {
       "url": "https://www.anthropic.com/research/interpretability-dreams",
       "status": "success",
       "path": "anthropic/blog/research/interpretability-dreams.md",
-      "sha256": "7161abbfbce80bad264dd40e1c3b5ccdae920013c36484e756ccb43edd8473b8",
-      "size": 2096
+      "sha256": "fcc9170dc070bb509cfd3928d95a28b2a367fd4690720d0ed3ee1ced9287cfad",
+      "size": 2105
     },
     {
       "url": "https://www.anthropic.com/research/introducing-anthropic-science",
@@ -12357,78 +12364,78 @@
       "url": "https://www.anthropic.com/research/introspection",
       "status": "success",
       "path": "anthropic/blog/research/introspection.md",
-      "sha256": "1a65728bedc0bd3cdceff91b4a18ff1128936e109d84171a2185054df8ac80b5",
-      "size": 26272
+      "sha256": "3a2bad3d05417cf0365ce485223725e74e3a95320602fa31b9c037d789faf983",
+      "size": 26281
     },
     {
       "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
       "status": "success",
       "path": "anthropic/blog/research/investigating-unintended-model-actions.md",
-      "sha256": "05a6ba850d77e2aa6cc30e666894246245b87905f19f519aaaaa40ec8b9e2779",
-      "size": 21569
+      "sha256": "699423466cc6a774baaa26a6a89f4c6b2e7683c2595e7df77fb07dc621fe28b7",
+      "size": 21578
     },
     {
       "url": "https://www.anthropic.com/research/labor-market-impacts",
       "status": "success",
       "path": "anthropic/blog/research/labor-market-impacts.md",
-      "sha256": "8fecaf25aa2c0be0101178f2fc1c0ee225f8a1fb2fec95c79d0632c8aa9079f8",
-      "size": 31610
+      "sha256": "8b735e163c4ff223cb96c49d7cbd86ff0ef6805a61684cc6189763e0b338215f",
+      "size": 31619
     },
     {
       "url": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
       "status": "success",
       "path": "anthropic/blog/research/language-models-mostly-know-what-they-know.md",
-      "sha256": "f374559f41c440dec96d333c278715b360301ccb2c010eb7eb5b7cf7875d2d18",
-      "size": 2686
+      "sha256": "6ca0585ab0bf684122b913a3b0d8bae99ed8b849c9fc0ece00850941a8dbda61",
+      "size": 2695
     },
     {
       "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
       "status": "success",
       "path": "anthropic/blog/research/launching-opt-in-vuln-finding-service-for-open-source.md",
-      "sha256": "aa97540bf5d321e69b91560b3ca99e97200f22f87ace8a6cd5e0b3b6c1152133",
-      "size": 7043
+      "sha256": "90ad0063071d60bd522cc3fefcd67116256d62665f7979767da3efd22047d8da",
+      "size": 6995
     },
     {
       "url": "https://www.anthropic.com/research/long-running-Claude",
       "status": "success",
       "path": "anthropic/blog/research/long-running-Claude.md",
-      "sha256": "dee78fbdd7caae5929d1a902142137dd2325f60fd6c5f3f1d746bcdc80eeef8e",
-      "size": 13798
+      "sha256": "3e460cd5cfa80809146841ecbf7e0fad13b26103b59315971bc878b524b8c52c",
+      "size": 13750
     },
     {
       "url": "https://www.anthropic.com/research/making-claude-a-chemist",
       "status": "success",
       "path": "anthropic/blog/research/making-claude-a-chemist.md",
-      "sha256": "9820babff596a679106241e53828feee136b666d7054e8693d31ada435afca50",
-      "size": 12288
+      "sha256": "82810c4a16f1fe158bd814ba625ce102a56dbac062ab985bda52569818e5f59b",
+      "size": 12240
     },
     {
       "url": "https://www.anthropic.com/research/many-shot-jailbreaking",
       "status": "success",
       "path": "anthropic/blog/research/many-shot-jailbreaking.md",
-      "sha256": "eb519e4ed38cd30a47642f3c7e519c37ccdc641d87c6cfcf4641633df2261fb9",
-      "size": 11408
+      "sha256": "9ef2178a61b5b768aa4309b1798fad13a907e802be2c7a3617cc0b866b312a7c",
+      "size": 11417
     },
     {
       "url": "https://www.anthropic.com/research/mapping-mind-language-model",
       "status": "success",
       "path": "anthropic/blog/research/mapping-mind-language-model.md",
-      "sha256": "01ba20dd4ecfc60d2ca3959e18d20c6e7a99c1cb00175dbeeb16d9e4c31e1641",
-      "size": 14415
+      "sha256": "d126e2c47b1c3d414e43211ce7feed780e825492b7374b168619b8e4cddad162",
+      "size": 14424
     },
     {
       "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
       "status": "success",
       "path": "anthropic/blog/research/measuring-agent-autonomy.md",
-      "sha256": "d4d90865bb3352d92208a2778ef4b5115221246473b7d2c732de13babc12dfa7",
-      "size": 43635
+      "sha256": "aeb86bcfe9d05ef9f5febf4d5c75bd5b3c81d8a5deafe805baab9315889b1169",
+      "size": 43644
     },
     {
       "url": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
       "status": "success",
       "path": "anthropic/blog/research/measuring-faithfulness-in-chain-of-thought-reasoning.md",
-      "sha256": "ae010fd87421b5636096b966272b48757387046e97a13fe8ed3c793ffdf1c9eb",
-      "size": 2278
+      "sha256": "0638a5b72e972c27e148f28b2376ea056a8da8067bad57121eb6a629d0694d77",
+      "size": 2287
     },
     {
       "url": "https://www.anthropic.com/research/measuring-model-persuasiveness",
@@ -12441,260 +12448,260 @@
       "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
       "status": "success",
       "path": "anthropic/blog/research/measuring-progress-on-scalable-oversight-for-large-language-models.md",
-      "sha256": "1c3d5f69ae89b1a1575d3cc4885a3eab17f7aab58e959adf4d29d592ff5544bc",
-      "size": 2545
+      "sha256": "022542c958503616442247b2fdfc086a8923d14e327163142e43f58e16c46c8d",
+      "size": 2554
     },
     {
       "url": "https://www.anthropic.com/research/multiagent-systems",
       "status": "success",
       "path": "anthropic/blog/research/multiagent-systems.md",
-      "sha256": "7b69e4f44b0b151b2658242a3d24a54f3ef610661991ad22542a63f077ef1fe8",
-      "size": 24235
+      "sha256": "0f8e97aed369faf200fa98c76a859dbb9901662df8de8e11770ca613b837009e",
+      "size": 24187
     },
     {
       "url": "https://www.anthropic.com/research/mythos-preview",
       "status": "success",
       "path": "anthropic/blog/research/mythos-preview.md",
-      "sha256": "888ecb382bbba2730278b0b93f1cd480d208d9eb6c1d6af4e9c1b77695f209ad",
-      "size": 88613
+      "sha256": "0991989aadbe5f0934394e99bec356986c8260fcd5769ad9a423929033a8340b",
+      "size": 88565
     },
     {
       "url": "https://www.anthropic.com/research/n-days",
       "status": "success",
       "path": "anthropic/blog/research/n-days.md",
-      "sha256": "607123765b7d76acff472064164717eb3ca777ddfc5c4fede85f8361b55aeac2",
-      "size": 17686
+      "sha256": "4b2063d58a96d1d758311194ace7bff5a22445ecfe434f82e1894f5cfa48cbd7",
+      "size": 17638
     },
     {
       "url": "https://www.anthropic.com/research/natural-language-autoencoders",
       "status": "success",
       "path": "anthropic/blog/research/natural-language-autoencoders.md",
-      "sha256": "70a4b9c51c9c04e9b2c56efeec3d8074ddda47657989388b16e3ac8e85f1210c",
-      "size": 13893
+      "sha256": "0d755b6dfffb6606455b13327a1947708e84efef8dfbcee8a87df9a430f91c2d",
+      "size": 13902
     },
     {
       "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
       "status": "success",
       "path": "anthropic/blog/research/next-generation-constitutional-classifiers.md",
-      "sha256": "03ab457b5dd4a4525bcd6bd12d36a36284b1d3fda54a0a812e9fea61beeac884",
-      "size": 11279
+      "sha256": "24d9754d5ffbbf3d71a3a6173bdf2df597cd05ffc4ad88a40553c1771b2451c9",
+      "size": 11288
     },
     {
       "url": "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
       "status": "success",
       "path": "anthropic/blog/research/nuclear-safeguards-for-ai.md",
-      "sha256": "f48210d6745d7724b513db96a0fe7e8b5c59e14ceaa7e337c9e19b1d8bc61e82",
-      "size": 8906
+      "sha256": "38fbd5e9b32fb2481685be2ff94370d44ff41a50f3abdd44dc44d19c1569f987",
+      "size": 8858
     },
     {
       "url": "https://www.anthropic.com/research/off-switch-dual-use",
       "status": "success",
       "path": "anthropic/blog/research/off-switch-dual-use.md",
-      "sha256": "959bbf83a2504884a44ad6676491bddd94eae8a19fb91ed417019d690b728e43",
-      "size": 8218
+      "sha256": "d823bc90aa388fa35debb66f98b3aeebce52303090164bc70e0a76e2f6595122",
+      "size": 8227
     },
     {
       "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
       "status": "success",
       "path": "anthropic/blog/research/open-source-circuit-tracing.md",
-      "sha256": "86ab929cb9a21f39b60f09b7805d9c7ed5f1302533c6bfd24c4a4d2f657b5dd8",
-      "size": 4785
+      "sha256": "804bada870a5a6d9a57c979771dcfef5a10e1e93da577bb9cb460fa0d1e02fc3",
+      "size": 4794
     },
     {
       "url": "https://www.anthropic.com/research/persona-selection-model",
       "status": "success",
       "path": "anthropic/blog/research/persona-selection-model.md",
-      "sha256": "d35b9b0ebc557414810164938aa4510578e43aed9b1ad952f68c28d43316116b",
-      "size": 9577
+      "sha256": "c56ea223b53a4ea0f92d8e582712be60608d2423af97bd18e5faf7f165ddc118",
+      "size": 9586
     },
     {
       "url": "https://www.anthropic.com/research/persona-vectors",
       "status": "success",
       "path": "anthropic/blog/research/persona-vectors.md",
-      "sha256": "de14d20f6389a0751b7da2a9120291a77181dddc711450c5cf58b7c484053585",
-      "size": 12970
+      "sha256": "ace2b772f659b64d391a8f28acc2fe8a820bb0fa88cb04abcaf3ecc4bd19f8fa",
+      "size": 12979
     },
     {
       "url": "https://www.anthropic.com/research/petri-open-source-auditing",
       "status": "success",
       "path": "anthropic/blog/research/petri-open-source-auditing.md",
-      "sha256": "dfa82503e2e9aaf3ad2cf3a6bf133e71fc5db448699b90c68cc12ed5fbf1fd1d",
-      "size": 11146
+      "sha256": "4014fbc688b4c483ea14ce2144774b55428dda5de5f58f513e101a87174ae2f6",
+      "size": 11155
     },
     {
       "url": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
       "status": "success",
       "path": "anthropic/blog/research/predictability-and-surprise-in-large-generative-models.md",
-      "sha256": "3727bb1a67be5a200efaed2929e309cfead3fe1619528b415606981d9ae022c7",
-      "size": 2820
+      "sha256": "66bb53953ebf32a19ecec120238ca194c0a5b86ed2ed86b078a0a428cd87dd34",
+      "size": 2829
     },
     {
       "url": "https://www.anthropic.com/research/privileged-bases-in-the-transformer-residual-stream",
       "status": "success",
       "path": "anthropic/blog/research/privileged-bases-in-the-transformer-residual-stream.md",
-      "sha256": "ac0941a4c904dfd8f313bdb96a5fb40cf19af1a0e0b033308b3cf640e0e89747",
-      "size": 1939
+      "sha256": "786206bf4845664e7c471ca1433cc1dc0d23f6e2e10fd10ad569f0b274ab0c4b",
+      "size": 1948
     },
     {
       "url": "https://www.anthropic.com/research/probes-catch-sleeper-agents",
       "status": "success",
       "path": "anthropic/blog/research/probes-catch-sleeper-agents.md",
-      "sha256": "77ade6f74aa19224443b3e6ee41c11b78ce427d85e88e170d9eaeaf465d7d106",
-      "size": 28996
+      "sha256": "16dd88a45f369e81c0ff2692531582bbee434bfb4e2c6655dde205886195e233",
+      "size": 29005
     },
     {
       "url": "https://www.anthropic.com/research/project-fetch-phase-two",
       "status": "success",
       "path": "anthropic/blog/research/project-fetch-phase-two.md",
-      "sha256": "05b6d78cd41a727fceaa3e98d757b600a160f910e014eb618db06c4916d3a1e1",
-      "size": 9109
+      "sha256": "a3ebb866de6aa7eda522b6e264f6fbb0938b08a35064f7fd855ad393f99d62f0",
+      "size": 9061
     },
     {
       "url": "https://www.anthropic.com/research/project-fetch-robot-dog",
       "status": "success",
       "path": "anthropic/blog/research/project-fetch-robot-dog.md",
-      "sha256": "78a778399cd2ab69db500ab182a394aadab3c9a3c5eaaa63addf67fcb7be5a90",
-      "size": 18434
+      "sha256": "8bf870b0cbf8e864046870b5a39de79dd2d50538eb3bf969e313d9361dad1e98",
+      "size": 18386
     },
     {
       "url": "https://www.anthropic.com/research/project-pilot",
       "status": "success",
       "path": "anthropic/blog/research/project-pilot.md",
-      "sha256": "7ab02080f707446e9191b47d8ba4d691ef605c49577fc8cfd57d11881033cfdd",
-      "size": 12381
+      "sha256": "7abf6e92ad7c31195996df0c9d525943ea89c10361974bbafe3f25e257241b37",
+      "size": 12333
     },
     {
       "url": "https://www.anthropic.com/research/project-swap",
       "status": "success",
       "path": "anthropic/blog/research/project-swap.md",
-      "sha256": "ce808ffd6fb0cd4df930953c9784691ab0337eb2ca8a076aff415249e0a0914a",
-      "size": 46658
+      "sha256": "7b6723ec76c8ae171d50e3caedb8b43334f5011431d486f6b6b98da4290ec702",
+      "size": 46667
     },
     {
       "url": "https://www.anthropic.com/research/project-vend-1",
       "status": "success",
       "path": "anthropic/blog/research/project-vend-1.md",
-      "sha256": "00fd000d7091ec5fc946246905c27be89f2508228de58283b9e277538e6239e3",
-      "size": 13361
+      "sha256": "86ddc74cf5f8aadb96891ced568b8bbf60d2c6ac5245ebda26b31a8a01d2a4c9",
+      "size": 13313
     },
     {
       "url": "https://www.anthropic.com/research/project-vend-2",
       "status": "success",
       "path": "anthropic/blog/research/project-vend-2.md",
-      "sha256": "51ae9d85853197c29e74f39524c5208d10b5bd9bd9e29c03f40397519f04a154",
-      "size": 18283
+      "sha256": "ec715d5a2eaa90d731d82533de159c53cd00d9e7dc4e8ec411121e180f367f45",
+      "size": 18235
     },
     {
       "url": "https://www.anthropic.com/research/prompt-injection-defenses",
       "status": "success",
       "path": "anthropic/blog/research/prompt-injection-defenses.md",
-      "sha256": "45b946a004d8c4a353d8112908e57efbf1fb2b392ecf8c0d4dceb41fc517d627",
-      "size": 7516
+      "sha256": "994b7391214bfbfeaddff4340c40c9dfabae5abd0f1819adc698241ba1ae3498",
+      "size": 7525
     },
     {
       "url": "https://www.anthropic.com/research/property-based-testing",
       "status": "success",
       "path": "anthropic/blog/research/property-based-testing.md",
-      "sha256": "64da27690d6d2c6e3ec86ec40f0247f7dbd966ad10fa97a76579938a822fe6b6",
-      "size": 14465
+      "sha256": "082151e5799eb4e09938f1eda297815afa2bb0360de562c7f9bb5f3c9f3c6f38",
+      "size": 14417
     },
     {
       "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
       "status": "success",
       "path": "anthropic/blog/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning.md",
-      "sha256": "747996b971ac1eeffa3d4440e6cd012d1968cbb18cfcea55fc36aad7ca1245ea",
-      "size": 2661
+      "sha256": "7f92585ebc98555faef012cfc392ea3297a7292be3a49ef5d195a6d8df2a849e",
+      "size": 2670
     },
     {
       "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
       "status": "success",
       "path": "anthropic/blog/research/reasoning-models-dont-say-think.md",
-      "sha256": "8ec61dc510ff8b954569783086fb9d4874f5e70397fa070d1f1668f530f8993b",
-      "size": 12367
+      "sha256": "e6c9ccba6fea05378e2fcb2f88d5fb7a0b0a1753eb267f08e6cb4dcfaacf12ee",
+      "size": 12376
     },
     {
       "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
       "status": "success",
       "path": "anthropic/blog/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned.md",
-      "sha256": "088e95256eada8a46103562bc91f7a6c01f2f33b381172699a8d9641e2dbd5d1",
-      "size": 2670
+      "sha256": "e6a241b4006f4b0d85d94ff9c1fc7642cd4aeedce25d6a22f9677e15ef997c51",
+      "size": 2679
     },
     {
       "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
       "status": "success",
       "path": "anthropic/blog/research/reviewing-the-evidence-on-worker-retraining-programs.md",
-      "sha256": "d2469f6afb7164fd6afafc3bb605f6a6ff018f955c05ef6c85311f5eca63c374",
-      "size": 3968
+      "sha256": "7d44c1e290f9ef2c6249248dc16a23b2b9007567477278ead1133a8d7a7ea7be",
+      "size": 3977
     },
     {
       "url": "https://www.anthropic.com/research/reward-tampering",
       "status": "success",
       "path": "anthropic/blog/research/reward-tampering.md",
-      "sha256": "b13410a4c34a744c281d7539e5dbf59b29c4d5a654b2c0c73ea58ed66d79a5dd",
-      "size": 11872
+      "sha256": "4009e0382d463dcacc17907a8e69c79a27953b5f4f9fa1063de7b21291c87667",
+      "size": 11881
     },
     {
       "url": "https://www.anthropic.com/research/riemann-zeta",
       "status": "success",
       "path": "anthropic/blog/research/riemann-zeta.md",
-      "sha256": "406efa5aaaacafc16ea4bd2cebdada99f541f8d10cc49890c9a8a43574d97cda",
-      "size": 8534
+      "sha256": "06b8d22e97c6e2220f3398e9c921359b396271b78d86f7cdd4730478d05b821a",
+      "size": 8486
     },
     {
       "url": "https://www.anthropic.com/research/sabotage-evaluations",
       "status": "success",
       "path": "anthropic/blog/research/sabotage-evaluations.md",
-      "sha256": "9f7e87f34a3171f79d5e1c9f98d2dfbd3b3632d71d2f7adaac3f26635b387134",
-      "size": 12068
+      "sha256": "b3e87f1dbfbf48d87c676019474961ded4ab630da9a5788ac7bd495d4a4dc7b7",
+      "size": 12077
     },
     {
       "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
       "status": "success",
       "path": "anthropic/blog/research/scaling-laws-and-interpretability-of-learning-from-repeated-data.md",
-      "sha256": "24f9b38bd7e91b3dafed3f5881bb2ab4173c5ef732989afc8ac5e4ea41a9c58c",
-      "size": 3429
+      "sha256": "47432441ad52e6f25c8441233904f88b3e5b3da20deff486f4986144ad651e46",
+      "size": 3438
     },
     {
       "url": "https://www.anthropic.com/research/self-replicating-ai",
       "status": "success",
       "path": "anthropic/blog/research/self-replicating-ai.md",
-      "sha256": "2d0d5d229d8b745b66dfd6fe121c4b7b52e5ed47a1973e96dafd1200c627ce1a",
-      "size": 26954
+      "sha256": "2005903a3e81fdd5c33368a172e823622de3eac15da5ce1d535d920121f0cb5e",
+      "size": 26906
     },
     {
       "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
       "status": "success",
       "path": "anthropic/blog/research/shade-arena-sabotage-monitoring.md",
-      "sha256": "5e49869e258534d9d1b8e67952f335d24db3bb6503fabfad367bf5ac3f52c7ba",
-      "size": 13587
+      "sha256": "b9477924e6f20387a44a9d8f5c38c7a45227e10f98da8481661cf53d4be52267",
+      "size": 13596
     },
     {
       "url": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
       "status": "success",
       "path": "anthropic/blog/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training.md",
-      "sha256": "23cb1b46a7a4fbd76d3902dac98ef778622fcebc4490348d2aa6d9c663afd61f",
-      "size": 2803
+      "sha256": "b7d5964d0d139b806b3120b395a9b0a6d99bb10ba7c60328e3ddefabbc0d2007",
+      "size": 2812
     },
     {
       "url": "https://www.anthropic.com/research/small-samples-poison",
       "status": "success",
       "path": "anthropic/blog/research/small-samples-poison.md",
-      "sha256": "f07b4495559b515ed1827a28834eafbc2bca45031f8642329eb4cb6d3e0db254",
-      "size": 15390
+      "sha256": "452bfd454770477aa74b42dfaab5af00a886c510f810a6d088fa286cce1ddf00",
+      "size": 15399
     },
     {
       "url": "https://www.anthropic.com/research/smart-contracts",
       "status": "success",
       "path": "anthropic/blog/research/smart-contracts.md",
-      "sha256": "54bec02158a2bb8d673f2f514e5b5174fad2bf36b4ee80950f68170d1e099f9a",
-      "size": 30858
+      "sha256": "248eac7e842d101ef3840cf002c453a0ccaf3b1888d67d6c5fe1280a7e128382",
+      "size": 30810
     },
     {
       "url": "https://www.anthropic.com/research/softmax-linear-units",
       "status": "success",
       "path": "anthropic/blog/research/softmax-linear-units.md",
-      "sha256": "55f54fad881f65e8353ad021b7fc255160044f2748dee986f4796aa053ec8eb0",
-      "size": 2257
+      "sha256": "9ec689ba3afa7560b5927435cc280e001803be508919e71af51a2d30ce5acd47",
+      "size": 2266
     },
     {
       "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
@@ -12707,43 +12714,43 @@
       "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
       "status": "success",
       "path": "anthropic/blog/research/statistical-approach-to-model-evals.md",
-      "sha256": "84b3b424710b5b37c4d29db5a81e44f74f88a179efc89d92ee68df4a56b2ae55",
-      "size": 13265
+      "sha256": "c0a8c0121ec753ff58a26cb4c71d8e88dcb7740afd39eb7d0332d4d152c9cca5",
+      "size": 13274
     },
     {
       "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
       "status": "success",
       "path": "anthropic/blog/research/studying-large-language-model-generalization-with-influence-functions.md",
-      "sha256": "43df6f2f55fca280cc005b5605451d931e63b2c2d55950cb240f15fedf12dcaa",
-      "size": 2873
+      "sha256": "2ae778c15506430cea1087bd72c7badf8423698273b4b9345692cb74b431c24a",
+      "size": 2882
     },
     {
       "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
       "status": "success",
       "path": "anthropic/blog/research/superposition-memorization-and-double-descent.md",
-      "sha256": "b5449ecde3f4b67ac6812b2df0f9eae93f1a8eea5739841912df78612948516b",
-      "size": 3429
+      "sha256": "845dd1f1b235fa56877e058c18b3a1a3220c61d663776a152c71791f249265b4",
+      "size": 3438
     },
     {
       "url": "https://www.anthropic.com/research/teaching-claude-why",
       "status": "success",
       "path": "anthropic/blog/research/teaching-claude-why.md",
-      "sha256": "31e60c7d7a192de02debf70c32f4caa4889550c2be20fac4cade33b342caf52f",
-      "size": 14212
+      "sha256": "2f85ad4961db883d4308c4a0c31c2a646f23cea90dd8e1800eb4266537ab058a",
+      "size": 14221
     },
     {
       "url": "https://www.anthropic.com/research/the-anthropic-economic-index",
       "status": "success",
       "path": "anthropic/blog/research/the-anthropic-economic-index.md",
-      "sha256": "79a45cddcfcb52f3185e25f9796cda07580aebb2c0bd067de24752915f9be623",
-      "size": 18343
+      "sha256": "bf502ef33994d229fd51f0c2b5814ae2230576246112c63c72cd135c863acd8f",
+      "size": 18352
     },
     {
       "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
       "status": "success",
       "path": "anthropic/blog/research/the-capacity-for-moral-self-correction-in-large-language-models.md",
-      "sha256": "49b8255301351516650ae9f4f8a6ef5aa4cd39470e5b0c1b25cc3e394dfb1def",
-      "size": 2265
+      "sha256": "f3fdc3635a62db5de4927ce9bbd2170e3b5023acd513c671a2cf37faef5f3322",
+      "size": 2274
     },
     {
       "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
@@ -12756,15 +12763,15 @@
       "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
       "status": "success",
       "path": "anthropic/blog/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models.md",
-      "sha256": "3d6fe9f08176b12281e2078f0971cdda96f548f42f9c0faa116cf33220ee4d4f",
-      "size": 2879
+      "sha256": "017e53f0a267b14620feb3299fe1e5e03899f3d0ae75ac95ff3418191f64e5ac",
+      "size": 2888
     },
     {
       "url": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
       "status": "success",
       "path": "anthropic/blog/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning.md",
-      "sha256": "3e59a61b5e7950bb309aeb5e5f20b07093457ac89cf11c840745751f5cda8dce",
-      "size": 2346
+      "sha256": "f939e2120c92b47e7d55c8e8a0db892919331f0d242f559ab4465c378bd3de49",
+      "size": 2355
     },
     {
       "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
@@ -12777,78 +12784,78 @@
       "url": "https://www.anthropic.com/research/toy-models-of-superposition",
       "status": "success",
       "path": "anthropic/blog/research/toy-models-of-superposition.md",
-      "sha256": "4fe7a333b4fc9b4d9bc5fb4095b90749a83105f201660000a7edc916c4d37669",
-      "size": 1566
+      "sha256": "71971fa30e8999412cfafd85e3f4c40fd43bf306d9ac878a8be5ec7f9585de6d",
+      "size": 1575
     },
     {
       "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
       "status": "success",
       "path": "anthropic/blog/research/tracing-thoughts-language-model.md",
-      "sha256": "24b44711c5b763f5e1f80ea4dee216b0b6002347d0a19f02e0573f706c419e23",
-      "size": 22671
+      "sha256": "1aabc219022492c742143c6a8c0d155800f904b1b1c34598f4f4499cb01dfab7",
+      "size": 22680
     },
     {
       "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
       "status": "success",
       "path": "anthropic/blog/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback.md",
-      "sha256": "2531c190c87fecaa03e2c0d90c92dfd6d0334d9e2da907ac7eace15755a51985",
-      "size": 2831
+      "sha256": "cb3fcc4f9cff60ea97545204c10d21c092663eee1a6e02dbc433ec9d873d5b90",
+      "size": 2840
     },
     {
       "url": "https://www.anthropic.com/research/transformer-circuits",
       "status": "success",
       "path": "anthropic/blog/research/transformer-circuits.md",
-      "sha256": "f5acdf77159d08d2297511431336ea38a4f5320eab324dc467d88316e7b18200",
-      "size": 1391
+      "sha256": "b28cfa4c68204e0fd95f53c2532ad8b7e488582a16361126780631c98c93fadc",
+      "size": 1400
     },
     {
       "url": "https://www.anthropic.com/research/trustworthy-agents",
       "status": "success",
       "path": "anthropic/blog/research/trustworthy-agents.md",
-      "sha256": "7b6cd407ebd95462a2211a4cd6634db9c2bd843e20ffe8262090fa56460d59c8",
-      "size": 14710
+      "sha256": "01bbdb0b6d500c5021a51be671f1c48f8afe8219a1079104943d70d463a27ac0",
+      "size": 14719
     },
     {
       "url": "https://www.anthropic.com/research/values-wild",
       "status": "success",
       "path": "anthropic/blog/research/values-wild.md",
-      "sha256": "6cc1a0955de40322eccd940fcc9a63abd4c363298534f61a78d1b42b4d5a292f",
-      "size": 12987
+      "sha256": "696eca7fbe0e3cb8d37af8689f5d0b4d3d7454b239b60a4dad2050df21957401",
+      "size": 12996
     },
     {
       "url": "https://www.anthropic.com/research/vibe-physics",
       "status": "success",
       "path": "anthropic/blog/research/vibe-physics.md",
-      "sha256": "4df019bd2046cbc60b87b29dcafa9892f14699f105556bcc1d4258930bb4a668",
-      "size": 31575
+      "sha256": "203cc2e8bd5712b196e6d038c4382f9d620f3b4d7046bcb01184f9aa77fb2637",
+      "size": 31527
     },
     {
       "url": "https://www.anthropic.com/research/what-work-can-robots-do",
       "status": "success",
       "path": "anthropic/blog/research/what-work-can-robots-do.md",
-      "sha256": "46f9a89e59c8b6c56f72279cb58750e5eb5d011a3ee6f7e72d5ea8d87cad88b4",
-      "size": 97723
+      "sha256": "791f16d497858a8bc6dfc2f23aaf5da2dd3c7f86afb20c702c51d0385331e189",
+      "size": 97732
     },
     {
       "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
       "status": "success",
       "path": "anthropic/blog/research/yes-claude-can-do-nine-loops.md",
-      "sha256": "00d342c4fb6846db4c3d562577377fcdf4551a334cf44601cae620cb7bcd9374",
-      "size": 21294
+      "sha256": "bcd9e079ec9263342558350baa9ddc0817ea2c2655a71479784a05ada49b30a1",
+      "size": 21246
     },
     {
       "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
       "status": "success",
       "path": "anthropic/blog/research/your-thoughts-on-ai.md",
-      "sha256": "b14d5dd698baf0331f6f0028c927870992a2bbeccd0144e37cd226cd88467306",
-      "size": 11636
+      "sha256": "79a5b4815bb422d4eda18b418ef1a44b7664a4f5a3959b496f73230efaa595bc",
+      "size": 11645
     },
     {
       "url": "https://www.anthropic.com/research/zero-days",
       "status": "success",
       "path": "anthropic/blog/research/zero-days.md",
-      "sha256": "5de5e1c1d9b5577ca2864bda376a414e4b6daa92bdfc11e237e69d226db7341c",
-      "size": 14797
+      "sha256": "4688ba6aaae4a010fb0552636cb05677c00c91161a1d8f42c153b32d913c7539",
+      "size": 14749
     },
     {
       "url": "https://www.anthropic.com/threat-intelligence",
@@ -29997,15 +30004,15 @@
       "url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-economic-index-insights-from-claude-sonnet-3-7.md",
-      "sha256": "d3b7ec1f5efc69df0c08cfb07406999f183fb1d8e82a0add75264f7b060096c0",
-      "size": 21301
+      "sha256": "ffecab4bc0ba04b061d869956b630813e4e0e2de52a0477720748ade60ab2707",
+      "size": 21310
     },
     {
       "url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
       "status": "success",
       "path": "anthropic/blog/news/anthropic-education-report-how-educators-use-claude.md",
-      "sha256": "cb8e78b04954ee83a709d779ef109be636e0700646b09c2f733320266dc6bea4",
-      "size": 21107
+      "sha256": "4088b866430e70a42ffa9bb4fabb998e867ee4e626d15e27fcbf2fb718a2b3ce",
+      "size": 21116
     },
     {
       "url": "https://developers.openai.com/learn",
@@ -51316,8 +51323,8 @@
     }
   ],
   "summary": {
-    "total": 7736,
-    "downloaded": 6787,
+    "total": 7737,
+    "downloaded": 6788,
     "skipped": 0,
     "failed": 112,
     "dead": 837,

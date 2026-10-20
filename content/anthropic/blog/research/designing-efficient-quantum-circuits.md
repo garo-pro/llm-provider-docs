@@ -93,8 +93,8 @@ This raises an intriguing possibility. Rather than designing each component on i
 
 We thank Arjun Kar and Vinay Ramasesh for helpful discussions in the early stages of the project.
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
 
 How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.
-
-How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization, hiring, and labor demand across the economy.

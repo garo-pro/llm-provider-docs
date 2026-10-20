@@ -86,8 +86,8 @@ We’re eager to build even longer-horizon, real-world tasks that push model res
 
 If you are interested in understanding how models perform on difficult verifiable computational biology tasks, you can [access BioMysteryBench here](https://huggingface.co/datasets/Anthropic/BioMysteryBench-preview) and visit [claude.com/lifesciences](http://claude.com/lifesciences) to learn more.
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

@@ -160,8 +160,8 @@ Each is running Android with an ADB port open without authentication. Upon sprea
 
 A more detailed breakdown of the runs in “replication across a 17 node network.” Each column is the median number of nodes reached under different amounts of guidance in the prompt, and the subscript denotes how many agents cross over the pivot node to the other side of the network.
 
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
 
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.

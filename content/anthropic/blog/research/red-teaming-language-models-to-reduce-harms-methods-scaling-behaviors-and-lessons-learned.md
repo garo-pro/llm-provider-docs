@@ -13,6 +13,12 @@ We describe our early efforts to red team language models in order to simultaneo
 
 ## Related content
 
+### How Claude designed protein binders against scorpion neurotoxins
+
+We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+
+[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
+
 ### Designing more efficient quantum circuits with Claude
 
 We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
@@ -24,9 +30,3 @@ We gave Claude plain-language specifications for eight quantum circuits, along w
 The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
 
 [Read more](https://www.anthropic.com/research/ecdsa-curve-origins)
-
-### The AI expectations gap
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.
-
-[Read more](https://www.anthropic.com/research/ai-expectations-gap)
