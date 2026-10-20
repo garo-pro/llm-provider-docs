@@ -3,8 +3,6 @@ Title: The state of Maryland partners with Anthropic to better serve residents
 URL Source: https://www.anthropic.com/news/maryland-partnership
 
 Markdown Content:
-# The state of Maryland partners with Anthropic to better serve residents
-
 The state of Maryland has [announced](https://governor.maryland.gov/news/press/pages/Maryland-Governor-Wes-Moore-Announces-Landmark-AI-Partnership-to-Transform-State-Service-Delivery.aspx) it will use Anthropic's advanced AI models to improve government operations and better serve its more than six million residents. Under the new partnership, the state will deploy Claude across multiple state agencies to address several priorities:
 
 - **Connecting families with benefits** : A Claude-powered virtual assistant will help residents apply for essential benefits, including SNAP, Medicaid, temporary cash assistance, and WIC. The new tool will also identify additional programs that residents might qualify for, connecting eligible families to support they might not otherwise have known was available.
@@ -18,23 +16,3 @@ Anthropic’s co-founder and CEO Dario Amodei met Maryland Governor Wes Moore th
 Anthropic’s commitment to responsible AI deployment, including rigorous safety testing, makes Claude uniquely suited for sensitive government applications like these. Anthropic is pleased to help Maryland translate its [AI governance principles](https://doit.maryland.gov/policies/ai/Pages/maryland-responsible-ai-policy.aspx) into tangible new initiatives that make public services more efficient, accessible, and responsive.
 
 Other public sector organizations interested in using Claude can [contact our public sector team](mailto:pubsec@anthropic.com) to learn more and get started.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

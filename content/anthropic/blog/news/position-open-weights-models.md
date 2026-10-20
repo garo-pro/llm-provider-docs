@@ -3,10 +3,6 @@ Title: Our position on open-weights models
 URL Source: https://www.anthropic.com/news/position-open-weights-models
 
 Markdown Content:
-# Our position on open-weights models
-
-*A post by Dario Amodei, Anthropic CEO*
-
 Over the last few days there has been a lot of discussion about open-weights models, especially those from China. Reports suggest that some US officials are [considering banning](https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi) the use of Chinese open-weights models by US companies. In response, many tech companies have signed [a letter](https://x.com/JensenHuang/status/2080643682408321103) supporting open-weights models, and some people have even accused Anthropic of wanting to ban open-weights models as a means of protecting our business. Anyone who has read my past writing should know that I don’t regard such bans as a useful measure, but let me state it clearly so that there is no doubt: **Anthropic has never advocated for a ban on open-weights models.**
 
 Open-weights models that don’t have dangerous capabilities are a public good: they don’t cost anything besides the compute needed to run them, and they provide value to businesses, developers, and researchers.
@@ -27,23 +23,3 @@ This brings me to the [open letter](https://images.nvidia.com/pdf/Open-Weights-a
 To summarize my and Anthropic’s position, we have not and are not advocating for a ban on open-weights models as a category. We should instead focus on keeping powerful chips out of authoritarian hands, stopping industrial-scale distillation, and requiring safety testing of all sufficiently capable models, open and closed.
 
 **Edit 28 July: Updated to note that the cited research on modular training strategies was a collaboration between Anthropic and [AE Studio](https://ae.studio/).*
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

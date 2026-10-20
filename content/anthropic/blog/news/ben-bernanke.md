@@ -3,8 +3,6 @@ Title: Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust
 URL Source: https://www.anthropic.com/news/ben-bernanke
 
 Markdown Content:
-# Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust
-
 Anthropic's Long-Term Benefit Trust (LTBT) has appointed Dr. Ben Bernanke, a Distinguished Fellow at the Brookings Institution and former Chair of the Federal Reserve, as its newest member. He joins an independent body that works to hold Anthropic to its mission: the responsible development of advanced AI for the long-term benefit of humanity.
 
 Bernanke led the Federal Reserve from 2006 to 2014, steering the central bank through the 2008 global financial crisis and the recovery that followed. Before entering government, he spent more than two decades as an academic economist, much of that time at Princeton, where he chaired the economics department and built a body of research on the Great Depression and the role banks play in financial crises. That work earned him the Nobel Prize in Economic Sciences in 2022.
@@ -20,23 +18,3 @@ Anthropic is a Public Benefit Corporation, meaning the company was created to ba
 The LTBT has the authority to appoint members to Anthropic’s board. The Trustees advise the board and Anthropic’s leadership on critical decisions, particularly those involving the potential risks and societal impacts of AI. Bernanke’s appointment brings expertise to one of the questions Anthropic studies most closely: how AI is changing the economy. He will lend his insight to our economic research, in addition to other areas of Anthropic's work.
 
 Bernanke joins [Neil Buddy Shah](https://www.anthropic.com/news/the-long-term-benefit-trust), [Richard Fontaine](https://www.anthropic.com/news/national-security-expert-richard-fontaine-appointed-to-anthropic-s-long-term-benefit-trust), and [Mariano-Florentino Cuéllar](https://www.anthropic.com/news/mariano-florentino-long-term-benefit-trust) on the LTBT. Their collective experience spans global health, national security, law, policy, and economics.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

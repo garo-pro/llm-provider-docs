@@ -22,9 +22,9 @@ In practice, that approach does not make full use of what a coding agent can do.
 
 A coding agent is better understood as a configurable collaborator that can be refined over time. Through project-level guidance files, tool integrations, and reusable skills, developers can continuously shape the agent’s behavior so it becomes better aligned with the team’s development workflow.
 
-<Tip>
-  In other words, the value of a coding agent does not come from model capability alone. It comes from the combination of model capability and the development workflow around it.
-</Tip>
+> [!TIP]
+>
+> In other words, the value of a coding agent does not come from model capability alone. It comes from the combination of model capability and the development workflow around it.
 
 ## **2. Structure Task Inputs: Context Matters More Than Prompting Tricks**
 
@@ -32,23 +32,21 @@ When working with a coding agent, many developers focus too much on prompt-writi
 
 In a complex codebase, an effective task description typically includes four elements:
 
-<AccordionGroup>
-  <Accordion title="Goal" defaultOpen>
-    Clearly describe what needs to be built or changed, such as fixing a bug, implementing an endpoint, or refactoring a module.
-  </Accordion>
+> **Goal**
+>
+> Clearly describe what needs to be built or changed, such as fixing a bug, implementing an endpoint, or refactoring a module.
 
-  <Accordion title="Context" defaultOpen>
-    Provide the relevant files, error messages, documentation, or examples. For example, specify which files, functions, or modules are involved.
-  </Accordion>
+> **Context**
+>
+> Provide the relevant files, error messages, documentation, or examples. For example, specify which files, functions, or modules are involved.
 
-  <Accordion title="Constraints" defaultOpen>
-    List the engineering requirements the agent should follow, such as coding standards, architectural rules, security requirements, or dependency limitations.
-  </Accordion>
+> **Constraints**
+>
+> List the engineering requirements the agent should follow, such as coding standards, architectural rules, security requirements, or dependency limitations.
 
-  <Accordion title="Done when" defaultOpen>
-    Define how completion should be evaluated, such as tests passing, behavior changing as expected, or the bug no longer reproducing.
-  </Accordion>
-</AccordionGroup>
+> **Done when**
+>
+> Define how completion should be evaluated, such as tests passing, behavior changing as expected, or the bug no longer reproducing.
 
 This kind of structured task input reduces unnecessary guesswork and makes the agent’s changes more consistent and easier to review.
 
@@ -62,19 +60,7 @@ For more complex requests, asking the agent to start writing code immediately of
 
 This planning phase typically includes:
 
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img
-    src="https://cdn.bigmodel.cn/markdown/1774428526948mermaid-diagram%20%282%29.png?attname=mermaid-diagram+%282%29.png"
-    alt="Complex Task Planning"
-    style={{
-        backgroundColor: "#fff",
-        padding: "12px",
-        borderRadius: "8px",
-        maxWidth: "50%",
-        height: "auto"
-    }}
-  />
-</div>
+![Complex Task Planning](https://cdn.bigmodel.cn/markdown/1774428526948mermaid-diagram%20%282%29.png?attname=mermaid-diagram+%282%29.png)
 
 Claude Code, for example, encourages an analysis-and-planning step for complex tasks, such as exploring the codebase, identifying the scope of changes, and confirming the implementation approach before making edits. Some coding agents also provide a dedicated Plan mode that generates a complete execution plan before implementation begins.
 
@@ -102,9 +88,9 @@ Other systems capture the same information through configuration files, scripts,
 
 Regardless of the implementation, the goal is the same: move information that would otherwise need to be repeated in conversation into **stable project context**.
 
-<Check>
-  From a practical standpoint, this can be reduced to one simple rule: **put temporary instructions in the prompt, and put long-lived rules in project-level configuration files.**
-</Check>
+> [!TIP]
+>
+> From a practical standpoint, this can be reduced to one simple rule: **put temporary instructions in the prompt, and put long-lived rules in project-level configuration files.**
 
 ## **5. The Execution Environment Defines What the Agent Can Do**
 
@@ -121,12 +107,12 @@ Unlike traditional code-completion tools, coding agents are typically expected t
 
 As a result, agent behavior depends not only on model capability, but also on whether its **execution environment is complete, stable, and accessible**. When the environment is not configured properly, the agent can easily run into problems such as:
 
-<Warning>
-  * Being unable to locate the correct project directory
-  * Lacking permission to read or modify critical files
-  * Failing to run build or test commands
-  * Being unable to access external tools or services
-</Warning>
+> [!WARNING]
+>
+> * Being unable to locate the correct project directory
+> * Lacking permission to read or modify critical files
+> * Failing to run build or test commands
+> * Being unable to access external tools or services
 
 These issues often appear as model misunderstanding or poor code quality, but the underlying problem is usually that the agent does not have enough execution capability or access to the right context.
 
@@ -152,15 +138,15 @@ In practice, a reliable execution environment usually depends on a few categorie
 
 Once the execution environment is configured correctly, a coding agent is much more likely to behave consistently across sessions and complete multi-step tasks reliably.
 
-<Check>
-  At a higher level, a coding agent depends on three types of context:
-
-  * **Task Context**: the prompt and input for the current task
-  * **Project Context**: the repository structure and engineering rules
-  * **Environment Context**: the tools, permissions, and execution environment
-
-  Of these, Environment Context determines **what the agent can do, and how far it can go**.
-</Check>
+> [!TIP]
+>
+> At a higher level, a coding agent depends on three types of context:
+>
+> * **Task Context**: the prompt and input for the current task
+> * **Project Context**: the repository structure and engineering rules
+> * **Environment Context**: the tools, permissions, and execution environment
+>
+> Of these, Environment Context determines **what the agent can do, and how far it can go**.
 
 ## **6. Involve Coding Agents in the Full Development Loop**
 
@@ -170,17 +156,7 @@ A more effective approach is to have the coding agent participate in the **full 
 
 A typical agent-driven development loop includes the following steps:
 
-<div
-  style={{
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: "#fff",
-    padding: "16px",
-    borderRadius: "8px"
-}}
->
-  ![Description](https://cdn.bigmodel.cn/markdown/1774428645882mermaid-diagram%20%283%29.png?attname=mermaid-diagram+%283%29.png)
-</div>
+![Description](https://cdn.bigmodel.cn/markdown/1774428645882mermaid-diagram%20%283%29.png?attname=mermaid-diagram+%283%29.png)
 
 1. **Implement code changes**
    Modify existing code or add new code based on the task requirements.
@@ -197,9 +173,9 @@ In this workflow, the coding agent is no longer just a code generator. It become
 
 Most leading coding agents now support this way of working. Some can automatically run tests or build commands after making changes. Others can execute validation scripts or trigger review steps once code has been modified. Through these mechanisms, agents can participate continuously in code quality workflows, whether in a local development environment or in CI pipelines.
 
-<Check>
-  From a workflow perspective, this shifts the coding agent from a traditional **code generator** to an **execution node within the development loop**.
-</Check>
+> [!TIP]
+>
+> From a workflow perspective, this shifts the coding agent from a traditional **code generator** to an **execution node within the development loop**.
 
 Once an agent is able to participate in the full loop, its role extends beyond writing code. It can also reduce repetitive manual work in testing, validation, and review, improving overall development efficiency.
 
@@ -229,9 +205,9 @@ Through MCP, a coding agent can typically access resources such as:
 
 This changes how coding agents obtain information. Instead of relying entirely on what a developer describes in the prompt, the agent can retrieve the relevant context directly from connected tools.
 
-<Check>
-  From a workflow perspective, this is a meaningful shift. When an agent can only use the information provided in the prompt, it is usually limited to localized tasks. Once it can connect to external systems, it becomes capable of participating in more complete development workflows, such as reading issue context, investigating failed CI runs, checking API definitions, or analyzing problems against database schemas.
-</Check>
+> [!TIP]
+>
+> From a workflow perspective, this is a meaningful shift. When an agent can only use the information provided in the prompt, it is usually limited to localized tasks. Once it can connect to external systems, it becomes capable of participating in more complete development workflows, such as reading issue context, investigating failed CI runs, checking API definitions, or analyzing problems against database schemas.
 
 The value of external tool integration is therefore not just that it gives the agent more tools. It expands the agent’s context boundary, allowing it to evolve from a **repository-level executor** into **a collaborative node that operates within a real engineering environment**.
 
@@ -252,9 +228,9 @@ For this reason, many coding agent systems provide a **Skill** mechanism for pac
 
 At a high level, a Skill can be understood as a **structured workflow template**. It abstracts execution logic that would otherwise be scattered across prompts, allowing the agent to apply the same workflow consistently when handling similar tasks.
 
-<Tip>
-  For a deeper discussion of what Skills are and how to write them, see [How to create Skills: Key steps, limitations, and examples](https://claude.com/blog/how-to-create-skills-key-steps-limitations-and-examples).
-</Tip>
+> [!TIP]
+>
+> For a deeper discussion of what Skills are and how to write them, see [How to create Skills: Key steps, limitations, and examples](https://claude.com/blog/how-to-create-skills-key-steps-limitations-and-examples).
 
 Different coding agent tools manage Skills in different ways. Some define them through dedicated skill files, while others register reusable workflows through configuration or scripting mechanisms.
 
@@ -283,9 +259,9 @@ Even when these tasks have already been encapsulated as Skills, they still creat
 
 For this reason, many coding agent systems provide an **Automation layer** that allows workflows to run automatically based on a schedule or a defined trigger condition.
 
-<Info>
-  Automation can be understood as the next layer above Skills. A Skill defines how a workflow is executed, while Automation determines when **that workflow runs and how it continues to operate over time**.
-</Info>
+> [!NOTE]
+>
+> Automation can be understood as the next layer above Skills. A Skill defines how a workflow is executed, while Automation determines when **that workflow runs and how it continues to operate over time**.
 
 For example, a Skill for generating release notes might be configured to run:
 
@@ -316,23 +292,21 @@ Together, these form the agent’s **active working context** for the task.
 
 If sessions are not managed carefully, unrelated tasks can accumulate in the same session and make the context unnecessarily complex. This often reduces the quality of the agent’s reasoning and execution. For that reason, deliberate session management is an important part of working effectively with coding agents. Common practices include:
 
-<AccordionGroup>
-  <Accordion title="Use a separate session for each task" defaultOpen>
-    Avoid mixing unrelated tasks in the same session so the working context stays clear.
-  </Accordion>
+> **Use a separate session for each task**
+>
+> Avoid mixing unrelated tasks in the same session so the working context stays clear.
 
-  <Accordion title="Avoid overly long sessions" defaultOpen>
-    When a session accumulates too much history, use summaries or compression to reduce context overhead.
-  </Accordion>
+> **Avoid overly long sessions**
+>
+> When a session accumulates too much history, use summaries or compression to reduce context overhead.
 
-  <Accordion title="Start a new session for branch explorations" defaultOpen>
-    If the task opens up a new line of investigation, continue it in a separate session instead of piling more changes into the original one.
-  </Accordion>
+> **Start a new session for branch explorations**
+>
+> If the task opens up a new line of investigation, continue it in a separate session instead of piling more changes into the original one.
 
-  <Accordion title="Periodically compress historical context" defaultOpen>
-    Summarize older parts of the conversation to reduce pressure on the context window.
-  </Accordion>
-</AccordionGroup>
+> **Periodically compress historical context**
+>
+> Summarize older parts of the conversation to reduce pressure on the context window.
 
 In more complex development scenarios, teams may also adopt a **multi-agent collaboration model**. For example, subtasks such as exploring the codebase, running tests, or investigating failures can be delegated to separate agents, while a primary agent coordinates the overall task. This helps preserve clarity in the main session while improving execution efficiency for more complex work.
 

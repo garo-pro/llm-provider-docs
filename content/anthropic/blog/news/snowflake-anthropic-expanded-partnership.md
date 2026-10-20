@@ -3,8 +3,6 @@ Title: Snowflake and Anthropic announce $200 million partnership to bring agenti
 URL Source: https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership
 
 Markdown Content:
-# Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises
-
 Today, we announce a significant expansion of our strategic partnership with Snowflake. The multi-year, $200 million agreement will not only make Anthropic’s Claude models available in the Snowflake platform to more than 12,600 global customers across Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Azure, but also establishes a joint go-to-market (GTM) initiative focused on deploying AI agents across the world's largest enterprises. The partnership enables enterprises to gain insights from both structured and unstructured data using Claude, while maintaining rigorous security standards.
 
 Snowflake uses Claude widely for internal operations as well. Claude Code enhances developer productivity and innovation across Snowflake's engineering organization, while a Claude-powered GTM AI Assistant built on [Snowflake Intelligence](https://www.snowflake.com/en/product/snowflake-intelligence/) enables sales teams to centralize data, ask questions in natural language, and find the answers that speed up deal cycles.
@@ -17,7 +15,7 @@ By combining Claude's reasoning capabilities with Snowflake's governed data envi
 
 "Snowflake's most strategic partnerships are measured not just in scale, but in the depth of innovation and customer value that we can create together," **said Sridhar Ramaswamy, CEO of Snowflake**. "Anthropic joins a very select group of partners where we have nine-figure alignment, co-innovation at the product level, and a proven track record of executing together for customers worldwide. Together, the combined power of Claude and Snowflake is raising the bar for how enterprises deploy scalable, context-aware AI on top of their most critical business data."
 
-## **What the partnership delivers: enterprise-ready AI**
+### What the partnership delivers: enterprise-ready AI
 
 By bringing Claude directly to enterprise data in Snowflake, customers can gain insights from both structured and unstructured data, while maintaining rigorous security standards. Key benefits of the partnership include:
 
@@ -26,7 +24,7 @@ By bringing Claude directly to enterprise data in Snowflake, customers can gain 
 - **Building custom multi-agent solutions:** [Snowflake Cortex Agents](https://www.snowflake.com/en/developers/guides/getting-started-with-cortex-agents/) enables customers to build production-ready data agents powered by Claude. These agents retrieve and reason over structured and unstructured data with built-in accuracy and efficiency.
 - **Built-in governance and observability:** [Snowflake Horizon Catalog](https://www.snowflake.com/en/product/features/horizon/) provides end-to-end governance and responsible AI controls, so teams in regulated industries can move AI agents from pilots to production with confidence.
 
-## **Customers are already seeing results**
+### Customers are already seeing results
 
 By combining Claude's reasoning capabilities with Snowflake's governed data and AI environment, customers across any industry can deploy agents that understand extensive context across customer data—and show their work rather than just retrieve an answer.
 
@@ -38,26 +36,6 @@ For example, **Simon Data**, a composable customer data platform provider, [uses
 
 A wealth management firm can use Snowflake Intelligence, powered by Claude, to create an agent that synthesizes client holdings with relevant market data and compliance rules to generate personalized portfolio recommendations—all within the security and governance perimeter of Snowflake's AI Data Cloud.
 
-## **Getting started**
+### Getting started
 
 Customers can get started with Claude on Snowflake through this [quickstart guide](https://www.snowflake.com/en/developers/guides/build-agentic-application-in-snowflake/). Enterprises can visit our [Enterprise page](https://www.anthropic.com/enterprise) to learn more about deploying Claude. Claude is the only frontier model available on all three of the world's most prominent cloud services, including Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Azure. Learn more about how [Snowflake powers enterprise data intelligence with Claude](https://claude.com/customers/snowflake).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

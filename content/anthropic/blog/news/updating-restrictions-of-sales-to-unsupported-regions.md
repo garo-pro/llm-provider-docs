@@ -3,8 +3,6 @@ Title: Updating restrictions of sales to unsupported regions
 URL Source: https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions
 
 Markdown Content:
-# Updating restrictions of sales to unsupported regions
-
 Anthropic's Terms of Service prohibit use of our services in [certain regions](https://www.anthropic.com/supported-countries) due to legal, regulatory, and security risks. However, companies from these restricted regions—including adversarial nations like China—continue accessing our services in various ways, such as through subsidiaries incorporated in other countries.
 
 Companies subject to control from authoritarian regions like China face legal requirements that can compel them to share data, cooperate with intelligence services, or take other actions that create national security risks. These requirements make it difficult for companies to resist these pressures regardless of where they operate or of the personal preferences of the individuals at those companies. When these entities access our services through subsidiaries, they could use our capabilities to develop applications and services that ultimately serve adversarial military and intelligence services and broader authoritarian objectives. They could also potentially use our models to advance their own AI development through techniques like distillation and to compete globally with trusted technology companies headquartered in the United States and allied countries.
@@ -14,23 +12,3 @@ To account for this reality and better align with our commitment to ensuring tha
 Consistent with this concern, we continue to advocate for policies like strong export controls to prevent authoritarian nations from developing frontier AI capabilities that could threaten national security, accelerating energy projects on US soil to build out large-scale infrastructure for AI scaling, and [rigorously evaluating](https://assets.anthropic.com/m/4e20a4ab6512e217/original/Anthropic-Response-to-OSTP-RFI-March-2025-Final-Submission-v3.pdf) AI models for national security relevant capabilities, including those that could be exploited by US adversaries.
 
 The safety and security of AI development requires collective commitment to preventing its misuse by authoritarian adversaries. Responsible AI companies can and should take decisive action to ensure that transformative technologies serve US and allied strategic interests and support our democratic values.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

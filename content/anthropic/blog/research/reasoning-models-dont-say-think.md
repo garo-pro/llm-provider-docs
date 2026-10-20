@@ -17,7 +17,7 @@ This poses a problem if we want to monitor the Chain-of-Thought for misaligned b
 
 ## Testing for faithfulness
 
-How do you test for faithfulness? Following [Turpin et al. (2023)](https://arxiv.org/abs/2305.04388), we subtly fed a model a hint about the answer to an evaluation question we asked it, and then checked to see if it “admitted” using the hint when it explained its reasoning if it used the hint (we did this for the reasoning models Claude 3.7 Sonnet from Anthropic and R1 from DeepSeek<sup>1</sup>). Some of the hints were correct and some were deliberately incorrect; the point was to observe how the model responded when they were provided.
+How do you test for faithfulness? Following [Turpin et al. (2023)](https://arxiv.org/abs/2305.04388), we subtly fed a model a hint about the answer to an evaluation question we asked it, and then checked to see if it “admitted” using the hint when it explained its reasoning if it used the hint (we did this for the reasoning models Claude 3.7 Sonnet from Anthropic and R1 from DeepSeek<sup>[1](https://www.anthropic.com#footnote-1)</sup>). Some of the hints were correct and some were deliberately incorrect; the point was to observe how the model responded when they were provided.
 
 Think of it like slipping a student a note saying “the answer is [A]” before an exam. If they write in their exam that they chose [A] at least in part because of the note, that’s good news: they’re being honest and faithful. But if they write down what they claim to be their reasoning process *without* mentioning the note, we might have a problem.
 
@@ -65,26 +65,6 @@ Overall, our results point to the fact that advanced reasoning models very often
 
 Read [the full paper](https://assets.anthropic.com/m/71876fabef0f0ed4/original/reasoning_models_paper.pdf).
 
-## Work with us
+### Work with us
 
 If you’re interested in pursuing work on Alignment Science, including on Chain-of-Thought faithfulness, we’d be interested to see your application. We're recruiting [Research Scientists and Research Engineers](https://job-boards.greenhouse.io/anthropic/jobs/4009165008).
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

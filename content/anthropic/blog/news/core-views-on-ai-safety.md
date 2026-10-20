@@ -3,10 +3,6 @@ Title: Core views on AI safety: When, why, what, and how
 URL Source: https://www.anthropic.com/news/core-views-on-ai-safety
 
 Markdown Content:
-# Core views on AI safety: When, why, what, and how
-
-![Core views on AI safety: When, why, what, and how](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdd1f0730fc369a574023c7ede81c7527ee73a386-2000x1125.png&w=3840&q=75)
-
 We founded Anthropic because we believe the impact of AI might be comparable to that of the industrial and scientific revolutions, but we aren’t confident it will go well. And we also believe this level of impact could start to arrive soon – perhaps in the coming decade.
 
 This view may sound implausible or grandiose, and there are good reasons to be skeptical of it. For one thing, almost everyone who has said “the thing we’re working on might be one of the biggest developments in history” has been wrong, often laughably so. Nevertheless, we believe there is enough evidence to seriously prepare for a world where rapid AI progress leads to transformative AI systems.
@@ -23,9 +19,9 @@ As a high level summary of the main points in this post:
 
 ## Our rough view on rapid AI progress
 
-The three main ingredients leading to predictable[<sup>1</sup>](https://www.anthropic.com#footnote-1) improvements in AI performance are [training data, computation, and improved algorithms](https://arxiv.org/pdf/2005.04305.pdf). In the mid-2010s, some of us noticed that larger AI systems were consistently smarter, and so we theorized that the most important ingredient in AI performance might be the total budget for AI training computation. When this was graphed, it became clear that the amount of computation going into the largest models was growing at [10x](https://openai.com/blog/ai-and-compute/) per year (a doubling time 7 times faster than Moore’s Law). In 2019, several members of what was to become the founding Anthropic team made this idea precise by developing [scaling laws](https://arxiv.org/abs/2001.08361) for AI, demonstrating that you could make AIs smarter in a predictable way, just by making them larger and training them on more data. Justified in part by these results, this team led the effort to train [GPT-3](https://arxiv.org/abs/2005.14165), arguably the first modern “large” language model[<sup>2</sup>](https://www.anthropic.com#footnote-2), with over 173B parameters.
+The three main ingredients leading to predictable<sup>[1](https://www.anthropic.com#footnote-1)</sup> improvements in AI performance are [training data, computation, and improved algorithms](https://arxiv.org/pdf/2005.04305.pdf). In the mid-2010s, some of us noticed that larger AI systems were consistently smarter, and so we theorized that the most important ingredient in AI performance might be the total budget for AI training computation. When this was graphed, it became clear that the amount of computation going into the largest models was growing at [10x](https://openai.com/blog/ai-and-compute/) per year (a doubling time 7 times faster than Moore’s Law). In 2019, several members of what was to become the founding Anthropic team made this idea precise by developing [scaling laws](https://arxiv.org/abs/2001.08361) for AI, demonstrating that you could make AIs smarter in a predictable way, just by making them larger and training them on more data. Justified in part by these results, this team led the effort to train [GPT-3](https://arxiv.org/abs/2005.14165), arguably the first modern “large” language model<sup>[2](https://www.anthropic.com#footnote-2)</sup>, with over 173B parameters.
 
-Since the discovery of scaling laws, many of us at Anthropic have believed that very rapid AI progress was quite likely. However, back in 2019, it seemed possible that multimodality, logical reasoning, speed of learning, transfer learning across tasks, and long-term memory might be “walls” that would slow or halt the progress of AI. In the years since, several of these “walls”, such as multimodality and logical reasoning, have fallen. Given this, most of us have become increasingly convinced that rapid AI progress will continue rather than stall or plateau. AI systems are now approaching human level performance on a large variety of tasks, and yet training these systems still costs far less than “big science” projects like the Hubble Space Telescope or the Large Hadron Collider – meaning that there’s a lot more room for further growth[<sup>3</sup>](https://www.anthropic.com#footnote-3).
+Since the discovery of scaling laws, many of us at Anthropic have believed that very rapid AI progress was quite likely. However, back in 2019, it seemed possible that multimodality, logical reasoning, speed of learning, transfer learning across tasks, and long-term memory might be “walls” that would slow or halt the progress of AI. In the years since, several of these “walls”, such as multimodality and logical reasoning, have fallen. Given this, most of us have become increasingly convinced that rapid AI progress will continue rather than stall or plateau. AI systems are now approaching human level performance on a large variety of tasks, and yet training these systems still costs far less than “big science” projects like the Hubble Space Telescope or the Large Hadron Collider – meaning that there’s a lot more room for further growth<sup>[3](https://www.anthropic.com#footnote-3)</sup>.
 
 People tend to be bad at recognizing and acknowledging exponential growth in its early phases. Although we are seeing rapid progress in AI, there is a tendency to assume that this localized progress must be the exception rather than the rule, and that things will likely return to normal soon. If we are correct, however, the current feeling of rapid AI progress may not end before AI systems have a broad range of capabilities that exceed our own capacities. Furthermore, feedback loops from the use of advanced AI in AI research could make this transition especially swift; we already see the beginnings of this process with the development of code models that make AI researchers more productive, and [Constitutional AI](https://arxiv.org/abs/2212.08073) reducing our dependence on human feedback.
 
@@ -51,13 +47,13 @@ However, in the field of AI safety we anticipate a mixture of [predictable and s
 
 We believe it’s hard to make rapid progress in science and engineering without close contact with our object of study. Constantly iterating against a source of “ground truth” is usually crucial for scientific progress. In our AI safety research, empirical evidence about AI – though it mostly arises from computational experiments, i.e. AI training and evaluation – is the primary source of ground truth.
 
-This doesn’t mean we think theoretical or conceptual research has no place in AI safety, but we do believe that empirically grounded safety research will have the most relevance and impact. The space of possible AI systems, possible safety failures, and possible safety techniques is large and difficult to traverse from the armchair alone. Given the difficulty of accounting for all variables, it would be easy to over-anchor on problems that never arise or to miss large problems that do[<sup>4</sup>](https://www.anthropic.com#footnote-4). Good empirical research often makes better theoretical and conceptual work possible.
+This doesn’t mean we think theoretical or conceptual research has no place in AI safety, but we do believe that empirically grounded safety research will have the most relevance and impact. The space of possible AI systems, possible safety failures, and possible safety techniques is large and difficult to traverse from the armchair alone. Given the difficulty of accounting for all variables, it would be easy to over-anchor on problems that never arise or to miss large problems that do<sup>[4](https://www.anthropic.com#footnote-4)</sup>. Good empirical research often makes better theoretical and conceptual work possible.
 
 Relatedly, we believe that methods for detecting and mitigating safety problems may be extremely hard to plan out in advance, and will require iterative development. Given this, we tend to believe “planning is indispensable, but plans are useless”. At any given time we might have a plan in mind for the next steps in our research, but we have little attachment to these plans, which are more like short-term bets that we are prepared to alter as we learn more. This obviously means we cannot guarantee that our current line of research will be successful, but this is a fact of life for every research program.
 
 ## The role of frontier models in empirical safety
 
-A major reason Anthropic exists as an organization is that we believe it's necessary to do safety research on "frontier" AI systems. This requires an institution which can both work with large models and prioritize safety[<sup>5</sup>](https://www.anthropic.com#footnote-5).
+A major reason Anthropic exists as an organization is that we believe it's necessary to do safety research on "frontier" AI systems. This requires an institution which can both work with large models and prioritize safety<sup>[5](https://www.anthropic.com#footnote-5)</sup>.
 
 In itself, empiricism doesn't necessarily imply the need for frontier safety. One could imagine a situation where empirical safety research could be effectively done on smaller and less capable models. However, we don't believe that's the situation we're in. At the most basic level, this is because large models are qualitatively different from smaller models (including [sudden, unpredictable changes](https://arxiv.org/pdf/2202.07785.pdf)). But scale also connects to safety in more direct ways:
 
@@ -189,23 +185,3 @@ We believe that artificial intelligence may have an unprecedented impact on the 
 We want to be clear that we do not believe that the systems available today pose an imminent concern. However, it is prudent to do foundational work now to help reduce risks from advanced AI if and when much more powerful systems are developed. It may turn out that creating safe AI systems is easy, but we believe it’s crucial to prepare for less optimistic scenarios.
 
 Anthropic is taking an empirically-driven approach to AI safety. Some of the key areas of active work include improving our understanding of how AI systems learn and generalize to the real world, developing techniques for scalable oversight and review of AI systems, creating AI systems that are transparent and interpretable, training AI systems to follow safe processes instead of pursuing outcomes, analyzing potential dangerous failure modes of AI and how to prevent them, and evaluating the societal impacts of AI to guide policy and research. By attacking the problem of AI safety from multiple angles, we hope to develop a “portfolio” of safety work that can help us succeed across a range of different scenarios. We anticipate that our approach and resource allocation will rapidly adjust as more information about the kind of scenario we are in becomes available.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

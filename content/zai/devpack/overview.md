@@ -12,52 +12,48 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 
 ### Coding
 
-<AccordionGroup>
-  <Accordion title="Natural Language Programming">
-    Describe requirements in plain language to automatically generate plans, write code, debug issues, and ensure smooth execution.
-  </Accordion>
+> **Natural Language Programming**
+>
+> Describe requirements in plain language to automatically generate plans, write code, debug issues, and ensure smooth execution.
 
-  <Accordion title="Intelligent Code Completion">
-    Get real-time, context-aware completion suggestions that reduce manual typing and significantly improve productivity.
-  </Accordion>
+> **Intelligent Code Completion**
+>
+> Get real-time, context-aware completion suggestions that reduce manual typing and significantly improve productivity.
 
-  <Accordion title="Code Debugging & Repair">
-    Input error messages or descriptions to automatically analyze your codebase, locate problems, and provide fixes.
-  </Accordion>
+> **Code Debugging & Repair**
+>
+> Input error messages or descriptions to automatically analyze your codebase, locate problems, and provide fixes.
 
-  <Accordion title="Codebase Q&A">
-    Ask questions about your team’s codebase anytime, maintain global understanding, and receive precise answers with external data integration.
-  </Accordion>
+> **Codebase Q\&A**
+>
+> Ask questions about your team’s codebase anytime, maintain global understanding, and receive precise answers with external data integration.
 
-  <Accordion title="Automated Task Handling">
-    Automatically fix lint issues, resolve merge conflicts, and generate release notes—allowing developers to stay focused on core logic.
-  </Accordion>
-</AccordionGroup>
+> **Automated Task Handling**
+>
+> Automatically fix lint issues, resolve merge conflicts, and generate release notes—allowing developers to stay focused on core logic.
 
 ### Office Work
 
-<AccordionGroup>
-  <Accordion title="Deep Search & Research">
-    Cross-source intelligent retrieval and information synthesis, delivering structured research reports fast—so every decision is backed by evidence.
-  </Accordion>
+> **Deep Search & Research**
+>
+> Cross-source intelligent retrieval and information synthesis, delivering structured research reports fast—so every decision is backed by evidence.
 
-  <Accordion title="Business Data Analysis">
-    Upload multi-dimensional business data to automatically generate visual charts, along with in-depth business insights and operational recommendations.
-  </Accordion>
+> **Business Data Analysis**
+>
+> Upload multi-dimensional business data to automatically generate visual charts, along with in-depth business insights and operational recommendations.
 
-  <Accordion title="Creative Ideation & Brainstorming">
-    Break through mental boundaries and spark inspiration from multiple angles, turning vague ideas into actionable plans — fast.
-  </Accordion>
+> **Creative Ideation & Brainstorming**
+>
+> Break through mental boundaries and spark inspiration from multiple angles, turning vague ideas into actionable plans — fast.
 
-  <Accordion title="Automated Task Execution">
-    Autonomously run complex workflows end to end, from instruction to delivery — cutting repetitive work and freeing up time for what matters.
-  </Accordion>
-</AccordionGroup>
+> **Automated Task Execution**
+>
+> Autonomously run complex workflows end to end, from instruction to delivery — cutting repetitive work and freeing up time for what matters.
 
 ## Advantages
 
 * **Access to High-Intelligence Models:** Upon release, the GLM series achieved SOTA performance among open-source models in reasoning, coding, and agent capabilities, delivering outstanding results in tool use and complex task execution.
-* **Works with 20+ Agent Tools:** Beyond Claude Code, it also supports ZCode, Cline, OpenCode, AutoClaw, and other <a href="https://docs.z.ai/devpack/tool/others#step-1-supported-tools">supported tools</a>, giving you flexibility across both coding and office workflows.
+* **Works with 20+ Agent Tools:** Beyond Claude Code, it also supports ZCode, Cline, OpenCode, AutoClaw, and other [supported tools](https://docs.z.ai/devpack/tool/others#step-1-supported-tools), giving you flexibility across both coding and office workflows.
 * **Generous Usage at a Fair Price:** Get higher call limits than standard plans. Starting at just 18 USD per month, with Pro and Max plans designed for high-frequency, complex projects.
 * **Expanded Capabilities:** All plans support Vision Understanding, Web Search MCP， Web Reader MCP and Zread MCP helping you tackle a wider range of coding and office tasks.
 
@@ -70,9 +66,9 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 
 ### Usage Instruction
 
-<Warning>
-  For information on Team Plan usage limits, please visit [Team Plan Benefits](/devpack/teamplan).
-</Warning>
+> [!WARNING]
+>
+> For information on Team Plan usage limits, please visit [Team Plan Benefits](/devpack/teamplan).
 
 #### Usage Credit Allowance
 
@@ -94,73 +90,73 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit.
 * Model credit usage = (Input tokens × Input multiplier + Cached Input tokens × Cached Input multiplier + Output tokens × Output multiplier) / 10,000
 * MCP tool credit usage = Number of calls × Output multiplier
 
-<Tip>
-  You can view the number of tokens consumed under each pricing type and the number of tool calls on the [Charge Type](https://z.ai/manage-apikey/billing) page.
-</Tip>
+> [!TIP]
+>
+> You can view the number of tokens consumed under each pricing type and the number of tool calls on the [Charge Type](https://z.ai/manage-apikey/billing) page.
 
 <table>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>Product Type</th>
-      <th style={{ textAlign: "left" }}>Product</th>
-      <th style={{ textAlign: "left" }}>Input Multiplier</th>
-      <th style={{ textAlign: "left" }}>Cached Input Multiplier</th>
-      <th style={{ textAlign: "left" }}>Output Multiplier</th>
+      <th>Product Type</th>
+      <th>Product</th>
+      <th>Input Multiplier</th>
+      <th>Cached Input Multiplier</th>
+      <th>Output Multiplier</th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td rowSpan={2} style={{ textAlign: "left" }}>Model</td>
-      <td className="!pl-3" style={{ textAlign: "left" }}>GLM-5.3</td>
-      <td style={{ textAlign: "left" }}>6.9</td>
-      <td style={{ textAlign: "left" }}>1.7</td>
-      <td style={{ textAlign: "left" }}>24</td>
+      <td rowSpan={2}>Model</td>
+      <td>GLM-5.3</td>
+      <td>6.9</td>
+      <td>1.7</td>
+      <td>24</td>
     </tr>
 
     <tr>
-      <td className="!pl-3" style={{ textAlign: "left" }}>GLM-5.3-Flash\
+      <td>GLM-5.3-Flash\
       (Including MCP for visual understanding)</td>
-      <td style={{ textAlign: "left" }}>2.3</td>
-      <td style={{ textAlign: "left" }}>0.56</td>
-      <td style={{ textAlign: "left" }}>8</td>
+      <td>2.3</td>
+      <td>0.56</td>
+      <td>8</td>
     </tr>
 
     <tr>
-      <td rowSpan={3} style={{ textAlign: "left" }}>MCP Server</td>
-      <td className="!pl-3" style={{ textAlign: "left" }}>Web Search</td>
-      <td style={{ textAlign: "left" }}>—</td>
-      <td style={{ textAlign: "left" }}>—</td>
-      <td style={{ textAlign: "left" }}>1.2</td>
+      <td rowSpan={3}>MCP Server</td>
+      <td>Web Search</td>
+      <td>—</td>
+      <td>—</td>
+      <td>1.2</td>
     </tr>
 
     <tr>
-      <td className="!pl-3" style={{ textAlign: "left" }}>Web Reader</td>
-      <td style={{ textAlign: "left" }}>—</td>
-      <td style={{ textAlign: "left" }}>—</td>
-      <td style={{ textAlign: "left" }}>1.2</td>
+      <td>Web Reader</td>
+      <td>—</td>
+      <td>—</td>
+      <td>1.2</td>
     </tr>
 
     <tr>
-      <td className="!pl-3" style={{ textAlign: "left" }}>Zread</td>
-      <td style={{ textAlign: "left" }}>—</td>
-      <td style={{ textAlign: "left" }}>—</td>
-      <td style={{ textAlign: "left" }}>1.2</td>
+      <td>Zread</td>
+      <td>—</td>
+      <td>—</td>
+      <td>1.2</td>
     </tr>
   </tbody>
 </table>
 
 **During off-peak hours, model usage is charged at 50% of the standard credit rate**.
 
-<Info>
-  **Peak hours**: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
-</Info>
+> [!NOTE]
+>
+> **Peak hours**: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
 
 #### Estimated Token Allowance
 
 Token usage varies depending on the cache hit rate, as shown below:
 
-| Cache Hit Rate | Model | Lite <br />(M Tokens/week) | Pro <br />(M Tokens/week) | Max <br />(M Tokens/week) |
+| Cache Hit Rate | Model | Lite (M Tokens/week) | Pro (M Tokens/week) | Max (M Tokens/week) |
 | :-: | :-: | :-: | :-: | :-: |
 | 95% | GLM‑5.3 | 48–97 | 290–580 | 676–1,352 |
 | 95% | GLM‑5.3‑Flash | 146～292 | 877–1,755 | 2,047–4,095 |
@@ -178,31 +174,27 @@ Token usage varies depending on the cache hit rate, as shown below:
 
 ### Exclusive MCP Access
 
-<CardGroup cols={2}>
-  <Card title="Vision Understanding" icon="eye" href="/devpack/mcp/vision-mcp-server" />
+> **[Vision Understanding](/devpack/mcp/vision-mcp-server)**
 
-  <Card title="Web Search" icon="globe" href="/devpack/mcp/search-mcp-server" />
+> **[Web Search](/devpack/mcp/search-mcp-server)**
 
-  <Card title="Web Reader" icon="book-open" href="/devpack/mcp/reader-mcp-server" />
+> **[Web Reader](/devpack/mcp/reader-mcp-server)**
 
-  <Card title="Zread" icon="github" href="/devpack/mcp/zread-mcp-server" />
-</CardGroup>
+> **[Zread](/devpack/mcp/zread-mcp-server)**
 
 ## Next Steps
 
-<CardGroup cols={3}>
-  <Card title="Quick Start" color="#ffffff" icon="rocket" href="/devpack/quick-start">
-    Get up and running in minutes — from subscribing to the plan to using it in your agent tools.
-  </Card>
+> **[Quick Start](/devpack/quick-start)**
+>
+> Get up and running in minutes — from subscribing to the plan to using it in your agent tools.
 
-  <Card title="Usage Policy" color="#ffffff" icon="shield-keyhole" href="/devpack/usage-policy">
-    Learn about account usage rules, rate limits, refund policies, and other important guidelines.
-  </Card>
+> **[Usage Policy](/devpack/usage-policy)**
+>
+> Learn about account usage rules, rate limits, refund policies, and other important guidelines.
 
-  <Card title="FAQ" color="#ffffff" icon="comments-question" href="/devpack/faq">
-    Find answers to common questions about subscriptions, promotions, and using the plan.
-  </Card>
-</CardGroup>
+> **[FAQ](/devpack/faq)**
+>
+> Find answers to common questions about subscriptions, promotions, and using the plan.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

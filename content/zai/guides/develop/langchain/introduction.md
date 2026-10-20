@@ -12,39 +12,35 @@ LangChain is a framework for developing applications powered by language models.
 
 ## Core Advantages
 
-<CardGroup cols={2}>
-  <Card title="Framework Ecosystem" icon="puzzle-piece">
-    Access to LangChain's rich ecosystem and toolchain
-  </Card>
+> **Framework Ecosystem**
+>
+> Access to LangChain's rich ecosystem and toolchain
 
-  <Card title="Rapid Development" icon="rocket">
-    Quickly build complex AI applications using pre-built components
-  </Card>
+> **Rapid Development**
+>
+> Quickly build complex AI applications using pre-built components
 
-  <Card title="Modular Design" icon="cubes">
-    Flexibly combine different components to meet various needs
-  </Card>
+> **Modular Design**
+>
+> Flexibly combine different components to meet various needs
 
-  <Card title="Community Support" icon="users">
-    Enjoy active open source community and rich resources
-  </Card>
-</CardGroup>
+> **Community Support**
+>
+> Enjoy active open source community and rich resources
 
 ## Environment Requirements
 
-<CardGroup cols={2}>
-  <Card title="Python Version" icon="python">
-    Python 3.8 or higher
-  </Card>
+> **Python Version**
+>
+> Python 3.8 or higher
 
-  <Card title="LangChain Version" icon="package">
-    langchain\_community version 0.0.32 or higher
-  </Card>
-</CardGroup>
+> **LangChain Version**
+>
+> langchain\_community version 0.0.32 or higher
 
-<Warning>
-  Please ensure langchain\_community version is 0.0.32 or higher for optimal compatibility and feature support.
-</Warning>
+> [!WARNING]
+>
+> Please ensure langchain\_community version is 0.0.32 or higher for optimal compatibility and feature support.
 
 ## Install Dependencies
 
@@ -76,9 +72,9 @@ python -c "import langchain; print(langchain.__version__)"
 2. Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
 3. Copy your API Key for use.
 
-<Tip>
-  It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
-</Tip>
+> [!TIP]
+>
+> It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
 
 ### Basic Configuration
 
@@ -270,51 +266,47 @@ response = llm([HumanMessage(content="Write a poem about spring")])
 
 ## Best Practices
 
-<CardGroup cols={2}>
-  <Card title="Performance Optimization" icon="gauge-high">
-    * Enable LangChain caching mechanism
-    * Use batch processing to reduce API calls
-    * Set reasonable max\_tokens limits
-    * Use async processing for better concurrency
-  </Card>
+> **Performance Optimization**
+>
+> * Enable LangChain caching mechanism
+> * Use batch processing to reduce API calls
+> * Set reasonable max\_tokens limits
+> * Use async processing for better concurrency
 
-  <Card title="Error Handling" icon="exclamation-triangle">
-    * Implement retry mechanisms and exponential backoff
-    * Set reasonable timeout values
-    * Log detailed error information
-    * Provide fallback solutions
-  </Card>
+> **Error Handling**
+>
+> * Implement retry mechanisms and exponential backoff
+> * Set reasonable timeout values
+> * Log detailed error information
+> * Provide fallback solutions
 
-  <Card title="Memory Management" icon="memory">
-    * Use ConversationBufferWindowMemory to limit history length
-    * Regularly clean unnecessary conversation history
-    * Monitor memory usage
-    * Implement conversation summarization
-  </Card>
+> **Memory Management**
+>
+> * Use ConversationBufferWindowMemory to limit history length
+> * Regularly clean unnecessary conversation history
+> * Monitor memory usage
+> * Implement conversation summarization
 
-  <Card title="Security" icon="shield">
-    * Use environment variables to store API keys
-    * Implement input validation and filtering
-    * Monitor API usage and costs
-    * Rotate API keys regularly
-  </Card>
-</CardGroup>
+> **Security**
+>
+> * Use environment variables to store API keys
+> * Implement input validation and filtering
+> * Monitor API usage and costs
+> * Rotate API keys regularly
 
 ## Getting Help
 
-<CardGroup cols={2}>
-  <Card title="Z.AI API Documentation" icon="book" href="/api-reference">
-    View complete Z.AI API documentation
-  </Card>
+> **[Z.AI API Documentation](/api-reference)**
+>
+> View complete Z.AI API documentation
 
-  <Card title="LangChain Official Documentation" icon="link" href="https://python.langchain.com/docs/get_started/introduction">
-    View LangChain official documentation and tutorials
-  </Card>
-</CardGroup>
+> **[LangChain Official Documentation](https://python.langchain.com/docs/get_started/introduction)**
+>
+> View LangChain official documentation and tutorials
 
-<Note>
-  LangChain is a rapidly evolving framework. It is recommended to update to the latest version regularly for optimal functionality and performance. Meanwhile, Z.AI will continue to optimize integration with LangChain to ensure the best compatibility and user experience.
-</Note>
+> [!NOTE]
+>
+> LangChain is a rapidly evolving framework. It is recommended to update to the latest version regularly for optimal functionality and performance. Meanwhile, Z.AI will continue to optimize integration with LangChain to ensure the best compatibility and user experience.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

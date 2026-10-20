@@ -3,8 +3,6 @@ Title: Anthropic Raises Series B to build steerable, interpretable, robust AI sy
 URL Source: https://www.anthropic.com/news/anthropic-raises-series-b-to-build-safe-reliable-ai
 
 Markdown Content:
-# Anthropic Raises Series B to build steerable, interpretable, robust AI systems
-
 Anthropic, an AI safety and research company, has raised $580 million in a Series B. The financing will help Anthropic build large-scale experimental infrastructure to explore and improve the safety properties of computationally intensive AI models.
 
 Since its founding at the beginning of 2021, Anthropic has conducted research into making systems that are more steerable, robust, and interpretable. On interpretability, it has made progress in mathematically [reverse engineering the behavior of small language models](https://transformer-circuits.pub/2021/framework/index.html) and begun to understand the source of [pattern-matching behavior in large language models](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html). On steerability and robustness, it has developed [baseline techniques to make large language models more “helpful and harmless”](https://arxiv.org/abs/2112.00861), and followed this up with [reinforcement learning to further improve these properties](https://arxiv.org/abs/2204.05862), as well as releasing a dataset to help other research labs train models that are more [aligned with human preferences](https://github.com/anthropics/hh-rlhf). It has also released an analysis of [sudden changes in performance in large language models and the societal impacts of this phenomenon](https://arxiv.org/abs/2202.07785), which demonstrates the need for studying safety issues at scale.
@@ -16,23 +14,3 @@ The purpose of this research is to develop the technical components necessary to
 Anthropic is now a growing team of around 40 people based in a plant-filled office in San Francisco, California, with plans to expand further this year. “Now that we’ve built out the organization, we’re focusing on ensuring Anthropic has the culture and governance to continue to responsibly explore and develop safe AI systems as we scale,” said Anthropic co-founder and President Daniela Amodei. “We’re excited about what’s ahead, and grateful to all be working together.”
 
 The Series B follows the company raising $124 million in a Series A round in 2021. The Series B round was led by Sam Bankman-Fried, CEO of FTX. The round also included participation from Caroline Ellison, Jim McClave, Nishad Singh, Jaan Tallinn, and the Center for Emerging Risk Research (CERR).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

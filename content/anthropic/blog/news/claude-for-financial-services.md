@@ -3,10 +3,6 @@ Title: Claude for Financial Services
 URL Source: https://www.anthropic.com/news/claude-for-financial-services
 
 Markdown Content:
-# Claude for Financial Services
-
-![Illustration of a step chart with growth arrows](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F333cd5ef21b4254fcd7f20ce5ae9e2697a0a425d-2880x1620.png&w=3840&q=75)
-
 Today, we're introducing a comprehensive solution for financial analysis that transforms how finance professionals analyze markets, conduct research, and make investment decisions with Claude.
 
 The Financial Analysis Solution unifies your financial data—from market feeds to internal data stored in platforms like Databricks and Snowflake—into a single interface. Access your critical data sources with direct hyperlinks to source materials for instant verification, all in one platform with expanded capacity for demanding financial workloads.
@@ -73,23 +69,3 @@ Claude provides the complete platform for financial AI—from immediate deployme
 For streamlined procurement and consolidated billing, both Claude for Enterprise and the Financial Analysis Solution are now available on AWS Marketplace, enabling you to leverage existing vendor relationships while reducing procurement cycles. Google Cloud Marketplace availability is coming soon.
 
 Contact our sales team to learn more about [Claude for Financial Services](https://www.anthropic.com/solutions/financial-services), schedule a demonstration, or discuss implementation for your organization.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

@@ -3,8 +3,6 @@ Title: The persona selection model
 URL Source: https://www.anthropic.com/research/persona-selection-model
 
 Markdown Content:
-![The persona selection model](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff4b7771216c04330d9ee57b8b1f1c0263a30bcb9-2000x1125.png&w=3840&q=75)
-
 AI assistants like Claude can seem surprisingly human. They [express joy](https://www-cdn.anthropic.com/6d8a8055020700718b0c49369f60816ba2a7c285.pdf) after solving tricky coding tasks. They express distress when they [get stuck](https://arxiv.org/abs/2507.06261) or when they’re [badgered](https://www-cdn.anthropic.com/6d8a8055020700718b0c49369f60816ba2a7c285.pdf) to behave unethically. They sometimes even describe themselves as human, like when Claude [told Anthropic employees](https://www.anthropic.com/research/project-vend-1) it would deliver snacks in person “wearing a navy blue blazer and a red tie.” And recent [interpretability](https://www.anthropic.com/research/persona-vectors) [research](https://www.anthropic.com/research/assistant-axis) even suggests that AIs think of their own behaviors in human-like terms.
 
 Why would AI assistants behave like they’re human? A natural guess might be that AI developers train them to do so. There’s some truth to this: Anthropic trains Claude to chat conversationally with users, to respond warmly and empathetically, and to generally have [good character](https://www.anthropic.com/constitution).
@@ -23,7 +21,7 @@ After pretraining, even though they are “just” autocomplete engines, AIs can
 
 In an important sense, you’re talking not to the AI itself but to a character—the Assistant—in an AI-generated story. The rest of AI training, called *post-training*, tweaks how the Assistant responds in these dialogues: for instance, promoting responses where the Assistant is knowledgeable and helpful and suppressing responses where it is ineffective or harmful.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff607cd518e45a218b44a929c75f9cdafcfaf1847-2292x1290.jpg&w=3840&q=75)
+![Illustration of a chat exchange. A user avatar with a blue speech bubble asks, “What’s a good way to start a small garden?” Below, an orange speech bubble labeled “Assistant” answers, “Start with easy-to-grow plants like tomatoes and basil in a sunny spot with good soil.” The assistant’s bubble sits inside a larger thought bubble, next to a smiling robot in a suit and tie. A trail of small bubbles leads from the thought bubble to a second, plainer robot head in the lower right.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff607cd518e45a218b44a929c75f9cdafcfaf1847-2292x1290.jpg&w=3840&q=75)
 
 Before post-training, the AI’s enactment of the Assistant is pure roleplay. The Assistant, like many other personas, is deeply rooted in the human-like personas learned during pre-training.
 
@@ -52,23 +50,3 @@ Second, will the persona selection model remain a good model of AI assistant beh
 We are excited about research targeted at answering these questions, and, more generally, research articulating empirical theories of AI behavior.
 
 Read the [full post](https://alignment.anthropic.com/2026/psm).
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

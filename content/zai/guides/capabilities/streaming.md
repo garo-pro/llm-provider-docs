@@ -26,83 +26,81 @@ Streaming responses use Server-Sent Events (SSE) format, with each event contain
 
 ## Code Examples
 
-<Tabs>
-  <Tab title="cURL">
-    ```bash theme={null}
-    curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
-    --header 'Authorization: Bearer YOUR_API_KEY' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "model": "glm-5.3",
-        "messages": [
-            {
-                "role": "user",
-                "content": "Write a poem about spring"
-            }
-        ],
-        "stream": true
-    }'
-    ```
-  </Tab>
+**cURL**
 
-  <Tab title="Python">
-    **Install SDK**
+```bash theme={null}
+curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+--header 'Authorization: Bearer YOUR_API_KEY' \
+--header 'Content-Type: application/json' \
+--data '{
+    "model": "glm-5.3",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Write a poem about spring"
+        }
+    ],
+    "stream": true
+}'
+```
 
-    ```bash theme={null}
-    # Install latest version
-    pip install zai-sdk
+**Python**
 
-    # Or specify version
-    pip install zai-sdk==0.2.3
-    ```
+**Install SDK**
 
-    **Verify Installation**
+```bash theme={null}
+# Install latest version
+pip install zai-sdk
 
-    ```python theme={null}
-    import zai
-    print(zai.__version__)
-    ```
+# Or specify version
+pip install zai-sdk==0.2.3
+```
 
-    **Complete Example**
+**Verify Installation**
 
-    ```python theme={null}
-    from zai import ZaiClient
+```python theme={null}
+import zai
+print(zai.__version__)
+```
 
-    # Initialize client
-    client = ZaiClient(api_key='Your API Key')
+**Complete Example**
 
-    # Create streaming message request
-    response = client.chat.completions.create(
-        model="glm-5.3",
-        messages=[
-            {"role": "user", "content": "Write a poem about spring"}
-        ],
-        stream=True  # Enable streaming output
-    )
+```python theme={null}
+from zai import ZaiClient
 
-    # Process streaming response
-    full_content = ""
-    for chunk in response:
-        if not chunk.choices:
-            continue
-        
-        delta = chunk.choices[0].delta
-        
-        # Handle incremental content
-        if hasattr(delta, 'content') and delta.content:
-            full_content += delta.content
-            print(delta.content, end="", flush=True)
-        
-        # Check if completed
-        if chunk.choices[0].finish_reason:
-            print(f"\n\nCompletion reason: {chunk.choices[0].finish_reason}")
-            if hasattr(chunk, 'usage') and chunk.usage:
-                print(f"Token usage: Input {chunk.usage.prompt_tokens}, Output {chunk.usage.completion_tokens}")
+# Initialize client
+client = ZaiClient(api_key='Your API Key')
 
-    print(f"\n\nComplete content:\n{full_content}")
-    ```
-  </Tab>
-</Tabs>
+# Create streaming message request
+response = client.chat.completions.create(
+    model="glm-5.3",
+    messages=[
+        {"role": "user", "content": "Write a poem about spring"}
+    ],
+    stream=True  # Enable streaming output
+)
+
+# Process streaming response
+full_content = ""
+for chunk in response:
+    if not chunk.choices:
+        continue
+    
+    delta = chunk.choices[0].delta
+    
+    # Handle incremental content
+    if hasattr(delta, 'content') and delta.content:
+        full_content += delta.content
+        print(delta.content, end="", flush=True)
+    
+    # Check if completed
+    if chunk.choices[0].finish_reason:
+        print(f"\n\nCompletion reason: {chunk.choices[0].finish_reason}")
+        if hasattr(chunk, 'usage') and chunk.usage:
+            print(f"Token usage: Input {chunk.usage.prompt_tokens}, Output {chunk.usage.completion_tokens}")
+
+print(f"\n\nComplete content:\n{full_content}")
+```
 
 ### Response Example
 
@@ -124,31 +122,29 @@ data: [DONE]
 
 ## Application Scenarios
 
-<CardGroup cols={2}>
-  <Card title="Chat Applications" icon="headset">
-    * Real-time conversation experience
-    * Character-by-character reply display
-    * Reduced waiting time
-  </Card>
+> **Chat Applications**
+>
+> * Real-time conversation experience
+> * Character-by-character reply display
+> * Reduced waiting time
 
-  <Card title="Content Generation" icon="feather">
-    * Article writing assistant
-    * Code generation tools
-    * Creative content creation
-  </Card>
+> **Content Generation**
+>
+> * Article writing assistant
+> * Code generation tools
+> * Creative content creation
 
-  <Card title="Educational Applications" icon="book">
-    * Online Q\&A systems
-    * Learning assistance tools
-    * Knowledge Q\&A platforms
-  </Card>
+> **Educational Applications**
+>
+> * Online Q\&A systems
+> * Learning assistance tools
+> * Knowledge Q\&A platforms
 
-  <Card title="Customer Service Systems" icon="users">
-    * Intelligent customer service bots
-    * Real-time problem solving
-    * User support systems
-  </Card>
-</CardGroup>
+> **Customer Service Systems**
+>
+> * Intelligent customer service bots
+> * Real-time problem solving
+> * User support systems
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

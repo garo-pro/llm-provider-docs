@@ -3,8 +3,6 @@ Title: A “diff” tool for AI: Finding behavioral differences in new models
 URL Source: https://www.anthropic.com/research/diff-tool
 
 Markdown Content:
-![A “diff” tool for AI: Finding behavioral differences in new models](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa93218bbcbc4a3ada031c78fb5fbd62d42fb7eb9-1920x1080.png&w=3840&q=75)
-
 Every time a new AI model is released, its developers run a suite of evaluations to measure its performance and safety. These tests are essential, but they are somewhat limited. Because these benchmarks are human-authored, they can only test for risks we have already conceptualized and learned to measure.
 
 This approach to safety is inherently *reactive*. It’s effective at catching known problems, but by definition, it's incapable of discovering “unknown unknowns”—the novel, emergent behaviors that pose some of the most subtle risks in new models. Auditing a new model from scratch is like being handed a million lines of code and told to “find the security flaws.” It’s an almost impossible task when you don’t know what you’re looking for.
@@ -25,7 +23,7 @@ Among the thousands of candidates our tool flagged, we've identified and validat
 
 To be clear, while our method identifies these model-exclusive features, it does not determine their origin. Such behaviors could be the result of deliberate training decisions on the part of the model developers, or they could emerge indirectly and unintentionally from the data the model was trained on. (We focused on open-source language models in this research as this was an Anthropic Fellows project.)
 
-## **A bilingual dictionary for AI models**
+## A bilingual dictionary for AI models
 
 Imagine you're the final editor for an award-winning encyclopedia. A team of writers has just handed you the complete manuscript for next year’s edition. The vast majority of the content is identical to the current, trusted version, but they’ve added new entries to reflect recent scientific and cultural developments. Your job is to vet this final product.
 
@@ -47,13 +45,13 @@ Because our bilingual dictionary has dedicated sections for words exclusive to e
 
 For a safety auditor, the DFC can identify "words" unique to a new AI model that may warrant closer review than those they've seen before.
 
-## Steering the model
+### Steering the model
 
 Once our method identifies a potential new feature, how do we know it actually controls the behavior we think it does? We can test this by artificially suppressing or amplifying the feature while the model runs, then observing how its output changes—a common technique known as “steering.”
 
 If we have a feature that we believe is responsible for, say, censorship, we can suppress it while the model is generating a response. If the model's output consistently becomes less censored, we have evidence that we've found a true cause-and-effect relationship between that feature and the model's behavior. Conversely, we can also amplify the feature to see if the behavior becomes more pronounced.
 
-## **Critical behavioral differences between major open-weight AI models**
+## Critical behavioral differences between major open-weight AI models
 
 ### Llama-3.1-8B-Instruct vs Qwen3-8B
 
@@ -96,27 +94,3 @@ One particularly useful application would be to monitor models as they are updat
 By focusing on the differences, we can audit AI more intelligently, directing our limited safety resources to the changes that matter most.
 
 You can read the full paper [here](https://arxiv.org/abs/2602.11729).
-
-## Acknowledgements
-
-This post was authored by Thomas Jiralerspong (Anthropic Fellows Program) and Trenton Bricken (Anthropic Alignment Science).
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

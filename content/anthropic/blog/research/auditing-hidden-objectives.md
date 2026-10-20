@@ -3,8 +3,6 @@ Title: Auditing language models for hidden objectives
 URL Source: https://www.anthropic.com/research/auditing-hidden-objectives
 
 Markdown Content:
-*A new paper from the Anthropic Alignment Science and Interpretability teams studies **alignment audits**—systematic investigations into whether models are pursuing hidden objectives. We practice alignment audits by deliberately training a language model with a hidden misaligned objective and asking teams of blinded researchers to investigate it. This exercise built practical experience conducting alignment audits and served as a testbed for developing auditing techniques for future study.*
-
 In *King Lear*, the titular king decides to divide his kingdom among his three daughters based on how much they love him. The problem: his daughters—who understood that they were being evaluated—had an opportunity to “game” Lear’s test. Two of the daughters told him what he wanted to hear, flattering him with exaggerated expressions of love. The third daughter honestly expressed her more measured love, enraging Lear and losing her share of his kingdom.
 
 There are clear similarities between how Lear evaluates his daughters and how we evaluate AI systems: We specify desired behaviors and check that AIs act in accordance with them. But what might happen if—like Lear’s daughters—AI systems understand how we’re grading them and how our tests can be gamed? We risk inadvertently deploying AIs that are “right for the wrong reasons,” showing us what we want to see while knowingly violating our intent.
@@ -114,26 +112,6 @@ The science of alignment auditing is just beginning. There are many ways to buil
 
 Read [the full paper](https://arxiv.org/abs/2503.10965).
 
-## Join our team
+### Join our team
 
 If you’re interested in working on developing the science of alignment auditing, or any other research aimed at ensuring the alignment of advanced AI systems, we’d be interested in your application. You can find details on our open roles [here](https://boards.greenhouse.io/anthropic/jobs/4009165008).
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

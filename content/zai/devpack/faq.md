@@ -10,9 +10,9 @@
 
 **A:** All plans support GLM-5.3, GLM-5.3-Flash.
 
-<Info>
-  For instructions on using the latest models, see [How to Switch Models](/devpack/latest-model).
-</Info>
+> [!NOTE]
+>
+> For instructions on using the latest models, see [How to Switch Models](/devpack/latest-model).
 
 ***
 
@@ -49,7 +49,8 @@ The rules are as follows:
 
 **Q: Which tools are supported?**
 
-**A:** The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools). The subscriber shall not use the subscription benefits in any unsupported tools or scenarios.<br />Please refer to our tool guide for step-by-step setup. All supported tools share the same usage quota under your subscription.
+**A:** The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools). The subscriber shall not use the subscription benefits in any unsupported tools or scenarios.\
+Please refer to our tool guide for step-by-step setup. All supported tools share the same usage quota under your subscription.
 
 ***
 
@@ -92,9 +93,9 @@ The rules are as follows:
 2. If insufficient, cash balance will be used;.
 3. If still insufficient, the remaining amount will be charged from your linked payment method (e.g., bank card or PayPal).
 
-<Tip>
-  Please note that a small minimum applies when charging your credit card. If the remaining amount is less, we will round up the deduction to meet this minimum.
-</Tip>
+> [!TIP]
+>
+> Please note that a small minimum applies when charging your credit card. If the remaining amount is less, we will round up the deduction to meet this minimum.
 
 ***
 
@@ -145,9 +146,9 @@ For **cross-tier plan upgrades**, the new plan will take effect immediately. The
 
 **A:** Credits can be used on Z.ai platform to offset various purchases, including subscriptions like GLM Coding Plan, resource packs, feature extensions, and API calls.
 
-<Tip>
-  Credits are promotional benefits and cannot be withdrawn, transferred, or refunded.
-</Tip>
+> [!TIP]
+>
+> Credits are promotional benefits and cannot be withdrawn, transferred, or refunded.
 
 ***
 
@@ -198,7 +199,7 @@ For example: If a plan costs 100 USD, and your friend gets a 50% first-order dis
 
 **A：** The situation of reporting insufficient balance or deducting account balance may be due to not meeting the usage conditions of the GLM Coding Plan coding package:
 
-1. The GLM Coding Plan is strictly limited to use within officially <a href="https://docs.z.ai/devpack/tool/others#step-1-supported-tools">supported tools and products</a>.
+1. The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools).
 2. A specific baseurl address must be configured to use it:
 
 * API endpoint for Claude Code and Goose is：`https://api.z.ai/api/anthropic`

@@ -8,6 +8,12 @@ Upcoming deprecations are listed on the [deprecations page](/api/docs/deprecatio
 
 ## October, 2026
 
+### Oct 20
+
+Feature · API: v1/responses
+
+You can now choose 12-hour prompt caching in the API. 12-hour prompt caching keeps shared instructions, tools, and context cached longer to benefit from lower cached-input pricing, even when requests are hours apart. 12-hour cache writes cost 2.5x the input token price. Read more [here](https://developers.openai.com/api/docs/guides/prompt-caching).
+
 ### Oct 16
 
 Feature · Model: gpt-live-1 · API: v1/audio/voices · API: v1/live/sessions

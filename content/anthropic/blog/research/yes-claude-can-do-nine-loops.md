@@ -3,11 +3,7 @@ Title: Yes, Claude can do Nine Loops
 URL Source: https://www.anthropic.com/research/yes-claude-can-do-nine-loops
 
 Markdown Content:
-## Subscribe to Anthropic Science
-
-Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
-
-*In this guest post, physicist and science writer Matt von Hippel shares what happened when he issued a challenge to AI companies regarding a problem in his former subfield of theoretical physics.*
+![Illustration of nine-loops](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7f876c9b9f0c82fcc79cdd11067e162d20efd62c-1920x470.jpg&w=3840&q=75)
 
 It’s not often that you issue a challenge, only to see it beaten a month later. But we’re living in unusual times.
 
@@ -24,6 +20,8 @@ So, I issued [a challenge](https://4gravitons.com/2026/08/07/it-only-counts-when
 “If AI companies want to impress people like me (or scare us, for that matter), then they need to tackle my old field. Show that an AI can take the kinds of computer resources an academic has access to, and solve one of the scattering amplitudes field’s big outstanding problems. Show that a computational limit everyone expected to be a problem doesn’t actually matter. Give us N=8 supergravity to seven loops, or N=4 super Yang-Mills to nine loops.”
 
 In short: can AI solve a frontier problem in my former subfield of theoretical particle physics? And can it do it on a budget?
+
+## The challenge
 
 My old field is a branch of theoretical particle physics called amplitudeology. When other particle physicists predict new particles, they make sure they can do the calculations to test those predictions. They compute formulas called scattering amplitudes, which let physicists use the momenta and energies of subatomic particles to calculate how likely they are to react in particular ways. If physicists can make more accurate predictions for these reactions, they can check whether results from experiments like the Large Hadron Collider match those predictions. A mismatch could be evidence for a new theory, one that could explain some of physics’ big lingering mysteries, like the nature of dark matter, or the balance between matter and antimatter in the universe.
 
@@ -49,6 +47,8 @@ That meant that Lance was already well set up to check if someone had handed him
 
 But he hadn’t computed it, and neither had anyone else in the field. The way he found the eight-loop answer was already a bit indirect, via a [surprising link](https://www.quantamagazine.org/particle-physicists-puzzle-over-a-new-duality-20220801/) to a different but related formula called a form-factor, a kind of partial amplitude involving different particles that turns out to be a bit easier to calculate. He was expecting to find the next loop even more indirectly, potentially by a different kind of AI method. If people thought it was possible to just run the usual bootstrap method for one more loop, someone would have done it.
 
+## Then people did it
+
 Apparently, there are folks at Anthropic who read my blog.
 
 At the end of August, Liam Fitzpatrick and Siddharth Mishra-Sharma, two physicists at Anthropic, reached out to me to say they had tackled one of the challenges in my post. After verifying the result with Lance, they talked me through how they got it.
@@ -70,6 +70,8 @@ Running 96 CPUs for a week might have felt like a lot when I was doing this kind
 As it turned out, the result wasn’t all that far away for humans either. A few days after I heard from Anthropic, we heard from Song He, an amplitudeologist at the Chinese Academy of Sciences in Beijing. Song’s group had already gotten the majority of the result. They’d used some AI assistance, based on GPT-6, but not the kind of one-shot almost human-less approach Anthropic used.
 
 Everyone has been friendly here, which is a bit of a relief. The humans, Lance and Song and their collaborators, will get to publish the results, taking time to explain them and analyze them for the benefit of future researchers. Claude’s role is done, for now.
+
+## So, problem solved?
 
 I set my challenge because I wanted a better sense of what current AI can do, and where it could go from here. So what have I learned?
 
@@ -93,6 +95,8 @@ I went into this curious not just about what AI can do in research today, but ab
 
 I don’t feel like I have a better answer for those critics. I learned a bit about what AI can do now, that it can do work that matters in my old field on a reasonable budget, and do it pretty much autonomously to boot. But I’d hoped to see something stranger, new methods for the calculation itself with unexpected power. I’d hoped to get a glimpse of the future, something that would give me an informed opinion in debates about superintelligence. I wanted to know how far AI could push computational limits… and I feel like what I learned here is just that I was too naïve about where the limit was.
 
+## An addendum: How does it feel to be scooped by a machine?
+
 *By Lance Dixon, Professor of Particle Physics and Astrophysics at SLAC National Accelerator Laboratory and Stanford University, who checked Claude's nine-loop result.*
 
 Most theoretical physicists I know recognize that the current era of large language models is going to completely transform the way we think about physics. The question was just: when was it going to really hit home? For me, it happened on September 1, when Liam Fitzpatrick and Siddharth Mishra-Sharma at Anthropic told me that Claude had computed the nine-loop MHV six-particle amplitude in planar N=4 super Yang-Mills, and asked me to validate its result.
@@ -109,10 +113,11 @@ After I wrote this, Song He told me that his group had also computed the piece o
 
 Going back to the Claude computation: it's quite a triumph, in my opinion, for a large language model to execute all of the steps in the complicated recipe we laid out, and to organize the computational horsepower. But the more soul-searching moments will come when large language models start to come up with new physical principles and insights before humans.
 
+#### Additional material
+
+- The [full nine-loop result](https://smsharma.io/cosmic-nine-loops/) , in the format used for the earlier loop orders;
+- The [concurrent nine-loop result](https://doi.org/10.5281/zenodo.22800071) by Song He, Jirong Jing, and Xiang Li.
+
+#### Disclosure
+
 Anthropic invited Matt von Hippel to write this post and compensated him for his time. Anthropic staff gave feedback on drafts; the content and opinions are his own. Lance Dixon validated the result independently and received Claude usage credits.
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.

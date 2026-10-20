@@ -3,10 +3,6 @@ Title: Trustworthy agents in practice
 URL Source: https://www.anthropic.com/research/trustworthy-agents
 
 Markdown Content:
-# Trustworthy agents in practice
-
-![Trustworthy agents in practice](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8661c2e36375dd20b7910c4c26f0b8b17481337d-2000x1125.png&w=3840&q=75)
-
 AI “agents” represent the latest major shift in how people and organizations are using AI. A couple of years ago, AI models were only broadly available as chatbots—simple question-and-answer machines. Now, through products like [Claude Code](https://claude.com/product/claude-code) and [Claude Cowork](https://claude.com/product/cowork), AI models can do much more: they can write and execute code, manage files, and complete tasks that span multiple applications. This represents a new frontier for governance.
 
 Agents are already making real productivity gains [for](https://claude.com/customers/freedom-forever) [our](https://claude.com/customers/binti) [customers](https://claude.com/customers/spotify) and [inside Anthropic](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic). But the autonomy that makes agents useful also introduces a range of new risks. Agents act with less human oversight, so there is more room for them to misread users’ intent and take actions with unintended consequences. Agents are also targets for “prompt injection” cyberattacks, which try to trick models into taking costly actions that they otherwise wouldn’t. As agents become more capable and as businesses trust them with more consequential actions, we expect both of these risks to intensify.
@@ -69,23 +65,3 @@ The measures described above represent what we can do within our own products. B
 None of these measures replace the work that model developers have to do to build safe and secure agents, but this is the kind of infrastructure no single company can build alone. We go into greater technical detail on this topic in [our submission](https://www-cdn.anthropic.com/43ec7e770925deabc3f0bc1dbf0133769fd03812.pdf) to NIST's Center for AI Standards and Innovation (CAISI) on agentic security.
 
 Agents will reshape how people work, and whether that happens on a foundation that is secure and open depends on how industry, civil society, and government build it together.
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

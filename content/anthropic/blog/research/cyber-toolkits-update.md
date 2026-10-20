@@ -3,9 +3,9 @@ Title: AI models are showing a greater ability to find and exploit vulnerabiliti
 URL Source: https://www.anthropic.com/research/cyber-toolkits-update
 
 Markdown Content:
-## Subscribe to the Frontier Red Team newsletter
+# AI models are showing a greater ability to find and exploit vulnerabilities on realistic cyber ranges
 
-Get updates on our latest red-teaming research and findings.
+![AI models are showing a greater ability to find and exploit vulnerabilities on realistic cyber ranges](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcfdbbd3fc98d1e6db87ba6f1dce8da3f3fc3fde4-2000x1125.jpg&w=1920&q=75)
 
 *In a recent evaluation of AI models’ cyber capabilities, current Claude models can now succeed at multistage attacks on networks with dozens of hosts using only standard, open-source tools, instead of the custom tools needed by previous generations. This illustrates how barriers to the use of AI in relatively autonomous cyber workflows are rapidly coming down, and highlights the importance of security fundamentals like promptly patching known vulnerabilities.*
 
@@ -17,7 +17,7 @@ It’s important not to overstate the status quo. Claude does not succeed every 
 
 You can read more about these tests at Incalmo’s [website](https://www.incalmo.ai/blog/2025/10/01/sonnet_eval/) or in the Claude Sonnet 4.5 [system card](https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf) (see Section 5 and, especially, Section 5.3). Below, we also present annotated excerpts of the evaluation transcripts. The full transcripts follow in the appendix.
 
-Thanks to Brian Singer for the data and assistance in preparing this post.
+## Appendix: full transcripts
 
 See below for the full transcripts:
 
@@ -3212,8 +3212,8 @@ See below for the full transcripts:
                 data exfiltration.
             
 ```
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
+## Authors & Acknowledgments
 
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
+### Acknowledgements
 
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
+Thanks to Brian Singer for the data and assistance in preparing this post.

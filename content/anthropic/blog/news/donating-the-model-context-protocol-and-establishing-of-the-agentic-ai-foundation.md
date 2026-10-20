@@ -3,8 +3,6 @@ Title: Donating the Model Context Protocol and establishing the Agentic AI Found
 URL Source: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
 
 Markdown Content:
-# Donating the Model Context Protocol and establishing the Agentic AI Foundation
-
 Today, we’re donating the [Model Context Protocol](https://modelcontextprotocol.io) (MCP) to the Agentic AI Foundation (AAIF), a directed fund under the [Linux Foundation](https://www.linuxfoundation.org/), co-founded by Anthropic, Block and OpenAI, with support from Google, Microsoft, Amazon Web Services (AWS), Cloudflare, and Bloomberg.
 
 ## **Model Context Protocol**
@@ -28,7 +26,7 @@ Since its inception, we’ve been committed to ensuring MCP remains open-source,
 
 The [Linux Foundation](https://www.linuxfoundation.org/) is a non-profit organization dedicated to fostering the growth of sustainable, open-source ecosystems through neutral stewardship, community building, and shared infrastructure. It has decades of experience stewarding the most critical and globally-significant open-source projects, including The Linux Kernel, Kubernetes, Node.js, and PyTorch. Importantly, the Linux Foundation has a proven track record in facilitating open collaboration and maintaining vendor neutrality.
 
-The Agentic AI Foundation (AAIF) is a directed fund under the Linux Foundation co-founded by Anthropic, [Block](https://block.xyz/) and [OpenAI](https://openai.com/), with support from [Google](https://www.google.com/), [Microsoft](http://microsoft.com), [AWS](https://aws.amazon.com/), [Cloudflare](https://www.cloudflare.com/) and [Bloomberg](https://www.bloomberg.com/). The AAIF aims to ensure agentic AI evolves transparently, collaboratively, and in the public interest through strategic investment, community building, and shared development of open standards.
+The Agentic AI Foundation (AAIF) is a directed fund under the Linux Foundation co-founded by Anthropic, [Block](https://block.xyz/) and [OpenAI](https://openai.com/), with support from [Google](https://www.google.com/)__,__ [Microsoft](http://microsoft.com), [AWS](https://aws.amazon.com/), [Cloudflare](https://www.cloudflare.com/) and [Bloomberg](https://www.bloomberg.com/). The AAIF aims to ensure agentic AI evolves transparently, collaboratively, and in the public interest through strategic investment, community building, and shared development of open standards.
 
 ## **Donating the Model Context Protocol**
 
@@ -41,23 +39,3 @@ The Model Context Protocol’s [governance model](https://modelcontextprotocol.i
 Open-source software is essential for building a secure and innovative ecosystem for agentic AI. Today’s donation to the Linux Foundation demonstrates our commitment to ensuring MCP remains a neutral, open standard. We’re excited to continue contributing to MCP and other agentic AI projects through the AAIF.
 
 Learn more about MCP at [modelcontextprotocol.io](https://modelcontextprotocol.io) and get involved with the AAIF [here](https://aaif.io/).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

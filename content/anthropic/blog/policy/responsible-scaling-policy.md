@@ -3,23 +3,15 @@ Title: Anthropic’s Responsible Scaling Policy
 URL Source: https://www.anthropic.com/responsible-scaling-policy
 
 Markdown Content:
-# Anthropic’s Responsible Scaling Policy
-
-Anticipating and securing against emerging threats that accompany increasingly powerful models
-
-Last updated
-
 As frontier AI models advance, we believe they will bring about transformative benefits for our society and economy. AI could accelerate scientific discoveries, revolutionize healthcare, enhance our education system, and create entirely new domains for human creativity and innovation. Frontier AI models also, however, present new challenges and risks that warrant careful study and effective safeguards.
 
 In September 2023, we released the first version of our Responsible Scaling Policy (RSP). We believe that risk governance in this rapidly evolving domain should be proportional, iterative, and exportable. In that spirit, we have continued to refine the RSP over time and will use this page to inform the public of any developments.
 
-## Current and Prior Versions
-
-[See the pdf](https://cdn.sanity.io/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf)
+### Current and Prior Versions
 
 ### Read the current version of the RSP
 
-[See the PDF](<https://www-cdn.anthropic.com/b7a5629e40b391b2adfb4cc8c0888ac9d6bfddf6/RSP Noncompliance Reporting and Anti-Retaliation Policy.pdf>)
+[See the pdf](https://cdn.sanity.io/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf)
 
 ### RSP Noncompliance Reporting and Anti-Retaliation Policy
 
@@ -33,27 +25,27 @@ In September 2023, we released the first version of our Responsible Scaling Poli
 - [Version 2.0](https://www-cdn.anthropic.com/616dee633636e5bd309cb73aed8622e80fe47839.pdf) (effective October 15, 2024)
 - [Version 1.0](https://www-cdn.anthropic.com/1adf000c8f675958c2ee23805d91aaade1cd4613/responsible-scaling-policy.pdf) (effective September 19, 2023)
 
-## Risk Reports
+### Risk Reports
 
-## August 14, 2026
+### August 14, 2026
 
 We shared our [August 2026 Risk Report](https://www.anthropic.com/aug-2026-risk-report). Our Risk Reports aim to provide a direct, candid, and informative description of how we see the risks of our
 
 systems and our state of preparedness for them (particularly the catastrophic risks addressed in our Responsible Scaling Policy). It covers the risks of Anthropic's models and actions between our previous February 2026 risk report and the report's coverage date of July 15, as well as our mitigations for those risks and our forward-looking plans in each category.
 
-## July 8, 2026
+### July 8, 2026
 
 This version 3.4 update does the following: 1) revises our threshold for automated R&D to better track the threat model of concern; 2) revises our requirement to share fully unredacted Risk Reports internally (we no longer require sharing with all regular-clearance Anthropic staff, and instead require sharing with at least 200 Anthropic employees); 3) allows Risk Reports to analyze risks as of a given coverage date, rather than necessarily as of the date of publication (to avoid requiring rushed analysis of particularly recent changes); 4) requires public Risk Reports to contain indications of where material was redacted; 5) clarifies that external review of our Risk Reports can involve multiple external reviewers reviewing different unredacted sections of the Risk Report, so long as all parts of the unredacted report are evaluated by at least one external reviewer.
 
-## May 26, 2026
+### May 26, 2026
 
 This version 3.3 update does the following: 1) revises our threshold for novel chemical/biological weapons production to better track the threat model of concern; 2) refines our approach to off-cycle updates regarding the risks of individual models; and 3) makes minor terminology changes.
 
-## April 29, 2026
+### April 29, 2026
 
 Version 3.2 of our RSP authorizes the LTBT to request external review of Risk Reports, gives the LTBT the power to approve our selection of external reviewers, and formalizes a requirement that we provide the LTBT with regular briefings.
 
-## April 2, 2026
+### April 2, 2026
 
 We are updating our [Frontier Safety Roadmap](http://anthropic.com/responsible-scaling-policy/roadmap), because we have achieved two of the goals we had set for our AI safety work. We have now launched the planned moonshot R&D projects, and we have replaced the goal of launching them with more detailed goals for ongoing projects. We have also completed the goal of creating a “comprehensive internal report to identify how our Safeguards could be improved by updating our data retention policies”.
 
@@ -66,37 +58,37 @@ There are also a number of smaller edits for style and clarity elsewhere in the 
 
 As we noted in the [post announcing RSP v3](https://www.anthropic.com/news/responsible-scaling-policy-v3), the policy is a living document. As we learn more about its operation in the real world, we expect to make further changes, all of which will be logged both on this page and in a changelog in the policy document itself.
 
-## March 24, 2026
+### March 24, 2026
 
 We posted an update to our RSP Noncompliance Reporting and Anti-Retaliation Policy, which we released internally in February 2026. It expands reporting channels, introduces a pathway for employees to make informal inquiries about potential RSP violations, and aligns with RSP Version 3.0. The policy document can be found at the link above.
 
-## February 24, 2026
+### February 24, 2026
 
 Version 3.0 is a comprehensive rewrite of the RSP. The reasoning behind the rewrite can be found [here](https://anthropic.com/news/responsible-scaling-policy-v3).
 
 This new version of the RSP involves the publication of [Frontier Safety Roadmaps](https://anthropic.com/responsible-scaling-policy/roadmap) with detailed safety goals, and [Risk Reports](https://anthropic.com/feb-2026-risk-report) that quantify risk across all our deployed models.
 
-## February 10, 2026
+### February 10, 2026
 
 Our RSP requires that once models cross the AI R&D-4 capability threshold, we develop an affirmative case identifying the most immediate and relevant misalignment risks from models pursuing misaligned goals and explaining how we have mitigated them. Our determination is that Claude Opus 4.6 does not cross this threshold.
 
 However, as we noted in the [Claude Opus 4.5 System Card](https://anthropic.com/claude-opus-4-5-system-card) and the [Claude Opus 4.6 System Card](https://anthropic.com/claude-opus-4-6-system-card), confidently ruling out this threshold is becoming increasingly difficult, and doing so requires assessments that are more subjective than we would like. Rather than rely solely on those assessments, we committed during the launch of Claude Opus 4.5 to writing sabotage risk reports for all future frontier models clearly exceeding Opus 4.5's capabilities. Today, consistent with that commitment, we are publishing the external-facing version of the Sabotage Risk Report we prepared for Claude Opus 4.6.
 
-## May 14, 2025
+### May 14, 2025
 
 Version 2.2 implements a minor revision, amending a footnote to exclude both sophisticated insiders and state-compromised insiders from the scope of the ASL-3 Security Standard. Previously, only “highly sophisticated state-compromised insiders” were explicitly excluded. For more details, please see the changelog appended to the policy.
 
-## March 31, 2025
+### March 31, 2025
 
 Version 2.1 reflected minor updates clarifying which Capability Thresholds would require enhanced safeguards beyond our current ASL-3 standards. First, we have added a new capability threshold related to CBRN development, which defines capabilities that could substantially uplift the development capabilities of moderately resourced state programs. Second, we have disaggregated our existing AI R&D capability thresholds, separating them into two distinct levels (the ability to fully automate entry-level AI research work, and the ability to cause dramatic acceleration in the rate of effective scaling) and have provided additional detail on the corresponding Required Safeguards. Finally, we have adopted a general commitment to reevaluate our Capability Thresholds whenever we upgrade to a new set of Required Safeguards.
 
-## October 15, 2024
+### October 15, 2024
 
-### Planned ASL-3 Safeguards
+#### Planned ASL-3 Safeguards
 
 In our Responsible Scaling Policy, reaching certain Capability Thresholds requires us to upgrade our safeguards to the ASL-3 Security Standard or the ASL-3 Deployment Standard. Our RSP contains requirements for meeting these standards, and also says we will publicly release key information related to the evaluation and deployment of our models (not including sensitive details). Below, we give non-binding descriptions of our future ASL-3 safeguard plans. We hope sharing these plans will offer useful insights for organizations working on similar systems, and contribute to conversations about emerging best practices.
 
-### Deployment Safeguards
+#### Deployment Safeguards
 
 Our teams are currently developing and building ASL-3 Deployment Safeguards to mitigate catastrophic risks associated with more advanced models. These safeguards are being designed to prevent misuse of capabilities that could enable severe harm, particularly in relation to chemical, biological, radiological, and nuclear (CBRN) technologies. This overview outlines the planned technical architecture and design of these safeguards, with a focus on the technical aspects and safety considerations of this developing system.
 
@@ -139,7 +131,7 @@ By implementing multiple defense layers, from real-time classifiers to asynchron
 
 The success of this system will depend on the integration and improvement of individual components. As implementation of these safeguards progresses, new challenges and opportunities for innovation in AI safety are likely to emerge. Ongoing research into areas such as balancing security and model utility, improving scalability and performance, enhancing adversarial robustness, and maintaining cross-platform consistency will be crucial in addressing these challenges.
 
-### Security Safeguards
+#### Security Safeguards
 
 The following sections outline the key security controls we plan to implement as part of our ASL-3 safeguards. Many of these security measures are already in place and are dedicated to enhancing our existing ASL-2 controls. In presenting this information, we have carefully balanced the need for transparency with the imperative to protect sensitive security details. As such, this overview provides a high-level description of our planned controls, offering insight into our security approach without compromising our defenses against potential threats.
 
@@ -161,11 +153,11 @@ The following sections outline the key security controls we plan to implement as
 16. Deception technology: Install and monitor honeypots (including fake model weights) for high precision detection of unauthorized system access. Implement deception technology in a realistic way to trick attackers and gain insights into their tactics.
 17. Physical security: Conduct regular Technical Surveillance Countermeasures (TSCM) at physical spaces using advanced detection equipment and techniques. Tailor TSCM sweeps to specific events, threats or incidents that may trigger an inspection. Regularly sweep physical premises for intruders and conduct physical security red-teaming
 
-### Planned Capability Assessments
+#### Planned Capability Assessments
 
 We plan to publish additional details on our capability assessment methodology in the near future. For information about our past capability assessments, please see our overviews for [Claude 3.0 Opus](https://www-cdn.anthropic.com/f2986af8d052f26236f6251da62d16172cfabd6e/claude-3-model-card.pdf) and [Claude 3.5 Sonnet](https://www-cdn.anthropic.com/fed9cc193a14b84131812372d8d5857f8f304c52/Model_Card_Claude_3_Addendum.pdf). 
 
-### Learning from Experience
+#### Learning from Experience
 
 We have learned a lot in our first year with the previous RSP in effect, and are using this update as an opportunity to reflect on what has worked well and what makes sense to update in the policy. As part of this, we reviewed how well we adhered to the framework and identified a small number of instances where we fell short of meeting the full letter of its requirements. These areas were:
 

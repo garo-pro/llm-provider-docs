@@ -67,15 +67,6 @@ Early testers highlighted less quantifiable improvements. They found it to be a 
 
 ## Cost and speed
 
-Pricing
-
-| Price per 1M tokens | **Claude Sonnet 5.5** | Claude Opus 5.5 | 
-|---|---|---|
-| Cache reads | $0.10 | $0.20 | 
-| Cache writes | $2.50 | $5 | 
-| Input tokens | $2 | $4 | 
-| Output tokens | $10 | $20 | 
-
 Sonnet 5.5 requires fewer tokens per task than Sonnet 5, so it’s less expensive to run. It also generates output 30%+ faster, and its efficiency is immediately noticeable:
 
 A murmuration of 400 starlings in one HTML file

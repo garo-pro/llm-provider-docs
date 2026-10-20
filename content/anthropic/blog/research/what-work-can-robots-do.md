@@ -3,8 +3,6 @@ Title: What work can robots do?
 URL Source: https://www.anthropic.com/research/what-work-can-robots-do
 
 Markdown Content:
-![What work can robots do?](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc523800acb2cfb23b8c834b4268d5daef9eafce4-2000x1125.jpg&w=3840&q=75)
-
 ## **Key findings**
 
 - We present a robot exposure index based on how well robots can perform job tasks today.
@@ -52,7 +50,7 @@ Figure 1 also displays this rubric.
 
 ![Task robot exposure rubric](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffbed704c01c8149969125dcab143c9baf921ed76-7680x2792.png&w=3840&q=75)
 
-**Figure 1: Task robot exposure rubric**
+**Task robot exposure rubric**
 Job tasks identified as physical are rated on this robot exposure rubric. For example, the job task of unloading boxes from a truck at a warehouse is rated E2 if there’s a warehouse robot that can do that task.
 
 We think environmental control is a good measure of near-term automation risk. Because it’s hard for robots to adapt to unpredictable environments, most deployed robots work in engineered environments, like those that spray paint cars on assembly lines. While these difficulties are thought to have slowed physical automation in the past, AI-powered robots could better adapt to their environments.¹²
@@ -71,7 +69,7 @@ Figure 2 gives examples of task ratings, along with fuller descriptions of each 
 
 ![Example task exposure ratings](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7e4a470ece0ef2f1ea39accbdc67bed943dcc198-9600x9340.png&w=3840&q=75)
 
-**Figure 2: Example task exposure ratings**
+**Example task exposure ratings**
 
 Levels of robot exposure are as described in the prompt we use to rate exposure with Claude. Exposure is rated for 7,594 job tasks classified as physical. Physical task shares in column 2 weight tasks by the fraction of time spent on each task in an occupation (estimated with Claude) and that occupation’s employment (BLS, 2025). For example, the RelayRx robot delivers drugs in hospitals. Hospitals are structured human workplaces, so the task “Deliver medications or pharmaceutical supplies to patients, nursing stations, or surgery” is rated E2. Tasks rated E2 make up 22% of physical tasks by working time.
 
@@ -93,7 +91,7 @@ Figure 3 summarizes robot exposure across all job tasks in the US economy, weigh
 
 ![Job tasks by robot exposure](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1dfbdcd3ec1d2f240502194d008e9cc66ec2f364-7680x4480.png&w=3840&q=75)
 
-**Figure 3: Job tasks by robot exposure**
+**Job tasks by robot exposure**
 
 All job tasks are included. Tasks are weighted by the fraction of time an occupation spends on each task as well as that occupation’s employment. Robot exposure is rated for tasks identified as physical. For example, 23% of worker time is spent on tasks that robots can do in a purpose-built environment. Example tasks by category: teaching classes, designing systems (Cognitive and interpersonal); taking people into custody, providing first aid (E0); dispensing medications, assembling electronics (E1); cleaning floors, moving warehouse goods (E2); regulating field irrigation, inspecting property from the air, and driving, which robots perform in unstructured environments (E3). Employment data come from the BLS (2025), and we use Claude to estimate occupation time on tasks.
 
@@ -103,7 +101,7 @@ Figure 4 shows the 10 most exposed occupations by our robot exposure index. Of t
 
 ![Most exposed occupations](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F889fc5dfe3ba1248a3edd7529060d9d3c0b3683c-7680x7672.png&w=3840&q=75)
 
-**Figure 4: Most exposed occupations**
+**Most exposed occupations**
 
 Exposure ranges from 0 (no task can be done by a robot) to 3 (every task can be done by a robot in an unstructured environment). Job exposure averages task exposure, weighting by time spent on each task. A highly exposed task is listed for each occupation along with a cited robot that can perform this task. The 10 most exposed occupations with at least 20,000 jobs are displayed. For example, averaging task exposure for shuttle drivers and chauffeurs gives an index of 2.0 out of 3. Claude cites Waymo autonomous vehicles as performing some of their tasks. Employment data from BLS (2025) sometimes combine several O*NET occupation titles; we split their employment equally, as for recycling and reclamation workers. We estimate task time requirements with Claude.
 
@@ -127,7 +125,7 @@ Occupational requirement statistics compiled by the Bureau of Labor Statistics a
 
 ![Occupation characteristics by robot exposure](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2a9afdd7a01a1828aa3e93c0c0678fa525e74b50-7680x9352.png&w=3840&q=75)
 
-**Figure 5: Occupation characteristics by robot exposure**
+**Occupation characteristics by robot exposure**
 
 *The most exposed workers are those in the top quintile of the robot exposure index; unexposed workers have zero exposure and make up about another 20% of jobs. Demographics, education, and labor market data come from the 2020–2024 American Community Survey, save for union membership and licensing. Union membership comes from statistics tabulated by Hirsch et al. (2026) for the 2020–2024 Current Population Surveys. Licensing comes from the 2025 BLS Occupational Requirements Survey, as do physical demand and work environment variables (for some occupations, these come from the 2023 survey). Statistics are employment weighted.*
 
@@ -144,7 +142,7 @@ Figure 6 plots job exposure to LLMs alone (in blue) and to LLMs and robots (in o
 
 ![LLM and robot exposure by occupation group](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F146ef52307f5d8526d5280a631fe8e1b6d605c47-7680x6100.png&w=3840&q=75)
 
-**Figure 6: LLM and robot exposure by occupation group**
+**LLM and robot exposure by occupation group**
 
 LLM exposure is the share of tasks rated exposed in Eloundou et al. (2024) (positive 𝛽). Occupation exposure to LLMs and robots adds tasks rated at E1 or higher robot exposure. Occupation groups are 2-digit SOC codes, and group averages weight by task time shares and employment. In protective service occupations, for example, 31% of job tasks are exposed to LLMs, and 61% are exposed to LLMs or robots. Employment data come from BLS (2025). We estimate task time shares with Claude.
 
@@ -176,7 +174,7 @@ Figure 7 shows five highly physical jobs and cost estimates for robots to perfor
 
 ![Robot costs for physical occupations](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdbca7308b6610e35e49fb4ffdc6d948277e7c3a1-7680x5552.png&w=3840&q=75)
 
-**Figure 7: Robot costs for physical occupations**
+**Robot costs for physical occupations**
 
 Employment and total compensation use data from the BLS (OEWS 2025, ECEC 2026). Exposed tasks are the share of that occupation’s tasks at exposure E1–E3, weighted by estimated time spent on each task. Claude estimates annual costs for robots to perform exposed tasks for each occupation. Costs include annualized fixed costs and variable costs. The final column lists one robot included in each cost estimate and its estimated purchase price.
 
@@ -194,7 +192,7 @@ For robots to be cost-competitive for 10% of human work today, costs would need 
 
 ![Work exposed under hypothetical robot cost declines](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa010c2b04ed72ac124d232ae06dbacfbd8fb24d8-7680x4320.png&w=3840&q=75)
 
-**Figure 8: Work exposed under hypothetical robot cost declines**
+**Work exposed under hypothetical robot cost declines**
 
 Calculated by comparing robot and labor costs. Labor costs are the fraction of time spent on exposed tasks multiplied by occupation total compensation. Given robot cost declines, the curve plots the share of all job tasks for which robots cost less than labor. Tasks are weighted by estimated time demands and occupation employment. Robot and labor costs are compared at six points in the worker pay distribution; see Appendix D.2 for details. Selected occupations are marked where their robot costs fall below their median labor cost. For example, robots do 94% of Postal Service mail carrier tasks. To match what workers produce in a year would cost $166,000 with robots. Median total compensation for Postal Service mail carriers is $82,000, so robots would be cost-competitive if cost declined 54% ($166,000 x 46%< $82,000 x 94%). Total compensation is calculated with data from the BLS (OEWS 2025, ECEC 2026).
 
@@ -226,33 +224,12 @@ Much remains uncertain about how robots and AI could reshape the economy. Growth
 
 ## **Appendix**
 
-Available [here](https://cdn.sanity.io/files/4zrzovbb/website/d27288375b0ac486cb9da0a30a94423b36ff0443.pdf).
+Available [here](https://www-cdn.anthropic.com/files/4zrzovbb/website/d27288375b0ac486cb9da0a30a94423b36ff0443.pdf).
 
 #### Data availability
 
 Data from this report are available [here](https://huggingface.co/datasets/Anthropic/EconomicIndex).
 
-## **Authors**
-
-Russell Legate-Yang and Maxim Massenkoff.
-
-## **Acknowledgments**
-
-James Akl, Tess Cotter, Sholto Douglas, Adam Farina, Megan Giacobetti, Ryan Heller, Johannes Hermle, Zoë Hitzig, Ben Jones, Chad Jones, Anton Korinek, Jan Leike, Eva Lyubich, Peter McCrory, Kerry Persen, Sarah Pollack, Santi Ruiz, Szymon Sacher, Monika Tuchowska, Zhengdong Wang, Heather Whitney, Nathan Wilmers, Kim Withee.
-
-## **Citation**
-
-Please cite this as:
-
-```
-@online{legateyang2026robots,
- author = {Legate-Yang, Russell and Massenkoff, Maxim},
- title = {What work can robots do?},
- date = {2026-09-30},
- year = {2026},
- url = {https://www.anthropic.com/research/what-work-can-robots-do}
-}
-```
 ## **References**
 
 Abraham, Katharine G. and James R. Spletzer, "Are the New Jobs Good Jobs?," in Katharine G. Abraham, James R. Spletzer, and Michael J. Harper, eds., *Labor in the New Economy*, University of Chicago Press, 2010, 101-143.
@@ -600,74 +577,3 @@ U.S. Department of Labor, Employment and Training Administration. Dictionary of 
 United States Department of Labor, United States Employment Service, and North Carolina Occupational Analysis Field Center. Dictionary of Occupational Titles (DOT): Revised Fourth Edition, 1991. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2026-02-19. [https://doi.org/10.3886/ICPSR06100.v2](https://doi.org/10.3886/ICPSR06100.v2). Missing text from the Department of Labor Office of Administrative Law Judges DOT pages and [https://occupationalinfo.org](https://occupationalinfo.org).
 
 Webb, Michael. 2020. "The Impact of Artificial Intelligence on the Labor Market." Working paper, Stanford University. Robot exposure percentiles and 2010 labor-supply weights: [https://web.stanford.edu/~mww/](https://web.stanford.edu/~mww/), retrieved July 18, 2026; now at [https://www.michaelwebb.co/](https://www.michaelwebb.co/).
-
-### 
-
-Footnotes
-
-1. See for example Aghion et al. (2019), Davidson et al. (2026), and Jones and Tonetti (2026) on the role of weak links and complementarities in explosive economic growth scenarios. AI is often thought to affect digital work more than physical work; see for example Cazzaniga et al. (2024).
-2. See for example Autor (2015) on “environmental control” as a barrier to physical automation. See also Section 6 of Link et al. (2016). We discuss this point in more detail in “Measuring exposure.”
-3. See Firoozi et al. (2025) on AI foundation models for robots. Rivière and Denain (2026) discuss robot capabilities afforded by AI. See Agaskar et al. (2025) and Hwang et al. (2025) on AI-powered robots in warehousing and driving. AI could also speed the pace of innovation in robotics; see Cockburn et al. (2019), Wang et al. (2023), and Davidson et al. (2026).
-4. See Baptista et al. (2026) and Goldman (2026) on a potential “ChatGPT moment” in robotics. See also forecasts from Morgan Stanley Research (2024) and McKinsey & Company (2026).
-5. Robot investment data from the 2022 Annual Capital Expenditures Survey (U.S. Census Bureau, 2024). Surveys of US executives in November 2025 from Yotzov et al. (2026) show that 13% of firms use robotics now while 22% expect to within three years of surveying, weighted by employment. Expected use is broadly similar in the United Kingdom, Germany, and Australia.
-6. See Robbins (2026) on investment in humanoid robotics startups and Ewing (2026) on efforts by large automakers to use humanoids.
-7. For example, some robots use cameras only while others use touch sensors. See Brooks (2025) on these approaches, as well as research on vision and tactile robots by Andrychowicz et al. (2020) and Suresh et al. (2024).
-8. See Counterpoint Research (2026) for a humanoid market overview; most humanoids today are used for entertainment and data collection. See BMW Group (2026) for a humanoid deployment in a car factory.
-9. Our taxonomy builds on a long tradition in labor economics and occupational analysis. The predecessor to O*NET, the Dictionary of Occupational Titles, categorized jobs by “Data/People/Things.” See Fine (1955), Fine and Wiley (1971), Autor et al. (2003), Acemoglu and Autor (2011), and Deming (2017).
-10. Precise definitions of a robot vary. We describe robots in our exposure prompt (Appendix F.3), and rely on Claude to judge which machines meet this criterion. The International Organization for Standardization defines a robot as a “programmed actuated mechanism with a degree of autonomy to perform locomotion, manipulation or positioning” and autonomy as the “ability to perform intended tasks based on current state and sensing, without human intervention” (ISO 2021).
-11. Our focus on what today’s robots can do is similar to Eloundou et al. (2024), who measure AI exposure by what tasks LLMs could speed up as of 2023. Other AI exposure measures are described in Massenkoff and McCrory (2026).
-12. See Autor (2015) on “environmental control” as a bottleneck to automation, and Autor et al. (2020) on how integration slows robot adoption. A report on the economic impacts of robotics for the National Institute of Standards and Technology highlights robot capabilities in unstructured environments; see Section 6 of Link et al. (2016). Kober et al. (2013), Ibarz et al. (2021), and Kim et al. (2025) discuss how robot performance generalizes to new tasks and environments. See Firoozi et al. (2025) on robotic foundation models versus specialized robot control systems. For surveys on progress in robotic manipulation, see Kemp et al. (2007) and Kroemer et al. (2021). See Pumacay et al. (2024) for manipulation benchmarks. For an inventory of robot capabilities in complex environments, see Rivière and Denain (2026).
-13. Mason (2018) and Tedrake (2026), for example, discuss the complex skills robots need to manipulate objects.
-14. See for example Madrigal (2017) on a mock town at a former Air Force base and University of Michigan (2015) on Mcity, a similar facility.
-15. Our ratings indeed score this task E3 today and E1 in a version of our measure that rates exposure as of 2008 (Appendix B). As in our rubric, performance in unstructured environments factors into standards for autonomous vehicle performance; see SAE International (2021).
-16. Moravec (1988) notably makes this point. See also Polanyi (1966), applied to automation in Autor (2015).
-17. Appendix A.4 presents variants of our exposure measure; these produce a similar ranking of jobs by exposure.
-18. See the Built Robotics Exosystem (2026).
-19. Results are similar when also weighting across occupations by usual weekly hours from the 2020–2024 American Community Survey.
-20. Humans also work in controlled environments: tasks like “Deliver medications or pharmaceutical supplies to patients, nursing stations, or surgery” are done in hospitals and clinics. In Appendix A.4 we measure robot exposure by the gap between where robots can do a task and where humans do it. This produces nearly the same ranking of jobs by exposure.
-21. The Robot Report (2024).
-22. See the Boston Dynamics Stretch.
-23. See Pallottino (2026).
-24. Employment data in Figure 4 come from the BLS OEWS, so independent contractors for ride-sharing services are excluded from taxi driver employment.
-25. Early evidence suggests pay declines for drivers exposed to autonomous ride-hailing. See Gridwise (2025) and Yu et al. (2026).
-26. See Amazon’s Vulcan robot.
-27. See the Badger Marty and the Simbe Tally.
-28. See the Telexistence TX SCARA.
-29. See the Canvas drywall robot.
-30. See the AMP Cortex (Waste360, 2023).
-31. Restricting to physical jobs (at least half physical by work time), exposed workers are still paid less, less educated, less often female, more often Hispanic, and more often unemployed, though most gaps are somewhat smaller.
-32. See for example Massenkoff and McCrory (2026).
-33. Deming (2017) and Frey and Osborne (2017).
-34. Analyses of automation and the labor market in the past few decades generally emphasize computers and software over physical automation. See for example Autor et al. (2003) on computerization and Acemoglu and Restrepo (2020) on the limited total impact of robots on US jobs so far. Svanberg et al. (2024) estimate costs to automate computer vision tasks.
-35. We instruct Claude to include costs of the robot itself, accessories, integration and installation, maintenance and service, software, energy and other operating inputs, oversight and operation, insurance, and end-of-life decommissioning, plus any other costs. Claude annualizes fixed costs with an estimated cost of capital.
-36. We estimate total compensation by multiplying BLS occupation wages by the ratio between total compensation and wages plus paid leave by occupation group in the BLS Employer Costs for Employee Compensation survey. Total compensation includes paid leave, supplemental pay, insurance, retirement and savings, and legally required employer payments like FICA and unemployment insurance.
-37. On automation in task models, see for example Zeira (1998), Acemoglu and Autor (2011), and Acemoglu and Restrepo (2018).
-38. In these comparisons, robots may be cheaper than workers but only do a few of their tasks. For example, archivists perform two physical tasks; their only robot-exposed one is “Preserve records, documents, and objects, copying records to film, videotape, audiotape, disk, or computer formats as necessary.” We estimate that it costs $5,500 per year for robots to do this task. Archivists spend about 8% of their time on it, and their median total compensation is $85,000, so labor costs for this task are $6,800 per year. Robots are cost-competitive for this task, but automating one task is unlikely to displace archivists.
-39. Cited robots and systems include the Douglas top-load case packer (packing), Boston Dynamics’ Stretch and Agility Robotics’ Digit (material handling), machine-vision inspection stations (inspection), the Combi robotic random case erector (carton assembly), print-and-apply labelers (labeling), and the 3M-Matic random case sealer (sealing).
-40. See for example Honerkamp (2026) and Lung (2026).
-41. August 2026 forecasts from the BLS Employment Projections program, 2025–35, Table 1.6. Packers and packagers rank 11th in job loss, behind correctional officers and jailers and 9 sales and office occupations (the SOC “high-level aggregation” name for groups 41 and 43). Employment data from the BLS OEWS for 2015 and 2025.
-42. See for example the Path Robotics AW-3 autonomous welding cell.
-43. Though cleaning robots might work longer hours, they are up to 10 times slower than humans. See Rivière and Denain (2026).
-44. This figure includes tire builders and packers and packagers. In these occupations, at least 95% of tasks by work time are exposed to robots, and robot costs fall below total compensation for a share of workers.
-45. See Davidson and Hadshar (2025) and Denain and Rivière (2026).
-46. Compare LLM exposure in Eloundou et al. (2024) for computer programmers (25th most exposed by human raters, 6th by the LLM rater) and poets, lyricists and creative writers (11th by humans, 14th by the LLM). The two occupations were similarly exposed, but AI developers have since directed effort toward coding more than creative writing.
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

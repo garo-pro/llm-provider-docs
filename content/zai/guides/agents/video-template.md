@@ -12,74 +12,74 @@ Includes three popular special effects video templates: french\_kiss, bodyshake,
 
 <table>
   <tr>
-    <th className="p-1 font-semibold text-left">
+    <th>
       Templates
     </th>
 
-    <th className="p-1 font-semibold text-left">
+    <th>
       Prompt
     </th>
 
-    <th className="p-1 font-semibold text-left">
+    <th>
       Example Input
     </th>
 
-    <th className="w-[30%] p-1 font-semibold text-left">
+    <th>
       Example Output
     </th>
   </tr>
 
   <tr>
-    <td className="align-top">
+    <td>
       french\_kiss
     </td>
 
-    <td className="align-top">
+    <td>
       The two figures in the painting gradually draw closer, then passionately kiss, alternating between deep and intense moments.
     </td>
 
-    <td className="align-top">
-      <img className="m-0 p-1" src="https://cdn.bigmodel.cn/static/platform/agent/french-kiss-template.png" />
+    <td>
+      ![](https://cdn.bigmodel.cn/static/platform/agent/french-kiss-template.png)
     </td>
 
-    <td className="align-top">
-      <video className="m-0 p-1" src="https://cdn.bigmodel.cn/static/platform/agent/fashirewen.mp4" controls />
+    <td>
+      <video src="https://cdn.bigmodel.cn/static/platform/agent/fashirewen.mp4" controls />
     </td>
   </tr>
 
   <tr>
-    <td className="align-top">
+    <td>
       bodyshake
     </td>
 
-    <td className="align-top">
+    <td>
       Video content: The character performs a rhythmic dance sequence in an indoor setting. She first sways her hips, then turns to the other side, briefly shaking her hips in a playful manner. Her movements are fluid and confident, consistently emphasizing body rhythm and expressiveness.  Requirements: Movement Level: High
     </td>
 
-    <td className="align-top">
-      <img className="m-0 p-1" src="https://cdn.bigmodel.cn/static/platform/agent/dance-template.png" />
+    <td>
+      ![](https://cdn.bigmodel.cn/static/platform/agent/dance-template.png)
     </td>
 
-    <td className="align-top">
-      <video className="m-0 p-1" src="https://cdn.bigmodel.cn/static/platform/agent/zhuanshenrewu.mp4" controls />
+    <td>
+      <video src="https://cdn.bigmodel.cn/static/platform/agent/zhuanshenrewu.mp4" controls />
     </td>
   </tr>
 
   <tr>
-    <td className="align-top">
+    <td>
       sexy\_me
     </td>
 
-    <td className="align-top">
+    <td>
       The woman's attire undergoes a seamless transformation, her original clothing smoothly transitioning into a fashionable bikini. In the final moment, she confidently places her hands on her hips, exuding elegance and poise.
     </td>
 
-    <td className="align-top">
-      <img className="m-0 p-1" src="https://cdn.bigmodel.cn/static/platform/agent/transformation-template.png" />
+    <td>
+      ![](https://cdn.bigmodel.cn/static/platform/agent/transformation-template.png)
     </td>
 
-    <td className="align-top">
-      <video className="m-0 p-1" src="https://cdn.bigmodel.cn/static/platform/agent/bijini.mp4" controls />
+    <td>
+      <video src="https://cdn.bigmodel.cn/static/platform/agent/bijini.mp4" controls />
     </td>
   </tr>
 </table>

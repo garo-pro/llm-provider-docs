@@ -16,35 +16,25 @@ GLM Slide/Poster Agent is an intelligent creation agent built for working people
 
 ## Examples
 
-<Tabs>
-  <Tab title="Market Analysis Report">
-    <CardGroup cols={2}>
-      <Card title="Prompt" icon="arrow-down-right">
-        Help an AI startup team create a big model market analysis PPT
-      </Card>
+**Market Analysis Report**
 
-      <Card title="Display" icon="arrow-down-left">
-        <br />
+> **Prompt**
+>
+> Help an AI startup team create a big model market analysis PPT
 
-        <img src="https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/slide-1.png?fit=max&auto=format&n=fQm1SxNtD2jBDQ3i&q=85&s=cbb392e136bea0d648427cdb0a316867" alt="slide" width="1921" height="13706" data-path="images/slide-1.png" />
-      </Card>
-    </CardGroup>
-  </Tab>
+> **Display**
+>
+> ![slide](https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/slide-1.png?fit=max\&auto=format\&n=fQm1SxNtD2jBDQ3i\&q=85\&s=cbb392e136bea0d648427cdb0a316867)
 
-  <Tab title="Product Launch">
-    <CardGroup cols={2}>
-      <Card title="Prompt" icon="arrow-down-right">
-        Make a poster for the release of my new visual understanding model
-      </Card>
+**Product Launch**
 
-      <Card title="Display" icon="arrow-down-left">
-        <br />
+> **Prompt**
+>
+> Make a poster for the release of my new visual understanding model
 
-        <img src="https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/slide-2.png?fit=max&auto=format&n=fQm1SxNtD2jBDQ3i&q=85&s=0c1398a32c5d63840a57b39a1fd30436" alt="slide" width="1090" height="4358" data-path="images/slide-2.png" />
-      </Card>
-    </CardGroup>
-  </Tab>
-</Tabs>
+> **Display**
+>
+> ![slide](https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/slide-2.png?fit=max\&auto=format\&n=fQm1SxNtD2jBDQ3i\&q=85\&s=0c1398a32c5d63840a57b39a1fd30436)
 
 ## Core Features
 

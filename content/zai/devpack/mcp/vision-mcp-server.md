@@ -6,32 +6,30 @@
 
 The Visual Understanding MCP Server is an exclusive Local MCP Server developed by Z.AI for GLM Coding Plan users. Built on the Model Context Protocol (MCP), it provides visual capabilities such as image analysis and video understanding for MCP-compatible clients, including Claude Code and Cline.
 
-<Tip>
-  Please install the latest version(>= 0.1.2) of the vision mcp server to experience the GLM-5.3-Flash capability. \
-  Existing users might still be using a cached older version. Please clear the npx cache, or append the `@latest` tag to `z_ai/mcp-server` to force-install the newest version (i.e., `z_ai/mcp-server@latest`).
-</Tip>
+> [!TIP]
+>
+> Please install the latest version(>= 0.1.2) of the vision mcp server to experience the GLM-5.3-Flash capability. \
+> Existing users might still be using a cached older version. Please clear the npx cache, or append the `@latest` tag to `z_ai/mcp-server` to force-install the newest version (i.e., `z_ai/mcp-server@latest`).
 
-<Note>
-  Except in Claude Code, pasting an image directly into the client cannot call this MCP Server, as the client will by default transcode the image and call the model interface directly. \
-  The best practice is to place the image in a local directory and invoke the MCP Server by specifying the image name or path in the conversation. \
-  For example: `What does demo.png describe?`
-</Note>
+> [!NOTE]
+>
+> Except in Claude Code, pasting an image directly into the client cannot call this MCP Server, as the client will by default transcode the image and call the model interface directly. \
+> The best practice is to place the image in a local directory and invoke the MCP Server by specifying the image name or path in the conversation. \
+> For example: `What does demo.png describe?`
 
 ## Features
 
-<CardGroup cols={3}>
-  <Card title="Image Analysis" icon="image">
-    Supports intelligent analysis and content understanding of multiple image formats, giving your AI Agent visual capabilities
-  </Card>
+> **Image Analysis**
+>
+> Supports intelligent analysis and content understanding of multiple image formats, giving your AI Agent visual capabilities
 
-  <Card title="Video Understanding" icon="video">
-    Supports visual understanding of both local and remote videos
-  </Card>
+> **Video Understanding**
+>
+> Supports visual understanding of both local and remote videos
 
-  <Card title="Easy Integration" icon="plug">
-    One-click installation, quick integration with Claude Code and other MCP-compatible clients
-  </Card>
-</CardGroup>
+> **Easy Integration**
+>
+> One-click installation, quick integration with Claude Code and other MCP-compatible clients
 
 ## Supported Tools
 
@@ -59,161 +57,157 @@ This server implements the Model Context Protocol and can be used with any MCP-c
 
 ### Quick Start
 
-<Steps>
-  <Step title="Get API Key">
-    Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan)
-  </Step>
+**1. Get API Key**
 
-  <Step title="Install MCP Server">
-    Prerequisites: [Node.js >= v22.0.0](https://nodejs.org/en/download/) \
-    According to the client you’re using, **choose the corresponding installation method from the options below**.
-  </Step>
-</Steps>
+Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan)
+
+**2. Install MCP Server**
+
+Prerequisites: [Node.js >= v22.0.0](https://nodejs.org/en/download/) \
+According to the client you’re using, **choose the corresponding installation method from the options below**.
 
 ### Supported Clients
 
-<Tabs>
-  <Tab title="Claude Desktop">
-    **Method A: One-click Installation Command**
+**Claude Desktop**
 
-    Be sure to replace `your_api_key` with the API Key you obtained.
+**Method A: One-click Installation Command**
 
-    ```bash theme={null}
-    claude mcp add -s user zai-mcp-server --env Z_AI_API_KEY=your_api_key Z_AI_MODE=ZAI -- npx -y "@z_ai/mcp-server"
-    ```
+Be sure to replace `your_api_key` with the API Key you obtained.
 
-    If you forgot to replace the API Key, you need to uninstall the old MCP Server before re-executing the installation command:
+```bash theme={null}
+claude mcp add -s user zai-mcp-server --env Z_AI_API_KEY=your_api_key Z_AI_MODE=ZAI -- npx -y "@z_ai/mcp-server"
+```
 
-    ```bash theme={null}
-    claude mcp list
-    claude mcp remove zai-mcp-server
-    ```
+If you forgot to replace the API Key, you need to uninstall the old MCP Server before re-executing the installation command:
 
-    **Method B: Manual Configuration**
+```bash theme={null}
+claude mcp list
+claude mcp remove zai-mcp-server
+```
 
-    Edit Claude Desktop's configuration file `.claude.json` `mcpServers` content: \
-    Be sure to replace `your_api_key` with the API Key you obtained.
+**Method B: Manual Configuration**
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zai-mcp-server": {
-          "type": "stdio",
-          "command": "npx",
-          "args": [
-            "-y",
-            "@z_ai/mcp-server"
-          ],
-          "env": {
-            "Z_AI_API_KEY": "your_api_key",
-            "Z_AI_MODE": "ZAI"
-          }
-        }
+Edit Claude Desktop's configuration file `.claude.json` `mcpServers` content: \
+Be sure to replace `your_api_key` with the API Key you obtained.
+
+```json theme={null}
+{
+  "mcpServers": {
+    "zai-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@z_ai/mcp-server"
+      ],
+      "env": {
+        "Z_AI_API_KEY": "your_api_key",
+        "Z_AI_MODE": "ZAI"
       }
     }
-    ```
-  </Tab>
+  }
+}
+```
 
-  <Tab title="Cline (VS Code)">
-    Add MCP server configuration in Cline extension settings:
+**Cline (VS Code)**
 
-    Be sure to replace `your_api_key` with the API Key you obtained.
+Add MCP server configuration in Cline extension settings:
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zai-mcp-server": {
-          "type": "stdio",
-          "command": "npx",
-          "args": [
-            "-y",
-            "@z_ai/mcp-server"
-          ],
-          "env": {
-            "Z_AI_API_KEY": "your_api_key",
-            "Z_AI_MODE": "ZAI"
-          }
-        }
+Be sure to replace `your_api_key` with the API Key you obtained.
+
+```json theme={null}
+{
+  "mcpServers": {
+    "zai-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@z_ai/mcp-server"
+      ],
+      "env": {
+        "Z_AI_API_KEY": "your_api_key",
+        "Z_AI_MODE": "ZAI"
       }
     }
-    ```
-  </Tab>
+  }
+}
+```
 
-  <Tab title="OpenCode">
-    Add MCP server configuration in OpenCode settings:
+**OpenCode**
 
-    Refer [OpenCode MCP Doc](https://opencode.ai/docs/mcp-servers)
+Add MCP server configuration in OpenCode settings:
 
-    Be sure to replace `your_api_key` with the API Key you obtained.
+Refer [OpenCode MCP Doc](https://opencode.ai/docs/mcp-servers)
 
-    ```json theme={null}
-    {
-        "$schema": "https://opencode.ai/config.json",
-        "mcp": {
-            "zai-mcp-server": {
-                "type": "local",
-                "command": ["npx","-y","@z_ai/mcp-server"],
-                "environment": {
-                    "Z_AI_API_KEY": "your_api_key",
-                    "Z_AI_MODE": "ZAI"
-                }
+Be sure to replace `your_api_key` with the API Key you obtained.
+
+```json theme={null}
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "zai-mcp-server": {
+            "type": "local",
+            "command": ["npx","-y","@z_ai/mcp-server"],
+            "environment": {
+                "Z_AI_API_KEY": "your_api_key",
+                "Z_AI_MODE": "ZAI"
             }
         }
     }
-    ```
-  </Tab>
+}
+```
 
-  <Tab title="Crush">
-    Add MCP server configuration in Crush settings:
+**Crush**
 
-    Be sure to replace `your_api_key` with the API Key you obtained.
+Add MCP server configuration in Crush settings:
 
-    ```json theme={null}
-    {
-        "$schema": "https://charm.land/crush.json",
-        "mcp": {
-            "zai-mcp-server": {
-                "type": "stdio",
-                "command": "npx",
-                "args": [
-                    "-y",
-                    "@z_ai/mcp-server"
-                ],
-                "env": {
-                    "Z_AI_API_KEY": "your_api_key",
-                    "Z_AI_MODE": "ZAI"
-                }
+Be sure to replace `your_api_key` with the API Key you obtained.
+
+```json theme={null}
+{
+    "$schema": "https://charm.land/crush.json",
+    "mcp": {
+        "zai-mcp-server": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@z_ai/mcp-server"
+            ],
+            "env": {
+                "Z_AI_API_KEY": "your_api_key",
+                "Z_AI_MODE": "ZAI"
             }
         }
     }
-    ```
-  </Tab>
+}
+```
 
-  <Tab title="Roo Code, Kilo Code and Other MCP Clients">
-    For Roo Code, Kilo Code and other clients that support MCP protocol, use the following general configuration:
+**Roo Code, Kilo Code and Other MCP Clients**
 
-    Be sure to replace `your_api_key` with the API Key you obtained.
+For Roo Code, Kilo Code and other clients that support MCP protocol, use the following general configuration:
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zai-mcp-server": {
-          "type": "stdio",
-          "command": "npx",
-          "args": [
-            "-y",
-            "@z_ai/mcp-server"
-          ],
-          "env": {
-            "Z_AI_API_KEY": "your_api_key",
-            "Z_AI_MODE": "ZAI"
-          }
-        }
+Be sure to replace `your_api_key` with the API Key you obtained.
+
+```json theme={null}
+{
+  "mcpServers": {
+    "zai-mcp-server": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@z_ai/mcp-server"
+      ],
+      "env": {
+        "Z_AI_API_KEY": "your_api_key",
+        "Z_AI_MODE": "ZAI"
       }
     }
-    ```
-  </Tab>
-</Tabs>
+  }
+}
+```
 
 ## Usage Example
 
@@ -227,57 +221,53 @@ For example, in Claude Code, inputting `hi describe this xx.png` in the conversa
 
 Run the following command in your local terminal to verify if it can be installed locally, to troubleshoot environment, permission, and other issues:
 
-<CodeGroup>
-  ```bash Linux/macOS theme={null}
-  Z_AI_API_KEY=your_api_key npx -y @z_ai/mcp-server
-  ```
+```bash Linux/macOS theme={null}
+Z_AI_API_KEY=your_api_key npx -y @z_ai/mcp-server
+```
 
-  ```cmd Windows Cmd theme={null}
-  set Z_AI_API_KEY=your_api_key && npx -y @z_ai/mcp-server
-  ```
+```cmd Windows Cmd theme={null}
+set Z_AI_API_KEY=your_api_key && npx -y @z_ai/mcp-server
+```
 
-  ```powershell Windows PowerShell theme={null}
-  $env:Z_AI_API_KEY="your_api_key"; npx -y @z_ai/mcp-server
-  ```
-</CodeGroup>
+```powershell Windows PowerShell theme={null}
+$env:Z_AI_API_KEY="your_api_key"; npx -y @z_ai/mcp-server
+```
 
 * If installed successfully, it indicates that the environment is correct, and the issue may be with the client configuration. Please check the client's MCP configuration.
 * If installation fails, please troubleshoot based on the error message. It is recommended to paste the error message to a large model for analysis and resolution.
 
 Other common issues:
 
-<AccordionGroup>
-  <Accordion title="Connection Closed">
-    **Issue：** Mcp server connection closed
+> **Connection Closed**
+>
+> **Issue：** Mcp server connection closed
+>
+> **Solutions：**
+>
+> 1. Check whether Node.js 22 or a newer version is installed locally.
+> 2. Run `node -v` and `npx -v` to verify that the execution environment is available.
+> 3. Check the environment variable `Z_AI_API_KEY` is configured correctly.
 
-    **Solutions：**
+> **Invalid API Key**
+>
+> **Issue:** Receiving invalid API Key error
+>
+> **Solutions:**
+>
+> 1. Confirm the API Key is correctly copied
+> 2. Check if the API Key is activated
+> 3. Confirm the selected platform (`Z_AI_MODE`) matches the API Key
+> 4. Check if the API Key has sufficient balance
 
-    1. Check whether Node.js 22 or a newer version is installed locally.
-    2. Run `node -v` and `npx -v` to verify that the execution environment is available.
-    3. Check the environment variable `Z_AI_API_KEY` is configured correctly.
-  </Accordion>
-
-  <Accordion title="Invalid API Key">
-    **Issue:** Receiving invalid API Key error
-
-    **Solutions:**
-
-    1. Confirm the API Key is correctly copied
-    2. Check if the API Key is activated
-    3. Confirm the selected platform (`Z_AI_MODE`) matches the API Key
-    4. Check if the API Key has sufficient balance
-  </Accordion>
-
-  <Accordion title="Connection Timeout">
-    **Issue:** MCP server connection timeout
-
-    **Solutions:**
-
-    1. Check network connection
-    2. Confirm firewall settings
-    3. Increase timeout settings
-  </Accordion>
-</AccordionGroup>
+> **Connection Timeout**
+>
+> **Issue:** MCP server connection timeout
+>
+> **Solutions:**
+>
+> 1. Check network connection
+> 2. Confirm firewall settings
+> 3. Increase timeout settings
 
 ## Related Resources
 

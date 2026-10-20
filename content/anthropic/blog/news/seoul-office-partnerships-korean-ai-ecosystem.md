@@ -3,15 +3,13 @@ Title: Anthropic opens Seoul office and announces new partnerships across the Ko
 URL Source: https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem
 
 Markdown Content:
-# Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem
-
 We’ve just opened our [Seoul office](https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea). Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.
 
 “What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”
 
 This week, senior leaders from Anthropic traveled to Seoul to open the office and meet with partners, customers, and developers building with Claude.
 
-## **Supporting Korea’s AI ambitions**
+## Supporting Korea’s AI ambitions
 
 Anthropic has signed an MOU with Korea’s Ministry of Science and ICT to support the safe and responsible adoption of AI across the public sector. Together, we’ll collaborate on AI safety and cybersecurity, including evaluating model safety in the Korean language with the Korea AI Safety Institute, and exchanging information on AI-enabled cyber threats.
 
@@ -42,23 +40,3 @@ This week, we co-hosted [Claude Build Day](https://luma.com/ht1jlnwy) with BASS 
 Our Seoul office—led by [KiYoung Choi](https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea), who brings three decades of experience leading technology businesses across Korea—is now open and hiring across a range of roles. To learn more about joining the team, visit our [careers page](https://www.anthropic.com/careers).
 
 *Updated June 18 to add details on MOU with the Korean government.*
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

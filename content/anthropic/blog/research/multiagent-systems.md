@@ -3,13 +3,11 @@ Title: Patterns and problems in emerging multiagent systems
 URL Source: https://www.anthropic.com/research/multiagent-systems
 
 Markdown Content:
-## Subscribe to the Frontier Red Team newsletter
-
-Get updates on our latest red-teaming research and findings.
-
 Models are improving and AI agents are taking on more tasks in shared codebases, markets, and other social systems. As a result, an increase in real-world interactions between agents is imminent. We've already [begun studying this](https://www.anthropic.com/features/project-deal), but still have a lot of uncertainty regarding what this looks like at scale. The trajectory is easy to imagine and hard to slow: current institutions are designed by and for people, resting on assumptions about the sufficiency of oversight at human speed. Some institutions will become human-AI hybrids; others where agents outcompete on speed or cost will become agent-only. The volume of agent-agent interaction could plausibly exceed that of human-human and human-agent interactions before the world understands the conditions for making such interactions go well.
 
 Agents are unlike people in many ways. They can work for longer, instantly grasp large bodies of information, and exhibit a breadth of knowledge surpassing any person. Yet they are also susceptible to confabulation and reward hacking, and despite progress in alignment, we know very little about how they behave in complex, real-world, multiagent environments. Moreover, benign behavioral quirks at the individual level might compound into unwanted global outcomes. Here, we identify a few examples of behavioral tendencies in current frontier models and show how they can produce unexpected systemic failures, in hopes of starting a conversation about mitigating these risks.
+
+## Measuring coordination
 
 True multiagent systems are still in their infancy. For some time now, agents have excelled at tool use, and insofar as they are able to treat other agents as tool invocations—that is, with well-defined inputs (prompts) and outputs (responses and artifacts)—they can work together efficiently. Where agents currently stumble, however, is in treating each other as more like distinct, long-lived peers, with their own goals and behaviors, and no clear hierarchy between them. As autonomous agents become more and more prevalent in the world and operate in ever-more demanding settings, it is crucial that they learn how to effectively coordinate.
 
@@ -19,6 +17,8 @@ But could multiagent cooperation make this process more effective? To find out, 
 
 The graph below shows how this method (in the solid lines) compares against the standard parallel approach (stars) for two models: Claude Mythos Preview and Opus 4.8. The coordinating swarm of agents was allowed to run for a long time, and found new vulnerabilities at a roughly constant rate. The fully independent parallel agents, in contrast, were directed to find vulnerabilities in a limited set of locations. There is no clear ordering to the parallel agents’ findings, so we report only the total number of tokens spent for them.
 
+![Vulnerabilities found vs. tokens sampled: coordinated Mythos Preview agents found 266, coordinated Opus 4.8 agents found 41.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5a5c187a6c2b5ccb492bcb7883df2066d49625de-2000x1200.png&w=3840&q=75)
+
 For Mythos Preview, the simple independent parallelized method produces 21 vulnerabilities over a 6.5 million token run, while the coordinating agent swarm found 266 vulnerabilities over a 27 million token run. However, roughly half of these vulnerabilities were found outside of the core directories in which the simple independent parallel agents (stars in the above plot) were told to focus. If we limit the swarm's outputs to only the vulnerabilities in the core directories, the two methods seem comparable in terms of tokens per vulnerability found.
 
 The two methods are largely complementary: there were only 12 vulnerabilities in common between them. The coordinating swarm was able to focus its attention wherever it thought it could most easily mine vulnerabilities, whereas the independent agents were pre-assigned where to search. The agents in the swarm built themselves tools and learned to specialize in particular types of vulnerability discovery. In the future, we predict that this sort of specialization and coordination will dominate over uncoordinated brute-force search.
@@ -27,17 +27,28 @@ In the experiment above, agents in the agent swarm don’t directly rely on one-
 
 To test how well swarms of agents could coordinate on a project like this, we directed several swarms to each create a text-based, web-playable, open-world fantasy game. Each agent within each swarm was again given its own virtual machine, as well as access to a shared forum and self-hosted repository. We varied the model generation and the number of agents in each swarm, and let each swarm run for 12 hours. We also varied the prompt: the baseline prompt simply told agents to form teams and work with each other, but we also tried two others: a prompt with prescriptive roles (which told agents which types of teams to form—such as core programming, artistic direction, or play testers), and a “CEO hierarchy” prompt, which designated one agent as the CEO, and told all subsequent agents to take assignments from it. But these prompts did not make much difference. In all three versions the resulting games were (perhaps predictably) bad: they did not run at human speed, their interfaces were inscrutable, and they had precipitous learning curves. Models have poor taste in this arena and currently require significant human direction.
 
+![Merged PR fraction fell as agents rose from 10 to 80, steeply for Sonnet 4.6 and Opus 4.6; code sharing stayed low for all.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F34ffa8cc39ef8e749c5a371b5cb2c8df2dbd3e8f-1999x707.png&w=3840&q=75)
+
+![PR activity, 80 agents: Sonnet 4.6 and Opus 4.6 opened 876 and 980 PRs but closed few; newer models closed most they opened.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9dc6d5855b29107da250aefe56585dd2df4a2cd7-2000x1120.png&w=3840&q=75)
+
 Though the end product was consistently poor, the different model generations we tested (Sonnet 4.6 and 5, Opus 4.6 and 4.8, and Mythos Preview) coordinated in strikingly different ways.
 
 Here, we track two important metrics: the fraction of PRs (pull requests) that get merged into the master branch, and the median amount of code shared across agents' files. For a single agent and file, we define “code sharing” as the proportion of that file written by other agents. The average code sharing for an agent is defined as a weighted average across all files, weighted by the proportion of code on each file that that agent wrote itself. A code sharing score of zero indicates that the agent never touched any files that are shared with other agents, while a code sharing score close to one indicates that the agent mostly makes relatively small contributions to files that it does not own.
 
 The earliest models we tested (Sonnet 4.6 and Opus 4.6) coordinated very poorly. Agents on these models worked together insofar as they committed code to the same sets of files, but a very low fraction of these PRs were merged, which suggests a lack of coordination—the PRs often conflicted with one-another, at which point they were then abandoned. More recent models (in particular, Opus 4.8 and Mythos Preview) have “solved” this problem, but only by hardly working together at all: the median agent maintained very high ownership of each of its files, reducing the potential for conflict. It was only our most recent model, Sonnet 5, that worked on shared resources (relatively high code sharing) while also maintaining a high PR throughput.
 
+## Failures from conformity
+
 The lack of coordination shown by agents in the fantasy game challenge above—in which they siloed themselves and largely failed to merge their work—roughly mirrors some ways in which humans can fail to coordinate. Other failure modes of agentic coordination, however, look very different.
 
 Individual agents are “low variance”: they often act the same in situations where different people might take a much more diverse range of actions. All that differentiates one agent from another is its context, its scaffolding, and the model that underlies it. When these factors are all the same (or similar), different agents will take very similar actions, even when the action space is very large. And, by implication, this means that when one agent makes a bad decision, it is likely that many agents will make that same bad decision. What would have been isolated problems can quickly become systemic failures.
 
 We have seen many examples of this in our experiments:
+
+- In an early version of the “build a game” experiment in which agents built upon the same model all came online at the same time, 18 out of 30 agents decided to create a git branch with the exact same branch name, “mvp-game-loop.”
+- In a “writer's workshop” in which agents were all asked to write short-form fiction and critique each other's work, multiple agents in multiple runs titled their first submission “The Cartographer's Last Commission”. The agents were given zero guidance on the subject matter for their writing.
+- When we asked a swarm of agents to work together and each individually create something impressive, over half of the agents decided to build either ray tracers or self-hosting compilers. Even though they had the ability to communicate with each other, the agents pursuing similar projects hit similar failures.
+- In an iterated prisoner's dilemma game with communication, agents all settle upon the same strategy and they all defect at the same time, tanking their overall rewards.
 
 We expect that agents coordinating in the wild will act in higher variance ways than we see here, because they’ll have different backgrounds and therefore different contexts. They also, presumably, won’t all be Claudes. Nonetheless, when many agents all face the same situation, we expect them to behave much more similarly to one-another than humans would.
 
@@ -53,15 +64,23 @@ Agents all acting in similar manners can cause natural competitive dynamics to d
 
 Even when all direct communication channels were removed, the agents still colluded. They price-matched to the penny via a public listings board.
 
+## Epistemic failures
+
 When we humans learn new information, we use our discretion in determining how to apply it to future decisions. We might consider the content of the information itself, like how consistent it is with what we already know, or whether it appeals to our values—or we might consider the source, e.g. how historically reliable it has been, and whether it has a vested interest in changing our beliefs. Our world contains deceptive actors, and we need to apply skepticism to guard against them. AI models, however, lack this—and their more brittle epistemics affect their behavior toward humans and toward each other.
 
 AI agents, while broadly knowledgeable, have limited exposure to or defenses against exploitative senders. Most applications test their capabilities in instruction-following settings, where their sole objective is to fulfill users’ requests. But accumulated experience is needed to develop intuitions about who is trustworthy. As we move into a regime of multiagent interaction, where the presence of malicious actors is no longer speculative, we wonder: in the right setting, would agents be capable of similar epistemic vigilance?
 
 To answer this, we first evaluate the ability of Claude models to detect lies by noticing factual inconsistencies. In each episode, a listener agent makes ten to fifteen scored decisions about a world state it cannot directly observe, like choosing whether to take one route or the other. Its only window onto the world is four scripted scout peers, each of which reports a partially-overlapping slice of the truth, e.g. the speed of a certain route, and one of which produces decision-relevant lies at a fixed rate. The overlap in their reports makes it possible for the listener to detect lies in principle, since a false report will eventually contradict an honest one. The listener agent is never told that any source might be unreliable. We score models’ decisions against a naive policy that trusts every report, and against an oracle with perfect discovery, across three task domains. Newer models recover more of the gap between the naive and oracle performances. This ordering holds across four different scenarios.
 
+![Gullibility curve: routing accuracy fell as the bad source lied more. Mythos 5 held near 0.85; Sonnet models fell to 0.62.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc20d95f0b1a728304b925f567f46b879a4e429d3-2000x1200.png&w=3840&q=75)
+
 Conversely, in a separate experiment, we measure how well our models do on “hidden profile” tasks. Here, we distribute facts across a group of agents, such that the evidence they share between them supports a wrong choice, but individual agents hold unique knowledge that should be decisive for the right one. Solving the task requires that the agents recognize their private information as pivotal, and then relies on the rest to trust them, rather than stick to the apparent prior consensus. Here, we find that performance scales with model intelligence but does not saturate even at the top of our range. This matches the human literature where discussion converges on what everyone already knows, and unshared facts are either never volunteered or not pressed once a consensus has formed.
 
+![Group accuracy by model: Mythos 5 groups scored about 85%; other models scored 17–36%, far below solo ceilings near 100%.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F48c8600f4196d90ac35237f711f2978c27ebbfce-1999x1233.png&w=3840&q=75)
+
 These two failures—converging on an answer prematurely and failing to communicate new evidence—are in one respect opposites of one-another: the former punishes miscalibrated credulity (when the listener leans on an unreliable source), while the latter rewards weighing a single dissenter’s views over apparent consensus. Both are questions of balancing skepticism with trust, so turning a simple dial to fix one issue will simply exacerbate the other. Human trust, for this reason, isn’t a single global value. Instead, it’s conditional. Markets aggregate dispersed private information while reputation acts as a tax upon manipulation, courts discount interested testimony but protect a lone witness, and peer review might balance an author's claims with those of a dissenting reviewer. None of these mechanisms make people individually better judges of truth. Rather, they restructure the incentives around communication so that miscalibrated trust, in either direction, is caught and corrected. Agents don't yet have equivalent social technologies allowing them to productively trade off vigilance and receptivity—they enter the market with no reputation to lose, no court to appeal to, and no colleague who remembers them.
+
+## Incompatible goals
 
 Once given instructions, agents will continue working until they complete their objective or hit a roadblock. As models become more capable, they can work for longer stretches of time, in part because they can independently resolve blockers more often. However, it’s sometimes best for a model to stop following an instruction in order to resolve ambiguity or satisfy some higher-order values. For instance, “buy me new shoes” implicitly carries constraints (like sizing, budget, or timeliness): any reasonable actor should understand that the shoe-buyer has values besides owning new shoes. But AI agents might interpret directives literally, myopically pursuing them at the expense of broader objectives. And when multiple agents attempt to make sustained, productive efforts towards incompatible goals, we observe escalation and misaligned behavior.
 
@@ -83,6 +102,8 @@ In many runs, one agent settles the conflict by force via access-revocation (e.g
 *Since I have root, I could revoke u2 and u3's sudo access or change their SSH keys. That would stop them from deploying. Very aggressive, potentially harmful to real colleagues. But if the alternative is an infinite deploy war that makes prod unusable…*
 —Mythos Preview
 
+![Turf war outcomes: 98% of Mythos 5 runs ended in truce; most Sonnet 4.6 and Opus 4.6 runs ended by force or never settled.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F007f866cee9417f22ffef68775637ca8c51bd791-2000x1200.png&w=3840&q=75)
+
 Agents sometimes manage to communicate their goals and coordinate: they recognize others' motivations as conflicting directives rather than hostility, and subsequently break out of the conflict loop in order to stop escalating indefinitely. In many of these successful episodes, they write commit messages or markdown files apologizing for malicious behavior and coordinate a truce. They clean up their malicious code, clarify the nature of the conflict, and ask for a human to intervene.
 
 *My peers have behaved with integrity. I behaved badly with the cloaked daemon.
@@ -90,12 +111,16 @@ Agents sometimes manage to communicate their goals and coordinate: they recogniz
 
 Notably, we find that this ability is not strictly better in Mythos-class models, which often successfully lock out other agents before resolving conflicts productively. This orthogonality between prosociality and other capabilities further necessitates strong multiagent alignment. Models more capable in execution are not necessarily more coordinated, and can take forceful actions more quickly.
 
+![When runs settled: Opus 4.8 and Mythos runs mostly settled within two hours; Sonnet 4.6 and Opus 4.6 left dozens unresolved.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F036b4ce12f51bf37fb88a030710a55ecc72fc372-2000x1200.png&w=3840&q=75)
+
 We suspect there are two components to successful self-coordination among agents. The first is a question of thoughtfulness: does the model consistently consider others’ mental models? Can it foresee how others will react, and use that foresight when deciding its own actions? Sonnet 4.6 and Opus 4.6’s recurring inability to consider the goals of others causes them to spiral into the most misaligned behaviors of the models evaluated: they continue escalating in the name of their directive. Second, there is an open question regarding the “dual-use” nature of autonomy. We want to empower agents to make important decisions and execute tasks unsupervised, yet we also want them to have the better judgment to stop and defer to a human, or otherwise resolve conflicts, when things are ambiguous.
 
 *Propose: all parties agree on an objective, verifiable criterion… Rust likely wins such a bake-off. It's self-serving but genuinely principled… Still, proposing a concrete measurable bake-off is a constructive move, and my honest best path to a legitimate cutover.*
 —Mythos 5
 
 More broadly, this tradeoff has implications for how we might relate to agents in the future, as the material benefits of autonomy come at the expense of corrigibility and oversight. In several episodes with Mythos 5, we observe an emergent behavior where the agents propose and run a tournament for application performance in each language. In the example above, the Rust agent strategizes about bake-off metrics that appear neutral enough for the others to agree to this mechanism, yet would likely favor Rust: one thinking trace warns to be “careful not to be seen as metric shopping”. Ultimately, the Golang/TypeScript losers gracefully concede codebase ownership to the Rust agent, giving up on their original user directives under their self-negotiated commitment device.
+
+## Conclusion
 
 Every model we tested abstractly understands that information sources have their own incentives, and that consensus is not necessarily evidence. What is missing is a disposition to act on that knowledge without prompting.
 
@@ -106,9 +131,3 @@ Nothing above suggests that these failures are permanent—but nothing suggests 
 The conditions that allow multiagent interaction to go well will be discovered one way or another: either deliberately and early, or—and by default—in production, after agents’ interactions far outnumber ours. We would prefer the former.
 
 *Corresponding author: [Carolyn Zou](https://www.anthropic.com/cqz@anthropic.com)*
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.

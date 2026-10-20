@@ -3,8 +3,6 @@ Title: Offering expanded Claude access across all three branches of the U.S. gov
 URL Source: https://www.anthropic.com/news/offering-expanded-claude-access-across-all-three-branches-of-government
 
 Markdown Content:
-# Offering expanded Claude access across all three branches of the U.S. government
-
 Today we are removing barriers to government AI adoption by offering Claude for Enterprise and Claude for Government to all three branches of government, including federal civilian executive branch agencies, as well as legislative and judiciary branches of government, for $1.
 
 As AI adoption leads to transformation across industries, we want to ensure that federal workers can fully harness these capabilities to better serve the American people. By removing cost barriers, we're enabling the government to access the same advanced AI that's already proving its value in the private sector.
@@ -38,23 +36,3 @@ We hope other companies will join us in taking similar steps to ensure the U.S. 
 **Getting started**
 
 To gain access, department or agency leadership at eligible organizations should contact us at [pubsec@anthropic.com](mailto:pubsec@anthropic.com). Also learn more by reading the [Claude for Government](https://claude.com/docs/government/overview) documentation.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

@@ -3739,9 +3739,133 @@
       "since": "2026-09-22",
       "reason": "moved -> https://support.claude.com/en/articles/9927533-control-project-sharing-for-your-organization"
     },
+    "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/AI-resistant-technical-evaluations"
+    },
+    "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/a-postmortem-of-three-recent-issues"
+    },
+    "https://www.anthropic.com/engineering/advanced-tool-use": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/advanced-tool-use"
+    },
+    "https://www.anthropic.com/engineering/april-23-postmortem": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/april-23-postmortem"
+    },
+    "https://www.anthropic.com/engineering/building-c-compiler": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/building-c-compiler"
+    },
+    "https://www.anthropic.com/engineering/building-effective-agents": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/building-effective-agents"
+    },
+    "https://www.anthropic.com/engineering/claude-code-auto-mode": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/claude-code-auto-mode"
+    },
     "https://www.anthropic.com/engineering/claude-code-best-practices": {
       "since": "2026-09-12",
       "reason": "moved -> https://code.claude.com/docs/en/best-practices"
+    },
+    "https://www.anthropic.com/engineering/claude-code-sandboxing": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/claude-code-sandboxing"
+    },
+    "https://www.anthropic.com/engineering/claude-think-tool": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/claude-think-tool"
+    },
+    "https://www.anthropic.com/engineering/code-execution-with-mcp": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/code-execution-with-mcp"
+    },
+    "https://www.anthropic.com/engineering/contextual-retrieval": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/contextual-retrieval"
+    },
+    "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/demystifying-evals-for-ai-agents"
+    },
+    "https://www.anthropic.com/engineering/desktop-extensions": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/desktop-extensions"
+    },
+    "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/effective-context-engineering-for-ai-agents"
+    },
+    "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
+    },
+    "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"
+    },
+    "https://www.anthropic.com/engineering/eval-awareness-browsecomp": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/eval-awareness-browsecomp"
+    },
+    "https://www.anthropic.com/engineering/harness-design-long-running-apps": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/harness-design-long-running-apps"
+    },
+    "https://www.anthropic.com/engineering/how-we-contain-claude": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/how-we-contain-claude"
+    },
+    "https://www.anthropic.com/engineering/infrastructure-noise": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/infrastructure-noise"
+    },
+    "https://www.anthropic.com/engineering/managed-agents": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/managed-agents"
+    },
+    "https://www.anthropic.com/engineering/multi-agent-research-system": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/multi-agent-research-system"
+    },
+    "https://www.anthropic.com/engineering/redesigning-source-control": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/redesigning-source-control"
+    },
+    "https://www.anthropic.com/engineering/swe-bench-sonnet": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/swe-bench-sonnet"
+    },
+    "https://www.anthropic.com/engineering/writing-tools-for-agents": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/writing-tools-for-agents"
+    },
+    "https://www.anthropic.com/news/accelerating-scientific-research": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/accelerating-scientific-research"
+    },
+    "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7"
+    },
+    "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude"
+    },
+    "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude"
+    },
+    "https://www.anthropic.com/news/anthropic-public-record": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-public-record"
+    },
+    "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/claude-discovers-novel-enzyme-system"
     },
     "https://www.anthropic.com/news/contextual-retrieval": {
       "since": "2026-09-12",
@@ -3751,21 +3875,61 @@
       "since": "2026-09-12",
       "reason": "moved -> https://claude.com/blog/fine-tune-claude-3-haiku"
     },
+    "https://www.anthropic.com/news/golden-gate-claude": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/golden-gate-claude"
+    },
+    "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship"
+    },
+    "https://www.anthropic.com/news/political-even-handedness": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/political-even-handedness"
+    },
     "https://www.anthropic.com/news/skills": {
       "since": "2026-09-12",
       "reason": "moved -> https://claude.com/blog/skills"
+    },
+    "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team"
+    },
+    "https://www.anthropic.com/research/2028-ai-leadership": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/2028-ai-leadership"
     },
     "https://www.anthropic.com/research/AI-fluency-index": {
       "since": "2026-09-12",
       "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
     },
-    "https://www.anthropic.com/research/building-effective-agents": {
-      "since": "2026-09-12",
-      "reason": "moved -> https://www.anthropic.com/engineering/building-effective-agents"
+    "https://www.anthropic.com/research/anthropic-institute-agenda": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/anthropic-institute-agenda"
     },
-    "https://www.anthropic.com/research/swe-bench-sonnet": {
-      "since": "2026-09-12",
-      "reason": "moved -> https://www.anthropic.com/engineering/swe-bench-sonnet"
+    "https://www.anthropic.com/research/deprecation-commitments": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/deprecation-commitments"
+    },
+    "https://www.anthropic.com/research/deprecation-updates-opus-3": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/deprecation-updates-opus-3"
+    },
+    "https://www.anthropic.com/research/distillation-defenses": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/distillation-defenses"
+    },
+    "https://www.anthropic.com/research/glasswing-initial-update": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/glasswing-initial-update"
+    },
+    "https://www.anthropic.com/research/long-running-Claude": {
+      "since": "2026-10-20",
+      "reason": "HTTP 404"
+    },
+    "https://www.anthropic.com/research/visible-extended-thinking": {
+      "since": "2026-10-20",
+      "reason": "moved -> https://www.anthropic.com/news/visible-extended-thinking"
     }
   }
 }

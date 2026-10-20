@@ -49,15 +49,6 @@ Unless otherwise noted, all Claude Opus 5.5 results use adaptive thinking at max
 
 Where Opus 5.5’s advantage is very clear is efficiency. It costs less per token than Opus 5 and uses fewer tokens per task, which nets out to a 40% drop in costs.
 
-Pricing
-
-| Prices per 1M tokens | **Claude Opus 5.5** | Claude Opus 5 | 
-|---|---|---|
-| Cache reads | **$0.20** | $0.50 | 
-| Input tokens | **$4** | $5 | 
-| Output tokens | **$20** | $25 | 
-| Cache writes | **$5** | $6.25 | 
-
 Fast mode for Opus 5.5 is also available in Claude Code and the Claude Platform with up to 2.5x speed. It costs $8 per million input tokens and $40 per million output tokens.
 
 ## Coding

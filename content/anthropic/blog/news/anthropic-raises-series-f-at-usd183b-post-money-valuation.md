@@ -3,8 +3,6 @@ Title: Anthropic raises $13B Series F at $183B post-money valuation
 URL Source: https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation
 
 Markdown Content:
-# Anthropic raises $13B Series F at $183B post-money valuation
-
 Anthropic has completed a Series F fundraising of $13 billion led by ICONIQ. This financing values Anthropic at $183 billion post-money. Along with ICONIQ, the round was co-led by Fidelity Management & Research Company and Lightspeed Venture Partners. The investment reflects Anthropic’s continued momentum and reinforces our position as the leading intelligence platform for enterprises, developers, and power users.
 
 Significant investors in this round include Altimeter, Baillie Gifford, affiliated funds of BlackRock, Blackstone, Coatue, D1 Capital Partners, General Atlantic, General Catalyst, GIC, Growth Equity at Goldman Sachs Alternatives, Insight Partners, Jane Street, Ontario Teachers' Pension Plan, Qatar Investment Authority, TPG, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., WCM Investment Management, and XN.
@@ -20,23 +18,3 @@ This growth spans the entire Anthropic platform, with advancements for businesse
 “Anthropic is on an exceptional trajectory, combining research excellence, technological leadership, and relentless focus on customers. We’re honored to partner with Dario and the team, and our lead investment in their Series F reflects our belief in their values and their ability to shape the future of responsible AI,” said Divesh Makan, Partner at ICONIQ. “Enterprise leaders tell us what we’re seeing firsthand—Claude is reliable, built on a trustworthy foundation, and guided by leaders truly focused on the long term.”
 
 The Series F investment will expand our capacity to meet growing enterprise demand, deepen our safety research, and support international expansion as we continue building reliable, interpretable, and steerable AI systems.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

@@ -4,9 +4,9 @@
 
 # Invite Friends, Get Credits
 
-<Tip>
-  Please read and fully understand all the rules below before participating in the campaign. Participation constitutes your acceptance and agreement to be bound by these rules.
-</Tip>
+> [!TIP]
+>
+> Please read and fully understand all the rules below before participating in the campaign. Participation constitutes your acceptance and agreement to be bound by these rules.
 
 Last Update: March 15, 2026
 

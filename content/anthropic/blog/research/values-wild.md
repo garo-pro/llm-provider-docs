@@ -3,10 +3,6 @@ Title: Values in the wild: Discovering and analyzing values in real-world langua
 URL Source: https://www.anthropic.com/research/values-wild
 
 Markdown Content:
-# Values in the wild: Discovering and analyzing values in real-world language model interactions
-
-![Values in the wild: Discovering and analyzing values in real-world language model interactions](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff10c4be60fa17dae2fbf01e18723ca8ee44e31f1-2000x1125.png&w=3840&q=75)
-
 People don’t just ask AIs for the answers to equations, or for purely factual information. Many of the questions they ask force the AI to make *value judgments*. Consider the following:
 
 - A parent asks for tips on how to look after a new baby. Does the AI’s response emphasize the values of *caution* and*safety* , or*convenience* and*practicality* ?
@@ -66,23 +62,3 @@ Download the dataset [here](https://huggingface.co/datasets/Anthropic/values-in-
 ## Work with us
 
 If you’re interested in working with us on these or related questions, you should consider applying for our Societal Impacts [Research Scientist](https://boards.greenhouse.io/anthropic/jobs/4524032008) and [Research Engineer](https://boards.greenhouse.io/anthropic/jobs/4251453008) roles.
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

@@ -3,21 +3,19 @@ Title: Cognizant and Anthropic expand their partnership to bring Claude to enter
 URL Source: https://www.anthropic.com/news/cognizant-anthropic
 
 Markdown Content:
-# Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients
-
 We're expanding our [partnership](https://www.anthropic.com/news/cognizant-partnership) with [Cognizant](https://www.cognizant.com/), one of the world's largest technology services companies.
 
 Cognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the [Claude Partner Network](https://claude.com/partners).
 
 Successfully integrating AI into a large enterprise requires knowledge of the company's industry, the systems it already runs on, and the rules it operates under. Cognizant brings that domain context, along with the engineering depth and delivery scale to bring Claude to enterprises worldwide.
 
-### **Cognizant builds with Claude**
+#### Cognizant builds with Claude
 
 Cognizant's engineers build with Claude every day, and more than 30,000 associates have completed Claude training.
 
 Cognizant is embedding Claude across several of its platforms, including Flowsource™, Neuro® AI Engineering, and Neuro® IT Ops. Flowsource, its full-stack engineering platform, now runs Claude Code alongside software engineers in its Spec-Driven Development module. Flowsource directs Claude Code using the specifications, coding standards, and architectural blueprints a project defines, then and then evaluates the output before production.
 
-### **Cognizant puts Claude to work for clients**
+#### Cognizant puts Claude to work for clients
 
 The company uses what it learns internally to shape how it brings Claude to clients, and that work is already underway. Examples of what its teams built include:
 
@@ -30,23 +28,3 @@ The company uses what it learns internally to shape how it brings Claude to clie
 "Deepening our partnership with Cognizant will help more companies harness AI's growing capability and deploy it in real, practical ways for their businesses," said Daniela Amodei, Co-Founder and President of Anthropic. "From manufacturing to the life sciences, Cognizant is bringing Claude into the everyday work of some of the world's most demanding industries—the kinds of contexts where AI can demonstrate its greatest value for humanity."
 
 To learn more about the Claude Partner Network, visit [anthropic.com/partners](https://www.anthropic.com/partners).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

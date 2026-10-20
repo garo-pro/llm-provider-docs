@@ -6,103 +6,99 @@
 
 ## Supported Tools
 
-<Tip>
-  The GLM Coding Plan is limited to use within the following officially supported tools and product environments; users may not use their subscription benefits for tools or scenarios outside of this scope.
-</Tip>
+> [!TIP]
+>
+> The GLM Coding Plan is limited to use within the following officially supported tools and product environments; users may not use their subscription benefits for tools or scenarios outside of this scope.
 
 ### 1. Coding Agent Tool
 
 Click on the tool documentation below that you wish to use, and follow the corresponding integration guide to set it up.
 
-<CardGroup cols={3}>
-  <Card title="ZCode (1.5× Usage)" href="/devpack/tool/zcode" icon="hammer">
-    ZCode integrates AI agents into your existing toolchain.
-  </Card>
+> **[ZCode (1.5× Usage)](/devpack/tool/zcode)**
+>
+> ZCode integrates AI agents into your existing toolchain.
 
-  <Card title="Claude Code" href="/devpack/tool/claude" icon="puzzle-piece">
-    The Claude Code IDE plugin supports VSCode and JetBrains.
-  </Card>
+> **[Claude Code](/devpack/tool/claude)**
+>
+> The Claude Code IDE plugin supports VSCode and JetBrains.
 
-  <Card title="Claude for IDE" href="/devpack/tool/claude-for-ide" icon="stars">
-    The Claude Code IDE plugin supports VSCode and JetBrains.
-  </Card>
+> **[Claude for IDE](/devpack/tool/claude-for-ide)**
+>
+> The Claude Code IDE plugin supports VSCode and JetBrains.
 
-  <Card title="Codex" href="/devpack/tool/codex" icon="glasses">
-    OpenAI's AI coding agent that helps you write, review, and debug code.
-  </Card>
+> **[Codex](/devpack/tool/codex)**
+>
+> OpenAI's AI coding agent that helps you write, review, and debug code.
 
-  <Card title="OpenCode" href="/devpack/tool/opencode" icon="globe">
-    The Claude Code IDE plugin supports VSCode and JetBrains.
-  </Card>
+> **[OpenCode](/devpack/tool/opencode)**
+>
+> The Claude Code IDE plugin supports VSCode and JetBrains.
 
-  <Card title="Pi" href="/devpack/tool/pi" icon="list">
-    A minimalist terminal coding agent with a small core, extensible via extensions, Skills, and Pi Packages.
-  </Card>
+> **[Pi](/devpack/tool/pi)**
+>
+> A minimalist terminal coding agent with a small core, extensible via extensions, Skills, and Pi Packages.
 
-  <Card title="Cursor" href="/devpack/tool/cursor" icon="code">
-    An AI-first code editor that supports custom model configurations.
-  </Card>
+> **[Cursor](/devpack/tool/cursor)**
+>
+> An AI-first code editor that supports custom model configurations.
 
-  <Card title="Cline" href="/devpack/tool/cline" icon="brain">
-    An AI programming extension for VS Code that supports code generation and file operations.
-  </Card>
+> **[Cline](/devpack/tool/cline)**
+>
+> An AI programming extension for VS Code that supports code generation and file operations.
 
-  <Card title="TRAE" href="/devpack/tool/trae" icon="headset">
-    An AI editor capable of independently completing various development tasks.
-  </Card>
+> **[TRAE](/devpack/tool/trae)**
+>
+> An AI editor capable of independently completing various development tasks.
 
-  <Card title="Qoder" href="/devpack/tool/qoder" icon="book">
-    An agentic coding platform designed for real software development.
-  </Card>
+> **[Qoder](/devpack/tool/qoder)**
+>
+> An agentic coding platform designed for real software development.
 
-  <Card title="Droid" href="/devpack/tool/droid" icon="helmet-safety">
-    Enterprise-grade AI coding agent that runs in the terminal to handle end-to-end workflows.
-  </Card>
+> **[Droid](/devpack/tool/droid)**
+>
+> Enterprise-grade AI coding agent that runs in the terminal to handle end-to-end workflows.
 
-  <Card title="Kilo Code" href="/devpack/tool/kilo" icon="bolt">
-    A powerful VS Code extension for code generation and project management.
-  </Card>
+> **[Kilo Code](/devpack/tool/kilo)**
+>
+> A powerful VS Code extension for code generation and project management.
 
-  <Card title="Roo Code" href="/devpack/tool/roo" icon="box">
-    A smart VS Code extension for code writing and refactoring.
-  </Card>
+> **[Roo Code](/devpack/tool/roo)**
+>
+> A smart VS Code extension for code writing and refactoring.
 
-  <Card title="Crush" href="/devpack/tool/crush" icon="gauge-high">
-    A terminal-based AI programming tool that supports both CLI and TUI interfaces.
-  </Card>
+> **[Crush](/devpack/tool/crush)**
+>
+> A terminal-based AI programming tool that supports both CLI and TUI interfaces.
 
-  <Card title="Goose" href="/devpack/tool/goose" icon="rocket">
-    AI Agent tool, supporting local execution and automated engineering tasks.
-  </Card>
+> **[Goose](/devpack/tool/goose)**
+>
+> AI Agent tool, supporting local execution and automated engineering tasks.
 
-  <Card title="Eigent" href="/devpack/tool/eigent" icon="sparkles">
-    A desktop AI agent built on a multi-agent architecture, capable of automating browser, terminal, and MCP-powered workflows.
-  </Card>
-</CardGroup>
+> **[Eigent](/devpack/tool/eigent)**
+>
+> A desktop AI agent built on a multi-agent architecture, capable of automating browser, terminal, and MCP-powered workflows.
 
 ### 2. General-purpose Agent Tool
 
-<Tip>
-  The general-purpose agent tools listed below are also supported and will continue to be served on a best-effort basis. Under high inference load, some requests may face temporary rate limits.
-</Tip>
+> [!TIP]
+>
+> The general-purpose agent tools listed below are also supported and will continue to be served on a best-effort basis. Under high inference load, some requests may face temporary rate limits.
 
-<CardGroup cols={2}>
-  <Card title="AutoClaw (1.5× Usage)" href="/devpack/tool/autoclaw" icon="book">
-    Deeply optimized for GLM models, integrating specialized domain knowledge bases and workflows.
-  </Card>
+> **[AutoClaw (1.5× Usage)](/devpack/tool/autoclaw)**
+>
+> Deeply optimized for GLM models, integrating specialized domain knowledge bases and workflows.
 
-  <Card title="OpenClaw" href="/devpack/tool/openclaw" icon="lobster">
-    An open-source AI assistant that runs on local devices, supports multi-platform use.
-  </Card>
+> **[OpenClaw](/devpack/tool/openclaw)**
+>
+> An open-source AI assistant that runs on local devices, supports multi-platform use.
 
-  <Card title="Hermes Agent" href="#" icon="shield">
-    An open-source evolving AI agent with persistent memory,getting smarter with use.
-  </Card>
+> **[Hermes Agent](#)**
+>
+> An open-source evolving AI agent with persistent memory,getting smarter with use.
 
-  <Card title="SillyTavern" href="#" icon="glasses">
-    A highly customizable AI chat frontend for immersive roleplay with multi-model & media support.
-  </Card>
-</CardGroup>
+> **[SillyTavern](#)**
+>
+> A highly customizable AI chat frontend for immersive roleplay with multi-model & media support.
 
 ## Coding Endpoint
 
@@ -120,9 +116,9 @@ GLM Coding Plan supports both the Anthropic and OpenAI protocols. Make sure to c
 2. Configure the correct Base URL.
 3. Enter your API Key and select a GLM model.
 
-<Warning>
-  Please select the correct endpoint address based on the tool you are using. Incorrect endpoint configuration will result in inability to use GLM Coding Plan subscription quota.
-</Warning>
+> [!WARNING]
+>
+> Please select the correct endpoint address based on the tool you are using. Incorrect endpoint configuration will result in inability to use GLM Coding Plan subscription quota.
 
 ## Config Example
 

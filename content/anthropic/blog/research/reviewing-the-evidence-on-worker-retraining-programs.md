@@ -14,36 +14,3 @@ The review draws on 56 randomized US studies, combined in a new meta-analysis, a
 A small set of “sector programs”—programs that partner with employers in a high-demand industry and place people directly into jobs in that field—produce gains several times larger. But attempts to replicate them have often failed. The authors conclude that if AI displaces workers at scale, existing retraining programs would likely fall short.
 
 Their central recommendation is to invest now in demonstrating, evaluating, and scaling the most promising programs, including through an effort to rapidly expand a leading program for a specific group of workers and rigorously measure the results. Our [Economic Futures Research Fund](https://www.anthropic.com/news/economic-futures-research-fund-agenda) is designed to fund investigations into questions like these.
-
-## Citation
-
-```
-@techreport{roodman2026training,
-  author      = {Roodman, David and Massenkoff, Maxim},
-  title       = {An Evidence Review of Subsidized Job Training},
-  institution = {The Anthropic Institute},
-  type        = {Working Paper},
-  number      = {2026-01},
-  year        = {2026},
-  url         = {https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs}
-}
-```
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

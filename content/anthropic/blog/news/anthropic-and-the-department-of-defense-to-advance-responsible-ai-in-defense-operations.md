@@ -3,8 +3,6 @@ Title: Anthropic and the Department of Defense to advance responsible AI in defe
 URL Source: https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations
 
 Markdown Content:
-# Anthropic and the Department of Defense to advance responsible AI in defense operations
-
 The U.S. Department of Defense (DOD), through its Chief Digital and Artificial Intelligence Office (CDAO), has awarded Anthropic a two-year prototype other transaction agreement with a $200 million ceiling. As part of the agreement, Anthropic will prototype frontier AI capabilities that advance U.S. national security.
 
 "This award opens a new chapter in Anthropic’s commitment to supporting U.S. national security, which is where our earliest federal deployments began more than a year ago,” said Thiyagu Ramasamy, Anthropic's Head of Public Sector. "We look forward to deepening our collaboration across the Department to solve critical mission challenges through our technical expertise, products like our Claude Gov models and accredited Claude for Enterprise offerings, and leadership in safe and responsible AI.”
@@ -15,13 +13,13 @@ With CDAO and other DOD organizations and commands, we'll engage in:
 - Collaborating with defense experts to anticipate and mitigate potential adversarial uses of AI, drawing on our advanced risk forecasting capabilities
 - Exchanging technical insights, performance data, and operational feedback to accelerate responsible AI adoption across the defense enterprise
 
-## Our commitment to responsible AI deployment
+### Our commitment to responsible AI deployment
 
 At the heart of this work lies our conviction that the most powerful technologies carry the greatest responsibility. We're building AI systems to be reliable, interpretable, and steerable precisely because we recognize that in government contexts, where decisions affect millions and stakes couldn't be higher, these qualities are essential.
 
 We believe democracies must work together to ensure AI development strengthens democratic values globally by maintaining technological leadership to protect against authoritarian misuse.
 
-## Building on a strong foundation of government partnerships
+### Building on a strong foundation of government partnerships
 
 Our commitment to responsible AI deployment, including rigorous safety testing, collaborative governance development, and strict usage policies, makes Claude uniquely suited for sensitive national security applications.
 
@@ -32,23 +30,3 @@ We’ve accelerated mission impact across U.S. defense workflows with partners l
 [Claude Gov models](https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers), which we custom built for national security customers, already power deployments by agencies across the national security community atop infrastructure powered by Amazon Web Services(AWS).
 
 Organizations interested in transforming their operations with Claude can [contact our public sector team](mailto:pubsec@anthropic.com) to learn more and get started.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

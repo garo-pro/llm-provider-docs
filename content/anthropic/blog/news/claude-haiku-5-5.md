@@ -42,13 +42,6 @@ In early testing, our customers reported results consistent with the performance
 
 The table below shows how Claude Haiku 5.5’s pricing compares to our other models. Haiku 5.5 is especially good value when used for tasks with prompts up to 100,000 tokens, which make up around 90% of requests to our previous Haiku model.
 
-| Price per 1 million tokens | **Haiku 5.5**prompts up to / over 100k | **Haiku 4.5** | **Sonnet 5.5** | 
-|---|---|---|---|
-| Cache reads | $0.01 / $0.05 | $0.10 | $0.10 | 
-| Cache writes | $0.125 / $0.625 | $1.25 | $2.50 | 
-| Input tokens | $0.10 / $0.50 | $1.00 | $2.00 | 
-| Output tokens | $0.50 / $2.50 | $5.00 | $10.00 | 
-
 ## Safety
 
 **Alignment.** Claude Haiku 5.5 shows major improvements across almost all of our alignment evaluations relative to Haiku 4.5. In particular, we found far fewer instances of misaligned behavior, and a lower willingness to cooperate with misuse. The model’s [system card](https://www.anthropic.com/claude-haiku-5-5-system-card) describes our evaluation process and results in more detail.

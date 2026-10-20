@@ -3,15 +3,13 @@ Title: Australian government and Anthropic sign MOU for AI safety and research
 URL Source: https://www.anthropic.com/news/australia-MOU
 
 Markdown Content:
-# Australian government and Anthropic sign MOU for AI safety and research
-
 Today, Anthropic signed a Memorandum of Understanding with the Australian government to cooperate on AI safety research and support the goals of Australia’s National AI Plan. Our CEO, Dario Amodei, met with Prime Minister Anthony Albanese to formalize the agreement during a visit to Canberra, Australia. We also announced AUD$3 million in partnerships with leading Australian research institutions to use Claude to improve disease diagnosis and treatment and support computer science education and research.
 
 Central to the MOU is a commitment to work with Australia’s AI Safety Institute. We will share our findings on emerging model capabilities and risks, participate in joint safety and security evaluations, and collaborate on research with Australian academic institutions. This mirrors the arrangements we have with safety institutes in the US, UK, and Japan, where early access and technical information sharing has helped governments build an independent view of where frontier AI is heading, and AI developers increase the safety of their models. Under the MOU, we will share [Anthropic Economic Index data](https://www.anthropic.com/research/economic-index-march-2026-report) with the Australian government to help track how AI is being adopted across the economy, its economic impacts, and the implications for workers. We’ll initially focus on sectors critical to Australia’s economy, including natural resources, agriculture, healthcare, and financial services. As part of this, we plan to develop ways to advance AI education and training within the workforce. Our recent [Economic Index](https://www.anthropic.com/economic-index#country-usage) data shows that [Australians already use Claude](https://www.anthropic.com/research/how-australia-uses-claude) for a broader range of tasks than most countries—the most diverse among English-speaking nations—and work collaboratively with AI using sophisticated prompts to accomplish high-skill tasks ranging from management and sales and business operations, to use in the life sciences and in everyday life. Finally, in line with Australia’s National AI plan, we are exploring investments in data center infrastructure and energy throughout the country, aligned with the government’s recently announced [data center expectations](https://www.industry.gov.au/publications/expectations-data-centres-and-ai-infrastructure-developers).
 
 “Australia’s investment in AI safety makes it a natural partner for responsible AI development. This MOU gives our collaboration a formal foundation,” said Anthropic CEO Dario Amodei. “ I'm particularly excited by the work Australian research institutions will be doing with Claude to advance disease diagnosis and treatment."
 
-### **Extending AI for Science to Australia’s research and innovation sector**
+#### **Extending AI for Science to Australia’s research and innovation sector**
 
 At Anthropic, we believe that AI has the potential to significantly accelerate scientific progress. To this end, we are extending our [AI for Science](https://www.anthropic.com/news/ai-for-science-program) program to Australia, starting with an investment of AUD$3 million in Claude API credits to four institutions applying AI to some of humanity’s most pressing challenges. New partnerships with the Australian National University, Murdoch Children’s Research Institute, the Garvan Institute of Medical Research, and Curtin University will support areas like clinical genomics and precision medicine, pediatric medical research, and computing education.
 
@@ -26,23 +24,3 @@ On Monday, we also announced that we are launching our first deep tech startup A
 These investments reflect the advanced work Australian researchers and startups are already doing with Claude, and directly contribute to supporting the goals outlined in Australia’s National AI Plan.
 
 The visit to Australia marks the beginning of long-term collaboration and investment into the Asia-Pacific region. We’ll share more about our local team and leadership in the coming weeks as we prepare to open our Sydney office. You can read the details of the Australian government’s MOU with Anthropic [here](https://www.industry.gov.au/publications/memorandum-understanding-between-australian-government-and-anthropic-collaboration-ai-opportunities).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

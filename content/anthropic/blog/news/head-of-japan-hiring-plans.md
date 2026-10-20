@@ -3,8 +3,6 @@ Title: Anthropic appoints Hidetoshi Tojo as Head of Japan and announces hiring p
 URL Source: https://www.anthropic.com/news/head-of-japan-hiring-plans
 
 Markdown Content:
-# Anthropic appoints Hidetoshi Tojo as Head of Japan and announces hiring plans
-
 Anthropic today announced the appointment of Hidetoshi Tojo as Head of Japan. The appointment comes as the company deepens its commitment to the Japanese market after choosing Tokyo as its first Asia office.
 
 Hidetoshi brings extensive experience in scaling technology companies across Japan. He most recently served as Japan Country Manager at Snowflake building the local operations from the ground up to achieve significant growth. Hidetoshi has also led teams at Google Cloud Japan and Microsoft, both at US headquarters and local Japan subsidiaries.
@@ -18,23 +16,3 @@ Anthropic plans to officially open its first office in Asia in the coming months
 The Japanese HQ will also allow Anthropic to deepen its partnerships with businesses, policymakers, platform partners like Amazon Bedrock and Google Cloud Vertex, and academic and creative industries in Japan and across Asia.
 
 For more information about current career opportunities at Anthropic Japan, visit [anthropic.com/careers](http://anthropic.com/careers).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

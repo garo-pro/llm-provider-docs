@@ -3,10 +3,6 @@ Title: Investing in energy to secure America's AI future
 URL Source: https://www.anthropic.com/news/investing-in-energy-to-secure-america-s-ai-future
 
 Markdown Content:
-# Investing in energy to secure America's AI future
-
-![A set of three trees, with each getting bigger](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcc2d50542a800b4ec0884e9af0f42ba0bb4cf385-5761x3241.png&w=3840&q=75)
-
 Energy is central to winning the AI race and we need to ensure that America has the necessary infrastructure to maintain its lead. This includes reliable, abundant energy sources and modernized electric grids capable of supporting the computational and energy demands of advanced AI systems.
 
 The importance of building this infrastructure goes beyond just powering data centers—the country that controls the energy to train and deploy frontier AI models will shape the future of global innovation, economic competitiveness, and democratic values. We believe America should be at the forefront and we need commitment that crosses political lines.
@@ -19,23 +15,3 @@ Anthropic CEO Dario Amodei shared these priorities today at the inaugural [Penns
 These investments are just the beginning. We also believe that AI will be a powerful tool to support emissions reductions, advance clean energy innovation, and streamline efficiencies. We plan to continue making investments in this area and are actively looking to partner with organizations who are working to study and find solutions to reduce negative environmental impacts.
 
 By partnering across government, industry, and communities, we can build the foundation for decades of American leadership in AI—creating jobs, strengthening our energy independence, and ensuring the transformative benefits of AI are realized in the United States. We look forward to continuing to work with the U.S. government and other industry partners towards achieving this goal.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

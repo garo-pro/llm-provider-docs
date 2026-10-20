@@ -11,14 +11,14 @@
 
 To make usage clearer and easier to predict, GLM Coding Plan is moving to a credits-based system. See the [Subscription](https://z.ai/subscribe) page and the usage guides for [Individual Plans](https://docs.z.ai/devpack/overview#usage-instruction) and [Team Plans](https://docs.z.ai/devpack/teamplan#usage-details) for new plan tiers, prices, credit amounts, and deduction rules.
 
-<Tip>
-  **Key points**
-
-  * The new credits-based plan is now available. Previous plans are no longer sold to new users.
-  * Existing active subscriptions are not affected. In addition, usage on weekends will be deducted at off-peak rates all day.
-  * Users on plans discontinued on July 30 can still renew or upgrade them.
-  * Discontinued and new plans differ only in how usage is calculated. Other benefits will remain aligned.
-</Tip>
+> [!TIP]
+>
+> **Key points**
+>
+> * The new credits-based plan is now available. Previous plans are no longer sold to new users.
+> * Existing active subscriptions are not affected. In addition, usage on weekends will be deducted at off-peak rates all day.
+> * Users on plans discontinued on July 30 can still renew or upgrade them.
+> * Discontinued and new plans differ only in how usage is calculated. Other benefits will remain aligned.
 
 ## Identify Your Current Plan
 
@@ -96,127 +96,107 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
 | Pro Plan | Up to approx. 400 prompts | Up to approx. 2,000 prompts |
 | Max Plan | Up to approx. 1,600 prompts | Up to approx. 8,000 prompts |
 
-<Check>
-  The above figures are estimates. Actual available usage may vary depending on project complexity, repository size, and whether auto-accept is enabled.
+> [!TIP]
+>
+> The above figures are estimates. Actual available usage may vary depending on project complexity, repository size, and whether auto-accept is enabled.
+>
+> <li>
+>   **GLM-5.3**: As the flagship model, API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
+> </li>
+>
+> <li>
+>   **GLM-5.3-Flash**: API calls consume quota at a rate of 0.4× during off-peak hours and 1.2× during peak hours.
+> </li>
 
-  <li>
-    **GLM-5.3**: As the flagship model, API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
-  </li>
-
-  <li>
-    **GLM-5.3-Flash**: API calls consume quota at a rate of 0.4× during off-peak hours and 1.2× during peak hours.
-  </li>
-</Check>
-
-<Info>
-  Peak hours: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
-</Info>
+> [!NOTE]
+>
+> Peak hours: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
 
 ### Team Plan
 
-<div style={{ overflowX: "auto" }}>
-  <table style={{ width: "100%", minWidth: "700px", borderCollapse: "collapse", tableLayout: "fixed" }}>
-    <thead>
-      <tr>
-        <th style={{ width: "140px", whiteSpace: "nowrap", textAlign: "center", padding: "12px", border: "1px solid #e5e7eb" }}>
-          Plan Type
-        </th>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Plan Type
+      </th>
 
-        <th style={{ width: "calc((100% - 140px) / 2 - 5%)", textAlign: "center", padding: "12px", border: "1px solid #e5e7eb" }}>
-          Quota per 5 hours / seat
+      <th>
+        Quota per 5 hours / seat
 
-          <br />
+        (Dynamically refreshed; quota is restored 5 hours after request consumption)
+      </th>
 
-          <span style={{ fontWeight: 600 }}>
-            (Dynamically refreshed; quota is restored 5 hours after request consumption)
-          </span>
-        </th>
+      <th>
+        Weekly quota / seat
 
-        <th style={{ width: "calc((100% - 140px) / 2 + 5%)", textAlign: "center", padding: "12px", border: "1px solid #e5e7eb" }}>
-          Weekly quota / seat
+        (Starts at purchase; quota refreshes every 7-day cycle)
+      </th>
+    </tr>
+  </thead>
 
-          <br />
+  <tbody>
+    <tr>
+      <td>
+        Standard Seat
+      </td>
 
-          <span style={{ fontWeight: 600 }}>
-            (Starts at purchase; quota refreshes every 7-day cycle)
-          </span>
-        </th>
-      </tr>
-    </thead>
+      <td>
+        GLM-5.3: Up to 60 M tokens
 
-    <tbody>
-      <tr>
-        <td style={{ width: "140px", whiteSpace: "nowrap", textAlign: "center", padding: "12px", border: "1px solid #e5e7eb" }}>
-          Standard Seat
-        </td>
+        GLM-5.3-Flash: Up to 150 M tokens
+      </td>
 
-        <td style={{ textAlign: "left", padding: "12px", border: "1px solid #e5e7eb" }}>
-          GLM-5.3: Up to 60 M tokens
+      <td>
+        GLM-5.3: Up to 300 M tokens
 
-          <br />
+        GLM-5.3-Flash: Up to 750 M tokens
+      </td>
+    </tr>
 
-          GLM-5.3-Flash: Up to 150 M tokens
-        </td>
+    <tr>
+      <td>
+        Premium Seat
+      </td>
 
-        <td style={{ textAlign: "left", padding: "12px", border: "1px solid #e5e7eb" }}>
-          GLM-5.3: Up to 300 M tokens
+      <td>
+        GLM-5.3: Up to 160 M tokens
 
-          <br />
+        GLM-5.3-Flash: Up to 400 M tokens
+      </td>
 
-          GLM-5.3-Flash: Up to 750 M tokens
-        </td>
-      </tr>
+      <td>
+        GLM-5.3: Up to 800 M tokens
 
-      <tr>
-        <td style={{ width: "140px", whiteSpace: "nowrap", textAlign: "center", padding: "12px", border: "1px solid #e5e7eb" }}>
-          Premium Seat
-        </td>
+        GLM-5.3-Flash: Up to 2,000 M tokens
+      </td>
+    </tr>
 
-        <td style={{ textAlign: "left", padding: "12px", border: "1px solid #e5e7eb" }}>
-          GLM-5.3: Up to 160 M tokens
+    <tr>
+      <td>
+        Notes
+      </td>
 
-          <br />
+      <td colSpan={2}>
+        “Maximum” refers to the total number of Tokens that can actually be consumed when the **off-peak consumption multiplier** applies.
 
-          GLM-5.3-Flash: Up to 400 M tokens
-        </td>
+        The current quota consumption rules for each model are as follows:
 
-        <td style={{ textAlign: "left", padding: "12px", border: "1px solid #e5e7eb" }}>
-          GLM-5.3: Up to 800 M tokens
+        <ul>
+          <li>
+            **GLM-5.3**: As the flagship model, API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
+          </li>
 
-          <br />
+          <li>
+            **GLM-5.3-Flash**: API calls consume quota at a rate of 0.4× during off-peak hours and 1.2× during peak hours.
+          </li>
+        </ul>
 
-          GLM-5.3-Flash: Up to 2,000 M tokens
-        </td>
-      </tr>
-
-      <tr>
-        <td style={{ width: "140px", whiteSpace: "nowrap", textAlign: "center", padding: "12px", border: "1px solid #e5e7eb" }}>
-          Notes
-        </td>
-
-        <td colSpan={2} style={{ padding: "16px", border: "1px solid #e5e7eb" }}>
-          <p>
-            “Maximum” refers to the total number of Tokens that can actually be consumed when the **off-peak consumption multiplier** applies.
-          </p>
-
-          <p>The current quota consumption rules for each model are as follows:</p>
-
-          <ul>
-            <li>
-              **GLM-5.3**: As the flagship model, API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
-            </li>
-
-            <li>
-              **GLM-5.3-Flash**: API calls consume quota at a rate of 0.4× during off-peak hours and 1.2× during peak hours.
-            </li>
-          </ul>
-
-          <p>\*Peak hours: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+        \*Peak hours: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

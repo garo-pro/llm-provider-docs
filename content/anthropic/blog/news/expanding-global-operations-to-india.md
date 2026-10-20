@@ -3,8 +3,6 @@ Title: Expanding our global operations to India with our second Asia Pacific off
 URL Source: https://www.anthropic.com/news/expanding-global-operations-to-india
 
 Markdown Content:
-# Expanding our global operations to India with our second Asia Pacific office
-
 Today we’re announcing that we’re expanding our global operations to India, with plans to open an office in Bengaluru in early 2026. Bengaluru will serve as our second office in Asia Pacific after [Tokyo](https://www.anthropic.com/news/head-of-japan-hiring-plans), which will open in the coming months. This expansion will help us serve India’s rapidly growing AI ecosystem and reflects the increasing international demand we’re seeing for Claude.
 
 Our CEO and co-founder Dario Amodei is visiting India this week to meet with public officials and enterprise partners as we deepen our commitment to the region.
@@ -20,23 +18,3 @@ According to our recent [Economic Index Report](https://www.anthropic.com/econom
 Our expansion into India also dovetails with our continuing investment in advancing Claude’s Indic language capabilities. Building robust support for the languages and contexts that matter most to users in India will be a cornerstone of our work in the region. Claude already provides support across major Indic languages, and will launch enhanced performance in Hindi and nearly a dozen additional languages, including Bengali, Marathi, Telugu, Tamil, Punjabi, Gujarati, Kannada, Malayalam, and Urdu. These extended capabilities will strengthen public sector adoption and enable broader access to AI across all of India.
 
 For information about career opportunities at our new Bengaluru office, visit anthropic.com/careers.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

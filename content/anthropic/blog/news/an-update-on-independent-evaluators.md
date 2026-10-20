@@ -3,10 +3,6 @@ Title: An update on independent evaluators
 URL Source: https://www.anthropic.com/news/an-update-on-independent-evaluators
 
 Markdown Content:
-# An update on independent evaluators
-
-![An update on independent evaluators](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc2af6aeedb4995d202c7543f3d59c6bbbd5352f1-2000x1125.jpg&w=3840&q=75)
-
 Last month, we committed to [stronger independent, third-party assessment](https://darioamodei.com/post/we-must-pace-the-frontier) of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we’re announcing that we’ve started to give employee-like access to a team from [METR](https://metr.org/), a nonprofit that evaluates frontier AI models.
 
 METR will publish the results of its risk assessments. Over the past year, we’ve worked with METR on [several reviews of our Risk Reports](https://metr.org/risk-assessment/). We’re also working with [SecureBio](https://securebio.org/) and [Accenture](https://www.anthropic.com/news/accenture-embedded-evaluation) as evaluators, and are in early discussions with several other organizations, including [Hugging Face](https://huggingface.co/).
@@ -53,23 +49,3 @@ We’re developing three tiers of access for evaluators. Over time, we hope to h
 **With Accenture** and Faculty, we're working [toward an ambitious partnership](https://www.anthropic.com/news/accenture-embedded-evaluation) that includes evaluating and red-teaming models, conducting alignment assessments, testing model safeguards, and building capabilities across our organizations.
 
 We’re embedding evaluators voluntarily, and we believe every frontier AI company should do the same.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)
-
-### Anthropic opens Singapore office and signs MOU with the Government of Singapore
-
-Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
-
-[Read more](https://www.anthropic.com/news/singapore-office-opening)

@@ -3,11 +3,6 @@ Title: Introducing 100K context windows
 URL Source: https://www.anthropic.com/news/100k-context-windows
 
 Markdown Content:
-# Introducing 100K context windows
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F747fdccef62301bfa3538a9c6c8f8771fc2dceac-2880x1620.png&w=3840&q=75)
-
-
 We’ve expanded Claude’s context window from 9K to 100K tokens, corresponding to around 75,000 words! This means businesses can now submit **hundreds of pages** of materials for Claude to digest and analyze, and conversations with Claude can go on for hours or even days.
 
 The average person can read 100,000 tokens of text in ~5+ hours[1], and then they might need substantially longer to digest, remember, and analyze that information. Claude can now do this in less than a minute. For example, we loaded the entire text of The Great Gatsby into Claude-Instant (72K tokens) and modified one line to say Mr. Carraway was “a software engineer that works on machine learning tooling at Anthropic.” When we asked the model to spot what was different, it responded with the correct answer in **22 seconds**.

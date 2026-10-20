@@ -3,13 +3,11 @@ Title: Claude Opus 4.1
 URL Source: https://www.anthropic.com/news/claude-opus-4-1
 
 Markdown Content:
-# Claude Opus 4.1
-
 Today we're releasing Claude Opus 4.1, an upgrade to Claude Opus 4 on agentic tasks, real-world coding, and reasoning. We plan to release substantially larger improvements to our models in the coming weeks.
 
 Opus 4.1 is now available to paid Claude users and in Claude Code. It's also on our API, Amazon Bedrock, and Google Cloud's Vertex AI. Pricing is the same as Opus 4.
 
-## Claude Opus 4.1
+### Claude Opus 4.1
 
 Opus 4.1 advances our state-of-the-art coding performance to 74.5% on [SWE-bench Verified](https://www.swebench.com/). It also improves Claude’s in-depth research and data analysis skills, especially around detail tracking and agentic search.
 
@@ -19,28 +17,29 @@ Opus 4.1 advances our state-of-the-art coding performance to 74.5% on [SWE-bench
 
 ![A benchmark table comparing Claude Opus 4.1 to prior Claude models and other public models](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbde326699c667506c87f74b09a6355961d29eb26-2600x2084.png&w=3840&q=75)
 
-## Getting started
+### Getting started
 
 We recommend upgrading from Opus 4 to Opus 4.1 for all uses. If you’re a developer, simply use `claude-opus-4-1-20250805` via the API. You can also explore our [system card](https://www.anthropic.com/claude-opus-4-1-system-card), [model page](https://www.anthropic.com/claude/opus), [pricing page](https://www.anthropic.com/pricing#api), and [docs](https://docs.anthropic.com/en/docs/about-claude/models/overview) to learn more.
 
 As always, your [feedback](<mailto: feedback@anthropic.com>) helps us improve, especially as we continue to release new and more capable models.
 
-## Related content
+#### Data sources
 
-### Investing in the public benefit
+- OpenAI: [o3 launch post](https://openai.com/index/introducing-o3-and-o4-mini/) ,[o3 system card](https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf)
+- Gemini: [2.5 Pro model card](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro.pdf)
+- Claude: [Sonnet 3.7 launch post](https://www.anthropic.com/news/claude-3-7-sonnet) ,[Claude 4 launch post](https://www.anthropic.com/news/claude-4)
 
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
+#### Benchmark reporting
 
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
+Claude models are hybrid reasoning models. The benchmarks reported in this blog post show the highest scores achieved with or without extended thinking. We’ve noted below for each result whether extended thinking was used:
 
-### An update on independent evaluators
+- No extended thinking: SWE-bench Verified, Terminal-Bench
+- The following benchmarks were reported with extended thinking (up to 64K tokens): TAU-bench, GPQA Diamond, MMMLU, MMMU, AIME
 
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
+#### TAU-bench methodology
 
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
+Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual thinking mode, during the multi-turn trajectories to best leverage its reasoning abilities. To accommodate the additional steps Claude incurs by utilizing more thinking, the maximum number of steps (counted by model completions) was increased from 30 to 100 (most trajectories completed under 30 steps with only one trajectory reaching above 50 steps).
 
-### Preparing for the 2026 US midterms
+#### SWE-bench methodology
 
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)
+For the Claude 4 family of models, we continue to use the same simple scaffold that equips the model with solely the two tools described in our prior releases [here](https://www.anthropic.com/engineering/swe-bench-sonnet)—a bash tool, and a file editing tool that operates via string replacements. We no longer include the [third ‘planning tool’](https://www.anthropic.com/engineering/claude-think-tool) used by Claude 3.7 Sonnet. On all Claude 4 models, we report scores out of the full 500 problems. Scores for OpenAI models are reported out of a [477 problem subset](https://openai.com/index/gpt-4-1/).

@@ -3,8 +3,6 @@ Title: Expanding our use of Google Cloud TPUs and Services
 URL Source: https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
 
 Markdown Content:
-# Expanding our use of Google Cloud TPUs and Services
-
 Today, we are announcing that we plan to expand our use of Google Cloud technologies, including up to one million TPUs, dramatically increasing our compute resources as we continue to push the boundaries of AI research and product development. The expansion is worth tens of billions of dollars and is expected to bring well over a gigawatt of capacity online in 2026.
 
 “Anthropic’s choice to significantly expand its usage of TPUs reflects the strong price-performance and efficiency its teams have seen with TPUs for several years,” said Thomas Kurian, CEO at Google Cloud. “We are continuing to innovate and drive further efficiencies and increased capacity of our TPUs, building on our already mature AI accelerator portfolio, including our seventh generation TPU, Ironwood.”
@@ -16,23 +14,3 @@ Anthropic now serves more than 300,000 business customers, and our number of lar
 Anthropic’s unique compute strategy focuses on a diversified approach that efficiently uses three chip platforms–Google’s TPUs, Amazon’s Trainium, and NVIDIA’s GPUs. This multi-platform approach ensures we can continue advancing Claude's capabilities while maintaining strong partnerships across the industry. We remain committed to our partnership with Amazon, our primary training partner and cloud provider, and continue to work with the company on Project Rainier, a massive compute cluster with hundreds of thousands of AI chips across multiple U.S. data centers.
 
 Anthropic will continue to invest in additional compute capacity to ensure our models and capabilities remain at the frontier.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

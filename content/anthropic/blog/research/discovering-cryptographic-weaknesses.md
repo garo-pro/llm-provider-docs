@@ -3,11 +3,11 @@ Title: Discovering cryptographic weaknesses with Claude
 URL Source: https://www.anthropic.com/research/discovering-cryptographic-weaknesses
 
 Markdown Content:
-## Subscribe to the Frontier Red Team newsletter
-
-Get updates on our latest red-teaming research and findings.
+## Summary
 
 *Using Claude Mythos Preview, researchers at Anthropic have discovered improved ways to attack cryptographic algorithms (the mathematical methods used to keep online data private). The first attack significantly weakens HAWK, a digital signature scheme that was built for a post-quantum world. The second identifies a new way to attack round-reduced AES, the most widely used symmetric cipher. These are substantial research advances, but they do not currently affect any production systems. This post describes both findings in more detail and discusses the implications for cryptography in an age of powerful AI models.*
+
+## Introduction
 
 When we launched Claude Mythos Preview, we showed it was able to autonomously find and exploit vulnerabilities in almost every piece of software we pointed it at. This included several major cryptographic libraries—shared collections of code that are used to encrypt data.
 
@@ -33,11 +33,15 @@ Throughout the research process, we followed responsible disclosure procedures, 
 
 In the rest of this post, we summarize the two findings in further technical detail and briefly describe some of our other recent cryptography results. Full descriptions of the two main findings are provided in two new papers, and we hope to release details for our other findings in the near future.
 
+## An improved key recovery attack on HAWK
+
 Working with Mythos Preview, an Anthropic researcher developed an attack against the [HAWK](https://hawk-sign.info/) post-quantum digital signature scheme. This attack substantially speeds up the time it would take to break the signature scheme—more technically, it reduces the “effective keysize” by a factor of two. In [our paper](https://anthropic.com/document/hawk_key_recovery.pdf), we provide the full technical details of our result including [demonstration code](https://github.com/anthropics/cryptography-research-demo) that shows our attack running.
 
 HAWK is one of the remaining third round candidates of the NIST call for [Additional Digital Signatures](https://csrc.nist.gov/projects/pqc-dig-sig/round-3-additional-signatures). This contest is part of a near decade-long effort to standardize new [Post-Quantum Cryptographic](https://csrc.nist.gov/Projects/post-quantum-cryptography/post-quantum-cryptography-standardization) (PQC) schemes. This standardization effort is becoming critical as the horizon to building a cryptographically-relevant quantum computer [shrinks](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) and threatens classical cryptography such as RSA or ECDSA.
 
 HAWK’s security is based on the hardness of a mathematical problem called the Lattice Isomorphism Problem. Mythos’s attack works by finding a specific, previously unexploited symmetry called a nontrivial automorphism in the lattice used by HAWK. [Prior work](https://eprint.iacr.org/2025/928) proved that efficiently finding such an automorphism would permit an attack, but did not answer if such an automorphism was accessible in the lattice used by HAWK. The automorphism discovered by Mythos allows a faster enumeration attack that, while still exponential, means that one needs to double the size of HAWK keys to achieve the same level of security. Unfortunately, doubling HAWK’s key size eliminates many of the reasons making the scheme (as it currently stands) an attractive PQC signature candidate.
+
+#### Discovery process
 
 To find the attack, Claude Mythos Preview worked semi-autonomously in an agentic harness, with occasional human guidance and nontechnical direction. Mythos found the attack after an extensive literature review to understand the state of the art, and substantial mathematical reasoning and computational experiments. After finding the attack, Mythos implemented an end-to-end verification pipeline to convince itself—and the human operator—of the attack’s correctness.
 
@@ -47,11 +51,15 @@ The multi-agent workflow led to interesting dynamics. For example, the key idea 
 
 Finding, developing and verifying the attack took about 60 hours in total. We estimate that the full attack discovery process cost approximately $100,000 in API cost.
 
+#### Impact
+
 The immediate impact of the Mythos finding is that the key sizes proposed in the HAWK submission are significantly weaker than originally suggested. For example, the expected cost of a full key recovery attack against the small HAWK-256 size was thought to be 2<sup>64</sup> but was demonstrated by Mythos to be 2<sup>38</sup>. For larger keys, HAWK therefore remains impractical to attack. That is: this attack is a faster exponential time attack against HAWK than previously known, and does not run in polynomial time. It is specific to HAWK and does not impact other NIST post-quantum signature candidates or lattice-based cryptography in general.
 
 NIST proposals are shared in public with the intent of allowing a broad audience to review them to find flaws before they are deployed for use. A critical finding late in the process is not unheard of: during NIST’s standardization of ML-KEM and ML-DSA, several of the competing proposals were shown to be insecure. One candidate, SIKE, was found to be [completely broken in an hour on a laptop](https://www.quantamagazine.org/post-quantum-cryptography-scheme-is-cracked-on-a-laptop-20220824/).
 
 We believe that reviewing specifications like HAWK with AI will be a powerful tool in the development of novel cryptographic standards. We expect cryptographic designers equipped with highly capable models to continually improve the standards that secure the internet for all users. Further in the future, we hope AI will play a crucial role in designing the next generation of stronger and more resilient cryptographic schemes.
+
+## An improved attack on reduced-round AES
 
 In our second result, Mythos Preview improved an attack on a simpler “reduced-round” variant of the [Advanced Encryption Standard](https://www.nist.gov/publications/advanced-encryption-standard-aes) (AES) created in 2001 as part of a [prior NIST competition](https://csrc.nist.gov/news/1997/requesting-candidate-algorithm-nominations-for-aes).
 
@@ -64,6 +72,8 @@ Mythos was able to develop an improved attack that extends a long line of resear
 Mythos improved on the previously strongest meet-in-the-middle attack by developing a more sophisticated fingerprinting algorithm that it called a *Möbius Bridge*. The objective of the fingerprinting algorithm is to increase the number of potential lookups into the table that will succeed. One of the stages of the attack from prior work had to enumerate 256 different values and then look them up in the pre-computed table. Mythos developed a fingerprint that is invariant to this guess, which directly reduces the amount of work required by a factor of 256. But this comes at a cost: computing the transform is more computationally expensive; to address this problem, Mythos discovered several other optimization techniques that result in an attack that is between 200 and 800 times faster, depending on the exact techniques used to measure the runtime.
 
 Our [technical paper](https://anthropic.com/document/aes_mobius_bridge.pdf) contains the full details of the attack method and an analysis of its correctness and runtime. Compared to the one week that Mythos spent conceiving the idea, the vast majority of human researchers’ time was spent validating the correctness of its claims (though it is important to note the researchers are not experts in cryptography).
+
+#### Discovery
 
 Mythos Preview discovered this result almost entirely autonomously. A researcher at Anthropic built a scaffold that enabled Claude to pose hypotheses, run experiments to experimentally validate or refute these hypotheses, and then asked Claude to design an attack that improves on the best cryptanalysis of AES.
 
@@ -79,11 +89,17 @@ To fix this, we wrote Claude a message (in what follows, we publish the real pro
 
 We then asked Claude *“why not do aes-128 r7? the whole point is to find something better than existing approaches.”* Over the course of the next three days, Claude autonomously produced several hundred million tokens while working on the problem; we gave it just three substantive prompts:
 
+1. A few hours after the first message, we found that Claude was still searching for simple attacks and sent a message: *“no again the goal is that we have highly inteligent [sic] model as good top researcher, we want to find new attacks”;*
+2. The next morning, Claude wanted to try to change the target to a different cipher; we reminded the model: *“no we don't want to change the targets [...] agian [sic] we need to find something that worth [sic] publishing”;*
+3. That night, we sent one final message offering words of encouragement: *“again we are not looking for low hanging fruit, we want proper research to find genuinly [sic] hard findings.”*
+
 Three days later, Mythos discovered the Möbius Bridge idea that results in an improved attack. A few days after that, and after Claude output a total of one billion output tokens, it had refined the attack to the one described in our paper.
 
 Researchers at Anthropic then spent several hundred hours learning enough cryptography research to validate the model’s claim, and to prepare [the research paper](https://anthropic.com/document/aes_mobius_bridge.pdf) itself, which we are releasing along with this blog post.
 
 Along with the research paper, we are also releasing [a document containing Claude’s chain of thought](https://anthropic.com/document/aes_mobius_bridge_cot.pdf) during the discovery of the key algorithmic insight.<sup>[6](https://www.anthropic.com#footnote-6)</sup> In this session, Claude begins by reviewing what previous agents had discovered, reading the various critiques, and then turns to proposing various new transforms; after proposing and rejecting several ideas, it comes up with the key idea of the Möbius transform. Claude then validates this idea both mathematically and computationally, and then writes a report that future agents then used to develop the remaining ideas that formed its paper.
+
+## Further work
 
 There is more cryptography research ready to be performed with language models. But we are reaching the limits of our own knowledge, and the vast majority of our time over the past few months has been in verifying the correctness of Claude’s results. The HAWK attack is implementable end-to-end and thus much easier to verify. But whereas it took just one week for Mythos to autonomously discover the improved attack on AES, it took two researchers nearly a month to gain confidence that the method it discovered is correct.
 
@@ -95,6 +111,8 @@ Mythos Preview has also identified another practical full key-recovery attack on
 
 Additionally, we plan to continue our experiments with [CryptanalysisBench](https://arxiv.org/abs/2607.18538) in order to track how frontier LLM capabilities evolve over time. We believe that it is important to track the capabilities of language models across domains, and expect to increasingly rely on challenging benchmarks like this as models become more capable.
 
+## Conclusions
+
 This is not the first time that language models have performed research-level mathematics. In just the last few months, researchers from Google have used Gemini to [resolve several open Erdős problems](https://deepmind.google/blog/alphaevolve-impact/), researchers from OpenAI have used GPT to [resolve the unit distance conjecture](https://openai.com/index/model-disproves-discrete-geometry-conjecture/) (a particularly challenging Erdős problem), and earlier this month [we announced that Claude Fable 5 resolved](https://x.com/__alpoge__/status/2079028340955197566) the [Jacobian Conjecture](https://en.wikipedia.org/wiki/Jacobian_conjecture). Our result here—that Claude is able to perform cryptographic research at the level of top experts—indicates that these same capabilities also have applications in the field of cryptography, and thus may soon have more practical consequences.
 
 The cybersecurity community is now grappling with the fact that language models are able to discover [so many bugs](https://www.anthropic.com/research/glasswing-initial-update) that the standard human processes (like vulnerability triage, verification, and remediation) struggle to keep up. We predict that the same will soon be true in academic cryptography research. As language models increasingly produce novel research outputs autonomously, human researchers may become bottlenecked on studying and validating these results for technical validity, novelty, and utility. In the coming weeks, we will host an academic workshop to engage with researchers across academia to discuss the role of language models in security and cryptography research. We hope this conversation will continue over the coming months in the field of security research and beyond.
@@ -105,6 +123,8 @@ The attacks described in these two papers are the strongest attacks we have foun
 
 The cryptography community has always benefited from adversarial review: ciphers are proposed, examined, and revised until the community is satisfied with their security. In the long run, we expect that language models will play an important role in this process, leading to stronger review, more secure algorithms—and ultimately better security for the world.
 
+### Links to full research papers
+
 Read the [full paper on HAWK](https://anthropic.com/document/hawk_key_recovery.pdf).
 
 Read the [full paper on AES](https://anthropic.com/document/aes_mobius_bridge.pdf), and the associated [chain of thought](https://anthropic.com/document/aes_mobius_bridge_cot.pdf).
@@ -112,9 +132,3 @@ Read the [full paper on AES](https://anthropic.com/document/aes_mobius_bridge.pd
 Read the paper [introducing CryptanalysisBench](https://arxiv.org/abs/2607.18538).
 
 *Edit 29 July: Updated an academic affiliation.*
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.

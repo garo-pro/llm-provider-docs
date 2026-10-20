@@ -16,9 +16,9 @@ For each project, you can use methods like Subagent to make concurrent model cal
 * **Pro**: Recommended for developing 1–2 projects simultaneously
 * **Max**: Recommended for developing 2 or more projects simultaneously
 
-<Tip>
-  Plan users will enjoy higher concurrency limits during off-peak hours (dynamically increased), enabling support for a greater number of concurrent projects.
-</Tip>
+> [!TIP]
+>
+> Plan users will enjoy higher concurrency limits during off-peak hours (dynamically increased), enabling support for a greater number of concurrent projects.
 
 ## Account Usage Policy
 

@@ -3,10 +3,6 @@ Title: How Claude designed protein binders against scorpion neurotoxins
 URL Source: https://www.anthropic.com/research/claude-scorpion-toxin-binder-design
 
 Markdown Content:
-## Subscribe to Anthropic Science
-
-Features on AI-assisted discoveries, practical workflows, and field notes across the sciences.
-
 ***Summary:** As part of our work experimenting with how Claude can help accelerate drug discovery, we asked an internal research model to design* minibinders *(small proteins that attach tightly to a target) against scorpion neurotoxins. Claude worked from our prompt and four follow-ups, which we developed in collaboration with the financial investment research firm Citrini Research. Teams at Adaptyv Bio and Twist Bioscience experimentally tested 211 designs for binding. Of these, 17 met our criteria. We’re releasing all 211 designs and their data as a resource for the field.*
 
 In August, we showed [how Claude designed protein minibinders](https://www.anthropic.com/research/Claude-accelerates-protein-design) after being given a single prompt. A month before we released those results, a team from [Citrini Research](https://www.citriniresearch.com/) had approached us with an interesting question: could Claude (and AI drug discovery more generally) enable a group of motivated nonexperts to tackle a genuine problem in human health? Members of our life science research team set out to answer this, first by brainstorming problems with Claude. We landed on asking for Claude’s help designing novel protein binders against scorpion neurotoxins, with the hope that they could one day be used to develop a scorpion antivenom.
@@ -25,6 +21,8 @@ Designing a binder against almost any target no longer seems unrealistic. We can
 
 **Susana Vázquez Torres**, Postdoctoral Researcher, Structural Biology Programme, Spanish National Cancer Research Centre (CNIO), Madrid, Spain.
 
+### Designing *de novo* binders against five toxins from four species of scorpions
+
 Scorpion venom contains multiple protein neurotoxins. The neurotoxins that are most likely to harm or kill humans attach to *sodium channels*, large proteins embedded in the membranes of nerve cells that allow them to fire. When sodium channels are disrupted, nerves fire at the wrong time—this releases large amounts of stress chemicals, like adrenaline. In severe cases, this can cause heart failure and excess fluid buildup in the lungs, occasionally resulting in death.
 
 There are some antivenoms available for scorpion stings. They’re generally made using the antibodies of immunized animals, a process that can take months. Venom is milked from thousands of scorpions and used to immunize horses; scientists then purify the resulting antibodies from the horses’ blood. Traditional antivenoms can work when given early, but they’re usually effective for only a small number of neurotoxins. They’re also expensive to produce, and in many regions are costly or in short supply.
@@ -35,6 +33,8 @@ Our approach was inspired by [an earlier effort](https://www.nature.com/articles
 
 For this campaign, we chose to target five scorpion-venom neurotoxins across four regions: Mexico (Cn2), Brazil (Ts1), North Africa (AaH I and AaH II), and the Middle East (LqhIII). We also chose to aim the designs at each toxin’s channel-binding site. Claude picked the toxin structures to use for design by searching the Protein Data Bank (PDB) as well as the AlphaFold database (AFDB). For each toxin, it selected five *hotspots*, specific amino acid positions on the toxin that its binder designs were meant to latch onto.
 
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa75592f9509840d8fe7b9137d4b76197342f9395-3923x2349.png&w=3840&q=75)
+
 We were primarily wondering if Claude could design binders against *individual* toxins. But we were also curious if Claude could design binders that targeted *multiple* toxins. There’s a practical reason for trying to design multitoxin binders, namely that it would reduce the number of molecules needed for a universal antivenom cocktail—which would be the most cost-effective and regionally neutral treatment. We selected these five scorpion toxins (Cn2, Ts1, AaH I, AaH II, and LqhIII) as a challenging test of multitoxin design: they share one fold for the overall shape of the protein, but any two are only 26% to 62% identical in their amino acid sequences.
 
 To see how far Claude could go, we asked it to design four kinds of binders: binders against each of the five toxins individually; binders that targeted the β-family toxins Ts1 and Cn2; binders that targeted the α-family toxins AaH II, AaH I, and LqhIII; and binders that targeted all five toxins simultaneously.
@@ -42,6 +42,8 @@ To see how far Claude could go, we asked it to design four kinds of binders: bin
 Designing credible binders against five toxins in parallel, in a matter of days, is a great showcase of the AI-driven paradigm shift we are seeing in therapeutic discovery. This is especially true for neglected diseases such as animal envenomings, which have been largely starved of innovation due to low commercial incentives. Being able to agentically tackle the uniquely broad target space across animal toxins provides a significant speed-up in discovery, and brings realistic therapeutic solutions much closer.
 
 **Timothy P. Jenkins**, Associate Professor, Technical University of Denmark.
+
+#### Claude ran the design campaign with considerable autonomy
 
 Our initial prompt defined the neurotoxin targets, the protein design and folding tools, and the rules for novelty, scoring, and filtering. Beyond choosing the structures and amino acid hotspots, Claude also set the quality thresholds a design had to clear, decided how much to lean on each available design tool, and developed the strategies for designing binders against multiple toxins.
 
@@ -51,11 +53,17 @@ Claude worked autonomously for 24 hours following our first prompt. Its results 
 
 Of the 211 designs our teams assessed, 17 met our criteria for a binder, each against a single toxin. None of the designs made against multiple toxins met our criteria for more than one. (Beyond being limited by its current capabilities, there could be many explanations for why Claude struggled with this, including our prompting, the limitations of available design tools, and even the biological feasibility of multitoxin design.) Seven designs were binders against Cn2, four against AaH II, four against AaH I, and two against LqhIII. Among the 60 single-toxin designs, 11 were binders (18%). This rate is consistent with typical protein design campaigns, including our previous work.
 
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc0a8c7f4a34bb8fa4ca9fbed5697f275beef82a8-2880x1182.png&w=3840&q=75)
+
+#### Testing Claude's designs in the lab
+
 After completing the campaign, we sent the designs to Adaptyv Bio and Twist Bioscience to test them for binding. Each group produced the designs in their labs, but in different formats. Adaptyv Bio expressed them in a *cell-free system*, which uses protein-making machinery extracted from bacteria rather than living cells. Twist Bioscience expressed the designs in mammalian cells (in this case, human kidney cells) as fusions to *Fc*, the stem of an antibody. These are complementary ways to measure the underlying binding process, and we combined them in order to improve confidence in our results.
 
 Both labs measured binding by *surface plasmon resonance* (SPR), in which a toxin flows over the design while the SPR instrument tracks in real time how quickly a toxin binds to and detaches from it. The resulting trace, called a sensorgram, produces a measurement known as the *dissociation constant* (KD), which is a measurement for binding strength (or *affinity*). The lower the KD, the tighter the binding.
 
 When it came to evaluating the resulting designs, we set out strict criteria for labeling a design a binder against a toxin. The design needed to be a *hit* at both labs<sup>[3](https://www.anthropic.com#footnote-3)</sup>—that is, it needed to show evidence of binding against that toxin in every replicate, and every KD needed to be 1 µM or tighter. We also required that the design show no signal against CLEC12A, an unrelated human protein used to measure off-target binding or “stickiness.”
+
+#### Claude’s Cn2 binders likely bind the same site as a toxin-neutralizing antibody
 
 Antibodies and nanobodies remain the standard for *de novo* designs to beat. Three such molecules have reported affinities (KD) below 1 nM (nanomolar) against Cn2 or AaH II, and they have been shown to protect mice from scorpion toxins.
 
@@ -65,16 +73,20 @@ One way to find out whether two molecules (e.g., an antibody and a miniprotein) 
 
 Our competition experiments suggest our Cn2 binders each attach on or near the same *epitope* (binding site) as an antibody called LR, which [has been reported to neutralize Cn2](https://pmc.ncbi.nlm.nih.gov/articles/PMC4722445/) in mice. LR’s binding site covers the part of Cn2 that attaches to the sodium channel and causes nerves to misfire. We have not tested our strongest binders, Cn2-B1 and Cn2-B2, in a cellular environment or in live animals, but the fact that they compete with LR suggests that they will likely neutralize Cn2.
 
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3c9ec1588052bacd27a3e6b60031ff44ecab86a9-3871x1478.png&w=3840&q=75)
+
+### A binder is only the first step to developing an antivenom
+
 Our results show binding only against *recombinant* toxins, which are grown in the lab from each toxin’s gene rather than purified from venom. The two biggest limitations of this study are that we didn’t test any design for neutralization *in vitro* (against cells grown in the lab) or for efficacy *in vivo* (in living animals, such as mice).
 
 If we were to advance one design toward a therapy, Cn2-B1 would be one of our strongest candidates. First, though, we would need to confirm the design also binds toxin purified from venom. We would then assess it for function *in vitro* with patch-clamp recordings (which can measure the electrical current passing through sodium channels) to see whether it stops the toxin from acting on the channel. Then, we would need to test the binder in mice to see whether it actually protects them. Beyond neutralizing the toxin, a treatment must also be safe, stable, affordable, and available where stings occur. Reaching patients will also take cooperation from clinicians, funders, and policymakers.
 
 We are releasing [all 211 designs and their binding data](https://huggingface.co/datasets/Anthropic/scorpion-toxin-binder-design) so that other researchers can build on our work. We hope this demonstration of Claude’s capabilities, along with the data we are releasing, will help accelerate further research into antivenom design.
 
+### Further reading
+
 The following resources provide further technical depth and more detailed information about the results described above:
 
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-How will AI reshape the economy in the years ahead? What is the core source of disagreement about AI's future impact on the economy? This note presents new survey evidence on these questions.
+- [Technical report](https://www-cdn.anthropic.com/31ac578806cffd8b3d92d8affe6edc4c04d502e1.pdf) ;
+- Data release: [all 211 designs, their predicted structures and scores, and experimental data](https://huggingface.co/datasets/Anthropic/scorpion-toxin-binder-design) ;
+- Our previous posts on [protein design](https://www.anthropic.com/research/Claude-accelerates-protein-design) and[uplifting biomolecular modeling](https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling) .

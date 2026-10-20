@@ -3,10 +3,6 @@ Title: Claude 3 Haiku: our fastest model yet
 URL Source: https://www.anthropic.com/news/claude-3-haiku
 
 Markdown Content:
-# Claude 3 Haiku: our fastest model yet
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc0fb44100d911f737e71165d9bf6a3551ba37757-2880x1620.png&w=3840&q=75)
-
 Today we’re releasing Claude 3 Haiku, the fastest and most affordable model in its intelligence class. With state-of-the-art vision capabilities and strong performance on industry benchmarks, Haiku is a versatile solution for a wide range of enterprise applications. The model is now available alongside Sonnet and Opus in the Claude API and on claude.ai for our Claude Pro subscribers.
 
 ![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe6025e452c3653296d50e03e318fd9af001b7ca6-2200x2022.png&w=3840&q=75)
@@ -18,25 +14,3 @@ Haiku's pricing model, with a 1:5 input-to-output token ratio, was designed for 
 Alongside its speed and affordability, Claude 3 Haiku prioritizes enterprise-grade security and robustness. We conduct rigorous testing to reduce the likelihood of harmful outputs and jailbreaks of our models so they are as safe as possible. Additional layers of defense include continuous systems monitoring, endpoint hardening, secure coding practices, strong data encryption protocols, and stringent access controls to protect sensitive data. We also conduct regular security audits and work with experienced penetration testers to proactively identify and address vulnerabilities. More information about these measures can be found in the [Claude 3 model card](https://www.anthropic.com/claude-3-model-card).
 
 Starting today, customers can use Claude 3 Haiku through our [API](https://www.anthropic.com/api) or with a Claude Pro subscription on claude.ai. Claude 3 Haiku is available on Amazon Bedrock and will be coming soon to Google Cloud Vertex AI.
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9169d7976c74c5da28de0369cfaa85ab4268adc9-1148x272.png&w=3840&q=75)
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

@@ -3,8 +3,6 @@ Title: Statement from Dario Amodei on our discussions with the Department of War
 URL Source: https://www.anthropic.com/news/statement-department-of-war
 
 Markdown Content:
-# Statement from Dario Amodei on our discussions with the Department of War
-
 I believe deeply in the existential importance of using AI to defend the United States and other democracies, and to defeat our autocratic adversaries.
 
 Anthropic has therefore worked proactively to deploy our models to the Department of War and the intelligence community. We were [the first frontier AI company](https://www.anthropic.com/news/expanding-access-to-claude-for-government) to deploy our models in the US government’s classified networks, the first to deploy them at the [National Laboratories](https://www.axios.com/2024/11/14/anthropic-claude-nuclear-information-safety), and the first to provide [custom models](https://www.anthropic.com/news/claude-gov-models-for-u-s-national-security-customers) for national security customers. Claude is [extensively deployed](https://www.anthropic.com/news/anthropic-and-the-department-of-defense-to-advance-responsible-ai-in-defense-operations) across the Department of War and other national security agencies for mission-critical applications, such as intelligence analysis, modeling and simulation, operational planning, cyber operations, and more.
@@ -27,23 +25,3 @@ Regardless, these threats do not change our position: we cannot in good conscien
 It is the Department’s prerogative to select contractors most aligned with their vision. But given the substantial value that Anthropic’s technology provides to our armed forces, we hope they reconsider. Our strong preference is to continue to serve the Department and our warfighters—with our two requested safeguards in place. Should the Department choose to offboard Anthropic, we will work to enable a smooth transition to another provider, avoiding any disruption to ongoing military planning, operations, or other critical missions. Our models will be available on the expansive terms we have proposed for as long as required.
 
 We remain ready to continue our work to support the national security of the United States.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

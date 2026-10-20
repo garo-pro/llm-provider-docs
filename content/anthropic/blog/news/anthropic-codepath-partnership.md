@@ -3,13 +3,11 @@ Title: Anthropic partners with CodePath to bring Claude to the US’s largest co
 URL Source: https://www.anthropic.com/news/anthropic-codepath-partnership
 
 Markdown Content:
-# Anthropic partners with CodePath to bring Claude to the US’s largest collegiate computer science program
-
 Anthropic is partnering with CodePath, the nation’s largest provider of collegiate computer science education, to redesign its coding curriculum as AI reshapes the field of software development. CodePath will put Claude and Claude Code at the center of its courses and career programs, giving more than 20,000 students at community colleges, state schools, and HBCUs access to frontier AI tools as part of their education.
 
 Over 40% of CodePath students come from families earning under $50,000 a year, and CodePath aims to provide them with industry-vetted courses and access to career networks traditionally reserved for students at wealthier institutions.
 
-## **What we’re building**
+### What we’re building
 
 CodePath is integrating Claude into its AI courses—including Foundations of AI Engineering, Applications of AI Engineering, and AI Open-Source Capstone—so students can learn to build with tools like Claude Code and contribute to real-world open-source projects.
 
@@ -21,28 +19,8 @@ In January, Howard University announced a redesigned Intro to Artificial Intelli
 
 Beyond the classroom, Anthropic and CodePath will collaborate on public research exploring how AI is changing coding education and the dynamics of economic opportunity. We’ll share what we learn from students, educators, and industry leaders about what’s working—and what isn’t—as AI changes how people build technical skills and enter the workforce.
 
-## **A broader commitment to AI education**
+### A broader commitment to AI education
 
 This partnership builds on Anthropic’s work to put AI tools in the hands of educators and students. We’re partnering with the [American Federation of Teachers (AFT)](https://www.aft.org/press-release/aft-launch-national-academy-ai-instruction-microsoft-openai-anthropic-and-united) to offer free AI training to their 1.8 million members across the US. In [Iceland](https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots), we launched one of the world’s first national AI education pilots with the Ministry of Education and Children, giving teachers across the country access to Claude. In [Rwanda](https://www.anthropic.com/news/rwandan-government-partnership-ai-education), we’re working with the government and ALX to bring a Claude-powered learning companion to hundreds of thousands of students and young professionals across Africa. We also signed the White House’s “[Pledge to America’s Youth: Investing in AI Education](https://www.anthropic.com/news/anthropic-signs-pledge-to-americas-youth-investing-in-ai-education),” committing to expand AI education nationwide through investments in cybersecurity education, the Presidential AI Challenge, and a free AI curriculum for educators.
 
 The tools changing how software is built shouldn’t only be available to students at well-resourced universities. With CodePath, they won’t be.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

@@ -4,10 +4,11 @@
 
 # Coding Tool Helper
 
-<Tip>
-  **One-Click Install Assistant** <br />
-  A command-line assistant that helps GLM Coding Plan users centrally manage and configure CLI tools such as Claude Code.
-</Tip>
+> [!TIP]
+>
+> **One-Click Install Assistant** \\
+>
+> A command-line assistant that helps GLM Coding Plan users centrally manage and configure CLI tools such as Claude Code.
 
 **NPM Package**: [@z\_ai/coding-helper](https://www.npmjs.com/package/@z_ai/coding-helper) \
 **Prerequisite**: [Node.js >= v18.0.0](https://nodejs.org/en/download/)
@@ -26,79 +27,73 @@ The current coding tools supported are:
 
 ## Key Features
 
-<CardGroup cols={3}>
-  <Card title="Interactive Wizard" icon="window">
-    Friendly setup guidance
-  </Card>
+> **Interactive Wizard**
+>
+> Friendly setup guidance
 
-  <Card title="Plan Integration" icon="code">
-    Connect GLM Plan to your preferred coding tools
-  </Card>
+> **Plan Integration**
+>
+> Connect GLM Plan to your preferred coding tools
 
-  <Card title="Tool Management" icon="box">
-    Automatically detect, install, and configure coding tools
-  </Card>
+> **Tool Management**
+>
+> Automatically detect, install, and configure coding tools
 
-  <Card title="MCP Configuration" icon="hammer">
-    Easily manage MCP services
-  </Card>
+> **MCP Configuration**
+>
+> Easily manage MCP services
 
-  <Card title="Local Storage" icon="database">
-    Secure local storage configuration
-  </Card>
+> **Local Storage**
+>
+> Secure local storage configuration
 
-  <Card title="I18n Support" icon="globe">
-    Interfaces support multiple languages
-  </Card>
-</CardGroup>
+> **I18n Support**
+>
+> Interfaces support multiple languages
 
 ## Quick Start
 
-<Steps>
-  <Step title="Get Your API Key">
-    Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan).
-  </Step>
+**1. Get Your API Key**
 
-  <Step title="Install & Launch">
-    Prerequisite: You need [Node.js 18+ or newer](https://nodejs.org/en/download/) \
-    Choose either installation method below.
+Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan).
 
-    <Tabs>
-      <Tab title="Method 1 (Recommended: npx on demand)">
-        Best for occasional users—no global install required. Run via npx to start instantly.
+**2. Install & Launch**
 
-        ```shell theme={null}
-        ## Run Coding Tool Helper directly in the terminal
-        npx @z_ai/coding-helper
-        ```
-      </Tab>
+Prerequisite: You need [Node.js 18+ or newer](https://nodejs.org/en/download/) \
+Choose either installation method below.
 
-      <Tab title="Method 2 (Global install for frequent use)">
-        Ideal for heavy users. Install globally, then launch with `coding-helper` or `chelper`.
+**Method 1 (Recommended: npx on demand)**
 
-        <Tip>
-          If `npm install` fails with `permission denied`, add sudo (macOS/Linux) or run the terminal as administrator (Windows).\
-          Example: `sudo npm install -g @z_ai/coding-helper` \
-          Alternatively, simply use npx: `npx @z_ai/coding-helper`
-        </Tip>
+Best for occasional users—no global install required. Run via npx to start instantly.
 
-        ```shell theme={null}
-        ## Install @z_ai/coding-helper globally
-        npm install -g @z_ai/coding-helper
-        ## Then run coding-helper or chelper
-        coding-helper
-        ```
-      </Tab>
-    </Tabs>
-  </Step>
+```shell theme={null}
+## Run Coding Tool Helper directly in the terminal
+npx @z_ai/coding-helper
+```
 
-  <Step title="Complete the wizard">
-    Inside the wizard, use the arrow keys to choose options and Enter to confirm. Follow the guide to: \
-    Select UI language --> Choose a coding plan --> Enter API key --> Pick tools to manage \
-    \--> Auto-install tools (if needed) --> Open the tool management menu --> Load plan into tools \
-    \--> Manage MCP services (optional) --> Finish setup and launch your coding tools
-  </Step>
-</Steps>
+**Method 2 (Global install for frequent use)**
+
+Ideal for heavy users. Install globally, then launch with `coding-helper` or `chelper`.
+
+> [!TIP]
+>
+> If `npm install` fails with `permission denied`, add sudo (macOS/Linux) or run the terminal as administrator (Windows).\
+> Example: `sudo npm install -g @z_ai/coding-helper` \
+> Alternatively, simply use npx: `npx @z_ai/coding-helper`
+
+```shell theme={null}
+## Install @z_ai/coding-helper globally
+npm install -g @z_ai/coding-helper
+## Then run coding-helper or chelper
+coding-helper
+```
+
+**3. Complete the wizard**
+
+Inside the wizard, use the arrow keys to choose options and Enter to confirm. Follow the guide to: \
+Select UI language --> Choose a coding plan --> Enter API key --> Pick tools to manage \
+\--> Auto-install tools (if needed) --> Open the tool management menu --> Load plan into tools \
+\--> Manage MCP services (optional) --> Finish setup and launch your coding tools
 
 ## Additional Information
 
@@ -131,68 +126,66 @@ coding-helper --version              # Show version
 
 If issues arise, run `coding-helper doctor` first for a health check.
 
-<AccordionGroup>
-  <Accordion title="Network error, please check your connection" defaultOpen="true">
-    **Issue:** When saving or validating the API KEY or performing other network operations, you may see network errors such as `Network Error`.
+> **Network error, please check your connection**
+>
+> **Issue:** When saving or validating the API KEY or performing other network operations, you may see network errors such as `Network Error`.
+>
+> **Solution:**
+>
+> 1. Check your network connection or configure a proxy.
+> 2. Note: If you must use a proxy to access external networks, Node.js does not automatically use the system proxy settings. Set the environment variables `HTTP_PROXY` and `HTTPS_PROXY` to make Node.js use the proxy.
+>
+> ```shell theme={null}
+> # Example:
+> export HTTP_PROXY=http://your.proxy.server:port
+> export HTTPS_PROXY=http://your.proxy.server:port
+> ```
 
-    **Solution:**
+> **Network timeout**
+>
+> **Issue:** When running or installing the coding tools, timeout or other network timeout errors appear.
+>
+> **Solution:**
+>
+> 1. Check the network connection or configure a proxy.
 
-    1. Check your network connection or configure a proxy.
-    2. Note: If you must use a proxy to access external networks, Node.js does not automatically use the system proxy settings. Set the environment variables `HTTP_PROXY` and `HTTPS_PROXY` to make Node.js use the proxy.
+> **Insufficient permissions EACCES: permission denied**
+>
+> **Issue:** `npm install -g` throws EACCES: permission denied.
+>
+> **Solution:**
+>
+> 1. Retry with sudo (macOS / Linux).
+> 2. Run the terminal as administrator (Windows).
+> 3. Start directly via `npx @z_ai/coding-helper`.
+> 4. Use nvm to manage Node.js versions and avoid global permission issues.
 
-    ```shell theme={null}
-    # Example:
-    export HTTP_PROXY=http://your.proxy.server:port
-    export HTTPS_PROXY=http://your.proxy.server:port
-    ```
-  </Accordion>
+> **Incorrect plugin status in the Claude Code Marketplace**
+>
+> **Issue:** While using the Claude Code Marketplace, the plugin status is incorrect (e.g., it shows “not installed” even though it is already installed).
+>
+> **Solution:**
+>
+> 1. Run `claude update` to upgrade Claude Code to version 2.0.70 or later.
 
-  <Accordion title="Network timeout">
-    **Issue:** When running or installing the coding tools, timeout or other network timeout errors appear.
+> **API Key invalid**
+>
+> **Issue:** API Key reported as invalid.
+>
+> **Solution:**
+>
+> 1. Confirm the API Key was copied correctly.
+> 2. Check that the associated account has sufficient balance.
 
-    **Solution:**
-
-    1. Check the network connection or configure a proxy.
-  </Accordion>
-
-  <Accordion title="Insufficient permissions EACCES: permission denied">
-    **Issue:** `npm install -g` throws EACCES: permission denied.
-
-    **Solution:**
-
-    1. Retry with sudo (macOS / Linux).
-    2. Run the terminal as administrator (Windows).
-    3. Start directly via `npx @z_ai/coding-helper`.
-    4. Use nvm to manage Node.js versions and avoid global permission issues.
-  </Accordion>
-
-  <Accordion title="Incorrect plugin status in the Claude Code Marketplace">
-    **Issue:** While using the Claude Code Marketplace, the plugin status is incorrect (e.g., it shows “not installed” even though it is already installed).
-
-    **Solution:**
-
-    1. Run `claude update` to upgrade Claude Code to version 2.0.70 or later.
-  </Accordion>
-
-  <Accordion title="API Key invalid">
-    **Issue:** API Key reported as invalid.
-
-    **Solution:**
-
-    1. Confirm the API Key was copied correctly.
-    2. Check that the associated account has sufficient balance.
-  </Accordion>
-
-  <Accordion title="Connection timeout">
-    **Issue:** Service connection timed out.
-
-    **Solution:**
-
-    1. Check network connectivity.
-    2. Verify firewall settings.
-    3. Ensure Node.js and the network environment are ready.
-  </Accordion>
-</AccordionGroup>
+> **Connection timeout**
+>
+> **Issue:** Service connection timed out.
+>
+> **Solution:**
+>
+> 1. Check network connectivity.
+> 2. Verify firewall settings.
+> 3. Ensure Node.js and the network environment are ready.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

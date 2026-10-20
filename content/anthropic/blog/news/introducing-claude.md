@@ -3,10 +3,6 @@ Title: Introducing Claude
 URL Source: https://www.anthropic.com/news/introducing-claude
 
 Markdown Content:
-# Introducing Claude
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F598090233d64488d2c6fd8551c943b5a731e6e98-2880x1620.png&w=3840&q=75)
-
 After working for the past few months with key partners like Notion, Quora, and DuckDuckGo in a closed alpha, we’ve been able to carefully test out our systems in the wild, and are [ready to offer Claude more broadly](https://www.anthropic.com/earlyaccess/) so it can power crucial, cutting-edge use cases at scale.
 
 [Claude](https://www.anthropic.com/product) is a next-generation AI assistant based on Anthropic’s research into training helpful, honest, and harmless AI systems. Accessible through chat interface and API in our developer console, Claude is capable of a wide variety of conversational and text processing tasks while maintaining a high degree of reliability and predictability.
@@ -15,7 +11,7 @@ Claude can help with use cases including summarization, search, creative and col
 
 We’re offering [two versions of Claude](https://www-cdn.anthropic.com/b0d46f8c8e2f4cca2833c17cb68435035c0bb5a9/apr-pricing-tokens_2023-05-10-213025_tnty.pdf) today: Claude and Claude Instant. Claude is a state-of-the-art high-performance model, while Claude Instant is a lighter, less expensive, and much faster option. We plan to introduce even more updates in the coming weeks. As we develop these systems, we'll continually work to make them more helpful, honest, and harmless as we learn more from our [safety research](https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist) and our deployments.
 
-## Partner Testimonials
+### Partner Testimonials
 
 We are excited to showcase how our partners are using Claude today. We chose these companies and products with care. We’re excited to support businesses and nonprofits that are empowering people with information and making them more productive in their professional and personal lives.
 

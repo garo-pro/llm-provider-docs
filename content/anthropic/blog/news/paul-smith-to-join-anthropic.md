@@ -3,8 +3,6 @@ Title: Paul Smith to join Anthropic as Chief Commercial Officer
 URL Source: https://www.anthropic.com/news/paul-smith-to-join-anthropic
 
 Markdown Content:
-# Paul Smith to join Anthropic as Chief Commercial Officer
-
 Anthropic will appoint Paul Smith as its first Chief Commercial Officer, who will assume the role later this year. Paul will bring over 30 years of experience building and scaling global go-to-market organizations at some of the world's most successful enterprise technology companies, including Microsoft, Salesforce, and ServiceNow.
 
 Confirmation of Paul's appointment comes at a moment of exceptional growth for Anthropic, particularly in the enterprise market. We now serve hundreds of thousands of active API customers, while Claude Code has seen its recurring revenue grow over 5x in just two months. From the fastest growing startups to the Fortune 500, businesses across every industry are deploying Claude to transform their operations.
@@ -14,23 +12,3 @@ Confirmation of Paul's appointment comes at a moment of exceptional growth for A
 "Anthropic's growth is unprecedented, and yet most enterprises are still in the early stages of AI adoption. The potential ahead is massive,” said Paul. “Throughout my career, I've been fortunate to build teams that have guided companies through transformative technology shifts. And I could not be more excited by the opportunity to help customers navigate AI—the biggest shift of all—with Anthropic.”
 
 AI is fundamentally restructuring how businesses create and capture value. Paul's expertise will help us support more organizations in navigating this transition thoughtfully, as we work to become the most trusted AI partner for businesses.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

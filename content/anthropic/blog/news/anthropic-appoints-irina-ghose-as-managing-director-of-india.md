@@ -3,8 +3,6 @@ Title: Anthropic appoints Irina Ghose as Managing Director of India ahead of Ben
 URL Source: https://www.anthropic.com/news/anthropic-appoints-irina-ghose-as-managing-director-of-india
 
 Markdown Content:
-# Anthropic appoints Irina Ghose as Managing Director of India ahead of Bengaluru office opening
-
 Irina Ghose is joining Anthropic as Managing Director of India as we prepare to open our first office in the country.
 
 Irina brings more than three decades of experience in scaling technology businesses. She most recently served as Managing Director, Microsoft India, where she led enterprise AI adoption across major Indian industries including banking and financial services, healthcare, manufacturing, and government. She’s led high-impact teams, built ecosystem partnerships, and championed future-ready capabilities across India’s technology landscape, with a consistent focus on using technology to drive meaningful business and societal impact.
@@ -16,23 +14,3 @@ Irina brings more than three decades of experience in scaling technology busines
 Our India team will work closely with policymakers and academic institutions, strengthen developer engagement, and build partnerships with enterprises and organizations using AI to address local challenges.
 
 India ranks as the second-largest market globally for Claude.ai. Anthropic's fourth [Economic Index](https://www.anthropic.com/economic-index) showed that Indian users have a striking focus on technical applications, with nearly half of all Claude.ai usage concentrated in computer and mathematical tasks.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

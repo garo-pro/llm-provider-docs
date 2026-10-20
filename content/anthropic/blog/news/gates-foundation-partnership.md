@@ -3,15 +3,13 @@ Title: Anthropic forms $200 million partnership with the Gates Foundation
 URL Source: https://www.anthropic.com/news/gates-foundation-partnership
 
 Markdown Content:
-# Anthropic forms $200 million partnership with the Gates Foundation
-
 We’re partnering with the [Gates Foundation](https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership) to commit $200 million in grant funding, Claude usage credits, and technical support for programs in global health, life sciences, education, and economic mobility over the next four years. These programs will be implemented with partners in the US and around the world.
 
 This commitment is central to Anthropic’s efforts to extend the benefits of AI in areas where markets alone will not. This work is led by our Beneficial Deployments team, which provides Claude credits and engineering support to our partners in the four priority areas mentioned above. The team also develops AI-related public goods, such as public health datasets and evaluation benchmarks, and offers nonprofits and education institutions [discounted access](https://www.anthropic.com/news/claude-for-nonprofits) to Claude. We’re increasing our investment in beneficial deployments, and plan to share more about our approach to this work, and the impact of the programs we’ve supported. 
 
 Below, we outline what’s involved in our partnership with the Gates Foundation, including our new initiatives and the work that's already underway. 
 
-### Global health and life sciences
+#### Global health and life sciences
 
 The largest part of our partnership will focus on improving health outcomes in low- and middle-income countries, where around [4.6 billion people lack access](https://healthpolicy-watch.news/130282-2/) to essential health services. Anthropic will work with the Gates Foundation and others on a range of new and existing programs that will accelerate the development of new vaccines and therapies, and help governments use health data to make faster, better-informed decisions.
 
@@ -25,40 +23,20 @@ Together, we will explore how AI can make it faster and easier for scientists to
 
 Finally, we’re partnering with the Institute for Disease Modeling (IDM), a research group within the Gates Foundation, to improve the forecasts that determine where and how treatments for diseases like malaria and tuberculosis are deployed. An integration with Claude will make IDM’s forecasts more accessible to practitioners and researchers who aren’t modeling specialists, and will help IDM develop more predictive models of disease transmission.
 
-### Education
+#### Education
 
 We’re also co-developing tools to improve educational outcomes for K-12 students in the US, sub-Saharan Africa, and India. This includes creating public goods—like model benchmarks, datasets, and knowledge graphs—to ensure AI tools for math tutoring, college advising, and curriculum design are effective. The first of these will be released publicly later this year.
 
 In the US, Claude will also power educational tools that provide evidence-based tutoring to K-12 students, as well as career guidance for students moving into the workforce. In sub-Saharan Africa and India, we are creating AI-powered apps that support foundational literacy and numeracy programs. Along with the Gates Foundation and other partners, we’ve begun this work as part of the broader Global Al for Learning Alliance (GAILA).
 
-### Economic mobility
+#### Economic mobility
 
 Finally, our partnership will support programs designed to improve economic mobility. One of the Gates Foundation’s focus areas is increasing agricultural productivity to improve the livelihoods of the nearly two billion people whose incomes depend on smallholder farming. We will support this work by making agriculture-specific improvements to Claude, datasets of local crops, and benchmarks to evaluate how our models perform in agricultural applications, before releasing these tools as public goods.
 
 In the US, our partnership will span three areas: developing portable records of a person’s skills and certifications to carry across schools and jobs; providing trustworthy career guidance for new entrants in the job market and those who are retraining; and creating tools that link data from training programs to employment outcomes in order to measure which economic mobility interventions improve job and wage outcomes.
 
-### Conclusion
+#### Conclusion
 
 The Gates Foundation has decades of experience and a track record of measurable impact in global health, life sciences, education, and economic mobility. We’re looking forward to working with them and their partners to set up these programs and apply Claude to real-world problems.
 
 As we scale our partnership over the coming years—and as we ratchet up our work on beneficial deployments more generally—we expect to learn much more about how Claude can make a difference. We intend to publish our thinking and decision-making as we do.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

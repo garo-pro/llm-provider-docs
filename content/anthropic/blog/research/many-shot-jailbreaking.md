@@ -3,8 +3,6 @@ Title: Many-shot jailbreaking
 URL Source: https://www.anthropic.com/research/many-shot-jailbreaking
 
 Markdown Content:
-![Many-shot jailbreaking](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F681e6c5e1a09eec211e4d7941deb739f31944331-2000x1125.png&w=3840&q=75)
-
 We investigated a “jailbreaking” technique — a method that can be used to evade the safety guardrails put in place by the developers of large language models (LLMs). The technique, which we call “many-shot jailbreaking”, is effective on Anthropic’s own models, as well as those produced by other AI companies. We briefed other AI developers about this vulnerability in advance, and have implemented mitigations on our systems.
 
 The technique takes advantage of a feature of LLMs that has grown dramatically in the last year: the context window. At the start of 2023, the context window—the amount of information that an LLM can process as its input—was around the size of a long essay (~4,000 tokens). Some models now have context windows that are hundreds of times larger — the size of several long novels (1,000,000 tokens or more).
@@ -44,7 +42,6 @@ In our study, we showed that as the number of included dialogues (the number of 
 
 ![A graph showing the increasing effectiveness of many-shot jailbreaking with an increasing number of shots.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F54c6fa9a0cdb9510a35c88391d53dc11f608a9c7-2200x1408.png&w=3840&q=75)
 
-
 In our paper, we also report that combining many-shot jailbreaking with other, previously-published jailbreaking techniques makes it even more effective, reducing the length of the prompt that’s required for the model to return a harmful response.
 
 ## Why does many-shot jailbreaking work?
@@ -76,23 +73,3 @@ The ever-lengthening context window of LLMs is a double-edged sword. It makes th
 We hope that publishing on many-shot jailbreaking will encourage developers of powerful LLMs and the broader scientific community to consider how to prevent this jailbreak and other potential exploits of the long context window. As models become more capable and have more potential associated risks, it’s even more important to mitigate these kinds of attacks.
 
 All the technical details of our many-shot jailbreaking study are reported in our [full paper](https://www-cdn.anthropic.com/af5633c94ed2beb282f6a53c595eb437e8e7b630/Many_Shot_Jailbreaking__2024_04_02_0936.pdf). You can read Anthropic’s approach to safety and security [at this link.](https://www.anthropic.com/responsible-disclosure-policy)
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

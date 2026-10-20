@@ -8,23 +8,21 @@ Z.AI Python SDK is the official Python development toolkit provided by Z.AI, off
 
 ### Core Advantages
 
-<CardGroup cols={2}>
-  <Card title="Simple and Easy" icon="rocket">
-    Pythonic API design, comprehensive documentation and examples for quick start
-  </Card>
+> **Simple and Easy**
+>
+> Pythonic API design, comprehensive documentation and examples for quick start
 
-  <Card title="Complete Features" icon="puzzle-piece">
-    Supports Z.AI's full range of models, including language, vision, image generation, etc.
-  </Card>
+> **Complete Features**
+>
+> Supports Z.AI's full range of models, including language, vision, image generation, etc.
 
-  <Card title="High Performance" icon="gauge-high">
-    Async support, connection pool management, optimized network request handling
-  </Card>
+> **High Performance**
+>
+> Async support, connection pool management, optimized network request handling
 
-  <Card title="Type Safety" icon="shield-check">
-    Complete type hints, IDE-friendly, reducing development errors
-  </Card>
-</CardGroup>
+> **Type Safety**
+>
+> Complete type hints, IDE-friendly, reducing development errors
 
 ### Supported Features
 
@@ -59,19 +57,17 @@ The SDK adopts a modular design, allowing you to selectively install functional 
 
 ### Environment Requirements
 
-<CardGroup cols={2}>
-  <Card title="Python Version" icon="python">
-    Python 3.8 or higher
-  </Card>
+> **Python Version**
+>
+> Python 3.8 or higher
 
-  <Card title="Package Manager" icon="building">
-    poetry (recommended), uv (recommended), pip
-  </Card>
-</CardGroup>
+> **Package Manager**
+>
+> poetry (recommended), uv (recommended), pip
 
-<Warning>
-  Supports Python 3.8, 3.9, 3.10, 3.11, 3.12 versions, cross-platform compatible with Windows, macOS, Linux
-</Warning>
+> [!WARNING]
+>
+> Supports Python 3.8, 3.9, 3.10, 3.11, 3.12 versions, cross-platform compatible with Windows, macOS, Linux
 
 ### Install SDK
 
@@ -98,43 +94,41 @@ print(zai.__version__)
 2. Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
 3. Copy your API Key for use.
 
-<Tip>
-  It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
-</Tip>
+> [!TIP]
+>
+> It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
 
-<Note>
-  Domestic Z.AI platform uses ZaiClient
-
-  Domestic API URL: [https://api.z.ai/api/paas/v4/](https://api.z.ai/api/paas/v4/)
-</Note>
+> [!NOTE]
+>
+> Domestic Z.AI platform uses ZaiClient
+>
+> Domestic API URL: [https://api.z.ai/api/paas/v4/](https://api.z.ai/api/paas/v4/)
 
 #### Create Client
 
-<Tabs>
-  <Tab title="Environment Variable">
-    ```python theme={null}
-    from zai import ZaiClient
-    import os
+**Environment Variable**
 
-    # Read API Key from environment variable
-    client = ZaiClient(api_key=os.getenv("ZAI_API_KEY"))
+```python theme={null}
+from zai import ZaiClient
+import os
 
-    # Or use directly (if environment variable is set)
-    client = ZaiClient()
+# Read API Key from environment variable
+client = ZaiClient(api_key=os.getenv("ZAI_API_KEY"))
 
-    ```
-  </Tab>
+# Or use directly (if environment variable is set)
+client = ZaiClient()
 
-  <Tab title="Direct Setting">
-    ```python theme={null}
-    from zai import ZaiClient, ZaiClient
+```
 
-    # Set API Key directly
-    client = ZaiClient(api_key="abc123.def456")
+**Direct Setting**
 
-    ```
-  </Tab>
-</Tabs>
+```python theme={null}
+from zai import ZaiClient, ZaiClient
+
+# Set API Key directly
+client = ZaiClient(api_key="abc123.def456")
+
+```
 
 #### Basic Conversation
 
@@ -481,27 +475,25 @@ response = processor.stream_chat(
 
 ## Getting Help
 
-<CardGroup cols={2}>
-  <Card title="GitHub Repository" icon="github" href="https://github.com/zai-org/z-ai-sdk-python">
-    View source code, submit issues, contribute
-  </Card>
+> **[GitHub Repository](https://github.com/zai-org/z-ai-sdk-python)**
+>
+> View source code, submit issues, contribute
 
-  <Card title="API Reference" icon="book" href="/api-reference">
-    View complete API documentation
-  </Card>
+> **[API Reference](/api-reference)**
+>
+> View complete API documentation
 
-  <Card title="Example Projects" icon="code" href="https://github.com/zai-org/z-ai-sdk-python/tree/main/examples">
-    Browse more practical application examples
-  </Card>
+> **[Example Projects](https://github.com/zai-org/z-ai-sdk-python/tree/main/examples)**
+>
+> Browse more practical application examples
 
-  <Card title="Best Practices" icon="star" href="https://github.com/zai-org/z-ai-sdk-python">
-    Learn best practices for SDK usage
-  </Card>
-</CardGroup>
+> **[Best Practices](https://github.com/zai-org/z-ai-sdk-python)**
+>
+> Learn best practices for SDK usage
 
-<Note>
-  This SDK is developed based on the latest API specifications from Z.AI, ensuring synchronization with platform features. It is recommended to regularly update to the latest version for the best experience.
-</Note>
+> [!NOTE]
+>
+> This SDK is developed based on the latest API specifications from Z.AI, ensuring synchronization with platform features. It is recommended to regularly update to the latest version for the best experience.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

@@ -3,8 +3,6 @@ Title: Anthropic acquires Bun as Claude Code reaches $1B milestone
 URL Source: https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone
 
 Markdown Content:
-# Anthropic acquires Bun as Claude Code reaches $1B milestone
-
 Claude is the world’s smartest and most capable AI model for developers, startups, and enterprises. Claude Code represents a new era of agentic coding, fundamentally changing how teams build software. In November, Claude Code achieved a significant milestone: just six months after becoming available to the public, it reached $1 billion in run-rate revenue. And today we’re announcing that Anthropic is acquiring [Bun](https://bun.com/)—a breakthrough JavaScript runtime—to further accelerate Claude Code.
 
 Bun is redefining speed and performance for modern software engineering and development. Founded by Jarred Sumner in 2021, Bun is dramatically faster than the leading competition. As an all-in-one toolkit—combining runtime, package manager, bundler, and test runner—it's become essential infrastructure for AI-led software engineering, helping developers build and test applications at unprecedented velocity.
@@ -22,23 +20,3 @@ The decision to acquire Bun is in line with our strategic, disciplined approach 
 Bun will be instrumental in helping us build the infrastructure for the next generation of software. Together, we will continue to make Claude the platform of choice for coders and anyone who relies on AI for important work. Bun will remain open source and MIT-licensed, and we will continue to invest in making it the runtime, bundler, package manager, and test runner of choice for JavaScript and TypeScript developers.
 
 If you’re interested in joining Anthropic’s engineering team, visit our [careers page](https://www.anthropic.com/jobs?team=4050633008).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

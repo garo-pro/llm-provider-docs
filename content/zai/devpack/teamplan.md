@@ -13,7 +13,8 @@ GLM Coding Team Plan is a self-service subscription for enterprises and teams. B
 * **Centralized seat and access management**: Manage seats, roles, and permissions in one place, with clear visibility into personnel changes, access updates, and resource usage.
 * **Team usage and productivity insights**: Track usage and consumption trends by member and time period to better understand AI adoption and productivity gains.
 * **on-demand usage overage and budget control**: Keep services running after the included quota is used by enabling on-demand usage overage. Set per-member spending limits to protect key projects and prevent unexpected costs from high-frequency usage.
-  <br />(*Limited-time offer: Overage usage is billed at a 10% discount from the model API list price.*)
+  \
+  (*Limited-time offer: Overage usage is billed at a 10% discount from the model API list price.*)
 * **Centralized billing and invoicing**: Consolidate billing, invoicing, and reconciliation across the organization. Verified enterprises can request special VAT invoices, reducing finance and reimbursement overhead.
 * **Data is not used for model training by default**: Code, prompts, conversations, and related content are excluded from model training by default, helping protect your organization’s core R\&D assets.
 * **Early access to new flagship models and features (*Premium Seat only*)**: Get priority access to the latest models to help teams continuously improve their AI coding experience and development efficiency.
@@ -40,15 +41,15 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
 * Model credit usage = (Input tokens × Input multiplier + Cached Input tokens × Cached Input multiplier + Output tokens × Output multiplier) / 10,000
 * MCP tool credit usage = Number of calls × Output multiplier
 
-<Tip>
-  You can view the number of tokens consumed under each pricing type and the number of tool calls on the [Charge Type](https://z.ai/manage-apikey/billing) page.
-</Tip>
+> [!TIP]
+>
+> You can view the number of tokens consumed under each pricing type and the number of tool calls on the [Charge Type](https://z.ai/manage-apikey/billing) page.
 
 <table>
   <thead>
     <tr>
-      <th style={{ textAlign: "left" }}>Product Type</th>
-      <th style={{ textAlign: "left" }}>Product</th>
+      <th>Product Type</th>
+      <th>Product</th>
       <th>Input Multiplier</th>
       <th>Cached Input Multiplier</th>
       <th>Output Multiplier</th>
@@ -57,15 +58,15 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
 
   <tbody>
     <tr>
-      <td rowSpan={2} style={{ textAlign: "left" }}>Model</td>
-      <td className="!pl-3">GLM-5.3</td>
+      <td rowSpan={2}>Model</td>
+      <td>GLM-5.3</td>
       <td>6.9</td>
       <td>1.7</td>
       <td>24</td>
     </tr>
 
     <tr>
-      <td className="!pl-3">GLM-5.3-Flash\
+      <td>GLM-5.3-Flash\
       (Including MCP for visual understanding)</td>
       <td>2.3</td>
       <td>0.56</td>
@@ -73,22 +74,22 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
     </tr>
 
     <tr>
-      <td rowSpan={3} style={{ textAlign: "left" }}>MCP Server</td>
-      <td className="!pl-3">Web Search</td>
+      <td rowSpan={3}>MCP Server</td>
+      <td>Web Search</td>
       <td>—</td>
       <td>—</td>
       <td>1.2</td>
     </tr>
 
     <tr>
-      <td className="!pl-3">Web Reader</td>
+      <td>Web Reader</td>
       <td>—</td>
       <td>—</td>
       <td>1.2</td>
     </tr>
 
     <tr>
-      <td className="!pl-3">Zread</td>
+      <td>Zread</td>
       <td>—</td>
       <td>—</td>
       <td>1.2</td>
@@ -98,15 +99,15 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
 
 **During off-peak hours, model usage is charged at 50% of the standard credit rate.**
 
-<Info>
-  **Peak hours**: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
-</Info>
+> [!NOTE]
+>
+> **Peak hours**: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
 
 ### Estimated Token Allowance
 
 The plan’s token usage will vary depending on the cache hit rate, as shown below:
 
-| Cache hit rate | Model | Team Standard <br />(million tokens/week) | Team Advanced <br />(million tokens/week) |
+| Cache hit rate | Model | Team Standard (million tokens/week) | Team Advanced (million tokens/week) |
 | :- | :- | :- | :- |
 | 95% | GLM‑5.3 | 319–638 | 749–1,497 |
 | 95% | GLM‑5.3‑Flash | 965–1,930 | 2,267–4,533 |
@@ -126,9 +127,9 @@ The plan’s token usage will vary depending on the cache hit rate, as shown bel
 
 The Team Plan Key is the dedicated access credential for the Team Plan. After each team member receives a seat assignment invitation, joins the team, and enters the [Team Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) page in the console, they can obtain their own Key.
 
-<Warning>
-  Please note that the **Team Plan Key is independent from other platform API Keys**. To use your Team Plan quota, make sure to use the Team Plan Key in the relevant scenarios.
-</Warning>
+> [!WARNING]
+>
+> Please note that the **Team Plan Key is independent from other platform API Keys**. To use your Team Plan quota, make sure to use the Team Plan Key in the relevant scenarios.
 
 For details on how API Keys are classified and billed, see the [API Key Management Guide](/devpack/notice/api-key-management).
 

@@ -7,32 +7,26 @@ Markdown Content:
 
 The Anthropic Economic Futures Research Fund supports ambitious external research on interventions to prepare society for the economic impacts of AI.
 
-## A research agenda for the Economic Futures Research Fund
+## Research fund priorities
 
-![A research agenda for the Economic Futures Research Fund](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1dee16ed8ebe3e7bdf82ed8b4186373cf882827c-2000x1125.jpg&w=3840&q=75)
+### Shaping AI’s impact on workers at the firm and workplace level
 
-## Announcements
+Field experiments can help us understand which collaborative patterns develop human expertise alongside AI, how organizational design choices affect productivity, and what difference worker voice makes in those choices.
 
-### A research agenda for the Economic Futures Research Fund
+### Equipping people to navigate AI-driven transitions
 
-We’re sharing the research agenda for the Anthropic Economic Futures Research Fund.
+The evidence on retraining and job placement is mixed, and it may not generalize to AI-induced disruption and rapid structural transformation. We want to find out whether promising programs could scale quickly across a broader population.
 
-[Read more](https://www.anthropic.com/news/economic-futures-research-fund-agenda)
+### Modernizing income support for AI-driven displacement
 
-### Economic Futures Symposium Proposals
+Many insurance systems for supporting displaced workers assume that joblessness is temporary. If AI leads to broader, more persistent displacement, we’ll need instruments calibrated to a new equilibrium.
 
-A selection of policy proposals from attendees at our DC Economic Futures Symposium
+### [Building worker stakes in AI-driven growth before disruption arrives](https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
 
-[Read more](https://www.anthropic.com/economic-futures/symposium-proposals)
+Our Economic Policy Framework (EPF) discusses universal pre-distributive capital accounts and adjacent mechanisms. But these have limited direct empirical precedent at scale.
 
-### Introducing Anthropic Economic Futures Program
+[Read framework](https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
 
-We’re launching the Anthropic Economic Futures program, a multidisciplinary effort that builds upon our existing economic research efforts.
+### Generating new evidence on public investments
 
-[Read more](https://www.anthropic.com/economic-futures/program)
-
-### Preserving privacy
-
-The Anthropic Economic Index is made possible by Clio, a system that allows us to analyze conversations with Claude while preserving user privacy.
-
-[Read more](https://www.anthropic.com/news/clio)
+The EPF calls for modernizing the income safety net and expanding public investment in human- and community-facing work. Policymakers need a consistent way to compare these instruments against one another, and against direct transfers.

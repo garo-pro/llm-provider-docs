@@ -3,15 +3,13 @@ Title: Anthropic partners with Rwandan Government and ALX to bring AI education 
 URL Source: https://www.anthropic.com/news/rwandan-government-partnership-ai-education
 
 Markdown Content:
-# Anthropic partners with Rwandan Government and ALX to bring AI education to hundreds of thousands of learners across Africa
-
 Anthropic is announcing a new partnership with the Government of Rwanda and African tech training provider ALX to bring Chidi—a learning companion built on Claude—to hundreds of thousands of learners across Africa. Rwanda's ICT & Innovation and Education ministries are deploying Chidi within their national education system, while ALX will bring the tool to students across the continent through their technology training programs.
 
 With this initiative, university graduates and young professionals in countries across Africa will be able to use Chidi to learn new skills, like data analytics or cloud computing. And teachers in Rwanda can use it to plan lessons and help them support their students.
 
 This partnership represents one of the largest AI for education deployments on the continent, uniting ALX's commitment to empowering African talent, Anthropic's vision for accessible and responsible AI, and Rwanda's Vision 2050 to build an AI-ready workforce and accelerate digital transformation across Rwanda.
 
-## Partnering with the Government of Rwanda
+### Partnering with the Government of Rwanda
 
 Through this initiative, the Rwandan government will bring AI tools directly into the national education system. The government will enable AI training for up to 2,000 teachers, as well as a group of civil servants across the country, who will learn to integrate AI into their classroom practice. This training will give them hands-on experience using Claude to support how they teach, plan lessons, and improve their productivity day-to-day.
 
@@ -23,7 +21,7 @@ The Rwandan government sees this initiative as central to their Vision 2050 stra
 
 "Rwanda's comprehensive approach to embracing and integrating AI—training teachers, involving policymakers, and building a dedicated working group—creates the foundation for responsible AI deployment,” said Elizabeth Kelly, Head of Beneficial Deployments at Anthropic. “By working with the government and ALX, we're learning how to ensure AI serves local educational needs while reaching students at scale."
 
-## Building skills with AI across the continent
+### Building skills with AI across the continent
 
 Beyond Rwanda, ALX is deploying Chidi across its technology training programs throughout Africa. As one of the continent's largest technology training providers, ALX reaches over 200,000 students and young professionals. Through this partnership, all of their students will access Claude through Chidi, which will serve as a "Socratic mentor"—guiding learners through thoughtful questions, rather than providing direct answers. This approach helps students develop independent problem-solving skills while learning to work effectively with AI tools.
 
@@ -31,7 +29,7 @@ Early results demonstrate Chidi's potential impact: since the tool was rolled ou
 
 "This is not just about bringing technology to Africa; it's about co-creating the future of learning to unlock the continent's full potential," said Fred Swaniker, Founder and CEO of ALX. "Chidi transforms how our students build their capabilities, their confidence, and ultimately their careers. As they master AI-powered learning today, they become the architects of Africa's technology-driven future tomorrow."
 
-## Expanding AI for public good worldwide
+### Expanding AI for public good worldwide
 
 Today’s announcement represents a new milestone in Anthropic's commitment to ensuring AI works for the public good by reaching students globally. It builds upon our focus on education partnerships that reshape how students and educators interact with AI worldwide.
 
@@ -40,23 +38,3 @@ In [Iceland](https://www.anthropic.com/news/anthropic-and-iceland-announce-one-o
 These partnerships demonstrate a consistent approach to working closely with governments, educational institutions, and technology companies to ensure AI expands opportunity and serves the communities where it's deployed.
 
 We look forward to learning from these deployments, sharing what we've learned with the wider community, and continuing to support educators and learners as they shape AI's role in building our future.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

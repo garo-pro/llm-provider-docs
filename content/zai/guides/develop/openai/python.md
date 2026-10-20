@@ -11,45 +11,41 @@ Z.AI provides interfaces compatible with OpenAI API, which means you can use exi
 * Enjoy the powerful capabilities of Z.AI models
 * Maintain code consistency and maintainability
 
-<Warning>
-  In some scenarios, there are still differences between Z.AI and OpenAI interfaces, but this does not affect overall compatibility.
-</Warning>
+> [!WARNING]
+>
+> In some scenarios, there are still differences between Z.AI and OpenAI interfaces, but this does not affect overall compatibility.
 
 ### Core Advantages
 
-<CardGroup cols={2}>
-  <Card title="Zero Learning Cost" icon="graduation-cap">
-    If you are already familiar with OpenAI SDK, you can start using it immediately
-  </Card>
+> **Zero Learning Cost**
+>
+> If you are already familiar with OpenAI SDK, you can start using it immediately
 
-  <Card title="Quick Migration" icon="arrows-rotate">
-    Existing OpenAI applications can be quickly migrated to Z.AI platform
-  </Card>
+> **Quick Migration**
+>
+> Existing OpenAI applications can be quickly migrated to Z.AI platform
 
-  <Card title="Ecosystem Compatibility" icon="puzzle-piece">
-    Compatible with various tools and frameworks in the OpenAI ecosystem
-  </Card>
+> **Ecosystem Compatibility**
+>
+> Compatible with various tools and frameworks in the OpenAI ecosystem
 
-  <Card title="Continuous Updates" icon="arrow-up">
-    Follow OpenAI SDK updates to maintain latest feature support
-  </Card>
-</CardGroup>
+> **Continuous Updates**
+>
+> Follow OpenAI SDK updates to maintain latest feature support
 
 ## Environment Requirements
 
-<CardGroup cols={2}>
-  <Card title="Python Version" icon="python">
-    Python 3.7.1 or higher
-  </Card>
+> **Python Version**
+>
+> Python 3.7.1 or higher
 
-  <Card title="OpenAI SDK" icon="package">
-    OpenAI SDK version 1.0.0 or higher
-  </Card>
-</CardGroup>
+> **OpenAI SDK**
+>
+> OpenAI SDK version 1.0.0 or higher
 
-<Warning>
-  Please ensure using OpenAI SDK 1.0.0 or higher, older versions may have compatibility issues.
-</Warning>
+> [!WARNING]
+>
+> Please ensure using OpenAI SDK 1.0.0 or higher, older versions may have compatibility issues.
 
 ## Install OpenAI Python SDK
 
@@ -77,60 +73,58 @@ poetry add "openai>=1.0"
 2. Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
 3. Copy your API Key for use.
 
-<Tip>
-  It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
-</Tip>
+> [!TIP]
+>
+> It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
 
 ### Create Client
 
-<Tabs>
-  <Tab title="Basic Configuration">
-    ```python theme={null}
-    from openai import OpenAI
+**Basic Configuration**
 
-    # Create Z.AI client
-    client = OpenAI(
-        api_key="your-Z.AI-api-key",
-        base_url="https://api.z.ai/api/paas/v4/"
-    )
-    ```
-  </Tab>
+```python theme={null}
+from openai import OpenAI
 
-  <Tab title="Environment Variables">
-    ```python theme={null}
-    from openai import OpenAI
-    import os
+# Create Z.AI client
+client = OpenAI(
+    api_key="your-Z.AI-api-key",
+    base_url="https://api.z.ai/api/paas/v4/"
+)
+```
 
-    # Use environment variables
-    client = OpenAI(
-        api_key=os.getenv("ZAI_API_KEY"),
-        base_url="https://api.z.ai/api/paas/v4/"
-    )
-    ```
-  </Tab>
+**Environment Variables**
 
-  <Tab title="Configuration Class">
-    ```python theme={null}
-    from openai import OpenAI
-    from dataclasses import dataclass
+```python theme={null}
+from openai import OpenAI
+import os
 
-    @dataclass
-    class Z.AIConfig:
-        api_key: str
-        base_url: str = "https://api.z.ai/api/paas/v4/"
-        timeout: int = 30
-        max_retries: int = 3
+# Use environment variables
+client = OpenAI(
+    api_key=os.getenv("ZAI_API_KEY"),
+    base_url="https://api.z.ai/api/paas/v4/"
+)
+```
 
-    config = Z.AIConfig(api_key="your-api-key")
-    client = OpenAI(
-        api_key=config.api_key,
-        base_url=config.base_url,
-        timeout=config.timeout,
-        max_retries=config.max_retries
-    )
-    ```
-  </Tab>
-</Tabs>
+**Configuration Class**
+
+```python theme={null}
+from openai import OpenAI
+from dataclasses import dataclass
+
+@dataclass
+class Z.AIConfig:
+    api_key: str
+    base_url: str = "https://api.z.ai/api/paas/v4/"
+    timeout: int = 30
+    max_retries: int = 3
+
+config = Z.AIConfig(api_key="your-api-key")
+client = OpenAI(
+    api_key=config.api_key,
+    base_url=config.base_url,
+    timeout=config.timeout,
+    max_retries=config.max_retries
+)
+```
 
 ## Quick Start Examples
 
@@ -330,41 +324,39 @@ if message.tool_calls:
 | stream | boolean | false | Whether to use streaming output |
 | stop | string/array | - | Stop generation tokens |
 
-<Note>
-  Note: The temperature parameter range is (0,1), do\_sample = False (temperature = 0) is not applicable in OpenAI calls.
-</Note>
+> [!NOTE]
+>
+> Note: The temperature parameter range is (0,1), do\_sample = False (temperature = 0) is not applicable in OpenAI calls.
 
 ## Best Practices
 
-<CardGroup cols={2}>
-  <Card title="Performance Optimization" icon="gauge-high">
-    * Use connection pooling and session reuse
-    * Set reasonable timeout values
-    * Implement async calls for high concurrency
-    * Cache frequently used responses
-  </Card>
+> **Performance Optimization**
+>
+> * Use connection pooling and session reuse
+> * Set reasonable timeout values
+> * Implement async calls for high concurrency
+> * Cache frequently used responses
 
-  <Card title="Cost Control" icon="dollar-sign">
-    * Set reasonable max\_tokens limits
-    * Use appropriate models (don't overuse powerful models)
-    * Implement request deduplication
-    * Monitor API usage
-  </Card>
+> **Cost Control**
+>
+> * Set reasonable max\_tokens limits
+> * Use appropriate models (don't overuse powerful models)
+> * Implement request deduplication
+> * Monitor API usage
 
-  <Card title="Security" icon="shield">
-    * Use environment variables to store API keys
-    * Implement input validation and filtering
-    * Log and monitor API calls
-    * Rotate API keys regularly
-  </Card>
+> **Security**
+>
+> * Use environment variables to store API keys
+> * Implement input validation and filtering
+> * Log and monitor API calls
+> * Rotate API keys regularly
 
-  <Card title="Reliability" icon="shield-check">
-    * Implement retry mechanisms and error handling
-    * Set reasonable timeout values
-    * Monitor API status and response times
-    * Prepare fallback solutions
-  </Card>
-</CardGroup>
+> **Reliability**
+>
+> * Implement retry mechanisms and error handling
+> * Set reasonable timeout values
+> * Monitor API status and response times
+> * Prepare fallback solutions
 
 ## Migration Guide
 
@@ -396,19 +388,17 @@ response = client.chat.completions.create(
 
 ## Getting Help
 
-<CardGroup cols={2}>
-  <Card title="API Documentation" icon="book" href="/api-reference">
-    View complete API interface documentation
-  </Card>
+> **[API Documentation](/api-reference)**
+>
+> View complete API interface documentation
 
-  <Card title="OpenAI Official Documentation" icon="link" href="https://platform.openai.com/docs">
-    Refer to OpenAI official documentation for more usage
-  </Card>
-</CardGroup>
+> **[OpenAI Official Documentation](https://platform.openai.com/docs)**
+>
+> Refer to OpenAI official documentation for more usage
 
-<Note>
-  Z.AI is committed to maintaining compatibility with OpenAI API. If you encounter any issues during migration, please contact our technical support team.
-</Note>
+> [!NOTE]
+>
+> Z.AI is committed to maintaining compatibility with OpenAI API. If you encounter any issues during migration, please contact our technical support team.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

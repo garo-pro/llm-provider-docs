@@ -28,124 +28,120 @@ The `delta` object in streaming responses contains the following fields:
 
 By setting the `tool_stream=True` parameter, you can enable streaming tool call functionality:
 
-<Tabs>
-  <Tab title="Python SDK">
-    **Install SDK**
+**Python SDK**
 
-    ```bash theme={null}
-    # Install latest version
-    pip install zai-sdk
+**Install SDK**
 
-    # Or specify version
-    pip install zai-sdk==0.2.3
-    ```
+```bash theme={null}
+# Install latest version
+pip install zai-sdk
 
-    **Verify Installation**
+# Or specify version
+pip install zai-sdk==0.2.3
+```
 
-    ```python theme={null}
-    import zai
-    print(zai.__version__)
-    ```
+**Verify Installation**
 
-    **Complete Example**
+```python theme={null}
+import zai
+print(zai.__version__)
+```
 
-    ```python theme={null}
-    from zai import ZaiClient
+**Complete Example**
 
-    # Initialize client
-    client = ZaiClient(api_key='Your API key')
+```python theme={null}
+from zai import ZaiClient
 
-    # Create streaming tool call request
-    response = client.chat.completions.create(
-        model="glm-4.6",  # Use model that supports tool calling
-        messages=[
-            {"role": "user", "content": "How's the weather in Beijing?"},
-        ],
-        tools=[
-            {
-                "type": "function",
-                "function": {
-                    "name": "get_weather",
-                    "description": "Get current weather conditions for a specified location",
-                    "parameters": {
-                        "type": "object",
-                        "properties": {
-                            "location": {"type": "string", "description": "City, e.g.: Beijing, Shanghai"},
-                            "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
-                        },
-                        "required": ["location"]
-                    }
+# Initialize client
+client = ZaiClient(api_key='Your API key')
+
+# Create streaming tool call request
+response = client.chat.completions.create(
+    model="glm-4.6",  # Use model that supports tool calling
+    messages=[
+        {"role": "user", "content": "How's the weather in Beijing?"},
+    ],
+    tools=[
+        {
+            "type": "function",
+            "function": {
+                "name": "get_weather",
+                "description": "Get current weather conditions for a specified location",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "location": {"type": "string", "description": "City, e.g.: Beijing, Shanghai"},
+                        "unit": {"type": "string", "enum": ["celsius", "fahrenheit"]}
+                    },
+                    "required": ["location"]
                 }
             }
-        ],
-        stream=True,        # Enable streaming output
-        tool_stream=True    # Enable tool call streaming output
-    )
+        }
+    ],
+    stream=True,        # Enable streaming output
+    tool_stream=True    # Enable tool call streaming output
+)
 
-    # Initialize variables to collect streaming data
-    reasoning_content = ""      # Reasoning process content
-    content = ""               # Response content
-    final_tool_calls = {}      # Tool call information
-    reasoning_started = False  # Reasoning process start flag
-    content_started = False    # Content output start flag
+# Initialize variables to collect streaming data
+reasoning_content = ""      # Reasoning process content
+content = ""               # Response content
+final_tool_calls = {}      # Tool call information
+reasoning_started = False  # Reasoning process start flag
+content_started = False    # Content output start flag
 
-    # Process streaming response
-    for chunk in response:
-        if not chunk.choices:
-            continue
+# Process streaming response
+for chunk in response:
+    if not chunk.choices:
+        continue
 
-        delta = chunk.choices[0].delta
+    delta = chunk.choices[0].delta
 
-        # Handle streaming reasoning process output
-        if hasattr(delta, 'reasoning_content') and delta.reasoning_content:
-            if not reasoning_started and delta.reasoning_content.strip():
-                print("\n🧠 Thinking Process:")
-                reasoning_started = True
-            reasoning_content += delta.reasoning_content
-            print(delta.reasoning_content, end="", flush=True)
+    # Handle streaming reasoning process output
+    if hasattr(delta, 'reasoning_content') and delta.reasoning_content:
+        if not reasoning_started and delta.reasoning_content.strip():
+            print("\n🧠 Thinking Process:")
+            reasoning_started = True
+        reasoning_content += delta.reasoning_content
+        print(delta.reasoning_content, end="", flush=True)
 
-        # Handle streaming response content output
-        if hasattr(delta, 'content') and delta.content:
-            if not content_started and delta.content.strip():
-                print("\n\n💬 Response Content:")
-                content_started = True
-            content += delta.content
-            print(delta.content, end="", flush=True)
+    # Handle streaming response content output
+    if hasattr(delta, 'content') and delta.content:
+        if not content_started and delta.content.strip():
+            print("\n\n💬 Response Content:")
+            content_started = True
+        content += delta.content
+        print(delta.content, end="", flush=True)
 
-        # Handle streaming tool call information
-        if delta.tool_calls:
-            for tool_call in delta.tool_calls:
-                index = tool_call.index
-                if index not in final_tool_calls:
-                    # New tool call
-                    final_tool_calls[index] = tool_call
-                    final_tool_calls[index].function.arguments = tool_call.function.arguments
-                else:
-                    # Append tool call parameters (streaming construction)
-                    final_tool_calls[index].function.arguments += tool_call.function.arguments
+    # Handle streaming tool call information
+    if delta.tool_calls:
+        for tool_call in delta.tool_calls:
+            index = tool_call.index
+            if index not in final_tool_calls:
+                # New tool call
+                final_tool_calls[index] = tool_call
+                final_tool_calls[index].function.arguments = tool_call.function.arguments
+            else:
+                # Append tool call parameters (streaming construction)
+                final_tool_calls[index].function.arguments += tool_call.function.arguments
 
-    # Output final tool call information
-    if final_tool_calls:
-        print("\n📋 Function Calls Triggered:")
-        for index, tool_call in final_tool_calls.items():
-            print(f"  {index}: Function Name: {tool_call.function.name}, Parameters: {tool_call.function.arguments}")
-    ```
-  </Tab>
-</Tabs>
+# Output final tool call information
+if final_tool_calls:
+    print("\n📋 Function Calls Triggered:")
+    for index, tool_call in final_tool_calls.items():
+        print(f"  {index}: Function Name: {tool_call.function.name}, Parameters: {tool_call.function.arguments}")
+```
 
 ## Use Cases
 
-<CardGroup cols={2}>
-  <Card title="Intelligent Customer Service System" icon="headset">
-    * Real-time display of query progress
-    * Improve waiting experience
-  </Card>
+> **Intelligent Customer Service System**
+>
+> * Real-time display of query progress
+> * Improve waiting experience
 
-  <Card title="Code Assistant" icon="code">
-    * Real-time code analysis process
-    * Display tool call chain
-  </Card>
-</CardGroup>
+> **Code Assistant**
+>
+> * Real-time code analysis process
+> * Display tool call chain
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

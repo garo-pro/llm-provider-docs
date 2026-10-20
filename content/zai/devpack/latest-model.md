@@ -4,10 +4,11 @@
 
 # How to Switch Models
 
-<Tip>
-  **GLM-5.3 & GLM-5.3-Flash Now Live** <br />
-  The GLM Coding Plan now supports the latest GLM-5.3 and GLM-5.3-Flash models for all users (Max, Pro, and Lite), and you can switch between models within your preferred Coding Agent.
-</Tip>
+> [!TIP]
+>
+> **GLM-5.3 & GLM-5.3-Flash Now Live** \\
+>
+> The GLM Coding Plan now supports the latest GLM-5.3 and GLM-5.3-Flash models for all users (Max, Pro, and Lite), and you can switch between models within your preferred Coding Agent.
 
 ## Before You Start
 
@@ -24,46 +25,44 @@ This is a model-switching guide for existing GLM Coding Plan users—not an onbo
 
 ### Step 1: Update the default configuration
 
-<Tabs>
-  <Tab title="macOS">
-    * Method 1: In the terminal, run `vim ~/.claude/settings.json` to open and edit the file. When you're done, press Esc, type `:wq`, and save your changes.
-    * Method 2: In Finder, choose Go → Go to Folder, then enter `~/.claude/settings.json` to locate and edit the configuration file.
-  </Tab>
+**macOS**
 
-  <Tab title="Windows">
-    The user-level Claude Code settings file is located at:
+* Method 1: In the terminal, run `vim ~/.claude/settings.json` to open and edit the file. When you're done, press Esc, type `:wq`, and save your changes.
+* Method 2: In Finder, choose Go → Go to Folder, then enter `~/.claude/settings.json` to locate and edit the configuration file.
 
-    `%USERPROFILE%\.claude\settings.json`
+**Windows**
 
-    To create or open it in PowerShell:
+The user-level Claude Code settings file is located at:
 
-    ```powershell theme={null}
-    New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude"
-    notepad "$env:USERPROFILE\.claude\settings.json"
-    ```
+`%USERPROFILE%\.claude\settings.json`
 
-    <Tip>
-      If you use Git Bash or WSL, the path resolution may differ. Make sure the file is read by the same Claude Code installation you launch.
-    </Tip>
-  </Tab>
+To create or open it in PowerShell:
 
-  <Tab title="Linux / WSL">
-    The user-level Claude Code settings file is located at:
+```powershell theme={null}
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude"
+notepad "$env:USERPROFILE\.claude\settings.json"
+```
 
-    `~/.claude/settings.json`
+> [!TIP]
+>
+> If you use Git Bash or WSL, the path resolution may differ. Make sure the file is read by the same Claude Code installation you launch.
 
-    To create or open it:
+**Linux / WSL**
 
-    ```bash theme={null}
-    mkdir -p ~/.claude
-    ${EDITOR:-nano} ~/.claude/settings.json
-    ```
+The user-level Claude Code settings file is located at:
 
-    <Tip>
-      If you are using WSL alongside native Windows Claude Code, the configuration file locations may differ. Make sure you edit the file used by the Claude Code installation you actually launch.
-    </Tip>
-  </Tab>
-</Tabs>
+`~/.claude/settings.json`
+
+To create or open it:
+
+```bash theme={null}
+mkdir -p ~/.claude
+${EDITOR:-nano} ~/.claude/settings.json
+```
+
+> [!TIP]
+>
+> If you are using WSL alongside native Windows Claude Code, the configuration file locations may differ. Make sure you edit the file used by the Claude Code installation you actually launch.
 
 To use GLM-5.3-FLASH, add or replace the following environment variables in `settings.json`. **Do not replace the entire file** if it already contains other fields —only add or update the keys shown below.
 
@@ -99,13 +98,13 @@ In a Claude Code session, type the `/effort` command to switch thinking intensit
 
 **Processing priority**: Explicit Effort > thinking toggle > default `max`.
 
-<Note>
-  Claude Code uses `thinking.type` and `output_config.effort`; Codex uses `reasoning.effort`. Disabling the thinking configuration is converted to `low` and does not switch to another model.
-</Note>
+> [!NOTE]
+>
+> Claude Code uses `thinking.type` and `output_config.effort`; Codex uses `reasoning.effort`. Disabling the thinking configuration is converted to `low` and does not switch to another model.
 
-<Tip>
-  For coding tasks, we recommend switching to `max` effort for deeper reasoning and more stable complex task performance.
-</Tip>
+> [!TIP]
+>
+> For coding tasks, we recommend switching to `max` effort for deeper reasoning and more stable complex task performance.
 
 ### Step 2: Confirm that the model has been switched
 

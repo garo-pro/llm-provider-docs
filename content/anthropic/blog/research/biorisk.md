@@ -3,19 +3,17 @@ Title: Why do we take LLMs seriously as a potential source of biorisk?
 URL Source: https://www.anthropic.com/research/biorisk
 
 Markdown Content:
-## Subscribe to the Frontier Red Team newsletter
-
-Get updates on our latest red-teaming research and findings.
-
 Our work at Anthropic is animated by the potential for AI to advance scientific discovery—especially in biology and medicine—and improve the human condition. [Benchling](https://www.benchling.com/ai) is [using Claude](https://www.anthropic.com/customers/benchling) to help researchers structure data, ask better questions, generate insights faster, and spend more time on science. [Biomni](https://biomni.stanford.edu/) is [using Claude](https://www.anthropic.com/customers/biomni) to speed up bioinformatics analysis and even automate experimental design.
 
 At the same time, AI is fundamentally a dual-use technology. A key tenet of our effort to develop AI responsibly is to identify, measure, and mitigate the prospects for malicious actors to misuse the same capabilities that make AI so promising for scientists and innovators.
 
 When Anthropic released Claude Opus 4, we [activated AI Safety Level 3](https://www.anthropic.com/news/activating-asl3-protections) (ASL-3) protections, which included deployment measures narrowly focused on preventing the model from assisting with certain tasks related to chemical, biological, radiological, and nuclear (CBRN) weapons development. As we noted at the time, this was a precautionary decision—improving model performance on our evaluations meant we could no longer confidently rule out the ability of our most advanced model to uplift people with basic STEM backgrounds if they were to try to develop such weapons. Because of our assessment of the potential consequences, a major initial focus of our evaluations and the corresponding safety measures was on biological weapons. In this post, we want to expand on our perspective on AI and biological risk (biorisk). 
 
-It is striking—but not necessarily intuitive—that every safety framework released by frontier AI labs includes some reference to biorisk.<sup>[1]</sup> After all, frontier large language models (LLMs) are generalists; they are not usually specialized for biological applications (unlike other foundation models, such as AlphaFold). And because of this generalist nature, there are numerous other security threats that could be prioritized. We understand why one might be skeptical of prioritizing biorisk when considering the security implications of AI. This post will engage with several questions that might be posed by such a skeptic.
+It is striking—but not necessarily intuitive—that every safety framework released by frontier AI labs includes some reference to biorisk.<sup>[1](https://www.anthropic.com#footnote-1)</sup> After all, frontier large language models (LLMs) are generalists; they are not usually specialized for biological applications (unlike other foundation models, such as AlphaFold). And because of this generalist nature, there are numerous other security threats that could be prioritized. We understand why one might be skeptical of prioritizing biorisk when considering the security implications of AI. This post will engage with several questions that might be posed by such a skeptic.
 
-**Our aim is not alarmism; discussions of AI and biorisk are firmly in the category of low-probability/high-impact scenarios.<sup>[2]</sup> Rather, we want to establish why we believe that evaluating these risks and safeguarding against them is a critical element of responsible AI development.**
+**Our aim is not alarmism; discussions of AI and biorisk are firmly in the category of low-probability/high-impact scenarios.<sup>[2](https://www.anthropic.com#footnote-2)</sup> Rather, we want to establish why we believe that evaluating these risks and safeguarding against them is a critical element of responsible AI development.**
+
+## What does AI have to do with dangerous weapons at all?
 
 We worry about how AI might assist malicious actors with weapon acquisition and development both because of how it is similar to historical information and communication technologies and how it is different.
 
@@ -23,11 +21,15 @@ In recent years, terrorist groups have rapidly adopted technologies like encrypt
 
 What is different, though, is the potential for AI to act as a true assistant. The internet is cluttered with contradictory and misleading information, and a website cannot provide real-time assistance if one encounters difficulties in a complex and unfamiliar process. Sufficiently advanced AI models may serve as a guide to reliable information, a source of otherwise tacit and inaccessible knowledge about implementation, and a research assistant capable of immediately processing data and generating insight.
 
+## Why focus on biorisk?
+
 Within the realm of threat actors seeking assistance from AI, biological risks—and catastrophic risks more generally—are by no means the only concern. In fact, we invest considerable resources in researching the potential implications of AI for [cybersecurity](https://red.anthropic.com/2025/cyber-toolkits/) and gathering [intelligence](https://www.anthropic.com/news/detecting-and-countering-malicious-uses-of-claude-march-2025) about actual uses of our platforms by those who would cause harm through fraud, malware development, and influence operations, among other areas.
 
 Nevertheless, at least two factors make biorisk especially concerning. First, the potential consequences of a successful biological attack are unusually severe. The effects of an attack with a virus could spread far beyond the initial target in a way that is qualitatively different from weapons with more local effects.
 
 Second, improvements in other areas of biotechnology may have lowered some of the material barriers that previously served as a “passive” biodefense. For instance, the decreasing cost of nucleic acid synthesis, standardization of reagent kits, and easy access to standard molecular biology equipment (such as PCR machines), are making material acquisition less of a bottleneck. AI models further reduce barriers to information and know-how. As a result, this combination of high consequences and increasing plausibility make addressing additional biorisk from AI an important priority.
+
+## Don’t experts know more about biology than AI models?
 
 LLMs are trained on vast amounts of data ranging from financial models to fanfiction. In the course of this training, they learn something about almost everything. Since the training data includes things like scientific papers, books, and online discussions about biological sciences, the models absorb information about protein structures, genetic engineering techniques, virology, and synthetic biology, alongside everything else. What may be surprising is the degree to which this biological knowledge has scaled up as models have improved.
 
@@ -37,9 +39,13 @@ Within a year, Claude went from underperforming world-class experts on an evalua
 
         
 
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc1a9a5f88426b3e2fb7041e8143f1e3413b09ddf-889x390.png&w=1920&q=75)
+
 We see this behavior of exceeding expert performance across multiple benchmarks, especially in molecular biology.
 
 Moreover, the human baseline in this evaluation is based on scientists answering questions within their own speciality. So it is not only the case that LLMs can develop a breadth of knowledge across subdisciplines that human experts struggle to match, but also that LLMs are in some cases outpacing specialists on their own turf.
+
+## Is an LLM’s knowledge useful in an applied scenario?
 
 In considering the contribution of AI to biorisk, we need to know more than just how well it performs on a quiz. We need to look at evaluations that involve real people, and closely mirror our actual threat scenarios. Moreover, just as we benchmark AI knowledge by comparing it to experts, we need to measure AI utility by comparing it to the most easily accessible alternative—in this case, the internet.
 
@@ -47,9 +53,13 @@ In considering the contribution of AI to biorisk, we need to know more than just
 
 To meet both of these criteria, we have conducted several controlled trials measuring AI’s ability to assist in the planning of a hypothetical bioweapons acquisition process. Participants were given up to two days to draft a comprehensive bioweapons acquisition plan. The control group only had access to basic internet resources, while the model-assisted group had additional access to Claude with safeguards removed. (In limited cases like this, it is important to provide trusted parties with access to the unsafeguarded version of the model in order to more accurately assess the maximum capabilities of the technology.) The resulting plans were graded by biodefense experts using a detailed rubric that assesses key steps of the acquisition pathway. Participants with access to Claude 4 models—especially Claude Opus 4—received much higher scores and developed plans with substantially fewer critical failures compared to the internet-only control group.
 
-        
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb6b552ad3b9b9cc2312d55ef98c5d343078753c3-980x580.png&w=2048&q=75)
 
-Text-based uplift trials like this are imperfect proxies for real-world scenarios—which involve additional factors like tacit knowledge, materials access, and actor persistence—but they demonstrate the underlying plausibility of AIs providing differentially superior assistance to a non-expert malicious actor.<sup>[3]</sup>
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4dabd0ce91dd00553db423a8d24496e52ad4308d-980x580.png&w=2048&q=75)
+
+Text-based uplift trials like this are imperfect proxies for real-world scenarios—which involve additional factors like tacit knowledge, materials access, and actor persistence—but they demonstrate the underlying plausibility of AIs providing differentially superior assistance to a non-expert malicious actor.[3](https://www.anthropic.com#footnote-3)
+
+## Ok, but we’ve been talking about information. How does this translate to an actual lab?
 
 There is clearly a difference between answering multiple-choice questions about virology, assisting with text-based plans for bioweapons acquisition, and actually helping a threat actor working in a lab to develop a biological threat.
 
@@ -61,22 +71,24 @@ In order to follow up on this initial research, we are co-sponsoring a [larger s
 
 We look forward to learning more from the results of this study, which will be important to informing our assessment of risk.
 
+## What can be done to address biorisk?
+
+### Information sharing
+
 We are currently focused on evaluating the ability of AI models to assist non-experts in producing biological threats, which is informed by consultations with biodefense experts and our understanding of the evolving capabilities of LLMs.
 
 Still, we recognize that this is far from the only scenario in which AI could contribute to biorisk. We invest in studying these scenarios, but governments have differentiated knowledge and expertise of the plans and intentions of threat actors. We have benefited immensely from the insights gained through our voluntary collaborations and pre-deployment testing with the US [Center for AI Standards and Innovation](https://www.nist.gov/caisi) (CAISI) and the UK [AI Security Institute](https://www.aisi.gov.uk/) and look forward to additional opportunities to deepen our collaboration with governments. [Public-private partnerships](https://red.anthropic.com/2025/nuclear-safeguards/) in which government expertise in understanding the threat landscape complement industry knowledge of cutting edge AI are a promising path to optimizing the evaluation and mitigation of biorisk.
 
 We believe it’s important to support transparency norms—like the push for developers to have a Secure Development Framework (like Anthropic’s [Responsible Scaling Policy](https://www.anthropic.com/rsp-updates)) and publish results of model evaluations for dangerous capabilities—in order to inform society about the implications of AI as models continue to grow in capabilities.
 
+### Deployment safeguards
+
 We have developed automated deployment safeguards based on our [constitutional classifiers](https://www.anthropic.com/research/constitutional-classifiers) research. These classifier guards work by monitoring inputs and outputs in real time and blocking a narrow class of potentially harmful information. We apply this protection to models for which we cannot rule out their potential to meaningfully uplift threat actors; to date this is only the Claude Opus 4 family of models, which we did as a [precautionary measure](https://www.anthropic.com/news/activating-asl3-protections). (For more details on our implementation of ASL-3 protections, see this [report](https://www-cdn.anthropic.com/807c59454757214bfd37592d6e048079cd7a7728.pdf).)
 
 Across all models, our [Safeguards](https://www.anthropic.com/news/building-safeguards-for-claude) team monitors activity on our platforms for signs of misuse, including dangerous applications of biology. This monitoring provides insight into patterns of misuse and helps us determine if and when to take enforcement action.
 
+### National action
+
 We are heartened to see investment in biosecurity as a key component of the new US [AI Action Plan](https://whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf). Both the emphasis on national security evaluations through the CAISI and the move to bolster nucleic acid synthesis screening will help build more resilience to biorisk.
 
 The topic of AI and biorisk is rife with uncertainty—about threat actors, the capabilities of models, and how exactly those capabilities translate to risk. But we believe that a growing body of evidence about AI and the underlying gravity of biological threats mean that this is a topic to which AI developers and policymakers must attend. We will be sharing more about our work on biorisk to advance this critical conversation.
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.

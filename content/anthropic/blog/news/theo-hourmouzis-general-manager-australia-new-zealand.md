@@ -3,8 +3,6 @@ Title: Anthropic names Theo Hourmouzis General Manager of Australia & New Zealan
 URL Source: https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand
 
 Markdown Content:
-# Anthropic names Theo Hourmouzis General Manager of Australia & New Zealand and officially opens Sydney office
-
 Theo Hourmouzis is joining Anthropic as General Manager of Australia and New Zealand, marking the next step in our investment in the region. Hourmouzis will meet with customers and partners this week alongside executives from our global team, as we officially open our Sydney office.
 
 Hourmouzis brings more than 20 years of leadership experience in the technology industry across Asia Pacific to the role. He joins us from Snowflake, where he most recently served as Senior Vice President for Australia, New Zealand and ASEAN, helping enterprise and public sector organisations across financial services, retail, aviation and government move AI from experimentation to business impact. At Anthropic, he'll lead our growing local team and shape a strategy built around Australian and New Zealand customers, bringing Claude into their most important work.
@@ -15,7 +13,7 @@ Our growing team in the region will deepen relationships with enterprises like C
 
 “Theo's appointment reflects the conviction we share with the Australian government that AI can drive economic growth when it’s developed and deployed responsibly,” said Chris Ciauri, Anthropic Managing Director of International. “He’s spent decades helping organisations adopt new technology, and he’ll build the team and partnerships we need to support our customers across Australia and New Zealand for the long term.”
 
-## New local partnerships
+### New local partnerships
 
 We recently announced deep platform collaborations with Canva and Xero. [Canva](https://www.canva.com/newsroom/news/canva-claude-design/) will bring the power of Canva Design Engine and Visual Suite into the newly launched [Claude Design](https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand) by Anthropic Labs, and a multi-year partnership will bring Claude's AI directly into [Xero](https://www.xero.com/au/media-releases/xero-and-anthropic-collaborate/)—and Xero's financial data and tools into Claude.ai.
 
@@ -24,23 +22,3 @@ We're also working with YMCA South Australia as a [Claude for Nonprofits](https:
 “The future for us is about Claude becoming embedded infrastructure, a core part of how we run the organisation,” said Devan Seamans, Head of Marketing & Technology, YMCA South Australia. “That requires a platform with the enterprise governance and controls to match the obligations of a large not-for-profit. We want to be a leader in the Australian NFP space with AI adoption, and Anthropic's approach gives us the confidence to pursue that.”
 
 Sydney follows our recent office openings in [Tokyo](https://www.anthropic.com/news/opening-our-tokyo-office) and [Bengaluru](https://www.anthropic.com/news/bengaluru-office-partnerships-across-india), and comes just ahead of [Seoul](https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific), bringing us closer to where our customers are. For more information about current career opportunities in our Sydney office, visit [anthropic.com/careers](http://anthropic.com/careers).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

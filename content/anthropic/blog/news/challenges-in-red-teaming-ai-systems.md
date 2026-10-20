@@ -3,10 +3,6 @@ Title: Challenges in red teaming AI systems
 URL Source: https://www.anthropic.com/news/challenges-in-red-teaming-ai-systems
 
 Markdown Content:
-# Challenges in red teaming AI systems
-
-![Computer chip and a flame](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fefd36fc64fd3b723e596406e5320161276017b57-2880x1620.png&w=3840&q=75)
-
 In this post we detail insights from a sample of red teaming approaches that we’ve used to test our AI systems. Through this practice, we’ve begun to gather empirical data about the appropriate tool to reach for in a given situation, and the associated benefits and challenges with each approach. We hope this post is helpful for other companies trying to red team their AI systems, policymakers curious about how red teaming works in practice, and organizations that want to red team AI technology.
 
 ## What is red teaming?
@@ -19,21 +15,21 @@ To address this, the AI field needs established practices and standards for syst
 
 ## Red teaming methods this post covers:
 
-### **Domain-specific, expert red teaming**
+### Domain-specific, expert red teaming
 
 - Trust & Safety: Policy Vulnerability Testing
 - National security: Frontier threats red teaming
 - Region-specific: Multilingual and multicultural red teaming
 
-### **Using language models to red team**
+### Using language models to red team
 
 - Automated red teaming
 
-### **Red teaming in new modalities**
+### Red teaming in new modalities
 
 - Multimodal red teaming
 
-### **Open-ended, general red teaming**
+### Open-ended, general red teaming
 
 - Crowdsourced red teaming for general harms
 - Community-based red teaming for general risks and system limitations
@@ -119,23 +115,3 @@ To support further adoption and standardization of red teaming, we encourage pol
 ## Conclusion
 
 Red teaming is a valuable technique for identifying and mitigating risks in AI systems. The various red teaming methods covered in this post highlight a handful of techniques available for different use cases and threat models. We look forward to collaborating with other actors to iterate on these techniques and work towards common standards for safety testing. By investing in red teaming, we can work towards building AI systems that are safe and beneficial to society. It is one of several tools in a larger effort to ensure AI is developed thoughtfully and with robust safeguards in place.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

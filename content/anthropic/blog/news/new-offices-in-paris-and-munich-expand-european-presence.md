@@ -3,8 +3,6 @@ Title: New offices in Paris and Munich expand Anthropic’s European presence
 URL Source: https://www.anthropic.com/news/new-offices-in-paris-and-munich-expand-european-presence
 
 Markdown Content:
-# New offices in Paris and Munich expand Anthropic’s European presence
-
 Today, we're announcing plans to open offices in Paris and Munich as our global operations expand across Europe. These new hubs follow recent office openings in [Tokyo](https://www.anthropic.com/news/opening-our-tokyo-office), [Seoul](https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific), and [Bengaluru](https://www.anthropic.com/news/expanding-global-operations-to-india) and will further grow our [European footprint](https://www.anthropic.com/news/head-of-EMEA-new-roles) alongside our offices in London, Dublin, and Zurich. They’re the latest example of Anthropic’s extraordinary momentum in Europe—and all [around the world](https://www.anthropic.com/news/anthropic-expands-global-leadership-in-enterprise-ai-naming-chris-ciauri-as-managing-director-of). In the past year, we have tripled the number of employees we have in the EMEA region and will continue to expand our headcount with the addition of these new offices.
 
 Businesses across Europe are trusting Claude with their most important work. As a result, EMEA has become our fastest-growing region, with a run-rate revenue that has grown more than 9x in the past year. The number of large EMEA business accounts—customers that each represent over $100,000 in run-rate revenue—has also grown more than 10x over the past year.
@@ -29,23 +27,3 @@ To jumpstart our new operations in France and Germany, we’re also partnering w
 - We’re teaming up with Unaite, a French organization that’s building developer communities and advancing AI education, in support of two hackathons to be held in 2026.
 
 In total, Anthropic now has offices in 12 cities, including in San Francisco, Seattle, New York, and Washington D.C. For information about career opportunities at Anthropic, including our new Paris and Munich offices, visit [anthropic.com/careers](https://www.anthropic.com/careers).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

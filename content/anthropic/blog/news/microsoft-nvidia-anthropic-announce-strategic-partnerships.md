@@ -3,8 +3,6 @@ Title: Microsoft, NVIDIA, and Anthropic announce strategic partnerships
 URL Source: https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships
 
 Markdown Content:
-# Microsoft, NVIDIA, and Anthropic announce strategic partnerships
-
 - **Anthropic to scale Claude on Azure**
 - **Anthropic to adopt NVIDIA architecture**
 - **NVIDIA and Microsoft to invest in Anthropic**
@@ -22,23 +20,3 @@ As part of the partnership, NVIDIA and Microsoft are committing to invest up to 
 Anthropic co-founder and CEO Dario Amodei, Microsoft Chairman and CEO Satya Nadella, and NVIDIA founder and CEO Jensen Huang gathered to discuss the new partnerships:
 
 Amazon remains Anthropic’s primary cloud provider and training partner.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

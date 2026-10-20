@@ -4,18 +4,17 @@ URL Source: https://www.anthropic.com/economic-index
 
 Markdown Content:
 Skip to main content
-Skip to footer
+News
 Research
 Policy
 Commitments
-Learn
-News
+Company
 Try Claude
 Anthropic Economic Index
 Understanding AI’s effects on the economy
-Last updated: Jun 26, 2026
+Last updated: June 26, 2026
 Loading data
 Anthropic Economic Index
 Understanding AI’s effects on the economy
-Last updated: Jun 26, 2026
+Last updated: June 26, 2026
 Loading data

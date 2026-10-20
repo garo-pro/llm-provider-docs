@@ -3,10 +3,6 @@ Title: Introducing The Anthropic Institute
 URL Source: https://www.anthropic.com/news/the-anthropic-institute
 
 Markdown Content:
-# Introducing The Anthropic Institute
-
-*We’re launching [The Anthropic Institute](https://www.anthropic.com/institute), a new effort to confront the most significant challenges that powerful AI will pose to our societies. The Anthropic Institute will draw on research from across Anthropic to provide information that other researchers and the public can use during our transition to a world containing much more powerful AI systems.*
-
 In the five years since Anthropic began, AI progress has moved incredibly quickly. It took us two years to release our first commercial model, and just three more to develop models that can discover [severe](https://red.anthropic.com/2026/zero-days/) [cybersecurity](https://red.anthropic.com/2026/critical-infrastructure-defense/) [vulnerabilities](https://red.anthropic.com/2026/cyber-toolkits-update/), [take on](https://www.anthropic.com/research/measuring-agent-autonomy) a [wide range](https://www.anthropic.com/economic-index) of [real work](https://www.anthropic.com/research/economic-index-primitives), and even begin to accelerate the pace of [AI development itself](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic).
 
 We predict that far more dramatic progress will follow in the next two years. One of our company’s core convictions is that AI development is accelerating: that the improvements we make are compounding over time. Because of this, extremely powerful AI, like the kind our CEO Dario Amodei describes in [*Machines of Loving Grace*](https://www.darioamodei.com/essay/machines-of-loving-grace), is coming far sooner than many think.
@@ -27,30 +23,10 @@ The Anthropic Institute has made several founding hires:
 
 **We’re also hiring.** The Anthropic Institute is building out a small analytical staff who will work to pull various parts of our research agenda together and broadcast our work to the world. You can read more [here](https://job-boards.greenhouse.io/anthropic/jobs/5123742008).
 
-## **Expanding Anthropic’s Public Policy team**
+### Expanding Anthropic’s Public Policy team
 
 Alongside launching The Anthropic Institute, we’re expanding our Public Policy organization.
 
 Public Policy focuses on the areas where Anthropic has defined priorities and perspectives, including [model safety and transparency](https://www.anthropic.com/news/the-need-for-transparency-in-frontier-ai), [energy ratepayer protections](https://www.anthropic.com/news/build-ai-in-america), [infrastructure investments](https://www.anthropic.com/news/build-ai-in-america), [export controls](https://www.anthropic.com/news/securing-america-s-compute-advantage-anthropic-s-position-on-the-diffusion-rule), and [democratic leadership in AI](https://www.anthropic.com/news/thoughts-on-america-s-ai-action-plan). Sarah Heck, who joined Anthropic as our Head of External Affairs, will lead this team as Head of Public Policy. Before Anthropic, Sarah was Head of Entrepreneurship at Stripe, a financial technology firm, and previously led global entrepreneurship and public diplomacy policy at the White House National Security Council.
 
 We're growing our Public Policy team to help inform and shape AI governance around the world. We’re opening our first office in DC this spring, and are quickly expanding our global policy footprint. You can see our current openings [here](https://www.anthropic.com/careers/jobs?team=4002056008).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

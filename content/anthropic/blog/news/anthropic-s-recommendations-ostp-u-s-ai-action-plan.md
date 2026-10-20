@@ -3,10 +3,6 @@ Title: Anthropic’s recommendations to OSTP for the U.S. AI action plan
 URL Source: https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan
 
 Markdown Content:
-# Anthropic’s recommendations to OSTP for the U.S. AI action plan
-
-![A hand-drawn image of a government building](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F29b9740c62c263dd5f71888be78a6d877353261b-1920x1079.png&w=3840&q=75)
-
 In response to the White House’s [Request for Information on an AI Action Plan](https://www.whitehouse.gov/briefings-statements/2025/02/public-comment-invited-on-artificial-intelligence-action-plan/), Anthropic [has submitted recommendations](https://assets.anthropic.com/m/4e20a4ab6512e217/original/Anthropic-Response-to-OSTP-RFI-March-2025-Final-Submission-v3.pdf) to the Office of Science and Technology Policy (OSTP). Our recommendations are designed to better prepare America to capture the economic benefits and national security implications of powerful AI systems.
 
 As our CEO Dario Amodei writes in ‘[Machines of Loving Grace](https://darioamodei.com/machines-of-loving-grace)’, we expect powerful AI systems will emerge in late 2026 or early 2027. Powerful AI systems will have the following properties:
@@ -30,23 +26,3 @@ We believe the United States must take decisive action to maintain technological
 These recommendations build on Anthropic's previous policy work, including our advocacy for [responsible scaling policies](https://www.anthropic.com/news/anthropics-responsible-scaling-policy) and [testing and evaluation](https://www.anthropic.com/news/third-party-testing#:~:text=A%20robust%20third%2Dparty%20testing,should%20and%20shouldn't%20include). Our aim is to strike a balance—enabling innovation while mitigating serious risks posed by increasingly capable AI systems.
 
 Our full submission, found [here](https://assets.anthropic.com/m/4e20a4ab6512e217/original/Anthropic-Response-to-OSTP-RFI-March-2025-Final-Submission-v3.pdf), offers further detail into these recommendations and provides practical implementation strategies to help the U.S. government navigate this critical technological transition.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

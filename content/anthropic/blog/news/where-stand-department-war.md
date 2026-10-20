@@ -3,8 +3,6 @@ Title: Where things stand with the Department of War
 URL Source: https://www.anthropic.com/news/where-stand-department-war
 
 Markdown Content:
-# Where things stand with the Department of War
-
 *A statement from Dario Amodei*
 
 Yesterday (March 4) Anthropic received a letter from the Department of War confirming that we have been designated as a supply chain risk to America’s national security.
@@ -24,23 +22,3 @@ I also want to apologize directly for a post internal to the company that was le
 Our most important priority right now is making sure that our warfighters and national security experts are not deprived of important tools in the middle of major combat operations. Anthropic will provide our models to the Department of War and national security community, at nominal cost and with continuing support from our engineers, for as long as is necessary to make that transition, and for as long as we are permitted to do so.
 
 Anthropic has much more in common with the Department of War than we have differences. We both are committed to advancing US national security and defending the American people, and agree on the urgency of applying AI across the government. All our future decisions will flow from that shared premise.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

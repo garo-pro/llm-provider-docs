@@ -3,10 +3,6 @@ Title: Anthropic’s response to Governor Newsom’s AI working group draft repo
 URL Source: https://www.anthropic.com/news/anthropic-s-response-to-governor-newsom-s-ai-working-group-draft-report
 
 Markdown Content:
-# Anthropic’s response to Governor Newsom’s AI working group draft report
-
-![Anthropic’s response to Governor Newsom’s AI working group draft report](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F29b9740c62c263dd5f71888be78a6d877353261b-1920x1079.png&w=3840&q=75)
-
 This week, the California Governor’s [Working Group on AI Frontier Models](https://www.cafrontieraigov.org/) released its draft report. We agree with the working group’s focus on the need for [objective standards](https://www.anthropic.com/news/an-ai-policy-tool-for-today-ambitiously-invest-in-nist) and evidence-based policy guidance, and especially its emphasis on transparency as a means to create a well functioning AI policy environment.
 
 When done thoughtfully, transparency can be a low-cost, high-impact means of growing the evidence base around a new technology, increasing consumer trust, and causing companies to enter into positive-sum competitions with one another. We welcome greater discussion of how frontier labs should be transparent about their AI development practices and were glad to see the working group emphasize this - in particular, we appreciated the focus on the need for labs to disclose how they secure their models from theft, and how they test their models for potential national security risks.
@@ -16,23 +12,3 @@ Many of the report’s recommendations already reflect industry best practices w
 In line with the report’s findings, we believe governments could play a constructive role in improving transparency in the safety and security practices of frontier AI companies. At present frontier AI companies are not *required* to have a safety and security policy (even one entirely of their choice), nor to describe it publicly, nor to publicly document the tests they run – and therefore not all companies do. We believe this could be done in a [light-touch way](https://www.anthropic.com/news/the-case-for-targeted-regulation) that does not impede innovation. As we wrote in our [recent policy submission to the White House](https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan), we believe powerful AI systems will arrive soon - perhaps as early as the end of 2026 - so it is important we all devote effort to building a policy regime that creates greater transparency about the safety and security protocols of how AI systems are built.
 
 The Working Group has also highlighted areas where academia, civil society, and industry will need to apply more focus in the coming years - particularly on the economic impacts of AI, where Anthropic is today trying to contribute via [our Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index). We look forward to providing further feedback to the working group to aid and inform the work of finalizing the report. We commend the Governor for his foresight in kicking off this conversation, and we look forward to helping shape California’s approach to frontier model safety.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

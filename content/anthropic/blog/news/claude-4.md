@@ -3,13 +3,11 @@ Title: Introducing Claude 4
 URL Source: https://www.anthropic.com/news/claude-4
 
 Markdown Content:
-# Introducing Claude 4
-
-![Illustration of Claude juggling several tasks in parallel](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9890d1bb39c15c41772af22d2282eb612469051c-2880x1620.jpg&w=3840&q=75)
-
 Today, we’re introducing the next generation of Claude models: **Claude Opus 4** and **Claude Sonnet 4**, setting new standards for coding, advanced reasoning, and AI agents. 
 
 Claude Opus 4 is the world’s best coding model, with sustained performance on complex, long-running tasks and agent workflows. Claude Sonnet 4 is a significant upgrade to Claude Sonnet 3.7, delivering superior coding and reasoning while responding more precisely to your instructions.
+
+![Video thumbnail](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoqUclC3gqKs%2Fmaxresdefault.jpg&w=3840&q=75)
 
 Alongside the models, we're also announcing:
 
@@ -52,30 +50,46 @@ New beta extensions for VS Code and JetBrains integrate Claude Code directly int
 
 Beyond the IDE, we're releasing an extensible Claude Code SDK, so you can build your own agents and applications using the same core agent as Claude Code. We're also releasing an example of what's possible with the SDK: Claude Code on GitHub, now in beta. Tag Claude Code on PRs to respond to reviewer feedback, fix CI errors, or modify code. To install, run /install-github-app from within Claude Code.
 
+![Video thumbnail](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FL_WFEgry87M%2Fmaxresdefault.jpg&w=3840&q=75)
+
 ## Getting started
 
 These models are a large step toward the virtual collaborator—maintaining full context, sustaining focus on longer projects, and driving transformational impact. They come with extensive testing and evaluation to minimize risk and maximize safety, including [implementing measures](https://www.anthropic.com/news/activating-asl3-protections) for higher AI Safety Levels like ASL-3.
 
-We're excited to see what you'll create. Get started today on [Claude](https://claude.ai/redirect/website.v1.0), [Claude Code](https://www.anthropic.com/claude-code), or the platform of your choice.
+We're excited to see what you'll create. Get started today on [Claude](https://claude.ai/), [Claude Code](https://www.anthropic.com/claude-code), or the platform of your choice.
 
 *As always, your [feedback](<mailto: feedback@anthropic.com>) helps us improve.*
 
-## Related content
+#### Performance benchmark data sources
 
-### Investing in the public benefit
+- Open AI: [o3 launch post](https://openai.com/index/introducing-o3-and-o4-mini/) ,[o3 system card](https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf) ,[GPT-4.1 launch post](https://openai.com/index/gpt-4-1/) ,[GPT-4.1 hosted evals](https://github.com/openai/simple-evals/blob/main/multilingual_mmlu_benchmark_results.md)
+- Gemini: [Gemini 2.5 Pro Preview model card](https://storage.googleapis.com/model-cards/documents/gemini-2.5-pro-preview.pdf)
+- Claude: [Claude 3.7 Sonnet launch post](https://www.anthropic.com/news/claude-3-7-sonnet)
 
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
+#### Performance benchmark reporting
 
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
+Claude Opus 4 and Sonnet 4 are hybrid reasoning models. The benchmarks reported in this blog post show the highest scores achieved with or without extended thinking. We’ve noted below for each result whether extended thinking was used:
 
-### An update on independent evaluators
+- No extended thinking: SWE-bench Verified, Terminal-bench
+- Extended thinking (up to 64K tokens):
+  - TAU-bench (no results w/o extended thinking reported)
+  - GPQA Diamond (w/o extended thinking: Opus 4 scores 74.9% and Sonnet 4 is 70.0%)
+  - MMMLU (w/o extended thinking: Opus 4 scores 87.4% and Sonnet 4 is 85.4%)
+  - MMMU (w/o extended thinking: Opus 4 scores 73.7% and Sonnet 4 is 72.6%)
+  - AIME (w/o extended thinking: Opus 4 scores 33.9% and Sonnet 4 is 33.1%)
 
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
+#### TAU-bench methodology
 
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
+Scores were achieved with a prompt addendum to both the Airline and Retail Agent Policy instructing Claude to better leverage its reasoning abilities while using extended thinking with tool use. The model is encouraged to write down its thoughts as it solves the problem distinct from our usual thinking mode, during the multi-turn trajectories to best leverage its reasoning abilities. To accommodate the additional steps Claude incurs by utilizing more thinking, the maximum number of steps (counted by model completions) was increased from 30 to 100 (most trajectories completed under 30 steps with only one trajectory reaching above 50 steps).
 
-### Preparing for the 2026 US midterms
+#### SWE-bench methodology
 
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
+For the Claude 4 family of models, we continue to use the same simple scaffold that equips the model with solely the two tools described in our prior releases [here](https://www.anthropic.com/engineering/swe-bench-sonnet)—a bash tool, and a file editing tool that operates via string replacements. We no longer include the [third ‘planning tool’](https://www.anthropic.com/engineering/claude-think-tool) used by Claude 3.7 Sonnet. On all Claude 4 models, we report scores out of the full 500 problems. Scores for OpenAI models are reported out of a [477 problem subset](https://openai.com/index/gpt-4-1/).
 
-[Read more](https://www.anthropic.com/news/2026-us-midterms)
+For our “high compute” numbers we adopt additional complexity and parallel test-time compute as follows:
+
+- We sample multiple parallel attempts.
+- We discard patches that break the visible regression tests in the repository, similar to the rejection sampling approach adopted by [Agentless (Xia et al. 2024)](https://arxiv.org/abs/2407.01489) ; note no hidden test information is used.
+- We then use an internal scoring model to select the best candidate from the remaining attempts.
+
+This results in a score of 79.4% and 80.2% for Opus 4 and Sonnet 4 respectively.

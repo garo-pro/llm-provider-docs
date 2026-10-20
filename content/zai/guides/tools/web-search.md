@@ -108,7 +108,7 @@ Cursor 0.45.6 includes MCP functionality. Cursor acts as an MCP service client a
 
 Navigation Path: Cursor Settings → \[Features] → \[MCP Servers]
 
-<img src="https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/370b139e-8201-40a0-9c44-3faf4b1b9655.png?fit=max&auto=format&n=fQm1SxNtD2jBDQ3i&q=85&s=ea0a9a85b3c412cfcaf112ce29b66be7" alt="370b139e 8201 40a0 9c44 3faf4b1b9655 Pn" width="1280" height="674" data-path="images/370b139e-8201-40a0-9c44-3faf4b1b9655.png" />
+![370b139e 8201 40a0 9c44 3faf4b1b9655 Pn](https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/370b139e-8201-40a0-9c44-3faf4b1b9655.png?fit=max\&auto=format\&n=fQm1SxNtD2jBDQ3i\&q=85\&s=ea0a9a85b3c412cfcaf112ce29b66be7)
 
 **Configure MCP Server**
 
@@ -126,7 +126,7 @@ Navigation Path: Cursor Settings → \[Features] → \[MCP Servers]
 
 Cursor MCP must be used in Composer's Agent mode.
 
-<img src="https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/bb97f60a-b887-4e13-92d7-8156227676c7.png?fit=max&auto=format&n=fQm1SxNtD2jBDQ3i&q=85&s=03cca96249a7376deb2e3e316f969771" alt="Bb97f60a B887 4e13 92d7 8156227676c7 Pn" width="796" height="1688" data-path="images/bb97f60a-b887-4e13-92d7-8156227676c7.png" />
+![Bb97f60a B887 4e13 92d7 8156227676c7 Pn](https://mintcdn.com/zhipu-32152247/fQm1SxNtD2jBDQ3i/images/bb97f60a-b887-4e13-92d7-8156227676c7.png?fit=max\&auto=format\&n=fQm1SxNtD2jBDQ3i\&q=85\&s=03cca96249a7376deb2e3e316f969771)
 
 ## Web Search in Chat
 

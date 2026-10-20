@@ -3,8 +3,6 @@ Title: Anthropic partners with Menlo Ventures to launch Anthology Fund
 URL Source: https://www.anthropic.com/news/anthropic-partners-with-menlo-ventures-to-launch-anthology-fund
 
 Markdown Content:
-# Anthropic partners with Menlo Ventures to launch Anthology Fund
-
 We’re launching the Anthology Fund in partnership with Menlo Ventures to accelerate the development of groundbreaking AI applications. The Fund is a $100 million initiative financed by Menlo to support startups innovating broadly with Anthropic technology.
 
 “Through our partnership with Menlo Ventures and the Anthology Fund, we hope to accelerate the development of groundbreaking AI applications. We're particularly interested in ventures that leverage AI to enhance human capabilities and productivity in fields such as healthcare, legal services, education, energy, infrastructure, and scientific research,” said Daniela Amodei, co-founder and President of Anthropic. “We look forward to working closely with Menlo and the exceptional founders backed by this Fund to push the boundaries of what’s possible with AI.”
@@ -18,23 +16,3 @@ Startups backed by the Anthology Fund will gain access to Anthropic products and
 We look forward to working with Menlo in supporting the startup ecosystem and driving responsible AI innovation.
 
 Interested startups can learn more and apply [here](https://menlovc.com/anthology-fund-application/).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

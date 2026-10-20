@@ -3,8 +3,6 @@ Title: Introducing the next generation of Claude
 URL Source: https://www.anthropic.com/news/claude-3-family
 
 Markdown Content:
-![Claude 3](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4e78f69ef8d4186fb5691714abe36224483d91b0-2880x1620.png&w=3840&q=75)
-
 Today, we're announcing the Claude 3 model family, which sets new industry benchmarks across a wide range of cognitive tasks. The family includes three state-of-the-art models in ascending order of capability: Claude 3 Haiku, Claude 3 Sonnet, and Claude 3 Opus. Each successive model offers increasingly powerful performance, allowing users to select the optimal balance of intelligence, speed, and [cost](https://www.anthropic.com/api#pricing) for their specific application.
 
 Opus and Sonnet are now available to use in claude.ai and the Claude API which is now generally available in [159 countries](https://www.anthropic.com/supported-countries). Haiku will be available soon.
@@ -75,29 +73,15 @@ The Claude 3 models are better at following complex, multi-step instructions. Th
 
 **Claude 3 Opus** is our most intelligent model, with best-in-market performance on highly complex tasks. It can navigate open-ended prompts and sight-unseen scenarios with remarkable fluency and human-like understanding. Opus shows us the outer limits of what’s possible with generative AI.
 
-| **Cost**   *[Input $/million tokens \| Output $/million tokens]* | $15 \| $75 | 
-| **Context window** | 200K* | 
-| **Potential uses** |  | 
-| **Differentiator** | Higher intelligence than any other model available. | 
-
-**1M tokens available for specific use cases, please inquire.*
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F08376f135c37fe029e2aea16fa55c4c83ec77b6b-1148x56.png&w=3840&q=75)
-
+*1M tokens available for specific use cases, please inquire.
 
 **Claude 3 Sonnet** strikes the ideal balance between intelligence and speed—particularly for enterprise workloads. It delivers strong performance at a lower cost compared to its peers, and is engineered for high endurance in large-scale AI deployments.
 
-| **Cost**   *[Input $/million tokens \| Output $/million tokens]* | $3 \| $15 | 
-| **Context window** | 200K | 
-| **Potential uses** |  | 
-| **Differentiator** | More affordable than other models with similar intelligence; better for scale. | 
+data
 
 **Claude 3 Haiku** is our fastest, most compact model for near-instant responsiveness. It answers simple queries and requests with unmatched speed. Users will be able to build seamless AI experiences that mimic human interactions.
 
-| **Cost**   *[Input $/million tokens \| Output $/million tokens]* | $0.25 \| $1.25 | 
-| **Context window** | 200K | 
-| **Potential uses** |  | 
-| **Differentiator** | Smarter, faster, and more affordable than other models in its intelligence category. | 
+data
 
 ### Model availability
 

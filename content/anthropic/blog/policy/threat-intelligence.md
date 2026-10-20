@@ -7,34 +7,28 @@ Markdown Content:
 
 The Threat Intelligence team investigates real-world cases of misuse of Claude, and works with the broader Safeguards team to improve our defenses. To improve the safety and security of frontier AI models, we publish regular reports detailing the methods malicious actors use to exploit them.
 
-![Detecting and countering misuse of AI: September 2026](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff398b3e22861f56d2b5ea30bea038f2b68f5d8db-1920x1080.jpg&w=3840&q=75)
+## How we work
 
+### Detect
 
-## Detecting and countering misuse of AI: September 2026
+We identify concerning activity on Claude via detection tools, our enforcement team, intelligence partners, and from the open source.
 
-Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threat reports in 2025.
+### Investigate
 
+Our investigators review the activity to understand what the actor was doing and the methods they used.
 
-#### What we learned mapping a year’s worth of AI-enabled cyber threats
+### Attribute
 
-As AI changes how cyberattacks happen, how well do the security community's frameworks hold up? A new report maps attacks onto MITRE ATT&CK.
+Where the evidence allows, we work out who is behind the activity.
 
+### Disrupt
 
-#### Detecting and preventing distillation attacks
+We ban the accounts involved in the activity to cut off access to Claude.
 
-We have identified industrial-scale campaigns by three AI laboratories—DeepSeek, Moonshot, and MiniMax—to illicitly extract Claude’s capabilities to improve their own models.
+### Strengthen
 
+We turn our findings into improvements to our classifiers, policies, and product safeguards to help prevent similar misuse.
 
-#### Disrupting the first reported AI-orchestrated cyber espionage campaign
+### Share
 
-In September 2025, we detected and disrupted a highly sophisticated cyber espionage campaign. We’re sharing this case publicly to help others strengthen their own defenses.
-
-
-#### Detecting and countering misuse of AI: August 2025
-
-We’ve developed safeguards to prevent the misuse of our models, but malicious actors are actively attempting to find ways around them. Today, we’re releasing a report that details how.
-
-
-#### Detecting and countering malicious uses of Claude: March 2025
-
-This report outlines several case studies on how actors have misused our models, as well as the steps we have taken to detect and counter such misuse.
+When relevant, we share what we’ve learned with governments, threat intelligence partners, and the public.

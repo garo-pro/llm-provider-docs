@@ -3,8 +3,6 @@ Title: Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of
 URL Source: https://www.anthropic.com/news/narasimhan-board
 
 Markdown Content:
-# Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of Directors
-
 Vas Narasimhan has been appointed to Anthropic's Board of Directors by the Anthropic Long-Term Benefit Trust. He is a physician-scientist and the Chief Executive Officer of Novartis—one of the world's leading innovative medicines companies—and shares Anthropic’s conviction that [healthcare](https://claude.com/solutions/healthcare) and [life sciences](https://claude.com/solutions/life-sciences) are among the areas where AI has the greatest potential to improve the quality of human life.
 
 “Vas brings something rare to our board. He's overseen the development and approval of more than 35 novel medicines for the benefit of patients around the world in one of the most regulated industries,” said Daniela Amodei, Co-founder and President of Anthropic. “Getting powerful new technology to people safely and at scale is what we think about every day at Anthropic. Vas has been doing exactly that for years, and I'm grateful he's joining us.”
@@ -16,23 +14,3 @@ Anthropic is a Public Benefit Corporation and its Board is elected by stockholde
 “Working across medicine, innovation, and global health has shown me the transformative potential of technology when deployed responsibly. In healthcare, AI is accelerating solutions to some of the hardest scientific challenges, from deepening our understanding of disease biology to designing better medicines,” said Narasimhan. “Anthropic is setting the standard for how AI should be developed to benefit humanity, and I’m honored to join the Board and contribute to its mission.”
 
 Early in his career, Narasimhan worked on HIV/AIDS, malaria, and tuberculosis programs in India, Africa, and South America, and he continues to champion access and global health priorities today. He is an elected member of the US National Academy of Medicine and a member of the Council on Foreign Relations. He serves on the University of Chicago board of trustees and the board of fellows at Harvard Medical School. He previously chaired the Pharmaceutical Research and Manufacturers of America, where he remains on the board of directors.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

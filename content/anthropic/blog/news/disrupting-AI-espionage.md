@@ -3,8 +3,6 @@ Title: Disrupting the first reported AI-orchestrated cyber espionage campaign
 URL Source: https://www.anthropic.com/news/disrupting-AI-espionage
 
 Markdown Content:
-# Disrupting the first reported AI-orchestrated cyber espionage campaign
-
 We recently argued that an [inflection point](https://www.anthropic.com/research/building-ai-cyber-defenders) had been reached in cybersecurity: a point at which AI models had become genuinely useful for cybersecurity operations, both for good and for ill. This was based on systematic evaluations showing cyber capabilities doubling in six months; we’d also been tracking real-world cyberattacks, observing how malicious actors were using AI capabilities. While we predicted these capabilities would continue to evolve, what has stood out to us is how quickly they have done so at scale.
 
 In mid-September 2025, we detected suspicious activity that later investigation determined to be a highly sophisticated espionage campaign. The attackers used AI’s “agentic” capabilities to an unprecedented degree—using AI not just as an advisor, but to execute the cyberattacks themselves.
@@ -21,7 +19,7 @@ In the meantime, we’re sharing this case publicly, to help those in industry, 
 
 Read [the full report](https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf).
 
-## How the cyberattack worked
+### How the cyberattack worked
 
 The attack relied on several features of AI models that did not exist, or were in much more nascent form, just a year ago:
 
@@ -47,7 +45,7 @@ Overall, the threat actor was able to use AI to perform 80-90% of the campaign, 
 
 Claude didn’t always work perfectly. It occasionally hallucinated credentials or claimed to have extracted secret information that was in fact publicly-available. This remains an obstacle to fully autonomous cyberattacks.
 
-## Cybersecurity implications
+### Cybersecurity implications
 
 The barriers to performing sophisticated cyberattacks have dropped substantially—and we predict that they’ll continue to do so. With the correct setup, threat actors can now use agentic AI systems for extended periods to do the work of entire teams of experienced hackers: analyzing target systems, producing exploit code, and scanning vast datasets of stolen information more efficiently than any human operator. Less experienced and resourced groups can now potentially perform large-scale attacks of this nature.
 
@@ -63,23 +61,3 @@ Read [the full report](https://assets.anthropic.com/m/ec212e6566a0d47/original/D
 
 - *Added an additional hyperlink to the full report in the initial section*
 - *Corrected an error about the speed of the attack: not "thousands of requests per second" but "thousands of requests, often multiple per second"*
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

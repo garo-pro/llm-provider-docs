@@ -8,19 +8,17 @@ The ZRead MCP Server is an exclusive Remote MCP Server developed by Z.AI for GLM
 
 ## Features
 
-<CardGroup cols={3}>
-  <Card title="Documentation Search" icon="book">
-    Search documentation, code, and comments in Github repositories
-  </Card>
+> **Documentation Search**
+>
+> Search documentation, code, and comments in Github repositories
 
-  <Card title="Repository Structure" icon="sitemap">
-    Get the directory structure and file list of GitHub repositories to quickly master project layout
-  </Card>
+> **Repository Structure**
+>
+> Get the directory structure and file list of GitHub repositories to quickly master project layout
 
-  <Card title="Code Reading" icon="code">
-    Read the complete code content of specified files in GitHub repositories to deeply analyze implementation details
-  </Card>
-</CardGroup>
+> **Code Reading**
+>
+> Read the complete code content of specified files in GitHub repositories to deeply analyze implementation details
 
 ## Tools
 
@@ -32,220 +30,212 @@ This server implements the Model Context Protocol and works with any MCP-compati
 
 ## Example Scenarios
 
-<AccordionGroup>
-  <Accordion title="Quick Start with Open Source Libraries" defaultOpen>
-    Quickly understand the core concepts, installation steps, and code organization of open source libraries by searching documentation and obtaining repository structures, accelerating the learning curve.
-  </Accordion>
+> **Quick Start with Open Source Libraries**
+>
+> Quickly understand the core concepts, installation steps, and code organization of open source libraries by searching documentation and obtaining repository structures, accelerating the learning curve.
 
-  <Accordion title="Issue Troubleshooting and History" defaultOpen>
-    When encountering problems, search the repository's Issue and Commit history to find solutions or fix records for similar problems.
-  </Accordion>
+> **Issue Troubleshooting and History**
+>
+> When encountering problems, search the repository's Issue and Commit history to find solutions or fix records for similar problems.
 
-  <Accordion title="Deep Source Code Analysis">
-    Directly read the code content of core files, analyze implementation logic, and assist in secondary development or Debugging.
-  </Accordion>
+> **Deep Source Code Analysis**
+>
+> Directly read the code content of core files, analyze implementation logic, and assist in secondary development or Debugging.
 
-  <Accordion title="Dependency Library Research">
-    Before introducing a new dependency library, evaluate its activity, code quality, and maintenance status by viewing its repository structure and documentation.
-  </Accordion>
-</AccordionGroup>
+> **Dependency Library Research**
+>
+> Before introducing a new dependency library, evaluate its activity, code quality, and maintenance status by viewing its repository structure and documentation.
 
 ## Installation and Usage
 
 ### Quick Start
 
-<Steps>
-  <Step title="Get API Key">
-    Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan)
-  </Step>
+**1. Get API Key**
 
-  <Step title="Configure MCP Server">
-    According to the client you’re using, **choose the corresponding installation method from the options below**.
-  </Step>
-</Steps>
+Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage-apikey/apikey-list) (Individual Plan) or [Team Coding Plan > My Plan](https://z.ai/manage-apikey/coding-plan/team/my-plan) (Team Plan)
+
+**2. Configure MCP Server**
+
+According to the client you’re using, **choose the corresponding installation method from the options below**.
 
 ### Supported Clients
 
-<Tabs>
-  <Tab title="Claude Code">
-    **One-click install command**
+**Claude Code**
 
-    Replace `your_api_key` with the API key you obtained in the previous step
+**One-click install command**
 
-    ```bash theme={null}
-    claude mcp add -s user -t http zread https://api.z.ai/api/mcp/zread/mcp --header "Authorization: Bearer your_api_key"
-    ```
+Replace `your_api_key` with the API key you obtained in the previous step
 
-    **Manual configuration**
+```bash theme={null}
+claude mcp add -s user -t http zread https://api.z.ai/api/mcp/zread/mcp --header "Authorization: Bearer your_api_key"
+```
 
-    Edit the Claude Code configuration file under your home directory, the MCP section of `.claude.json`:
+**Manual configuration**
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zread": {
-          "type": "http",
-          "url": "https://api.z.ai/api/mcp/zread/mcp",
-          "headers": {
-            "Authorization": "Bearer your_api_key"
-          }
-        }
+Edit the Claude Code configuration file under your home directory, the MCP section of `.claude.json`:
+
+```json theme={null}
+{
+  "mcpServers": {
+    "zread": {
+      "type": "http",
+      "url": "https://api.z.ai/api/mcp/zread/mcp",
+      "headers": {
+        "Authorization": "Bearer your_api_key"
       }
     }
-    ```
-  </Tab>
+  }
+}
+```
 
-  <Tab title="Cline (VS Code)">
-    Add the MCP server configuration in the Cline extension settings:
+**Cline (VS Code)**
 
-    Replace `your_api_key` with the API key you obtained in the previous step
+Add the MCP server configuration in the Cline extension settings:
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zread": {
-          "type": "streamableHttp",
-          "url": "https://api.z.ai/api/mcp/zread/mcp",
-          "headers": {
-            "Authorization": "Bearer your_api_key"
-          }
-        }
+Replace `your_api_key` with the API key you obtained in the previous step
+
+```json theme={null}
+{
+  "mcpServers": {
+    "zread": {
+      "type": "streamableHttp",
+      "url": "https://api.z.ai/api/mcp/zread/mcp",
+      "headers": {
+        "Authorization": "Bearer your_api_key"
       }
     }
-    ```
+  }
+}
+```
 
-    If Cline older version does not support StreamableHttp type MCP server, you can use SSE type configuration:
+If Cline older version does not support StreamableHttp type MCP server, you can use SSE type configuration:
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zread": {
-          "type": "sse",
-          "url": "https://api.z.ai/api/mcp/zread/sse?Authorization=your_api_key"
-        }
-      }
+```json theme={null}
+{
+  "mcpServers": {
+    "zread": {
+      "type": "sse",
+      "url": "https://api.z.ai/api/mcp/zread/sse?Authorization=your_api_key"
     }
-    ```
-  </Tab>
+  }
+}
+```
 
-  <Tab title="OpenCode">
-    Add the MCP server configuration in OpenCode settings:
+**OpenCode**
 
-    See the [OpenCode MCP documentation](https://opencode.ai/docs/mcp-servers)
+Add the MCP server configuration in OpenCode settings:
 
-    Replace `your_api_key` with the API key you obtained in the previous step
+See the [OpenCode MCP documentation](https://opencode.ai/docs/mcp-servers)
 
-    ```json theme={null}
-    {
-        "$schema": "https://opencode.ai/config.json",
-        "mcp": {
-            "zread": {
-                "type": "remote",
-                "url": "https://api.z.ai/api/mcp/zread/mcp",
-                "headers": {
-                    "Authorization": "Bearer your_api_key"
-                }
+Replace `your_api_key` with the API key you obtained in the previous step
+
+```json theme={null}
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "zread": {
+            "type": "remote",
+            "url": "https://api.z.ai/api/mcp/zread/mcp",
+            "headers": {
+                "Authorization": "Bearer your_api_key"
             }
         }
     }
-    ```
-  </Tab>
+}
+```
 
-  <Tab title="Crush">
-    Add the MCP server configuration in Crush settings:
+**Crush**
 
-    Replace `your_api_key` with the API key you obtained in the previous step
+Add the MCP server configuration in Crush settings:
 
-    ```json theme={null}
-    {
-        "$schema": "https://charm.land/crush.json",
-        "mcp": {
-            "zread": {
-                "type": "http",
-                "url": "https://api.z.ai/api/mcp/zread/mcp",
-                "headers": {
-                    "Authorization": "Bearer your_api_key"
-                }
+Replace `your_api_key` with the API key you obtained in the previous step
+
+```json theme={null}
+{
+    "$schema": "https://charm.land/crush.json",
+    "mcp": {
+        "zread": {
+            "type": "http",
+            "url": "https://api.z.ai/api/mcp/zread/mcp",
+            "headers": {
+                "Authorization": "Bearer your_api_key"
             }
         }
     }
-    ```
-  </Tab>
+}
+```
 
-  <Tab title="Goose">
-    Not support Goose now，refer [Issue](https://github.com/block/goose/issues/6576)
+**Goose**
 
-    Add the MCP server in Goose:
+Not support Goose now，refer [Issue](https://github.com/block/goose/issues/6576)
 
-    Go to `Extensions` -> `Add custom extension`
+Add the MCP server in Goose:
 
-    Set Extension Name to `zread`, Type to `HTTP`, and use the following endpoint:
+Go to `Extensions` -> `Add custom extension`
 
-    ```
-    https://api.z.ai/api/mcp/zread/mcp
-    ```
+Set Extension Name to `zread`, Type to `HTTP`, and use the following endpoint:
 
-    Set Request Headers Add `Authorization` : `your_api_key`
+```
+https://api.z.ai/api/mcp/zread/mcp
+```
 
-    Click `Add Extension` at the bottom. Remember to replace `your_api_key` with the API key you obtained in the previous step.
-  </Tab>
+Set Request Headers Add `Authorization` : `your_api_key`
 
-  <Tab title="Roo Code, Kilo Code, Others">
-    For Roo Code, Kilo Code, and other MCP-compatible clients, use the following general configuration:
+Click `Add Extension` at the bottom. Remember to replace `your_api_key` with the API key you obtained in the previous step.
 
-    Replace `your_api_key` with the API key you obtained in the previous step
+**Roo Code, Kilo Code, Others**
 
-    ```json theme={null}
-    {
-      "mcpServers": {
-        "zread": {
-          "type": "streamable-http",
-          "url": "https://api.z.ai/api/mcp/zread/mcp",
-          "headers": {
-            "Authorization": "Bearer your_api_key"
-          }
-        }
+For Roo Code, Kilo Code, and other MCP-compatible clients, use the following general configuration:
+
+Replace `your_api_key` with the API key you obtained in the previous step
+
+```json theme={null}
+{
+  "mcpServers": {
+    "zread": {
+      "type": "streamable-http",
+      "url": "https://api.z.ai/api/mcp/zread/mcp",
+      "headers": {
+        "Authorization": "Bearer your_api_key"
       }
     }
-    ```
-  </Tab>
-</Tabs>
+  }
+}
+```
 
 ## Troubleshooting
 
-<AccordionGroup>
-  <Accordion title="Invalid access token">
-    **Issue:** Received an invalid access token error
+> **Invalid access token**
+>
+> **Issue:** Received an invalid access token error
+>
+> **Solutions:**
+>
+> 1. Verify the token was copied correctly
+> 2. Check that the token is activated
+> 3. Ensure the token has sufficient balance
+> 4. Confirm the Authorization header format is correct
 
-    **Solutions:**
+> **Connection timeout**
+>
+> **Issue:** Connection to the MCP server timed out
+>
+> **Solutions:**
+>
+> 1. Check your network connection
+> 2. Verify firewall settings
+> 3. Ensure the server URL is correct
+> 4. Increase client timeout settings
 
-    1. Verify the token was copied correctly
-    2. Check that the token is activated
-    3. Ensure the token has sufficient balance
-    4. Confirm the Authorization header format is correct
-  </Accordion>
-
-  <Accordion title="Connection timeout">
-    **Issue:** Connection to the MCP server timed out
-
-    **Solutions:**
-
-    1. Check your network connection
-    2. Verify firewall settings
-    3. Ensure the server URL is correct
-    4. Increase client timeout settings
-  </Accordion>
-
-  <Accordion title="Repository access failed">
-    **Issue:** Unable to search or read specified repository content
-
-    **Solutions:**
-
-    1. Confirm the repository exists and is open source (public)
-    2. Check if the repository name is spelled correctly (owner/repo)
-    3. Visit zread.ai to search if this open source repository is supported
-  </Accordion>
-</AccordionGroup>
+> **Repository access failed**
+>
+> **Issue:** Unable to search or read specified repository content
+>
+> **Solutions:**
+>
+> 1. Confirm the repository exists and is open source (public)
+> 2. Check if the repository name is spelled correctly (owner/repo)
+> 3. Visit zread.ai to search if this open source repository is supported
 
 ## Resources
 

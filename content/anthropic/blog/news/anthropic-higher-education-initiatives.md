@@ -3,11 +3,9 @@ Title: Anthropic launches higher education advisory board and AI Fluency courses
 URL Source: https://www.anthropic.com/news/anthropic-higher-education-initiatives
 
 Markdown Content:
-# Anthropic launches higher education advisory board and AI Fluency courses
-
 The choices made in the next few years about how AI enters the classroom will shape a generation's relationship with both technology and learning. Today, we're announcing two initiatives for AI in education to help navigate these critical decisions: a Higher Education Advisory Board to guide Claude's development for education, and three AI Fluency courses co-created with educators that can help teachers and students build practical, responsible AI skills.
 
-## **Higher education advisory board**
+### Higher education advisory board
 
 Anthropic has appointed a Higher Education Advisory Board of distinguished academic leaders who will help guide how Claude serves teaching, learning, and research in higher education. Drawing on expertise spanning university leadership, educational technology, and learning science, the board will ensure AI strengthens rather than undermines learning and critical thinking skills.
 
@@ -23,7 +21,7 @@ Joining Levin are leaders who bring extensive experience serving in academia:
 - **Matthew Rascoff** , Vice Provost for Digital Education at Stanford University, leading digital learning initiatives that expand access to advanced education for those who have been underserved.
 - **Yolanda Watson Spiva** , President of Complete College America, leads a national alliance of 53 states and systems mobilizing to increase college completion rates. With nearly three decades in postsecondary education policy, she leads CCA's work on AI adoption for student success and formed the CCA Council on AI.
 
-## **AI fluency courses for educators and students**
+### AI fluency courses for educators and students
 
 Working with the advisory board and educators worldwide, we've developed three new courses that build on our existing [AI Fluency course](https://www.anthropic.com/learn/claude-for-you), and are designed to address what universities need most: practical frameworks for thoughtful AI integration. Each course, co-developed with Professor Rick Dakan of Ringling College of Art and Design and Professor Joseph Feller of University College Cork, is available now under Creative Commons license, so any institution can adapt them:
 
@@ -33,28 +31,8 @@ Working with the advisory board and educators worldwide, we've developed three n
 
 **[Teaching AI Fluency](http://anthropic.skilljar.com/teaching-ai-fluency)** supports educators who want to bring AI literacy to their campuses and classrooms. It includes frameworks for instruction and assessment, plus curriculum considerations for preparing students for a more AI-enhanced world.
 
-## **The path forward**
+### The path forward
 
 These initiatives reflect our commitment to co-creating the future of AI in education. As universities worldwide grapple with AI's role in education, these resources provide both immediate support and long-term guidance. While the advisory board informs our strategic approach, the AI Fluency courses offer practical tools educators can use today to navigate this transformation thoughtfully and responsibly.
 
-Access the courses and learn more at [anthropic.com/learn](https://www.anthropic.com/learn). 
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)
+Access the courses and learn more at [anthropic.com/learn](https://www.anthropic.com/learn).

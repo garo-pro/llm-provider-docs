@@ -174,23 +174,21 @@ See: [Tool Streaming Output Documentation](/guides/tools/stream-tool)
 
 ## More Resources
 
-<CardGroup cols={2}>
-  <Card title="Concept Parameters" icon="star" href="/guides/overview/concept-param">
-    Common model parameter concepts and sampling recommendations
-  </Card>
+> **[Concept Parameters](/guides/overview/concept-param)**
+>
+> Common model parameter concepts and sampling recommendations
 
-  <Card title="Tool Streaming Output" icon="code" href="/guides/tools/stream-tool">
-    View tool streaming output usage details
-  </Card>
+> **[Tool Streaming Output](/guides/tools/stream-tool)**
+>
+> View tool streaming output usage details
 
-  <Card title="API Reference" icon="book" href="/api-reference/introduction">
-    View complete API documentation
-  </Card>
+> **[API Reference](/api-reference/introduction)**
+>
+> View complete API documentation
 
-  <Card title="Technical Support" icon="headset" href="https://z.ai/consultation">
-    Get technical support and help
-  </Card>
-</CardGroup>
+> **[Technical Support](https://z.ai/consultation)**
+>
+> Get technical support and help
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

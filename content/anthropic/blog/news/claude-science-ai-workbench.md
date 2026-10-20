@@ -3,10 +3,6 @@ Title: Claude Science, an AI workbench for scientists, is now available
 URL Source: https://www.anthropic.com/news/claude-science-ai-workbench
 
 Markdown Content:
-# Claude Science, an AI workbench for scientists, is now available
-
-![A node in a desktop](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0c547c61b24e6ad4985c64f04f212c7411609bfa-2880x1620.png&w=3840&q=75)
-
 AI has the potential to dramatically accelerate the pace of scientific discovery and the development of healthcare interventions. Since launching our efforts in the life sciences last fall, we’ve worked to improve our model capabilities, make connections to the scientific ecosystem via MCPs and skills, and launch partnerships in an effort to realize this potential.
 
 Today, we’re introducing our most significant expansion of these efforts: [Claude Science](http://claude.com/science), an AI workbench for scientists. Claude Science is an app that integrates the tools and packages that researchers most commonly use, produces auditable artifacts, and provides flexible access to computing resources.
@@ -21,7 +17,7 @@ Users interact with a generalist coordinating agent with access to over 60 curat
 
 We are releasing Claude Science today in beta for Claude Pro, Max, Team, and Enterprise users, and will continue to refine the platform as we collect feedback from users.
 
-## **How it works**
+## How it works
 
 ![Image showing that Claude can display proteins, structures, and molecules](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1c78d0a671cbf1715b3f09a790e6d1a90466de1a-2048x1257.jpg&w=3840&q=75)
 
@@ -64,23 +60,3 @@ We’ll also be supporting up to 50 Claude Science AI for Science projects, prov
 To stay up-to-date on product announcements, provide feedback, and learn from others in the Claude Science community, join the [AI for Science Discourse community](https://ai4science.discourse.group/invites/UjrKZKwxK3).
 
 Get started with Claude Science at [claude.com/science](http://claude.com/science).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

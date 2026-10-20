@@ -3,10 +3,6 @@ Title: Preparing for the 2026 US midterms
 URL Source: https://www.anthropic.com/news/2026-us-midterms
 
 Markdown Content:
-# Preparing for the 2026 US midterms
-
-![Preparing for the 2026 US midterms](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F609927c7af2a454cedad848e4b2adc980c1f5fe6-2000x1125.jpg&w=3840&q=75)
-
 Earlier this year, we shared an [update on our election safeguards](https://www.anthropic.com/news/election-safeguards-update), which described how we measure and prevent political bias, detect misuse, and direct people to accurate voting information.
 
 Below, we outline how we've built on that work and continued to strengthen our election safeguards ahead of this year’s US midterms.
@@ -55,7 +51,7 @@ We're addressing this in a few ways. We've improved how Claude responds to direc
 
 Our [Usage Policy](https://www.anthropic.com/legal/aup) prohibits using Claude to deceive voters or disrupt elections, from spreading false information about candidates or how to vote, to impersonating election officials or trying to suppress turnout. Each year, we update the policy to reflect our models’ evolving capabilities and feedback from our customers. This year’s update, which we [announced](https://www.anthropic.com/news/2026-usage-policy-update) last week, clarifies what our election rules cover and what they don't, and adds new examples to help people understand where the lines fall.
 
-We know many political campaigns use Claude for legitimate, everyday tasks, so we recently [published a guide](https://cdn.sanity.io/files/4zrzovbb/website/027b10ca405e9bb66b98c88d911b4b21a0b70123.pdf) to help them understand where these policies apply. It covers the many ways campaigns can put Claude to work, such as drafting press statements and fundraising emails, prepping for debates, analyzing turnout data, and building voter outreach materials. It also spells out what’s prohibited, such as using Claude to create fake social media profiles that pose as real people, mass-producing comments to inflate a campaign’s engagement, or writing content for news sites and pages that falsely claim to be independent.
+We know many political campaigns use Claude for legitimate, everyday tasks, so we recently [published a guide](https://www-cdn.anthropic.com/files/4zrzovbb/website/027b10ca405e9bb66b98c88d911b4b21a0b70123.pdf) to help them understand where these policies apply. It covers the many ways campaigns can put Claude to work, such as drafting press statements and fundraising emails, prepping for debates, analyzing turnout data, and building voter outreach materials. It also spells out what’s prohibited, such as using Claude to create fake social media profiles that pose as real people, mass-producing comments to inflate a campaign’s engagement, or writing content for news sites and pages that falsely claim to be independent.
 
 ### Testing and strengthening our defenses
 
@@ -74,23 +70,3 @@ Our teams have continued to investigate and prevent coordinated abuse around ele
 ### Looking ahead
 
 More people are turning to Claude for information about this year’s elections than ever before. We have a responsibility to make sure the answers they get are accurate and balanced, and that Claude isn’t used to undermine the democratic process. We’ll continue to invest in making Claude more evenhanded, preventing and addressing misuse, and being transparent in our actions. This work will be critical in the upcoming US midterms and extends to elections around the world as well. In the coming months, we also hope to share a more comprehensive look at how people used Claude throughout the election cycle, with the goal of strengthening our election-related evaluations and safeguards.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Anthropic opens Singapore office and signs MOU with the Government of Singapore
-
-Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
-
-[Read more](https://www.anthropic.com/news/singapore-office-opening)

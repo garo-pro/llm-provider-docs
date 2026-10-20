@@ -3,9 +3,7 @@ Title: How AI assistance impacts the formation of coding skills
 URL Source: https://www.anthropic.com/research/AI-assistance-coding-skills
 
 Markdown Content:
-![How AI assistance impacts the formation of coding skills](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F01427b8d51a7abec0d19140db298a8eb28dd66af-2000x1125.png&w=3840&q=75)
-
-Research shows AI helps people do [parts](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945566) of their job faster. In an observational [study](https://www.anthropic.com/research/estimating-productivity-gains) of [Claude.ai](http://claude.ai/redirect/website.v1.0) data, we found AI can speed up some tasks by 80%. But does this increased productivity come with trade-offs? Other research shows that when people use AI assistance, they become [less engaged with their work](https://www.nature.com/articles/s41598-025-98385-2) and [reduce](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf) the effort they put into doing it—in other words, they offload their thinking to AI.
+Research shows AI helps people do [parts](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4945566) of their job faster. In an observational [study](https://www.anthropic.com/research/estimating-productivity-gains) of [Claude.ai](http://claude.ai) data, we found AI can speed up some tasks by 80%. But does this increased productivity come with trade-offs? Other research shows that when people use AI assistance, they become [less engaged with their work](https://www.nature.com/articles/s41598-025-98385-2) and [reduce](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf) the effort they put into doing it—in other words, they offload their thinking to AI.
 
 It’s unclear whether this cognitive offloading can prevent people from growing their skills on the job, or—in the case of coding—understanding the systems they’re building. Our latest study, a randomized controlled trial with software developers as participants, investigates this potential downside of using AI at work.
 
@@ -23,9 +21,9 @@ We recruited 52 (mostly junior) software engineers, each of whom had been using 
 
 We split the study into three parts: a warm-up; the main task consisting of coding two different features using Trio (which requires understanding concepts related to asynchronous programming, a skill often learned in a professional setting); and a quiz. We told participants that a quiz would follow the task, but encouraged them to work as quickly as possible.
 
-We designed the coding task to mimic how someone might learn a new tool through a self-guided tutorial. Each participant was given a problem description, starter code, and a brief explanation of the Trio concepts needed to solve it. We used an online coding platform with an AI assistant in the sidebar which had access to participants’ code and could at any time produce the correct code if asked.<sup>1</sup>
+We designed the coding task to mimic how someone might learn a new tool through a self-guided tutorial. Each participant was given a problem description, starter code, and a brief explanation of the Trio concepts needed to solve it. We used an online coding platform with an AI assistant in the sidebar which had access to participants’ code and could at any time produce the correct code if asked.[1](https://www.anthropic.com#footnote-1)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb009bf674206d736940ade254b112d1cf9fd380e-4584x2580.png&w=3840&q=75)
+![Diagram titled “Study design,” showing a four-stage sequence with arrows between stages, for a treatment group and a control group: a 10-minute warm-up coding task, a 35-minute trio task, a 25-minute post-task quiz, and a 5-minute post-task survey. The treatment group has no AI in any stage except the trio task, where it has AI assistance. The control group has no AI in any stage.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb009bf674206d736940ade254b112d1cf9fd380e-4584x2580.png&w=3840&q=75)
 
 ### Evaluation design
 
@@ -42,7 +40,7 @@ Our assessment focused most heavily on debugging, code reading, and conceptual p
 
 On average, participants in the AI group finished about two minutes faster, although the difference was not statistically significant. There was, however, a significant difference in test scores: the AI group averaged 50% on the quiz, compared to 67% in the hand-coding group—or the equivalent of nearly two letter grades (Cohen's *d*=0.738, *p*=0.01). The largest gap in scores between the two groups was on debugging questions, suggesting that the ability to understand when code is incorrect and why it fails may be a particular area of concern if AI impedes coding development.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fab5167a53ff0de956bd500b01b30d8aba028d843-4584x2580.png&w=3840&q=75)
+![Two-part figure titled “How AI assistance impacts coding speed and skill formation.”  Left, two dot-and-error-bar charts compare the AI and No AI groups. Task time is similar: about 23 minutes with AI versus about 25 without (p = 0.391), with overlapping error bars. Quiz score is lower with AI: about 50% versus about 65% without (p = 0.010, marked significant).  Right, a scatter plot titled “Modes of AI usage” plots skills quiz score (%) against completion time (minutes) for six ways of using AI, split into two groups. High skill development interactions: generation-then-comprehension (24 min, 86%), hybrid code-explanation (24 min, 68%), and conceptual inquiry (22 min, 65%). Low skill development interactions: AI delegation (19.5 min, 39%), progressive AI reliance (22 min, 35%), and iterative AI debugging (31 min, 24%).](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fab5167a53ff0de956bd500b01b30d8aba028d843-4584x2580.png&w=3840&q=75)
 
 ### Qualitative analysis: AI interaction modes
 
@@ -83,44 +81,3 @@ This study is only a first step towards uncovering how human-AI collaboration af
 Ultimately, to accommodate skill development in the presence of AI, we need a more expansive view of the impacts of AI on workers. In an AI-augmented workplace, productivity gains matter, but so does the long-term development of the expertise those gains depend on.
 
 Read the [full paper](https://arxiv.org/abs/2601.20245) for details.
-
-### Acknowledgments
-
-This project was led by Judy Hanwen Shen and Alex Tamkin. Editorial support for this blog post was provided by Jake Eaton, Stuart Ritchie, and Sarah Pollack.
-
-We would like to thank Ethan Perez, Miranda Zhang, and Henry Sleight for making this project possible through the Anthropic Safety Fellows Program. We would also like to thank Matthew Jörke, Juliette Woodrow, Sarah Wu, Elizabeth Childs, Roshni Sahoo, Nate Rush, Julian Michael, and Rose Wang for experimental design feedback.
-
-```
-@misc{aiskillformation2026,
-  author = {Shen, Judy Hanwen and Tamkin, Alex},
-  title = {How AI Impacts Skill Formation},
-  year = {2026},
-  eprint = {2601.20245},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.LG},
-  eprinttype = {arxiv}
-}
-```
-### Footnotes
-
-1. Importantly, this setup is different from agentic coding products like Claude Code; we expect that the impacts of such programs on skill development are likely to be more pronounced than the results here.
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

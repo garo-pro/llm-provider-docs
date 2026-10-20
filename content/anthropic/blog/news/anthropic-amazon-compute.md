@@ -3,8 +3,6 @@ Title: Anthropic and Amazon expand collaboration for up to 5 gigawatts of new co
 URL Source: https://www.anthropic.com/news/anthropic-amazon-compute
 
 Markdown Content:
-# Anthropic and Amazon expand collaboration for up to 5 gigawatts of new compute
-
 We have signed a new agreement with Amazon that will deepen our existing partnership and secure up to 5 gigawatts (GW) of capacity for training and deploying Claude, including new Trainium2 capacity coming online in the first half of this year and nearly 1GW total of Trainium2 and Trainium3 capacity coming online by the end of 2026.
 
 We have worked closely with Amazon since 2023 and over 100,000 customers now run Claude on Amazon Bedrock. Together we launched Project Rainier, one of the largest compute clusters in the world, and we currently use over one million Trainium2 chips to train and serve Claude. Today’s agreement expands our collaboration in three ways.
@@ -30,23 +28,3 @@ Today’s agreement will quickly expand our available capacity, delivering meani
 To learn more about Anthropic on AWS, visit: [https://aws.amazon.com/bedrock/anthropic/](https://aws.amazon.com/bedrock/anthropic/).
 
 *Updated April 21st to clarify Claude Platform on AWS is coming soon.*
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

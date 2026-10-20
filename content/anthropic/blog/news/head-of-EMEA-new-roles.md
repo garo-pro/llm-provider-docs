@@ -3,8 +3,6 @@ Title: Anthropic appoints Guillaume Princen as Head of EMEA and announces 100+ n
 URL Source: https://www.anthropic.com/news/head-of-EMEA-new-roles
 
 Markdown Content:
-# Anthropic appoints Guillaume Princen as Head of EMEA and announces 100+ new roles across the region
-
 Anthropic today announced the appointment of Guillaume Princen as Head of EMEA. The company also revealed plans to expand across Europe, including its existing Dublin and London offices, creating more than 100 new roles across multiple functions this year.
 
 Guillaume brings a wealth of experience in scaling technology companies across markets. He was Stripe's first employee outside the United States when he joined in 2014. During his seven years there, he built and scaled Stripe's European operations, opening 12 offices and leading Stripe's successful expansion in Europe. Most recently served as CEO of Mooncard, the European expense management platform. Princen’s diverse background encompasses engineering, strategic consulting at McKinsey & Company, and active involvement in the European technology startup ecosystem as both an investor and advisor.
@@ -16,23 +14,3 @@ Over the next year Anthropic intends to hire a variety of roles across sales, en
 **Daniela Amodei, President and co-founder of Anthropic, said**: “EMEA has been central to our vision from the beginning. Since launching Claude in Europe last year, we've seen rapid organic growth amongst businesses and consumers alike, confirming the region’s strategic importance to Anthropic's future. We've long planned to deepen our investment here, and finding the right leadership in Guillaume was the critical piece that allowed us to move forward with the thoughtful expansion we envision. Guillaume brings invaluable expertise in scaling businesses across diverse EMEA markets and his commitment to responsible innovation made him a natural choice to lead this next phase of our growth. Our focus remains on serving the thriving startup ecosystem while continuing to deliver Claude's capabilities to major enterprises across the region—providing the advanced performance, security, and reliability that leading organizations need to transform how they work with AI.”
 
 For more information about current career opportunities at Anthropic visit [anthropic.com/careers](http://anthropic.com/careers).
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

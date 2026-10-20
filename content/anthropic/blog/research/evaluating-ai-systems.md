@@ -3,10 +3,6 @@ Title: Challenges in evaluating AI systems
 URL Source: https://www.anthropic.com/research/evaluating-ai-systems
 
 Markdown Content:
-# Challenges in evaluating AI systems
-
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F53926306eaab2fdc622db676cfc7893124d35e0c-2880x1620.png&w=3840&q=75)
-
 ## Introduction
 
 Most conversations around the societal impacts of artificial intelligence (AI) come down to discussing some quality of an AI system, such as its truthfulness, fairness, potential for misuse, and so on. We are able to talk about these characteristics because we can technically evaluate models for their performance in these areas. But what many people working inside and outside of AI don’t fully appreciate is how difficult it is to build robust and reliable model evaluations. Many of today’s existing evaluation suites are limited in their ability to serve as accurate indicators of model capabilities or safety.
@@ -131,49 +127,3 @@ As we have explored in this post, building meaningful AI evaluations is a challe
 We hope that by openly sharing our experiences evaluating our own systems across many different dimensions, we can help people interested in AI policy acknowledge challenges with current model evaluations.
 
 If you found this post helpful and want to discuss evaluations of AI systems with Anthropic, please email [policy@anthropic.com](mailto:policy@anthropic.com). We are going to spend the next couple of months chatting with more people about this area and will endeavor to share what we learn in those conversations.
-
-If you’d like to cite this post you can use the following Bibtex key:
-
-@online{ganguli2023challenges,
-
-author = {Deep Ganguli and Nicholas Schiefer and Marina Favaro and Jack Clark},
-
-title = {Challenges in evaluating {AI} systems},
-
-date = {2023-10-04},
-
-year = {2023},
-
-url = {[https://www.anthropic.com/index/evaluating-ai-systems](https://www.anthropic.com/research/evaluating-ai-systems)},
-
-}
-
-### Footnotes
-
-[1] How long did it take to develop BBQ? BBQ took the developers ~2 people years spread over 6 months across 8 people to build. Designing and implementing even just a single evaluation is a resource intensive effort that can take tens of people several months.
-
-[2] BIG-bench Hard was released 4 months after BIG-bench that narrowed down to 23 hard tasks. We were implementing BIG-bench before BIG-bench Hard was released.
-
-[3] See for example [Ghost Work](https://ghostwork.info/).
-
-[4] For example, a well-known issue with many facial recognition systems has been higher error rates for certain demographics, like women and people of color. The FRVT reports shined a spotlight on these accuracy discrepancies, which put pressure on vendors to improve their algorithms and mitigate systemic biases.
-
-## Related content
-
-### How Claude designed protein binders against scorpion neurotoxins
-
-We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.
-
-[Read more](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
-
-### Designing more efficient quantum circuits with Claude
-
-We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improved on the best published circuits, in some cases by an order of magnitude or more, which could bring practical quantum computers closer than previously anticipated.
-
-[Read more](https://www.anthropic.com/research/designing-efficient-quantum-circuits)
-
-### Claude reveals ECDSA curve origins
-
-The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.
-
-[Read more](https://www.anthropic.com/research/ecdsa-curve-origins)

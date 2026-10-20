@@ -3,8 +3,6 @@ Title: Cognizant will make Claude available to 350,000 employees, accelerating e
 URL Source: https://www.anthropic.com/news/cognizant-partnership
 
 Markdown Content:
-# Cognizant will make Claude available to 350,000 employees, accelerating enterprise AI adoption and internal transformation
-
 Cognizant, a leading information technology consulting company, announced today that it will use Claude to help its enterprise customers and internal teams move from AI experimentation to production outcomes. Cognizant will deploy Claude to up to 350,000 employees globally, combining Claude with agentic tooling, Cognizant's engineering platforms, and industry blueprints to help deliver measurable impact at enterprise scale.
 
 Cognizant will provide Claude to employees across key corporate functions, engineering, and delivery teams, and use Claude Code to accelerate coding tasks, testing, documentation and DevOps workflows.
@@ -15,7 +13,7 @@ Cognizant will also align Claude models, Claude Code, the Model Context Protocol
 
 “Enterprises are moving beyond simple productivity gains toward a more connected, agentic future,” said Ravi Kumar S, CEO of Cognizant. “By pairing Anthropic’s Claude models and agentic tooling with Cognizant’s suite of platforms and industry expertise, we will help clients build the foundations of an agentified enterprise where intelligent systems collaborate with people to accelerate modernization, engineering and industry transformation. We are equally excited to apply Anthropic’s technology to help us drive these transformation goals internally at Cognizant.”
 
-## **Solving real enterprise challenges**
+### Solving real enterprise challenges
 
 CIOs face critical challenges: thousands of applications running on legacy code, shrinking talent pools who understand these systems, and the majority of engineering resources going to maintaining existing systems rather than building new capabilities.
 
@@ -30,23 +28,3 @@ This partnership directly addresses these challenges. Cognizant is deploying Cla
 Cognizant plans to engage clients through workshops, reference patterns, and platform integrations using Claude to help teams identify high-value use cases and move them into production.
 
 **Getting started:** Visit [this page](https://www.cognizant.com/us/en/engineering-ai-for-impact) and get in touch with a Cognizant client partner.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

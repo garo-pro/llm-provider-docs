@@ -3,8 +3,6 @@ Title: Statement from Dario Amodei on the Paris AI Action Summit
 URL Source: https://www.anthropic.com/news/paris-ai-summit
 
 Markdown Content:
-# Statement from Dario Amodei on the Paris AI Action Summit
-
 We were pleased to attend the AI Action Summit in Paris, and we appreciate the French government’s efforts to bring together AI companies, researchers, and policymakers from across the world. We share the goal of responsibly advancing AI for the benefit of humanity. However, greater focus and urgency is needed on several topics given the pace at which the technology is progressing. The need for democracies to keep the lead, the risks of AI, and the economic transitions that are fast approaching—these should all be central features of the next summit.
 
 Time is short, and we must accelerate our actions to match accelerating AI progress. Possibly [by 2026 or 2027](https://darioamodei.com/on-deepseek-and-export-controls) (and almost certainly no later than 2030), the capabilities of AI systems will be best thought of as akin to an entirely new state populated by highly intelligent people appearing on the global stage—a “country of geniuses in a datacenter”—with the profound economic, societal, and security implications that would bring. There are potentially greater economic, scientific, and humanitarian [opportunities](https://darioamodei.com/machines-of-loving-grace) than for any previous technology in human history—but also serious risks to be managed.
@@ -18,23 +16,3 @@ We are pleased to see commitments from over 16 frontier AI companies to follow s
 Third, while AI has the potential to dramatically **accelerate economic growth** throughout the world, it also has the potential to be highly disruptive. A “country of geniuses in a datacenter” could represent the largest change to the global labor market in human history. A first step is to monitor and observe the economic impacts of today’s AI systems. That’s why this week we released the [Anthropic Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index), which tracks the distribution of economic activities for which people are currently using our AI systems, including whether they augment or automate current human tasks. There is a need for governments to use their much greater resources to do similar measurement and monitoring—and eventually to enact policy focused on ensuring that everyone shares in the economic benefits of very powerful AI.
 
 At the next international summit, we should not repeat this missed opportunity. These three issues should be at the top of the agenda. The advance of AI presents major new global challenges. We must move faster and with greater clarity to confront them.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

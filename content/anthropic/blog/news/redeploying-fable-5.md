@@ -3,9 +3,7 @@ Title: Redeploying Fable 5
 URL Source: https://www.anthropic.com/news/redeploying-fable-5
 
 Markdown Content:
-# Redeploying Fable 5
-
-- UpdateClaude Fable 5 and Mythos 5 redeployed Access to Claude Fable 5 and Mythos 5 is now restored.
+- ### Claude Fable 5 and Mythos 5 redeployedAccess to Claude Fable 5 and Mythos 5 is now restored.
 
 On Friday, June 12, the US government applied export controls to our newest models, Claude Fable 5 and Claude Mythos 5. This required us to restrict access to foreign nationals, whether inside or outside the United States. Because the order took effect immediately and we had no reliable way to verify nationality in real-time, we suspended access to both models for all users.
 
@@ -22,7 +20,7 @@ In the remainder of this post, we provide further details and updates in four ar
 3. *A shared industry framework* . Although we have reached a constructive resolution, these events have made clear that the industry needs a consistent way to assess and fix potential “jailbreaks” of AI models (techniques that bypass a model’s safeguards).<sup>[2](https://www.anthropic.com#footnote-2)</sup> A shared standard for judging the severity of a given jailbreak would help AI developers triage new findings as they arise, launch highly capable models with greater safety, and communicate the level of risk consistently to government and industry partners. Together with Amazon, Microsoft, Google, and other Glasswing partners, we’ve started to develop such a framework, and we outline it below.
 4. *Deeper government collaboration* . We’re also strengthening our level of collaboration with the US government on new pre-release testing, information sharing, and research collaboration. We describe this deeper collaboration in the final section.
 
-## Timeline and safeguard updates
+### Timeline and safeguard updates
 
 We released [Fable 5 and Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) on Tuesday, June 9. They both share the same underlying model, but Fable 5 was released with strong safeguards to make it safer for general use. Mythos 5, which has fewer safeguards, was only released to a small number of trusted Project Glasswing partners for use in defensive cybersecurity.
 
@@ -38,7 +36,7 @@ The new classifier means that the specific technique described in the Amazon rep
 
 The new classifier also comes at the cost of flagging benign requests more often during routine coding and debugging tasks. As with all our safeguards, we’ll continue to refine this to better distinguish genuine misuse from legitimate requests and reduce false positives.
 
-## Our approach to cybersecurity safeguards
+### Our approach to cybersecurity safeguards
 
 Claude Mythos 5 can be used to find and exploit software vulnerabilities more effectively than any other model—and all but the most skilled human security experts. These prodigious cybersecurity capabilities make it uniquely attractive to malicious actors who wish to misuse it in cyberattacks.
 
@@ -74,7 +72,7 @@ As we noted [when we launched Fable 5](https://www.anthropic.com/news/claude-fab
 
 The cautious approach outlined above means that the vast majority of jailbreaks will not successfully unblock dangerous behaviors. Our classifiers make successful jailbreaks very costly and high-effort to produce, and even *if* a jailbreak is successful, our extra layers of defense provide additional mitigation. We’ll continue to update our classifiers as we learn more about novel jailbreak techniques.
 
-## A consensus industry framework for jailbreaks
+### A consensus industry framework for jailbreaks
 
 There’s currently no consensus in the AI industry on how to describe, in objective terms, the severity of an AI jailbreak. This adds a great deal of uncertainty whenever a new jailbreak technique is discovered: developers have no agreed-upon standard for which findings to focus on most urgently, and governments have no agreed-upon standard for when to act.[4](https://www.anthropic.com#footnote-4)
 
@@ -95,7 +93,7 @@ Any method of scoring jailbreaks will be imperfect. Still, there is value in bei
 
 We expect to share more details on the proposed framework soon. In the meantime, we’re also launching a new [HackerOne program](https://hackerone.com/anthropic-cyber-jailbreak/) where security researchers can submit potential cyber jailbreaks they’ve discovered in Fable 5 (once available) for our review.
 
-## Partnering with the US government on frontier AI security
+### Partnering with the US government on frontier AI security
 
 Over the past ten weeks, Anthropic has worked closely with the US government as it developed the approach reflected in the June 2 Executive Order on [*Promoting Advanced Artificial Intelligence Innovation and Security*](https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/). Our engagement spanned the Office of the National Cyber Director, the Office of Science and Technology Policy, the Department of the Treasury, the Department of Commerce (including CAISI), and relevant national security agencies.
 
@@ -111,23 +109,3 @@ Our hope is that this collaboration, along with our proposed consensus industry 
 These rules should be codified in strong regulation and applied equally across frontier model developers. Government involvement in AI releases requires a durable, transparent process that gives cyber defenders and others the certainty they need about access to powerful models.
 
 We look forward to deepening our government collaboration in the ways we’ve described above. We’re also grateful to our users for bearing with us through this disruption, and to the researchers and industry partners who worked alongside us to make Fable 5 and Mythos 5 available again.
-
-## Related content
-
-### Investing in the public benefit
-
-We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.
-
-[Read more](https://www.anthropic.com/news/public-benefit-fund)
-
-### An update on independent evaluators
-
-To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
-
-[Read more](https://www.anthropic.com/news/an-update-on-independent-evaluators)
-
-### Preparing for the 2026 US midterms
-
-Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
-
-[Read more](https://www.anthropic.com/news/2026-us-midterms)

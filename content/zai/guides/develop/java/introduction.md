@@ -8,23 +8,21 @@ Z.AI Java SDK is the official Java development toolkit provided by Z.AI, offerin
 
 ### Core Advantages
 
-<CardGroup cols={2}>
-  <Card title="Enterprise-grade" icon="building">
-    Designed for enterprise applications, supports high concurrency and high availability
-  </Card>
+> **Enterprise-grade**
+>
+> Designed for enterprise applications, supports high concurrency and high availability
 
-  <Card title="Easy Integration" icon="plug">
-    Clean API design, comprehensive documentation, quick integration into existing projects
-  </Card>
+> **Easy Integration**
+>
+> Clean API design, comprehensive documentation, quick integration into existing projects
 
-  <Card title="Type Safety" icon="shield-check">
-    Complete type definitions, compile-time error checking, reducing runtime errors
-  </Card>
+> **Type Safety**
+>
+> Complete type definitions, compile-time error checking, reducing runtime errors
 
-  <Card title="High Performance" icon="gauge-high">
-    Optimized network request handling, supports connection pooling and asynchronous calls
-  </Card>
-</CardGroup>
+> **High Performance**
+>
+> Optimized network request handling, supports connection pooling and asynchronous calls
 
 ### Supported Features
 
@@ -58,39 +56,35 @@ The SDK adopts a modular design, allowing you to selectively import functional m
 
 ### Environment Requirements
 
-<CardGroup cols={2}>
-  <Card title="Java Version" icon="java">
-    Java 1.8 or higher
-  </Card>
+> **Java Version**
+>
+> Java 1.8 or higher
 
-  <Card title="Build Tools" icon="hammer">
-    Maven 3.6+ or Gradle 6.0+
-  </Card>
-</CardGroup>
+> **Build Tools**
+>
+> Maven 3.6+ or Gradle 6.0+
 
-<Warning>
-  Supports Java 8, 11, 17, 21 versions, cross-platform compatible with Windows, macOS, Linux
-</Warning>
+> [!WARNING]
+>
+> Supports Java 8, 11, 17, 21 versions, cross-platform compatible with Windows, macOS, Linux
 
 ### Add Dependencies
 
-<Tabs>
-  <Tab title="Maven">
-    ```xml theme={null}
-    <dependency>
-        <groupId>ai.z.openapi</groupId>
-        <artifactId>zai-sdk</artifactId>
-        <version>0.3.5</version>
-    </dependency>
-    ```
-  </Tab>
+**Maven**
 
-  <Tab title="Gradle">
-    ```gradle theme={null}
-    implementation 'ai.z.openapi:zai-sdk:0.3.5'
-    ```
-  </Tab>
-</Tabs>
+```xml theme={null}
+<dependency>
+    <groupId>ai.z.openapi</groupId>
+    <artifactId>zai-sdk</artifactId>
+    <version>0.3.5</version>
+</dependency>
+```
+
+**Gradle**
+
+```gradle theme={null}
+implementation 'ai.z.openapi:zai-sdk:0.3.5'
+```
 
 ### Get API Key
 
@@ -98,52 +92,50 @@ The SDK adopts a modular design, allowing you to selectively import functional m
 2. Create a Standard API Key in the [API Keys](https://z.ai/manage-apikey/apikey-list) management page.
 3. Copy your API Key for use.
 
-<Tip>
-  It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
-</Tip>
+> [!TIP]
+>
+> It is recommended to set the API Key as an environment variable: `export ZAI_API_KEY=your-api-key`
 
-<Note>
-  Domestic Z.AI platform uses ZaiClient
-
-  Domestic API URL: [https://api.z.ai/api/paas/v4/](https://api.z.ai/api/paas/v4/)
-</Note>
+> [!NOTE]
+>
+> Domestic Z.AI platform uses ZaiClient
+>
+> Domestic API URL: [https://api.z.ai/api/paas/v4/](https://api.z.ai/api/paas/v4/)
 
 #### Create Client
 
-<Tabs>
-  <Tab title="Environment Variable">
-    ```java theme={null}
-    import ai.z.openapi.ZaiClient;
+**Environment Variable**
 
-    public class QuickStart {
-        public static void main(String[] args) {
-            // Read API Key from environment variable
-            ZaiClient client = ZaiClient.builder().ofZAI()
-                .apiKey(System.getenv("ZAI_API_KEY"))
-                .build();
-            
-            // Or use directly (if environment variable is set)
-            ZaiClient client2 = ZaiClient.builder().ofZAI().build();
-        }
+```java theme={null}
+import ai.z.openapi.ZaiClient;
+
+public class QuickStart {
+    public static void main(String[] args) {
+        // Read API Key from environment variable
+        ZaiClient client = ZaiClient.builder().ofZAI()
+            .apiKey(System.getenv("ZAI_API_KEY"))
+            .build();
+        
+        // Or use directly (if environment variable is set)
+        ZaiClient client2 = ZaiClient.builder().ofZAI().build();
     }
-    ```
-  </Tab>
+}
+```
 
-  <Tab title="Direct Setting">
-    ```java theme={null}
-    import ai.z.openapi.ZaiClient;
+**Direct Setting**
 
-    public class QuickStart {
-        public static void main(String[] args) {
-            // Set API Key directly
-            ZaiClient client = ZaiClient.builder().ofZAI()
-                .apiKey("YOUR_API_KEY")
-                .build();
-        }
+```java theme={null}
+import ai.z.openapi.ZaiClient;
+
+public class QuickStart {
+    public static void main(String[] args) {
+        // Set API Key directly
+        ZaiClient client = ZaiClient.builder().ofZAI()
+            .apiKey("YOUR_API_KEY")
+            .build();
     }
-    ```
-  </Tab>
-</Tabs>
+}
+```
 
 #### Basic Conversation
 
@@ -422,27 +414,25 @@ public class FunctionCallingExample {
 
 ## Getting Help
 
-<CardGroup cols={2}>
-  <Card title="GitHub Repository" icon="github" href="https://github.com/zai-org/z-ai-sdk-java">
-    View source code, submit issues, contribute
-  </Card>
+> **[GitHub Repository](https://github.com/zai-org/z-ai-sdk-java)**
+>
+> View source code, submit issues, contribute
 
-  <Card title="API Reference" icon="book" href="/api-reference">
-    View complete API documentation
-  </Card>
+> **[API Reference](/api-reference)**
+>
+> View complete API documentation
 
-  <Card title="Example Projects" icon="code" href="https://github.com/zai-org/z-ai-sdk-java/tree/main/samples">
-    Browse more practical application examples
-  </Card>
+> **[Example Projects](https://github.com/zai-org/z-ai-sdk-java/tree/main/samples)**
+>
+> Browse more practical application examples
 
-  <Card title="Best Practices" icon="star" href="https://github.com/zai-org/z-ai-sdk-java">
-    Learn best practices for SDK usage
-  </Card>
-</CardGroup>
+> **[Best Practices](https://github.com/zai-org/z-ai-sdk-java)**
+>
+> Learn best practices for SDK usage
 
-<Note>
-  This SDK is developed based on the latest API specifications from Z.AI, ensuring synchronization with platform features. It is recommended to regularly update to the latest version for the best experience.
-</Note>
+> [!NOTE]
+>
+> This SDK is developed based on the latest API specifications from Z.AI, ensuring synchronization with platform features. It is recommended to regularly update to the latest version for the best experience.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.
