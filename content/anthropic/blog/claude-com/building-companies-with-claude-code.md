@@ -160,4 +160,4 @@ Traditional barriers to building software—technical expertise, team size, deve
 “We’re automating the mundane. 80% of Sales work today is manual, laborious, data work. In the era of AI, humans can focus on truly human, creative work, and we can leave the data work in the hands of AI.”
 
 
-“Claude Sonnet 4.5's intelligence is immediately noticeable—it makes better use of Augment's codebase context, handles longer-horizon tasks, and opens up new agentic possibilities we're actively exploring.”
+“Claude Sonnet 4.5’s intelligence is immediately noticeable—it makes better use of Augment’s codebase context, handles longer-horizon tasks, and opens up new agentic possibilities we’re actively exploring.”

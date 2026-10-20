@@ -89,7 +89,7 @@ When you're ready to adopt agentic coding, [Claude Code](https://claude.com/prod
 
 Installation takes just minutes and works in your terminal or IDE.
 
-“Claude Sonnet 4.5's intelligence is immediately noticeable—it makes better use of Augment's codebase context, handles longer-horizon tasks, and opens up new agentic possibilities we're actively exploring.”
+“Claude Sonnet 4.5’s intelligence is immediately noticeable—it makes better use of Augment’s codebase context, handles longer-horizon tasks, and opens up new agentic possibilities we’re actively exploring.”
 
 
 Once installed, navigate to your project directory and run `claude` to start a session. Claude Code analyzes your project structure, identifies your framework and language patterns, and prepares to work with your specific development environment. You maintain full control: Claude Code asks for your approval before making any file changes.

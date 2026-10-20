@@ -196,17 +196,23 @@ Add `segments[]=platform` to split delivery metrics by ChatGPT app or web
 browser. Include `fields[]=platform` to return the platform value in each row.
 Platform is a separate dimension from the `device` breakdown.
 
-| Response value | Platform    |
-| -------------- | ----------- |
-| `android_app`  | Android app |
-| `android_web`  | Android web |
-| `desktop_web`  | Desktop web |
-| `ios_app`      | iOS app     |
-| `ios_web`      | iOS web     |
-| `web`          | Web         |
+| Response value | Platform         |
+| -------------- | ---------------- |
+| `android_app`  | Android app      |
+| `android_web`  | Android web      |
+| `desktop_web`  | Desktop web      |
+| `ios_app`      | iOS app          |
+| `ios_web`      | iOS web          |
+| `web`          | Web              |
+| `unknown`      | Unknown platform |
 
 Historical `web` rows keep combined web totals. They aren't split
 retroactively into Android web, Desktop web, or iOS web rows.
+The `web` value also includes web clients that aren't classified as Android web,
+Desktop web, or iOS web.
+
+The `unknown` value includes activity with missing or unrecognized client
+information. Windows and macOS app activity currently appears under `unknown`.
 
 A `platform` filter with `IN` and `web` includes all web platforms: `web`,
 `android_web`, `desktop_web`, and `ios_web`. For example:
