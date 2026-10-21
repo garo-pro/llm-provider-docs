@@ -269,7 +269,7 @@ the API does not truncate values.
 | `countries`              | `list[string]` | Raw two-letter country codes, such as `US`.                                                                                    |
 | `android_advertising_id` | `string`       | Raw Android Google Advertising ID (GAID) in UUID format. Available only through the Conversions API.                           |
 | `obref`                  | `string`       | Opaque browser reference from the Pixel's `__obref` cookie. Pass it without hashing.                                           |
-| `ip_address`             | `string`       | Valid IPv4 or IPv6 address.                                                                                                    |
+| `ip_address`             | `string`       | Valid IPv4 or IPv6 address of the user's device that generated the event. Send without hashing.                                |
 | `user_agent`             | `string`       | Non-empty user agent string from the client that generated the event.                                                          |
 
 `android_advertising_id` supports Android GAID only; IDFA is not supported. You

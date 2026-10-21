@@ -31,7 +31,6 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 | GLM-5.3-Flash | Delivering frontier intelligence at radically lower cost | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash) [API Reference](/api-reference/llm/chat-completion) |
 | GLM-5.3-FlashX | Delivering inference speeds of 200 tokens/s | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash) [API Reference](/api-reference/llm/chat-completion) |
 | GLM-5.3 | Claude Fable 5-level coding and agent capabilities  Stronger in long-horizon, complex tasks | English & Chinese | 1M | [Guide](/guides/llm/glm-5.3) [API Reference](/api-reference/llm/chat-completion) |
-| GLM-5.2 | Open-source SOTA coding, from generation to delivery | English & Chinese | 1M | [Guide](/guides/llm/glm-5.2) [API Reference](/api-reference/llm/chat-completion) |
 
 > [!TIP]
 >
@@ -47,6 +46,8 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 >
 > | Model | Strength | Language | Context | Resource |
 > | :- | :- | :- | :- | :- |
+> | GLM-5.3-FlashX-Legal | A Model Optimized for Legal Applications Enabling End-to-End Workflows for Legal Research | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash#glm-5-3-flashx-legal) [API Reference](/api-reference/llm/chat-completion) |
+> | GLM-5.2 | Open-source SOTA coding, from generation to delivery | English & Chinese | 1M | [Guide](/guides/llm/glm-5.2) [API Reference](/api-reference/llm/chat-completion) |
 > | GLM-5.1 | Coding proficiency aligned with Opus 4.6 Ability to work independently and consistently for up to 8 hours on a single task | English & Chinese | 200K | [Guide](/guides/llm/glm-5.1) [API Reference](/api-reference/llm/chat-completion) |
 > | GLM-5 | Agentic Long-Term Planning and Execution Backend refactoring and in-depth debugging | English & Chinese | 200K | [Guide](/guides/llm/glm-5) [API Reference](/api-reference/llm/chat-completion) |
 > | GLM-4.7 | SOTA Performance Optimized Agentic Coding | English & Chinese | 200K | [Guide](/guides/llm/glm-4.7) [API Reference](/api-reference/llm/chat-completion) |

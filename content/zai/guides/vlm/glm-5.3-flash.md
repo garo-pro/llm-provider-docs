@@ -48,7 +48,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 
 #### **Model API**
 
-* **Model Code**：`glm-5.3-flash`/`glm-5.3-flashx`
+* **Model Code**：`glm-5.3-flash`/`glm-5.3-flashx`/`glm-5.3-flashx-legal`
 * **API Documentation**：[Chat Completion API](https://docs.z.ai/api-reference/introduction)
 * **Parameter Settings**：Text parameters are consistent with GLM-5.3, with support for a 1M-token context window.
 * **Image Parameters**：Add a content block with `type: image_url` to` messages[].content[]`, and pass the image URL (recommended) or a Base64 Data URL through `image_url.url`. Multiple images can be added by including multiple `image_url` content blocks.
@@ -198,6 +198,52 @@ Compared with our initial baseline on the same hardware, we achieved a 3× impro
 #### Conclusion
 
 GLM-5.3-Flash shows that frontier intelligence does not have to come at frontier cost. This is not the result of any single trick, but of three layers working together: an architecture that delivers stronger capability from less compute, a richer multimodal pre-training corpus, and infrastructure co-designed with inference hardware. We are now scaling this recipe to larger models — GLM-5.3-Flash pushes the cost-performance frontier, and the lessons from building it are already shaping our next frontier model.
+
+## GLM-5.3-FlashX-Legal
+
+### Overview
+
+**GLM-5.3-FlashX-Legal (GLM-Legal)** is a model optimized for professional legal workflows, with a focus on document understanding, legal reasoning, and task execution. It covers scenarios such as legal research, contract review, and legal document drafting, helping legal professionals work from source material analysis through to initial drafts.
+
+**API access is available to selected enterprise customers by application.** [Apply for Trial Access and Business Collaboration](https://z.ai/consultation/legal)
+
+### Specialized MCP Integrations
+
+For a more complete legal workflow experience, we recommend using the model in an agent environment connected to specialized MCP services. The model handles document understanding, legal reasoning, and task planning, while MCP services provide external data such as laws, cases, and company information, as well as tools for creating and revising Word documents.
+
+Choose the following MCP services based on your task requirements: [Recommended Installation List by Country/Region](/guides/legal-mcp).
+
+### AutoClaw Legal Assistant
+
+For a ready-to-use legal workspace, explore [AutoClaw Legal Assistant](https://autoclaw.z.ai/). It covers workflows such as legal research, contract review, and document drafting, and provides legal AI capabilities through plugins for Word and WPS.
+
+### In Detail
+
+#### Specialized Training for Real-World Legal Workflows
+
+GLM-5.3-FlashX-Legal undergoes legal-domain mid-training and post-training. The model first builds a strong professional foundation using large-scale, high-quality legal data, then undergoes reinforcement learning in tens of thousands of task environments modeled on real-world legal workflows. This improves its ability to understand documents, apply legal knowledge, and produce deliverables.
+
+Training focuses on multi-step tasks in actual legal practice, including reading materials, analyzing issues, calling tools, and drafting documents, enabling the model to better assist professionals with complex work.
+
+#### Performance on Legal Benchmarks
+
+On **Harvey LAB**, a benchmark for legal agents, GLM's legal capabilities achieve an **all-criteria pass rate of 19.2%**, an improvement of **12.5 percentage points** over the base model, achieving state-of-the-art performance among open-source models in this evaluation.
+
+![](https://cloud-document-converter.oss-cn-beijing.aliyuncs.com/feishu2md/20261021/1792588276974-biln8h.png)
+
+#### From Professional Analysis to Document Delivery
+
+Legal tasks often require working with multiple documents, external sources, and document versions at the same time. GLM-5.3-FlashX-Legal combines document analysis with specialized tool use to organize issues requiring clarification, supporting references, and revision suggestions, then turn them into due diligence working papers, defense strategies, or initial contract revisions.
+
+For tasks involving Word files, the Document Drafting and Document Revision MCP services support formatting, tracked changes, and comments, making it easier for legal professionals to review and continue editing.
+
+#### Use Cases
+
+* **Document understanding and cross-checking**: Extract key information from contracts, corporate registration records, and litigation materials, and check consistency across multiple documents.
+* **Legal issue analysis**: Use facts, evidence, and research results to identify legal relationships, issues in dispute, and lines of argument.
+* **Contract review and negotiation support**: Identify clause-level risks and potential conflicts, compare multiple rounds of revisions, and propose amendments based on different negotiation positions.
+* **Legal document drafting**: Produce initial drafts based on task requirements and reference materials, and use document processing tools to create or revise Word files.
+* **Specialized tool integration**: Work with legal data and document processing MCP services to support research, analysis, and document delivery.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.
