@@ -3,8 +3,6 @@ Title: Partnerships
 URL Source: https://www.anthropic.com/news/partnerships
 
 Markdown Content:
-[News](https://www.anthropic.com/news)
-
 # Partnerships
 
 50

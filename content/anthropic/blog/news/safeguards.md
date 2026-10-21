@@ -3,8 +3,6 @@ Title: Safeguards
 URL Source: https://www.anthropic.com/news/safeguards
 
 Markdown Content:
-[News](https://www.anthropic.com/news)
-
 # Safeguards
 
 22

@@ -102,4 +102,4 @@ The output of this code:
 
 ### License
 
-To the extent possible under law, the authors have waived all copyright and related or neighboring rights to the code on this page, dedicating it to the public domain under CC0 1.0 Universal ([https://creativecommons.org/publicdomain/zero/1.0/]).
+To the extent possible under law, the authors have waived all copyright and related or neighboring rights to the code on this page, dedicating it to the public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).

@@ -177,7 +177,7 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
         Notes
       </td>
 
-      <td colSpan={2}>
+      <td colSpan="2">
         “Maximum” refers to the total number of Tokens that can actually be consumed when the **off-peak consumption multiplier** applies.
 
         The current quota consumption rules for each model are as follows:

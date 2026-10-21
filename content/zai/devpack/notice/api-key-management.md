@@ -60,7 +60,7 @@ Common endpoints and their billing behavior are listed below:
       <td>OpenAI Chat Completions — Coding Plan endpoint</td>
       <td>[https://api.z.ai/api/coding/paas/v4](https://api.z.ai/api/coding/paas/v4)</td>
 
-      <td rowSpan={3}>
+      <td rowSpan="3">
         <ul>
           <li>If the account has ever had a Coding Plan, calls use plan quota. Calls stop when the plan expires.</li>
           <li>If the account has never had a Coding Plan, calls use the account balance or applicable usage bundles.</li>

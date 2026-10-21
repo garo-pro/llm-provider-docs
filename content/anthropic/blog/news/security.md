@@ -3,8 +3,6 @@ Title: Security
 URL Source: https://www.anthropic.com/news/security
 
 Markdown Content:
-[News](https://www.anthropic.com/news)
-
 # Security
 
 15

@@ -58,7 +58,7 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
 
   <tbody>
     <tr>
-      <td rowSpan={2}>Model</td>
+      <td rowSpan="2">Model</td>
       <td>GLM-5.3</td>
       <td>6.9</td>
       <td>1.7</td>
@@ -74,7 +74,7 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
     </tr>
 
     <tr>
-      <td rowSpan={3}>MCP Server</td>
+      <td rowSpan="3">MCP Server</td>
       <td>Web Search</td>
       <td>—</td>
       <td>—</td>

@@ -38,9 +38,9 @@ When Claude searches your previous chats, you will see this reflected in your cu
 
 ## Can I prevent Claude from searching my past chats?
 
-Yes, navigate to **[Settings > Memory](https://claude.ai/new#settings/customize-memory)** and switch the toggle next to "Search and reference chats" off:
+Yes, navigate to **[Settings > Memory](https://claude.ai/new#settings/customize-memory)** and switch the toggle next to **Search and reference chats** off.
 
-![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2533482439/4dee2d7b267f865205feefc8f4f3/cb60c334-d1e2-4828-a01d-dfb36bbaa7eb)
+**Note:** This setting also controls whether Claude Duet, a research preview for Pro and Max plans, can search your past chats. Learn more about **[getting started with Claude](https://support.claude.com/en/articles/17631495)**[**Duet**](https://support.claude.com/en/articles/17631495).
 
 ## Can I exclude a specific past chat from searches?
 
@@ -75,6 +75,8 @@ Each project has its own memory. While working in a project, Claude uses the pro
 ### One memory across chat and Claude Cowork
 
 What Claude remembers from your chats is available when you hand it a task in Cowork in the cloud, and what comes up in a Cowork task carries back to chat. For example, ask Cowork to draft an update for your manager, and it already knows who that is and how they like updates written.
+
+Claude Duet, a research preview for Pro and Max plans, also uses and adds to your memory, so what Claude knows about you is there from your first message.
 
 To run a single chat or Cowork task without memory, open a new chat, click the “+” menu, and turn off "Memory." Claude won't use or add to your memory in that chat or task, and your other chats and tasks aren't affected. Your memory setting is set when the task starts and can't be changed later.
 
