@@ -118,13 +118,21 @@ For recommended Security settings and architecture, see **[Unified Claude and Co
 
 ## Data retention and deletion
 
-1. Conversations. Conversations are kept until the member deletes them or according to your organization's custom data retention setting (30-day minimum). See **[custom data retention](https://support.claude.com/en/articles/10440198)**.
+1. Conversations. Conversations are kept until the member deletes them or according to your organization's custom data retention setting if you’ve set one (minimum 30 days). See **[custom data retention](https://support.claude.com/en/articles/10440198)**. Conversations in a project follow the project’s retention period. The period is measured from the most recent activity in the conversation or in any cloud session Claude started from it, so a conversation isn’t deleted while one of its cloud sessions is in use.
 
-2. Cloud sessions started from a conversation. When Claude starts a cloud session in a conversation, that session is deleted together with the conversation per our **[data retention practices](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data)**: when a member deletes the conversation or its project, or when it reaches your custom retention period. The sandbox environment expires 30 days after it was created, and the conversation then continues in a fresh environment.
+2. Cloud sessions started from a conversation. When a conversation is deleted, whether by a member, by deleting its project, or under your retention period, the cloud sessions Claude started in it are deleted too, including their transcripts.
 
-3. Cloud sessions started outside a conversation. Cowork cloud sessions that a member starts on their own, whether or not they're in a project, and scheduled task runs don't belong to a conversation. Custom data retention doesn't cover them.
+3. Not deleted with a conversation. Custom data retention doesn’t cover:
 
-4. Once the new unified Claude experience is turned on, memory will no longer be deleted according to your organization’s custom data retention setting for the public beta. Memory deletion will be covered by custom data retention when the new unified Claude experience is generally available.
+  1. Cowork cloud sessions a member starts directly, including in a project. These are kept until the member deletes them.
+
+  2. Scheduled tasks and their runs, including tasks created from a conversation. These keep running after that conversation is deleted. To prevent this, turn off Scheduled tasks.
+
+  3. Cowork history stored on a member’s computer.
+
+4. Memory during the public beta. Memory isn’t covered by your retention setting during the beta. When you turn on the new experience, each member’s existing memory is copied into it, and memory from conversations that are later deleted can remain. If you turn the experience off, that memory is kept. We plan to apply your retention setting to memory, including memory created during the beta, at general availability, and will update this article.
+
+As with chat, we may retain content flagged by our trust and safety systems or as required by law. See **[How long do you store my organization’s data?](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data)**
 
 ---
 

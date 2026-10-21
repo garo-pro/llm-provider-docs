@@ -7,7 +7,7 @@ Markdown Content:
 
 # Partnerships
 
-51
+50
 
 ARTICLES
 
