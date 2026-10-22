@@ -30,23 +30,23 @@
 
 ## Capability
 
-> **[Thinking Mode](/guides/capabilities/thinking-mode)**
+> **[Thinking Mode](/guides/capabilities/thinking-mode.md)**
 >
 > Offering multiple thinking modes for different scenarios
 
-> **[Streaming Output](/guides/capabilities/streaming)**
+> **[Streaming Output](/guides/capabilities/streaming.md)**
 >
 > Support real-time streaming responses to enhance user interaction experience
 
-> **[Function Call](/guides/capabilities/function-calling)**
+> **[Function Call](/guides/capabilities/function-calling.md)**
 >
 > Powerful tool invocation capabilities, enabling integration with various external toolsets
 
-> **[Context Caching](/guides/capabilities/cache)**
+> **[Context Caching](/guides/capabilities/cache.md)**
 >
 > Intelligent caching mechanism to optimize performance in long conversations
 
-> **[Structured Output](/guides/capabilities/struct-output)**
+> **[Structured Output](/guides/capabilities/struct-output.md)**
 >
 > Support for structured output formats like JSON, facilitating system integration
 
@@ -148,7 +148,7 @@ Before its official release, GLM-5.2 was made available in advance to GLM Coding
 
 ## Resources
 
-* [API Documentation](/api-reference/llm/chat-completion): Learn how to call the API.
+* [API Documentation](/api-reference/llm/chat-completion.md): Learn how to call the API.
 
 ## Quick Start
 

@@ -230,8 +230,8 @@ You can directly use search functionality in conversations:
 
 * [Model Context Protocol (MCP) Official Documentation](https://modelcontextprotocol.io/)
 * [Claude Code MCP Configuration Guide](https://docs.anthropic.com/en/docs/claude-code/mcp)
-* [MCP Usage Limits](/devpack/overview#usage-instruction)
-* [GLM Coding Plan Overview](/devpack/overview)
+* [MCP Usage Limits](/devpack/overview.md#usage-instruction)
+* [GLM Coding Plan Overview](/devpack/overview.md)
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

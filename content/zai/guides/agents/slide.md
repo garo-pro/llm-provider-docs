@@ -12,7 +12,7 @@ GLM Slide/Poster Agent is an intelligent creation agent built for working people
 
 ## Resources
 
-* [API Documentation](https://docs.z.ai/api-reference/agents/agent): Learn how to call the API.
+* [API Documentation](https://docs.z.ai/api-reference/agents/agent.md): Learn how to call the API.
 
 ## Examples
 

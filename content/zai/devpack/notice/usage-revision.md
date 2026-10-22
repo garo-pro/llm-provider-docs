@@ -9,7 +9,7 @@
 * Publication date: July 30, 2026
 * All dates and times mentioned in this notice are in Singapore Standard Time (UTC+8).
 
-To make usage clearer and easier to predict, GLM Coding Plan is moving to a credits-based system. See the [Subscription](https://z.ai/subscribe) page and the usage guides for [Individual Plans](https://docs.z.ai/devpack/overview#usage-instruction) and [Team Plans](https://docs.z.ai/devpack/teamplan#usage-details) for new plan tiers, prices, credit amounts, and deduction rules.
+To make usage clearer and easier to predict, GLM Coding Plan is moving to a credits-based system. See the [Subscription](https://z.ai/subscribe) page and the usage guides for [Individual Plans](https://docs.z.ai/devpack/overview.md#usage-instruction) and [Team Plans](https://docs.z.ai/devpack/teamplan.md#usage-details) for new plan tiers, prices, credit amounts, and deduction rules.
 
 > [!TIP]
 >
@@ -78,7 +78,7 @@ Plans are not switched automatically. You must subscribe or switch manually.
 
 **Q: Can I still use the migration discount I received on April 30?**
 
-**A:** Yes. If you met the eligibility requirements in the [Legacy Plan Migration Notice](/devpack/transition), your **50% Migration Support discount** remains valid through its original validity period and can be used for the new credits-based plan.
+**A:** Yes. If you met the eligibility requirements in the [Legacy Plan Migration Notice](/devpack/transition.md), your **50% Migration Support discount** remains valid through its original validity period and can be used for the new credits-based plan.
 
 ## Usage Reference for Legacy Plans
 

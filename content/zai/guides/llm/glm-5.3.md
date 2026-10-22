@@ -46,7 +46,7 @@ For complex tasks such as coding, we recommend using `max`. An example is provid
 }
 ```
 
-For a detailed introduction to GLM-5.3’s advanced reasoning capabilities, please refer to the documentation: [Deep Thinking](https://docs.z.ai/guides/capabilities/thinking)
+For a detailed introduction to GLM-5.3’s advanced reasoning capabilities, please refer to the documentation: [Deep Thinking](https://docs.z.ai/guides/capabilities/thinking.md)
 
 ## How to Use
 
@@ -60,7 +60,7 @@ The supported protocols and endpoints are as follows:
 | OpenAI Response Protocol | `	https://api.z.ai/api/v1` |
 | Anthropic Message Protocol | `https://api.z.ai/api/anthropic` |
 
-[↗ API Documentation](https://docs.z.ai/api-reference/llm/chat-completion)：Learn how to call the API
+[↗ API Documentation](https://docs.z.ai/api-reference/llm/chat-completion.md)：Learn how to call the API
 
 > [!NOTE]
 >
@@ -68,18 +68,18 @@ The supported protocols and endpoints are as follows:
 
 #### **GLM Coding Plan**
 
-GLM-5.3 is now fully available, and you can use it with your preferred coding agents. [Guide](https://docs.z.ai/devpack/latest-model)
+GLM-5.3 is now fully available, and you can use it with your preferred coding agents. [Guide](https://docs.z.ai/devpack/latest-model.md)
 
 The new GLM Coding Plan adopts a points-based quota system, providing transparent and predictable usage. Model calls made during off-peak hours, including all day on weekends, consume only 50% of the standard points.
 Subscribe now: [Individual Plan](https://z.ai/subscribe)、[Team Plan](https://z.ai/subscribe?plantype=team).
 
 ## Capability Support
 
-* [Thinking Mode](https://docs.z.ai/guides/capabilities/thinking-mode)：Provides multiple thinking modes to accommodate different task requirements
-* [Streaming Messages](https://docs.z.ai/guides/capabilities/streaming)：Supports real-time streaming responses for an enhanced user interaction experience
-* [Function Calling](https://docs.z.ai/guides/capabilities/function-calling)：Provides powerful tool-calling capabilities and supports integration with a wide range of external tools
-* [Context Caching](https://docs.z.ai/guides/capabilities/cache)：Uses an intelligent caching mechanism to optimize performance in long-context conversations
-* [Structured Output](https://docs.z.ai/guides/capabilities/struct-output)：Supports structured output formats such as JSON for seamless system integration
+* [Thinking Mode](https://docs.z.ai/guides/capabilities/thinking-mode.md)：Provides multiple thinking modes to accommodate different task requirements
+* [Streaming Messages](https://docs.z.ai/guides/capabilities/streaming.md)：Supports real-time streaming responses for an enhanced user interaction experience
+* [Function Calling](https://docs.z.ai/guides/capabilities/function-calling.md)：Provides powerful tool-calling capabilities and supports integration with a wide range of external tools
+* [Context Caching](https://docs.z.ai/guides/capabilities/cache.md)：Uses an intelligent caching mechanism to optimize performance in long-context conversations
+* [Structured Output](https://docs.z.ai/guides/capabilities/struct-output.md)：Supports structured output formats such as JSON for seamless system integration
 
 ## Key Advancements
 

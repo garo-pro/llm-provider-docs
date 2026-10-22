@@ -53,7 +53,7 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 ## Advantages
 
 * **Access to High-Intelligence Models:** Upon release, the GLM series achieved SOTA performance among open-source models in reasoning, coding, and agent capabilities, delivering outstanding results in tool use and complex task execution.
-* **Works with 20+ Agent Tools:** Beyond Claude Code, it also supports ZCode, Cline, OpenCode, AutoClaw, and other [supported tools](https://docs.z.ai/devpack/tool/others#step-1-supported-tools), giving you flexibility across both coding and office workflows.
+* **Works with 20+ Agent Tools:** Beyond Claude Code, it also supports ZCode, Cline, OpenCode, AutoClaw, and other [supported tools](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools), giving you flexibility across both coding and office workflows.
 * **Generous Usage at a Fair Price:** Get higher call limits than standard plans. Starting at just 18 USD per month, with Pro and Max plans designed for high-frequency, complex projects.
 * **Expanded Capabilities:** All plans support Vision Understanding, Web Search MCP， Web Reader MCP and Zread MCP helping you tackle a wider range of coding and office tasks.
 
@@ -68,7 +68,7 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 
 > [!WARNING]
 >
-> For information on Team Plan usage limits, please visit [Team Plan Benefits](/devpack/teamplan).
+> For information on Team Plan usage limits, please visit [Team Plan Benefits](/devpack/teamplan.md).
 
 #### Usage Credit Allowance
 
@@ -174,25 +174,25 @@ Token usage varies depending on the cache hit rate, as shown below:
 
 ### Exclusive MCP Access
 
-> **[Vision Understanding](/devpack/mcp/vision-mcp-server)**
+> **[Vision Understanding](/devpack/mcp/vision-mcp-server.md)**
 
-> **[Web Search](/devpack/mcp/search-mcp-server)**
+> **[Web Search](/devpack/mcp/search-mcp-server.md)**
 
-> **[Web Reader](/devpack/mcp/reader-mcp-server)**
+> **[Web Reader](/devpack/mcp/reader-mcp-server.md)**
 
-> **[Zread](/devpack/mcp/zread-mcp-server)**
+> **[Zread](/devpack/mcp/zread-mcp-server.md)**
 
 ## Next Steps
 
-> **[Quick Start](/devpack/quick-start)**
+> **[Quick Start](/devpack/quick-start.md)**
 >
 > Get up and running in minutes — from subscribing to the plan to using it in your agent tools.
 
-> **[Usage Policy](/devpack/usage-policy)**
+> **[Usage Policy](/devpack/usage-policy.md)**
 >
 > Learn about account usage rules, rate limits, refund policies, and other important guidelines.
 
-> **[FAQ](/devpack/faq)**
+> **[FAQ](/devpack/faq.md)**
 >
 > Find answers to common questions about subscriptions, promotions, and using the plan.
 

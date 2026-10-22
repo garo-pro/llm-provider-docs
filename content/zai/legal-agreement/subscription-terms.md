@@ -35,7 +35,7 @@ Z.ai reserves the right to adjust its products and pricing standards due to busi
 
 2. **Usage Scenario Restrictions**
 
-* You understand and agree that the usage quota under GLM Coding Plan is only used within [officially supported tools](https://docs.z.ai/devpack/tool/others). If the system detects usage through unauthorized or unsupported tools (such as SDK-based access or other third-party integrations), some subscription benefits may be restricted to ensure fairness and service stability.
+* You understand and agree that the usage quota under GLM Coding Plan is only used within [officially supported tools](https://docs.z.ai/devpack/tool/others.md). If the system detects usage through unauthorized or unsupported tools (such as SDK-based access or other third-party integrations), some subscription benefits may be restricted to ensure fairness and service stability.
 * You shall not use the GLM Coding Plan quota for general-purpose API access or any scenarios outside such tools, including but not limited to directly invoking model APIs from your own applications, bots, websites, SaaS products or other systems, unless you have entered into a separate written agreement with [Z.ai](http://Z.ai).
 * Unless otherwise agreed in writing, you may not resell, sub-resell, repackage, aggregate, proxy or otherwise provide the GLM Coding Plan to any third party, whether on a paid or free basis, nor may you use the GLM Coding Plan to provide model capabilities as a service to third parties.
 

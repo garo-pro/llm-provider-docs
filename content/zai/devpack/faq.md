@@ -12,7 +12,7 @@
 
 > [!NOTE]
 >
-> For instructions on using the latest models, see [How to Switch Models](/devpack/latest-model).
+> For instructions on using the latest models, see [How to Switch Models](/devpack/latest-model.md).
 
 ***
 
@@ -22,8 +22,8 @@
 
 For usage details, see:
 
-* [Individual Plan Usage Quotas](https://docs.z.ai/devpack/overview#usage-instruction)
-* [Team Plan Usage Quotas](https://docs.z.ai/devpack/teamplan#usage-details)
+* [Individual Plan Usage Quotas](https://docs.z.ai/devpack/overview.md#usage-instruction)
+* [Team Plan Usage Quotas](https://docs.z.ai/devpack/teamplan.md#usage-details)
 
 ***
 
@@ -49,7 +49,7 @@ The rules are as follows:
 
 **Q: Which tools are supported?**
 
-**A:** The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools). The subscriber shall not use the subscription benefits in any unsupported tools or scenarios.\
+**A:** The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools). The subscriber shall not use the subscription benefits in any unsupported tools or scenarios.\
 Please refer to our tool guide for step-by-step setup. All supported tools share the same usage quota under your subscription.
 
 ***
@@ -73,7 +73,7 @@ Please refer to our tool guide for step-by-step setup. All supported tools share
 
 **Q：What is the quota of Vision Understanding, Web Search and Web Reader MCP in the plan?**
 
-**A：** Usage for both models and MCP tools is calculated and deducted in credits. For details on your usage allowance, please see [Usage Instruction](https://docs.z.ai/devpack/overview#usage-instruction)
+**A：** Usage for both models and MCP tools is calculated and deducted in credits. For details on your usage allowance, please see [Usage Instruction](https://docs.z.ai/devpack/overview.md#usage-instruction)
 
 ***
 
@@ -199,14 +199,14 @@ For example: If a plan costs 100 USD, and your friend gets a 50% first-order dis
 
 **A：** The situation of reporting insufficient balance or deducting account balance may be due to not meeting the usage conditions of the GLM Coding Plan coding package:
 
-1. The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools).
+1. The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools).
 2. A specific baseurl address must be configured to use it:
 
 * API endpoint for Claude Code and Goose is：`https://api.z.ai/api/anthropic`
 * API endpoint for other tools is: `https://api.z.ai/api/coding/paas/v4`
 
 3. Only the following two models can be called: GLM-5.3, GLM-5.3-Flash. For detailed instructions, please refer to:
-   [https://docs.z.ai/devpack/overview](https://docs.z.ai/devpack/overview)
+   [https://docs.z.ai/devpack/overview](https://docs.z.ai/devpack/overview.md)
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

@@ -162,7 +162,7 @@ if final_tool_calls:
         print(f"  {idx}: Function Name: {tool_call.function.name}, Parameters: {tool_call.function.arguments}")
 ```
 
-See: [Tool Streaming Output Documentation](/guides/tools/stream-tool)
+See: [Tool Streaming Output Documentation](/guides/tools/stream-tool.md)
 
 ### 5. Testing and Regression
 
@@ -174,15 +174,15 @@ See: [Tool Streaming Output Documentation](/guides/tools/stream-tool)
 
 ## More Resources
 
-> **[Concept Parameters](/guides/overview/concept-param)**
+> **[Concept Parameters](/guides/overview/concept-param.md)**
 >
 > Common model parameter concepts and sampling recommendations
 
-> **[Tool Streaming Output](/guides/tools/stream-tool)**
+> **[Tool Streaming Output](/guides/tools/stream-tool.md)**
 >
 > View tool streaming output usage details
 
-> **[API Reference](/api-reference/introduction)**
+> **[API Reference](/api-reference/introduction.md)**
 >
 > View complete API documentation
 

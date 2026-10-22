@@ -23,8 +23,8 @@ For each project, you can use methods like Subagent to make concurrent model cal
 ## Account Usage Policy
 
 * **Subscription benefits are exclusive to the subscriber**: Account sharing or multi-user access is prohibited. Violations may result in restrictions on subscription benefits and, in serious cases, may affect normal account usage.
-* **Use limited to supported tools**: GLM Coding Plan may only be used within [officially supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools). Use in unsupported tools may result in restricted benefits.
-* **Violation handling**: Violations of the [Usage Rules](https://docs.z.ai/legal-agreement/subscription-terms#4-usage-rules) may trigger risk control measures, including rate limiting, account freezing, or other restrictions. Accounts with more than three violations may be banned. If your account is flagged by the risk control system, you can view the risk notice on the [Plan Overview](https://z.ai/manage-apikey/coding-plan/personal/my-plan) page in the console and submit an appeal.
+* **Use limited to supported tools**: GLM Coding Plan may only be used within [officially supported tools and products](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools). Use in unsupported tools may result in restricted benefits.
+* **Violation handling**: Violations of the [Usage Rules](https://docs.z.ai/legal-agreement/subscription-terms.md#4-usage-rules) may trigger risk control measures, including rate limiting, account freezing, or other restrictions. Accounts with more than three violations may be banned. If your account is flagged by the risk control system, you can view the risk notice on the [Plan Overview](https://z.ai/manage-apikey/coding-plan/personal/my-plan) page in the console and submit an appeal.
 
 ## Manage Your Subscription
 

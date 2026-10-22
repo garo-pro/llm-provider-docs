@@ -131,7 +131,7 @@ The Team Plan Key is the dedicated access credential for the Team Plan. After ea
 >
 > Please note that the **Team Plan Key is independent from other platform API Keys**. To use your Team Plan quota, make sure to use the Team Plan Key in the relevant scenarios.
 
-For details on how API Keys are classified and billed, see the [API Key Management Guide](/devpack/notice/api-key-management).
+For details on how API Keys are classified and billed, see the [API Key Management Guide](/devpack/notice/api-key-management.md).
 
 ## Seat Rules
 
@@ -158,7 +158,7 @@ Team plans are subscribed to and assigned by seat:
 
 ## Account Usage Rules
 
-To protect subscriber rights, ensure system fairness, and maintain service stability, GLM Coding Plan must be used in [officially supported tools and products](https://docs.z.ai/devpack/tool/others#1-coding-agent-tool), and must comply with the [Subscriptions, Fees, and Payment](https://docs.z.ai/legal-agreement/subscription-terms) and related usage rules.
+To protect subscriber rights, ensure system fairness, and maintain service stability, GLM Coding Plan must be used in [officially supported tools and products](https://docs.z.ai/devpack/tool/others.md#1-coding-agent-tool), and must comply with the [Subscriptions, Fees, and Payment](https://docs.z.ai/legal-agreement/subscription-terms.md) and related usage rules.
 
 Improper behavior such as multiple people sharing the same seat, use in unsupported tools, or abnormally high-frequency calls may trigger platform risk control rules, resulting in corresponding restrictions on subscription benefits. In serious cases, it may affect normal account usage.
 
@@ -187,9 +187,9 @@ During off-peak hours, plan users will enjoy higher concurrency benefits through
 
 ## Next Steps
 
-* [Quick Start](https://docs.z.ai/devpack/quick-start): Complete the basic integration process in just a few minutes and get started quickly
-* [Tool Integration](https://docs.z.ai/devpack/tool/others): View the agent tools supported by the plan and their configuration methods, and choose the working environment that best suits your needs
-* [How to Switch Models](https://docs.z.ai/devpack/latest-model): Make sure your coding tool is using your target model version
+* [Quick Start](https://docs.z.ai/devpack/quick-start.md): Complete the basic integration process in just a few minutes and get started quickly
+* [Tool Integration](https://docs.z.ai/devpack/tool/others.md): View the agent tools supported by the plan and their configuration methods, and choose the working environment that best suits your needs
+* [How to Switch Models](https://docs.z.ai/devpack/latest-model.md): Make sure your coding tool is using your target model version
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

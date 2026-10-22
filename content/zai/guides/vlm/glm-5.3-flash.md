@@ -49,7 +49,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 #### **Model API**
 
 * **Model Code**：`glm-5.3-flash`/`glm-5.3-flashx`/`glm-5.3-flashx-legal`
-* **API Documentation**：[Chat Completion API](https://docs.z.ai/api-reference/introduction)
+* **API Documentation**：[Chat Completion API](https://docs.z.ai/api-reference/introduction.md)
 * **Parameter Settings**：Text parameters are consistent with GLM-5.3, with support for a 1M-token context window.
 * **Image Parameters**：Add a content block with `type: image_url` to` messages[].content[]`, and pass the image URL (recommended) or a Base64 Data URL through `image_url.url`. Multiple images can be added by including multiple `image_url` content blocks.
 * **Recommended Settings**： `temperature: 1`, `top_p: 0.95`, and `reasoning_effort: max`. `thinking.type` only supports `enabled`; we recommend setting `thinking.clear_thinking: false`. For streaming requests, we recommend enabling both stream: true and `tool_stream: true`.
@@ -62,11 +62,11 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 
 ## Capabilities
 
-* [Thinking Mode](https://docs.z.ai/guides/capabilities/thinking-mode): Provides multiple thinking modes to address different task requirements. `thinking.type` only supports `enabled`; thinking cannot be disabled.
-* [Streaming Output](https://docs.z.ai/guides/capabilities/stream-tool): Supports real-time streaming responses for an enhanced user interaction experience.
-* [Function Calling](https://docs.z.ai/guides/capabilities/function-calling): Provides powerful tool-calling capabilities and supports integration with a wide range of external tools.
-* [Context Caching](https://docs.z.ai/guides/capabilities/cache): Uses an intelligent caching mechanism to optimize long-conversation performance.
-* [Structured Output](https://docs.z.ai/guides/capabilities/struct-output): Supports structured output formats such as JSON for seamless system integration.
+* [Thinking Mode](https://docs.z.ai/guides/capabilities/thinking-mode.md): Provides multiple thinking modes to address different task requirements. `thinking.type` only supports `enabled`; thinking cannot be disabled.
+* [Streaming Output](https://docs.z.ai/guides/capabilities/stream-tool.md): Supports real-time streaming responses for an enhanced user interaction experience.
+* [Function Calling](https://docs.z.ai/guides/capabilities/function-calling.md): Provides powerful tool-calling capabilities and supports integration with a wide range of external tools.
+* [Context Caching](https://docs.z.ai/guides/capabilities/cache.md): Uses an intelligent caching mechanism to optimize long-conversation performance.
+* [Structured Output](https://docs.z.ai/guides/capabilities/struct-output.md): Supports structured output formats such as JSON for seamless system integration.
 * **Visual Understanding**: Native multimodal input supporting images, videos, and files.
 
 ## Best Practices

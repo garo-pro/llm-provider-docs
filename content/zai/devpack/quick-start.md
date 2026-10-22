@@ -6,7 +6,7 @@
 
 > [!TIP]
 >
-> This guide will help you get started with [GLM Coding Plan](https://z.ai/subscribe?utm_source=zai\&utm_medium=link\&utm_term=quickstart\&utm_campaign=Platform_Ops&_channel_track_key=DRUfXN42) in minutes—from subscribing to using GLM models in officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools).
+> This guide will help you get started with [GLM Coding Plan](https://z.ai/subscribe?utm_source=zai\&utm_medium=link\&utm_term=quickstart\&utm_campaign=Platform_Ops&_channel_track_key=DRUfXN42) in minutes—from subscribing to using GLM models in officially [supported tools and products](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools).
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ Team Plan members can create an API Key under [Team Coding Plan > My Plan](https
 
 > [!TIP]
 >
-> API Keys for Individual Plans, Team Plans, and the standard model API are now managed separately. Newly created API Keys for these three product types are not interchangeable—use the one that matches your needs. For details, see the [API Key Management Guide](/devpack/notice/api-key-management).
+> API Keys for Individual Plans, Team Plans, and the standard model API are now managed separately. Newly created API Keys for these three product types are not interchangeable—use the one that matches your needs. For details, see the [API Key Management Guide](/devpack/notice/api-key-management.md).
 
 > [!WARNING]
 >
@@ -36,7 +36,7 @@ Team Plan members can create an API Key under [Team Coding Plan > My Plan](https
 
 **4. Connect a Tool**
 
-The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others#step-1-supported-tools). Click a tool below to open its configuration guide:
+The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools). Click a tool below to open its configuration guide:
 
 > **[Claude Code](https://docs.z.ai/devpack/tool/claude)**
 
@@ -56,7 +56,7 @@ The GLM Coding Plan is strictly limited to use within officially [supported tool
 
 > **[Cursor](https://docs.z.ai/devpack/tool/cursor)**
 
-> **[Other Tools](https://docs.z.ai/devpack/tool/others)**
+> **[Other Tools](https://docs.z.ai/devpack/tool/others.md)**
 
 **5. Endpoint Guide**
 
@@ -103,7 +103,7 @@ This function performs poorly. Please optimize it for me.
 > * Understand flowcharts and architecture diagrams
 > * Extract text and information from screenshots
 >
-> For detailed usage instructions, refer to the [Vision MCP Server](/devpack/mcp/vision-mcp-server) documentation.
+> For detailed usage instructions, refer to the [Vision MCP Server](/devpack/mcp/vision-mcp-server.md) documentation.
 
 > **Web Search MCP Server (Coding Plan Exclusive)**
 >
@@ -113,7 +113,7 @@ This function performs poorly. Please optimize it for me.
 > * Obtain the latest information on open-source projects
 > * Find solutions and best practices
 >
-> For detailed usage instructions, refer to the [Web Search MCP Server](/devpack/mcp/search-mcp-server) documentation.
+> For detailed usage instructions, refer to the [Web Search MCP Server](/devpack/mcp/search-mcp-server.md) documentation.
 
 > **Web Reader MCP Server (Coding Plan Exclusive)**
 >
@@ -123,7 +123,7 @@ This function performs poorly. Please optimize it for me.
 > * Extract structured data such as title, body, and metadata
 > * Remote HTTP-based MCP service, no local installation required
 >
-> For detailed usage instructions, refer to the [Web Reader MCP Server](/devpack/mcp/reader-mcp-server) documentation.
+> For detailed usage instructions, refer to the [Web Reader MCP Server](/devpack/mcp/reader-mcp-server.md) documentation.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

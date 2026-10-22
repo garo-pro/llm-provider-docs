@@ -10,13 +10,13 @@
 
 ## Latest Models
 
-> **[GLM-5.3](/guides/llm/glm-5.3)**
+> **[GLM-5.3](/guides/llm/glm-5.3.md)**
 >
 > **Flagship Model**
 >
 > * Open-source SOTA coding capabilities, emerging cybersecurity capabilities.
 
-> **[GLM-5.3-Flash](/guides/vlm/glm-5.3-flash)**
+> **[GLM-5.3-Flash](/guides/vlm/glm-5.3-flash.md)**
 >
 > **Native Multimodal Model**
 >
@@ -28,13 +28,13 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 
 | Model | Strength | Language | Context | Resource |
 | :- | :- | :- | :- | :- |
-| GLM-5.3-Flash | Delivering frontier intelligence at radically lower cost | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash) [API Reference](/api-reference/llm/chat-completion) |
-| GLM-5.3-FlashX | Delivering inference speeds of 200 tokens/s | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash) [API Reference](/api-reference/llm/chat-completion) |
-| GLM-5.3 | Claude Fable 5-level coding and agent capabilities  Stronger in long-horizon, complex tasks | English & Chinese | 1M | [Guide](/guides/llm/glm-5.3) [API Reference](/api-reference/llm/chat-completion) |
+| GLM-5.3-Flash | Delivering frontier intelligence at radically lower cost | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash.md) [API Reference](/api-reference/llm/chat-completion.md) |
+| GLM-5.3-FlashX | Delivering inference speeds of 200 tokens/s | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash.md) [API Reference](/api-reference/llm/chat-completion.md) |
+| GLM-5.3 | Claude Fable 5-level coding and agent capabilities  Stronger in long-horizon, complex tasks | English & Chinese | 1M | [Guide](/guides/llm/glm-5.3.md) [API Reference](/api-reference/llm/chat-completion.md) |
 
 > [!TIP]
 >
-> If you need to get pricing information, please go directly to [Pricing](/guides/overview/pricing).
+> If you need to get pricing information, please go directly to [Pricing](/guides/overview/pricing.md).
 
 > **Other Models, Agents and Tools**
 >
@@ -46,12 +46,12 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 >
 > | Model | Strength | Language | Context | Resource |
 > | :- | :- | :- | :- | :- |
-> | GLM-5.3-FlashX-Legal | A Model Optimized for Legal Applications Enabling End-to-End Workflows for Legal Research | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash#glm-5-3-flashx-legal) [API Reference](/api-reference/llm/chat-completion) |
-> | GLM-5.2 | Open-source SOTA coding, from generation to delivery | English & Chinese | 1M | [Guide](/guides/llm/glm-5.2) [API Reference](/api-reference/llm/chat-completion) |
-> | GLM-5.1 | Coding proficiency aligned with Opus 4.6 Ability to work independently and consistently for up to 8 hours on a single task | English & Chinese | 200K | [Guide](/guides/llm/glm-5.1) [API Reference](/api-reference/llm/chat-completion) |
-> | GLM-5 | Agentic Long-Term Planning and Execution Backend refactoring and in-depth debugging | English & Chinese | 200K | [Guide](/guides/llm/glm-5) [API Reference](/api-reference/llm/chat-completion) |
-> | GLM-4.7 | SOTA Performance Optimized Agentic Coding | English & Chinese | 200K | [Guide](/guides/llm/glm-4.7) [API Reference](/api-reference/llm/chat-completion) |
-> | GLM-4.6 | Strong Coding More Versatile | English & Chinese | 200K | [Guide](/guides/llm/glm-4.6) [API Reference](/api-reference/llm/chat-completion) |
+> | GLM-5.3-FlashX-Legal | A Model Optimized for Legal Applications Enabling End-to-End Workflows for Legal Research | English & Chinese | 1M | [Guide](/guides/vlm/glm-5.3-flash.md#glm-5-3-flashx-legal) [API Reference](/api-reference/llm/chat-completion.md) |
+> | GLM-5.2 | Open-source SOTA coding, from generation to delivery | English & Chinese | 1M | [Guide](/guides/llm/glm-5.2.md) [API Reference](/api-reference/llm/chat-completion.md) |
+> | GLM-5.1 | Coding proficiency aligned with Opus 4.6 Ability to work independently and consistently for up to 8 hours on a single task | English & Chinese | 200K | [Guide](/guides/llm/glm-5.1) [API Reference](/api-reference/llm/chat-completion.md) |
+> | GLM-5 | Agentic Long-Term Planning and Execution Backend refactoring and in-depth debugging | English & Chinese | 200K | [Guide](/guides/llm/glm-5) [API Reference](/api-reference/llm/chat-completion.md) |
+> | GLM-4.7 | SOTA Performance Optimized Agentic Coding | English & Chinese | 200K | [Guide](/guides/llm/glm-4.7) [API Reference](/api-reference/llm/chat-completion.md) |
+> | GLM-4.6 | Strong Coding More Versatile | English & Chinese | 200K | [Guide](/guides/llm/glm-4.6) [API Reference](/api-reference/llm/chat-completion.md) |
 >
 > ### Built-in Tools
 >
@@ -67,7 +67,7 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 >
 > | Model | Strength | Language | Resolution | Resource |
 > | :- | :- | :- | :- | :- |
-> | GLM-Image | Stronger in complex instruction and knowledge-intensive scenarios - Open-source SOTA in text rendering | English & Chinese | multiple resolutions | [Guide](/guides/image/glm-image) [API Reference](/api-reference/image/generate-image) |
+> | GLM-Image | Stronger in complex instruction and knowledge-intensive scenarios - Open-source SOTA in text rendering | English & Chinese | multiple resolutions | [Guide](/guides/image/glm-image) [API Reference](/api-reference/image/generate-image.md) |
 >
 > ### Agents
 >
@@ -75,9 +75,9 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 >
 > | Tool | Capability | Resource |
 > | :- | :- | :- |
-> | GLM Slide/Poster Agent(beta) | Combine content generation with professional design | [Guide](/guides/agents/slide) |
-> | General-Purpose Translation | Support 40+ languages, flexible strategies, and terminology customization | [Guide](/guides/agents/slide) |
-> | Popular Special Effects Video Templates | Special effects video templates like French\_Kiss, BodyShake, and Sexy\_Me | [Guide](/guides/agents/slide) |
+> | GLM Slide/Poster Agent(beta) | Combine content generation with professional design | [Guide](/guides/agents/slide.md) |
+> | General-Purpose Translation | Support 40+ languages, flexible strategies, and terminology customization | [Guide](/guides/agents/slide.md) |
+> | Popular Special Effects Video Templates | Special effects video templates like French\_Kiss, BodyShake, and Sexy\_Me | [Guide](/guides/agents/slide.md) |
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

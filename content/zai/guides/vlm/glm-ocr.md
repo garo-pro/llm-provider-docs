@@ -28,7 +28,7 @@ GLM-OCR is a lightweight professional OCR model with parameters as small as 0.9B
 
 > [!TIP]
 >
-> For detailed pricing information on GLM-OCR, please visit the [Pricing Page](/guides/overview/pricing).
+> For detailed pricing information on GLM-OCR, please visit the [Pricing Page](/guides/overview/pricing.md).
 
 ## Usage
 
@@ -50,7 +50,7 @@ GLM-OCR is a lightweight professional OCR model with parameters as small as 0.9B
 
 ## Resources
 
-* [API Documentation](/api-reference/tools/layout-parsing): Learn how to call the API.
+* [API Documentation](/api-reference/tools/layout-parsing.md): Learn how to call the API.
 
 ## Introducing GLM-OCR
 

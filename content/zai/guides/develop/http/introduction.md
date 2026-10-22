@@ -40,7 +40,7 @@ https://api.z.ai/api/paas/v4/
 
 > [!WARNING]
 >
-> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start) to configure your dedicated endpoint.
+> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start.md) to configure your dedicated endpoint.
 
 ### Request Header Requirements
 

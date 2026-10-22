@@ -91,7 +91,7 @@ Common endpoints and their billing behavior are listed below:
 
 ### Why is my account balance being charged when I have a Coding Plan?
 
-Check the key configured in your tool. **Standard keys do not use Coding Plan quota. An existing personal Compatible key also uses standard API billing when calling the standard API endpoint.** To use plan quota, get a key from the corresponding Coding Plan entry point and replace the key in your tool. For setup instructions, see the [Quick Start](https://docs.z.ai/devpack/quick-start).
+Check the key configured in your tool. **Standard keys do not use Coding Plan quota. An existing personal Compatible key also uses standard API billing when calling the standard API endpoint.** To use plan quota, get a key from the corresponding Coding Plan entry point and replace the key in your tool. For setup instructions, see the [Quick Start](https://docs.z.ai/devpack/quick-start.md).
 
 ### How do I switch an existing Compatible key to pay-as-you-go after my plan expires?
 

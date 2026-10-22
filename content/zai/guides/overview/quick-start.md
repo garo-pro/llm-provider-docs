@@ -27,13 +27,13 @@
 
 **2. Choose Model**
 
-> The platform offers multiple models, and you can select the appropriate model based on your needs. For detailed model introductions, please refer to the [Models & Agents](/guides/overview/overview).
+> The platform offers multiple models, and you can select the appropriate model based on your needs. For detailed model introductions, please refer to the [Models & Agents](/guides/overview/overview.md).
 
-> **[GLM-5.3](/guides/llm/glm-5.3)**
+> **[GLM-5.3](/guides/llm/glm-5.3.md)**
 >
 > Z.ai’s latest flagship model, delivering comprehensive advancements in software engineering and agent capabilities.
 
-> **[GLM-5.3-FLASH](/guides/vlm/glm-5.3-flash)**
+> **[GLM-5.3-FLASH](/guides/vlm/glm-5.3-flash.md)**
 >
 > Multimodal Coding model, specializing in visual programming.
 
@@ -41,19 +41,19 @@
 
 Our platform provides various development approaches; you can select the best fit for your project needs and tech stack.
 
-> **[HTTP API](/guides/develop/http/introduction)**
+> **[HTTP API](/guides/develop/http/introduction.md)**
 >
 > Standard RESTful API, compatible with all programming languages.
 
-> **[Z.AI Python SDK](/guides/develop/python/introduction)**
+> **[Z.AI Python SDK](/guides/develop/python/introduction.md)**
 >
 > Official Python SDK, featuring full type hints and async support.
 
-> **[Z.AI Java SDK](/guides/develop/java/introduction)**
+> **[Z.AI Java SDK](/guides/develop/java/introduction.md)**
 >
 > Official Java SDK, designed for high concurrency and availability.
 
-> **[OpenAI Python SDK](/guides/develop/openai/python)**
+> **[OpenAI Python SDK](/guides/develop/openai/python.md)**
 >
 > OpenAI SDK Compatibility, quickly migrating from OpenAI.
 
@@ -67,7 +67,7 @@ After preparing your `API Key` and selecting a model, you can start making API c
 
 > [!WARNING]
 >
-> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start) to configure your dedicated endpoint.
+> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start.md) to configure your dedicated endpoint.
 
 **cURL**
 

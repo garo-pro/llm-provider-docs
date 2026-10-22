@@ -49,7 +49,7 @@ GLM-ASR-2512 is Z.AI's next-generation speech recognition model, enabling real-t
 
 ## &#x20;  Resources
 
-* [API Documentation](/api-reference/audio/audio-transcriptions): Learn how to call the API.
+* [API Documentation](/api-reference/audio/audio-transcriptions.md): Learn how to call the API.
 
 ## &#x20;  Introducing GLM-ASR-2512
 
