@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-22T05:37:33.171585Z",
+    "fetch_date": "2026-10-22T10:49:23.818810Z",
     "section": "all"
   },
   "items": [
@@ -12406,8 +12406,8 @@
       "url": "https://www.anthropic.com/research/exploring-model-welfare",
       "status": "success",
       "path": "anthropic/blog/research/exploring-model-welfare.md",
-      "sha256": "ae3595aab27ac90639a4c075b6365daf93cc26c3f513a1515362dd9119c1c99e",
-      "size": 2856
+      "sha256": "ecd81d6a1af37ff2f00644ab34c2783219396da1b9ed5350bb98dcf1f2199421",
+      "size": 3000
     },
     {
       "url": "https://www.anthropic.com/research/features-as-classifiers",
@@ -13157,6 +13157,13 @@
       "path": "anthropic/blog/policy/policy-on-the-ai-exponential.md",
       "sha256": "72d57c847ddf17cd1df6240ff7d03d18ac19956ac47807e1cad42e1e3597c179",
       "size": 7517
+    },
+    {
+      "url": "https://alignment.anthropic.com/2026/red-teaming-auto-mode",
+      "status": "success",
+      "path": "anthropic/blog/alignment/2026/red-teaming-auto-mode.md",
+      "sha256": "ce17646354ed8e8cda8818a1c1b82156510ce057b250207ec2bebbfa291b163d",
+      "size": 16478
     },
     {
       "url": "https://alignment.anthropic.com/2026/graft",
@@ -14513,8 +14520,8 @@
       "url": "https://claude.com/resources/articles/claude-duet",
       "status": "success",
       "path": "anthropic/blog/claude-com/claude-duet.md",
-      "sha256": "a352cd5fa47e453a61ad82649b166cbc561be3de19df2f8a085e7588a13aa471",
-      "size": 10118
+      "sha256": "3b42487d76c7c7213770c66118af2b189bf867843500eb106f4401f5426d341c",
+      "size": 10125
     },
     {
       "url": "https://claude.com/resources/articles/claude-enterprise-inference-hooks",
@@ -47056,8 +47063,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/docs/castiron-generated-code-transition.md",
       "status": "success",
       "path": "openai/github/openai-python/docs/castiron-generated-code-transition.md",
-      "sha256": "59183e0d24ef037b800cbaca175151ccd0bf1896c077b780d71ed0dc75e1ab02",
-      "size": 65133
+      "sha256": "b4881c6c8bfa79a842fcbe4b59ad06dc9aa756634ac9db11485f2c02ea655c4d",
+      "size": 62537
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/docs/castiron-polling-runtime-preparation.md",
@@ -48243,15 +48250,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voices/methods/delete",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
@@ -50357,6 +50360,10 @@
       "reason": "HTTP 404"
     },
     {
+      "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voices/methods/delete",
+      "reason": "HTTP 404"
+    },
+    {
       "url": "https://developers.openai.com/api/reference/resources/beta",
       "reason": "HTTP 404"
     },
@@ -51790,8 +51797,8 @@
     }
   ],
   "summary": {
-    "total": 7823,
-    "downloaded": 6829,
+    "total": 7824,
+    "downloaded": 6830,
     "skipped": 0,
     "failed": 114,
     "dead": 880,
