@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-22T10:49:23.818810Z",
+    "fetch_date": "2026-10-22T15:47:50.985135Z",
     "section": "all"
   },
   "items": [
@@ -31418,7 +31418,7 @@
       "url": "https://developers.openai.com/api/docs/quickstart",
       "status": "success",
       "path": "openai/api/docs/quickstart.md",
-      "sha256": "9fac20768835b2913c37b9b3fccfab3171cf1c463a8db3b34c6616f4840969f1",
+      "sha256": "2151ce0334ef82f5b6ace169fa4bdcbb9c20f15335e475e8c885003d714ef57c",
       "size": 54832
     },
     {
@@ -31432,7 +31432,7 @@
       "url": "https://developers.openai.com/api/docs/libraries",
       "status": "success",
       "path": "openai/api/docs/libraries.md",
-      "sha256": "713ca0361ca9f3e0c3d46aa2904f010efebb046ae6f5ab48792314b028c5188d",
+      "sha256": "0e4976aa45337c229e8f26bd717619e844bb1eb01e76829ffac9eae7594a3c92",
       "size": 12240
     },
     {
@@ -48250,11 +48250,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {

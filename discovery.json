@@ -182,6 +182,7 @@
       "anthropics/sandbox-runtime",
       "anthropics/scone-bench",
       "anthropics/serde-saphyr",
+      "anthropics/single-agent-loop-kit",
       "anthropics/snix",
       "anthropics/sse-starlette",
       "anthropics/swift-markdown",
