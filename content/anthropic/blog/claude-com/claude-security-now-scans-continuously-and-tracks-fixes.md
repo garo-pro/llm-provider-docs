@@ -55,6 +55,8 @@ New role-based access controls let admins decide who can view projects, triage f
 
 The latest version of [Claude Security](http://claude.ai/security) is available in public beta for Claude Enterprise customers starting today. Admins can enable it in the admin console and set who on their team can access it.
 
+Use the [Getting Started Guide](https://academy.claude.com/tutorials/getting-started-with-claude-security) to set up your first project, and visit the [Help Center](https://support.claude.com/en/articles/14661296-use-claude-security) for more details.
+
 *Organizations receive $25,000 in free usage credits each month, for two months. The offer applies to usage through December 31, 2026. You can view full terms in the [Help Center](https://support.claude.com/en/articles/14661296-use-claude-security).*
 
 “Claude Security found a number of logic flaws that none of our other tools had caught. Once we wrote our own risk policy into the threat model, focusing on what external users can actually reach, the findings matched how we prioritize instead of only a severity score”

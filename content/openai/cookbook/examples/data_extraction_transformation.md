@@ -160,15 +160,29 @@ def main_extract(read_path, write_path):
             extract_from_multiple_pages(base64_images, filename, write_path)
 
 
-read_path= "./data/hotel_invoices/receipts_2019_de_hotel"
-write_path= "./data/hotel_invoices/extracted_invoice_json"
+hotel_invoice_path = "./data/hotel_invoices"
+extracted_invoice_json_path = os.path.join(hotel_invoice_path, "extracted_invoice_json")
+read_path = os.path.join(hotel_invoice_path, "receipts_2019_de_hotel")
 
-main_extract(read_path, write_path)
+main_extract(read_path, extracted_invoice_json_path)
 ```
 
-Each invoice JSON will have different keys depending on what data the original invoice contained, so at this point you can store the unschematized JSON files in a data lake that can handle unstructured data. For simplicity though, we're going to store the files in a folder. Here is what one of the extracted JSON files looks like, you'll notice that even though we didn't specify a schema, GPT-4o was able to understand German and group similar information together. Moreover, if there was a blank field in the invoice GPT-4o transcribed that as "null". 
+Raw invoice extractions contain one JSON object per page, stored as an array in `data/hotel_invoices/extracted_invoice_json/`. Keys, languages, and value types can vary across invoices and extraction runs. The [JSON format guide](https://github.com/openai/openai-cookbook/blob/main/examples/data/hotel_invoices/README.md) describes how raw extractions differ from the normalized objects used for database ingestion.
+
+The next cell loads an invoice from the same directory used by the extraction and transformation steps.
+
 
 ```python
+sample_invoice_path = os.path.join(
+    extracted_invoice_json_path, "premierinn_GABCI19014325_extracted.json"
+)
+with open(sample_invoice_path, "r", encoding="utf-8") as f:
+    sample_invoice = json.load(f)
+
+print(json.dumps(sample_invoice, ensure_ascii=False, indent=4))
+```
+
+```text
 [
     {
         "Hotel Information": {
@@ -182,15 +196,15 @@ Each invoice JSON will have different keys depending on what data the original i
             "Address": "Friedrichstr. 123, 10117 Berlin"
         },
         "Invoice Information": {
+            "Ankunft": "23.09.19",
+            "Referenznummer": "GABC015452127",
+            "Nächte": 4,
+            "Abreise": "27.09.19",
+            "Zimmer": 626,
+            "Kundereferenz": null,
             "Rechnungsnummer": "GABC19014325",
             "Rechnungsdatum": "23.09.19",
-            "Referenznummer": "GABC015452127",
-            "Buchungsnummer": "GABR15867",
-            "Ankunft": "23.09.19",
-            "Abreise": "27.09.19",
-            "Nächte": 4,
-            "Zimmer": 626,
-            "Kundereferenz": 2
+            "Buchungsnummer": "GABR15867"
         },
         "Charges": [
             {
@@ -261,8 +275,7 @@ Each invoice JSON will have different keys depending on what data the original i
         "Payment Information": {
             "Zahlung": "550,60",
             "Gesamt (Rechnungsbetrag)": "550,60",
-            "Offener Betrag": "0,00",
-            "Bezahlart": "Mastercard-Kreditkarte"
+            "Offener Betrag": "0,00"
         },
         "Tax Information": {
             "MwSt.%": [
@@ -410,11 +423,10 @@ def main_transform(extracted_invoice_json_path, json_schema_path, save_path):
                 json.dump(transformed_json, f, ensure_ascii=False, indent=2)
 
    
-    extracted_invoice_json_path = "./data/hotel_invoices/extracted_invoice_json"
-    json_schema_path = "./data/hotel_invoices/invoice_schema.json"
-    save_path = "./data/hotel_invoices/transformed_invoice_json"
+json_schema_path = os.path.join(hotel_invoice_path, "invoice_schema.json")
+save_path = os.path.join(hotel_invoice_path, "transformed_invoice_json")
 
-    main_transform(extracted_invoice_json_path, json_schema_path, save_path)
+main_transform(extracted_invoice_json_path, json_schema_path, save_path)
 ```
 
 ## Part 3: Loading transformed data into a database 

@@ -9,6 +9,7 @@ Markdown Content:
 
 ARTICLES
 
+- Sep 1, 2026### Developing Enterprise Frontier Safeguards with our customersWe’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention with state-of-the-art safeguards for detecting misuse. EFS works by storing data in cloud infrastructure controlled by the customer, not Anthropic.
 - Aug 31, 2026### Improving our alignment and security effortsOn July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.
 - Aug 7, 2026### Improving Fable 5's biology safeguardsWe’re making updates to Claude Fable 5’s biology safeguards in a way that substantially reduces false positives. Fable 5 users will now experience many fewer “fallbacks”—where the system switches to a less capable model after they make a biology-related query.
 - Sep 12, 2025### Strengthening our safeguards through collaboration with US CAISI and UK AISIOver the past year, we've collaborated with the US Center for AI Standards and Innovation (CAISI) and UK AI Security Institute (AISI), government bodies established to measure and improve the security of AI systems.
