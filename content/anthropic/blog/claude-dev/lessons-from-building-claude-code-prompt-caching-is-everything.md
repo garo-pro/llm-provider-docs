@@ -98,7 +98,7 @@ Here are a few patterns we’ve found useful for optimizing prompt caching when 
 1. **Prompt caching is a prefix match.** Any change anywhere in the prefix invalidates everything after it. Design your entire system around this constraint. Get the ordering right and most of the caching works for free.
 2. **Use messages instead of system prompt changes**. You may be tempted to edit the system prompt to do things like entering plan mode, changing the date, etc. but it would actually be better to insert these into messages during the conversation.
 3. **Don't change tools or models mid-conversation.** Use tools to model state transitions (like plan mode) rather than changing the tool set. Defer tool loading instead of removing tools.
-4. **Monitor your cache hit rate like you monitor uptime.** We alert on cache breaks and treat them as incidents. A few percentage points of cache miss rate can dramatically affect cost and latency.
+4. **Monitor your cache hit rate like you monitor uptime.** We alert on cache breaks and treat them as incidents. [A few percentage points of cache miss rate](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/) can dramatically affect cost and latency.
 5. **Fork operations need to share the parent's prefix.** If you need to run a side computation (compaction, summarization, skill execution), use identical cache-safe parameters so you get cache hits on the parent's prefix.
 
 Claude Code is built around prompt caching from day one; for the best results when building an agent, we suggest you do, too.

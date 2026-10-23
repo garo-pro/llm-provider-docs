@@ -68,7 +68,7 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 
 > [!WARNING]
 >
-> For information on Team Plan usage limits, please visit [Team Plan Benefits](/devpack/teamplan.md).
+> For information on Team Plan usage limits, please visit [Team Plan Benefits](https://docs.z.ai/devpack/teamplan.md).
 
 #### Usage Credit Allowance
 
@@ -174,25 +174,25 @@ Token usage varies depending on the cache hit rate, as shown below:
 
 ### Exclusive MCP Access
 
-> **[Vision Understanding](/devpack/mcp/vision-mcp-server.md)**
+> **[Vision Understanding](https://docs.z.ai/devpack/mcp/vision-mcp-server.md)**
 
-> **[Web Search](/devpack/mcp/search-mcp-server.md)**
+> **[Web Search](https://docs.z.ai/devpack/mcp/search-mcp-server.md)**
 
-> **[Web Reader](/devpack/mcp/reader-mcp-server.md)**
+> **[Web Reader](https://docs.z.ai/devpack/mcp/reader-mcp-server.md)**
 
-> **[Zread](/devpack/mcp/zread-mcp-server.md)**
+> **[Zread](https://docs.z.ai/devpack/mcp/zread-mcp-server.md)**
 
 ## Next Steps
 
-> **[Quick Start](/devpack/quick-start.md)**
+> **[Quick Start](https://docs.z.ai/devpack/quick-start.md)**
 >
 > Get up and running in minutes — from subscribing to the plan to using it in your agent tools.
 
-> **[Usage Policy](/devpack/usage-policy.md)**
+> **[Usage Policy](https://docs.z.ai/devpack/usage-policy.md)**
 >
 > Learn about account usage rules, rate limits, refund policies, and other important guidelines.
 
-> **[FAQ](/devpack/faq.md)**
+> **[FAQ](https://docs.z.ai/devpack/faq.md)**
 >
 > Find answers to common questions about subscriptions, promotions, and using the plan.
 

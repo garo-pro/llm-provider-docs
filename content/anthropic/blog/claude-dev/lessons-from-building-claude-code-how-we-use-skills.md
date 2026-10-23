@@ -46,7 +46,7 @@ Examples include:
 
 These are skills that describe how to test or verify that your code is working. They are often paired with playwright, tmux, or other external tools for verification.
 
-Verification skills have had the most measurable impact on Claude’s output quality internally. It can be worth having an engineer spend a week just making your verification skills excellent.
+[Verification skills](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills) have had the most measurable impact on Claude’s output quality internally. It can be worth having an engineer spend a week just making your verification skills excellent.
 
 Consider techniques like having Claude record a video of its output so you can see exactly what it tested, or enforcing programmatic assertions on state at each step. These are often done by including a variety of scripts in the skill.
 
@@ -153,7 +153,7 @@ For example:
 
 *The SKILL.md file points to several other files Claude can reference for specific situations. For example, if a job is pending, it should reference stuck-jobs.md.*
 
-Like we said earlier, a skill is a folder, not just a markdown file. You should think of the entire file system as a form of context engineering and progressive disclosure. Tell Claude what files are in your skill, and it will read them at appropriate times.
+Like we said earlier, a skill is a folder, not just a markdown file. You should think of the entire file system as a form of [context engineering and progressive disclosure](https://claude.dev/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models/). Tell Claude what files are in your skill, and it will read them at appropriate times.
 
 The simplest form of progressive disclosure is to point to other markdown files for Claude to use. For example, you may split detailed function signatures and usage examples into `references/api.md`.
 
@@ -185,7 +185,7 @@ If you want the agent to present structured, multiple choice questions you can i
 
 ### Write descriptions for the model, not for humans
 
-When Claude Code starts a session, it builds a listing of every available skill with its description. This listing is what Claude scans to decide "is there a skill for this request?" Which means the description field is not a summary, it's a description of when to trigger this skill.
+When Claude Code starts a session, it builds a listing of every available skill with its description. This listing is what Claude scans to decide "is there a skill for this request?" Which means the description field is not a summary, it's [a description of when to trigger this skill](https://claude.com/resources/articles/improving-skill-creator-test-measure-and-refine-agent-skills).
 
 ![Two SKILL.md descriptions for babysit-pr. Left: “A comprehensive tool for monitoring pull request status across the development lifecycle.” Right: “Monitors a PR until it merges. Trigger on ‘babysit’, ‘watch CI’, ‘make sure this lands’.”](https://claude.dev/media/1debbf1fd04f39bcfeb62bcb458574268414bd0f519c4390d708bbac8f1b724e.png)
 

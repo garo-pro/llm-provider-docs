@@ -418,7 +418,7 @@ public class FunctionCallingExample {
 >
 > View source code, submit issues, contribute
 
-> **[API Reference](/api-reference)**
+> **[API Reference](https://docs.z.ai/api-reference)**
 >
 > View complete API documentation
 

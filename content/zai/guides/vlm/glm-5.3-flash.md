@@ -211,7 +211,7 @@ GLM-5.3-Flash shows that frontier intelligence does not have to come at frontier
 
 For a more complete legal workflow experience, we recommend using the model in an agent environment connected to specialized MCP services. The model handles document understanding, legal reasoning, and task planning, while MCP services provide external data such as laws, cases, and company information, as well as tools for creating and revising Word documents.
 
-Choose the following MCP services based on your task requirements: [Recommended Installation List by Country/Region](/guides/legal-mcp).
+Choose the following MCP services based on your task requirements: [Recommended Installation List by Country/Region](https://docs.z.ai/guides/legal-mcp).
 
 ### AutoClaw Legal Assistant
 

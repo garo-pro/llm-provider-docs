@@ -6,7 +6,7 @@
 
 Z.AI provides developers with a full suite of AI search tools, covering three core services: **basic search (Web Search API)**, **retrieval-augmented generation (Web Search in Chat)**, and **intelligent search agents (Search Agent)**. Through a unified API, offering end-to-end capabilities—from raw web data retrieval and fusion of search results with LLM output, to multi-turn dialogue context management. This empowers developers to build trustworthy, real-time, and traceable AI applications at **lower cost**.
 
-* View [Product Price](/guides/overview/pricing.md)
+* View [Product Price](https://docs.z.ai/guides/overview/pricing.md)
 * View Your [API Key](https://chat.z.ai)
 
 ## Product Overview
@@ -27,7 +27,7 @@ Web Search API is a search engine specifically designed for large language model
 
 **API Call**
 
-* API Docs: [Web Search API](/api-reference/tools/web-search.md)
+* API Docs: [Web Search API](https://docs.z.ai/api-reference/tools/web-search.md)
 * Example: Search Financial News
 
 ```python Search Financial News theme={null}
@@ -132,7 +132,7 @@ Cursor MCP must be used in Composer's Agent mode.
 
 Web Search in Chat allows the Completions API to call search engines, combining real-time web retrieval results with GLM's generative capabilities to provide up-to-date and verifiable answers.
 
-* API Docs: [Web Search in Chat](/api-reference/tools/web-search.md)
+* API Docs: [Web Search in Chat](https://docs.z.ai/api-reference/tools/web-search.md)
 * Example: Financial Analysis Summary
 
 ```python Financial Analysis Summary theme={null}

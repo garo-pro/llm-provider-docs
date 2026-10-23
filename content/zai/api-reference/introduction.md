@@ -8,7 +8,7 @@
 >
 > The API reference describes the RESTful APIs you can use to interact with the Z.AI platform.
 
-Z.AI provides standard HTTP API interfaces that support multiple programming languages and development environments, with [SDKs](/guides/develop/python/introduction.md) also available.
+Z.AI provides standard HTTP API interfaces that support multiple programming languages and development environments, with [SDKs](https://docs.z.ai/guides/develop/python/introduction.md) also available.
 
 ## API Endpoint
 
@@ -20,7 +20,7 @@ https://api.z.ai/api/paas/v4
 
 > [!WARNING]
 >
-> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start.md) to configure your dedicated endpoint.
+> When using GLM Coding Plan, please follow the [tutorial](https://docs.z.ai/devpack/quick-start.md) to configure your dedicated endpoint.
 
 ## Authentication
 

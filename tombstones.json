@@ -783,6 +783,54 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/create": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/delete": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/list": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/pause": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/resume": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/retrieve": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/update": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/subresources/invocations": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/subresources/invocations/methods/create": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/subresources/invocations/methods/list": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/subresources/invocations/methods/retrieve": {
+      "since": "2026-10-23",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments": {
       "since": "2026-09-17",
       "reason": "HTTP 404"

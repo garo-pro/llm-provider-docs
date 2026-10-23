@@ -12,7 +12,7 @@
 
 > [!NOTE]
 >
-> For instructions on using the latest models, see [How to Switch Models](/devpack/latest-model.md).
+> For instructions on using the latest models, see [How to Switch Models](https://docs.z.ai/devpack/latest-model.md).
 
 ***
 

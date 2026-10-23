@@ -40,7 +40,7 @@ https://api.z.ai/api/paas/v4/
 
 > [!WARNING]
 >
-> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start.md) to configure your dedicated endpoint.
+> When using GLM Coding Plan, please follow the [tutorial](https://docs.z.ai/devpack/quick-start.md) to configure your dedicated endpoint.
 
 ### Request Header Requirements
 
@@ -330,7 +330,7 @@ public class AgentExample {
 
 ## Get More
 
-> **[API Documentation](/api-reference)**
+> **[API Documentation](https://docs.z.ai/api-reference)**
 >
 > View complete API interface documentation and parameter descriptions
 

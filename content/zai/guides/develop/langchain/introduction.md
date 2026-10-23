@@ -296,7 +296,7 @@ response = llm([HumanMessage(content="Write a poem about spring")])
 
 ## Getting Help
 
-> **[Z.AI API Documentation](/api-reference)**
+> **[Z.AI API Documentation](https://docs.z.ai/api-reference)**
 >
 > View complete Z.AI API documentation
 

@@ -180,13 +180,13 @@ Try asking Claude to explore a bunch of solutions, and give a review agent a rub
 
 ### Evals
 
-You can run lightweight evals for particular tasks by spinning off separate agents in a worktree and then spinning off comparison agents to compare and grade the specific outputs against a rubric. For example, evaluating and then refining a skill you’ve created against a particular criteria.
+You can run lightweight evals for particular tasks by spinning off separate agents in a worktree and then spinning off comparison agents to compare and grade the specific outputs against a rubric. For example, [evaluating and then refining a skill](https://claude.dev/blog/automating-eval-design-and-hillclimbing/) you’ve created against a particular criteria.
 
 ### Model and intelligence routing
 
 Create a classifier agent tuned to your tasks that decides which model to use. This can be helpful when your task will involve many tool calls and conducting research prior to execution can identify the best model for the job.
 
-For example, the best model for the task “explain how the auth module works” depends on how many files in the auth module there are and the shape of the codebase. A classifier agent can do this research and then route to Sonnet or Opus based on the expected complexity of the task.
+For example, the best model for the task “explain how the auth module works” depends on how many files in the auth module there are and the shape of the codebase. A classifier agent can do this research and then [route to Sonnet or Opus](https://claude.dev/blog/building-with-claude-sonnet-5-5/) based on the expected complexity of the task.
 
 ## When not to use dynamic workflows
 
@@ -206,7 +206,7 @@ Workflows are not just for large tasks. You can prompt the model to use a “qui
 
 ### Combine with `/goal` and `/loop`
 
-When using workflows that can be repeated, for example triage, research, or verification, pair them with `/loop` to be run at regular intervals, and /goal to set a hard completion requirement.
+When using workflows that can be repeated, for example triage, research, or verification, pair them with `/loop` to be [run at regular intervals](https://claude.com/resources/articles/getting-started-with-loops), and /goal to set a hard completion requirement.
 
 ### Token usage budgets
 

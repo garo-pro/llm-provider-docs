@@ -388,7 +388,7 @@ response = client.chat.completions.create(
 
 ## Getting Help
 
-> **[API Documentation](/api-reference)**
+> **[API Documentation](https://docs.z.ai/api-reference)**
 >
 > View complete API interface documentation
 

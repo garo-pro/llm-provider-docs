@@ -14,67 +14,67 @@
 
 Click on the tool documentation below that you wish to use, and follow the corresponding integration guide to set it up.
 
-> **[ZCode (1.5× Usage)](/devpack/tool/zcode)**
+> **[ZCode (1.5× Usage)](https://docs.z.ai/devpack/tool/zcode)**
 >
 > ZCode integrates AI agents into your existing toolchain.
 
-> **[Claude Code](/devpack/tool/claude)**
+> **[Claude Code](https://docs.z.ai/devpack/tool/claude)**
 >
 > The Claude Code IDE plugin supports VSCode and JetBrains.
 
-> **[Claude for IDE](/devpack/tool/claude-for-ide)**
+> **[Claude for IDE](https://docs.z.ai/devpack/tool/claude-for-ide)**
 >
 > The Claude Code IDE plugin supports VSCode and JetBrains.
 
-> **[Codex](/devpack/tool/codex)**
+> **[Codex](https://docs.z.ai/devpack/tool/codex)**
 >
 > OpenAI's AI coding agent that helps you write, review, and debug code.
 
-> **[OpenCode](/devpack/tool/opencode)**
+> **[OpenCode](https://docs.z.ai/devpack/tool/opencode)**
 >
 > The Claude Code IDE plugin supports VSCode and JetBrains.
 
-> **[Pi](/devpack/tool/pi)**
+> **[Pi](https://docs.z.ai/devpack/tool/pi)**
 >
 > A minimalist terminal coding agent with a small core, extensible via extensions, Skills, and Pi Packages.
 
-> **[Cursor](/devpack/tool/cursor)**
+> **[Cursor](https://docs.z.ai/devpack/tool/cursor)**
 >
 > An AI-first code editor that supports custom model configurations.
 
-> **[Cline](/devpack/tool/cline)**
+> **[Cline](https://docs.z.ai/devpack/tool/cline)**
 >
 > An AI programming extension for VS Code that supports code generation and file operations.
 
-> **[TRAE](/devpack/tool/trae)**
+> **[TRAE](https://docs.z.ai/devpack/tool/trae)**
 >
 > An AI editor capable of independently completing various development tasks.
 
-> **[Qoder](/devpack/tool/qoder)**
+> **[Qoder](https://docs.z.ai/devpack/tool/qoder)**
 >
 > An agentic coding platform designed for real software development.
 
-> **[Droid](/devpack/tool/droid)**
+> **[Droid](https://docs.z.ai/devpack/tool/droid)**
 >
 > Enterprise-grade AI coding agent that runs in the terminal to handle end-to-end workflows.
 
-> **[Kilo Code](/devpack/tool/kilo)**
+> **[Kilo Code](https://docs.z.ai/devpack/tool/kilo)**
 >
 > A powerful VS Code extension for code generation and project management.
 
-> **[Roo Code](/devpack/tool/roo)**
+> **[Roo Code](https://docs.z.ai/devpack/tool/roo)**
 >
 > A smart VS Code extension for code writing and refactoring.
 
-> **[Crush](/devpack/tool/crush)**
+> **[Crush](https://docs.z.ai/devpack/tool/crush)**
 >
 > A terminal-based AI programming tool that supports both CLI and TUI interfaces.
 
-> **[Goose](/devpack/tool/goose)**
+> **[Goose](https://docs.z.ai/devpack/tool/goose)**
 >
 > AI Agent tool, supporting local execution and automated engineering tasks.
 
-> **[Eigent](/devpack/tool/eigent)**
+> **[Eigent](https://docs.z.ai/devpack/tool/eigent)**
 >
 > A desktop AI agent built on a multi-agent architecture, capable of automating browser, terminal, and MCP-powered workflows.
 
@@ -84,11 +84,11 @@ Click on the tool documentation below that you wish to use, and follow the corre
 >
 > The general-purpose agent tools listed below are also supported and will continue to be served on a best-effort basis. Under high inference load, some requests may face temporary rate limits.
 
-> **[AutoClaw (1.5× Usage)](/devpack/tool/autoclaw)**
+> **[AutoClaw (1.5× Usage)](https://docs.z.ai/devpack/tool/autoclaw)**
 >
 > Deeply optimized for GLM models, integrating specialized domain knowledge bases and workflows.
 
-> **[OpenClaw](/devpack/tool/openclaw)**
+> **[OpenClaw](https://docs.z.ai/devpack/tool/openclaw)**
 >
 > An open-source AI assistant that runs on local devices, supports multi-platform use.
 

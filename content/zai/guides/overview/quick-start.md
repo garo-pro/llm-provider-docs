@@ -27,13 +27,13 @@
 
 **2. Choose Model**
 
-> The platform offers multiple models, and you can select the appropriate model based on your needs. For detailed model introductions, please refer to the [Models & Agents](/guides/overview/overview.md).
+> The platform offers multiple models, and you can select the appropriate model based on your needs. For detailed model introductions, please refer to the [Models & Agents](https://docs.z.ai/guides/overview/overview.md).
 
-> **[GLM-5.3](/guides/llm/glm-5.3.md)**
+> **[GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3.md)**
 >
 > Z.ai’s latest flagship model, delivering comprehensive advancements in software engineering and agent capabilities.
 
-> **[GLM-5.3-FLASH](/guides/vlm/glm-5.3-flash.md)**
+> **[GLM-5.3-FLASH](https://docs.z.ai/guides/vlm/glm-5.3-flash.md)**
 >
 > Multimodal Coding model, specializing in visual programming.
 
@@ -41,23 +41,23 @@
 
 Our platform provides various development approaches; you can select the best fit for your project needs and tech stack.
 
-> **[HTTP API](/guides/develop/http/introduction.md)**
+> **[HTTP API](https://docs.z.ai/guides/develop/http/introduction.md)**
 >
 > Standard RESTful API, compatible with all programming languages.
 
-> **[Z.AI Python SDK](/guides/develop/python/introduction.md)**
+> **[Z.AI Python SDK](https://docs.z.ai/guides/develop/python/introduction.md)**
 >
 > Official Python SDK, featuring full type hints and async support.
 
-> **[Z.AI Java SDK](/guides/develop/java/introduction.md)**
+> **[Z.AI Java SDK](https://docs.z.ai/guides/develop/java/introduction.md)**
 >
 > Official Java SDK, designed for high concurrency and availability.
 
-> **[OpenAI Python SDK](/guides/develop/openai/python.md)**
+> **[OpenAI Python SDK](https://docs.z.ai/guides/develop/openai/python.md)**
 >
 > OpenAI SDK Compatibility, quickly migrating from OpenAI.
 
-> **[API Reference](/api-reference)**
+> **[API Reference](https://docs.z.ai/api-reference)**
 >
 > Complete API documentation with parameter descriptions.
 
@@ -67,7 +67,7 @@ After preparing your `API Key` and selecting a model, you can start making API c
 
 > [!WARNING]
 >
-> When using GLM Coding Plan, please follow the [tutorial](/devpack/quick-start.md) to configure your dedicated endpoint.
+> When using GLM Coding Plan, please follow the [tutorial](https://docs.z.ai/devpack/quick-start.md) to configure your dedicated endpoint.
 
 **cURL**
 
@@ -319,7 +319,7 @@ public class QuickStart {
 
 ### Get More
 
-> **[API Reference](/api-reference)**
+> **[API Reference](https://docs.z.ai/api-reference)**
 >
 > Access API Reference.
 

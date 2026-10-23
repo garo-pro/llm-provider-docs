@@ -78,7 +78,7 @@ Plans are not switched automatically. You must subscribe or switch manually.
 
 **Q: Can I still use the migration discount I received on April 30?**
 
-**A:** Yes. If you met the eligibility requirements in the [Legacy Plan Migration Notice](/devpack/transition.md), your **50% Migration Support discount** remains valid through its original validity period and can be used for the new credits-based plan.
+**A:** Yes. If you met the eligibility requirements in the [Legacy Plan Migration Notice](https://docs.z.ai/devpack/transition.md), your **50% Migration Support discount** remains valid through its original validity period and can be used for the new credits-based plan.
 
 ## Usage Reference for Legacy Plans
 

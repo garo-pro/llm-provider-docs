@@ -30,23 +30,23 @@
 
 ## Capability
 
-> **[Thinking Mode](/guides/capabilities/thinking-mode.md)**
+> **[Thinking Mode](https://docs.z.ai/guides/capabilities/thinking-mode.md)**
 >
 > Offering multiple thinking modes for different scenarios
 
-> **[Streaming Output](/guides/capabilities/streaming.md)**
+> **[Streaming Output](https://docs.z.ai/guides/capabilities/streaming.md)**
 >
 > Support real-time streaming responses to enhance user interaction experience
 
-> **[Function Call](/guides/capabilities/function-calling.md)**
+> **[Function Call](https://docs.z.ai/guides/capabilities/function-calling.md)**
 >
 > Powerful tool invocation capabilities, enabling integration with various external toolsets
 
-> **[Context Caching](/guides/capabilities/cache.md)**
+> **[Context Caching](https://docs.z.ai/guides/capabilities/cache.md)**
 >
 > Intelligent caching mechanism to optimize performance in long conversations
 
-> **[Structured Output](/guides/capabilities/struct-output.md)**
+> **[Structured Output](https://docs.z.ai/guides/capabilities/struct-output.md)**
 >
 > Support for structured output formats like JSON, facilitating system integration
 
@@ -148,7 +148,7 @@ Before its official release, GLM-5.2 was made available in advance to GLM Coding
 
 ## Resources
 
-* [API Documentation](/api-reference/llm/chat-completion.md): Learn how to call the API.
+* [API Documentation](https://docs.z.ai/api-reference/llm/chat-completion.md): Learn how to call the API.
 
 ## Quick Start
 

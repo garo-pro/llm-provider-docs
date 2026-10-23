@@ -28,7 +28,7 @@ Team Plan members can create an API Key under [Team Coding Plan > My Plan](https
 
 > [!TIP]
 >
-> API Keys for Individual Plans, Team Plans, and the standard model API are now managed separately. Newly created API Keys for these three product types are not interchangeable—use the one that matches your needs. For details, see the [API Key Management Guide](/devpack/notice/api-key-management.md).
+> API Keys for Individual Plans, Team Plans, and the standard model API are now managed separately. Newly created API Keys for these three product types are not interchangeable—use the one that matches your needs. For details, see the [API Key Management Guide](https://docs.z.ai/devpack/notice/api-key-management.md).
 
 > [!WARNING]
 >
@@ -103,7 +103,7 @@ This function performs poorly. Please optimize it for me.
 > * Understand flowcharts and architecture diagrams
 > * Extract text and information from screenshots
 >
-> For detailed usage instructions, refer to the [Vision MCP Server](/devpack/mcp/vision-mcp-server.md) documentation.
+> For detailed usage instructions, refer to the [Vision MCP Server](https://docs.z.ai/devpack/mcp/vision-mcp-server.md) documentation.
 
 > **Web Search MCP Server (Coding Plan Exclusive)**
 >
@@ -113,7 +113,7 @@ This function performs poorly. Please optimize it for me.
 > * Obtain the latest information on open-source projects
 > * Find solutions and best practices
 >
-> For detailed usage instructions, refer to the [Web Search MCP Server](/devpack/mcp/search-mcp-server.md) documentation.
+> For detailed usage instructions, refer to the [Web Search MCP Server](https://docs.z.ai/devpack/mcp/search-mcp-server.md) documentation.
 
 > **Web Reader MCP Server (Coding Plan Exclusive)**
 >
@@ -123,7 +123,7 @@ This function performs poorly. Please optimize it for me.
 > * Extract structured data such as title, body, and metadata
 > * Remote HTTP-based MCP service, no local installation required
 >
-> For detailed usage instructions, refer to the [Web Reader MCP Server](/devpack/mcp/reader-mcp-server.md) documentation.
+> For detailed usage instructions, refer to the [Web Reader MCP Server](https://docs.z.ai/devpack/mcp/reader-mcp-server.md) documentation.
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

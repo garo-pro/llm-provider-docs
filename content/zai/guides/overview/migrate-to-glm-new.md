@@ -162,7 +162,7 @@ if final_tool_calls:
         print(f"  {idx}: Function Name: {tool_call.function.name}, Parameters: {tool_call.function.arguments}")
 ```
 
-See: [Tool Streaming Output Documentation](/guides/tools/stream-tool.md)
+See: [Tool Streaming Output Documentation](https://docs.z.ai/guides/tools/stream-tool.md)
 
 ### 5. Testing and Regression
 
@@ -174,15 +174,15 @@ See: [Tool Streaming Output Documentation](/guides/tools/stream-tool.md)
 
 ## More Resources
 
-> **[Concept Parameters](/guides/overview/concept-param.md)**
+> **[Concept Parameters](https://docs.z.ai/guides/overview/concept-param.md)**
 >
 > Common model parameter concepts and sampling recommendations
 
-> **[Tool Streaming Output](/guides/tools/stream-tool.md)**
+> **[Tool Streaming Output](https://docs.z.ai/guides/tools/stream-tool.md)**
 >
 > View tool streaming output usage details
 
-> **[API Reference](/api-reference/introduction.md)**
+> **[API Reference](https://docs.z.ai/api-reference/introduction.md)**
 >
 > View complete API documentation
 

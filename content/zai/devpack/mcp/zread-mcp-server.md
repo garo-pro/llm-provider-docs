@@ -241,8 +241,8 @@ Replace `your_api_key` with the API key you obtained in the previous step
 
 * [Model Context Protocol (MCP) Documentation](https://modelcontextprotocol.io/)
 * [Claude Code MCP Configuration Guide](https://docs.anthropic.com/en/docs/claude-code/mcp)
-* [MCP Usage Limits](/devpack/overview.md#usage-instruction)
-* [GLM Coding Plan Overview](/devpack/overview.md)
+* [MCP Usage Limits](https://docs.z.ai/devpack/overview.md#usage-instruction)
+* [GLM Coding Plan Overview](https://docs.z.ai/devpack/overview.md)
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

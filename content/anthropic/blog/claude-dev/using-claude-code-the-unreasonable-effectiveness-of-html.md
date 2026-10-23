@@ -55,7 +55,7 @@ But HTML documents are much easier to read because Claude can organize the struc
 
 Markdown files are fairly hard to share since most browsers do not render them natively well. You often have to add them as attachments to emails or messages.
 
-As long as you upload the HTML file, you can share the link easily. Your colleagues can open it wherever they wish and easily reference it.
+As long as you upload the HTML file, you can [share the link easily](https://claude.com/resources/articles/artifacts-in-claude-code). Your colleagues can open it wherever they wish and easily reference it.
 
 The chance of someone actually reading your spec, report, or PR writeup is much higher if it’s in HTML.
 
@@ -75,7 +75,7 @@ Besides the file system, Claude Code can find additional context using your MCPs
 
 ## Getting started
 
-One thing worth noting: you don't need to do much to get Claude to generate HTML like this. You can simply prompt it to "*make an HTML file*" or "*make an HTML artifact*." The main thing is knowing what you want the artifact to do and how you might use it. Over time, it may make sense to build a skill around recurring patterns, but starting by prompting from scratch is a good way to get a feel for how it works across different use cases.
+One thing worth noting: you don't need to do much to get Claude to generate HTML like this. You can simply prompt it to "*make an HTML file*" or "*make an HTML artifact*." The main thing is knowing what you want the artifact to do and how you might use it. Over time, it may make sense to [build a skill around recurring patterns](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/), but starting by prompting from scratch is a good way to get a feel for how it works across different use cases.
 
 ## Use cases
 

@@ -131,7 +131,7 @@ The Team Plan Key is the dedicated access credential for the Team Plan. After ea
 >
 > Please note that the **Team Plan Key is independent from other platform API Keys**. To use your Team Plan quota, make sure to use the Team Plan Key in the relevant scenarios.
 
-For details on how API Keys are classified and billed, see the [API Key Management Guide](/devpack/notice/api-key-management.md).
+For details on how API Keys are classified and billed, see the [API Key Management Guide](https://docs.z.ai/devpack/notice/api-key-management.md).
 
 ## Seat Rules
 
