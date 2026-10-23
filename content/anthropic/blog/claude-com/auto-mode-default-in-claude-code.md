@@ -7,6 +7,10 @@ Markdown Content:
 
 Claude Code will soon run auto mode by default for Pro, Max, and Team plans, enabling longer-running autonomous work, and catching more dangerous commands than manual review in our testing.
 
+**Update, October 22, 2026:** Auto mode is rolling out next week as the default for new sessions in most Claude apps on Pro, Max, and Team plans. Instead of asking you to approve each action, an automated check reviews them: safe actions go ahead, and risky ones are blocked while Claude looks for another route. Enterprise admins will get an email before auto mode becomes the default for their organizations.
+
+*Before making auto mode the default in Claude Code, we tested it internally and with third-party red-teaming. We used those findings to strengthen how* *auto mode* *works across all our products. The data in this article below is specifically for* *Claude Code.*
+
 We're making [auto mode](https://code.claude.com/docs/en/auto-mode-config) the default in Claude Code. Starting on August 14, new sessions on Pro, Max, and Team plans will run in auto mode. If you've already set a different default yourself, you may get a one-time prompt asking whether you want to switch to auto mode. If you have a pinned default, nothing changes for you. The auto mode classifier uses a small number of extra tokens per tool call, and we're no longer charging Claude Code users on Pro, Max, and Team plans for that classifier overhead, effective today.
 
 Auto mode remains opt-in for now on Claude Enterprise, the Claude API, Claude Platform on AWS, Amazon Bedrock, Google Cloud's Agent Platform, and Microsoft Foundry, giving admins time to review the change. In the coming month, working with our cloud partners, we plan to make it the default across all of these and no longer charge for classifier overhead. In the meantime, Enterprise admins can make Claude Code's auto mode the default through managed settings.

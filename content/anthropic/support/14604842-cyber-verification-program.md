@@ -50,7 +50,47 @@ What you'll need:
 
 ## Building client-facing products
 
-Your CVP access covers security work on your organization's own code, products, and infrastructure. Your CVP grant may not be used to build or operate a client-facing product or service. For example, using CVP access to run the model against a customer's code or systems, letting a customer interact with the model through something you've built, or any other "productizing" of our models requires a separate application and approval. The productization application will become available in the Verification Portal to CVP users shortly.
+Your CVP access covers security work on your organization's own code, products, and infrastructure. Using your CVP access to deliver work to your customers, for example by running the model against a customer's code or systems or by letting customers use something you've built on the model, requires approval. Please submit a separate application for **each service or product you offer**.
+
+**Managed services: applications are open.** In a managed service, your own staff use the model to do security work for a customer, on code and systems the customer owns or operates. The customer receives only finished deliverables, such as a findings report or patched code. Your customers never prompt the model, interact with it, or see its raw output.
+
+**Products: not open yet.** In a product, your customers use something you built on the model, such as a scanner or a code-review tool, even if they can only trigger or configure it. Products are categorized as follows:
+
+- **Constrained products:** Customers use something built on the model but cannot direct it or see its raw output
+
+- **Unconstrained products:** Any other customer-facing product, such as one where customers can give the model their own instructions or see its responses as written.
+
+While we are not yet reviewing applications for products, you can express interest by selecting “Constrained product” or “Unconstrained product,” then select “Express interest.” We'll contact you when we're accepting product applications, and you'll need to submit a full application then.
+
+### How to apply for a managed service
+
+You must be an admin of an organization approved for the Cyber Verification Program.
+
+1. Sign in to the **[Verification Portal](https://portal.anthropic.com/programs/cyber-productization)**, open “Programs,” then choose “Cyber productization.”
+
+2. Select “Register an offering,” then choose “Managed service.”
+
+3. Name the service and describe how it runs, who operates the model, and what your customers receive. Then confirm the six security commitments and give a security contact and the name and title of the company officer who signs off.
+
+4. Accept the Anthropic Cyber Defender Partner Addendum, then select “Submit” for review.
+
+5. To apply for another managed service, go back to the Cyber productization page and repeat steps 2 to 4.
+
+### How to express interest in a constrained or unconstrained product
+
+You must be an admin of an organization approved for the Cyber Verification Program.
+
+1. Sign in to the **[Verification Portal](https://portal.anthropic.com/programs/cyber-productization)**, open “Programs,” then choose “Cyber productization.”
+
+2. Select “Register an offering,” then choose “Constrained” or “Unconstrained” product.
+
+3. Describe the product in one line.
+
+4. Add a name and email.
+
+5. Select “Express Interest."
+
+Check your answers before you submit: you can't edit or withdraw an application after you send it. You can follow each application's status on the **Cyber productization** page. Don't serve customers through a service until it's approved. Until then, you can keep using your CVP access for work on your own code, products, and infrastructure.
 
 ## Security controls and requirements
 
