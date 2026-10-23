@@ -9,7 +9,7 @@ Markdown Content:
 
 Claude can now use *Skills* to improve how it performs specific tasks. Skills are folders that include instructions, scripts, and resources that Claude can load when needed.
 
-Claude will only access a skill when it's relevant to the task at hand. When used, skills make Claude better at specialized tasks like working with Excel or following your organization's brand guidelines.
+Claude will only access a skill when it's relevant to the task at hand. When used, skills make Claude better at [specialized tasks](https://claude.com/resources/articles/improving-frontend-design-through-skills) like working with Excel or following your organization's brand guidelines.
 
 You've already seen Skills at work in Claude apps, where Claude uses them to create files like spreadsheets and presentations. Now, you can build your own skills and use them across Claude apps, Claude Code, and our API.
 
