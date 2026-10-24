@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-24T05:14:21.640238Z",
+    "fetch_date": "2026-10-24T09:59:03.918535Z",
     "section": "all"
   },
   "items": [
@@ -13260,8 +13260,8 @@
       "url": "https://www.anthropic.com/beneficial-deployments",
       "status": "success",
       "path": "anthropic/blog/policy/beneficial-deployments.md",
-      "sha256": "8e18e87fc39eda7848e86f64f9291dc411a92eec4ed4d857ea9f3dd95eafe198",
-      "size": 14920
+      "sha256": "67649733431d42c02c9fd8f63a8e8e55cc6e078c3840073ea814f26fde945dd7",
+      "size": 14723
     },
     {
       "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
@@ -17838,8 +17838,8 @@
       "url": "https://support.claude.com/en/articles/10310342-how-do-i-log-out-of-all-active-sessions",
       "status": "success",
       "path": "anthropic/support/10310342-how-do-i-log-out-of-all-active-sessions.md",
-      "sha256": "ef18846f7675c6e64fc4b5f9692bb6d3206a4ba04b08bc93ea257035313006b6",
-      "size": 2378
+      "sha256": "474f4eca43ca91e8beeaf62671fdafdd0b6335a4ab3d6e75539607898d5b5449",
+      "size": 2902
     },
     {
       "url": "https://support.claude.com/en/articles/10366376-how-can-i-delete-my-claude-console-account",
@@ -18559,8 +18559,8 @@
       "url": "https://support.claude.com/en/articles/13145358-anthropic-software-directory-policy",
       "status": "success",
       "path": "anthropic/support/13145358-anthropic-software-directory-policy.md",
-      "sha256": "031086f3df37d07b8348034cf3e6ff7f8d8c21a561339eaf8c51c9c562d72391",
-      "size": 7458
+      "sha256": "e5f3fe403ca1628620f9c05568732bf21f0068570aebf105c25bea718b3bf673",
+      "size": 8847
     },
     {
       "url": "https://support.claude.com/en/articles/13163631-configuring-session-security-settings",
@@ -18573,8 +18573,8 @@
       "url": "https://support.claude.com/en/articles/13171706-crisis-helpline-support-in-claude",
       "status": "success",
       "path": "anthropic/support/13171706-crisis-helpline-support-in-claude.md",
-      "sha256": "76533a67fda7515c14d8c049964861b3d5772d73cd42470fee77294f2fca8c7a",
-      "size": 8566
+      "sha256": "ee0a6d5fc25d10b5e1518c27cd35a02d6019a2edd7a33949db2a18fbe6955f5a",
+      "size": 10946
     },
     {
       "url": "https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account",
@@ -31733,8 +31733,8 @@
       "url": "https://developers.openai.com/api/docs/guides/your-data",
       "status": "success",
       "path": "openai/api/docs/guides/your-data.md",
-      "sha256": "0b27f000d9dc7981cf3471473a4b723ddc9e81940921c725ada218751c181a65",
-      "size": 83922
+      "sha256": "219b705c34aa7592431086068711e9c0d917bfb7e0308593a1aa0258597f4da7",
+      "size": 83793
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/ip-allowlist",
@@ -32272,8 +32272,8 @@
       "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
       "status": "success",
       "path": "openai/api/docs/guides/prompt-caching.md",
-      "sha256": "715eacd5f0fe6bd7b238b74b770a6eb5b9a5260f464b5d54066b0bf580d3e995",
-      "size": 55725
+      "sha256": "5ef36de765cb4e16fdab153e13799d9f22b46ee1ff0d602375442c4cae2cc379",
+      "size": 56544
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning",
@@ -33053,6 +33053,13 @@
       "size": 8340
     },
     {
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/sessions/automations",
+      "status": "success",
+      "path": "openai/api/docs/guides/agents-api/sessions/automations.md",
+      "sha256": "b6692b1ccea489763e2bdbb6e50dab4e9e951427f037800f43b7ee92f6d47313",
+      "size": 88993
+    },
+    {
       "url": "https://developers.openai.com/api/docs/guides/agents-api/tools/plugins",
       "status": "success",
       "path": "openai/api/docs/guides/agents-api/tools/plugins.md",
@@ -33191,6 +33198,13 @@
       "path": "openai/api/docs/guides/agents-api/environments/providers/e2b.md",
       "sha256": "a26ccaaa53614f169be8b8101c99ebe5a32e392f304834a25686b2ea70ecfcd5",
       "size": 3043
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/environments/providers/databricks",
+      "status": "success",
+      "path": "openai/api/docs/guides/agents-api/environments/providers/databricks.md",
+      "sha256": "c7fe8b0690919a97943bb814e3088d7553633271d8342641eb16dcc0f9795b49",
+      "size": 2284
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/agents-api/environments/providers/modal",
@@ -36383,6 +36397,13 @@
       "path": "openai/cookbook/examples/agents_api/sandboxes/aws/readme.md",
       "sha256": "78c47fffc22ef64b883ccdefe5e9508c8c190b93805623af21676725360c3708",
       "size": 14672
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/examples/agents_api/sandboxes/databricks/readme",
+      "status": "success",
+      "path": "openai/cookbook/examples/agents_api/sandboxes/databricks/readme.md",
+      "sha256": "544db42f1fce290e101d273724f6c69e85a51501217e21c272f0e27dfca4ebd4",
+      "size": 8267
     },
     {
       "url": "https://developers.openai.com/cookbook/examples/agents_api/apps/data_analyst/readme",
@@ -44069,27 +44090,6 @@
       "path": "anthropic/github/anthropic-sdk-typescript/src/internal/qs/README.md",
       "sha256": "dde9487eaeb2d89982fb4b9c6a652015393d95c7e0958f0a19242c55d0ee4788",
       "size": 170
-    },
-    {
-      "url": "https://developers.openai.com/api/docs/guides/agents-api/environments/providers/databricks",
-      "status": "success",
-      "path": "openai/api/docs/guides/agents-api/environments/providers/databricks.md",
-      "sha256": "c7fe8b0690919a97943bb814e3088d7553633271d8342641eb16dcc0f9795b49",
-      "size": 2284
-    },
-    {
-      "url": "https://developers.openai.com/api/docs/guides/agents-api/sessions/automations",
-      "status": "success",
-      "path": "openai/api/docs/guides/agents-api/sessions/automations.md",
-      "sha256": "b6692b1ccea489763e2bdbb6e50dab4e9e951427f037800f43b7ee92f6d47313",
-      "size": 88993
-    },
-    {
-      "url": "https://developers.openai.com/cookbook/examples/agents_api/sandboxes/databricks/readme",
-      "status": "success",
-      "path": "openai/cookbook/examples/agents_api/sandboxes/databricks/readme.md",
-      "sha256": "544db42f1fce290e101d273724f6c69e85a51501217e21c272f0e27dfca4ebd4",
-      "size": 8267
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
