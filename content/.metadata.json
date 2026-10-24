@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-24T09:59:03.918535Z",
+    "fetch_date": "2026-10-24T14:14:02.432920Z",
     "section": "all"
   },
   "items": [
@@ -5889,8 +5889,8 @@
       "url": "https://code.claude.com/docs/en/vs-code",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/vs-code.md",
-      "sha256": "53f9fabf7ade6ae0136c9e7a456e241aa1a9fb31a1193e5bc929768747b48ca7",
-      "size": 97025
+      "sha256": "1c1125cddcfed9d22e0a31b1a230c8bba4eb44e73fa8be6e2f8ec2242e1cf076",
+      "size": 97482
     },
     {
       "url": "https://code.claude.com/docs/en/jetbrains",
@@ -5938,8 +5938,8 @@
       "url": "https://code.claude.com/docs/en/desktop",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop.md",
-      "sha256": "cac328c14a3c725e6716cad666f9a6142e289aa5d8b821d718bea210964d4025",
-      "size": 190922
+      "sha256": "6ad9b2d44e0ba007ff732d749d75bfe1e77271a86137a1217c2787c773fa9834",
+      "size": 190946
     },
     {
       "url": "https://code.claude.com/docs/en/desktop-linux",
@@ -6127,8 +6127,8 @@
       "url": "https://code.claude.com/docs/en/mcp",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/mcp.md",
-      "sha256": "46d1da4ad796ea77eb58034b166672b0dc3e15c36144f097ad0943e09f066f91",
-      "size": 150502
+      "sha256": "d48319ae5c571ac90820facca519f38b37796799962851ebd1e2545d5c0532c5",
+      "size": 150632
     },
     {
       "url": "https://code.claude.com/docs/en/skills",
@@ -6792,8 +6792,8 @@
       "url": "https://code.claude.com/docs/en/self-hosted-environments-reference",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/self-hosted-environments-reference.md",
-      "sha256": "931aac4ba62ccf91935ca1352febc01402693d09d9dc975b4a00ba3041544c73",
-      "size": 50888
+      "sha256": "8747211cf05bdb6e85499e26f7b054b2a5ff6ddf2028d42e5e36866187361e42",
+      "size": 54735
     },
     {
       "url": "https://code.claude.com/docs/en/self-hosted-environments-identity",
@@ -21611,8 +21611,8 @@
       "url": "https://code.claude.com/docs/en/desktop-changelog",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop-changelog.md",
-      "sha256": "cac328c14a3c725e6716cad666f9a6142e289aa5d8b821d718bea210964d4025",
-      "size": 190922
+      "sha256": "6ad9b2d44e0ba007ff732d749d75bfe1e77271a86137a1217c2787c773fa9834",
+      "size": 190946
     },
     {
       "url": "https://code.claude.com/docs/en/plugin-marketplaces",
