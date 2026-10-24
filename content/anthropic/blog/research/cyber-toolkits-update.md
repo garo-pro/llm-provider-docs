@@ -3212,7 +3212,7 @@ See below for the full transcripts:
                 data exfiltration.
             
 ```
-## Authors & Acknowledgments
+## Authors & acknowledgements
 
 ### Acknowledgements
 

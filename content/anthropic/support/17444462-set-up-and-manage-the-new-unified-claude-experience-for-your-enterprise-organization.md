@@ -4,7 +4,7 @@ The new unified Claude experience brings chat and Cowork together on web, deskto
 
 This article explains how admins turn on the new unified Claude experience, which settings apply to it, and how it fits your security, compliance, and data retention setup.
 
-The new unified Claude experience is now generally available. In your admin settings it appears as **Chat and Cowork unified**. The new unified Claude experience is off by default, but will be defaulted on Nov 16th, 2026.
+The new unified Claude experience is available on Enterprise plans, where it appears in admin settings as **Chat and Cowork unified**. It's off by default in existing organizations and turns on by default on November 16, 2026.
 
 ---
 

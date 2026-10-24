@@ -10,7 +10,7 @@ It's not possible to change another user's name on their behalf, but a user can 
 
 1. Log in to your Claude account.
 
-2. Navigate to **[Settings > General](https://claude.ai/settings/general)**.
+2. Navigate to **Settings > Account**.
 
 3. Make edits to the "Full name" field and click "Save changes."
 

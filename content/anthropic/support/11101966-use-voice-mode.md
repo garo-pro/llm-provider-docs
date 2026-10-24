@@ -74,7 +74,7 @@ Claude offers several voice options you can choose from when you first start voi
 
 To change the voice later:
 
-- **On the web and desktop:** Go to **[Settings > General](https://claude.ai/new#settings/general)** and scroll down to **Voice settings**. Select your preferred voice from the options. You’ll hear a preview when you click each option; click it again to stop the preview.
+- **On the web and desktop:** Go to **Settings > Capabilities** and scroll down to **Voice settings**. If **Voice** isn't there, go to **Settings > General** instead. Select your preferred voice from the options. You’ll hear a preview when you click each option; click it again to stop the preview.
 
 - **On mobile:** Click the settings button in the bottom left corner while chatting with Claude in voice mode, then tap your preferred voice and pace:
 
@@ -182,7 +182,7 @@ Dictation converts your speech to text so you can type prompts by speaking. Voic
 
 Yes. Voice mode supports many more languages, on all plans and on Claude Mobile, Claude Desktop, and web. Support for languages other than English is in beta.
 
-To set your voice language, go to **[Settings > General](https://claude.ai/new#settings/general)**, then find **Voice > Language** and choose a language. Changing your app's display language doesn't change your voice language, so set it here. You can also ask Claude to switch languages during a voice conversation.
+To set your voice language, go to **Settings > Capabilities**, then find **Voice > Spoken language** and choose a language. If **Voice** isn't there, go to **Settings > General**, then **Voice > Language**. Changing your app's display language doesn't change your voice language, so set it here. You can also ask Claude to switch languages during a voice conversation.
 
 ### Can I use voice mode with Claude Cowork or Claude Code?
 

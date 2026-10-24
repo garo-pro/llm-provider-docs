@@ -4,7 +4,7 @@
 
 1. Log in to your account and click your initials or name in the lower left corner.
 
-2. Navigate to [Settings > Appearance](https://claude.ai/settings/appearance).
+2. Navigate to **Settings > Appearance** (or **Settings > General** in the older Settings layout).
 
 3. Select from Light, Match System, and Dark under **Color mode**.
 
@@ -12,7 +12,7 @@
 
 ## How to change your font
 
-1. In [Settings > Appearance](https://claude.ai/settings/appearance), find **Chat font**.
+1. In **Settings > Appearance** (or **Settings > General** in the older Settings layout), find **Chat font**.
 
 2. Select from Default, Match System, and Dyslexic Friendly.
 
