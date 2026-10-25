@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-25T14:42:35.083294Z",
+    "fetch_date": "2026-10-25T18:40:11.145112Z",
     "section": "all"
   },
   "items": [
@@ -5805,8 +5805,8 @@
       "url": "https://code.claude.com/docs/en/prompt-caching",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/prompt-caching.md",
-      "sha256": "72827859936804a9261011c4e72756806a740655a4363d01b0be5fade45a8749",
-      "size": 44347
+      "sha256": "02c7f42cc7a32e2be83a2d72bdb7e14b43287ff1a162d548c40b85958fea3579",
+      "size": 43917
     },
     {
       "url": "https://code.claude.com/docs/en/memory",
@@ -6372,8 +6372,8 @@
       "url": "https://code.claude.com/docs/en/plugins/create-marketplace",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/plugins/create-marketplace.md",
-      "sha256": "8375e712c31dcea2ba3c032862bb85a3983693edd2f874690d5c196f8c0f4a8a",
-      "size": 14444
+      "sha256": "e8efdce4f1045fbeaec9c047dc30c95ef04292d7864110dd1b8761d5931312e1",
+      "size": 15748
     },
     {
       "url": "https://code.claude.com/docs/en/plugins/host-marketplace",
@@ -6407,8 +6407,8 @@
       "url": "https://code.claude.com/docs/en/plugins/troubleshooting",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/plugins/troubleshooting.md",
-      "sha256": "5a4c0fec04ed0fa6d49baefe214e9bbd1053daa758421a879e76e3f664e6113e",
-      "size": 97265
+      "sha256": "1abf43b6e3225841efdc765eac79cc911440ec3e231442d8b2dd0cba18d6357c",
+      "size": 98544
     },
     {
       "url": "https://code.claude.com/docs/en/plugins/loading",
@@ -6428,8 +6428,8 @@
       "url": "https://code.claude.com/docs/en/plugins/marketplace-reference",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/plugins/marketplace-reference.md",
-      "sha256": "9f0d9195189e02ce43c613b9546027d36222857986383b42f505a4ae2110d772",
-      "size": 45837
+      "sha256": "2b353a0f227f1637b8c5f5709d3de843054a31c81e38d769d00fb00544f3635c",
+      "size": 48331
     },
     {
       "url": "https://code.claude.com/docs/en/plugins/cli-reference",
@@ -6575,8 +6575,8 @@
       "url": "https://code.claude.com/docs/en/claude-apps-gateway-spend-limits",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/claude-apps-gateway-spend-limits.md",
-      "sha256": "592a42461e19a795b29b9007933ef58e647e4d9c5298e11968f3b73009db0f59",
-      "size": 16934
+      "sha256": "03a791cb4f1a5c5a9308ab331705a102371e217e597eb54b964a496189550721",
+      "size": 16863
     },
     {
       "url": "https://code.claude.com/docs/en/claude-apps-gateway-deploy",
@@ -6764,22 +6764,22 @@
       "url": "https://code.claude.com/docs/en/self-hosted-environments-quickstart",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/self-hosted-environments-quickstart.md",
-      "sha256": "677aca6a348047b5b4e475c199770ed6ea98aec12b388deb3bfddc65e181f33a",
-      "size": 16669
+      "sha256": "4961f704e7fc6206c6c69fa71289603b7ccaa7caa482897d33c4983e3e79cdbc",
+      "size": 16958
     },
     {
       "url": "https://code.claude.com/docs/en/self-hosted-environments-deploy",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/self-hosted-environments-deploy.md",
-      "sha256": "1c091717fee0479c2213841d5e0c4f457be89324cf4b4cb534b0cea54f08b9fc",
-      "size": 119031
+      "sha256": "9d6737126b16bc0d3a256d1481127f40f32efe4c96c7102903ef5b4e3c4ce58a",
+      "size": 120309
     },
     {
       "url": "https://code.claude.com/docs/en/self-hosted-environments-configuration",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/self-hosted-environments-configuration.md",
-      "sha256": "406a98f6564f4b91c6051777c2c3e11cefe3740a20f79f190f59d89ad2bc4213",
-      "size": 95195
+      "sha256": "92466f87e58383f4247bdd033592869ede2048ee3a622a72c385e56f57bec5b1",
+      "size": 95402
     },
     {
       "url": "https://code.claude.com/docs/en/self-hosted-environments-testing",
@@ -6813,8 +6813,8 @@
       "url": "https://code.claude.com/docs/en/fast-mode",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/fast-mode.md",
-      "sha256": "45af28da2f8026730781cfd2cd103b422f7d35a9587f6ae4bbccaeb4860e6967",
-      "size": 20921
+      "sha256": "a9c74a446ea964403aa8a73799c74d71269e6edab10537cc2a2bf4f3e9a83fa5",
+      "size": 20873
     },
     {
       "url": "https://code.claude.com/docs/en/advisor",
@@ -6862,8 +6862,8 @@
       "url": "https://code.claude.com/docs/en/statusline",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/statusline.md",
-      "sha256": "ae281440ad99e518a74a6d44da7038f17ad45217dba5ee9fe58815bc386913b3",
-      "size": 66090
+      "sha256": "a2391a0f4b8892bd32c0ea95d3d3d25f319c6891c963895ea0f2dd4c74150aa4",
+      "size": 66126
     },
     {
       "url": "https://code.claude.com/docs/en/keybindings",
@@ -6918,8 +6918,8 @@
       "url": "https://code.claude.com/docs/en/hooks",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/hooks.md",
-      "sha256": "73138cd79f2cc7bd34f1f990afd86ebded5686cb6d679f629d38134282f2b1c0",
-      "size": 281737
+      "sha256": "511ca59bb8bd2f6c9131dd6c621cdf0933f956050180c57839eb1c6afe76abca",
+      "size": 282278
     },
     {
       "url": "https://code.claude.com/docs/en/channels-reference",
@@ -7142,8 +7142,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/typescript",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/typescript.md",
-      "sha256": "65c93cdd9ca5e10374d7ea7a15c6d1e6534c9f7e86898d488501d6360ca6d211",
-      "size": 308129
+      "sha256": "2bfc12bff2d2381bee24004f2cd80cdb2f4bbcdc30129e94747fe614520efecd",
+      "size": 309772
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/typescript-v2-preview",
@@ -19529,13 +19529,6 @@
       "size": 8125
     },
     {
-      "url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
-      "status": "success",
-      "path": "anthropic/support/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5.md",
-      "sha256": "8cf7227a0d222170fa689c001ab7729a3e7eb052fa3e9993d4633f0c4244a7df",
-      "size": 8083
-    },
-    {
       "url": "https://support.claude.com/en/articles/17202708-cyber-verification-program-security-requirements",
       "status": "success",
       "path": "anthropic/support/17202708-cyber-verification-program-security-requirements.md",
@@ -21618,8 +21611,8 @@
       "url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/plugin-marketplaces.md",
-      "sha256": "8375e712c31dcea2ba3c032862bb85a3983693edd2f874690d5c196f8c0f4a8a",
-      "size": 14444
+      "sha256": "e8efdce4f1045fbeaec9c047dc30c95ef04292d7864110dd1b8761d5931312e1",
+      "size": 15748
     },
     {
       "url": "https://code.claude.com/docs/en/slash-commands",
@@ -47450,6 +47443,587 @@
       "path": "openai/github/openai-python/vertex.md",
       "sha256": "a4ebfa2ed713655b505e8e536a0c950f3c0dc23e0c0c3cc56bef7c77d5f49119",
       "size": 1841
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/.github/CONTRIBUTING.md",
+      "status": "success",
+      "path": "openai/github/openai-node/.github/CONTRIBUTING.md",
+      "sha256": "6471df88447c8c1516cbd9282ec5ddc4f5a65e27ed4677cbc97d21c2a9668716",
+      "size": 19278
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/.github/SECURITY.md",
+      "status": "success",
+      "path": "openai/github/openai-node/.github/SECURITY.md",
+      "sha256": "c93458294f1c468fd157c2f36d61785657b804a46c81f2f3d7ddef0e1ae96de7",
+      "size": 2002
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/.github/codex/prompts/node-version-review.md",
+      "status": "success",
+      "path": "openai/github/openai-node/.github/codex/prompts/node-version-review.md",
+      "sha256": "3b21046a7b8516af0e2c271bc5036d3c9758c1d1ad385e2b06f7ae5ade3332f6",
+      "size": 2589
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/.github/pull_request_template.md",
+      "status": "success",
+      "path": "openai/github/openai-node/.github/pull_request_template.md",
+      "sha256": "31dfd47ff0eac4affa770bdf8d184ee22ffd5c510f148f6c4ef1a688ccec6a0c",
+      "size": 391
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/AGENTS.md",
+      "status": "success",
+      "path": "openai/github/openai-node/AGENTS.md",
+      "sha256": "976c9af7b714b0b2d84703a1c16b32178da22f7324b95e438be20e4dd42c62de",
+      "size": 11605
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/CHANGELOG.md",
+      "status": "success",
+      "path": "openai/github/openai-node/CHANGELOG.md",
+      "sha256": "6f09f0ee898b075a64edc0c4ba24aae861efeb3b4cebb083876efdc8ed11a6a2",
+      "size": 415568
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/MIGRATION.md",
+      "status": "success",
+      "path": "openai/github/openai-node/MIGRATION.md",
+      "sha256": "3d2094e1ca7deccc426ec6639971b4af92442735d4d9181c48617c7e8f1c09a0",
+      "size": 20119
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/NODE_VERSION_POLICY.md",
+      "status": "success",
+      "path": "openai/github/openai-node/NODE_VERSION_POLICY.md",
+      "sha256": "011a5d7dca6a6979e8b5f82fe8df0e31796c3a7820915ad79d1d371eb5235ac6",
+      "size": 4733
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/README.md",
+      "sha256": "8cf814b6f272f795797087128d04669ad8bf8ea4521284128d486cf210f44303",
+      "size": 33002
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/api.md",
+      "status": "success",
+      "path": "openai/github/openai-node/api.md",
+      "sha256": "fc38e1d873ac4544fa16fe74478a228d86058ad681f2c7b939dff463015c928b",
+      "size": 138556
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/agents/helpers.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/agents/helpers.md",
+      "sha256": "027f6987d17b1df0a9e29212f60803a14319cbf718d2d9f4fc3619bcf2f98614",
+      "size": 9847
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/architecture/security-model.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/architecture/security-model.md",
+      "sha256": "e1bf08bc7bd64e3110fdaa82f629b58d97d052def7997ed64c8415ae39498f76",
+      "size": 69054
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/authentication.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/authentication.md",
+      "sha256": "e44b3c6b7a1d4a50ee41f551b7d01cdc025f20ae7d86a69d0303315c8530b82d",
+      "size": 7768
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/azure.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/azure.md",
+      "sha256": "87981704a7f1bcd7f9d62178716b127b0fd23b9215b82dbd513a9f1a7988655d",
+      "size": 3520
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/bedrock.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/bedrock.md",
+      "sha256": "e6c87782812546648e4860ca7d3ee6dd11942677157843067242e43e615fd095",
+      "size": 13005
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/browser-navigation.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/browser-navigation.md",
+      "sha256": "51524ef6a3021757975b7c425bd5c98cee93f0f2dcef5e73e575068590d5661a",
+      "size": 1133
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/browser-pointer.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/browser-pointer.md",
+      "sha256": "c4af3846046ff8bcd57603e407b93f708eb4ba81b0d3f6b1a12e54944a2383a9",
+      "size": 1431
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/browser-providers.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/browser-providers.md",
+      "sha256": "c8220f846a164ad37dc16c105cbdb7460a96d757ab2b331527169aa338478baf",
+      "size": 1237
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/browser.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/browser.md",
+      "sha256": "ca10ee67d7b084a28e6a43cbd1840c03f522b54a5b337f36e131972272a73d83",
+      "size": 38932
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/computer.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/computer.md",
+      "sha256": "89202bb713fd1d8cf41e7c4f67a585892a9626556f188a24a527ed1fd7724126",
+      "size": 7011
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/configuration.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/configuration.md",
+      "sha256": "6bc6e7550e61e5120d94b8802cf358c8d0f087835cc760584a8f5c46e22bd855",
+      "size": 6221
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/helpers.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/helpers.md",
+      "sha256": "c87e595377427b7f3ecc9301245178a8899690a12acc76785e5c7eb170a00624",
+      "size": 33075
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/live.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/live.md",
+      "sha256": "c87362277cd228bf2c3a6be7c1abd4c06cb8ef8207c2f6a5d130d35618df9ca4",
+      "size": 1759
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/realtime-translations.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/realtime-translations.md",
+      "sha256": "4b7b8f306c13130ad5c643d3fb94c057b9bbe0edec2d644d21b931f30a2479ff",
+      "size": 3931
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/realtime.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/realtime.md",
+      "sha256": "b62221274119d066511d548a859938813e516940d8841795fd60c548548bdae6",
+      "size": 9312
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/responses-websocket-session.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/responses-websocket-session.md",
+      "sha256": "39b8f1e41603c5bbd4136afdf66e0ba34a7743aa659290bcad4514b959713f6f",
+      "size": 13043
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/responses.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/responses.md",
+      "sha256": "602ca5e908a6e6610d84d021a5212dd2e06c493b4cbb3663d819c9b9d989d525",
+      "size": 9781
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/streaming.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/streaming.md",
+      "sha256": "f1a4015b9c3ce371952b3a70042e227731614781990080cc7032ed024fbb6686",
+      "size": 8020
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/structured-outputs.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/structured-outputs.md",
+      "sha256": "b3befcc846c0ebbe3f6a58aac62d08c1ad844c36f2941e8401fe12ec5e4c632e",
+      "size": 9103
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/tools.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/tools.md",
+      "sha256": "860d5cb5fd9de375c2c06e1e3f83c17d01d296e141c497b6328fccbe0af5fbc8",
+      "size": 8570
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/uploads.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/uploads.md",
+      "sha256": "591405dc45dfa1ad1f32d0f62a109063e57f9aa8115a3163e239f5853d365449",
+      "size": 6982
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/vertex.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/vertex.md",
+      "sha256": "206593236ff3c2021d09b85114c1d97eb91a020cfaafbd8eaefc42f6e07f171a",
+      "size": 1636
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/webhooks.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/webhooks.md",
+      "sha256": "e8dbaf23dc0cffa640b1638670f0aec7414baed5e0a6a0e170f28d3a9413f3d7",
+      "size": 3861
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/webrtc.md",
+      "status": "success",
+      "path": "openai/github/openai-node/docs/webrtc.md",
+      "sha256": "4227699c2e278ba6a06749fe5017888bffeda1b7a63d7a885a84e506da9ea5b2",
+      "size": 4531
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/ecosystem-tests/bun/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/ecosystem-tests/bun/README.md",
+      "sha256": "d0f926fa4317f9a24b52d9d18e47bb9f5b075c6ad0195c631a59b26e5b41ed34",
+      "size": 565
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/examples/browser-use-demo/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/examples/browser-use-demo/README.md",
+      "sha256": "f76259b32edabf8a601f237b5ed87b896d5996ea287fa00d918a062103fcfca8",
+      "size": 2352
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/examples/computer-desktop/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/examples/computer-desktop/README.md",
+      "sha256": "7f7f9d5cc99ffac75a3dcacf4f14624fb8e5bfbd45ae6d624af2bfb0b55b434a",
+      "size": 6749
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/examples/computer-desktop/guest/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/examples/computer-desktop/guest/README.md",
+      "sha256": "eb1d1a053a23e886302d072de33fdb1a67429ff8b09318e1641c3b7e92c469f6",
+      "size": 7847
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/examples/live/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/examples/live/README.md",
+      "sha256": "5edb19437c61bb79bbb29bc406234d06f137937365bd3c7c2fb976ec8c28bfbf",
+      "size": 3120
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/examples/mtls/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/examples/mtls/README.md",
+      "sha256": "58b11430bb8b44e88706f6e68c19fa015837d5260d29551effbb7f20c1604148",
+      "size": 6056
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/examples/responses/browser/README-read-only.md",
+      "status": "success",
+      "path": "openai/github/openai-node/examples/responses/browser/README-read-only.md",
+      "sha256": "fd74df52536290314b32844cc4cc56977e8b6560f0b3ad1318abb586d355f613",
+      "size": 2997
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/scripts/_vendor/tsc-multi/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/scripts/_vendor/tsc-multi/README.md",
+      "sha256": "13781e0b47d16b010c229c1ba289a55637a63856f61d3362c731584c79ae6df5",
+      "size": 724
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/scripts/castiron/CUSTOM_CODE.md",
+      "status": "success",
+      "path": "openai/github/openai-node/scripts/castiron/CUSTOM_CODE.md",
+      "sha256": "ee78b393e3a4df940fbd94e87cb2ee12383b77c7b7376f4b81288550c82dddff",
+      "size": 17304
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/scripts/castiron/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/scripts/castiron/README.md",
+      "sha256": "4aff82cb988d01babde79902ae20de842fdd4b2b447d5f4cb3c5ce0a36d6fab8",
+      "size": 1806
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/_vendor/partial-json-parser/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/_vendor/partial-json-parser/README.md",
+      "sha256": "b726ee350817e821fb1f64c44431249683b7962e6c0ba49ff69162bba677428d",
+      "size": 742
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/_vendor/zod-to-json-schema/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/_vendor/zod-to-json-schema/README.md",
+      "sha256": "d49c458e5ea7ee7ce7d7dd8ab99067fc209c2a86a0e10a2b642a6be837bda6bf",
+      "size": 267
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/core/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/core/README.md",
+      "sha256": "c0791cf459312fee1b5cd5b73701a6763c768d70abfad071ca5cc88b8f89bb3e",
+      "size": 100
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/internal/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/internal/README.md",
+      "sha256": "e265177b6ed0bb923f77b3767942ffd7dcc2f60dea5b186e898919c2c532009e",
+      "size": 118
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/internal/qs/LICENSE.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/internal/qs/LICENSE.md",
+      "sha256": "d8c77eaffed7f1f874b97f66ee47a557ae24fd59bae8ae14f9b1b84f26a94d2f",
+      "size": 1588
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/internal/qs/README.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/internal/qs/README.md",
+      "sha256": "dde9487eaeb2d89982fb4b9c6a652015393d95c7e0958f0a19242c55d0ee4788",
+      "size": 170
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/conversations/api.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/resources/conversations/api.md",
+      "sha256": "23458ab6e1e52c757db7ac62f630aa172298676f931791225805417fa56c353a",
+      "size": 3088
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/live/api.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/resources/live/api.md",
+      "sha256": "625d3002cc1c8037ad3322b2acf8394a63674e14532397023a2fdb0b858a0781",
+      "size": 7194
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/realtime/api.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/resources/realtime/api.md",
+      "sha256": "d7bbba158a56711ba8da321df48fad2ff2d1326942231ad1f206a501f018b157",
+      "size": 14196
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/responses/api.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/resources/responses/api.md",
+      "sha256": "e0091413a98eda65097f8a5e8f10724b0f4c57e3efd7a637b85b1e5203978f36",
+      "size": 18486
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/webhooks/api.md",
+      "status": "success",
+      "path": "openai/github/openai-node/src/resources/webhooks/api.md",
+      "sha256": "9e0dc22a4d119d507e3c1abb93fe777f6d325823d6b41e4ba6dc2fd29d3f2a18",
+      "size": 5505
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/tasks/plan.md",
+      "status": "success",
+      "path": "openai/github/openai-node/tasks/plan.md",
+      "sha256": "fe759b00709d5b7d9e180e91d444b2e7bfcc1e1c330f10ef886f5a8b2f5e12b7",
+      "size": 41787
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-node/main/tasks/todo.md",
+      "status": "success",
+      "path": "openai/github/openai-node/tasks/todo.md",
+      "sha256": "4372ecdf62b819a916d270666d62e9b6087b6c9ff8609954f6ba4df414d20a33",
+      "size": 8899
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/.github/PULL_REQUEST_TEMPLATE.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/.github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "29ffd6c9fe9fba40651b40c5cd425ad83a6fc2185651340af8b4fe920f22e43e",
+      "size": 1235
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/README.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/README.md",
+      "sha256": "1f5869704e7dbd093e278ef5031abf930ad2282974e888c8f93582cd6c90c60a",
+      "size": 4240
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/README_zh.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/README_zh.md",
+      "sha256": "90ddd262e0083b90d94e74d3173b1b66654201f3d7bf1ca397f8f8da9e20df16",
+      "size": 2803
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glm-image-gen/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glm-image-gen/SKILL.md",
+      "sha256": "ec25c41d08014ea8a70e785a4655a3a0c3754449627ac7323ff6d2b1363142dd",
+      "size": 12728
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glm-master-skill/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glm-master-skill/SKILL.md",
+      "sha256": "6255fef50b378d404b42d70c61f25e57cd8db6b576533fabbccde43016c9322f",
+      "size": 7954
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmocr-formula/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmocr-formula/SKILL.md",
+      "sha256": "6dec3917c91248ca99543ba4bd4e6773f2db3ae89af4e2425425506cffa04780",
+      "size": 9528
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmocr-handwriting/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmocr-handwriting/SKILL.md",
+      "sha256": "a476376eee2564f0208e679a4e81ee75cabf42429d3baf6fef44d77a2ea79f21",
+      "size": 7327
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmocr-sdk/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmocr-sdk/SKILL.md",
+      "sha256": "22cd58294841565d7667adec383ee2a78a2f6c1f16c4f7eb48977c29594e6ea9",
+      "size": 10822
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmocr-table/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmocr-table/SKILL.md",
+      "sha256": "b9456cfa8b41eb17a05f2f7df318e56bf8210e64a237d6125e2962aa944a346a",
+      "size": 7450
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmocr/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmocr/SKILL.md",
+      "sha256": "da9c5bde74d55510e8596e2c40c2aac6559540516989c06fe1ec11470fbe6276",
+      "size": 4246
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmocr/references/output_schema.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmocr/references/output_schema.md",
+      "sha256": "30a3a8f6873bc61760a21eea623536114da78cb21eba52e9731606f4e43573d6",
+      "size": 3593
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-caption/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-caption/SKILL.md",
+      "sha256": "70175bb6050158885663c1fb696280b18d1a2b0706d0eb3fabe70ff3ccfe9656",
+      "size": 8295
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-doc-based-writing/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-doc-based-writing/SKILL.md",
+      "sha256": "5ccb6ad51c0e90cba5ce374ad1a204d67737342d3d927b61bb68b5e5fd667a5b",
+      "size": 6923
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-grounding/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-grounding/SKILL.md",
+      "sha256": "b3dd0b8c69b7942936fe22df5b3fcb209c50f1f7bba6f8ddab4bbf5a6def5fb8",
+      "size": 10507
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-pdf-to-ppt/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-pdf-to-ppt/SKILL.md",
+      "sha256": "3985403b50c21cb8134b262a06284803e74abf42f3ecbc19b8f8d82eba75f382",
+      "size": 14203
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-pdf-to-web/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-pdf-to-web/SKILL.md",
+      "sha256": "e218f827b860e4479e9a7201aebe3bf8de126455a7c53fe23c7e8f2f49392d65",
+      "size": 12045
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-prd-to-app/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-prd-to-app/SKILL.md",
+      "sha256": "c3bfff80ea05c67a4fe27be2f0f2de86085a307f50546448fe17677c4fa0557b",
+      "size": 15094
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-prd-to-app/references/seed_data_guide.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-prd-to-app/references/seed_data_guide.md",
+      "sha256": "953a9eb9abca25c89995daeffe900a5eebcac91389a9388f9da269f114a71e8a",
+      "size": 3151
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-prd-to-app/references/visual_verification_guide.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-prd-to-app/references/visual_verification_guide.md",
+      "sha256": "88ac9299d216933d920fe80e7abb857cbc68a43d2244929c865a2231531239dc",
+      "size": 2993
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-prompt-gen/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-prompt-gen/SKILL.md",
+      "sha256": "f2d4d3f7fe32216b9d2fb6a61244d1353d377858d3fe43eb3ab510c314088a5b",
+      "size": 7680
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-resume-screen/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-resume-screen/SKILL.md",
+      "sha256": "3be650f892172c967a78b2d7163f93081f64eafd292af001db0f45d20b2b9234",
+      "size": 7291
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-stock-analyst/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-stock-analyst/SKILL.md",
+      "sha256": "7abfa47755fc02d24611efb6665b7c3a5d3a450aa84250345685822b0ccbfd39",
+      "size": 18952
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-stock-analyst/references/hk_stock_knowledge.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-stock-analyst/references/hk_stock_knowledge.md",
+      "sha256": "adf8449da0cd1983fd832ead0f69c573953c2d0c899d5b67816d51be074ccdee",
+      "size": 4790
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-stock-analyst/references/report_template.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-stock-analyst/references/report_template.md",
+      "sha256": "1684addc7437d4ab5c8f6f205abe314859318acc6109ee94301e14b208f9b085",
+      "size": 2677
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-stock-analyst/references/sensitive_companies.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-stock-analyst/references/sensitive_companies.md",
+      "sha256": "e127d8a70f1908732c5bbaef8b102161cae079213acf08cd73733f7eb4cff5e9",
+      "size": 912
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/skills/glmv-web-replication/SKILL.md",
+      "status": "success",
+      "path": "zai/github/GLM-skills/skills/glmv-web-replication/SKILL.md",
+      "sha256": "e7e79c2abbb10c765c6d9f699540e164d2ed28214c283e4e869c40e5cea353bb",
+      "size": 19445
     }
   ],
   "failures": [
@@ -47460,6 +48034,10 @@
     {
       "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
       "error": "extraction produced no usable content"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
+      "error": "HTTP 429"
     },
     {
       "url": "https://openai.com/hugging-face-incident-and-misalignment",
@@ -51489,11 +52067,11 @@
     }
   ],
   "summary": {
-    "total": 7786,
-    "downloaded": 6778,
+    "total": 7869,
+    "downloaded": 6860,
     "skipped": 0,
-    "failed": 114,
+    "failed": 115,
     "dead": 894,
-    "success_rate": 98.3
+    "success_rate": 98.4
   }
 }
