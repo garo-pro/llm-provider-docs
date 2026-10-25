@@ -205,6 +205,19 @@ Keep the feed current as prices, stock, and product details change. Choose an up
 | Change other product fields, such as images or descriptions | Upload an updated catalog over SFTP |
 | Refresh the complete catalog                                | Upload an updated catalog over SFTP |
 
+### Replace the catalog with each full upload
+
+For eligible product feeds, you can enable catalog replacement. Each future full upload must include every product you want to keep. OpenAI deletes products missing from it within a day. This setting applies to full uploads, not partial Delta API updates.
+
+```bash
+curl -X PATCH "https://api.ads.openai.com/v1/feeds/fd_123/settings" \
+  -H "Authorization: Bearer ${OPENAI_ADS_API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{"is_full_refresh": true}'
+```
+
+Use `GET /v1/feeds/fd_123/settings` to check the current setting. To stop pending cleanup, send the same PATCH request with `is_full_refresh` set to `false`. This does not restore products already deleted. Omitting `is_full_refresh` leaves the setting unchanged.
+
 ### Update existing products with the Delta API
 
 You need an existing feed, an initial catalog that has been processed, and the product and variant identifiers from that catalog. The account must have access to manage feed data.
