@@ -44,7 +44,7 @@ Let’s say a task starts with 20K tokens of context and grows to 120K as the mo
 
 A turn costs more than the tokens it adds, because it resends everything before it. So the cheapest turn is the one you don't need.
 
-One habit that can cut turns is giving the model a way to check its work. For example, a test to run, a build, or a script that calls the endpoint. A model that can check its own work finds its mistakes earlier.
+One habit that can cut turns is giving the model [a way to check its work](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills). For example, a test to run, a build, or a script that calls the endpoint. A model that can check its own work finds its mistakes earlier.
 
 A model that gathers what it needs in one pass, and batches its tool calls, pays the resend fewer times too.
 

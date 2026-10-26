@@ -55,7 +55,7 @@ Hooks form a chain, like middleware. Yours runs, `next(e)` hands the event to th
 
 The events cover tool calls, the prompt as submitted, turns starting and finishing, the session starting and ending, slash commands, and `ui.render`: every piece of the interface as it's drawn. The module runs in a sandbox of its own, with no DOM and no Node, so everything outside it goes through `$`.
 
-**How this differs from settings hooks.** A settings hook runs a shell command for each event and passes JSON over stdin and stdout. A mod is loaded once and stays in the session. It can keep state, draw UI that updates as events happen, and call back into Claude Code: open a pane, run a process, register a slash command, or register a tool the model can call.
+**How this differs from settings hooks.** [A settings hook](https://claude.com/resources/articles/how-to-configure-hooks) runs a shell command for each event and passes JSON over stdin and stdout. A mod is loaded once and stays in the session. It can keep state, draw UI that updates as events happen, and call back into Claude Code: open a pane, run a process, register a slash command, or register a tool the model can call.
 
 **Claude Code uses them itself.** Some of Claude Code's own features are built as mods, including AGENTS.md support and the `/diff` pane beside the conversation. Their source, with tests, is in the public [anthropics/claude-code](https://github.com/anthropics/claude-code) repository under `mods/`, so you can read how the team builds them.
 

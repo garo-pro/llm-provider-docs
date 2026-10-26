@@ -44,7 +44,7 @@ Stop and ask me only if a test fails for a reason you can't explain.
 
 **Why it matters on Opus 5.5.** Opus 5.5 always thinks before it replies, and it decides how much. You don’t need to ask it to think. In our testing in a chat product, removing a “think carefully” line made replies start sooner, with no clear drop in quality.
 
-**How.** Delete the line. For a quick answer to a simple question, say so: “Answer directly.” To change how much it thinks in Claude Code, change effort.
+**How.** Delete the line. For a quick answer to a simple question, say so: “Answer directly.” To change how much it thinks in Claude Code, [change effort](https://claude.dev/blog/spending-your-effort/).
 
 ### Add to a running task
 
@@ -73,7 +73,7 @@ Then look at what it chose instead. If you don’t like that either, add it to t
 
 ### Tell it which stops you want
 
-**What to do.** Put a short rule in your CLAUDE.md file about when to stop and ask, and when to keep going.
+**What to do.** Put a short rule in [your CLAUDE.md file](https://claude.com/resources/articles/using-claude-md-files) about when to stop and ask, and when to keep going.
 
 **Why it matters on Opus 5.5.** Opus 5.5 keeps you posted as it works. On a long task, it sometimes stops to report instead of going on: a summary that names the next step without taking it, an offer to continue, or a list of choices that don’t block the work. It follows instructions that name these stops. Name the stops you want, too.
 
@@ -96,7 +96,7 @@ For pair programming, you may want the opposite: a one-line plan before it start
 
 ### Ask it to split big work across subagents
 
-**What to do.** For an audit, a migration, or a review across a large codebase, ask Opus 5.5 to split the work across subagents and check each result.
+**What to do.** For an audit, a migration, or a review across a large codebase, ask Opus 5.5 to [split the work across subagents](https://claude.dev/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code/) and check each result.
 
 **Why it matters on Opus 5.5.** Early testers had Opus 5.5 coordinate parallel subagents on long audits and migrations, with little oversight.
 

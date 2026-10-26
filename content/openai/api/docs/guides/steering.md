@@ -127,6 +127,7 @@ try {
     });
     ws.send({
       type: "response.create",
+      store: false,
       model: "gpt-6-astra",
       reasoning: { effort: "medium" },
       input: "Draft a project plan for building a task-tracking app.",

@@ -11,7 +11,7 @@ Today, [Claude for Government](https://claude.com/solutions/government) is gener
 
 Agencies access capabilities comparable to Anthropic’s commercial customers, without compromising compliance requirements. New capabilities generally arrive on the commercial release cadence.
 
-[Claude](https://claude.com/product/overview) works directly with files on the desktop, allowing agency staff to use skills, plugins and projects for memo creation, RFP reviews, casework, and other tasks. With [Claude Code](https://claude.com/product/claude-code), public sector teams can build and modernize the software systems that underpin public services.
+[Claude](https://claude.com/product/overview) works directly with files on the desktop, allowing agency staff to use [skills](https://claude.com/resources/articles/skills-explained), plugins and projects for memo creation, RFP reviews, casework, and other tasks. With [Claude Code](https://claude.com/product/claude-code), public sector teams can [build and modernize the software systems](https://claude.com/resources/webinars/claude-code-and-public-service-modernizing-how-state-and-local-governments-build-software) that underpin public services.
 
 Claude for Government governance controls are purpose-built for public sector agencies. Administrators can set configuration defaults as well as allocate and control spending across departments. Security teams and authorizing officials get audit logs and documentation that supports the agency ATO process. Procurement officers can contract with Anthropic directly and award on general-availability terms.
 

@@ -42,6 +42,8 @@ What you'll need:
 
 ## Once you're approved
 
+- Approval doesn’t turn on CVP. To activate it, assign your access to a workspace, role, or linked cloud account. See **[Provisioning Access using your Grants](#h_ce0ef780bd)** for instructions.
+
 - The **[Usage Policy](https://www.anthropic.com/legal/aup)** still applies in full.
 
 - You may leverage CVP enabled models for internal use such as running the model over your own code. See the **Building client-facing products** section for more information.

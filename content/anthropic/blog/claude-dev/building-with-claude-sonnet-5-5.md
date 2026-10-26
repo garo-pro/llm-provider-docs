@@ -8,7 +8,7 @@ When to choose Sonnet over Opus, what it costs, and how to tune it.
 
 ---
 
-Claude Sonnet 5.5 is our second model in the Claude 5.5 family after Opus 5.5. It's a clear upgrade over Sonnet 5 and is smarter, more efficient and 30% faster. The per-token price is unchanged and because Sonnet 5.5 typically needs far fewer tokens to do the same work, it costs up to 30% less for most work.
+Claude Sonnet 5.5 is our second model in the Claude 5.5 family after [Opus 5.5](https://claude.dev/blog/getting-the-most-out-of-opus-5-5/). It's a clear upgrade over Sonnet 5 and is smarter, more efficient and 30% faster. The per-token price is unchanged and because Sonnet 5.5 typically needs far fewer tokens to do the same work, it costs up to 30% less for most work.
 
 [Video: Lance Martin's code-to-painting demo: each model writes code that repaints the same photograph. From left: the photograph, Claude Sonnet 5, Claude Sonnet 5.5 and Claude Opus 5.5.](https://claude.dev/media/63c0bb81af17992642b05cdd8eb1d21a252a79c897ada4de85aeb93b6afc0aed.mp4) — Two blank canvases labeled Claude Sonnet 5 and Claude Sonnet 5.5 fill in stroke by stroke, with a running count of brush-engine calls under each, as the code each model wrote paints a sunset aerial view of a city skyline. It ends on four panels side by side: the photograph, then the paintings by Claude Sonnet 5, Claude Sonnet 5.5 and Claude Opus 5.5.
 
@@ -226,7 +226,7 @@ For user-facing progress notes on their own, use `display: "updates"` (beta). If
 
 ### Cache more of your prompt
 
-The minimum cacheable prompt drops to 512 tokens, so shorter system prompts and tool definitions now qualify. A cache read costs a tenth of the input price. Changing the top-level effort between requests invalidates the cache; to run one turn at a different level, use per-message effort (beta), which keeps the cache.
+The minimum cacheable prompt drops to 512 tokens, so shorter system prompts and tool definitions now qualify. A cache read costs a tenth of the input price. Changing the top-level effort between requests [invalidates the cache](https://claude.dev/blog/lessons-from-building-claude-code-prompt-caching-is-everything/); to run one turn at a different level, use per-message effort (beta), which keeps the cache.
 
 ## Refusals and fallback
 

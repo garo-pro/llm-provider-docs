@@ -8,7 +8,7 @@ What effort really is and when to use which level in Claude Code, from my own te
 
 ---
 
-One of the best parts of our newest Claude models is how they respond to effort without breaking the prompt cache in Claude Code, but I’ve received a lot of questions on this from users. [What is effort](https://claude.com/blog/claude-model-and-effort-level-in-claude-code) really, and when do you use which effort level? Why do we need effort at all?
+One of the best parts of our newest Claude models is how they respond to effort without [breaking the prompt cache](https://claude.dev/blog/lessons-from-building-claude-code-prompt-caching-is-everything/) in Claude Code, but I’ve received a lot of questions on this from users. [What is effort](https://claude.com/blog/claude-model-and-effort-level-in-claude-code) really, and when do you use which effort level? Why do we need effort at all?
 
 To answer this, I decided to do a deep dive into the evals and do my own tests of effort across normal work.
 
@@ -107,7 +107,7 @@ A typical attempt at low effort takes about 2 minutes. Each of these attempts wr
 
 A high-effort run finishes in about 33 minutes. In the run I traced, it adversarially reviewed its first draft, then read the installed parser’s source to check for bugs, ran many clean test cases until they gave the same output as the input, ran a standard XSS test suite, and finally, wrote a random-document fuzzer.
 
-For something as edge-cased as a HTML sanitizer, this extra effort is well worth it. Spending more tokens for thoroughness also makes sense for complex tasks with high production requirements such as performance optimization or security review.
+For something as edge-cased as a HTML sanitizer, this extra effort is well worth it. [Spending more tokens for thoroughness](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/) also makes sense for complex tasks with high production requirements such as performance optimization or security review.
 
 But you don’t need this level of effort for every task.
 

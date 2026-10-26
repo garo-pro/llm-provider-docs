@@ -59,7 +59,7 @@ A typical change, from an engineer's laptop (or a Claude session in Slack), goes
 
 Most review now happens before a PR exists. We give Claude something it can run—like tests, a build or a screenshot to compare against the design—and ask it to show the output instead of saying it's done. Then a subagent reviews the diff with fresh context. Both habits come from our [best-practices guide](https://code.claude.com/docs/en/best-practices).
 
-Before opening a PR, many of us also run a few internal skills: one hunts for bugs, one simplifies the diff, and one checks the behavior end to end. UI changes also get checked against our design guidelines.
+Before opening a PR, many of us also run a few [internal skills](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/): one hunts for bugs, one simplifies the diff, and one checks the behavior end to end. UI changes also get checked against our design guidelines.
 
 Boris Cherny, who created Claude Code, has called giving Claude a way to verify its work [probably the most important thing](https://x.com/bcherny/status/2007179861115511237) for getting good results. He estimates it makes the final result two to three times better, and writes, "Verification looks different for each domain. It might be as simple as running a bash command, or running a test suite, or testing the app in a browser or phone simulator."
 
@@ -169,7 +169,7 @@ We don't have a formal process for this. Nobody on the team keeps a complete men
 
 ![Diagram titled "If machines do most of the reading, how does anyone learn the code?" On the left, a grid stands for the codebase, with a few squares highlighted as managed settings, the part you want to understand; nobody keeps a complete mental model of it in their head. An arrow labeled "Ask Claude about exactly that slice", with the example question "How does Claude Code retrieve managed settings?", leads to two outcomes: Claude writes an explainer, which takes minutes and reflects the code as it is today; and, for some, Claude builds a small artifact that visualizes that part of the code and teaches it the way that person likes to learn. Along the bottom: reading trivial diffs line by line, a one-line copy change teaches you almost nothing; an explainer for the module you are about to change teaches you a lot.](https://claude.dev/media/d4fafcbf3d2137bc64eb7f0707ba91809ff1ed4d098785e36d7422b3b07f6c40.png)
 
-Some of us go a step further and have Claude build a small artifact that visualizes that part of the code and teaches it the way that person likes to learn.
+Some of us go a step further and have Claude [build a small artifact](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/) that visualizes that part of the code and teaches it the way that person likes to learn.
 
 If the goal is to spend human attention well, this beats reading trivial diffs line by line. A one-line copy change teaches you almost nothing. An explainer for the module you're about to change teaches you a lot. Our culture of defaulting to working on open Slack channels helps too, since you see what others are building while they build it.
 

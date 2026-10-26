@@ -36,7 +36,7 @@ ThoughtSpot is also growing alongside Claude. Its AI analyst, [Spotter](https://
 
 ## **CodeRabbit runs its coding agents on Vercel**
 
-[CodeRabbit](https://claude.com/platform/marketplace/coderabbit) builds on Claude to validate AI-generated code so engineering teams can control what ships. Its agents write and test code, so they need a safe place to run it. [Vercel Sandbox](https://vercel.com/sandbox) runs each agent's code in an isolated Linux microVM with its own filesystem and network, away from other jobs and CodeRabbit's own systems. [Vercel Workflows](https://vercel.com/workflows) coordinates the work, so long-running jobs can pause, resume and finish without hitting a time limit.
+[CodeRabbit](https://claude.com/platform/marketplace/coderabbit) builds on Claude to [validate AI-generated code](https://claude.com/resources/articles/how-coderabbit-used-claude-to-build-an-agent-orchestration-system) so engineering teams can control what ships. Its agents write and test code, so they need a safe place to run it. [Vercel Sandbox](https://vercel.com/sandbox) runs each agent's code in an isolated Linux microVM with its own filesystem and network, away from other jobs and CodeRabbit's own systems. [Vercel Workflows](https://vercel.com/workflows) coordinates the work, so long-running jobs can pause, resume and finish without hitting a time limit.
 
 When CodeRabbit's engineering and product leaders wanted to move from a pay-as-you-go Vercel plan to a committed one, the company funded the upgrade from its recently expanded Anthropic commitment. With the budget already approved, the deal closed within a week.
 

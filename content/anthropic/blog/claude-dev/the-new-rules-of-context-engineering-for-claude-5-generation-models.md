@@ -96,7 +96,7 @@ We used to encourage users to save things to Claude’s memory, by using the # h
 
 In plan mode, Claude Code has heavily relied on markdown files with plans. Storing these files as plans helped Claude refer to them when needed. Another similar best practice was to store specs in the codebase for Claude to refer to while working across longer projects.
 
-But we’ve found that Claude can handle increasingly more complicated references. Instead of simple markdown files, Claude can reference HTML artifacts created by our new artifacts feature.
+But we’ve found that Claude can handle increasingly more complicated references. Instead of simple markdown files, Claude can reference [HTML artifacts](https://claude.dev/blog/using-claude-code-the-unreasonable-effectiveness-of-html/) created by our new artifacts feature.
 
 You may also give Claude references in the form of code. A spec may also be a detailed test suite, or a function in a different codebase that Claude might port.
 
@@ -110,7 +110,7 @@ Pulling this all together, what does this look like when you assemble your conte
 
 ### System prompt
 
-A system prompt is heavily tied to the product context. It tells Claude what product it’s operating in and what it’s doing. For Claude Code, you will likely never modify this, but if you are building your own agent harness, this is where you should spend a lot of time.
+A system prompt is heavily tied to the product context. It tells Claude what product it’s operating in and what it’s doing. For Claude Code, you will likely never modify this, but if you are [building your own agent harness](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop), this is where you should spend a lot of time.
 
 ### CLAUDE.md
 
@@ -120,7 +120,7 @@ Use progressive disclosure heavily, for example if you have several unique instr
 
 ### Skills
 
-Think of skills as lightweight guides to let Claude find information when needed. Avoid making them overconstrained, except in highly important areas.
+Think of [skills as lightweight guides](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/) to let Claude find information when needed. Avoid making them overconstrained, except in highly important areas.
 
 For long skills, try and use progressive disclosure as much as possible- divide it into many files and split them out.
 

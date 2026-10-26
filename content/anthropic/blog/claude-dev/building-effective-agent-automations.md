@@ -8,7 +8,7 @@ A reference implementation walkthrough with common failure modes
 
 ---
 
-As AI accelerates our work, it's getting harder to keep up. At Anthropic, simple agent automations are frequently used to help. They often run on a schedule, gather context in the background, and proactively tell us what we need to know. But it’s difficult to build effective agent automations: they can lose access to a source without anyone noticing or fail to follow our preferences.
+As AI accelerates our work, it's getting harder to keep up. At Anthropic, [simple agent automations](https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day) are frequently used to help. They often [run on a schedule](https://claude.com/resources/articles/whats-new-in-claude-managed-agents), gather context in the background, and proactively tell us what we need to know. But it’s difficult to build effective agent automations: they can lose access to a source without anyone noticing or fail to follow our preferences.
 
 Using [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) (beta), we built a reference implementation that reads custom sources (e.g., Slack and GitHub repos) on a schedule, tracks what changed since the last run, and posts what you need to know (e.g., to Slack). In this article, we walk through each step, share a reference implementation, and provide a command to run in Claude Code that configures the agent for you.
 
@@ -36,7 +36,7 @@ daily-brief/
 
 [`ant apply`](https://platform.claude.com/docs/en/cli-sdks-libraries/cli/apply), a command in the ant CLI, reads these files, creates the resources in your Claude API workspace (where the platform stores and runs them), and records the IDs in `claude-lock.json`.
 
-We'll use this command in the sections below. Once configured, the automation runs on a schedule on Anthropic's infrastructure, so nothing has to stay running on your machine.
+We'll use this command in the sections below. Once configured, the automation runs on a schedule on Anthropic's infrastructure, so [nothing has to stay running on your machine](https://claude.dev/blog/claude-code-in-the-cloud/).
 
 ## Overview
 
@@ -59,7 +59,7 @@ The agent reads two default sources: Slack channels and GitHub pull requests. Th
 
 ### Give the agent its own, scoped credentials
 
-With [Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview), credentials live in [vaults](https://platform.claude.com/docs/en/managed-agents/vaults). The agent can reference these credentials but the real values stay in the vault, outside the sandbox where Claude's code runs (see [here](https://www.anthropic.com/engineering/managed-agents) and [here](https://x.com/katelyn_lesse/status/2099315903884415400)):
+With [Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview), credentials live in [vaults](https://platform.claude.com/docs/en/managed-agents/vaults). The agent can reference these credentials but the real values stay in the vault, [outside the sandbox](https://claude.com/resources/articles/giving-companies-more-control-over-their-ai-agents-with-nvidia) where Claude's code runs (see [here](https://www.anthropic.com/engineering/managed-agents) and [here](https://x.com/katelyn_lesse/status/2099315903884415400)):
 
 - **MCP servers (GitHub).** The agent calls MCP tools through a proxy that runs outside the sandbox. The proxy finds the vault credential whose URL matches the server’s.
 
@@ -98,7 +98,7 @@ The next run starts from those bookmarks, so its window stretches or shrinks to 
 
 ### Don't mistake a failed read for a quiet day
 
-If an MCP server is down or its token has expired, the run still starts, just without that server's tools. The session logs an error, but the agent sees nothing from that source and reports "nothing new."
+If an MCP server is down or its token has expired, the run still starts, just without that server's tools. The [session logs an error](https://claude.com/resources/articles/agent-observability-on-the-claude-platform), but the agent sees nothing from that source and reports "nothing new."
 
 Three rules in `agent.md` help fix this. When a source fails, the agent will: keep the source’s bookmark where it is, write the brief from the other sources, and end the brief with one line naming what it couldn't read ("pull requests unavailable this run"), so the reader is made aware.
 

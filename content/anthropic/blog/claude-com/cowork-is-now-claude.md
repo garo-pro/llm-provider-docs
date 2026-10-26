@@ -29,4 +29,6 @@ If you mostly use chat, you don’t have to do anything different. When you want
 
 This is rolling out to Pro and Max plans first, in the Claude app on web, desktop, and mobile over the coming weeks to existing and new users on these plans. There’s nothing to turn on. Team and Free plans will follow soon, and [Enterprise admins](https://claude.com/resources/webinars/unified-claude-what-it-means-for-admins) will hear from us at least 30 days before anything changes for their organizations.
 
+Update, October 23: the unified experience is now [generally available for Claude Enterprise](https://claude.com/resources/articles/unified-claude-enterprise).
+
 The full list of capabilities is in the [Help Center](https://support.claude.com/en/articles/16761823). If you’ve been saving up a big messy project, now’s the time.

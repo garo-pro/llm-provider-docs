@@ -9,11 +9,11 @@ Announcing Claude Managed Agents, Anthropic's new suite of composable APIs for b
 
 ## Claude Managed Agents explained
 
-Claude Managed Agents is a suite of composable APIs for building and deploying cloud-hosted agents at scale. It pairs an Anthropic-managed harness with production infrastructure for state, memory, permissions, and scheduled execution.
+Claude Managed Agents is a suite of composable APIs for building and deploying cloud-hosted agents at scale. It pairs an Anthropic-managed harness with production infrastructure for state, memory, permissions, and [scheduled execution](https://claude.dev/blog/building-effective-agent-automations/).
 
 Prior to today's launch, building agents meant spending development cycles on secure infrastructure, state management, permissioning, and reworking your agent loops for every model upgrade. Managed Agents combines an agent harness tuned for performance with production infrastructure to go from prototype to launch in days rather than months.
 
-Whether you're building single-task runners or complex multi-agent pipelines, you can focus on the user experience, not the operational overhead.
+Whether you're building single-task runners or [complex multi-agent pipelines](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop), you can focus on the user experience, not the operational overhead.
 
 Managed Agents is available today in public beta on the Claude Platform.
 

@@ -7,7 +7,7 @@ Markdown Content:
 
 Chat and Cowork first [came together](https://claude.com/resources/articles/cowork-is-now-claude) for Pro and Max plans in September. The same unified Claude experience is now generally available for Claude Enterprise plans.
 
-Chat and Cowork are now one Claude on web, desktop, and mobile, so your team can ask a quick question or hand over a full project in the same conversation. Agentic work runs in a cloud environment that Anthropic manages, and Claude Enterprise admins control access by role and manage usage with a new Efficient mode.
+Chat and Cowork are now one Claude on web, desktop, and mobile, so your team can ask a quick question or hand over a full project in the same conversation. Agentic work runs in a cloud environment that Anthropic manages, and [Claude Enterprise admins](https://claude.com/resources/webinars/unified-claude-what-it-means-for-admins) control access by role and manage usage with a new Efficient mode.
 
 ## One Claude for every task
 
@@ -37,9 +37,9 @@ Claude does agentic work in cloud sessions, each running in its own isolated vir
 
 ## Managing cost
 
-Claude Enterprise pricing stays usage-based. The newest Claude models are more efficient than their predecessors: billed through usage, Claude Opus 5.5 costs 40% less to run than Claude Opus 5 on typical workloads, and Claude Sonnet 5.5 costs up to 30% less than Claude Sonnet 5 for most work.
+Claude Enterprise pricing stays usage-based. The newest Claude models are more efficient than their predecessors: billed through usage, Claude Opus 5.5 [costs 40% less to run](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/) than Claude Opus 5 on typical workloads, and Claude Sonnet 5.5 costs up to 30% less than Claude Sonnet 5 for most work. 
 
-Depending on the task, agentic work can use more tokens than a quick chat. Claude Enterprise admins have four controls for managing this usage. Efficient mode is a new setting that keeps the unified Claude experience on Sonnet and Haiku models. Model entitlements set which models each role can use. Spend limits apply at the organization, group, and member level, and pooled group budgets give a group one shared monthly amount to draw from.
+Depending on the task, agentic work can use more tokens than a quick chat. Claude Enterprise admins have four controls for managing this usage. Efficient mode is a new setting that keeps the unified Claude experience on Sonnet and Haiku models. Model entitlements set which models each role can use. [Spend limits](https://claude.com/resources/articles/giving-admins-more-visibility-and-control-over-claude-usage-and-spend) apply at the organization, group, and member level, and pooled group budgets give a group one shared monthly amount to draw from.
 
 ## Getting started
 

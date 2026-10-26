@@ -7,7 +7,7 @@ Markdown Content:
 
 Anthropic and Bain & Company are partnering to help enterprises deploy AI, building on Bain's rollout of Claude to its 19,000 employees.
 
-Bain & Company and Anthropic today announced a global partnership to help enterprises move from AI experiments to deployments that produce measurable business results. Bain joins the Claude Partner Network as a Global Premier partner, and the two firms will work together on client engagements spanning AI strategy, technology modernization, and AI-enabled operations.
+Bain & Company and Anthropic today announced a global partnership to help enterprises move from AI experiments to deployments that produce measurable business results. Bain joins the Claude Partner Network as a Global Premier partner, the top tier, which requires 1,000 [certified practitioners](https://claude.com/resources/articles/four-role-based-claude-certifications), and the two firms will work together on client engagements spanning AI strategy, technology modernization, and AI-enabled operations.
 
 The partnership builds on Bain's own deployment of Claude across the firm, which now serves as a reference point for how Bain advises clients on enterprise rollouts.
 
