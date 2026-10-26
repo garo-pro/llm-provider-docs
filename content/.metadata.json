@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-25T18:40:11.145112Z",
+    "fetch_date": "2026-10-26T05:35:10.810879Z",
     "section": "all"
   },
   "items": [
@@ -5938,8 +5938,8 @@
       "url": "https://code.claude.com/docs/en/desktop",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop.md",
-      "sha256": "352d0d4a6be0ce61fdc594e5aa612a1120734362bd8551ba454e06b70a064a20",
-      "size": 195845
+      "sha256": "536481a197f2159e79920d1e855c8fb137213c843e29f959925708c78791861a",
+      "size": 202913
     },
     {
       "url": "https://code.claude.com/docs/en/desktop-linux",
@@ -18325,13 +18325,6 @@
       "size": 4942
     },
     {
-      "url": "https://support.claude.com/en/articles/12489464-use-enterprise-search",
-      "status": "success",
-      "path": "anthropic/support/12489464-use-enterprise-search.md",
-      "sha256": "d95d3030f1f400fbfa245a9d9a384f1bc31832f720003e1fbc13e0fb5f2c2562",
-      "size": 12504
-    },
-    {
       "url": "https://support.claude.com/en/articles/12512176-what-are-skills",
       "status": "success",
       "path": "anthropic/support/12512176-what-are-skills.md",
@@ -19527,6 +19520,13 @@
       "path": "anthropic/support/17154008-monthly-api-credits-for-max-and-team-plans.md",
       "sha256": "894249d9d956eeec32abb5d2983da49f58b98a3416b51bc6de31b813dcab05d9",
       "size": 8125
+    },
+    {
+      "url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
+      "status": "success",
+      "path": "anthropic/support/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5.md",
+      "sha256": "8cf7227a0d222170fa689c001ab7729a3e7eb052fa3e9993d4633f0c4244a7df",
+      "size": 8083
     },
     {
       "url": "https://support.claude.com/en/articles/17202708-cyber-verification-program-security-requirements",
@@ -21352,8 +21352,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/configuration",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/configuration.md",
-      "sha256": "067bda476934266fc0d47b8a844f43326e9e32da69a5dd4002cb24090a9a1f6b",
-      "size": 300127
+      "sha256": "4adf2f9d3c761c69464b1d27a6356aa88058a9f174f7f37988475534fe19aa1d",
+      "size": 299412
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/configuration-changelog",
@@ -21471,8 +21471,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/installation",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/installation.md",
-      "sha256": "eb57f283416fbed08c8caddeefc6df974dd98f4f9c6e7a9d5008d09dafc485df",
-      "size": 33596
+      "sha256": "779101a138e7403c731d4b5a1752b9e3826ff5522a6e6e789bacd75155535980",
+      "size": 35355
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/legal",
@@ -21541,15 +21541,15 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/ssh-remote-sessions.md",
-      "sha256": "ba942203d3a3a7af3d15b1d83190f25d81d902ff2f8ec889fbb7a418bd225ffd",
-      "size": 70398
+      "sha256": "880c5bc8aa369e93e25a585d3b9ad6f61391af7a3fa69b3bdaf6c8a12b5693ad",
+      "size": 82787
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/telemetry",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/telemetry.md",
-      "sha256": "6ee5debd26e11e8d6379db9f3acee80da870d74f91307941119cd0fc0dd941a7",
-      "size": 37163
+      "sha256": "2ad17910741a5bc5bed7215481fd9bafb00f2323798ca4071def305b2f837808",
+      "size": 37748
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/unified-claude",
@@ -21604,8 +21604,8 @@
       "url": "https://code.claude.com/docs/en/desktop-changelog",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop-changelog.md",
-      "sha256": "352d0d4a6be0ce61fdc594e5aa612a1120734362bd8551ba454e06b70a064a20",
-      "size": 195845
+      "sha256": "536481a197f2159e79920d1e855c8fb137213c843e29f959925708c78791861a",
+      "size": 202913
     },
     {
       "url": "https://code.claude.com/docs/en/plugin-marketplaces",
@@ -47217,8 +47217,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/api.md",
       "status": "success",
       "path": "openai/github/openai-python/api.md",
-      "sha256": "b095fd916ad7f8388af0f336a1f5a210eba3ffcba8beb69ef576e8b76abc7773",
-      "size": 144953
+      "sha256": "82da84d639cb84106f389b001030b0b668eb71122f39c7db598edccc2fcf7b27",
+      "size": 144850
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/bedrock.md",
@@ -47392,8 +47392,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/resources/live/api.md",
       "status": "success",
       "path": "openai/github/openai-python/src/openai/resources/live/api.md",
-      "sha256": "51637687f10e9c213190b7d37d4ba4d05b66365eb7b4b19c284735a1f5c11b28",
-      "size": 3583
+      "sha256": "7a7e403a04290a470bf0919914961d2415fa58243d084ad7872f21e431a8750a",
+      "size": 3926
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/resources/realtime/api.md",
@@ -47406,7 +47406,7 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/resources/responses/api.md",
       "status": "success",
       "path": "openai/github/openai-python/src/openai/resources/responses/api.md",
-      "sha256": "840e8dc7c7440209ec84924cc82fa028934956e63dbbea5059885d90812da2a3",
+      "sha256": "e7815b1278aa2780bb885ac5a249fe00859dff67d3899b708d25d2968e734785",
       "size": 8899
     },
     {
@@ -47805,8 +47805,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/live/api.md",
       "status": "success",
       "path": "openai/github/openai-node/src/resources/live/api.md",
-      "sha256": "625d3002cc1c8037ad3322b2acf8394a63674e14532397023a2fdb0b858a0781",
-      "size": 7194
+      "sha256": "b1be236c324917b807d92015ca68da8cb5d2b0591b068e755aad51062ad340be",
+      "size": 8257
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/src/resources/realtime/api.md",
@@ -48036,7 +48036,7 @@
       "error": "extraction produced no usable content"
     },
     {
-      "url": "https://support.claude.com/en/articles/17161993-why-claude-switched-models-in-your-conversation-with-sonnet-5-5",
+      "url": "https://support.claude.com/en/articles/12489464-use-enterprise-search",
       "error": "HTTP 429"
     },
     {
@@ -48464,11 +48464,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
