@@ -101,6 +101,6 @@ Start with a single component or workflow that has clear boundaries and moderate
 
 The economics of COBOL modernization have shifted. AI makes the economics work by automating what used to require armies of consultants, freeing your engineers to make the migration decisions that require their domain expertise.**
 
-*For a step-by-step guide, see Anthropic's [**Code Modernization Playbook**](https://resources.anthropic.com/code-modernization-playbook).*
+*For a step-by-step guide, see Anthropic's [**Code Modernization Playbook**](https://claude.com/resources/guides/the-code-modernization-playbook).*
 
 *For the step-by-step process behind ports like these, see how Anthropic runs [large-scale code migrations with Claude Code](https://claude.com/resources/articles/ai-code-migration).**Thanks to Dan Mason, technical member of Anthropic staff, for their contributions.*

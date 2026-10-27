@@ -5,9 +5,9 @@ URL Source: https://claude.com/resources/articles/agent-observability-on-the-cla
 Markdown Content:
 # Agent observability on the Claude Platform
 
-Announcing OpenTelemetry traces from Claude Managed Agents, the Messages API, and Claude SDKs on the Claude Platform.
+Announcing OpenTelemetry traces from Claude Managed Agents, the Messages API, and Anthropic SDKs on the Claude Platform.
 
-You can now send OpenTelemetry (OTel) traces from Claude Managed Agents, the Messages API, and Claude SDKs to any OTel tool, and follow each step your agents take. If you already send Claude Code or Cowork traces to your observability tool, the agents you build on the Claude Platform can also show up in the same place.
+You can now send OpenTelemetry (OTel) traces from Claude Managed Agents, the Messages API, and Anthropic SDKs to any OTel tool, and follow each step your agents take. If you already send Claude Code or Cowork traces to your observability tool, the agents you build on the Claude Platform can also show up in the same place.
 
 ## Trace agents with OpenTelemetry
 
@@ -29,7 +29,7 @@ Claude traces also work with any other OpenTelemetry tool that accepts a standar
 
 ## Get started
 
-OpenTelemetry traces on the Claude Platform is available in public beta. Managed Agents and the Messages API need a destination in the Claude Console, while Claude SDKs export traces automatically.
+OpenTelemetry traces on the Claude Platform is available in public beta. Managed Agents and the Messages API need a destination in the Claude Console, while Anthropic SDKs export traces automatically.
 
 See the [docs](https://platform.claude.com/docs/en/manage-claude/opentelemetry) to get started.
 

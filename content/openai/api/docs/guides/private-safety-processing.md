@@ -52,7 +52,7 @@ The system encrypts the record and writes it to your regional cloud storage. Ope
 
 ### Asynchronous Safety Pipeline
 
-ZDR with PSP retrieves encrypted records from your storage and checks their ability to be decrypted. The Safety Review Runtime, a hardware-attested computing environment that disables human access, is designed to be the only workload that can decrypt customer content. It performs automated safety review using an approved reviewer prompt and output schema that does not expose customer content.
+ZDR with PSP retrieves encrypted records from your storage and checks their ability to be decrypted. The Safety Review Runtime, a hardware-attested computing environment that disables human access, is designed to be the only OpenAI workload that can decrypt customer content. It performs automated safety review using an approved reviewer prompt and output schema that does not expose customer content.
 
 Only predefined, bounded safety signals and approved operational metadata may leave the review in plaintext. Detailed results are encrypted before leaving the runtime and stored in your cloud storage with the original record’s expiration. ZDR with PSP encrypts the records and writes them to your regional cloud storage with a TTL of 30 days.
 
@@ -82,6 +82,101 @@ Each stored record is doubly encrypted when it is retained in customer storage:
 OpenAI’s inner decryption key is not enough to decrypt a stored record when EKM is enabled: your customer-managed key authorization is also required. Revoking that authorization prevents decryption of retained records, but does not delete them or undo completed processing.
 
 We recommend enabling EKM for this additional control. See the [EKM technical FAQ](https://help.openai.com/en/articles/20000945-ekm-technical-faq) for authorization and revocation, and the [technical whitepaper](https://openaiassets.blob.core.windows.net/$web/pdf/c7284810-2252-462f-803e-075b0c95bccb/psp-whitepaper.pdf) for encryption, confidential computing, guardrails, and transparency.
+
+
+
+<a id="psp-decryption"></a>
+
+
+
+### PSP decryption
+
+
+
+PSP decryption lets you decrypt customer content in PSP records stored in your connected cloud storage using an asymmetric key that you control. OpenAI uses the public key, while the private key stays in your cloud key-management service. This is separate from EKM and doesn't grant OpenAI personnel access to your content.
+
+See [Set up asymmetric keys](https://developers.openai.com/api/docs/guides/asymmetric-keys) for AWS KMS, Azure Key Vault, and Google Cloud KMS setup and key registration. Confirm PSP decryption availability and activation with your OpenAI contact. Registering a key doesn't enable PSP or configure storage, and only records written with PSP decryption enabled for your key can be decrypted with that key. Existing records aren't converted.
+
+For the decryption steps, record format, and key derivation, see [Decrypt PSP records](https://developers.openai.com/api/docs/guides/psp-decryption).
+
+
+
+<a id="select-a-key-for-psp-decryption"></a>
+
+
+
+#### Select a key for PSP decryption
+
+
+
+Use an [organization Admin API key](https://developers.openai.com/api/docs/guides/admin-apis) with project read/write access. Load it securely as `OPENAI_ADMIN_KEY`; project inference keys won't work. The examples use `curl` and a Bash-compatible shell.
+
+Set your organization ID, project ID, and the `extkey` ID returned when you registered the key:
+
+```bash
+API_BASE="https://api.openai.com/v1"
+ORG_ID="<OPENAI_ORG_ID>"
+PROJECT_ID="<CUSTOMER_PROJECT_ID>"
+KEY_ID="<EXTERNAL_KEY_ID>"
+
+: "${OPENAI_ADMIN_KEY:?Load your organization admin key securely}"
+
+PROJECTS_URL="$API_BASE/organization/projects"
+```
+
+Set `psp_decryption_key_id` to the returned `extkey` ID from the same organization. Leave `external_key_id`, which selects the project's EKM key, unchanged.
+
+```bash
+curl --fail-with-body -sS "$PROJECTS_URL/$PROJECT_ID" \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "OpenAI-Organization: $ORG_ID" \
+  -H "Content-Type: application/json" \
+  --data "{\"psp_decryption_key_id\":\"$KEY_ID\"}"
+```
+
+Success returns HTTP 200. Read the project to confirm the selection:
+
+```bash
+curl --fail-with-body -sS "$PROJECTS_URL/$PROJECT_ID" \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "OpenAI-Organization: $ORG_ID"
+```
+
+Project lists also return `psp_decryption_key_id`. The registration's `api_project_ids` shows its projects. Omitting `psp_decryption_key_id` preserves the selection; selecting the same ID again is supported.
+
+
+
+
+
+
+
+<a id="clear-the-key-selection"></a>
+
+
+
+#### Clear the key selection
+
+
+
+First set the API variables shown in [Select a key for PSP decryption](#select-a-key-for-psp-decryption).
+
+Send `null` to clear the selection. Omitting the field leaves it unchanged. Repeating a clear is supported.
+
+```bash
+curl --fail-with-body -sS "$PROJECTS_URL/$PROJECT_ID" \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "OpenAI-Organization: $ORG_ID" \
+  -H "Content-Type: application/json" \
+  --data '{"psp_decryption_key_id":null}'
+```
+
+
+
+
+
+
+
+
 
 
 
@@ -296,13 +391,13 @@ az ad sp create --id 'e5627955-3059-4a88-89f8-73843190624d' \
 
 If the application already exists, use `az ad sp show` with the same `--id` and query. Record the application name and its tenant-local object ID.
 
-Open **Storage Account > Access control (IAM) > Add role assignment** on your storage account. Select the **Reader** role, set **Assign access to** to **User, group, or service principal**, then search for and select **CSG - Azure Blob Storage Prod**.
+Open **Storage Account > Access control (IAM) > Add role assignment** on your storage account. Select the **Reader** role, set **Assign access to** **User, group, or service principal**, then search for and select **CSG - Azure Blob Storage Prod**.
 
 ![Azure role-assignment Members tab showing the Storage Blob Data Reader role and User, group, or service principal selected.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-14-azure-role-members.webp)
 
 ![Azure Select members pane with CSG - Azure Blob Storage Prod listed as an application.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-15-azure-select-application.webp)
 
-Then select the **Storage Blob Data Contributor** role, set **Assign access to** to **User, group, or service principal**, and search for and select **CSG - Azure Blob Storage Prod**.
+Then select the **Storage Blob Data Contributor** role, set **Assign access to** **User, group, or service principal**, and search for and select **CSG - Azure Blob Storage Prod**.
 
 OpenAI manages the application credentials. Don't create or share a storage key, SAS token, or client secret.
 

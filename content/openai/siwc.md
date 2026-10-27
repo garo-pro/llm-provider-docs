@@ -9,6 +9,9 @@ Use this as a compact map of Sign in with ChatGPT docs. Each page has a Markdown
 ## Documentation sets
 - [Combined Sign in with ChatGPT docs](https://developers.openai.com/siwc/llms-full.txt): Single-file Markdown export of Sign in with ChatGPT docs.
 
+## Account Security Notification
+- [Account security notification](https://developers.openai.com/siwc/account-security-notification.md): Receive security notifications from OpenAI and sign out affected users or sessions.
+
 ## ChatGPT plugin
 - [In your ChatGPT plugin](https://developers.openai.com/siwc/chatgpt-plugin.md): Reuse Sign in with ChatGPT inside your plugin's connector authorization flow.
 

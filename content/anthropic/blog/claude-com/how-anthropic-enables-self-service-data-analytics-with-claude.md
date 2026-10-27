@@ -51,7 +51,7 @@ In this section, we’ll discuss how we built each layer.
 
 ![](https://assets.claude.com/9f76b807b5c27e806bb3995890888675b8325c67.png)
 
-“For ad-hoc questions asked directly in Slack, see how our data team deploys a data analytics agent with Claude Tag.”
+*For ad-hoc questions asked directly in Slack, see [how our data team deploys a data analytics agent with Claude Tag](https://claude.com/resources/articles/self-service-data-analytics-in-slack-how-anthropic-deploys-claude-tag-for-ad-hoc-questions).*
 
 ### **Data foundations**
 

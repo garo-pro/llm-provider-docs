@@ -9,7 +9,9 @@ Financial advisors can now connect Claude to the custodians, portfolio platforms
 
 Today we're releasing Claude for Financial Advisors, a suite of connectors and workflow skills designed to help with research, prep, and documentation tasks that occupy an advisor’s time and keep them from client-facing work.
 
-Time is scarce among financial advisors. A typical advisory practice spends only a sixth of its time in client meetings, according to [Kitces research](https://www.kitces.com/kitces-report-how-financial-planners-actually-do-financial-planning/). The rest goes to work around those meetings, piecing together information across systems to prepare, plan, and document what was discussed. Meanwhile, over four in 10 American workers say they don't know who to go to for good financial or retirement planning advice, according to [EBRI's 2026 Retirement Confidence Survey](https://www.ebri.org/docs/default-source/rcs/2026-rcs/rcs_26-fs-3_prep.pdf). Time an advisor saves on prep and paperwork can go to a current client or new household they don’t yet have capacity to serve.
+Time is scarce among financial advisors. A typical advisory practice spends only a sixth of its time in client meetings, according to [Kitces research](https://www.kitces.com/kitces-report-how-financial-planners-actually-do-financial-planning/). The rest goes to work around those meetings, piecing together information across systems to prepare, plan, and 
+
+document what was discussed. Meanwhile, over four in 10 American workers say they don't know who to go to for good financial or retirement planning advice, according to [EBRI's 2026 Retirement Confidence Survey](https://www.ebri.org/docs/default-source/rcs/2026-rcs/rcs_26-fs-3_prep.pdf). Time an advisor saves on prep and paperwork can go to a current client or new household they don’t yet have capacity to serve.
 
 Claude for Financial Advisors includes:
 
@@ -22,9 +24,20 @@ New connectors bring in the CRM, custodian, portfolio reporting, financial plann
 
 - **Addepar** brings investment intelligence into Claude, giving advisors governed access to portfolio data, analytics and workflows across public and private markets.
 - **BlackRock** brings its portfolio construction expertise, model portfolios, and institutional analytics into Claude through Advisor Center, so advisors can deliver holistic advice across public and private markets.
+- **CAIS** opens its alternative investment platform to advisors in Claude, so they can query fund data, review manager and fund performance, and see a client's public and private holdings together.
 - **Charles Schwab** connects Claude to Schwab Advisor Services custodial data, including balances, positions, transactions, cost basis, alerts, and money-movement status, so advisors can review client information, see which clients need attention, and prepare for reviews.
+- **Conquest Planning** brings its Strategic Advice Manager planning engine into Claude so advisors can create new client plans, review and apply strategies, update existing plans and prepare for client meetings all in one place.
 - **Envestnet** lets advisors summarize Tamarac accounts and households in natural language, with a financial plan snapshot from MoneyGuide.
+- **FactSet** brings multi-asset class content including funds and ETFs, news, company fundamentals, analyst estimates, and market data to Claude, so advisors can research the companies and securities in a client's portfolio.
+- **FINNY,** the growth and prospecting platform, connects Claude to an advisor's campaign results by channel and sequence step, and lets advisors enrich prospect lists from their CRM, or upload new lists directly in Claude.
+- **Flourish** connects Claude to financial advisors’ books of business, enabling them to work with client information, check rates, manage invitations, and prepare for client meetings, all within Claude.
+- **Franklin Templeton** provides publicly approved fund and share-class information in Claude, including performance, fees, NAV, holdings, distributions, and fund documents, along with its published market and investment insights.
 - **iCapital** brings a client's alternative investment holdings into Claude, enabling advisors to view NAV, commitments, unfunded capital, recent capital activity, and performance, while more easily connecting those insights to the client's broader portfolio.
+- **Invesco** brings portfolio intelligence and practice management insights into Claude through its Invesco for Advisors connector.
+- **J.P. Morgan Asset Management (55ip)** extends tax transition technology to Claude, so advisors can evaluate the tax impact of moving a client's holdings into a new portfolio.
+- **Jump** , an AI platform for financial professionals, gives Claude client context (meetings, documents, tasks) and Jump-built skills that prepare next steps for the advisor’s review.
+- **MSCI** brings its proprietary data and analytics into Claude, so wealth firms can assess investment options across public and private markets, monitor performance, and evaluate rebalancing opportunities.
+- **Nevis** , the AI platform for wealth management, draws on client information from meetings, documents, and communications to support meeting prep and follow-up in Claude.
 - **Orion** brings portfolio reporting and Redtail CRM insights into Claude for household reviews, opportunity analysis, meeting prep and follow-up*.*
 - **SS&C Black Diamond** brings portfolio, performance, holdings and rebalancing data into Claude, so advisors can review their book, spot clients out of tolerance, surface tax loss harvesting opportunities, and generate client reports, tasks and rebalance sessions with their approval.
 - **Wealthbox** connects Claude to client records and meeting history to power onboarding, meeting prep, and follow-up.
@@ -32,7 +45,7 @@ New connectors bring in the CRM, custodian, portfolio reporting, financial plann
 - **Vanguard** brings information on its model portfolios and advisor investment solutions into Claude, so advisors can draw on Vanguard's trusted research, portfolio construction, and asset allocation expertise when making decisions for clients.
 - **Zocks** , the AI meeting assistant for financial advisors, brings Claude the client intelligence it captures from every conversation, including profiles, goals, life events, and commitments.
 
-These join other [connectors](https://claude.com/connectors) already available in Claude, including Microsoft 365, Salesforce, DocuSign, Box, FactSet, S&P Global, Morningstar, and more.
+These join other [connectors](https://claude.com/connectors) already available in Claude, including Microsoft 365, Salesforce, DocuSign, Box, S&P Global, Morningstar, and more.
 
 The Claude for Financial Advisors plugin, which bundles advisor skills and connectors into a single install, works with BlackRock, Charles Schwab, Addepar, Envestnet, iCapital, Orion, Wealthbox, Wealth.com and Zocks, and advisors choose which of these to connect during guided setup. Some partners also offer their own plugins: BlackRock is launching one for Advisor Center, joining existing plugins from S&P Global and LSEG.
 
@@ -132,3 +145,5 @@ The advisor plugin is available today. We recommend Enterprise plans for registe
 If you don't have an Enterprise license, request one using this [form](https://forms.gle/y9YmFF2j4moRinJA7) and an Anthropic team member will reach out with next steps. Firms that request a new license before the end of September 2026 will also receive a one-time usage credit to help them get started with the plugin.
 
 Learn more [at our solutions page](https://claude.com/solutions/financial-services#financial-advisors) and join [our webinar](https://claude.com/resources/webinars/inside-claude-for-financial-advisors) this Friday 9/18 at 11AM ET.
+
+*This article was originally published on September 14, 2026. It has been updated to include additional connectors from Anthropic partners.*

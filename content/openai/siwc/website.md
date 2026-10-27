@@ -84,8 +84,17 @@ branding and assets.
 Generate a fresh `state`, PKCE verifier, S256 challenge, and nonce on your backend.
 Bind the transaction to a server-generated browser session identifier.
 
+Include the following optional query parameters on the initial OpenAI
+authorization URL to help troubleshoot sign-in issues. Use opaque IDs that you
+can match to your application's logs. These IDs do not expose the underlying
+session or device data to OpenAI.
+
+Store these values with the sign-in transaction so you can add them to the
+authorization URL in the next step. The example passes `deviceToken`,
+`loginSessionId`, and `loginStartedAtMs` in the `signInMetadata` object.
+
 ```javascript
-export function createSignInTransaction(browserSessionId) {
+export function createSignInTransaction(browserSessionId, signInMetadata = {}) {
   const state = randomValue();
   const codeVerifier = randomValue(64);
   const codeChallenge = crypto
@@ -98,12 +107,21 @@ export function createSignInTransaction(browserSessionId) {
     codeVerifier,
     codeChallenge,
     nonce,
+    signInMetadata,
     redirectUri,
     expiresAt: Date.now() + 10 * 60 * 1000,
   };
 
   transactions.set(browserSessionId, transaction);
   return transaction;
+}
+
+export function startSignIn(browserSessionId, deviceToken, loginSessionId) {
+  return createSignInTransaction(browserSessionId, {
+    deviceToken,
+    loginSessionId,
+    loginStartedAtMs: Date.now(),
+  });
 }
 ```
 
@@ -115,11 +133,24 @@ other transaction values server-side.
 ## 3. Redirect to OpenAI
 
 Build the authorization URL on your backend, then redirect the browser to it.
+Include the optional sign-in signals below to help troubleshoot sign-in issues.
+They help you and OpenAI match an authorization request to your app's device
+and login session logs and identify when the user started signing in. This makes
+it easier to investigate a specific sign-in attempt together.
+
+| Parameter                 | Type    | Description                                                                                                              |
+| ------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `ext_device_token`        | String  | An opaque identifier assigned by your app to the device. Reuse it for sign-in attempts from the same device.             |
+| `ext_login_session_id`    | String  | An opaque identifier for the app's login session, used to match the sign-in request to your session logs.                |
+| `ext_login_started_at_ms` | Integer | The Unix timestamp in milliseconds when the user starts signing in to your app. OpenAI ignores values that aren't valid. |
+
+The example adds these parameters when the transaction contains their values.
+Send them in the authorization request, not the token exchange.
 
 ```javascript
 export function buildAuthorizationUrl(transaction) {
   const authorizationUrl = new URL(authorizationEndpoint);
-  authorizationUrl.search = new URLSearchParams({
+  const params = new URLSearchParams({
     client_id: clientId,
     redirect_uri: transaction.redirectUri,
     response_type: "code",
@@ -128,7 +159,17 @@ export function buildAuthorizationUrl(transaction) {
     code_challenge: transaction.codeChallenge,
     code_challenge_method: "S256",
     nonce: transaction.nonce,
-  }).toString();
+  });
+  const { deviceToken, loginSessionId, loginStartedAtMs } =
+    transaction.signInMetadata;
+  if (deviceToken != null) params.set("ext_device_token", deviceToken);
+  if (loginSessionId != null) {
+    params.set("ext_login_session_id", loginSessionId);
+  }
+  if (loginStartedAtMs != null) {
+    params.set("ext_login_started_at_ms", String(loginStartedAtMs));
+  }
+  authorizationUrl.search = params.toString();
 
   return authorizationUrl.toString();
 }
@@ -309,6 +350,12 @@ export async function verifyOpenAiIdentity(idToken, expectedNonce) {
   if (typeof payload.sub !== "string" || !payload.sub) {
     throw new Error("The ID token did not contain a subject.");
   }
+  if (
+    payload.sid !== undefined &&
+    (typeof payload.sid !== "string" || !payload.sid.trim())
+  ) {
+    throw new Error("The ID token contained an invalid session identifier.");
+  }
 
   return payload;
 }
@@ -318,6 +365,49 @@ export async function verifyOpenAiIdentity(idToken, expectedNonce) {
 Use a maintained JWT library, allow only a small clock-skew tolerance, cache JWKS
 responsibly, and refresh keys when an unfamiliar `kid` appears. This example
 always sends a nonce and requires the same value in the ID token.
+
+### Sample ID token
+
+Here is an example of a decoded ID token:
+
+```json
+{
+  "iss": "https://auth.openai.com",
+  "sub": "Bo0QaQ2FivlsFyUOPhtpz7lZvG486y5QLLXmeNeR2N1QBo1TsroPxQ",
+  "aud": ["oaiapp_EHBV7pzdMtehZ7j6Ypgyje-F"],
+  "nonce": "DAkt1BdJ869SA4mFj92yRKUtj_4OKQJV",
+  "auth_time": 1769045114,
+  "email": "alex.morgan@example.com",
+  "email_verified": false,
+  "name": "Alex Morgan",
+  "sid": "sid_i8EACl9LcyfQ4x57YfBHonV1P3K--tH_qDYUalZ0I0albTB2c6-Btl5hFWQ",
+  "https://api.openai.com/auth": {
+    "per_user_salt": "X-QSrbN76aI"
+  },
+  "iat": 1769045118,
+  "exp": 1769048718,
+  "jti": "eca69a1bcc0b1489898eeb63acf33340",
+  "at_hash": "3bigLYzG30QQKOaO4N1Pkw"
+}
+```
+
+| Field                         | What it means                                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `iss`                         | **Issuer:** the OpenAI auth server that issued the token.                                                                       |
+| `sub`                         | **User ID:** identifies the OpenAI user to your app.                                                                            |
+| `aud`                         | **Audience:** the client ID of the app that should receive this token.                                                          |
+| `nonce`                       | **Sign-in request reference:** matches the value your app sent when starting sign-in.                                           |
+| `auth_time`                   | **Authentication time:** when the user authenticated, in Unix seconds.                                                          |
+| `email`                       | The user's email address.                                                                                                       |
+| `email_verified`              | Whether OpenAI has verified the email address.                                                                                  |
+| `name`                        | The user's display name.                                                                                                        |
+| `sid`                         | **OpenAI session reference:** an opaque ID, separate from the partner-provided `ext_login_session_id`.                          |
+| `https://api.openai.com/auth` | A container for OpenAI-specific fields.                                                                                         |
+| `per_user_salt`               | A nested field in `https://api.openai.com/auth` that OpenAI uses to generate anonymous identifiers. Treat this value as opaque. |
+| `iat`                         | **Issued at:** when OpenAI created the token, in Unix seconds.                                                                  |
+| `exp`                         | **Expires at:** when the token expires, in Unix seconds.                                                                        |
+| `jti`                         | **Token ID:** uniquely identifies this token.                                                                                   |
+| `at_hash`                     | **Access-token hash:** checks that an accompanying access token matches this ID token, if OpenAI issues one.                    |
 
 ## 7. Find, create, or link the local account
 
@@ -348,13 +438,22 @@ Apply an explicit account-linking policy:
 ## 8. Create your application session
 
 After verification and account resolution, issue your own first-party session.
-The helper below receives your HTTP response and the resolved local user.
+The helper below receives your HTTP response, the resolved local user, and the
+verified ID-token claims. It stores the issuer, client ID, subject, and optional
+`sid` with the app session so you can identify sessions affected by an
+[account security notification](https://developers.openai.com/siwc/account-security-notification).
 
 ```javascript
-export function createApplicationSession(response, localUser) {
+export function createApplicationSession(response, localUser, identity) {
   const sessionId = randomValue();
   sessions.set(sessionId, {
     userId: localUser.id,
+    openai: {
+      issuer: identity.iss,
+      clientId,
+      subject: identity.sub,
+      sid: identity.sid ?? null,
+    },
     expiresAt: Date.now() + 8 * 60 * 60 * 1000,
   });
 
