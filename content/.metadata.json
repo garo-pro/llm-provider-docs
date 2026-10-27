@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-27T05:50:55.293891Z",
+    "fetch_date": "2026-10-27T11:14:05.617135Z",
     "section": "all"
   },
   "items": [
@@ -47301,8 +47301,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/docs/castiron-generated-code-transition.md",
       "status": "success",
       "path": "openai/github/openai-python/docs/castiron-generated-code-transition.md",
-      "sha256": "69b7e1810fd4238cfaf098d5c53a54a9b4a6f97a0d993cd33d7ac7cc32d2bd1f",
-      "size": 93792
+      "sha256": "26ab752c8f955e230cd7367acc80e43ea6590a8b8e9406a16376a7cb36994659",
+      "size": 94940
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/docs/castiron-polling-runtime-preparation.md",
