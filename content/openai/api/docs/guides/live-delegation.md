@@ -47,6 +47,16 @@ Choose the mode when you create the session; to change modes, start a new sessio
 Add this delegation configuration when [creating your Live session](https://developers.openai.com/api/docs/guides/live). Choose the Responses model independently of the voice model:
 
 ```javascript
+export const session = {
+  model: "gpt-live-1",
+  delegation: {
+    type: "responses",
+    responses: {
+      model: "gpt-6-luna",
+      instructions: "[Your backend prompt]",
+    },
+  },
+};
 ```
 
 ```python
@@ -240,6 +250,12 @@ Both commands require Responses delegation. The Live `response.create` command u
 Set `delegation` when [creating your Live session](https://developers.openai.com/api/docs/guides/live):
 
 ```javascript
+export const session = {
+  model: "gpt-live-1",
+  delegation: {
+    type: "client",
+  },
+};
 ```
 
 ```python

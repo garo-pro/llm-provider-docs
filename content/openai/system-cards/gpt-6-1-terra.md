@@ -177,7 +177,7 @@ The plot below shows defender success rate averaged per defender
 query on indirect prompt injection attacks (higher is better). GPT-6.1
 Terra is similar to Astra and GPT-6.1 Sol which have saturated
 robustness on hierarchy evaluations at 99.99% and are substantially
-robust to indirect prompt injections %shown below. We are working on
+robust to indirect prompt injections shown below. We are working on
 updating these evaluations.
 
 Figure 3

@@ -16,22 +16,16 @@ Start with product feeds when you want to:
 - Share up-to-date product data, including titles, descriptions, images, price, and availability.
 - Establish a clear integration path based on a documented schema and delivery model.
 
-You can learn more about the Agentic Commerce Protocol at [agenticcommerce.dev](https://agenticcommerce.dev) and on [GitHub](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol).
-
 ## Integration path
 
 Use this sequence to stand up your integration with ACP:
 
-1. **Decide** which integration method to use: [file upload](https://developers.openai.com/commerce/specs/file-upload/overview) or [API](https://developers.openai.com/commerce/specs/api/overview).
-   - It is generally recommended to provide the entire feed once a day via file upload, and then send updates throughout the day via the API.
-   - If your feed is small, you can provide both the entire feed and regular updates via the API.
-   - Promotions data can only be provided via the API.
-2. **Review** the specs for the chosen integration method, and confirm the required fields, canonical field names, and validation rules.
-3. **Validate** required fields for every record.
-4. **Upload** feed data through the chosen integration method.
-5. **Keep** the feed current based on the integration method:
-   - For file upload, overwrite the same file or shard set with your latest snapshot on a regular cadence.
-   - For the API, upsert products through the API.
+1. **Review** the [file upload guide](https://developers.openai.com/commerce/specs/file-upload/overview) and [product file schema](https://developers.openai.com/commerce/specs/file-upload/products).
+2. **Validate** the required fields for every record.
+3. **Upload** your catalog over SFTP.
+4. **Keep** the feed current by overwriting the same file or shard set with your latest snapshot. We recommend uploading a full snapshot at least once a day.
+
+To submit promotions, use the [Promotions API](https://developers.openai.com/commerce/specs/api/promotions).
 
 ## Prohibited products policy
 

@@ -2857,7 +2857,7 @@ Schema name: `RealtimeClientEventResponseCreate`
 ```json
 // Trigger a response with the default Conversation and no special parameters
 {
-  "type": "response.create",
+  "type": "response.create"
 }
 
 // Trigger an out-of-band response that does not write to the default Conversation

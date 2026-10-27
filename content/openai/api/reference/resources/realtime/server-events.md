@@ -1103,7 +1103,7 @@ Schema name: `RealtimeServerEventSessionCreated`
       }
     },
     "include": null
-  },
+  }
 }
 ```
 
@@ -2171,7 +2171,7 @@ Schema name: `RealtimeServerEventSessionUpdated`
       }
     },
     "include": null
-  },
+  }
 }
 ```
 
@@ -3588,10 +3588,9 @@ Schema name: `RealtimeServerEventConversationItemRetrieved`
     "role": "assistant",
     "content": [
       {
-        "type": "audio",
+        "type": "output_audio",
         "transcript": "Yes, I can hear you loud and clear. How can I help you today?",
-        "audio": "8//2//v/9//q/+//+P/s...",
-        "format": "pcm16"
+        "audio": "AAABAP//AAA="
       }
     ]
   }
@@ -4090,9 +4089,9 @@ Schema name: `RealtimeServerEventInputAudioBufferDtmfEventReceived`
 
 ```json
 {
-    "type":" input_audio_buffer.dtmf_event_received",
-    "event": "9",
-    "received_at": 1763605109,
+  "type": "input_audio_buffer.dtmf_event_received",
+  "event": "9",
+  "received_at": 1763605109
 }
 ```
 
@@ -5132,7 +5131,7 @@ Schema name: `RealtimeServerEventResponseCreated`
     },
     "usage": null,
     "metadata": null
-  },
+  }
 }
 ```
 
@@ -6855,23 +6854,23 @@ Schema name: `RealtimeServerEventResponseOutputItemDone`
 
 ```json
 {
-    "event_id": "event_3536",
-    "type": "response.output_item.done",
-    "response_id": "resp_001",
-    "output_index": 0,
-    "item": {
-        "id": "msg_007",
-        "object": "realtime.item",
-        "type": "message",
-        "status": "completed",
-        "role": "assistant",
-        "content": [
-            {
-                "type": "text",
-                "text": "Sure, I can help with that."
-            }
-        ]
-    }
+  "event_id": "event_3536",
+  "type": "response.output_item.done",
+  "response_id": "resp_001",
+  "output_index": 0,
+  "item": {
+    "id": "msg_007",
+    "object": "realtime.item",
+    "type": "message",
+    "status": "completed",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "output_text",
+        "text": "Sure, I can help with that."
+      }
+    ]
+  }
 }
 ```
 

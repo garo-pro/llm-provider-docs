@@ -6,20 +6,16 @@ The API lets you manage product feed data through three API surfaces:
 
 - [Feeds](https://developers.openai.com/commerce/specs/api/feeds) creates product feeds and retrieves feed
   metadata.
-- [Products](https://developers.openai.com/commerce/specs/api/products) retrieves products for a feed and
-  upserts partial product changes.
-- [Promotions](https://developers.openai.com/commerce/specs/api/promotions) retrieves promotions for a feed
-  and upserts partial promotion changes.
+- [Products](https://developers.openai.com/commerce/specs/api/products) retrieves products for a feed.
+- [Promotions](https://developers.openai.com/commerce/specs/api/promotions) lets you retrieve, create, or
+  update individual promotions for a feed.
 
-Use these APIs together when you want to create a feed, retrieve current data,
-and upsert product and promotion changes through API-based delivery instead of
-file upload.
+To update your product catalog, [upload a feed file over SFTP](https://developers.openai.com/commerce/specs/file-upload/overview).
 
 ## REST endpoints
 
-All API endpoints use the same request headers and response
-headers. The `Feeds`, `Products`, and `Promotions` subtabs define the endpoint-
-specific request and response bodies.
+All API endpoints use the same request and response headers. See the Feeds,
+Products, and Promotions references for each endpoint's request and response bodies.
 
 ### Request headers
 

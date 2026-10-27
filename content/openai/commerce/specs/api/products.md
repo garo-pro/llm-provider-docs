@@ -4,16 +4,9 @@
 
 ## Overview
 
-Use these endpoints to retrieve the current products for a feed or upsert
-partial product changes matched by `id`.
+Retrieve the current products for a feed. To update product data, [upload a feed file over SFTP](https://developers.openai.com/commerce/specs/file-upload/overview).
 
 ## REST endpoints
-
-- `GET /product_feeds/&#123;id&#125;/products` returns the products
-  for the specified feed.
-- `PATCH /product_feeds/&#123;id&#125;/products` upserts products
-  into the specified feed. Products are matched by `id`, and products
-  not included in the request remain unchanged.
 
 ### **GET /product_feeds/&#123;id&#125;/products**
 
@@ -37,42 +30,6 @@ This endpoint does not define a request body.
 | :--------------- | :---------- | :------- | :---------------------------------------- |
 | `target_country` | `string`    | No       | Two letter country code per ISO 3166.     |
 | `products`       | `Product[]` | Yes      | Array of products for the specified feed. |
-
-`404 Not Found`
-
-Returned when the feed is not found.
-
-### **PATCH /product_feeds/&#123;id&#125;/products**
-
-Upserts products into the specified feed. Products are matched by `id`. Products not included in the request remain unchanged.
-
-#### Path parameters
-
-| Field | Type     | Required | Description              |
-| :---- | :------- | :------- | :----------------------- |
-| `id`  | `string` | Yes      | Identifier for the feed. |
-
-#### Request
-
-| Field            | Type        | Required | Description                             |
-| :--------------- | :---------- | :------- | :-------------------------------------- |
-| `target_country` | `string`    | No       | Two letter country code per ISO 3166.   |
-| `products`       | `Product[]` | Yes      | Array of products for the product feed. |
-
-#### Response
-
-`200 OK`
-
-Returns the following acceptance object:
-
-| Field      | Type      | Required | Description                               |
-| :--------- | :-------- | :------- | :---------------------------------------- |
-| `id`       | `string`  | Yes      | Identifier for the feed.                  |
-| `accepted` | `boolean` | Yes      | Whether the product payload was accepted. |
-
-`400 Bad Request`
-
-Returned when the product payload is invalid.
 
 `404 Not Found`
 
