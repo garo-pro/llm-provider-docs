@@ -42,3 +42,7 @@ All of this research is still at an early stage. In particular, so far it is mos
 This research is only one part of our efforts to accelerate drug discovery. Ultimately, we want to share our models with as many drug development researchers as possible. To that end, we’ve rolled out [Claude Science](https://www.anthropic.com/news/claude-science-ai-workbench), our AI workbench for researchers, and we’re providing [Claude credits for life scientists](https://www.anthropic.com/news/ai-for-science-program). We’ve also created the [Life Sciences Verification Program](https://www.anthropic.com/news/life-sciences-verification-program) to allow trusted organizations to use our most powerful models with more permissive versions of our safeguards, which are necessary to prevent misuse but which can impede legitimate biological research. We’ve also recently launched an [open call for guest investigators](https://www.anthropic.com/news/open-call-guest-investigators-life-sciences) in the life sciences; we’re seeking proposals from research groups who want to use Claude to investigate key questions in drug discovery and other areas.
 
 We’re looking forward to working with many more organizations as we expand our life sciences research. If you work at an organization focused on drug discovery and are interested in collaborating with us, you can get in touch below.
+
+### Get in touch with us
+
+If you work at an organization focused on drug development and would like to get in touch, complete the following form.
