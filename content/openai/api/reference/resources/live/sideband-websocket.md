@@ -3455,7 +3455,7 @@ Schema name: `LiveResponseItemCreateParam`
 
         - `input_fidelity: optional "high" or "low" or null`
 
-          Control how much effort the model will exert to match the style and features, especially facial features, of input images. Supports `high` and `low` on `gpt-image-1` and `gpt-image-1.5`; `gpt-image-1-mini` supports only `low`. For `gpt-image-2`, omit this parameter. Defaults to `low` on supported models.
+          Control how much effort the model will exert to match the style and features, especially facial features, of input images. Supports `high` and `low` on `gpt-image-1.5`; `gpt-image-1-mini` supports only `low`. For `gpt-image-2`, omit this parameter. Defaults to `low` on supported models.
 
           - `"high"`
 
@@ -4523,7 +4523,7 @@ Schema name: `LiveResponseItemCreateParam`
 
         - `input_fidelity: optional "high" or "low" or null`
 
-          Control how much effort the model will exert to match the style and features, especially facial features, of input images. Supports `high` and `low` on `gpt-image-1` and `gpt-image-1.5`; `gpt-image-1-mini` supports only `low`. For `gpt-image-2`, omit this parameter. Defaults to `low` on supported models.
+          Control how much effort the model will exert to match the style and features, especially facial features, of input images. Supports `high` and `low` on `gpt-image-1.5`; `gpt-image-1-mini` supports only `low`. For `gpt-image-2`, omit this parameter. Defaults to `low` on supported models.
 
           - `"high"`
 
@@ -11435,23 +11435,23 @@ Schema name: `LiveTransportDTMFReceived`
 }
 ```
 
-<a id="transport.dtmf.send"></a>
+<a id="transport.dtmf.sent"></a>
 
-### transport.dtmf.send
+### transport.dtmf.sent
 
 A SIP DTMF keypress successfully sent to the SIP trunk. Delivered only to sideband observers; this is not a client command.
 
 #### Schema
 
-Schema name: `LiveTransportDTMFSend`
+Schema name: `LiveTransportDTMFSent`
 
 - `event: string`
 
 - `event_id: string`
 
-- `type: "transport.dtmf.send"`
+- `type: "transport.dtmf.sent"`
 
-  - `"transport.dtmf.send"`
+  - `"transport.dtmf.sent"`
 
 - `client_event_id: optional string`
 
@@ -11461,7 +11461,7 @@ Schema name: `LiveTransportDTMFSend`
 
 ```json
 {
-  "type": "transport.dtmf.send",
+  "type": "transport.dtmf.sent",
   "event_id": "event_dtmf_2",
   "event": "#"
 }

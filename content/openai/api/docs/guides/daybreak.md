@@ -12,13 +12,72 @@ The `model` field selects the model. The `access_programs.cyber` field selects a
 
 
 
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Model</th>
+        <th scope="col">Approval required</th>
+        <th scope="col">
+          API value: `access_programs.cyber`
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>GPT-6 Sol</td>
+        <td>Blue or Red</td>
+        <td>
+          `daybreak_blue`
+        </td>
+      </tr>
+      <tr>
+        <td className="align-top">
+          
 
-| Model                     | Approval required               | API value: `access_programs.cyber` |
-| ------------------------- | ------------------------------- | ---------------------------------- |
-| GPT-6 Sol                 | Blue or Red                     | `daybreak_blue`                    |
-| GPT-6.1 Sol / GPT-6 Astra | Red                             | `daybreak_blue`                    |
-| GPT-5.6-Cyber             | Red + additional model approval | `daybreak_red`                     |
+            
+GPT-6.1 Sol
 
+            
+GPT-6 Astra
+
+            
+GPT-5.5-Cyber
+
+          
+
+        </td>
+        <td className="align-top">Red</td>
+        <td className="align-top">
+          
+
+            
+
+              `daybreak_blue`
+            
+
+            
+
+              `daybreak_blue`
+            
+
+            
+
+              `daybreak_red`
+            
+
+          
+
+        </td>
+      </tr>
+      <tr>
+        <td>GPT-5.6-Cyber</td>
+        <td>Red + additional model approval</td>
+        <td>
+          `daybreak_red`
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 
 

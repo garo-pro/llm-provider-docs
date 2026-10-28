@@ -192,7 +192,7 @@ curl --fail-with-body -sS "$PROJECTS_URL/$PROJECT_ID" \
 
 
 
-Connect your own AWS S3 bucket, Azure Blob container, or Google Cloud Storage bucket to an OpenAI project. Follow the setup steps for your cloud, then register and validate the connection.
+Connect your own AWS S3 bucket, Azure Blob container, Google Cloud Storage bucket, or Oracle Cloud Infrastructure (OCI) Object Storage bucket to an OpenAI project. Follow the setup steps for your cloud, then register and validate the connection.
 
 ZDR with PSP is enabled per project. Once enabled, the PSP policy applies to all API traffic in that project, including requests to models that do not otherwise require PSP. To use ZDR without PSP for eligible models, send those requests through a separate project configured for ZDR without PSP.
 
@@ -205,7 +205,7 @@ ZDR with PSP is enabled per project. Once enabled, the PSP policy applies to all
 ### Open storage setup in the API console
 
 1. Open **Organization settings > Data controls > Data retention**, then select **Connect storage**.
-2. In **Connect external storage**, choose **AWS**, **Azure**, or **GCP** and select your project. You can also open **Connect storage** from **Project Settings > Data retention**.
+2. In **Connect external storage**, choose **AWS**, **Azure**, **GCP**, or **OCI** and select your project. You can also open **Connect storage** from **Project Settings > Data retention**.
 3. Complete the cloud setup below. Then enter your storage details in the modal and select **Connect and validate**.
 
 ### Cloud-specific Setups
@@ -220,7 +220,7 @@ ZDR with PSP is enabled per project. Once enabled, the PSP policy applies to all
 
 
 
-Complete these steps if you're using AWS. For other clouds, skip to **Azure Blob Storage** or **Google Cloud Storage**.
+Complete these steps if you're using AWS. For other clouds, skip to **Azure Blob Storage**, **Google Cloud Storage**, or **OCI Object Storage**.
 
 <figure>
   <video
@@ -507,6 +507,87 @@ Continue to **Register your storage**.
 
 
 
+
+
+<a id="oci-object-storage"></a>
+
+
+
+#### OCI Object Storage
+
+
+
+#### 1. Create the bucket
+
+In the OCI Console, open **Storage > Object Storage & Archive Storage > Buckets** and create a dedicated bucket. Choose a commercial region from this table that matches your project's data residency:
+
+| Geography | Supported OCI regions                                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| US        | `us-ashburn-1`, `us-chicago-1`, `us-phoenix-1`, `us-sanjose-1`                                                                                                |
+| EU        | `eu-amsterdam-1`, `eu-frankfurt-1`, `eu-madrid-1`, `eu-madrid-3`, `eu-marseille-1`, `eu-milan-1`, `eu-paris-1`, `eu-stockholm-1`, `eu-turin-1`, `eu-zurich-1` |
+
+Use these bucket settings:
+
+- **Storage tier:** Standard
+- **Visibility:** Private
+- **Object versioning:** Disabled
+- **Auto-tiering:** Disabled
+
+Keep replication disabled. Record the bucket name and region identifier as `CUSTOMER_BUCKET_NAME` and `CUSTOMER_OCI_REGION`. Open **Profile**, select **Tenancy** followed by your tenancy's name, and copy its OCID as `CUSTOMER_TENANCY_OCID`. Your tenancy must be subscribed to the bucket's region.
+
+#### 2. Add the bucket tags
+
+Add these tags during bucket creation, or open the bucket's **Tags** tab and select **Add**. Set **Namespace** to **None (freeform tag)** and use your exact OpenAI organization and project IDs:
+
+| Key                      | Value                 |
+| ------------------------ | --------------------- |
+| `openai_organization_id` | `CUSTOMER_ORG_ID`     |
+| `openai_project_id`      | `CUSTOMER_PROJECT_ID` |
+
+Use the same IDs in the access policy and storage registration. Each bucket is bound to one OpenAI organization and project.
+
+![OCI bucket creation form showing the openai_organization_id and openai_project_id freeform tags with example values.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-oci-bucket-tags.webp)
+
+#### 3. Grant OpenAI access
+
+In **Identity & Security > Policies**, select your tenancy's root compartment and create a policy named `psp-storage-access`. Turn on **Show manual editor** and enter these statements with your bucket name, region, and OpenAI organization and project IDs in the `CUSTOMER_...` placeholders. Keep OpenAI's tenancy and group OCIDs unchanged.
+
+```text
+Define tenancy OpenAICSG as ocid1.tenancy.oc1..aaaaaaaa4kzwe5jdr4gsxft7dfnwbnp3aozhxeskabsqo7czdkbp6fkh3uha
+Define group OpenAICSGProduction as ocid1.group.oc1..aaaaaaaanuot5i5kooasr6qh6qo4ohqljrrxx3javkl2tkedb7ljsluq62sa
+Admit group OpenAICSGProduction of tenancy OpenAICSG to {OBJECTSTORAGE_NAMESPACE_READ} in tenancy
+Admit group OpenAICSGProduction of tenancy OpenAICSG to {BUCKET_READ} in tenancy where target.bucket.name = 'CUSTOMER_BUCKET_NAME'
+Admit group OpenAICSGProduction of tenancy OpenAICSG to {OBJECT_READ, OBJECT_CREATE, OBJECT_OVERWRITE} in tenancy where all {target.bucket.name = 'CUSTOMER_BUCKET_NAME', target.object.name = 'openai/CUSTOMER_ORG_ID/CUSTOMER_PROJECT_ID/*'}
+Allow service objectstorage-CUSTOMER_OCI_REGION to {BUCKET_INSPECT, BUCKET_READ, OBJECT_INSPECT, OBJECT_DELETE} in tenancy where target.bucket.name = 'CUSTOMER_BUCKET_NAME'
+```
+
+The policy lets OpenAI look up your Object Storage namespace, read bucket configuration, and read and write objects under your project's prefix. Namespace lookup requires the tenancy-level permission without a bucket condition. The last statement lets Oracle's regional Object Storage service delete expired objects; for Ashburn, the service name is `objectstorage-us-ashburn-1`.
+
+Save the policy. OpenAI manages its credentials; you don't need to create or share an API signing key or access key.
+
+#### 4. Set the lifecycle rule
+
+Open the bucket's **Policies** tab. Under **Lifecycle policy rules**, select **Create rule** and use these settings:
+
+- **Name:** `psp-retention`
+- **Target:** Objects
+- **Lifecycle action:** Delete
+- **Number of days:** 30
+
+![OCI lifecycle rule form showing the psp-retention rule with Objects as the target and deletion after 30 days.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-oci-lifecycle-rule.webp)
+
+Expand **Advanced options** and keep **State** set to **Enabled**. Under **Object name filters**, select **Add filter**, choose **Include by prefix**, and enter `openai/CUSTOMER_ORG_ID/CUSTOMER_PROJECT_ID/`, including the trailing slash.
+
+![OCI lifecycle advanced options showing Enabled state and an Include by prefix filter for the OpenAI organization and project.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-oci-lifecycle-prefix.webp)
+
+Save the rule. If OCI offers to add lifecycle permissions automatically, keep the bucket-scoped grant from step 3. Make sure no other rule deletes these objects earlier or moves them to Archive storage. A retention rule doesn't replace the lifecycle deletion rule.
+
+Continue to **Register your storage**.
+
+
+
+
+
 ### Register your storage
 
 After completing the cloud setup above, use either the API console or the Management API to register and validate your storage. You only need to use one method.
@@ -523,19 +604,35 @@ Open **Organization settings > Data controls > Data retention** and select **Con
 
 ##### 2. Enter your storage details
 
-Choose **AWS**, **Azure**, or **GCP**, then select the project. If you opened the modal from project settings, that project is already selected. If **Registered storage** appears, choose **Connect new storage** to add a destination.
+Choose **AWS**, **Azure**, **GCP**, or **OCI**, then select the project. If you opened the modal from project settings, that project is already selected. If **Registered storage** appears, choose **Connect new storage** to add a destination.
 
 For **AWS**, enter the **Bucket ARN** and **IAM role ARN** from your cloud setup.
 
-![Connect external storage dialog for AWS showing project selection, Bucket ARN, IAM role ARN, and Connect and validate.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-07-platform-aws-connect.webp)
+<img src="https://developers.openai.com/images/platform/guides/private-safety-processing/setup-07-platform-aws-connect.webp"
+  alt="Connect external storage dialog with AWS selected, showing project selection, Bucket ARN, IAM role ARN, and Connect and validate."
+  style={{ border: 0, borderRadius: 0 }}
+/>
 
 For **Azure**, enter **Tenant ID**, **Subscription ID**, **Resource group**, **Storage account name**, and **Container name**. Scroll down in the modal to complete all fields.
 
-![Connect external storage dialog for Azure showing the project and Azure storage configuration fields.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-08-platform-azure-connect.webp)
+<img src="https://developers.openai.com/images/platform/guides/private-safety-processing/setup-08-platform-azure-connect.webp"
+  alt="Connect external storage dialog with Azure selected, showing project selection, Tenant ID, Subscription ID, and Resource group."
+  style={{ border: 0, borderRadius: 0 }}
+/>
 
 For **GCP**, enter **Bucket name**, **Workload identity project number**, **Workload identity pool ID**, and **Workload identity provider ID**. Scroll down in the modal to complete all fields.
 
-![Connect external storage dialog for GCP showing project selection, Bucket name, Workload identity project number, and Workload identity pool ID.](https://developers.openai.com/images/platform/guides/private-safety-processing/setup-10-platform-gcp-connect.webp)
+<img src="https://developers.openai.com/images/platform/guides/private-safety-processing/setup-10-platform-gcp-connect.webp"
+  alt="Connect external storage dialog with GCP selected, showing project selection, Bucket name, and Workload identity project number."
+  style={{ border: 0, borderRadius: 0 }}
+/>
+
+For **OCI**, enter **Tenancy OCID**, **Region**, and **Bucket name**. Use the region identifier, such as `us-ashburn-1`, and the bucket name, not its OCID or URL. OpenAI discovers the Object Storage namespace automatically. Scroll down in the modal to complete all fields.
+
+<img src="https://developers.openai.com/images/platform/guides/private-safety-processing/setup-platform-oci-connect.webp"
+  alt="Connect external storage dialog with OCI selected, showing project selection, Tenancy OCID, and Region."
+  style={{ border: 0, borderRadius: 0 }}
+/>
 
 ##### 3. Connect and validate
 
@@ -625,6 +722,24 @@ curl --fail-with-body -sS -X POST "$OPENAI_STORAGE_URL" \
   }'
 ```
 
+**OCI Object Storage**
+
+```bash
+curl --fail-with-body -sS -X POST "$OPENAI_STORAGE_URL" \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "OpenAI-Organization: $OPENAI_ORG_ID" \
+  -H 'Content-Type: application/json' \
+  --data-binary '{
+    "project_id": "CUSTOMER_PROJECT_ID",
+    "provider": {
+      "type": "oci",
+      "tenancy_ocid": "CUSTOMER_TENANCY_OCID",
+      "region": "CUSTOMER_OCI_REGION",
+      "bucket": "CUSTOMER_BUCKET_NAME"
+    }
+  }'
+```
+
 The response contains an `id` beginning with `extstorage_` and `status: "pending"`. Keep the ID for validation. The API console shows **Pending validation** and leaves the project's retention policy unchanged.
 
 ##### 3. Verify your setup
@@ -696,7 +811,7 @@ Your sampling policy determines which requests create retained objects. A missin
 
 #### Identify validation probes
 
-For AWS, Azure, and GCP, validation writes test objects to your configured storage destination. Their names include `csg_validation_` followed by a random hexadecimal suffix. Each object's body contains the text `customer-storage-gateway-validation:csg_validation_<suffix>`, using the same suffix as its name. They contain no customer prompts or responses. OpenAI reads each test object using the configured access, then attempts an unauthenticated `GET` of the same object to check for public access. Private storage is expected to reject the unauthenticated request. These requests may appear in your provider's access logs, depending on your logging configuration.
+For AWS, Azure, GCP, and OCI, validation writes test objects to your configured storage destination. Their names include `csg_validation_` followed by a random hexadecimal suffix. Each object's body contains the text `customer-storage-gateway-validation:csg_validation_<suffix>`, using the same suffix as its name. They contain no customer prompts or responses. OpenAI reads each test object using the configured access, then attempts an unauthenticated `GET` of the same object to check for public access. Private storage is expected to reject the unauthenticated request. These requests may appear in your provider's access logs, depending on your logging configuration.
 
 For AWS, validation also checks the role's `sts:ExternalId` restriction. After successfully assuming your configured role with your project's external ID, OpenAI tests `AssumeRole` calls without an external ID and with the deliberately invalid test ID `proj_smoketest-verifier`. Both test calls are expected to return `AccessDenied`. They use the same OpenAI identity and configured role; the test ID doesn't identify another customer's project. AWS CloudTrail doesn't record these denied cross-account role-assumption attempts in your account. Keep your trust policy restricted to your real project ID; don't allow the test ID or remove the external-ID condition to make these probes succeed.
 
