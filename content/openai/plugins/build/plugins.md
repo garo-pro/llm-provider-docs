@@ -375,7 +375,7 @@ These settings apply to local-marketplace plugins in supported local clients,
 including Codex CLI and Codex in the ChatGPT desktop app. They don't change
 workspace installation policies for plugins imported through **Admin** >
 **Plugins**. Those plugins use their workspace-managed enabled state, even when
-their source is a GitHub repository. See [Plugin management](https://developers.openai.com/codex/enterprise/plugin-management).
+their source is a GitHub repository. See [Import and sync plugins from GitHub](https://developers.openai.com/codex/enterprise/plugin-management).
 
 <a id="share-a-local-plugin-with-your-workspace"></a>
 

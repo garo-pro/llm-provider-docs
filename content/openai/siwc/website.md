@@ -60,7 +60,7 @@ identity scopes; [ChatGPT plan usage in open-source apps](https://developers.ope
 has a separate authorization and registration flow.
 
 Use a maintained OAuth or OpenID Connect library when possible. The Node.js
-  examples below show the backend operations with Node's crypto module and
+  examples below show the backend operations with Node's `crypto` module and
   `jose` for JWT verification. Wire them to your application routes and session
   store. The sample's in-memory maps illustrate storage; production storage must
   expire transactions and support atomic, one-time consumption across instances.
@@ -73,11 +73,24 @@ browser to OpenAI's authorization endpoint. The following steps show how to
 generate PKCE values and exchange tokens on the backend.
 
 ```html
-<a href="/auth/openai">Continue with ChatGPT</a>
+<a
+  href="/auth/openai"
+  data-oai-siwc-button
+  data-oai-siwc-button-client="oaiapp_example"
+>
+  Continue with ChatGPT
+</a>
 ```
 
+Add the `data-oai-siwc-button` HTML attribute to each Sign in with ChatGPT
+  button or link on your page to help OpenAI verify your integration and
+  troubleshoot sign-in issues. Add the attribute directly to the clickable
+  element without a value. Optionally set `data-oai-siwc-button-client` to the
+  OAuth client ID used by that button or link.
+
 Keep the button discoverable for new and returning users. Use approved OpenAI
-branding and assets.
+branding and assets, with a clear, accessible label such as **Continue with
+ChatGPT**.
 
 ## 2. Create a one-time sign-in transaction
 
