@@ -14,9 +14,11 @@ List recently generated videos for the current project.
 
   Identifier for the last item from the previous pagination request
 
-- `limit: optional number`
+- `limit: optional integer`
 
   Number of items to retrieve
+
+  `minimum: 0`, `maximum: 100`
 
 - `order: optional "asc" or "desc"`
 
@@ -36,13 +38,17 @@ List recently generated videos for the current project.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -88,6 +94,8 @@ List recently generated videos for the current project.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -104,9 +112,11 @@ List recently generated videos for the current project.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -126,13 +136,13 @@ List recently generated videos for the current project.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -184,7 +194,7 @@ List recently generated videos for the current project.
 
   The ID of the last item in the list.
 
-- `object: "list"`
+- `object: "list" (default: "list")`
 
   The type of object returned, must be `list`.
 
@@ -197,7 +207,7 @@ curl https://api.openai.com/v1/videos \
     -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -248,7 +258,7 @@ curl https://api.openai.com/v1/videos \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### Response example
 
 ```json
 {

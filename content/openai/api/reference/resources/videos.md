@@ -16,6 +16,8 @@ Create a new video generation job from a prompt and optional reference assets.
 
   Text prompt that describes the video to generate.
 
+  `minLength: 1`, `maxLength: 32000`
+
 - `input_reference: optional ImageInputReferenceParam`
 
   Optional reference object that guides generation. Provide exactly one of `image_url` or `file_id`.
@@ -25,6 +27,8 @@ Create a new video generation job from a prompt and optional reference assets.
   - `image_url: optional string`
 
     A fully qualified URL or base64-encoded data URL.
+
+    `maxLength: 20971520`, `format: uri`
 
 - `model: optional VideoModel`
 
@@ -76,13 +80,17 @@ Create a new video generation job from a prompt and optional reference assets.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -128,6 +136,8 @@ Create a new video generation job from a prompt and optional reference assets.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -144,9 +154,11 @@ Create a new video generation job from a prompt and optional reference assets.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -166,13 +178,13 @@ Create a new video generation job from a prompt and optional reference assets.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -223,7 +235,7 @@ curl https://api.openai.com/v1/videos \
         }'
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -268,7 +280,7 @@ curl https://api.openai.com/v1/videos \
   -F "prompt=A calico cat playing a piano on stage"
 ```
 
-#### Response
+#### Response example
 
 ```json
 {
@@ -300,9 +312,11 @@ Create a character from an uploaded video.
 
   Identifier for the character creation cameo.
 
-- `created_at: number`
+- `created_at: integer`
 
   Unix timestamp (in seconds) when the character was created.
+
+  `format: unixtime`
 
 - `name: string or null`
 
@@ -318,7 +332,7 @@ curl https://api.openai.com/v1/videos/characters \
     -F 'video=@/path/to/video'
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -348,7 +362,7 @@ Permanently delete a completed or failed video and its stored assets.
 
   Indicates that the video resource was deleted.
 
-- `object: "video.deleted"`
+- `object: "video.deleted" (default: "video.deleted")`
 
   The object type that signals the deletion response.
 
@@ -362,7 +376,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
     -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -415,6 +429,8 @@ Create a new video generation job by editing a source video or existing generate
 
   Text prompt that describes how to edit the source video.
 
+  `minLength: 1`, `maxLength: 32000`
+
 - `video: object { id }`
 
   Reference to the completed video to edit.
@@ -433,13 +449,17 @@ Create a new video generation job by editing a source video or existing generate
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -485,6 +505,8 @@ Create a new video generation job by editing a source video or existing generate
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -501,9 +523,11 @@ Create a new video generation job by editing a source video or existing generate
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -523,13 +547,13 @@ Create a new video generation job by editing a source video or existing generate
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -583,7 +607,7 @@ curl https://api.openai.com/v1/videos/edits \
         }'
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -631,6 +655,8 @@ Create an extension of a completed video.
 
   Updated text prompt that directs the extension generation.
 
+  `minLength: 1`, `maxLength: 32000`
+
 - `seconds: VideoSeconds`
 
   Length of the newly generated extension segment in seconds (allowed values: 4, 8, 12, 16, 20).
@@ -659,13 +685,17 @@ Create an extension of a completed video.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -711,6 +741,8 @@ Create an extension of a completed video.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -727,9 +759,11 @@ Create an extension of a completed video.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -749,13 +783,13 @@ Create an extension of a completed video.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -810,7 +844,7 @@ curl https://api.openai.com/v1/videos/extensions \
         }'
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -862,9 +896,11 @@ Fetch a character.
 
   Identifier for the character creation cameo.
 
-- `created_at: number`
+- `created_at: integer`
 
   Unix timestamp (in seconds) when the character was created.
+
+  `format: unixtime`
 
 - `name: string or null`
 
@@ -877,7 +913,7 @@ curl https://api.openai.com/v1/videos/characters/$CHARACTER_ID \
     -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -899,9 +935,11 @@ List recently generated videos for the current project.
 
   Identifier for the last item from the previous pagination request
 
-- `limit: optional number`
+- `limit: optional integer`
 
   Number of items to retrieve
+
+  `minimum: 0`, `maximum: 100`
 
 - `order: optional "asc" or "desc"`
 
@@ -921,13 +959,17 @@ List recently generated videos for the current project.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -973,6 +1015,8 @@ List recently generated videos for the current project.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -989,9 +1033,11 @@ List recently generated videos for the current project.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -1011,13 +1057,13 @@ List recently generated videos for the current project.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -1069,7 +1115,7 @@ List recently generated videos for the current project.
 
   The ID of the last item in the list.
 
-- `object: "list"`
+- `object: "list" (default: "list")`
 
   The type of object returned, must be `list`.
 
@@ -1082,7 +1128,7 @@ curl https://api.openai.com/v1/videos \
     -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -1133,7 +1179,7 @@ curl https://api.openai.com/v1/videos \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### Response example
 
 ```json
 {
@@ -1177,6 +1223,8 @@ Create a remix of a completed video using a refreshed prompt.
 
   Updated text prompt that directs the remix generation.
 
+  `minLength: 1`, `maxLength: 32000`
+
 ### Returns
 
 - `Video object { id, completed_at, created_at, 10 more }`
@@ -1187,13 +1235,17 @@ Create a remix of a completed video using a refreshed prompt.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -1239,6 +1291,8 @@ Create a remix of a completed video using a refreshed prompt.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -1255,9 +1309,11 @@ Create a remix of a completed video using a refreshed prompt.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -1277,13 +1333,13 @@ Create a remix of a completed video using a refreshed prompt.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -1334,7 +1390,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID/remix \
         }'
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -1381,7 +1437,7 @@ curl -X POST https://api.openai.com/v1/videos/video_123/remix \
   }'
 ```
 
-#### Response
+#### Response example
 
 ```json
 {
@@ -1421,13 +1477,17 @@ Fetch the latest metadata for a generated video.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -1473,6 +1533,8 @@ Fetch the latest metadata for a generated video.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -1489,9 +1551,11 @@ Fetch the latest metadata for a generated video.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -1511,13 +1575,13 @@ Fetch the latest metadata for a generated video.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -1564,7 +1628,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
     -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -1612,6 +1676,8 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
     A fully qualified URL or base64-encoded data URL.
 
+    `maxLength: 20971520`, `format: uri`
+
 ### Video
 
 - `Video object { id, completed_at, created_at, 10 more }`
@@ -1622,13 +1688,17 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -1674,6 +1744,8 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -1690,9 +1762,11 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -1712,13 +1786,13 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -1766,9 +1840,11 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
     Identifier for the character creation cameo.
 
-  - `created_at: number`
+  - `created_at: integer`
 
     Unix timestamp (in seconds) when the character was created.
+
+    `format: unixtime`
 
   - `name: string or null`
 
@@ -1820,6 +1896,8 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
       An opaque target for explicitly continuing this review, or null when unavailable.
 
+      `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
     - `steer: optional object { message }`
 
       An optional public continuation instruction.
@@ -1850,7 +1928,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
     Indicates that the video resource was deleted.
 
-  - `object: "video.deleted"`
+  - `object: "video.deleted" (default: "video.deleted")`
 
     The object type that signals the deletion response.
 
@@ -1864,9 +1942,11 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
     Identifier for the character creation cameo.
 
-  - `created_at: number`
+  - `created_at: integer`
 
     Unix timestamp (in seconds) when the character was created.
+
+    `format: unixtime`
 
   - `name: string or null`
 

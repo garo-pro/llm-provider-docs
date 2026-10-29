@@ -1,0 +1,72 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Get Skill Version
+
+**get** `/skills/{skill_id}/versions/{version}`
+
+Get a specific skill version.
+
+### Path Parameters
+
+- `skill_id: string`
+
+- `version: string`
+
+  The version number to retrieve.
+
+### Returns
+
+- `SkillVersion object { id, created_at, description, 4 more }`
+
+  - `id: string`
+
+    Unique identifier for the skill version.
+
+  - `created_at: integer`
+
+    Unix timestamp (seconds) for when the version was created.
+
+    `format: unixtime`
+
+  - `description: string`
+
+    Description of the skill version.
+
+  - `name: string`
+
+    Name of the skill version.
+
+  - `object: "skill.version" (default: "skill.version")`
+
+    The object type, which is `skill.version`.
+
+    - `"skill.version"`
+
+  - `skill_id: string`
+
+    Identifier of the skill for this version.
+
+  - `version: string`
+
+    Version number for this skill.
+
+### Example
+
+```http
+curl https://api.openai.com/v1/skills/$SKILL_ID/versions/$VERSION \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "description": "description",
+  "name": "name",
+  "object": "skill.version",
+  "skill_id": "skill_id",
+  "version": "version"
+}
+```

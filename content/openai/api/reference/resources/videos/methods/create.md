@@ -14,6 +14,8 @@ Create a new video generation job from a prompt and optional reference assets.
 
   Text prompt that describes the video to generate.
 
+  `minLength: 1`, `maxLength: 32000`
+
 - `input_reference: optional ImageInputReferenceParam`
 
   Optional reference object that guides generation. Provide exactly one of `image_url` or `file_id`.
@@ -23,6 +25,8 @@ Create a new video generation job from a prompt and optional reference assets.
   - `image_url: optional string`
 
     A fully qualified URL or base64-encoded data URL.
+
+    `maxLength: 20971520`, `format: uri`
 
 - `model: optional VideoModel`
 
@@ -74,13 +78,17 @@ Create a new video generation job from a prompt and optional reference assets.
 
     Unique identifier for the video job.
 
-  - `completed_at: number or null`
+  - `completed_at: integer or null`
 
     Unix timestamp (seconds) for when the job completed, if finished.
 
-  - `created_at: number`
+    `format: unixtime`
+
+  - `created_at: integer`
 
     Unix timestamp (seconds) for when the job was created.
+
+    `format: unixtime`
 
   - `error: VideoCreateError or null`
 
@@ -126,6 +134,8 @@ Create a new video generation job from a prompt and optional reference assets.
 
         An opaque target for explicitly continuing this review, or null when unavailable.
 
+        `pattern: ^[A-Za-z0-9._~:-]+$`, `minLength: 1`, `maxLength: 96`
+
       - `steer: optional object { message }`
 
         An optional public continuation instruction.
@@ -142,9 +152,11 @@ Create a new video generation job from a prompt and optional reference assets.
 
       The original error type, or null if it was not recorded.
 
-  - `expires_at: number or null`
+  - `expires_at: integer or null`
 
     Unix timestamp (seconds) for when the downloadable assets expire, if set.
+
+    `format: unixtime`
 
   - `model: VideoModel`
 
@@ -164,13 +176,13 @@ Create a new video generation job from a prompt and optional reference assets.
 
       - `"sora-2-2025-12-08"`
 
-  - `object: "video"`
+  - `object: "video" (default: "video")`
 
     The object type, which is always `video`.
 
     - `"video"`
 
-  - `progress: number`
+  - `progress: integer`
 
     Approximate completion percentage for the generation task.
 
@@ -221,7 +233,7 @@ curl https://api.openai.com/v1/videos \
         }'
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {
@@ -266,7 +278,7 @@ curl https://api.openai.com/v1/videos \
   -F "prompt=A calico cat playing a piano on stage"
 ```
 
-#### Response
+#### Response example
 
 ```json
 {

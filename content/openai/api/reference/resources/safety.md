@@ -1,0 +1,264 @@
+# Safety
+
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+# Alerts
+
+## Get project safety alert
+
+**get** `/safety/alerts/{id}`
+
+Get a safety alert belonging to the authenticated API project.
+
+### Path Parameters
+
+- `id: string`
+
+  Project safety alert ID
+
+  `maxLength: 38`
+
+### Returns
+
+- `SafetyAlert object { id, created_at, error_type, 7 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `error_type: "potentially_unintended_data_transfer" or "potentially_unintended_data_access" or "potentially_unintended_destructive_activity" or "other"`
+
+    - `"potentially_unintended_data_transfer"`
+
+    - `"potentially_unintended_data_access"`
+
+    - `"potentially_unintended_destructive_activity"`
+
+    - `"other"`
+
+  - `model: string`
+
+  - `object: "safety.alert" (default: "safety.alert")`
+
+    - `"safety.alert"`
+
+  - `reason: string or null`
+
+    A customer-safe description derived from error_type, or null for zero data retention requests.
+
+  - `request_id: string`
+
+  - `request_paused: boolean`
+
+    Whether block registration succeeded for this request. This does not confirm that response execution stopped.
+
+  - `response_id: string`
+
+  - `detailed_explanation: optional string or null`
+
+    A generated explanation, temporarily available for eligible zero data retention alerts. Omitted when unavailable.
+
+### Example
+
+```http
+curl https://api.openai.com/v1/safety/alerts/$ID \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "error_type": "potentially_unintended_data_transfer",
+  "model": "model",
+  "object": "safety.alert",
+  "reason": "reason",
+  "request_id": "request_id",
+  "request_paused": true,
+  "response_id": "response_id",
+  "detailed_explanation": "detailed_explanation"
+}
+```
+
+### Example
+
+```http
+curl https://api.openai.com/v1/safety/alerts/alert_0123456789abcdef0123456789abcdef \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### Response example
+
+```json
+{
+  "id": "alert_0123456789abcdef0123456789abcdef",
+  "object": "safety.alert",
+  "created_at": 1787659200,
+  "request_id": "req_123",
+  "response_id": "resp_123",
+  "model": "gpt-6-astra",
+  "request_paused": true,
+  "error_type": "potentially_unintended_data_access",
+  "reason": "Potentially unintended data access."
+}
+```
+
+## Domain Types
+
+### Safety Alert
+
+- `SafetyAlert object { id, created_at, error_type, 7 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `error_type: "potentially_unintended_data_transfer" or "potentially_unintended_data_access" or "potentially_unintended_destructive_activity" or "other"`
+
+    - `"potentially_unintended_data_transfer"`
+
+    - `"potentially_unintended_data_access"`
+
+    - `"potentially_unintended_destructive_activity"`
+
+    - `"other"`
+
+  - `model: string`
+
+  - `object: "safety.alert" (default: "safety.alert")`
+
+    - `"safety.alert"`
+
+  - `reason: string or null`
+
+    A customer-safe description derived from error_type, or null for zero data retention requests.
+
+  - `request_id: string`
+
+  - `request_paused: boolean`
+
+    Whether block registration succeeded for this request. This does not confirm that response execution stopped.
+
+  - `response_id: string`
+
+  - `detailed_explanation: optional string or null`
+
+    A generated explanation, temporarily available for eligible zero data retention alerts. Omitted when unavailable.
+
+# Cases
+
+## Get safety case
+
+**get** `/safety/cases/{id}`
+
+Get a safety case by ID.
+
+### Path Parameters
+
+- `id: string`
+
+  Safety case ID
+
+  `maxLength: 128`
+
+### Returns
+
+- `SafetyCase object { id, created_at, entity_identifier, 3 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `entity_identifier: string`
+
+  - `notice: object { type }`
+
+    - `type: "warning" or "deactivation"`
+
+      - `"warning"`
+
+      - `"deactivation"`
+
+  - `object: "safety.case" (default: "safety.case")`
+
+    - `"safety.case"`
+
+  - `reason: string or null`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/safety/cases/$ID \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "entity_identifier": "entity_identifier",
+  "notice": {
+    "type": "warning"
+  },
+  "object": "safety.case",
+  "reason": "reason"
+}
+```
+
+### Example
+
+```http
+curl https://api.openai.com/v1/safety/cases/C-abc123 \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### Response example
+
+```json
+{
+  "id": "C-abc123",
+  "object": "safety.case",
+  "created_at": 1787659200,
+  "entity_identifier": "safety-id-123",
+  "reason": "cyber_abuse",
+  "notice": {"type": "warning"}
+}
+```
+
+## Domain Types
+
+### Safety Case
+
+- `SafetyCase object { id, created_at, entity_identifier, 3 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `entity_identifier: string`
+
+  - `notice: object { type }`
+
+    - `type: "warning" or "deactivation"`
+
+      - `"warning"`
+
+      - `"deactivation"`
+
+  - `object: "safety.case" (default: "safety.case")`
+
+    - `"safety.case"`
+
+  - `reason: string or null`

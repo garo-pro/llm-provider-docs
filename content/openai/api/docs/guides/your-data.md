@@ -252,7 +252,8 @@ response = client.with_options(data_residency: :us).responses.create(
 )
 puts(response.output_text)
 
-response = client.with_options(data_residency: :eu).responses.create(
+# EU processing requires a key from an EU-region project.
+response = client.with_options(data_residency: :eu, api_key: ENV.fetch("OPENAI_EU_API_KEY"), organization: nil, project: nil).responses.create(
   model: "gpt-5.6-terra",
   input: "Reply with OK."
 )

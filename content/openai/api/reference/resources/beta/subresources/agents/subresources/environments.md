@@ -1,0 +1,3616 @@
+# Environments
+
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Create an agent environment
+
+**post** `/agents/environments`
+
+Creates an OpenAI-hosted environment before creating a session. Requires access to the prewarming beta.
+
+### Header Parameters
+
+- `"Idempotency-Key": optional string`
+
+  `minLength: 1`, `maxLength: 256`
+
+### Body Parameters
+
+- `environment: object { type, capability_directories, desktop, 8 more }`
+
+  The required hosting type and its configuration.
+
+  - `type: "openai_hosted" (default: "openai_hosted")`
+
+    The type of the object. Always `openai_hosted`.
+
+    - `"openai_hosted"`
+
+  - `capability_directories: optional array of string or null`
+
+    Directories that contain capabilities exposed to the agent. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `desktop: optional object { enabled }  or null`
+
+    Desktop provisioning. Omission or null inherits the template setting, or defaults to disabled.
+
+    - `enabled: boolean`
+
+      Whether to provision the desktop and its browser proxy.
+
+  - `env: optional map[string] or null`
+
+    Environment variables made available to the agent.
+
+  - `environment_template_id: optional string`
+
+    A reusable hosted template applied before inline configuration. Omitted fields inherit the template; network overrides cannot broaden its policy.
+
+    `minLength: 0`, `maxLength: 64`
+
+  - `files: optional array of HostedEnvironmentFileParam or null`
+
+    Files available before the agent starts. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 50`
+
+    - `FileID object { file_id, path, type }`
+
+      A file previously uploaded through the OpenAI Files API.
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 1`, `maxLength: 256`
+
+      - `path: string`
+
+        The absolute destination path inside `/workspace`.
+
+        `minLength: 1`, `maxLength: 4096`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { data, path, type }`
+
+      A file supplied directly as standard-base64 data.
+
+      - `data: string`
+
+        The standard-base64-encoded file contents.
+
+        `minLength: 0`, `maxLength: 6990508`
+
+      - `path: string`
+
+        The absolute destination path inside `/workspace`.
+
+        `minLength: 1`, `maxLength: 4096`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `network: optional object { access, allowed_domains, blocked_domains }  or null`
+
+    Network access policy for the environment. If omitted, the API version determines whether network access is enabled or disabled.
+
+    - `access: "enabled" or "disabled" or "restricted"`
+
+      The environment's network access mode.
+
+      - `"enabled"`
+
+        Allows unrestricted network access.
+
+      - `"disabled"`
+
+        Disables network access.
+
+      - `"restricted"`
+
+        Applies the configured domain restrictions.
+
+    - `allowed_domains: optional array of string or null`
+
+      Domains the environment may access when network access is restricted.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `blocked_domains: optional array of string or null`
+
+      Domains blocked for both executor and browser when access is restricted. A nonempty list requires `access: restricted` and cannot be combined with nonempty `allowed_domains`. Wildcard domains are not supported.
+
+      `minItems: 0`, `maxItems: 100`
+
+  - `packages: optional object { npm, python, system }  or null`
+
+    Packages to install in the environment. Defaults to empty package lists.
+
+    - `npm: optional array of string or null`
+
+      npm packages to install globally. Defaults to an empty list.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `python: optional array of string or null`
+
+      Python packages to install. Defaults to an empty list.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `system: optional array of string or null`
+
+      System packages to install. Defaults to an empty list.
+
+      `minItems: 0`, `maxItems: 16384`
+
+  - `plugins: optional array of HostedPluginParam or null`
+
+    Plugins provided as inline ZIP archives. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 32`
+
+    - `description: string`
+
+      The plugin description declared in `.codex-plugin/plugin.json`.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `name: string`
+
+      The plugin name declared in `.codex-plugin/plugin.json`.
+
+      `minLength: 1`, `maxLength: 64`
+
+    - `source: InlineCapabilitySourceParam`
+
+      Provides ZIP bytes encoded with standard base64.
+
+      - `data: string`
+
+        Standard-base64 encoded ZIP archive bytes.
+
+        `minLength: 1`, `maxLength: 70254592`
+
+      - `media_type: "application/zip" (default: "application/zip")`
+
+        The archive media type, always `application/zip`.
+
+        - `"application/zip"`
+
+          A ZIP archive.
+
+      - `type: "base64" (default: "base64")`
+
+        The type of the object. Always `base64`.
+
+        - `"base64"`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `setup_commands: optional array of SetupCommandParam or null`
+
+    Ordered, confidential setup commands. Command bodies are never returned.
+
+    `minItems: 0`, `maxItems: 16`
+
+    - `command: string`
+
+      The shell command to execute.
+
+      `minLength: 0`, `maxLength: 65536`
+
+    - `cwd: optional string or null`
+
+      The absolute working directory. Defaults to `/workspace`.
+
+      `minLength: 0`, `maxLength: 4096`
+
+  - `skills: optional array of HostedSkillParam or null`
+
+    Skills referenced by ID or provided as inline ZIP archives. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 200`
+
+    - `SkillReference object { skill_id, type, version }`
+
+      References a skill uploaded through the Skills API.
+
+      - `skill_id: string`
+
+        The ID of the skill created through `/v1/skills`.
+
+        `minLength: 1`, `maxLength: 64`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: optional string or null`
+
+        The skill version, a positive integer or `latest`; omission selects the default.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+    - `Inline object { description, name, source, type }`
+
+      Supplies a skill ZIP directly in the session request.
+
+      - `description: string`
+
+        The skill description declared in `SKILL.md`.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `name: string`
+
+        The skill name declared in `SKILL.md`.
+
+        `minLength: 1`, `maxLength: 64`
+
+      - `source: InlineCapabilitySourceParam`
+
+        Provides ZIP bytes encoded with standard base64.
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+- `vault_ids: optional array of string or null`
+
+  The IDs of up to 10 vaults made available to an OpenAI-hosted environment.
+
+  `minItems: 0`, `maxItems: 10`
+
+### Returns
+
+- `EnvironmentInfo object { id, files, object, 4 more }`
+
+  Safe metadata for a first-class execution environment.
+
+  - `id: string`
+
+    The ID of the environment.
+
+    `minLength: 0`
+
+  - `files: array of HostedEnvironmentFile`
+
+    Files installed in the environment, without their contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedEnvironmentFileID object { id, file_id, path, 2 more }`
+
+      A file copied from the OpenAI Files API.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { id, path, size_bytes, type }`
+
+      A file supplied inline when the session was created.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `object: "agent.environment" (default: "agent.environment")`
+
+    The object type. Always `agent.environment`.
+
+    - `"agent.environment"`
+
+  - `plugins: array of HostedPlugin`
+
+    Plugins installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of HostedSkill`
+
+    Skills installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedSkillReference object { description, name, skill_id, 2 more }`
+
+      A skill installed from the Skills API.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string`
+
+        The concrete skill version installed for this session.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      A skill installed from an inline ZIP archive.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `status: "pending" or "ready" or "connected" or 4 more`
+
+    The current environment connection status.
+
+    - `"pending"`
+
+    - `"ready"`
+
+      Provisioning succeeded and the environment is available for attachment or use.
+
+    - `"connected"`
+
+    - `"disconnected"`
+
+    - `"suspended"`
+
+      The sandbox is stopped and can be resumed from its private checkpoint.
+
+    - `"expired"`
+
+    - `"failed"`
+
+  - `type: "openai_hosted" or "self_hosted"`
+
+    Whether the environment is hosted by OpenAI or by the application.
+
+    - `"openai_hosted"`
+
+    - `"self_hosted"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments \
+    -H 'Content-Type: application/json' \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -d '{
+          "environment": {
+            "type": "openai_hosted"
+          }
+        }'
+```
+
+#### 201 — Example
+
+```json
+{
+  "id": "id",
+  "files": [
+    {
+      "id": "id",
+      "file_id": "file_id",
+      "path": "path",
+      "size_bytes": 0,
+      "type": "file_id"
+    }
+  ],
+  "object": "agent.environment",
+  "plugins": [
+    {
+      "description": "description",
+      "name": "name",
+      "type": "inline"
+    }
+  ],
+  "skills": [
+    {
+      "description": "description",
+      "name": "name",
+      "skill_id": "skill_id",
+      "type": "skill_reference",
+      "version": "version"
+    }
+  ],
+  "status": "pending",
+  "type": "openai_hosted"
+}
+```
+
+## List agent environments
+
+**get** `/agents/environments`
+
+Lists OpenAI-hosted environments owned by the authenticated principal. Requires access to the prewarming beta.
+
+### Query Parameters
+
+- `after: optional string`
+
+  Return resources after this resource ID in the selected order.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `limit: optional integer (default: 20)`
+
+  The maximum number of resources to return, between 1 and 100. Defaults to 20.
+
+  `format: int64`, `minimum: 1`, `maximum: 100`
+
+- `order: optional "asc" or "desc" (default: "desc")`
+
+  The order in which resources are returned. Defaults to `desc`.
+
+  - `"asc"`
+
+    Returns resources in ascending order.
+
+  - `"desc"`
+
+    Returns resources in descending order.
+
+- `type: optional "openai_hosted"`
+
+  The hosting type to list. Defaults to `openai_hosted`.
+
+  - `"openai_hosted"`
+
+### Returns
+
+- `data: array of EnvironmentInfo`
+
+  The resources returned in this page, in the requested sort order.
+
+  `minItems: 0`, `maxItems: 2000`
+
+  - `id: string`
+
+    The ID of the environment.
+
+    `minLength: 0`
+
+  - `files: array of HostedEnvironmentFile`
+
+    Files installed in the environment, without their contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedEnvironmentFileID object { id, file_id, path, 2 more }`
+
+      A file copied from the OpenAI Files API.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { id, path, size_bytes, type }`
+
+      A file supplied inline when the session was created.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `object: "agent.environment" (default: "agent.environment")`
+
+    The object type. Always `agent.environment`.
+
+    - `"agent.environment"`
+
+  - `plugins: array of HostedPlugin`
+
+    Plugins installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of HostedSkill`
+
+    Skills installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedSkillReference object { description, name, skill_id, 2 more }`
+
+      A skill installed from the Skills API.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string`
+
+        The concrete skill version installed for this session.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      A skill installed from an inline ZIP archive.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `status: "pending" or "ready" or "connected" or 4 more`
+
+    The current environment connection status.
+
+    - `"pending"`
+
+    - `"ready"`
+
+      Provisioning succeeded and the environment is available for attachment or use.
+
+    - `"connected"`
+
+    - `"disconnected"`
+
+    - `"suspended"`
+
+      The sandbox is stopped and can be resumed from its private checkpoint.
+
+    - `"expired"`
+
+    - `"failed"`
+
+  - `type: "openai_hosted" or "self_hosted"`
+
+    Whether the environment is hosted by OpenAI or by the application.
+
+    - `"openai_hosted"`
+
+    - `"self_hosted"`
+
+- `first_id: string or null`
+
+  The ID of the first resource in `data`, or `null` if the page is empty.
+
+  `minLength: 0`
+
+- `has_more: boolean`
+
+  Whether there are more resources to retrieve after this page.
+
+- `last_id: string or null`
+
+  The ID of the last resource in `data`, or `null` if the page is empty. Pass this as `after` with the same order and filters.
+
+  `minLength: 0`
+
+- `object: "list" (default: "list")`
+
+  The object type, which is always `list`.
+
+  - `"list"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "data": [
+    {
+      "id": "id",
+      "files": [
+        {
+          "id": "id",
+          "file_id": "file_id",
+          "path": "path",
+          "size_bytes": 0,
+          "type": "file_id"
+        }
+      ],
+      "object": "agent.environment",
+      "plugins": [
+        {
+          "description": "description",
+          "name": "name",
+          "type": "inline"
+        }
+      ],
+      "skills": [
+        {
+          "description": "description",
+          "name": "name",
+          "skill_id": "skill_id",
+          "type": "skill_reference",
+          "version": "version"
+        }
+      ],
+      "status": "pending",
+      "type": "openai_hosted"
+    }
+  ],
+  "first_id": "first_id",
+  "has_more": true,
+  "last_id": "last_id",
+  "object": "list"
+}
+```
+
+## Retrieve an agent environment
+
+**get** `/agents/environments/{environment_id}`
+
+Retrieves an execution environment's connection status and safe installed metadata. See [environment lifecycle](/api/docs/guides/agents-api/environments/lifecycle).
+
+### Path Parameters
+
+- `environment_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `EnvironmentInfo object { id, files, object, 4 more }`
+
+  Safe metadata for a first-class execution environment.
+
+  - `id: string`
+
+    The ID of the environment.
+
+    `minLength: 0`
+
+  - `files: array of HostedEnvironmentFile`
+
+    Files installed in the environment, without their contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedEnvironmentFileID object { id, file_id, path, 2 more }`
+
+      A file copied from the OpenAI Files API.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { id, path, size_bytes, type }`
+
+      A file supplied inline when the session was created.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `object: "agent.environment" (default: "agent.environment")`
+
+    The object type. Always `agent.environment`.
+
+    - `"agent.environment"`
+
+  - `plugins: array of HostedPlugin`
+
+    Plugins installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of HostedSkill`
+
+    Skills installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedSkillReference object { description, name, skill_id, 2 more }`
+
+      A skill installed from the Skills API.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string`
+
+        The concrete skill version installed for this session.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      A skill installed from an inline ZIP archive.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `status: "pending" or "ready" or "connected" or 4 more`
+
+    The current environment connection status.
+
+    - `"pending"`
+
+    - `"ready"`
+
+      Provisioning succeeded and the environment is available for attachment or use.
+
+    - `"connected"`
+
+    - `"disconnected"`
+
+    - `"suspended"`
+
+      The sandbox is stopped and can be resumed from its private checkpoint.
+
+    - `"expired"`
+
+    - `"failed"`
+
+  - `type: "openai_hosted" or "self_hosted"`
+
+    Whether the environment is hosted by OpenAI or by the application.
+
+    - `"openai_hosted"`
+
+    - `"self_hosted"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/$ENVIRONMENT_ID \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "files": [
+    {
+      "id": "id",
+      "file_id": "file_id",
+      "path": "path",
+      "size_bytes": 0,
+      "type": "file_id"
+    }
+  ],
+  "object": "agent.environment",
+  "plugins": [
+    {
+      "description": "description",
+      "name": "name",
+      "type": "inline"
+    }
+  ],
+  "skills": [
+    {
+      "description": "description",
+      "name": "name",
+      "skill_id": "skill_id",
+      "type": "skill_reference",
+      "version": "version"
+    }
+  ],
+  "status": "pending",
+  "type": "openai_hosted"
+}
+```
+
+## Domain Types
+
+### Environment Info
+
+- `EnvironmentInfo object { id, files, object, 4 more }`
+
+  Safe metadata for a first-class execution environment.
+
+  - `id: string`
+
+    The ID of the environment.
+
+    `minLength: 0`
+
+  - `files: array of HostedEnvironmentFile`
+
+    Files installed in the environment, without their contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedEnvironmentFileID object { id, file_id, path, 2 more }`
+
+      A file copied from the OpenAI Files API.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { id, path, size_bytes, type }`
+
+      A file supplied inline when the session was created.
+
+      - `id: string`
+
+        The session-scoped ID of the file in the execution environment.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded file size in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `object: "agent.environment" (default: "agent.environment")`
+
+    The object type. Always `agent.environment`.
+
+    - `"agent.environment"`
+
+  - `plugins: array of HostedPlugin`
+
+    Plugins installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of HostedSkill`
+
+    Skills installed in the environment, without their archive contents.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `HostedSkillReference object { description, name, skill_id, 2 more }`
+
+      A skill installed from the Skills API.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string`
+
+        The concrete skill version installed for this session.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      A skill installed from an inline ZIP archive.
+
+      - `description: string`
+
+        The installed skill description.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The installed skill name.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `status: "pending" or "ready" or "connected" or 4 more`
+
+    The current environment connection status.
+
+    - `"pending"`
+
+    - `"ready"`
+
+      Provisioning succeeded and the environment is available for attachment or use.
+
+    - `"connected"`
+
+    - `"disconnected"`
+
+    - `"suspended"`
+
+      The sandbox is stopped and can be resumed from its private checkpoint.
+
+    - `"expired"`
+
+    - `"failed"`
+
+  - `type: "openai_hosted" or "self_hosted"`
+
+    Whether the environment is hosted by OpenAI or by the application.
+
+    - `"openai_hosted"`
+
+    - `"self_hosted"`
+
+# Files
+
+## Write an agent environment file
+
+**post** `/agents/environments/{environment_id}/files`
+
+Copies inline bytes or a Files API file into a connected execution environment, replacing an existing regular file at the same path. Upload between turns and wait for success before starting the next turn. See [environment files](/api/docs/guides/agents-api/environments/files).
+
+### Path Parameters
+
+- `environment_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Body Parameters
+
+- `hosted_environment_file_param: HostedEnvironmentFileParam`
+
+  A file materialized in an OpenAI-hosted execution environment.
+
+  - `FileID object { file_id, path, type }`
+
+    A file previously uploaded through the OpenAI Files API.
+
+    - `file_id: string`
+
+      The ID of the uploaded file.
+
+      `minLength: 1`, `maxLength: 256`
+
+    - `path: string`
+
+      The absolute destination path inside `/workspace`.
+
+      `minLength: 1`, `maxLength: 4096`
+
+    - `type: "file_id" (default: "file_id")`
+
+      The type of the object. Always `file_id`.
+
+      - `"file_id"`
+
+  - `Inline object { data, path, type }`
+
+    A file supplied directly as standard-base64 data.
+
+    - `data: string`
+
+      The standard-base64-encoded file contents.
+
+      `minLength: 0`, `maxLength: 6990508`
+
+    - `path: string`
+
+      The absolute destination path inside `/workspace`.
+
+      `minLength: 1`, `maxLength: 4096`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+### Returns
+
+- `EnvironmentFile object { environment_id, object, path, size_bytes }`
+
+  A live file in an execution environment.
+
+  - `environment_id: string`
+
+    The ID of the environment containing this file.
+
+    `minLength: 0`
+
+  - `object: "agent.environment.file" (default: "agent.environment.file")`
+
+    The object type. Always `agent.environment.file`.
+
+    - `"agent.environment.file"`
+
+  - `path: string`
+
+    The absolute file path inside the environment's workspace.
+
+    `minLength: 0`
+
+  - `size_bytes: integer`
+
+    The file size in bytes.
+
+    `format: int64`, `minimum: 0`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/$ENVIRONMENT_ID/files \
+    -X POST \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 201 — Example
+
+```json
+{
+  "environment_id": "environment_id",
+  "object": "agent.environment.file",
+  "path": "path",
+  "size_bytes": 0
+}
+```
+
+## List agent environment files
+
+**get** `/agents/environments/{environment_id}/files`
+
+Lists live files on a connected execution environment with optional directory filtering and opaque cursor pagination. See [environment files](/api/docs/guides/agents-api/environments/files).
+
+### Path Parameters
+
+- `environment_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Query Parameters
+
+- `limit: optional integer or null`
+
+  The maximum number of files to return, between 1 and 100.
+
+  `format: int64`, `minimum: 1`, `maximum: 100`
+
+- `order: optional "asc" or "desc"`
+
+  Sort by case-sensitive path components. Defaults to descending.
+
+  - `"asc"`
+
+    Returns resources in ascending order.
+
+  - `"desc"`
+
+    Returns resources in descending order.
+
+- `page: optional string`
+
+  The opaque token from the previous page. Keep the same path, order, and limit.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `path: optional string or null`
+
+  Restrict the listing to this absolute workspace directory.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `data: array of EnvironmentFile`
+
+  Files available on the current page.
+
+  `minItems: 0`, `maxItems: 2000`
+
+  - `environment_id: string`
+
+    The ID of the environment containing this file.
+
+    `minLength: 0`
+
+  - `object: "agent.environment.file" (default: "agent.environment.file")`
+
+    The object type. Always `agent.environment.file`.
+
+    - `"agent.environment.file"`
+
+  - `path: string`
+
+    The absolute file path inside the environment's workspace.
+
+    `minLength: 0`
+
+  - `size_bytes: integer`
+
+    The file size in bytes.
+
+    `format: int64`, `minimum: 0`
+
+- `has_more: boolean`
+
+  Whether more files follow this page.
+
+- `next: string or null`
+
+  The opaque cursor to use when requesting the next page, if any.
+
+  `minLength: 0`
+
+- `object: "page" (default: "page")`
+
+  The object type. Always `page`.
+
+  - `"page"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/$ENVIRONMENT_ID/files \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "data": [
+    {
+      "environment_id": "environment_id",
+      "object": "agent.environment.file",
+      "path": "path",
+      "size_bytes": 0
+    }
+  ],
+  "has_more": true,
+  "next": "next",
+  "object": "page"
+}
+```
+
+## Domain Types
+
+### Environment File
+
+- `EnvironmentFile object { environment_id, object, path, size_bytes }`
+
+  A live file in an execution environment.
+
+  - `environment_id: string`
+
+    The ID of the environment containing this file.
+
+    `minLength: 0`
+
+  - `object: "agent.environment.file" (default: "agent.environment.file")`
+
+    The object type. Always `agent.environment.file`.
+
+    - `"agent.environment.file"`
+
+  - `path: string`
+
+    The absolute file path inside the environment's workspace.
+
+    `minLength: 0`
+
+  - `size_bytes: integer`
+
+    The file size in bytes.
+
+    `format: int64`, `minimum: 0`
+
+# Templates
+
+## Create an agent environment template
+
+**post** `/agents/environments/templates`
+
+Creates reusable environment configuration without returning confidential setup commands or environment values. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
+
+### Body Parameters
+
+- `capability_directories: optional array of string or null`
+
+  Directories that contain capabilities exposed to the agent. Defaults to an empty list.
+
+  `minItems: 0`, `maxItems: 16384`
+
+- `desktop: optional object { enabled }  or null`
+
+  Desktop provisioning. Omission or null inherits the template setting, or defaults to disabled.
+
+  - `enabled: boolean`
+
+    Whether to provision the desktop and its browser proxy.
+
+- `env: optional map[string] or null`
+
+  Environment variables made available to the agent.
+
+- `files: optional array of HostedEnvironmentFileParam or null`
+
+  Files available before the agent starts. Defaults to an empty list.
+
+  `minItems: 0`, `maxItems: 50`
+
+  - `FileID object { file_id, path, type }`
+
+    A file previously uploaded through the OpenAI Files API.
+
+    - `file_id: string`
+
+      The ID of the uploaded file.
+
+      `minLength: 1`, `maxLength: 256`
+
+    - `path: string`
+
+      The absolute destination path inside `/workspace`.
+
+      `minLength: 1`, `maxLength: 4096`
+
+    - `type: "file_id" (default: "file_id")`
+
+      The type of the object. Always `file_id`.
+
+      - `"file_id"`
+
+  - `Inline object { data, path, type }`
+
+    A file supplied directly as standard-base64 data.
+
+    - `data: string`
+
+      The standard-base64-encoded file contents.
+
+      `minLength: 0`, `maxLength: 6990508`
+
+    - `path: string`
+
+      The absolute destination path inside `/workspace`.
+
+      `minLength: 1`, `maxLength: 4096`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+- `name: optional string or null`
+
+  An optional human-readable display name for the template.
+
+  `minLength: 1`, `maxLength: 256`
+
+- `network: optional object { access, allowed_domains, blocked_domains }  or null`
+
+  Network access policy for the environment. If omitted, the API version determines whether network access is enabled or disabled.
+
+  - `access: "enabled" or "disabled" or "restricted"`
+
+    The environment's network access mode.
+
+    - `"enabled"`
+
+      Allows unrestricted network access.
+
+    - `"disabled"`
+
+      Disables network access.
+
+    - `"restricted"`
+
+      Applies the configured domain restrictions.
+
+  - `allowed_domains: optional array of string or null`
+
+    Domains the environment may access when network access is restricted.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `blocked_domains: optional array of string or null`
+
+    Domains blocked for both executor and browser when access is restricted. A nonempty list requires `access: restricted` and cannot be combined with nonempty `allowed_domains`. Wildcard domains are not supported.
+
+    `minItems: 0`, `maxItems: 100`
+
+- `packages: optional object { npm, python, system }  or null`
+
+  Packages to install in the environment. Defaults to empty package lists.
+
+  - `npm: optional array of string or null`
+
+    npm packages to install globally. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `python: optional array of string or null`
+
+    Python packages to install. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `system: optional array of string or null`
+
+    System packages to install. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+- `plugins: optional array of HostedPluginParam or null`
+
+  Plugins provided as inline ZIP archives. Defaults to an empty list.
+
+  `minItems: 0`, `maxItems: 32`
+
+  - `description: string`
+
+    The plugin description declared in `.codex-plugin/plugin.json`.
+
+    `minLength: 0`, `maxLength: 1048576`
+
+  - `name: string`
+
+    The plugin name declared in `.codex-plugin/plugin.json`.
+
+    `minLength: 1`, `maxLength: 64`
+
+  - `source: InlineCapabilitySourceParam`
+
+    Provides ZIP bytes encoded with standard base64.
+
+    - `data: string`
+
+      Standard-base64 encoded ZIP archive bytes.
+
+      `minLength: 1`, `maxLength: 70254592`
+
+    - `media_type: "application/zip" (default: "application/zip")`
+
+      The archive media type, always `application/zip`.
+
+      - `"application/zip"`
+
+        A ZIP archive.
+
+    - `type: "base64" (default: "base64")`
+
+      The type of the object. Always `base64`.
+
+      - `"base64"`
+
+  - `type: "inline" (default: "inline")`
+
+    The type of the object. Always `inline`.
+
+    - `"inline"`
+
+- `setup_commands: optional array of SetupCommandParam or null`
+
+  Ordered, confidential setup commands. Command bodies are never returned.
+
+  `minItems: 0`, `maxItems: 16`
+
+  - `command: string`
+
+    The shell command to execute.
+
+    `minLength: 0`, `maxLength: 65536`
+
+  - `cwd: optional string or null`
+
+    The absolute working directory. Defaults to `/workspace`.
+
+    `minLength: 0`, `maxLength: 4096`
+
+- `skills: optional array of HostedSkillParam or null`
+
+  Skills referenced by ID or provided as inline ZIP archives. Defaults to an empty list.
+
+  `minItems: 0`, `maxItems: 200`
+
+  - `SkillReference object { skill_id, type, version }`
+
+    References a skill uploaded through the Skills API.
+
+    - `skill_id: string`
+
+      The ID of the skill created through `/v1/skills`.
+
+      `minLength: 1`, `maxLength: 64`
+
+    - `type: "skill_reference" (default: "skill_reference")`
+
+      The type of the object. Always `skill_reference`.
+
+      - `"skill_reference"`
+
+    - `version: optional string or null`
+
+      The skill version, a positive integer or `latest`; omission selects the default.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+  - `Inline object { description, name, source, type }`
+
+    Supplies a skill ZIP directly in the session request.
+
+    - `description: string`
+
+      The skill description declared in `SKILL.md`.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `name: string`
+
+      The skill name declared in `SKILL.md`.
+
+      `minLength: 1`, `maxLength: 64`
+
+    - `source: InlineCapabilitySourceParam`
+
+      Provides ZIP bytes encoded with standard base64.
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+### Returns
+
+- `EnvironmentTemplate object { id, capability_directories, created_at, 9 more }`
+
+  Reusable configuration that provisions a fresh OpenAI-hosted environment for each session.
+
+  - `id: string`
+
+    The ID of the reusable environment template.
+
+    `minLength: 0`
+
+  - `capability_directories: array of string`
+
+    Directories that expose capabilities to the agent.
+
+    `minItems: 0`, `maxItems: 2000`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the template was created.
+
+    `format: int64`
+
+  - `desktop: object { enabled }`
+
+    Desktop configuration for each OpenAI-hosted environment.
+
+    - `enabled: boolean`
+
+      Whether the environment provisions a desktop and browser proxy.
+
+  - `files: array of FileID { file_id, path, type }  or Inline { path, size_bytes, type }`
+
+    Safe file metadata, excluding contents and session-scoped file IDs.
+
+    `minItems: 0`, `maxItems: 50`
+
+    - `FileID object { file_id, path, type }`
+
+      A project-scoped Files API reference resolved separately for each session.
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { path, size_bytes, type }`
+
+      Metadata for confidential inline file contents.
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded size of the inline file in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `name: string or null`
+
+    An optional human-readable display name for the template.
+
+    `minLength: 0`
+
+  - `network: object { access, allowed_domains }`
+
+    Runtime network access for each OpenAI-hosted environment.
+
+    - `access: "enabled" or "disabled" or "restricted"`
+
+      The environment's network access mode.
+
+      - `"enabled"`
+
+        Allows unrestricted network access.
+
+      - `"disabled"`
+
+        Disables network access.
+
+      - `"restricted"`
+
+        Applies the configured domain restrictions.
+
+    - `allowed_domains: array of string`
+
+      Domains the environment may access when network access is restricted.
+
+      `minItems: 0`, `maxItems: 2000`
+
+  - `object: "agent.environment.template" (default: "agent.environment.template")`
+
+    The object type. Always `agent.environment.template`.
+
+    - `"agent.environment.template"`
+
+  - `packages: object { npm, python, system }`
+
+    Packages installed in each fresh OpenAI-hosted environment.
+
+    - `npm: array of string`
+
+      npm packages installed globally in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `python: array of string`
+
+      Python packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `system: array of string`
+
+      System packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+  - `plugins: array of HostedPlugin`
+
+    Safe plugin metadata, excluding inline archive contents.
+
+    `minItems: 0`, `maxItems: 32`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of SkillReference { skill_id, type, version }  or Inline { description, name, type }`
+
+    Safe skill metadata, preserving unresolved version selectors.
+
+    `minItems: 0`, `maxItems: 200`
+
+    - `SkillReference object { skill_id, type, version }`
+
+      A skill resolved afresh from the Skills API whenever a session starts.
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string or null`
+
+        The requested version selector, including `latest`.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      Safe metadata for an inline skill archive.
+
+      - `description: string`
+
+        The skill description declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The skill name declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `updated_at: integer`
+
+    The Unix timestamp, in seconds, when the template was last updated.
+
+    `format: int64`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/templates \
+    -X POST \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 201 — Example
+
+```json
+{
+  "id": "id",
+  "capability_directories": [
+    "string"
+  ],
+  "created_at": 0,
+  "desktop": {
+    "enabled": true
+  },
+  "files": [
+    {
+      "file_id": "file_id",
+      "path": "path",
+      "type": "file_id"
+    }
+  ],
+  "name": "name",
+  "network": {
+    "access": "enabled",
+    "allowed_domains": [
+      "string"
+    ]
+  },
+  "object": "agent.environment.template",
+  "packages": {
+    "npm": [
+      "string"
+    ],
+    "python": [
+      "string"
+    ],
+    "system": [
+      "string"
+    ]
+  },
+  "plugins": [
+    {
+      "description": "description",
+      "name": "name",
+      "type": "inline"
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "skill_id",
+      "type": "skill_reference",
+      "version": "version"
+    }
+  ],
+  "updated_at": 0
+}
+```
+
+## Delete an agent environment template
+
+**delete** `/agents/environments/templates/{environment_template_id}`
+
+Deletes reusable environment configuration and all confidential template inputs. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
+
+### Path Parameters
+
+- `environment_template_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `EnvironmentTemplateDeleted object { id, deleted, object }`
+
+  A deleted reusable environment template.
+
+  - `id: string`
+
+    The ID of the deleted environment template.
+
+    `minLength: 0`
+
+  - `deleted: boolean`
+
+    Whether the environment template was deleted. Always `true`.
+
+  - `object: "agent.environment.template.deleted" (default: "agent.environment.template.deleted")`
+
+    The object type. Always `agent.environment.template.deleted`.
+
+    - `"agent.environment.template.deleted"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/templates/$ENVIRONMENT_TEMPLATE_ID \
+    -X DELETE \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "deleted": true,
+  "object": "agent.environment.template.deleted"
+}
+```
+
+## List agent environment templates
+
+**get** `/agents/environments/templates`
+
+Lists reusable environment templates without returning confidential values. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
+
+### Query Parameters
+
+- `after: optional string`
+
+  Return resources after this resource ID in the selected order.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `limit: optional integer (default: 20)`
+
+  The maximum number of resources to return, between 1 and 100. Defaults to 20.
+
+  `format: int64`, `minimum: 1`, `maximum: 100`
+
+- `order: optional "asc" or "desc" (default: "desc")`
+
+  The order in which resources are returned. Defaults to `desc`.
+
+  - `"asc"`
+
+    Returns resources in ascending order.
+
+  - `"desc"`
+
+    Returns resources in descending order.
+
+### Returns
+
+- `data: array of EnvironmentTemplate`
+
+  The resources returned in this page, in the requested sort order.
+
+  `minItems: 0`, `maxItems: 2000`
+
+  - `id: string`
+
+    The ID of the reusable environment template.
+
+    `minLength: 0`
+
+  - `capability_directories: array of string`
+
+    Directories that expose capabilities to the agent.
+
+    `minItems: 0`, `maxItems: 2000`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the template was created.
+
+    `format: int64`
+
+  - `desktop: object { enabled }`
+
+    Desktop configuration for each OpenAI-hosted environment.
+
+    - `enabled: boolean`
+
+      Whether the environment provisions a desktop and browser proxy.
+
+  - `files: array of FileID { file_id, path, type }  or Inline { path, size_bytes, type }`
+
+    Safe file metadata, excluding contents and session-scoped file IDs.
+
+    `minItems: 0`, `maxItems: 50`
+
+    - `FileID object { file_id, path, type }`
+
+      A project-scoped Files API reference resolved separately for each session.
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { path, size_bytes, type }`
+
+      Metadata for confidential inline file contents.
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded size of the inline file in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `name: string or null`
+
+    An optional human-readable display name for the template.
+
+    `minLength: 0`
+
+  - `network: object { access, allowed_domains }`
+
+    Runtime network access for each OpenAI-hosted environment.
+
+    - `access: "enabled" or "disabled" or "restricted"`
+
+      The environment's network access mode.
+
+      - `"enabled"`
+
+        Allows unrestricted network access.
+
+      - `"disabled"`
+
+        Disables network access.
+
+      - `"restricted"`
+
+        Applies the configured domain restrictions.
+
+    - `allowed_domains: array of string`
+
+      Domains the environment may access when network access is restricted.
+
+      `minItems: 0`, `maxItems: 2000`
+
+  - `object: "agent.environment.template" (default: "agent.environment.template")`
+
+    The object type. Always `agent.environment.template`.
+
+    - `"agent.environment.template"`
+
+  - `packages: object { npm, python, system }`
+
+    Packages installed in each fresh OpenAI-hosted environment.
+
+    - `npm: array of string`
+
+      npm packages installed globally in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `python: array of string`
+
+      Python packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `system: array of string`
+
+      System packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+  - `plugins: array of HostedPlugin`
+
+    Safe plugin metadata, excluding inline archive contents.
+
+    `minItems: 0`, `maxItems: 32`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of SkillReference { skill_id, type, version }  or Inline { description, name, type }`
+
+    Safe skill metadata, preserving unresolved version selectors.
+
+    `minItems: 0`, `maxItems: 200`
+
+    - `SkillReference object { skill_id, type, version }`
+
+      A skill resolved afresh from the Skills API whenever a session starts.
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string or null`
+
+        The requested version selector, including `latest`.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      Safe metadata for an inline skill archive.
+
+      - `description: string`
+
+        The skill description declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The skill name declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `updated_at: integer`
+
+    The Unix timestamp, in seconds, when the template was last updated.
+
+    `format: int64`
+
+- `first_id: string or null`
+
+  The ID of the first resource in `data`, or `null` if the page is empty.
+
+  `minLength: 0`
+
+- `has_more: boolean`
+
+  Whether there are more resources to retrieve after this page.
+
+- `last_id: string or null`
+
+  The ID of the last resource in `data`, or `null` if the page is empty. Pass this as `after` with the same order and filters.
+
+  `minLength: 0`
+
+- `object: "list" (default: "list")`
+
+  The object type, which is always `list`.
+
+  - `"list"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/templates \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "data": [
+    {
+      "id": "id",
+      "capability_directories": [
+        "string"
+      ],
+      "created_at": 0,
+      "desktop": {
+        "enabled": true
+      },
+      "files": [
+        {
+          "file_id": "file_id",
+          "path": "path",
+          "type": "file_id"
+        }
+      ],
+      "name": "name",
+      "network": {
+        "access": "enabled",
+        "allowed_domains": [
+          "string"
+        ]
+      },
+      "object": "agent.environment.template",
+      "packages": {
+        "npm": [
+          "string"
+        ],
+        "python": [
+          "string"
+        ],
+        "system": [
+          "string"
+        ]
+      },
+      "plugins": [
+        {
+          "description": "description",
+          "name": "name",
+          "type": "inline"
+        }
+      ],
+      "skills": [
+        {
+          "skill_id": "skill_id",
+          "type": "skill_reference",
+          "version": "version"
+        }
+      ],
+      "updated_at": 0
+    }
+  ],
+  "first_id": "first_id",
+  "has_more": true,
+  "last_id": "last_id",
+  "object": "list"
+}
+```
+
+## Retrieve an agent environment template
+
+**get** `/agents/environments/templates/{environment_template_id}`
+
+Retrieves reusable environment configuration without returning confidential values. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
+
+### Path Parameters
+
+- `environment_template_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `EnvironmentTemplate object { id, capability_directories, created_at, 9 more }`
+
+  Reusable configuration that provisions a fresh OpenAI-hosted environment for each session.
+
+  - `id: string`
+
+    The ID of the reusable environment template.
+
+    `minLength: 0`
+
+  - `capability_directories: array of string`
+
+    Directories that expose capabilities to the agent.
+
+    `minItems: 0`, `maxItems: 2000`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the template was created.
+
+    `format: int64`
+
+  - `desktop: object { enabled }`
+
+    Desktop configuration for each OpenAI-hosted environment.
+
+    - `enabled: boolean`
+
+      Whether the environment provisions a desktop and browser proxy.
+
+  - `files: array of FileID { file_id, path, type }  or Inline { path, size_bytes, type }`
+
+    Safe file metadata, excluding contents and session-scoped file IDs.
+
+    `minItems: 0`, `maxItems: 50`
+
+    - `FileID object { file_id, path, type }`
+
+      A project-scoped Files API reference resolved separately for each session.
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { path, size_bytes, type }`
+
+      Metadata for confidential inline file contents.
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded size of the inline file in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `name: string or null`
+
+    An optional human-readable display name for the template.
+
+    `minLength: 0`
+
+  - `network: object { access, allowed_domains }`
+
+    Runtime network access for each OpenAI-hosted environment.
+
+    - `access: "enabled" or "disabled" or "restricted"`
+
+      The environment's network access mode.
+
+      - `"enabled"`
+
+        Allows unrestricted network access.
+
+      - `"disabled"`
+
+        Disables network access.
+
+      - `"restricted"`
+
+        Applies the configured domain restrictions.
+
+    - `allowed_domains: array of string`
+
+      Domains the environment may access when network access is restricted.
+
+      `minItems: 0`, `maxItems: 2000`
+
+  - `object: "agent.environment.template" (default: "agent.environment.template")`
+
+    The object type. Always `agent.environment.template`.
+
+    - `"agent.environment.template"`
+
+  - `packages: object { npm, python, system }`
+
+    Packages installed in each fresh OpenAI-hosted environment.
+
+    - `npm: array of string`
+
+      npm packages installed globally in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `python: array of string`
+
+      Python packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `system: array of string`
+
+      System packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+  - `plugins: array of HostedPlugin`
+
+    Safe plugin metadata, excluding inline archive contents.
+
+    `minItems: 0`, `maxItems: 32`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of SkillReference { skill_id, type, version }  or Inline { description, name, type }`
+
+    Safe skill metadata, preserving unresolved version selectors.
+
+    `minItems: 0`, `maxItems: 200`
+
+    - `SkillReference object { skill_id, type, version }`
+
+      A skill resolved afresh from the Skills API whenever a session starts.
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string or null`
+
+        The requested version selector, including `latest`.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      Safe metadata for an inline skill archive.
+
+      - `description: string`
+
+        The skill description declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The skill name declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `updated_at: integer`
+
+    The Unix timestamp, in seconds, when the template was last updated.
+
+    `format: int64`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/templates/$ENVIRONMENT_TEMPLATE_ID \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "capability_directories": [
+    "string"
+  ],
+  "created_at": 0,
+  "desktop": {
+    "enabled": true
+  },
+  "files": [
+    {
+      "file_id": "file_id",
+      "path": "path",
+      "type": "file_id"
+    }
+  ],
+  "name": "name",
+  "network": {
+    "access": "enabled",
+    "allowed_domains": [
+      "string"
+    ]
+  },
+  "object": "agent.environment.template",
+  "packages": {
+    "npm": [
+      "string"
+    ],
+    "python": [
+      "string"
+    ],
+    "system": [
+      "string"
+    ]
+  },
+  "plugins": [
+    {
+      "description": "description",
+      "name": "name",
+      "type": "inline"
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "skill_id",
+      "type": "skill_reference",
+      "version": "version"
+    }
+  ],
+  "updated_at": 0
+}
+```
+
+## Update an agent environment template
+
+**post** `/agents/environments/templates/{environment_template_id}`
+
+Updates reusable environment configuration without returning confidential values. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
+
+### Path Parameters
+
+- `environment_template_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Body Parameters
+
+- `capability_directories: optional array of string or null`
+
+  Directories that expose capabilities to the agent.
+
+  `minItems: 0`, `maxItems: 16384`
+
+- `desktop: optional object { enabled }  or null`
+
+  Replacement desktop configuration, or null to disable the desktop.
+
+  - `enabled: boolean`
+
+    Whether to provision the desktop and its browser proxy.
+
+- `env: optional map[string] or null`
+
+  Replacement confidential environment values.
+
+- `files: optional array of HostedEnvironmentFileParam or null`
+
+  Replacement file configuration materialized for each new session.
+
+  `minItems: 0`, `maxItems: 50`
+
+  - `FileID object { file_id, path, type }`
+
+    A file previously uploaded through the OpenAI Files API.
+
+    - `file_id: string`
+
+      The ID of the uploaded file.
+
+      `minLength: 1`, `maxLength: 256`
+
+    - `path: string`
+
+      The absolute destination path inside `/workspace`.
+
+      `minLength: 1`, `maxLength: 4096`
+
+    - `type: "file_id" (default: "file_id")`
+
+      The type of the object. Always `file_id`.
+
+      - `"file_id"`
+
+  - `Inline object { data, path, type }`
+
+    A file supplied directly as standard-base64 data.
+
+    - `data: string`
+
+      The standard-base64-encoded file contents.
+
+      `minLength: 0`, `maxLength: 6990508`
+
+    - `path: string`
+
+      The absolute destination path inside `/workspace`.
+
+      `minLength: 1`, `maxLength: 4096`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+- `name: optional string or null`
+
+  A replacement human-readable display name, or `null` to clear the name.
+
+  `minLength: 1`, `maxLength: 256`
+
+- `network: optional object { access, allowed_domains, blocked_domains }  or null`
+
+  Network access available after setup completes. Omit to preserve the current policy, or pass `null` to reset to the default policy.
+
+  - `access: "enabled" or "disabled" or "restricted"`
+
+    The environment's network access mode.
+
+    - `"enabled"`
+
+      Allows unrestricted network access.
+
+    - `"disabled"`
+
+      Disables network access.
+
+    - `"restricted"`
+
+      Applies the configured domain restrictions.
+
+  - `allowed_domains: optional array of string or null`
+
+    Domains the environment may access when network access is restricted.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `blocked_domains: optional array of string or null`
+
+    Domains blocked for both executor and browser when access is restricted. A nonempty list requires `access: restricted` and cannot be combined with nonempty `allowed_domains`. Wildcard domains are not supported.
+
+    `minItems: 0`, `maxItems: 100`
+
+- `packages: optional object { npm, python, system }  or null`
+
+  Packages installed before the runtime network policy applies.
+
+  - `npm: optional array of string or null`
+
+    npm packages to install globally. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `python: optional array of string or null`
+
+    Python packages to install. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+  - `system: optional array of string or null`
+
+    System packages to install. Defaults to an empty list.
+
+    `minItems: 0`, `maxItems: 16384`
+
+- `plugins: optional array of HostedPluginParam or null`
+
+  Replacement plugin configuration installed for each new session.
+
+  `minItems: 0`, `maxItems: 32`
+
+  - `description: string`
+
+    The plugin description declared in `.codex-plugin/plugin.json`.
+
+    `minLength: 0`, `maxLength: 1048576`
+
+  - `name: string`
+
+    The plugin name declared in `.codex-plugin/plugin.json`.
+
+    `minLength: 1`, `maxLength: 64`
+
+  - `source: InlineCapabilitySourceParam`
+
+    Provides ZIP bytes encoded with standard base64.
+
+    - `data: string`
+
+      Standard-base64 encoded ZIP archive bytes.
+
+      `minLength: 1`, `maxLength: 70254592`
+
+    - `media_type: "application/zip" (default: "application/zip")`
+
+      The archive media type, always `application/zip`.
+
+      - `"application/zip"`
+
+        A ZIP archive.
+
+    - `type: "base64" (default: "base64")`
+
+      The type of the object. Always `base64`.
+
+      - `"base64"`
+
+  - `type: "inline" (default: "inline")`
+
+    The type of the object. Always `inline`.
+
+    - `"inline"`
+
+- `setup_commands: optional array of SetupCommandParam or null`
+
+  Replacement confidential setup commands, never included in returned resources.
+
+  `minItems: 0`, `maxItems: 16`
+
+  - `command: string`
+
+    The shell command to execute.
+
+    `minLength: 0`, `maxLength: 65536`
+
+  - `cwd: optional string or null`
+
+    The absolute working directory. Defaults to `/workspace`.
+
+    `minLength: 0`, `maxLength: 4096`
+
+- `skills: optional array of HostedSkillParam or null`
+
+  Replacement skill configuration installed for each new session.
+
+  `minItems: 0`, `maxItems: 200`
+
+  - `SkillReference object { skill_id, type, version }`
+
+    References a skill uploaded through the Skills API.
+
+    - `skill_id: string`
+
+      The ID of the skill created through `/v1/skills`.
+
+      `minLength: 1`, `maxLength: 64`
+
+    - `type: "skill_reference" (default: "skill_reference")`
+
+      The type of the object. Always `skill_reference`.
+
+      - `"skill_reference"`
+
+    - `version: optional string or null`
+
+      The skill version, a positive integer or `latest`; omission selects the default.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+  - `Inline object { description, name, source, type }`
+
+    Supplies a skill ZIP directly in the session request.
+
+    - `description: string`
+
+      The skill description declared in `SKILL.md`.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `name: string`
+
+      The skill name declared in `SKILL.md`.
+
+      `minLength: 1`, `maxLength: 64`
+
+    - `source: InlineCapabilitySourceParam`
+
+      Provides ZIP bytes encoded with standard base64.
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+### Returns
+
+- `EnvironmentTemplate object { id, capability_directories, created_at, 9 more }`
+
+  Reusable configuration that provisions a fresh OpenAI-hosted environment for each session.
+
+  - `id: string`
+
+    The ID of the reusable environment template.
+
+    `minLength: 0`
+
+  - `capability_directories: array of string`
+
+    Directories that expose capabilities to the agent.
+
+    `minItems: 0`, `maxItems: 2000`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the template was created.
+
+    `format: int64`
+
+  - `desktop: object { enabled }`
+
+    Desktop configuration for each OpenAI-hosted environment.
+
+    - `enabled: boolean`
+
+      Whether the environment provisions a desktop and browser proxy.
+
+  - `files: array of FileID { file_id, path, type }  or Inline { path, size_bytes, type }`
+
+    Safe file metadata, excluding contents and session-scoped file IDs.
+
+    `minItems: 0`, `maxItems: 50`
+
+    - `FileID object { file_id, path, type }`
+
+      A project-scoped Files API reference resolved separately for each session.
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { path, size_bytes, type }`
+
+      Metadata for confidential inline file contents.
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded size of the inline file in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `name: string or null`
+
+    An optional human-readable display name for the template.
+
+    `minLength: 0`
+
+  - `network: object { access, allowed_domains }`
+
+    Runtime network access for each OpenAI-hosted environment.
+
+    - `access: "enabled" or "disabled" or "restricted"`
+
+      The environment's network access mode.
+
+      - `"enabled"`
+
+        Allows unrestricted network access.
+
+      - `"disabled"`
+
+        Disables network access.
+
+      - `"restricted"`
+
+        Applies the configured domain restrictions.
+
+    - `allowed_domains: array of string`
+
+      Domains the environment may access when network access is restricted.
+
+      `minItems: 0`, `maxItems: 2000`
+
+  - `object: "agent.environment.template" (default: "agent.environment.template")`
+
+    The object type. Always `agent.environment.template`.
+
+    - `"agent.environment.template"`
+
+  - `packages: object { npm, python, system }`
+
+    Packages installed in each fresh OpenAI-hosted environment.
+
+    - `npm: array of string`
+
+      npm packages installed globally in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `python: array of string`
+
+      Python packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `system: array of string`
+
+      System packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+  - `plugins: array of HostedPlugin`
+
+    Safe plugin metadata, excluding inline archive contents.
+
+    `minItems: 0`, `maxItems: 32`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of SkillReference { skill_id, type, version }  or Inline { description, name, type }`
+
+    Safe skill metadata, preserving unresolved version selectors.
+
+    `minItems: 0`, `maxItems: 200`
+
+    - `SkillReference object { skill_id, type, version }`
+
+      A skill resolved afresh from the Skills API whenever a session starts.
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string or null`
+
+        The requested version selector, including `latest`.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      Safe metadata for an inline skill archive.
+
+      - `description: string`
+
+        The skill description declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The skill name declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `updated_at: integer`
+
+    The Unix timestamp, in seconds, when the template was last updated.
+
+    `format: int64`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/environments/templates/$ENVIRONMENT_TEMPLATE_ID \
+    -X POST \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "capability_directories": [
+    "string"
+  ],
+  "created_at": 0,
+  "desktop": {
+    "enabled": true
+  },
+  "files": [
+    {
+      "file_id": "file_id",
+      "path": "path",
+      "type": "file_id"
+    }
+  ],
+  "name": "name",
+  "network": {
+    "access": "enabled",
+    "allowed_domains": [
+      "string"
+    ]
+  },
+  "object": "agent.environment.template",
+  "packages": {
+    "npm": [
+      "string"
+    ],
+    "python": [
+      "string"
+    ],
+    "system": [
+      "string"
+    ]
+  },
+  "plugins": [
+    {
+      "description": "description",
+      "name": "name",
+      "type": "inline"
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "skill_id",
+      "type": "skill_reference",
+      "version": "version"
+    }
+  ],
+  "updated_at": 0
+}
+```
+
+## Domain Types
+
+### Environment Template
+
+- `EnvironmentTemplate object { id, capability_directories, created_at, 9 more }`
+
+  Reusable configuration that provisions a fresh OpenAI-hosted environment for each session.
+
+  - `id: string`
+
+    The ID of the reusable environment template.
+
+    `minLength: 0`
+
+  - `capability_directories: array of string`
+
+    Directories that expose capabilities to the agent.
+
+    `minItems: 0`, `maxItems: 2000`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the template was created.
+
+    `format: int64`
+
+  - `desktop: object { enabled }`
+
+    Desktop configuration for each OpenAI-hosted environment.
+
+    - `enabled: boolean`
+
+      Whether the environment provisions a desktop and browser proxy.
+
+  - `files: array of FileID { file_id, path, type }  or Inline { path, size_bytes, type }`
+
+    Safe file metadata, excluding contents and session-scoped file IDs.
+
+    `minItems: 0`, `maxItems: 50`
+
+    - `FileID object { file_id, path, type }`
+
+      A project-scoped Files API reference resolved separately for each session.
+
+      - `file_id: string`
+
+        The ID of the uploaded file.
+
+        `minLength: 0`
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `type: "file_id" (default: "file_id")`
+
+        The type of the object. Always `file_id`.
+
+        - `"file_id"`
+
+    - `Inline object { path, size_bytes, type }`
+
+      Metadata for confidential inline file contents.
+
+      - `path: string`
+
+        The file's absolute path inside the environment.
+
+        `minLength: 0`
+
+      - `size_bytes: integer`
+
+        The decoded size of the inline file in bytes.
+
+        `format: int64`, `minimum: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `name: string or null`
+
+    An optional human-readable display name for the template.
+
+    `minLength: 0`
+
+  - `network: object { access, allowed_domains }`
+
+    Runtime network access for each OpenAI-hosted environment.
+
+    - `access: "enabled" or "disabled" or "restricted"`
+
+      The environment's network access mode.
+
+      - `"enabled"`
+
+        Allows unrestricted network access.
+
+      - `"disabled"`
+
+        Disables network access.
+
+      - `"restricted"`
+
+        Applies the configured domain restrictions.
+
+    - `allowed_domains: array of string`
+
+      Domains the environment may access when network access is restricted.
+
+      `minItems: 0`, `maxItems: 2000`
+
+  - `object: "agent.environment.template" (default: "agent.environment.template")`
+
+    The object type. Always `agent.environment.template`.
+
+    - `"agent.environment.template"`
+
+  - `packages: object { npm, python, system }`
+
+    Packages installed in each fresh OpenAI-hosted environment.
+
+    - `npm: array of string`
+
+      npm packages installed globally in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `python: array of string`
+
+      Python packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `system: array of string`
+
+      System packages installed in the environment.
+
+      `minItems: 0`, `maxItems: 16384`
+
+  - `plugins: array of HostedPlugin`
+
+    Safe plugin metadata, excluding inline archive contents.
+
+    `minItems: 0`, `maxItems: 32`
+
+    - `description: string`
+
+      The installed plugin description.
+
+      `minLength: 0`
+
+    - `name: string`
+
+      The installed plugin name.
+
+      `minLength: 0`
+
+    - `type: "inline" (default: "inline")`
+
+      The type of the object. Always `inline`.
+
+      - `"inline"`
+
+  - `skills: array of SkillReference { skill_id, type, version }  or Inline { description, name, type }`
+
+    Safe skill metadata, preserving unresolved version selectors.
+
+    `minItems: 0`, `maxItems: 200`
+
+    - `SkillReference object { skill_id, type, version }`
+
+      A skill resolved afresh from the Skills API whenever a session starts.
+
+      - `skill_id: string`
+
+        The referenced skill ID.
+
+        `minLength: 0`
+
+      - `type: "skill_reference" (default: "skill_reference")`
+
+        The type of the object. Always `skill_reference`.
+
+        - `"skill_reference"`
+
+      - `version: string or null`
+
+        The requested version selector, including `latest`.
+
+        `minLength: 0`
+
+    - `Inline object { description, name, type }`
+
+      Safe metadata for an inline skill archive.
+
+      - `description: string`
+
+        The skill description declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The skill name declared in `SKILL.md`.
+
+        `minLength: 0`
+
+      - `type: "inline" (default: "inline")`
+
+        The type of the object. Always `inline`.
+
+        - `"inline"`
+
+  - `updated_at: integer`
+
+    The Unix timestamp, in seconds, when the template was last updated.
+
+    `format: int64`
+
+### Environment Template Deleted
+
+- `EnvironmentTemplateDeleted object { id, deleted, object }`
+
+  A deleted reusable environment template.
+
+  - `id: string`
+
+    The ID of the deleted environment template.
+
+    `minLength: 0`
+
+  - `deleted: boolean`
+
+    Whether the environment template was deleted. Always `true`.
+
+  - `object: "agent.environment.template.deleted" (default: "agent.environment.template.deleted")`
+
+    The object type. Always `agent.environment.template.deleted`.
+
+    - `"agent.environment.template.deleted"`

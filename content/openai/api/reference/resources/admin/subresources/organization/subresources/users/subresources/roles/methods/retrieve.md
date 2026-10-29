@@ -1,0 +1,138 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Retrieve user organization role
+
+**get** `/organization/users/{user_id}/roles/{role_id}`
+
+Retrieves an organization role assigned to a user.
+
+### Path Parameters
+
+- `user_id: string`
+
+- `role_id: string`
+
+### Returns
+
+- `id: string`
+
+  Identifier for the role.
+
+- `assignment_sources: array of object { principal_id, principal_type }  or null`
+
+  Principals from which the role assignment is inherited, when available.
+
+  - `principal_id: string`
+
+  - `principal_type: string`
+
+- `created_at: integer or null`
+
+  When the role was created.
+
+  `format: unixtime`
+
+- `created_by: string or null`
+
+  Identifier of the actor who created the role.
+
+- `created_by_user_obj: map[unknown] or null`
+
+  User details for the actor that created the role, when available.
+
+- `description: string or null`
+
+  Description of the role.
+
+- `metadata: map[unknown] or null`
+
+  Arbitrary metadata stored on the role.
+
+- `name: string`
+
+  Name of the role.
+
+- `permissions: array of string`
+
+  Permissions associated with the role.
+
+- `predefined_role: boolean`
+
+  Whether the role is predefined by OpenAI.
+
+- `resource_type: string`
+
+  Resource type the role applies to.
+
+- `updated_at: integer or null`
+
+  When the role was last updated.
+
+  `format: unixtime`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/users/$USER_ID/roles/$ROLE_ID \
+    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "assignment_sources": [
+    {
+      "principal_id": "principal_id",
+      "principal_type": "principal_type"
+    }
+  ],
+  "created_at": 0,
+  "created_by": "created_by",
+  "created_by_user_obj": {
+    "foo": "bar"
+  },
+  "description": "description",
+  "metadata": {
+    "foo": "bar"
+  },
+  "name": "name",
+  "permissions": [
+    "string"
+  ],
+  "predefined_role": true,
+  "resource_type": "resource_type",
+  "updated_at": 0
+}
+```
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/users/user_abc123/roles/role_01J1F8ROLE01 \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json"
+```
+
+#### Response example
+
+```json
+{
+    "id": "role_01J1F8ROLE01",
+    "name": "API Group Manager",
+    "permissions": [
+        "api.groups.read",
+        "api.groups.write"
+    ],
+    "resource_type": "api.organization",
+    "predefined_role": false,
+    "description": "Allows managing organization groups",
+    "created_at": 1711471533,
+    "updated_at": 1711472599,
+    "created_by": "user_abc123",
+    "created_by_user_obj": null,
+    "metadata": {},
+    "assignment_sources": null
+}
+```

@@ -1,0 +1,145 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## List vaults
+
+**get** `/vaults`
+
+Lists vaults using ID-based pagination. See [vaults](/api/docs/guides/agents-api/tools/vaults).
+
+### Query Parameters
+
+- `after: optional string`
+
+  Return resources after this resource ID in the selected order.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `limit: optional integer (default: 20)`
+
+  The maximum number of resources to return, between 1 and 100. Defaults to 20.
+
+  `format: int64`, `minimum: 1`, `maximum: 100`
+
+- `metadata: optional map[string]`
+
+  Exact string matches supplied as `metadata[key]=value`. All supplied pairs must match. Up to 16 pairs, with keys from 1 to 64 characters and values up to 512 characters. Filtering is eventually consistent; metadata changes may take time to appear.
+
+- `order: optional "asc" or "desc" (default: "desc")`
+
+  The order in which resources are returned. Defaults to `desc`.
+
+  - `"asc"`
+
+    Returns resources in ascending order.
+
+  - `"desc"`
+
+    Returns resources in descending order.
+
+- `status: optional VaultStatusFilter`
+
+  Filter by one status or a list, such as `status=active` or `status[]=active&status[]=archived`. Both statuses are included by default.
+
+  - `VaultStatus = "active" or "archived"`
+
+    Whether a vault or credential is active or archived.
+
+    - `"active"`
+
+    - `"archived"`
+
+  - `array of VaultStatus`
+
+    `minItems: 0`, `maxItems: 16384`
+
+    - `"active"`
+
+    - `"archived"`
+
+### Returns
+
+- `data: array of Vault`
+
+  The resources returned in this page, in the requested sort order.
+
+  `minItems: 0`, `maxItems: 2000`
+
+  - `id: string`
+
+    The ID of the vault.
+
+    `minLength: 0`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the vault was created.
+
+    `format: int64`
+
+  - `metadata: map[string]`
+
+    Key-value pairs associated with the vault, such as an application or team identifier.
+
+  - `name: string or null`
+
+    The human-readable name of the vault, if set.
+
+    `minLength: 0`
+
+  - `object: "vault" (default: "vault")`
+
+    The object type. Always `vault`.
+
+    - `"vault"`
+
+- `first_id: string or null`
+
+  The ID of the first resource in `data`, or `null` if the page is empty.
+
+  `minLength: 0`
+
+- `has_more: boolean`
+
+  Whether there are more resources to retrieve after this page.
+
+- `last_id: string or null`
+
+  The ID of the last resource in `data`, or `null` if the page is empty. Pass this as `after` with the same order and filters.
+
+  `minLength: 0`
+
+- `object: "list" (default: "list")`
+
+  The object type, which is always `list`.
+
+  - `"list"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/vaults \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "data": [
+    {
+      "id": "id",
+      "created_at": 0,
+      "metadata": {
+        "foo": "string"
+      },
+      "name": "name",
+      "object": "vault"
+    }
+  ],
+  "first_id": "first_id",
+  "has_more": true,
+  "last_id": "last_id",
+  "object": "list"
+}
+```

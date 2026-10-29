@@ -1,0 +1,69 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Retrieve a vault
+
+**get** `/vaults/{vault_id}`
+
+Retrieves a vault by its ID. See [vaults](/api/docs/guides/agents-api/tools/vaults).
+
+### Path Parameters
+
+- `vault_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `Vault object { id, created_at, metadata, 2 more }`
+
+  A collection of credentials for MCP servers and OpenAI-hosted environments.
+
+  - `id: string`
+
+    The ID of the vault.
+
+    `minLength: 0`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the vault was created.
+
+    `format: int64`
+
+  - `metadata: map[string]`
+
+    Key-value pairs associated with the vault, such as an application or team identifier.
+
+  - `name: string or null`
+
+    The human-readable name of the vault, if set.
+
+    `minLength: 0`
+
+  - `object: "vault" (default: "vault")`
+
+    The object type. Always `vault`.
+
+    - `"vault"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/vaults/$VAULT_ID \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "metadata": {
+    "foo": "string"
+  },
+  "name": "name",
+  "object": "vault"
+}
+```

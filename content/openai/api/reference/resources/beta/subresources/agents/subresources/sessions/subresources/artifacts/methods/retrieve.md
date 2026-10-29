@@ -1,0 +1,94 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Retrieve an agent session artifact
+
+**get** `/agents/sessions/{session_id}/artifacts/{artifact_id}`
+
+Retrieves immutable metadata for one durable session artifact. See [session artifacts](/api/docs/guides/agents-api/environments/files#openai-hosted-artifacts).
+
+### Path Parameters
+
+- `session_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `artifact_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `SessionArtifact object { id, created_at, environment_id, 5 more }`
+
+  An immutable file published by a completed hosted session turn.
+
+  - `id: string`
+
+    The immutable artifact ID.
+
+    `minLength: 0`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the artifact was published.
+
+    `format: int64`
+
+  - `environment_id: string`
+
+    The ID of the environment that produced the artifact.
+
+    `minLength: 0`
+
+  - `object: "agent.session.artifact" (default: "agent.session.artifact")`
+
+    The object type. Always `agent.session.artifact`.
+
+    - `"agent.session.artifact"`
+
+  - `path: string`
+
+    The original absolute file path in the execution environment.
+
+    `minLength: 0`
+
+  - `session_id: string`
+
+    The ID of the session that owns the artifact.
+
+    `minLength: 0`
+
+  - `size_bytes: integer`
+
+    The immutable artifact size in bytes.
+
+    `format: int64`, `minimum: 0`
+
+  - `turn_id: string`
+
+    The ID of the completed turn that published the artifact.
+
+    `minLength: 0`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/sessions/$SESSION_ID/artifacts/$ARTIFACT_ID \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "environment_id": "environment_id",
+  "object": "agent.session.artifact",
+  "path": "path",
+  "session_id": "session_id",
+  "size_bytes": 0,
+  "turn_id": "turn_id"
+}
+```

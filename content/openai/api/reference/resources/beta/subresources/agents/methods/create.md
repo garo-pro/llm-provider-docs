@@ -1,0 +1,924 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Create an agent
+
+**post** `/agents`
+
+Creates a reusable agent without storing credentials. See [agent configuration](/api/docs/guides/agents-api/configuration).
+
+### Body Parameters
+
+- `model: string`
+
+  The model to use for the agent. The requested model name is preserved.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `compaction: optional object { async }  or null`
+
+  Context compaction settings. Omission or null enables background compaction.
+
+  - `async: optional boolean or null`
+
+    Whether to compact context in the background. Omission or null defaults to true. Set to false to use blocking compaction. Background compaction may increase token usage.
+
+- `experimental: optional object { time_awareness }  (default: {"time_awareness":false})`
+
+  Experimental agent settings. All experimental features default to disabled.
+
+  - `time_awareness: optional boolean (default: false)`
+
+    Whether to give the model periodic current-time reminders. Defaults to false.
+
+- `instructions: optional string or null`
+
+  Additional instructions appended to the agent's default base instructions. Omit or set to null to add no custom instructions.
+
+  `minLength: 0`, `maxLength: 1048576`
+
+- `metadata: optional map[string] or null`
+
+  Up to 16 string key-value pairs, with keys up to 64 and values up to 512 characters. Omission or null defaults to an empty map.
+
+- `multi_agent: optional MultiAgentConfigParam or null`
+
+  Configuration for creating and coordinating subagents. Subagent tools are disabled by default.
+
+  - `enabled: boolean`
+
+    Whether subagent tools are enabled.
+
+  - `max_concurrent_subagents: optional integer`
+
+    Maximum number of subagents that may run concurrently. Defaults to 6.
+
+    `format: int64`, `minimum: 1`, `maximum: 4294967295`
+
+- `name: optional string or null`
+
+  A human-readable name for the agent. Omission or null leaves the agent unnamed.
+
+  `minLength: 0`, `maxLength: 128`
+
+- `reasoning: optional AgentReasoningParam or null`
+
+  Configuration for model reasoning. Omission uses the model's default effort.
+
+  - `effort: optional "none" or "minimal" or "low" or 4 more or null`
+
+    The amount of reasoning effort the model should use. Omission lets the model select it.
+
+    - `"none"`
+
+    - `"minimal"`
+
+    - `"low"`
+
+    - `"medium"`
+
+    - `"high"`
+
+    - `"xhigh"`
+
+    - `"max"`
+
+  - `summary: optional "concise" or "detailed" or "auto" or null`
+
+    Controls whether the response includes a reasoning summary.
+
+    - `"concise"`
+
+      Returns a concise reasoning summary when supported.
+
+    - `"detailed"`
+
+      Returns a detailed reasoning summary when supported.
+
+    - `"auto"`
+
+      Automatically selects the most detailed summary supported by the model.
+
+- `service_tier: optional "auto" or "default" or "flex" or 3 more or null`
+
+  The service tier used for model requests. Defaults to `auto`.
+
+  - `"auto"`
+
+    Selects the service tier automatically.
+
+  - `"default"`
+
+    Uses the default service tier.
+
+  - `"flex"`
+
+    Uses the flex service tier.
+
+  - `"priority"`
+
+    Uses the priority service tier.
+
+  - `"fast"`
+
+    Uses the fast service tier.
+
+  - `"ultrafast"`
+
+    Uses the ultrafast service tier.
+
+- `text: optional AgentTextParam or null`
+
+  Configuration for generated text. Defaults to the `text` format and medium verbosity.
+
+  - `format: optional TextFormatParam or null`
+
+    The output format. Omission uses ordinary text (`{"type": "text"}`).
+
+    - `Text object { type }`
+
+      Generates ordinary text without a structured-output constraint.
+
+      - `type: "text" (default: "text")`
+
+        The type of the object. Always `text`.
+
+        - `"text"`
+
+    - `JSONSchema object { schema, type }`
+
+      Constrains generated text to a JSON Schema.
+
+      - `schema: map[unknown]`
+
+        The JSON Schema that generated text must match.
+
+      - `type: "json_schema" (default: "json_schema")`
+
+        The type of the object. Always `json_schema`.
+
+        - `"json_schema"`
+
+  - `verbosity: optional "low" or "medium" or "high" or null`
+
+    The amount of text the model should produce. Defaults to `medium`, matching Responses.
+
+    - `"low"`
+
+      Produces less text.
+
+    - `"medium"`
+
+      Uses the default amount of text.
+
+    - `"high"`
+
+      Produces more text.
+
+- `tools: optional array of PersistedAgentToolParam or null`
+
+  Tools available to the agent. Defaults to an empty list. The tool list must fit within 3 MiB (3,145,728 bytes) of compact UTF-8 JSON.
+
+  `minItems: 0`, `maxItems: 2000`
+
+  - `Function object { description, name, parameters, 2 more }`
+
+    A function defined by the application.
+
+    - `description: string`
+
+      A description of what the function does.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `name: string`
+
+      The name of the function.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `parameters: map[unknown]`
+
+      A JSON Schema object describing the function's arguments.
+
+    - `type: "function" (default: "function")`
+
+      The type of the object. Always `function`.
+
+      - `"function"`
+
+    - `defer_loading: optional boolean (default: false)`
+
+      Whether this function is deferred and discovered through tool search. Defaults to `false`.
+
+  - `ToolSearch object { type }`
+
+    Discovers deferred function tools and loads them into the model context.
+
+    - `type: "tool_search" (default: "tool_search")`
+
+      The type of the object. Always `tool_search`.
+
+      - `"tool_search"`
+
+  - `ProgrammaticToolCalling object { type, enabled }`
+
+    Enables calling tools from model-generated code.
+
+    - `type: "programmatic_tool_calling" (default: "programmatic_tool_calling")`
+
+      The type of the object. Always `programmatic_tool_calling`.
+
+      - `"programmatic_tool_calling"`
+
+    - `enabled: optional boolean (default: true)`
+
+      Whether tools can be called from model-generated code. Defaults to `true`.
+
+  - `Mcp object { server_label, transport, type, 5 more }`
+
+    Tools provided by a remote MCP server without stored credentials.
+
+    - `server_label: string`
+
+      A label used to identify the MCP server in tool calls.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `transport: PersistedMcpTransportParam`
+
+      The credential-free transport used to connect to the MCP server.
+
+      - `HTTP object { server_url, type, headers }`
+
+        Connects to an MCP server over HTTP.
+
+        - `server_url: string`
+
+          The URL of the MCP server.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+        - `type: "http" (default: "http")`
+
+          The type of the object. Always `http`.
+
+          - `"http"`
+
+        - `headers: optional map[string] or null`
+
+          Non-secret HTTP headers sent to the MCP server.
+
+      - `Stdio object { command, cwd, type, 2 more }`
+
+        Starts an MCP server as a local process.
+
+        - `command: string`
+
+          The command used to start the MCP server.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+        - `cwd: string`
+
+          The working directory used to start the MCP server.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+        - `type: "stdio" (default: "stdio")`
+
+          The type of the object. Always `stdio`.
+
+          - `"stdio"`
+
+        - `args: optional array of string or null`
+
+          Arguments passed to the MCP server command.
+
+          `minItems: 0`, `maxItems: 16384`
+
+        - `env_vars: optional array of string or null`
+
+          Environment variable names to inherit from the selected execution environment.
+
+          `minItems: 0`, `maxItems: 16384`
+
+    - `type: "mcp" (default: "mcp")`
+
+      The type of the object. Always `mcp`.
+
+      - `"mcp"`
+
+    - `allowed_tools: optional array of string or null`
+
+      The MCP tools the agent may call. All server tools are allowed when omitted.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `connection_origin: optional "service" or "environment" or null`
+
+      Selects where outbound MCP HTTP connections originate.
+
+      - `"service"`
+
+        Uses the Managed Agents service network.
+
+      - `"environment"`
+
+        Uses the session's execution environment.
+
+    - `credential_id: optional string or null`
+
+      The vault credential selected for this MCP server. Optional when exactly one attached credential matches the server URL.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `request_metadata: optional map[unknown] or null`
+
+      Metadata included with requests to this MCP server.
+
+    - `required: optional boolean (default: false)`
+
+      Whether this MCP server must initialize before the first turn. Defaults to `false`.
+
+  - `WebSearch object { type, allowed_domains, context_size, 2 more }`
+
+    Web search.
+
+    - `type: "web_search" (default: "web_search")`
+
+      The type of the object. Always `web_search`.
+
+      - `"web_search"`
+
+    - `allowed_domains: optional array of string or null`
+
+      Domains the search may include.
+
+      `minItems: 0`, `maxItems: 16384`
+
+    - `context_size: optional "low" or "medium" or "high" or null`
+
+      The amount of search context made available to the model. Defaults to `medium`.
+
+      - `"low"`
+
+      - `"medium"`
+
+      - `"high"`
+
+    - `location: optional object { city, country, region, timezone }  or null`
+
+      Approximate location used to localize search results.
+
+      - `city: optional string or null`
+
+        The city name.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `country: optional string or null`
+
+        The two-letter ISO country code, such as `US`.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `region: optional string or null`
+
+        The region or state name.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `timezone: optional string or null`
+
+        The IANA timezone, such as `America/Los_Angeles`.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+    - `mode: optional "disabled" or "cached" or "live" or null`
+
+      The source used for web search results. Defaults to `live`.
+
+      - `"disabled"`
+
+        Disables web search.
+
+      - `"cached"`
+
+        Uses cached search results.
+
+      - `"live"`
+
+        Searches the live web.
+
+  - `ComputerUse object { type, include_screenshots }`
+
+    Browser use in an OpenAI-hosted session.
+
+    - `type: "computer_use" (default: "computer_use")`
+
+      The type of the object. Always `computer_use`.
+
+      - `"computer_use"`
+
+    - `include_screenshots: optional boolean (default: false)`
+
+      Whether computer tool outputs include screenshots. Defaults to `false`.
+
+  - `Automations object { type }`
+
+    Lets the agent manage its own scheduled wakeups.
+
+    - `type: "automations" (default: "automations")`
+
+      The type of the object. Always `automations`.
+
+      - `"automations"`
+
+### Returns
+
+- `Agent object { id, created_at, instructions, 12 more }`
+
+  A reusable agent scoped to the caller's project.
+
+  - `id: string`
+
+    The ID of the reusable agent.
+
+    `minLength: 0`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the agent was created.
+
+    `format: int64`
+
+  - `instructions: string or null`
+
+    Custom instructions appended to the agent's default base instructions.
+
+    `minLength: 0`
+
+  - `metadata: map[string]`
+
+    Custom string key-value pairs attached to the agent.
+
+  - `model: string`
+
+    The requested model name used for inference.
+
+    `minLength: 0`
+
+  - `multi_agent: MultiAgentConfig`
+
+    The resolved configuration for creating and coordinating subagents.
+
+    - `enabled: boolean`
+
+      Whether subagent tools are enabled. Defaults to false.
+
+    - `max_concurrent_subagents: integer or null`
+
+      Maximum number of subagents that may run concurrently, or null when disabled. Defaults to 6 when enabled.
+
+      `format: int64`, `minimum: 1`, `maximum: 4294967295`
+
+  - `name: string or null`
+
+    A human-readable name for the agent, or null if it is unnamed.
+
+    `minLength: 0`
+
+  - `object: "agent" (default: "agent")`
+
+    The object type. Always `agent`.
+
+    - `"agent"`
+
+  - `reasoning: AgentReasoning`
+
+    The resolved reasoning configuration, including the model default for an omitted effort.
+
+    - `effort: "none" or "minimal" or "low" or 4 more or null`
+
+      The requested reasoning effort, or `null` when the model selects its own default.
+
+      - `"none"`
+
+      - `"minimal"`
+
+      - `"low"`
+
+      - `"medium"`
+
+      - `"high"`
+
+      - `"xhigh"`
+
+      - `"max"`
+
+    - `summary: "concise" or "detailed" or "auto" or null`
+
+      The requested reasoning summary format, or `null` when summaries are disabled.
+
+      - `"concise"`
+
+        Returns a concise reasoning summary when supported.
+
+      - `"detailed"`
+
+        Returns a detailed reasoning summary when supported.
+
+      - `"auto"`
+
+        Automatically selects the most detailed summary supported by the model.
+
+  - `service_tier: "auto" or "default" or "flex" or 3 more`
+
+    The resolved service-tier policy used for model requests.
+
+    - `"auto"`
+
+    - `"default"`
+
+    - `"flex"`
+
+    - `"priority"`
+
+    - `"fast"`
+
+    - `"ultrafast"`
+
+  - `text: AgentText`
+
+    The resolved configuration for text generated by the agent.
+
+    - `format: TextFormat`
+
+      The effective output format. Defaults to ordinary text.
+
+      - `Text object { type }`
+
+        Generates ordinary text without a structured-output constraint.
+
+        - `type: "text" (default: "text")`
+
+          The type of the object. Always `text`.
+
+          - `"text"`
+
+      - `JSONSchema object { schema, type }`
+
+        Constrains generated text to a JSON Schema.
+
+        - `schema: map[unknown]`
+
+          The JSON Schema that generated text must match.
+
+        - `type: "json_schema" (default: "json_schema")`
+
+          The type of the object. Always `json_schema`.
+
+          - `"json_schema"`
+
+    - `verbosity: "low" or "medium" or "high"`
+
+      The amount of text produced by the agent. Defaults to `medium`.
+
+      - `"low"`
+
+      - `"medium"`
+
+      - `"high"`
+
+  - `tools: array of PersistedAgentTool`
+
+    Tools available to the agent.
+
+    `minItems: 0`, `maxItems: 2000`
+
+    - `Function object { defer_loading, description, name, 2 more }`
+
+      A function defined by the application.
+
+      - `defer_loading: boolean`
+
+        Whether the function is deferred and discovered through tool search.
+
+      - `description: string`
+
+        A description of what the function does.
+
+        `minLength: 0`
+
+      - `name: string`
+
+        The name of the function.
+
+        `minLength: 0`
+
+      - `parameters: map[unknown]`
+
+        A JSON Schema object describing the function's arguments.
+
+      - `type: "function" (default: "function")`
+
+        The type of the object. Always `function`.
+
+        - `"function"`
+
+    - `ToolSearch object { type }`
+
+      Discovers deferred function tools and loads them into the model context.
+
+      - `type: "tool_search" (default: "tool_search")`
+
+        The type of the object. Always `tool_search`.
+
+        - `"tool_search"`
+
+    - `ProgrammaticToolCalling object { enabled, type }`
+
+      Enables calling tools from model-generated code.
+
+      - `enabled: boolean`
+
+        Whether tools can be called from model-generated code.
+
+      - `type: "programmatic_tool_calling" (default: "programmatic_tool_calling")`
+
+        The type of the object. Always `programmatic_tool_calling`.
+
+        - `"programmatic_tool_calling"`
+
+    - `Mcp object { allowed_tools, connection_origin, credential_id, 5 more }`
+
+      Tools provided by a remote MCP server without stored credentials.
+
+      - `allowed_tools: array of string or null`
+
+        The MCP tools the agent may call, or null when all server tools are allowed.
+
+        `minItems: 0`, `maxItems: 2000`
+
+      - `connection_origin: "service" or "environment"`
+
+        Where outbound MCP HTTP connections originate.
+
+        - `"service"`
+
+        - `"environment"`
+
+      - `credential_id: string or null`
+
+        The vault credential selected for this MCP server, if any.
+
+        `minLength: 0`
+
+      - `request_metadata: map[unknown]`
+
+        Metadata included with requests to this MCP server.
+
+      - `required: boolean`
+
+        Whether this MCP server must initialize before the first turn.
+
+      - `server_label: string`
+
+        A label used to identify the MCP server in tool calls.
+
+        `minLength: 0`
+
+      - `transport: PersistedMcpTransport`
+
+        The credential-free transport used to connect to the MCP server.
+
+        - `HTTP object { headers, server_url, type }`
+
+          Connects to an MCP server over HTTP.
+
+          - `headers: map[string]`
+
+            Non-secret HTTP headers sent to the MCP server.
+
+          - `server_url: string`
+
+            The URL of the MCP server.
+
+            `minLength: 0`
+
+          - `type: "http" (default: "http")`
+
+            The type of the object. Always `http`.
+
+            - `"http"`
+
+        - `Stdio object { args, command, cwd, 2 more }`
+
+          Starts an MCP server as a local process.
+
+          - `args: array of string`
+
+            Arguments passed to the MCP server command.
+
+            `minItems: 0`, `maxItems: 2000`
+
+          - `command: string`
+
+            The command used to start the MCP server.
+
+            `minLength: 0`
+
+          - `cwd: string`
+
+            The working directory used to start the MCP server.
+
+            `minLength: 0`
+
+          - `env_vars: array of string`
+
+            Environment variable names inherited from the execution environment.
+
+            `minItems: 0`, `maxItems: 2000`
+
+          - `type: "stdio" (default: "stdio")`
+
+            The type of the object. Always `stdio`.
+
+            - `"stdio"`
+
+      - `type: "mcp" (default: "mcp")`
+
+        The type of the object. Always `mcp`.
+
+        - `"mcp"`
+
+    - `WebSearch object { allowed_domains, context_size, location, 2 more }`
+
+      Web search.
+
+      - `allowed_domains: array of string or null`
+
+        Allowed search domains, or `null` when the search is unrestricted.
+
+        `minItems: 0`, `maxItems: 2000`
+
+      - `context_size: "low" or "medium" or "high"`
+
+        The amount of search context made available to the model. Defaults to `medium`.
+
+        - `"low"`
+
+        - `"medium"`
+
+        - `"high"`
+
+      - `location: object { city, country, region, timezone }  or null`
+
+        Approximate location used to localize search results, if provided.
+
+        - `city: string or null`
+
+          The city name.
+
+          `minLength: 0`
+
+        - `country: string or null`
+
+          The two-letter ISO country code, such as `US`.
+
+          `minLength: 0`
+
+        - `region: string or null`
+
+          The region or state name.
+
+          `minLength: 0`
+
+        - `timezone: string or null`
+
+          The IANA timezone, such as `America/Los_Angeles`.
+
+          `minLength: 0`
+
+      - `mode: "disabled" or "cached" or "live"`
+
+        The source used for web search results.
+
+        - `"disabled"`
+
+        - `"cached"`
+
+        - `"live"`
+
+      - `type: "web_search" (default: "web_search")`
+
+        The type of the object. Always `web_search`.
+
+        - `"web_search"`
+
+    - `ComputerUse object { include_screenshots, type }`
+
+      Browser use in an OpenAI-hosted session.
+
+      - `include_screenshots: boolean`
+
+        Whether computer tool outputs include screenshots.
+
+      - `type: "computer_use" (default: "computer_use")`
+
+        The type of the object. Always `computer_use`.
+
+        - `"computer_use"`
+
+    - `Automations object { type }`
+
+      Lets the agent manage its own scheduled wakeups.
+
+      - `type: "automations" (default: "automations")`
+
+        The type of the object. Always `automations`.
+
+        - `"automations"`
+
+  - `updated_at: integer`
+
+    The Unix timestamp, in seconds, when the agent was last updated.
+
+    `format: int64`
+
+  - `compaction: optional object { async }`
+
+    The effective context compaction settings.
+
+    - `async: boolean`
+
+      Whether context is compacted in the background. Defaults to true.
+
+  - `experimental: optional object { time_awareness }`
+
+    The effective experimental settings for the agent.
+
+    - `time_awareness: boolean`
+
+      Whether the model receives periodic current-time reminders.
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents \
+    -H 'Content-Type: application/json' \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY" \
+    -d '{
+          "model": "model"
+        }'
+```
+
+#### 201 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "instructions": "instructions",
+  "metadata": {
+    "foo": "string"
+  },
+  "model": "model",
+  "multi_agent": {
+    "enabled": true,
+    "max_concurrent_subagents": 1
+  },
+  "name": "name",
+  "object": "agent",
+  "reasoning": {
+    "effort": "none",
+    "summary": "concise"
+  },
+  "service_tier": "auto",
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "low"
+  },
+  "tools": [
+    {
+      "defer_loading": true,
+      "description": "description",
+      "name": "name",
+      "parameters": {
+        "foo": "bar"
+      },
+      "type": "function"
+    }
+  ],
+  "updated_at": 0,
+  "compaction": {
+    "async": true
+  },
+  "experimental": {
+    "time_awareness": true
+  }
+}
+```

@@ -22,7 +22,7 @@ Permanently delete a completed or failed video and its stored assets.
 
   Indicates that the video resource was deleted.
 
-- `object: "video.deleted"`
+- `object: "video.deleted" (default: "video.deleted")`
 
   The object type that signals the deletion response.
 
@@ -36,7 +36,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
     -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
-#### Response
+#### 200 — Example
 
 ```json
 {

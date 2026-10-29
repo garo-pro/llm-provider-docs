@@ -1,0 +1,76 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Create a vault
+
+**post** `/vaults`
+
+Creates a vault for the current project. See [vaults](/api/docs/guides/agents-api/tools/vaults).
+
+### Body Parameters
+
+- `metadata: optional map[string] or null`
+
+  Key-value pairs to associate with the vault, such as an application or team identifier.
+
+- `name: optional string`
+
+  The name is trimmed before storage. It must contain 1 to 256 UTF-8 bytes after trimming.
+
+  `minLength: 1`, `maxLength: 1048576`
+
+### Returns
+
+- `Vault object { id, created_at, metadata, 2 more }`
+
+  A collection of credentials for MCP servers and OpenAI-hosted environments.
+
+  - `id: string`
+
+    The ID of the vault.
+
+    `minLength: 0`
+
+  - `created_at: integer`
+
+    The Unix timestamp, in seconds, when the vault was created.
+
+    `format: int64`
+
+  - `metadata: map[string]`
+
+    Key-value pairs associated with the vault, such as an application or team identifier.
+
+  - `name: string or null`
+
+    The human-readable name of the vault, if set.
+
+    `minLength: 0`
+
+  - `object: "vault" (default: "vault")`
+
+    The object type. Always `vault`.
+
+    - `"vault"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/vaults \
+    -X POST \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 201 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "metadata": {
+    "foo": "string"
+  },
+  "name": "name",
+  "object": "vault"
+}
+```

@@ -1,0 +1,114 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## List Skills
+
+**get** `/skills`
+
+List all skills for the current project.
+
+### Query Parameters
+
+- `after: optional string`
+
+  Identifier for the last item from the previous pagination request
+
+- `limit: optional integer`
+
+  Number of items to retrieve
+
+  `minimum: 0`, `maximum: 100`
+
+- `order: optional "asc" or "desc"`
+
+  Sort order of results by timestamp. Use `asc` for ascending order or `desc` for descending order.
+
+  - `"asc"`
+
+  - `"desc"`
+
+### Returns
+
+- `SkillList object { data, first_id, has_more, 2 more }`
+
+  - `data: array of Skill`
+
+    A list of items
+
+    - `id: string`
+
+      Unique identifier for the skill.
+
+    - `created_at: integer`
+
+      Unix timestamp (seconds) for when the skill was created.
+
+      `format: unixtime`
+
+    - `default_version: string`
+
+      Default version for the skill.
+
+    - `description: string`
+
+      Description of the skill.
+
+    - `latest_version: string`
+
+      Latest version for the skill.
+
+    - `name: string`
+
+      Name of the skill.
+
+    - `object: "skill" (default: "skill")`
+
+      The object type, which is `skill`.
+
+      - `"skill"`
+
+  - `first_id: string or null`
+
+    The ID of the first item in the list.
+
+  - `has_more: boolean`
+
+    Whether there are more items available.
+
+  - `last_id: string or null`
+
+    The ID of the last item in the list.
+
+  - `object: "list" (default: "list")`
+
+    The type of object returned, must be `list`.
+
+    - `"list"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/skills \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "data": [
+    {
+      "id": "id",
+      "created_at": 0,
+      "default_version": "default_version",
+      "description": "description",
+      "latest_version": "latest_version",
+      "name": "name",
+      "object": "skill"
+    }
+  ],
+  "first_id": "first_id",
+  "has_more": true,
+  "last_id": "last_id",
+  "object": "list"
+}
+```

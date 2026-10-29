@@ -1,0 +1,54 @@
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Delete an agent session
+
+**delete** `/agents/sessions/{session_id}`
+
+Removes a managed agent session from the public API and returns a deletion confirmation. If backend execution has ended, deletion can cancel a still-open public turn and abandon unpublished outputs. Running execution must be cancelled first. Physical cleanup may continue asynchronously. See [managing sessions](/api/docs/guides/agents-api/sessions/manage).
+
+### Path Parameters
+
+- `session_id: string`
+
+  `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+- `AgentSessionDeleted object { id, deleted, object }`
+
+  A Managed Agents session removed from the public API. Physical cleanup may continue asynchronously.
+
+  - `id: string`
+
+    The ID of the deleted session.
+
+    `minLength: 0`
+
+  - `deleted: boolean`
+
+    Whether the session has been removed from the public API. Always `true`. Physical cleanup may still be in progress.
+
+  - `object: "agent.session.deleted" (default: "agent.session.deleted")`
+
+    The object type. Always `agent.session.deleted`.
+
+    - `"agent.session.deleted"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
+    -X DELETE \
+    -H 'OpenAI-Beta: agents=v1' \
+    -H "Authorization: Bearer $OPENAI_API_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "deleted": true,
+  "object": "agent.session.deleted"
+}
+```

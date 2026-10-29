@@ -1,0 +1,1164 @@
+# External Storage
+
+> For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+## Create an external storage configuration
+
+**post** `/organization/external_storage`
+
+Register one customer-managed external storage configuration.
+
+### Body Parameters
+
+- `project_id: string`
+
+- `provider: Aws { bucket, role_arn, type }  or Azure { account_name, container, resource_group, 3 more }  or Gcp { bucket, type, workload_identity_pool_id, 2 more }  or Oci { bucket, region, tenancy_ocid, type }`
+
+  - `Aws object { bucket, role_arn, type }`
+
+    - `bucket: string`
+
+    - `role_arn: string`
+
+    - `type: "aws" (default: "aws")`
+
+      - `"aws"`
+
+  - `Azure object { account_name, container, resource_group, 3 more }`
+
+    - `account_name: string`
+
+    - `container: string`
+
+    - `resource_group: string`
+
+    - `subscription_id: string`
+
+    - `tenant_id: string`
+
+    - `type: "azure" (default: "azure")`
+
+      - `"azure"`
+
+  - `Gcp object { bucket, type, workload_identity_pool_id, 2 more }`
+
+    - `bucket: string`
+
+    - `type: "gcp" (default: "gcp")`
+
+      - `"gcp"`
+
+    - `workload_identity_pool_id: string`
+
+    - `workload_identity_project_number: string`
+
+    - `workload_identity_provider_id: string`
+
+  - `Oci object { bucket, region, tenancy_ocid, type }`
+
+    - `bucket: string`
+
+    - `region: string`
+
+    - `tenancy_ocid: string`
+
+    - `type: "oci" (default: "oci")`
+
+      - `"oci"`
+
+### Returns
+
+- `ExternalStorageConfiguration object { id, created_at, geography, 4 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `geography: string`
+
+  - `object: "organization.external_storage" (default: "organization.external_storage")`
+
+    - `"organization.external_storage"`
+
+  - `project_id: string`
+
+  - `provider: AwsExternalStorageProvider or AzureExternalStorageProvider or GcpExternalStorageProvider or OciExternalStorageProvider`
+
+    - `AwsExternalStorageProvider object { account_id, bucket, external_id, 3 more }`
+
+      - `account_id: string`
+
+      - `bucket: string`
+
+      - `external_id: string`
+
+      - `region: string`
+
+      - `role_arn: string`
+
+      - `type: "aws" (default: "aws")`
+
+        - `"aws"`
+
+    - `AzureExternalStorageProvider object { account_name, container, region, 4 more }`
+
+      - `account_name: string`
+
+      - `container: string`
+
+      - `region: string`
+
+      - `resource_group: string`
+
+      - `subscription_id: string`
+
+      - `tenant_id: string`
+
+      - `type: "azure" (default: "azure")`
+
+        - `"azure"`
+
+    - `GcpExternalStorageProvider object { audience, bucket, region, 4 more }`
+
+      - `audience: string`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `type: "gcp" (default: "gcp")`
+
+        - `"gcp"`
+
+      - `workload_identity_pool_id: string`
+
+      - `workload_identity_project_number: string`
+
+      - `workload_identity_provider_id: string`
+
+    - `OciExternalStorageProvider object { bucket, region, tenancy_ocid, type }`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `tenancy_ocid: string`
+
+      - `type: "oci" (default: "oci")`
+
+        - `"oci"`
+
+  - `status: "pending" or "validated" or "degraded" or "unhealthy"`
+
+    - `"pending"`
+
+    - `"validated"`
+
+    - `"degraded"`
+
+    - `"unhealthy"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/external_storage \
+    -H 'Content-Type: application/json' \
+    -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+    -d '{
+          "project_id": "proj_123",
+          "provider": {
+            "bucket": "bucket",
+            "role_arn": "role_arn",
+            "type": "aws"
+          }
+        }'
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "geography": "geography",
+  "object": "organization.external_storage",
+  "project_id": "project_id",
+  "provider": {
+    "account_id": "account_id",
+    "bucket": "bucket",
+    "external_id": "external_id",
+    "region": "region",
+    "role_arn": "role_arn",
+    "type": "aws"
+  },
+  "status": "pending"
+}
+```
+
+### AWS S3
+
+```http
+curl -X POST https://api.openai.com/v1/organization/external_storage \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "project_id": "proj_abc123",
+    "provider": {
+      "type": "aws",
+      "bucket": "customer-logs",
+      "role_arn": "arn:aws:iam::123456789012:role/OpenAIExternalStorageRole"
+    }
+  }'
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage",
+  "id": "extstorage_abc123",
+  "project_id": "proj_abc123",
+  "provider": {
+    "type": "aws",
+    "account_id": "123456789012",
+    "region": "us-east-1",
+    "bucket": "customer-logs",
+    "role_arn": "arn:aws:iam::123456789012:role/OpenAIExternalStorageRole",
+    "external_id": "proj_abc123"
+  },
+  "geography": "US",
+  "status": "pending",
+  "created_at": 1711471533
+}
+```
+
+### Azure Blob Storage
+
+```http
+curl -X POST https://api.openai.com/v1/organization/external_storage \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "project_id": "proj_azure123",
+    "provider": {
+      "type": "azure",
+      "tenant_id": "11111111-1111-1111-1111-111111111111",
+      "subscription_id": "22222222-2222-2222-2222-222222222222",
+      "resource_group": "customer-rg",
+      "account_name": "customerstorage",
+      "container": "openai-data"
+    }
+  }'
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage",
+  "id": "extstorage_azure123",
+  "project_id": "proj_azure123",
+  "provider": {
+    "type": "azure",
+    "tenant_id": "11111111-1111-1111-1111-111111111111",
+    "subscription_id": "22222222-2222-2222-2222-222222222222",
+    "resource_group": "customer-rg",
+    "account_name": "customerstorage",
+    "container": "openai-data",
+    "region": "eastus"
+  },
+  "geography": "US",
+  "status": "pending",
+  "created_at": 1711471533
+}
+```
+
+### Google Cloud Storage
+
+```http
+curl -X POST https://api.openai.com/v1/organization/external_storage \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "project_id": "proj_gcp123",
+    "provider": {
+      "type": "gcp",
+      "bucket": "customer-gcp-retention",
+      "workload_identity_project_number": "123456789012",
+      "workload_identity_pool_id": "customer-pool",
+      "workload_identity_provider_id": "customer-provider"
+    }
+  }'
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage",
+  "id": "extstorage_gcp123",
+  "project_id": "proj_gcp123",
+  "provider": {
+    "type": "gcp",
+    "bucket": "customer-gcp-retention",
+    "workload_identity_project_number": "123456789012",
+    "workload_identity_pool_id": "customer-pool",
+    "workload_identity_provider_id": "customer-provider",
+    "region": "us-central1",
+    "audience": "proj_gcp123"
+  },
+  "geography": "US",
+  "status": "pending",
+  "created_at": 1711471400
+}
+```
+
+### OCI Object Storage
+
+```http
+curl -X POST https://api.openai.com/v1/organization/external_storage \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "project_id": "proj_oci123",
+    "provider": {
+      "type": "oci",
+      "tenancy_ocid": "ocid1.tenancy.oc1..example",
+      "region": "us-ashburn-1",
+      "bucket": "customer-oci-retention"
+    }
+  }'
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage",
+  "id": "extstorage_oci123",
+  "project_id": "proj_oci123",
+  "provider": {
+    "type": "oci",
+    "tenancy_ocid": "ocid1.tenancy.oc1..example",
+    "region": "us-ashburn-1",
+    "bucket": "customer-oci-retention"
+  },
+  "geography": "US",
+  "status": "pending",
+  "created_at": 1711471300
+}
+```
+
+## Delete an external storage configuration
+
+**delete** `/organization/external_storage/{external_storage_id}`
+
+Disconnect a customer-managed external storage configuration. Removing the project's last configuration restores organization-default retention if customer-managed retention was active. Repeating a deletion also completes any interrupted retention update. Cloud storage is unchanged.
+
+### Path Parameters
+
+- `external_storage_id: string`
+
+### Returns
+
+- `ExternalStorageDeleted object { id, deleted, object }`
+
+  - `id: string`
+
+  - `deleted: boolean`
+
+  - `object: "organization.external_storage.deleted" (default: "organization.external_storage.deleted")`
+
+    - `"organization.external_storage.deleted"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/external_storage/$EXTERNAL_STORAGE_ID \
+    -X DELETE \
+    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "deleted": true,
+  "object": "organization.external_storage.deleted"
+}
+```
+
+### Example
+
+```http
+curl -X DELETE https://api.openai.com/v1/organization/external_storage/extstorage_abc123 \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json"
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage.deleted",
+  "id": "extstorage_abc123",
+  "deleted": true
+}
+```
+
+## List external storage configurations
+
+**get** `/organization/external_storage`
+
+List the organization's customer-managed external storage configurations.
+
+### Query Parameters
+
+- `after: optional string or null`
+
+  Return external storage configurations after this ID.
+
+- `limit: optional integer`
+
+  `minimum: 1`, `maximum: 100`
+
+- `order: optional "asc" or "desc"`
+
+  - `"asc"`
+
+  - `"desc"`
+
+- `project_id: optional string or null`
+
+### Returns
+
+- `data: array of ExternalStorageConfiguration`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `geography: string`
+
+  - `object: "organization.external_storage" (default: "organization.external_storage")`
+
+    - `"organization.external_storage"`
+
+  - `project_id: string`
+
+  - `provider: AwsExternalStorageProvider or AzureExternalStorageProvider or GcpExternalStorageProvider or OciExternalStorageProvider`
+
+    - `AwsExternalStorageProvider object { account_id, bucket, external_id, 3 more }`
+
+      - `account_id: string`
+
+      - `bucket: string`
+
+      - `external_id: string`
+
+      - `region: string`
+
+      - `role_arn: string`
+
+      - `type: "aws" (default: "aws")`
+
+        - `"aws"`
+
+    - `AzureExternalStorageProvider object { account_name, container, region, 4 more }`
+
+      - `account_name: string`
+
+      - `container: string`
+
+      - `region: string`
+
+      - `resource_group: string`
+
+      - `subscription_id: string`
+
+      - `tenant_id: string`
+
+      - `type: "azure" (default: "azure")`
+
+        - `"azure"`
+
+    - `GcpExternalStorageProvider object { audience, bucket, region, 4 more }`
+
+      - `audience: string`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `type: "gcp" (default: "gcp")`
+
+        - `"gcp"`
+
+      - `workload_identity_pool_id: string`
+
+      - `workload_identity_project_number: string`
+
+      - `workload_identity_provider_id: string`
+
+    - `OciExternalStorageProvider object { bucket, region, tenancy_ocid, type }`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `tenancy_ocid: string`
+
+      - `type: "oci" (default: "oci")`
+
+        - `"oci"`
+
+  - `status: "pending" or "validated" or "degraded" or "unhealthy"`
+
+    - `"pending"`
+
+    - `"validated"`
+
+    - `"degraded"`
+
+    - `"unhealthy"`
+
+- `first_id: string or null`
+
+- `has_more: boolean`
+
+- `last_id: string or null`
+
+- `object: "list" (default: "list")`
+
+  - `"list"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/external_storage \
+    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "data": [
+    {
+      "id": "id",
+      "created_at": 0,
+      "geography": "geography",
+      "object": "organization.external_storage",
+      "project_id": "project_id",
+      "provider": {
+        "account_id": "account_id",
+        "bucket": "bucket",
+        "external_id": "external_id",
+        "region": "region",
+        "role_arn": "role_arn",
+        "type": "aws"
+      },
+      "status": "pending"
+    }
+  ],
+  "first_id": "first_id",
+  "has_more": true,
+  "last_id": "last_id",
+  "object": "list"
+}
+```
+
+### Example
+
+```http
+curl "https://api.openai.com/v1/organization/external_storage?limit=20&order=desc" \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json"
+```
+
+#### Response example
+
+```json
+{
+  "object": "list",
+  "data": [
+    {
+      "object": "organization.external_storage",
+      "id": "extstorage_abc123",
+      "project_id": "proj_abc123",
+      "provider": {
+        "type": "aws",
+        "account_id": "123456789012",
+        "region": "us-east-1",
+        "bucket": "customer-logs",
+        "role_arn": "arn:aws:iam::123456789012:role/OpenAIExternalStorageRole",
+        "external_id": "proj_abc123"
+      },
+      "geography": "US",
+      "status": "validated",
+      "created_at": 1711471533
+    },
+    {
+      "object": "organization.external_storage",
+      "id": "extstorage_azure123",
+      "project_id": "proj_azure123",
+      "provider": {
+        "type": "azure",
+        "tenant_id": "11111111-1111-1111-1111-111111111111",
+        "subscription_id": "22222222-2222-2222-2222-222222222222",
+        "resource_group": "customer-rg",
+        "account_name": "customerstorage",
+        "container": "openai-data",
+        "region": "eastus"
+      },
+      "geography": "US",
+      "status": "validated",
+      "created_at": 1711471500
+    },
+    {
+      "object": "organization.external_storage",
+      "id": "extstorage_gcp123",
+      "project_id": "proj_gcp123",
+      "provider": {
+        "type": "gcp",
+        "bucket": "customer-gcp-retention",
+        "workload_identity_project_number": "123456789012",
+        "workload_identity_pool_id": "customer-pool",
+        "workload_identity_provider_id": "customer-provider",
+        "region": "us-central1",
+        "audience": "proj_gcp123"
+      },
+      "geography": "US",
+      "status": "validated",
+      "created_at": 1711471400
+    },
+    {
+      "object": "organization.external_storage",
+      "id": "extstorage_oci123",
+      "project_id": "proj_oci123",
+      "provider": {
+        "type": "oci",
+        "tenancy_ocid": "ocid1.tenancy.oc1..example",
+        "region": "us-ashburn-1",
+        "bucket": "customer-oci-retention"
+      },
+      "geography": "US",
+      "status": "validated",
+      "created_at": 1711471300
+    }
+  ],
+  "first_id": "extstorage_abc123",
+  "last_id": "extstorage_oci123",
+  "has_more": false
+}
+```
+
+## Get an external storage configuration
+
+**get** `/organization/external_storage/{external_storage_id}`
+
+Get one customer-managed external storage configuration.
+
+### Path Parameters
+
+- `external_storage_id: string`
+
+### Returns
+
+- `ExternalStorageConfiguration object { id, created_at, geography, 4 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `geography: string`
+
+  - `object: "organization.external_storage" (default: "organization.external_storage")`
+
+    - `"organization.external_storage"`
+
+  - `project_id: string`
+
+  - `provider: AwsExternalStorageProvider or AzureExternalStorageProvider or GcpExternalStorageProvider or OciExternalStorageProvider`
+
+    - `AwsExternalStorageProvider object { account_id, bucket, external_id, 3 more }`
+
+      - `account_id: string`
+
+      - `bucket: string`
+
+      - `external_id: string`
+
+      - `region: string`
+
+      - `role_arn: string`
+
+      - `type: "aws" (default: "aws")`
+
+        - `"aws"`
+
+    - `AzureExternalStorageProvider object { account_name, container, region, 4 more }`
+
+      - `account_name: string`
+
+      - `container: string`
+
+      - `region: string`
+
+      - `resource_group: string`
+
+      - `subscription_id: string`
+
+      - `tenant_id: string`
+
+      - `type: "azure" (default: "azure")`
+
+        - `"azure"`
+
+    - `GcpExternalStorageProvider object { audience, bucket, region, 4 more }`
+
+      - `audience: string`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `type: "gcp" (default: "gcp")`
+
+        - `"gcp"`
+
+      - `workload_identity_pool_id: string`
+
+      - `workload_identity_project_number: string`
+
+      - `workload_identity_provider_id: string`
+
+    - `OciExternalStorageProvider object { bucket, region, tenancy_ocid, type }`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `tenancy_ocid: string`
+
+      - `type: "oci" (default: "oci")`
+
+        - `"oci"`
+
+  - `status: "pending" or "validated" or "degraded" or "unhealthy"`
+
+    - `"pending"`
+
+    - `"validated"`
+
+    - `"degraded"`
+
+    - `"unhealthy"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/external_storage/$EXTERNAL_STORAGE_ID \
+    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "geography": "geography",
+  "object": "organization.external_storage",
+  "project_id": "project_id",
+  "provider": {
+    "account_id": "account_id",
+    "bucket": "bucket",
+    "external_id": "external_id",
+    "region": "region",
+    "role_arn": "role_arn",
+    "type": "aws"
+  },
+  "status": "pending"
+}
+```
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/external_storage/extstorage_azure123 \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json"
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage",
+  "id": "extstorage_azure123",
+  "project_id": "proj_azure123",
+  "provider": {
+    "type": "azure",
+    "tenant_id": "11111111-1111-1111-1111-111111111111",
+    "subscription_id": "22222222-2222-2222-2222-222222222222",
+    "resource_group": "customer-rg",
+    "account_name": "customerstorage",
+    "container": "openai-data",
+    "region": "eastus"
+  },
+  "geography": "US",
+  "status": "validated",
+  "created_at": 1711471533
+}
+```
+
+## Validate an external storage configuration
+
+**post** `/organization/external_storage/{external_storage_id}/validate`
+
+Validate one customer-managed external storage configuration.
+
+### Path Parameters
+
+- `external_storage_id: string`
+
+### Returns
+
+- `ExternalStorageConfiguration object { id, created_at, geography, 4 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `geography: string`
+
+  - `object: "organization.external_storage" (default: "organization.external_storage")`
+
+    - `"organization.external_storage"`
+
+  - `project_id: string`
+
+  - `provider: AwsExternalStorageProvider or AzureExternalStorageProvider or GcpExternalStorageProvider or OciExternalStorageProvider`
+
+    - `AwsExternalStorageProvider object { account_id, bucket, external_id, 3 more }`
+
+      - `account_id: string`
+
+      - `bucket: string`
+
+      - `external_id: string`
+
+      - `region: string`
+
+      - `role_arn: string`
+
+      - `type: "aws" (default: "aws")`
+
+        - `"aws"`
+
+    - `AzureExternalStorageProvider object { account_name, container, region, 4 more }`
+
+      - `account_name: string`
+
+      - `container: string`
+
+      - `region: string`
+
+      - `resource_group: string`
+
+      - `subscription_id: string`
+
+      - `tenant_id: string`
+
+      - `type: "azure" (default: "azure")`
+
+        - `"azure"`
+
+    - `GcpExternalStorageProvider object { audience, bucket, region, 4 more }`
+
+      - `audience: string`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `type: "gcp" (default: "gcp")`
+
+        - `"gcp"`
+
+      - `workload_identity_pool_id: string`
+
+      - `workload_identity_project_number: string`
+
+      - `workload_identity_provider_id: string`
+
+    - `OciExternalStorageProvider object { bucket, region, tenancy_ocid, type }`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `tenancy_ocid: string`
+
+      - `type: "oci" (default: "oci")`
+
+        - `"oci"`
+
+  - `status: "pending" or "validated" or "degraded" or "unhealthy"`
+
+    - `"pending"`
+
+    - `"validated"`
+
+    - `"degraded"`
+
+    - `"unhealthy"`
+
+### Example
+
+```http
+curl https://api.openai.com/v1/organization/external_storage/$EXTERNAL_STORAGE_ID/validate \
+    -X POST \
+    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
+```
+
+#### 200 — Example
+
+```json
+{
+  "id": "id",
+  "created_at": 0,
+  "geography": "geography",
+  "object": "organization.external_storage",
+  "project_id": "project_id",
+  "provider": {
+    "account_id": "account_id",
+    "bucket": "bucket",
+    "external_id": "external_id",
+    "region": "region",
+    "role_arn": "role_arn",
+    "type": "aws"
+  },
+  "status": "pending"
+}
+```
+
+### Example
+
+```http
+curl -X POST https://api.openai.com/v1/organization/external_storage/extstorage_azure123/validate \
+  -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
+  -H "Content-Type: application/json"
+```
+
+#### Response example
+
+```json
+{
+  "object": "organization.external_storage",
+  "id": "extstorage_azure123",
+  "project_id": "proj_azure123",
+  "provider": {
+    "type": "azure",
+    "tenant_id": "11111111-1111-1111-1111-111111111111",
+    "subscription_id": "22222222-2222-2222-2222-222222222222",
+    "resource_group": "customer-rg",
+    "account_name": "customerstorage",
+    "container": "openai-data",
+    "region": "eastus"
+  },
+  "geography": "US",
+  "status": "validated",
+  "created_at": 1711471533
+}
+```
+
+## Domain Types
+
+### Aws External Storage Provider
+
+- `AwsExternalStorageProvider object { account_id, bucket, external_id, 3 more }`
+
+  - `account_id: string`
+
+  - `bucket: string`
+
+  - `external_id: string`
+
+  - `region: string`
+
+  - `role_arn: string`
+
+  - `type: "aws" (default: "aws")`
+
+    - `"aws"`
+
+### Azure External Storage Provider
+
+- `AzureExternalStorageProvider object { account_name, container, region, 4 more }`
+
+  - `account_name: string`
+
+  - `container: string`
+
+  - `region: string`
+
+  - `resource_group: string`
+
+  - `subscription_id: string`
+
+  - `tenant_id: string`
+
+  - `type: "azure" (default: "azure")`
+
+    - `"azure"`
+
+### External Storage Configuration
+
+- `ExternalStorageConfiguration object { id, created_at, geography, 4 more }`
+
+  - `id: string`
+
+  - `created_at: integer`
+
+    `format: unixtime`
+
+  - `geography: string`
+
+  - `object: "organization.external_storage" (default: "organization.external_storage")`
+
+    - `"organization.external_storage"`
+
+  - `project_id: string`
+
+  - `provider: AwsExternalStorageProvider or AzureExternalStorageProvider or GcpExternalStorageProvider or OciExternalStorageProvider`
+
+    - `AwsExternalStorageProvider object { account_id, bucket, external_id, 3 more }`
+
+      - `account_id: string`
+
+      - `bucket: string`
+
+      - `external_id: string`
+
+      - `region: string`
+
+      - `role_arn: string`
+
+      - `type: "aws" (default: "aws")`
+
+        - `"aws"`
+
+    - `AzureExternalStorageProvider object { account_name, container, region, 4 more }`
+
+      - `account_name: string`
+
+      - `container: string`
+
+      - `region: string`
+
+      - `resource_group: string`
+
+      - `subscription_id: string`
+
+      - `tenant_id: string`
+
+      - `type: "azure" (default: "azure")`
+
+        - `"azure"`
+
+    - `GcpExternalStorageProvider object { audience, bucket, region, 4 more }`
+
+      - `audience: string`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `type: "gcp" (default: "gcp")`
+
+        - `"gcp"`
+
+      - `workload_identity_pool_id: string`
+
+      - `workload_identity_project_number: string`
+
+      - `workload_identity_provider_id: string`
+
+    - `OciExternalStorageProvider object { bucket, region, tenancy_ocid, type }`
+
+      - `bucket: string`
+
+      - `region: string`
+
+      - `tenancy_ocid: string`
+
+      - `type: "oci" (default: "oci")`
+
+        - `"oci"`
+
+  - `status: "pending" or "validated" or "degraded" or "unhealthy"`
+
+    - `"pending"`
+
+    - `"validated"`
+
+    - `"degraded"`
+
+    - `"unhealthy"`
+
+### External Storage Deleted
+
+- `ExternalStorageDeleted object { id, deleted, object }`
+
+  - `id: string`
+
+  - `deleted: boolean`
+
+  - `object: "organization.external_storage.deleted" (default: "organization.external_storage.deleted")`
+
+    - `"organization.external_storage.deleted"`
+
+### Gcp External Storage Provider
+
+- `GcpExternalStorageProvider object { audience, bucket, region, 4 more }`
+
+  - `audience: string`
+
+  - `bucket: string`
+
+  - `region: string`
+
+  - `type: "gcp" (default: "gcp")`
+
+    - `"gcp"`
+
+  - `workload_identity_pool_id: string`
+
+  - `workload_identity_project_number: string`
+
+  - `workload_identity_provider_id: string`
+
+### Oci External Storage Provider
+
+- `OciExternalStorageProvider object { bucket, region, tenancy_ocid, type }`
+
+  - `bucket: string`
+
+  - `region: string`
+
+  - `tenancy_ocid: string`
+
+  - `type: "oci" (default: "oci")`
+
+    - `"oci"`
