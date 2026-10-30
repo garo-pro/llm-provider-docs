@@ -12,6 +12,8 @@ Deletes model permissions for a project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Returns
 
 - `ProjectModelPermissionsDeleted object { deleted, object }`
@@ -71,6 +73,8 @@ Returns model permissions for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Returns
 
@@ -145,6 +149,8 @@ Updates model permissions for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Body Parameters
 

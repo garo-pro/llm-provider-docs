@@ -352,6 +352,8 @@ Permanently delete a completed or failed video and its stored assets.
 
 - `video_id: string`
 
+  The identifier of the video to delete.
+
 ### Returns
 
 - `id: string`
@@ -398,6 +400,8 @@ Streams the rendered video content for the specified video job.
 
 - `video_id: string`
 
+  The identifier of the video whose media to download.
+
 ### Query Parameters
 
 - `variant: optional "video" or "thumbnail" or "spritesheet"`
@@ -409,6 +413,10 @@ Streams the rendered video content for the specified video job.
   - `"thumbnail"`
 
   - `"spritesheet"`
+
+### Returns
+
+`file`
 
 ### Example
 
@@ -890,6 +898,8 @@ Fetch a character.
 
 - `character_id: string`
 
+  The identifier of the character to retrieve.
+
 ### Returns
 
 - `id: string or null`
@@ -1217,6 +1227,8 @@ Create a remix of a completed video using a refreshed prompt.
 
 - `video_id: string`
 
+  The identifier of the completed video to remix.
+
 ### Body Parameters
 
 - `prompt: string`
@@ -1466,6 +1478,8 @@ Fetch the latest metadata for a generated video.
 ### Path Parameters
 
 - `video_id: string`
+
+  The identifier of the video to retrieve.
 
 ### Returns
 

@@ -555,6 +555,8 @@ Deletes reusable environment configuration and all confidential template inputs.
 
 - `environment_template_id: string`
 
+  The ID of the reusable environment template.
+
   `minLength: 0`, `maxLength: 1048576`
 
 ### Returns
@@ -958,6 +960,8 @@ Retrieves reusable environment configuration without returning confidential valu
 
 - `environment_template_id: string`
 
+  The ID of the reusable environment template.
+
   `minLength: 0`, `maxLength: 1048576`
 
 ### Returns
@@ -1255,6 +1259,8 @@ Updates reusable environment configuration without returning confidential values
 ### Path Parameters
 
 - `environment_template_id: string`
+
+  The ID of the reusable environment template.
 
   `minLength: 0`, `maxLength: 1048576`
 

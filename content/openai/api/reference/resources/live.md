@@ -7568,11 +7568,10 @@ jq -n '{
 
           The unique ID of this additional tools item.
 
-      - `ConfigurationUpdate object { type, id, reasoning }`
+      - `ConfigurationUpdate object { type, id, reasoning, text }`
 
-        An update to the conversation's response configuration. The configuration
-        remains in effect for subsequent responses until it is replaced by another
-        configuration update.
+        An update to the conversation's response configuration. Supply reasoning,
+        text, or both. Each setting stays in effect until a later update replaces it.
 
         - `type: "configuration_update" (default: "configuration_update")`
 
@@ -7606,6 +7605,58 @@ jq -n '{
             - `"xhigh"`
 
             - `"max"`
+
+        - `text: optional object { format }`
+
+          The text output configuration for subsequent responses.
+
+          - `format: ResponseFormatText or ResponseFormatTextJSONSchemaConfig`
+
+            Use a JSON schema for structured output or text to return to plain text.
+
+            - `ResponseFormatText object { type }`
+
+              Default response format. Used to generate text responses.
+
+              - `type: "text"`
+
+                The type of response format being defined. Always `text`.
+
+                - `"text"`
+
+            - `ResponseFormatTextJSONSchemaConfig object { name, schema, type, 2 more }`
+
+              JSON Schema response format. Used to generate structured JSON responses.
+              Learn more about [Structured Outputs](/api/docs/guides/structured-outputs).
+
+              - `name: string`
+
+                The name of the response format. Must be a-z, A-Z, 0-9, or contain
+                underscores and dashes, with a maximum length of 64.
+
+              - `schema: map[unknown]`
+
+                The schema for the response format, described as a JSON Schema object.
+                Learn how to build JSON schemas [here](https://json-schema.org/).
+
+              - `type: "json_schema"`
+
+                The type of response format being defined. Always `json_schema`.
+
+                - `"json_schema"`
+
+              - `description: optional string`
+
+                A description of what the response format is for, used by the model to
+                determine how to respond in the format.
+
+              - `strict: optional boolean or null (default: false)`
+
+                Whether to enable strict schema adherence when generating the output.
+                If set to true, the model will always follow the exact schema defined
+                in the `schema` field. Only a subset of JSON Schema is supported when
+                `strict` is `true`. To learn more, read the [Structured Outputs
+                guide](/api/docs/guides/structured-outputs).
 
       - `Reasoning object { id, summary, type, 3 more }`
 
@@ -18374,11 +18425,10 @@ jq -n '{
 
         The unique ID of this additional tools item.
 
-    - `ConfigurationUpdate object { type, id, reasoning }`
+    - `ConfigurationUpdate object { type, id, reasoning, text }`
 
-      An update to the conversation's response configuration. The configuration
-      remains in effect for subsequent responses until it is replaced by another
-      configuration update.
+      An update to the conversation's response configuration. Supply reasoning,
+      text, or both. Each setting stays in effect until a later update replaces it.
 
       - `type: "configuration_update" (default: "configuration_update")`
 
@@ -18412,6 +18462,58 @@ jq -n '{
           - `"xhigh"`
 
           - `"max"`
+
+      - `text: optional object { format }`
+
+        The text output configuration for subsequent responses.
+
+        - `format: ResponseFormatText or ResponseFormatTextJSONSchemaConfig`
+
+          Use a JSON schema for structured output or text to return to plain text.
+
+          - `ResponseFormatText object { type }`
+
+            Default response format. Used to generate text responses.
+
+            - `type: "text"`
+
+              The type of response format being defined. Always `text`.
+
+              - `"text"`
+
+          - `ResponseFormatTextJSONSchemaConfig object { name, schema, type, 2 more }`
+
+            JSON Schema response format. Used to generate structured JSON responses.
+            Learn more about [Structured Outputs](/api/docs/guides/structured-outputs).
+
+            - `name: string`
+
+              The name of the response format. Must be a-z, A-Z, 0-9, or contain
+              underscores and dashes, with a maximum length of 64.
+
+            - `schema: map[unknown]`
+
+              The schema for the response format, described as a JSON Schema object.
+              Learn how to build JSON schemas [here](https://json-schema.org/).
+
+            - `type: "json_schema"`
+
+              The type of response format being defined. Always `json_schema`.
+
+              - `"json_schema"`
+
+            - `description: optional string`
+
+              A description of what the response format is for, used by the model to
+              determine how to respond in the format.
+
+            - `strict: optional boolean or null (default: false)`
+
+              Whether to enable strict schema adherence when generating the output.
+              If set to true, the model will always follow the exact schema defined
+              in the `schema` field. Only a subset of JSON Schema is supported when
+              `strict` is `true`. To learn more, read the [Structured Outputs
+              guide](/api/docs/guides/structured-outputs).
 
     - `Reasoning object { id, summary, type, 3 more }`
 
@@ -38102,11 +38204,10 @@ Use Bearer Auth (header Authorization).
 
           The unique ID of this additional tools item.
 
-      - `ConfigurationUpdate object { type, id, reasoning }`
+      - `ConfigurationUpdate object { type, id, reasoning, text }`
 
-        An update to the conversation's response configuration. The configuration
-        remains in effect for subsequent responses until it is replaced by another
-        configuration update.
+        An update to the conversation's response configuration. Supply reasoning,
+        text, or both. Each setting stays in effect until a later update replaces it.
 
         - `type: "configuration_update" (default: "configuration_update")`
 
@@ -38140,6 +38241,58 @@ Use Bearer Auth (header Authorization).
             - `"xhigh"`
 
             - `"max"`
+
+        - `text: optional object { format }`
+
+          The text output configuration for subsequent responses.
+
+          - `format: ResponseFormatText or ResponseFormatTextJSONSchemaConfig`
+
+            Use a JSON schema for structured output or text to return to plain text.
+
+            - `ResponseFormatText object { type }`
+
+              Default response format. Used to generate text responses.
+
+              - `type: "text"`
+
+                The type of response format being defined. Always `text`.
+
+                - `"text"`
+
+            - `ResponseFormatTextJSONSchemaConfig object { name, schema, type, 2 more }`
+
+              JSON Schema response format. Used to generate structured JSON responses.
+              Learn more about [Structured Outputs](/api/docs/guides/structured-outputs).
+
+              - `name: string`
+
+                The name of the response format. Must be a-z, A-Z, 0-9, or contain
+                underscores and dashes, with a maximum length of 64.
+
+              - `schema: map[unknown]`
+
+                The schema for the response format, described as a JSON Schema object.
+                Learn how to build JSON schemas [here](https://json-schema.org/).
+
+              - `type: "json_schema"`
+
+                The type of response format being defined. Always `json_schema`.
+
+                - `"json_schema"`
+
+              - `description: optional string`
+
+                A description of what the response format is for, used by the model to
+                determine how to respond in the format.
+
+              - `strict: optional boolean or null (default: false)`
+
+                Whether to enable strict schema adherence when generating the output.
+                If set to true, the model will always follow the exact schema defined
+                in the `schema` field. Only a subset of JSON Schema is supported when
+                `strict` is `true`. To learn more, read the [Structured Outputs
+                guide](/api/docs/guides/structured-outputs).
 
       - `Reasoning object { id, summary, type, 3 more }`
 
@@ -41822,6 +41975,8 @@ Accept an incoming SIP call. Supply session with type live, the model, and start
 
 - `session_id: string`
 
+  Opaque Live session identifier from the creation response or incoming-call webhook. Preserve the returned value unchanged, including its prefix.
+
 ### Body Parameters
 
 - `session: object { model, type, audio, 5 more }`
@@ -43024,6 +43179,10 @@ Get Live session content
 
   `pattern: ^live_[A-Za-z0-9_-]{1,128}$`
 
+### Returns
+
+`file`
+
 ### Example
 
 ```http
@@ -43040,6 +43199,8 @@ Fork a stored Live session onto a new WebRTC connection.
 ### Path Parameters
 
 - `session_id: string`
+
+  The ID of the stored Live session to fork.
 
 ### Body Parameters
 
@@ -43812,6 +43973,8 @@ End a SIP call identified by session_id.
 
 - `session_id: string`
 
+  Opaque Live session identifier from the creation response or incoming-call webhook. Preserve the returned value unchanged, including its prefix.
+
 ### Example
 
 ```http
@@ -43829,6 +43992,8 @@ Transfer a SIP call to another destination. Supply a nonblank target_uri for the
 ### Path Parameters
 
 - `session_id: string`
+
+  Opaque Live session identifier from the creation response or incoming-call webhook. Preserve the returned value unchanged, including its prefix.
 
 ### Body Parameters
 
@@ -43858,6 +44023,8 @@ Reject an incoming SIP call. Send a required SIP rejection status_code between 3
 ### Path Parameters
 
 - `session_id: string`
+
+  Opaque Live session identifier from the creation response or incoming-call webhook. Preserve the returned value unchanged, including its prefix.
 
 ### Body Parameters
 
@@ -48882,11 +49049,10 @@ Use Bearer Auth (header Authorization).
 
           The unique ID of this additional tools item.
 
-      - `ConfigurationUpdate object { type, id, reasoning }`
+      - `ConfigurationUpdate object { type, id, reasoning, text }`
 
-        An update to the conversation's response configuration. The configuration
-        remains in effect for subsequent responses until it is replaced by another
-        configuration update.
+        An update to the conversation's response configuration. Supply reasoning,
+        text, or both. Each setting stays in effect until a later update replaces it.
 
         - `type: "configuration_update" (default: "configuration_update")`
 
@@ -48920,6 +49086,58 @@ Use Bearer Auth (header Authorization).
             - `"xhigh"`
 
             - `"max"`
+
+        - `text: optional object { format }`
+
+          The text output configuration for subsequent responses.
+
+          - `format: ResponseFormatText or ResponseFormatTextJSONSchemaConfig`
+
+            Use a JSON schema for structured output or text to return to plain text.
+
+            - `ResponseFormatText object { type }`
+
+              Default response format. Used to generate text responses.
+
+              - `type: "text"`
+
+                The type of response format being defined. Always `text`.
+
+                - `"text"`
+
+            - `ResponseFormatTextJSONSchemaConfig object { name, schema, type, 2 more }`
+
+              JSON Schema response format. Used to generate structured JSON responses.
+              Learn more about [Structured Outputs](/api/docs/guides/structured-outputs).
+
+              - `name: string`
+
+                The name of the response format. Must be a-z, A-Z, 0-9, or contain
+                underscores and dashes, with a maximum length of 64.
+
+              - `schema: map[unknown]`
+
+                The schema for the response format, described as a JSON Schema object.
+                Learn how to build JSON schemas [here](https://json-schema.org/).
+
+              - `type: "json_schema"`
+
+                The type of response format being defined. Always `json_schema`.
+
+                - `"json_schema"`
+
+              - `description: optional string`
+
+                A description of what the response format is for, used by the model to
+                determine how to respond in the format.
+
+              - `strict: optional boolean or null (default: false)`
+
+                Whether to enable strict schema adherence when generating the output.
+                If set to true, the model will always follow the exact schema defined
+                in the `schema` field. Only a subset of JSON Schema is supported when
+                `strict` is `true`. To learn more, read the [Structured Outputs
+                guide](/api/docs/guides/structured-outputs).
 
       - `Reasoning object { id, summary, type, 3 more }`
 

@@ -12,6 +12,8 @@ Retrieves project data retention controls.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 ### Returns
 
 - `ProjectDataRetention object { object, type }`
@@ -82,6 +84,8 @@ Updates project data retention controls.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project to update.
 
 ### Body Parameters
 

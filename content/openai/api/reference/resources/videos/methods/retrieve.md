@@ -12,6 +12,8 @@ Fetch the latest metadata for a generated video.
 
 - `video_id: string`
 
+  The identifier of the video to retrieve.
+
 ### Returns
 
 - `Video object { id, completed_at, created_at, 10 more }`

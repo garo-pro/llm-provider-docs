@@ -173,6 +173,10 @@ If your ad has been rejected, it violates one of our [ads policies](https://open
 
 Preview an existing ad by ID. The preview expires 24 hours after creation.
 
+The response contains iframe HTML in `data[0].body`. A paused, submitted ad can be previewed; a draft-only ad can't. Identical requests can reuse a saved snapshot without resetting its expiration.
+
+Native Hotel previews are available to approved pilot accounts. They select one review-approved property matching the ad group's saved Hotel Set and render a Hotel card. The request takes no property ID or filter overrides. See [Preview a Hotel ad](https://developers.openai.com/ads/hotel-feeds#preview-a-hotel-ad) for the response and eligibility requirements.
+
 `POST /ads/{ad_id}/preview`
 
 ```bash

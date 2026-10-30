@@ -10,6 +10,8 @@ Modify a certificate. Note that only the name can be modified.
 
 - `certificate_id: string`
 
+  Unique ID of the certificate to modify.
+
 ### Body Parameters
 
 - `name: optional string`

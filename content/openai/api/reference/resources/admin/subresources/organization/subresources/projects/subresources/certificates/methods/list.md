@@ -10,6 +10,8 @@ List certificates for this project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Query Parameters
 
 - `after: optional string`

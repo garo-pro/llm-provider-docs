@@ -3,6 +3,12 @@ Title: Anthropic’s Responsible Scaling Policy
 URL Source: https://www.anthropic.com/responsible-scaling-policy
 
 Markdown Content:
+# Anthropic’s Responsible Scaling Policy
+
+Anticipating and securing against emerging threats that accompany increasingly powerful models
+
+Last updated
+
 As frontier AI models advance, we believe they will bring about transformative benefits for our society and economy. AI could accelerate scientific discoveries, revolutionize healthcare, enhance our education system, and create entirely new domains for human creativity and innovation. Frontier AI models also, however, present new challenges and risks that warrant careful study and effective safeguards.
 
 In September 2023, we released the first version of our Responsible Scaling Policy (RSP). We believe that risk governance in this rapidly evolving domain should be proportional, iterative, and exportable. In that spirit, we have continued to refine the RSP over time and will use this page to inform the public of any developments.

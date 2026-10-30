@@ -12,6 +12,8 @@ Permanently delete a completed or failed video and its stored assets.
 
 - `video_id: string`
 
+  The identifier of the video to delete.
+
 ### Returns
 
 - `id: string`

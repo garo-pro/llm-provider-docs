@@ -12,6 +12,8 @@ Delete a project's hard spend limit.
 
 - `project_id: string`
 
+  The ID of the project whose hard spend limit is being managed.
+
 ### Returns
 
 - `ProjectSpendLimitDeleted object { deleted, object }`
@@ -71,6 +73,8 @@ Get a project's hard spend limit.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project whose hard spend limit is being managed.
 
 ### Returns
 
@@ -182,6 +186,8 @@ Create or replace a project's hard spend limit.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project whose hard spend limit is being managed.
 
 ### Body Parameters
 

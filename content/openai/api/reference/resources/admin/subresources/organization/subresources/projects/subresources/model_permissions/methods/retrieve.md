@@ -10,6 +10,8 @@ Returns model permissions for a project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Returns
 
 - `ProjectModelPermissions object { mode, model_ids, object }`

@@ -12,6 +12,8 @@ Creates a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 ### Body Parameters
 
 - `currency: "USD"`
@@ -183,7 +185,11 @@ Deletes a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `alert_id: string`
+
+  The ID of the spend alert to delete.
 
 ### Returns
 
@@ -250,6 +256,8 @@ Lists project spend alerts.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project to inspect.
 
 ### Query Parameters
 
@@ -420,7 +428,11 @@ Retrieves a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `alert_id: string`
+
+  The ID of the spend alert to retrieve.
 
 ### Returns
 
@@ -533,7 +545,11 @@ Updates a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `alert_id: string`
+
+  The ID of the spend alert to update.
 
 ### Body Parameters
 

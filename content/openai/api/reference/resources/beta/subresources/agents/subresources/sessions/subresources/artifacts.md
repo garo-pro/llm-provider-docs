@@ -12,11 +12,21 @@ Downloads immutable session artifact bytes after the execution environment expir
 
 - `session_id: string`
 
+  The ID of the session that owns the artifact.
+
   `minLength: 0`, `maxLength: 1048576`
 
 - `artifact_id: string`
 
+  The immutable session artifact ID.
+
   `minLength: 0`, `maxLength: 1048576`
+
+### Returns
+
+`file`
+
+Content type: `application/octet-stream`
 
 ### Example
 
@@ -36,9 +46,13 @@ Deletes an immutable session artifact without deleting its live environment file
 
 - `session_id: string`
 
+  The ID of the session that owns the artifact.
+
   `minLength: 0`, `maxLength: 1048576`
 
 - `artifact_id: string`
+
+  The immutable session artifact ID.
 
   `minLength: 0`, `maxLength: 1048576`
 
@@ -92,6 +106,8 @@ Lists immutable artifacts published by completed hosted session turns. See [sess
 ### Path Parameters
 
 - `session_id: string`
+
+  The ID of the session.
 
   `minLength: 0`, `maxLength: 1048576`
 
@@ -246,9 +262,13 @@ Retrieves immutable metadata for one durable session artifact. See [session arti
 
 - `session_id: string`
 
+  The ID of the session that owns the artifact.
+
   `minLength: 0`, `maxLength: 1048576`
 
 - `artifact_id: string`
+
+  The immutable session artifact ID.
 
   `minLength: 0`, `maxLength: 1048576`
 

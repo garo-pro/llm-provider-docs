@@ -10,6 +10,8 @@ Lists project spend alerts.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 ### Query Parameters
 
 - `after: optional string`

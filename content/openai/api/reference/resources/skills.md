@@ -97,6 +97,8 @@ Delete a skill by its ID.
 
 - `skill_id: string`
 
+  The identifier of the skill to delete.
+
 ### Returns
 
 - `DeletedSkill object { id, deleted, object }`
@@ -250,6 +252,8 @@ Get a skill by its ID.
 
 - `skill_id: string`
 
+  The identifier of the skill to retrieve.
+
 ### Returns
 
 - `Skill object { id, created_at, default_version, 4 more }`
@@ -316,6 +320,8 @@ Update the default version pointer for a skill.
 ### Path Parameters
 
 - `skill_id: string`
+
+  The identifier of the skill.
 
 ### Body Parameters
 
@@ -504,6 +510,12 @@ Download a skill zip bundle by its ID.
 
 - `skill_id: string`
 
+  The identifier of the skill to download.
+
+### Returns
+
+`file`
+
 ### Example
 
 ```http
@@ -522,6 +534,8 @@ Create a new immutable skill version.
 ### Path Parameters
 
 - `skill_id: string`
+
+  The identifier of the skill to version.
 
 ### Body Parameters
 
@@ -616,6 +630,8 @@ Delete a skill version.
 
 - `skill_id: string`
 
+  The identifier of the skill.
+
 - `version: string`
 
   The skill version number.
@@ -664,6 +680,8 @@ List skill versions for a skill.
 ### Path Parameters
 
 - `skill_id: string`
+
+  The identifier of the skill.
 
 ### Query Parameters
 
@@ -781,6 +799,8 @@ Get a specific skill version.
 ### Path Parameters
 
 - `skill_id: string`
+
+  The identifier of the skill.
 
 - `version: string`
 
@@ -967,9 +987,15 @@ Download a skill version zip bundle.
 
 - `skill_id: string`
 
+  The identifier of the skill.
+
 - `version: string`
 
   The skill version number.
+
+### Returns
+
+`file`
 
 ### Example
 

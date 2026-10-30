@@ -14,6 +14,10 @@ Retrieve Container File Content
 
 - `file_id: string`
 
+### Returns
+
+`file`
+
 ### Example
 
 ```http

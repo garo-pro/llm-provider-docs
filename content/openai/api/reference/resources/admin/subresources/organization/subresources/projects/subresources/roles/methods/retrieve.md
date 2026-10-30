@@ -10,7 +10,11 @@ Retrieves a project role.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `role_id: string`
+
+  The ID of the role to retrieve.
 
 ### Returns
 

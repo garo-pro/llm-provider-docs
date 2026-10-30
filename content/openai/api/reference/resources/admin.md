@@ -4576,6 +4576,8 @@ The certificate must be inactive for the organization and all projects.
 
 - `certificate_id: string`
 
+  Unique ID of the certificate to delete.
+
 ### Returns
 
 - `id: string`
@@ -4771,6 +4773,8 @@ You can get a certificate regardless of whether it is active or not.
 
 - `certificate_id: string`
 
+  Unique ID of the certificate to retrieve.
+
 ### Query Parameters
 
 - `include: optional array of "content"`
@@ -4891,6 +4895,8 @@ Modify a certificate. Note that only the name can be modified.
 ### Path Parameters
 
 - `certificate_id: string`
+
+  Unique ID of the certificate to modify.
 
 ### Body Parameters
 
@@ -7344,6 +7350,8 @@ Deletes a group from the organization.
 
 - `group_id: string`
 
+  The ID of the group to delete.
+
 ### Returns
 
 - `id: string`
@@ -7532,6 +7540,8 @@ Retrieves a group.
 
 - `group_id: string`
 
+  The ID of the group to retrieve.
+
 ### Returns
 
 - `Group object { id, created_at, group_type, 2 more }`
@@ -7612,6 +7622,8 @@ Updates a group's information.
 ### Path Parameters
 
 - `group_id: string`
+
+  The ID of the group to update.
 
 ### Body Parameters
 
@@ -7775,6 +7787,8 @@ Assigns an organization role to a group within the organization.
 
 - `group_id: string`
 
+  The ID of the group that should receive the organization role.
+
 ### Body Parameters
 
 - `role_id: string`
@@ -7936,7 +7950,11 @@ Unassigns an organization role from a group within the organization.
 
 - `group_id: string`
 
+  The ID of the group to modify.
+
 - `role_id: string`
+
+  The ID of the organization role to remove from the group.
 
 ### Returns
 
@@ -7991,6 +8009,8 @@ Lists the organization roles assigned to a group within the organization.
 ### Path Parameters
 
 - `group_id: string`
+
+  The ID of the group whose organization role assignments you want to list.
 
 ### Query Parameters
 
@@ -8188,7 +8208,11 @@ Retrieves an organization role assigned to a group.
 
 - `group_id: string`
 
+  The ID of the group to inspect.
+
 - `role_id: string`
+
+  The ID of the organization role to retrieve for the group.
 
 ### Returns
 
@@ -8541,6 +8565,8 @@ Adds a user to a group.
 
 - `group_id: string`
 
+  The ID of the group to update.
+
 ### Body Parameters
 
 - `user_id: string`
@@ -8615,7 +8641,11 @@ Removes a user from a group.
 
 - `group_id: string`
 
+  The ID of the group to update.
+
 - `user_id: string`
+
+  The ID of the user to remove from the group.
 
 ### Returns
 
@@ -8672,6 +8702,8 @@ Lists the users assigned to a group.
 ### Path Parameters
 
 - `group_id: string`
+
+  The ID of the group to inspect.
 
 ### Query Parameters
 
@@ -8784,7 +8816,11 @@ Retrieves a user in a group.
 
 - `group_id: string`
 
+  The ID of the group to inspect.
+
 - `user_id: string`
+
+  The ID of the user to retrieve from the group.
 
 ### Returns
 
@@ -9147,6 +9183,8 @@ Delete an invite. If the invite has already been accepted, it cannot be deleted.
 
 - `invite_id: string`
 
+  The ID of the invite to delete.
+
 ### Returns
 
 - `id: string`
@@ -9377,6 +9415,8 @@ Retrieves an invite.
 
 - `invite_id: string`
 
+  The ID of the invite to retrieve.
+
 ### Returns
 
 - `Invite object { id, created_at, email, 6 more }`
@@ -9600,6 +9640,8 @@ Archives a project in the organization. Archived projects cannot be used or upda
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Returns
 
@@ -10069,6 +10111,8 @@ Retrieves a project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Returns
 
 - `Project object { id, created_at, object, 5 more }`
@@ -10195,6 +10239,8 @@ Modifies a project in the organization.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Body Parameters
 
@@ -10447,7 +10493,11 @@ Returns confirmation of the key deletion.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `api_key_id: string`
+
+  The ID of the API key.
 
 ### Returns
 
@@ -10504,6 +10554,8 @@ Returns a list of API keys in the project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Query Parameters
 
@@ -10737,7 +10789,11 @@ Retrieves an API key in the project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `api_key_id: string`
+
+  The ID of the API key.
 
 ### Returns
 
@@ -10943,7 +10999,11 @@ the new request. The response contains only the redacted key, not its secret.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `api_key_id: string`
+
+  The ID of the API key.
 
 ### Body Parameters
 
@@ -11278,6 +11338,8 @@ You can atomically and idempotently activate up to 10 certificates at a time.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Body Parameters
 
 - `certificate_ids: array of string`
@@ -11420,6 +11482,8 @@ idempotently deactivate up to 10 certificates at a time.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Body Parameters
 
 - `certificate_ids: array of string`
@@ -11560,6 +11624,8 @@ List certificates for this project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Query Parameters
 
@@ -11839,6 +11905,8 @@ Retrieves project data retention controls.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 ### Returns
 
 - `ProjectDataRetention object { object, type }`
@@ -11909,6 +11977,8 @@ Updates project data retention controls.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project to update.
 
 ### Body Parameters
 
@@ -12038,6 +12108,8 @@ Grants a group access to a project.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 ### Body Parameters
 
 - `group_id: string`
@@ -12146,7 +12218,11 @@ Revokes a group's access to a project.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `group_id: string`
+
+  The ID of the group to remove from the project.
 
 ### Returns
 
@@ -12203,6 +12279,8 @@ Lists the groups that have access to a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project to inspect.
 
 ### Query Parameters
 
@@ -12341,7 +12419,11 @@ Retrieves a project's group.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 - `group_id: string`
+
+  The ID of the group to retrieve.
 
 ### Query Parameters
 
@@ -12500,7 +12582,11 @@ Assigns a project role to a group within a project.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `group_id: string`
+
+  The ID of the group that should receive the project role.
 
 ### Body Parameters
 
@@ -12663,9 +12749,15 @@ Unassigns a project role from a group within a project.
 
 - `project_id: string`
 
+  The ID of the project to modify.
+
 - `group_id: string`
 
+  The ID of the group whose project role assignment should be removed.
+
 - `role_id: string`
+
+  The ID of the project role to remove from the group.
 
 ### Returns
 
@@ -12721,7 +12813,11 @@ Lists the project roles assigned to a group within a project.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 - `group_id: string`
+
+  The ID of the group to inspect.
 
 ### Query Parameters
 
@@ -12919,9 +13015,15 @@ Retrieves a project role assigned to a group.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 - `group_id: string`
 
+  The ID of the group to inspect.
+
 - `role_id: string`
+
+  The ID of the project role to retrieve for the group.
 
 ### Returns
 
@@ -13274,6 +13376,8 @@ Returns hosted tool permissions for a project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Returns
 
 - `ProjectHostedToolPermissions object { code_interpreter, file_search, image_generation, 2 more }`
@@ -13388,6 +13492,8 @@ Updates hosted tool permissions for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Body Parameters
 
@@ -13606,6 +13712,8 @@ Deletes model permissions for a project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Returns
 
 - `ProjectModelPermissionsDeleted object { deleted, object }`
@@ -13665,6 +13773,8 @@ Returns model permissions for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Returns
 
@@ -13739,6 +13849,8 @@ Updates model permissions for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Body Parameters
 
@@ -13883,6 +13995,8 @@ Returns the rate limits per model for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Query Parameters
 
@@ -14033,7 +14147,11 @@ Updates a project rate limit.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `rate_limit_id: string`
+
+  The ID of the rate limit.
 
 ### Body Parameters
 
@@ -14225,6 +14343,8 @@ Creates a custom role for a project.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 ### Body Parameters
 
 - `permissions: array of string`
@@ -14348,7 +14468,11 @@ Deletes a custom role from a project.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `role_id: string`
+
+  The ID of the role to delete.
 
 ### Returns
 
@@ -14411,6 +14535,8 @@ Lists the roles configured for a project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project to inspect.
 
 ### Query Parameters
 
@@ -14554,7 +14680,11 @@ Retrieves a project role.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `role_id: string`
+
+  The ID of the role to retrieve.
 
 ### Returns
 
@@ -14650,7 +14780,11 @@ Updates an existing project role.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `role_id: string`
+
+  The ID of the role to update.
 
 ### Body Parameters
 
@@ -14794,6 +14928,8 @@ Creates a new service account in the project. By default, this also returns an u
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Body Parameters
 
 - `name: string`
@@ -14930,7 +15066,11 @@ is archived (archived projects have no service accounts).
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `service_account_id: string`
+
+  The ID of the service account.
 
 ### Returns
 
@@ -14987,6 +15127,8 @@ Returns a list of service accounts in the project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Query Parameters
 
@@ -15107,7 +15249,11 @@ Retrieves a service account in the project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `service_account_id: string`
+
+  The ID of the service account.
 
 ### Returns
 
@@ -15194,7 +15340,11 @@ Updates a service account in the project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `service_account_id: string`
+
+  The ID of the service account.
 
 ### Body Parameters
 
@@ -15548,6 +15698,8 @@ Creates a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 ### Body Parameters
 
 - `currency: "USD"`
@@ -15719,7 +15871,11 @@ Deletes a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `alert_id: string`
+
+  The ID of the spend alert to delete.
 
 ### Returns
 
@@ -15786,6 +15942,8 @@ Lists project spend alerts.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project to inspect.
 
 ### Query Parameters
 
@@ -15956,7 +16114,11 @@ Retrieves a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `alert_id: string`
+
+  The ID of the spend alert to retrieve.
 
 ### Returns
 
@@ -16069,7 +16231,11 @@ Updates a project spend alert.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `alert_id: string`
+
+  The ID of the spend alert to update.
 
 ### Body Parameters
 
@@ -16316,6 +16482,8 @@ Delete a project's hard spend limit.
 
 - `project_id: string`
 
+  The ID of the project whose hard spend limit is being managed.
+
 ### Returns
 
 - `ProjectSpendLimitDeleted object { deleted, object }`
@@ -16375,6 +16543,8 @@ Get a project's hard spend limit.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project whose hard spend limit is being managed.
 
 ### Returns
 
@@ -16486,6 +16656,8 @@ Create or replace a project's hard spend limit.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project whose hard spend limit is being managed.
 
 ### Body Parameters
 
@@ -16707,6 +16879,8 @@ Adds a user to the project. Users must already be members of the organization to
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Body Parameters
 
 - `role: string`
@@ -16816,7 +16990,11 @@ archived (archived projects have no users).
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `user_id: string`
+
+  The ID of the user.
 
 ### Returns
 
@@ -16873,6 +17051,8 @@ Returns a list of users in the project.
 ### Path Parameters
 
 - `project_id: string`
+
+  The ID of the project.
 
 ### Query Parameters
 
@@ -16991,7 +17171,11 @@ Retrieves a user in the project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `user_id: string`
+
+  The ID of the user.
 
 ### Returns
 
@@ -17078,7 +17262,11 @@ Modifies a user's role in the project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `user_id: string`
+
+  The ID of the user.
 
 ### Body Parameters
 
@@ -17226,7 +17414,11 @@ Assigns a project role to a user within a project.
 
 - `project_id: string`
 
+  The ID of the project to update.
+
 - `user_id: string`
+
+  The ID of the user that should receive the project role.
 
 ### Body Parameters
 
@@ -17499,9 +17691,15 @@ Unassigns a project role from a user within a project.
 
 - `project_id: string`
 
+  The ID of the project to modify.
+
 - `user_id: string`
 
+  The ID of the user whose project role assignment should be removed.
+
 - `role_id: string`
+
+  The ID of the project role to remove from the user.
 
 ### Returns
 
@@ -17557,7 +17755,11 @@ Lists the project roles assigned to a user within a project.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 - `user_id: string`
+
+  The ID of the user to inspect.
 
 ### Query Parameters
 
@@ -17755,9 +17957,15 @@ Retrieves a project role assigned to a user.
 
 - `project_id: string`
 
+  The ID of the project to inspect.
+
 - `user_id: string`
 
+  The ID of the user to inspect.
+
 - `role_id: string`
+
+  The ID of the project role to retrieve for the user.
 
 ### Returns
 
@@ -18309,6 +18517,8 @@ Deletes a custom role from the organization.
 
 - `role_id: string`
 
+  The ID of the role to delete.
+
 ### Returns
 
 - `id: string`
@@ -18509,6 +18719,8 @@ Retrieves an organization role.
 
 - `role_id: string`
 
+  The ID of the role to retrieve.
+
 ### Returns
 
 - `Role object { id, description, name, 4 more }`
@@ -18602,6 +18814,8 @@ Updates an existing organization role.
 ### Path Parameters
 
 - `role_id: string`
+
+  The ID of the role to update.
 
 ### Body Parameters
 
@@ -18948,6 +19162,8 @@ Deletes an organization spend alert.
 
 - `alert_id: string`
 
+  The ID of the spend alert to delete.
+
 ### Returns
 
 - `OrganizationSpendAlertDeleted object { id, deleted, object }`
@@ -19179,6 +19395,8 @@ Retrieves an organization spend alert.
 
 - `alert_id: string`
 
+  The ID of the spend alert to retrieve.
+
 ### Returns
 
 - `OrganizationSpendAlert object { id, currency, interval, 3 more }`
@@ -19289,6 +19507,8 @@ Updates an organization spend alert.
 ### Path Parameters
 
 - `alert_id: string`
+
+  The ID of the spend alert to update.
 
 ### Body Parameters
 
@@ -32636,6 +32856,8 @@ Deletes a user from the organization.
 
 - `user_id: string`
 
+  The ID of the user.
+
 ### Returns
 
 - `id: string`
@@ -32915,6 +33137,8 @@ Retrieves a user by their identifier.
 
 - `user_id: string`
 
+  The ID of the user.
+
 ### Returns
 
 - `OrganizationUser object { id, added_at, object, 13 more }`
@@ -33103,6 +33327,8 @@ Modifies a user's role in the organization.
 ### Path Parameters
 
 - `user_id: string`
+
+  The ID of the user.
 
 ### Body Parameters
 
@@ -33442,6 +33668,8 @@ Assigns an organization role to a user within the organization.
 
 - `user_id: string`
 
+  The ID of the user that should receive the organization role.
+
 ### Body Parameters
 
 - `role_id: string`
@@ -33713,7 +33941,11 @@ Unassigns an organization role from a user within the organization.
 
 - `user_id: string`
 
+  The ID of the user to modify.
+
 - `role_id: string`
+
+  The ID of the organization role to remove from the user.
 
 ### Returns
 
@@ -33768,6 +34000,8 @@ Lists the organization roles assigned to a user within the organization.
 ### Path Parameters
 
 - `user_id: string`
+
+  The ID of the user to inspect.
 
 ### Query Parameters
 
@@ -33965,7 +34199,11 @@ Retrieves an organization role assigned to a user.
 
 - `user_id: string`
 
+  The ID of the user to inspect.
+
 - `role_id: string`
+
+  The ID of the organization role to retrieve for the user.
 
 ### Returns
 

@@ -10,6 +10,8 @@ Create a new immutable skill version.
 
 - `skill_id: string`
 
+  The identifier of the skill to version.
+
 ### Body Parameters
 
 - `files: array of string or string`

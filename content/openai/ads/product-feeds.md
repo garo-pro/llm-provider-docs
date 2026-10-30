@@ -330,6 +330,8 @@ The campaign owns the feed selection. An ad group inherits that feed. If you omi
 
 ### Preview matching products
 
+The generic `POST /feeds/{feed_id}/items/query` also supports Product and Hotel inventory. It excludes deleted, expired, and ads-ineligible items without requiring review approval. See [item queries and pagination](https://developers.openai.com/ads/hotel-feeds#query-hotel-items). The Product-specific query in this section retains its existing behavior; the two queries can return different results.
+
 Before creating or updating an ad group, query the feed with the filters you plan to use. This request selects Acme products priced at 100 major currency units or less:
 
 ```bash

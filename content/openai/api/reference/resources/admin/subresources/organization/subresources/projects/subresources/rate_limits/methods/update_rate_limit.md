@@ -10,7 +10,11 @@ Updates a project rate limit.
 
 - `project_id: string`
 
+  The ID of the project.
+
 - `rate_limit_id: string`
+
+  The ID of the rate limit.
 
 ### Body Parameters
 

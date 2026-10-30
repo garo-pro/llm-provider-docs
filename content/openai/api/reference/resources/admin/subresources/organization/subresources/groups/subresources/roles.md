@@ -12,6 +12,8 @@ Assigns an organization role to a group within the organization.
 
 - `group_id: string`
 
+  The ID of the group that should receive the organization role.
+
 ### Body Parameters
 
 - `role_id: string`
@@ -173,7 +175,11 @@ Unassigns an organization role from a group within the organization.
 
 - `group_id: string`
 
+  The ID of the group to modify.
+
 - `role_id: string`
+
+  The ID of the organization role to remove from the group.
 
 ### Returns
 
@@ -228,6 +234,8 @@ Lists the organization roles assigned to a group within the organization.
 ### Path Parameters
 
 - `group_id: string`
+
+  The ID of the group whose organization role assignments you want to list.
 
 ### Query Parameters
 
@@ -425,7 +433,11 @@ Retrieves an organization role assigned to a group.
 
 - `group_id: string`
 
+  The ID of the group to inspect.
+
 - `role_id: string`
+
+  The ID of the organization role to retrieve for the group.
 
 ### Returns
 

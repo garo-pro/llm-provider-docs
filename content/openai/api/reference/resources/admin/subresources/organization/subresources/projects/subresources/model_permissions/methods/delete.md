@@ -10,6 +10,8 @@ Deletes model permissions for a project.
 
 - `project_id: string`
 
+  The ID of the project.
+
 ### Returns
 
 - `ProjectModelPermissionsDeleted object { deleted, object }`

@@ -3,6 +3,10 @@ Title: Anthropic’s Transparency Hub
 URL Source: https://www.anthropic.com/transparency
 
 Markdown Content:
+# Anthropic’s Transparency Hub
+
+A look at Anthropic's key processes, programs, and practices for responsible AI development.
+
 ### Model Report
 
 October 2, 2026
@@ -1583,3 +1587,23 @@ Our main area of focus for autonomy evaluations is whether models can substantia
 For cyber evaluations, we are mainly concerned with whether or not models can help unsophisticated non-state actors in their ability to substantially increase the scale of cyberattacks or frequency of destructive cyberattacks. Although potential uplift in cyber could lead to risk, we are currently uncertain about whether such risk crosses the catastrophic threshold in expectation. We are working to refine our understanding of this domain.
 
 In addition, we have developed a series of realistic cyber challenges in collaboration with expert partners. Claude 3.7 Sonnet succeeded in 13/23 (56%) easy tasks and in 4/13 (30%) medium difficulty evaluations. Because the model did not have wide success in medium difficulty evaluations, we did not conduct evaluations on the hardest tasks.
+
+## Related content
+
+### [RSP Updates](https://www.anthropic.com/rsp-updates)
+
+Overview of past capability and safeguard assessments, future plans, and other program updates.
+
+[Read more](https://www.anthropic.com/rsp-updates)
+
+### [Trust center](https://trust.anthropic.com/)
+
+This page acts as an overview to demonstrate our commitment to compliance and security.
+
+[Read more](https://trust.anthropic.com/)
+
+### [Developer Documentation](https://docs.anthropic.com/en/home)
+
+Learn how to get started with the Anthropic API and Claude with our user guides, release notes, and system prompts.
+
+[Read more](https://docs.anthropic.com/en/home)

@@ -29,7 +29,7 @@ For example, an analyst might investigate the impact of the Federal Reserve’s 
 
 Linsky continued, “Our Investment Analyst Assistant also enables the editing of code in place, which lets our analysts choose when to leverage Claude, or when to make the simple change themselves. This enables quicker loops and lets the Investment Analyst Assistant iterate on the updated codebase; something that many other chat-style assistants simply don’t offer.”**Getting started with Claude on Amazon Bedrock**
 
-We’re pleased to provide even more of the AWS community with access to Claude, and to contribute our technical team’s expertise towards responsible innovation on the Amazon Bedrock service. Get started with [Claude on Amazon Bedrock](https://claude.com/amazon-bedrock) today.
+We’re pleased to provide even more of the AWS community with access to Claude, and to contribute our technical team’s expertise towards responsible innovation on the Amazon Bedrock service. Get started with [Claude on Amazon Bedrock](https://claude.com/partners/claude-on-aws) today.
 
 Already set up on Amazon Bedrock? Visit our [documentation page](https://docs.anthropic.com/claude/docs/claude-on-amazon-bedrock) for developer resources, prompt engineering guidance, and more.
 
