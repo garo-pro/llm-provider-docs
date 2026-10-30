@@ -10,6 +10,8 @@ Saves an active automation without invoking it immediately.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `create_automation_params: AutomationScheduleParam`
 
   Creates an automation without invoking it immediately.
@@ -6042,6 +6044,8 @@ Updates supplied fields; target and metadata replace the whole field.
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `expression: optional string`
 

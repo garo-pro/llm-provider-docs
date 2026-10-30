@@ -10,6 +10,8 @@ Creates reusable environment configuration without returning confidential setup 
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `capability_directories: optional array of string or null`
 
   Directories that contain capabilities exposed to the agent. Defaults to an empty list.
@@ -1265,6 +1267,8 @@ Updates reusable environment configuration without returning confidential values
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `capability_directories: optional array of string or null`
 

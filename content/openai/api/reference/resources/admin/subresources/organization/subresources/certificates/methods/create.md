@@ -10,6 +10,8 @@ Organizations can upload up to 50 certificates.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `certificate: string`
 
   The certificate content in PEM format

@@ -12,6 +12,8 @@ Creates a reusable agent without storing credentials. See [agent configuration](
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `model: string`
 
   The model to use for the agent. The requested model name is preserved.
@@ -2045,6 +2047,8 @@ Updates a reusable agent. See [agent configuration](/api/docs/guides/agents-api/
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `compaction: optional object { async }  or null`
 
@@ -5270,7 +5274,7 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
 ### Agent Session
 
-- `AgentSession object { id, agent, created_at, 9 more }`
+- `AgentSession object { id, agent, created_at, 10 more }`
 
   A Managed Agents session.
 
@@ -6231,6 +6235,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
     The IDs of vaults made available to the session.
 
     `minItems: 0`, `maxItems: 2000`
+
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
 
 ### Agent Session Assistant Message
 
@@ -7281,6 +7293,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The IDs of vaults made available to the session.
 
       `minItems: 0`, `maxItems: 2000`
+
+    - `review: optional "none" or "auto_review"`
+
+      Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+      - `"none"`
+
+      - `"auto_review"`
 
   - `type: "agent.session.created" (default: "agent.session.created")`
 
@@ -9451,6 +9471,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
         The IDs of vaults made available to the session.
 
         `minItems: 0`, `maxItems: 2000`
+
+      - `review: optional "none" or "auto_review"`
+
+        Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+        - `"none"`
+
+        - `"auto_review"`
 
     - `type: "agent.session.created" (default: "agent.session.created")`
 
@@ -12926,6 +12954,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       `minItems: 0`, `maxItems: 2000`
 
+    - `review: optional "none" or "auto_review"`
+
+      Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+      - `"none"`
+
+      - `"auto_review"`
+
   - `type: "agent.session.failed" (default: "agent.session.failed")`
 
     The type of the object. Always `agent.session.failed`.
@@ -13906,6 +13942,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       `minItems: 0`, `maxItems: 2000`
 
+    - `review: optional "none" or "auto_review"`
+
+      Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+      - `"none"`
+
+      - `"auto_review"`
+
   - `type: "agent.session.idle" (default: "agent.session.idle")`
 
     The type of the object. Always `agent.session.idle`.
@@ -14885,6 +14929,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The IDs of vaults made available to the session.
 
       `minItems: 0`, `maxItems: 2000`
+
+    - `review: optional "none" or "auto_review"`
+
+      Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+      - `"none"`
+
+      - `"auto_review"`
 
   - `type: "agent.session.in_progress" (default: "agent.session.in_progress")`
 
@@ -17365,6 +17417,14 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The IDs of vaults made available to the session.
 
       `minItems: 0`, `maxItems: 2000`
+
+    - `review: optional "none" or "auto_review"`
+
+      Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+      - `"none"`
+
+      - `"auto_review"`
 
   - `type: "agent.session.requires_action" (default: "agent.session.requires_action")`
 
@@ -24592,6 +24652,8 @@ Saves an active automation without invoking it immediately.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `create_automation_params: AutomationScheduleParam`
 
   Creates an automation without invoking it immediately.
@@ -30624,6 +30686,8 @@ Updates supplied fields; target and metadata replace the whole field.
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `expression: optional string`
 
@@ -43314,6 +43378,8 @@ Creates an OpenAI-hosted environment before creating a session. Requires access 
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `environment: object { type, capability_directories, desktop, 8 more }`
 
   The required hosting type and its configuration.
@@ -44628,6 +44694,8 @@ Copies inline bytes or a Files API file into a connected execution environment, 
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `hosted_environment_file_param: HostedEnvironmentFileParam`
 
   A file materialized in an OpenAI-hosted execution environment.
@@ -44887,6 +44955,8 @@ curl https://api.openai.com/v1/agents/environments/$ENVIRONMENT_ID/files \
 Creates reusable environment configuration without returning confidential setup commands or environment values. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `capability_directories: optional array of string or null`
 
@@ -46144,6 +46214,8 @@ Updates reusable environment configuration without returning confidential values
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `capability_directories: optional array of string or null`
 
   Directories that expose capabilities to the agent.
@@ -46934,6 +47006,8 @@ curl https://api.openai.com/v1/agents/environments/templates/$ENVIRONMENT_TEMPLA
 Creates a managed agent session, optionally submits initial input, and returns the session or streams its events when stream is true. See [running sessions](/api/docs/guides/agents-api/sessions).
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `environment: EnvironmentParam`
 
@@ -47747,6 +47821,18 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
   Up to 16 string key-value pairs, with keys up to 64 and values up to 512 characters. Omission or null defaults to an empty map.
 
+- `review: optional "none" or "auto_review"`
+
+  Action review mode. Omit to use none.
+
+  - `"none"`
+
+    Keep the existing execution behavior without automatic action review.
+
+  - `"auto_review"`
+
+    Review eligible actions automatically. Deny manual approval fallbacks.
+
 - `stream: optional boolean (default: false)`
 
   Whether to stream session events as server-sent events. Defaults to `false`.
@@ -47759,7 +47845,7 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
 ### Returns
 
-- `AgentSession object { id, agent, created_at, 9 more }`
+- `AgentSession object { id, agent, created_at, 10 more }`
 
   A Managed Agents session.
 
@@ -48721,6 +48807,14 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 ### Example
 
 ```http
@@ -48831,7 +48925,8 @@ curl https://api.openai.com/v1/agents/sessions \
   },
   "vault_ids": [
     "string"
-  ]
+  ],
+  "review": "none"
 }
 ```
 
@@ -49898,6 +49993,14 @@ Lists managed agent sessions using ID-based pagination and the requested sort or
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 - `first_id: string or null`
 
   The ID of the first resource in `data`, or `null` if the page is empty.
@@ -50026,7 +50129,8 @@ curl https://api.openai.com/v1/agents/sessions \
       },
       "vault_ids": [
         "string"
-      ]
+      ],
+      "review": "none"
     }
   ],
   "first_id": "first_id",
@@ -50052,7 +50156,7 @@ Retrieves the current state of a managed agent session. See [managing sessions](
 
 ### Returns
 
-- `AgentSession object { id, agent, created_at, 9 more }`
+- `AgentSession object { id, agent, created_at, 10 more }`
 
   A Managed Agents session.
 
@@ -51013,6 +51117,14 @@ Retrieves the current state of a managed agent session. See [managing sessions](
     The IDs of vaults made available to the session.
 
     `minItems: 0`, `maxItems: 2000`
+
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
 
 ### Example
 
@@ -51118,7 +51230,8 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
   },
   "vault_ids": [
     "string"
-  ]
+  ],
+  "review": "none"
 }
 ```
 
@@ -51137,6 +51250,8 @@ Updates session metadata, model, reasoning effort, or service tier. Model settin
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `agent: optional object { model, reasoning, service_tier }`
 
@@ -51202,9 +51317,21 @@ Updates session metadata, model, reasoning effort, or service tier. Model settin
 
   Replaces all metadata. Omit to leave unchanged, or pass null or {} to clear it. Up to 16 string key-value pairs, with keys up to 64 and values up to 512 characters.
 
+- `review: optional "none" or "auto_review"`
+
+  Default action review for new root turns. Existing turns and their subagents keep their review mode.
+
+  - `"none"`
+
+    Keep the existing execution behavior without automatic action review.
+
+  - `"auto_review"`
+
+    Review eligible actions automatically. Deny manual approval fallbacks.
+
 ### Returns
 
-- `AgentSession object { id, agent, created_at, 9 more }`
+- `AgentSession object { id, agent, created_at, 10 more }`
 
   A Managed Agents session.
 
@@ -52165,6 +52292,14 @@ Updates session metadata, model, reasoning effort, or service tier. Model settin
     The IDs of vaults made available to the session.
 
     `minItems: 0`, `maxItems: 2000`
+
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
 
 ### Example
 
@@ -52271,7 +52406,8 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
   },
   "vault_ids": [
     "string"
-  ]
+  ],
+  "review": "none"
 }
 ```
 
@@ -52725,6 +52861,8 @@ Submits message, cancellation, tool-result, or computer-use approval-response ev
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `events: array of AgentSessionInputParam`
 
@@ -54262,6 +54400,14 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
         The IDs of vaults made available to the session.
 
         `minItems: 0`, `maxItems: 2000`
+
+      - `review: optional "none" or "auto_review"`
+
+        Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+        - `"none"`
+
+        - `"auto_review"`
 
     - `type: "agent.session.created" (default: "agent.session.created")`
 
@@ -63453,6 +63599,8 @@ Creates a vault for the current project. See [vaults](/api/docs/guides/agents-ap
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `metadata: optional map[string] or null`
 
   Key-value pairs to associate with the vault, such as an application or team identifier.
@@ -63805,6 +63953,8 @@ Updates the name or metadata of an active vault. Omitted fields remain unchanged
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `metadata: optional map[string]`
 
   Replaces all metadata. Omit to leave unchanged, or pass {} to clear it. Up to 16 string key-value pairs, with keys up to 64 and values up to 512 characters.
@@ -63980,6 +64130,8 @@ Creates a vault credential. Secret values are write-only and are never returned.
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `auth: CredentialAuthCreateParam`
 
@@ -65086,6 +65238,8 @@ Updates credential metadata or rotates its write-only secret. See [vaults](/api/
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `auth: optional CredentialAuthRotateParam`
 
@@ -66306,6 +66460,8 @@ curl https://api.openai.com/v1/vaults/$VAULT_ID/credentials/$CREDENTIAL_ID \
 Create an assistant with a model and instructions.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `model: string or "gpt-5" or "gpt-5-mini" or "gpt-5-nano" or 39 more`
 
@@ -67891,6 +68047,8 @@ Modifies an assistant.
   The ID of the assistant to modify.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `description: optional string or null`
 
@@ -72609,6 +72767,8 @@ curl -X POST \
 Create a ChatKit session.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `user: string`
 
@@ -86983,6 +87143,8 @@ Learn when and how to compact long-running conversations in the [conversation st
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 107 more or string or null`
 
   Model ID used to generate the response, like `gpt-6-astra`. OpenAI offers a wide range of models with different capabilities, performance characteristics, and price points. Refer to the [model guide](/api/docs/models) to browse and compare available models.
@@ -97765,6 +97927,8 @@ as input for the model's response.
   - `"responses_multi_agent=v1"`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `access_programs: optional object { cyber }`
 
@@ -291459,6 +291623,8 @@ Returns an object with `object` set to `response.input_tokens` and an `input_tok
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `conversation: optional string or BetaResponseConversationParam or null`
 
   The conversation that this response belongs to. Items from this conversation are prepended to `input_items` for this response request.
@@ -298195,6 +298361,8 @@ Create a thread.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `messages: optional array of object { content, role, attachments, metadata }`
 
   A list of [messages](/api/docs/assistants/migration) to start the thread with.
@@ -298559,6 +298727,8 @@ curl https://api.openai.com/v1/threads \
 Create a thread and run it in one request.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `assistant_id: string`
 
@@ -300066,6 +300236,8 @@ Modifies a thread.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `metadata: optional Metadata or null`
 
   Set of 16 key-value pairs that can be attached to an object. This can be
@@ -300440,6 +300612,8 @@ Create a message.
   The ID of the [thread](/api/docs/assistants/migration) to create a message for.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `content: string or array of ImageFileContentBlock or ImageURLContentBlock or TextContentBlockParam`
 
@@ -301816,6 +301990,8 @@ Modifies a message.
   The ID of the message to modify.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `metadata: optional Metadata or null`
 
@@ -304137,6 +304313,8 @@ Create a run.
   - `"step_details.tool_calls[*].file_search.results[*].content"`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `assistant_id: string`
 
@@ -306605,6 +306783,8 @@ When a run has the `status: "requires_action"` and `required_action.type` is `su
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `tool_outputs: array of object { output, tool_call_id }`
 
   A list of tools for which the outputs are being submitted.
@@ -307290,6 +307470,8 @@ Modifies a run.
   The ID of the run to modify.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `metadata: optional Metadata or null`
 

@@ -8,6 +8,8 @@ Saves an active automation without invoking it immediately.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `create_automation_params: AutomationScheduleParam`
 
   Creates an automation without invoking it immediately.

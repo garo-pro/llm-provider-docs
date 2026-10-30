@@ -16,6 +16,8 @@ Creates an OpenAI-hosted environment before creating a session. Requires access 
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `environment: object { type, capability_directories, desktop, 8 more }`
 
   The required hosting type and its configuration.
@@ -1330,6 +1332,8 @@ Copies inline bytes or a Files API file into a connected execution environment, 
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `hosted_environment_file_param: HostedEnvironmentFileParam`
 
   A file materialized in an OpenAI-hosted execution environment.
@@ -1589,6 +1593,8 @@ curl https://api.openai.com/v1/agents/environments/$ENVIRONMENT_ID/files \
 Creates reusable environment configuration without returning confidential setup commands or environment values. See [reusing a hosted setup](/api/docs/guides/agents-api/tools#reuse-a-hosted-plugin-setup).
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `capability_directories: optional array of string or null`
 
@@ -2845,6 +2851,8 @@ Updates reusable environment configuration without returning confidential values
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `capability_directories: optional array of string or null`
 

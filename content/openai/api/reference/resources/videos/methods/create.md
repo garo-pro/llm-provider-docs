@@ -10,6 +10,8 @@ Create a new video generation job from a prompt and optional reference assets.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `prompt: string`
 
   Text prompt that describes the video to generate.

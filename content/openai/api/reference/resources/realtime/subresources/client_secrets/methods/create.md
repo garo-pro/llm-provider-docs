@@ -20,6 +20,8 @@ Returns the created client secret and the effective session object. The client s
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `expires_after: optional object { anchor, seconds }`
 
   Configuration for the client secret expiration. Expiration refers to the time after which

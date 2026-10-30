@@ -14,6 +14,8 @@ Creates a project spend alert.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `currency: "USD"`
 
   The currency for the threshold amount.

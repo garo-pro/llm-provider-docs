@@ -16,6 +16,8 @@ Updates reusable environment configuration without returning confidential values
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `capability_directories: optional array of string or null`
 
   Directories that expose capabilities to the agent.

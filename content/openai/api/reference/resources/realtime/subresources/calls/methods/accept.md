@@ -17,6 +17,8 @@ handle it.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `type: "realtime"`
 
   The type of session to create. Always `realtime` for the Realtime API.

@@ -8,6 +8,8 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `environment: EnvironmentParam`
 
   An inline execution environment or a reference to an environment template.
@@ -820,6 +822,18 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
   Up to 16 string key-value pairs, with keys up to 64 and values up to 512 characters. Omission or null defaults to an empty map.
 
+- `review: optional "none" or "auto_review"`
+
+  Action review mode. Omit to use none.
+
+  - `"none"`
+
+    Keep the existing execution behavior without automatic action review.
+
+  - `"auto_review"`
+
+    Review eligible actions automatically. Deny manual approval fallbacks.
+
 - `stream: optional boolean (default: false)`
 
   Whether to stream session events as server-sent events. Defaults to `false`.
@@ -832,7 +846,7 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
 ### Returns
 
-- `AgentSession object { id, agent, created_at, 9 more }`
+- `AgentSession object { id, agent, created_at, 10 more }`
 
   A Managed Agents session.
 
@@ -1794,6 +1808,14 @@ Creates a managed agent session, optionally submits initial input, and returns t
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 ### Example
 
 ```http
@@ -1904,6 +1926,7 @@ curl https://api.openai.com/v1/agents/sessions \
   },
   "vault_ids": [
     "string"
-  ]
+  ],
+  "review": "none"
 }
 ```

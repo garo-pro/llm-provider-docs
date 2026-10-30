@@ -1480,6 +1480,14 @@ Schema name: `SessionEventAgentSessionCreated`
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 - `type: "agent.session.created" (default: "agent.session.created")`
 
   The type of the object. Always `agent.session.created`.
@@ -1493,6 +1501,7 @@ Schema name: `SessionEventAgentSessionCreated`
   "type": "agent.session.created",
   "event_id": "event_id",
   "session": {
+    "review": "none",
     "metadata": {
       "foo": "string"
     },
@@ -5228,6 +5237,14 @@ Schema name: `SessionEventAgentSessionIdle`
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 - `type: "agent.session.idle" (default: "agent.session.idle")`
 
   The type of the object. Always `agent.session.idle`.
@@ -5241,6 +5258,7 @@ Schema name: `SessionEventAgentSessionIdle`
   "type": "agent.session.idle",
   "event_id": "event_id",
   "session": {
+    "review": "none",
     "metadata": {
       "foo": "string"
     },
@@ -6316,6 +6334,14 @@ Schema name: `SessionEventAgentSessionInProgress`
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 - `type: "agent.session.in_progress" (default: "agent.session.in_progress")`
 
   The type of the object. Always `agent.session.in_progress`.
@@ -6329,6 +6355,7 @@ Schema name: `SessionEventAgentSessionInProgress`
   "type": "agent.session.in_progress",
   "event_id": "event_id",
   "session": {
+    "review": "none",
     "metadata": {
       "foo": "string"
     },
@@ -7404,6 +7431,14 @@ Schema name: `SessionEventAgentSessionRequiresAction`
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 - `type: "agent.session.requires_action" (default: "agent.session.requires_action")`
 
   The type of the object. Always `agent.session.requires_action`.
@@ -7417,6 +7452,7 @@ Schema name: `SessionEventAgentSessionRequiresAction`
   "type": "agent.session.requires_action",
   "event_id": "event_id",
   "session": {
+    "review": "none",
     "metadata": {
       "foo": "string"
     },
@@ -8492,6 +8528,14 @@ Schema name: `SessionEventAgentSessionFailed`
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `review: optional "none" or "auto_review"`
+
+    Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+    - `"none"`
+
+    - `"auto_review"`
+
 - `type: "agent.session.failed" (default: "agent.session.failed")`
 
   The type of the object. Always `agent.session.failed`.
@@ -8505,6 +8549,7 @@ Schema name: `SessionEventAgentSessionFailed`
   "type": "agent.session.failed",
   "event_id": "event_id",
   "session": {
+    "review": "none",
     "metadata": {
       "foo": "string"
     },

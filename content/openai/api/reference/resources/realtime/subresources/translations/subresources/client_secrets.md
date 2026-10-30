@@ -18,6 +18,8 @@ The client secret is a string that looks like `ek_1234`.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `session: RealtimeTranslationSessionCreateRequest`
 
   Realtime translation session configuration. Translation sessions stream source

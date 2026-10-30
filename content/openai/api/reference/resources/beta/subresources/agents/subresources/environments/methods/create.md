@@ -14,6 +14,8 @@ Creates an OpenAI-hosted environment before creating a session. Requires access 
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `environment: object { type, capability_directories, desktop, 8 more }`
 
   The required hosting type and its configuration.

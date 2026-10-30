@@ -24,6 +24,8 @@ Submits message, cancellation, tool-result, or computer-use approval-response ev
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `events: array of AgentSessionInputParam`
 
   The input events to submit to the session.
@@ -1560,6 +1562,14 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
         The IDs of vaults made available to the session.
 
         `minItems: 0`, `maxItems: 2000`
+
+      - `review: optional "none" or "auto_review"`
+
+        Review applied to eligible actions in this session. Omitted when review is none and automatic review is not enabled. Omission means none.
+
+        - `"none"`
+
+        - `"auto_review"`
 
     - `type: "agent.session.created" (default: "agent.session.created")`
 

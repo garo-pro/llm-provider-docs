@@ -39,6 +39,14 @@ versions.
 - *September 29, 2026* : We added an[Appendix: dots](https://deploymentsafety.openai.com/gpt-6-astra/sec:appendix-dots-2) with information about**dots** , remarkably capable, always-on agents built to
 handle everything.**Dots** are built on existing model and
 agent capabilities, powered by GPT-6 Astra.
+- *October 30, 2026* : SecureBio notified us of an error in the[World Class Bio (WCB) evaluation
+results](https://deploymentsafety.openai.com/gpt-6-astra/external-evaluation-for-biological-capabilities---securebio) it originally reported for GPT-6 Astra and issued a
+correction. SecureBio’s original score of 61.6% $\pm$ 0.6% was generated with web search
+enabled, whereas the comparator models were evaluated without web
+search. SecureBio’s corrected score for GPT-6 Astra, evaluated with web
+search disabled, is 59.2% $\pm$ 0.6%.
+Both scores were generated during the pre-release assessment period.
+SecureBio’s conclusions remain unchanged.
 
 Published September 3, 2026
 
@@ -1634,7 +1642,7 @@ However, instead of maintaining this evaluation, we believe it is important to i
 
 SecureBio, a nonprofit research organization focused on studying and mitigating catastrophic biological risks, evaluated pre-release capability and bio-railfree (helpful-only) checkpoints of Astra, along with two safeguarded configurations. Their assessment covered biological knowledge, agentic task completion, refusal behavior, and manual evaluation. Capabilities evaluations are run with our production safeguard classifiers off in order to maximally elicit the model’s capabilities.
 
-Astra achieved the highest scores SecureBio had observed on VCT (57.8%) and VCT-v2 (57.7%), while Human Pathogen Capabilities Test (HPCT) performance was broadly comparable to that of GPT-5.6 Sol (65.9% vs. 66.5%) and WCB performance was lower (61.6% vs. 67.6%). Note that the reported scores are refusal-corrected accuracy scores, meaning the percentage of questions the model answers correctly after excluding those it refuses. These scores were collected on the pre-release Astra checkpoint model, not the helpful-only model.
+Astra achieved the highest scores SecureBio had observed on VCT (57.8%) and VCT-v2 (57.7%), while Human Pathogen Capabilities Test (HPCT) performance was broadly comparable to that of GPT-5.6 Sol (65.9% vs. 66.5%) and WCB performance was lower (59.2% vs. 67.6%, both with web search disabled). Note that the reported scores are refusal-corrected accuracy scores, meaning the percentage of questions the model answers correctly after excluding those it refuses. These scores were collected on the pre-release Astra checkpoint model, not the helpful-only model.
 
 SecureBio also observed gains on agentic biology tasks. On ReproBAIT, which measures agents’ ability to independently reproduce biological AI models from published papers, Astra’s helpful-only checkpoint reached 83% of published performance, compared with 69% for GPT-5.6 Sol across the same six tasks. Both Astra checkpoints were the first models SecureBio tested that successfully generated designable proteins within the time and compute constraints of the design task.
 

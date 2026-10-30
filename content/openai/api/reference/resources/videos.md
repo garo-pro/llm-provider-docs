@@ -12,6 +12,8 @@ Create a new video generation job from a prompt and optional reference assets.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `prompt: string`
 
   Text prompt that describes the video to generate.
@@ -306,6 +308,20 @@ curl https://api.openai.com/v1/videos \
 
 Create a character from an uploaded video.
 
+### Body Parameters
+
+Content type: `multipart/form-data`
+
+- `name: string`
+
+  Display name for this API character.
+
+  `minLength: 1`, `maxLength: 80`
+
+- `video: string`
+
+  Video file used to create a character.
+
 ### Returns
 
 - `id: string or null`
@@ -432,6 +448,8 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID/content \
 Create a new video generation job by editing a source video or existing generated video.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `prompt: string`
 
@@ -658,6 +676,8 @@ curl https://api.openai.com/v1/videos/edits \
 Create an extension of a completed video.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `prompt: string`
 
@@ -1230,6 +1250,8 @@ Create a remix of a completed video using a refreshed prompt.
   The identifier of the completed video to remix.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `prompt: string`
 

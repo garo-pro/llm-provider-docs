@@ -10,6 +10,8 @@ Create a new skill.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `files: array of string or string`
 
   Skill files to upload (directory upload) or a single zip file.
@@ -325,6 +327,8 @@ Update the default version pointer for a skill.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `default_version: string`
 
   The skill version number to set as default.
@@ -538,6 +542,8 @@ Create a new immutable skill version.
   The identifier of the skill to version.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `files: array of string or string`
 

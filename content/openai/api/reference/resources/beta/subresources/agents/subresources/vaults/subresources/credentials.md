@@ -18,6 +18,8 @@ Creates a vault credential. Secret values are write-only and are never returned.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `auth: CredentialAuthCreateParam`
 
   The authentication method and write-only secret values to store.
@@ -1123,6 +1125,8 @@ Updates credential metadata or rotates its write-only secret. See [vaults](/api/
   `minLength: 0`, `maxLength: 1048576`
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `auth: optional CredentialAuthRotateParam`
 

@@ -12,6 +12,8 @@ You can atomically and idempotently activate up to 10 certificates at a time.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `certificate_ids: array of string`
 
   `minItems: 1`, `maxItems: 10`
@@ -151,6 +153,8 @@ Organizations can upload up to 50 certificates.
 
 ### Body Parameters
 
+Content type: `application/json`
+
 - `certificate: string`
 
   The certificate content in PEM format
@@ -279,6 +283,8 @@ Deactivate certificates at the organization level.
 You can atomically and idempotently deactivate up to 10 certificates at a time.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `certificate_ids: array of string`
 
@@ -744,6 +750,8 @@ Modify a certificate. Note that only the name can be modified.
   Unique ID of the certificate to modify.
 
 ### Body Parameters
+
+Content type: `application/json`
 
 - `name: optional string`
 

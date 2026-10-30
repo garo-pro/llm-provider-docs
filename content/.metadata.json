@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-30T06:39:41.825718Z",
+    "fetch_date": "2026-10-30T16:55:57.381060Z",
     "section": "all"
   },
   "items": [
@@ -7520,8 +7520,8 @@
       "url": "https://modelcontextprotocol.io/community/working-groups/filesystems",
       "status": "success",
       "path": "anthropic/mcp/community/working-groups/filesystems.md",
-      "sha256": "04aa6d4d13a53039a8813a9968dfdc99d26354fb7752a53d68cf283a5556365a",
-      "size": 6160
+      "sha256": "73278f90b98bcd054860fea7d717328afe362e2c2803c7a4a8c618c465731e10",
+      "size": 8179
     },
     {
       "url": "https://modelcontextprotocol.io/community/working-groups/governance",
@@ -8451,22 +8451,22 @@
       "url": "https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization",
       "status": "success",
       "path": "anthropic/mcp/extensions/auth/enterprise-managed-authorization.md",
-      "sha256": "a449a3143e3f077153139c33f9ff852543af905d9bfbe6639dafeecfd296dc01",
-      "size": 8759
+      "sha256": "64a1e9a5b2b19c98a8b4fc3041c3b8616366ce90979b8f9931ea46d61e52e385",
+      "size": 14031
     },
     {
       "url": "https://modelcontextprotocol.io/extensions/auth/oauth-client-credentials",
       "status": "success",
       "path": "anthropic/mcp/extensions/auth/oauth-client-credentials.md",
-      "sha256": "88467514511271ac20bb8a7b2e5491fa11f6fe39af66aae14ee1521ea323549d",
-      "size": 12149
+      "sha256": "74c1cc21f96f7a21f4a7bac01f9688bbff7a5bf29be261390421733e1b77c078",
+      "size": 12223
     },
     {
       "url": "https://modelcontextprotocol.io/extensions/auth/overview",
       "status": "success",
       "path": "anthropic/mcp/extensions/auth/overview.md",
-      "sha256": "fc147de55a6e58d694b421e814336b9c3c575b1078af775490e691d9f5250638",
-      "size": 3976
+      "sha256": "606c4e68cb40fddafe1a3217779a6b71ddc39fc8df5b197d2f683cdc9c1595b4",
+      "size": 3977
     },
     {
       "url": "https://modelcontextprotocol.io/extensions/client-matrix",
@@ -8703,8 +8703,8 @@
       "url": "https://modelcontextprotocol.io/seps/2133-extensions",
       "status": "success",
       "path": "anthropic/mcp/seps/2133-extensions.md",
-      "sha256": "3b568d371fe960fd40f90bd833838971fa4e4410dc9d7c8c3d44de5b5137157f",
-      "size": 19689
+      "sha256": "78e8fb2de40faf2280be8dc5bf3bff6f1b8e85bb6c30a3389c4bfa5755706704",
+      "size": 19763
     },
     {
       "url": "https://modelcontextprotocol.io/seps/2148-contributor-ladder",
@@ -12392,8 +12392,8 @@
       "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
       "status": "success",
       "path": "anthropic/blog/research/discovering-vulnerabilities-with-claude.md",
-      "sha256": "e440a3a22f2e0eb4630182d43e7a563b1304870c716b62e3f0c83918aada8497",
-      "size": 12771
+      "sha256": "18b49758c278bccd510f589d3d98fffc558c8feda405509b865b0857fbd2dcb1",
+      "size": 12776
     },
     {
       "url": "https://www.anthropic.com/research/disempowerment-patterns",
@@ -15619,8 +15619,8 @@
       "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
       "status": "success",
       "path": "anthropic/blog/claude-com/introducing-artifacts-for-legal-work.md",
-      "sha256": "2a2aecec5e720a6094664a1514a9bd97ea254687ec87859b19d800a28efe275f",
-      "size": 13457
+      "sha256": "61126dd460d0849bdba9ebe280b76fc5cf086bec5fdfba504cef263e9fd910c5",
+      "size": 13577
     },
     {
       "url": "https://claude.com/resources/articles/introducing-citations-api",
@@ -21471,8 +21471,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/chat",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/chat.md",
-      "sha256": "012f8999581a7f3ac522cb0283bf6feb4952a065726c4929b3c541a4c7f98a8c",
-      "size": 16869
+      "sha256": "e394d02203258efd2ae83ffae6b0aee2ba96a63f9ff154a0d25c9e19036547c2",
+      "size": 17458
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/claude-api",
@@ -21485,8 +21485,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/code",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/code.md",
-      "sha256": "3095901e8f14dbc6692f1848bf68c4154d40ee1156511b89a3c4b3dbc26a0ee8",
-      "size": 29061
+      "sha256": "91e7ae78c8df7a0c6a050350c3e7cc7cd4e118617b162e15009c4190996af32f",
+      "size": 29660
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/configuration",
@@ -21569,8 +21569,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/extensions",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/extensions.md",
-      "sha256": "16d83f95fd87575babe1af0547a33cab8a660674a58dfcc5288fc87f50322d48",
-      "size": 61897
+      "sha256": "b289da3ee822c1015b68a69830aee659b4069213683ab3cd9ce8ad3256723506",
+      "size": 64432
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/feature-matrix",
@@ -31446,8 +31446,8 @@
       "url": "https://deploymentsafety.openai.com/gpt-6-astra",
       "status": "success",
       "path": "openai/system-cards/gpt-6-astra.md",
-      "sha256": "cecb54ad373fb0523daf85bddce48ab1549c853dca56dd2ce27499a395d89bff",
-      "size": 272628
+      "sha256": "14805aab1a0a94f06fce9f9206e459dd78b297e242ceb24c395c9c5400a6545a",
+      "size": 273308
     },
     {
       "url": "https://deploymentsafety.openai.com/gpt-5",
@@ -31574,6 +31574,13 @@
       "path": "openai/system-cards/o3.md",
       "sha256": "02f5bc3a9c18f964da11d073bf3ea9aaea0e8b71a28977731a12e282f2e5277c",
       "size": 67787
+    },
+    {
+      "url": "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
+      "status": "success",
+      "path": "openai/system-cards/gpt-6-luna-october-28-2026-addendum.md",
+      "sha256": "db196bd863cb3cc11fe76de35046aa6d7f86dc4765c0ffe0ef85d4dfdd491857",
+      "size": 13186
     },
     {
       "url": "https://deploymentsafety.openai.com/gpt-5-6-preview",
@@ -32981,6 +32988,13 @@
       "path": "openai/cookbook/examples/gpt4o/introduction_to_gpt4o.md",
       "sha256": "2b962146b430d791a206f70cca5e197dfca408ae9f6cd6a7c6f6b4ceb5d95f78",
       "size": 1150572
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/examples/decisions/customer_request_routing",
+      "status": "success",
+      "path": "openai/cookbook/examples/decisions/customer_request_routing.md",
+      "sha256": "fb872be2dae68d12e9af4f98e7c740a647c7f3d7027ca6a6c47a2ae4f8347b73",
+      "size": 9194
     },
     {
       "url": "https://developers.openai.com/cookbook/examples/responses_api/reasoning_items",
@@ -34701,85 +34715,85 @@
       "url": "https://developers.openai.com/api/reference/resources/realtime",
       "status": "success",
       "path": "openai/api/reference/resources/realtime.md",
-      "sha256": "e2ec0dc09b0a5a25f03bf750be9f2fa06e40c66ddbe265ffe779274724dfc9e3",
-      "size": 1001193
+      "sha256": "b1e10d5a48046e67e1c1c58dd3ac3b877054690a845938a15a0797a629e46012",
+      "size": 1065709
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin",
       "status": "success",
       "path": "openai/api/reference/resources/admin.md",
-      "sha256": "ee2f557808b48cdb1b9aae8d76aa73e18bc258472bd697d5aac6109330e93173",
-      "size": 866968
+      "sha256": "ebff031098181c5e5738bee231092e2bcaff64d3a055afcee22ec0ac594a3d57",
+      "size": 868396
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/uploads",
       "status": "success",
       "path": "openai/api/reference/resources/uploads.md",
-      "sha256": "a4500452e82aa37573c3e4df5ecb28f3a8974d04e6be314799133f7802da85c1",
-      "size": 21258
+      "sha256": "322775d8c8cc89ddd8bdfc66063693bc305f759273a14e4564585057c6ac94c9",
+      "size": 21439
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/decisions",
       "status": "success",
       "path": "openai/api/reference/resources/decisions.md",
-      "sha256": "8e954858807dde751606024790308b63417fd2647dd626d918e960661141fb72",
-      "size": 36303
+      "sha256": "02ba35060641fb10a7b962fe52e8aaeff57ab7372386f90f9ec2cd1890974cd9",
+      "size": 36337
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/containers",
       "status": "success",
       "path": "openai/api/reference/resources/containers.md",
-      "sha256": "17e1ea48b7b73ff28ae521b08e08c48b30d4f08d6f000acae60ef45c62d83bd7",
-      "size": 28604
+      "sha256": "215eface156edd61211e7d47cb92debae78f897b82b3fbb17afeeb6e4bf2c660",
+      "size": 28672
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/evals",
       "status": "success",
       "path": "openai/api/reference/resources/evals.md",
-      "sha256": "d8cc273638c6478711035844f93db57a867cdd7c7b27c9b5471fd2bbe5259ea8",
-      "size": 873130
+      "sha256": "1a5cca1cbf54131b13f06bab9d5bdb308f947c564d19544d7aa875121008f8a8",
+      "size": 873232
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/moderations",
       "status": "success",
       "path": "openai/api/reference/resources/moderations.md",
-      "sha256": "7d1684da7c56f2b4aa0ae2dabbf82409001738d543a78fe30d61f49d51fd8d60",
-      "size": 25576
+      "sha256": "90a9c27132b51e3961ba900daa6b92f77b92e18d3ead0681fc493a2fde057fe1",
+      "size": 25610
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio",
       "status": "success",
       "path": "openai/api/reference/resources/audio.md",
-      "sha256": "78bf021223d280774840c4b2b9afb11eb6609bad142a8cc35c1da398f9f51cb3",
-      "size": 72797
+      "sha256": "8f60e0a49566e213715460723dd9223a636f13af8f9a684d5ba5bb0edb86f639",
+      "size": 81426
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live",
       "status": "success",
       "path": "openai/api/reference/resources/live.md",
-      "sha256": "0faf884adc7ca5cd22edc3cbfc4d3fcf363ffe73bb95abd78213d45c325a9677",
-      "size": 1592844
+      "sha256": "0a542df68d92f7f5dae901882f89f706bb49668ac6c356671a35b7681a0c0df1",
+      "size": 1593014
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/videos",
       "status": "success",
       "path": "openai/api/reference/resources/videos.md",
-      "sha256": "b8103a9e300a84b965a44f697e41f72b3a5958ea95c010be60f9b74d88bf7f2d",
-      "size": 43858
+      "sha256": "2d170e29950e571af46e35ebe1211cf1b23a5f52702b23c54b395cd59f73a6d5",
+      "size": 44206
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/embeddings",
       "status": "success",
       "path": "openai/api/reference/resources/embeddings.md",
-      "sha256": "ea10f95598a6bdab12153bbb7d85a0e48fdb6baf7f1d64190a63ed1f25ec2264",
-      "size": 7043
+      "sha256": "347d057abdfb63e0298bc79363214f0ba02c64121baa90a114800dd151b8fdbe",
+      "size": 7077
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta",
       "status": "success",
       "path": "openai/api/reference/resources/beta.md",
-      "sha256": "4612cd4964ca40d8bff38663eea2173079876d02fdb628c6a2ce3bbb92742b69",
-      "size": 8901577
+      "sha256": "882eac32dbd28710908b64ba4b86fdb2342cec15e6cd2691d606cb66f84ccebd",
+      "size": 8906092
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/safety",
@@ -34806,50 +34820,50 @@
       "url": "https://developers.openai.com/api/reference/resources/vector_stores",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores.md",
-      "sha256": "d4c55cb30d242ef35fda64bac04b377de826f943175cfaa18a9063c45168c696",
-      "size": 84726
+      "sha256": "c8838c385b6595797c5c1ee9b730595461ce90aa2c38d2cb6d224c25f891190b",
+      "size": 84930
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/chat",
       "status": "success",
       "path": "openai/api/reference/resources/chat.md",
-      "sha256": "25b7b2de14652f0b533cf6e940f5a17477857b18aff63903040c60a3ad15a3b7",
-      "size": 245148
+      "sha256": "2e8f2034f24ff37a68b5920ce8fee49900d26f7a2719bf3232e8b4c133db2ab8",
+      "size": 245216
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/skills",
       "status": "success",
       "path": "openai/api/reference/resources/skills.md",
-      "sha256": "5ba8d91bfec07169540f95dc8f5aa4d8b7991126a65a243b0798935f398fbc53",
-      "size": 16641
+      "sha256": "1ce5a7c7fb7b0c965ce574e9a3ea56431b0747ca1e52c212f253a7a75cfe6c84",
+      "size": 16743
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/images",
       "status": "success",
       "path": "openai/api/reference/resources/images.md",
-      "sha256": "0443f7316a9bc12e847ee982d2c8eadb980bb2eda1675a4fa40315a4a07c5bd4",
-      "size": 53988
+      "sha256": "9cd0a0997ff36e0531ca7642a51958f703678dbbc400e1a2ab8bb82adafb7e69",
+      "size": 55740
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning.md",
-      "sha256": "001b34cf79aa98204078c8b259ea34e34e4ab023aafb48e6982f52d9f241dca3",
-      "size": 334174
+      "sha256": "e0b79d74fe9f07b5baeddc90e4add2055b588f4e819aac380882214d8fe09939",
+      "size": 334310
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/completions",
       "status": "success",
       "path": "openai/api/reference/resources/completions.md",
-      "sha256": "86c46f588d2dfd3ccb8c187065104b42ee6e962b000e426e34854cd7e997dff3",
-      "size": 22181
+      "sha256": "13c2b583a15a0407b28b0ae7ac7953d7751f67768d422208a2875f23bad4c99e",
+      "size": 22215
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/conversations",
       "status": "success",
       "path": "openai/api/reference/resources/conversations.md",
-      "sha256": "7bcd294451888129750bd7d691eee7a744a533eeb5f585756bfb99b5aecbaffb",
-      "size": 949419
+      "sha256": "4e29233dbe407aa8e29b928a236b4d74226a4a6bdbd5da050be304462dbc4878",
+      "size": 949521
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/$shared",
@@ -34862,8 +34876,8 @@
       "url": "https://developers.openai.com/api/reference/resources/content_provenance_checks",
       "status": "success",
       "path": "openai/api/reference/resources/content_provenance_checks.md",
-      "sha256": "c552b48ad1f34e3f4f4a694e7fc5ca10af9be62585199da1b0b3a545784a96f5",
-      "size": 7600
+      "sha256": "9f03fdaf17d1b81982bb0ecef5b9db4c3fbccec10ba279c5157e4a53a01708c5",
+      "size": 7753
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/models",
@@ -34876,15 +34890,15 @@
       "url": "https://developers.openai.com/api/reference/resources/responses",
       "status": "success",
       "path": "openai/api/reference/resources/responses.md",
-      "sha256": "f127c5362cf662f35fbfc33735b6b92d592570ad936d1eb2eb63e5d8b04c94b5",
-      "size": 5482690
+      "sha256": "eabb9276b302d95bf27ba1ddc60a24a97c8717c1dd754d628a0334095a903a60",
+      "size": 5482792
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/batches",
       "status": "success",
       "path": "openai/api/reference/resources/batches.md",
-      "sha256": "331794a7008adfefc491bde659cfcf629532d82a674395a1bf643ed2537bde11",
-      "size": 37927
+      "sha256": "11df3ca4723963967c42fc0cf49ed8c8c79de5e15ca7c20f06ce2b8befd8334c",
+      "size": 37961
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/graders",
@@ -34897,8 +34911,8 @@
       "url": "https://developers.openai.com/api/reference/resources/files",
       "status": "success",
       "path": "openai/api/reference/resources/files.md",
-      "sha256": "b05627be23e6f0cc489d8fc62829c9499a842b0d5e70e9561b5dd96d92d77533",
-      "size": 14109
+      "sha256": "37e078449aa581c3fb035dc5695ff244d592cd3a88459482227c2b6c311eed4a",
+      "size": 15293
     },
     {
       "url": "https://developers.openai.com/api/reference/responses/overview",
@@ -35023,8 +35037,8 @@
       "url": "https://developers.openai.com/api/reference/resources/videos/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/videos/methods/create.md",
-      "sha256": "73364bfc9dc0461afe687cac051d2bc5e6eb01be06e3c96da1dbbade5f2f792c",
-      "size": 6913
+      "sha256": "f41158444f9c6f8fc7ea00c25b99eb32e7701b4b9e7f3018010bd3432bce5979",
+      "size": 6947
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/videos/methods/list",
@@ -35065,50 +35079,50 @@
       "url": "https://developers.openai.com/api/reference/resources/content_provenance_checks/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/content_provenance_checks/methods/create.md",
-      "sha256": "747b2d7c7ba8a44b1c50373cbd0d542955071e325ecdcc407ece8abef6f1844d",
-      "size": 4441
+      "sha256": "70fbc003cb731dd7dab19967153a6e593c84026660ad01515386a60e22a0450b",
+      "size": 4594
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/embeddings/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/embeddings/methods/create.md",
-      "sha256": "b045ab6fb89cdb4b4c7fed85075e5dfb0f75b067101eecec7e405ed1c016acf2",
-      "size": 4939
+      "sha256": "5ccb4077d7cd95e46f3c0816b57e8d84274b6faef6f2d591debb915b396e9424",
+      "size": 4973
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/client_secrets",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/client_secrets.md",
-      "sha256": "2e072ef9e982337e7231155cbed9feefab8799aa827f1b3cb9b9b5aa54cc4fe9",
-      "size": 159508
+      "sha256": "f3d8bfed855b3bad7d5b2cd1a5b54e54693e0daf31a377654966d28006291099",
+      "size": 159542
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/sessions",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/sessions.md",
-      "sha256": "24790218ff806ed5e95199778b344d11a6c6c601882c02ed0951fb84b843c28b",
-      "size": 34710
+      "sha256": "2ec3740bb0029fadd9a9ed8a19168cfa8961cdc96cdd13bc7b487f8ffcfd6081",
+      "size": 34744
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/calls",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/calls.md",
-      "sha256": "4443340ed2c66cb20199d51731318151643bc2a07932272bd4409942b493687e",
-      "size": 35987
+      "sha256": "59615b0da1a0f6833a5c78974ad5ce437a460c03dfec74fb78e49e53671ca7d2",
+      "size": 100367
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/transcription_sessions",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/transcription_sessions.md",
-      "sha256": "7a88df11c284c5f1601ff77964be9965921e8b9175c724a5d746e52062ad9bea",
-      "size": 14965
+      "sha256": "71895e1ae7c9342c45ace236abada9bd7c26840a0ee1461415d180b0867a3123",
+      "size": 14999
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/translations",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/translations.md",
-      "sha256": "4bd46a035ba6647bfd4043e934e65efe2172bf055a935412bb26aa7f01cd63d1",
-      "size": 7912
+      "sha256": "8f185d44d15b40e70d1b92db23fceda1693685de8fdab89769c4593f5eceaea3",
+      "size": 7946
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/methods/connect",
@@ -35121,8 +35135,8 @@
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/subresources/client_secrets",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/translations/subresources/client_secrets.md",
-      "sha256": "c3f7efbf08c17ae5ebbf9c6bb432fa1f02ecf8b3c71d4b14851f82f303528d51",
-      "size": 7047
+      "sha256": "02420d6d17e6c9a70190d51dc5f72e0322bdcc7133b1828344b341d28498d2bd",
+      "size": 7081
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/methods/connect",
@@ -35135,29 +35149,29 @@
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/translations/subresources/client_secrets/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/translations/subresources/client_secrets/methods/create.md",
-      "sha256": "3ca8c4797fb824d794b67c35e5affb54caa46f73a6919ad326cda223d60a6cd1",
-      "size": 7029
+      "sha256": "37164e94fc0f7de8d704368f749598ecbbac24c587aa6da95ed2d5cc6a51d2b5",
+      "size": 7063
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/sessions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/sessions/methods/create.md",
-      "sha256": "85389759ba315f0a1827d77998319a06307df59e90d6405a55dd695770deceaa",
-      "size": 25527
+      "sha256": "fa72d045b33f9da511ee2d88820ea2562f9f4395700af787ce357a1354319511",
+      "size": 25561
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/transcription_sessions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/transcription_sessions/methods/create.md",
-      "sha256": "66f7fa2ecb4895d8a99e63b4300fd3202377bb47dd1458f34ce2c82ba3c9baf4",
-      "size": 10876
+      "sha256": "b183372de7a4f68138263c637e2a381dc8de261040a56af865d1df7573b00b52",
+      "size": 10910
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/client_secrets/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/client_secrets/methods/create.md",
-      "sha256": "2ea449a2464d139135c7a884bc5c3fb49bbe3b387dfe3e5dfb5b1030595ff546",
-      "size": 83179
+      "sha256": "e4ca0171e9cc7e93a447d44aed33fe07eb34ba362fe3d5049025c8f88afc7df6",
+      "size": 83213
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/hangup",
@@ -35170,43 +35184,43 @@
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/accept",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/calls/methods/accept.md",
-      "sha256": "9e98c4380533c03d768a67ff392ce4a2bca39c79ecce39a6bc8f83aec747a31f",
-      "size": 32038
+      "sha256": "8206b0977b8ec6b66e8cca8377e50989701cb26aad1466410302c60e85353c5b",
+      "size": 32072
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/reject",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/calls/methods/reject.md",
-      "sha256": "9c6fc563f428db1cc8eda22e0024b25f48358fae963fa40aa186b51c29b15ece",
-      "size": 995
+      "sha256": "92b886a597f48c38345c28e1f62a3802632d6c62bd3f744e3efe32cf179c38e3",
+      "size": 1029
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/refer",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/calls/methods/refer.md",
-      "sha256": "f5998edae742c21a4b6f53a7263978b9c2f3da6edd218e09291928f07fa74a6f",
-      "size": 1119
+      "sha256": "cc5abe2da4afefd7aedb27c90e8ffc017b4c2dcafd5d213046fe576625d0a3bd",
+      "size": 1153
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/realtime/subresources/calls/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/realtime/subresources/calls/methods/create.md",
-      "sha256": "98f2a44cc7aa7aa82b36536d1908b144ea3e19617d49bd7def64185450ff9d8e",
-      "size": 1445
+      "sha256": "782c102bc28223e7a9731a6f5d705280ca4b7ee72aba20cec075bb3283d37909",
+      "size": 65723
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/subresources/file_batches.md",
-      "sha256": "2206507277bcc673585c1466d3a71d38aff39a7928433817c8ebedfc1b938184",
-      "size": 20494
+      "sha256": "423c6578be062bbed25b7460bfeb13c875727f080a1a53b3767519cb517e919e",
+      "size": 20528
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/subresources/files.md",
-      "sha256": "cf95e836c90fbd7792583160c06c9776babb50a8738b239d2822b367f7764de0",
-      "size": 29506
+      "sha256": "d7ff5a4297cccc1a4be1ce9e0175f03ff5de0a1fb1bafa64697cfa61de342f4d",
+      "size": 29574
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/methods/retrieve",
@@ -35226,8 +35240,8 @@
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/methods/create.md",
-      "sha256": "94ed33e4c847318acf26c93d8f4f8cc9d4ae64510b62210b5c4f4f94fa0af26a",
-      "size": 6394
+      "sha256": "8f3849328c6413819928b114f330bc07e16d5dd8408ad8919800b7162647345c",
+      "size": 6428
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/methods/list",
@@ -35240,15 +35254,15 @@
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/methods/search",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/methods/search.md",
-      "sha256": "3f710d49bbca628c4725023e28adfb0a1568a3e324dea48fc65f841ade898572",
-      "size": 6164
+      "sha256": "3c27afe3d31b3ecd09c6b84f3a93ff7352a2a933a674ba715d35774eb385a0fc",
+      "size": 6198
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/methods/update.md",
-      "sha256": "ffd6183755670aa5857cfd7ff5eabf1936b509733058cc6bd7c5c5a9cb489a56",
-      "size": 5038
+      "sha256": "5ad5c518edadef80da3ee834d92fe3abc3c1d2430a7204d95c6dfa81577e7372",
+      "size": 5072
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/retrieve",
@@ -35275,8 +35289,8 @@
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/subresources/files/methods/create.md",
-      "sha256": "3f03c489de009a722685b3e9650bc0e7925c2ea3e85527fc9dceef5ce92af1fb",
-      "size": 6804
+      "sha256": "776234ffe026a8e2231fa34a2f2b9c66d57f6f58f5933c7d0381bbcbd6e33ed0",
+      "size": 6838
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/list",
@@ -35289,8 +35303,8 @@
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/files/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/subresources/files/methods/update.md",
-      "sha256": "43c7f9b76543f6e2d655fab1ba0ae38c7984423fb110732a0255b3ccf9d9b3b6",
-      "size": 5551
+      "sha256": "17b4969af3ac48ae51ff0ec4e34e21928cad72936c94ac4254c41cbc5c0fc748",
+      "size": 5585
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/retrieve",
@@ -35303,8 +35317,8 @@
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/vector_stores/subresources/file_batches/methods/create.md",
-      "sha256": "825ea73c99d222ac3949cd653d3fbc771738ac603f8259d71b967f1106cb5e69",
-      "size": 6986
+      "sha256": "22201cf5ad6575d253128313c506fe4f7d7bbacbeeb1b9f055a260849b65ad9d",
+      "size": 7020
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores/subresources/file_batches/methods/cancel",
@@ -35324,36 +35338,36 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization.md",
-      "sha256": "4628bb251269b12b9ce012b56c1e28dfbbb78dd809e0e54371aa5c44609d7522",
-      "size": 866959
+      "sha256": "2533af0138e4f691ae5b298b74876df7563689a1bb95a4e43c66f25280ef72a8",
+      "size": 868387
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects.md",
-      "sha256": "137699dbfba026bb91d9e6a2f72fa12b0d5fcc7a31b178de61c34a363144b184",
-      "size": 176042
+      "sha256": "6c9fb6dc798a494b30ff6f5673785c1416f9415db5f2e40a27e1f281272f1dcb",
+      "size": 176790
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_storage.md",
-      "sha256": "f6936c9f9b94cfab9e6e2cd4c96169f3da44a3c9c2014472943b1549d06eaec5",
-      "size": 24660
+      "sha256": "4d01f884e13d13c063d7db5a24d054fe5808708eac5a452c87b4f7254c5e8a99",
+      "size": 24694
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups.md",
-      "sha256": "a452b55f2472500913ec3c6c6976d7c49ec144a7e60ec65db9deadc64ab2d7dd",
-      "size": 31808
+      "sha256": "295d0feaeb8cec4b81f49e444558807e9d0d76ec5fb53c13719f356b55b16a86",
+      "size": 31944
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys.md",
-      "sha256": "914a88fe0fe2f8b0fa06fbcc6b7839e677b70b5442817e74307521ad1583d740",
-      "size": 14708
+      "sha256": "c9575a7186bef3a7a5c6ddd7f5969dde00f13fa73a5ef8dd62aee47712fe6cd1",
+      "size": 14742
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/audit_logs",
@@ -35366,8 +35380,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/certificates.md",
-      "sha256": "08290844c0fba45f0522a351d810099ede11fb4791f6efae522470eff380bc52",
-      "size": 23669
+      "sha256": "52a12b10f30f11e1ea0c6e07cdcd3a4d3f4746df182bd5cd1d1974b0b8cb661f",
+      "size": 23805
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage",
@@ -35380,57 +35394,57 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/spend_alerts.md",
-      "sha256": "1d591f3b0199152a3a5ba6d36331f683d00f1499cc1eee781c6fa49510d97ab9",
-      "size": 15569
+      "sha256": "606f4316e34327b5f5f66d9967e85dc857a223f98078cc403356f1755602bf8a",
+      "size": 15637
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/roles.md",
-      "sha256": "fa19f8d344a1543e63a3966e9eb8ca3fa3313f33e13a0e132e9af4222f449cf7",
-      "size": 10821
+      "sha256": "42bcf0cacfec432211278536eaca0dca4732fe56f12f06b6d53a03f38b6df022",
+      "size": 10889
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_limit",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/spend_limit.md",
-      "sha256": "6a2219609550a252d7753d62407d25f49471b2ab9bac18eec6233de1e222536c",
-      "size": 8110
+      "sha256": "37ac25d1c6769023fc30436b7de7ab59dc7a89e9eec0642228d091c9084bd15d",
+      "size": 8144
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys.md",
-      "sha256": "ab9a23c2817339bb7baabfc87e134e3715e96b3618009d4ffa4ef589d36b6899",
-      "size": 11133
+      "sha256": "10949a8289c8e4f859be24c940c99f5a8d5c7c6e785d37c43f35b3d514562ba8",
+      "size": 11167
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/users.md",
-      "sha256": "aa125aabaf94db8e500f0b51860be01ca932a2bc455c076b28e6d142129aafe0",
-      "size": 35303
+      "sha256": "323a9ec70950db23262fbb5f7f46aea669024df0c2cffad5ce9c2d0552af69ed",
+      "size": 35371
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/invites.md",
-      "sha256": "896cc63738f475fedc94ebddff0793fa3458ded7728269443b4610184eb8de1b",
-      "size": 12131
+      "sha256": "d889072107d5612edc4cc3fff6cf6cc017003dab2285229b449386f5cfa65557",
+      "size": 12165
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/data_retention",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/data_retention.md",
-      "sha256": "bd9b16408e6b987528f53b351aa4fb40b66c37b2bfaa8d8c419c2e03d341a8c6",
-      "size": 4024
+      "sha256": "9e50f68611e99b7005a567542843092dcd4ad1c371fc8d211f7f5dd43105c6a2",
+      "size": 4058
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles.md",
-      "sha256": "b5bd763c052c30f3e45f86edf1cc040c4a6cf257c6b652731c423a141d909a60",
-      "size": 19485
+      "sha256": "0e3d58a55f9528ef26e24e1bff88e2523145aa033847f612daa497e8b191eef5",
+      "size": 19519
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/methods/retrieve",
@@ -35457,8 +35471,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/users/methods/update.md",
-      "sha256": "d8e72e33506ba3755bef2f2876a66e588e75b7f24801f2825b27fc3af0d1be45",
-      "size": 4254
+      "sha256": "be88e01c0375ea05a077f946e68fda28d2abbada367caeb5c4efb1c39b8c57cb",
+      "size": 4288
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/retrieve",
@@ -35478,8 +35492,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/create.md",
-      "sha256": "191165028237fbff1e0b400a81c6df865e5c5673e196dee1e74b6b8e4e43aef2",
-      "size": 5585
+      "sha256": "fae08f7a96cef8578344928aabf2797862c6e64e0b105c16adcbdc769ab2e647",
+      "size": 5619
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/users/subresources/roles/methods/list",
@@ -35506,8 +35520,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_limit/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/spend_limit/methods/update.md",
-      "sha256": "32caf59dba65d5fe9f22922d110472cb02b4f5932b31423835ad873d65dbb297",
-      "size": 2974
+      "sha256": "403252c28369cc292208744ffe7769fce9c27498101dfcbae4f5a4c71b16c17e",
+      "size": 3008
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/retrieve",
@@ -35527,8 +35541,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/invites/methods/create.md",
-      "sha256": "d63d1b61a2644a9a3e1d2da35273892dea5c4fe23852fe261117e2f92cb8e4eb",
-      "size": 3696
+      "sha256": "682da62687f5664098f93e6c1d501095919b2cc3376c3884660eadd8bf8b70ed",
+      "size": 3730
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/invites/methods/list",
@@ -35632,15 +35646,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/activate",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/activate.md",
-      "sha256": "22564b8ad9d309e56ad774c7211b8bc1f51eb473dcdb22e60b126f55875a8b58",
-      "size": 3046
+      "sha256": "d70b58b1b014a4f9a2d867bab4a7f9f204bac9cfa58784cba2bf5c4012422da9",
+      "size": 3080
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/deactivate",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/deactivate.md",
-      "sha256": "b05b42c05bed437b77ee8e3bc49da57556705cb777565c688f8f7f350b1da77b",
-      "size": 3070
+      "sha256": "055486ea29492897223702140a18661817af24a5caddcf45db7ad93aa0d21318",
+      "size": 3104
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/delete",
@@ -35653,8 +35667,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/create.md",
-      "sha256": "22fc558623c5d31f1c121e73b69d4ee01ec8f38aeb64bc8dc77e66984bf94889",
-      "size": 3137
+      "sha256": "6bfc8bcbbe95f2b1583fb2fc6df0b88aee32938a6a1a112984ff8f83aaf4a305",
+      "size": 3171
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/list",
@@ -35667,8 +35681,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/certificates/methods/update.md",
-      "sha256": "245a5c579eb438579b40cb4d52fd405409b7ad0eb338616e645a2f91f0fced77",
-      "size": 2977
+      "sha256": "743a0539273fb4133bf8ca7ae436ba857c33ab690e04e0525f6da77e40c2893c",
+      "size": 3011
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/retrieve",
@@ -35688,8 +35702,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/roles/methods/create.md",
-      "sha256": "571882870a7cfbdf94e8954c19162c0d8960dc9bf81a11278b3da35f35044c6e",
-      "size": 2365
+      "sha256": "caa23644f1e4fd569b8f41d7add3c3a45c0597b61e409fd3a44ff328c1d88344",
+      "size": 2399
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/list",
@@ -35702,92 +35716,92 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/roles/methods/update.md",
-      "sha256": "2a22064f42cce8a81ba196576b8a53dfbc17cdcbfb48946a6bc126f550a974e7",
-      "size": 2401
+      "sha256": "4653db2f6dabfc6469d8c4fda3c54e3b3fce805e6f4cc025dd6db4c42b4ab9d6",
+      "size": 2435
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts.md",
-      "sha256": "466c785b5c588e5bcdca5c2edecc4d96bcfc20d0723c6bf124db1826a4e40146",
-      "size": 16125
+      "sha256": "0282918cf5809d4e7c06e6013f7359a8881de2abdc3c8c854e89f2f2ec70a7f1",
+      "size": 16227
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups.md",
-      "sha256": "c91dad5abff5013732bc1e5a9f23ba1018b33f48ac2d3c684b6c7b16e6a9af31",
-      "size": 24315
+      "sha256": "cb8600062a704b59cc0c1b9fc8f068497188d3149c615a234f1a50c76778b92c",
+      "size": 24383
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions.md",
-      "sha256": "f191db6590424a219c7269722026127d12fe75804b3a2073424bc03863bd2e4a",
-      "size": 5658
+      "sha256": "ef46845aa63cb9f03005f2717be1f87f0fc5a1864ac8b31535bbe1575abdbe94",
+      "size": 5692
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits.md",
-      "sha256": "c21a7a491d461eafb34563744b27f436fb8c656f3e5071de2418915cba4f6cdd",
-      "size": 8035
+      "sha256": "e208a062257f05d6539d93b2f25f0bfa9b2a6819e499b563cdc725bb205d1f55",
+      "size": 8069
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions.md",
-      "sha256": "8b70c77d7070c372257c1de928dcc7687b61285f400b400475cdfdb07c38d793",
-      "size": 6915
+      "sha256": "1d59fbe13873da2feba428fa4faaac96629343f051af82b586eaa8b3bc70dbc3",
+      "size": 6949
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates.md",
-      "sha256": "eb618b66d17d21f829914064e7fa9d7cf5b4546eace2845094ecd1e1722d54ba",
-      "size": 12598
+      "sha256": "45d0dbc7e8c361e813558130b412db9ad8deafc676b8ebaf15bc21ff25dcbce5",
+      "size": 12666
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts.md",
-      "sha256": "d0b32e4acec57bd5c508266c96f89a3e00a3a0d41f29013b202614db8e2c8129",
-      "size": 15921
+      "sha256": "3e3db54f75e7c7f10db0530d5f051ef3c2a32c60b778b5948f4a40a6a581a64a",
+      "size": 15989
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles.md",
-      "sha256": "f6407a4927f6fe953b56f5fedf12e34dc93362688751e23c1c3820416932e7a4",
-      "size": 10888
+      "sha256": "c4e8fc003cf294f6b83dd56ec961f0c59929b8c831acf7e14b400949e0d7587b",
+      "size": 10956
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit.md",
-      "sha256": "8a6432cecd811cbdf50dc194c538063a35bf95765ba157d94aad4f8949c4827c",
-      "size": 8398
+      "sha256": "2d09525354ff1a86ef7e8000f83a3c95820277f131b4b4947e60adcc870c99f6",
+      "size": 8432
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys.md",
-      "sha256": "e4a0c1543838de75e80d3cdc3f252bc84635258944b962eaca974c23f10be44b",
-      "size": 19079
+      "sha256": "b309c34060f9b90e3b361b0db04bf376dd541aacc8340898e88eeb35e7c719c0",
+      "size": 19113
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users.md",
-      "sha256": "7cf4d625d1e2b31d20527107c720ff34b078c979830bda3ffd88f8ff0a526d19",
-      "size": 29692
+      "sha256": "5a6678a9389ab153f6aa5d854472108d14622dd4a9b67fbb26965752ad5ba92e",
+      "size": 29794
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention.md",
-      "sha256": "544c804a6bbcc400ad1256e4c5e292254ba29411e372686536aee44477401aa8",
-      "size": 4113
+      "sha256": "af1cc125d441dc817622b682f120e9b1b494b8127a763a6526e8f9c7133ef865",
+      "size": 4147
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/archive",
@@ -35807,8 +35821,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/methods/create.md",
-      "sha256": "e40b153314cbfdef457348879ded486dad8600ab7049b5334c3014b1c94a157b",
-      "size": 3875
+      "sha256": "59f67575f0c81240fc06341bdf71847e055117e58606495f60b6136e86a42e91",
+      "size": 3909
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/list",
@@ -35821,15 +35835,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/methods/update.md",
-      "sha256": "415ce8929bdd35b1080ec9518404dff7bb4283c050b6d09c317d350be5f06ad7",
-      "size": 2750
+      "sha256": "0486d01dcdd0630a1fac41d2421af4e9caf97b057edb368ee3f965ebc7f2367e",
+      "size": 2784
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/subresources/api_keys",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/subresources/api_keys.md",
-      "sha256": "fcd45942a8ca84d563a7ae2d8fd601d107dcf6a7edc64d22077be85000652bff",
-      "size": 3180
+      "sha256": "32e06d5f97f82d5c71846b556052c7011fd5cc37d58f8b67ff8467b27e50d66c",
+      "size": 3214
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/retrieve",
@@ -35849,8 +35863,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/create.md",
-      "sha256": "cb592ef524bbd8f283c4268c0b97dd9a3b33ca37422b04813949931fb2489462",
-      "size": 3307
+      "sha256": "32e0a363747c1145f8e38b0072f704448d4afd9db40eca129c535e5481b9f523",
+      "size": 3341
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/list",
@@ -35863,15 +35877,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/methods/update.md",
-      "sha256": "26d5d46c025854081a04601bc56ae51dd10c749e7a138abd279f90971a40bea9",
-      "size": 2261
+      "sha256": "2da65ab5bb461c5680655271b02029c48be6b8514216aaf1a53e246fa43a6382",
+      "size": 2295
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/subresources/api_keys/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_accounts/subresources/api_keys/methods/create.md",
-      "sha256": "1f1cdd633391322c8e79bce84fc33d485ece94ae483f9e937ed6ce9ebd98e859",
-      "size": 2355
+      "sha256": "0b588a3e70ffba08b394114390753827c043b70e6a4e1970ca74a99d531d840d",
+      "size": 2389
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/retrieve",
@@ -35884,8 +35898,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/update.md",
-      "sha256": "5a74c5eb2d69ca72e72c7396d96053a73795a3baae599b1d2c9fba4e7cc4e29e",
-      "size": 3500
+      "sha256": "390a408d38c745279209579ac40b3a935b1b0fd24345a3c61fc07a24932fda64",
+      "size": 3534
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/retrieve",
@@ -35905,15 +35919,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/model_permissions/methods/update.md",
-      "sha256": "8fee6f2c3f648e372ec81cd86f83a77a4b5693bc5949cbbd904ddde69fe9b7c8",
-      "size": 2016
+      "sha256": "de2785775c4196d0fdbb87e9619b98ae3584f48b263028d46a994eb16d049771",
+      "size": 2050
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles.md",
-      "sha256": "bda632316fc3e46d9bca8f023cba95ed4276f4675a1bd114ed0096441b72aae5",
-      "size": 19921
+      "sha256": "caf73adacf8a3ec66b467c859dea085533414fa61bb123bd9f41575254847327",
+      "size": 19955
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/retrieve",
@@ -35933,8 +35947,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/create.md",
-      "sha256": "3689c22d7a5ad8fc2f9f0372dab409d932682c7eaec120a746a7ff738d560f6b",
-      "size": 2089
+      "sha256": "b48c7f9a43c4bc0f889e9c39f3f7078f18c02fd36a2bfdca6b792f379f9badb3",
+      "size": 2123
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/list",
@@ -35947,8 +35961,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/methods/update.md",
-      "sha256": "162d4b230aea3c2eeb9c20068abef618791ddf6e0c99f2ff11e64ee8968dd23b",
-      "size": 1949
+      "sha256": "246b377400edb3a184b731bbf3e5e051a730270da2dd531d6214a3f25c079dbb",
+      "size": 1983
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/retrieve",
@@ -35968,8 +35982,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/create.md",
-      "sha256": "0b1c51e3114a0e45c34aea104129e3bf23eead2c5b6e3a935fac751e15e0f0de",
-      "size": 5697
+      "sha256": "9e9290539ca081979bbc1b5ea46407b13bb6db8e94fffeb947219aa5675a4c8e",
+      "size": 5731
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/users/subresources/roles/methods/list",
@@ -36003,8 +36017,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/api_keys/methods/update.md",
-      "sha256": "66c20bb3fbed27b1619baebd1e920d6cac9da49cb55e8aeb1055af7100aa0f6d",
-      "size": 6044
+      "sha256": "63cee1aebb52414683ed2c663d3ea6c4f1061681057fb333d5a007144a9d606e",
+      "size": 6078
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/retrieve",
@@ -36024,22 +36038,22 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/update.md",
-      "sha256": "61e54e3e10b6171b953fdb9a62598be9560a184c9c1fb4c348c787e350f8e192",
-      "size": 3094
+      "sha256": "152df70276cbdae94c061b5acadb3ddb1d3b26fbb5fb3c06c5175f2989192fd1",
+      "size": 3128
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/activate",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/activate.md",
-      "sha256": "2b94f72672e4727ba54a3bb058fdc71d0fa4f5cae0e0928171d1c6d191d99ab7",
-      "size": 3238
+      "sha256": "c0c9f1f09b49aa8fd4f17f8143951326533e52c0b864fa5e9aefdc7194ad4692",
+      "size": 3272
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/deactivate",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/deactivate.md",
-      "sha256": "2ffc376435225f132815de34026662fb12fb8d622cbfd6975d4671eec90384b9",
-      "size": 3261
+      "sha256": "4fb25be026d523c5e76673edd732d0402ded2a9bd05c9f48a02d8da5c5ca9dc1",
+      "size": 3295
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/certificates/methods/list",
@@ -36066,8 +36080,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/create.md",
-      "sha256": "785e45faf69da9bf9e2201d26639f1a03569157045214bb1db94515f94bb1723",
-      "size": 2570
+      "sha256": "d137f6f0870a1903da14ac861b8f7a35963a0ad8f262d84accdb81594cebb4f6",
+      "size": 2604
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/list",
@@ -36080,15 +36094,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/roles/methods/update.md",
-      "sha256": "aaed776dcbf88b89c347d7f78613ed93be4c316caae0edcfefe404b15ba6a863",
-      "size": 2585
+      "sha256": "85eb6e53af102eac43ae1fa220ffcb0ef1e7a3f2064765b040a5768874baf5f2",
+      "size": 2619
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/update_rate_limit",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/update_rate_limit.md",
-      "sha256": "10966a1940f9d00e7ba76059fe1647f7c501f7b5bcd6f1a7ae71fb282a89a76c",
-      "size": 3403
+      "sha256": "73f45c9a7205693b887c8b6c3ebbb78688039e614ea35dbfdf5cc9b888db9759",
+      "size": 3437
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits/methods/list_rate_limits",
@@ -36108,8 +36122,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/data_retention/methods/update.md",
-      "sha256": "20a7de4977e584a816dc2a0d9856846dcafd4cd8f8044cd76ab61312658e62f9",
-      "size": 2083
+      "sha256": "ca098e5d6060d6113aba1e4a0416d7cb9c39e5c0bcb4e5194cbe6c97dd9b1e0a",
+      "size": 2117
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/retrieve",
@@ -36129,8 +36143,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/create.md",
-      "sha256": "23d3619eee1fc1e41292cc791aa2788cabd11ceb025fb99dcdafa1b0cf15e7bc",
-      "size": 3683
+      "sha256": "539e3155779b74b554a987c53bf1856252cbc404bfdc272ffb0ed8a436fed8fd",
+      "size": 3717
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/list",
@@ -36143,15 +36157,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_alerts/methods/update.md",
-      "sha256": "11182e99bc5daf7041ed3713cefe540d12c369e75ea39347aa777395b13038c3",
-      "size": 3779
+      "sha256": "41a9552c483c78fb312da39b92baa884c5b8fbca4a8ded8863314ec588fee427",
+      "size": 3813
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles.md",
-      "sha256": "efa9704689931d52b313aa3724c3313315848d983770e88b4d665d2e74b47207",
-      "size": 15756
+      "sha256": "bea2ddd5755c5684bd09054ad828adfc97d8f2f22331a080dffb8262617ab95d",
+      "size": 15790
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/retrieve",
@@ -36171,8 +36185,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/create.md",
-      "sha256": "e90e34673e8f7e3dbdf47ce07e7ae9a784d7af8a3ceeb670267bc80bbdbfe1c7",
-      "size": 2169
+      "sha256": "29b6164ccb28afde30e8750b1e4547bfcf35b98d3083f2490f50563de20e50dc",
+      "size": 2203
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/methods/list",
@@ -36199,8 +36213,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/create.md",
-      "sha256": "811fa7e4479eb4137cd2030811784a4afe97fb5089aa054344c2bca39f742d15",
-      "size": 3284
+      "sha256": "feac2db24b969254fba2e9e71210f42be43c9841c865c441daccb13cf5eabd2a",
+      "size": 3318
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/groups/subresources/roles/methods/list",
@@ -36220,8 +36234,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update.md",
-      "sha256": "4b8ec1c8b03437595e713dec13e27b4a76c55c2355ac61ee5a7ccdd81deb95f4",
-      "size": 2022
+      "sha256": "cfb665c613b6572a67a25c0b6ab5d87efa137347fc9de22463d1621a560052bb",
+      "size": 2056
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/retrieve",
@@ -36241,8 +36255,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/create.md",
-      "sha256": "b184a95812b16b3d4b644dc7d170dc2fece6c2362c2e34674d52b80542a8a120",
-      "size": 3587
+      "sha256": "356c87a59b23f1582e5c7e48d9ee6c163c7fbad9b5e275587f6e590e4ab788ec",
+      "size": 3621
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/list",
@@ -36255,8 +36269,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/update.md",
-      "sha256": "a1b39b8f3adff4692c09acf5eb768e3a4c1e2ab8f1c372a28a534184387ca275",
-      "size": 3704
+      "sha256": "e1fa030782a17c6ca062c508c07985a0f28ea827e2e03f197ec9afbe1e9df81c",
+      "size": 3738
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/retrieve",
@@ -36283,8 +36297,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/create.md",
-      "sha256": "ccc678ded1cc9d763f374e80d4b1038097b089f4a080bce17780c1fb21adf4c5",
-      "size": 5845
+      "sha256": "4423658ba3eb7a32ca1d39a937a4ea5dbbd262ca9f4214dd458f3e7973f5ef89",
+      "size": 5879
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/list",
@@ -36297,15 +36311,15 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles.md",
-      "sha256": "e83e860b1917bde3e4444c5963dc084cfa1f2d0b27c7d60c40d91d7a56246d63",
-      "size": 15362
+      "sha256": "b93f4083864f2a7fe6e3cbd1a9142ffca75b303ad7b5657aeba2ed232424af11",
+      "size": 15396
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users.md",
-      "sha256": "f3a46335b17592a9b692f0821270079a7d9aeb71804ac1559f79c60c09e9eeae",
-      "size": 7533
+      "sha256": "18f71ec221eaece413ba4d7724f46dea915e943318e9cd37e70862f44488591e",
+      "size": 7567
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/retrieve",
@@ -36325,8 +36339,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups/methods/create.md",
-      "sha256": "c33c660659ddb9a901944c499c802f14f72b16316a1d99482d653bfd9405493f",
-      "size": 1705
+      "sha256": "06588390f6792d3b8706b10dde2e3a121e36c0f8730b7daee2612b68fc1a2480",
+      "size": 1739
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/list",
@@ -36339,8 +36353,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups/methods/update.md",
-      "sha256": "305a743fc87d401f91c5f684e4404453556d01789e632c76ed1259cdb9483946",
-      "size": 1513
+      "sha256": "bd10256aef9773939ac17c4ca840e42399857326ec9f28f6771837374c3e89c7",
+      "size": 1547
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/retrieve",
@@ -36360,8 +36374,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/create.md",
-      "sha256": "eaeac55f5810c47eddbaaf1b5cdc65ef2b50d51f47463f73eb905e575874fab8",
-      "size": 1372
+      "sha256": "9c3c8cff60b315bf2e27fd322cbe843ecf3ef0df9d780fe2c0fe8d69ad1076af",
+      "size": 1406
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/users/methods/list",
@@ -36388,8 +36402,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/create.md",
-      "sha256": "d96f204cd3f3731f96270eac422c7165c9c9bfeac977b1cc0dc6daa56d6f0633",
-      "size": 3172
+      "sha256": "3a8fb0d9b7df140974920efb06e861962bed05aaedcb82fa397986329c314023",
+      "size": 3206
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/groups/subresources/roles/methods/list",
@@ -36416,8 +36430,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/create.md",
-      "sha256": "1fb90a643c85382840821baafa4c5a022734114e333b4528b9084453a1f29bc6",
-      "size": 2019
+      "sha256": "f6d1c13f2d3bed292385dea948375b0f21aeef95f69e99e835e47ae88805e493",
+      "size": 2053
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/list",
@@ -36458,8 +36472,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/create.md",
-      "sha256": "f2cc212fc70261f7edcf8e6d520522752a392c76f2376a85ae3dcaf1ba04dcc1",
-      "size": 7765
+      "sha256": "f29884e0f936439c251c78f7388ebe943750fcd0ff448dc66c5c2ac59236d491",
+      "size": 7799
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_storage/methods/list",
@@ -36472,36 +36486,36 @@
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/speech",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/speech.md",
-      "sha256": "9e9719804887fb24e9a93b17244c0b0102a4f9e65eb1d9f41f190711403e8e2b",
-      "size": 4826
+      "sha256": "b0add9057d999c9f29eba65d445aee94b40bf2d9ff0874221727ebfb5311c344",
+      "size": 4860
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/transcriptions.md",
-      "sha256": "ce98f5982ec8829ba5804862d947e7f2f4360c163bb6bfe052f0731b9ca30ddd",
-      "size": 47869
+      "sha256": "0c08b085ae30c760501d18a681737f501f361eae0442024fddd3ff0b1aaed5e7",
+      "size": 54297
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/voice_consents.md",
-      "sha256": "f39c342c74b7d44b791bd2cd1cb17c5a728b8da78994612d4bc60c1af5a3e8ac",
-      "size": 7982
+      "sha256": "6e4d3d6acc4b7a17e7a2d7332f0a6434b19da495ef4840bc397f4de24d288244",
+      "size": 8456
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voices",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/voices.md",
-      "sha256": "1cc2d13577d1066dafb6fae019926be9bbacc8e6db0fe4dfcba7b397bf45e909",
-      "size": 5814
+      "sha256": "088a5ee30c7fb5482bcf68eaf5007cfeb63be376803f5bf81cef3c2661f3a523",
+      "size": 5848
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/translations",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/translations.md",
-      "sha256": "0c0a1444d000158fa2e98e8feb861d64c4be4fac9263ad406e1d0fbe0a2a769e",
-      "size": 6074
+      "sha256": "0097a3edf0d2120efa7235179f78bdcc6c75ccdb36773a594f25e34e92e36cd1",
+      "size": 7733
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/streaming-events",
@@ -36514,15 +36528,15 @@
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/translations/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/translations/methods/create.md",
-      "sha256": "e1624cf7dcb1c05abad43712f2f8098f16f8c606644c749f9527255a1ba3e6b2",
-      "size": 2747
+      "sha256": "ff7445f27d8c9107961779f223eff7e4a55019edb831cbdee911417cba2ebbc3",
+      "size": 4406
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/transcriptions/methods/create.md",
-      "sha256": "52030140556d64858297cba91e30af77d257fe0a1c539c1cba7825e96c761af8",
-      "size": 20917
+      "sha256": "a33a451c88abac5d50e63f24ba12011def2b4d834b6334d63b4350773c759f30",
+      "size": 27345
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/retrieve",
@@ -36542,8 +36556,8 @@
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/voice_consents/methods/create.md",
-      "sha256": "57b22a7265b6b3a5068111deb3c9e399d678863ca5f8933be9518c4387290b88",
-      "size": 1564
+      "sha256": "402ce0bbde7d1ea928a5cfea26f77194a1be66e38fda766720d81439e0fef6e1",
+      "size": 2004
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/list",
@@ -36556,8 +36570,8 @@
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voice_consents/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/voice_consents/methods/update.md",
-      "sha256": "5848b3887d9e5a3fb6d8699909f5d8ebec7652240ba7117895ab072141e7e368",
-      "size": 1719
+      "sha256": "c518d43cd108b9fd7aa790fad9ceb66d7975235c7cad701a944293d1e3ea0b1a",
+      "size": 1753
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voices/methods/delete",
@@ -36570,29 +36584,29 @@
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/voices/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/voices/methods/create.md",
-      "sha256": "a5a79dcf5e1ad5988cd1936cfa8f1925e682896d513828b9ae7dec72e75687e5",
-      "size": 3260
+      "sha256": "2146aa0f1b240340685323f5b9ecc5bbe154d08309e51cb5abfaea965062bb92",
+      "size": 3294
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/audio/subresources/speech/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/audio/subresources/speech/methods/create.md",
-      "sha256": "d15e6a8dd84d46bdb94e788929bd4574db55f0ff31827ea9eda6a7d14d20f09c",
-      "size": 4593
+      "sha256": "5ebfef59e10bd2afb1b5996125e249d2b4274c747e68b0bd935575d67915dc22",
+      "size": 4627
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/jobs.md",
-      "sha256": "29a295f8feb7ba887b3494eb45c69a4d5b252ca105f02a0e3c29533acfb919b0",
-      "size": 238283
+      "sha256": "dbe9b1ae2faafaec0be50cfd21519f0c1eba9dfdff8c448aa1faa7803ff90a47",
+      "size": 238317
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/checkpoints.md",
-      "sha256": "f224848d633dddd244c0a470ca8a4f8fb609f65eb87ce57e5968854045c59c62",
-      "size": 12242
+      "sha256": "8fb96f541fb661fc18a8af4c10649c94a6190ba46d28f9fea909c8f33fe6a2e1",
+      "size": 12276
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/methods",
@@ -36605,8 +36619,8 @@
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/alpha.md",
-      "sha256": "1b094cc3c15341683dfd695ac2ee99177ac29c568ce41bd35c265d27665f842a",
-      "size": 62156
+      "sha256": "1c536426d2e7bb47f5e90bcf13cd6eac09fcf6e8195ca36266b525d67be2a2f7",
+      "size": 62224
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/subresources/checkpoints",
@@ -36640,8 +36654,8 @@
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/jobs/methods/create.md",
-      "sha256": "fb3250de810b1c3e760db3cd6b2b742cee9ad3ac3c2afc98aecc83970b2b426e",
-      "size": 59516
+      "sha256": "80d040ee88e6434fbdc3e62fe39daa29fea4aea45faa744945d555c39aa8eee6",
+      "size": 59550
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/jobs/methods/list",
@@ -36675,29 +36689,29 @@
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders.md",
-      "sha256": "57d925271bcae294ab147cc146d22522b37ff7bdd9ec88be8609f1f1ed71e847",
-      "size": 62147
+      "sha256": "6ff0ef9ada1aeb118006cd4dc8fb9b360a3d8cfdf6d2708c33567ecbe56479a6",
+      "size": 62215
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/run",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/run.md",
-      "sha256": "29b608902fc7e8644d5df9cf026a45a676c7580200fe15f68758558f35e128a5",
-      "size": 20652
+      "sha256": "b6755b98ac93a6bf273e07ac569c17eeb3f34e0ae9614216415dcecbbc2c64df",
+      "size": 20686
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/validate",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/alpha/subresources/graders/methods/validate.md",
-      "sha256": "08d01b2cdcfe1084a4be48d577f1a728d32884f7cb7412c2e6d4e6ec2214f395",
-      "size": 26854
+      "sha256": "c8ade33ff3037e026a4d91f1008aa52b2386eb79a30a5af29b67095095d1a1c0",
+      "size": 26888
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions.md",
-      "sha256": "e05e9f0f0f40e27fe5980128cf00da84cc31755a52a421799b204f9f58e401db",
-      "size": 12227
+      "sha256": "54436899437958ffab27507763ce7985868f1fb5a9da29ce817dbaf3629886b8",
+      "size": 12261
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/retrieve",
@@ -36717,8 +36731,8 @@
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/create.md",
-      "sha256": "e7ac82620ceb165a660f2538781d6ffa588aca1babe8e06d149863cd55843a24",
-      "size": 2590
+      "sha256": "e09904ba02988ace07e7c94a80e7b9997c16ef9300082f50ecb64bc7fdd6d88a",
+      "size": 2624
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning/subresources/checkpoints/subresources/permissions/methods/list",
@@ -36738,8 +36752,8 @@
       "url": "https://developers.openai.com/api/reference/resources/responses/subresources/input_tokens",
       "status": "success",
       "path": "openai/api/reference/resources/responses/subresources/input_tokens.md",
-      "sha256": "608e9965a258f9f83d9920630ca1c181e782cced97a3215e2d8072134f6c593f",
-      "size": 179558
+      "sha256": "f415225379e620e569cc3c5170aeb7490b0ebc8146c44a03afacfadb8a3c9fad",
+      "size": 179592
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/responses/methods/retrieve",
@@ -36752,8 +36766,8 @@
       "url": "https://developers.openai.com/api/reference/resources/responses/methods/compact",
       "status": "success",
       "path": "openai/api/reference/resources/responses/methods/compact.md",
-      "sha256": "e1f2eeed64367c158c7e96a2b808df55a328c25c0e541466b17bf8c28c67b540",
-      "size": 279817
+      "sha256": "0ab7b78fdd3d927fbd48d0f6d18341ca4afeb51eb373930b90d2e7353af670ae",
+      "size": 279851
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/responses/methods/connect",
@@ -36773,8 +36787,8 @@
       "url": "https://developers.openai.com/api/reference/resources/responses/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/responses/methods/create.md",
-      "sha256": "00d55f4c9e8f29af7d4585ee1d542f44748c4539193ae674e6b5f01623a49a15",
-      "size": 535416
+      "sha256": "3201c1cc5350a3283e290d40d541a6eb55ee8a47bea0e1734b6708234ff3f46c",
+      "size": 535450
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/responses/methods/cancel",
@@ -36794,29 +36808,29 @@
       "url": "https://developers.openai.com/api/reference/resources/responses/subresources/input_tokens/methods/count",
       "status": "success",
       "path": "openai/api/reference/resources/responses/subresources/input_tokens/methods/count.md",
-      "sha256": "6370a0dca3a069c9d77da7a2ca9067f9eac7c5cb3239a2e70e26b25818bd2a2b",
-      "size": 179296
+      "sha256": "6fe6007ca1c76025795a5d7323a40ff6c4245f7d323f0c4f1e0dc4e2aa34f6f3",
+      "size": 179330
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents.md",
-      "sha256": "5c25d71666b656d6520f985408613b4f1036a3a4c8e78fba0ed5ba27bd3aeed7",
-      "size": 1561028
+      "sha256": "03df242fb683b28242ed0c133418c711016ef00516f58e11decec952ac548c73",
+      "size": 1565067
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/responses.md",
-      "sha256": "8f1257322dd020d161989e6267b768c50e1e727a2643ae9a347fda009b6699b5",
-      "size": 6717064
+      "sha256": "f6323583a570c055c41b5f06971a13cc2a1618cb6df72da457f3f62b6bb15bc9",
+      "size": 6717166
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/chatkit.md",
-      "sha256": "afc19586e63e9b110c94e1d35e438ddc7117e605d2666278709e8404cdf46576",
-      "size": 62277
+      "sha256": "98b8e59a05d7bfa02840101c474022399572121e0938821a7f56a48404d4fed5",
+      "size": 62311
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/websocket-events",
@@ -36836,36 +36850,36 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/streaming-events",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/streaming-events.md",
-      "sha256": "626624f4766795664675b8550a7bceb1563c9988528230df81d227ac31dc5042",
-      "size": 237730
+      "sha256": "5df95464df4238288695ff2786a818c70cd0d6b7b1dcdcc177887a35b3b3bf24",
+      "size": 238990
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments.md",
-      "sha256": "df741c13ecdf45ff3cdd9042730f4f101cb8b96cda65f48bd16f76c703e1af3a",
-      "size": 77596
+      "sha256": "050b3a3b732c79ca3cf9b5e0dc9c5f61b46c9f4ce07ac79fbc930f8f1ab56b31",
+      "size": 77732
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/automations.md",
-      "sha256": "dcc01434d0c467bcf93f324b8b1eb17c0da8ccfe2e9acb621446ac38f346eb00",
-      "size": 484570
+      "sha256": "aad65ab0384a435241f2357755db6d955aa7b768169a6f6b490c25adddf9f60c",
+      "size": 484638
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions.md",
-      "sha256": "7640b0a5dd5eaae21b3ce92174756f9b2a69cd04d089898e70df63a850042bb1",
-      "size": 370311
+      "sha256": "286e052c11c53be336cb7805bb1f8b19690eb7d9170f39dfd7d7c9aeeb49ac97",
+      "size": 372275
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/vaults.md",
-      "sha256": "f322e58597f3ed3ce4e88049224c42aa2c2a453c12838f05fd520855b9686ed9",
-      "size": 76554
+      "sha256": "537e1d939af62ead26560d3d9fb183e888402b477c05fd650f252d2c57ad155f",
+      "size": 76690
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/retrieve",
@@ -36885,8 +36899,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/methods/create.md",
-      "sha256": "8767c0144999ceebe14b7ee441e5a20ee6975676f10cc5463c5c97a3ca8654a4",
-      "size": 21326
+      "sha256": "913bb707402ca1029fe87b736d552a12b0404dea24c19d0aa375a0934403d40d",
+      "size": 21360
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/list",
@@ -36899,8 +36913,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/methods/update.md",
-      "sha256": "f339d4ed916d7b8ec5e370b47adb4ce545eae7e98cdd368d5742a49d3a17a2d9",
-      "size": 22311
+      "sha256": "e788af345404ec541f7dfd7479938eb4e73bd27f2a3a095b2af593b8ef88bffb",
+      "size": 22345
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/turns",
@@ -36941,15 +36955,15 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events.md",
-      "sha256": "bfbe53b01cea61c8de1f63e77507a86dc20fa6ee7ab76dccb2419acbd4e33e67",
-      "size": 96808
+      "sha256": "93b482bcb7163b0e6066ec17dde5733779f72bae730d024c8fbd0664b4be0758",
+      "size": 97088
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/retrieve",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/retrieve.md",
-      "sha256": "fbede4ea1cf4bc7d89d3f9e06fd9c60ff9aac936de8ee08dd1bfbe162583c0ad",
-      "size": 24781
+      "sha256": "26e0c1329ec99beb545445762d465a3b7d11e304d9b28c7184a406d15edd6e21",
+      "size": 25032
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/delete",
@@ -36962,36 +36976,36 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/create.md",
-      "sha256": "17948e3321fbb7c4d9b139c7c08aa918fcb5031aa61d5d47b5f88a519859a8ff",
-      "size": 46463
+      "sha256": "e825c9ac84298374bb82bafd9e941be0b87a6abb45b646839b2c4dba96a01a38",
+      "size": 47021
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/list",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/list.md",
-      "sha256": "924f80dd48f37661532b92c2488ba65df5cc0afe9f3bd56bfc165c372b857972",
-      "size": 26706
+      "sha256": "5d6c1e751f8d115224e530bed00141f717301fb34b4a6a70c5695c99db64afc4",
+      "size": 26960
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/update.md",
-      "sha256": "132d036695cdd4baa6c9eb60841440cdd4605fbf600a6f2e3301912d77a7d741",
-      "size": 26263
+      "sha256": "47d899f449fef088daf39de5d6e607a553ba49464ad92205c214a390daa67d71",
+      "size": 26884
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/stream",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/stream.md",
-      "sha256": "772982839841eee67bdc95a97ca9f7e42bf1953733f28982f1071ecdafc847ce",
-      "size": 89576
+      "sha256": "6a8161db1bccae2d535e7ab1830a7900ea64b4c7dde636053a42bb10b4accb62",
+      "size": 89822
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/create.md",
-      "sha256": "d505b718413fd3c0b567ff578c2858b759e19ab4ef087bcafac3721f92098d60",
-      "size": 7380
+      "sha256": "5cf3c8c684f29f4b55cd2dc5616502c27864642ddb0cedac4fc88a6c7efe5e57",
+      "size": 7414
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/turns/subresources/items",
@@ -37130,8 +37144,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials.md",
-      "sha256": "5c80406bf014009eff5e6f0b858bce50c1c92d5ef37d00eaf94ac9d07ed440db",
-      "size": 66708
+      "sha256": "4840ecd7c54882e5ba490bd149188072637ab3b9b9c584f34caac2ea6389d5da",
+      "size": 66776
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/retrieve",
@@ -37151,8 +37165,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/create.md",
-      "sha256": "3062fbc7bed2c8056290a27e311cd8b0bf12a13651a7413b54356843be30fe31",
-      "size": 1562
+      "sha256": "b4c917842aa31cc7c61da81d14a02668962907352e70726e1231077d7d4c02cf",
+      "size": 1596
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/list",
@@ -37165,8 +37179,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/vaults/methods/update.md",
-      "sha256": "6f8b34cbd61d156d8892bb2172430dbea168a77c84770488f8e357e8b77f1195",
-      "size": 1913
+      "sha256": "522b641121ee31350ea666b402b082f9623bbdd13782e048af41ccbcc0efc05a",
+      "size": 1947
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/retrieve",
@@ -37186,8 +37200,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/create.md",
-      "sha256": "57380f67e1eac6fa747d4a7664d5d9e58d3a41dc1aed6fb7e71469b69fb9d5e7",
-      "size": 13295
+      "sha256": "7ca3e0ea6b35e41741169fba1950a25d697bb23a7ccc5a4842c58317767239e8",
+      "size": 13329
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/list",
@@ -37200,8 +37214,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/vaults/subresources/credentials/methods/update.md",
-      "sha256": "60015cbb1830d6c08c82de3abb83272f5aba84601acbd5b58d964820fc4bdbb4",
-      "size": 10805
+      "sha256": "4ebb25ff39dbf6fb44488745026c3cfa89249ece142f918dfcaf1f36fc3d2012",
+      "size": 10839
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/subresources/invocations",
@@ -37235,8 +37249,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/automations/methods/create.md",
-      "sha256": "178c52c1abfd3b7ab16b25535eb1ff6ab5ad55396359993de7294398f4a2bfad",
-      "size": 51331
+      "sha256": "8f5ad395751df9dd8cc47e205f596a878cbea516194c3fa6dceb7d6a503ce3d9",
+      "size": 51365
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/list",
@@ -37249,8 +37263,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/automations/methods/update.md",
-      "sha256": "5c4dab5123b58a622e67e2f667aaa7ff325af34290941f35e9397b2db94793db",
-      "size": 48588
+      "sha256": "6bbefbe7cc104f49b8fa9a5e7ea313ff4e50575b0168e6141d0862c60ad5fa09",
+      "size": 48622
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations/methods/pause",
@@ -37284,15 +37298,15 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates.md",
-      "sha256": "e93b4622e74a60c1e4da4280de13ca768aa3204c656237535fe0e0a4df7bfb5a",
-      "size": 44957
+      "sha256": "a9e241f985ae4ff7dceaf38be663347e225ef5c9884ad207306ae5a976912590",
+      "size": 45025
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files.md",
-      "sha256": "bfecc6b091c77c199a22fdb710d33f64f14418ff186b037693318ff1d0c0174b",
-      "size": 5613
+      "sha256": "88062ee0bba13be243b2501b25542e1906fa10bf2821e91c589a1ce565104b75",
+      "size": 5647
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/methods/retrieve",
@@ -37305,8 +37319,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments/methods/create.md",
-      "sha256": "fee014d9bde2ca0eb4ce62daedfd4f9ac41ebfce4aa87545e7cac1fefd58ed65",
-      "size": 12036
+      "sha256": "8adc9639299d1b4e580015b5a94b2b772d34fe9038a5fb32dfa3694142b05ebd",
+      "size": 12070
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/methods/list",
@@ -37333,8 +37347,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/create.md",
-      "sha256": "714fce98e76813508a5fe09ee1f8bd7c485437c42dd88ef63839b14ebd31e910",
-      "size": 12318
+      "sha256": "577b75d8f8b5363b6c7d200d6a38b2096c8e70999ebfeaa38d9e36e17d04d871",
+      "size": 12352
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/list",
@@ -37347,15 +37361,15 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/templates/methods/update.md",
-      "sha256": "b647c03380f3f74c1396cf8c86f7f41eeabc80300ef431f6887d1b5352323a1b",
-      "size": 12399
+      "sha256": "03a14183474d1ff80fe13999b0eca0589e2bc3a947e8440f190182a81d2caf69",
+      "size": 12433
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files/methods/create.md",
-      "sha256": "5cc16cf01dacd93a9426122847636430e2c0e65da1b8c53687d6290641004bf8",
-      "size": 2630
+      "sha256": "15a4a3c51f67f08dec63ac6e6d4a1047b0f41910457de5c69ad1d254bbc25cc8",
+      "size": 2664
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/environments/subresources/files/methods/list",
@@ -37368,8 +37382,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/sessions",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/chatkit/subresources/sessions.md",
-      "sha256": "61add58f8ab36abad72f145c1d3189a04d733c40f84060aa24a67ecfd6aeaf1d",
-      "size": 13221
+      "sha256": "9ecfa0c783382cecf4a38f0a347a769e2d6dad686d15896b70d030cc65f11e82",
+      "size": 13255
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/threads",
@@ -37382,8 +37396,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/create.md",
-      "sha256": "586b17d30054d1d16bc1bb3775edf8d923d05ba6fe937fef03dc29795ee947c3",
-      "size": 8329
+      "sha256": "6c2d88b3f4d6fd255e22c156211b4b13fe6c4ef09a9cfbf15adc11ffb3b42697",
+      "size": 8363
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit/subresources/sessions/methods/cancel",
@@ -37431,8 +37445,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/subresources/input_tokens",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/responses/subresources/input_tokens.md",
-      "sha256": "4495cb98fde7319140e821e6ed75f87ab79f02a1c0583cddb0725fb1844490c1",
-      "size": 198477
+      "sha256": "e11577ea833795cba9e2e35ff751b5b31e90d49e16a1163b303a6ec3eec53812",
+      "size": 198511
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/retrieve",
@@ -37445,8 +37459,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/compact",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/responses/methods/compact.md",
-      "sha256": "fdae99efa48d4d0dfb58dcff329cd433d391133bc5219dd1ec4259bacf5a7f68",
-      "size": 311838
+      "sha256": "1088e3fa0f3692e4dd90c1514de2ec1171f5bb6bf772438c09517df4d7b07a46",
+      "size": 311872
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/connect",
@@ -37466,8 +37480,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/responses/methods/create.md",
-      "sha256": "3a2764d6cadc16943bcb81e1d8fbfa6dcadf13a2e4b300f298b45a3ec469b8d8",
-      "size": 592913
+      "sha256": "10352e22416bb9b2313e2e3887cfad199e95461fc683d2794732c0b97741a9cc",
+      "size": 592947
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/methods/cancel",
@@ -37487,15 +37501,15 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/subresources/input_tokens/methods/count",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/responses/subresources/input_tokens/methods/count.md",
-      "sha256": "e77b2d8e5c1aea842557e0992c9e7e6b878b100eb658eebb8bd4275639714f0b",
-      "size": 198215
+      "sha256": "a5e2db3453a0bdc4ee12f622321da6b41782b49180d2883789ce75ebd6f44f75",
+      "size": 198249
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/conversations/subresources/items",
       "status": "success",
       "path": "openai/api/reference/resources/conversations/subresources/items.md",
-      "sha256": "1c693093172723e97f733a027b3d8261067b6c649e11a7619aca03897b69b9f6",
-      "size": 795458
+      "sha256": "32483f192ecb8bcbb2868fa79aaae6e533e28db2947b320a10cc4aa021aebf61",
+      "size": 795492
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/conversations/methods/retrieve",
@@ -37515,15 +37529,15 @@
       "url": "https://developers.openai.com/api/reference/resources/conversations/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/conversations/methods/create.md",
-      "sha256": "418df61dd6da78a447e12f8150a223f0106ebd5b750f684d0a017f0b3b9cbcc4",
-      "size": 135327
+      "sha256": "c6ce8e58b00b9eb07dff77aacf185beeb63ee35c4dd83170c9c9e64107ee5696",
+      "size": 135361
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/conversations/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/conversations/methods/update.md",
-      "sha256": "4fe9d6ffdea934d86ee7e7d52c46d272e52d00935f2124675ae2af02d5d498b4",
-      "size": 2328
+      "sha256": "051301190d9334b5b40319c4e30849388c09efaaf5bc57510c3d8222ca5b8893",
+      "size": 2362
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/retrieve",
@@ -37543,8 +37557,8 @@
       "url": "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/conversations/subresources/items/methods/create.md",
-      "sha256": "e4a0f80651c89d2d6336692b951c61c5d3633ecdb326607ff26a331f7fb41508",
-      "size": 268401
+      "sha256": "9d3ccb5e804d899a42f3f265dce1bcf65edcc3fc448f42dd0913d7ead7762a54",
+      "size": 268435
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/conversations/subresources/items/methods/list",
@@ -37564,8 +37578,8 @@
       "url": "https://developers.openai.com/api/reference/resources/completions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/completions/methods/create.md",
-      "sha256": "233a64c0fdbdb9d43f5ce4dc24b4c272906e25a5d0e99d3a4e2156de84589067",
-      "size": 15185
+      "sha256": "4c7570402156df7df00cf4bc7d7e1636d6f631450cc40178fd9d7a59b1f7b5a8",
+      "size": 15219
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/batches/methods/retrieve",
@@ -37578,8 +37592,8 @@
       "url": "https://developers.openai.com/api/reference/resources/batches/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/batches/methods/create.md",
-      "sha256": "fbdf4c9c43f66ac11d8af1072c15c72cf6032c2362883a38036c19357256eb06",
-      "size": 9471
+      "sha256": "98caaf1b449621149050d94f84c58bbb5d1b981d034c590aef8cc879c61c61d2",
+      "size": 9505
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/batches/methods/list",
@@ -37599,8 +37613,8 @@
       "url": "https://developers.openai.com/api/reference/resources/containers/subresources/files",
       "status": "success",
       "path": "openai/api/reference/resources/containers/subresources/files.md",
-      "sha256": "9dd5618021fbdaa4d26bf984216562a7657217bead6d242a61a4f3da5042b394",
-      "size": 9882
+      "sha256": "5f6c87f691836ca20d4abe14640f1cc327fec06f66a63dc6ab84e88eb87e5391",
+      "size": 9916
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/containers/methods/retrieve",
@@ -37620,8 +37634,8 @@
       "url": "https://developers.openai.com/api/reference/resources/containers/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/containers/methods/create.md",
-      "sha256": "cb5d09685b513879dbb7f997298c92c88c8d34e2389a0e01b951f7cd7f5189a5",
-      "size": 6481
+      "sha256": "2ba12093926e329d6f59ba38b168fae89a66905c2e16da29f72a669a734fd6ab",
+      "size": 6515
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/containers/methods/list",
@@ -37655,8 +37669,8 @@
       "url": "https://developers.openai.com/api/reference/resources/containers/subresources/files/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/containers/subresources/files/methods/create.md",
-      "sha256": "60098125802d0c29f19e9a11411a6da6e0761ea181c7f1ebf850bb97cb61edd5",
-      "size": 1955
+      "sha256": "67839fa62e4c97e2ebd26df86e7df8669e77891b8bd03683e5dabf3f72839950",
+      "size": 1989
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/containers/subresources/files/methods/list",
@@ -37697,8 +37711,8 @@
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions",
       "status": "success",
       "path": "openai/api/reference/resources/live/subresources/sessions.md",
-      "sha256": "ba891c36dc8e82effeb8982c550c14a323a45bc5fc0f6e38f84c03efbf345dd0",
-      "size": 59602
+      "sha256": "5ccda18afb552ebc003e5a44fdfee9c942f490b633c15a1633936a3d77ab9ceb",
+      "size": 59738
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sideband",
@@ -37725,8 +37739,8 @@
       "url": "https://developers.openai.com/api/reference/resources/live/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/live/methods/create.md",
-      "sha256": "0e6e23db64baf51b4885a549e2063d639810a505d6df33c0c49da73683197cf5",
-      "size": 42345
+      "sha256": "08f5f11c124073c942643fd786c94163e476dc7f45d9c93c69ecbb22aa296335",
+      "size": 42379
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/hangup",
@@ -37739,22 +37753,22 @@
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/accept",
       "status": "success",
       "path": "openai/api/reference/resources/live/subresources/sessions/methods/accept.md",
-      "sha256": "500892f525d28f5cae5bdcaac310205847808082fdbf9325b1cddde0dab9dc6e",
-      "size": 35238
+      "sha256": "70fe80df3ba5aba9012d509cdba5488bcb00124a1e216bfb2be422bd2d950365",
+      "size": 35272
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/reject",
       "status": "success",
       "path": "openai/api/reference/resources/live/subresources/sessions/methods/reject.md",
-      "sha256": "dbf14f73929d40e43a7661ac1e0f12b6059764beacbbce61cf97eab5b6f9c62d",
-      "size": 889
+      "sha256": "eaf952af332ff00fae6679db577b12bb3beddc6773de7a58b15af24255c96d98",
+      "size": 923
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/refer",
       "status": "success",
       "path": "openai/api/reference/resources/live/subresources/sessions/methods/refer.md",
-      "sha256": "0678a18f3f19fd51be20f068488197ed0681a74fe22e98b420b4998f6fccd828",
-      "size": 938
+      "sha256": "7e1c0366b686734f2687c39475d8989c823ea5f7ea045a8aec5078509e0bf4c5",
+      "size": 972
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/download_recording",
@@ -37767,8 +37781,8 @@
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/sessions/methods/fork",
       "status": "success",
       "path": "openai/api/reference/resources/live/subresources/sessions/methods/fork.md",
-      "sha256": "5d1761e387f5895cbe57650ed3699adb80048dfa7c6a321929ce65d45d2c3b02",
-      "size": 21251
+      "sha256": "67e3ecf04ac3baaeac2dfeaf08da9eb8e3bb9b06c7a40fefbf8f440c8d66d4a0",
+      "size": 21285
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/live/subresources/forks/methods/connect",
@@ -37809,8 +37823,8 @@
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/rotate_secret",
       "status": "success",
       "path": "openai/api/reference/resources/webhooks/methods/rotate_secret.md",
-      "sha256": "512b46fe48a5a29245012e12b908294f611fe4a5853966669dcd3b05deb944d4",
-      "size": 2260
+      "sha256": "45367823f8fe71367e82c90613ac849672f27b73e685b67829cded52fb7d2506",
+      "size": 2294
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/delete",
@@ -37823,8 +37837,8 @@
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/webhooks/methods/create.md",
-      "sha256": "0879f2ad68c9d8a1fb8ff6482f40e0c33f07037703aae98f4f5bb77f1774abae",
-      "size": 3172
+      "sha256": "67c25d643c9cfc9c9150aea6e74e181552ace1337a5d6efb4d20169874d8b863",
+      "size": 3206
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/list",
@@ -37837,15 +37851,15 @@
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/webhooks/methods/update.md",
-      "sha256": "1804ea423e144f1a30d9172bd6ced1191f992ae3a498f1aa6e261e219a418c74",
-      "size": 2990
+      "sha256": "c760a864140f7dc3b60f0376d49ace45fc1023f146b50bb3c9d94fcd5a9add35",
+      "size": 3024
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/webhooks/methods/test",
       "status": "success",
       "path": "openai/api/reference/resources/webhooks/methods/test.md",
-      "sha256": "838fc6adce482f6412a4d144446fdc55359c0d6138852408d99aa4d6a6deedb9",
-      "size": 2493
+      "sha256": "3e445bff6a514b8460729cd16047b30c5d26fc1ac8d7934e0a7a251289f5d360",
+      "size": 2527
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/webhooks/subresources/event_types/methods/list",
@@ -37858,8 +37872,8 @@
       "url": "https://developers.openai.com/api/reference/resources/skills/subresources/versions",
       "status": "success",
       "path": "openai/api/reference/resources/skills/subresources/versions.md",
-      "sha256": "06a675a364c29336cec1f15aa46aeb295f4142940c2d75f255d1e9fa2fad0586",
-      "size": 8254
+      "sha256": "20c50cdd9e27ca024f1760e8899f3d3601430c1557dfd27cefffa98f96319b55",
+      "size": 8288
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/skills/subresources/content",
@@ -37886,8 +37900,8 @@
       "url": "https://developers.openai.com/api/reference/resources/skills/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/skills/methods/create.md",
-      "sha256": "507e2122570b98b3cf7f9d8ba535576a26543478e57a1a278c0efafd0fcbce00",
-      "size": 1527
+      "sha256": "ba7574e04c087ade93a50c91ae7aae46721b3cb4017807268c465d37cee9525f",
+      "size": 1561
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/skills/methods/list",
@@ -37900,8 +37914,8 @@
       "url": "https://developers.openai.com/api/reference/resources/skills/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/skills/methods/update.md",
-      "sha256": "9ad1f47701ea7c0bb929c396fb8c788b543c039a0aba21610f6c482e490c7ad8",
-      "size": 1475
+      "sha256": "c2293cafa5de6955c89ff21c1907ef9efbb21a9767c955f64156422679ae74b9",
+      "size": 1509
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/skills/subresources/content/methods/retrieve",
@@ -37935,8 +37949,8 @@
       "url": "https://developers.openai.com/api/reference/resources/skills/subresources/versions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/skills/subresources/versions/methods/create.md",
-      "sha256": "6edf8ad8f87a260b95a2dd63b7b4906d67d0c40702f85a565e1827fb5ff3d282",
-      "size": 1795
+      "sha256": "5a1c0e19992f7e4f0372a911a9017c1ecdaf33131eaef7f628681002a0940b2b",
+      "size": 1829
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/skills/subresources/versions/methods/list",
@@ -37956,15 +37970,15 @@
       "url": "https://developers.openai.com/api/reference/resources/decisions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/decisions/methods/create.md",
-      "sha256": "b9e1379ce8d15acd19872641e2887bc462be3bebc24433ce5d30e191945c11b4",
-      "size": 22747
+      "sha256": "81ed3d5acafa86851393852652fbaa33b1f44b2a85ac1a7ca14b273d4a9d06cd",
+      "size": 22781
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions",
       "status": "success",
       "path": "openai/api/reference/resources/chat/subresources/completions.md",
-      "sha256": "388c4ed22ebabfeacfb62d9c98653fc901b4ae556faa382885f59d0efb715ade",
-      "size": 245140
+      "sha256": "89c5877e94fe7ab19a2ed7e61075d4fa20e9f8c8e55c7a1c7f262dd88e9407a9",
+      "size": 245208
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/streaming-events",
@@ -37998,8 +38012,8 @@
       "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/chat/subresources/completions/methods/create.md",
-      "sha256": "e00c32c9122e8c13fea8cf738533fdf0ecf9675702a034f67bf4a32d1efeb369",
-      "size": 78300
+      "sha256": "5fef8fe836a9bdfdda058e22050db98cc27be880163822d0d2cdb4f857f1342c",
+      "size": 78334
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/list",
@@ -38012,8 +38026,8 @@
       "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/chat/subresources/completions/methods/update.md",
-      "sha256": "3972864fbb7c0ca34808b5d58ddff241742c08f20923d937eb82f62f5ac302fc",
-      "size": 22076
+      "sha256": "8bc44f4f36c1cf5192160541c1ed24e684302ea1270083e0874e7fcd250059cd",
+      "size": 22110
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/chat/subresources/completions/subresources/messages/methods/list",
@@ -38026,36 +38040,36 @@
       "url": "https://developers.openai.com/api/reference/resources/images/methods/create_variation",
       "status": "success",
       "path": "openai/api/reference/resources/images/methods/create_variation.md",
-      "sha256": "e7fd7cbab193cecd016198b78f3d8e06132149d22e6e72e2da5362046c42013a",
-      "size": 4983
+      "sha256": "b8d328ec201f64cfd09f5129db7f6624a1bdb06838bbbbeb19740297a0dec475",
+      "size": 6667
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/images/methods/edit",
       "status": "success",
       "path": "openai/api/reference/resources/images/methods/edit.md",
-      "sha256": "df422a95fddbe846dfe6f6fbda561dc728e46db93b3ae4aac4a3083c83c4e6fe",
-      "size": 14766
+      "sha256": "78305103e90d399b0257dbf6870d6f2f8cfd3019cfe63104054da7d4f149b855",
+      "size": 14800
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/images/methods/generate",
       "status": "success",
       "path": "openai/api/reference/resources/images/methods/generate.md",
-      "sha256": "d0c37587c369767da9a321ad1cce944594d67a140abe585e1c59870ceee3bd08",
-      "size": 13220
+      "sha256": "841a2fe73ce46e0bf411ea52f67dba318fbf58c07cb509980a3361e917a0594f",
+      "size": 13254
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/moderations/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/moderations/methods/create.md",
-      "sha256": "9ab7b2ada46aa5d5b62c0b5b81d1d6a0aacacfeb6300ed15e90b1950cdfe9c0c",
-      "size": 12937
+      "sha256": "b7397fee0c183c848b69cc30ea16bbcc3a32587565a00481cd7f900ec0fa7e39",
+      "size": 12971
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/evals/subresources/runs",
       "status": "success",
       "path": "openai/api/reference/resources/evals/subresources/runs.md",
-      "sha256": "88bd25e425fb0602b37fa0652b79e16eb3fb6b0d6db95c3e23586027026a5b07",
-      "size": 763073
+      "sha256": "fb509d8356425ff76d665122a38982fb974151e9df225170fbf4bce698234b13",
+      "size": 763107
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/evals/methods/retrieve",
@@ -38075,8 +38089,8 @@
       "url": "https://developers.openai.com/api/reference/resources/evals/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/evals/methods/create.md",
-      "sha256": "650c780605e4a5c37a50f9fe4a4aa9887b17dd636618b824705d89aa114dd850",
-      "size": 24774
+      "sha256": "501292e20887283fe405779df1dbfa872c4e1303d6f1a2239994014e6843b073",
+      "size": 24808
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/evals/methods/list",
@@ -38089,8 +38103,8 @@
       "url": "https://developers.openai.com/api/reference/resources/evals/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/evals/methods/update.md",
-      "sha256": "3afaab54c7ce81ca6aa31aa50ea35b6f9272ece539ece56412916b0247aa2802",
-      "size": 13052
+      "sha256": "789ca9d7f8e58ce8afc60aa46400a14801e1e73e72b498e82dc0210b4da5ea23",
+      "size": 13086
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/evals/subresources/runs/subresources/output_items",
@@ -38117,8 +38131,8 @@
       "url": "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/evals/subresources/runs/methods/create.md",
-      "sha256": "f2435d04628e1a29e67bbaac3d75744e958e9f99b3558b24a3a8012487423901",
-      "size": 155819
+      "sha256": "7e24a03f076153abfd52f1e24b171735ff22549405e54d64d6368bff19cf4748",
+      "size": 155853
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/evals/subresources/runs/methods/list",
@@ -38152,15 +38166,15 @@
       "url": "https://developers.openai.com/api/reference/resources/uploads/subresources/parts",
       "status": "success",
       "path": "openai/api/reference/resources/uploads/subresources/parts.md",
-      "sha256": "3ba89a1b2c0ab6070d81211581b2ad446c3cd7ca014f4efa36d6591cb4c7d182",
-      "size": 2549
+      "sha256": "fbb7d046bc8edbde44fa7b8d9aca54da733f7b1404546f80dcd800dfd8bb03b3",
+      "size": 2662
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/uploads/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/uploads/methods/create.md",
-      "sha256": "e100ddb830f6393a1d82d9aeaf99d7bd36e2ebfa2d5066a33ad7671e8b3f2a8c",
-      "size": 6650
+      "sha256": "6a3ece4d0c20a38d2083da0e6febb27fa9b75d629ee0a8defe37e509db159648",
+      "size": 6684
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/uploads/methods/cancel",
@@ -38173,15 +38187,15 @@
       "url": "https://developers.openai.com/api/reference/resources/uploads/methods/complete",
       "status": "success",
       "path": "openai/api/reference/resources/uploads/methods/complete.md",
-      "sha256": "3bac2d2744a2a2947ae2edfe4aa203804b479efa67be2b9a7668ae45a578d8c3",
-      "size": 5345
+      "sha256": "0700541a3a3f36e4d33d69509ca13428d175ed7c279c66cdbdb3069ffc19ec67",
+      "size": 5379
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/uploads/subresources/parts/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/uploads/subresources/parts/methods/create.md",
-      "sha256": "9cd77954d7c06cacb5ea646ce8dc4cab8970fe2673db6b8e9e0694380517fb50",
-      "size": 1955
+      "sha256": "e0cb802f4711b6fb2ea659e25307ddd13835f5a4206e4628b3d9b33a8d27beeb",
+      "size": 2068
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/files/methods/retrieve",
@@ -38215,8 +38229,8 @@
       "url": "https://developers.openai.com/api/reference/resources/files/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/files/methods/create.md",
-      "sha256": "ab72c67ef6680da903895fca1d750ea1df41ad10eceaf7242e45ac087d6692fc",
-      "size": 4334
+      "sha256": "b54f54155969f0ea638c7528e015865ce4f5558ccd42270d4b2196e3fabbfd4c",
+      "size": 5518
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/files/methods/list",
@@ -39125,8 +39139,8 @@
       "url": "https://developers.openai.com/api/docs/guides/ultrafast-mode",
       "status": "success",
       "path": "openai/api/docs/guides/ultrafast-mode.md",
-      "sha256": "f5f4f0eb11283fd52d5e707badcb04b608b6644927272da035745fc2a1c8f75e",
-      "size": 11521
+      "sha256": "ffcbe12ce48f651742b8a13914c609d22b0ca62e95ff89c82dde9ecf74edaefc",
+      "size": 11934
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/deep-research",
@@ -46843,13 +46857,6 @@
       "size": 170
     },
     {
-      "url": "https://developers.openai.com/cookbook/examples/decisions/customer_request_routing",
-      "status": "success",
-      "path": "openai/cookbook/examples/decisions/customer_request_routing.md",
-      "sha256": "fb872be2dae68d12e9af4f98e7c740a647c7f3d7027ca6a6c47a2ae4f8347b73",
-      "size": 9194
-    },
-    {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
       "status": "success",
       "path": "openai/github/openai-cookbook/.codex/skills/docs-editor/SKILL.md",
@@ -49996,7 +50003,7 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/api.md",
       "status": "success",
       "path": "openai/github/openai-python/api.md",
-      "sha256": "4ac9c7c1fc6873491907b81a74c29c6b992f90ca0bae82fa1397770c9919fc53",
+      "sha256": "e3e51f952866bcef85ec209e23208f0385a4462b2be43cde2b064df9d123410a",
       "size": 146630
     },
     {
@@ -50143,8 +50150,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/lib/responses_websocket/README.md",
       "status": "success",
       "path": "openai/github/openai-python/src/openai/lib/responses_websocket/README.md",
-      "sha256": "a51d939cce4f0993f6cd6ca3003fdcc062074d46773abb83d449f952595824e9",
-      "size": 16264
+      "sha256": "e6a4fee774c57d71c7fa005ff1f46aee0c6f67c345d247665f7aa18d36683833",
+      "size": 16748
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/resources/conversations/api.md",
@@ -50395,8 +50402,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/responses.md",
       "status": "success",
       "path": "openai/github/openai-node/docs/responses.md",
-      "sha256": "602ca5e908a6e6610d84d021a5212dd2e06c493b4cbb3663d819c9b9d989d525",
-      "size": 9781
+      "sha256": "c5f37e7b4166d7a51b96933024c9500803ab2b53e180c1b98babf95ac29f27fe",
+      "size": 9765
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/streaming.md",
@@ -50595,13 +50602,6 @@
       "size": 9278
     },
     {
-      "url": "https://deploymentsafety.openai.com/gpt-6-luna-october-28-2026-addendum",
-      "status": "success",
-      "path": "openai/system-cards/gpt-6-luna-october-28-2026-addendum.md",
-      "sha256": "db196bd863cb3cc11fe76de35046aa6d7f86dc4765c0ffe0ef85d4dfdd491857",
-      "size": 13186
-    },
-    {
       "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/.github/PULL_REQUEST_TEMPLATE.md",
       "status": "success",
       "path": "zai/github/GLM-skills/.github/PULL_REQUEST_TEMPLATE.md",
@@ -50792,10 +50792,6 @@
     {
       "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
       "error": "extraction produced no usable content"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/17444146-claude-haiku-4-5-is-leaving-the-model-selector",
-      "error": "moved to https://support.claude.com/en/articles/17444146-claude-haiku-4-5-was-removed-from-the-model-selector.md"
     },
     {
       "url": "https://openai.com/hugging-face-incident-and-misalignment",
@@ -51222,11 +51218,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
@@ -51266,6 +51262,10 @@
     {
       "url": "https://www.anthropic.com/research/AI-fluency-index",
       "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/17444146-claude-haiku-4-5-is-leaving-the-model-selector",
+      "reason": "moved -> https://support.claude.com/en/articles/17444146-claude-haiku-4-5-was-removed-from-the-model-selector"
     },
     {
       "url": "https://platform.claude.com/docs/en/api/admin",
