@@ -42,4 +42,4 @@ A few patterns we have seen from early users:
 
 ## Getting started
 
-Agent view is available today as a Research Preview on Pro, Max, Team, Enterprise, and Claude API plans. Opt-in by running `claude agents`. Usual rate limits apply. See the [docs](https://code.claude.com/docs/en/agent-view) for more information.
+Agent view is available today as a Research Preview on Pro, Max, Ultra, Team, Enterprise, and Claude API plans. Opt-in by running `claude agents`. Usual rate limits apply. See the [docs](https://code.claude.com/docs/en/agent-view) for more information.

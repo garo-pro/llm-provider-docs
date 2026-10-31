@@ -250,7 +250,7 @@ def convert_file_to_png(file_id, write_path):
 
 ```python
 plot_file_id = messages.data[0].content[0].image_file.file_id
-image_path = "/cookbook/assets/images/NotRealCorp_chart.png"
+image_path = "../images/NotRealCorp_chart.png"
 convert_file_to_png(plot_file_id,image_path)
 
 #Upload
@@ -262,7 +262,7 @@ plot_file = client.files.create(
 
 Let's load in the plot!
 
-![The Image](https://developers.openai.com/cookbook/assets/images/notrealcorp_chart.png)
+![The Image](https://developers.openai.com/cookbook/assets/images/NotRealCorp_chart.png)
 
 Nice! So, with just one sentence, we were able to have our assistant use code interpreter to
 calculate the profitability, and graph the three lineplots of the various distribution channels.<br><br>
@@ -350,7 +350,7 @@ image_url = response.data[0].url
 Cool, now we can add this image to our thread. First, we can save the image locally, then upload it to the assistants API using the `File` upload endpoint. Let's also take a look at our image
 
 ```python
-dalle_img_path = '/cookbook/assets/images/dalle_image.png'
+dalle_img_path = '../images/dalle_image.png'
 img = requests.get(image_url)
 
 #Save locally

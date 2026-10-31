@@ -12,29 +12,29 @@ LangChain is a framework for developing applications powered by language models.
 
 ## Core Advantages
 
-> **Framework Ecosystem**
+> [card] Framework Ecosystem
 >
 > Access to LangChain's rich ecosystem and toolchain
 
-> **Rapid Development**
+> [card] Rapid Development
 >
 > Quickly build complex AI applications using pre-built components
 
-> **Modular Design**
+> [card] Modular Design
 >
 > Flexibly combine different components to meet various needs
 
-> **Community Support**
+> [card] Community Support
 >
 > Enjoy active open source community and rich resources
 
 ## Environment Requirements
 
-> **Python Version**
+> [card] Python Version
 >
 > Python 3.8 or higher
 
-> **LangChain Version**
+> [card] LangChain Version
 >
 > langchain\_community version 0.0.32 or higher
 
@@ -266,28 +266,28 @@ response = llm([HumanMessage(content="Write a poem about spring")])
 
 ## Best Practices
 
-> **Performance Optimization**
+> [card] Performance Optimization
 >
 > * Enable LangChain caching mechanism
 > * Use batch processing to reduce API calls
 > * Set reasonable max\_tokens limits
 > * Use async processing for better concurrency
 
-> **Error Handling**
+> [card] Error Handling
 >
 > * Implement retry mechanisms and exponential backoff
 > * Set reasonable timeout values
 > * Log detailed error information
 > * Provide fallback solutions
 
-> **Memory Management**
+> [card] Memory Management
 >
 > * Use ConversationBufferWindowMemory to limit history length
 > * Regularly clean unnecessary conversation history
 > * Monitor memory usage
 > * Implement conversation summarization
 
-> **Security**
+> [card] Security
 >
 > * Use environment variables to store API keys
 > * Implement input validation and filtering
@@ -296,11 +296,11 @@ response = llm([HumanMessage(content="Write a poem about spring")])
 
 ## Getting Help
 
-> **[Z.AI API Documentation](https://docs.z.ai/api-reference)**
+> [card] [Z.AI API Documentation](https://docs.z.ai/api-reference)
 >
 > View complete Z.AI API documentation
 
-> **[LangChain Official Documentation](https://python.langchain.com/docs/get_started/introduction)**
+> [card] [LangChain Official Documentation](https://python.langchain.com/docs/get_started/introduction)
 >
 > View LangChain official documentation and tutorials
 

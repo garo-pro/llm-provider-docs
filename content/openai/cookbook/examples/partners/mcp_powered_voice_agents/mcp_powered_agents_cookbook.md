@@ -41,7 +41,7 @@ We employ a "chained" approach for voice input and output throughout the system.
 The end-to-end workflow is summarized in the diagram below:
 
 
-![Cookbook_image](https://developers.openai.com/cookbook/assets/images/partner_mcp_cookbook.svg)
+![Cookbook_image](https://developers.openai.com/cookbook/assets/images/partner_mcp_Cookbook.svg)
 
 ### Installing dependencies
 First, we install the library dependencies for the project.
@@ -563,7 +563,7 @@ async def main():
 
 Now that we have the various pieces in place, we can take a step back and visualize the overall workflow of our system:
 
-![Cookbook_image](https://developers.openai.com/cookbook/assets/images/system_flow_partner_mcp.png)
+![Cookbook_image](https://developers.openai.com/cookbook/assets/images/System_flow_partner_mcp.png)
 
 ### Tying it all together
 Finally, we can instantiate the custom tool-use server and bring up the service:
@@ -641,7 +641,7 @@ By default, model and tool calls that are used in our application are added to t
 
 Beyond agent performance, one critical aspect of building voice agents is the latency of responses. With the Traces dashboard, we are able to view the breakdown of walltime for each step to help debug and find areas of improvement for latency: 
 
-![Cookbook_image](https://developers.openai.com/cookbook/assets/images/traces-2_partner.png)
+![Cookbook_image](https://developers.openai.com/cookbook/assets/images/Traces-2_partner.png)
 
 Explore individual traces to see each function call and its output, as shown below.
 

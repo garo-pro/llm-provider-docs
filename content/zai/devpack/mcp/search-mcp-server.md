@@ -8,15 +8,15 @@ The Web Search MCP Server is an exclusive Remote MCP Server developed by Z.AI fo
 
 ## Features
 
-> **Web Search**
+> [card] Web Search
 >
 > Supports comprehensive web search to retrieve the latest web information and resources
 
-> **Real-time Information**
+> [card] Real-time Information
 >
 > Retrieves real-time updated information including news, stock prices, weather, and more
 
-> **Remote Service**
+> [card] Remote Service
 >
 > HTTP protocol-based remote MCP service, no local installation required
 
@@ -40,148 +40,148 @@ According to the client you’re using, **choose the corresponding installation 
 
 ### Supported Clients
 
-**Claude Code**
+> [tab] Claude Code
+>
+> **One-click Installation Command**
+>
+> Be sure to replace `your_api_key` with the API Key you obtained.
+>
+> ```bash theme={null}
+> claude mcp add -s user -t http web-search-prime https://api.z.ai/api/mcp/web_search_prime/mcp --header "Authorization: Bearer your_api_key"
+> ```
+>
+> **Manual Configuration**
+>
+> Edit Claude Code's configuration file `.claude.json` in the user directory, MCP section:
+>
+> ```json theme={null}
+> {
+>   "mcpServers": {
+>     "web-search-prime": {
+>       "type": "http",
+>       "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
+>       "headers": {
+>         "Authorization": "Bearer your_api_key"
+>       }
+>     }
+>   }
+> }
+> ```
 
-**One-click Installation Command**
+> [tab] Cline (VS Code)
+>
+> Add MCP server configuration in Cline extension settings:
+>
+> Be sure to replace `your_api_key` with the API Key you obtained.
+>
+> ```json theme={null}
+> {
+>   "mcpServers": {
+>     "web-search-prime": {
+>       "type": "streamableHttp",
+>       "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
+>       "headers": {
+>         "Authorization": "Bearer your_api_key"
+>       }
+>     }
+>   }
+> }
+> ```
+>
+> If Cline older version does not support StreamableHttp type MCP server, you can use SSE type configuration:
+>
+> ```json theme={null}
+> {
+>   "mcpServers": {
+>     "web-search-prime": {
+>       "type": "sse",
+>       "url": "https://api.z.ai/api/mcp/web_search_prime/sse?Authorization=your_api_key"
+>     }
+>   }
+> }
+> ```
 
-Be sure to replace `your_api_key` with the API Key you obtained.
+> [tab] OpenCode
+>
+> Add MCP server configuration in OpenCode settings:
+>
+> Refer [OpenCode MCP Doc](https://opencode.ai/docs/mcp-servers)
+>
+> Be sure to replace `your_api_key` with the API Key you obtained.
+>
+> ```json theme={null}
+> {
+>     "$schema": "https://opencode.ai/config.json",
+>     "mcp": {
+>         "web-search-prime": {
+>             "type": "remote",
+>             "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
+>             "headers": {
+>                 "Authorization": "Bearer your_api_key"
+>             }
+>         }
+>     }
+> }
+> ```
 
-```bash theme={null}
-claude mcp add -s user -t http web-search-prime https://api.z.ai/api/mcp/web_search_prime/mcp --header "Authorization: Bearer your_api_key"
-```
+> [tab] Crush
+>
+> Add MCP server configuration in Crush settings:
+>
+> Be sure to replace `your_api_key` with the API Key you obtained.
+>
+> ```json theme={null}
+> {
+>     "$schema": "https://charm.land/crush.json",
+>     "mcp": {
+>         "web-search-prime": {
+>             "type": "http",
+>             "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
+>             "headers": {
+>                 "Authorization": "Bearer your_api_key"
+>             }
+>         }
+>     }
+> }
+> ```
 
-**Manual Configuration**
+> [tab] Goose
+>
+> Not support Goose now，refer [Issue](https://github.com/block/goose/issues/6576)
+>
+> Add MCP server configuration in Goose settings:
+>
+> Click `Extensions` -> `Add custom extension`
+>
+> Set `Extension Name` is `web-search-prime`，`Type` switch `HTTP`，`Endpoint` as follow：
+>
+> ```
+> https://api.z.ai/api/mcp/web_search_prime/mcp
+> ```
+>
+> Set Request Headers Add `Authorization` : `your_api_key`
+>
+> Finally, click `Add Extension` at the bottom. Remember to replace your\_api\_key with the API Key you obtained in the previous step.
 
-Edit Claude Code's configuration file `.claude.json` in the user directory, MCP section:
-
-```json theme={null}
-{
-  "mcpServers": {
-    "web-search-prime": {
-      "type": "http",
-      "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
-      "headers": {
-        "Authorization": "Bearer your_api_key"
-      }
-    }
-  }
-}
-```
-
-**Cline (VS Code)**
-
-Add MCP server configuration in Cline extension settings:
-
-Be sure to replace `your_api_key` with the API Key you obtained.
-
-```json theme={null}
-{
-  "mcpServers": {
-    "web-search-prime": {
-      "type": "streamableHttp",
-      "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
-      "headers": {
-        "Authorization": "Bearer your_api_key"
-      }
-    }
-  }
-}
-```
-
-If Cline older version does not support StreamableHttp type MCP server, you can use SSE type configuration:
-
-```json theme={null}
-{
-  "mcpServers": {
-    "web-search-prime": {
-      "type": "sse",
-      "url": "https://api.z.ai/api/mcp/web_search_prime/sse?Authorization=your_api_key"
-    }
-  }
-}
-```
-
-**OpenCode**
-
-Add MCP server configuration in OpenCode settings:
-
-Refer [OpenCode MCP Doc](https://opencode.ai/docs/mcp-servers)
-
-Be sure to replace `your_api_key` with the API Key you obtained.
-
-```json theme={null}
-{
-    "$schema": "https://opencode.ai/config.json",
-    "mcp": {
-        "web-search-prime": {
-            "type": "remote",
-            "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
-            "headers": {
-                "Authorization": "Bearer your_api_key"
-            }
-        }
-    }
-}
-```
-
-**Crush**
-
-Add MCP server configuration in Crush settings:
-
-Be sure to replace `your_api_key` with the API Key you obtained.
-
-```json theme={null}
-{
-    "$schema": "https://charm.land/crush.json",
-    "mcp": {
-        "web-search-prime": {
-            "type": "http",
-            "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
-            "headers": {
-                "Authorization": "Bearer your_api_key"
-            }
-        }
-    }
-}
-```
-
-**Goose**
-
-Not support Goose now，refer [Issue](https://github.com/block/goose/issues/6576)
-
-Add MCP server configuration in Goose settings:
-
-Click `Extensions` -> `Add custom extension`
-
-Set `Extension Name` is `web-search-prime`，`Type` switch `HTTP`，`Endpoint` as follow：
-
-```
-https://api.z.ai/api/mcp/web_search_prime/mcp
-```
-
-Set Request Headers Add `Authorization` : `your_api_key`
-
-Finally, click `Add Extension` at the bottom. Remember to replace your\_api\_key with the API Key you obtained in the previous step.
-
-**Roo Code, Kilo Code and Other MCP Clients**
-
-For Roo Code, Kilo Code and other clients that support MCP protocol, use the following general configuration:
-
-Be sure to replace `your_api_key` with the API Key you obtained.
-
-```json theme={null}
-{
-  "mcpServers": {
-    "web-search-prime": {
-      "type": "streamable-http",
-      "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
-      "headers": {
-        "Authorization": "Bearer your_api_key"
-      }
-    }
-  }
-}
-```
+> [tab] Roo Code, Kilo Code and Other MCP Clients
+>
+> For Roo Code, Kilo Code and other clients that support MCP protocol, use the following general configuration:
+>
+> Be sure to replace `your_api_key` with the API Key you obtained.
+>
+> ```json theme={null}
+> {
+>   "mcpServers": {
+>     "web-search-prime": {
+>       "type": "streamable-http",
+>       "url": "https://api.z.ai/api/mcp/web_search_prime/mcp",
+>       "headers": {
+>         "Authorization": "Bearer your_api_key"
+>       }
+>     }
+>   }
+> }
+> ```
 
 ## Usage Example
 
@@ -193,7 +193,7 @@ You can directly use search functionality in conversations:
 
 ## Troubleshooting
 
-> **Invalid API Key**
+> [accordion] Invalid API Key
 >
 > **Issue:** Receiving invalid api key error
 >
@@ -204,7 +204,7 @@ You can directly use search functionality in conversations:
 > 3. Confirm the api key has sufficient balance
 > 4. Check if the Authorization header format is correct
 
-> **Connection Timeout**
+> [accordion] Connection Timeout
 >
 > **Issue:** MCP server connection timeout
 >
@@ -215,7 +215,7 @@ You can directly use search functionality in conversations:
 > 3. Verify the server URL is correct
 > 4. Increase timeout settings
 
-> **Empty Search Results**
+> [accordion] Empty Search Results
 >
 > **Issue:** Search returns empty results
 >

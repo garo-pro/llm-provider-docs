@@ -2,7 +2,7 @@
 
 Claude for Google Workspace adds a Claude sidebar to Google Docs, Google Sheets, and Google Slides. Claude reads the file you have open and edits it directly, so you can draft, analyze, restructure, and restyle without copying content back and forth.
 
-Claude for Google Workspace is available in beta for Pro, Max, Team, and Enterprise plans. You also need a Google account that is allowed to install Google Workspace Marketplace apps.
+Claude for Google Workspace is available in beta for Pro, Max, Ultra, Team, and Enterprise plans. You also need a Google account that is allowed to install Google Workspace Marketplace apps.
 
 With Claude for Google Workspace, you can:
 
@@ -38,7 +38,7 @@ If your organization already allows Marketplace apps, this takes about two minut
 
 5. Then ask Claude something about the file. Try "Summarize this document in five bullets" or "What does column F calculate?"
 
-If the install button is greyed out or you see "This application is not allowed by your administrator,” your Google Workspace admin needs to allow or install Claude first. See **[Install for your organization](#h_2118c53c4b)** below.
+If the install button is greyed out or you see "This application is not allowed by your administrator,” your Google Workspace admin needs to allow or install Claude first. See **[Install for your organization](https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides#h_2118c53c4b)** below.
 
 ## Install Claude for Google Workspace
 
@@ -224,7 +224,7 @@ Claude requests two Google permissions, the minimum needed to show a sidebar and
 
 ### How your data is handled
 
-- Content from the open file, your messages, and any files you attach are sent to Claude to generate a response. For Team and Enterprise plans, this is governed by your organization's Commercial Terms and Data Processing Addendum. For Pro and Max it is governed by the Consumer Terms and Privacy Policy.
+- Content from the open file, your messages, and any files you attach are sent to Claude to generate a response. For Team and Enterprise plans, this is governed by your organization's Commercial Terms and Data Processing Addendum. For Pro, Max, and Ultra, it is governed by the Consumer Terms and Privacy Policy.
 
 - Anthropic does not use this content to train its models. Use of data received from Google Workspace APIs adheres to the **[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy)**, including the Limited Use requirements.
 

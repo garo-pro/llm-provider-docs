@@ -118,7 +118,7 @@ You can also remove chats from projects, or move them between projects, using th
 
 ## Manage Claude’s memory in projects
 
-Memory is on by default for Free, Pro, and Max plans on the web, Claude Desktop, and Claude Mobile. On Team and Enterprise plans, memory is available when an owner has enabled it.
+Memory is on by default for Free, Pro, Max, and Ultra plans on the web, Claude Desktop, and Claude Mobile. On Team and Enterprise plans, owners control whether memory is available.
 
 Each project has its own memory. While working in a project, Claude uses the project's memory alongside your memory from chats outside of projects, but not memory from other projects. New memory is saved to the project, and if you have memory turned on, Claude can reference it in chats outside of projects too. To keep a project's memory fully separate, turn off "Use account memory" under **Memory** on the project's page.
 

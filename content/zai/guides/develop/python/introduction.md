@@ -8,19 +8,19 @@ Z.AI Python SDK is the official Python development toolkit provided by Z.AI, off
 
 ### Core Advantages
 
-> **Simple and Easy**
+> [card] Simple and Easy
 >
 > Pythonic API design, comprehensive documentation and examples for quick start
 
-> **Complete Features**
+> [card] Complete Features
 >
 > Supports Z.AI's full range of models, including language, vision, image generation, etc.
 
-> **High Performance**
+> [card] High Performance
 >
 > Async support, connection pool management, optimized network request handling
 
-> **Type Safety**
+> [card] Type Safety
 >
 > Complete type hints, IDE-friendly, reducing development errors
 
@@ -57,11 +57,11 @@ The SDK adopts a modular design, allowing you to selectively install functional 
 
 ### Environment Requirements
 
-> **Python Version**
+> [card] Python Version
 >
 > Python 3.8 or higher
 
-> **Package Manager**
+> [card] Package Manager
 >
 > poetry (recommended), uv (recommended), pip
 
@@ -106,29 +106,29 @@ print(zai.__version__)
 
 #### Create Client
 
-**Environment Variable**
+> [tab] Environment Variable
+>
+> ```python theme={null}
+> from zai import ZaiClient
+> import os
+>
+> # Read API Key from environment variable
+> client = ZaiClient(api_key=os.getenv("ZAI_API_KEY"))
+>
+> # Or use directly (if environment variable is set)
+> client = ZaiClient()
+>
+> ```
 
-```python theme={null}
-from zai import ZaiClient
-import os
-
-# Read API Key from environment variable
-client = ZaiClient(api_key=os.getenv("ZAI_API_KEY"))
-
-# Or use directly (if environment variable is set)
-client = ZaiClient()
-
-```
-
-**Direct Setting**
-
-```python theme={null}
-from zai import ZaiClient, ZaiClient
-
-# Set API Key directly
-client = ZaiClient(api_key="abc123.def456")
-
-```
+> [tab] Direct Setting
+>
+> ```python theme={null}
+> from zai import ZaiClient, ZaiClient
+>
+> # Set API Key directly
+> client = ZaiClient(api_key="abc123.def456")
+>
+> ```
 
 #### Basic Conversation
 
@@ -475,19 +475,19 @@ response = processor.stream_chat(
 
 ## Getting Help
 
-> **[GitHub Repository](https://github.com/zai-org/z-ai-sdk-python)**
+> [card] [GitHub Repository](https://github.com/zai-org/z-ai-sdk-python)
 >
 > View source code, submit issues, contribute
 
-> **[API Reference](https://docs.z.ai/api-reference)**
+> [card] [API Reference](https://docs.z.ai/api-reference)
 >
 > View complete API documentation
 
-> **[Example Projects](https://github.com/zai-org/z-ai-sdk-python/tree/main/examples)**
+> [card] [Example Projects](https://github.com/zai-org/z-ai-sdk-python/tree/main/examples)
 >
 > Browse more practical application examples
 
-> **[Best Practices](https://github.com/zai-org/z-ai-sdk-python)**
+> [card] [Best Practices](https://github.com/zai-org/z-ai-sdk-python)
 >
 > Learn best practices for SDK usage
 

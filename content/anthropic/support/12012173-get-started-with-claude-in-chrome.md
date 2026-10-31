@@ -4,7 +4,7 @@ Claude in Chrome is a browser extension that allows Claude to read, click, and n
 
 ## Availability
 
-Claude in Chrome is available on paid plans (Pro, Max, Team, and Enterprise), in the Chrome side panel, Claude Cowork, and Claude Code. The side panel runs as a Claude Cowork session. On Enterprise plans, this requires an owner to enable Claude in Chrome and Cowork in the cloud; until then, the side panel uses the classic experience.
+Claude in Chrome is available on paid plans (Pro, Max, Ultra, Team, and Enterprise), in the Chrome side panel, Claude Cowork, and Claude Code. The side panel runs as a Claude Cowork session. On Enterprise plans, this requires an owner to enable Claude in Chrome and Cowork in the cloud; until then, the side panel uses the classic experience.
 
 **Important:** Claude in Chrome allows Claude to interact directly with websites on your behalf. Claude in Chrome is enhanced with our safety classifiers but is still risky. Please review **[Use Claude in Chrome safely](https://support.claude.com/en/articles/12902428-using-claude-in-chrome-safely)** before use.
 
@@ -48,7 +48,7 @@ Completing these steps will add Claude in Chrome to the “Connectors” drop-do
 
 Open the Claude side panel to work with Claude right next to the page you're on. Claude sees what's on the page and can act on it, reading, clicking, typing, navigating, and filling forms, so you can get help without leaving your browser window.
 
-On Max and Team plans, on Pro plans as the rollout reaches you, and on Enterprise plans where your admin has enabled it, the side panel runs as a Claude Cowork session, which means:
+On Max, Ultra, and Team plans, on Pro plans as the rollout reaches you, and on Enterprise plans where your admin has enabled it, the side panel runs as a Claude Cowork session, which means:
 
 - **Your conversations are saved.** Every side panel session appears in your history like any other Cowork session.
 

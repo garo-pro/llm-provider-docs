@@ -82,145 +82,145 @@ print(f"Emotions: {result['emotions']}")
 
 ## Basic Usage
 
-**Simple JSON Output**
+> [tab] Simple JSON Output
+>
+> **Simple JSON Output**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> client = ZaiClient(api_key="your-api-key")
+>
+> # Basic JSON mode
+> response = client.chat.completions.create(
+>     model="glm-5",
+>     messages=[
+>         {
+>             "role": "user",
+>             "content": "Please analyze the sentiment of this sentence: 'The weather is really nice today, I'm feeling very happy!'"
+>         }
+>     ],
+>     response_format={
+>         "type": "json_object"
+>     }
+> )
+>
+> import json
+> result = json.loads(response.choices[0].message.content)
+> print(result)
+> ```
 
-**Simple JSON Output**
+> [tab] Specify JSON Structure
+>
+> ### Specify JSON Structure
+>
+> ```python theme={null}
+> # Specify specific JSON structure
+> response = client.chat.completions.create(
+>     model="glm-5",
+>     messages=[
+>         {
+>             "role": "system",
+>             "content": """
+>             You are a sentiment analysis expert. Please return analysis results in the following JSON format:
+>             {
+>                 "sentiment": "positive/negative/neutral",
+>                 "confidence": 0.95,
+>                 "emotions": ["joy", "excitement"],
+>                 "keywords": ["weather", "mood"],
+>                 "analysis": "Detailed analysis explanation"
+>             }
+>             """
+>         },
+>         {
+>             "role": "user",
+>             "content": "Please analyze the sentiment of this sentence: 'The weather is really nice today, I'm feeling very happy!'"
+>         }
+>     ],
+>     response_format={
+>         "type": "json_object"
+>     }
+> )
+>
+> result = json.loads(response.choices[0].message.content)
+> print(f"Sentiment: {result['sentiment']}")
+> print(f"Confidence: {result['confidence']}")
+> print(f"Emotions: {result['emotions']}")
+> ```
 
-```python theme={null}
-from zai import ZaiClient
-
-client = ZaiClient(api_key="your-api-key")
-
-# Basic JSON mode
-response = client.chat.completions.create(
-    model="glm-5",
-    messages=[
-        {
-            "role": "user",
-            "content": "Please analyze the sentiment of this sentence: 'The weather is really nice today, I'm feeling very happy!'"
-        }
-    ],
-    response_format={
-        "type": "json_object"
-    }
-)
-
-import json
-result = json.loads(response.choices[0].message.content)
-print(result)
-```
-
-**Specify JSON Structure**
-
-### Specify JSON Structure
-
-```python theme={null}
-# Specify specific JSON structure
-response = client.chat.completions.create(
-    model="glm-5",
-    messages=[
-        {
-            "role": "system",
-            "content": """
-            You are a sentiment analysis expert. Please return analysis results in the following JSON format:
-            {
-                "sentiment": "positive/negative/neutral",
-                "confidence": 0.95,
-                "emotions": ["joy", "excitement"],
-                "keywords": ["weather", "mood"],
-                "analysis": "Detailed analysis explanation"
-            }
-            """
-        },
-        {
-            "role": "user",
-            "content": "Please analyze the sentiment of this sentence: 'The weather is really nice today, I'm feeling very happy!'"
-        }
-    ],
-    response_format={
-        "type": "json_object"
-    }
-)
-
-result = json.loads(response.choices[0].message.content)
-print(f"Sentiment: {result['sentiment']}")
-print(f"Confidence: {result['confidence']}")
-print(f"Emotions: {result['emotions']}")
-```
-
-**Schema Validation**
-
-### Using JSON Schema Validation
-
-```python theme={null}
-import jsonschema
-from jsonschema import validate
-
-# Define JSON Schema
-schema = {
-    "type": "object",
-    "properties": {
-        "sentiment": {
-            "type": "string",
-            "enum": ["positive", "negative", "neutral"]
-        },
-        "confidence": {
-            "type": "number",
-            "minimum": 0,
-            "maximum": 1
-        },
-        "emotions": {
-            "type": "array",
-            "items": {"type": "string"}
-        },
-        "keywords": {
-            "type": "array",
-            "items": {"type": "string"}
-        },
-        "analysis": {
-            "type": "string"
-        }
-    },
-    "required": ["sentiment", "confidence", "analysis"]
-}
-
-def analyze_sentiment_with_validation(text):
-    """Sentiment analysis with validation"""
-    response = client.chat.completions.create(
-        model="glm-5",
-        messages=[
-            {
-                "role": "system",
-                "content": f"""
-                Please return sentiment analysis results according to the following JSON Schema format:
-                {json.dumps(schema, indent=2, ensure_ascii=False)}
-                """
-            },
-            {
-                "role": "user",
-                "content": f"Please analyze the sentiment of this sentence: '{text}'"
-            }
-        ],
-        response_format={"type": "json_object"}
-    )
-    
-    try:
-        result = json.loads(response.choices[0].message.content)
-        # Validate JSON structure
-        validate(instance=result, schema=schema)
-        return result
-    except jsonschema.exceptions.ValidationError as e:
-        print(f"JSON validation failed: {e}")
-        return None
-    except json.JSONDecodeError as e:
-        print(f"JSON parsing failed: {e}")
-        return None
-
-# Usage example
-result = analyze_sentiment_with_validation("The weather is really nice today, I'm feeling very happy!")
-if result:
-    print("Analysis result:", result)
-```
+> [tab] Schema Validation
+>
+> ### Using JSON Schema Validation
+>
+> ```python theme={null}
+> import jsonschema
+> from jsonschema import validate
+>
+> # Define JSON Schema
+> schema = {
+>     "type": "object",
+>     "properties": {
+>         "sentiment": {
+>             "type": "string",
+>             "enum": ["positive", "negative", "neutral"]
+>         },
+>         "confidence": {
+>             "type": "number",
+>             "minimum": 0,
+>             "maximum": 1
+>         },
+>         "emotions": {
+>             "type": "array",
+>             "items": {"type": "string"}
+>         },
+>         "keywords": {
+>             "type": "array",
+>             "items": {"type": "string"}
+>         },
+>         "analysis": {
+>             "type": "string"
+>         }
+>     },
+>     "required": ["sentiment", "confidence", "analysis"]
+> }
+>
+> def analyze_sentiment_with_validation(text):
+>     """Sentiment analysis with validation"""
+>     response = client.chat.completions.create(
+>         model="glm-5",
+>         messages=[
+>             {
+>                 "role": "system",
+>                 "content": f"""
+>                 Please return sentiment analysis results according to the following JSON Schema format:
+>                 {json.dumps(schema, indent=2, ensure_ascii=False)}
+>                 """
+>             },
+>             {
+>                 "role": "user",
+>                 "content": f"Please analyze the sentiment of this sentence: '{text}'"
+>             }
+>         ],
+>         response_format={"type": "json_object"}
+>     )
+>
+>     try:
+>         result = json.loads(response.choices[0].message.content)
+>         # Validate JSON structure
+>         validate(instance=result, schema=schema)
+>         return result
+>     except jsonschema.exceptions.ValidationError as e:
+>         print(f"JSON validation failed: {e}")
+>         return None
+>     except json.JSONDecodeError as e:
+>         print(f"JSON parsing failed: {e}")
+>         return None
+>
+> # Usage example
+> result = analyze_sentiment_with_validation("The weather is really nice today, I'm feeling very happy!")
+> if result:
+>     print("Analysis result:", result)
+> ```
 
 ## Scenario Examples
 
@@ -228,7 +228,7 @@ if result:
 >
 > When using JSON mode for data extraction, please ensure the quality and format of input data to achieve the best extraction results.
 
-> **Data Extraction and Structuring Complete Implementation**
+> [accordion] Data Extraction and Structuring Complete Implementation
 >
 > ```python theme={null}
 > class DataExtractor:
@@ -460,7 +460,7 @@ if result:
 >             print(f"Phone: {contact['phone']}")
 > ```
 
-> **API Response Formatting Complete Implementation**
+> [accordion] API Response Formatting Complete Implementation
 >
 > ```python theme={null}
 > class APIResponseFormatter:
@@ -669,7 +669,7 @@ if result:
 >         print(f"Relevance: {result['relevance_score']}")
 > ```
 
-> **Configuration Management and Validation Complete Implementation**
+> [accordion] Configuration Management and Validation Complete Implementation
 >
 > ```python theme={null}
 > class ConfigurationManager:
@@ -880,13 +880,13 @@ if result:
 
 ## Best Practices
 
-> **Schema Design Principles**
+> [card] Schema Design Principles
 >
 > * Clarity: Field names and types should be clear and explicit
 > * Completeness: Include all necessary validation rules
 > * Flexibility: Consider future expansion needs
 
-> **Error Handling Strategy**
+> [card] Error Handling Strategy
 >
 > * Multi-layer validation: Schema validation + business logic validation
 > * Fallback plan: Prepare simplified backup Schema

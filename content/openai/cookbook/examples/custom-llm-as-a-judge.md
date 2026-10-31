@@ -390,7 +390,7 @@ EvalResultWithSummary(summary="...", results=[...])
 It looks like the numeric rater scored almost 94% in total. That's not bad, but if 6% of your evals are incorrectly judged, that could make it very hard to trust them. Let's dig into the Braintrust
 UI to get some insight into what's going on.
 
-![Partial credit](https://developers.openai.com/cookbook/assets/images/custom-llm-as-a-judge-partial-credit.gif)
+![Partial credit](https://developers.openai.com/cookbook/assets/images/Custom-LLM-as-a-Judge-Partial-Credit.gif)
 
 It looks like a number of the incorrect answers were scored with numbers between 1 and 10. However, we do not currently have any insight into why the model gave these scores. Let's see if we can
 fix that next.
@@ -514,11 +514,11 @@ EvalResultWithSummary(summary="...", results=[...])
 It doesn't look like adding reasoning helped the score (in fact, it's 3% percent worse). However, if we look at one of the failures, we'll get some insight into
 what the model was thinking. Here is an example of a hallucinated answer:
 
-![Output](https://developers.openai.com/cookbook/assets/images/custom-llm-as-a-judge-output.png)
+![Output](https://developers.openai.com/cookbook/assets/images/Custom-LLM-as-a-Judge-Output.png)
 
 And the score along with its reasoning:
 
-![Reasoning](https://developers.openai.com/cookbook/assets/images/custom-llm-as-a-judge-reasoning.png)
+![Reasoning](https://developers.openai.com/cookbook/assets/images/Custom-LLM-as-a-Judge-Reasoning.png)
 
 
 It looks like the model is applying its own judgement to compute partial credit. This is a common problem with numeric rating—both for models and for humans—and can often be solved

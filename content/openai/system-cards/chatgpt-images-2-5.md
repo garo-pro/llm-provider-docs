@@ -86,9 +86,9 @@ no image shown.
 undetected images. These are violative generations that would not have
 been blocked by the safety stack.
 
-### Table 1: Table 1: Safety Evaluations Overall
+### Table 1: Safety Evaluations Overall
 
-| Table 1. Table 1: Safety Evaluations Overall |  |  |  |  | 
+| Table 1: Safety Evaluations Overall |  |  |  |  | 
 |---|---|---|---|---|
 | **Total Prompts** | **Model** | **Model Output: Final Unsafe Outcome** |  |  | 
 |---|---|---|---|---|
@@ -97,9 +97,9 @@ been blocked by the safety stack.
 |  | GPT-Image-2.5-Flare | 79.4%* | 19.2%* | 1.41% | 
 |  | ChatGPT Images 2.0 (baseline) | 75.2% | 23.1% | 1.64% | 
 
-### Table 2: Table 2: Safety Evaluations by Policy
+### Table 2: Safety Evaluations by Policy
 
-| Table 2. Table 2: Safety Evaluations by Policy |  |  |  |  | 
+| Table 2: Safety Evaluations by Policy |  |  |  |  | 
 |---|---|---|---|---|
 | **Category** | **Model** | **Model Output: Final Unsafe Outcome** |  |  | 
 |---|---|---|---|---|

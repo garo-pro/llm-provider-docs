@@ -2,7 +2,7 @@
 
 Quick entry is a redesigned experience for Claude Desktop on Mac that lets you access Claude instantly from anywhere on your computer. With quick entry, you can start chats, capture screenshots, share application windows, and use voice dictation to interact with Claude without navigating away from your current task.
 
-Quick entry is available to all Claude users (free, Pro, Max, Team, and Enterprise plans) using Claude Desktop on macOS.
+Quick entry is available to all Claude users (Free, Pro, Max, Ultra, Team, and Enterprise plans) using Claude Desktop on macOS.
 
 ## Key features
 

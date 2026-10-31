@@ -6,9 +6,9 @@ Projects in Claude Cowork let you group related tasks into dedicated workspaces 
 
 Projects in Cowork require the latest version of Claude Desktop. Download or update at **claude.com/download**.
 
-Claude Cowork is available on desktop on all paid plans (Pro, Max, Team, and Enterprise). On web and mobile, it's available on Pro, Max, and Team plans (in beta on Team), and on Enterprise plans when an owner enables it.
+Claude Cowork is available on desktop on all paid plans (Pro, Max, Ultra, Team, and Enterprise). On web and mobile, it's available on Pro, Max, Ultra, and Team plans (in beta on Team), and on Enterprise plans when an owner enables it.
 
-The new Claude experience, which combines chat and Cowork, is rolling out to Pro and Max plans. On Team plans (in beta) and Enterprise plans, it's available where **Chat and Cowork unified** is turned on. If your message box no longer shows "Chat" and "Cowork" options, you have the new experience, and some steps in this article may look different. Learn more in **[Claude Cowork and chat are one Claude](https://support.claude.com/en/articles/16761823)**.
+The new Claude experience, which combines chat and Cowork, is rolling out to Pro, Max, and Ultra plans. On Team plans (in beta) and Enterprise plans, it's available where **Chat and Cowork unified** is turned on. If your message box no longer shows "Chat" and "Cowork" options, you have the new experience, and some steps in this article may look different. Learn more in **[Claude Cowork and chat are one Claude](https://support.claude.com/en/articles/16761823)**.
 
 ---
 
@@ -94,7 +94,7 @@ When you archive a project in Cowork:
 
 ## Local projects moved to your Claude account
 
-Claude Desktop moves projects you created from a folder on your computer into your Claude account automatically, and each project keeps its name. On Pro and Max plans, this happens in Claude Desktop. On Team and Enterprise plans, it happens once **Chat and Cowork unified** is on for you.
+Claude Desktop moves projects you created from a folder on your computer into your Claude account automatically, and each project keeps its name. On Pro, Max, and Ultra plans, this happens in Claude Desktop. On Team and Enterprise plans, it happens once **Chat and Cowork unified** is on for you.
 
 What moves to your Claude account:
 

@@ -12,41 +12,41 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 
 ### Coding
 
-> **Natural Language Programming**
+> [accordion] Natural Language Programming
 >
 > Describe requirements in plain language to automatically generate plans, write code, debug issues, and ensure smooth execution.
 
-> **Intelligent Code Completion**
+> [accordion] Intelligent Code Completion
 >
 > Get real-time, context-aware completion suggestions that reduce manual typing and significantly improve productivity.
 
-> **Code Debugging & Repair**
+> [accordion] Code Debugging & Repair
 >
 > Input error messages or descriptions to automatically analyze your codebase, locate problems, and provide fixes.
 
-> **Codebase Q\&A**
+> [accordion] Codebase Q\&A
 >
 > Ask questions about your team’s codebase anytime, maintain global understanding, and receive precise answers with external data integration.
 
-> **Automated Task Handling**
+> [accordion] Automated Task Handling
 >
 > Automatically fix lint issues, resolve merge conflicts, and generate release notes—allowing developers to stay focused on core logic.
 
 ### Office Work
 
-> **Deep Search & Research**
+> [accordion] Deep Search & Research
 >
 > Cross-source intelligent retrieval and information synthesis, delivering structured research reports fast—so every decision is backed by evidence.
 
-> **Business Data Analysis**
+> [accordion] Business Data Analysis
 >
 > Upload multi-dimensional business data to automatically generate visual charts, along with in-depth business insights and operational recommendations.
 
-> **Creative Ideation & Brainstorming**
+> [accordion] Creative Ideation & Brainstorming
 >
 > Break through mental boundaries and spark inspiration from multiple angles, turning vague ideas into actionable plans — fast.
 
-> **Automated Task Execution**
+> [accordion] Automated Task Execution
 >
 > Autonomously run complex workflows end to end, from instruction to delivery — cutting repetitive work and freeing up time for what matters.
 
@@ -174,25 +174,25 @@ Token usage varies depending on the cache hit rate, as shown below:
 
 ### Exclusive MCP Access
 
-> **[Vision Understanding](https://docs.z.ai/devpack/mcp/vision-mcp-server.md)**
+> [card] [Vision Understanding](https://docs.z.ai/devpack/mcp/vision-mcp-server.md)
 
-> **[Web Search](https://docs.z.ai/devpack/mcp/search-mcp-server.md)**
+> [card] [Web Search](https://docs.z.ai/devpack/mcp/search-mcp-server.md)
 
-> **[Web Reader](https://docs.z.ai/devpack/mcp/reader-mcp-server.md)**
+> [card] [Web Reader](https://docs.z.ai/devpack/mcp/reader-mcp-server.md)
 
-> **[Zread](https://docs.z.ai/devpack/mcp/zread-mcp-server.md)**
+> [card] [Zread](https://docs.z.ai/devpack/mcp/zread-mcp-server.md)
 
 ## Next Steps
 
-> **[Quick Start](https://docs.z.ai/devpack/quick-start.md)**
+> [card] [Quick Start](https://docs.z.ai/devpack/quick-start.md)
 >
 > Get up and running in minutes — from subscribing to the plan to using it in your agent tools.
 
-> **[Usage Policy](https://docs.z.ai/devpack/usage-policy.md)**
+> [card] [Usage Policy](https://docs.z.ai/devpack/usage-policy.md)
 >
 > Learn about account usage rules, rate limits, refund policies, and other important guidelines.
 
-> **[FAQ](https://docs.z.ai/devpack/faq.md)**
+> [card] [FAQ](https://docs.z.ai/devpack/faq.md)
 >
 > Find answers to common questions about subscriptions, promotions, and using the plan.
 

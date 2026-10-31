@@ -6,13 +6,13 @@
 
 Incognito chats are temporary conversations that aren't saved to your chat history or to **[Claude’s memory](https://support.claude.com/en/articles/11817273-using-claude-s-chat-search-and-memory-to-build-on-previous-context)**.
 
-Incognito chats are available to all Claude users (Free, Pro, Max, Team, and Enterprise plans).
+Incognito chats are available to all Claude users (Free, Pro, Max, Ultra, Team, and Enterprise plans).
 
 These differ from regular chats in several ways:
 
 - Incognito chats are not used for training. See our Privacy Center for more information:
 
-  - **[Is my data used for model training?](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)** (for Free, Pro, and Max plans)
+  - **[Is my data used for model training?](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)** (for Free, Pro, Max, and Ultra plans)
 
   - **[Is my data used for model training?](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training)** (for Team and Enterprise plans)
 

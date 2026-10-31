@@ -77,7 +77,7 @@ For this guide, we narrow the scope of the regulatory authoring agent to focus o
 
 For the remainder of this cookbook, we implemented a simplified version of the Summarizer agent (see the section **Agent Setup** below). Alternatively, you can reuse the code for the agent created with AgentBuilder. If you’d like to reproduce the agent directly from the AgentBuilder UI, here are the key prompts and parameters used:
 
-- **Summarizer agent:** This agent used the file search tool, where the [CMC PDF](https://developers.openai.com/cookbook/assets/examples/partners/self_evolving_agents/data/c13_pyruvate_sample_cmc_from_ucsf.pdf) was uploaded to the vector store.
+- **Summarizer agent:** This agent used the file search tool, where the [CMC PDF](https://developers.openai.com/cookbook/assets/examples/partners/self_evolving_agents/data/c13_pyruvate_sample_CMC_from_UCSF.pdf) was uploaded to the vector store.
 > _Prompt:_ "Summarize section {{workflow.input_as_text}} from {{state.cmc_pdf}} uploaded to the vector store."
 
 - **Compliance Checker agent:**

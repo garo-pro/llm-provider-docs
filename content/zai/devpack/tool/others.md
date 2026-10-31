@@ -14,67 +14,67 @@
 
 Click on the tool documentation below that you wish to use, and follow the corresponding integration guide to set it up.
 
-> **[ZCode (1.5× Usage)](https://docs.z.ai/devpack/tool/zcode)**
+> [card] [ZCode (1.5× Usage)](https://docs.z.ai/devpack/tool/zcode)
 >
 > ZCode integrates AI agents into your existing toolchain.
 
-> **[Claude Code](https://docs.z.ai/devpack/tool/claude)**
+> [card] [Claude Code](https://docs.z.ai/devpack/tool/claude)
 >
 > The Claude Code IDE plugin supports VSCode and JetBrains.
 
-> **[Claude for IDE](https://docs.z.ai/devpack/tool/claude-for-ide)**
+> [card] [Claude for IDE](https://docs.z.ai/devpack/tool/claude-for-ide)
 >
 > The Claude Code IDE plugin supports VSCode and JetBrains.
 
-> **[Codex](https://docs.z.ai/devpack/tool/codex)**
+> [card] [Codex](https://docs.z.ai/devpack/tool/codex)
 >
 > OpenAI's AI coding agent that helps you write, review, and debug code.
 
-> **[OpenCode](https://docs.z.ai/devpack/tool/opencode)**
+> [card] [OpenCode](https://docs.z.ai/devpack/tool/opencode)
 >
 > The Claude Code IDE plugin supports VSCode and JetBrains.
 
-> **[Pi](https://docs.z.ai/devpack/tool/pi)**
+> [card] [Pi](https://docs.z.ai/devpack/tool/pi)
 >
 > A minimalist terminal coding agent with a small core, extensible via extensions, Skills, and Pi Packages.
 
-> **[Cursor](https://docs.z.ai/devpack/tool/cursor)**
+> [card] [Cursor](https://docs.z.ai/devpack/tool/cursor)
 >
 > An AI-first code editor that supports custom model configurations.
 
-> **[Cline](https://docs.z.ai/devpack/tool/cline)**
+> [card] [Cline](https://docs.z.ai/devpack/tool/cline)
 >
 > An AI programming extension for VS Code that supports code generation and file operations.
 
-> **[TRAE](https://docs.z.ai/devpack/tool/trae)**
+> [card] [TRAE](https://docs.z.ai/devpack/tool/trae)
 >
 > An AI editor capable of independently completing various development tasks.
 
-> **[Qoder](https://docs.z.ai/devpack/tool/qoder)**
+> [card] [Qoder](https://docs.z.ai/devpack/tool/qoder)
 >
 > An agentic coding platform designed for real software development.
 
-> **[Droid](https://docs.z.ai/devpack/tool/droid)**
+> [card] [Droid](https://docs.z.ai/devpack/tool/droid)
 >
 > Enterprise-grade AI coding agent that runs in the terminal to handle end-to-end workflows.
 
-> **[Kilo Code](https://docs.z.ai/devpack/tool/kilo)**
+> [card] [Kilo Code](https://docs.z.ai/devpack/tool/kilo)
 >
 > A powerful VS Code extension for code generation and project management.
 
-> **[Roo Code](https://docs.z.ai/devpack/tool/roo)**
+> [card] [Roo Code](https://docs.z.ai/devpack/tool/roo)
 >
 > A smart VS Code extension for code writing and refactoring.
 
-> **[Crush](https://docs.z.ai/devpack/tool/crush)**
+> [card] [Crush](https://docs.z.ai/devpack/tool/crush)
 >
 > A terminal-based AI programming tool that supports both CLI and TUI interfaces.
 
-> **[Goose](https://docs.z.ai/devpack/tool/goose)**
+> [card] [Goose](https://docs.z.ai/devpack/tool/goose)
 >
 > AI Agent tool, supporting local execution and automated engineering tasks.
 
-> **[Eigent](https://docs.z.ai/devpack/tool/eigent)**
+> [card] [Eigent](https://docs.z.ai/devpack/tool/eigent)
 >
 > A desktop AI agent built on a multi-agent architecture, capable of automating browser, terminal, and MCP-powered workflows.
 
@@ -84,19 +84,19 @@ Click on the tool documentation below that you wish to use, and follow the corre
 >
 > The general-purpose agent tools listed below are also supported and will continue to be served on a best-effort basis. Under high inference load, some requests may face temporary rate limits.
 
-> **[AutoClaw (1.5× Usage)](https://docs.z.ai/devpack/tool/autoclaw)**
+> [card] [AutoClaw (1.5× Usage)](https://docs.z.ai/devpack/tool/autoclaw)
 >
 > Deeply optimized for GLM models, integrating specialized domain knowledge bases and workflows.
 
-> **[OpenClaw](https://docs.z.ai/devpack/tool/openclaw)**
+> [card] [OpenClaw](https://docs.z.ai/devpack/tool/openclaw)
 >
 > An open-source AI assistant that runs on local devices, supports multi-platform use.
 
-> **[Hermes Agent](#)**
+> [card] [Hermes Agent](#)
 >
 > An open-source evolving AI agent with persistent memory,getting smarter with use.
 
-> **[SillyTavern](#)**
+> [card] [SillyTavern](#)
 >
 > A highly customizable AI chat frontend for immersive roleplay with multi-model & media support.
 

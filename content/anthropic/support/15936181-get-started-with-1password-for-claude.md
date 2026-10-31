@@ -2,7 +2,7 @@
 
 1Password for Claude lets Claude complete browser tasks that require signing in, using logins you've stored in 1Password. 1Password fills the credential directly on the page, so Claude never sees your password or one-time code.
 
-1Password for Claude is in beta for paid plans (Pro, Max, Team, Enterprise) using Claude Desktop on macOS. It's available to 1Password customers on individual, family, and business plans, and requires Claude in Chrome. 1Password for Claude is off by default for Team and Enterprise plans.
+1Password for Claude is in beta for paid plans (Pro, Max, Ultra, Team, Enterprise) using Claude Desktop on macOS. It's available to 1Password customers on individual, family, and business plans, and requires Claude in Chrome. 1Password for Claude is off by default for Team and Enterprise plans.
 
 ## How it works
 

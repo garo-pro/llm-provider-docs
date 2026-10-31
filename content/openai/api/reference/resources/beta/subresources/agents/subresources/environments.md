@@ -190,8 +190,6 @@ Content type: `application/json`
 
         - `"application/zip"`
 
-          A ZIP archive.
-
       - `type: "base64" (default: "base64")`
 
         The type of the object. Always `base64`.
@@ -1758,8 +1756,6 @@ Content type: `application/json`
 
       - `"application/zip"`
 
-        A ZIP archive.
-
     - `type: "base64" (default: "base64")`
 
       The type of the object. Always `base64`.
@@ -3015,8 +3011,6 @@ Content type: `application/json`
       The archive media type, always `application/zip`.
 
       - `"application/zip"`
-
-        A ZIP archive.
 
     - `type: "base64" (default: "base64")`
 

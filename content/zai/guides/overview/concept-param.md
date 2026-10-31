@@ -138,7 +138,7 @@ Notes:
 
 ## Related Concepts
 
-> **Token Usage Calculation**
+> [accordion] Token Usage Calculation
 >
 > Tokens are the basic units for model text processing. Usage calculation includes both input and output parts.
 >
@@ -148,20 +148,20 @@ Notes:
 >
 > You can call the `tokenizer` API to estimate the token count of text.
 
-> **Maximum Output Tokens**
+> [accordion] Maximum Output Tokens
 >
 > Maximum Output Tokens refers to the maximum number of tokens a model can generate in a single request. It's different from the `max_tokens` parameter - `max_tokens` is the upper limit you set in your request, while Maximum Output Tokens is the architectural limitation of the model itself.
 >
 > For example, a model's context window might be 8k tokens, but its maximum output capability might be limited to 4k tokens.
 
-> **Context Window**
+> [accordion] Context Window
 >
 > The Context Window refers to the total number of tokens a model can process in a single interaction, including all tokens from both **input text** and **generated text**.
 >
 > * **Importance:** The context window determines how much historical information the model can "remember". If the total length of input and expected output exceeds the model's context window, the model will be unable to process it.
 > * **Note:** Different models have different context window sizes. When conducting long conversations or processing long documents, special attention should be paid to context window limitations.
 
-> **Concurrency Limits**
+> [accordion] Concurrency Limits
 >
 > Concurrency refers to the number of API requests you can initiate simultaneously. This is set by the platform to ensure service stability and fair resource allocation.
 >

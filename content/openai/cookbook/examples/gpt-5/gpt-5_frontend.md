@@ -151,7 +151,7 @@ def encode_image(image_path: str):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
 
-image_path="/cookbook/assets/images/input_image.png"
+image_path="../../images/input_image.png"
 encoded_image = encode_image(image_path)
 input_image: ResponseInputImageParam = {"type": "input_image", "image_url": f"data:image/png;base64,{encoded_image}", "detail": "auto"}
 input: ResponseInputParam = [

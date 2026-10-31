@@ -10,13 +10,13 @@
 
 ## Latest Models
 
-> **[GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3.md)**
+> [card] [GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3.md)
 >
 > **Flagship Model**
 >
 > * Open-source SOTA coding capabilities, emerging cybersecurity capabilities.
 
-> **[GLM-5.3-Flash](https://docs.z.ai/guides/vlm/glm-5.3-flash.md)**
+> [card] [GLM-5.3-Flash](https://docs.z.ai/guides/vlm/glm-5.3-flash.md)
 >
 > **Native Multimodal Model**
 >
@@ -36,7 +36,7 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 >
 > If you need to get pricing information, please go directly to [Pricing](https://docs.z.ai/guides/overview/pricing.md).
 
-> **Other Models, Agents and Tools**
+> [accordion] Other Models, Agents and Tools
 >
 > To help you find the best fit for your use case, we've created a table outlining the core features and strengths of each model in the Z.AI family.
 >

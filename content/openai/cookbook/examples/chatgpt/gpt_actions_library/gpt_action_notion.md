@@ -369,7 +369,7 @@ Before you set up authentication in ChatGPT, please take the following steps in 
 
 ![notion_connections.png](https://developers.openai.com/cookbook/assets/images/creating_notion_integration.png)
 
-![sharing_notion_pages.png](https://developers.openai.com/cookbook/assets/images/sharing_notion_with_gpt.png)
+![sharing_notion_pages.png](https://developers.openai.com/cookbook/assets/images/sharing_notion_with_GPT.png)
 
 ### In ChatGPT
 

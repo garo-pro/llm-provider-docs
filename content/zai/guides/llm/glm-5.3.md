@@ -123,322 +123,322 @@ This work has since grown into an ongoing disclosure effort. We built the Z.ai S
 
 The following is a full sample code to help you onboard GLM-5.3 with ease.
 
-**cURL**
+> [tab] cURL
+>
+> **Basic Call**
+>
+> ```bash theme={null}
+> curl -X POST "https://api.z.ai/api/paas/v4/chat/completions" \
+> -H "Content-Type: application/json" \
+> -H "Authorization: Bearer your-api-key" \
+> -d '{
+>   "model": "glm-5.3",
+>   "messages": [
+>     {
+>       "role": "system",
+>       "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks."
+>     },
+>     {
+>       "role": "user",
+>       "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack."
+>     }
+>   ],
+>   "thinking": {
+>     "type": "enabled"
+>   },
+>   "reasoning_effort": "max",
+>   "max_tokens": 4096,
+>   "temperature": 1.0
+> }'
+> ```
+>
+> **Streaming Call**
+>
+> ```bash theme={null}
+> curl -X POST "https://api.z.ai/api/paas/v4/chat/completions" \
+> -H "Content-Type: application/json" \
+> -H "Authorization: Bearer your-api-key" \
+> -d '{
+>   "model": "glm-5.3",
+>   "messages": [
+>     {
+>       "role": "system",
+>       "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks."
+>     },
+>     {
+>       "role": "user",
+>       "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack."
+>     }
+>   ],
+>   "thinking": {
+>     "type": "enabled"
+>   },
+>   "reasoning_effort": "max",
+>   "stream": true,
+>   "max_tokens": 4096,
+>   "temperature": 1.0
+> }'
+> ```
 
-**Basic Call**
+> [tab] Official Python SDK
+>
+> **Install SDK**
+>
+> ```bash theme={null}
+> # Install latest version
+> pip install zai-sdk
+>
+> # Or specify version
+> pip install zai-sdk==0.2.3
+> ```
+>
+> **Verify Installation**
+>
+> ```python theme={null}
+> import zai
+>
+> print(zai.__version__)
+> ```
+>
+> **Basic Call**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> client = ZaiClient(api_key="your-api-key")  # Your API Key
+>
+> response = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {
+>             "role": "system",
+>             "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.",
+>         },
+>         {
+>             "role": "user",
+>             "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.",
+>         },
+>     ],
+>     thinking={
+>         "type": "enabled",  # Optional: "enabled" only, reasoning is always enabled
+>     },
+>     reasoning_effort="max",
+>     max_tokens=4096,
+>     temperature=1.0,
+> )
+>
+> # Get complete response
+> print(response.choices[0].message)
+> ```
+>
+> **Streaming Call**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> client = ZaiClient(api_key="your-api-key")  # Your API Key
+>
+> response = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {
+>             "role": "system",
+>             "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.",
+>         },
+>         {
+>             "role": "user",
+>             "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.",
+>         },
+>     ],
+>     thinking={
+>         "type": "enabled",  # Optional: "enabled" only, reasoning is always enabled
+>     },
+>     reasoning_effort="max",
+>     stream=True,
+>     max_tokens=4096,
+>     temperature=1.0,
+> )
+>
+> # Stream response
+> for chunk in response:
+>     if chunk.choices[0].delta.reasoning_content:
+>         print(chunk.choices[0].delta.reasoning_content, end="", flush=True)
+>
+>     if chunk.choices[0].delta.content:
+>         print(chunk.choices[0].delta.content, end="", flush=True)
+> ```
 
-```bash theme={null}
-curl -X POST "https://api.z.ai/api/paas/v4/chat/completions" \
--H "Content-Type: application/json" \
--H "Authorization: Bearer your-api-key" \
--d '{
-  "model": "glm-5.3",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks."
-    },
-    {
-      "role": "user",
-      "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack."
-    }
-  ],
-  "thinking": {
-    "type": "enabled"
-  },
-  "reasoning_effort": "max",
-  "max_tokens": 4096,
-  "temperature": 1.0
-}'
-```
+> [tab] Official Java SDK
+>
+> **Install SDK**
+>
+> **Maven**
+>
+> ```xml theme={null}
+> <dependency>
+>     <groupId>ai.z.openapi</groupId>
+>     <artifactId>zai-sdk</artifactId>
+>     <version>0.3.5</version>
+> </dependency>
+> ```
+>
+> **Gradle (Groovy)**
+>
+> ```groovy theme={null}
+> implementation 'ai.z.openapi:zai-sdk:0.3.5'
+> ```
+>
+> **Basic Call**
+>
+> ```java theme={null}
+> import ai.z.openapi.ZaiClient;
+> import ai.z.openapi.service.model.ChatCompletionCreateParams;
+> import ai.z.openapi.service.model.ChatCompletionResponse;
+> import ai.z.openapi.service.model.ChatMessage;
+> import ai.z.openapi.service.model.ChatMessageRole;
+> import ai.z.openapi.service.model.ChatThinking;
+> import java.util.Arrays;
+>
+> public class BasicChat {
+>     public static void main(String[] args) {
+>         // Initialize client
+>         ZaiClient client = ZaiClient.builder().ofZAI().apiKey("your-api-key").build();
+>
+>         // Create chat completion request
+>         ChatCompletionCreateParams request = ChatCompletionCreateParams.builder()
+>             .model("glm-5.3")
+>             .messages(
+>                 Arrays.asList(
+>                     ChatMessage.builder()
+>                         .role(ChatMessageRole.SYSTEM.value())
+>                         .content(
+>                             "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.")
+>                         .build(),
+>                     ChatMessage.builder()
+>                         .role(ChatMessageRole.USER.value())
+>                         .content(
+>                             "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.")
+>                         .build()))
+>             .thinking(ChatThinking.builder().type("enabled").build())
+>             .reasoningEffort("max")
+>             .maxTokens(4096)
+>             .temperature(1.0f)
+>             .build();
+>
+>         // Send request
+>         ChatCompletionResponse response = client.chat().createChatCompletion(request);
+>
+>         // Get response
+>         if (response.isSuccess()) {
+>             Object reply = response.getData().getChoices().get(0).getMessage();
+>             System.out.println("AI Response: " + reply);
+>         } else {
+>             System.err.println("Error: " + response.getMsg());
+>         }
+>     }
+> }
+> ```
+>
+> **Streaming Call**
+>
+> ```java theme={null}
+> import ai.z.openapi.ZaiClient;
+> import ai.z.openapi.service.model.ChatCompletionCreateParams;
+> import ai.z.openapi.service.model.ChatCompletionResponse;
+> import ai.z.openapi.service.model.ChatMessage;
+> import ai.z.openapi.service.model.ChatMessageRole;
+> import ai.z.openapi.service.model.ChatThinking;
+> import ai.z.openapi.service.model.Delta;
+> import java.util.Arrays;
+>
+> public class StreamingChat {
+>     public static void main(String[] args) {
+>         // Initialize client
+>         ZaiClient client = ZaiClient.builder().ofZAI().apiKey("your-api-key").build();
+>
+>         // Create streaming chat completion request
+>         ChatCompletionCreateParams request = ChatCompletionCreateParams.builder()
+>             .model("glm-5.3")
+>             .messages(
+>                 Arrays.asList(
+>                     ChatMessage.builder()
+>                         .role(ChatMessageRole.SYSTEM.value())
+>                         .content(
+>                             "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.")
+>                         .build(),
+>                     ChatMessage.builder()
+>                         .role(ChatMessageRole.USER.value())
+>                         .content(
+>                             "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.")
+>                         .build()))
+>             .thinking(ChatThinking.builder().type("enabled").build())
+>             .reasoningEffort("max")
+>             .stream(true) // Enable streaming output
+>             .maxTokens(4096)
+>             .temperature(1.0f)
+>             .build();
+>
+>         ChatCompletionResponse response = client.chat().createChatCompletion(request);
+>
+>         if (response.isSuccess()) {
+>             response.getFlowable()
+>                 .subscribe(
+>                     // Process streaming message data
+>                     data -> {
+>                         if (data.getChoices() != null && !data.getChoices().isEmpty()) {
+>                             Delta delta = data.getChoices().get(0).getDelta();
+>                             System.out.print(delta + "\n");
+>                         }
+>                     },
+>                     // Process streaming response error
+>                     error -> System.err.println("\nStream error: " + error.getMessage()),
+>                     // Process streaming response completion event
+>                     () -> System.out.println("\nStreaming response completed"));
+>         } else {
+>             System.err.println("Error: " + response.getMsg());
+>         }
+>     }
+> }
+> ```
 
-**Streaming Call**
-
-```bash theme={null}
-curl -X POST "https://api.z.ai/api/paas/v4/chat/completions" \
--H "Content-Type: application/json" \
--H "Authorization: Bearer your-api-key" \
--d '{
-  "model": "glm-5.3",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks."
-    },
-    {
-      "role": "user",
-      "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack."
-    }
-  ],
-  "thinking": {
-    "type": "enabled"
-  },
-  "reasoning_effort": "max",
-  "stream": true,
-  "max_tokens": 4096,
-  "temperature": 1.0
-}'
-```
-
-**Official Python SDK**
-
-**Install SDK**
-
-```bash theme={null}
-# Install latest version
-pip install zai-sdk
-
-# Or specify version
-pip install zai-sdk==0.2.3
-```
-
-**Verify Installation**
-
-```python theme={null}
-import zai
-
-print(zai.__version__)
-```
-
-**Basic Call**
-
-```python theme={null}
-from zai import ZaiClient
-
-client = ZaiClient(api_key="your-api-key")  # Your API Key
-
-response = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {
-            "role": "system",
-            "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.",
-        },
-        {
-            "role": "user",
-            "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.",
-        },
-    ],
-    thinking={
-        "type": "enabled",  # Optional: "enabled" only, reasoning is always enabled
-    },
-    reasoning_effort="max",
-    max_tokens=4096,
-    temperature=1.0,
-)
-
-# Get complete response
-print(response.choices[0].message)
-```
-
-**Streaming Call**
-
-```python theme={null}
-from zai import ZaiClient
-
-client = ZaiClient(api_key="your-api-key")  # Your API Key
-
-response = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {
-            "role": "system",
-            "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.",
-        },
-        {
-            "role": "user",
-            "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.",
-        },
-    ],
-    thinking={
-        "type": "enabled",  # Optional: "enabled" only, reasoning is always enabled
-    },
-    reasoning_effort="max",
-    stream=True,
-    max_tokens=4096,
-    temperature=1.0,
-)
-
-# Stream response
-for chunk in response:
-    if chunk.choices[0].delta.reasoning_content:
-        print(chunk.choices[0].delta.reasoning_content, end="", flush=True)
-
-    if chunk.choices[0].delta.content:
-        print(chunk.choices[0].delta.content, end="", flush=True)
-```
-
-**Official Java SDK**
-
-**Install SDK**
-
-**Maven**
-
-```xml theme={null}
-<dependency>
-    <groupId>ai.z.openapi</groupId>
-    <artifactId>zai-sdk</artifactId>
-    <version>0.3.5</version>
-</dependency>
-```
-
-**Gradle (Groovy)**
-
-```groovy theme={null}
-implementation 'ai.z.openapi:zai-sdk:0.3.5'
-```
-
-**Basic Call**
-
-```java theme={null}
-import ai.z.openapi.ZaiClient;
-import ai.z.openapi.service.model.ChatCompletionCreateParams;
-import ai.z.openapi.service.model.ChatCompletionResponse;
-import ai.z.openapi.service.model.ChatMessage;
-import ai.z.openapi.service.model.ChatMessageRole;
-import ai.z.openapi.service.model.ChatThinking;
-import java.util.Arrays;
-
-public class BasicChat {
-    public static void main(String[] args) {
-        // Initialize client
-        ZaiClient client = ZaiClient.builder().ofZAI().apiKey("your-api-key").build();
-
-        // Create chat completion request
-        ChatCompletionCreateParams request = ChatCompletionCreateParams.builder()
-            .model("glm-5.3")
-            .messages(
-                Arrays.asList(
-                    ChatMessage.builder()
-                        .role(ChatMessageRole.SYSTEM.value())
-                        .content(
-                            "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.")
-                        .build(),
-                    ChatMessage.builder()
-                        .role(ChatMessageRole.USER.value())
-                        .content(
-                            "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.")
-                        .build()))
-            .thinking(ChatThinking.builder().type("enabled").build())
-            .reasoningEffort("max")
-            .maxTokens(4096)
-            .temperature(1.0f)
-            .build();
-
-        // Send request
-        ChatCompletionResponse response = client.chat().createChatCompletion(request);
-
-        // Get response
-        if (response.isSuccess()) {
-            Object reply = response.getData().getChoices().get(0).getMessage();
-            System.out.println("AI Response: " + reply);
-        } else {
-            System.err.println("Error: " + response.getMsg());
-        }
-    }
-}
-```
-
-**Streaming Call**
-
-```java theme={null}
-import ai.z.openapi.ZaiClient;
-import ai.z.openapi.service.model.ChatCompletionCreateParams;
-import ai.z.openapi.service.model.ChatCompletionResponse;
-import ai.z.openapi.service.model.ChatMessage;
-import ai.z.openapi.service.model.ChatMessageRole;
-import ai.z.openapi.service.model.ChatThinking;
-import ai.z.openapi.service.model.Delta;
-import java.util.Arrays;
-
-public class StreamingChat {
-    public static void main(String[] args) {
-        // Initialize client
-        ZaiClient client = ZaiClient.builder().ofZAI().apiKey("your-api-key").build();
-
-        // Create streaming chat completion request
-        ChatCompletionCreateParams request = ChatCompletionCreateParams.builder()
-            .model("glm-5.3")
-            .messages(
-                Arrays.asList(
-                    ChatMessage.builder()
-                        .role(ChatMessageRole.SYSTEM.value())
-                        .content(
-                            "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks.")
-                        .build(),
-                    ChatMessage.builder()
-                        .role(ChatMessageRole.USER.value())
-                        .content(
-                            "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.")
-                        .build()))
-            .thinking(ChatThinking.builder().type("enabled").build())
-            .reasoningEffort("max")
-            .stream(true) // Enable streaming output
-            .maxTokens(4096)
-            .temperature(1.0f)
-            .build();
-
-        ChatCompletionResponse response = client.chat().createChatCompletion(request);
-
-        if (response.isSuccess()) {
-            response.getFlowable()
-                .subscribe(
-                    // Process streaming message data
-                    data -> {
-                        if (data.getChoices() != null && !data.getChoices().isEmpty()) {
-                            Delta delta = data.getChoices().get(0).getDelta();
-                            System.out.print(delta + "\n");
-                        }
-                    },
-                    // Process streaming response error
-                    error -> System.err.println("\nStream error: " + error.getMessage()),
-                    // Process streaming response completion event
-                    () -> System.out.println("\nStreaming response completed"));
-        } else {
-            System.err.println("Error: " + response.getMsg());
-        }
-    }
-}
-```
-
-**OpenAI Python SDK**
-
-**Install SDK**
-
-```bash theme={null}
-# Install or upgrade to latest version
-pip install --upgrade 'openai>=1.0'
-```
-
-**Verify Installation**
-
-```python theme={null}
-python -c "import openai; print(openai.__version__)"
-```
-
-**Usage Example**
-
-```python theme={null}
-from openai import OpenAI
-
-client = OpenAI(
-    api_key="your-Z.AI-api-key",
-    base_url="https://api.z.ai/api/paas/v4/",
-)
-
-completion = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {"role": "system", "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks."},
-        {
-            "role": "user",
-            "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.",
-        },
-    ],
-)
-
-print(completion.choices[0].message.content)
-```
+> [tab] OpenAI Python SDK
+>
+> **Install SDK**
+>
+> ```bash theme={null}
+> # Install or upgrade to latest version
+> pip install --upgrade 'openai>=1.0'
+> ```
+>
+> **Verify Installation**
+>
+> ```python theme={null}
+> python -c "import openai; print(openai.__version__)"
+> ```
+>
+> **Usage Example**
+>
+> ```python theme={null}
+> from openai import OpenAI
+>
+> client = OpenAI(
+>     api_key="your-Z.AI-api-key",
+>     base_url="https://api.z.ai/api/paas/v4/",
+> )
+>
+> completion = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {"role": "system", "content": "You are a senior full-stack software engineer, proficient in frontend development, backend architecture design, and modern web technology stacks."},
+>         {
+>             "role": "user",
+>             "content": "Design and build a personal blog website for me, including a homepage, article list page, and article detail page, using React + Node.js technology stack.",
+>         },
+>     ],
+> )
+>
+> print(completion.choices[0].message.content)
+> ```
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

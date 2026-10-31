@@ -2783,8 +2783,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"create_subagent_call"`
 
-            The current public item type.
-
       - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
         A request to send input to another agent.
@@ -2837,8 +2835,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"send_subagent_input_call"`
 
-            The current public item type.
-
       - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to resume a subagent.
@@ -2876,8 +2872,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
           The item type. Always `resume_subagent_call`.
 
           - `"resume_subagent_call"`
-
-            The current public item type.
 
       - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -2917,8 +2911,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"wait_for_subagents_call"`
 
-            The current public item type.
-
       - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to interrupt a subagent's current turn. The subagent remains available.
@@ -2957,8 +2949,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"interrupt_subagent_call"`
 
-            The current public item type.
-
       - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to close a subagent.
@@ -2996,8 +2986,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
           The item type. Always `close_subagent_call`.
 
           - `"close_subagent_call"`
-
-            The current public item type.
 
     - `output_index: integer or null`
 

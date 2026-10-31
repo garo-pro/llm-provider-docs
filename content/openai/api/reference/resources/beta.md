@@ -3546,8 +3546,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
     - `"close_subagent_call"`
 
-      The current public item type.
-
 ### Agent Command Execution Item
 
 - `AgentCommandExecutionItem object { id, command, cwd, 6 more }`
@@ -3759,8 +3757,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
     The item type. Always `create_subagent_call`.
 
     - `"create_subagent_call"`
-
-      The current public item type.
 
 ### Agent Deleted
 
@@ -4013,8 +4009,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
     The item type. Always `interrupt_subagent_call`.
 
     - `"interrupt_subagent_call"`
-
-      The current public item type.
 
 ### Agent Mcp Call Item
 
@@ -4746,8 +4740,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -4800,8 +4792,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -4839,8 +4829,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -4880,8 +4868,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -4920,8 +4906,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -4959,8 +4943,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 ### Agent Output Item Status
 
@@ -5174,8 +5156,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
     - `"resume_subagent_call"`
 
-      The current public item type.
-
 ### Agent Send Subagent Input Call Item
 
 - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
@@ -5269,8 +5249,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
     The item type. Always `send_subagent_input_call`.
 
     - `"send_subagent_input_call"`
-
-      The current public item type.
 
 ### Agent Session
 
@@ -10692,8 +10670,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
           - `"create_subagent_call"`
 
-            The current public item type.
-
       - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
         A request to send input to another agent.
@@ -10746,8 +10722,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
           - `"send_subagent_input_call"`
 
-            The current public item type.
-
       - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to resume a subagent.
@@ -10785,8 +10759,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
           The item type. Always `resume_subagent_call`.
 
           - `"resume_subagent_call"`
-
-            The current public item type.
 
       - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -10826,8 +10798,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
           - `"wait_for_subagents_call"`
 
-            The current public item type.
-
       - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to interrupt a subagent's current turn. The subagent remains available.
@@ -10866,8 +10836,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
           - `"interrupt_subagent_call"`
 
-            The current public item type.
-
       - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to close a subagent.
@@ -10905,8 +10873,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
           The item type. Always `close_subagent_call`.
 
           - `"close_subagent_call"`
-
-            The current public item type.
 
     - `output_index: integer or null`
 
@@ -16060,8 +16026,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -16114,8 +16078,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -16153,8 +16115,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -16194,8 +16154,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -16234,8 +16192,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -16273,8 +16229,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 ### Agent Session Message
 
@@ -20054,8 +20008,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"create_subagent_call"`
 
-          The current public item type.
-
     - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
       A request to send input to another agent.
@@ -20108,8 +20060,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"send_subagent_input_call"`
 
-          The current public item type.
-
     - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
       A request to resume a subagent.
@@ -20147,8 +20097,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
         The item type. Always `resume_subagent_call`.
 
         - `"resume_subagent_call"`
-
-          The current public item type.
 
     - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -20188,8 +20136,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"wait_for_subagents_call"`
 
-          The current public item type.
-
     - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
       A request to interrupt a subagent's current turn. The subagent remains available.
@@ -20228,8 +20174,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"interrupt_subagent_call"`
 
-          The current public item type.
-
     - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
       A request to close a subagent.
@@ -20267,8 +20211,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
         The item type. Always `close_subagent_call`.
 
         - `"close_subagent_call"`
-
-          The current public item type.
 
   - `output_index: integer or null`
 
@@ -20918,8 +20860,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"create_subagent_call"`
 
-          The current public item type.
-
     - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
       A request to send input to another agent.
@@ -20972,8 +20912,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"send_subagent_input_call"`
 
-          The current public item type.
-
     - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
       A request to resume a subagent.
@@ -21011,8 +20949,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
         The item type. Always `resume_subagent_call`.
 
         - `"resume_subagent_call"`
-
-          The current public item type.
 
     - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -21052,8 +20988,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"wait_for_subagents_call"`
 
-          The current public item type.
-
     - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
       A request to interrupt a subagent's current turn. The subagent remains available.
@@ -21092,8 +21026,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"interrupt_subagent_call"`
 
-          The current public item type.
-
     - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
       A request to close a subagent.
@@ -21131,8 +21063,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
         The item type. Always `close_subagent_call`.
 
         - `"close_subagent_call"`
-
-          The current public item type.
 
   - `output_index: integer`
 
@@ -22164,8 +22094,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
     - `"wait_for_subagents_call"`
 
-      The current public item type.
-
 ### Agent Web Search Call Item
 
 - `AgentWebSearchCallItem object { id, action, status, 2 more }`
@@ -22776,8 +22704,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
           - `"application/zip"`
 
-            A ZIP archive.
-
         - `type: "base64" (default: "base64")`
 
           The type of the object. Always `base64`.
@@ -23096,8 +23022,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"application/zip"`
 
-        A ZIP archive.
-
     - `type: "base64" (default: "base64")`
 
       The type of the object. Always `base64`.
@@ -23232,8 +23156,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"application/zip"`
 
-          A ZIP archive.
-
       - `type: "base64" (default: "base64")`
 
         The type of the object. Always `base64`.
@@ -23299,8 +23221,6 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
     The archive media type, always `application/zip`.
 
     - `"application/zip"`
-
-      A ZIP archive.
 
   - `type: "base64" (default: "base64")`
 
@@ -24881,8 +24801,6 @@ Content type: `application/json`
                   The archive media type, always `application/zip`.
 
                   - `"application/zip"`
-
-                    A ZIP archive.
 
                 - `type: "base64" (default: "base64")`
 
@@ -30919,8 +30837,6 @@ Content type: `application/json`
 
               - `"application/zip"`
 
-                A ZIP archive.
-
             - `type: "base64" (default: "base64")`
 
               The type of the object. Always `base64`.
@@ -34371,8 +34287,6 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
                   - `"application/zip"`
 
-                    A ZIP archive.
-
                 - `type: "base64" (default: "base64")`
 
                   The type of the object. Always `base64`.
@@ -36000,8 +35914,6 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
               The archive media type, always `application/zip`.
 
               - `"application/zip"`
-
-                A ZIP archive.
 
             - `type: "base64" (default: "base64")`
 
@@ -43552,8 +43464,6 @@ Content type: `application/json`
 
         - `"application/zip"`
 
-          A ZIP archive.
-
       - `type: "base64" (default: "base64")`
 
         The type of the object. Always `base64`.
@@ -45120,8 +45030,6 @@ Content type: `application/json`
 
       - `"application/zip"`
 
-        A ZIP archive.
-
     - `type: "base64" (default: "base64")`
 
       The type of the object. Always `base64`.
@@ -46378,8 +46286,6 @@ Content type: `application/json`
 
       - `"application/zip"`
 
-        A ZIP archive.
-
     - `type: "base64" (default: "base64")`
 
       The type of the object. Always `base64`.
@@ -47210,8 +47116,6 @@ Content type: `application/json`
           The archive media type, always `application/zip`.
 
           - `"application/zip"`
-
-            A ZIP archive.
 
         - `type: "base64" (default: "base64")`
 
@@ -51239,7 +51143,7 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
 
 **post** `/agents/sessions/{session_id}`
 
-Updates session metadata, model, reasoning effort, or service tier. Model settings apply to subsequent turns. Omitted fields are unchanged. See [managing sessions](/api/docs/guides/agents-api/sessions/manage).
+Updates session tools, metadata, model, reasoning effort, or service tier. Model settings apply to subsequent turns. Omitted fields are unchanged. See [managing sessions](/api/docs/guides/agents-api/sessions/manage).
 
 ### Path Parameters
 
@@ -51253,9 +51157,9 @@ Updates session metadata, model, reasoning effort, or service tier. Model settin
 
 Content type: `application/json`
 
-- `agent: optional object { model, reasoning, service_tier }`
+- `agent: optional object { model, reasoning, service_tier, tools }`
 
-  Model settings for subsequent turns. Omitted fields stay unchanged.
+  Agent settings to update on this session. Omitted fields stay unchanged.
 
   - `model: optional string`
 
@@ -51312,6 +51216,276 @@ Content type: `application/json`
     - `"ultrafast"`
 
       Uses the ultrafast service tier.
+
+  - `tools: optional array of AgentToolParam or null`
+
+    Replaces the session tools. Functions and MCP servers change on the next model call. Built-in tools change by the next turn. Omit to keep the current tools, or pass null or an empty array to clear them.
+
+    `minItems: 0`, `maxItems: 16384`
+
+    - `Function object { description, name, parameters, 2 more }`
+
+      A function defined by the application.
+
+      - `description: string`
+
+        A description of what the function does.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `name: string`
+
+        The name of the function.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `parameters: map[unknown]`
+
+        A JSON Schema object describing the function's arguments.
+
+      - `type: "function" (default: "function")`
+
+        The type of the object. Always `function`.
+
+        - `"function"`
+
+      - `defer_loading: optional boolean (default: false)`
+
+        Whether this function is deferred and discovered through tool search. Defaults to `false`.
+
+    - `ToolSearch object { type }`
+
+      Discovers deferred function tools and loads them into the model context.
+
+      - `type: "tool_search" (default: "tool_search")`
+
+        The type of the object. Always `tool_search`.
+
+        - `"tool_search"`
+
+    - `ProgrammaticToolCalling object { type, enabled }`
+
+      Enables calling tools from model-generated code.
+
+      - `type: "programmatic_tool_calling" (default: "programmatic_tool_calling")`
+
+        The type of the object. Always `programmatic_tool_calling`.
+
+        - `"programmatic_tool_calling"`
+
+      - `enabled: optional boolean (default: true)`
+
+        Whether tools can be called from model-generated code. Defaults to `true`.
+
+    - `Mcp object { server_label, transport, type, 5 more }`
+
+      Tools provided by a remote MCP server.
+
+      - `server_label: string`
+
+        A label used to identify the MCP server in tool calls.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `transport: McpTransportParam`
+
+        The transport used to connect to the MCP server.
+
+        - `HTTP object { server_url, type, authorization, headers }`
+
+          Connects to an MCP server over HTTP.
+
+          - `server_url: string`
+
+            The URL of the MCP server.
+
+            `minLength: 0`, `maxLength: 1048576`
+
+          - `type: "http" (default: "http")`
+
+            The type of the object. Always `http`.
+
+            - `"http"`
+
+          - `authorization: optional string or null`
+
+            The authorization value sent to the MCP server, if any.
+
+            `minLength: 0`, `maxLength: 1048576`
+
+          - `headers: optional map[string] or null`
+
+            Additional HTTP headers sent to the MCP server.
+
+        - `Stdio object { command, cwd, type, 3 more }`
+
+          Starts an MCP server as a local process.
+
+          - `command: string`
+
+            The command used to start the MCP server.
+
+            `minLength: 0`, `maxLength: 1048576`
+
+          - `cwd: string`
+
+            The working directory used to start the MCP server.
+
+            `minLength: 0`, `maxLength: 1048576`
+
+          - `type: "stdio" (default: "stdio")`
+
+            The type of the object. Always `stdio`.
+
+            - `"stdio"`
+
+          - `args: optional array of string or null`
+
+            Arguments passed to the MCP server command.
+
+            `minItems: 0`, `maxItems: 16384`
+
+          - `env: optional map[string] or null`
+
+            Environment variables set for the MCP server process.
+
+          - `env_vars: optional array of string or null`
+
+            Environment variable names to inherit from the selected execution environment.
+
+            `minItems: 0`, `maxItems: 16384`
+
+      - `type: "mcp" (default: "mcp")`
+
+        The type of the object. Always `mcp`.
+
+        - `"mcp"`
+
+      - `allowed_tools: optional array of string or null`
+
+        The MCP tools the agent may call. All server tools are allowed when omitted.
+
+        `minItems: 0`, `maxItems: 16384`
+
+      - `connection_origin: optional "service" or "environment" or null`
+
+        Selects where outbound MCP HTTP connections originate. Omitted or `service` uses the Managed Agents service network; `environment` uses the session's selected environment.
+
+        - `"service"`
+
+          Uses the Managed Agents service network.
+
+        - `"environment"`
+
+          Uses the session's execution environment.
+
+      - `credential_id: optional string or null`
+
+        The attached vault credential used to authenticate this MCP server. Optional when exactly one attached credential matches the server URL.
+
+        `minLength: 0`, `maxLength: 1048576`
+
+      - `request_metadata: optional map[unknown] or null`
+
+        Metadata included with requests to this MCP server.
+
+      - `required: optional boolean (default: false)`
+
+        Whether this MCP server must initialize before the first turn. Defaults to `false`.
+
+    - `WebSearch object { type, allowed_domains, context_size, 2 more }`
+
+      Web search.
+
+      - `type: "web_search" (default: "web_search")`
+
+        The type of the object. Always `web_search`.
+
+        - `"web_search"`
+
+      - `allowed_domains: optional array of string or null`
+
+        Domains the search may include.
+
+        `minItems: 0`, `maxItems: 16384`
+
+      - `context_size: optional "low" or "medium" or "high" or null`
+
+        The amount of search context made available to the model. Defaults to `medium`.
+
+        - `"low"`
+
+        - `"medium"`
+
+        - `"high"`
+
+      - `location: optional object { city, country, region, timezone }  or null`
+
+        Approximate location used to localize search results.
+
+        - `city: optional string or null`
+
+          The city name.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+        - `country: optional string or null`
+
+          The two-letter ISO country code, such as `US`.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+        - `region: optional string or null`
+
+          The region or state name.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+        - `timezone: optional string or null`
+
+          The IANA timezone, such as `America/Los_Angeles`.
+
+          `minLength: 0`, `maxLength: 1048576`
+
+      - `mode: optional "disabled" or "cached" or "live" or null`
+
+        The source used for web search results. Defaults to `live`.
+
+        - `"disabled"`
+
+          Disables web search.
+
+        - `"cached"`
+
+          Uses cached search results.
+
+        - `"live"`
+
+          Searches the live web.
+
+    - `ComputerUse object { type, include_screenshots }`
+
+      Browser use in an OpenAI-hosted session.
+
+      - `type: "computer_use" (default: "computer_use")`
+
+        The type of the object. Always `computer_use`.
+
+        - `"computer_use"`
+
+      - `include_screenshots: optional boolean (default: false)`
+
+        Whether computer tool outputs include screenshots. Defaults to `false`.
+
+    - `Automations object { type }`
+
+      Lets the agent manage its own scheduled wakeups.
+
+      - `type: "automations" (default: "automations")`
+
+        The type of the object. Always `automations`.
+
+        - `"automations"`
 
 - `metadata: optional map[string] or null`
 
@@ -55621,8 +55795,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"create_subagent_call"`
 
-            The current public item type.
-
       - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
         A request to send input to another agent.
@@ -55675,8 +55847,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"send_subagent_input_call"`
 
-            The current public item type.
-
       - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to resume a subagent.
@@ -55714,8 +55884,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
           The item type. Always `resume_subagent_call`.
 
           - `"resume_subagent_call"`
-
-            The current public item type.
 
       - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -55755,8 +55923,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"wait_for_subagents_call"`
 
-            The current public item type.
-
       - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to interrupt a subagent's current turn. The subagent remains available.
@@ -55795,8 +55961,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `"interrupt_subagent_call"`
 
-            The current public item type.
-
       - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
         A request to close a subagent.
@@ -55834,8 +55998,6 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
           The item type. Always `close_subagent_call`.
 
           - `"close_subagent_call"`
-
-            The current public item type.
 
     - `output_index: integer or null`
 
@@ -57801,8 +57963,6 @@ Lists items produced by the session's root agent, including its interactions wit
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -57855,8 +58015,6 @@ Lists items produced by the session's root agent, including its interactions wit
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -57894,8 +58052,6 @@ Lists items produced by the session's root agent, including its interactions wit
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -57935,8 +58091,6 @@ Lists items produced by the session's root agent, including its interactions wit
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -57975,8 +58129,6 @@ Lists items produced by the session's root agent, including its interactions wit
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -58014,8 +58166,6 @@ Lists items produced by the session's root agent, including its interactions wit
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 - `first_id: string or null`
 
@@ -59312,8 +59462,6 @@ Lists this subagent's own items across all of its turns. See [subagent workflows
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -59366,8 +59514,6 @@ Lists this subagent's own items across all of its turns. See [subagent workflows
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -59405,8 +59551,6 @@ Lists this subagent's own items across all of its turns. See [subagent workflows
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -59446,8 +59590,6 @@ Lists this subagent's own items across all of its turns. See [subagent workflows
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -59486,8 +59628,6 @@ Lists this subagent's own items across all of its turns. See [subagent workflows
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -59525,8 +59665,6 @@ Lists this subagent's own items across all of its turns. See [subagent workflows
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 - `first_id: string or null`
 
@@ -61125,8 +61263,6 @@ Lists items belonging to one turn of this subagent. See [subagent workflows](/ap
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -61179,8 +61315,6 @@ Lists items belonging to one turn of this subagent. See [subagent workflows](/ap
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -61218,8 +61352,6 @@ Lists items belonging to one turn of this subagent. See [subagent workflows](/ap
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -61259,8 +61391,6 @@ Lists items belonging to one turn of this subagent. See [subagent workflows](/ap
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -61299,8 +61429,6 @@ Lists items belonging to one turn of this subagent. See [subagent workflows](/ap
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -61338,8 +61466,6 @@ Lists items belonging to one turn of this subagent. See [subagent workflows](/ap
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 - `first_id: string or null`
 
@@ -63316,8 +63442,6 @@ Lists items belonging to one root-agent turn, including its interactions with su
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -63370,8 +63494,6 @@ Lists items belonging to one root-agent turn, including its interactions with su
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -63409,8 +63531,6 @@ Lists items belonging to one root-agent turn, including its interactions with su
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -63450,8 +63570,6 @@ Lists items belonging to one root-agent turn, including its interactions with su
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -63490,8 +63608,6 @@ Lists items belonging to one root-agent turn, including its interactions with su
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -63529,8 +63645,6 @@ Lists items belonging to one root-agent turn, including its interactions with su
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 - `first_id: string or null`
 
@@ -262831,11 +262945,11 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
 ### Beta Responses Client Event
 
-- `BetaResponsesClientEvent = ResponseCreate { type, access_programs, background, 32 more }  or BetaResponseSteerEvent or BetaResponseInjectEvent`
+- `BetaResponsesClientEvent = ResponseCreate { type, access_programs, background, 33 more }  or BetaResponseSteerEvent or BetaResponseInjectEvent`
 
   Client events accepted by the Responses WebSocket server.
 
-  - `ResponseCreate object { type, access_programs, background, 32 more }`
+  - `ResponseCreate object { type, access_programs, background, 33 more }`
 
     Client event for creating a response over a persistent WebSocket connection.
     This payload uses the same top-level fields as `POST /v1/responses`, plus
@@ -262904,6 +263018,12 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `id: string`
 
           The unique ID of the conversation.
+
+    - `generate: optional boolean`
+
+      Whether to generate output for this response. Defaults to true when omitted.
+      Set to false to prepare request state without model output; the response
+      ID can be used as previous_response_id on a later turn.
 
     - `include: optional array of BetaResponseIncludable or null`
 

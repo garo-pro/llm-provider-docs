@@ -27,27 +27,27 @@ The current coding tools supported are:
 
 ## Key Features
 
-> **Interactive Wizard**
+> [card] Interactive Wizard
 >
 > Friendly setup guidance
 
-> **Plan Integration**
+> [card] Plan Integration
 >
 > Connect GLM Plan to your preferred coding tools
 
-> **Tool Management**
+> [card] Tool Management
 >
 > Automatically detect, install, and configure coding tools
 
-> **MCP Configuration**
+> [card] MCP Configuration
 >
 > Easily manage MCP services
 
-> **Local Storage**
+> [card] Local Storage
 >
 > Secure local storage configuration
 
-> **I18n Support**
+> [card] I18n Support
 >
 > Interfaces support multiple languages
 
@@ -62,31 +62,31 @@ Get your API Key from [Personal Coding Plan > Plan Overview](https://z.ai/manage
 Prerequisite: You need [Node.js 18+ or newer](https://nodejs.org/en/download/) \
 Choose either installation method below.
 
-**Method 1 (Recommended: npx on demand)**
-
-Best for occasional users—no global install required. Run via npx to start instantly.
-
-```shell theme={null}
-## Run Coding Tool Helper directly in the terminal
-npx @z_ai/coding-helper
-```
-
-**Method 2 (Global install for frequent use)**
-
-Ideal for heavy users. Install globally, then launch with `coding-helper` or `chelper`.
-
-> [!TIP]
+> [tab] Method 1 (Recommended: npx on demand)
 >
-> If `npm install` fails with `permission denied`, add sudo (macOS/Linux) or run the terminal as administrator (Windows).\
-> Example: `sudo npm install -g @z_ai/coding-helper` \
-> Alternatively, simply use npx: `npx @z_ai/coding-helper`
+> Best for occasional users—no global install required. Run via npx to start instantly.
+>
+> ```shell theme={null}
+> ## Run Coding Tool Helper directly in the terminal
+> npx @z_ai/coding-helper
+> ```
 
-```shell theme={null}
-## Install @z_ai/coding-helper globally
-npm install -g @z_ai/coding-helper
-## Then run coding-helper or chelper
-coding-helper
-```
+> [tab] Method 2 (Global install for frequent use)
+>
+> Ideal for heavy users. Install globally, then launch with `coding-helper` or `chelper`.
+>
+> > [!TIP]
+> >
+> > If `npm install` fails with `permission denied`, add sudo (macOS/Linux) or run the terminal as administrator (Windows).\
+> > Example: `sudo npm install -g @z_ai/coding-helper` \
+> > Alternatively, simply use npx: `npx @z_ai/coding-helper`
+>
+> ```shell theme={null}
+> ## Install @z_ai/coding-helper globally
+> npm install -g @z_ai/coding-helper
+> ## Then run coding-helper or chelper
+> coding-helper
+> ```
 
 **3. Complete the wizard**
 
@@ -126,7 +126,7 @@ coding-helper --version              # Show version
 
 If issues arise, run `coding-helper doctor` first for a health check.
 
-> **Network error, please check your connection**
+> [accordion] Network error, please check your connection
 >
 > **Issue:** When saving or validating the API KEY or performing other network operations, you may see network errors such as `Network Error`.
 >
@@ -141,7 +141,7 @@ If issues arise, run `coding-helper doctor` first for a health check.
 > export HTTPS_PROXY=http://your.proxy.server:port
 > ```
 
-> **Network timeout**
+> [accordion] Network timeout
 >
 > **Issue:** When running or installing the coding tools, timeout or other network timeout errors appear.
 >
@@ -149,7 +149,7 @@ If issues arise, run `coding-helper doctor` first for a health check.
 >
 > 1. Check the network connection or configure a proxy.
 
-> **Insufficient permissions EACCES: permission denied**
+> [accordion] Insufficient permissions EACCES: permission denied
 >
 > **Issue:** `npm install -g` throws EACCES: permission denied.
 >
@@ -160,7 +160,7 @@ If issues arise, run `coding-helper doctor` first for a health check.
 > 3. Start directly via `npx @z_ai/coding-helper`.
 > 4. Use nvm to manage Node.js versions and avoid global permission issues.
 
-> **Incorrect plugin status in the Claude Code Marketplace**
+> [accordion] Incorrect plugin status in the Claude Code Marketplace
 >
 > **Issue:** While using the Claude Code Marketplace, the plugin status is incorrect (e.g., it shows “not installed” even though it is already installed).
 >
@@ -168,7 +168,7 @@ If issues arise, run `coding-helper doctor` first for a health check.
 >
 > 1. Run `claude update` to upgrade Claude Code to version 2.0.70 or later.
 
-> **API Key invalid**
+> [accordion] API Key invalid
 >
 > **Issue:** API Key reported as invalid.
 >
@@ -177,7 +177,7 @@ If issues arise, run `coding-helper doctor` first for a health check.
 > 1. Confirm the API Key was copied correctly.
 > 2. Check that the associated account has sufficient balance.
 
-> **Connection timeout**
+> [accordion] Connection timeout
 >
 > **Issue:** Service connection timed out.
 >

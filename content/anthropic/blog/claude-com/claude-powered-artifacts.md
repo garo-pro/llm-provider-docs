@@ -56,4 +56,4 @@ As you work together, Claude can debug and improve its own code based on your fe
 - No persistent storage
 - Limited to a text-based completion API
 
-This capability is available in beta to Free, Pro, and Max plan users.
+This capability is available in beta to Free, Pro, Max, and Ultra plan users.

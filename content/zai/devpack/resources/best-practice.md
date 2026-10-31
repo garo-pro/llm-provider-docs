@@ -32,19 +32,19 @@ When working with a coding agent, many developers focus too much on prompt-writi
 
 In a complex codebase, an effective task description typically includes four elements:
 
-> **Goal**
+> [accordion] Goal
 >
 > Clearly describe what needs to be built or changed, such as fixing a bug, implementing an endpoint, or refactoring a module.
 
-> **Context**
+> [accordion] Context
 >
 > Provide the relevant files, error messages, documentation, or examples. For example, specify which files, functions, or modules are involved.
 
-> **Constraints**
+> [accordion] Constraints
 >
 > List the engineering requirements the agent should follow, such as coding standards, architectural rules, security requirements, or dependency limitations.
 
-> **Done when**
+> [accordion] Done when
 >
 > Define how completion should be evaluated, such as tests passing, behavior changing as expected, or the bug no longer reproducing.
 
@@ -292,19 +292,19 @@ Together, these form the agent’s **active working context** for the task.
 
 If sessions are not managed carefully, unrelated tasks can accumulate in the same session and make the context unnecessarily complex. This often reduces the quality of the agent’s reasoning and execution. For that reason, deliberate session management is an important part of working effectively with coding agents. Common practices include:
 
-> **Use a separate session for each task**
+> [accordion] Use a separate session for each task
 >
 > Avoid mixing unrelated tasks in the same session so the working context stays clear.
 
-> **Avoid overly long sessions**
+> [accordion] Avoid overly long sessions
 >
 > When a session accumulates too much history, use summaries or compression to reduce context overhead.
 
-> **Start a new session for branch explorations**
+> [accordion] Start a new session for branch explorations
 >
 > If the task opens up a new line of investigation, continue it in a separate session instead of piling more changes into the original one.
 
-> **Periodically compress historical context**
+> [accordion] Periodically compress historical context
 >
 > Summarize older parts of the conversation to reduce pressure on the context window.
 

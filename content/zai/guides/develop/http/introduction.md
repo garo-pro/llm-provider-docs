@@ -8,19 +8,19 @@ Z.AI provides standard HTTP API interfaces that support multiple programming lan
 
 ### Core Advantages
 
-> **Cross-platform Compatible**
+> [card] Cross-platform Compatible
 >
 > Supports all programming languages and platforms that support HTTP protocol
 
-> **Standard Protocol**
+> [card] Standard Protocol
 >
 > Based on RESTful design, follows HTTP standards, easy to understand and use
 
-> **Flexible Integration**
+> [card] Flexible Integration
 >
 > Can be integrated into any existing applications and systems
 
-> **Real-time Calls**
+> [card] Real-time Calls
 >
 > Supports synchronous and asynchronous calls to meet different scenario requirements
 
@@ -51,61 +51,61 @@ Authorization: Bearer YOUR_API_KEY
 
 ### Supported Authentication Methods
 
-**API Key Authentication**
+> [tab] API Key Authentication
+>
+> The simplest authentication method, directly using your API Key:
+>
+> ```bash theme={null}
+> curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+> --header 'Authorization: Bearer YOUR_API_KEY' \
+> --header 'Accept-Language: en-US,en' \
+> --header 'Content-Type: application/json' \
+> --data '{
+>     "model": "glm-5.3",
+>     "messages": [
+>         {
+>             "role": "user",
+>             "content": "Hello"
+>         }
+>     ]
+> }'
+> ```
 
-The simplest authentication method, directly using your API Key:
-
-```bash theme={null}
-curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
---header 'Authorization: Bearer YOUR_API_KEY' \
---header 'Accept-Language: en-US,en' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "glm-5.3",
-    "messages": [
-        {
-            "role": "user",
-            "content": "Hello"
-        }
-    ]
-}'
-```
-
-**JWT Token Authentication**
-
-Use JWT Token for authentication, suitable for scenarios requiring higher security:
-Install PyJWT
-
-```shell theme={null}
-pip install PyJWT
-```
-
-```python theme={null}
-import time
-import jwt
-
-def generate_token(apikey: str, exp_seconds: int):
-    try:
-        id, secret = apikey.split(".")
-    except Exception as e:
-        raise Exception("invalid apikey", e)
-
-    payload = {
-        "api_key": id,
-        "exp": int(round(time.time() * 1000)) + exp_seconds * 1000,
-        "timestamp": int(round(time.time() * 1000)),
-    }
-
-    return jwt.encode(
-        payload,
-        secret,
-        algorithm="HS256",
-        headers={"alg": "HS256", "sign_type": "SIGN"},
-    )
-
-# Use the generated token
-token = generate_token("your-api-key", 3600)  # 1 hour validity
-```
+> [tab] JWT Token Authentication
+>
+> Use JWT Token for authentication, suitable for scenarios requiring higher security:
+> Install PyJWT
+>
+> ```shell theme={null}
+> pip install PyJWT
+> ```
+>
+> ```python theme={null}
+> import time
+> import jwt
+>
+> def generate_token(apikey: str, exp_seconds: int):
+>     try:
+>         id, secret = apikey.split(".")
+>     except Exception as e:
+>         raise Exception("invalid apikey", e)
+>
+>     payload = {
+>         "api_key": id,
+>         "exp": int(round(time.time() * 1000)) + exp_seconds * 1000,
+>         "timestamp": int(round(time.time() * 1000)),
+>     }
+>
+>     return jwt.encode(
+>         payload,
+>         secret,
+>         algorithm="HS256",
+>         headers={"alg": "HS256", "sign_type": "SIGN"},
+>     )
+>
+> # Use the generated token
+> token = generate_token("your-api-key", 3600)  # 1 hour validity
+> ```
 
 ## Basic Call Examples
 
@@ -180,149 +180,149 @@ curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
 
 ## Common Programming Language Examples
 
-**Python**
+> [tab] Python
+>
+> ```python theme={null}
+> import requests
+> import json
+>
+> def call_zai_api(messages, model="glm-5.3"):
+>     url = "https://api.z.ai/api/paas/v4/chat/completions"
+>
+>     headers = {
+>         "Authorization": "Bearer YOUR_API_KEY",
+>         "Content-Type": "application/json",
+>         "Accept-Language": "en-US,en"
+>     }
+>
+>     data = {
+>         "model": model,
+>         "messages": messages,
+>         "temperature": 1.0
+>     }
+>
+>     response = requests.post(url, headers=headers, json=data)
+>
+>     if response.status_code == 200:
+>         return response.json()
+>     else:
+>         raise Exception(f"API call failed: {response.status_code}, {response.text}")
+>
+> # Usage example
+> messages = [
+>     {"role": "user", "content": "Hello, please introduce yourself"}
+> ]
+>
+> result = call_zai_api(messages)
+> print(result['choices'][0]['message']['content'])
+> ```
 
-```python theme={null}
-import requests
-import json
+> [tab] JavaScript
+>
+> ```javascript theme={null}
+> async function callZAPI(messages, model = 'glm-5.3') {
+>     const url = 'https://api.z.ai/api/paas/v4/chat/completions';
+>
+>     const response = await fetch(url, {
+>         method: 'POST',
+>         headers: {
+>             'Authorization': 'Bearer YOUR_API_KEY',
+>             'Content-Type': 'application/json',
+>             'Accept-Language': 'en-US,en'
+>         },
+>         body: JSON.stringify({
+>             model: model,
+>             messages: messages,
+>             temperature: 1.0
+>         })
+>     });
+>
+>     if (!response.ok) {
+>         throw new Error(`API call failed: ${response.status}`);
+>     }
+>
+>     return await response.json();
+> }
+>
+> // Usage example
+> const messages = [
+>     { role: 'user', content: 'Hello, please introduce yourself' }
+> ];
+>
+> callZAPI(messages)
+>     .then(result => {
+>         console.log(result.choices[0].message.content);
+>     })
+>     .catch(error => {
+>         console.error('Error:', error);
+>     });
+> ```
 
-def call_zai_api(messages, model="glm-5.3"):
-    url = "https://api.z.ai/api/paas/v4/chat/completions"
-
-    headers = {
-        "Authorization": "Bearer YOUR_API_KEY",
-        "Content-Type": "application/json",
-        "Accept-Language": "en-US,en"
-    }
-
-    data = {
-        "model": model,
-        "messages": messages,
-        "temperature": 1.0
-    }
-
-    response = requests.post(url, headers=headers, json=data)
-
-    if response.status_code == 200:
-        return response.json()
-    else:
-        raise Exception(f"API call failed: {response.status_code}, {response.text}")
-
-# Usage example
-messages = [
-    {"role": "user", "content": "Hello, please introduce yourself"}
-]
-
-result = call_zai_api(messages)
-print(result['choices'][0]['message']['content'])
-```
-
-**JavaScript**
-
-```javascript theme={null}
-async function callZAPI(messages, model = 'glm-5.3') {
-    const url = 'https://api.z.ai/api/paas/v4/chat/completions';
-
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Authorization': 'Bearer YOUR_API_KEY',
-            'Content-Type': 'application/json',
-            'Accept-Language': 'en-US,en'
-        },
-        body: JSON.stringify({
-            model: model,
-            messages: messages,
-            temperature: 1.0
-        })
-    });
-
-    if (!response.ok) {
-        throw new Error(`API call failed: ${response.status}`);
-    }
-
-    return await response.json();
-}
-
-// Usage example
-const messages = [
-    { role: 'user', content: 'Hello, please introduce yourself' }
-];
-
-callZAPI(messages)
-    .then(result => {
-        console.log(result.choices[0].message.content);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-```
-
-**Java**
-
-```java theme={null}
-import com.fasterxml.jackson.databind.ObjectMapper;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-public class AgentExample {
-
-    public static void main(String[] args) throws Exception {
-
-        OkHttpClient client = new OkHttpClient();
-        ObjectMapper mapper = new ObjectMapper();
-        Map<String, String> messages = new HashMap<>(8);
-        messages.put("role", "user");
-        messages.put("content", "Hello, please introduce yourself");
-        Map<String, Object> requestBody = new HashMap<>();
-        requestBody.put("model", "glm-5.3");
-        requestBody.put("messages", Collections.singletonList(messages));
-        requestBody.put("temperature", 1.0);
-
-        String jsonBody = mapper.writeValueAsString(requestBody);
-        MediaType JSON = MediaType.get("application/json; charset=utf-8");
-        RequestBody body = RequestBody.create(JSON, jsonBody);
-        Request request = new Request.Builder()
-            .url("https://api.z.ai/api/paas/v4/chat/completions")
-            .addHeader("Authorization", "Bearer your_api_key")
-            .addHeader("Content-Type", "application/json")
-            .addHeader("Accept-Language", "en-US,en")
-            .post(body)
-            .build();
-        try (Response response = client.newCall(request).execute()) {
-            System.out.println(response.body().string());
-        }
-    }
-}
-```
+> [tab] Java
+>
+> ```java theme={null}
+> import com.fasterxml.jackson.databind.ObjectMapper;
+> import okhttp3.MediaType;
+> import okhttp3.OkHttpClient;
+> import okhttp3.Request;
+> import okhttp3.RequestBody;
+> import okhttp3.Response;
+> import java.util.Collections;
+> import java.util.HashMap;
+> import java.util.Map;
+>
+> public class AgentExample {
+>
+>     public static void main(String[] args) throws Exception {
+>
+>         OkHttpClient client = new OkHttpClient();
+>         ObjectMapper mapper = new ObjectMapper();
+>         Map<String, String> messages = new HashMap<>(8);
+>         messages.put("role", "user");
+>         messages.put("content", "Hello, please introduce yourself");
+>         Map<String, Object> requestBody = new HashMap<>();
+>         requestBody.put("model", "glm-5.3");
+>         requestBody.put("messages", Collections.singletonList(messages));
+>         requestBody.put("temperature", 1.0);
+>
+>         String jsonBody = mapper.writeValueAsString(requestBody);
+>         MediaType JSON = MediaType.get("application/json; charset=utf-8");
+>         RequestBody body = RequestBody.create(JSON, jsonBody);
+>         Request request = new Request.Builder()
+>             .url("https://api.z.ai/api/paas/v4/chat/completions")
+>             .addHeader("Authorization", "Bearer your_api_key")
+>             .addHeader("Content-Type", "application/json")
+>             .addHeader("Accept-Language", "en-US,en")
+>             .post(body)
+>             .build();
+>         try (Response response = client.newCall(request).execute()) {
+>             System.out.println(response.body().string());
+>         }
+>     }
+> }
+> ```
 
 ## Best Practices
 
-> **Security**
+> [card] Security
 >
 > * Properly secure API Keys, do not hard-code them in your code
 > * Use environment variables or configuration files to store sensitive information
 > * Regularly rotate API Keys
 
-> **Performance Optimization**
+> [card] Performance Optimization
 >
 > * Implement connection pooling and session reuse
 > * Set reasonable timeout values
 > * Use asynchronous requests for high-concurrency scenarios
 
-> **Error Handling**
+> [card] Error Handling
 >
 > * Implement exponential backoff retry mechanisms
 > * Log detailed error information
 > * Set reasonable timeout and retry limits
 
-> **Monitoring**
+> [card] Monitoring
 >
 > * Monitor API call frequency and success rates
 > * Track response times and error rates
@@ -330,11 +330,11 @@ public class AgentExample {
 
 ## Get More
 
-> **[API Documentation](https://docs.z.ai/api-reference)**
+> [card] [API Documentation](https://docs.z.ai/api-reference)
 >
 > View complete API interface documentation and parameter descriptions
 
-> **[Technical Support](https://z.ai/contact)**
+> [card] [Technical Support](https://z.ai/contact)
 >
 > Get technical support and assistance
 

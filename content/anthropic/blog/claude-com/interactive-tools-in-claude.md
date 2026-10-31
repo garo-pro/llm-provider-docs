@@ -40,4 +40,4 @@ To learn more, see the announcement of [MCP Apps - The First Official MCP Extens
 
 ## **Getting started**
 
-Start using interactive connectors (MCP Apps) in Claude today. Head to [claude.ai/directory](http://claude.ai/directory) and connect to apps under the "featured" section to get started. Available in Claude on mobile, web and desktop for Free, Pro, Max, Team, Enterprise plans. Also now available on [Claude Cowork](http://claude.com/product/cowork).****
+Start using interactive connectors (MCP Apps) in Claude today. Head to [claude.ai/directory](http://claude.ai/directory) and connect to apps under the "featured" section to get started. Available in Claude on mobile, web and desktop for Free, Pro, Max, Ultra, Team, and Enterprise plans. Also now available on [Claude Cowork](http://claude.com/product/cowork).****

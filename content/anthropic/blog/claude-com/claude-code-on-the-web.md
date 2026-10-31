@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/claude-code-on-the-web
 Markdown Content:
 # Claude Code on the web
 
-**Update:** Cloud sessions (previously known as Claude Code on the web) are now generally available for Pro, Max, and Team users, and for Enterprise users with premium seats or Chat + Claude Code seats. Read the [docs](https://code.claude.com/docs/en/claude-code-on-the-web) for the latest information, or our [field guide to cloud sessions](https://claude.dev/blog/claude-code-in-the-cloud/). September 23, 2026.
+**Update:** Cloud sessions (previously known as Claude Code on the web) are now generally available for Pro, Max, Ultra, and Team users, and for Enterprise users with premium seats or Chat + Claude Code seats. Read the [docs](https://code.claude.com/docs/en/claude-code-on-the-web) for the latest information, or our [field guide to cloud sessions](https://claude.dev/blog/claude-code-in-the-cloud/). September 23, 2026.
 
 Today, we're introducing Claude Code on the web, a new way to delegate coding tasks directly from your browser.
 

@@ -26,81 +26,81 @@ Streaming responses use Server-Sent Events (SSE) format, with each event contain
 
 ## Code Examples
 
-**cURL**
+> [tab] cURL
+>
+> ```bash theme={null}
+> curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+> --header 'Authorization: Bearer YOUR_API_KEY' \
+> --header 'Content-Type: application/json' \
+> --data '{
+>     "model": "glm-5.3",
+>     "messages": [
+>         {
+>             "role": "user",
+>             "content": "Write a poem about spring"
+>         }
+>     ],
+>     "stream": true
+> }'
+> ```
 
-```bash theme={null}
-curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
---header 'Authorization: Bearer YOUR_API_KEY' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "glm-5.3",
-    "messages": [
-        {
-            "role": "user",
-            "content": "Write a poem about spring"
-        }
-    ],
-    "stream": true
-}'
-```
-
-**Python**
-
-**Install SDK**
-
-```bash theme={null}
-# Install latest version
-pip install zai-sdk
-
-# Or specify version
-pip install zai-sdk==0.2.3
-```
-
-**Verify Installation**
-
-```python theme={null}
-import zai
-print(zai.__version__)
-```
-
-**Complete Example**
-
-```python theme={null}
-from zai import ZaiClient
-
-# Initialize client
-client = ZaiClient(api_key='Your API Key')
-
-# Create streaming message request
-response = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {"role": "user", "content": "Write a poem about spring"}
-    ],
-    stream=True  # Enable streaming output
-)
-
-# Process streaming response
-full_content = ""
-for chunk in response:
-    if not chunk.choices:
-        continue
-    
-    delta = chunk.choices[0].delta
-    
-    # Handle incremental content
-    if hasattr(delta, 'content') and delta.content:
-        full_content += delta.content
-        print(delta.content, end="", flush=True)
-    
-    # Check if completed
-    if chunk.choices[0].finish_reason:
-        print(f"\n\nCompletion reason: {chunk.choices[0].finish_reason}")
-        if hasattr(chunk, 'usage') and chunk.usage:
-            print(f"Token usage: Input {chunk.usage.prompt_tokens}, Output {chunk.usage.completion_tokens}")
-
-print(f"\n\nComplete content:\n{full_content}")
-```
+> [tab] Python
+>
+> **Install SDK**
+>
+> ```bash theme={null}
+> # Install latest version
+> pip install zai-sdk
+>
+> # Or specify version
+> pip install zai-sdk==0.2.3
+> ```
+>
+> **Verify Installation**
+>
+> ```python theme={null}
+> import zai
+> print(zai.__version__)
+> ```
+>
+> **Complete Example**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> # Initialize client
+> client = ZaiClient(api_key='Your API Key')
+>
+> # Create streaming message request
+> response = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {"role": "user", "content": "Write a poem about spring"}
+>     ],
+>     stream=True  # Enable streaming output
+> )
+>
+> # Process streaming response
+> full_content = ""
+> for chunk in response:
+>     if not chunk.choices:
+>         continue
+>
+>     delta = chunk.choices[0].delta
+>
+>     # Handle incremental content
+>     if hasattr(delta, 'content') and delta.content:
+>         full_content += delta.content
+>         print(delta.content, end="", flush=True)
+>
+>     # Check if completed
+>     if chunk.choices[0].finish_reason:
+>         print(f"\n\nCompletion reason: {chunk.choices[0].finish_reason}")
+>         if hasattr(chunk, 'usage') and chunk.usage:
+>             print(f"Token usage: Input {chunk.usage.prompt_tokens}, Output {chunk.usage.completion_tokens}")
+>
+> print(f"\n\nComplete content:\n{full_content}")
+> ```
 
 ### Response Example
 
@@ -122,25 +122,25 @@ data: [DONE]
 
 ## Application Scenarios
 
-> **Chat Applications**
+> [card] Chat Applications
 >
 > * Real-time conversation experience
 > * Character-by-character reply display
 > * Reduced waiting time
 
-> **Content Generation**
+> [card] Content Generation
 >
 > * Article writing assistant
 > * Code generation tools
 > * Creative content creation
 
-> **Educational Applications**
+> [card] Educational Applications
 >
 > * Online Q\&A systems
 > * Learning assistance tools
 > * Knowledge Q\&A platforms
 
-> **Customer Service Systems**
+> [card] Customer Service Systems
 >
 > * Intelligent customer service bots
 > * Real-time problem solving

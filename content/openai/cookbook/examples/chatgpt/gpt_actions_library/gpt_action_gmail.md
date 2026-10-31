@@ -460,17 +460,17 @@ Before you set up authentication in ChatGPT, please take the following steps in 
 - Go to the Google Cloud Console
 - Navigate to API & Services > Credentials
 
-![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_gmail_enableapis.png)
+![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_Gmail_enableAPIs.png)
 
-![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_gmail_gmailapitile.png)
+![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_Gmail_gmailApiTile.png)
 
 - Create new OAuth credentials (or use an existing one)
 
-![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_gmail_apikey.png)
+![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_Gmail_apikey.png)
 
 - Locate your OAuth Client ID & Client Secret and store both values securely (see screenshot below)
 
-![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_gmail_clientidsecret.png)
+![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_Gmail_clientidsecret.png)
 
 ### In ChatGPT
 

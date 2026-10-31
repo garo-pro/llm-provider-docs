@@ -53,7 +53,7 @@ Prices per image.
 | General-Purpose Translation | \$3 / MTok |
 | Popular Special Effects Video Templates | \$0.2 / video |
 
-> **Other Pricing**
+> [accordion] Other Pricing
 >
 > ### Text Models
 >

@@ -28,108 +28,108 @@ Key fields in function calling responses:
 
 By defining function tools and handling function calls, AI models can perform various external operations:
 
-**Python SDK**
-
-**Install SDK**
-
-```bash theme={null}
-# Install latest version
-pip install zai-sdk
-
-# Or specify version
-pip install zai-sdk==0.2.3
-```
-
-**Verify Installation**
-
-```python theme={null}
-import zai
-print(zai.__version__)
-```
-
-**Complete Example**
-
-```python theme={null}
-import json
-from zai import ZaiClient
-
-# Initialize client
-client = ZaiClient(api_key='your_api_key')
-
-# Define weather query function
-def get_weather(city: str) -> dict:
-    """Get weather information for specified city"""
-    # This should call a real weather API
-    weather_data = {
-        "city": city,
-        "temperature": "22°C",
-        "condition": "Sunny",
-        "humidity": "65%",
-        "wind_speed": "5 km/h"
-    }
-    return weather_data
-
-# Define function tools
-tools = [
-    {
-        "type": "function",
-        "function": {
-            "name": "get_weather",
-            "description": "Get current weather information for specified city",
-            "parameters": {
-                "type": "object",
-                "properties": {
-                    "city": {
-                        "type": "string",
-                        "description": "City name, e.g.: Beijing, Shanghai"
-                    }
-                },
-                "required": ["city"]
-            }
-        }
-    }
-]
-
-# Make conversation request
-response = client.chat.completions.create(
-    model="glm-5.3",  # Use model that supports function calling
-    messages=[
-        {"role": "user", "content": "How's the weather in Beijing today?"}
-    ],
-    tools=tools,         # Pass function tools
-    tool_choice="auto"   # Automatically choose whether to call functions
-)
-
-# Handle function calls
-message = response.choices[0].message
-messages = [{"role": "user", "content": "How's the weather in Beijing today?"}]
-messages.append(message.model_dump())
-
-if message.tool_calls:
-    for tool_call in message.tool_calls:
-        if tool_call.function.name == "get_weather":
-            # Parse parameters and call function
-            args = json.loads(tool_call.function.arguments)
-            weather_result = get_weather(args.get("city"))
-            
-            # Return function result to model
-            messages.append({
-                "role": "tool",
-                "content": json.dumps(weather_result, ensure_ascii=False),
-                "tool_call_id": tool_call.id
-            })
-    
-    # Get final answer
-    final_response = client.chat.completions.create(
-        model="glm-5.3",
-        messages=messages,
-        tools=tools
-    )
-    
-    print(final_response.choices[0].message.content)
-else:
-    print(message.content)
-```
+> [tab] Python SDK
+>
+> **Install SDK**
+>
+> ```bash theme={null}
+> # Install latest version
+> pip install zai-sdk
+>
+> # Or specify version
+> pip install zai-sdk==0.2.3
+> ```
+>
+> **Verify Installation**
+>
+> ```python theme={null}
+> import zai
+> print(zai.__version__)
+> ```
+>
+> **Complete Example**
+>
+> ```python theme={null}
+> import json
+> from zai import ZaiClient
+>
+> # Initialize client
+> client = ZaiClient(api_key='your_api_key')
+>
+> # Define weather query function
+> def get_weather(city: str) -> dict:
+>     """Get weather information for specified city"""
+>     # This should call a real weather API
+>     weather_data = {
+>         "city": city,
+>         "temperature": "22°C",
+>         "condition": "Sunny",
+>         "humidity": "65%",
+>         "wind_speed": "5 km/h"
+>     }
+>     return weather_data
+>
+> # Define function tools
+> tools = [
+>     {
+>         "type": "function",
+>         "function": {
+>             "name": "get_weather",
+>             "description": "Get current weather information for specified city",
+>             "parameters": {
+>                 "type": "object",
+>                 "properties": {
+>                     "city": {
+>                         "type": "string",
+>                         "description": "City name, e.g.: Beijing, Shanghai"
+>                     }
+>                 },
+>                 "required": ["city"]
+>             }
+>         }
+>     }
+> ]
+>
+> # Make conversation request
+> response = client.chat.completions.create(
+>     model="glm-5.3",  # Use model that supports function calling
+>     messages=[
+>         {"role": "user", "content": "How's the weather in Beijing today?"}
+>     ],
+>     tools=tools,         # Pass function tools
+>     tool_choice="auto"   # Automatically choose whether to call functions
+> )
+>
+> # Handle function calls
+> message = response.choices[0].message
+> messages = [{"role": "user", "content": "How's the weather in Beijing today?"}]
+> messages.append(message.model_dump())
+>
+> if message.tool_calls:
+>     for tool_call in message.tool_calls:
+>         if tool_call.function.name == "get_weather":
+>             # Parse parameters and call function
+>             args = json.loads(tool_call.function.arguments)
+>             weather_result = get_weather(args.get("city"))
+>
+>             # Return function result to model
+>             messages.append({
+>                 "role": "tool",
+>                 "content": json.dumps(weather_result, ensure_ascii=False),
+>                 "tool_call_id": tool_call.id
+>             })
+>
+>     # Get final answer
+>     final_response = client.chat.completions.create(
+>         model="glm-5.3",
+>         messages=messages,
+>         tools=tools
+>     )
+>
+>     print(final_response.choices[0].message.content)
+> else:
+>     print(message.content)
+> ```
 
 ## Scenario Examples
 
@@ -137,7 +137,7 @@ else:
 >
 > When using function calling, please ensure proper security validation and permission control for external APIs and database operations.
 
-> **Multi-function Assistant**
+> [accordion] Multi-function Assistant
 >
 > ```python theme={null}
 > import json
@@ -295,7 +295,7 @@ else:
 > print(agent.chat("Search for the latest developments in artificial intelligence"))
 > ```
 
-> **Database Query**
+> [accordion] Database Query
 >
 > ```python theme={null}
 > import sqlite3
@@ -340,7 +340,7 @@ else:
 > }
 > ```
 
-> **File Operations**
+> [accordion] File Operations
 >
 > ```python theme={null}
 > import os
@@ -398,7 +398,7 @@ else:
 > }
 > ```
 
-> **API Integration**
+> [accordion] API Integration
 >
 > ```python theme={null}
 > import requests
@@ -457,13 +457,13 @@ else:
 
 ## Best Practices
 
-> **Function Design Principles**
+> [card] Function Design Principles
 >
 > * Single responsibility: Each function should do one thing
 > * Clear naming: Function and parameter names should be meaningful
 > * Complete description: Provide detailed function and parameter descriptions
 
-> **Security Considerations**
+> [card] Security Considerations
 >
 > * Input validation: Strictly validate all input parameters
 > * Permission control: Limit function access permissions

@@ -338,7 +338,7 @@ async def extract_receipt_details(
 
 Let's evaluate just a single receipt and review it manually to see how well a smart model with a naive prompt can do.
 
-<img src="https://developers.openai.com/cookbook/assets/images/supplies_20240322_220858_raven_scan_3_jpeg.rf.50852940734939c8838819d7795e1756.jpg" alt="Walmart_image" width="400"/>
+<img src="https://developers.openai.com/cookbook/assets/images/Supplies_20240322_220858_Raven_Scan_3_jpeg.rf.50852940734939c8838819d7795e1756.jpg" alt="Walmart_image" width="400"/>
 
 ```python
 from rich import print

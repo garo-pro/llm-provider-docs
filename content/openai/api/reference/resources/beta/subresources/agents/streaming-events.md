@@ -3993,8 +3993,6 @@ Schema name: `SessionEventAgentSessionTurnItemAdded`
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -4047,8 +4045,6 @@ Schema name: `SessionEventAgentSessionTurnItemAdded`
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -4086,8 +4082,6 @@ Schema name: `SessionEventAgentSessionTurnItemAdded`
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -4127,8 +4121,6 @@ Schema name: `SessionEventAgentSessionTurnItemAdded`
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -4167,8 +4159,6 @@ Schema name: `SessionEventAgentSessionTurnItemAdded`
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -4206,8 +4196,6 @@ Schema name: `SessionEventAgentSessionTurnItemAdded`
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 - `output_index: integer or null`
 
@@ -10204,8 +10192,6 @@ Schema name: `SessionEventAgentSessionTurnItemDone`
 
       - `"create_subagent_call"`
 
-        The current public item type.
-
   - `AgentSendSubagentInputCallItem object { id, content, recipient_agent_id, 4 more }`
 
     A request to send input to another agent.
@@ -10258,8 +10244,6 @@ Schema name: `SessionEventAgentSessionTurnItemDone`
 
       - `"send_subagent_input_call"`
 
-        The current public item type.
-
   - `AgentResumeSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to resume a subagent.
@@ -10297,8 +10281,6 @@ Schema name: `SessionEventAgentSessionTurnItemDone`
       The item type. Always `resume_subagent_call`.
 
       - `"resume_subagent_call"`
-
-        The current public item type.
 
   - `AgentWaitForSubagentsCallItem object { id, recipient_agent_ids, sender_agent_id, 3 more }`
 
@@ -10338,8 +10320,6 @@ Schema name: `SessionEventAgentSessionTurnItemDone`
 
       - `"wait_for_subagents_call"`
 
-        The current public item type.
-
   - `AgentInterruptSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to interrupt a subagent's current turn. The subagent remains available.
@@ -10378,8 +10358,6 @@ Schema name: `SessionEventAgentSessionTurnItemDone`
 
       - `"interrupt_subagent_call"`
 
-        The current public item type.
-
   - `AgentCloseSubagentCallItem object { id, recipient_agent_id, sender_agent_id, 3 more }`
 
     A request to close a subagent.
@@ -10417,8 +10395,6 @@ Schema name: `SessionEventAgentSessionTurnItemDone`
       The item type. Always `close_subagent_call`.
 
       - `"close_subagent_call"`
-
-        The current public item type.
 
 - `output_index: integer`
 

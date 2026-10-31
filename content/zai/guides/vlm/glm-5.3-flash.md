@@ -28,19 +28,19 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 
 [↗ blog](https://z.ai/blog/glm-5.3-flash)
 
-> **Input Modality**
+> [card] Input Modality
 >
 > Video / Image / Text / File
 
-> **Output Modality**
+> [card] Output Modality
 >
 > Text
 
-> **Context Length**
+> [card] Context Length
 >
 > 1M
 
-> **Maximum Output Tokens**
+> [card] Maximum Output Tokens
 >
 > 128K
 
@@ -71,7 +71,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 
 ## Best Practices
 
-> **Vision-Driven UI Coding: From Reference Assets to a Complete Application**
+> [accordion] Vision-Driven UI Coding: From Reference Assets to a Complete Application
 >
 > GLM-5.3-Flash can directly transform screenshots, multiple page images, website URLs, or screen recordings into polished, functional applications. It goes beyond reproducing colors and layouts by understanding page relationships, shared components, design systems, interaction states, and animation logic, enabling an end-to-end workflow from visual analysis to a complete frontend project.
 >
@@ -80,7 +80,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > Based on the page screenshots I provide, fully recreate this product using Next.js and TypeScript. First analyze the design system, page relationships, shared components, navigation structure, interaction states, and animation logic, then build a fully functional project. After implementation, launch the project and compare screenshots of each page against the reference images. Continuously refine differences in layout, typography, spacing, colors, image cropping, and interactions. Finally, explain which pages have been covered, how to run the project, and any remaining discrepancies.
 
-> **Office Deliverables: From Content Organization to Visual Validation**
+> [accordion] Office Deliverables: From Content Organization to Visual Validation
 >
 > GLM-5.3-Flash's Office capabilities go beyond content generation to simultaneously handle information structure, visual styling, charts, image cropping, and page layout. Whether creating PPTX, PDF, DOCX, or XLSX files from scratch or reproducing existing files and reference images, it can proactively identify issues such as overflow, misalignment, overlapping elements, and inconsistent styling through rendering and visual inspection.
 >
@@ -89,7 +89,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > Using the materials in the current directory, create a 15-page business presentation for management. First extract the key conclusions and narrative structure, then create editable charts, page layouts, image selections, and speaker notes. Do not fabricate any business data; cite the source for all referenced information. After completion, render and inspect each page, fixing text overflow, image cropping, element overlap, alignment issues, and visual inconsistencies. Finally, deliver the PPTX and PDF, and explain what has been verified and what risks remain uncovered.
 
-> **Financial Professional Workflows: From Research Traceability to Models and Reports**
+> [accordion] Financial Professional Workflows: From Research Traceability to Models and Reports
 >
 > GLM-5.3-Flash covers the complete workflow from financial research and analysis to valuation modeling and report generation. It can integrate information from multiple sources, retain the supporting evidence for key conclusions, distinguish disclosed facts from analytical assumptions and derived results, and translate research insights into auditable financial models and formal reports.
 >
@@ -98,7 +98,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > Based on the company's latest financial statements, announcements, and verifiable public information, conduct a comprehensive earnings analysis. Break down revenue, profit, cash flow, business segments, and key operating metrics, clearly distinguishing between company disclosures, analytical assumptions, and your own conclusions. Update the earnings forecast and valuation model, and verify the consistency of the three financial statements, formula references, and accounting definitions. Finally, deliver a PDF research report with source citations and an editable, formula-driven Excel model, and list the key risks and unverified information.
 
-> **Video Understanding and Editing: From Long-Form Footage to Publish-Ready Videos**
+> [accordion] Video Understanding and Editing: From Long-Form Footage to Publish-Ready Videos
 >
 > In an Agent environment, GLM-5.3-Flash can simultaneously understand visuals, speech, subtitles, relationships between people, and timelines, reorganizing long-form videos or multiple pieces of footage into coherent content. It can also leverage name tags, on-screen appearances, and contextual cues to continuously identify different speakers, handling tasks such as speaker attribution, story structuring, and visual matching that are difficult to accomplish with ASR alone, significantly improving the efficiency of video editing Agents.
 >
@@ -107,7 +107,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > Edit the videos in the footage directory into a 90-second product launch recap. First create a media inventory, identify people, events, key statements, and usable shots, then design the pacing of the opening, main section, and ending. Distinguish between speakers and generate accurate subtitles, ensuring that the visuals correspond to the spoken content. After completing the editing, music, transitions, and basic color grading, check for typos, speaker attribution, audio-video synchronization, black frames, and duplicate shots. Finally, output the MP4, SRT, and editing notes.
 
-> **3D Scene Creation: From a Single Description to a Complete Blender Project**
+> [accordion] 3D Scene Creation: From a Single Description to a Complete Blender Project
 >
 > GLM-5.3-Flash can transform spatial requirements, visual styles, and functional constraints into editable Blender projects, and continuously develop them from blockout to assets, materials, lighting, camera setup, and final rendering. More importantly, it can repeatedly render from fixed camera positions, inspect the actual visuals, identify issues, and iterate, rather than merely generating a modeling script.
 >
@@ -116,7 +116,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > Create a complete, editable Blender scene in the current directory depicting a restaurant and bar located on a high floor in a city. First define the artistic direction, spatial layout, asset list, and fixed camera shots, then build the blockout and render previews as early as possible. Perform at least four rounds of "build → fixed-camera render → inspect → refine → re-render," focusing on spatial scale, circulation, materials, lighting, mesh intersections, and camera composition. Finally, reopen the project from a clean environment and render the main shot. Deliver the .blend file, final images, and reproduction instructions.
 
-> **Game Development: From Gameplay Rules to a Fully Playable Loop**
+> [accordion] Game Development: From Gameplay Rules to a Fully Playable Loop
 >
 > GLM-5.3-Flash can extract visual language, core mechanics, state machines, and win/loss conditions from reference images and gameplay descriptions, efficiently adapt them to professional cross-platform game engines such as Godot, and implement them as genuinely playable game prototypes. Rather than simply generating scenes, it is better suited to testing whether movement, collisions, AI, scoring, levels, results, and save systems form a complete gameplay loop.
 >
@@ -125,7 +125,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > Using the properly licensed assets in the current directory, develop a playable cooperative cooking game prototype with Godot 4. First review the gameplay specifications, asset mappings, and reference screenshots, then implement character movement, item pickup, food preparation, serving, scoring, countdown timers, and the results flow according to milestones. Run tests after each stage and compare the result against the reference images using the same map and camera positions. Finally, ensure that a complete game session can run from start to finish, and deliver the Web build, test logs, runtime instructions, and a list of incomplete items.
 
-> **Computer Use Closed Loop: Operating, Testing, and Refining in Real Interfaces**
+> [accordion] Computer Use Closed Loop: Operating, Testing, and Refining in Real Interfaces
 >
 > GLM-5.3-Flash can visually understand software interfaces and perform clicks, text input, decision-making, and continuous actions even when structured APIs are unavailable. It can test games and websites, observe existing applications, reproduce key functionality, and then operate the reproduced version to identify discrepancies, forming a closed loop of "observe → implement → use → refine."
 >
@@ -134,7 +134,7 @@ Beyond coding, GLM-5.3-Flash supports professional workflows such as Office task
 >
 > > `/goal` Use Computer Use to inspect the currently open application, identify its page structure, core functionality, primary user flows, and interaction feedback, and recreate a functional version in the current directory. After completion, operate both the original application and the recreated version, comparing their layouts, functionality, state changes, and interaction paths. Record the differences and continuously improve the implementation. Finally, complete all major workflows except login, and provide the verification results, remaining discrepancies, and instructions for running the application.
 
-> **CAD Visual Reproduction: From Design Blueprints to Editable 3D Models**
+> [accordion] CAD Visual Reproduction: From Design Blueprints to Editable 3D Models
 >
 > GLM-5.3-Flash can understand the main structure, hole positions, fillets, chamfers, surfaces, and assembly relationships from part photographs, sketches, or CAD blueprints, and generate parametric 3D models using code-based tools such as build123d. After generating the model, it can render multiple views, continuously compare them against the reference images, refine discrepancies, and deliver editable project assets for further development.
 >

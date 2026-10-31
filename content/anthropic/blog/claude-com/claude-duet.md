@@ -5,11 +5,11 @@ URL Source: https://claude.com/resources/articles/claude-duet
 Markdown Content:
 # Introducing Claude Duet
 
-A research preview is available by waitlist today, starting with US Pro and Max subscribers.
+A research preview is available by waitlist today, starting with US Pro, Max, and Ultra subscribers.
 
 Today, we’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working even when you step away, and checks with you before it acts on your behalf. We built Claude Duet for professionals and small business owners with more on their plates than they can track.
 
-It’s available as a standalone app on iOS and Android, and on claude.ai. For this research preview, Claude Duet is included in Pro and Max plans and uses the same usage limits as the rest of Claude. To get access, [join the waitlist (opens in new tab)](https://claude.com/product/claude-duet).
+It’s available as a standalone app on iOS and Android, and on claude.ai. For this research preview, Claude Duet is included in Pro, Max, and Ultra plans and uses the same usage limits as the rest of Claude. To get access, [join the waitlist (opens in new tab)](https://claude.com/product/claude-duet).
 
 ## Put your attention where it matters most
 
@@ -85,4 +85,4 @@ This is an early version of Claude Duet, and it still might misread a thread or 
 
 During the research preview, Claude Duet shares your plan’s usage limits with the rest of Claude, and it uses them differently than a typical conversation does. Its background checks count toward those limits, and larger tasks, like building a financial model or a deck, require more model turns and background work.
 
-We’re starting today with Pro and Max users in the US. Join the [waitlist (opens in new tab)](https://claude.com/product/claude-duet) and we’ll email as soon as Claude Duet’s ready for you.
+We’re starting today with Pro, Max, and Ultra users in the US. Join the [waitlist (opens in new tab)](https://claude.com/product/claude-duet) and we’ll email as soon as Claude Duet’s ready for you.

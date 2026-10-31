@@ -8,6 +8,8 @@ Markdown Content:
 Claude Security is now in public beta for Claude Enterprise customers. Scan code for vulnerabilities and generate proposed fixes with Opus 4.7, on the Claude Platform, or through technology and services partners building with Claude.
 
 
+*Editor's note: Mentions of Max in this post from before October 30, 2026 include what are now the Max and Ultra plans.*
+
 Claude Security is now available in public beta to Claude Enterprise customers.
 
 AI cybersecurity capabilities are advancing fast. Today’s models are already highly effective at finding flaws in software code; the next generation will be more capable still, and will be particularly effective at autonomously *exploiting* these flaws. Now is the time for organizations to act to improve their security, preparing for a world in which working software exploits are much easier to discover.

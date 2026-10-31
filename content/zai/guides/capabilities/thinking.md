@@ -35,234 +35,234 @@ Note: GLM-5.3 and GLM-5.3-FLASH no longer support disabling thinking (an error w
 
 ## Code Examples
 
-**cURL**
+> [tab] cURL
+>
+> **Basic Call (Enable Deep Thinking)**
+>
+> ```bash theme={null}
+> curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+> --header 'Authorization: Bearer YOUR_API_KEY' \
+> --header 'Content-Type: application/json' \
+> --data '{
+>     "model": "glm-5.3",
+>     "messages": [
+>         {
+>             "role": "user",
+>             "content": "Explain in detail the basic principles of quantum computing and analyze its potential impact in the field of cryptography"
+>         }
+>     ],
+>     "thinking": {
+>         "type": "enabled"
+>     },
+>     "max_tokens": 4096,
+>     "temperature": 1.0
+> }'
+> ```
+>
+> **Streaming Call (Deep Thinking + Streaming Output)**
+>
+> ```bash theme={null}
+> curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+> --header 'Authorization: Bearer YOUR_API_KEY' \
+> --header 'Content-Type: application/json' \
+> --data '{
+>     "model": "glm-5.3",
+>     "messages": [
+>         {
+>             "role": "user",
+>             "content": "Design a recommendation system architecture for an e-commerce website, considering user behavior, product features, and real-time requirements"
+>         }
+>     ],
+>     "thinking": {
+>         "type": "enabled"
+>     },
+>     "stream": true,
+>     "max_tokens": 4096,
+>     "temperature": 1.0
+> }'
+> ```
+>
+> **Control Reasoning Effort (reasoning\_effort)**
+>
+> ```bash theme={null}
+> curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+> --header 'Authorization: Bearer YOUR_API_KEY' \
+> --header 'Content-Type: application/json' \
+> --data '{
+>     "model": "glm-5.3",
+>     "messages": [
+>         {
+>             "role": "user",
+>             "content": "Analyze the solution approach for this math problem"
+>         }
+>     ],
+>     "thinking": {
+>         "type": "enabled"
+>     },
+>     "reasoning_effort": "max"
+> }'
+> ```
+>
+> **Disable deep thinking (GLM-5.3 is no longer supported, only GLM-5.2 supports it)**
+>
+> ```bash theme={null}
+> curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
+> --header 'Authorization: Bearer YOUR_API_KEY' \
+> --header 'Content-Type: application/json' \
+> --data '{
+>     "model": "glm-5.2",
+>     "messages": [
+>         {
+>             "role": "user",
+>             "content": "How is the weather today?"
+>         }
+>     ],
+>     "thinking": {
+>         "type": "disabled"
+>     }
+> }'
+> ```
 
-**Basic Call (Enable Deep Thinking)**
-
-```bash theme={null}
-curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
---header 'Authorization: Bearer YOUR_API_KEY' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "glm-5.3",
-    "messages": [
-        {
-            "role": "user",
-            "content": "Explain in detail the basic principles of quantum computing and analyze its potential impact in the field of cryptography"
-        }
-    ],
-    "thinking": {
-        "type": "enabled"
-    },
-    "max_tokens": 4096,
-    "temperature": 1.0
-}'
-```
-
-**Streaming Call (Deep Thinking + Streaming Output)**
-
-```bash theme={null}
-curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
---header 'Authorization: Bearer YOUR_API_KEY' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "glm-5.3",
-    "messages": [
-        {
-            "role": "user",
-            "content": "Design a recommendation system architecture for an e-commerce website, considering user behavior, product features, and real-time requirements"
-        }
-    ],
-    "thinking": {
-        "type": "enabled"
-    },
-    "stream": true,
-    "max_tokens": 4096,
-    "temperature": 1.0
-}'
-```
-
-**Control Reasoning Effort (reasoning\_effort)**
-
-```bash theme={null}
-curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
---header 'Authorization: Bearer YOUR_API_KEY' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "glm-5.3",
-    "messages": [
-        {
-            "role": "user",
-            "content": "Analyze the solution approach for this math problem"
-        }
-    ],
-    "thinking": {
-        "type": "enabled"
-    },
-    "reasoning_effort": "max"
-}'
-```
-
-**Disable deep thinking (GLM-5.3 is no longer supported, only GLM-5.2 supports it)**
-
-```bash theme={null}
-curl --location 'https://api.z.ai/api/paas/v4/chat/completions' \
---header 'Authorization: Bearer YOUR_API_KEY' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "glm-5.2",
-    "messages": [
-        {
-            "role": "user",
-            "content": "How is the weather today?"
-        }
-    ],
-    "thinking": {
-        "type": "disabled"
-    }
-}'
-```
-
-**Python SDK**
-
-**Install SDK**
-
-```bash theme={null}
-# Install latest version
-pip install zai-sdk
-
-# Or specify version
-pip install zai-sdk==0.2.3
-```
-
-**Verify Installation**
-
-```python theme={null}
-import zai
-print(zai.__version__)
-```
-
-**Basic Call (Enable Deep Thinking)**
-
-```python theme={null}
-from zai import ZaiClient
-
-# Initialize client
-client = ZaiClient(api_key='your_api_key')
-
-# Create deep thinking request
-response = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {"role": "user", "content": "Explain in detail the basic principles of quantum computing and analyze its potential impact in the field of cryptography"}
-    ],
-    thinking={
-        "type": "enabled"  # Enable deep thinking mode
-    },
-    max_tokens=4096,
-    temperature=1.0
-)
-
-print("Model response:")
-print(response.choices[0].message.content)
-print("\n---")
-print(response.choices[0].message.reasoning_content)
-```
-
-**Streaming Call (Deep Thinking + Streaming Output)**
-
-```python theme={null}
-from zai import ZaiClient
-
-# Initialize client
-client = ZaiClient(api_key='your_api_key')
-
-# Create streaming deep thinking request
-response = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {"role": "user", "content": "Design a recommendation system architecture for an e-commerce website, considering user behavior, product features, and real-time requirements"}
-    ],
-    thinking={
-        "type": "enabled"  # Enable deep thinking mode
-    },
-    stream=True,  # Enable streaming output
-    max_tokens=4096,
-    temperature=1.0
-)
-
-# Process streaming response
-reasoning_content = ""
-thinking_phase = True
-
-for chunk in response:
-    if not chunk.choices:
-        continue
-    
-    delta = chunk.choices[0].delta
-    
-    # Process thinking process (if any)
-    if hasattr(delta, 'reasoning_content') and delta.reasoning_content:
-        reasoning_content += delta.reasoning_content
-        if thinking_phase:
-            print("🧠 Thinking...", end="", flush=True)
-            thinking_phase = False
-        print(delta.reasoning_content, end="", flush=True)
-    
-    # Process answer content
-    if hasattr(delta, 'content') and delta.content:
-        if thinking_phase:
-            print("\n\n💡 Answer:")
-            thinking_phase = False
-        print(delta.content, end="", flush=True)
-
-```
-
-**Control Reasoning Effort (reasoning\_effort)**
-
-```python theme={null}
-from zai import ZaiClient
-
-# Initialize client
-client = ZaiClient(api_key='your_api_key')
-
-# Use reasoning_effort to control reasoning level
-response = client.chat.completions.create(
-    model="glm-5.3",
-    messages=[
-        {"role": "user", "content": "Analyze the solution approach for this math problem"}
-    ],
-    thinking={
-        "type": "enabled"
-    },
-    reasoning_effort="high"
-)
-
-print(response.choices[0].message.content)
-print(response.choices[0].message.reasoning_content)
-```
-
-**Disable Deep Thinking**
-
-```python theme={null}
-from zai import ZaiClient
-
-# Initialize client
-client = ZaiClient(api_key='your_api_key')
-
-# Disable deep thinking for quick response
-response = client.chat.completions.create(
-    model="glm-5.2",
-    messages=[
-        {"role": "user", "content": "How is the weather today?"}
-    ],
-    thinking={
-        "type": "disabled"  # Disable deep thinking mode
-    }
-)
-
-print(response.choices[0].message.content)
-```
+> [tab] Python SDK
+>
+> **Install SDK**
+>
+> ```bash theme={null}
+> # Install latest version
+> pip install zai-sdk
+>
+> # Or specify version
+> pip install zai-sdk==0.2.3
+> ```
+>
+> **Verify Installation**
+>
+> ```python theme={null}
+> import zai
+> print(zai.__version__)
+> ```
+>
+> **Basic Call (Enable Deep Thinking)**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> # Initialize client
+> client = ZaiClient(api_key='your_api_key')
+>
+> # Create deep thinking request
+> response = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {"role": "user", "content": "Explain in detail the basic principles of quantum computing and analyze its potential impact in the field of cryptography"}
+>     ],
+>     thinking={
+>         "type": "enabled"  # Enable deep thinking mode
+>     },
+>     max_tokens=4096,
+>     temperature=1.0
+> )
+>
+> print("Model response:")
+> print(response.choices[0].message.content)
+> print("\n---")
+> print(response.choices[0].message.reasoning_content)
+> ```
+>
+> **Streaming Call (Deep Thinking + Streaming Output)**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> # Initialize client
+> client = ZaiClient(api_key='your_api_key')
+>
+> # Create streaming deep thinking request
+> response = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {"role": "user", "content": "Design a recommendation system architecture for an e-commerce website, considering user behavior, product features, and real-time requirements"}
+>     ],
+>     thinking={
+>         "type": "enabled"  # Enable deep thinking mode
+>     },
+>     stream=True,  # Enable streaming output
+>     max_tokens=4096,
+>     temperature=1.0
+> )
+>
+> # Process streaming response
+> reasoning_content = ""
+> thinking_phase = True
+>
+> for chunk in response:
+>     if not chunk.choices:
+>         continue
+>
+>     delta = chunk.choices[0].delta
+>
+>     # Process thinking process (if any)
+>     if hasattr(delta, 'reasoning_content') and delta.reasoning_content:
+>         reasoning_content += delta.reasoning_content
+>         if thinking_phase:
+>             print("🧠 Thinking...", end="", flush=True)
+>             thinking_phase = False
+>         print(delta.reasoning_content, end="", flush=True)
+>
+>     # Process answer content
+>     if hasattr(delta, 'content') and delta.content:
+>         if thinking_phase:
+>             print("\n\n💡 Answer:")
+>             thinking_phase = False
+>         print(delta.content, end="", flush=True)
+>
+> ```
+>
+> **Control Reasoning Effort (reasoning\_effort)**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> # Initialize client
+> client = ZaiClient(api_key='your_api_key')
+>
+> # Use reasoning_effort to control reasoning level
+> response = client.chat.completions.create(
+>     model="glm-5.3",
+>     messages=[
+>         {"role": "user", "content": "Analyze the solution approach for this math problem"}
+>     ],
+>     thinking={
+>         "type": "enabled"
+>     },
+>     reasoning_effort="high"
+> )
+>
+> print(response.choices[0].message.content)
+> print(response.choices[0].message.reasoning_content)
+> ```
+>
+> **Disable Deep Thinking**
+>
+> ```python theme={null}
+> from zai import ZaiClient
+>
+> # Initialize client
+> client = ZaiClient(api_key='your_api_key')
+>
+> # Disable deep thinking for quick response
+> response = client.chat.completions.create(
+>     model="glm-5.2",
+>     messages=[
+>         {"role": "user", "content": "How is the weather today?"}
+>     ],
+>     thinking={
+>         "type": "disabled"  # Disable deep thinking mode
+>     }
+> )
+>
+> print(response.choices[0].message.content)
+> ```
 
 ### Response Example
 
@@ -314,25 +314,25 @@ Response format with deep thinking enabled:
 
 ## Application scenarios
 
-> **Academic Research**
+> [card] Academic Research
 >
 > * Research method design
 > * Data analysis and explanation
 > * Theory deduction and proof
 
-> **Technology Consulting**
+> [card] Technology Consulting
 >
 > * System architecture design
 > * Technological scheme evaluation
 > * Problem diagnosis and solution
 
-> **Business Analysis**
+> [card] Business Analysis
 >
 > * Market trends analysis
 > * Business model design
 > * Investment decision support
 
-> **Education Training**
+> [card] Education Training
 >
 > * Complex concept explanation
 > * Learning path planning

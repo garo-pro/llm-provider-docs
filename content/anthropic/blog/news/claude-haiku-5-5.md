@@ -9,7 +9,7 @@ Claude Haiku 5.5 is designed for high-volume, cost-sensitive tasks. It reliably 
 
 Haiku 5.5 is available at a much lower price than Haiku 4.5. On average, it now costs around 75% less to run.²
 
-Along with this launch, we’re making improvements to the value of our model range. We’re halving the price of Claude Sonnet 5.5’s cache reads, which means Sonnet 5.5 now runs around 20% cheaper on most agentic work. And we’re introducing a new monthly API credit for our Claude Max and Team subscribers, designed to support our users in building new agents and applications that run on the Claude Platform.
+Along with this launch, we’re making improvements to the value of our model range. We’re halving the price of Claude Sonnet 5.5’s cache reads, which means Sonnet 5.5 now runs around 20% cheaper on most agentic work. And we’re introducing a new monthly API credit for our Claude Max, Ultra, and Team subscribers, designed to support our users in building new agents and applications that run on the Claude Platform.
 
 ## Performance
 
@@ -68,7 +68,7 @@ Terminal-Bench 4.0 measures how well a model can complete complex, multi-step pr
 
 This chart illustrates an important difference between Haiku 5.5 and our larger models. Sonnet 5.5 and Opus 5.5 remain better choices for complex agentic coding tasks like those measured by Terminal-Bench 4.0. By contrast, Haiku 5.5 is best suited to more narrowly scoped tasks that might otherwise have been cost-prohibitive with previous versions of Claude—like compaction, summarization, or subagent work.
 
-Second, this week, we’ll roll out **a new monthly API credit to all Max and Team subscribers for use on the Claude Platform**. Max 5x users will get $100 in credits per month, Max 20x users will get $200, and Team subscribers will receive up to $500, pooled across their users. These credits are designed to allow our users to experiment with building tools, apps, and agents that call our API. They can be used on any of our models. For more information, [see our Help Center article](https://support.claude.com/en/articles/17154008).
+Second, this week, we’ll roll out **a new monthly API credit to all Max, Ultra, and Team subscribers for use on the Claude Platform**. Max users will get $100 in credits per month, Ultra users will get $200, and Team subscribers will receive up to $500, pooled across their users. These credits are designed to allow our users to experiment with building tools, apps, and agents that call our API. They can be used on any of our models. For more information, [see our Help Center article](https://support.claude.com/en/articles/17154008).
 
 For developers, we’re also **updating our Claude Python and TypeScript SDKs to add support for computer use and browser use** in beta. Haiku 5.5 is especially well-suited to these tasks, given its combination of speed, capability, and price. You can read more about this [in our Claude Platform docs](https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-sdk).
 

@@ -8,19 +8,19 @@ Z.AI Java SDK is the official Java development toolkit provided by Z.AI, offerin
 
 ### Core Advantages
 
-> **Enterprise-grade**
+> [card] Enterprise-grade
 >
 > Designed for enterprise applications, supports high concurrency and high availability
 
-> **Easy Integration**
+> [card] Easy Integration
 >
 > Clean API design, comprehensive documentation, quick integration into existing projects
 
-> **Type Safety**
+> [card] Type Safety
 >
 > Complete type definitions, compile-time error checking, reducing runtime errors
 
-> **High Performance**
+> [card] High Performance
 >
 > Optimized network request handling, supports connection pooling and asynchronous calls
 
@@ -56,11 +56,11 @@ The SDK adopts a modular design, allowing you to selectively import functional m
 
 ### Environment Requirements
 
-> **Java Version**
+> [card] Java Version
 >
 > Java 1.8 or higher
 
-> **Build Tools**
+> [card] Build Tools
 >
 > Maven 3.6+ or Gradle 6.0+
 
@@ -70,21 +70,21 @@ The SDK adopts a modular design, allowing you to selectively import functional m
 
 ### Add Dependencies
 
-**Maven**
+> [tab] Maven
+>
+> ```xml theme={null}
+> <dependency>
+>     <groupId>ai.z.openapi</groupId>
+>     <artifactId>zai-sdk</artifactId>
+>     <version>0.3.5</version>
+> </dependency>
+> ```
 
-```xml theme={null}
-<dependency>
-    <groupId>ai.z.openapi</groupId>
-    <artifactId>zai-sdk</artifactId>
-    <version>0.3.5</version>
-</dependency>
-```
-
-**Gradle**
-
-```gradle theme={null}
-implementation 'ai.z.openapi:zai-sdk:0.3.5'
-```
+> [tab] Gradle
+>
+> ```gradle theme={null}
+> implementation 'ai.z.openapi:zai-sdk:0.3.5'
+> ```
 
 ### Get API Key
 
@@ -104,38 +104,38 @@ implementation 'ai.z.openapi:zai-sdk:0.3.5'
 
 #### Create Client
 
-**Environment Variable**
+> [tab] Environment Variable
+>
+> ```java theme={null}
+> import ai.z.openapi.ZaiClient;
+>
+> public class QuickStart {
+>     public static void main(String[] args) {
+>         // Read API Key from environment variable
+>         ZaiClient client = ZaiClient.builder().ofZAI()
+>             .apiKey(System.getenv("ZAI_API_KEY"))
+>             .build();
+>
+>         // Or use directly (if environment variable is set)
+>         ZaiClient client2 = ZaiClient.builder().ofZAI().build();
+>     }
+> }
+> ```
 
-```java theme={null}
-import ai.z.openapi.ZaiClient;
-
-public class QuickStart {
-    public static void main(String[] args) {
-        // Read API Key from environment variable
-        ZaiClient client = ZaiClient.builder().ofZAI()
-            .apiKey(System.getenv("ZAI_API_KEY"))
-            .build();
-        
-        // Or use directly (if environment variable is set)
-        ZaiClient client2 = ZaiClient.builder().ofZAI().build();
-    }
-}
-```
-
-**Direct Setting**
-
-```java theme={null}
-import ai.z.openapi.ZaiClient;
-
-public class QuickStart {
-    public static void main(String[] args) {
-        // Set API Key directly
-        ZaiClient client = ZaiClient.builder().ofZAI()
-            .apiKey("YOUR_API_KEY")
-            .build();
-    }
-}
-```
+> [tab] Direct Setting
+>
+> ```java theme={null}
+> import ai.z.openapi.ZaiClient;
+>
+> public class QuickStart {
+>     public static void main(String[] args) {
+>         // Set API Key directly
+>         ZaiClient client = ZaiClient.builder().ofZAI()
+>             .apiKey("YOUR_API_KEY")
+>             .build();
+>     }
+> }
+> ```
 
 #### Basic Conversation
 
@@ -414,19 +414,19 @@ public class FunctionCallingExample {
 
 ## Getting Help
 
-> **[GitHub Repository](https://github.com/zai-org/z-ai-sdk-java)**
+> [card] [GitHub Repository](https://github.com/zai-org/z-ai-sdk-java)
 >
 > View source code, submit issues, contribute
 
-> **[API Reference](https://docs.z.ai/api-reference)**
+> [card] [API Reference](https://docs.z.ai/api-reference)
 >
 > View complete API documentation
 
-> **[Example Projects](https://github.com/zai-org/z-ai-sdk-java/tree/main/samples)**
+> [card] [Example Projects](https://github.com/zai-org/z-ai-sdk-java/tree/main/samples)
 >
 > Browse more practical application examples
 
-> **[Best Practices](https://github.com/zai-org/z-ai-sdk-java)**
+> [card] [Best Practices](https://github.com/zai-org/z-ai-sdk-java)
 >
 > Learn best practices for SDK usage
 

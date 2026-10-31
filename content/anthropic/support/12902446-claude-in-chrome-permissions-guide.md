@@ -4,7 +4,7 @@ This guide explains how to control what Claude can access and do when using Clau
 
 ## Availability
 
-Claude in Chrome is available on paid plans (Pro, Max, Team, and Enterprise), in the Chrome side panel, Claude Cowork, and Claude Code. The side panel runs as a Claude Cowork session. On Enterprise plans, this requires an owner to enable Claude in Chrome and Cowork in the cloud; until then, the side panel uses the classic experience.
+Claude in Chrome is available on paid plans (Pro, Max, Ultra, Team, and Enterprise), in the Chrome side panel, Claude Cowork, and Claude Code. The side panel runs as a Claude Cowork session. On Enterprise plans, this requires an owner to enable Claude in Chrome and Cowork in the cloud; until then, the side panel uses the classic experience.
 
 **Important:** Before using Claude in Chrome, review **[Use Claude in Chrome Safely](https://support.claude.com/en/articles/12902428)** to understand the risks of browser-based AI.
 

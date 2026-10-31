@@ -25,44 +25,44 @@ This is a model-switching guide for existing GLM Coding Plan users—not an onbo
 
 ### Step 1: Update the default configuration
 
-**macOS**
-
-* Method 1: In the terminal, run `vim ~/.claude/settings.json` to open and edit the file. When you're done, press Esc, type `:wq`, and save your changes.
-* Method 2: In Finder, choose Go → Go to Folder, then enter `~/.claude/settings.json` to locate and edit the configuration file.
-
-**Windows**
-
-The user-level Claude Code settings file is located at:
-
-`%USERPROFILE%\.claude\settings.json`
-
-To create or open it in PowerShell:
-
-```powershell theme={null}
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude"
-notepad "$env:USERPROFILE\.claude\settings.json"
-```
-
-> [!TIP]
+> [tab] macOS
 >
-> If you use Git Bash or WSL, the path resolution may differ. Make sure the file is read by the same Claude Code installation you launch.
+> * Method 1: In the terminal, run `vim ~/.claude/settings.json` to open and edit the file. When you're done, press Esc, type `:wq`, and save your changes.
+> * Method 2: In Finder, choose Go → Go to Folder, then enter `~/.claude/settings.json` to locate and edit the configuration file.
 
-**Linux / WSL**
-
-The user-level Claude Code settings file is located at:
-
-`~/.claude/settings.json`
-
-To create or open it:
-
-```bash theme={null}
-mkdir -p ~/.claude
-${EDITOR:-nano} ~/.claude/settings.json
-```
-
-> [!TIP]
+> [tab] Windows
 >
-> If you are using WSL alongside native Windows Claude Code, the configuration file locations may differ. Make sure you edit the file used by the Claude Code installation you actually launch.
+> The user-level Claude Code settings file is located at:
+>
+> `%USERPROFILE%\.claude\settings.json`
+>
+> To create or open it in PowerShell:
+>
+> ```powershell theme={null}
+> New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude"
+> notepad "$env:USERPROFILE\.claude\settings.json"
+> ```
+>
+> > [!TIP]
+> >
+> > If you use Git Bash or WSL, the path resolution may differ. Make sure the file is read by the same Claude Code installation you launch.
+
+> [tab] Linux / WSL
+>
+> The user-level Claude Code settings file is located at:
+>
+> `~/.claude/settings.json`
+>
+> To create or open it:
+>
+> ```bash theme={null}
+> mkdir -p ~/.claude
+> ${EDITOR:-nano} ~/.claude/settings.json
+> ```
+>
+> > [!TIP]
+> >
+> > If you are using WSL alongside native Windows Claude Code, the configuration file locations may differ. Make sure you edit the file used by the Claude Code installation you actually launch.
 
 To use GLM-5.3-FLASH, add or replace the following environment variables in `settings.json`. **Do not replace the entire file** if it already contains other fields —only add or update the keys shown below.
 

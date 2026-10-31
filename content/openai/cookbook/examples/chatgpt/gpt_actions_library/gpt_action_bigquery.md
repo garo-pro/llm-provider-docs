@@ -164,7 +164,7 @@ Before you set up authentication in ChatGPT, please take the following steps in 
 - Create new OAuth credentials (or use an existing one)
 - Locate your OAuth Client ID & Client Secret and store both values securely (see screenshot below)
 
-![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_bigquery_auth.png)
+![gptactions_BigQuery_auth.png](https://developers.openai.com/cookbook/assets/images/gptactions_BigQuery_auth.png)
 
 ### In ChatGPT
 

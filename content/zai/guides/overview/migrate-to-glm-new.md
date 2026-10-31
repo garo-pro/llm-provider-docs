@@ -174,19 +174,19 @@ See: [Tool Streaming Output Documentation](https://docs.z.ai/guides/tools/stream
 
 ## More Resources
 
-> **[Concept Parameters](https://docs.z.ai/guides/overview/concept-param.md)**
+> [card] [Concept Parameters](https://docs.z.ai/guides/overview/concept-param.md)
 >
 > Common model parameter concepts and sampling recommendations
 
-> **[Tool Streaming Output](https://docs.z.ai/guides/tools/stream-tool.md)**
+> [card] [Tool Streaming Output](https://docs.z.ai/guides/tools/stream-tool.md)
 >
 > View tool streaming output usage details
 
-> **[API Reference](https://docs.z.ai/api-reference/introduction.md)**
+> [card] [API Reference](https://docs.z.ai/api-reference/introduction.md)
 >
 > View complete API documentation
 
-> **[Technical Support](https://z.ai/consultation)**
+> [card] [Technical Support](https://z.ai/consultation)
 >
 > Get technical support and help
 

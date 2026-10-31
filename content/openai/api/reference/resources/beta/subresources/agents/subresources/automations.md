@@ -240,8 +240,6 @@ Content type: `application/json`
 
                   - `"application/zip"`
 
-                    A ZIP archive.
-
                 - `type: "base64" (default: "base64")`
 
                   The type of the object. Always `base64`.
@@ -6277,8 +6275,6 @@ Content type: `application/json`
 
               - `"application/zip"`
 
-                A ZIP archive.
-
             - `type: "base64" (default: "base64")`
 
               The type of the object. Always `base64`.
@@ -9729,8 +9725,6 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
                   - `"application/zip"`
 
-                    A ZIP archive.
-
                 - `type: "base64" (default: "base64")`
 
                   The type of the object. Always `base64`.
@@ -11358,8 +11352,6 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
               The archive media type, always `application/zip`.
 
               - `"application/zip"`
-
-                A ZIP archive.
 
             - `type: "base64" (default: "base64")`
 

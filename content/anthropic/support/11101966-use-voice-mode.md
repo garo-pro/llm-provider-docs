@@ -2,7 +2,7 @@
 
 Voice mode allows you to have complete spoken conversations with Claude. Instead of typing a prompt and reading a written response, you can speak to Claude and listen to its responses, making it easier to use when your hands are busy but your mind isn't.
 
-Voice mode is a beta feature available to all plans (Free, Pro, Max, Team, and Enterprise) on Claude Mobile (iOS and Android), Claude Desktop, and the web, but is built to work best from your phone.
+Voice mode is a beta feature available to all plans (Free, Pro, Max, Ultra, Team, and Enterprise) on Claude Mobile (iOS and Android), Claude Desktop, and the web, but is built to work best from your phone.
 
 ## What is voice mode?
 

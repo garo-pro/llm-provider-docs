@@ -33,7 +33,7 @@ Content type: `application/json`
 
     - `input: optional object { noise_reduction, transcription }`
 
-      - `noise_reduction: optional object { type }  or null`
+      - `noise_reduction: optional object { type, strength }  or null`
 
         Optional input noise reduction. Set to `null` to disable it.
 
@@ -44,6 +44,14 @@ Content type: `application/json`
           - `"near_field"`
 
           - `"far_field"`
+
+        - `strength: optional number (default: 1)`
+
+          Input noise suppression strength. Higher values apply more suppression.
+          Defaults to 1 when noise reduction is first enabled. Omitting strength
+          from a session update preserves the current strength.
+
+          `minimum: 0`, `maximum: 1`
 
       - `transcription: optional object { model }  or null`
 
@@ -107,7 +115,7 @@ Content type: `application/json`
 
       - `input: optional object { noise_reduction, transcription }`
 
-        - `noise_reduction: optional object { type }  or null`
+        - `noise_reduction: optional object { type, strength }  or null`
 
           Optional input noise reduction.
 
@@ -118,6 +126,14 @@ Content type: `application/json`
             - `"near_field"`
 
             - `"far_field"`
+
+          - `strength: optional number (default: 1)`
+
+            Input noise suppression strength. Higher values apply more suppression.
+            Defaults to 1 when noise reduction is first enabled. Omitting strength
+            from a session update preserves the current strength.
+
+            `minimum: 0`, `maximum: 1`
 
         - `transcription: optional object { model }  or null`
 
@@ -179,7 +195,8 @@ curl https://api.openai.com/v1/realtime/translations/client_secrets \
     "audio": {
       "input": {
         "noise_reduction": {
-          "type": "near_field"
+          "type": "near_field",
+          "strength": 0
         },
         "transcription": {
           "model": "model"

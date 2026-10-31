@@ -51,86 +51,86 @@ Long-term memory
 
 ## **Core memory types in coding agents**
 
-**Session Memory**
+> [tab] Session Memory
+>
+> Session memory is the contextual information associated with the current task. It includes the current conversation history, recent tool outputs, the current execution plan, and the contents of the files currently in scope. This information typically lives in the model’s context window.
+>
+> For example:
+>
+> ```
+> User: Fix this Python bug
+> Agent: Analyze the error
+> Agent: Modify the code
+> Agent: Run tests
+> ```
+>
+> These execution steps all fall under session memory.
 
-Session memory is the contextual information associated with the current task. It includes the current conversation history, recent tool outputs, the current execution plan, and the contents of the files currently in scope. This information typically lives in the model’s context window.
+> [tab] Project Memory
+>
+> Project memory stores **long-lived information about the entire codebase**, such as the project architecture, coding standards, build workflows, and frequently used commands. This kind of memory is typically written into .md files and loaded at the start of a session.
+>
+> For example:
+>
+> ```
+> your-project/
+> ├── .claude/
+> │   ├── CLAUDE.md           # Main project instructions
+> │   └── rules/
+> │       ├── code-style.md   # Code style guide
+> │       ├── testing.md      # Testing conventions
+> │       └── security.md     # Security requirements
+> ```
+>
+> This way, the Agent will automatically follow these rules when modifying the code.
 
-For example:
+> [tab] Semantic Memory
+>
+> Semantic memory stores factual knowledge and reference information. Examples include API documentation, programming language rules, and project knowledge bases. In practice, this is often implemented through RAG (retrieval-augmented generation).
+>
+> A typical flow looks like this:
+>
+> ```
+> query
+> ↓
+> embedding
+> ↓
+> vector search
+> ↓
+> retrieve documents
+> ↓
+> LLM reasoning
+> ```
+>
+> This is also one of the most commonly used memorization methods at Coding Agent.
 
-```
-User: Fix this Python bug
-Agent: Analyze the error
-Agent: Modify the code
-Agent: Run tests
-```
+> [tab] Episodic Memory
+>
+> Episodic memory records an agent’s past experiences, such as the steps used to fix a previous bug, the root cause of a previous build failure, or a debugging strategy that worked well before. This type of memory helps the agent learn from prior experience.
+>
+> For example:
+>
+> ```
+> Episode:
+> CI failure caused by missing dependency
+> Solution: upgrade pip package
+> ```
 
-These execution steps all fall under session memory.
-
-**Project Memory**
-
-Project memory stores **long-lived information about the entire codebase**, such as the project architecture, coding standards, build workflows, and frequently used commands. This kind of memory is typically written into .md files and loaded at the start of a session.
-
-For example:
-
-```
-your-project/
-├── .claude/
-│   ├── CLAUDE.md           # Main project instructions
-│   └── rules/
-│       ├── code-style.md   # Code style guide
-│       ├── testing.md      # Testing conventions
-│       └── security.md     # Security requirements
-```
-
-This way, the Agent will automatically follow these rules when modifying the code.
-
-**Semantic Memory**
-
-Semantic memory stores factual knowledge and reference information. Examples include API documentation, programming language rules, and project knowledge bases. In practice, this is often implemented through RAG (retrieval-augmented generation).
-
-A typical flow looks like this:
-
-```
-query
-↓
-embedding
-↓
-vector search
-↓
-retrieve documents
-↓
-LLM reasoning
-```
-
-This is also one of the most commonly used memorization methods at Coding Agent.
-
-**Episodic Memory**
-
-Episodic memory records an agent’s past experiences, such as the steps used to fix a previous bug, the root cause of a previous build failure, or a debugging strategy that worked well before. This type of memory helps the agent learn from prior experience.
-
-For example:
-
-```
-Episode:
-CI failure caused by missing dependency
-Solution: upgrade pip package
-```
-
-**Procedural Memory**
-
-Procedural memory stores strategies or step-by-step workflows for completing tasks.
-
-For example:
-
-```
-Debug_Workflow.md
-1. read error log
-2. locate file
-3. write patch
-4. run tests
-```
-
-These memories are typically used in system prompt engineering, workflow templates, and agent policies.
+> [tab] Procedural Memory
+>
+> Procedural memory stores strategies or step-by-step workflows for completing tasks.
+>
+> For example:
+>
+> ```
+> Debug_Workflow.md
+> 1. read error log
+> 2. locate file
+> 3. write patch
+> 4. run tests
+> ```
+>
+> These memories are typically used in system prompt engineering, workflow templates, and agent policies.
 
 ## **The standard memory pattern used by coding agents**
 
@@ -180,7 +180,7 @@ One of the most practical principles for general-purpose coding agents is to dis
 
 ### \* Layered memory management
 
-> **Organization-level memory**
+> [accordion] Organization-level memory
 >
 > This layer contains rules defined and distributed at the team or company level, and applies across all developers and all relevant projects. Typical examples include:
 >
@@ -192,7 +192,7 @@ One of the most practical principles for general-purpose coding agents is to dis
 >
 > At the organizational level, a shared `sysytem.md` can be deployed to a system-level path and should not be easily excluded by individual users. In practice, this can also be distributed through centralized management tools such as hosted configuration, MDM, Group Policy, or Ansible. In a more general agent architecture, this means **organization-level memory should be treated as the highest-priority governance layer and should not be casually bypassed**.
 
-> **Project-level memory**
+> [accordion] Project-level memory
 >
 > This is the team-shared project context, and it is the most important memory layer for a coding agent. It should be version-controlled and shared across all collaborators. Typical examples include:
 >
@@ -205,7 +205,7 @@ One of the most practical principles for general-purpose coding agents is to dis
 >
 > Claude Code recommends storing this kind of information in a project-level `project.md`, and its `/init ` command can generate an initial draft automatically. That draft can then be refined with rules the model is unlikely to infer on its own. The key property of this layer is that it is **shared across the project, tracked in version control, and stable over time**.
 
-> **User-level memory**
+> [accordion] User-level memory
 >
 > This layer captures a developer’s personal preferences that apply across projects. It is best stored under the user’s home directory and treated as reusable personal context for all workspaces. In Claude Code, user instructions are stored separately from project instructions, and both are loaded at session start. This layer is a good place for:
 >
@@ -216,7 +216,7 @@ One of the most practical principles for general-purpose coding agents is to dis
 >
 > It should complement project conventions, not override them.
 
-> **Local memory**
+> [accordion] Local memory
 >
 > This layer is specific to your local copy of a project, but should not be committed to Git. A file such as local.md is a good place to store project-specific preferences that should remain private or machine-specific, such as:
 >
@@ -228,7 +228,7 @@ One of the most practical principles for general-purpose coding agents is to dis
 >
 > The value of this layer is that it **allows individuals to work efficiently without polluting team-shared memory**.
 
-> **Subagent / role-specific memory**
+> [accordion] Subagent / role-specific memory
 >
 > Another pattern worth generalizing is role-specific memory for subagents. Different subagents can maintain their own memory scopes rather than sharing a single global memory. This is especially important in multi-agent systems, where one of the most common failure modes is context pollution across roles.
 > A better pattern is to let each subagent retain only the memory relevant to its role:
@@ -357,7 +357,7 @@ This approach brings two direct benefits:
 
 ## **Memory troubleshooting**
 
-> **The coding agent is not following my `.md` memory files**
+> [accordion] The coding agent is not following my `.md` memory files
 >
 > `.md` memory files are typically provided to the agent as contextual instructions, not as enforced configuration.
 >
@@ -369,7 +369,7 @@ This approach brings two direct benefits:
 > * Check whether the `.md` files are located in a path or scope that is allowed to load in the current session.
 > * Check whether there are conflicting rules across multiple `.md` files. If different files give different instructions for the same behavior, the agent may choose one arbitrarily.
 
-> **I don’t know what auto memory has saved**
+> [accordion] I don’t know what auto memory has saved
 >
 > Most coding agents maintain auto memory in the background to capture project context, user preferences, or common actions.
 >
@@ -378,13 +378,13 @@ This approach brings two direct benefits:
 > * Run `/memory` (or a similar command) to view the current auto memory directory.
 > * Auto memory is typically stored as Markdown files that you can read, edit, or delete directly.
 
-> **My memory files are too large**
+> [accordion] My memory files are too large
 >
 > Oversized memory files consume more of the context window, reduce the agent’s adherence to instructions, and increase the likelihood of conflicts.
 >
 > It is recommended to split detailed content into multiple Markdown files and use file references or imports (such as `@path/to/file`), or move rules into a dedicated rules directory such as `rules/`.
 
-> **Instructions disappear after context compression**
+> [accordion] Instructions disappear after context compression
 >
 > Many coding agents **compress or summarize context** during long conversations in order to reduce context length.
 >

@@ -17,29 +17,29 @@ Z.AI provides interfaces compatible with OpenAI API, which means you can use exi
 
 ### Core Advantages
 
-> **Zero Learning Cost**
+> [card] Zero Learning Cost
 >
 > If you are already familiar with OpenAI SDK, you can start using it immediately
 
-> **Quick Migration**
+> [card] Quick Migration
 >
 > Existing OpenAI applications can be quickly migrated to Z.AI platform
 
-> **Ecosystem Compatibility**
+> [card] Ecosystem Compatibility
 >
 > Compatible with various tools and frameworks in the OpenAI ecosystem
 
-> **Continuous Updates**
+> [card] Continuous Updates
 >
 > Follow OpenAI SDK updates to maintain latest feature support
 
 ## Environment Requirements
 
-> **Python Version**
+> [card] Python Version
 >
 > Python 3.7.1 or higher
 
-> **OpenAI SDK**
+> [card] OpenAI SDK
 >
 > OpenAI SDK version 1.0.0 or higher
 
@@ -79,52 +79,52 @@ poetry add "openai>=1.0"
 
 ### Create Client
 
-**Basic Configuration**
+> [tab] Basic Configuration
+>
+> ```python theme={null}
+> from openai import OpenAI
+>
+> # Create Z.AI client
+> client = OpenAI(
+>     api_key="your-Z.AI-api-key",
+>     base_url="https://api.z.ai/api/paas/v4/"
+> )
+> ```
 
-```python theme={null}
-from openai import OpenAI
+> [tab] Environment Variables
+>
+> ```python theme={null}
+> from openai import OpenAI
+> import os
+>
+> # Use environment variables
+> client = OpenAI(
+>     api_key=os.getenv("ZAI_API_KEY"),
+>     base_url="https://api.z.ai/api/paas/v4/"
+> )
+> ```
 
-# Create Z.AI client
-client = OpenAI(
-    api_key="your-Z.AI-api-key",
-    base_url="https://api.z.ai/api/paas/v4/"
-)
-```
-
-**Environment Variables**
-
-```python theme={null}
-from openai import OpenAI
-import os
-
-# Use environment variables
-client = OpenAI(
-    api_key=os.getenv("ZAI_API_KEY"),
-    base_url="https://api.z.ai/api/paas/v4/"
-)
-```
-
-**Configuration Class**
-
-```python theme={null}
-from openai import OpenAI
-from dataclasses import dataclass
-
-@dataclass
-class Z.AIConfig:
-    api_key: str
-    base_url: str = "https://api.z.ai/api/paas/v4/"
-    timeout: int = 30
-    max_retries: int = 3
-
-config = Z.AIConfig(api_key="your-api-key")
-client = OpenAI(
-    api_key=config.api_key,
-    base_url=config.base_url,
-    timeout=config.timeout,
-    max_retries=config.max_retries
-)
-```
+> [tab] Configuration Class
+>
+> ```python theme={null}
+> from openai import OpenAI
+> from dataclasses import dataclass
+>
+> @dataclass
+> class Z.AIConfig:
+>     api_key: str
+>     base_url: str = "https://api.z.ai/api/paas/v4/"
+>     timeout: int = 30
+>     max_retries: int = 3
+>
+> config = Z.AIConfig(api_key="your-api-key")
+> client = OpenAI(
+>     api_key=config.api_key,
+>     base_url=config.base_url,
+>     timeout=config.timeout,
+>     max_retries=config.max_retries
+> )
+> ```
 
 ## Quick Start Examples
 
@@ -330,28 +330,28 @@ if message.tool_calls:
 
 ## Best Practices
 
-> **Performance Optimization**
+> [card] Performance Optimization
 >
 > * Use connection pooling and session reuse
 > * Set reasonable timeout values
 > * Implement async calls for high concurrency
 > * Cache frequently used responses
 
-> **Cost Control**
+> [card] Cost Control
 >
 > * Set reasonable max\_tokens limits
 > * Use appropriate models (don't overuse powerful models)
 > * Implement request deduplication
 > * Monitor API usage
 
-> **Security**
+> [card] Security
 >
 > * Use environment variables to store API keys
 > * Implement input validation and filtering
 > * Log and monitor API calls
 > * Rotate API keys regularly
 
-> **Reliability**
+> [card] Reliability
 >
 > * Implement retry mechanisms and error handling
 > * Set reasonable timeout values
@@ -388,11 +388,11 @@ response = client.chat.completions.create(
 
 ## Getting Help
 
-> **[API Documentation](https://docs.z.ai/api-reference)**
+> [card] [API Documentation](https://docs.z.ai/api-reference)
 >
 > View complete API interface documentation
 
-> **[OpenAI Official Documentation](https://platform.openai.com/docs)**
+> [card] [OpenAI Official Documentation](https://platform.openai.com/docs)
 >
 > Refer to OpenAI official documentation for more usage
 

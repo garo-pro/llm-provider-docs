@@ -38,25 +38,25 @@ Team Plan members can create an API Key under [Team Coding Plan > My Plan](https
 
 The GLM Coding Plan is strictly limited to use within officially [supported tools and products](https://docs.z.ai/devpack/tool/others.md#step-1-supported-tools). Click a tool below to open its configuration guide:
 
-> **[Claude Code](https://docs.z.ai/devpack/tool/claude)**
+> [card] [Claude Code](https://docs.z.ai/devpack/tool/claude)
 
-> **[Roo Code](https://docs.z.ai/devpack/tool/roo)**
+> [card] [Roo Code](https://docs.z.ai/devpack/tool/roo)
 
-> **[Kilo Code](https://docs.z.ai/devpack/tool/kilo)**
+> [card] [Kilo Code](https://docs.z.ai/devpack/tool/kilo)
 
-> **[Cline](https://docs.z.ai/devpack/tool/cline)**
+> [card] [Cline](https://docs.z.ai/devpack/tool/cline)
 
-> **[OpenCode](https://docs.z.ai/devpack/tool/opencode)**
+> [card] [OpenCode](https://docs.z.ai/devpack/tool/opencode)
 
-> **[OpenClaw](https://docs.z.ai/devpack/tool/openclaw)**
+> [card] [OpenClaw](https://docs.z.ai/devpack/tool/openclaw)
 
-> **[Crush](https://docs.z.ai/devpack/tool/crush)**
+> [card] [Crush](https://docs.z.ai/devpack/tool/crush)
 
-> **[Goose](https://docs.z.ai/devpack/tool/goose)**
+> [card] [Goose](https://docs.z.ai/devpack/tool/goose)
 
-> **[Cursor](https://docs.z.ai/devpack/tool/cursor)**
+> [card] [Cursor](https://docs.z.ai/devpack/tool/cursor)
 
-> **[Other Tools](https://docs.z.ai/devpack/tool/others.md)**
+> [card] [Other Tools](https://docs.z.ai/devpack/tool/others.md)
 
 **5. Endpoint Guide**
 
@@ -72,30 +72,30 @@ GLM Coding Plan supports both the Anthropic and OpenAI protocols. Make sure to c
 
 Once configured, you can begin coding with the GLM model!
 
-**Conversational Programming**
+> [tab] Conversational Programming
+>
+> ```bash theme={null}
+> # Using natural language commands in Claude Code
+> Please create a React component containing a user login form
+> ```
 
-```bash theme={null}
-# Using natural language commands in Claude Code
-Please create a React component containing a user login form
-```
+> [tab] Code Debugging
+>
+> ```bash theme={null}
+> # Describe the issue encountered
+> My API request returns a 404 error. Please help me check the code.
+> ```
 
-**Code Debugging**
-
-```bash theme={null}
-# Describe the issue encountered
-My API request returns a 404 error. Please help me check the code.
-```
-
-**Code Optimization**
-
-```bash theme={null}
-# Code optimization
-This function performs poorly. Please optimize it for me.
-```
+> [tab] Code Optimization
+>
+> ```bash theme={null}
+> # Code optimization
+> This function performs poorly. Please optimize it for me.
+> ```
 
 ## Advanced Features
 
-> **Vision MCP Server (Coding Plan Exclusive)**
+> [accordion] Vision MCP Server (Coding Plan Exclusive)
 >
 > All users can utilize the Vision MCP Server, which employs the flagship vision reasoning model to comprehend and analyze image content.
 >
@@ -105,7 +105,7 @@ This function performs poorly. Please optimize it for me.
 >
 > For detailed usage instructions, refer to the [Vision MCP Server](https://docs.z.ai/devpack/mcp/vision-mcp-server.md) documentation.
 
-> **Web Search MCP Server (Coding Plan Exclusive)**
+> [accordion] Web Search MCP Server (Coding Plan Exclusive)
 >
 > All users can utilize the Web Search MCP Server to access the latest technical information.
 >
@@ -115,7 +115,7 @@ This function performs poorly. Please optimize it for me.
 >
 > For detailed usage instructions, refer to the [Web Search MCP Server](https://docs.z.ai/devpack/mcp/search-mcp-server.md) documentation.
 
-> **Web Reader MCP Server (Coding Plan Exclusive)**
+> [accordion] Web Reader MCP Server (Coding Plan Exclusive)
 >
 > All users can utilize the Web Reader MCP Server to fetch full webpage content and extract structured data.
 >

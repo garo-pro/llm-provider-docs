@@ -66,7 +66,7 @@ We also have several paid subscriptions that offer additional usage. For more in
 
 ### Can I import my conversation history from another AI provider?
 
-No, it's not possible to import conversation history from another AI provider into Claude at this time. However, Free, Pro, and Max users can use the memory import feature to transfer memory from other AI providers into Claude. For more information, see **[Import and export your memory from Claude](https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude)**.
+No, it's not possible to import conversation history from another AI provider into Claude at this time. However, Free, Pro, Max, and Ultra users can use the memory import feature to transfer memory from other AI providers into Claude. For more information, see **[Import and export your memory from Claude](https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude)**.
 
 ---
 

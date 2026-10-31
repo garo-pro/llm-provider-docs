@@ -4,7 +4,7 @@ You can prompt Claude to search through your previous conversations to find and 
 
 ## Search past chats with Claude
 
-Searching past chats is available to users on paid plans (Pro, Max, Team, and Enterprise plans) on the web, Claude Desktop, and Claude Mobile apps.
+Searching past chats is available to users on paid plans (Pro, Max, Ultra, Team, and Enterprise plans) on the web, Claude Desktop, and Claude Mobile apps.
 
 You can prompt Claude to search through your previous conversations to find relevant information across sessions and reference specific details when needed. Simply ask Claude to find what you discussed before, and it will pull together the appropriate context to keep your conversation flowing. These searches use Retrieval-Augmented Generation (RAG) and will appear as tool calls during your conversations.
 
@@ -32,11 +32,11 @@ When Claude searches your previous chats, you will see this reflected in your cu
 
 Yes, navigate to **Settings > Your Claude** (or **Settings > Memory** in the older Settings layout) and switch the toggle next to **Search and reference chats** off.
 
-**Note:** This setting also controls whether Claude Duet, a research preview for Pro and Max plans, can search your past chats. Learn more about **[getting started with Claude](https://support.claude.com/en/articles/17631495)**[**Duet**](https://support.claude.com/en/articles/17631495).
+**Note:** This setting also controls whether Claude Duet, a research preview for Pro, Max, and Ultra plans, can search your past chats. Learn more about **[getting started with Claude](https://support.claude.com/en/articles/17631495)**[**Duet**](https://support.claude.com/en/articles/17631495).
 
 ## Can I exclude a specific past chat from searches?
 
-Incognito chats are available to all Claude users (free, Pro, Max, Team, and Enterprise plans). See **[Use incognito chats](https://support.claude.com/en/articles/12260368)** for more information.
+Incognito chats are available to all Claude users (Free, Pro, Max, Ultra, Team, and Enterprise plans). See **[Use incognito chats](https://support.claude.com/en/articles/12260368)** for more information.
 
 When starting a new chat with Claude outside of a project, you'll see a ghost icon in the upper right corner of your screen.
 
@@ -50,7 +50,7 @@ Clicking the ghost icon will open an incognito chat, creating a temporary conver
 
 Claude can generate memory based on your chats. With the addition of memory, Claude transforms from a stateless chat interface into a knowledgeable collaborator that builds understanding over time.
 
-Memory is on by default for Free, Pro, and Max plans on the web, Claude Desktop, and Claude Mobile (update to the latest version of the app). On Team and Enterprise plans, owners control whether memory is available, and it's off for each member until they turn it on. Memory is shared between Chat and Claude Cowork when Cowork runs in the cloud; Cowork sessions that run locally on your computer don't use memory.
+Memory is on by default for Free, Pro, Max, and Ultra plans on the web, Claude Desktop, and Claude Mobile (update to the latest version of the app). On Team and Enterprise plans, owners control whether memory is available, and it's off for each member until they turn it on. Memory is shared between Chat and Claude Cowork when Cowork runs in the cloud; Cowork sessions that run locally on your computer don't use memory.
 
 ## How does Claude’s memory work?
 
@@ -68,7 +68,7 @@ Each project has its own memory. While working in a project, Claude uses the pro
 
 What Claude remembers from your chats is available when you hand it a task in Cowork in the cloud, and what comes up in a Cowork task carries back to chat. For example, ask Cowork to draft an update for your manager, and it already knows who that is and how they like updates written.
 
-Claude Duet, a research preview for Pro and Max plans, also uses and adds to your memory, so what Claude knows about you is there from your first message.
+Claude Duet, a research preview for Pro, Max, and Ultra plans, also uses and adds to your memory, so what Claude knows about you is there from your first message.
 
 To run a single chat or Cowork task without memory, open a new chat, click the “+” menu, and turn off "Memory." Claude won't use or add to your memory in that chat or task, and your other chats and tasks aren't affected. Your memory setting is set when the task starts and can't be changed later.
 
@@ -76,7 +76,7 @@ To run a single chat or Cowork task without memory, open a new chat, click the �
 
 ## Turn memory on or off for your account
 
-**Note:** Members of Enterprise plans can only enable this feature individually when it’s enabled by an owner for their organization. For more information, see **[Controls for Enterprise plan owners](#h_18b0f4a7ce)**.
+**Note:** Members of Team and Enterprise plans can turn memory on or off for themselves unless it's turned off for their organization. On Enterprise plans, members whose role is set to Custom also need memory in one of their custom roles. For more information, see **[Controls for Team and Enterprise plan owners](#h_0feedd3ca9)**.
 
 You can toggle Claude's memory on by navigating to **Settings > Your Claude** and turning on **Memory from chats** (or **Settings > Memory** and **Generate memory from chats** in the older Settings layout):
 
@@ -162,7 +162,7 @@ If you decline the notice, or turn the setting off later, Claude removes any sen
 
 ### Incognito chats
 
-Incognito chats are available to all Claude users (free, Pro, Max, Team, and Enterprise plans).
+Incognito chats are available to all Claude users (Free, Pro, Max, Ultra, Team, and Enterprise plans).
 
 When starting a chat with Claude outside of a project, you will see a ghost icon in the upper right corner of your screen; clicking this enables incognito chats. When this mode is switched on, Claude won’t remember your chats, so they won’t be saved to Claude’s memory or your chat history. Close your current incognito chat when you’re ready for Claude to start remembering your conversations again.
 
@@ -216,7 +216,9 @@ Memory and sensitive topics are two separate controls for your organization. Own
 
 ### Organization-level memory controls
 
-Owners and Primary Owners can turn memory on for the organization in **[Organization settings > Capabilities](https://claude.ai/admin-settings/capabilities)**. Once enabled, individual users manage their own memory settings. Enabling memory doesn't enable sensitive topics, and even if you allow sensitive topics for your organization, nothing in those categories is saved until each user opts in themselves. Once a user has opted in, they control their own sensitive memories: they can view and delete individual entries, or turn sensitive topics off to stop saving new ones. Owners can't view or edit a user’s individual memories.
+Owners and Primary Owners can turn memory on or off for the organization in **[Organization settings > Capabilities](https://claude.ai/admin-settings/capabilities)**. This organization-wide setting is on by default. While it's on, individual users manage their own memory settings. Owners can't turn memory on for individual users.
+
+Enabling memory doesn't enable sensitive topics, and even if you allow sensitive topics for your organization, nothing in those categories is saved until each user opts in themselves. Once a user has opted in, they control their own sensitive memories: they can view and delete individual entries, or turn sensitive topics off to stop saving new ones. Owners can't view or edit a user’s individual memories.
 
 When an owner turns memory off for the organization, all existing memory entries for all users are deleted immediately, and users can't access the memory setting.
 
@@ -248,7 +250,7 @@ The new memory experience isn’t available to organizations with HIPAA or publi
 
 ### Search past chats with Claude
 
-Searching past chats is available to users on paid plans (Pro, Max, Team, and Enterprise plans) on the web, Claude Desktop, and Claude Mobile apps.
+Searching past chats is available to users on paid plans (Pro, Max, Ultra, Team, and Enterprise plans) on the web, Claude Desktop, and Claude Mobile apps.
 
 You can prompt Claude to search through your previous conversations to find relevant information across sessions and reference specific details when needed. Simply ask Claude to find what you discussed before, and it will pull together the appropriate context to keep your conversation flowing. These searches use Retrieval-Augmented Generation (RAG) and will appear as tool calls during your conversations.
 
@@ -280,7 +282,7 @@ Yes, navigate to **Settings > Your Claude** (or **Settings > Capabilities** in t
 
 ### Can I exclude a specific past chat from searches?
 
-Incognito chats are available to all Claude users (free, Pro, Max, Team, and Enterprise plans). See **[Use incognito chats](https://support.claude.com/en/articles/12260368)** for more information.
+Incognito chats are available to all Claude users (Free, Pro, Max, Ultra, Team, and Enterprise plans). See **[Use incognito chats](https://support.claude.com/en/articles/12260368)** for more information.
 
 When starting a new chat with Claude outside of a project, you'll see a ghost icon in the upper right corner of your screen:
 
@@ -312,7 +314,7 @@ Each project has its own separate memory space and dedicated project summary, so
 
 ### Enable Claude’s memory
 
-**Note:** Members of Enterprise plans can only enable this feature individually when it’s enabled by an Owner for their organization. See **[Controls for Enterprise plan Owners](#h_f7d6b307e2)** for more information.
+**Note:** Members of Enterprise plans can only enable this feature individually when it’s enabled by an Owner for their organization. See **[Controls for Enterprise plan Owners](#h_18b0f4a7ce)** for more information.
 
 You can toggle Claude's memory on by navigating to **Settings > Your Claude** (or **Settings > Capabilities** in the older Settings layout):
 
@@ -342,7 +344,7 @@ Claude focuses on work-related context that helps improve collaboration. You wil
 
 **Incognito chats**
 
-Incognito chats are available to all Claude users (free, Pro, Max, Team, and Enterprise plans).
+Incognito chats are available to all Claude users (Free, Pro, Max, Ultra, Team, and Enterprise plans).
 
 When starting a chat with Claude outside of a project, you will see a ghost icon in the upper right corner of your screen; clicking this enables incognito chats. When this mode is switched on, Claude won’t remember your chats, so they won’t be saved to Claude’s memory or your chat history. Close your current incognito chat when you’re ready for Claude to start remembering your conversations again.
 

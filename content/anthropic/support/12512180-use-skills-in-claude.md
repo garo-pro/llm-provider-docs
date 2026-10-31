@@ -2,7 +2,7 @@
 
 Skills extend Claude's capabilities by giving it access to specialized knowledge and workflows. This guide shows you how to enable, discover, and use skills in Claude.
 
-Skills are available for users on Free, Pro, Max, Team, and Enterprise plans. This feature requires **[code execution to be enabled](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude#h_1c99382190)**. Skills are also available in Claude Code, and in beta for all API users using the code execution tool.
+Skills are available for users on Free, Pro, Max, Ultra, Team, and Enterprise plans. This feature requires **[code execution to be enabled](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude#h_1c99382190)**. Skills are also available in Claude Code, and in beta for all API users using the code execution tool.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ Skills are available for users on Free, Pro, Max, Team, and Enterprise plans. Th
 
 **For Team plans:** This feature is enabled by default at the organization level. Once enabled, individual members can toggle on example skills and upload their own in **[Customize > Skills](https://claude.ai/customize/skills)**.
 
-**For Max, Pro, and Free plans:** You can enable example skills and upload your own in **[Customize > Skills](https://claude.ai/customize/skills)**.
+**For Free, Pro, Max, and Ultra plans:** You can enable example skills and upload your own in **[Customize > Skills](https://claude.ai/customize/skills)**.
 
 ---
 
@@ -18,7 +18,7 @@ Skills are available for users on Free, Pro, Max, Team, and Enterprise plans. Th
 
 1. For Team / Enterprise plans: Navigate to **[Organization settings > Plugins & skills](https://claude.ai/admin-settings/skills)**, click the “Policy” tab, and ensure that both **Cloud code execution and file creation** and **Skills** are enabled.
 
-2. For individual Free, Pro, and Max plans: Navigate to **Settings > Capabilities** and ensure that **Code execution and file creation** (called **Create and edit files** in the updated Settings layout) is enabled.
+2. For individual Free, Pro, Max, and Ultra plans: Navigate to **Settings > Capabilities** and ensure that **Code execution and file creation** (called **Create and edit files** in the updated Settings layout) is enabled.
 
 3. Go to **[Customize > Skills](https://claude.ai/customize/skills)**.
 
@@ -232,7 +232,7 @@ When installing a skill from a less-trusted source—including one shared by a c
 
 ### Skills section not visible
 
-Ensure code execution is enabled in **[Settings > Capabilities](https://claude.ai/settings/capabilities)** (Free, Pro, Max) or **[Organization settings > Plugins & skills](https://claude.ai/admin-settings/skills)** in the “Policy” tab (Team, Enterprise). Then navigate to **[Customize > Skills](https://claude.ai/customize/skills)** to access your skills. Skills require the code execution environment to function.
+Ensure code execution is enabled in **[Settings > Capabilities](https://claude.ai/settings/capabilities)** (Free, Pro, Max, Ultra) or **[Organization settings > Plugins & skills](https://claude.ai/admin-settings/skills)** in the “Policy” tab (Team, Enterprise). Then navigate to **[Customize > Skills](https://claude.ai/customize/skills)** to access your skills. Skills require the code execution environment to function.
 
 ### Claude isn’t using a skill
 
@@ -250,7 +250,7 @@ On Team and Enterprise plans, an organization owner can turn off skill creation 
 
 ### Skills greyed out
 
-If skills appear greyed out, code execution may be disabled at the organization level (for Team and Enterprise plans) or individually. Check with your organization's Owner (Team, Enterprise) or make sure to enable code execution in **[Settings > Capabilities](https://claude.ai/settings/capabilities)** (Free, Pro, Max).
+If skills appear greyed out, code execution may be disabled at the organization level (for Team and Enterprise plans) or individually. Check with your organization's Owner (Team, Enterprise) or make sure to enable code execution in **[Settings > Capabilities](https://claude.ai/settings/capabilities)** (Free, Pro, Max, Ultra).
 
 ### Upload errors
 

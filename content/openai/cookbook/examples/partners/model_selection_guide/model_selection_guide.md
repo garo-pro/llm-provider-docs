@@ -77,7 +77,7 @@ In this cookbook we only experimented with the GPT-4.1 series models, o3, and o4
 
 ## 3A. Use Case: Long-Context RAG for Legal Q&A
 
-![Long-Context RAG for Legal Q&A](https://developers.openai.com/cookbook/assets/images/3a_rag_task_card.png)
+![Long-Context RAG for Legal Q&A](https://developers.openai.com/cookbook/assets/images/3A_rag_task_card.png)
 ## 🗂️ TL;DR Matrix
 
 This table summarizes the core technology choices and their rationale for **this specific Long-Context Agentic RAG implementation**.
@@ -125,7 +125,7 @@ Before diving into the implementation, let's understand the overall approach:
 
 This hierarchical navigation approach mimics how a human might skim a document, focus on relevant chapters, then specific sections, and finally read only the most relevant paragraphs.
 
-![Hierarchical Router](https://developers.openai.com/cookbook/assets/images/3a_rag_hierarchical_router.png)
+![Hierarchical Router](https://developers.openai.com/cookbook/assets/images/3A_rag_hierarchical_router.png)
 
 
 ## Agentic RAG System: Model Usage
@@ -1519,7 +1519,7 @@ There are a few modifications we can make to the approach taken:
 ================================================================================
 
 ## 3B. Use Case: AI Co-Scientist for Pharma R&D
-![AI Co-Scientist for Pharma R&D](https://developers.openai.com/cookbook/assets/images/3b_reasoning_task_card.png)
+![AI Co-Scientist for Pharma R&D](https://developers.openai.com/cookbook/assets/images/3B_reasoning_task_card.png)
 
 This section details how to build an AI system that functions as a "co-scientist" to accelerate experimental design in pharmaceutical R&D, focusing on optimizing a drug synthesis process under specific constraints.
 
@@ -1559,7 +1559,7 @@ This table summarizes the core technology choices and their rationale for this s
 
 The system employs a multi-agent architecture that emulates a high-performing scientific team. Different AI components, acting in specialized roles (such as ideation, critique, and learning from outcomes), collaborate using various models and tools to execute the workflow.
 
-![AI Co-Scientist Architecture](https://developers.openai.com/cookbook/assets/images/3b_coscientist_architecture.png)
+![AI Co-Scientist Architecture](https://developers.openai.com/cookbook/assets/images/3B_coscientist_architecture.png)
 
 ### 2.1. **Scientist Input & Constraints:** 
 The process starts with the scientist defining the goal, target compound, and constraints.
@@ -2117,7 +2117,7 @@ Here are select resources that complement the design and implementation of the A
 
 ## 3C. Use Case: Insurance Claim Processing
 
-![](https://developers.openai.com/cookbook/assets/images/3c_insurance_task_card.png)
+![](https://developers.openai.com/cookbook/assets/images/3C_insurance_task_card.png)
 
 Many businesses are faced with the task of digitizing hand-filled forms. In this section, we will demonstrate how OpenAI can be used to digitize and validate a hand-filled insurance form. While this is a common problem for insurance, the same techniques can be applied to a variety of other industries and forms, for example tax forms, invoices, and more.
 
@@ -2147,7 +2147,7 @@ This table summarizes the core technology choices and their rationale for this s
 
 The high level basic architecture of the solution is shown below.
 
-![](https://developers.openai.com/cookbook/assets/images/3c_insurance_architecture.png)
+![](https://developers.openai.com/cookbook/assets/images/3C_insurance_architecture.png)
 
 This task is complex and requires a wide variety of model capabilities, including vision, function calling, reasoning, and structured output. While `o3` is capable of doing all of these at once, we found during experimentation that `o4-mini` alone was not sufficient to achieve the necessary performance. Due to the higher relative costs of `o3`, we instead opted for a two-stage approach.
 
@@ -2157,7 +2157,7 @@ This task is complex and requires a wide variety of model capabilities, includin
 
 To demonstrate concretely how this works, let's look at a sample image of an insurance form.
 
-![](https://developers.openai.com/cookbook/assets/images/3c_insurance_form.png)
+![](https://developers.openai.com/cookbook/assets/images/3C_insurance_form.png)
 
 While the form itself is fairly straightforward, there is missing data and ambiguous information that will be difficult for a traditional OCR system to fill out correctly. First, notice that the zip code and county have been omitted. Second, the email address of the user is ambiguous \-- it could be `jsmith1@gmail.com` or `jsmithl@gmail.com`. In the following sections, we will walk through how a well-designed solution can handle these ambiguities and return the correct form results.
 
@@ -2710,7 +2710,7 @@ Transitioning a prototype to production requires careful planning and execution.
 
 ## Adaptation Decision Tree
 
-![Model Selection Decision Tree](https://developers.openai.com/cookbook/assets/images/3d_model_selection_flowchart.png)
+![Model Selection Decision Tree](https://developers.openai.com/cookbook/assets/images/3D_model_selection_flowchart.png)
 
 ## Communicating Model Selection to Non-Technical Stakeholders
 
