@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-31T06:29:31.350197Z",
+    "fetch_date": "2026-10-31T15:59:27.159198Z",
     "section": "all"
   },
   "items": [
@@ -7611,8 +7611,8 @@
       "url": "https://modelcontextprotocol.io/community/interest-groups/security",
       "status": "success",
       "path": "anthropic/mcp/community/interest-groups/security.md",
-      "sha256": "8a7ab6dd81051f82ee0f2d790c9192c7e50899e86aa1c8dc8e5413f7e1f8ebd9",
-      "size": 7425
+      "sha256": "98eab19737b294aac650f3cc1cad97b73da0a4692c0518b52f073936991602ab",
+      "size": 8131
     },
     {
       "url": "https://modelcontextprotocol.io/community/interest-groups/tool-annotations",
@@ -7632,8 +7632,8 @@
       "url": "https://modelcontextprotocol.io/community/security",
       "status": "success",
       "path": "anthropic/mcp/community/security.md",
-      "sha256": "f68c49ce673f89001b5963526e7dcc80bf597f08bc079238b333ed8fe809810f",
-      "size": 3822
+      "sha256": "4e254dd1783d863a7772a441eac54aed9be82df26afe85545ef38d8bfe05a306",
+      "size": 3847
     },
     {
       "url": "https://modelcontextprotocol.io/community/sep-guidelines",
@@ -8199,15 +8199,15 @@
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-client",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/develop/build-client.md",
-      "sha256": "e210bae2fa06e3559c16f099babb3a35adf5171686b8b4a58ff47b7d4b7c0b83",
-      "size": 77182
+      "sha256": "d3dc26d37e2b36afe162bf855a4c305dc3c26ecb9e84561c460954627261ae5e",
+      "size": 93811
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-server",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/develop/build-server.md",
-      "sha256": "e7c6dbbd7138b52eb8ba65153151b490fa1a88ce9d24245bdbc99ff5cf8a0978",
-      "size": 92400
+      "sha256": "b7623a05ceed43782ef6d079209728df6559afd3510fe6dbf5946a129f0b4226",
+      "size": 93260
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-with-agent-skills",
@@ -8255,8 +8255,8 @@
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/learn/client-concepts",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/learn/client-concepts.md",
-      "sha256": "4336a93b9770b0d1a2b9c8e72271ee98be8764583c037edbab7a15c57fb5bb46",
-      "size": 17247
+      "sha256": "e6c2a5e84393b1fcdbe599890f129a5188d6e9d7798093b71a6b651c91d3ac88",
+      "size": 17246
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts",
@@ -8276,15 +8276,15 @@
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/sdk",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/sdk.md",
-      "sha256": "a68f6cb622bd01b29c59279b6922b1188d3e5caeb8098b67280610f3a9cee17e",
-      "size": 2990
+      "sha256": "4ef8c429437efcff2e948e868c53f2a0b129eb62850fda2389ef206e86aaaea9",
+      "size": 3077
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/debugging",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/debugging.md",
-      "sha256": "61faea6e4cdebada7bc488493296f268ae2070690e6d1fb5b16f6859d4ec0562",
-      "size": 11451
+      "sha256": "995394ebc98fbd6746783c4e4c18157b95b82f92b3ca68765500493990ce94ac",
+      "size": 11561
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector",
@@ -8304,43 +8304,43 @@
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/cli",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/cli.md",
-      "sha256": "d63c55d87d46383de0dd78a55bfbed96a80157214296771d1b8bf67f46275081",
-      "size": 13950
+      "sha256": "f12cfeb42ca146991b161d0cc0cb7e42cfc7df5c7421c8e3b4dd93fbbda38d42",
+      "size": 15467
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/configuration",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/configuration.md",
-      "sha256": "bb6b3dbb8b4b789057f720ef144673db81ee590ab255ce373ab123041b8cfa63",
-      "size": 21152
+      "sha256": "63525c4b60b220ec364333618a343da8a18f67602ce677a5a9ad81c56e39dc9f",
+      "size": 26572
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/mcpdo",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/mcpdo.md",
-      "sha256": "c363c3b2847c2d8910583d72e551935eb5a97857bbcf028c982e148450b62021",
-      "size": 12282
+      "sha256": "c28195e4aabf3836ec11ce2ec5c067f62bd4617bbca5a8db8a0608e875b8a34b",
+      "size": 13491
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/protocol-eras",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/protocol-eras.md",
-      "sha256": "0f5bd75cb404f4161fca3f111d189dd56df49576a81baaf167b5fb1ee3e797e0",
-      "size": 17465
+      "sha256": "de255240929d456a02e0e133afd06b99b07a4a55b661bfe4665a751164ec0aa9",
+      "size": 17596
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/recipes",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/recipes.md",
-      "sha256": "cb79d4fdd9d190f82e6bdb3f1415d75fad5ebe73fdae5d213e29ae1e8396fb83",
-      "size": 17695
+      "sha256": "799e664a511b6725dc087dbb904832ff2e91ddadbaae750ce745b4fe98b69d91",
+      "size": 18041
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/security",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/security.md",
-      "sha256": "9d2bc018a335e9633b4495b11e06298c9d8fe1dcab97a60d987c0908788c678a",
-      "size": 16791
+      "sha256": "231c9f836e088e103b879dcc14ab9a98b970b90c7ebeab4a97d44d9e7351038d",
+      "size": 17234
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/tui",
@@ -8353,8 +8353,8 @@
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector/web",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tools/inspector/web.md",
-      "sha256": "4021fef8b137e22cb70227a1d2861bef20f53bd12fe08292e4b322842f02de55",
-      "size": 15160
+      "sha256": "c696df2b8cfeb7496553439898de5a65b16916118d5db90db3ae0903b7b97a7c",
+      "size": 15845
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/authorization",
@@ -8381,15 +8381,15 @@
       "url": "https://modelcontextprotocol.io/docs/draft/develop/build-client",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/develop/build-client.md",
-      "sha256": "e40d9e431e08bad94054c67fcd4498e124d6783968a767643af9a871fe3cfbdd",
-      "size": 77167
+      "sha256": "80b7632b40bdac4d771092a11622e97caeac0e2a7aa9db9a7b5b242d30b09d6f",
+      "size": 93791
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/develop/build-server",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/develop/build-server.md",
-      "sha256": "533f3d787519297b3dd70eff3d5b8b340597727bc2342af03ae493ed084ce8f1",
-      "size": 92345
+      "sha256": "38c3e9439bc84ba609732aae58aa5a3da0aae3e9805ce04269d2aaeca86155a1",
+      "size": 93195
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/develop/build-with-agent-skills",
@@ -8437,8 +8437,8 @@
       "url": "https://modelcontextprotocol.io/docs/draft/learn/client-concepts",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/learn/client-concepts.md",
-      "sha256": "5ee78743749409b855b700d00bdd941dc5275cb74c6218eceac7987ed3c9027f",
-      "size": 17217
+      "sha256": "44b23a8b96e8369b2295939ac2d4702831bf28cc9f80ce12f18b1d66759af43b",
+      "size": 17216
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/learn/server-concepts",
@@ -8458,15 +8458,15 @@
       "url": "https://modelcontextprotocol.io/docs/draft/sdk",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/sdk.md",
-      "sha256": "e2b20207429995ecb86263d29ed0827298ad164f3ae1f3aa4811dcf852608eaf",
-      "size": 2980
+      "sha256": "13d33b0d7529dc6b11d2f88841107ad373c6bf7386fbc06b653d9e324e6a1f40",
+      "size": 3067
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/debugging",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/debugging.md",
-      "sha256": "2f489eca9e10496eefe180ad11c3aee244aa8ff68eba51776ca6093217833908",
-      "size": 11356
+      "sha256": "6c8e550b4953602ee02feff813046602bc9c4299fbbe08c51852e7ecfde300eb",
+      "size": 11466
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector",
@@ -8486,43 +8486,43 @@
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/cli",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/cli.md",
-      "sha256": "fdcf5950937a92d5dd5547974936a2e56ee1ca6cd32b2b3e101eb7f92a4c1ed6",
-      "size": 13925
+      "sha256": "aa264824344e5f851edf241edde2587462b66f268c09cbe9f19c342e580c6707",
+      "size": 15437
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/configuration",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/configuration.md",
-      "sha256": "a3787a8c664e1fe0e7bab8de1804c42b5d0d383977c9de39dad5ad4125ca7d8e",
-      "size": 21097
+      "sha256": "fceab40c010da59a3194d7d7a8b45d2035818a9803b7c16665e4d6b8b9280b81",
+      "size": 26507
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/mcpdo",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/mcpdo.md",
-      "sha256": "db93ec4d0ff887d536ec449fc26504a31dff6b42c1f3727b8c4132f2bb0f389e",
-      "size": 12252
+      "sha256": "cda5e4d69ab1913e6a0226c0b095cf67e8d6bd359addff4dda3acabbbd228129",
+      "size": 13456
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/protocol-eras",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/protocol-eras.md",
-      "sha256": "0f5bd75cb404f4161fca3f111d189dd56df49576a81baaf167b5fb1ee3e797e0",
-      "size": 17465
+      "sha256": "527a2b418ef1ca1efe5145476b9cb05daaa8f5efaa226c34d70d91d5e6bb52fa",
+      "size": 17576
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/recipes",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/recipes.md",
-      "sha256": "d3810eb0e087f5cba683d09d21f4932eef558ca91347454173f7329d32f40616",
-      "size": 17630
+      "sha256": "041a2f26a31d2f7bdb9053ac83953aa675ef319351c37aed785770e7d35163fd",
+      "size": 17976
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/security",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/security.md",
-      "sha256": "41b4c38e76f84e04ed8820b1f51636d833fdd86671be99b81bb87ef93ed14156",
-      "size": 16761
+      "sha256": "c1eab9d6bd265f33d01e560b6fe94937718e22c830c48650881da29a886573cb",
+      "size": 17199
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/tui",
@@ -8535,15 +8535,15 @@
       "url": "https://modelcontextprotocol.io/docs/draft/tools/inspector/web",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tools/inspector/web.md",
-      "sha256": "b4ffa9e774032f500c063e313b0a54422a50321d3b27e2caa0ec36777d3d67a6",
-      "size": 15080
+      "sha256": "7e1562e732b4e913c7df1853477a1c0f20352dd998be216ad7cf391519d54335",
+      "size": 15765
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tutorials/security/authorization",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tutorials/security/authorization.md",
-      "sha256": "27de2749c25ac4e662a86db8bbd614152e4fd5e7f2bf4496a7e0e29c4bbdd90e",
-      "size": 47343
+      "sha256": "460966ea8e1298018f453a996324fb8c9f74b63ad11f6b82baf7af635a320f36",
+      "size": 49077
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tutorials/security/local-server-security",
@@ -8591,7 +8591,7 @@
       "url": "https://modelcontextprotocol.io/extensions/auth/oauth-client-credentials",
       "status": "success",
       "path": "anthropic/mcp/extensions/auth/oauth-client-credentials.md",
-      "sha256": "0cdc1b6bfecd444b4a037b3dad29a9ec93d018923ef01c6d3d4cc0021edc7ba6",
+      "sha256": "0bc2851331791a086446f013dc6df6b22c1305fa053d5e9aa1c8ccb699ddac49",
       "size": 12983
     },
     {
@@ -13484,8 +13484,8 @@
       "url": "https://www.anthropic.com/beneficial-deployments",
       "status": "success",
       "path": "anthropic/blog/policy/beneficial-deployments.md",
-      "sha256": "67649733431d42c02c9fd8f63a8e8e55cc6e078c3840073ea814f26fde945dd7",
-      "size": 14723
+      "sha256": "8e18e87fc39eda7848e86f64f9291dc411a92eec4ed4d857ea9f3dd95eafe198",
+      "size": 14920
     },
     {
       "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
@@ -21751,8 +21751,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/import",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/import.md",
-      "sha256": "9cf573892771f485efc582297c0db966e288771c73dfc84d1f9ada57a53371b2",
-      "size": 18930
+      "sha256": "7427d69dd01945ee2526863a3e8291a0e580d37f7842f250315a689705631fa4",
+      "size": 19720
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/in-app-configuration",
@@ -31212,6 +31212,13 @@
       "size": 29772
     },
     {
+      "url": "https://alignment.openai.com/how-we-detect-frontier-model-misalignment",
+      "status": "success",
+      "path": "openai/alignment/how-we-detect-frontier-model-misalignment.md",
+      "sha256": "39d1e52f6d02325e56ce60000a632891a6beb3c542a55712052b9193359b5088",
+      "size": 29835
+    },
+    {
       "url": "https://alignment.openai.com/validating-public-evals",
       "status": "success",
       "path": "openai/alignment/validating-public-evals.md",
@@ -31721,6 +31728,13 @@
       "path": "openai/system-cards/4o-native-image-generation.md",
       "sha256": "0764ad36f4e34a37e5161da6764a0a1394951080d03e908a29a7660e91a92933",
       "size": 26912
+    },
+    {
+      "url": "https://deploymentsafety.openai.com/gpt-rosalind-6",
+      "status": "success",
+      "path": "openai/system-cards/gpt-rosalind-6.md",
+      "sha256": "852d14be052a47c3ad3848dbd84bb2d57343405e0ba292dc576271b11b5848d6",
+      "size": 24276
     },
     {
       "url": "https://deploymentsafety.openai.com/o3",
@@ -34827,22 +34841,22 @@
       "url": "https://developers.openai.com/api/docs/libraries",
       "status": "success",
       "path": "openai/api/docs/libraries.md",
-      "sha256": "08d5cca350f013a17d26c7f8c528c99a1dfc2b7302ff0d9d4f6265c98d0668a2",
+      "sha256": "eb1b489c22a4d5f52b1eb634e2cedf9bdc26b850b16900318f71c8075bf78cd0",
       "size": 12240
     },
     {
       "url": "https://developers.openai.com/api/docs/quickstart",
       "status": "success",
       "path": "openai/api/docs/quickstart.md",
-      "sha256": "13f52fc3a1e93e8d037bc1ee7729e077ea0e95c06c3ce5ab80531a878f50cfa3",
+      "sha256": "bd6defcc90771d36452895631778e6b3849e75cc93661521309237e2bfa45fcc",
       "size": 54832
     },
     {
       "url": "https://developers.openai.com/api/docs/pricing",
       "status": "success",
       "path": "openai/api/docs/pricing.md",
-      "sha256": "3539253cd5c2a0a55e11d5536ad90243671f468cf33621a082baa2964f214831",
-      "size": 23128
+      "sha256": "56e3da9bb29246cad60003e01f3fdc6b536149a09f5effe5e79af020a4922cfc",
+      "size": 23508
     },
     {
       "url": "https://developers.openai.com/api/docs/models",
@@ -50756,20 +50770,6 @@
       "size": 9278
     },
     {
-      "url": "https://alignment.openai.com/how-we-detect-frontier-model-misalignment",
-      "status": "success",
-      "path": "openai/alignment/how-we-detect-frontier-model-misalignment.md",
-      "sha256": "39d1e52f6d02325e56ce60000a632891a6beb3c542a55712052b9193359b5088",
-      "size": 29835
-    },
-    {
-      "url": "https://deploymentsafety.openai.com/gpt-rosalind-6",
-      "status": "success",
-      "path": "openai/system-cards/gpt-rosalind-6.md",
-      "sha256": "852d14be052a47c3ad3848dbd84bb2d57343405e0ba292dc576271b11b5848d6",
-      "size": 24276
-    },
-    {
       "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/.github/PULL_REQUEST_TEMPLATE.md",
       "status": "success",
       "path": "zai/github/GLM-skills/.github/PULL_REQUEST_TEMPLATE.md",
@@ -50960,26 +50960,6 @@
     {
       "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
       "error": "extraction produced no usable content"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan",
-      "error": "moved to https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan.md"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans",
-      "error": "moved to https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans.md"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/16607638-understanding-your-pro-or-max-plan-invoices",
-      "error": "moved to https://support.claude.com/en/articles/16607638-understanding-your-pro-max-or-ultra-plan-invoices.md"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/8325617-cancel-your-pro-or-max-subscription",
-      "error": "moved to https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription.md"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/9876003-i-have-a-paid-claude-subscription-pro-max-team-or-enterprise-plans-why-is-claude-api-usage-billed-separately-from-my-paid-claude-plan",
-      "error": "moved to https://support.claude.com/en/articles/9876003-why-is-claude-api-usage-billed-separately-from-my-paid-claude-plan.md"
     },
     {
       "url": "https://openai.com/hugging-face-incident-and-misalignment",
@@ -51482,6 +51462,10 @@
     {
       "url": "https://www.anthropic.com/research/AI-fluency-index",
       "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan",
+      "reason": "moved -> https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan"
     },
     {
       "url": "https://platform.claude.com/docs/en/api/admin",
@@ -52468,6 +52452,10 @@
       "reason": "moved -> https://academy.claude.com/tutorials/install-financial-services-plugins-for-cowork"
     },
     {
+      "url": "https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans",
+      "reason": "moved -> https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans"
+    },
+    {
       "url": "https://support.claude.com/en/articles/14503590-get-started-with-claude-for-government",
       "reason": "moved -> https://claude.com/docs/government/overview"
     },
@@ -52482,6 +52470,10 @@
     {
       "url": "https://support.claude.com/en/articles/9767949-api-key-best-practices-keeping-your-keys-safe-and-secure",
       "reason": "moved -> https://support.claude.com/en/articles/9767949-api-key-best-practices-keep-your-keys-safe-and-secure"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/16607638-understanding-your-pro-or-max-plan-invoices",
+      "reason": "moved -> https://support.claude.com/en/articles/16607638-understanding-your-pro-max-or-ultra-plan-invoices"
     },
     {
       "url": "https://support.claude.com/en/articles/14855664-use-claude-for-outlook",
@@ -52608,6 +52600,10 @@
       "reason": "HTTP 404"
     },
     {
+      "url": "https://support.claude.com/en/articles/8325617-cancel-your-pro-or-max-subscription",
+      "reason": "moved -> https://support.claude.com/en/articles/8325617-cancel-your-pro-max-or-ultra-subscription"
+    },
+    {
       "url": "https://support.claude.com/en/articles/9927533-disable-public-projects-for-your-organization",
       "reason": "moved -> https://support.claude.com/en/articles/9927533-control-project-sharing-for-your-organization"
     },
@@ -52626,6 +52622,10 @@
     {
       "url": "https://support.claude.com/en/articles/13945233-use-claude-for-microsoft-365-with-third-party-platforms",
       "reason": "moved -> https://claude.com/docs/office-agents/third-party-platforms"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/9876003-i-have-a-paid-claude-subscription-pro-max-team-or-enterprise-plans-why-is-claude-api-usage-billed-separately-from-my-paid-claude-plan",
+      "reason": "moved -> https://support.claude.com/en/articles/9876003-why-is-claude-api-usage-billed-separately-from-my-paid-claude-plan"
     },
     {
       "url": "https://claude.com/docs/connectors/overview",
