@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-10-31T15:59:27.159198Z",
+    "fetch_date": "2026-10-31T19:41:49.701522Z",
     "section": "all"
   },
   "items": [
@@ -13484,8 +13484,8 @@
       "url": "https://www.anthropic.com/beneficial-deployments",
       "status": "success",
       "path": "anthropic/blog/policy/beneficial-deployments.md",
-      "sha256": "8e18e87fc39eda7848e86f64f9291dc411a92eec4ed4d857ea9f3dd95eafe198",
-      "size": 14920
+      "sha256": "67649733431d42c02c9fd8f63a8e8e55cc6e078c3840073ea814f26fde945dd7",
+      "size": 14723
     },
     {
       "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
@@ -18281,6 +18281,13 @@
       "path": "anthropic/support/11140763-claude-4-invite-sweepstakes-official-rules.md",
       "sha256": "bc492d17c5162e6c5b0435fa2e84aae6177fab4f590d92e8df3edc8a56e8f271",
       "size": 3787
+    },
+    {
+      "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan",
+      "status": "success",
+      "path": "anthropic/support/11145838-use-claude-code-with-your-pro-max-or-ultra-plan.md",
+      "sha256": "2129fc031693869c846d10f806d85e07f5910b06bd0e917147f7816ed54e773c",
+      "size": 9227
     },
     {
       "url": "https://support.claude.com/en/articles/11174108-about-the-development-partner-program",
@@ -35009,8 +35016,8 @@
       "url": "https://developers.openai.com/api/reference/resources/images",
       "status": "success",
       "path": "openai/api/reference/resources/images.md",
-      "sha256": "9cd0a0997ff36e0531ca7642a51958f703678dbbc400e1a2ab8bb82adafb7e69",
-      "size": 55740
+      "sha256": "3ff969e5a0c8462a4a6db8cc39bc7c20bf528d57625ee2c69c4e6af0493a19ff",
+      "size": 55732
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/fine_tuning",
@@ -38215,8 +38222,8 @@
       "url": "https://developers.openai.com/api/reference/resources/images/methods/edit",
       "status": "success",
       "path": "openai/api/reference/resources/images/methods/edit.md",
-      "sha256": "78305103e90d399b0257dbf6870d6f2f8cfd3019cfe63104054da7d4f149b855",
-      "size": 14800
+      "sha256": "a8b73b3827bc4096a36146ca045e9da679e614e8061a37c5e626a496b08d8a20",
+      "size": 14792
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/images/methods/generate",
@@ -51386,11 +51393,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
@@ -51462,10 +51469,6 @@
     {
       "url": "https://www.anthropic.com/research/AI-fluency-index",
       "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan",
-      "reason": "moved -> https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan"
     },
     {
       "url": "https://platform.claude.com/docs/en/api/admin",
@@ -52426,6 +52429,10 @@
     {
       "url": "https://support.claude.com/en/articles/9876003-i-have-a-paid-claude-subscription-pro-max-team-or-enterprise-plans-why-do-i-have-to-pay-separately-to-use-the-claude-api-and-console",
       "reason": "moved -> https://support.claude.com/en/articles/9876003-why-is-claude-api-usage-billed-separately-from-my-paid-claude-plan"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan",
+      "reason": "moved -> https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan"
     },
     {
       "url": "https://support.claude.com/en/articles/14604842-real-time-cyber-safeguards-on-claude-opus-and-sonnet",
@@ -53601,8 +53608,8 @@
     }
   ],
   "summary": {
-    "total": 7939,
-    "downloaded": 7278,
+    "total": 7940,
+    "downloaded": 7279,
     "skipped": 0,
     "failed": 123,
     "dead": 538,
