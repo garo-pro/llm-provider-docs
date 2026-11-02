@@ -31,7 +31,7 @@ This file will contain the web component that will be rendered in the ChatGPT in
 Add the following content:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -333,6 +333,7 @@ Add the following content:
 </html>
 ```
 
+
 ### Use MCP Apps in your web component
 
 For new UI, use the MCP Apps host bridge: JSON-RPC over `postMessage`
@@ -363,13 +364,17 @@ Register a resource for your component bundle and the tools the model can call (
 
 Create a file named `server.js` and paste the following example that uses the Node SDK:
 
-```js
-
-
-
-
-
-
+```javascript
+import { createServer } from "node:http";
+import { readFileSync } from "node:fs";
+import {
+  registerAppResource,
+  registerAppTool,
+  RESOURCE_MIME_TYPE,
+} from "@modelcontextprotocol/ext-apps/server";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
+import { z } from "zod";
 
 const todoHtml = readFileSync("public/todo-widget.html", "utf8");
 
@@ -537,6 +542,7 @@ httpServer.listen(port, () => {
   );
 });
 ```
+
 
 This snippet also responds to `GET /` for health checks, handles CORS preflight for `/mcp`, and returns `404 Not Found` for OAuth discovery routes you are not using yet. That keeps ChatGPT from surfacing 502 errors while you iterate without authentication.
 

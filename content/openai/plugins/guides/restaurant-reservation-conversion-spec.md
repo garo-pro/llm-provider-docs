@@ -41,13 +41,13 @@ For the current reservation integration, only the following are required:
 
 `restaurant_reservation` must set:
 
-```ts
+```ts snippet=configuration reason="Tool metadata configuration fields"
 _meta.ui.resourceUri = "ui://widget/restaurant-reservation.html";
 ```
 
 Any tool called directly from a widget must set:
 
-```ts
+```ts snippet=configuration reason="Tool metadata configuration fields"
 _meta["openai/widgetAccessible"] = true;
 ```
 

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-01T17:01:27.098617Z",
+    "fetch_date": "2026-11-02T07:02:22.259166Z",
     "section": "all"
   },
   "items": [
@@ -6106,8 +6106,8 @@
       "url": "https://code.claude.com/docs/en/desktop",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop.md",
-      "sha256": "0b9c66683c20346bccce5edf45162f1945d19b7db29ee115626819e17dfdfe67",
-      "size": 208824
+      "sha256": "cac6a537e446076c84954dd7264ca62a5ffff40928db1cfa608adaf8c6e564d4",
+      "size": 211526
     },
     {
       "url": "https://code.claude.com/docs/en/desktop-linux",
@@ -6617,8 +6617,8 @@
       "url": "https://code.claude.com/docs/en/setup",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/setup.md",
-      "sha256": "34cdae9fb70e93f7fd144efad9e4ec503e6ea0b80f707ea27a9f88217e832c40",
-      "size": 34573
+      "sha256": "652872f26cfd711c4f92351b1ef8338d3f0b6140024c246c42edcbcbdfea172d",
+      "size": 35611
     },
     {
       "url": "https://code.claude.com/docs/en/authentication",
@@ -21716,8 +21716,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/data-storage",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/data-storage.md",
-      "sha256": "82af550424a2b20f61a6c1cb377906db3b3cc861fd029b67def1ff0646501dfd",
-      "size": 30299
+      "sha256": "11a30fbf6d9a2ad1290819b1d07ae1cf5de247d4f52dedafc929c8a5f89141fa",
+      "size": 30334
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/entra-broker",
@@ -21842,8 +21842,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/ssh-remote-sessions.md",
-      "sha256": "880c5bc8aa369e93e25a585d3b9ad6f61391af7a3fa69b3bdaf6c8a12b5693ad",
-      "size": 82787
+      "sha256": "c49a338d0b80453db0e38700ed307fcfbb52fdd8d0db18c04bb315a3a8b464c7",
+      "size": 112595
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/status-line",
@@ -21954,8 +21954,8 @@
       "url": "https://code.claude.com/docs/en/desktop-changelog",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop-changelog.md",
-      "sha256": "0b9c66683c20346bccce5edf45162f1945d19b7db29ee115626819e17dfdfe67",
-      "size": 208824
+      "sha256": "cac6a537e446076c84954dd7264ca62a5ffff40928db1cfa608adaf8c6e564d4",
+      "size": 211526
     },
     {
       "url": "https://code.claude.com/docs/en/ultraplan",
@@ -30865,8 +30865,8 @@
       "url": "https://developers.openai.com/learn/docs-mcp",
       "status": "success",
       "path": "openai/learn/docs-mcp.md",
-      "sha256": "e1dfd982cc40457f4807b24101360e3b09ae47af418f82e12b6572ee3644d530",
-      "size": 4906
+      "sha256": "cfaf1a7dcdf1c9aea8a0b0a996ea5c2ac01fbfbb01270a67f66c7aa17220ec2f",
+      "size": 4918
     },
     {
       "url": "https://developers.openai.com/learn/code",
@@ -30935,8 +30935,8 @@
       "url": "https://developers.openai.com/tracks/ai-application-development",
       "status": "success",
       "path": "openai/tracks/ai-application-development.md",
-      "sha256": "77b0777bd1e23f459493d192db49ed28347a1a71a6cdfa38588a6cec7a07db18",
-      "size": 19900
+      "sha256": "60938e97e5b725fc902faa42fe45aca6a3d85db6d814b7c48117455b2cbd3e3d",
+      "size": 19924
     },
     {
       "url": "https://developers.openai.com/tracks/building-agents",
@@ -30963,8 +30963,8 @@
       "url": "https://developers.openai.com/blog/eval-skills",
       "status": "success",
       "path": "openai/blog/eval-skills.md",
-      "sha256": "6cf414bb3e2dddfd940e3ea3293ce588f777e80a7d935cf8a73d9f5cfb94d3a2",
-      "size": 19356
+      "sha256": "8f17d05d36570360bd328362bd2c38abe77321f207e9ffb47137ea81b4dc763c",
+      "size": 19548
     },
     {
       "url": "https://developers.openai.com/blog/codex-as-a-platform",
@@ -30977,8 +30977,8 @@
       "url": "https://developers.openai.com/blog/building-frontend-uis-with-codex-and-figma",
       "status": "success",
       "path": "openai/blog/building-frontend-uis-with-codex-and-figma.md",
-      "sha256": "3d7148107af0dad20c1ac5b2b6def598c74cfaf8abc9a060b97869a8e9ea3556",
-      "size": 5421
+      "sha256": "0a132d75dc752f2651f712ddae80ee1863ecf5dae9da338308a3f4f426263006",
+      "size": 5425
     },
     {
       "url": "https://developers.openai.com/blog/one-year-of-responses",
@@ -31040,8 +31040,8 @@
       "url": "https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4",
       "status": "success",
       "path": "openai/blog/designing-delightful-frontends-with-gpt-5-4.md",
-      "sha256": "b50226cdb206a2fe5810b1104f0f6fea0b709389b0adee6a366283f03f9c3dc1",
-      "size": 19080
+      "sha256": "b2b135b29235c3848121c01a4e66a129600abb88b59446f240fa1434d9c8fb49",
+      "size": 19100
     },
     {
       "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
@@ -31124,8 +31124,8 @@
       "url": "https://developers.openai.com/blog/codex-for-documentation-dagster",
       "status": "success",
       "path": "openai/blog/codex-for-documentation-dagster.md",
-      "sha256": "ef9fd862f63b2bfc1a107d925b6a889b5217e4fc402d777a0e37b809cf065709",
-      "size": 9577
+      "sha256": "a3e0954d2128f01d1571a46479447d044ac951da33073b982b1a0b42644eed0f",
+      "size": 9585
     },
     {
       "url": "https://developers.openai.com/blog/skills-shell-tips",
@@ -31138,8 +31138,8 @@
       "url": "https://developers.openai.com/blog/15-lessons-building-chatgpt-apps",
       "status": "success",
       "path": "openai/blog/15-lessons-building-chatgpt-apps.md",
-      "sha256": "594991dc38a21045d056d6ad16d1ae83807dc704aed07e35be643ca97a377c70",
-      "size": 20860
+      "sha256": "a88bb76e261827be5b56d47a08f60b5699251d6125b4f3e68a82f0d0ff33c98c",
+      "size": 20890
     },
     {
       "url": "https://developers.openai.com/blog/bringing-my-led-display-to-life",
@@ -31166,8 +31166,8 @@
       "url": "https://developers.openai.com/blog/skyscanner-codex-jetbrains-mcp",
       "status": "success",
       "path": "openai/blog/skyscanner-codex-jetbrains-mcp.md",
-      "sha256": "150bb0a47e36cd12ae0f18b6403af7ab2d7419e1e6be102cd73c4aca428c5904",
-      "size": 7059
+      "sha256": "e3697f8bfe9423a06b9c36ff0f8a87eed8b4e28e99ef9b9f99c3c45dd56446c2",
+      "size": 7060
     },
     {
       "url": "https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family",
@@ -31495,8 +31495,8 @@
       "url": "https://developers.openai.com/ads/conversion-tracking",
       "status": "success",
       "path": "openai/ads/conversion-tracking.md",
-      "sha256": "fac935b7c222fcf949d356330cefc83e157a16b5362a323cc53ceecd6c0c7ffd",
-      "size": 14312
+      "sha256": "1f1e8ddea4e027dc0026acc8cf97e49fa2dbe893cae6b1d5d7b8fa65e92f3967",
+      "size": 14314
     },
     {
       "url": "https://developers.openai.com/ads/api-quickstart",
@@ -31516,8 +31516,8 @@
       "url": "https://developers.openai.com/ads/measurement-pixel",
       "status": "success",
       "path": "openai/ads/measurement-pixel.md",
-      "sha256": "0d93be5f4f648c68dfb65fd15d7af9b3b22f99d0d1904a3aeed60c7c866a21b8",
-      "size": 18827
+      "sha256": "30b18cc694bcf1181cc76b6bf97fb92ca4fb145cf44744b801fa8945f6f1f208",
+      "size": 18909
     },
     {
       "url": "https://developers.openai.com/ads/bidding-and-budgets",
@@ -31551,8 +31551,8 @@
       "url": "https://developers.openai.com/ads/multiple-pixels",
       "status": "success",
       "path": "openai/ads/multiple-pixels.md",
-      "sha256": "c56c0361a0a36c73a0792666bd94dd6d8a8df232a0ab4c421b6047c38499e246",
-      "size": 1855
+      "sha256": "232a873ed0dafe9c5ae1fd2713e9ec8a93394266f5b1d7b53937c4df5f75e465",
+      "size": 1891
     },
     {
       "url": "https://developers.openai.com/ads/product-feeds",
@@ -31838,8 +31838,8 @@
       "url": "https://developers.openai.com/plugins/reference",
       "status": "success",
       "path": "openai/plugins/reference.md",
-      "sha256": "c4479095e718215f8d5e3518238c089f21a36fc7e1b802b73d1b2c8e8edaf3b6",
-      "size": 35883
+      "sha256": "5fdb4fcc9c41827152866392969d9d306ac1eea82f508284bd6e9fea34a6335a",
+      "size": 39243
     },
     {
       "url": "https://developers.openai.com/plugins/changelog",
@@ -31915,8 +31915,8 @@
       "url": "https://developers.openai.com/plugins/guides/restaurant-reservation-conversion-spec",
       "status": "success",
       "path": "openai/plugins/guides/restaurant-reservation-conversion-spec.md",
-      "sha256": "05847b5bbfd1a7249d9740a5520b4fc6b947e075ebdf72daaa0537606d37a371",
-      "size": 6084
+      "sha256": "87a8029bc845b9997c794d497d0a3ad37244dbd83720344ee6c74b86731b5b4e",
+      "size": 6216
     },
     {
       "url": "https://developers.openai.com/plugins/guides/security-privacy",
@@ -31929,8 +31929,8 @@
       "url": "https://developers.openai.com/plugins/guides/product-checkout-conversion-spec",
       "status": "success",
       "path": "openai/plugins/guides/product-checkout-conversion-spec.md",
-      "sha256": "7c492bf9fab66d1e82405dbff8be468183ba62a7db84d1022b330b5b675ad24f",
-      "size": 3508
+      "sha256": "a6b73e89a22be8c292a24cfb96874a61b6893bc66dbf90a7e23cf00fa0a8662e",
+      "size": 3640
     },
     {
       "url": "https://developers.openai.com/plugins/deploy/submission",
@@ -31985,8 +31985,8 @@
       "url": "https://developers.openai.com/plugins/build/app-quickstart",
       "status": "success",
       "path": "openai/plugins/build/app-quickstart.md",
-      "sha256": "35cedb792932175d568af4d57fa5b5ca5b7b5383ab6bfdd5ee3d1d60b877264e",
-      "size": 18555
+      "sha256": "168600922320af35dcf983b4b828a47891df7902b6769d6f34ac44c9c4f8e930",
+      "size": 18956
     },
     {
       "url": "https://developers.openai.com/plugins/build/skills",
@@ -32013,36 +32013,36 @@
       "url": "https://developers.openai.com/plugins/build/auth",
       "status": "success",
       "path": "openai/plugins/build/auth.md",
-      "sha256": "d6c994c0f628f73eacfbe2d7bd59e1df590f8263a36d62e3df823e76bd4fe345",
-      "size": 39970
+      "sha256": "c2e577b84eb0b1eb6ce404f4b5a2d3d0c052f2a4bac836c2feee0af86b7d47b0",
+      "size": 40182
     },
     {
       "url": "https://developers.openai.com/plugins/build/extensions",
       "status": "success",
       "path": "openai/plugins/build/extensions.md",
-      "sha256": "79befbc71f52887b0b7dd98a53cbd9e259b70919db07df894be1370b7ebfece5",
-      "size": 10166
+      "sha256": "879270070cdbd3b4d8040f30dcf8adde95bd4e590849788499c28318fa8e532e",
+      "size": 10262
     },
     {
       "url": "https://developers.openai.com/plugins/build/chatgpt-ui",
       "status": "success",
       "path": "openai/plugins/build/chatgpt-ui.md",
-      "sha256": "9403394ff61d97fd0185a24acdb7602648371c4d58f450d59af762d63bb536ab",
-      "size": 26612
+      "sha256": "4e5835aed17db410ea224bf56adadf54eced1e9724f628c41a319ef063a173dd",
+      "size": 27401
     },
     {
       "url": "https://developers.openai.com/plugins/build/mcp-server",
       "status": "success",
       "path": "openai/plugins/build/mcp-server.md",
-      "sha256": "cb8f4bc4c80bd8b9df1f06b578c3bab4ac9753131f11e91e6a53b6f199af01f3",
-      "size": 11695
+      "sha256": "7ac78ed1bcd4399a7c152f70238fc6388dfe9089e72f097cb16c4cd6997a5970",
+      "size": 12160
     },
     {
       "url": "https://developers.openai.com/plugins/build/monetization",
       "status": "success",
       "path": "openai/plugins/build/monetization.md",
-      "sha256": "ddca306881a79679ca1d8062ae443e631c8ac3ae70d84d47f2e6e86f56378ba2",
-      "size": 16843
+      "sha256": "4f53d61846803fcd9dbc89aa874279a36805aa31ccd0146f68399be904f8a9e5",
+      "size": 18176
     },
     {
       "url": "https://developers.openai.com/plugins/plan/tools",
@@ -32356,8 +32356,8 @@
       "url": "https://developers.openai.com/cookbook/articles/sign-in-with-chatgpt",
       "status": "success",
       "path": "openai/cookbook/articles/sign-in-with-chatgpt.md",
-      "sha256": "dd4cf106047a8c410a7a4b0ee736bd2f6a25c170698e8596f18a8892119b550a",
-      "size": 17534
+      "sha256": "4f05505e785ffe04ba833ec4ea11fbdac5c1c16456f4dbc5c18b1a96a9745b60",
+      "size": 18236
     },
     {
       "url": "https://developers.openai.com/cookbook/examples/whisper_processing_guide",
@@ -34806,8 +34806,8 @@
       "url": "https://developers.openai.com/api/docs/mcp",
       "status": "success",
       "path": "openai/api/docs/mcp.md",
-      "sha256": "618d326a1911188d38441f4a75008dcfdb7a0230a5e6967845e8730a910d1d1b",
-      "size": 30876
+      "sha256": "26abbf8bbc561d1ac80d290b6aa6ac3c121591587e136a3bde91a0e7bc437ca3",
+      "size": 30880
     },
     {
       "url": "https://developers.openai.com/api/docs/changelog",
@@ -34848,15 +34848,15 @@
       "url": "https://developers.openai.com/api/docs/libraries",
       "status": "success",
       "path": "openai/api/docs/libraries.md",
-      "sha256": "eb1b489c22a4d5f52b1eb634e2cedf9bdc26b850b16900318f71c8075bf78cd0",
-      "size": 12240
+      "sha256": "252fbf220cd52eac703f6a9e2a581aeff300853732b047a47d3fccd11420c075",
+      "size": 12244
     },
     {
       "url": "https://developers.openai.com/api/docs/quickstart",
       "status": "success",
       "path": "openai/api/docs/quickstart.md",
-      "sha256": "bd6defcc90771d36452895631778e6b3849e75cc93661521309237e2bfa45fcc",
-      "size": 54832
+      "sha256": "e3cf08757f562c5f6103fc7af100ad21e90859ba2379fec360c094c4d530b52f",
+      "size": 54836
     },
     {
       "url": "https://developers.openai.com/api/docs/pricing",
@@ -38425,8 +38425,8 @@
       "url": "https://developers.openai.com/api/docs/actions/sending-files",
       "status": "success",
       "path": "openai/api/docs/actions/sending-files.md",
-      "sha256": "1e3b78b894359cc5a67c7aad186cd6e3be9b148c2ffdf285cdc29c5327f369c6",
-      "size": 7049
+      "sha256": "8359c08b187207e8a8297ce81c2b92fc3a03dffaef57dc780a5268e8ae5db54f",
+      "size": 7053
     },
     {
       "url": "https://developers.openai.com/api/docs/actions/authentication",
@@ -38439,8 +38439,8 @@
       "url": "https://developers.openai.com/api/docs/actions/getting-started",
       "status": "success",
       "path": "openai/api/docs/actions/getting-started.md",
-      "sha256": "3b7ee6a8c5b1e20c1e1d4c76d606d64a3640f80ca5d9e3ac63cb8bccdd6f0343",
-      "size": 13968
+      "sha256": "edb5eabfad2bc76f5b89a30bab346c8efb9d1f87423ea2e78aff74162bc69405",
+      "size": 13972
     },
     {
       "url": "https://developers.openai.com/api/docs/actions/production",
@@ -38544,8 +38544,8 @@
       "url": "https://developers.openai.com/api/docs/guides/tools-connectors-mcp",
       "status": "success",
       "path": "openai/api/docs/guides/tools-connectors-mcp.md",
-      "sha256": "4f6b2a825aed2a18b7b224fec79a09181458529552d93eb729fec87a89ef3b84",
-      "size": 64338
+      "sha256": "1d47b077867411a71c605be0b2159efebf9b40addafc706c526f40c5b0136587",
+      "size": 64342
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/prompt-generation",
@@ -38614,8 +38614,8 @@
       "url": "https://developers.openai.com/api/docs/guides/streaming-responses",
       "status": "success",
       "path": "openai/api/docs/guides/streaming-responses.md",
-      "sha256": "7e147ae8c9e2ef2a30ecd7f3502a4c350e929487c7e51643cef2e4fb66281f7f",
-      "size": 7108
+      "sha256": "b6eb6e1bd17cc6c560b1103085439129946b9669ca6a578fae015d74fe1ab971",
+      "size": 7112
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
@@ -38635,8 +38635,8 @@
       "url": "https://developers.openai.com/api/docs/guides/ip-addresses",
       "status": "success",
       "path": "openai/api/docs/guides/ip-addresses.md",
-      "sha256": "30e7209e8e6950e4f6743d2e7498ce8d8ff7cb92b444ddf0bddbcdb61994eb75",
-      "size": 1615
+      "sha256": "5de2c9afbf6cd05021419fa9940f76e317773d963d3b971c1d17b43a4d9e5284",
+      "size": 1846
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/latency-optimization",
@@ -38684,8 +38684,8 @@
       "url": "https://developers.openai.com/api/docs/guides/rft-use-cases",
       "status": "success",
       "path": "openai/api/docs/guides/rft-use-cases.md",
-      "sha256": "d9c06800410df1aadc96ce60167cea0254bf81813d7fc78b35c9fb23da29f93c",
-      "size": 23992
+      "sha256": "87c48c5f664b9267c30926734079757926c36638a3527579d3575e0676d8fa92",
+      "size": 24004
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/tools-local-shell",
@@ -38775,8 +38775,8 @@
       "url": "https://developers.openai.com/api/docs/guides/token-counting",
       "status": "success",
       "path": "openai/api/docs/guides/token-counting.md",
-      "sha256": "a446c08afd6dca0e252e69a3ebf82c117d45b8f60b304dc09a21340e3b6a07f6",
-      "size": 22672
+      "sha256": "5143ec9e0e239b127c56d74bb11ea5f79baf5677ee6b3a86cd65a33577840281",
+      "size": 22676
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/realtime-translation",
@@ -38831,8 +38831,8 @@
       "url": "https://developers.openai.com/api/docs/guides/supervised-fine-tuning",
       "status": "success",
       "path": "openai/api/docs/guides/supervised-fine-tuning.md",
-      "sha256": "2501bb86a808fdb0ee0345de43e5ce1cac37722a7e27d8b492f0df6a581033f4",
-      "size": 29860
+      "sha256": "e7d37ac3357bba45e445175c8b43e2ae1801cf2382e49c5d4f078292494ee153",
+      "size": 29864
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/agent-evals",
@@ -38852,8 +38852,8 @@
       "url": "https://developers.openai.com/api/docs/guides/custom-mcp-server",
       "status": "success",
       "path": "openai/api/docs/guides/custom-mcp-server.md",
-      "sha256": "8406f07279034feca2a9e91d9d67693e5c55cf5cf76f8ea350748b507062641d",
-      "size": 6428
+      "sha256": "da44e948ce830bcdcdf1eb12d991a21e7bc144b3c28ae4f1e7b69079b9b94b32",
+      "size": 6436
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/async-tool-calling",
@@ -38866,8 +38866,8 @@
       "url": "https://developers.openai.com/api/docs/guides/function-calling",
       "status": "success",
       "path": "openai/api/docs/guides/function-calling.md",
-      "sha256": "d9d8c270d882291fcd6563bc3ed85c9b97d9194b67fbe7c8c6703145817db26c",
-      "size": 77521
+      "sha256": "b9c06d53266d74cefe45dccd63a4a56dadd465d84b210fc4cd447eba7e2dfae7",
+      "size": 77537
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/audio",
@@ -39055,8 +39055,8 @@
       "url": "https://developers.openai.com/api/docs/guides/webhooks",
       "status": "success",
       "path": "openai/api/docs/guides/webhooks.md",
-      "sha256": "77219d6ebd4bd4bca7f2c4c25a1c3e77cdf27f4219f80e19bae563af92d5a727",
-      "size": 16426
+      "sha256": "f87cb4c61a8524418dbe5a28c84a8fec2a29baf7da08272dd6a867c1c5936d13",
+      "size": 16434
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/conversation-state",
@@ -39125,8 +39125,8 @@
       "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
       "status": "success",
       "path": "openai/api/docs/guides/prompt-engineering.md",
-      "sha256": "3a077358aaa7a23464ccaae32d684467d2972491c5889517ae1a72753e9d1e6d",
-      "size": 37414
+      "sha256": "79c72a47f0b129a3b5408f37890e455eeb9bafaff523b4b79b8829c8d318d28d",
+      "size": 37426
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
@@ -39181,15 +39181,15 @@
       "url": "https://developers.openai.com/api/docs/guides/completions",
       "status": "success",
       "path": "openai/api/docs/guides/completions.md",
-      "sha256": "ff79f609404a78953e920cf11280aaf11fc7cf0556e2f050995d1f22a0d691a9",
-      "size": 10682
+      "sha256": "950af6a101f56da349972710a0975294690f6ae282a3c3e58a80e63a6dde417f",
+      "size": 10694
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/predicted-outputs",
       "status": "success",
       "path": "openai/api/docs/guides/predicted-outputs.md",
-      "sha256": "316a60687072d506bc2f5dc4499d6eda5950f245471ed6e3241f62150178cf16",
-      "size": 17803
+      "sha256": "d306aa45bffa3c4215075764006ab8bc3d04f635735caca3347e2a0aa9583b74",
+      "size": 17807
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/prompting",
@@ -39216,8 +39216,8 @@
       "url": "https://developers.openai.com/api/docs/guides/images-vision",
       "status": "success",
       "path": "openai/api/docs/guides/images-vision.md",
-      "sha256": "3e9e51de880a3563882ebbea37f06eaa44a315c363039330f838fdf24dab380c",
-      "size": 41313
+      "sha256": "8e59a055f7a0491ae9ff5c16f4cd0feed1d54620b0d72ed58856002a3bb85d34",
+      "size": 41325
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
@@ -39279,8 +39279,8 @@
       "url": "https://developers.openai.com/api/docs/guides/realtime-webrtc-warp",
       "status": "success",
       "path": "openai/api/docs/guides/realtime-webrtc-warp.md",
-      "sha256": "f87be6717a9affefc47d41be571b14647bcae7197df17a36ba8a01513526935b",
-      "size": 14339
+      "sha256": "efb7a84d0643b513b03c9caf27727fb0e587d6366ec5a10d5a4e3ec5e3e4b32e",
+      "size": 14725
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/text",
@@ -39349,15 +39349,15 @@
       "url": "https://developers.openai.com/api/docs/guides/voice-prompting",
       "status": "success",
       "path": "openai/api/docs/guides/voice-prompting.md",
-      "sha256": "5a7e73ca7b1f5248031b92ba68216287d451243fb36780d152e7ff4636504024",
-      "size": 86460
+      "sha256": "64d5d0aae1c8b1804ec12a154bd7a3c01eefcc41320e163dcdf9f13436fc9fcc",
+      "size": 86564
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/video-generation",
       "status": "success",
       "path": "openai/api/docs/guides/video-generation.md",
-      "sha256": "e57830994f22f3cdcabab772cc745705481acdda422b587b44b556c072cabe50",
-      "size": 29416
+      "sha256": "6d72c839af2e95324eb2992c84333298df98ad9dc85c375ad79e0374932bda75",
+      "size": 29420
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/agent-builder",
@@ -39384,8 +39384,8 @@
       "url": "https://developers.openai.com/api/docs/guides/private-safety-processing",
       "status": "success",
       "path": "openai/api/docs/guides/private-safety-processing.md",
-      "sha256": "e64058e2c3a07dce4c4513169d1f3b767dfef1c883fe92105b607e4658e4e3d2",
-      "size": 43344
+      "sha256": "65bb3d9baca138a871e09a5f5b6f21144995ff94812d544f3a8befc3c3758df8",
+      "size": 44436
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/live-partner-integrations",
@@ -39426,8 +39426,8 @@
       "url": "https://developers.openai.com/api/docs/guides/graders",
       "status": "success",
       "path": "openai/api/docs/guides/graders.md",
-      "sha256": "8bab918a0910fe0edc7d63b97e70447e8469d82700431a07912a62cd685b5501",
-      "size": 22066
+      "sha256": "751006c31509570cf77e8d936359b5d99822edd7631139901dc574f93ac7d883",
+      "size": 22082
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/tools-file-search",
@@ -39461,8 +39461,8 @@
       "url": "https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning",
       "status": "success",
       "path": "openai/api/docs/guides/reinforcement-fine-tuning.md",
-      "sha256": "45b25f9a69fbda9727a6d8661fef6b62c574efc1a49ded58beac50b5f86b3f8b",
-      "size": 59343
+      "sha256": "2a2df6ea89ebb294cd81dd20d82a239896dd57fc4d08b846a72a5d75acc50f10",
+      "size": 59355
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/chatkit",
@@ -39482,8 +39482,8 @@
       "url": "https://developers.openai.com/api/docs/guides/voice-sip",
       "status": "success",
       "path": "openai/api/docs/guides/voice-sip.md",
-      "sha256": "acddfefafc1678dd561a1f8107d898a1a1b54118668f61bec3010945cc77fd4d",
-      "size": 31405
+      "sha256": "de0468b8920b8eb0d5f4ac65d97666f14fdc805e3bf497604d527246da83529b",
+      "size": 31409
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/tools-skills",
@@ -50143,8 +50143,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/CHANGELOG.md",
       "status": "success",
       "path": "openai/github/openai-python/CHANGELOG.md",
-      "sha256": "e878b5f7ff554fa866a48a32876cfd601c39b25b80c479e006d862afbd5af76a",
-      "size": 294728
+      "sha256": "f79ecd736e9dfa11fb4d256785926813e12e41bf7635ae7447a10971c073182c",
+      "size": 295527
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/CONTRIBUTING.md",
@@ -50164,8 +50164,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/README.md",
       "status": "success",
       "path": "openai/github/openai-python/README.md",
-      "sha256": "e22c0689d4253b02383aec329a1331e6850bd2f74e7b78500268120829743f39",
-      "size": 42529
+      "sha256": "ab56b5251f4de836518c8f175dbd6c6a4dbc7eb809b3abe96a8e019233533dea",
+      "size": 43144
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/SECURITY.md",
@@ -50325,8 +50325,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/lib/responses_websocket/README.md",
       "status": "success",
       "path": "openai/github/openai-python/src/openai/lib/responses_websocket/README.md",
-      "sha256": "e6a4fee774c57d71c7fa005ff1f46aee0c6f67c345d247665f7aa18d36683833",
-      "size": 16748
+      "sha256": "4cd82253ce33b7999a8c995116e661baaf7c392ec0874e0b020e5835f44cbd53",
+      "size": 19328
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-python/main/src/openai/resources/conversations/api.md",
@@ -50570,8 +50570,8 @@
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/responses-websocket-session.md",
       "status": "success",
       "path": "openai/github/openai-node/docs/responses-websocket-session.md",
-      "sha256": "39b8f1e41603c5bbd4136afdf66e0ba34a7743aa659290bcad4514b959713f6f",
-      "size": 13043
+      "sha256": "fc0890d9239c9c7cb45ab42ff71c1c76d521c9ab2f01ff950a4a7acfc6d7a135",
+      "size": 14616
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-node/main/docs/responses.md",

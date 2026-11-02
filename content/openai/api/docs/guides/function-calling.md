@@ -70,7 +70,7 @@ To complete our weather example:
 
 We then send all of the tool definition, the original prompt, the model's tool call, and the tool call output back to the model to finally receive a text response like:
 
-```
+```text
 The weather in Paris today is 25C.
 ```
 
@@ -2013,14 +2013,14 @@ Lark grammars can be tricky to perfect. While less complex grammars perform most
 
 Correct (single, bounded terminal):
 
-```
+```text
 start: SENTENCE
 SENTENCE: /[A-Za-z, ]*(the hero|a dragon|an old man|the princess)[A-Za-z, ]*(fought|saved|found|lost)[A-Za-z, ]*(a treasure|the kingdom|a secret|his way)[A-Za-z, ]*\./
 ```
 
 Do NOT do this (splitting across rules/terminals). This attempts to let rules partition free text between terminals. The lexer will greedily match the free-text pieces and you'll lose control:
 
-```
+```text
 start: sentence
 sentence: /[A-Za-z, ]+/ subject /[A-Za-z, ]+/ verb /[A-Za-z, ]+/ object /[A-Za-z, ]+/
 ```
@@ -2055,7 +2055,7 @@ Favor explicit character classes and bounded quantifiers (`{0,10}`, not unbounde
 
 Good rule usage example:
 
-```
+```text
 start: expr
 NUMBER: /[0-9]+/
 PLUS: "+"

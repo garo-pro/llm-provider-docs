@@ -32,13 +32,13 @@ inline for checkout instead of punching out to an external website.
 
 `checkout_session` must set:
 
-```ts
+```ts snippet=configuration reason="Tool metadata configuration fields"
 _meta.ui.resourceUri = "ui://widget/checkout-session.html";
 ```
 
 Any tool called directly from a widget must set:
 
-```ts
+```ts snippet=configuration reason="Tool metadata configuration fields"
 _meta["openai/widgetAccessible"] = true;
 ```
 

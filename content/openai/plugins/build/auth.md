@@ -532,6 +532,7 @@ async function getProfile(requestContext) {
 }
 ```
 
+
 Register this handler with the metadata declaration and input/output schemas above. `loadAuthenticatedProfile` must resolve the same stored profile for equivalent credentials and after reconnection. It must not create a fresh profile ID for each OAuth grant or session. All other tools must use the request’s credentials to enforce the same profile’s permissions.
 
 **Verify identity behavior:**
@@ -574,62 +575,68 @@ Triggering the tool-level OAuth flow requires both metadata (`securitySchemes` a
 
    Example (public + optional auth)—TypeScript SDK
 
-```ts
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod";
 
+const server = new McpServer({ name: "auth-example", version: "1.0.0" });
 
-
-   declare const server: McpServer;
-
-   server.registerTool(
-     "search",
-     {
-       title: "Public Search",
-       description: "Search public documents.",
-       inputSchema: {
-         q: z.string(),
-       },
-       outputSchema: {},
-       securitySchemes: [
-         { type: "noauth" },
-         { type: "oauth2", scopes: ["search.read"] },
-       ],
-     },
-     async ({ q }) => {
-       return {
-         content: [{ type: "text", text: `Results for ${q}` }],
-         structuredContent: {},
-       };
-     }
-   );
+server.registerTool(
+  "search",
+  {
+    title: "Public Search",
+    description: "Search public documents.",
+    inputSchema: {
+      q: z.string(),
+    },
+    outputSchema: {},
+    _meta: {
+      securitySchemes: [
+        { type: "noauth" },
+        { type: "oauth2", scopes: ["search.read"] },
+      ],
+    },
+  },
+  async ({ q }) => {
+    return {
+      content: [{ type: "text", text: `Results for ${q}` }],
+      structuredContent: {},
+    };
+  }
+);
 ```
+
 
    Example (auth required)—TypeScript SDK
 
-```ts
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod";
 
+const server = new McpServer({ name: "auth-example", version: "1.0.0" });
 
-
-   declare const server: McpServer;
-
-   server.registerTool(
-     "create_doc",
-     {
-       title: "Create Document",
-       description: "Make a new doc in your account.",
-       inputSchema: {
-         title: z.string(),
-       },
-       outputSchema: {},
-       securitySchemes: [{ type: "oauth2", scopes: ["docs.write"] }],
-     },
-     async ({ title }) => {
-       return {
-         content: [{ type: "text", text: `Created doc: ${title}` }],
-         structuredContent: {},
-       };
-     }
-   );
+server.registerTool(
+  "create_doc",
+  {
+    title: "Create Document",
+    description: "Make a new doc in your account.",
+    inputSchema: {
+      title: z.string(),
+    },
+    outputSchema: {},
+    _meta: {
+      securitySchemes: [{ type: "oauth2", scopes: ["docs.write"] }],
+    },
+  },
+  async ({ title }) => {
+    return {
+      content: [{ type: "text", text: `Created doc: ${title}` }],
+      structuredContent: {},
+    };
+  }
+);
 ```
+
 
 3. **Check tokens inside the tool handler and emit `_meta["mcp/www_authenticate"]`** when you want ChatGPT to trigger the authentication UI. Inspect the token and verify issuer, audience, expiry, and scopes. If no valid token is present, return an error result that includes `_meta["mcp/www_authenticate"]` and make sure the value contains both an `error` and `error_description` parameter. This `WWW-Authenticate` payload is what actually triggers the tool-level OAuth UI once steps 1 and 2 are in place. When a challenge prompts reauthorization, your provider can [preserve the user's existing login context](#preserve-login-context-during-reauthorization) during that flow.
 

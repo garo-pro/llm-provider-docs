@@ -72,17 +72,18 @@ Examples include:
 
 Feature-detect each extension and provide a fallback when practical:
 
-```js
+```typescript
 const openai = typeof window !== "undefined" ? window.openai : undefined;
 
 if (openai?.requestModal) {
   await openai.requestModal({
-    /* ... */
+    template: "ui://widget/details.html",
   });
 } else {
-  // Fallback behavior for hosts without this extension.
+  document.body.textContent = "This host does not support modals.";
 }
 ```
+
 
 Avoid branching on a host or product name. Test for the capability your UI
 needs.
@@ -202,9 +203,11 @@ Best practices:
 
 Example (decoupled dice tools):
 
-```ts
-
-
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { z } from "zod/v3";
+import { build } from "esbuild";
+import { fileURLToPath } from "node:url";
 
 const TEMPLATE_URI = "ui://widget/dice.html";
 
@@ -213,75 +216,19 @@ const server = new McpServer(
   { capabilities: { tools: {} } }
 );
 
-// The widget only renders the latest tool result.
-// Re-roll calls the data tool directly to avoid remounting the widget.
-const widgetHtml = `
-  <div style="font-family: system-ui; padding: 8px;">
-    <div style="font-size: 20px; margin-bottom: 6px;">
-      Result: <span id="out">—</span>
-    </div>
-    <button id="reroll">Re-roll</button>
-  </div>
-
-  <script>
-    const outputEl = document.getElementById("out");
-    const rerollButton = document.getElementById("reroll");
-    const pendingRequests = new Map();
-    let nextRequestId = 1;
-    let latestToolInput;
-    let latestToolOutput;
-
-    function render(result) {
-      outputEl.textContent = String(result?.value ?? "—");
-    }
-
-    function request(method, params) {
-      const id = nextRequestId++;
-      window.parent.postMessage({ jsonrpc: "2.0", id, method, params }, "*");
-      return new Promise((resolve, reject) => {
-        pendingRequests.set(id, { resolve, reject });
-      });
-    }
-
-    window.addEventListener(
-      "message",
-      (event) => {
-        if (event.source !== window.parent) return;
-        const message = event.data;
-        if (!message || message.jsonrpc !== "2.0") return;
-
-        if (message.id !== undefined && pendingRequests.has(message.id)) {
-          const pending = pendingRequests.get(message.id);
-          pendingRequests.delete(message.id);
-          if (message.error) pending.reject(message.error);
-          else pending.resolve(message.result);
-          return;
-        }
-
-        if (message.method === "ui/notifications/tool-input") {
-          latestToolInput = message.params;
-        }
-
-        if (message.method === "ui/notifications/tool-result") {
-          latestToolOutput = message.params?.structuredContent;
-          render(latestToolOutput);
-        }
-      },
-      { passive: true }
-    );
-
-    rerollButton.onclick = async () => {
-      const sides = latestToolOutput?.sides ?? latestToolInput?.sides ?? 6;
-      const next = await request("tools/call", {
-        name: "roll_dice",
-        arguments: { sides },
-      });
-      if (next?.structuredContent) {
-        render(next.structuredContent);
-      }
-    };
-  </script>
-`.trim();
+// Bundle the same browser source that is type-checked and tested directly.
+const widgetBundle = await build({
+  entryPoints: [fileURLToPath(new URL("./dice-widget.ts", import.meta.url))],
+  bundle: true,
+  format: "esm",
+  platform: "browser",
+  write: false,
+});
+const widgetScript = widgetBundle.outputFiles[0].text.replace(
+  /<\/script/gi,
+  "<\\/script"
+);
+const widgetHtml = `<!doctype html><html lang="en"><meta charset="utf-8"><title>Dice widget</title><body><script type="module">${widgetScript}</script></body></html>`;
 
 server.registerResource("dice-widget", TEMPLATE_URI, {}, async () => ({
   contents: [
@@ -354,6 +301,65 @@ server.registerTool(
 export default server;
 ```
 
+
+Install `esbuild` with the server dependencies, then save this browser code as
+`dice-widget.ts` beside the server file:
+
+```typescript
+import { App } from "@modelcontextprotocol/ext-apps";
+
+const container = document.createElement("div");
+container.style.cssText = "font-family: system-ui; padding: 8px;";
+const resultLine = document.createElement("div");
+resultLine.style.cssText = "font-size: 20px; margin-bottom: 6px;";
+const output = document.createElement("span");
+output.id = "out";
+output.textContent = "—";
+resultLine.append("Result: ", output);
+const rerollButton = document.createElement("button");
+rerollButton.id = "reroll";
+rerollButton.textContent = "Re-roll";
+rerollButton.disabled = true;
+container.append(resultLine, rerollButton);
+document.body.append(container);
+
+const app = new App({ name: "Dice widget", version: "1.0.0" });
+let latestInput: Record<string, unknown> = {};
+let latestOutput: Record<string, unknown> = {};
+
+function render(result: Record<string, unknown>) {
+  latestOutput = result;
+  output.textContent = String(result.value ?? "—");
+}
+
+app.ontoolinput = ({ arguments: input }) => {
+  latestInput = input ?? {};
+};
+app.ontoolresult = (result) => {
+  render(result.structuredContent ?? {});
+};
+
+// Call the data tool without remounting the widget.
+rerollButton.onclick = async () => {
+  const candidate = latestOutput.sides ?? latestInput.sides;
+  const sides =
+    typeof candidate === "number" &&
+    Number.isInteger(candidate) &&
+    candidate >= 2
+      ? candidate
+      : 6;
+  const next = await app.callServerTool({
+    name: "roll_dice",
+    arguments: { sides },
+  });
+  if (next.structuredContent) render(next.structuredContent);
+};
+
+await app.connect();
+rerollButton.disabled = false;
+```
+
+
 ## Manage state
 
 UI from an MCP server works with three kinds of state:
@@ -415,14 +421,18 @@ ChatGPT also provides optional widget-scoped persistence:
 there is nothing to `await`.
 
 ```tsx
+import { useState } from "react";
 
-
-export function TaskList({ tasks }) {
+export function TaskList({
+  tasks,
+}: {
+  tasks: { id: string; title: string }[];
+}) {
   const [state, setState] = useState(
     window.openai?.widgetState ?? { selectedId: null }
   );
 
-  function selectTask(selectedId) {
+  function selectTask(selectedId: string) {
     const nextState = { ...state, selectedId };
     setState(nextState);
     window.openai?.setWidgetState?.(nextState);
@@ -446,6 +456,7 @@ export function TaskList({ tasks }) {
 }
 ```
 
+
 Widget state belongs to one rendered UI instance. Do not use it as the source
 of truth for business data or as durable storage.
 
@@ -458,15 +469,18 @@ For UI that works with images, use the structured widget-state shape:
 - `imageIds`: File IDs the model should receive on later turns.
 
 ```tsx
+const selectedFiles = await window.openai.selectFiles();
+
 window.openai.setWidgetState({
   modelContent: "Review the currently selected images.",
   privateContent: {
     currentView: "image-viewer",
     filters: ["crop", "sharpen"],
   },
-  imageIds: ["file_123", "file_456"],
+  imageIds: selectedFiles.map((file) => file.fileId),
 });
 ```
+
 
 Only include file IDs uploaded with `window.openai.uploadFile`, selected with
 `window.openai.selectFiles`, received through tool input file parameters, or
@@ -497,7 +511,7 @@ it’s time to scaffold your component project.
 
 As best practice, keep the component code separate from your server logic. A common layout is:
 
-```
+```text
 plugin-ui/
   server/            # MCP server (Python or Node)
   web/               # Component bundle source
@@ -512,7 +526,7 @@ Create the project and install dependencies (Node 18+ recommended):
 ```bash
 cd plugin-ui/web
 npm init -y
-npm install react@^18 react-dom@^18
+npm install react@^19 react-dom@^19
 npm install -D typescript esbuild
 ```
 
@@ -548,6 +562,8 @@ Each example shows how to bundle assets, wire host APIs, and structure state for
 A small helper to subscribe to `ui/notifications/tool-result`:
 
 ```tsx
+import { useEffect, useState } from "react";
+
 type ToolResult = { structuredContent?: unknown } | null;
 
 export function useToolResult() {
@@ -570,22 +586,21 @@ export function useToolResult() {
 }
 ```
 
+
 Render from `toolResult?.structuredContent`, and treat it as untrusted input.
 
 ## Widget localization
 
 The host mirrors the locale to `document.documentElement.lang`. Use that locale
-to load translations and format dates/numbers. A common pattern with
-`react-intl`:
+to load translations and format dates/numbers. Run `npm install react-intl`
+in the `web/` directory before using this example:
 
 ```tsx
-
-
-
+import { IntlProvider, FormattedMessage } from "react-intl";
 
 const messages: Record<string, Record<string, string>> = {
-  "en-US": en,
-  "es-ES": es,
+  "en-US": { greeting: "Hello" },
+  "es-ES": { greeting: "Hola" },
 };
 
 export function PluginUI() {
@@ -593,12 +608,10 @@ export function PluginUI() {
   return (
     
 
-{/* Render UI with <FormattedMessage> or useIntl() */}
-
-
-  );
+);
 }
 ```
+
 
 ## Bundle for the iframe
 
@@ -608,7 +621,7 @@ Once you finish writing your React component, you can build it into a single Jav
 // package.json
 {
   "scripts": {
-    "build": "esbuild src/component.tsx --bundle --format=esm --outfile=dist/component.js"
+    "build": "esbuild src/component.tsx --bundle --format=esm --jsx=automatic --outfile=dist/component.js"
   }
 }
 ```
@@ -622,9 +635,12 @@ Expose the component as an MCP resource with the MCP Apps UI MIME type
 `@modelcontextprotocol/ext-apps/server`, prefer `RESOURCE_MIME_TYPE` instead of
 embedding the string:
 
-```ts
-
-
+```typescript
+import {
+  registerAppResource,
+  RESOURCE_MIME_TYPE,
+} from "@modelcontextprotocol/ext-apps/server";
+import { readFileSync } from "node:fs";
 
 const component = readFileSync("web/dist/component.js", "utf8");
 
@@ -654,6 +670,7 @@ registerAppResource(
   })
 );
 ```
+
 
 Associate the resource URI with only the tools that should render the
 component. For broader MCP Apps compatibility, use `_meta.ui.resourceUri`.
@@ -730,6 +747,7 @@ payment sheet:
 ```tsx
 const order = await window.openai.requestCheckout(checkoutSession);
 ```
+
 
 The checkout flow has four parts:
 

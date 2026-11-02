@@ -79,6 +79,7 @@ You are responsible for constructing the checkout session payload that the host 
 The host provides `window.openai.requestCheckout`. Use it to open the ChatGPT payment sheet when the user initiates a purchase:
 
 Example:
+
 ```tsx
 async function handleCheckout(sessionJson: string) {
   const session = JSON.parse(sessionJson);
@@ -90,34 +91,52 @@ async function handleCheckout(sessionJson: string) {
   // Host opens the ChatGPT payment sheet.
   const order = await window.openai.requestCheckout({
     ...session,
-    id: String(checkout_session_id), // Use a unique ID for every checkout session.
+    id: String(session.id), // Use a unique ID for every checkout session.
   });
 
   return order; // Host returns the order payload.
 }
 ```
 
+
 In your component, you might initiate this in a button click:
 
 ```tsx
+import { useState } from "react";
 
-
-{
-    setIsLoading(true);
-    try {
-      const orderResponse = await handleCheckout(checkoutSessionJson);
-      setOrder(orderResponse);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
-  }}
->
-  {isLoading ? "Loading..." : "Checkout"}
-
-
+function CheckoutButton({
+  checkoutSessionJson,
+}: {
+  checkoutSessionJson: string;
+}) {
+  const [isLoading, setIsLoading] = useState(false);
+  const [order, setOrder] = useState<Record<string, unknown> | null>(null);
+  const checkoutButton = (
+    <button
+      onClick={async () => {
+        setIsLoading(true);
+        try {
+          const orderResponse = await handleCheckout(checkoutSessionJson);
+          setOrder(orderResponse);
+        } catch (error) {
+          console.error(error);
+        } finally {
+          setIsLoading(false);
+        }
+      }}
+    >
+      {isLoading ? "Loading..." : "Checkout"}
+    </button>
+  );
+  return (
+    <>
+      {checkoutButton}
+      <pre>{JSON.stringify(order, null, 2)}</pre>
+    </>
+  );
+}
 ```
+
 
 Here is a complete checkout session example that your widget can pass to the
 host. Your plugin supplies the checkout session fields below. ChatGPT adds
@@ -243,6 +262,7 @@ const checkoutRequest = {
 const response = await window.openai.requestCheckout(checkoutRequest);
 ```
 
+
 Key points:
 
 - `window.openai.requestCheckout(session)` opens the host checkout UI.
@@ -257,13 +277,30 @@ Key points:
 
 You can mirror this pattern and swap in your logic:
 
-For direct `CallToolResult` returns, the Python MCP SDK uses the `Annotated`
-return type below to declare the tool `outputSchema` for `structuredContent`.
+Install [`fastmcp`](https://gofastmcp.com/) and `pydantic` to run this Python
+example. The tool's `output_schema` declares the MCP `outputSchema`;
+`ToolResult.structured_content` supplies `structuredContent` and `meta` supplies
+`_meta`. The local fixture accepts `example-session` and `example-payment-token`
+and returns a sample response without charging a payment method or creating an order.
 
-```py
-from typing import Annotated, Any
+```python
+from typing import Any, Literal
 
+from fastmcp import FastMCP
+from fastmcp.tools.tool import ToolResult
 from pydantic import BaseModel
+
+server = FastMCP("Checkout response fixture")
+META_SESSION_ID = "openai/checkoutSessionId"
+
+
+class Buyer(BaseModel):
+    email: str
+
+
+class PaymentData(BaseModel):
+    # Deliberately accepts only a local fixture token, never real payment credentials.
+    token: Literal["example-payment-token"]
 
 
 class CompleteCheckoutOutput(BaseModel):
@@ -278,16 +315,20 @@ class CompleteCheckoutOutput(BaseModel):
     order: dict[str, Any]
 
 
-@tool(description="")
+@server.tool(
+    description="Return the local checkout response fixture; does not charge a payment method or create a real order.",
+    output_schema=CompleteCheckoutOutput.model_json_schema(),
+)
 async def complete_checkout(
-    self,
     checkout_session_id: str,
     buyer: Buyer,
     payment_data: PaymentData,
-) -> Annotated[types.CallToolResult, CompleteCheckoutOutput]:
-    return types.CallToolResult(
+) -> ToolResult:
+    if checkout_session_id != "example-session":
+        raise ValueError("This response fixture only accepts example-session")
+    return ToolResult(
         content=[],
-        structuredContent={
+        structured_content={
             "id": checkout_session_id,
             "status": "completed",
             "currency": "USD",
@@ -358,10 +399,11 @@ async def complete_checkout(
                 "permalink_url": "",
             },
         },
-        _meta={META_SESSION_ID: "checkout-flow"},
-        isError=False,
+        meta={META_SESSION_ID: "checkout-flow"},
+        is_error=False,
     )
 ```
+
 
 Adapt this to:
 

@@ -51,14 +51,25 @@ so views remain testable. This example helper listens for host
 `openai:set_globals` events and lets React components subscribe to a single
 global value:
 
-```ts
+```typescript
+import { useSyncExternalStore } from "react";
+
+type WebplusGlobals = {
+  widgetState: { selectedId?: string | null; [key: string]: unknown } | null;
+  toolInput: Record<string, unknown>;
+  toolOutput: Record<string, unknown> | null;
+  theme: "light" | "dark";
+};
+const SET_GLOBALS_EVENT_TYPE = "openai:set_globals";
+
 export function useOpenAiGlobal<K extends keyof WebplusGlobals>(
   key: K
 ): WebplusGlobals[K] {
   return useSyncExternalStore(
     (onChange) => {
-      const handleSetGlobal = (event: SetGlobalsEvent) => {
-        const value = event.detail.globals[key];
+      const handleSetGlobal = (event: Event) => {
+        if (!(event instanceof CustomEvent)) return;
+        const value = event.detail?.globals?.[key];
         if (value === undefined) {
           return;
         }
@@ -74,10 +85,15 @@ export function useOpenAiGlobal<K extends keyof WebplusGlobals>(
         window.removeEventListener(SET_GLOBALS_EVENT_TYPE, handleSetGlobal);
       };
     },
-    () => window.openai[key]
+    () => {
+      const globals = (window as Window & { openai?: WebplusGlobals }).openai;
+      if (!globals) throw new Error("This hook requires a ChatGPT app host.");
+      return globals[key];
+    }
   );
 }
 ```
+
 
 ### Close the UI
 
@@ -93,6 +109,7 @@ await window.openai?.requestDisplayMode({ mode: "fullscreen" });
 // On mobile, picture-in-picture may be presented as fullscreen.
 ```
 
+
 ### Open a modal
 
 Use `window.openai.requestModal` to open a host-controlled modal. Provide the
@@ -101,9 +118,10 @@ URI of another UI template registered by the same MCP server, or omit
 
 ```tsx
 await window.openai.requestModal({
-  template: "ui://widget/checkout.html",
+  template: "ui://widget/details.html",
 });
 ```
+
 
 ## File APIs
 
@@ -130,6 +148,7 @@ const { fileId } = await window.openai.uploadFile(file, {
 });
 ```
 
+
 Select files that the user already uploaded to ChatGPT:
 
 ```tsx
@@ -139,6 +158,7 @@ if (window.openai?.selectFiles) {
 }
 ```
 
+
 Feature-detect `window.openai.selectFiles` and fall back to
 `window.openai.uploadFile` when the file library is unavailable.
 
@@ -147,6 +167,7 @@ Request a temporary download URL:
 ```tsx
 const { downloadUrl } = await window.openai.getFileDownloadUrl({ fileId });
 ```
+
 
 ### Define file inputs
 
@@ -239,6 +260,27 @@ navigation controls in sync with your UI.
 Router setup with React Router's `BrowserRouter`:
 
 ```tsx
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
+function PizzaListPlugin() {
+  const { placeId } = useParams();
+  return (
+    <main>
+      
+
+Example Pizzeria
+
+
+      <p>{placeId ?? "Choose a place"}</p>
+    </main>
+  );
+}
+
 export default function PizzaListRouter() {
   return (
     
@@ -254,19 +296,36 @@ export default function PizzaListRouter() {
 }
 ```
 
+
 Programmatic navigation:
 
-```ts
-const navigate = useNavigate();
+```typescript
+import { createElement } from "react";
+import { BrowserRouter, useNavigate } from "react-router-dom";
+function NavigationExample() {
+  const navigate = useNavigate();
 
-function openDetails(placeId: string) {
-  navigate(`place/${placeId}`, { replace: false });
-}
+  function openDetails(placeId: string) {
+    navigate(`place/${placeId}`, { replace: false });
+  }
 
-function closeDetails() {
-  navigate("..", { replace: true });
+  function closeDetails() {
+    navigate("..", { replace: true });
+  }
+
+  return createElement(
+    "div",
+    null,
+    createElement(
+      "button",
+      { onClick: () => openDetails("pizzeria") },
+      "Open details"
+    ),
+    createElement("button", { onClick: closeDetails }, "Close details")
+  );
 }
 ```
+
 
 ## Tool descriptor parameters
 
@@ -297,9 +356,26 @@ OpenAI-specific metadata for compatibility and optional extensions.
 
 Example:
 
-```ts
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+const server = new McpServer({ name: "docs-example", version: "1.0.0" });
 
+// Local example data; replace this with your application data.
+async function performSearch(query: string) {
+  const documents = [
+    {
+      id: "intro",
+      title: "Introduction to Acme",
+      url: "https://example.com/intro",
+    },
+  ];
+  return documents.filter((document) =>
+    document.title.toLowerCase().includes(query.toLowerCase())
+  );
+}
 
+import { registerAppTool } from "@modelcontextprotocol/ext-apps/server";
+import { z } from "zod";
 
 registerAppTool(
   server,
@@ -317,10 +393,6 @@ registerAppTool(
         })
       ),
     },
-    securitySchemes: [
-      { type: "noauth" },
-      { type: "oauth2", scopes: ["search.read"] },
-    ],
     _meta: {
       securitySchemes: [
         { type: "noauth" },
@@ -344,6 +416,7 @@ registerAppTool(
 );
 ```
 
+
 ### Annotations
 
 To label a tool as "read-only," use the following
@@ -363,8 +436,16 @@ user; servers must still enforce their own authorization logic.
 
 Example:
 
-```ts
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+const server = new McpServer({ name: "docs-example", version: "1.0.0" });
 
+// Local example data; replace this with your application data.
+async function fetchSavedRecipes() {
+  return [{ id: "pasta", title: "Tomato pasta" }];
+}
+
+import { z } from "zod";
 
 server.registerTool(
   "list_saved_recipes",
@@ -383,10 +464,12 @@ server.registerTool(
     annotations: { readOnlyHint: true },
   },
   async () => ({
+    content: [],
     structuredContent: { recipes: await fetchSavedRecipes() },
   })
 );
 ```
+
 
 
 
@@ -468,9 +551,21 @@ Host-provided tool result metadata:
 
 Example:
 
-```ts
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+const server = new McpServer({ name: "docs-example", version: "1.0.0" });
 
+// Local example data; replace this with your application data.
+function generateZooAnimals(count: number) {
+  return Array.from({ length: count }, (_, index) => ({
+    id: `animal-${index + 1}`,
+    name: `Penguin ${index + 1}`,
+    species: "Penguin",
+  }));
+}
 
+import { registerAppTool } from "@modelcontextprotocol/ext-apps/server";
+import { z } from "zod";
 
 registerAppTool(
   server,
@@ -505,6 +600,7 @@ registerAppTool(
 );
 ```
 
+
 ### Error tool result
 
 To return an error on the tool result, use the following `_meta` key:
@@ -528,8 +624,23 @@ Operation-phase `_meta["openai/userAgent"]` and `_meta["openai/userLocation"]` a
 
 Example:
 
-```ts
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+const server = new McpServer({ name: "docs-example", version: "1.0.0" });
 
+// Local example data; replace this with your application data.
+async function findNearbyCafes(city: unknown) {
+  return city === "San Francisco"
+    ? [{ name: "Example Cafe", address: "123 Example Street, San Francisco" }]
+    : [];
+}
+
+function formatIntro(locale: unknown, city: unknown) {
+  const location = typeof city === "string" ? city : "your area";
+  return locale === "es" ? `Cafés en ${location}` : `Cafes in ${location}`;
+}
+
+import { z } from "zod";
 
 server.registerTool(
   "recommend_cafe",
@@ -547,7 +658,13 @@ server.registerTool(
   },
   async (_args, { _meta }) => {
     const locale = _meta?.["openai/locale"] ?? "en";
-    const location = _meta?.["openai/userLocation"]?.city;
+    const userLocation = _meta?.["openai/userLocation"];
+    const location =
+      typeof userLocation === "object" &&
+      userLocation !== null &&
+      "city" in userLocation
+        ? userLocation.city
+        : undefined;
     const cafes = await findNearbyCafes(location);
 
     return {

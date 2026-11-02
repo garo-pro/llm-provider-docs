@@ -40,14 +40,15 @@ pip install mcp
 
 Create an MCP server with a stable name and version:
 
-```ts
-
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 
 const server = new McpServer({
   name: "acme-projects",
   version: "1.0.0",
 });
 ```
+
 
 MCP servers can also return an
 [`instructions` field](https://modelcontextprotocol.io/specification/2025-06-18/basic/lifecycle#initialization)
@@ -59,7 +60,7 @@ required tool sequences or shared rate limits. Keep the most important details
 in the first 512 characters. Do not repeat every tool description or try to
 change the model's personality.
 
-```ts
+```typescript
 const server = new McpServer(
   { name: "acme-projects", version: "1.0.0" },
   {
@@ -68,6 +69,7 @@ const server = new McpServer(
   }
 );
 ```
+
 
 ## Define tools from user goals
 
@@ -88,8 +90,17 @@ The model uses this metadata to decide whether and how to call the tool. Treat
 names, descriptions, schemas, and annotations as part of the plugin's
 user-facing behavior.
 
-```ts
+```typescript
+// Local example data; replace this with your application data.
+const projects = [
+  { id: "project-1", name: "Website", status: "active" },
+  { id: "project-2", name: "Launch", status: "archived" },
+];
+async function listProjects({ status }: { status?: string }) {
+  return projects.filter((project) => !status || project.status === status);
+}
 
+import { z } from "zod";
 
 server.registerTool(
   "list_projects",
@@ -130,6 +141,7 @@ server.registerTool(
   }
 );
 ```
+
 
 ## Return useful results without UI
 

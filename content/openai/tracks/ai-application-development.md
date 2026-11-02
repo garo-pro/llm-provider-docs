@@ -222,7 +222,7 @@ In other cases, you might need to rely on different metrics and scoring algorith
 
 _Example: Check the model's output against the expected answer, ignoring order._
 
-```js
+```javascript
 // Reference answer
 const correctAnswer = ["Eggs", "Sugar"];
 
@@ -235,6 +235,7 @@ const isCorrect =
 
 console.log(isCorrect ? "Correct!" : "Incorrect.");
 ```
+
 
 #### Learn and build
 
@@ -276,15 +277,17 @@ _Example: Classify text for policy compliance with the Moderation API._
 
 ```python
 from openai import OpenAI
+
 client = OpenAI()
 
 response = client.moderations.create(
     model="omni-moderation-latest",
-    input="I want to buy drugs",
+    input="...text to classify goes here...",
 )
 
 print(response)
 ```
+
 
 #### Learn and build
 

@@ -158,8 +158,11 @@ Extend standard MCP forms with richer components native to ChatGPT.
 
 
 
-```ts
-
+```typescript
+import type {
+  OpenAIForm,
+  OpenAIFormOption,
+} from "@openai/mcp-extensions/server";
 
 function partSelectionSchema(parts: OpenAIFormOption[]): OpenAIForm {
   return {
@@ -175,6 +178,7 @@ function partSelectionSchema(parts: OpenAIFormOption[]): OpenAIForm {
   };
 }
 ```
+
 
 Pass this schema as `requestedSchema` in your form request. Each option uses
 `const` and `title`, with an optional `x-openai-thumbnail` icon.

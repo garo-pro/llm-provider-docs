@@ -158,7 +158,7 @@ Start with a small CSV and grow it over time as you encounter real failures duri
 
 For example, an initial `evals/setup-demo-app.prompts.csv` might look like this:
 
-```
+```text
 id,should_trigger,prompt
 test-01,true,"Create a demo app named `devday-demo` using the $setup-demo-app skill"
 test-02,true,"Set up a minimal React demo app with Tailwind for quick UI experiments"
@@ -208,9 +208,9 @@ A “good enough” approach looks like this:
 
 ```javascript
 // evals/run-setup-demo-app-evals.mjs
-
-
-
+import { spawnSync } from "node:child_process";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import path from "node:path";
 
 function runCodex(prompt, outJsonlPath) {
   const res = spawnSync(
@@ -224,6 +224,7 @@ function runCodex(prompt, outJsonlPath) {
     { encoding: "utf8" }
   );
 
+  if (res.error) throw res.error;
   mkdirSync(path.dirname(outJsonlPath), { recursive: true });
 
   // stdout is JSONL when --json is enabled
@@ -271,6 +272,7 @@ console.log({
   hasPackageJson: checkPackageJsonExists(path.join(projectDir, "demo-app")),
 });
 ```
+
 
 The value here is that everything is **deterministic and debuggable**.
 
