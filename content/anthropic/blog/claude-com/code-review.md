@@ -7,6 +7,8 @@ Markdown Content:
 
 Practical guidance on how to structure agent tasks using three common workflow patterns, with tradeoffs and benefits for each.
 
+**Update:** [Code Review is now generally available](https://claude.com/resources/articles/code-review-is-now-generally-available).
+
 Today we're introducing Code Review, which dispatches a team of agents on every PR to catch the bugs that skims miss, built for depth, not speed. It's the system we run on nearly every PR at Anthropic. Now in research preview for Team and Enterprise.
 
 ## **Managing the review bottleneck**

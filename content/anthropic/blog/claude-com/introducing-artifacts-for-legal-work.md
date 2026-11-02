@@ -7,7 +7,7 @@ Markdown Content:
 
 *Claude for Legal now includes ready-to-use artifacts for legal work that teams can adapt with their own data and connectors, and share across the business.*
 
-Today, we’re introducing ready-to-use artifacts that legal professionals can adapt to how their teams work and share with colleagues across the business. Since we launched Claude for Legal in May, the most common requests from legal teams have been for simpler setup and easier ways to work with colleagues.
+Today, we’re introducing ready-to-use artifacts that legal professionals can adapt to how their teams work and share with colleagues across the business. Since we [launched Claude for Legal in May](https://claude.com/resources/articles/claude-for-the-legal-industry), the most common requests from legal teams have been for simpler setup and easier ways to work with colleagues.
 
 Artifacts are interactive tools, such as trackers and dashboards, that teams can use and share in Claude. Our new legal gallery includes artifacts for specific tasks, such as reviewing a stack of contracts, tracking regulatory changes, and taking in legal requests from the business. Each artifact opens with an example, so legal professionals can see how the work comes together before adding their own data and connectors. Each answer or output has a link to its source.
 

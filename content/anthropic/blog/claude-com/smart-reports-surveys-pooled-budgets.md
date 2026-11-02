@@ -15,7 +15,7 @@ Smart reports show what that work is, and where that work is happening, in-app s
 
 Pick a team, a date range, and the products to include. Claude analyzes a sample of the team’s transcripts and groups the work into workstreams. See the spend for each one, the deliverables produced, and the most common points of friction, such as a missing connector or a failed tool call.
 
-Each report has one consolidated list of recommendations, including recurring workflows to turn into skills and rules to add to your code repository. Share any finding as an artifact with the people who can act on it. Reports also answer custom questions about model usage and cost, and admins can save their questions and custom insights as templates to reuse in future reports. If a spend limit is holding someone back, admins with billing permission can raise it from the report.
+Each report has one consolidated list of recommendations, including recurring workflows to turn into skills and rules to add to your code repository. Share any finding as an artifact with the people who can act on it. Reports also answer custom questions about model usage and cost, and admins can save their questions and custom insights as templates to reuse in future reports. If [a spend limit](https://claude.com/resources/articles/giving-admins-more-visibility-and-control-over-claude-usage-and-spend) is holding someone back, admins with billing permission can raise it from the report.
 
 Owners can let team leads who aren’t admins run reports for their own groups, so the people closest to the work act on the findings. Smart reports help admins understand adoption and inform investment planning, but they aren’t for evaluating individual performance or making employment decisions.
 

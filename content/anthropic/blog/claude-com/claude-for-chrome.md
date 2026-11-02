@@ -8,6 +8,8 @@ Markdown Content:
 We're piloting Claude in Chrome to test browser-based AI capabilities while addressing prompt injection risks and building the safety measures needed before wider release.
 
 
+**Update:** [Claude in Chrome is now generally available](https://claude.com/resources/articles/claude-in-chrome-generally-available).
+
 *Editor's note: Mentions of Max in this post from before October 30, 2026 include what are now the Max and Ultra plans.*
 
 **Update: Now available to Pro, Team, and Enterprise plans** (Dec 18, 2025)

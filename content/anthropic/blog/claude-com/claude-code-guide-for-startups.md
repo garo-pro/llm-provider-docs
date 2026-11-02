@@ -165,4 +165,4 @@ These insights come from your peers building at the frontier and we hope you fou
 - [Bookmarking upcoming Claude Code webinars](https://academy.claude.com/code/webinars) .
 - [Attending an event near you](https://luma.com/claudecommunity)
 - Contributing on [Reddit](https://www.reddit.com/r/ClaudeAI/) and[Discord](https://discord.com/invite/6PPFFzqPDZ) .
-- Early-stage companies can also apply to the [Claude for Startups program](https://claude.com/programs/startups) for credits and support.
+- Early-stage companies can also apply to the [Claude for Startups program](https://claude.com/programs/startups) for credits and support.[Read what the program now includes](https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build)

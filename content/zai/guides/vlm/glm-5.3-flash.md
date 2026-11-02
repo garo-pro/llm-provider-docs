@@ -205,8 +205,6 @@ GLM-5.3-Flash shows that frontier intelligence does not have to come at frontier
 
 **GLM-5.3-FlashX-Legal (GLM-Legal)** is a model optimized for professional legal workflows, with a focus on document understanding, legal reasoning, and task execution. It covers scenarios such as legal research, contract review, and legal document drafting, helping legal professionals work from source material analysis through to initial drafts.
 
-**API access is available to selected enterprise customers by application.** [Apply for Trial Access and Business Collaboration](https://z.ai/consultation/legal)
-
 ### Specialized MCP Integrations
 
 For a more complete legal workflow experience, we recommend using the model in an agent environment connected to specialized MCP services. The model handles document understanding, legal reasoning, and task planning, while MCP services provide external data such as laws, cases, and company information, as well as tools for creating and revising Word documents.

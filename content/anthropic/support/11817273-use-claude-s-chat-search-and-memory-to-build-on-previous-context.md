@@ -78,7 +78,7 @@ To run a single chat or Cowork task without memory, open a new chat, click the â
 
 **Note:** Members of Team and Enterprise plans can turn memory on or off for themselves unless it's turned off for their organization. On Enterprise plans, members whose role is set to Custom also need memory in one of their custom roles. For more information, see **[Controls for Team and Enterprise plan owners](#h_0feedd3ca9)**.
 
-You can toggle Claude's memory on by navigating to **Settings > Your Claude** and turning on **Memory from chats** (or **Settings > Memory** and **Generate memory from chats** in the older Settings layout):
+You can toggle Claude's memory on by navigating to Settings > Your Claude (or Settings > Memory in the older Settings layout) and turning on Generate memory from chats:
 
 ![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2533482441/b5c806a8e3f68bf34c4a70724d38/d30be013-d099-4c93-99d1-23d404792f08)
 
@@ -246,7 +246,7 @@ The new memory experience isnâ€™t available to organizations with HIPAA or publi
 
 ## Information for legacy memory users
 
-**Important:** We've introduced an improved experience for memory from chats. If you see **Settings > Memory**, or a **Memory from chats** setting in **Settings > Your Claude** in the updated Settings layout, you're using the new memory experience and the sections above apply to you. The sections below only apply to people who have the legacy memory experience and see **Memory** in **Settings > Capabilities**, or a **Generate memory from chat history** setting in the updated Settings layout.
+**Important:** We've introduced an improved experience for memory from chats. If you see **Settings > Memory**, or a Generate memory from chats setting in **Settings > Your Claude** in the updated Settings layout, you're using the new memory experience and the sections above apply to you. The sections below only apply to people who have the legacy memory experience and see **Memory** in **Settings > Capabilities**, or a Generate memory from chats setting in the updated Settings layout.
 
 ### Search past chats with Claude
 

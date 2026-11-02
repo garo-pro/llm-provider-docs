@@ -43,7 +43,7 @@ Build commands, directory layout, monorepo structure, coding conventions, and te
 There are two types, and they load differently:
 
 - **Always loaded** : The first type is a root CLAUDE.md file, either in a shared repository and/or saved locally for your personal preferences specific to a project. All these files load at session start, and won’t get lost or degraded across long sessions. When Claude Code compacts the conversation, it re-reads these files.
-- **On-demand:** CLAUDE.md files in subdirectories below the folder where you initialized the session. For example,`app/api/CLAUDE.md` loads when Claude reads a file under `app/api` , not at session start. It shares the compaction behavior of path-scoped rules: gone until that subdirectory is touched again.
+- **On-demand:** CLAUDE.md files in subdirectories below the folder where you initialized the session. For example,`app/api/CLAUDE.md` loads when Claude reads a file under`app/api` , not at session start. It shares the compaction behavior of path-scoped rules: gone until that subdirectory is touched again.
 
 ![](https://assets.claude.com/4c7332ac6ff372a6a4ca25f246f8955d31fe969c.png)
 

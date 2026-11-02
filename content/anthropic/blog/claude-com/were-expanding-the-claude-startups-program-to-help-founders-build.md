@@ -41,3 +41,5 @@ Members also get a support system for growing their business, from reaching new 
 Startups founded in the last five years or funded in the last two are eligible to apply. We created this program because we believe the benefits of AI will reach most people through the companies that build on top of models, rather than through the models alone. That makes partnering closely with founders and developers central to our mission. AI will equip them to bring society faster scientific discoveries, entirely new categories of products, and more capable businesses. Claude Startups is how we’re helping more of those companies get started, and supporting them as they grow.
 
 Visit the [Claude Startups page](https://claude.com/programs/startups) to learn more and apply.
+
+For how startups use Claude Code day to day, see [The Claude Code guide for startups](https://claude.com/resources/articles/claude-code-guide-for-startups)

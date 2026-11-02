@@ -704,6 +704,7 @@ for _, output := range response.Output {
 import com.openai.client.OpenAIClient;
 import com.openai.client.okhttp.OpenAIOkHttpClient;
 import com.openai.core.JsonValue;
+import com.openai.core.ObjectMappers;
 import com.openai.models.responses.EasyInputMessage;
 import com.openai.models.responses.FunctionTool;
 import com.openai.models.responses.ResponseCreateParams;
@@ -715,39 +716,40 @@ import java.util.Map;
 response.output().stream()
     .map(item -> JsonValue.from(item).convert(ResponseInputItem.class))
     .forEach(input::add);
-response.output().stream()
-    .flatMap(item -> item.functionCall().stream())
-    .forEach(
-        call -> {
-          String result;
-          if (call.name().equals("get_weather")) {
-            record Coordinates(double latitude, double longitude) {}
+for (var item : response.output()) {
+  if (item.functionCall().isEmpty()) continue;
+  var call = item.functionCall().get();
+  String result;
+  if (call.name().equals("get_weather")) {
+    record Coordinates(double latitude, double longitude) {}
 
-            Coordinates coordinates = call.arguments(Coordinates.class);
-            result =
-                JsonValue.from(
-                        Map.of(
-                            "latitude", coordinates.latitude(),
-                            "longitude", coordinates.longitude(),
-                            "temperature_c", 18))
-                    .toString();
-          } else if (call.name().equals("send_email")) {
-            record Email(String to, String body) {}
+    Coordinates coordinates = call.arguments(Coordinates.class);
+    result =
+        ObjectMappers.jsonMapper()
+            .writeValueAsString(
+                Map.of(
+                    "latitude", coordinates.latitude(),
+                    "longitude", coordinates.longitude(),
+                    "temperature_c", 18));
+  } else if (call.name().equals("send_email")) {
+    record Email(String to, String body) {}
 
-            Email message = call.arguments(Email.class);
-            result = JsonValue.from(Map.of("to", message.to(), "status", "sent")).toString();
-          } else {
-            throw new IllegalArgumentException("Unknown function: " + call.name());
-          }
-          var output =
-              ResponseInputItem.ofFunctionCallOutput(
-                  ResponseInputItem.FunctionCallOutput.builder()
-                      .callId(call.callId())
-                      .output(result)
-                      .build());
-          input.add(output);
-          System.out.println(call.callId() + " " + result);
-        });
+    Email message = call.arguments(Email.class);
+    result =
+        ObjectMappers.jsonMapper()
+            .writeValueAsString(Map.of("to", message.to(), "status", "sent"));
+  } else {
+    throw new IllegalArgumentException("Unknown function: " + call.name());
+  }
+  var output =
+      ResponseInputItem.ofFunctionCallOutput(
+          ResponseInputItem.FunctionCallOutput.builder()
+              .callId(call.callId())
+              .output(result)
+              .build());
+  input.add(output);
+}
+System.out.println(ObjectMappers.jsonMapper().writeValueAsString(input));
 ```
 
 ```ruby
@@ -1347,19 +1349,7 @@ ResponseCreateParams params =
         .build();
 
 try (StreamResponse<ResponseStreamEvent> stream = client.responses().createStreaming(params)) {
-  stream.stream()
-      .forEach(
-          event -> {
-            System.out.println(event);
-            event
-                .outputItemAdded()
-                .ifPresent(added -> System.out.println("response.output_item.added: " + added));
-            event
-                .functionCallArgumentsDelta()
-                .ifPresent(
-                    delta ->
-                        System.out.println("response.function_call_arguments.delta: " + delta));
-          });
+  stream.stream().forEach(System.out::println);
 }
 ```
 

@@ -275,6 +275,10 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/cookbook/examples/decisions/customer_request_routing": {
+      "since": "2026-11-02",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/modretro": {
       "since": "2026-09-30",
       "reason": "HTTP 404"

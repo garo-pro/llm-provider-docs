@@ -3,8 +3,6 @@ Title: Vibe physics: The AI grad student
 URL Source: https://www.anthropic.com/research/vibe-physics
 
 Markdown Content:
-**Can AI do theoretical physics? In this guest post, professor of physics [Matthew Schwartz](https://www.physics.harvard.edu/people/facpages/schwartz) decided to find out by supervising Claude through a real research calculation, start to finish, without ever touching a file himself. His account of what happened is below.** 
-
 #### Summary
 
 - I guided Claude Opus 4.5 through a real theoretical physics calculation, encapsulating the complexity of code and computations behind text prompts.
