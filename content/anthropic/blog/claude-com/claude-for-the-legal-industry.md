@@ -98,7 +98,7 @@ Legal work looks different depending on the seat you're in. We're releasing 12 p
 
 Each agent template can be installed in Cowork or Claude Code with a click, and produces outputs that match institutional drafting standards. [A subset of these](https://github.com/anthropics/claude-for-legal) (Commercial Legal, Corporate Legal, Litigation Legal, Product Legal, Litigation Legal) are also available as cookbooks that can be deployed as Managed Agents in the Claude Platform for programmatic use. Teams can layer on their own precedents and playbooks to customize the skills.
 
-Every legal organization works differently, and no single set of plugins can cover every practice. The plugin and skill ecosystem are open protocols, and early contributors including **Box, Legal Quants, Lawve AI**, and **Thomson Reuters** have already shipped skills, plugins, and style conventions of their own. Any partner can submit connectors and skills through the [Directory](https://preview.claude.ai/local_sessions/link).
+Every legal organization works differently, and no single set of plugins can cover every practice. The plugin and skill ecosystem are open protocols, and early contributors including **Box, Legal Quants, Lawve AI**, and **Thomson Reuters** have already shipped skills, plugins, and style conventions of their own. Any partner can submit connectors and skills through the [Directory](https://claude.ai/directory).
 
 ## Democratizing access to legal services with AI
 

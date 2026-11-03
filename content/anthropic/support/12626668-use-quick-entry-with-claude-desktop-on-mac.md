@@ -58,7 +58,7 @@ To enable voice dictation:
 
 5. Click the arrow to send your transcribed message to Claude.
 
-6. Moving forward, manage this in Settings > General (under **Desktop app**).
+6. Moving forward, manage this in Settings > Desktop app (or Settings > System, under This computer, in the older Settings layout).
 
 ## Using quick entry
 
@@ -170,4 +170,4 @@ Yes. You can disable quick entry shortcuts at any time in **Settings > Desktop a
 
 ### What if the shortcuts conflict with other apps?
 
-You can customize the quick access shortcut to use Option + Space or create a custom keyboard shortcut that doesn't conflict with your other applications. The voice shortcut can only use Caps Lock or be disabled.
+You can customize the quick access shortcut to use Option + Space or create a custom keyboard shortcut that doesn't conflict with your other applications. The voice shortcut can use Caps Lock or a custom keyboard shortcut, or be disabled.
