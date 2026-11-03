@@ -71,7 +71,7 @@ All Sonnet 5.5 prices, including batch processing and prompt caching, match Sonn
 
 While the per-token price doesn't change, the overall bill will change because, as previously mentioned, Sonnet 5.5 typically uses fewer tokens per task than Sonnet 5.
 
-Note that surfaces can ship with different default efforts for Sonnet, such as high on Claude Platform and medium in Claude Code.
+Note that surfaces can ship with different default efforts for Sonnet, such as high on Claude Platform and medium in [Claude Code](https://claude.com/product/claude-code).
 
 Sonnet 5.5 uses the high-resolution image tier, up to 2576 pixels on the long edge, and a 2000×1500 image costs about 2.5 times as many tokens as on Sonnet 4.6, Sonnet 4.5 or Haiku 4.5. If you don't need the detail, downscale before you send.
 

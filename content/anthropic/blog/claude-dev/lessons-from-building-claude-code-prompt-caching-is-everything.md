@@ -26,7 +26,7 @@ Prompt caching works by prefix matching—the API caches everything from the sta
 
 How you structure a prompt matters for output quality too, not just cache hits — the [prompt engineering fundamentals](https://claude.com/blog/best-practices-for-prompt-engineering) are the other half of the discipline.
 
-The best way to do this is static content first, dynamic content last. For Claude Code this looks like:
+The best way to do this is static content first, dynamic content last. For [Claude Code](https://claude.com/product/claude-code) this looks like:
 
 1. **Static system prompt** & Tools (globally cached)
 2. **CLAUDE.md** (cached within a project)

@@ -50,7 +50,7 @@ If I wanted a simple base to iterate from, low effort would get it done. Max eff
 
 ### Lightly specified design task
 
-What if I have a task that is fairly specified already but I want some exploration with Claude? As an example I tried to ask it to redesign the `/config` menu in Claude Code. Every pass had roughly the same idea, to use submenus and better search.
+What if I have a task that is fairly specified already but I want some exploration with Claude? As an example I tried to ask it to redesign the `/config` menu in [Claude Code](https://claude.com/product/claude-code). Every pass had roughly the same idea, to use submenus and better search.
 
 At low effort (which took 1 minute), I got an interactive sketch that conveyed the idea but didn’t look very much like Claude Code.
 

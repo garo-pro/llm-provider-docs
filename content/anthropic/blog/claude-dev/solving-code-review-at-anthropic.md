@@ -8,7 +8,7 @@ How do you review code at the volume agents produce it? On the Claude Code team,
 
 ---
 
-We've said before that Claude writes about 90 percent of Claude Code's own code. So how do we review code at the volume we produce it? Does anyone read code anymore? And if something breaks, who catches it?
+We've said before that Claude writes about 90 percent of [Claude Code](https://claude.com/product/claude-code)'s own code. So how do we review code at the volume we produce it? Does anyone read code anymore? And if something breaks, who catches it?
 
 This post covers the code review flow on the Claude Code team and how it has evolved. From June to September, merged pull requests to Claude Code's codebase more than doubled while the share that had to be reverted fell by more than 40 percent.
 

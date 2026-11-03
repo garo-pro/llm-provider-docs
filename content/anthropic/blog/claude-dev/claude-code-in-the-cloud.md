@@ -8,7 +8,7 @@ What changes when Claude Code runs on its own machine, the workflows where that 
 
 ---
 
-You probably run Claude Code in a terminal on your own laptop. That session depends on the laptop in three ways:
+You probably run [Claude Code](https://claude.com/product/claude-code) in a terminal on your own laptop. That session depends on the laptop in three ways:
 
 - It shares your working tree, so two sessions on one repository can edit the same files and fight over the same port.
 - It runs with your credentials.

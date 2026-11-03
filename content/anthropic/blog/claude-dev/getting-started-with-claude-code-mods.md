@@ -8,7 +8,7 @@ Build your first Claude Code mod from an empty folder, then see what else the AP
 
 ---
 
-A mod is a small JavaScript or TypeScript file that runs inside your Claude Code session. It can watch what's happening, change what Claude Code does, or draw its own UI, in the terminal or the desktop app. You don't need to learn the API to try one. Run `claude`, then describe the mod you want. Allow hot reload when it asks, and the mod shows up when the turn ends.
+A mod is a small JavaScript or TypeScript file that runs inside your [Claude Code](https://claude.com/product/claude-code) session. It can watch what's happening, change what Claude Code does, or draw its own UI, in the terminal or the desktop app. You don't need to learn the API to try one. Run `claude`, then describe the mod you want. Allow hot reload when it asks, and the mod shows up when the turn ends.
 
 Claude Code already lets you change a lot about how it behaves: settings, permission rules, slash commands, skills and a status line. Mods go further: they can rewrite or replace what Claude Code does, and draw custom UI. Under the hood, mods are hooks that ship inside plugins, and each one sees every event in your session as it happens.
 

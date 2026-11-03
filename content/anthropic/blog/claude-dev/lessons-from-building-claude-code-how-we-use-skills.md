@@ -8,7 +8,7 @@ What we learned building and scaling hundreds of skills internally at Anthropic.
 
 ---
 
-Skills have become one of the most used extension points in Claude Code. They’re flexible, easy to make, and easy to distribute.
+Skills have become one of the most used extension points in [Claude Code](https://claude.com/product/claude-code). They’re flexible, easy to make, and easy to distribute.
 
 But this flexibility also makes it hard to know what works best. What type of skills are worth making? How do you structure a skill? When do you share them with others?
 

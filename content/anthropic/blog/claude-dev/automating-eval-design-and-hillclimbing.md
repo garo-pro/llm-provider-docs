@@ -12,7 +12,7 @@ Evaluations provide a signal on how your app or skill is performing on specific 
 
 With the skill, you can run `/claude-api build-eval` to build an evaluation inside your codebase, and run `/claude-api hillclimb` to improve your application against it, one change at a time, with a held-out set of examples to catch overfitting.
 
-In this article, we highlight the principles of good eval design and hillclimbing first, then show how Claude Code with the `claude-api` skill applies those principles. We’ll close by showing a few examples of these commands.
+In this article, we highlight the principles of good eval design and hillclimbing first, then show how [Claude Code](https://claude.com/product/claude-code) with the `claude-api` skill applies those principles. We’ll close by showing a few examples of these commands.
 
 ## Eval design
 

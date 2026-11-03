@@ -26,7 +26,7 @@ Some numbers here are list prices, and some are illustrations built from them. T
 
 ## What does a task cost?
 
-A task in Claude Code is a loop. The model reads the conversation, calls a tool, reads the result, and goes round again until it's done. Each trip round the loop is one request. Four things set what the loop costs.
+A task in [Claude Code](https://claude.com/product/claude-code) is a loop. The model reads the conversation, calls a tool, reads the result, and goes round again until it's done. Each trip round the loop is one request. Four things set what the loop costs.
 
 **Turns.** Every turn resends the conversation so far. Fewer turns means less input processed.
 

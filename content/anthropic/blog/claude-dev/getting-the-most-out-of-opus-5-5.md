@@ -8,7 +8,7 @@ How to prompt Opus 5.5, steer a long run, and check your results in Claude apps 
 
 ---
 
-Opus 5.5 works well with the way you already use Claude. A few things behave differently, though: it works for longer on its own, it tells you plainly what it did, and it thinks before every reply. This guide covers how to work with Opus 5.5 in Claude apps and Claude Code, including how to prompt the model, steer a long run, and check your results.
+Opus 5.5 works well with the way you already use Claude. A few things behave differently, though: it works for longer on its own, it tells you plainly what it did, and it thinks before every reply. This guide covers how to work with Opus 5.5 in Claude apps and [Claude Code](https://claude.com/product/claude-code), including how to prompt the model, steer a long run, and check your results.
 
 ## Try this first
 

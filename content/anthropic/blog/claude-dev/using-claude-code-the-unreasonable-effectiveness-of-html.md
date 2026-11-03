@@ -69,9 +69,9 @@ When useful, this can allow you to create individual editing environments for th
 
 ### Data ingestion
 
-One of the biggest reasons to use Claude Code to make HTML files instead of Claude.ai or Claude Design is all of the context Claude Code can ingest. For example, when writing this article, I asked Claude Code to read through my code folder and find all the HTML files I've generated, group and categorize them, and then make an HTML file with diagrams representing each type. The diagrams you see in this article are a direct result of that.
+One of the biggest reasons to use Claude Code to make HTML files instead of Claude.ai or [Claude Design](https://claude.com/product/design) is all of the context Claude Code can ingest. For example, when writing this article, I asked Claude Code to read through my code folder and find all the HTML files I've generated, group and categorize them, and then make an HTML file with diagrams representing each type. The diagrams you see in this article are a direct result of that.
 
-Besides the file system, Claude Code can find additional context using your MCPs (like Slack, Linear, etc.), your web browser (with Claude in Chrome), and your git history.
+Besides the file system, Claude Code can find additional context using your MCPs (like Slack, Linear, etc.), your web browser (with [Claude in Chrome](https://claude.com/claude-in-chrome)), and your git history.
 
 ## Getting started
 

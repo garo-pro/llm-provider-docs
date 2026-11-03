@@ -10,7 +10,7 @@ A reference implementation walkthrough with common failure modes
 
 As AI accelerates our work, it's getting harder to keep up. At Anthropic, [simple agent automations](https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day) are frequently used to help. They often [run on a schedule](https://claude.com/resources/articles/whats-new-in-claude-managed-agents), gather context in the background, and proactively tell us what we need to know. But it’s difficult to build effective agent automations: they can lose access to a source without anyone noticing or fail to follow our preferences.
 
-Using [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) (beta), we built a reference implementation that reads custom sources (e.g., Slack and GitHub repos) on a schedule, tracks what changed since the last run, and posts what you need to know (e.g., to Slack). In this article, we walk through each step, share a reference implementation, and provide a command to run in Claude Code that configures the agent for you.
+Using [Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) (beta), we built a reference implementation that reads custom sources (e.g., Slack and GitHub repos) on a schedule, tracks what changed since the last run, and posts what you need to know (e.g., to Slack). In this article, we walk through each step, share a reference implementation, and provide a command to run in [Claude Code](https://claude.com/product/claude-code) that configures the agent for you.
 
 ## Get the code
 
@@ -180,7 +180,7 @@ Items can change between when the agent reads sources and when it posts. Just be
 
 ## Schedule
 
-With Claude Managed Agents, the agent is only a configuration file; a [deployment](https://platform.claude.com/docs/en/managed-agents/scheduled-deployments) runs it. The deployment names the agent, environment, and the first message of each run. It also holds the schedule, vault, memory stores, and budget. Each time the schedule fires, the platform starts a fresh agent [session](https://platform.claude.com/docs/en/managed-agents/sessions).
+With [Claude Managed Agents](https://claude.com/platform/claude-managed-agents), the agent is only a configuration file; a [deployment](https://platform.claude.com/docs/en/managed-agents/scheduled-deployments) runs it. The deployment names the agent, environment, and the first message of each run. It also holds the schedule, vault, memory stores, and budget. Each time the schedule fires, the platform starts a fresh agent [session](https://platform.claude.com/docs/en/managed-agents/sessions).
 
 ![The architecture diagram with Schedule highlighted: a scheduled deployment that wakes the agent for each run.](https://claude.dev/media/a206f78f34b18dcf7a51bc9bca1acaaf3b68df80ee4034ff521cfbf353af7bc5.png)
 

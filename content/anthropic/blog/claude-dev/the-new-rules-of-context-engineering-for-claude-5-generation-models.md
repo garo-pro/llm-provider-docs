@@ -14,7 +14,7 @@ But when you send a message to Claude, the prompt is only a small part of the co
 
 Unlike a prompt, context is used generally across many requests, so it cannot be as specific. How do you build these general prompts and guidance for Claude, especially when you don’t know what a user’s prompt might be?
 
-This can be surprisingly difficult as Claude’s own capabilities evolve. Most recently, we noticed a large jump in the way we prompt the newest generation of Claude models. We removed over 80% of Claude Code’s system prompt for models like Claude Opus 5 and Claude Fable 5 with no measurable loss on our coding evaluations.
+This can be surprisingly difficult as Claude’s own capabilities evolve. Most recently, we noticed a large jump in the way we prompt the newest generation of Claude models. We removed over 80% of [Claude Code](https://claude.com/product/claude-code)’s system prompt for models like Claude Opus 5 and Claude Fable 5 with no measurable loss on our coding evaluations.
 
 Here’s what we’ve learned about prompting this new class of models, and how you can utilize it to update your context engineering. We’ve put these best practices in `claude doctor`; use the command `/doctor` in Claude Code to rightsize your skills, and CLAUDE.md files.
 
