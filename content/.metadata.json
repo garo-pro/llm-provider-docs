@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-04T07:07:41.580458Z",
+    "fetch_date": "2026-11-04T18:23:09.300385Z",
     "section": "all"
   },
   "items": [
@@ -30,8 +30,8 @@
       "url": "https://platform.claude.com/docs/en/get-started",
       "status": "success",
       "path": "anthropic/en/get-started.md",
-      "sha256": "fc5ac59d90d6cc1a4e00257f979dd8b6c02dbf10a7433fff7b95991a132de621",
-      "size": 19393
+      "sha256": "91ed309789216b0c73d8c1bacb14e4a60ffa9724c8d1b0dd35008cb18d8a21c4",
+      "size": 21234
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/authentication",
@@ -58,8 +58,8 @@
       "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons",
       "status": "success",
       "path": "anthropic/en/build-with-claude/handling-stop-reasons.md",
-      "sha256": "d365bdad38d01c355249d0d9cd7f173b9bac6a174ea996cc14dc22354af41732",
-      "size": 124592
+      "sha256": "17a858526eb63d7029e45c56141c82dae7d97de36eb89674e431a6c6782325ae",
+      "size": 124580
     },
     {
       "url": "https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback",
@@ -408,8 +408,8 @@
       "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
       "status": "success",
       "path": "anthropic/en/build-with-claude/prompt-caching.md",
-      "sha256": "f63bfb61cac85e833329867f28e1ff6d4587475414c6a1371ffca8a4eedbf470",
-      "size": 166027
+      "sha256": "aee2de4eb8dbb3102f9164831482d848afc9621ca0a19bbd4f4fd11f46b2d3d1",
+      "size": 166126
     },
     {
       "url": "https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages",
@@ -513,15 +513,15 @@
       "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview",
       "status": "success",
       "path": "anthropic/en/agents-and-tools/agent-skills/overview.md",
-      "sha256": "46e245d05b655d427d60dd6080da8522cf4c307e6ce84451c47e90bdfafef896",
-      "size": 25837
+      "sha256": "72e111d404c2f2304159c8340dea47537d05e0816d0b882f8e52fcbaf4f2b160",
+      "size": 25841
     },
     {
       "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/quickstart",
       "status": "success",
       "path": "anthropic/en/agents-and-tools/agent-skills/quickstart.md",
-      "sha256": "6e067089ca983f7c86474c6bcdff3e3c07f6fb157da435d4951fa88d838841c7",
-      "size": 36882
+      "sha256": "24f45faf73c389ed524e1650943a4e05153e0da0d4405d30a4476c6d3ccc59f2",
+      "size": 40093
     },
     {
       "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices",
@@ -639,15 +639,15 @@
       "url": "https://platform.claude.com/docs/en/build-with-claude/claude-platform-on-aws",
       "status": "success",
       "path": "anthropic/en/build-with-claude/claude-platform-on-aws.md",
-      "sha256": "1781240cdacbeed4923582aa5fb2ec027d2d045b67c33c93fd513ed4aff90b77",
-      "size": 106204
+      "sha256": "b9519a9e52abaf460cc82a28000d699ccba287201501e20d305bbf63f93cbdf8",
+      "size": 106343
     },
     {
       "url": "https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
       "status": "success",
       "path": "anthropic/en/build-with-claude/claude-in-microsoft-foundry.md",
-      "sha256": "5649138d10b0db75c4079664865059a01213ac10c3b3b638994302eb6b0b7164",
-      "size": 38500
+      "sha256": "09f187ac23dc92f014f4b74660efcb8b46b85a638b407598cea10fdd7444f9b7",
+      "size": 38329
     },
     {
       "url": "https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/overview",
@@ -660,15 +660,15 @@
       "url": "https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed",
       "status": "success",
       "path": "anthropic/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed.md",
-      "sha256": "15c0ddb3ea3913231efb63b0a42863b79a01e567a10ff5025a143c7cc2ec54a3",
-      "size": 55979
+      "sha256": "8c31470ee30fdc02daa47e97e3aaa3d41cd8836a22f858f4688851f6dc76c01a",
+      "size": 56156
     },
     {
       "url": "https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/google-managed",
       "status": "success",
       "path": "anthropic/en/build-with-claude/claude-models-on-google-cloud/google-managed.md",
-      "sha256": "181e5e6e6e045b3d699390d0a4aabd089d3be2b8d85f9eeb30e6f153f3e97974",
-      "size": 32443
+      "sha256": "efca68239fafed5bff4267b5f23b980a54cea79038cfca2cb1371d757520384c",
+      "size": 32532
     },
     {
       "url": "https://platform.claude.com/docs/en/managed-agents/overview",
@@ -681,8 +681,8 @@
       "url": "https://platform.claude.com/docs/en/managed-agents/quickstart",
       "status": "success",
       "path": "anthropic/en/managed-agents/quickstart.md",
-      "sha256": "c53160f53cb9a922e55fc956fca0a52a7a6eb6634a9cf8c3eff16ef17921c289",
-      "size": 37679
+      "sha256": "111b5572ffb25d2b48ac44da1a0f8f483deeb3b3e884fcb5c9d3772cb2b3459a",
+      "size": 40006
     },
     {
       "url": "https://platform.claude.com/docs/en/managed-agents/onboarding",
@@ -702,8 +702,8 @@
       "url": "https://platform.claude.com/docs/en/managed-agents/agent-setup",
       "status": "success",
       "path": "anthropic/en/managed-agents/agent-setup.md",
-      "sha256": "868d0da3efdd1c5a77660ca9a7541813cabaed728629c041f13600fe4e2e8555",
-      "size": 45054
+      "sha256": "c2e473daf734cd17b80db5e1820e96a7d96b329c1deae77c6a2b3049484d364f",
+      "size": 45055
     },
     {
       "url": "https://platform.claude.com/docs/en/managed-agents/tools",
@@ -765,8 +765,8 @@
       "url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes",
       "status": "success",
       "path": "anthropic/en/managed-agents/self-hosted-sandboxes.md",
-      "sha256": "0257d387d7fba53bb68120395002a0ca4c36031b5c6201fd45f9657d8b1ac4f1",
-      "size": 28903
+      "sha256": "9d05cf79ad58f25c443da06ea7a8c17a5100b607376a336b5c255e5225be4c0c",
+      "size": 28923
     },
     {
       "url": "https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-workers",
@@ -856,8 +856,8 @@
       "url": "https://platform.claude.com/docs/en/managed-agents/webhooks",
       "status": "success",
       "path": "anthropic/en/managed-agents/webhooks.md",
-      "sha256": "ca742bf397f13228f60a14f9cab9e7167f083955fa87212c668711dec5dd0333",
-      "size": 35947
+      "sha256": "686224fc07dd12347cf6ef6c862f6f5ac9198de415b81df9e90ce082bb0ef9d2",
+      "size": 36108
     },
     {
       "url": "https://platform.claude.com/docs/en/managed-agents/define-outcomes",
@@ -1045,22 +1045,22 @@
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-reference",
       "status": "success",
       "path": "anthropic/en/manage-claude/wif-reference.md",
-      "sha256": "9fffb75d2c381900a6654fa3cfc4866679a4329ec0f655e5f53cefc2f43adf79",
-      "size": 47930
+      "sha256": "488e23489e1ad08cd203b7ab5bfc3d8526ae550772751b3ed7b52d5309107b96",
+      "size": 47925
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/aws",
       "status": "success",
       "path": "anthropic/en/manage-claude/wif-providers/aws.md",
-      "sha256": "f5034432e381b08973e4bde6b5ad8dcf3a3f41ada970a879168a41e30cc5a605",
-      "size": 34750
+      "sha256": "455968254ceab581c98de9b08ab1657d47680c087827eb36a21eca222385f43d",
+      "size": 34746
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/gcp",
       "status": "success",
       "path": "anthropic/en/manage-claude/wif-providers/gcp.md",
-      "sha256": "8265b3b0d44f9881a8c01ef9af9f94e066599acf75e3c739ac877226738038ae",
-      "size": 22445
+      "sha256": "72793e99e748a661173429bf8fcc308aa23b24dad05f62f04685a0372fb807f8",
+      "size": 22437
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/azure",
@@ -1080,15 +1080,15 @@
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/kubernetes",
       "status": "success",
       "path": "anthropic/en/manage-claude/wif-providers/kubernetes.md",
-      "sha256": "f7516a12197e20941fbe99b52ac059e3399491ee17997ee0a45c1b1153300a8a",
-      "size": 14512
+      "sha256": "6d7da4c469cfb12a7e5cc6775677f969d1271893637d4c0fb0c50213cb163969",
+      "size": 14502
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/spiffe",
       "status": "success",
       "path": "anthropic/en/manage-claude/wif-providers/spiffe.md",
-      "sha256": "4e139ffa6b1b0acd06157f70f3fdebf4db473bee4d3c833b7bc06c189c7dd4e8",
-      "size": 30677
+      "sha256": "6f8d5591a3502c4dffea5ef01b894eb8d87ba64c7d03cfd45949843e1c760dba",
+      "size": 30669
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/wif-providers/okta",
@@ -1150,8 +1150,8 @@
       "url": "https://platform.claude.com/docs/en/manage-claude/opentelemetry/sdk",
       "status": "success",
       "path": "anthropic/en/manage-claude/opentelemetry/sdk.md",
-      "sha256": "6994cf22ec5f8e88fddd9f026ca62c0e99867a6ef8d14161cc398c2bdb44d1ab",
-      "size": 35247
+      "sha256": "9bb0a216f139431587a5bc55b48a2db8ba0b3fdf9fa6ae5454f5c625084c1b3f",
+      "size": 35264
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/opentelemetry/api",
@@ -1171,8 +1171,8 @@
       "url": "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention",
       "status": "success",
       "path": "anthropic/en/manage-claude/api-and-data-retention.md",
-      "sha256": "f4e28822f340b0b8e4c9b29507dec82fc2b60379635e62988e749cac677655c6",
-      "size": 59553
+      "sha256": "54995f87f373c8474003e5fe7567f02fa96b94fba3f6df0bb6ed8f9abf682259",
+      "size": 59555
     },
     {
       "url": "https://platform.claude.com/docs/en/manage-claude/access-transparency",
@@ -1563,8 +1563,8 @@
       "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
       "status": "success",
       "path": "anthropic/en/models/opus-5-5/overview.md",
-      "sha256": "1318dc1003cf4e749364b7873ff22025c6209ebd664e8c8a208619be5ec8749a",
-      "size": 16144
+      "sha256": "891d0c029dc60f81914c7cc6fa2634cf68b110045bd3e6e9e1e9be6dcbddec2f",
+      "size": 14944
     },
     {
       "url": "https://platform.claude.com/docs/en/models/opus-5-5/whats-new-opus-5-5",
@@ -1584,8 +1584,8 @@
       "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
       "status": "success",
       "path": "anthropic/en/models/sonnet-5-5/overview.md",
-      "sha256": "464960f9ab69b638751ba5ffb17c0b5dd0d0f95b99c238d76fa777769262c28c",
-      "size": 16367
+      "sha256": "e5f81605991b4580b67dbc17fe6cc4eb1df5f45494ce5acae9ec0a46e68d3311",
+      "size": 15037
     },
     {
       "url": "https://platform.claude.com/docs/en/models/sonnet-5-5/whats-new-sonnet-5-5",
@@ -1759,8 +1759,8 @@
       "url": "https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers",
       "status": "success",
       "path": "anthropic/en/about-claude/api-credits-for-subscribers.md",
-      "sha256": "a55742b9ca474b9d750e6c8f95373db09deabd5549565dddb99a5e35d4ee2f75",
-      "size": 12284
+      "sha256": "4b64907a52dd79a582fdb6757a6f513820aae908c25e5d434c550362651cb47e",
+      "size": 12286
     },
     {
       "url": "https://platform.claude.com/docs/en/release-notes/system-prompts/overview",
@@ -1934,8 +1934,8 @@
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/cli/quickstart",
       "status": "success",
       "path": "anthropic/en/cli-sdks-libraries/cli/quickstart.md",
-      "sha256": "4e9369fcb25656a92197765b53d4bca1b3b2df6b7a7e9c6718ddb62b07de62ce",
-      "size": 5351
+      "sha256": "8e2b4c120fd84f5beb5b89abfa84cb8aedb571b95904523934e5f7ea58f3a2c2",
+      "size": 5371
     },
     {
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/cli/authentication",
@@ -1983,8 +1983,8 @@
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/python",
       "status": "success",
       "path": "anthropic/en/cli-sdks-libraries/sdks/python.md",
-      "sha256": "f1c711b618fb1b50d7cd5853ba65884228b5aac65f7f75d910e7e39371d5821e",
-      "size": 28963
+      "sha256": "56d9da9b3fd262d66d24bce16be956b2130de641b85de1c0eebdb7fee364aa4d",
+      "size": 28977
     },
     {
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/typescript",
@@ -1997,8 +1997,8 @@
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/csharp",
       "status": "success",
       "path": "anthropic/en/cli-sdks-libraries/sdks/csharp.md",
-      "sha256": "523018f77c15c76a351c3f4599c77e56ea95731c57e7311c453f7f73b5f16fa9",
-      "size": 17471
+      "sha256": "e2c5b68f79604944107cedd11b43f111420166846110790ed8966c0bf6c2c960",
+      "size": 17521
     },
     {
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/go",
@@ -2011,8 +2011,8 @@
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/java",
       "status": "success",
       "path": "anthropic/en/cli-sdks-libraries/sdks/java.md",
-      "sha256": "87bce8dcc36d41c559c03262d01fb85bc8f64708990a355ed40d8414525ef2f2",
-      "size": 49843
+      "sha256": "aee8b6cd60500db8c02a13599db7f0e1aaaefb4b8a33b3dceaa597049ff407e4",
+      "size": 51396
     },
     {
       "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/sdks/php",
@@ -6267,8 +6267,8 @@
       "url": "https://code.claude.com/docs/en/agent-view",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-view.md",
-      "sha256": "f746fc00df7b9a7c7efa9f92444f314aa1d4b2216886e50e47fb3426aab17eba",
-      "size": 148165
+      "sha256": "1e15b773d73b82c488ace7882eb5087f49d77ce4d2c94d1cfa7c6d3a01005aed",
+      "size": 148266
     },
     {
       "url": "https://code.claude.com/docs/en/agent-teams",
@@ -7072,8 +7072,8 @@
       "url": "https://code.claude.com/docs/en/env-vars",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/env-vars.md",
-      "sha256": "7077a1ab6bda468186a050f44ac4e608132e1b68c42d6da2e58ef12f2db7335a",
-      "size": 187252
+      "sha256": "8fd15016f5d9a5b585f80b615429ed3dc981189604c87ca6b62e1c33af964ce3",
+      "size": 187935
     },
     {
       "url": "https://code.claude.com/docs/en/tools-reference",
@@ -7163,8 +7163,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/agent-loop",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/agent-loop.md",
-      "sha256": "43dfaed0ecc21ba45166a4f4c5c3ea4b05df0975097dd440186e9d0ae7d34c46",
-      "size": 41289
+      "sha256": "1c64d0597d0c1ad08d9bdd3561382480fef0fb40c9c51cf752b67bcb042626a5",
+      "size": 41189
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/claude-code-features",
@@ -7198,8 +7198,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/user-input",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/user-input.md",
-      "sha256": "82c8bd91120247cbef389192909452ed17a3fcfbb8cf73b53319c60fa0b644ca",
-      "size": 35441
+      "sha256": "c8ee41d277a877746a7b8ce78215090273bbd7637b391433b6005a0d44e23300",
+      "size": 34780
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/streaming-output",
@@ -7268,8 +7268,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/permissions",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/permissions.md",
-      "sha256": "cd80c876908e97488b102938922c947035a2c831c6417bb6bb3e36b45f2b2d8a",
-      "size": 33327
+      "sha256": "367bf6cd12a5ee902f5c33453b9c34c6763d42deb3033e0a005b086c1109b46f",
+      "size": 35988
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/hooks",
@@ -7317,15 +7317,15 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/secure-deployment",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/secure-deployment.md",
-      "sha256": "e384fdd59a4ba17711478aa66d74fdb157deb1494d7d9b49bf1a5998aaf0879f",
-      "size": 21619
+      "sha256": "1e465d76bfb03b5776ff5cd80addc5bdf385236f3b20f2bfca366f9f002fb843",
+      "size": 21646
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/typescript",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/typescript.md",
-      "sha256": "b97439a5b59573d48631c7baec9f3f2905dbce5acd95e5e7255dd91d812a562b",
-      "size": 330365
+      "sha256": "94313a7aa2e1118d429b4193dd21b549e0c03c3ebc6784d70b15b4270942f99f",
+      "size": 330466
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/typescript-v2-preview",
@@ -7338,8 +7338,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/python",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/python.md",
-      "sha256": "01cfb668d9f56127e8d2acce24f50073a0d2f14887f4f923bc8b15bbc5372adc",
-      "size": 164670
+      "sha256": "37e522135e99eb3cc7a36e3bbe665b85079ee851de12a5b5372bbc39890a8194",
+      "size": 164772
     },
     {
       "url": "https://code.claude.com/docs/en/whats-new/index",
@@ -13456,8 +13456,8 @@
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
       "status": "success",
       "path": "anthropic/blog/policy/threat-intelligence-report-september-2026.md",
-      "sha256": "5a4808d8ece2a8540cf80261aee38f8729a6cd4aa0e3270ec62d2849b850cfae",
-      "size": 237084
+      "sha256": "9eb64d5bbb7403e16603f92817e2849438a9ee6be75d08f844c4867336a586a0",
+      "size": 232822
     },
     {
       "url": "https://www.anthropic.com/constitution",
@@ -13505,8 +13505,8 @@
       "url": "https://www.anthropic.com/beneficial-deployments",
       "status": "success",
       "path": "anthropic/blog/policy/beneficial-deployments.md",
-      "sha256": "8e18e87fc39eda7848e86f64f9291dc411a92eec4ed4d857ea9f3dd95eafe198",
-      "size": 14920
+      "sha256": "67649733431d42c02c9fd8f63a8e8e55cc6e078c3840073ea814f26fde945dd7",
+      "size": 14723
     },
     {
       "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
@@ -19550,6 +19550,13 @@
       "size": 10945
     },
     {
+      "url": "https://support.claude.com/en/articles/15537633-auto-connect-your-organization-s-apps-to-claude",
+      "status": "success",
+      "path": "anthropic/support/15537633-auto-connect-your-organization-s-apps-to-claude.md",
+      "sha256": "a821771de300278175b2882ef5f644697b2ff9747742bfd4e1040d22bb553d01",
+      "size": 14011
+    },
+    {
       "url": "https://support.claude.com/en/articles/15591275-child-safety-guidance-for-developers",
       "status": "success",
       "path": "anthropic/support/15591275-child-safety-guidance-for-developers.md",
@@ -20820,8 +20827,8 @@
       "url": "https://claude.com/docs/connectors/building/authentication",
       "status": "success",
       "path": "anthropic/claude/connectors/building/authentication.md",
-      "sha256": "a84606b8a59f5e5b4ba00b972d6148d16f3094a320a74545c180306bf7e3af03",
-      "size": 29700
+      "sha256": "57c1850f7a980e5f1aea04826af94322091ec4bc7edb9ffd47e308a5020088c6",
+      "size": 30420
     },
     {
       "url": "https://claude.com/docs/connectors/building/directory-vs-custom",
@@ -20834,8 +20841,8 @@
       "url": "https://claude.com/docs/connectors/building/enterprise-managed-auth",
       "status": "success",
       "path": "anthropic/claude/connectors/building/enterprise-managed-auth.md",
-      "sha256": "ca41c3130bd297e565ff9ce730c3767046a8d5a1fee870609de8a426106d8320",
-      "size": 25377
+      "sha256": "59ff71cf90a8693444603f234e8a5eda77f870d6e3e673ec153ac61bc6676475",
+      "size": 27683
     },
     {
       "url": "https://claude.com/docs/connectors/building",
@@ -20848,8 +20855,8 @@
       "url": "https://claude.com/docs/connectors/building/lazy-authentication",
       "status": "success",
       "path": "anthropic/claude/connectors/building/lazy-authentication.md",
-      "sha256": "ec8153ef9f3cb00ab2659b936973d67500b2eaac9f4de2bea34e5e45190712be",
-      "size": 22303
+      "sha256": "a9dfc3aeaa1486ba2fcab6dd0597c8da08b63a95c81c1de13d0c32fbba1cd229",
+      "size": 22525
     },
     {
       "url": "https://claude.com/docs/connectors/building/managing-your-listing",
@@ -31271,8 +31278,8 @@
       "url": "https://developers.openai.com/api/docs",
       "status": "success",
       "path": "openai/api/docs.md",
-      "sha256": "df73ec9f9a6be7bb3c149d004c01ab6c4f14b7c07524351806e8414e898f0bd4",
-      "size": 46048
+      "sha256": "7eb16218481d408dda96ee42dbbebd2be8b80ae546e706b23691710f91325371",
+      "size": 45899
     },
     {
       "url": "https://model-spec.openai.com/2026-08-18.html",
@@ -32237,8 +32244,8 @@
       "url": "https://developers.openai.com/api/docs/changelog",
       "status": "success",
       "path": "openai/api/docs/changelog.md",
-      "sha256": "f467827b1ceac790e6bf11056f9056cd1b4573eb041cb7d68474df1ce053f665",
-      "size": 79261
+      "sha256": "439d9ebd9dc60bd382d25cfb3513babc7093182bad5c9516a6464e7686e608dc",
+      "size": 79787
     },
     {
       "url": "https://developers.openai.com/api/docs/deprecations",
@@ -32279,8 +32286,8 @@
       "url": "https://developers.openai.com/api/docs/models/all",
       "status": "success",
       "path": "openai/api/docs/models/all.md",
-      "sha256": "96585ec95ba061e6496c754af7cfe6f7d5ea13b8a84542c190b74c9adcdf3b5d",
-      "size": 12844
+      "sha256": "28e5ceb894fd713b3419c09b9a025bad4a616d513d77b3baadb52b680cdcd70e",
+      "size": 12818
     },
     {
       "url": "https://developers.openai.com/api/docs/models/compare",
@@ -32293,8 +32300,8 @@
       "url": "https://developers.openai.com/api/docs/tutorials/web-qa-embeddings",
       "status": "success",
       "path": "openai/api/docs/tutorials/web-qa-embeddings.md",
-      "sha256": "9a2e68c1c77bdedd82689e7274e2ef542ee1c3b08a6c0589d9cd435ee73636cb",
-      "size": 21341
+      "sha256": "df4cc50a3cb155afd18d68cdea10c537ea108f7fb6164d9e0d6922573d5d8b7e",
+      "size": 18213
     },
     {
       "url": "https://developers.openai.com/api/docs/tutorials/meeting-minutes",
@@ -32461,8 +32468,8 @@
       "url": "https://developers.openai.com/api/docs/guides/rate-limits",
       "status": "success",
       "path": "openai/api/docs/guides/rate-limits.md",
-      "sha256": "afc255f7d43780154a927dc2ed72e8e4501fcf0b2c38d06748e8f31c2886908c",
-      "size": 22636
+      "sha256": "f5bd20f2f7cdd2af02a5e0688554022a7f47931195fca481571bb3b0e8433a7d",
+      "size": 23026
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p5",
@@ -32584,13 +32591,6 @@
       "size": 13546
     },
     {
-      "url": "https://developers.openai.com/api/docs/guides/deep-research",
-      "status": "success",
-      "path": "openai/api/docs/guides/deep-research.md",
-      "sha256": "7625b2672a53502e28cd38df4fa4c8b8b3cce748ae231cf79bb3ea5a3e500ec5",
-      "size": 57921
-    },
-    {
       "url": "https://developers.openai.com/api/docs/guides/custom-chatkit",
       "status": "success",
       "path": "openai/api/docs/guides/custom-chatkit.md",
@@ -32638,6 +32638,13 @@
       "path": "openai/api/docs/guides/reasoning-best-practices.md",
       "sha256": "00d3f8ee705eb2340513512da669b45aa534ea8c8412e65470cf576aa59baa76",
       "size": 17199
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/api-keys",
+      "status": "success",
+      "path": "openai/api/docs/guides/api-keys.md",
+      "sha256": "4532117634bf6a7677fae3bb79139d5034f8fd13c07220af601f88fa0184fc45",
+      "size": 7942
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/custom-voices",
@@ -32944,8 +32951,8 @@
       "url": "https://developers.openai.com/api/docs/guides/batch",
       "status": "success",
       "path": "openai/api/docs/guides/batch.md",
-      "sha256": "ecfdc628228599980e001243660306a7a8d426540fb6093f31668823933ee00a",
-      "size": 21469
+      "sha256": "607bb7b751c050587de1bc8deac0d21de351145daaf19c1dfd8cbafc16b826af",
+      "size": 21089
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/promptfoo-codex",
@@ -33175,8 +33182,8 @@
       "url": "https://developers.openai.com/api/docs/guides/tools-web-search",
       "status": "success",
       "path": "openai/api/docs/guides/tools-web-search.md",
-      "sha256": "c7a83739369f825405132cfe796ce17066b7b910b533ac58a388c26ca86ee5f5",
-      "size": 47949
+      "sha256": "70fed9d622dbfc7a9671ecba9fa4b87141abd15d6ea4f8b5b1a2c0f7262ab6f0",
+      "size": 46085
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/admin-apis",
@@ -33266,8 +33273,8 @@
       "url": "https://developers.openai.com/api/docs/guides/tools-connectors-mcp",
       "status": "success",
       "path": "openai/api/docs/guides/tools-connectors-mcp.md",
-      "sha256": "7404bb19cb1eb6cf4c4a3e13cec0c584f5ec90ab30b7238d2bb6c0bc9aa757d1",
-      "size": 64586
+      "sha256": "57bc5d00b848dc8dedffeafef36ae7f47ab65c53aaa1d3dc0499776512af0ba3",
+      "size": 65036
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/image-cost-calculator",
@@ -35034,6 +35041,13 @@
       "size": 10889
     },
     {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers.md",
+      "sha256": "2224b1717bccdcaa991dc65fabe7d73a324ed9ff24f86d13a7c188cd082d7735",
+      "size": 33579
+    },
+    {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/usage.md",
@@ -35053,6 +35067,83 @@
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/data_retention/methods/update.md",
       "sha256": "cfb665c613b6572a67a25c0b6ab5d87efa137347fc9de22463d1621a560052bb",
       "size": 2056
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/list",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/list.md",
+      "sha256": "a8899ed1ff832a8291940c01f41e723bec8f7a06d9bafc7c5346ca32f2b90a27",
+      "size": 3375
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/retrieve",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/retrieve.md",
+      "sha256": "c051aee105aae2d2472a7f5ce88000578384a5068eb3d35ec0fc6480995fb0c4",
+      "size": 2812
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/update",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/update.md",
+      "sha256": "11e8b0c6e10623df683d935557c07a123b42fca6b4cdb08a9105558a7c8ddf36",
+      "size": 3873
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/delete",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/delete.md",
+      "sha256": "76175ef59ac2ea2aff8655cb34673c66050fe7815a06a0e13bab51758704b41f",
+      "size": 1388
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/create",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/create.md",
+      "sha256": "352bbf977d04e6a498d1ba7af5aeaa678d1ac42ca96ad8cb1e5461b8bd536faf",
+      "size": 3988
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules.md",
+      "sha256": "9bf7bcd08928b6af0969bd0292db2cb2a1a7df9c64f97efe6fca0866211af90b",
+      "size": 17420
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/list",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/list.md",
+      "sha256": "472bdfe5b1fc4eaef9bda28fa8b847feb52bd9d70fa1c587c863e275bc2dfcf7",
+      "size": 3693
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/retrieve",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/retrieve.md",
+      "sha256": "a799ba3b99bf72f4dcc28e6a3a3e6c3304e897124ba1a845fd41bde5e660e0ce",
+      "size": 3102
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/update",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/update.md",
+      "sha256": "ae181d69bec1a2a39c4303fc5464c0b02a7e0bb0178906f7a3e14c384b6f52e2",
+      "size": 3957
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/delete",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/delete.md",
+      "sha256": "043feb209420a44f2906bb6c4ea656aadea232fdb96a09e4960589fc3cda51dc",
+      "size": 1626
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/create",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/create.md",
+      "sha256": "bf134e08a441e35437866e4d3203f2eb65963286e6adb9850c37a60cccf15d81",
+      "size": 4172
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/spend_alerts/methods/list",
@@ -35221,6 +35312,13 @@
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/rate_limits.md",
       "sha256": "e208a062257f05d6539d93b2f25f0bfa9b2a6819e499b563cdc725bb205d1f55",
       "size": 8069
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings.md",
+      "sha256": "f7231afb34c06428497dd36e6c21a0501fc3980a9d2631ac2e7d6bf71ee97415",
+      "size": 5171
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions",
@@ -35417,6 +35515,20 @@
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/hosted_tool_permissions/methods/update.md",
       "sha256": "390a408d38c745279209579ac40b3a935b1b0fd24345a3c61fc07a24932fda64",
       "size": 3534
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/retrieve",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/retrieve.md",
+      "sha256": "e6069490d8f06b54e2be5e34befa221530d4acdf16d4fbb95c8e53bf6b879daf",
+      "size": 1766
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/update",
+      "status": "success",
+      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/update.md",
+      "sha256": "0ca68adb3dd5ed9508ba491a42a15802a5f62bddec0baf3ee1562a5f34bd35bb",
+      "size": 2591
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/spend_limit/methods/retrieve",
@@ -47165,118 +47277,6 @@
       "size": 170
     },
     {
-      "url": "https://developers.openai.com/api/docs/guides/api-keys",
-      "status": "success",
-      "path": "openai/api/docs/guides/api-keys.md",
-      "sha256": "4532117634bf6a7677fae3bb79139d5034f8fd13c07220af601f88fa0184fc45",
-      "size": 7942
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings.md",
-      "sha256": "f7231afb34c06428497dd36e6c21a0501fc3980a9d2631ac2e7d6bf71ee97415",
-      "size": 5171
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/retrieve",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/retrieve.md",
-      "sha256": "e6069490d8f06b54e2be5e34befa221530d4acdf16d4fbb95c8e53bf6b879daf",
-      "size": 1766
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/update",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/projects/subresources/service_tier_settings/methods/update.md",
-      "sha256": "0ca68adb3dd5ed9508ba491a42a15802a5f62bddec0baf3ee1562a5f34bd35bb",
-      "size": 2591
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers.md",
-      "sha256": "2224b1717bccdcaa991dc65fabe7d73a324ed9ff24f86d13a7c188cd082d7735",
-      "size": 33579
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/create",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/create.md",
-      "sha256": "352bbf977d04e6a498d1ba7af5aeaa678d1ac42ca96ad8cb1e5461b8bd536faf",
-      "size": 3988
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/delete",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/delete.md",
-      "sha256": "76175ef59ac2ea2aff8655cb34673c66050fe7815a06a0e13bab51758704b41f",
-      "size": 1388
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/list",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/list.md",
-      "sha256": "a8899ed1ff832a8291940c01f41e723bec8f7a06d9bafc7c5346ca32f2b90a27",
-      "size": 3375
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/retrieve",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/retrieve.md",
-      "sha256": "c051aee105aae2d2472a7f5ce88000578384a5068eb3d35ec0fc6480995fb0c4",
-      "size": 2812
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/update",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/methods/update.md",
-      "sha256": "11e8b0c6e10623df683d935557c07a123b42fca6b4cdb08a9105558a7c8ddf36",
-      "size": 3873
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules.md",
-      "sha256": "9bf7bcd08928b6af0969bd0292db2cb2a1a7df9c64f97efe6fca0866211af90b",
-      "size": 17420
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/create",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/create.md",
-      "sha256": "bf134e08a441e35437866e4d3203f2eb65963286e6adb9850c37a60cccf15d81",
-      "size": 4172
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/delete",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/delete.md",
-      "sha256": "043feb209420a44f2906bb6c4ea656aadea232fdb96a09e4960589fc3cda51dc",
-      "size": 1626
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/list",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/list.md",
-      "sha256": "472bdfe5b1fc4eaef9bda28fa8b847feb52bd9d70fa1c587c863e275bc2dfcf7",
-      "size": 3693
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/retrieve",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/retrieve.md",
-      "sha256": "a799ba3b99bf72f4dcc28e6a3a3e6c3304e897124ba1a845fd41bde5e660e0ce",
-      "size": 3102
-    },
-    {
-      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/update",
-      "status": "success",
-      "path": "openai/api/reference/resources/admin/subresources/organization/subresources/workload_identity_providers/subresources/federation_rules/methods/update.md",
-      "sha256": "ae181d69bec1a2a39c4303fc5464c0b02a7e0bb0178906f7a3e14c384b6f52e2",
-      "size": 3957
-    },
-    {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
       "status": "success",
       "path": "openai/github/openai-cookbook/.codex/skills/docs-editor/SKILL.md",
@@ -47863,13 +47863,6 @@
       "path": "openai/github/openai-cookbook/examples/Realtime_prompting_guide.ipynb",
       "sha256": "f46f9899f3b0778cdc6b28bbf3f985057cda338166fa580225a52c943e056370",
       "size": 2055578
-    },
-    {
-      "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/Recommendation_using_embeddings.ipynb",
-      "status": "success",
-      "path": "openai/github/openai-cookbook/examples/Recommendation_using_embeddings.ipynb",
-      "sha256": "7fb09046cc2044df5fc25bd90d6320ac54797ecae36147bb9428da52ea2809c9",
-      "size": 1864388
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/Regression_using_embeddings.ipynb",
@@ -49286,13 +49279,6 @@
       "size": 59793
     },
     {
-      "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/evaluation/How_to_evaluate_LLMs_for_SQL_generation.ipynb",
-      "status": "success",
-      "path": "openai/github/openai-cookbook/examples/evaluation/How_to_evaluate_LLMs_for_SQL_generation.ipynb",
-      "sha256": "37ec2ac817fc267712c26544f8ee38c7f317d7b8468b6e884b4b4a6c0283204c",
-      "size": 106023
-    },
-    {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/evaluation/moving-from-openai-evals-to-promptfoo.md",
       "status": "success",
       "path": "openai/github/openai-cookbook/examples/evaluation/moving-from-openai-evals-to-promptfoo.md",
@@ -49683,13 +49669,6 @@
       "path": "openai/github/openai-cookbook/examples/partners/AWS/evidence_grounded_aml_agent_with_bedrock.ipynb",
       "sha256": "57a84933e3cf99aa4ceef1fc9ac346350f151ae810f750f0d0888023e223bd9a",
       "size": 47722
-    },
-    {
-      "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/partners/AWS/openai_models_with_amazon_bedrock.ipynb",
-      "status": "success",
-      "path": "openai/github/openai-cookbook/examples/partners/AWS/openai_models_with_amazon_bedrock.ipynb",
-      "sha256": "ad13f629522a4613fd383f99dc7d3eebe5b9722fc6c35929a91f647e9293d9bc",
-      "size": 337965
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/partners/AWS/policy_to_review_prior_authorization_agents_sdk_agentcore.ipynb",
@@ -51214,6 +51193,10 @@
       "error": "extraction produced no usable content"
     },
     {
+      "url": "https://platform.claude.com/docs/en/api/beta/organization/analytics/chat_projects/list",
+      "error": "HTTP 502"
+    },
+    {
       "url": "https://openai.com/hugging-face-incident-and-misalignment",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
@@ -51626,7 +51609,7 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://developers.openai.com/api/docs/guides/tools-local-shell",
+      "url": "https://developers.openai.com/api/docs/guides/deep-research",
       "error": "HTTP 404"
     },
     {
@@ -51646,11 +51629,23 @@
       "error": "501, message='First fragment: Transfer-Encoding not supported', url='https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/packages/aws-sdk/README.md'"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
+      "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/Recommendation_using_embeddings.ipynb",
+      "error": "503, message='between bytes timeout', url='https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/Recommendation_using_embeddings.ipynb'"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/evaluation/How_to_evaluate_LLMs_for_SQL_generation.ipynb",
+      "error": "503, message='between bytes timeout', url='https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/evaluation/How_to_evaluate_LLMs_for_SQL_generation.ipynb'"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/partners/AWS/openai_models_with_amazon_bedrock.ipynb",
+      "error": "503, message='between bytes timeout', url='https://raw.githubusercontent.com/openai/openai-cookbook/main/examples/partners/AWS/openai_models_with_amazon_bedrock.ipynb'"
     },
     {
       "url": "https://openai.com/news/research",
+      "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
@@ -51726,10 +51721,6 @@
     {
       "url": "https://www.anthropic.com/research/AI-fluency-index",
       "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
-    },
-    {
-      "url": "https://support.claude.com/en/articles/15537633-authorize-mcp-connectors-for-your-entire-organization",
-      "reason": "moved -> https://support.claude.com/en/articles/15537633-auto-connect-your-organization-s-apps-to-claude"
     },
     {
       "url": "https://platform.claude.com/docs/en/agent-sdk/stop-reasons",
@@ -52396,10 +52387,6 @@
       "reason": "moved -> https://platform.claude.com/docs/en/api/beta/organization/analytics/user_cost_report/list"
     },
     {
-      "url": "https://platform.claude.com/docs/en/api/beta/organization/analytics/chat_projects/list",
-      "reason": "moved -> https://platform.claude.com/docs/en/api/beta/organization/analytics/apps/chat/projects/list"
-    },
-    {
       "url": "https://platform.claude.com/docs/en/about-claude/use-case-guides/classification",
       "reason": "HTTP 404"
     },
@@ -52738,6 +52725,10 @@
     {
       "url": "https://support.claude.com/en/articles/9767949-api-key-best-practices-keeping-your-keys-safe-and-secure",
       "reason": "moved -> https://support.claude.com/en/articles/9767949-api-key-best-practices-keep-your-keys-safe-and-secure"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/15537633-authorize-mcp-connectors-for-your-entire-organization",
+      "reason": "moved -> https://support.claude.com/en/articles/15537633-auto-connect-your-organization-s-apps-to-claude"
     },
     {
       "url": "https://support.claude.com/en/articles/13163666-holiday-2025-usage-promotion",
@@ -53114,6 +53105,10 @@
     {
       "url": "https://developers.openai.com/plugins/app-guidelines",
       "reason": "moved -> https://developers.openai.com/plugins/plugin-guidelines"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/tools-local-shell",
+      "reason": "HTTP 404"
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/developer-mode",
@@ -53873,10 +53868,10 @@
     }
   ],
   "summary": {
-    "total": 7980,
-    "downloaded": 7314,
+    "total": 7981,
+    "downloaded": 7311,
     "skipped": 0,
-    "failed": 125,
+    "failed": 129,
     "dead": 541,
     "success_rate": 98.3
   }

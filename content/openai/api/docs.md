@@ -102,7 +102,6 @@ work more autonomously.
 - [Daytona](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/daytona.md): Run an Agents API session in a Daytona Sandbox.
 - [Decisions](https://developers.openai.com/api/docs/guides/decisions.md): Use the Decisions API to check conditions, select from fixed options, and score text, images, and JSON against a rubric.
 - [Decrypt PSP records](https://developers.openai.com/api/docs/guides/psp-decryption.md): Decrypt PSP records from your cloud storage using standard cryptographic libraries and your cloud key-management service.
-- [Deep research](https://developers.openai.com/api/docs/guides/deep-research.md): Use deep research models for complex analysis and research tasks.
 - [Delegation and tools in GPT-Live](https://developers.openai.com/api/docs/guides/live-delegation.md): Configure GPT-Live client or Responses delegation, use hosted tools, return tool results and approvals, and reduce backend latency.
 - [DigitalOcean](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/digitalocean.md): Connect a DigitalOcean sandbox to an Agents API session.
 - [Direct preference optimization](https://developers.openai.com/api/docs/guides/direct-preference-optimization.md): Fine-tune models for subjective decision-making by comparing model outputs.

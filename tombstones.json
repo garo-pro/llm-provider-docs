@@ -55,6 +55,10 @@
       "since": "2026-10-19",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/api/docs/guides/deep-research": {
+      "since": "2026-11-04",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/api/docs/guides/developer-mode": {
       "since": "2026-10-05",
       "reason": "HTTP 404"
