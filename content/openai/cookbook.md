@@ -17,7 +17,7 @@ Each entry has a Markdown twin at `/cookbook/<path>.md`.
 - [How to handle the raw chain of thought in gpt-oss](https://developers.openai.com/cookbook/articles/gpt-oss/handle-raw-cot.md)
 - [How to run gpt-oss locally with Ollama](https://developers.openai.com/cookbook/articles/gpt-oss/run-locally-ollama.md)
 - [How to run gpt-oss with Transformers](https://developers.openai.com/cookbook/articles/gpt-oss/run-transformers.md)
-- [Integrating Sign in with ChatGPT in your Opensource App](https://developers.openai.com/cookbook/articles/sign-in-with-chatgpt.md): Add ChatGPT sign-in and ChatGPT plan usage to an existing open-source desktop app.
+- [Integrating Sign in with ChatGPT in your open-source app](https://developers.openai.com/cookbook/articles/sign-in-with-chatgpt.md): Add ChatGPT sign-in and ChatGPT plan usage to an existing open-source desktop app.
 - [OpenAI Harmony Response Format](https://developers.openai.com/cookbook/articles/openai-harmony.md)
 - [User guide for gpt-oss-safeguard](https://developers.openai.com/cookbook/articles/gpt-oss-safeguard-guide.md)
 - [Verifying gpt-oss implementations](https://developers.openai.com/cookbook/articles/gpt-oss/verifying-implementations.md)

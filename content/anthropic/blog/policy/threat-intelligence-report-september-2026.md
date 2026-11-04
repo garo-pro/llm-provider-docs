@@ -108,7 +108,7 @@ Once actors gain access, they typically move straight to databases and look for 
 
 We identified and disrupted multiple clusters of financially motivated cybercrime activity conducted by operators suspected to be affiliates of the [ShinyHunters](https://en.wikipedia.org/wiki/ShinyHunters) collective, known for several large-scale data theft operations followed by pay-or-leak extortion demands. Although the affiliates appear disparate, and seem to be operating with their own tooling and operational workflows, analysis of their approaches and objectives shows that they are part of the same overall operation.
 
-![](https://assets.claude.com/48fd0b9d5f50ca7532b161b9d45ef0bd64ce9f50.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffc8ef227f64c039d99e27145fae5204fd8a81501-1920x312.jpg&w=3840&q=75)
 
 One French-speaking operator going by the aliases of (MeowSHA | frkoo | blazespider) ran a distributed credential-harvesting pipeline across a fleet of 10 AWS EC2 workers. This pipeline mass-downloaded 1.8 million distinct Android APKs from multiple app-store sources, decompiled them, and scanned for hardcoded secrets with [TruffleHog](https://github.com/trufflesecurity/trufflehog). Verified findings were routed in real time to a Telegram group organized into over 100 source types. A parallel GitHub organization email harvester fed a second stream of stolen GitHub Personal Access Tokens. These two credential pipelines supplied the initial-access credentials for the bulk of the confirmed breaches associated with frkoo.
 
@@ -130,43 +130,43 @@ Security practitioners use the phrase “living off the land” to describe atta
 
 #### Attack lifecycle and AI integration
 
-![](https://assets.claude.com/690a4a261d76ba0607c797104e267a77fd60a255.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fed4f8197b659c784685ee2be7b6f02efb523ee91-1920x500.jpg&w=3840&q=75)
 
 **Sourcing and recon.** Most intrusions began from compromised credentials. The actor also engaged in extensive scanning, vishing, phishing and domain spoofing operations to trick employees into giving access to systems.
 
-![](https://assets.claude.com/cdd3d5d7ecc4394e74f0735b029206d5d693da40.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd5167078d1d9356e40f423a712471b3d4f859c18-1999x823.jpg&w=3840&q=75)
 
 **Discover.** Exposed access tokens were also discovered at industrial scale through a wide variety of automated scraping and mining projects. These included analyzing application binaries, code repositories and integrations, client side code, credential stores, container images, metadata endpoints, open storage and victim-deployed AI agents. An example of this is with one actor project that downloads all APK files from Google Play Store and searches them for exposed session tokens or other access mechanisms that could be abused for access.
 
-![](https://assets.claude.com/4354392851d6ef4225077abae43c251f3501524d.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F501c3ff9d2bbd9362435907d7235e114db66031a-1999x1193.jpg&w=3840&q=75)
 
 **Validate/qualify.** Everything found is tested and qualified before use or resale, such as batch cloud key validation, purpose built login oracles, live replay against production, grading for resale value, and offline cracking.
 
-![](https://assets.claude.com/85e5d3ffb8af4a28e0013ddf50abb6503f0b25dd.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9ce01ce0e7381c9e67125c0c12089f542a137ebc-1999x792.jpg&w=3840&q=75)
 
 **Expand in-victim.** One working credential is used to expand access within the victim, and used for things like whole-cluster secret dumps, admin-token amplification, CI/CD injection, database and session-table dumps, mining dumps for signing keys, and vendor-OAuth fan-out to every downstream tenant.
 
-![](https://assets.claude.com/ea13d24bf0b835cd7fae0a46419191281fadfb5f.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6a6bd5fa483b30c5bfe9fbc894d9a8de93501d02-1999x866.jpg&w=3840&q=75)
 
 **Exfil channels.** Material moves out over six channels: consumer cloud storage, a private NAS over mesh-VPN, Telegram bot streams, staging inside victim clouds, C2 channels, and plain bulk API pulls.
 
-![](https://assets.claude.com/d0ef8c36faf8636b0b94bf7469dc85398c7c1ad1.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F880dd51cfdf39c25162963dbf03608811faf4010-1999x792.jpg&w=3840&q=75)
 
 **Warehouse.** Loot is warehoused for reuse and sale: a self-hosted estate that re-serves stolen databases, loot trees for each victim, a Telegram warehouse that also serves as the storefront, and working key stores.
 
-![](https://assets.claude.com/2ab5a67a17eca44058cd7cbfcd9153261841751a.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F360fd2e670b587c3dc2f91c5f1ba8b0284abb790-1999x760.jpg&w=3840&q=75)
 
 **Mint/persist.** New credentials and durable access are minted so the operation outlives rotation: cloud API keys in victim accounts, platform developer keys, forged sessions and 2FA codes, network backdoors.
 
-![](https://assets.claude.com/d6ccdcfabfff419e79565f2ccf8f7033088a7a7a.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc5504af2b3b96d4b74f7b9c6b4b220ea8bf0f0a3-1999x760.jpg&w=3840&q=75)
 
 **Monetize.** Monetization: resale channels and key pools, direct financial theft, extortion over the stolen data, dual-hat bounty income, and bulk data held for leverage.
 
-![](https://assets.claude.com/216bc8a08da43db817aa8f1f703106d04af638c0.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbb32ff7c140deed4174bf8fe87ba5a053a999567-1999x760.jpg&w=3840&q=75)
 
 #### Common workflows observed
 
-![](https://assets.claude.com/26bb2a8f975e306fea05c98b1c738ca599112468.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9ca8558aea18b56c588e1fb34b6b8cbd01bf093a-1813x1999.jpg&w=3840&q=75)
 
 #### Indicators of compromise
 
@@ -202,19 +202,19 @@ The following is a brief description of the loop the actor used in its zero day 
 
 Vendor firmware images were obtained and decrypted with a purpose-built skill, unpacked into root filesystems, and loaded into disassembler and audit sessions. Vulnerability patterns were hunted component-by-component with parallel agents instructed to require evidence and use project memory. One workflow iterating continuously on network appliances yielded more than a dozen possible zero day findings in a single month.
 
-![](https://assets.claude.com/e87f361b98dcaff723a436f7673dd796748dc18a.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F72970785999715f22b78c4fc2d0e2f20786fdfd3-1920x471.jpg&w=3840&q=75)
 
 ### Attack-surface and OSINT reconnaissance loop
 
 Other AI workflows ran continuously to conduct reconnaissance. This workflow took input for scan scopes seeded from target verticals and ran through an asset search engine via a dedicated tool server and bundled probing tools that fingerprinted the results. The identified exposed surface was mapped and entry points were qualified against known vulnerabilities. Each round’s findings fed a persistent project memory, and expanded the target set for the next sweep. The actor used the framework to target multiple foreign government and diplomatic agencies, in addition to over a dozen domestic Chinese companies.
 
-![](https://assets.claude.com/3b777b5ee7504823defe30ff176b1df8fb3a5362.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff3ddd5297b62ba79c500e9d921a6bafbf7dfb954-1920x471.jpg&w=3840&q=75)
 
 ### Autonomous collection-fleet loop
 
 A fleet of thirteen standing collection AI agents ran on a scheduled job to identify and download content from target websites, including publicly accessible US military and government sites like contract postings, and social media personas. The workflow did this through layered crawlers, anti-bot bypass techniques, and commercial proxy exits. An adjacent pipeline summarized and scored the retrieved content with an intelligence report-styled framing. From there, the workflow digests were delivered to a distribution portal.
 
-![](https://assets.claude.com/f3e38e1e018099350969350c8a63af19a363f026.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F966baae8ca495387317bcf4fe8c4147522584903-1920x471.jpg&w=3840&q=75)
 
 ### Hands-on intrusions
 
@@ -258,25 +258,25 @@ This case is the clearest demonstration to date that the AI supply chain has bec
 
 The operator maintained a per-target scope file that launched a custom workflow to delegate work to parallel reconnaissance and exploitation agents. The agent’s findings were re-tested for working access; if viable, they were merged into an incremental report. This workflow iteratively looped against the next target domain.
 
-![](https://assets.claude.com/2c7d6bd52db460d90d68a88b32dd139461e2afac.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0c118bda9102ec213c6035fb16a4847509c49e1b-1920x496.jpg&w=3840&q=75)
 
 ### Autonomous exploitation pipeline
 
 The actor used a containerized open-source pentest platform fronted by a local model gateway. It was aimed at a target’s web applications. Worker agents ran injection, XSS, authentication-bypass, and SSRF testing without human supervision, collecting potential findings and credentials into the operator’s workspace. This loop was run with exploitation enabled against production systems, meaning it both attempted to identify vulnerabilities and actively exploit them for access in the same workflows.
 
-![](https://assets.claude.com/e5118499a07e7c6a52a8810e56c2f2838b628b40.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd67f43c0159621c1e7b84b5cc5245f0e2bed40a2-1920x471.jpg&w=3840&q=75)
 
 ### Fraud account factory
 
 Residential proxies and antidetect browser profiles were provisioned, after which bots drove signup flows on exchange and marketplace targets. Commercial CAPTCHA-solving services, automated inbox polling, and automated identity-verification steps defeated onboarding controls, and the resulting verified accounts were banked for later operations.
 
-![](https://assets.claude.com/beca2605fe87e8d391abf9ee77d1ff1cbfcd256f.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F08c5bd02a2fc4c27002bc17f5f07c29e38000d59-1920x471.jpg&w=3840&q=75)
 
 ### KYC interception cloak
 
 The actor also engaged in credential theft and phishing campaigns. Victims were directed to lookalike verification domains whose reverse proxy relayed the real know your customer (KYC) flow, so the victim completed genuine identity verification while the operator captured the verified session and documents from the proxy relay in the middle. The captured session was then used by the actor from their machines to access the target service and data.
 
-![](https://assets.claude.com/9f66c467d8eacc3edf9bc586df1e2abb64161cec.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F57702ff9f64d0a10b7c3c12f0debec33dd185124-1920x471.jpg&w=3840&q=75)
 
 #### Attacker egress IPs
 
@@ -344,7 +344,7 @@ It’s important to bear in mind two caveats. First, humans have retained the de
 
 The following is a list of skills developed by threat actors to build out their AI-enabled workflows.
 
-![](https://assets.claude.com/bb4271e831847910f41510d0e1c2204a99a26e3c.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5b3c1191e266cbbe020d44dfb9acdbc1bedf5b9f-1920x1778.jpg&w=3840&q=75)
 
 ### Detecting and countering influence operations using Claude
 
@@ -407,7 +407,7 @@ Using the Breakout Scale, we would assess this operation as Category Four (conte
 
 The foreign actor supplied the topic and the talking points, and used Claude to turn them into briefings, contracts, scripts, graphics, and posts. Several were prepared for delivery to the Presidency’s spokesperson and the Russian House director. The reused templates and standing instructions show the planning was mostly done offline before any prompt was sent to Claude.
 
-![](https://assets.claude.com/93331ca4477a0983dde1a1d0b5a17ac7793a9d20.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe3724dfd4779f2c838c6cb0b70c54cc5f757ef2a-1990x1150.jpg&w=3840&q=75)
 
 ### Organizational nodes
 
@@ -447,7 +447,7 @@ These fabricated bylines gave each site the appearance of an independent local n
 
 We detected signs of coordinated inauthentic behavior on September 11, 2025, when the network’s websites published almost identical articles about the DRC-Rwanda conflict within three minutes of each other. The actors modified the tone of each article to fit different regional audiences, while simultaneously coordinating the distribution of these links across numerous X accounts.
 
-![](https://assets.claude.com/c5cfc051ebedbf49f60ab7faaa4a68420691b6ee.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb518031942512c47b27b5a0c65d67c509318c867-1990x704.jpg&w=3840&q=75)
 
 ### DRC-focused activity
 
@@ -455,11 +455,11 @@ A close look at the network’s output revealed a heavy focus on the Democratic 
 
 An X account presenting itself as a Congolese civilian “digital army” was also observed following several of the network’s accounts. We found no evidence of direction by any government.
 
-![](https://assets.claude.com/52ea25f53914f87012ec63c4e0c2cde4c8379220.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9ce3edba5554816c9f0aac2d661ba860ba7551a2-1990x1620.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/f8d7a404c8b279b17c5d1c4c2b34bf0c728b863c.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F219929a00ffce40e1a67b9d9fa33084a01daf6ec-1990x1620.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/ec20895bca1bbb8e95b79ee4bfc6ce428c5516bb.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4f3d2da01fe0c8488f61c0f1f30b4e539a095cb6-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -499,11 +499,11 @@ The synthetic news outlet also scraped legitimate Malaysian reporting and had th
 
 One commercial platform spanning the full influence-operations chain: targeting, amplification, synthetic news, fabricated dossiers, and operational security.
 
-![](https://assets.claude.com/0e0a4f7faf186e258533c85b3f0481b50c3281a7.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff5b85037fdaf7b599c544e77b0f76c06d75257a1-1990x858.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/e20d9ccb0fc73981fbbea6a0e8e4f939645e8366.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F50310bb34607a9bcac2a1ecddae75c7547ebc5e2-1990x1150.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/5fc0586a092522ce5f3b83e9fd8815d89c5c0666.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd1b0a944121b60eaea479afba155f1c75da4a87d-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -534,15 +534,15 @@ In each operation, Claude was integrated into an already running, professionally
 
 The state-media production desk: the shared lifecycle from source material through Claude-assisted localization and framing to staging on sanctioned outlets and amplification networks.
 
-![](https://assets.claude.com/75613c5628e70bedbea679e2050075ece1243823.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff8895df92b5ec0ea58be773446ff04fc198e4e5d-1990x1150.jpg&w=3840&q=75)
 
 [Sputnik Moldova 2.0](https://t.me/rusputnikmd_2/)” is part of a network of channels and sites associated with Sputnik News.
 
-![](https://assets.claude.com/7ce7de86d7a10c5f70b62857a3e7a52387a21885.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe976cb85cd718bdfd272d70d296ece74ab60c064-1990x1150.jpg&w=3840&q=75)
 
 [RIA Novosti](https://ria.ru/20250721/opros-2030492835.html). The RIA Novosti article was republished by other pro-Kremlin publications. Archived: hXXps[://]archive[.]ph/Q1zW0.
 
-![](https://assets.claude.com/aebcb6ca8ea0f9e34c30a9bedfd4c91f04961f09.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4cee6e4dcbcfa110aea472b5f6e5a2cdfa0937fd-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -581,9 +581,9 @@ We confirmed that the actors used Claude as the main administrative and operatio
 
 The three Iranian state-aligned operations mapped to their institution, Claude-generated outputs, and distribution channels.
 
-![](https://assets.claude.com/751ba187cbf8c4f17c3ab7cbaedc255463a7145d.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3a285b36a6c34c01c2377882cd8f26838c601c69-1990x734.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/bb0e82d86a1d3cb4daa6c345f6d7269db379f59b.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F615f56ed52a382c0631355595ea691dc268ff1d5-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -618,7 +618,7 @@ Once set up, the operation ran semi-autonomously with minimal human oversight. A
 
 The automated fake-news pipeline: from custom API tooling through batch-fabricated content and cloud staging to scheduled publication.
 
-![](https://assets.claude.com/3d101998e07702a43c3826ec2b22a8dfde57ef21.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa96c365e73fecaee2efb1c3149545a9d97c0d812-1990x734.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -654,9 +654,9 @@ A majority of the output was Persian-first as it swapped the organic 2022 protes
 
 Different aspects of the influence operation, including a shared agent platform through impersonation, surveillance, coordinated inauthentic behavior, synthetic media, and media laundering.
 
-![](https://assets.claude.com/46c0f56bd5d86d74df4468f0ae943b0cfe1db164.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbcae98f28b9f99f32eb9e5d72fa994ee730282e8-1990x1250.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/a47cc935eebc527c0e8cbce36cd9d4d45daebf3b.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc3a3242fdb031d4b508557fcbc790b9b233d9505-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -686,7 +686,7 @@ While we do not know the exact real-world identity of the people behind this ope
 
 The actor supplied the topic, talking points, and hashtags, and used Claude to convert them into 50 themed, character-counted posts formatted for cross-platform publishing and dissemination. In several sessions, these were packaged as an interactive copy-all widget ready for deployment.
 
-![](https://assets.claude.com/63fc7f23f4afe41edd288ad611011b477ff03afe.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd54d70fe0a25ebee59b8a9eecb32d70e048e8421-1990x1620.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -719,7 +719,7 @@ Using the Breakout Scale, we would assess this activity as Category Three, with 
 
 The operational workflow took real-world topics and their own pre-made political doctrine files, and then used Claude to turn the whole thing into official-looking intelligence briefs, cloned identity reports, ghost-written testimony, and individually profiled targeting lists, several prepared for direct delivery to senior UAE officials.
 
-![](https://assets.claude.com/d057e1f1c46fc858f18dc056c28acda7122ed24e.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F04d4d1292aa3c5069a1390dd6b164bec444f2e87-1990x1617.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -763,7 +763,7 @@ The actor used Claude to generate and analyze content. In one case, they fed Cla
 
 The 2023 Forbidden Stories investigation into the leaked S2T brochure described S2T’s services, including creating fake accounts to infiltrate private WhatsApp and Telegram groups, harvesting member lists, and escalating to phishing and compromising devices. The content this actor used Claude to generate might have served as a credibility layer to help targets trust these fake accounts. We were not able to independently confirm the downstream operational stages reported by Forbidden Stories.
 
-![](https://assets.claude.com/9c9e7b8ab536eb0f7e7ac51a743787da7f418024.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc5c7183d60d65a5ac34e454a02653468c287ae24-1920x960.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -800,7 +800,7 @@ The actor used Claude to obviate the need for native language skills and special
 
 How Claude was used across workstreams in the operation.
 
-![](https://assets.claude.com/afa32acfffa214ff9819dc88a9ad485e802a4c52.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fef384f0fab07ffb7fc9c2df850e561ad33ff791a-1920x744.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -828,9 +828,9 @@ In this case, one operator ran what was likely a religious affairs intelligence 
 
 The monitoring targets and reporting outputs produced under each workstream in the operation.
 
-![](https://assets.claude.com/126fae1ea10ad2d47bc36e30fe41b8db1f6880ad.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4c445959585523daef561e14eaa8f8da2ccc7dde-1920x821.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/589c0e367ee8681b372615a223001df9e087f29a.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbef891c7485a75fa18002afbd18909f1d453888e-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -861,13 +861,13 @@ Although the three linked operations differed in scale, they shared the “stabi
 
 In one case, the actor used Claude Code with custom skills to automate browser extraction, query a government surveillance database, and distribute daily reports to supervisors. In the second case, the actor used Claude to produce reports that assigned enforcement categories to specific individuals in a single prompt. In the third, the model produced daily intelligence briefings and profiled specific activists. This workflow was then written up as a manual for the rest of the bureau to use.
 
-![](https://assets.claude.com/41d65a1ab222863dd39549b6edb6553214a025d1.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fae32bdff452a5193a13b0dda3366900629a1a9d1-1920x568.jpg&w=3840&q=75)
 
 The three cases in this operation progress from a single actor working manually to an automated workflow within a state bureau.
 
-![](https://assets.claude.com/d5a14852973b7cc0ab336c70548786cba9ce18ad.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd0be69c577562e8fdb1cc98d0e9e7eb124cb2b15-1990x892.jpg&w=3840&q=75)
 
-![](https://assets.claude.com/fb553733e57d75090d1971b77399e423deef5b9e.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0eba606146d3dd88ccc072436349e99a6608f8f7-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigation
 
@@ -902,7 +902,7 @@ The actor instructed Claude to role-play as an analyst and used its code executi
 
 The surveillance target portfolio mapped onto focus areas for monitoring, showing how individual targets, organizations, and events were grouped under the operations collection priorities.
 
-![](https://assets.claude.com/99f306c916e0f7c3c51e17a076dac348620eb84d.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa091a50d8def75bcaf1ddcfa53b2a6f7ec5d71f8-1990x1150.jpg&w=3840&q=75)
 
 ### Disruption and mitigations
 
@@ -1052,7 +1052,7 @@ We identified this activity as part of our internal investigations into suspecte
 
 ### Weapons development uplift
 
-![](https://assets.claude.com/df4c32bf98e0b7ecfa5f34b78a674b978bb6a84f.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3a08ffef18a047f8f23d558c815e76c6c2d74aa2-1920x1487.jpg&w=3840&q=75)
 
 The operation’s scope across workstreams, with the actors’ use of Claude broken out for each.
 
@@ -1074,7 +1074,7 @@ The operational lift the actor achieved was a function of using Claude to automa
 
 We uncovered this activity as part of our internal investigations into suspected weapons development. We cannot attribute the activity to a specific entity or actor. But we have banned the account for violating our Supported Regions Policy and our Usage Policy, which prohibits weapons design and development, and incorporated our investigative findings into our safeguards to mitigate the risk of future misuse.
 
-![](https://assets.claude.com/70c3a14ffe08709b43b647dbb6b76f63fef06b48.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2a9ebbee3b14c546b3010a3bfd932fa75b72a5e7-1920x966.jpg&w=3840&q=75)
 
 ## GTG-27005: Disrupting a Russia-based operation using Claude to engineer an autonomous military drone swarm
 
@@ -1090,7 +1090,7 @@ We assess the actors were a small, specialized freelance team doing a mix of civ
 
 ### Weapons development uplift
 
-![](https://assets.claude.com/4bd0d842a274fa2fda9d41e6be6d4d7c4a6f07fa.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6716b70cd1f06ca89ef70c18e2e48dec77e2591d-1920x1276.jpg&w=3840&q=75)
 
 ### Weapons systems observed
 
@@ -1110,11 +1110,11 @@ The actor also ran a self-hosted model on an internal network alongside Claude a
 
 Based on our investigation, we assess the actor is a China-based defense and military-industrial researcher. Account-level metadata and content flagged by our safeguards indicated the actor was linked to PRC research institutions, including the PLA Academy of Military Sciences. We detected this activity as part of our internal investigations into suspected weapons development, we banned accounts linked to the actor, and have incorporated our investigative findings into our safeguards to reduce the risk of future misuse.
 
-![](https://assets.claude.com/961a4e4a7e1ba0e2f870df2161eeab07add1fbb1.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F37f60e304d8d25803ecdc8ec1eb075ba84667f0e-1920x1246.jpg&w=3840&q=75)
 
 ### Joint targeting cycle
 
-![](https://assets.claude.com/cbfeada1ebe51be340d06d3fa7977fdf1998ce57.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fde017d1dd096ecf0374da1e251fd4139c45f3777-1920x1258.jpg&w=3840&q=75)
 
 ### Part II: Intelligence collection and procurement
 
@@ -1148,7 +1148,7 @@ Like those in other cases in this report, this actor used VPNs to circumvent Ant
 
 ### Export diversion typology
 
-![](https://assets.claude.com/6fcdba4e0dea0038f45e079a8f4063507fecd103.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa33486c9223106bbcd4f6cf58ac09f9a7a0b56de-1920x1124.jpg&w=3840&q=75)
 
 ### Procurement streams
 
@@ -1172,7 +1172,7 @@ We detected and banned the account associated with the actor, deployed additiona
 
 ### Intelligence cycle
 
-![](https://assets.claude.com/fe7c39c079490281224f08a36548c0b354a6f4e8.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7e9eb08b31a1f4812f0fb2bd89999b90604b4f68-1920x1259.jpg&w=3840&q=75)
 
 ### Detecting and countering biological misuse of AI
 
@@ -1293,7 +1293,7 @@ The operation ran as a three-sided marketplace:
 - **Gig workers (real people).** Workers were recruited by invitation. For each matched user, a weaker AI model proposed three candidate replies and the worker tapped one, which pre-empted any concurrent Claude auto-reply. Workers were paid per message, video call, and social media follow-back, and could cash out above a low threshold.
 - **Claude personas.** The personas ran autonomously. The operator prompt instructed them never to disclose they were automated, to deflect requests for video calls or photos, and to move through a fixed sequence of conversational stages. Backend components fabricated likes, visitors, and pre-recorded “video” when no real person was available, and tracked which users had begun to suspect they were talking to a bot.
 
-![](https://assets.claude.com/357e14d2c9714f7f4a1904d0e7b8ec8b59dc197e.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff5a5b4928fc9f8b9d5ee40ccb9358dd346e7a2ff-1920x1526.jpg&w=3840&q=75)
 
 The operators used Claude to scale the operation, sustaining conversations across thousands of personas continuously. The real people and the other providers’ models supplied narrow capabilities: live video, a real follow-back, fast tap-to-send (i.e. auto-completed) suggestions, and image handling.
 
@@ -1323,7 +1323,7 @@ Since we [published our first disclosure](https://www.anthropic.com/news/detecti
 
 Distillation itself is a legitimate training method. Researchers use a larger, more capable “teacher” model to generate responses to a set of inputs, then use those exchanges to train a smaller “student” model to mimic the teacher. Distillation is commonly used because it reduces the resources needed to achieve more advanced capabilities.
 
-![](https://assets.claude.com/9ab8c14aa7b894d76e9f675c07300d09baba0684.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff2bbccb4f43c02cf858fc7a232f714f7598fe044-1920x470.jpg&w=3840&q=75)
 
 We define illicit distillation as an industrial-scale, covert campaign to extract a model’s capabilities and replicate them in another model without authorization. Illicit distillation is typically enabled by fraud: sophisticated networks of fake accounts created with stolen credit cards, login credentials, and API keys.
 
@@ -1335,7 +1335,7 @@ Illicit distillation allows unauthorized labs to illicitly extract and mimic cap
 
 Over the last several months, unauthorized labs have developed increasingly sophisticated methods to circumvent our defenses and harvest the capabilities of US frontier models. These labs generally access Anthropic’s models by routing requests through proxy services, also known as “[transfer stations](https://www.chinatalk.media/p/how-to-buy-cheap-claude-tokens-in).” To circumvent our geographic restrictions and related controls, these proxy services create thousands of new accounts using false identities, fake or stolen credit cards, and stolen API keys. They will often use stolen API credentials belonging to legitimate companies or individuals to give unauthorized entities access to US frontier models. These fraudulent activities harm legitimate customers. The graphic below illustrates the life cycle of an illicit distillation campaign.
 
-![](https://assets.claude.com/d5135e46f03a745d742a0acbd5274e3beac446af.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0e2c5cfa7cb0e27eac962ffb59e394ddd9d5de46-1920x631.jpg&w=3840&q=75)
 
 Unauthorized labs also obtain transcripts of user exchanges with US frontier models by purchasing them from third-party resellers. These resellers include the operators of proxy services, which often save exchanges between users and US models without the knowledge or consent of those users. Unauthorized labs can then use these purchased exchanges to distill frontier capabilities. In other cases, unauthorized labs rerouted requests from their users to Claude—without the knowledge or permission of those users—to harvest exchanges between users and Claude for training.
 

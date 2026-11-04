@@ -32,7 +32,7 @@ At the population level, Claude can help health ministries and public health off
 
 And for the wider field, we are creating a suite of digital public goods that any ministry, partner, or model can adopt. By releasing these openly, we hope to set a high standard for AI in healthcare and extend these efforts beyond what we could deploy alone. As part of this work, we have joined global health and technology actors to support the [Open Health Stack (OHS) Software Foundation](https://github.com/ohs-foundation) in creating open-source building blocks for digital health solutions.
 
-![Global health](https://assets.claude.com/a90a4c75bed2e9f8bc4ad76c31364aa0d0c67737.png)
+![Global health](https://cdn.sanity.io/images/4zrzovbb/website/a90a4c75bed2e9f8bc4ad76c31364aa0d0c67737-1920x1280.png)
 
 Within Anthropic’s [broader life sciences efforts](https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event), our beneficial deployments focus on the diseases and patients the market tends to overlook. Funding for drug development is largely informed by potential market size, which leaves behind patients suffering from less common diseases and those unable to access or afford treatment. An estimated 300 to 400 million people live with one of more than 7,000 rare diseases, yet fewer than 5% of those diseases have an approved therapy, and most patients wait five to seven years for a diagnosis. Hundreds of millions more contract neglected tropical diseases each year, yet disease surveillance is too thin to guide intervention, and existing therapies are often directed at diseases that circulate in wealthier countries. By collaborating with clinical researchers, patient organizations, and data scientists through grants, hackathons, and other research initiatives, we aim to gain a better understanding of where AI can address these challenges.
 
@@ -42,7 +42,7 @@ To push the frontier of science, we also are making broad investments in model t
 
 And given that transformative discoveries emerge through experimentation, we’re putting Claude in the hands of as many scientists as possible through our [AI for Science](https://www.anthropic.com/news/ai-for-science-program) grant program, which offers usage credits to qualified researchers, and a Claude [Team plan for Scientists](https://claude.com/programs/claude-team-plan-for-research-labs#pricing), which offers principal investigators discounted access to apps like Claude Science.
 
-![Life sciences focus area artwork](https://assets.claude.com/d038ff4604bf7f723258d267bb4f511bbf49f21b.png)
+![Life sciences focus area artwork](https://cdn.sanity.io/images/4zrzovbb/website/d038ff4604bf7f723258d267bb4f511bbf49f21b-1920x1280.png)
 
 In past waves of technological innovation, the positive impacts were concentrated in a few regions and occupations before spreading slowly and unevenly. In contrast, AI is changing how we work at an accelerated pace. Anthropic’s [Economic Index](https://www.anthropic.com/economic-index) tracks AI’s impact on the labor market, while our [Economic Futures](https://www.anthropic.com/economic-futures) program studies potential policy responses. We build alongside partner organizations to help millions of workers and businesses succeed in the AI transition, while building the evidence base for future policy interventions at scale.
 
@@ -52,7 +52,7 @@ Second is supporting workers as they build the skills and agency to thrive in th
 
 Third is enabling builders and their businesses. In the US, more than 36 million solo entrepreneurs and small and mid-sized businesses account for nearly half of America’s private sector employment, yet these businesses face persistent barriers to capital and constant administrative friction. With solutions like [Claude for Small Business](https://claude.com/solutions/small-business), we aim to help business owners manage their operations. And through partnerships with institutions like [Pacific Community Ventures](https://claude.com/customers/pacific-community-ventures-qa), we’re piloting projects that use AI to help businesses access capital investment and support services faster.
 
-![Economic mobility focus area artwork](https://assets.claude.com/ac0d2a38736786c20563ccf2bff4af4e909981be.png)
+![Economic mobility focus area artwork](https://cdn.sanity.io/images/4zrzovbb/website/ac0d2a38736786c20563ccf2bff4af4e909981be-1920x1280.png)
 
 Today, more than half of children in low- and middle-income countries can’t read a basic text by age 10. Socioeconomic achievement gaps have, in many cases, widened over the past 50 years, with the US seeing some of the largest in the OECD. We believe AI can help close these gaps and prepare students for a life of flourishing and agency by bolstering the work of educators, schools, universities, and the organizations that support them.
 
@@ -62,7 +62,7 @@ We’re also exploring how AI can help extend high-quality instruction. One-on-o
 
 At the university level, educators are considering how AI might speed up scientific research, and how they can prepare students for a fast-changing labor market. We partner closely with institutions like [Western Governors University](https://www.wgu.edu/) to study these areas, including new approaches to learning and credentialing that keep up with the pace of change. In parallel, [Claude for Higher Education](https://claude.com/solutions/education) brings Claude to campuses with a tutor-like “learning mode” for students and training resources for educators.
 
-![Education focus area artwork](https://assets.claude.com/c7fa12b2520aab733d8a88832cb2936ca82a32f2.png)
+![Education focus area artwork](https://cdn.sanity.io/images/4zrzovbb/website/c7fa12b2520aab733d8a88832cb2936ca82a32f2-1920x1280.png)
 
 ## Latest news
 
@@ -70,4 +70,4 @@ At the university level, educators are considering how AI might speed up scienti
 
 A rare strain of Ebola is spreading in the DRC and there is no confirmed vaccine. Global health organizations are using Claude to move as fast as possible to combat it.
 
-![Looking out between dark tree trunks toward the town of Butembo at dawn or dusk. A field of leafy cassava and banana plants fills the foreground, and a red dirt path runs off to the right. Beyond the field, a dense spread of low buildings with metal roofs sits in a haze of mist or smoke. Heavy gray clouds cover the sky, with a narrow band of orange light glowing along the hills on the horizon.](https://assets.claude.com/f61376ab3c75319caa0ec84cde08759db8c483be.jpg?w=3840&q=75&fm=webp&fit=max)
+![Looking out between dark tree trunks toward the town of Butembo at dawn or dusk. A field of leafy cassava and banana plants fills the foreground, and a red dirt path runs off to the right. Beyond the field, a dense spread of low buildings with metal roofs sits in a haze of mist or smoke. Heavy gray clouds cover the sky, with a narrow band of orange light glowing along the hills on the horizon.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F01a7f8f55e83f615a5d9c0fad56863f1863a41d9-1200x630.jpg&w=3840&q=75)

@@ -600,8 +600,8 @@ and Claude-compatible manifests, but new packages should use this format.
 ### Add OpenAI-specific metadata
 
 Add `extensions.com.openai` to root `plugin.json` for presentation, existing
-registered MCP server mappings, and lifecycle hooks. Keep portable identity and
-metadata, such as `name`, `version`, and `description`, at the root.
+registered MCP server mappings, lifecycle hooks, and onboarding. Keep portable
+identity and metadata, such as `name`, `version`, and `description`, at the root.
 
 For example:
 
@@ -615,6 +615,7 @@ For example:
     "com.openai": {
       "apps": "./.app.json",
       "hooks": "./hooks/hooks.json",
+      "onboardingSkill": "./skills/setup/SKILL.md",
       "interface": {
         "displayName": "My Plugin",
         "shortDescription": "Reusable skills and MCP servers",
@@ -645,42 +646,16 @@ the two aren't merged. If the inline object is absent, the compatibility
 overlay supplies those settings. Root identity and portable components remain
 canonical in either case.
 
-### Add an onboarding skill
+#### Add an onboarding skill
 
-Give users a setup workflow to run after installing your plugin by declaring an
-onboarding skill. When users run setup, it invokes the skill in a new
+Set optional `extensions.com.openai.onboardingSkill` to a packaged `SKILL.md`
+path relative to the plugin root, as shown above. Write the skill using the
+[skills guide](https://developers.openai.com/plugins/build/skills). For the Codex compatibility format, put
+the same field in `.codex-plugin/plugin.json`.
+
+When users run setup after installation, it invokes the skill in a new
 conversation, or in the existing conversation if they installed the plugin
-during that conversation.
-
-Add the setup skill to your package at `skills/setup/SKILL.md`. Write its
-instructions using the [skills guide](https://developers.openai.com/plugins/build/skills), then set
-`extensions.com.openai.onboardingSkill` in your manifest:
-
-```json
-{
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "my-plugin",
-  "version": "0.1.0",
-  "description": "Reusable skills with a guided setup workflow",
-  "extensions": {
-    "com.openai": {
-      "onboardingSkill": "./skills/setup/SKILL.md"
-    }
-  }
-}
-```
-
-The field is optional. Its path is relative to the plugin root and must point
-to a skill included in the package. For the Codex compatibility format, put
-the same `extensions.com.openai.onboardingSkill` field in
-`.codex-plugin/plugin.json`; the path still resolves from the plugin root.
-
-Keep the skill focused on the setup your plugin needs, such as helping users
-choose a workspace or configure preferences. After installing a test package,
-run setup and verify that it invokes the packaged skill. Test both a fresh
-conversation and installation during an existing conversation.
-
-For the protocol definition, see the [plugin onboarding specification](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#plugin-onboarding).
+there.
 
 ### Manifest fields
 

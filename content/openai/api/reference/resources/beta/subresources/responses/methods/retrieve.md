@@ -66,7 +66,7 @@ Retrieves a model response with the given ID.
 
 ### Returns
 
-- `BetaResponse object { id, access_programs, created_at, 35 more }`
+- `BetaResponse object { id, access_programs, created_at, 36 more }`
 
   - `id: string`
 
@@ -5490,14 +5490,14 @@ Retrieves a model response with the given ID.
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
 
-  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 107 more or string`
+  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model guide](/api/docs/models)
     to browse and compare available models.
 
-    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 107 more`
+    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
@@ -5723,6 +5723,8 @@ Retrieves a model response with the given ID.
       - `"gpt-5.6-cyber"`
 
       - `"gpt-rosalind-research"`
+
+      - `"gpt-6-rosalind"`
 
     - `string`
 
@@ -11115,6 +11117,16 @@ Retrieves a model response with the given ID.
 
       The unique ID of the conversation that this response was associated with.
 
+  - `image: optional object { context_compression }`
+
+    - `context_compression: "enabled" or "disabled"`
+
+      Effective image context optimization policy.
+
+      - `"enabled"`
+
+      - `"disabled"`
+
   - `max_output_tokens: optional integer or null`
 
     An upper bound for the number of tokens that can be generated for a response, including visible output tokens and [reasoning tokens](/api/docs/guides/reasoning).
@@ -11358,11 +11370,13 @@ Retrieves a model response with the given ID.
 
       - `"explicit"`
 
-    - `ttl: "30m"`
+    - `ttl: "30m" or "12h"`
 
       The minimum lifetime applied to each cache breakpoint.
 
       - `"30m"`
+
+      - `"12h"`
 
     - `comparison_response_id: optional string or null`
 
@@ -11697,7 +11711,7 @@ Retrieves a model response with the given ID.
 
       The number of input tokens.
 
-    - `input_tokens_details: object { cache_write_tokens, cached_tokens }`
+    - `input_tokens_details: object { cache_write_tokens, cached_tokens, cache_write_tokens_details }`
 
       A detailed breakdown of the input tokens.
 
@@ -11709,6 +11723,16 @@ Retrieves a model response with the given ID.
 
         The number of tokens that were retrieved from the cache.
         [More on prompt caching](/api/docs/guides/prompt-caching).
+
+      - `cache_write_tokens_details: optional object { ttl_12h_tokens, ttl_30m_tokens }`
+
+        - `ttl_12h_tokens: integer`
+
+          The number of input tokens written with 12-hour retention.
+
+        - `ttl_30m_tokens: integer`
+
+          The number of input tokens written with 30-minute retention.
 
     - `output_tokens: integer`
 
@@ -11822,6 +11846,9 @@ curl https://api.openai.com/v1/responses/$RESPONSE_ID \
   "metadata": {},
   "conversation": {
     "id": "id"
+  },
+  "image": {
+    "context_compression": "enabled"
   },
   "moderation": {
     "input": {

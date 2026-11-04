@@ -7734,13 +7734,17 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
         A customer-safe error. Non-null only for a failed turn.
 
-        - `code: "context_length_exceeded" or "session_budget_exceeded" or "usage_limit_exceeded" or 20 more`
+        - `code: "context_length_exceeded" or "max_output_tokens" or "session_budget_exceeded" or 21 more`
 
           A stable, machine-readable failure category.
 
           - `"context_length_exceeded"`
 
             The request exceeds the model's context window.
+
+          - `"max_output_tokens"`
+
+            The model reached its output token limit before finishing the response.
 
           - `"session_budget_exceeded"`
 
@@ -12904,13 +12908,17 @@ Lists all turns of this subagent, including turns after a resume. See [subagent 
 
     A customer-safe error. Non-null only for a failed turn.
 
-    - `code: "context_length_exceeded" or "session_budget_exceeded" or "usage_limit_exceeded" or 20 more`
+    - `code: "context_length_exceeded" or "max_output_tokens" or "session_budget_exceeded" or 21 more`
 
       A stable, machine-readable failure category.
 
       - `"context_length_exceeded"`
 
         The request exceeds the model's context window.
+
+      - `"max_output_tokens"`
+
+        The model reached its output token limit before finishing the response.
 
       - `"session_budget_exceeded"`
 
@@ -13229,13 +13237,17 @@ Retrieves a turn belonging to this subagent. See [subagent workflows](/api/docs/
 
     A customer-safe error. Non-null only for a failed turn.
 
-    - `code: "context_length_exceeded" or "session_budget_exceeded" or "usage_limit_exceeded" or 20 more`
+    - `code: "context_length_exceeded" or "max_output_tokens" or "session_budget_exceeded" or 21 more`
 
       A stable, machine-readable failure category.
 
       - `"context_length_exceeded"`
 
         The request exceeds the model's context window.
+
+      - `"max_output_tokens"`
+
+        The model reached its output token limit before finishing the response.
 
       - `"session_budget_exceeded"`
 
@@ -14863,13 +14875,17 @@ Lists turns by creation time and turn ID. The after cursor is exclusive in the s
 
     A customer-safe error. Non-null only for a failed turn.
 
-    - `code: "context_length_exceeded" or "session_budget_exceeded" or "usage_limit_exceeded" or 20 more`
+    - `code: "context_length_exceeded" or "max_output_tokens" or "session_budget_exceeded" or 21 more`
 
       A stable, machine-readable failure category.
 
       - `"context_length_exceeded"`
 
         The request exceeds the model's context window.
+
+      - `"max_output_tokens"`
+
+        The model reached its output token limit before finishing the response.
 
       - `"session_budget_exceeded"`
 
@@ -15182,13 +15198,17 @@ Retrieves a turn's current status, timestamps, usage, and error. Returns 404 if 
 
     A customer-safe error. Non-null only for a failed turn.
 
-    - `code: "context_length_exceeded" or "session_budget_exceeded" or "usage_limit_exceeded" or 20 more`
+    - `code: "context_length_exceeded" or "max_output_tokens" or "session_budget_exceeded" or 21 more`
 
       A stable, machine-readable failure category.
 
       - `"context_length_exceeded"`
 
         The request exceeds the model's context window.
+
+      - `"max_output_tokens"`
+
+        The model reached its output token limit before finishing the response.
 
       - `"session_budget_exceeded"`
 
@@ -15453,13 +15473,17 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID/turns/$TURN_ID \
 
     A customer-safe error. Non-null only for a failed turn.
 
-    - `code: "context_length_exceeded" or "session_budget_exceeded" or "usage_limit_exceeded" or 20 more`
+    - `code: "context_length_exceeded" or "max_output_tokens" or "session_budget_exceeded" or 21 more`
 
       A stable, machine-readable failure category.
 
       - `"context_length_exceeded"`
 
         The request exceeds the model's context window.
+
+      - `"max_output_tokens"`
+
+        The model reached its output token limit before finishing the response.
 
       - `"session_budget_exceeded"`
 
