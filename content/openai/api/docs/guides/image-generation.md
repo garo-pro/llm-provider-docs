@@ -3336,7 +3336,7 @@ Use these request fields to control the animation:
 
 | Field               | Values                                                                      | Default |
 | ------------------- | --------------------------------------------------------------------------- | ------- |
-| `frame_count`       | 2–64 frames                                                                 | 9       |
+| `frame_count`       | 2–16 frames                                                                 | 9       |
 | `frame_duration_ms` | 20–2000 milliseconds per frame, rounded to 10 ms                            | 200     |
 | `size`              | `auto`, or `WIDTHxHEIGHT` with positive dimensions that are multiples of 16 | `auto`  |
 

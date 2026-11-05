@@ -6,7 +6,7 @@
 
 ### All Models
 
-- `AllModels = string or "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 87 more or "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 18 more`
+- `AllModels = string or "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 87 more or "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 19 more`
 
   - `string`
 
@@ -192,7 +192,7 @@
 
     - `"gpt-3.5-turbo-16k-0613"`
 
-  - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 18 more`
+  - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 19 more`
 
     - `"o1-pro"`
 
@@ -231,6 +231,8 @@
     - `"gpt-daybreak-red-latest"`
 
     - `"gpt-5.6-cyber"`
+
+    - `"gpt-6-cyber"`
 
     - `"gpt-rosalind-research"`
 
@@ -829,7 +831,7 @@
 
 ### Responses Model
 
-- `ResponsesModel = string or "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 87 more or "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 18 more`
+- `ResponsesModel = string or "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 87 more or "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 19 more`
 
   - `string`
 
@@ -1015,7 +1017,7 @@
 
     - `"gpt-3.5-turbo-16k-0613"`
 
-  - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 18 more`
+  - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 19 more`
 
     - `"o1-pro"`
 
@@ -1054,6 +1056,8 @@
     - `"gpt-daybreak-red-latest"`
 
     - `"gpt-5.6-cyber"`
+
+    - `"gpt-6-cyber"`
 
     - `"gpt-rosalind-research"`
 

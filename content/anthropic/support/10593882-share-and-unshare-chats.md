@@ -22,7 +22,9 @@ When sharing chats that include uploaded files or MCP (Model Context Protocol) i
 
 **MCP tool calls:** When sharing chats that use MCP integrations, the raw data retrieved from MCP tool calls remains hidden in the shared snapshot. Only the final chat output and conversation will be visible to viewers. The underlying tool call data stays private.
 
-This ensures that sensitive information from your files and connected tools is protected, even when you share a chat snapshot.
+This keeps your attached files and raw tool data out of the snapshot.
+
+If Claude used your linked accounts in Personal Finance, the snapshot shows your messages and Claude’s responses, including any figures from your accounts. It can also show a chart or artifact that Claude made, figures included. Learn more in **[Use Personal Finance in Claude](https://support.claude.com/en/articles/18185620-use-personal-finance-with-claude)**.
 
 ## Unshare chats
 

@@ -34,6 +34,8 @@ Both paths move the same content for each person.
 
 - Sign-ins to connected apps and services**.** All authorizations are revoked. You'll reconnect each app from your organization account.
 
+- Personal Finance. It isn’t available on Team and Enterprise plans. Unlink your banks before you move.
+
 - Custom connectors you added yourself. You'll need to add them again in your organization account, and your organization's policy may not allow them.
 
 - Published artifacts. Publishing isn't available on Team and Enterprise plans.
@@ -74,7 +76,7 @@ If you have a personal Claude account on the same email address as your organiza
 
 - **Use your organization account only:** You'll see two migration options after selecting this.
 
-  - **Bring your data with you:** Your personal data moves into the organization's workspace, as described above in **[What moves when you migrate](https://support.claude.com/en/articles/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization#h_4e63ef6e87)**. Your personal account closes, and active Pro, Max, or Ultra subscriptions are canceled and refunded depending on how you purchased the plan.
+  - **Bring your data with you:** Your personal data moves into the organization's workspace, as described above in **[What moves when you migrate](#h_4e63ef6e87)**. Your personal account closes, and active Pro, Max, or Ultra subscriptions are canceled and refunded depending on how you purchased the plan.
 
   - **Delete your data:** Your personal account closes (with a prorated refund if you had a paid subscription), but no content moves into the organization. You start with a clean account. You can choose to download your account data before deleting it.
 

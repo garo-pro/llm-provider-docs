@@ -5618,14 +5618,14 @@ the `background` parameter set to `true` can be cancelled.
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
 
-  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model guide](/api/docs/models)
     to browse and compare available models.
 
-    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
@@ -5849,6 +5849,8 @@ the `background` parameter set to `true` can be cancelled.
       - `"gpt-daybreak-red-latest"`
 
       - `"gpt-5.6-cyber"`
+
+      - `"gpt-6-cyber"`
 
       - `"gpt-rosalind-research"`
 
@@ -12357,11 +12359,11 @@ Learn when and how to compact long-running conversations in the [conversation st
 
 Content type: `application/json`
 
-- `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string or null`
+- `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string or null`
 
   Model ID used to generate the response, like `gpt-6-astra`. OpenAI offers a wide range of models with different capabilities, performance characteristics, and price points. Refer to the [model guide](/api/docs/models) to browse and compare available models.
 
-  - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+  - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI offers a wide range of models with different capabilities, performance characteristics, and price points. Refer to the [model guide](/api/docs/models) to browse and compare available models.
 
@@ -12582,6 +12584,8 @@ Content type: `application/json`
     - `"gpt-daybreak-red-latest"`
 
     - `"gpt-5.6-cyber"`
+
+    - `"gpt-6-cyber"`
 
     - `"gpt-rosalind-research"`
 
@@ -29092,14 +29096,14 @@ Content type: `application/json`
   Keys are strings with a maximum length of 64 characters. Values are strings
   with a maximum length of 512 characters.
 
-- `model: optional "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+- `model: optional "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
   Model ID used to generate the response, like `gpt-6-astra`. OpenAI
   offers a wide range of models with different capabilities, performance
   characteristics, and price points. Refer to the [model guide](/api/docs/models)
   to browse and compare available models.
 
-  - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+  - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
@@ -29323,6 +29327,8 @@ Content type: `application/json`
     - `"gpt-daybreak-red-latest"`
 
     - `"gpt-5.6-cyber"`
+
+    - `"gpt-6-cyber"`
 
     - `"gpt-rosalind-research"`
 
@@ -36614,14 +36620,14 @@ Content type: `application/json`
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
 
-  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model guide](/api/docs/models)
     to browse and compare available models.
 
-    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
@@ -36845,6 +36851,8 @@ Content type: `application/json`
       - `"gpt-daybreak-red-latest"`
 
       - `"gpt-5.6-cyber"`
+
+      - `"gpt-6-cyber"`
 
       - `"gpt-rosalind-research"`
 
@@ -49774,14 +49782,14 @@ Retrieves a model response with the given ID.
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
 
-  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model guide](/api/docs/models)
     to browse and compare available models.
 
-    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
@@ -50005,6 +50013,8 @@ Retrieves a model response with the given ID.
       - `"gpt-daybreak-red-latest"`
 
       - `"gpt-5.6-cyber"`
+
+      - `"gpt-6-cyber"`
 
       - `"gpt-rosalind-research"`
 
@@ -68308,14 +68318,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
 
-  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+  - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
     Model ID used to generate the response, like `gpt-6-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model guide](/api/docs/models)
     to browse and compare available models.
 
-    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+    - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
@@ -68539,6 +68549,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `"gpt-daybreak-red-latest"`
 
       - `"gpt-5.6-cyber"`
+
+      - `"gpt-6-cyber"`
 
       - `"gpt-rosalind-research"`
 
@@ -80727,14 +80739,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -80958,6 +80970,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 
@@ -93611,14 +93625,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -93842,6 +93856,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 
@@ -105966,14 +105982,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -106197,6 +106213,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 
@@ -118574,14 +118592,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -118805,6 +118823,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 
@@ -130742,14 +130762,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -130973,6 +130993,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 
@@ -170811,14 +170833,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -171042,6 +171064,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 
@@ -185263,14 +185287,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         Keys are strings with a maximum length of 64 characters. Values are strings
         with a maximum length of 512 characters.
 
-      - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+      - `model: "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
         characteristics, and price points. Refer to the [model guide](/api/docs/models)
         to browse and compare available models.
 
-        - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+        - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
           Model ID used to generate the response, like `gpt-6-astra`. OpenAI
           offers a wide range of models with different capabilities, performance
@@ -185494,6 +185518,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
           - `"gpt-daybreak-red-latest"`
 
           - `"gpt-5.6-cyber"`
+
+          - `"gpt-6-cyber"`
 
           - `"gpt-rosalind-research"`
 
@@ -199752,14 +199778,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       Keys are strings with a maximum length of 64 characters. Values are strings
       with a maximum length of 512 characters.
 
-    - `model: optional "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more or string`
+    - `model: optional "gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more or string`
 
       Model ID used to generate the response, like `gpt-6-astra`. OpenAI
       offers a wide range of models with different capabilities, performance
       characteristics, and price points. Refer to the [model guide](/api/docs/models)
       to browse and compare available models.
 
-      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 108 more`
+      - `"gpt-6-astra" or "gpt-6.1-sol" or "gpt-6.1-terra" or 109 more`
 
         Model ID used to generate the response, like `gpt-6-astra`. OpenAI
         offers a wide range of models with different capabilities, performance
@@ -199983,6 +200009,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-daybreak-red-latest"`
 
         - `"gpt-5.6-cyber"`
+
+        - `"gpt-6-cyber"`
 
         - `"gpt-rosalind-research"`
 

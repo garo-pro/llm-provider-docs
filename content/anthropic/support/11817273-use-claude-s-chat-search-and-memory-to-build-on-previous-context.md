@@ -16,6 +16,8 @@ You can prompt Claude to search conversations within these boundaries:
 
 - Individual project conversations (searches are limited to within each specific project).
 
+Claude is designed not to search chats in which it has used your linked accounts in Personal Finance.
+
 ## Search and reference past chats
 
 Once the ability to search past chats is rolled out to your account, it will be enabled by default. Just ask Claude about your previous conversations naturally to use it, such as:
@@ -169,6 +171,10 @@ When starting a chat with Claude outside of a project, you will see a ghost icon
 ### Chats with memory turned off
 
 If you turn off memory in the “+” menu when you start a new chat, Claude doesn't use memory in that chat, doesn’t search your past chats from it, and doesn’t save anything from it to memory. Unlike incognito chats, they stay in your chat history.
+
+### Chats that used your linked accounts
+
+Once Claude has used your linked accounts in Personal Finance in a chat, it's designed not to save anything from that chat to memory or search that chat later. Learn more in **[Use Personal Finance in Claude](https://support.claude.com/en/articles/18185620-use-personal-finance-with-claude)**.
 
 ---
 

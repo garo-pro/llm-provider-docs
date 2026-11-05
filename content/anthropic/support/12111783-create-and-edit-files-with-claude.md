@@ -237,7 +237,7 @@ When network access is enabled, Claude can access the following approved domains
 Generate spreadsheets with working formulas and calculations by describing your needs. Try:
 
 ```
-Create a monthly budget tracker with income, expenses categories, and
+Create a monthly budget tracker with income, expense categories, and
 automatic calculations for savings.
 ```
 
@@ -305,6 +305,10 @@ Claude can handle multiple files in a single chat, allowing you to create compre
 
 File creation is supported on Claude for iOS and Android. Note that when you tap "Download" on Claude Mobile, the file will open in either the system preview or a separate app (for example, the Word app for .docx files).
 
+### Can Claude create files in a chat that uses my linked accounts?
+
+Claude can make plain text files (such as .csv, .md, and .html) and show text and tables in the chat. After Claude uses your linked accounts in Personal Finance in a chat, it may not be able to run code, make other files (Word, Excel, PowerPoint, or PDF), or publish an artifact. Learn more in **[Use Personal Finance in Claude](https://support.claude.com/en/articles/18185620-use-personal-finance-with-claude)**.
+
 ### Do artifacts work with file creation?
 
-Yes you are still able to create artifacts (e.g., HTML or react apps, markdown documents, mermaid diagrams, SVGs) with file creation on. Claude now uses the computing environment to create artifacts so the user experience may look slightly different than users are used to. Please report any issues or feedback using the thumbs up/down functionality when chatting with Claude.
+Yes, you are still able to create artifacts (e.g., HTML or react apps, markdown documents, mermaid diagrams, SVGs) with file creation on. Claude now uses the computing environment to create artifacts so the user experience may look slightly different than users are used to. Please report any issues or feedback using the thumbs up/down functionality when chatting with Claude.
