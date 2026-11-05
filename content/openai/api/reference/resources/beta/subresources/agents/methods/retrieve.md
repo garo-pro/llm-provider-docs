@@ -176,7 +176,7 @@ Retrieves a reusable agent by ID. See [agent configuration](/api/docs/guides/age
 
     `minItems: 0`, `maxItems: 2000`
 
-    - `Function object { defer_loading, description, name, 2 more }`
+    - `Function object { defer_loading, description, name, 3 more }`
 
       A function defined by the application.
 
@@ -205,6 +205,10 @@ Retrieves a reusable agent by ID. See [agent configuration](/api/docs/guides/age
         The type of the object. Always `function`.
 
         - `"function"`
+
+      - `async: optional boolean`
+
+        Whether the agent continues without waiting for the function result.
 
     - `ToolSearch object { type }`
 
@@ -486,7 +490,8 @@ curl https://api.openai.com/v1/agents/$AGENT_ID \
       "parameters": {
         "foo": "bar"
       },
-      "type": "function"
+      "type": "function",
+      "async": true
     }
   ],
   "updated_at": 0,

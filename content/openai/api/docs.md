@@ -218,7 +218,7 @@ work more autonomously.
 - [Streaming API responses](https://developers.openai.com/api/docs/guides/streaming-responses.md): Learn how to stream model responses from the OpenAI API using server-sent events.
 - [Structured model outputs](https://developers.openai.com/api/docs/guides/structured-outputs.md): Understand how to ensure model responses follow specific JSON Schema you define.
 - [Supervised fine-tuning](https://developers.openai.com/api/docs/guides/supervised-fine-tuning.md): Fine-tune models with example inputs and known good outputs for better results and efficiency.
-- [Telephony and SIP](https://developers.openai.com/api/docs/guides/voice-sip.md): Choose a SIP connection or an application audio bridge for phone calls.
+- [Telephony and SIP](https://developers.openai.com/api/docs/guides/voice-sip.md): Connect phone calls to OpenAI with SIP.
 - [Terraform provider](https://developers.openai.com/api/docs/guides/terraform.md): Configure the OpenAI Terraform provider and manage organization resources through the Administration API.
 - [Text generation](https://developers.openai.com/api/docs/guides/text.md): Learn how to use the OpenAI API to generate text from a prompt. Learn about message types and available text formats like JSON and Structured Outputs.
 - [Text to speech](https://developers.openai.com/api/docs/guides/text-to-speech.md): Learn how to turn text into lifelike spoken audio with the OpenAI API.

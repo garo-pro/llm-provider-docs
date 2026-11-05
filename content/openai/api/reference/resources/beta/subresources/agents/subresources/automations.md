@@ -574,7 +574,7 @@ Content type: `application/json`
 
             `minItems: 0`, `maxItems: 16384`
 
-            - `Function object { description, name, parameters, 2 more }`
+            - `Function object { description, name, parameters, 3 more }`
 
               A function defined by the application.
 
@@ -599,6 +599,10 @@ Content type: `application/json`
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean (default: false)`
+
+                Whether the agent continues without waiting for the function result. Defaults to `false`.
 
               - `defer_loading: optional boolean (default: false)`
 
@@ -1138,7 +1142,7 @@ Content type: `application/json`
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -1167,6 +1171,10 @@ Content type: `application/json`
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -1887,7 +1895,8 @@ curl https://api.openai.com/v1/agents/automations \
           "parameters": {
             "foo": "bar"
           },
-          "type": "function"
+          "type": "function",
+          "async": true
         }
       ],
       "compaction": {
@@ -2239,7 +2248,7 @@ Lists project-owned automations, optionally filtered by target session.
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -2268,6 +2277,10 @@ Lists project-owned automations, optionally filtered by target session.
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -2988,7 +3001,8 @@ curl https://api.openai.com/v1/agents/automations \
               "parameters": {
                 "foo": "bar"
               },
-              "type": "function"
+              "type": "function",
+              "async": true
             }
           ],
           "compaction": {
@@ -3267,7 +3281,7 @@ Pauses future scheduled delivery without stopping an active session.
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -3296,6 +3310,10 @@ Pauses future scheduled delivery without stopping an active session.
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -3993,7 +4011,8 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/pause \
           "parameters": {
             "foo": "bar"
           },
-          "type": "function"
+          "type": "function",
+          "async": true
         }
       ],
       "compaction": {
@@ -4266,7 +4285,7 @@ Resumes scheduled delivery; one-time automations without a pending invocation re
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -4295,6 +4314,10 @@ Resumes scheduled delivery; one-time automations without a pending invocation re
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -4992,7 +5015,8 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/resume \
           "parameters": {
             "foo": "bar"
           },
-          "type": "function"
+          "type": "function",
+          "async": true
         }
       ],
       "compaction": {
@@ -5265,7 +5289,7 @@ Retrieves a project-owned automation.
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -5294,6 +5318,10 @@ Retrieves a project-owned automation.
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -5990,7 +6018,8 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
           "parameters": {
             "foo": "bar"
           },
-          "type": "function"
+          "type": "function",
+          "async": true
         }
       ],
       "compaction": {
@@ -6609,7 +6638,7 @@ Content type: `application/json`
 
         `minItems: 0`, `maxItems: 16384`
 
-        - `Function object { description, name, parameters, 2 more }`
+        - `Function object { description, name, parameters, 3 more }`
 
           A function defined by the application.
 
@@ -6634,6 +6663,10 @@ Content type: `application/json`
             The type of the object. Always `function`.
 
             - `"function"`
+
+          - `async: optional boolean (default: false)`
+
+            Whether the agent continues without waiting for the function result. Defaults to `false`.
 
           - `defer_loading: optional boolean (default: false)`
 
@@ -7139,7 +7172,7 @@ Content type: `application/json`
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -7168,6 +7201,10 @@ Content type: `application/json`
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -7866,7 +7903,8 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
           "parameters": {
             "foo": "bar"
           },
-          "type": "function"
+          "type": "function",
+          "async": true
         }
       ],
       "compaction": {
@@ -8129,7 +8167,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -8158,6 +8196,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -8937,7 +8979,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
     `minItems: 0`, `maxItems: 2000`
 
-    - `Function object { defer_loading, description, name, 2 more }`
+    - `Function object { defer_loading, description, name, 3 more }`
 
       A function defined by the application.
 
@@ -8966,6 +9008,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
         The type of the object. Always `function`.
 
         - `"function"`
+
+      - `async: optional boolean`
+
+        Whether the agent continues without waiting for the function result.
 
     - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -10059,7 +10105,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
             `minItems: 0`, `maxItems: 16384`
 
-            - `Function object { description, name, parameters, 2 more }`
+            - `Function object { description, name, parameters, 3 more }`
 
               A function defined by the application.
 
@@ -10084,6 +10130,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean (default: false)`
+
+                Whether the agent continues without waiting for the function result. Defaults to `false`.
 
               - `defer_loading: optional boolean (default: false)`
 
@@ -10541,7 +10591,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
         `minItems: 0`, `maxItems: 2000`
 
-        - `Function object { defer_loading, description, name, 2 more }`
+        - `Function object { defer_loading, description, name, 3 more }`
 
           A function defined by the application.
 
@@ -10570,6 +10620,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
             The type of the object. Always `function`.
 
             - `"function"`
+
+          - `async: optional boolean`
+
+            Whether the agent continues without waiting for the function result.
 
         - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -11687,7 +11741,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
         `minItems: 0`, `maxItems: 16384`
 
-        - `Function object { description, name, parameters, 2 more }`
+        - `Function object { description, name, parameters, 3 more }`
 
           A function defined by the application.
 
@@ -11712,6 +11766,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
             The type of the object. Always `function`.
 
             - `"function"`
+
+          - `async: optional boolean (default: false)`
+
+            Whether the agent continues without waiting for the function result. Defaults to `false`.
 
           - `defer_loading: optional boolean (default: false)`
 
@@ -12209,7 +12267,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
           `minItems: 0`, `maxItems: 2000`
 
-          - `Function object { defer_loading, description, name, 2 more }`
+          - `Function object { defer_loading, description, name, 3 more }`
 
             A function defined by the application.
 
@@ -12238,6 +12296,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
               The type of the object. Always `function`.
 
               - `"function"`
+
+            - `async: optional boolean`
+
+              Whether the agent continues without waiting for the function result.
 
           - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -13033,7 +13095,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
 
           `minItems: 0`, `maxItems: 2000`
 
-          - `Function object { defer_loading, description, name, 2 more }`
+          - `Function object { defer_loading, description, name, 3 more }`
 
             A function defined by the application.
 
@@ -13062,6 +13124,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID \
               The type of the object. Always `function`.
 
               - `"function"`
+
+            - `async: optional boolean`
+
+              Whether the agent continues without waiting for the function result.
 
           - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -13957,7 +14023,7 @@ Queues a manual delivery without changing the saved schedule.
 
                   `minItems: 0`, `maxItems: 2000`
 
-                  - `Function object { defer_loading, description, name, 2 more }`
+                  - `Function object { defer_loading, description, name, 3 more }`
 
                     A function defined by the application.
 
@@ -13986,6 +14052,10 @@ Queues a manual delivery without changing the saved schedule.
                       The type of the object. Always `function`.
 
                       - `"function"`
+
+                    - `async: optional boolean`
+
+                      Whether the agent continues without waiting for the function result.
 
                   - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -15018,7 +15088,7 @@ Lists delivery records for a project-owned automation.
 
                   `minItems: 0`, `maxItems: 2000`
 
-                  - `Function object { defer_loading, description, name, 2 more }`
+                  - `Function object { defer_loading, description, name, 3 more }`
 
                     A function defined by the application.
 
@@ -15047,6 +15117,10 @@ Lists delivery records for a project-owned automation.
                       The type of the object. Always `function`.
 
                       - `"function"`
+
+                    - `async: optional boolean`
+
+                      Whether the agent continues without waiting for the function result.
 
                   - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -16084,7 +16158,7 @@ Retrieves a delivery record for a project-owned automation.
 
                   `minItems: 0`, `maxItems: 2000`
 
-                  - `Function object { defer_loading, description, name, 2 more }`
+                  - `Function object { defer_loading, description, name, 3 more }`
 
                     A function defined by the application.
 
@@ -16113,6 +16187,10 @@ Retrieves a delivery record for a project-owned automation.
                       The type of the object. Always `function`.
 
                       - `"function"`
+
+                    - `async: optional boolean`
+
+                      Whether the agent continues without waiting for the function result.
 
                   - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -17106,7 +17184,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/invocations/$IN
 
                   `minItems: 0`, `maxItems: 2000`
 
-                  - `Function object { defer_loading, description, name, 2 more }`
+                  - `Function object { defer_loading, description, name, 3 more }`
 
                     A function defined by the application.
 
@@ -17135,6 +17213,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/invocations/$IN
                       The type of the object. Always `function`.
 
                       - `"function"`
+
+                    - `async: optional boolean`
+
+                      Whether the agent continues without waiting for the function result.
 
                   - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -18032,7 +18114,7 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/invocations/$IN
 
                 `minItems: 0`, `maxItems: 2000`
 
-                - `Function object { defer_loading, description, name, 2 more }`
+                - `Function object { defer_loading, description, name, 3 more }`
 
                   A function defined by the application.
 
@@ -18061,6 +18143,10 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/invocations/$IN
                     The type of the object. Always `function`.
 
                     - `"function"`
+
+                  - `async: optional boolean`
+
+                    Whether the agent continues without waiting for the function result.
 
                 - `ProgrammaticToolCalling object { enabled, type }`
 

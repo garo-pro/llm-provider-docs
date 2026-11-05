@@ -5,6 +5,8 @@ URL Source: https://claude.com/resources/articles/claudes-memory-works-everywher
 Markdown Content:
 # Claude's memory works everywhere, and you decide what's in it
 
+**Update:** Memory is now on by default for members of most Team and Enterprise organizations created on or after October 31, 2026 (Pacific Time). If a member previously turned memory off using the same account, it stays off. Nothing changes for organizations created before that date. Owners can still turn memory off for their organization in Organization settings.
+
 Starting today, the memory you use in chat is the same as in Claude Cowork. Now, wherever you work with Claude, it starts from what it already knows about you. You can see everything Claude remembers, topic by topic, and edit or delete any of it. Claude does not store subjects considered sensitive, like health or beliefs, to memory by default, but if those are the topics you're tired of re-explaining, you can turn them on in Memory settings.
 
 ![](https://assets.claude.com/cb0dd2c8bda7c4cbec768f664e528b6c7f8eaa19.png)

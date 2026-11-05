@@ -314,7 +314,7 @@ Retrieves a delivery record for a project-owned automation.
 
                   `minItems: 0`, `maxItems: 2000`
 
-                  - `Function object { defer_loading, description, name, 2 more }`
+                  - `Function object { defer_loading, description, name, 3 more }`
 
                     A function defined by the application.
 
@@ -343,6 +343,10 @@ Retrieves a delivery record for a project-owned automation.
                       The type of the object. Always `function`.
 
                       - `"function"`
+
+                    - `async: optional boolean`
+
+                      Whether the agent continues without waiting for the function result.
 
                   - `ProgrammaticToolCalling object { enabled, type }`
 

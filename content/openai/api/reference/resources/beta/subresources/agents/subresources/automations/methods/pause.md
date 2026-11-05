@@ -234,7 +234,7 @@ Pauses future scheduled delivery without stopping an active session.
 
             `minItems: 0`, `maxItems: 2000`
 
-            - `Function object { defer_loading, description, name, 2 more }`
+            - `Function object { defer_loading, description, name, 3 more }`
 
               A function defined by the application.
 
@@ -263,6 +263,10 @@ Pauses future scheduled delivery without stopping an active session.
                 The type of the object. Always `function`.
 
                 - `"function"`
+
+              - `async: optional boolean`
+
+                Whether the agent continues without waiting for the function result.
 
             - `ProgrammaticToolCalling object { enabled, type }`
 
@@ -960,7 +964,8 @@ curl https://api.openai.com/v1/agents/automations/$AUTOMATION_ID/pause \
           "parameters": {
             "foo": "bar"
           },
-          "type": "function"
+          "type": "function",
+          "async": true
         }
       ],
       "compaction": {
