@@ -72,7 +72,7 @@ The default effort level can't be higher than the organization's effort cap for 
 
 ---
 
-## Always start new chats on the default model (beta)
+## Always start new chats on the default model
 
 By default, each user's next conversation starts on the model they last used. Turn on this setting to have every new conversation start on your organization's default model and default effort level instead.
 
