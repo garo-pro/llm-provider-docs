@@ -43,7 +43,7 @@ With these new tools, Claude can provide meaningful support for healthcare start
 
 **Speed up reviews of prior authorization requests**. These requests can take hours to review, slowing patients’ access to care they need and frustrating payers and providers alike. Reviews require working across various fragmented sources of information, including coverage requirements, clinical guidelines, patient records, and appeal documents. Now, Claude can pull coverage requirements from CMS or custom policies, check clinical criteria against patient records in a HIPAA-ready manner, and then propose a determination with supporting materials for the payer’s review.
 
-![Video thumbnail](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F249b312cf875a6daa78a7d42497d58bf457b8099-3418x1914.png&w=3840&q=75)
+![Speed up prior authorization reviews with Claude](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F249b312cf875a6daa78a7d42497d58bf457b8099-3418x1914.png&w=3840&q=75)
 
 **Support claims appeals**. Denied claims cost time and money for all parties. By pulling together the necessary information from patient records, coverage policies, clinical guidelines and prior documentation, Claude helps providers build stronger appeals, and helps payers to process them more quickly.
 
@@ -83,7 +83,7 @@ Finally, we’re adding new Agent Skills for **scientific problem selection**, c
 
 See the clinical trial skill in action, below:
 
-![Video thumbnail](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F842ab2275159eeb8f8f4a7d7f5a14050a4e77b93-2982x1632.png&w=3840&q=75)
+![Draft clinical trial protocols with Claude](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F842ab2275159eeb8f8f4a7d7f5a14050a4e77b93-2982x1632.png&w=3840&q=75)
 
 #### Using Claude in life sciences
 

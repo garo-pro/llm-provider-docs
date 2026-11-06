@@ -1,4 +1,4 @@
-# Fine-Tuning Techniques: Choosing Between SFT, DPO, and RFT (Including a Guide to DPO)
+# Fine-tuning techniques: Choosing between SFT and DPO
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
@@ -13,11 +13,10 @@ This guide discusses fine-tuning methods supported by OpenAI, specifically highl
 1. Improve model performance on a specific task 
 2. Improve model efficiency (reduce the number of tokens needed, distill expertise into a smaller model, etc.)
  
-Currently, the OpenAI platform supports four fine-tuning methods:
+This guide covers three fine-tuning methods:
 - **Supervised fine-tuning (SFT):** this technique employs traditional supervised learning using input-output pairs to adjust model parameters. The training process adjusts model weights to minimize the difference between predicted and target outputs across the provided examples. The model will replicate features that it finds in provided pairs. 
 - **Vision fine-tuning:** this technique extends supervised fine-tuning to multimodal data by processing both text and image in a unified training framework. The training process adjusts model weights to minimize errors across text-image pairs and as a result improve the model's understanding of image inputs. 
 - **Direct preference optimization (DPO):** this technique uses pairwise comparisons (e.g., preferred and rejected example responses) to optimize a model to favor certain outputs over others. The model learns to replicate the preference patterns found in the provided comparison data. 
-- **Reinforcement fine-tuning (RFT):** this technique uses reinforcement learning with a reward signal (via a grader or reward model) to fine-tune the model for complex objectives. In RFT, the model generates outputs for given prompts during training, and each output is evaluated for quality. The model's parameters are then updated to maximize the reward, reinforcing behaviors that lead to better outcomes. This iterative feedback loop encourages the model to improve reasoning or decision-making strategies. 
 
 To help you select the appropriate fine-tuning technique, the table below summarizes the scenarios each method is best suited for, as well as those for which it is not well suited:
 
@@ -26,7 +25,6 @@ To help you select the appropriate fine-tuning technique, the table below summar
 | **Supervised fine-tuning (SFT)**         | Emphasizing knowledge already present in the model.<br>Customizing response structure or tone.<br>Generating content in a specific format.<br>Teaching complex instructions or correcting instruction-following failures.<br>Optimizing cost/latency (saving tokens from prompt or distilling). | Adding entirely new knowledge (consider RAG instead).<br>Tasks with subjective quality.                     |
 | **Vision fine-tuning**                   | Specialized visual recognition tasks (e.g., image classification).<br>Domain-specific image understanding.<br>Correcting failures in instruction following for complex prompts.                                                                               | Purely textual tasks.<br>Generalized visual tasks without specific context.<br>General image understanding. |
 | **Direct preference optimization (DPO)** | Aligning model outputs with subjective preferences (tone, politeness).<br>Refining outputs via human-rated feedback.<br>Achieving nuanced behavioral alignment.                                                                                                                                 | Learning completely new tasks.<br>Tasks without clear human preference signals.                             |
-| **Reinforcement fine-tuning (RFT)**      | Complex domain-specific tasks that require advanced reasoning.<br>Refining existing partial capabilities (fostering emergent behaviours).<br>Tasks with measurable feedback.<br>Scenarios with limited explicit labels where reward signals can be defined.                                                                     | Tasks where the model has no initial skill.<br>Tasks without clear feedback or measurable signals.          |
 
 
 
@@ -35,7 +33,6 @@ Today, there are pre-existing Cookbooks for:
 
 - Supervised fine-tuning (SFT): (1) [How to fine-tune chat models](https://developers.openai.com/cookbook/examples/how_to_finetune_chat_models) (2) [Leveraging model distillation to fine-tune a model](https://developers.openai.com/cookbook/examples/leveraging_model_distillation_to_fine-tune_a_model)
 - Vision fine-tuning: [Vision fine-tuning on GPT-4o for visual question answering](https://developers.openai.com/cookbook/examples/multimodal/vision_fine_tuning_on_gpt4o_for_visual_question_answering)
-- Reinforcement fine-tuning (RFT): (1) [Reinforcement fine-tuning (RFT)](https://developers.openai.com/cookbook/examples/reinforcement_fine_tuning), (2) [Reinforcement fine-tuning for healthbench QA](https://developers.openai.com/cookbook/examples/fine-tuned_qa/reinforcement_finetuning_healthbench)
 
 Direct preference optimization (DPO) will be covered in this guide.
 

@@ -42,7 +42,7 @@
 - [Deep Research API with the Agents SDK](/cookbook/examples/deep_research_api/introduction_to_deep_research_api_agents.md)
 - [Building a Deep Research MCP Server](/cookbook/examples/deep_research_api/how_to_build_a_deep_research_mcp_server/readme.md)
 - [Automate Jira ↔ GitHub with Codex](/cookbook/examples/codex/jira-github.md)
-- [Fine-Tuning Techniques - Choosing Between SFT, DPO, and RFT (With a Guide to DPO)](/cookbook/examples/fine_tuning_direct_preference_optimization_guide.md)
+- [Fine-tuning techniques: Choosing between SFT and DPO](/cookbook/examples/fine_tuning_direct_preference_optimization_guide.md)
 - [MCP-Powered Agentic Voice Framework](/cookbook/examples/partners/mcp_powered_voice_agents/mcp_powered_agents_cookbook.md)
 - [Evals API Use-case - MCP Evaluation](/cookbook/examples/evaluation/use-cases/mcp_eval_notebook.md)
 - [Evals API Use-case - Structured Outputs Evaluation](/cookbook/examples/evaluation/use-cases/structured-outputs-evaluation.md)
@@ -53,8 +53,6 @@
 - [Practical guide to data-intensive apps with the Realtime API](/cookbook/examples/data-intensive-realtime-apps.md)
 - [Multi-Agent Portfolio Collaboration with OpenAI Agents SDK](/cookbook/examples/agents_sdk/multi-agent-portfolio-collaboration/multi_agent_portfolio_collaboration.md): Cookbook for multi-agent portfolio analysis workflows using the OpenAI Agents SDK.
 - [o3/o4-mini Function Calling Guide](/cookbook/examples/o-series/o3o4-mini_prompting_guide.md): Cookbook to improve o3/o4-mini function calling with prompt best practices.
-- [Exploring Model Graders for Reinforcement Fine-Tuning](/cookbook/examples/reinforcement_fine_tuning.md): Cookbook to use model graders for reinforcement fine-tuning in expert tasks.
-- [Reinforcement Fine-Tuning for Conversational Reasoning with the OpenAI API](/cookbook/examples/fine-tuned_qa/reinforcement_finetuning_healthbench.md): Cookbook for reinforcement fine-tuning conversational reasoning using HealthBench evaluations.
 - [Guide to Using the Responses API's MCP Tool](/cookbook/examples/mcp/mcp_tool_guide.md): Cookbook to connect external services using the Responses API MCP tool.
 - [Image Understanding with RAG](/cookbook/examples/multimodal/image_understanding_with_rag.md)
 - [Evals API Use-case - Responses Evaluation](/cookbook/examples/evaluation/use-cases/responses-evaluation.md): Cookbook to evaluate new models against stored Responses API logs.

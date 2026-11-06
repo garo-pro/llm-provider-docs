@@ -20,7 +20,7 @@ Organizations are already seeing value from the unified Claude experience across
 “Work at Carvana doesn’t happen only behind a desk. The unified Claude experience lets employees start a task on their computer and pick it up on their phone, with notifications when Claude has results or needs their input. It fits the way our teams work, whether they’re at their desks or visiting a site.”
 
 
-“Before chat and Cowork capabilities were unified, they were separate experiences that had to be used and managed independently. Bringing them together has made everything simpler, both for our users and administrators. The transition was seamless, nothing broke across our connectors, skills or MCPs, and we’re confident rolling it out more broadly.”
+“Before chat and Cowork capabilities were unified, they were separate experiences that had to be used and managed independently. Bringing them together has made everything simpler, both for our users and administrators. The transition was seamless, nothing broke across our connectors, skills, or MCPs, and we’re confident rolling it out more broadly.”
 
 
 ![LifeMoves](https://assets.claude.com/3bf5eaab2f0360b235789384c0f4535f6e7f7258.png)

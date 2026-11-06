@@ -127,7 +127,7 @@ work more autonomously.
 - [Getting started with GPT-Live](https://developers.openai.com/api/docs/guides/live.md): Build with GPT-Live, choose a backend, and connect your first browser voice session.
 - [Getting started with the Realtime API](https://developers.openai.com/api/docs/guides/realtime.md): Build a browser voice agent with the Realtime API and Agents SDK.
 - [GPT-Live partner integrations](https://developers.openai.com/api/docs/guides/live-partner-integrations.md): Choose a GPT-Live integration for LiveKit, Twilio, Telnyx, Bandwidth, or Daily/Pipecat.
-- [Graders](https://developers.openai.com/api/docs/guides/graders.md): Learn about graders used for evals and fine-tuning.
+- [Graders](https://developers.openai.com/api/docs/guides/graders.md): Learn about graders used for evals.
 - [Guardrails and human review](https://developers.openai.com/api/docs/guides/agents/guardrails-approvals.md): Learn how to use guardrails and human review in the OpenAI Agents SDK for safer, more controlled workflows.
 - [Image generation](https://developers.openai.com/api/docs/guides/image-generation.md): Learn how to generate or edit images with the OpenAI API and image generation models.
 - [Image generation](https://developers.openai.com/api/docs/guides/tools-image-generation.md): Allow models to generate or edit images.
@@ -193,8 +193,6 @@ work more autonomously.
 - [Reasoning best practices](https://developers.openai.com/api/docs/guides/reasoning-best-practices.md): Explore best practices for using o-series reasoning models, like o1 and o3-mini, vs. GPT models—including use cases, how to choose a model, and prompting guidance.
 - [Reasoning models](https://developers.openai.com/api/docs/guides/reasoning.md): Learn how to use OpenAI reasoning models in the Responses API, choose a reasoning effort, manage reasoning tokens, and keep reasoning state across turns.
 - [Red teaming](https://developers.openai.com/api/docs/guides/red-teaming.md): Learn how red teaming fits into AI evaluation, including Promptfoo open source and OpenAI Red Teaming for enterprise teams.
-- [Reinforcement fine-tuning](https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning.md): Fine-tune models for expert-level performance within a domain.
-- [Reinforcement fine-tuning use cases](https://developers.openai.com/api/docs/guides/rft-use-cases.md): Explore best practices and practical use cases for reinforcement fine-tuning (RFT) with OpenAI models.
 - [Results and state](https://developers.openai.com/api/docs/guides/agents/results.md): Learn which result surfaces matter most in the OpenAI Agents SDK and how they connect to resumable workflow state.
 - [Retrieval](https://developers.openai.com/api/docs/guides/retrieval.md): Learn how to search your data using semantic similarity with the OpenAI API.
 - [Run and continue sessions](https://developers.openai.com/api/docs/guides/agents-api/sessions.md): Start work, follow progress, and continue the conversation.

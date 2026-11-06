@@ -57,11 +57,11 @@ We tested the scientific research capabilities of Claude Fable 5.1 and Claude My
 
 We’re [releasing this map](https://zenodo.org/records/22164484) under a Creative Commons license in advance of upcoming NASA VERITAS and ESA EnVision missions, in hopes that it might help them determine which geologic features to target for future observation.
 
-![Radar image (Magellan): bright cone, radian lava flows](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4d8f06a743ecfc6ec87ccde0b1964e48175a141e-800x800.png&w=1920&q=75)
+![Radar image (Magellan): bright cone, radian lava flows](https://assets.claude.com/4d8f06a743ecfc6ec87ccde0b1964e48175a141e.png?w=1920&q=75&fm=webp&fit=max)
 
-![Altimetry 10-20km footprint](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe374c070fc1a84872dcb1343b5bb0ed540ca3770-800x800.png&w=1920&q=75)
+![Altimetry 10-20km footprint](https://assets.claude.com/e374c070fc1a84872dcb1343b5bb0ed540ca3770.png?w=1920&q=75&fm=webp&fit=max)
 
-![New DEM (300m) a volcano 15km across](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3dd626b47b88feb72082646cdea87944d49a3c7f-800x800.png&w=1920&q=75)
+![New DEM (300m) a volcano 15km across](https://assets.claude.com/3dd626b47b88feb72082646cdea87944d49a3c7f.png?w=1920&q=75&fm=webp&fit=max)
 
 **Computational biology*.*** In computational biology, it’s common to run task-specific machine learning models on GPUs. The speed of these models is therefore a bottleneck to research progress. Mythos 5.1 provided one solution to this problem: by writing custom GPU kernels and caching their intermediate results, it sped up seven open-source deep learning models by up to 2.5 times (with identical outputs).
 

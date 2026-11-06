@@ -632,8 +632,7 @@ For example:
         ],
         "brandColor": "#10A37F",
         "composerIcon": "./assets/icon.png",
-        "logo": "./assets/logo.png",
-        "screenshots": ["./assets/screenshot-1.png"]
+        "logo": "./assets/logo.png"
       }
     }
   }
@@ -667,7 +666,7 @@ for manifest examples, supported fields, requirements, and import behavior.
 - Keep portable `plugin.json`, `mcp.json`, and `skills/` at the plugin root.
 - Keep paths in `extensions.com.openai` or a compatibility manifest relative to
   the plugin root and start them with `./`.
-- Store visual assets such as `composerIcon`, `logo`, and `screenshots` under
+- Store visual assets such as `composerIcon` and `logo` under
   `./assets/` when possible.
 - Use the OpenAI extension's `apps` field only for registered MCP server mappings in
   `.app.json`.

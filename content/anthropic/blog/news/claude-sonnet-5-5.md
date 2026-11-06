@@ -71,21 +71,21 @@ Sonnet 5.5 requires fewer tokens per task than Sonnet 5, so it’s less expensiv
 
 A murmuration of 400 starlings in one HTML file
 
-![The previous model writing a starling murmuration program, then running it.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc3945915dad02168b631b238c900b98b23964539-1600x1000.png%3Frect%3D0%252C0%252C1600%252C1000&w=3840&q=75)
+![The previous model writing a starling murmuration program, then running it.](https://assets.claude.com/12508a2f98e088a8dddfae44091ec7c044d1619b.png?rect=0%2C0%2C1600%2C1000&w=3840&q=75&fm=webp&fit=max)
 
-![The latest model writing a starling murmuration program, then running it.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcf0eae4b26b6fbe29e370d300ecac766cb94bc2d-1600x1000.png%3Frect%3D0%252C0%252C1600%252C1000&w=3840&q=75)
+![The latest model writing a starling murmuration program, then running it.](https://assets.claude.com/a3cf029019cdc16daee1f3f25634f3adeebe6011.png?rect=0%2C0%2C1600%2C1000&w=3840&q=75&fm=webp&fit=max)
 
 Wind shaping sand dunes in one HTML file
 
-![The previous model writing a sand dunes program, then running it.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdac9adf55898f7da5fbd40cfb562784289ab9048-1600x1000.png%3Frect%3D0%252C0%252C1600%252C1000&w=3840&q=75)
+![The previous model writing a sand dunes program, then running it.](https://assets.claude.com/9fe6620fc9b2cfc0de00fed04295b2e5f9ee1829.png?rect=0%2C0%2C1600%2C1000&w=3840&q=75&fm=webp&fit=max)
 
-![The latest model writing a sand dunes program, then running it.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd71a0217af7efe761f190d4bceea9a38e9a7dbad-1600x1000.png%3Frect%3D0%252C0%252C1600%252C1000&w=3840&q=75)
+![The latest model writing a sand dunes program, then running it.](https://assets.claude.com/f42a27130b1184356690344aa6e19a0c6cd16c9d.png?rect=0%2C0%2C1600%2C1000&w=3840&q=75&fm=webp&fit=max)
 
 A clock made of 24 small clocks in one HTML file
 
-![The previous model writing a clock-of-clocks program, then running it.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F21053b0cbc6e93a7388f173ed8fb3bd4bb2ed85b-1600x1000.png%3Frect%3D0%252C0%252C1600%252C1000&w=3840&q=75)
+![The previous model writing a clock-of-clocks program, then running it.](https://assets.claude.com/4fb6d092939da357c6d745f8b7c250ef78f5f5e1.png?rect=0%2C0%2C1600%2C1000&w=3840&q=75&fm=webp&fit=max)
 
-![The latest model writing a clock-of-clocks program, then running it.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb521482c2a09be87ac40f01e8949c216c426eeaa-1600x1000.png%3Frect%3D0%252C0%252C1600%252C1000&w=3840&q=75)
+![The latest model writing a clock-of-clocks program, then running it.](https://assets.claude.com/08a11f5fb9a251ebf2a455603dbac45588c4c525.png?rect=0%2C0%2C1600%2C1000&w=3840&q=75&fm=webp&fit=max)
 
 Adjusting the [effort level](https://academy.claude.com/tutorials/choosing-the-right-effort-level-in-claude-code) lets you balance cost and speed against overall quality. In Claude Code and our apps, the default effort is set to Medium, while the Claude Platform defaults to High. At lower settings, Claude answers faster and uses fewer tokens, which suits routine work. At higher settings, Claude reasons for longer and checks its work more thoroughly.
 

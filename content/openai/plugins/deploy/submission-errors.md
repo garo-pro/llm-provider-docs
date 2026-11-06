@@ -57,9 +57,6 @@ For a remote MCP plugin, final submission also requires:
 - Explicit `readOnlyHint`, `openWorldHint`, and `destructiveHint` values and a
   justification for each value on every MCP tool.
 - Reviewer-ready demo credentials when the server uses OAuth.
-- Screenshots only when the MCP server provides custom UI. If you add
-  screenshots, provide one PNG or JPEG image for every starter prompt. Each
-  screenshot must be exactly 706 pixels wide and 400–860 pixels tall.
 
 ### Final metadata errors
 
@@ -95,7 +92,6 @@ These errors apply to remote MCP submissions.
 | `scan_required`                     | MCP tools must have a successful, current scan of the production MCP server.                                                                                                      |
 | `domain_verification_required`      | The exact verification token must be hosted at the generated `/.well-known/openai-apps-challenge` URL on the MCP host or an allowed parent host, and **Verify Domain** must pass. |
 | `frame_domain_explanation_required` | Every external frame domain reported by the MCP tool scan must have an explanation of why the UI needs it and what content it provides.                                           |
-| `screenshots_not_allowed`           | Screenshots are allowed only when the current MCP tool scan reports a UI output template.                                                                                         |
 
 ## Archive errors
 
@@ -106,16 +102,15 @@ The portal's **Skills only** path accepts skill ZIP packages and
 plugins don't need to include skills. Errors block the upload; warnings require
 confirmation.
 
-| Name                                | Requirement                                                                                                                                                                                                                                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `plugin_name_mismatch`              | The package name in an update must match the existing plugin name.                                                                                                                                                                                                                          |
-| `plugin_version_unchanged`          | A new release must use a different manifest `version`; reusing the published version requires confirmation.                                                                                                                                                                                 |
-| `mcp_configuration_excluded`        | MCP configuration is excluded unless your organization is approved for [local MCP submissions](https://developers.openai.com/plugins/deploy/desktop-only). For a local MCP plugin, ask your OpenAI representative to confirm the submitting organization is allowlisted. Submit remote MCP servers through **With MCP**. |
-| `app_configuration_excluded`        | ZIP uploads must not include `apps` or `.app.json`. Submit remote MCP servers through **With MCP**; for local MCP servers, follow the [desktop-only submission instructions](https://developers.openai.com/plugins/deploy/desktop-only).                                                                                 |
-| `screenshot_configuration_excluded` | Skills-only ZIP uploads must not include `interface.screenshots`; screenshots require **With MCP** and custom UI.                                                                                                                                                                           |
-| `claude_format_normalized`          | `.claude-plugin/plugin.json` is converted to `.codex-plugin/plugin.json`, with missing interface defaults and normalized text fields added by the portal.                                                                                                                                   |
-| `manifest_normalized`               | The portal saves the normalized manifest as `.codex-plugin/plugin.json`; changed fields require confirmation.                                                                                                                                                                               |
-| `developer_name_defaulted`          | The listing’s developer name is set automatically from your selected verified developer identity, regardless of the name in your ZIP.                                                                                                                                                       |
+| Name                         | Requirement                                                                                                                                                                                                                                                                                 |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `plugin_name_mismatch`       | The package name in an update must match the existing plugin name.                                                                                                                                                                                                                          |
+| `plugin_version_unchanged`   | A new release must use a different manifest `version`; reusing the published version requires confirmation.                                                                                                                                                                                 |
+| `mcp_configuration_excluded` | MCP configuration is excluded unless your organization is approved for [local MCP submissions](https://developers.openai.com/plugins/deploy/desktop-only). For a local MCP plugin, ask your OpenAI representative to confirm the submitting organization is allowlisted. Submit remote MCP servers through **With MCP**. |
+| `app_configuration_excluded` | ZIP uploads must not include `apps` or `.app.json`. Submit remote MCP servers through **With MCP**; for local MCP servers, follow the [desktop-only submission instructions](https://developers.openai.com/plugins/deploy/desktop-only).                                                                                 |
+| `claude_format_normalized`   | `.claude-plugin/plugin.json` is converted to `.codex-plugin/plugin.json`, with missing interface defaults and normalized text fields added by the portal.                                                                                                                                   |
+| `manifest_normalized`        | The portal saves the normalized manifest as `.codex-plugin/plugin.json`; changed fields require confirmation.                                                                                                                                                                               |
+| `developer_name_defaulted`   | The listing’s developer name is set automatically from your selected verified developer identity, regardless of the name in your ZIP.                                                                                                                                                       |
 
 ### ZIP structure and limit errors
 
@@ -413,8 +408,7 @@ interface:
 ## Image errors
 
 Directory branding images must use a supported file type and meet the size and
-dimension limits below. These rules apply to packaged branding assets;
-starter-prompt screenshots use the separate portal limits listed above.
+dimension limits below. These rules apply to packaged branding assets.
 
 | Name                                      | Requirement                                                                |
 | ----------------------------------------- | -------------------------------------------------------------------------- |

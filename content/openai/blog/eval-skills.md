@@ -218,7 +218,8 @@ function runCodex(prompt, outJsonlPath) {
     [
       "exec",
       "--json", // REQUIRED: emit structured events
-      "--full-auto", // Allow file system changes
+      "--sandbox",
+      "workspace-write", // Allow changes inside the example repository
       prompt,
     ],
     { encoding: "utf8" }
@@ -244,8 +245,10 @@ function parseJsonl(jsonlText) {
 function checkRanNpmInstall(events) {
   return events.some(
     (e) =>
-      (e.type === "item.started" || e.type === "item.completed") &&
+      e.type === "item.completed" &&
       e.item?.type === "command_execution" &&
+      e.item.status === "completed" &&
+      e.item.exit_code === 0 &&
       typeof e.item?.command === "string" &&
       e.item.command.includes("npm install")
   );
@@ -263,7 +266,10 @@ const tracePath = path.join(projectDir, "evals", "artifacts", "test-01.jsonl");
 const prompt =
   "Create a demo app named demo-app using the $setup-demo-app skill";
 
-runCodex(prompt, tracePath);
+const { exitCode, stderr } = runCodex(prompt, tracePath);
+if (exitCode !== 0) {
+  throw new Error(`Codex exited with status ${exitCode}: ${stderr}`);
+}
 
 const events = parseJsonl(readFileSync(tracePath, "utf8"));
 

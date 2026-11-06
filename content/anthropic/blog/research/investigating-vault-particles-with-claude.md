@@ -3,7 +3,7 @@ Title: Investigating vault particles with Claude
 URL Source: https://www.anthropic.com/research/investigating-vault-particles-with-claude
 
 Markdown Content:
-*We’re sharing another finding from [Anthropic’s biology research lab](https://www.anthropic.com/research/claude-discovers-novel-enzyme-system): the first 3D structure of a vault particle found in prokaryotic cells. Vaults are large, hollow barrels of protein found in cells across the tree of life, and their function is still unknown. Below, we describe how Claude helped at each step of this research: searching across sequence literature, optimizing a method of isolating particles, and mapping the vault’s structure. More information is [in our preprint](https://www.anthropic.com/document/athukoralage-prokaryotic-vault-protein), which we’ve submitted to bioRxiv; we’ll update the link as soon as it goes live.*
+*We’re sharing another finding from [Anthropic’s biology research lab](https://www.anthropic.com/research/claude-discovers-novel-enzyme-system): the first 3D structure of a vault particle found in prokaryotic cells. Vaults are large, hollow barrels of protein found in cells across the tree of life, and their function is still unknown. Below, we describe how Claude helped at each step of this research: searching across sequence literature, optimizing a method of isolating particles, and mapping the vault’s structure. More information is [in our preprint](https://www.biorxiv.org/content/10.64898/2026.11.04.764334v1), which we’ve submitted to bioRxiv; we’ll update the link as soon as it goes live.*
 
 Biological cells were first detected in 1665, but more than three and a half centuries later, much of how they work remains unknown. Until relatively recently, [the existence of some crucial components](https://pubmed.ncbi.nlm.nih.gov/12360195/), let alone [their function](https://pmc.ncbi.nlm.nih.gov/articles/PMC3184113/), was controversial. Even today, more than a third of the roughly 4,400 genes in one of the most comprehensively studied cells, the bacterium *E. coli*, [remain poorly understood](https://pmc.ncbi.nlm.nih.gov/articles/PMC6412132/). Another such enigma is the *vault particle*.
 
@@ -25,7 +25,7 @@ Despite this progress, there is still much to be learned about these perplexing 
 
 Figuring out the function of vaults is still enormously challenging. I am pleased that Anthropic has so much good data. Now, other people will be working on this problem … The broadness of Anthropic’s finding[s] suggests that it is going to be a complicated function and an interesting ride.
 
-Our lab is releasing these findings early to continue to show the scientific community how Claude can be used for discovery. You can read more about our results and methods [in our preprint](https://www.anthropic.com/document/athukoralage-prokaryotic-vault-protein), and we will be releasing the structures and additional data soon.
+Our lab is releasing these findings early to continue to show the scientific community how Claude can be used for discovery. You can read more about our results and methods [in our preprint](https://www.biorxiv.org/content/10.64898/2026.11.04.764334v1), and we will be releasing the structures and additional data soon.
 
 ## A vault-like structure in prokaryotes
 
@@ -79,4 +79,4 @@ We will continue our research into the function of vaults, and will share more a
 
 ## Work with us
 
-We are releasing the details of our work [in our preprint](https://www.anthropic.com/document/athukoralage-prokaryotic-vault-protein). If you have an idea for what these vaults might be doing, or a system in which to test it, we would like to hear from you: [mdurrant\[at\]anthropic.com](mailto:mdurrant@anthropic.com), [nicholasp\[at\]anthropic.com](mailto:nicholasp@anthropic.com).
+We are releasing the details of our work [in our preprint](https://www.biorxiv.org/content/10.64898/2026.11.04.764334v1). If you have an idea for what these vaults might be doing, or a system in which to test it, we would like to hear from you: [mdurrant\[at\]anthropic.com](mailto:mdurrant@anthropic.com), [nicholasp\[at\]anthropic.com](mailto:nicholasp@anthropic.com).

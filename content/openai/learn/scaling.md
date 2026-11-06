@@ -20,8 +20,6 @@
 - [Predicted outputs guide](https://platform.openai.com/docs/guides/predicted-outputs): Guide to understanding and using predicted outputs.
 - [Production best practices](https://platform.openai.com/docs/guides/production-best-practices): Guide on best practices for running AI applications in production
 - [Prompt Optimizer](https://platform.openai.com/docs/guides/prompt-optimizer): Guide to refining prompts with the Prompt Optimizer.
-- [Reinforcement fine-tuning overview](https://platform.openai.com/docs/guides/reinforcement-fine-tuning): Guide on reinforcement learning-based fine-tuning techniques.
 - [Working with the Evals API](https://platform.openai.com/docs/guides/evals): Guide to building evaluations with the Evals API.
 - [Eval Driven System Design - From Prototype to Production](/cookbook/examples/partners/eval_driven_system_design/receipt_inspection): Cookbook for eval-driven design of a receipt parsing automation workflow.
-- [Reinforcement Fine-Tuning for Conversational Reasoning with the OpenAI API](/cookbook/examples/fine-tuned_qa/reinforcement_finetuning_healthbench): Cookbook for reinforcement fine-tuning conversational reasoning using HealthBench evaluations.
 - [Evals API Use-case - Responses Evaluation](/cookbook/examples/evaluation/use-cases/responses-evaluation): Cookbook to evaluate new models against stored Responses API logs.

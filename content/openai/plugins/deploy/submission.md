@@ -264,7 +264,7 @@ These examples describe the same illustrative notes plugin in each format. Copy 
 Include the files referenced by the manifest:
 
 - `skills/get-started/SKILL.md`, with valid name and description fields in the YAML header.
-- The four icon files and screenshot under `assets/`.
+- The four icon files under `assets/`.
 - Exactly one remote MCP server named notes, configured in `mcp.json` for Agent Plugins or `.mcp.json` for Codex, using the matching configuration that follows.
 
 Use your own accessible demo and review attachment URLs. The example.com links show the expected shape and aren’t working submission materials. If your plugin contains only skills, omit review and the MCP configuration, and omit `mcpServers` from the Codex manifest.
@@ -337,8 +337,7 @@ Save this complete manifest as plugin.json at the plugin root:
         "composerIcon": "./assets/icon.png",
         "composerIconDark": "./assets/icon-dark.png",
         "logo": "./assets/logo.png",
-        "logoDark": "./assets/logo-dark.png",
-        "screenshots": ["./assets/screenshot.png"]
+        "logoDark": "./assets/logo-dark.png"
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "review": {
@@ -458,8 +457,7 @@ Save this complete manifest as .codex-plugin/plugin.json. The presentation field
     "composerIcon": "./assets/icon.png",
     "composerIconDark": "./assets/icon-dark.png",
     "logo": "./assets/logo.png",
-    "logoDark": "./assets/logo-dark.png",
-    "screenshots": ["./assets/screenshot.png"]
+    "logoDark": "./assets/logo-dark.png"
   },
   "extensions": {
     "com.openai": {
@@ -608,13 +606,12 @@ Put the following fields in `extensions.com.openai.interface` for Agent Plugins 
 | `composerIconDark`  | Optional                                                 | String                     | Optional relative path to its dark-theme variant.                                                                                        |
 | `logo`              | Required for Codex; primary icon required for submission | String                     | Relative path to the primary listing icon.                                                                                               |
 | `logoDark`          | Optional                                                 | String                     | Optional relative path to its dark-theme variant.                                                                                        |
-| `screenshots`       | Optional                                                 | Array of strings           | Optional relative paths to screenshots.                                                                                                  |
 
 For an attached MCP app that needs public review, all four listing URLs are required: `websiteURL`, `supportURL`, `privacyPolicyURL`, and `termsOfServiceURL`. Use HTTPS URLs without embedded credentials. Skills-only metadata validation doesn’t require all four URLs. The package’s `homepage` and `author.url` don’t fill these listing fields automatically.
 
-#### Icons and screenshots
+#### Icons
 
-Include `logo` and `composerIcon` in packages you prepare for distribution. Codex package validation requires both; you can upload a portable package without them, but the dashboard requires a primary app icon before submission. Dark variants and screenshots are optional. To resolve an “App icon required” warning, add `logo` and its image file, or provide the icon in the dashboard.
+Include `logo` and `composerIcon` in packages you prepare for distribution. Codex package validation requires both; you can upload a portable package without them, but the dashboard requires a primary app icon before submission. Dark variants are optional. To resolve an “App icon required” warning, add `logo` and its image file, or provide the icon in the dashboard.
 
 Use ./-prefixed paths relative to the plugin root and include every referenced file. Supported image formats are PNG, JPEG, WebP, and SVG, at most 5 MiB each. Icons and logos must be square and at least 48 by 48 pixels. Raster images can be at most 4096 pixels in either dimension. For SVG icons, provide square numeric dimensions or a square `viewBox` of at least 48 by 48.
 

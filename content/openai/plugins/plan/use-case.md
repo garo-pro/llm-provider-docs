@@ -27,7 +27,7 @@ Gather likely requests from:
 - User interviews, support requests, search queries, and feature requests.
 - Common terms people use for your product, data, and workflows.
 - Existing workarounds that require copying data between tools.
-- The plugin name, listing, screenshots, and starter prompts.
+- The plugin name, listing, and starter prompts.
 
 Include direct requests that name your plugin and indirect requests that state
 the goal. For example, a project-management plugin might need to handle both

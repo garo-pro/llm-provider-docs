@@ -988,7 +988,7 @@ Launched [codex-mini-latest](https://developers.openai.com/api/docs/models/codex
 
 Feature · API: v1/fine-tuning · API: v1/responses · API: v1/chat/completions
 
-Launched support for [reinforcement fine-tuning](https://developers.openai.com/api/docs/guides/reinforcement-fine-tuning). Learn about available [fine-tuning methods](https://developers.openai.com/api/docs/guides/model-optimization). [gpt-4.1-nano](https://developers.openai.com/api/docs/models/gpt-4.1-nano) is now available for fine-tuning.
+Launched support for [reinforcement fine-tuning](https://developers.openai.com/api/reference/resources/fine_tuning). Learn about available [fine-tuning methods](https://developers.openai.com/api/docs/guides/model-optimization). [gpt-4.1-nano](https://developers.openai.com/api/docs/models/gpt-4.1-nano) is now available for fine-tuning.
 
 ## April, 2025
 
