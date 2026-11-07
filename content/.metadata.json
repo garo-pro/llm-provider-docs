@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-07T06:46:04.883760Z",
+    "fetch_date": "2026-11-07T16:45:27.920152Z",
     "section": "all"
   },
   "items": [
@@ -32948,6 +32948,13 @@
       "size": 6538
     },
     {
+      "url": "https://developers.openai.com/api/docs/guides/google-cloud",
+      "status": "success",
+      "path": "openai/api/docs/guides/google-cloud.md",
+      "sha256": "0e2c451db5d3d5ac940477edc7d6d7b33f6e8e907421c722ffaba74921ebb907",
+      "size": 10369
+    },
+    {
       "url": "https://developers.openai.com/api/docs/guides/custom-voices",
       "status": "success",
       "path": "openai/api/docs/guides/custom-voices.md",
@@ -47842,13 +47849,6 @@
       "path": "anthropic/github/anthropic-sdk-typescript/src/internal/qs/README.md",
       "sha256": "dde9487eaeb2d89982fb4b9c6a652015393d95c7e0958f0a19242c55d0ee4788",
       "size": 170
-    },
-    {
-      "url": "https://developers.openai.com/api/docs/guides/google-cloud",
-      "status": "success",
-      "path": "openai/api/docs/guides/google-cloud.md",
-      "sha256": "0e2c451db5d3d5ac940477edc7d6d7b33f6e8e907421c722ffaba74921ebb907",
-      "size": 10369
     },
     {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
