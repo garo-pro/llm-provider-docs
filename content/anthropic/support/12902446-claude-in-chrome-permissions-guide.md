@@ -34,7 +34,7 @@ Claude creates a plan from your prompt, which you can approve before Claude star
 
 Note that Claude will only use the websites listed in the plan, so you’ll need to manually approve any additional access requests.
 
-Claude clarifies which sites it’s planning to access and the actions it will take upfront, allowing you to review the proposed plan and ensure it’s correct before starting. You can also click "Make changes" to reject the current proposal, then prompt Claude again to make any necessary changes. Once you click "Approve plan," Claude will be able to act independently within the outlined parameters, but will still check with you before other sensitive actions, like downloading a file or entering sensitive information into a page. Claude will not deviate from the stated plan without requesting your permission first. There are certain actions that Claude cannot take for your security, such as making purchases, creating accounts, bypassing bot authorizations, executing trades, permanently deleting files, or taking certain actions that may indicate a prompt injection risk (see **[Prohibited actions](#h_e199f8f523)**).
+Claude clarifies which sites it’s planning to access and the actions it will take upfront, allowing you to review the proposed plan and ensure it’s correct before starting. You can also click "Make changes" to reject the current proposal, then prompt Claude again to make any necessary changes. Once you click "Approve plan," Claude will be able to act independently within the outlined parameters, but will still check with you before other sensitive actions, like downloading a file or entering sensitive information into a page. Claude will not deviate from the stated plan without requesting your permission first. There are certain actions that Claude cannot take for your security, such as making purchases, creating accounts, bypassing bot authorizations, executing trades, or taking certain actions that may indicate a prompt injection risk (see **[Prohibited actions](#h_e199f8f523)**).
 
 ### In the Cowork side panel
 
@@ -118,6 +118,8 @@ Regardless of your permission mode, Claude requires explicit user permission to 
 
 - Inputting potentially sensitive information into websites
 
+- Permanent deletions (emptying trash, deleting emails, files, or messages)
+
 ---
 
 ## Prohibited actions
@@ -131,8 +133,6 @@ To protect you, Claude is prohibited from taking following actions regardless of
 - Handling sensitive credit card or ID data
 
 - Downloading files from untrusted sources
-
-- Permanent deletions (emptying trash, deleting emails, files, or messages)
 
 - Providing investment or financial advice
 

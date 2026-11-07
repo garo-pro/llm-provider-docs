@@ -76,6 +76,8 @@ If you have both an individual Claude account and a Team or Enterprise plan acco
 
 3. Look for the check mark indicating the active account.
 
+If your accounts are on different email addresses, log out, then log in with the other email address. See **[Move your personal Claude account to a Team or Enterprise organization](https://support.claude.com/en/articles/9267400-move-your-personal-claude-account-to-a-team-or-enterprise-organization#h_909699092e)**.
+
 ### I don’t want to use “Continue with Google” to log in anymore; how can I revoke access to my Google account?
 
 If you've previously authenticated using Google, you can follow these steps to unlink your Google account from Claude and use only the emailed login link moving forward:

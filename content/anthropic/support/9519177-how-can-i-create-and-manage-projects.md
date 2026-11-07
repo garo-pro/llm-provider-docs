@@ -16,6 +16,8 @@ Projects are available to all users, including those with free Claude accounts. 
 
   - **Share with your broader organization:** Everyone in your organization can view and use this project (where enabled by administrators).
 
+5. If you're on an Enterprise plan and your organization requires project tags (beta), set a value for each required tag. See **[Track spend by cost code with project tags](https://support.claude.com/en/articles/18251257-track-spend-by-project-with-tags)**. Tag names and values are visible to all users in your organization, so keep sensitive information out of them.
+
 Once your project is set up, you can initiate chats with Claude within the project.
 
 ## Add content to project knowledge
@@ -60,7 +62,7 @@ If you're on a Team or Enterprise plan, you can share projects with other users 
 
   - **Can view:** Members can see project contents, knowledge, and instructions, and chat within the project, but cannot edit it.
 
-  - **Can edit:** Members can modify project instructions and knowledge, update member settings, and actively contribute to the project.
+  - **Can edit:** Members can modify project instructions and knowledge, update member settings, add project tags (beta) on Enterprise plans, and actively contribute to the project.
 
 5. Click "Share" to send invitations.
 

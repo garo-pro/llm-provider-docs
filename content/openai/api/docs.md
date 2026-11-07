@@ -164,6 +164,7 @@ work more autonomously.
 - [Node reference](https://developers.openai.com/api/docs/guides/node-reference.md): Explore all available nodes for composing workflows in Agent Builder.
 - [Observability and usage](https://developers.openai.com/api/docs/guides/agents-api/observability.md): Inspect live progress, completed work, and recorded token usage.
 - [OpenAI on Amazon Bedrock](https://developers.openai.com/api/docs/guides/amazon-bedrock.md): Compare OpenAI model inference on Amazon Bedrock with the OpenAI API, and find AWS setup guidance.
+- [OpenAI on Google Cloud](https://developers.openai.com/api/docs/guides/google-cloud.md): Use OpenAI models through Google Cloud and compare feature support with the first-party OpenAI API.
 - [OpenAI-hosted sandboxes](https://developers.openai.com/api/docs/guides/agents-api/environments/openai-hosted.md): Run code and create downloadable files without managing compute.
 - [Optimizing LLM Accuracy](https://developers.openai.com/api/docs/guides/optimizing-llm-accuracy.md): Learn strategies to enhance the accuracy of large language models using techniques like prompt engineering, retrieval-augmented generation, and fine-tuning.
 - [Oracle Cloud Infrastructure (OCI)](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/oci.md): Connect an OCI GenAI Sandbox to an Agents API session.

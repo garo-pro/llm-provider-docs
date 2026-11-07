@@ -12,7 +12,7 @@ This article covers Pro, Max, and Ultra plans purchased on the web. If you subsc
 
 Learn more about **[signing up for the Max or Ultra plan](https://support.claude.com/en/articles/11049752)**.
 
-**Usage credit receipts.** If you've enabled usage credits, each purchase of funds is charged separately from your subscription and has its own receipt. This includes purchases made automatically by auto-reload and any usage bundles you buy.
+**Usage credit receipts.** If you've enabled usage credits, each usage credit purchase is charged separately from your subscription and has its own receipt. This includes purchases made automatically by auto-reload and any usage bundles you buy.
 
 Learn more about **[managing usage credits for paid Claude plans](https://support.claude.com/en/articles/12429409)**.
 

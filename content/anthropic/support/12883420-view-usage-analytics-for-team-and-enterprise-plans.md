@@ -140,7 +140,7 @@ Each row in the CSV represents a specific person's usage of a specific model, wi
 
   - Your cost (in USD) before any discounts or credits.
 
-Analytics chat, the Analytics API, and exported spend reports from the analytics dashboard should closely match your invoice. The cost and usage endpoints of the Analytics API export include both discounted price and list price.
+Analytics chat, the Analytics API, and exported spend reports from the analytics dashboard should closely match your invoice. Spend grouped by project tag may not match. The cost and usage endpoints of the Analytics API export include both discounted price and list price.
 
 **Note:** Some activity previously grouped under Claude Code, including Code Review and security features, now appears as separate line items.
 
