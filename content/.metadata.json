@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-08T06:51:47.342344Z",
+    "fetch_date": "2026-11-08T16:53:40.005166Z",
     "section": "all"
   },
   "items": [
@@ -32717,6 +32717,13 @@
       "size": 75850
     },
     {
+      "url": "https://developers.openai.com/api/docs/guides/preserved-reasoning",
+      "status": "success",
+      "path": "openai/api/docs/guides/preserved-reasoning.md",
+      "sha256": "d2185e735952f5c61f453eb502577928b330519cd86b6d4f0a9b8b8e5f9f029d",
+      "size": 6888
+    },
+    {
       "url": "https://developers.openai.com/api/docs/guides/fine-tuning-best-practices",
       "status": "success",
       "path": "openai/api/docs/guides/fine-tuning-best-practices.md",
@@ -47858,13 +47865,6 @@
       "size": 170
     },
     {
-      "url": "https://developers.openai.com/api/docs/guides/preserved-reasoning",
-      "status": "success",
-      "path": "openai/api/docs/guides/preserved-reasoning.md",
-      "sha256": "d2185e735952f5c61f453eb502577928b330519cd86b6d4f0a9b8b8e5f9f029d",
-      "size": 6888
-    },
-    {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
       "status": "success",
       "path": "openai/github/openai-cookbook/.codex/skills/docs-editor/SKILL.md",
@@ -52234,11 +52234,11 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "url": "https://openai.com/news/research",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
-      "url": "https://openai.com/news/research",
+      "url": "https://openai.com/index/gpt-6-for-everyone",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
