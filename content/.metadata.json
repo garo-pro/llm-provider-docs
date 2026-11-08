@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-07T16:45:27.920152Z",
+    "fetch_date": "2026-11-08T06:51:47.342344Z",
     "section": "all"
   },
   "items": [
@@ -6582,8 +6582,8 @@
       "url": "https://code.claude.com/docs/en/mcp",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/mcp.md",
-      "sha256": "6ffdadb194bdceb4676f0bf6e52637942e1558916afbf4636fb3ef79b4e0e16a",
-      "size": 156885
+      "sha256": "08a59d3eeeb80da9f94a4f79f1f1179b5cd165c464e7805f8fdc8843ab9c6db7",
+      "size": 157241
     },
     {
       "url": "https://code.claude.com/docs/en/skills",
@@ -6603,8 +6603,8 @@
       "url": "https://code.claude.com/docs/en/hooks-guide",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/hooks-guide.md",
-      "sha256": "a137a70720739938d89001a688a3e33f4516374dac8a1c2afbece1df61d37fb3",
-      "size": 66757
+      "sha256": "662e38ddd6af0fcc78f93ab64ecbbb8669a3827528f2a7dac60a73dcf1dc1aee",
+      "size": 67002
     },
     {
       "url": "https://code.claude.com/docs/en/channels",
@@ -7373,8 +7373,8 @@
       "url": "https://code.claude.com/docs/en/hooks",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/hooks.md",
-      "sha256": "55757f0fbe69bc20bb184c53c41f9d606e15bb4f8c3cd2a9b088c06b4357b906",
-      "size": 289847
+      "sha256": "302eb7b421958a10745425535de466903450dc2f4ee601ab182d54e1f747fa56",
+      "size": 289929
     },
     {
       "url": "https://code.claude.com/docs/en/channels-reference",
@@ -8003,8 +8003,8 @@
       "url": "https://modelcontextprotocol.io/community/working-groups/skills-over-mcp",
       "status": "success",
       "path": "anthropic/mcp/community/working-groups/skills-over-mcp.md",
-      "sha256": "d25b70f80028bfdbe38e8a98c25d961709f246725ae80335dcb83f4dd6b60fa3",
-      "size": 9464
+      "sha256": "e91670a92228f7a0fd569d19c4bea681f09742e0b3e7937fea64ec06f786babe",
+      "size": 9462
     },
     {
       "url": "https://modelcontextprotocol.io/community/working-groups/tasks-events",
@@ -8647,8 +8647,8 @@
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/authorization",
       "status": "success",
       "path": "anthropic/mcp/docs/2026-07-28/tutorials/security/authorization.md",
-      "sha256": "2d98956b436bef276e5287817e48611bf7dea6dbfb1ea4c0cad57d9de8172005",
-      "size": 49102
+      "sha256": "3d17f7770a3a6e03e6e9ba40044827d9e11c3cc48b587aa589a002b0111277ba",
+      "size": 47527
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/local-server-security",
@@ -8829,8 +8829,8 @@
       "url": "https://modelcontextprotocol.io/docs/draft/tutorials/security/authorization",
       "status": "success",
       "path": "anthropic/mcp/docs/draft/tutorials/security/authorization.md",
-      "sha256": "460966ea8e1298018f453a996324fb8c9f74b63ad11f6b82baf7af635a320f36",
-      "size": 49077
+      "sha256": "a1b0e12eaa377bc50b66afbeea91629b962481522aad0f2a0548bb2eda180143",
+      "size": 47412
     },
     {
       "url": "https://modelcontextprotocol.io/docs/draft/tutorials/security/local-server-security",
@@ -8906,8 +8906,8 @@
       "url": "https://modelcontextprotocol.io/extensions/skills/overview",
       "status": "success",
       "path": "anthropic/mcp/extensions/skills/overview.md",
-      "sha256": "1019ebbc801593872310dc734dbfffe9f00324e91e7f1610d6841839d19e4974",
-      "size": 16050
+      "sha256": "0d9e23e7f6b25790f15dfd6d57ca657bfd48eae3ed4f5d8e9986831d95d63721",
+      "size": 16046
     },
     {
       "url": "https://modelcontextprotocol.io/extensions/tasks/overview",
@@ -13617,8 +13617,8 @@
       "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
       "status": "success",
       "path": "anthropic/blog/research/teaching-ai-to-build-scientific-models.md",
-      "sha256": "4fa948d59e35b214c346a1f2317e179f13e8b97ad5947f2f4136be56de4b7b0c",
-      "size": 22460
+      "sha256": "eca7c555685d6088400d0b266dd1f7b556e4c5469b61a4874a6af33f2298aded",
+      "size": 21930
     },
     {
       "url": "https://www.anthropic.com/research/teaching-claude-why",
@@ -20332,6 +20332,13 @@
       "path": "anthropic/support/18246779-set-up-multiple-identity-providers-and-split-domains.md",
       "sha256": "907ef0986f3685109a4536cf90d17eba08f2cae7022c6011b874991b9b9eea68",
       "size": 11103
+    },
+    {
+      "url": "https://support.claude.com/en/articles/18251257-track-spend-by-cost-code-with-project-tags",
+      "status": "success",
+      "path": "anthropic/support/18251257-track-spend-by-cost-code-with-project-tags.md",
+      "sha256": "6bccefc789621009b0e33d7d1a8e6aea22643e5ebb20c9750f06765b6231630b",
+      "size": 10273
     },
     {
       "url": "https://claude.com/docs/build/overview",
@@ -32146,8 +32153,8 @@
       "url": "https://developers.openai.com/api/docs",
       "status": "success",
       "path": "openai/api/docs.md",
-      "sha256": "4a74c17ffdad2ae891a2910b17486a62b0356ee9e5321bc889f6f33b8b860065",
-      "size": 45664
+      "sha256": "b8236442987a66c19d7e4b0bed2a2fa8e86ec6334cbc8ed32e1106c23d92f224",
+      "size": 45841
     },
     {
       "url": "https://model-spec.openai.com/2026-08-18.html",
@@ -32818,8 +32825,8 @@
       "url": "https://developers.openai.com/api/docs/guides/daybreak",
       "status": "success",
       "path": "openai/api/docs/guides/daybreak.md",
-      "sha256": "c506560265b0be57e44207ea6bd8cc216b2f770f425b8575bd79fe909d1ff5d2",
-      "size": 9576
+      "sha256": "27b68e59cc44d38feb28382b41cacbf31fea33a85691bc5f446a373c4a777a39",
+      "size": 10156
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/retrieval",
@@ -32867,8 +32874,8 @@
       "url": "https://developers.openai.com/api/docs/guides/reasoning",
       "status": "success",
       "path": "openai/api/docs/guides/reasoning.md",
-      "sha256": "7015d403ebd761bf8c31557eed8f0d0f2e7041b391ed96cc0d641a2c2f08d163",
-      "size": 70935
+      "sha256": "435171ea58b5fe52ae991ddf593482564b351c3baa32cc0549a8e1655d287307",
+      "size": 70311
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/tools-programmatic-tool-calling",
@@ -32986,15 +32993,15 @@
       "url": "https://developers.openai.com/api/docs/guides/conversation-state",
       "status": "success",
       "path": "openai/api/docs/guides/conversation-state.md",
-      "sha256": "cbe2dd7fbc94538a5823ba4108e048789481cbca9628d832f347091d2c159702",
-      "size": 24947
+      "sha256": "0a2b8f60aa819c01b66459d579a2dbf415fa77487e75eb2dbaf91b85f9b661d4",
+      "size": 25181
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/compaction",
       "status": "success",
       "path": "openai/api/docs/guides/compaction.md",
-      "sha256": "83823c6e82f06fb6a1cb490e584f3384361127666abbdd4ea4e29d339cada7e1",
-      "size": 14718
+      "sha256": "d4e17be4e97d5c71444b85002cd57afd4f274d3315f08a7807b55f7e7ee7baba",
+      "size": 14885
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/tools-code-interpreter",
@@ -33217,8 +33224,8 @@
       "url": "https://developers.openai.com/api/docs/guides/function-calling",
       "status": "success",
       "path": "openai/api/docs/guides/function-calling.md",
-      "sha256": "46d01db6895d007a8cd79806055ca44ea55ac88e3ffbfae80d14ec7dc8411f93",
-      "size": 77026
+      "sha256": "48e808dac090d4b4b1de25bc207c667eee38d3471e98679146887a7ad5c15056",
+      "size": 77188
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/supervised-fine-tuning",
@@ -34106,8 +34113,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin",
       "status": "success",
       "path": "openai/api/reference/resources/admin.md",
-      "sha256": "7ad2ae315f06f5f095a6e2ab755f5b1db3c0236e6b0e2c056e574ebe536e8235",
-      "size": 906830
+      "sha256": "693529056c3680a3d8a890f4f19688d87806b830e83ceb8facdd70369ab39d18",
+      "size": 908790
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/$client",
@@ -34505,8 +34512,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization.md",
-      "sha256": "b73b8e92393e30ef0072c17a91b364c1293ada5ab68224cbe3ed7e56a403b910",
-      "size": 906821
+      "sha256": "281d7a30b9ffce02d502928af873348d1506d3d063426a9564ef17ba841141f0",
+      "size": 908781
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage",
@@ -34575,8 +34582,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys.md",
-      "sha256": "c9575a7186bef3a7a5c6ddd7f5969dde00f13fa73a5ef8dd62aee47712fe6cd1",
-      "size": 14742
+      "sha256": "572594727f63c61022a95d5ab7f2dfe24a8e684c9f1d40bdfdbbf6fe29ce0c6a",
+      "size": 16702
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/roles",
@@ -35086,22 +35093,22 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/create.md",
-      "sha256": "4423658ba3eb7a32ca1d39a937a4ea5dbbd262ca9f4214dd458f3e7973f5ef89",
-      "size": 5879
+      "sha256": "4c293582d8034d6152066c383af9998eafcf7996474c72203110566781896b81",
+      "size": 6903
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/list",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/list.md",
-      "sha256": "066a89e51f1126341b97cd8a14832faabc786ae15339617c5218d6571e53a352",
-      "size": 2957
+      "sha256": "a3b8f795c8567d54b62cf8a85d3727ae9da579bc7392b09e31a6c0f37f1ee0f5",
+      "size": 3233
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/delete",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/delete.md",
-      "sha256": "78d06c4cbd1fe9cd2633a220aafa21f7868c9b86d8c9bfb58e2eb58b4cbb43bf",
-      "size": 2383
+      "sha256": "e483338bb04f3926e1483a4684604b176171142362c2ce71de6e18227f47a4b2",
+      "size": 2643
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/validate",
@@ -35114,8 +35121,8 @@
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/retrieve",
       "status": "success",
       "path": "openai/api/reference/resources/admin/subresources/organization/subresources/external_keys/methods/retrieve.md",
-      "sha256": "f39518451d5b07bfc31fd15fa6b9b87b0ead24dc546eccf42b87a52627f823e0",
-      "size": 2359
+      "sha256": "a0e5395f36842629779798d5e6007d6c48d3e9f29b851ebcf70ca4d57dc223b9",
+      "size": 2619
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/admin_api_keys/methods/create",
@@ -47851,6 +47858,13 @@
       "size": 170
     },
     {
+      "url": "https://developers.openai.com/api/docs/guides/preserved-reasoning",
+      "status": "success",
+      "path": "openai/api/docs/guides/preserved-reasoning.md",
+      "sha256": "d2185e735952f5c61f453eb502577928b330519cd86b6d4f0a9b8b8e5f9f029d",
+      "size": 6888
+    },
+    {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
       "status": "success",
       "path": "openai/github/openai-cookbook/.codex/skills/docs-editor/SKILL.md",
@@ -54515,8 +54529,8 @@
     }
   ],
   "summary": {
-    "total": 8079,
-    "downloaded": 7396,
+    "total": 8081,
+    "downloaded": 7398,
     "skipped": 0,
     "failed": 126,
     "dead": 557,

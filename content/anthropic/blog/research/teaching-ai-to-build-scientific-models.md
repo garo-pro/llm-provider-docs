@@ -3,8 +3,6 @@ Title: Teaching AI to build scientific models
 URL Source: https://www.anthropic.com/research/teaching-ai-to-build-scientific-models
 
 Markdown Content:
-*[AI for Science](https://www.anthropic.com/news/ai-for-science-program) grantees [Jakob Macke](https://www.mackelab.org/), [Daniel Gedon](https://dgedon.github.io/), and [Stefan Wahl](https://scholar.google.com/citations?user=-aivjt0AAAAJ) are researchers at the [ELLIS Institute Tübingen](https://institute-tue.ellis.eu/) and the University of Tübingen, where they build AI tools for developing scientific models in neuroscience and beyond. In this guest post, they discuss how AI is starting to change scientific modeling.*
-
 In 1951, Cambridge University’s computer went out of action for six months. This was inconvenient for physiologist Andrew Huxley, who, alongside his colleague Alan Hodgkin, had just built a set of equations to describe how a particular squid nerve cell fired. The scientists wanted to understand the “action potential” of these nerve cells: the electrical pulses they use to communicate, which underlie everything brains do, from perception to intelligence. The only way to find out whether the equations worked was to solve them and compare the solutions to data.
 
 Huxley had hoped to use the newfangled computer to solve the equations. Instead, he was forced to solve them using a hand-cranked mechanical calculator. It took him over three weeks.
