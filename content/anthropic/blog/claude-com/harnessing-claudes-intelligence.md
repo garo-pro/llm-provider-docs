@@ -11,7 +11,7 @@ One of Anthropic’s co-founders, Chris Olah, [says](https://www.darioamodei.com
 
 This creates a challenge for building with Claude: [agent harnesses encode assumptions](https://www.anthropic.com/engineering/harness-design-long-running-apps) about what Claude can’t do on its own, but those assumptions grow stale as Claude gets more capable.
 
-An agent harness is the software scaffolding around a model: the loop, tools, context management, and guardrails that turn raw intelligence into a working agent. [Agent harness design](https://claude.com/resources/articles/harnessing-claudes-intelligence) is the practice of deciding what belongs in that scaffolding and, as models improve, what you can take out.
+An agent harness is the software scaffolding around a model: the loop, tools, [context management](https://claude.com/resources/articles/context-management), and guardrails that turn raw intelligence into a working agent. Agent harness design is the practice of deciding what belongs in that scaffolding and, as models improve, what you can take out.
 
 In this article, we share three patterns that teams should use when building applications that keep pace with Claude’s evolving intelligence while balancing latency and cost: use what it already knows, ask what you can stop doing, and carefully set boundaries with the agent harness.
 

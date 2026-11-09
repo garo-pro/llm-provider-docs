@@ -17,11 +17,11 @@ In this playbook, we share:
 - Architecture, scope, and security practices that keep AI-generated MVP codebases from accruing technical debt
 - A measurement framework for distinguishing genuine product-market fit from early hype
 - A Launch-stage operating system that replaces founder attention with agentic workflows
-- A product matrix for when and how to use Chat, Claude Cowork, and Claude Code across each stage of the startup journey
+- A product matrix for when and how to use Chat, [Claude Cowork](https://claude.com/product/cowork) , and[Claude Code](https://claude.com/resources/articles/claude-code-guide-for-startups) across each stage of the startup journey
 - Founder stories from Ambral, Anything, Carta Healthcare, HumanLayer, Vulcan Technologies, and more
 
 These best practices were written for founders deciding how to architect their company around AI from day one and for the early operators helping them get there.
 
-Check it out, [here](<https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf>).
+Check it out, [here](https://assets.claude.com/503ee04b4aa55a4db49a69b993463b6fa8dad6d8.pdf).
 
 *Get started with [Claude](https://claude.com/programs/startups) today.*

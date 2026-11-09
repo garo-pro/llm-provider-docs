@@ -7,7 +7,7 @@ Markdown Content:
 
 We are sharing two policy proposals to prepare for AI progress. The first, our Advanced AI Framework, offers a roadmap for governing increasingly capable systems, from transparency and independent evaluation to government authority to block or deter dangerous deployments. The second, our Economic Policy Framework, turns to the question of how to prepare workers and the economy for AI’s impact and ensure the financial benefits of AI are broadly shared. Together they cover two sides of the same challenge: steering the technology responsibly as it advances, and preparing society for what it brings.
 
-![](https://assets.claude.com/b2f6b8c56ad7bfd7663153922ce18ee9c3ab7574.jpg?w=3840&q=75&fm=webp&fit=max)
+![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb2f6b8c56ad7bfd7663153922ce18ee9c3ab7574-2032x1141.jpg&w=3840&q=75)
 
 ## Anthropic's Advanced AI Framework
 

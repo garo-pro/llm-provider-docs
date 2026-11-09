@@ -24,6 +24,6 @@ In this guide, we share:
 
 The companies getting the biggest returns from AI are being deliberate about how they teach it to employees, where they apply it, and what they build next.
 
-**Check it out, [here](<https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69f3af1f0b8ebe5cde42fcda_Claude-Building-AI-Agents-in-the-Enterpise-04302026_v2%20(1).pdf>).**
+**Check it out, [here](https://assets.claude.com/facbb36f20bcded62b3295402d5ba517a4eac900.pdf).**
 
 [Get started](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) with Claude Cowork today.

@@ -9,7 +9,7 @@ A practical guide to Claude Code subagents: when they help, how to direct them, 
 
 [Claude Code](https://claude.com/product/claude-code) handles complex, multi-step projects well, but long sessions accumulate weight. Every file read, every tangent explored, every half-finished thought stays in the context window, slowing responses and driving up token costs.
 
-Consider building a new feature in a large TypeScript monorepo. The main work is the implementation, but side tasks keep appearing: trace how an existing service handles auth, find the shared util for date formatting, check whether the design system already has a component close to what you need. None of these need the full project context, and running them inside the main session adds noise. What if you could run them in parallel?
+Consider building a new feature in a [large TypeScript monorepo](https://claude.com/resources/articles/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start). The main work is the implementation, but side tasks keep appearing: trace how an existing service handles auth, find the shared util for date formatting, check whether the design system already has a component close to what you need. None of these need the full project context, and running them inside the main session adds noise. What if you could run them in parallel?
 
 Enter [subagents](https://code.claude.com/docs/en/sub-agents). A subagent is an isolated Claude instance with its own context window. It takes a task, does the work, and returns only the result. Think of subagents as the browser tabs of a Claude Code session: a place to chase a tangent without losing the main thread.
 

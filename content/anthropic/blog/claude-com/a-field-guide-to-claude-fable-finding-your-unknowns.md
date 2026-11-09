@@ -7,7 +7,7 @@ Markdown Content:
 
 When working with Claude Code, I’m often reminded of the difference between the map and the territory.
 
-The map, a representation of the work to be done, is my prompts and skills and context, it’s what I give Claude. The territory is where the work needs to happen, the codebase, the real world, its actual constraints.
+The map, a representation of the work to be done, is my prompts and [skills](https://claude.com/resources/articles/skills-explained) and context, it’s what I give Claude. The territory is where the work needs to happen, the codebase, the real world, its actual constraints.
 
 ![](https://assets.claude.com/0c9ef5f6d0bb96e0267b77ae7ec4ee3249a71778.png)
 
@@ -32,7 +32,7 @@ The best agentic coders have relatively few unknowns. Watching someone like [Bor
 
 ![](https://assets.claude.com/c0977293cee11764842764e05ae2802892000439.png)
 
-But they also assume unknowns. In many ways, reducing and planning for your unknowns is the **skill** of agentic coding. But luckily, this is a skill you can improve at, by working with Claude.
+But they also assume unknowns. In many ways, reducing and planning for your unknowns is the **skill** of [agentic coding](https://claude.com/resources/articles/introduction-to-agentic-coding). But luckily, this is a skill you can improve at, by working with Claude.
 
 ## Help Claude help you
 

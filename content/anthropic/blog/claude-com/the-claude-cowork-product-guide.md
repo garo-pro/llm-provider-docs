@@ -19,6 +19,6 @@ To help you get started, we put together a practical product guide for Claude Co
 - **Seven common Claude Cowork workflows** , including research briefs, meeting prep, and recurring reports
 - **How to use plugins** for specific knowledge work like marketing and product management
 
-**Check it out, [here](https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a2313fa599bd2e2270fda75_Claude-eBook-Claude-Cowork-product-guide-06052026.pdf).**
+**Check it out, [here](https://assets.claude.com/ea738626e8e62361b11c53310fcbe4067e34f314.pdf).**
 
 Get started with [Claude Cowork](https://claude.com/product/cowork) today.

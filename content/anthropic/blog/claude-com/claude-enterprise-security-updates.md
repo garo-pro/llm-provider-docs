@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/claude-enterprise-security-upd
 Markdown Content:
 # More visibility and control over Claude Enterprise for security teams
 
-Claude Enterprise has new security and admin features, including a security center, generally available inference hooks, centralized management, and additional access controls.
+[Claude Enterprise](https://claude.com/solutions/enterprise) has new security and admin features, including a security center, generally available [inference hooks](https://claude.com/resources/articles/claude-enterprise-inference-hooks), centralized management, and additional access controls.
 
 To see how Claude is set up, the security center shows how your organization’s Claude settings compare with Anthropic’s recommended configuration. To apply your policies, inference hooks send prompts and tool calls to your data security tools for a check. To manage access, centralized management gives your company one admin console for company-wide settings, and new access controls let you sign members out through the Admin API, manage your IP allowlist yourself, and help prevent shadow IT by blocking personal and other outside Claude accounts in Claude Desktop on managed computers.
 

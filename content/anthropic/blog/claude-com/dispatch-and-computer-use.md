@@ -7,7 +7,7 @@ Markdown Content:
 
 In Claude Cowork and Claude Code, Claude can use your computer to point, click, and complete tasks. Dispatch lets you assign them from your phone.
 
-In Claude Cowork and Claude Code, you can now enable Claude to use your computer to complete tasks. When Claude doesn’t have access to the tools it needs, it will point, click, and navigate what’s on your screen to perform the task itself. It can open files, use the browser, and run dev tools automatically — with no setup required.
+In [Claude Cowork](https://claude.com/product/cowork) and [Claude Code](https://claude.com/product/claude-code), you can now enable Claude to use your computer to complete tasks. When Claude doesn’t have access to the tools it needs, it will point, click, and navigate what’s on your screen to perform the task itself. It can open files, use the browser, and run dev tools automatically — with no setup required.
 
 This feature is now available in research preview for Claude Pro, Max, and Ultra subscribers. It works especially well with [Dispatch](https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork), which lets you assign Claude tasks from your phone.
 

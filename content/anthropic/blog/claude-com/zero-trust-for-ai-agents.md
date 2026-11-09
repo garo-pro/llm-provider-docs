@@ -26,6 +26,6 @@ In this guide, we share:
 
 The organizations best positioned for this shift will be the ones whose fundamentals are strong enough that AI-assisted scanning finds fewer bugs in the first place, and whose agent deployments are architected for breach from day one.
 
-Check it out, [here](https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a1611a04085d7cd3dadc924_Claude-eBook-Zero-Trust-for-AI-Agents-05182026.pdf).
+Check it out, [here](https://claude.com/resources/guides/zero-trust-for-ai-agents).
 
-Get started with [Claude Security](https://www.anthropic.com/product/security) today.
+Get started with [Claude Security](https://claude.com/product/claude-security) today.

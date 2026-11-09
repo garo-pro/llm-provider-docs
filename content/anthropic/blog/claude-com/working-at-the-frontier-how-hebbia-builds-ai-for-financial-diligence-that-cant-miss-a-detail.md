@@ -41,7 +41,7 @@ The information that gives customers an edge usually sits in unstructured, propr
 
 Those have been harder to analyze at scale than the structured, quantitative data finance already models well. Hebbia built Matrix to make that qualitative work systematic, and every model generation widens what it can take on.
 
-That might be a data room with thousands of documents, where the work is finding the relevant signal, citing it, and drafting each section of an investment memo. Or it might be analyzing every document tied to a credit deal (the credit agreement, amendments, side letters, each running hundreds of dense technical pages) and extracting the full covenant package, financial terms and operating restrictions alike, from that unstructured mass.
+That might be a data room with thousands of documents, where the work is finding the relevant signal, citing it, and drafting each section of an [investment memo](https://claude.com/resources/guides/the-ai-investment-firm). Or it might be analyzing every document tied to a credit deal (the credit agreement, amendments, side letters, each running hundreds of dense technical pages) and extracting the full covenant package, financial terms and operating restrictions alike, from that unstructured mass.
 
 "These are actually the types of documents that Anthropic models have always done really well at," Mehta says.
 

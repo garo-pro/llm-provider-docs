@@ -37,7 +37,7 @@ And much more. At its core, the SDK gives you the primitives to build agents for
 
 ## Building your agent loop
 
-In Claude Code, Claude often operates in a specific feedback loop: gather context -> take action -> verify work -> repeat.
+In Claude Code, Claude often operates in a specific feedback loop: gather context -> take action -> [verify work](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills) -> repeat.
 
 ![Agent feedback loop](https://assets.claude.com/763dc701846eff87b732b17b595de0a653bb356a.png)
 
@@ -63,7 +63,7 @@ Our email agent might store previous conversations in a folder called ‘Convers
 
 ### **Subagents**
 
-Claude Agent SDK supports subagents by default. [Subagents](https://docs.claude.com/en/api/agent-sdk/subagents) are useful for two main reasons. First, they enable parallelization: you can spin up multiple subagents to work on different tasks simultaneously. Second, they help manage context: subagents use their own isolated context windows, and only send relevant information back to the orchestrator, rather than their full context. This makes them ideal for tasks that require sifting through large amounts of information where most of it won't be useful.
+Claude Agent SDK supports subagents by default. [Subagents](https://docs.claude.com/en/api/agent-sdk/subagents) are useful for two main reasons. First, they enable parallelization: you can spin up multiple subagents to work on different tasks simultaneously. Second, they help manage context: subagents use their own [isolated context windows](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop), and only send relevant information back to the orchestrator, rather than their full context. This makes them ideal for tasks that require sifting through large amounts of information where most of it won't be useful.
 
 When designing our email agent, we might give it a 'search subagent' capability. The email agent could then spin off multiple search subagents in parallel—each running different queries against your email history—and have them return only the relevant excerpts rather than full email threads.
 

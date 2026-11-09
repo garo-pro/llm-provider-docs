@@ -27,7 +27,7 @@ From there, you can dig deeper: "Is that more than usual?" "Anything else I'm mi
 
 If you ask whether anything looks off, Claude reads across every account you've connected and can point to what's easy to miss, like charges that hit twice, unexpected fees, or a bill that’s crept up all year. You can also ask bigger questions, like "Am I spending more than I make?" or "What's an APR, and what has mine cost me this year?" Claude explains the term, then adds up the interest you've been charged.
 
-Ask for a weekly spending chart, a calendar of what's due, or a dashboard of the numbers you choose, and Claude builds one you can keep adjusting.
+Ask for a weekly spending chart, a calendar of what's due, or [a dashboard of the numbers you choose](https://claude.com/resources/articles/dashboards-and-motion), and Claude builds one you can keep adjusting.
 
 ## **Security and privacy**
 
@@ -43,4 +43,4 @@ When you see Personal Finance in Claude's sidebar, open it, connect one account,
 
 ## **What’s next**
 
-Personal Finance is a first step. For life’s bigger money decisions, we think people are best served by Claude working alongside the licensed professionals and regulated firms they trust. We’re exploring how to make that possible in Claude, and we’d like to hear from banks, wealth managers, and financial services companies who want to help shape it.
+Personal Finance is a first step. For life’s bigger money decisions, we think people are best served by Claude working alongside the licensed professionals and regulated firms they trust. We’re exploring how to make that possible in Claude, and we’d like to hear from banks, [wealth managers](https://claude.com/resources/articles/claude-for-financial-advisors), and financial services companies who want to help shape it.

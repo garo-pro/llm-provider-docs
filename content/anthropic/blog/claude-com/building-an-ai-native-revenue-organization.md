@@ -11,7 +11,7 @@ In our conversations with revenue leaders, we hear the same challenges: half the
 
 Individual reps can save time every day when they hand over call prep to Claude, but when the whole team adopts it, the benefits compound. How much a sales organization gets out of Claude depends on what it has built around it: which systems Claude can read and write and whether it has the access and controls to take on more complex work.
 
-[Cox Communications reported a 7x return](https://claude.com/customers/cox-and-accenture) in its first-year of AI investment and cut the cost of validating and enriching sales leads by 86%, bringing accuracy up from 18% to 97%. At [Cyera](https://claude.com/customers/cyera), where 88% of roughly 1,500 employees use Claude weekly, BDRs draft outreach with a skill that’s been built using the top performers’ best work—a quality improvement as much as a time saving.
+[Cox Communications reported a 7x return](https://claude.com/customers/cox-and-accenture) in its first-year of AI investment and cut the cost of validating and enriching sales leads by 86%, bringing accuracy up from 18% to 97%. At [Cyera](https://claude.com/customers/cyera), where 88% of roughly 1,500 employees use Claude weekly, [BDRs draft outreach](https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day) with a skill that’s been built using the top performers’ best work—a quality improvement as much as a time saving.
 
 To help revenue teams get the most out of AI, we put together *Building an AI-native revenue organization*, a guide to rolling out Claude across sales.
 
@@ -23,4 +23,4 @@ In the guide, we share:
 - How to measure ROI in three groups: efficiency, expansion, and new capabilities
 - The pitfalls that stall org-wide rollouts, and checklists for getting started
 
-Read the guide [here](https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6aa8884a409cf1cabf867265_Claude-eBook-Building-an-AI-native-revenue-organization-09142026.pdf).
+Read the guide [here](https://assets.claude.com/22ac840c3bda8807669212db6695c5ce7588d536.pdf).

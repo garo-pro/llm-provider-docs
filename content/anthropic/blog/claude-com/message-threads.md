@@ -27,4 +27,4 @@ The more context an agent carries, the more message threads can reduce time to f
 
 ### Getting started
 
-Message threads is available now in public beta on the native Claude Platform, and on Claude Platform on AWS, Claude in Microsoft Foundry, and on Claude Models on Google Cloud (Anthropic managed). Standard Claude token rates and existing rate limits apply. See the [documentation](http://platform.claude.com/docs/en/build-with-claude/message-threads) to get started.
+Message threads is available now in public beta on the native Claude Platform, and on Claude Platform on AWS, Claude in Microsoft Foundry, and on [Claude Models on Google Cloud (Anthropic managed)](https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed). Standard Claude token rates and existing rate limits apply. See the [documentation](https://platform.claude.com/docs/en/build-with-claude/message-threads) to get started.

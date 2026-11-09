@@ -107,7 +107,7 @@ When one of the three conditions above applies and you keep a subagent, it can b
 
 We’d only recommend a full handoff, where the subagent takes over the conversation, when it needs to talk to the user directly. Everything else can be a skill plus tools in the main loop.
 
-This will allow you to define a shared response schema for subagents, verify the conclusion against real data with the main agent, and trim the input to any final synthesis step. This is a good first step, as you don’t need to **rewrite** the subagents. It also gives you a **baseline** on the task-completion eval before deciding to fold any subagents into the main agent.
+This will allow you to define a [shared response schema](https://claude.com/resources/articles/structured-outputs-on-the-claude-developer-platform) for subagents, verify the conclusion against real data with the main agent, and trim the input to any final synthesis step. This is a good first step, as you don’t need to **rewrite** the subagents. It also gives you a **baseline** on the task-completion eval before deciding to fold any subagents into the main agent.
 
 However, some failure modes will remain:
 

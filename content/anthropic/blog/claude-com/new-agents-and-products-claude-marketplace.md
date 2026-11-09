@@ -7,7 +7,7 @@ Markdown Content:
 
 We’ve added new agents and products to [Claude Marketplace](https://claude.com/marketplace), where teams find partner tools and services to help them get more from Claude. The additions cover security, developer infrastructure, creative, and productivity.
 
-Eligible enterprise customers can apply a portion of their committed Anthropic spend toward these solutions. This lets them use one commitment across Claude and partner products, whether they’re buying something new or expanding with a platform they already use.
+Eligible enterprise customers can [apply a portion of their committed Anthropic spend](https://claude.com/resources/articles/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace) toward these solutions. This lets them use one commitment across Claude and partner products, whether they’re buying something new or expanding with a platform they already use.
 
 There are now over 25 partner agents and products on the marketplace. Here are the latest additions and what teams can do with them.
 

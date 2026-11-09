@@ -13,7 +13,7 @@ This article covers those details including a description of each model class, t
 
 But to put aside the nuance for a moment, our default recommendation is to start with the most intelligent generally available model and use effort level to dial in performance and cost.
 
-Cost-per-task is often lower for more intelligent models, especially at lower effort levels, even if the price-per-token is higher. This is because more capable models often take fewer turns and less thinking time to get most tasks right. Starting with a smaller model can also make it harder to distinguish between model failures and setup failures.
+[Cost-per-task](https://claude.dev/blog/what-a-task-costs-on-opus-5-5/) is often lower for more intelligent models, especially at lower effort levels, even if the price-per-token is higher. This is because more capable models often take fewer turns and less thinking time to get most tasks right. Starting with a smaller model can also make it harder to distinguish between model failures and setup failures.
 
 Of course, as use cases arise that are more latency or cost-sensitive, you can test lower tier models until you find your ideal fit.
 

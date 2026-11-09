@@ -7,7 +7,7 @@ Markdown Content:
 
 Claude Security now keeps up with your repositories as code changes, tracks findings until they’re fixed, learns from the context your team adds, and connects to your tools through an API and MCP. Available in public beta for Claude Enterprise customers.
 
-Since [Claude Security](https://claude.com/product/claude-security) entered public beta in April, thousands of organizations have used it to find over a million vulnerabilities.
+Since [Claude Security](https://claude.com/product/claude-security) [entered public beta in April](https://claude.com/resources/articles/claude-security-public-beta), thousands of organizations have used it to find over a million vulnerabilities.
 
 Instead of waiting for someone to start a scan, Claude Security now keeps up with your repositories as your code changes, keeps track of which findings get fixed, and uses what your team tells it about your environment to decide what matters. Claude Security is powered by our full family of models, including Claude Mythos, with no Cyber Verification Program access required.
 

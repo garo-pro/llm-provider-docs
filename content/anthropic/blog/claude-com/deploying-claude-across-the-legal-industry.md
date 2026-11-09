@@ -27,6 +27,6 @@ In this guide, we share:
 - How Anthropic's own legal team uses Claude to accelerate their most tedious processes, like contract redlining and marketing content reviews
 - Answers to the questions CIOs and IT leaders ask about hosting, retention, privilege protection, SSO, and audit
 
-**Check it out, [here](https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a0775c566cb42bd866e108b_Claude-for-the-legal-industry-05152026_v6.pdf).**
+**Check it out, [here](https://assets.claude.com/8760406541b11775218ab0a55754cdac5429ea5b.pdf).**
 
 *Get started with [Claude for the legal industry.](https://claude.com/solutions/legal)*

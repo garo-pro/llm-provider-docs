@@ -21,6 +21,6 @@ Inside the guide, we share:
 - How Anthropic's finance, legal, sales, and product teams use Cowork in production
 - Customer stories from Thomson Reuters, Zapier, and Jamf
 
-**Check it out, [here](https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69f24d3e09b921b92403774e_Claude-Deploying-Claude-Across-Your-Organization-04292026.pdf).** 
+**Check it out, [here](https://assets.claude.com/e784e0ee3705d9dbdbc6f3fa2a8fb8eee319b3cf.pdf).** 
 
 Get started with [Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) today.

@@ -11,7 +11,7 @@ Guarantee responses match your JSON schemas and tool definitions with structured
 
 **Update:** Now available on Claude Haiku 4.5—supported on the Claude Developer Platform, natively and in Microsoft Foundry. (Dec 4, 2025)
 
-The Claude Developer Platform now supports structured outputs for Claude Sonnet 4.5 and Opus 4.1. Available in public beta, this feature ensures API responses always match your specified JSON schemas or tool definitions.
+The [Claude Developer Platform](https://claude.com/platform/api) now supports structured outputs for Claude Sonnet 4.5 and Opus 4.1. Available in public beta, this feature ensures API responses always match your specified JSON schemas or tool definitions.
 
 With structured outputs, developers can eliminate schema-related parsing errors and failed tool calls by ensuring that Claude's responses conform to a defined schema—whether you're extracting data from images, orchestrating agents, or integrating with external APIs.
 
@@ -20,7 +20,7 @@ With structured outputs, developers can eliminate schema-related parsing errors 
 For developers building applications and agents in production, a single error in data formatting can cause cascading failures. Structured outputs solves this by guaranteeing your response matches the exact structure you define, without any impact to model performance. This makes Claude dependable for applications and agents where accuracy is critical, including:
 
 - **Data extraction** when downstream systems rely on error-free, consistent formats.
-- **Multi-agent architectures** where consistent communication between agents is critical for a performant, stable experience.
+- **[Multi-agent architectures](https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop)** where consistent communication between agents is critical for a performant, stable experience.
 - **Complex search tools** where multiple search fields must be filled in accurately and conform to specific patterns.
 
 Structured outputs can be used two ways: with JSON or tools. When used with JSON, you provide your schema definition in the API request. For tools, you define your tool specifications, and Claude's output conforms to those tool definitions automatically.
