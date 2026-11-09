@@ -26,18 +26,11 @@ Get a feel for extensions with [Bits & Bolts](https://github.com/openai/mcp-exte
 
 
 
-  [Install Bits & Bolts Remote
+  [Install Bits & Bolts Remote](https://chatgpt.com/plugins/plugin_asdk_app_6abadab6e7d881919e7491d52c7846e8)
+
+Try the examples in ChatGPT.
 
 
-
-        <img src="https://developers.openai.com/images/apps-sdk/extensions/bits-and-bolts-remote.svg"
-          alt=""
-          width={32}
-          height={32}
-        />
-      
-
-      Try the examples in ChatGPT.](https://chatgpt.com/plugins/plugin_asdk_app_6abadab6e7d881919e7491d52c7846e8)
 
 
 
@@ -48,22 +41,21 @@ specification.
 
 
 
-  [TypeScript SDK
+  [TypeScript SDK](https://github.com/openai/mcp-extensions/blob/main/typescript/README.md)
+
+Add extensions to your MCP server and app UI.
 
 
+  [Python SDK](https://github.com/openai/mcp-extensions/blob/main/python/README.md)
 
-        Add extensions to your MCP server and app UI.](https://github.com/openai/mcp-extensions/blob/main/typescript/README.md)
-  [Python SDK
-
-
-
-        Add server-side extensions with the MCP Python SDK.](https://github.com/openai/mcp-extensions/blob/main/python/README.md)
-  [Protocol specification
+Add server-side extensions with the MCP Python SDK.
 
 
+  [Protocol specification](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md)
 
-        Defines the formal, language-agnostic API that extends the MCP and MCP
-      Apps specifications.](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md)
+Defines the formal, language-agnostic API that extends the MCP and MCP Apps specifications.
+
+
 
 
 
@@ -104,7 +96,7 @@ Pass this metadata as `_meta` when registering your MCP App tool. Replace
 `ui://parts/library` with your registered UI resource URI:
 
 ```ts
-
+import type { OpenAIUiToolMetadata } from "@openai/mcp-extensions/server";
 
 const toolMetadata = {
   ui: { resourceUri: "ui://parts/library" },
@@ -113,6 +105,7 @@ const toolMetadata = {
   } satisfies OpenAIUiToolMetadata,
 };
 ```
+
 
 Use `{ type: "thread" }` to add an entrypoint in a conversation's side panel.
 See the [entrypoint guide](https://github.com/openai/mcp-extensions/blob/main/typescript/README.md#ui-entrypoints)
@@ -133,7 +126,7 @@ Use a file entrypoint in your tool's `_meta`, with the extensions your viewer
 supports:
 
 ```ts
-
+import type { OpenAIUiToolMetadata } from "@openai/mcp-extensions/server";
 
 const toolMetadata = {
   ui: { resourceUri: "ui://parts/viewer" },
@@ -142,6 +135,7 @@ const toolMetadata = {
   } satisfies OpenAIUiToolMetadata,
 };
 ```
+
 
 Replace `ui://parts/viewer` with your registered UI resource. The app receives a
 resource URI for the opened file. Follow the [file handler

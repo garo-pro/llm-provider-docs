@@ -36,11 +36,7 @@ If you are new to Codex, start here before installing the plugin:
 
   
 
-    
-
-Install the OpenAI Developers plugin
-
-
+    [Install the OpenAI Developers plugin](codex://plugins/install/openai-developers?marketplace=openai-curated)
   
 
 
@@ -52,17 +48,19 @@ Install the OpenAI Developers plugin
 
        Start Codex from your terminal:
 
-```bash
+       ```bash
        codex
-```
+       ```
+
 
     2. Open the plugin browser
 
        Run:
 
-```text
+       ```text
        /plugins
-```
+       ```
+
 
     3. Install the plugin
 
@@ -117,17 +115,19 @@ Install the OpenAI Developers plugin
 
        In Claude Code, run:
 
-```text
+       ```text
        /plugin marketplace add openai/openai-developers-for-claude
-```
+       ```
+
 
     2. Install the plugin
 
        Run:
 
-```text
+       ```text
        /plugin install openai-developers@openai-developers
-```
+       ```
+
 
     3. Start a new session
 
