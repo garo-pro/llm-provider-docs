@@ -132,6 +132,12 @@ Voice mode has been developed with safety as a top priority. Several safeguards 
 
 - **Full policy compliance:** Our usage policy remains fully enforced in voice mode, with all standard model misuse detection and enforcement systems actively monitoring interactions.
 
+## Your voice recordings
+
+By default, we don't keep the audio from your voice conversations. Your speech is converted to text, the recording is deleted, and the transcript is saved in your chat history.
+
+On Free, Pro, Max, and Ultra plans, you can choose to share your voice recordings to help us improve voice mode and dictation. Learn more in **[Share your voice recordings with Anthropic](https://support.claude.com/en/articles/17644704)**.
+
 ---
 
 ## Troubleshooting
@@ -172,7 +178,7 @@ Voice mode has been developed with safety as a top priority. Several safeguards 
 
 ### Will my voice conversations be saved?
 
-Yes. Textual transcripts of your audio conversations are saved in your chat history just like text conversations.
+Yes, as text. The transcript is saved in your chat history just like a typed chat. The audio itself isn't kept unless you choose to share it. Learn more in **[Share your voice recordings with Anthropic](https://support.claude.com/en/articles/17644704)**.
 
 ### What's the difference between dictation and voice mode?
 

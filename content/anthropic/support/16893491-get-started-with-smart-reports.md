@@ -1,6 +1,6 @@
 # Get started with smart reports
 
-Smart reports analyze how a team uses Claude and report on the work getting done, what it costs at list price, where sessions run into friction, and which repeated patterns are worth packaging as shared skills. This guide explains how smart reports work, what appears in a smart report, and how to create, share, and delete them.
+**[Smart reports](https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets)** analyze how a team uses Claude and report on the work getting done, what it costs at list price, where sessions run into friction, and which repeated patterns are worth packaging as shared skills. This guide explains how smart reports work, what appears in a smart report, and how to create, share, and delete them.
 
 Each organization can run up to 10 reports per month at no charge. Reports that are queued or in progress count toward this limit, and reports that fail don't.
 

@@ -226,17 +226,7 @@ Go
 
     
 
-OpenAI provides an API helper for the Go programming language, currently in beta. You can import the library using the code below:
-
-```go
-import (
-	"github.com/openai/openai-go/v3" // imported as openai
-)
-```
-
-
-
-A first API request to the [Responses API](https://developers.openai.com/api/reference/resources/responses) would look like this:
+Use the Go SDK to make your first request to the [Responses API](https://developers.openai.com/api/reference/resources/responses):
 
 Test a basic API request
 

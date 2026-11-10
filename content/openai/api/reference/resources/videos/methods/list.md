@@ -64,7 +64,7 @@ List recently generated videos for the current project.
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 

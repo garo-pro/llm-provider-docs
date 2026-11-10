@@ -108,7 +108,7 @@ Content type: `application/json`
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -501,7 +501,7 @@ Content type: `application/json`
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -739,7 +739,7 @@ Content type: `application/json`
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -1015,7 +1015,7 @@ List recently generated videos for the current project.
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -1295,7 +1295,7 @@ Content type: `application/json`
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -1539,7 +1539,7 @@ Fetch the latest metadata for a generated video.
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -1750,7 +1750,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
     - `headers: optional map[string]`
 
-      The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+      Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
     - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 
@@ -1902,7 +1902,7 @@ curl https://api.openai.com/v1/videos/$VIDEO_ID \
 
   - `headers: optional map[string]`
 
-    The Retry-After and Retry-After-Ms headers returned with the original error, if any.
+    Headers returned with the original error. These can include Retry-After, Retry-After-Ms, and, on opted-in deployments, x-openai-inference-capacity-reason.
 
   - `misalignment: optional object { detailed_explanation, error_type, review_target, steer }`
 

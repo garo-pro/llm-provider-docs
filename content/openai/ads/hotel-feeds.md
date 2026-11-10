@@ -12,6 +12,8 @@ After ingestion, [query the properties](#query-hotel-items), [create Hotel ads](
 
 You need an ad account approved for the limited beta and permission to manage its feeds. SFTP setup also requires permission to manage feed credentials. Prepare a UTF-8 CSV or tab-delimited TXT file using the [submission format](#submission-format), and replace example URLs with your property pages and images.
 
+We strongly recommend including a [starting price](#pricing-and-categorization) (`base_price`) and complete [guest ratings](#guest-ratings) whenever available. These details help people assess price and guest experience, making your ad more informative and compelling.
+
 Choose a setup method:
 
 | Method         | Create the feed                                                 | Send the file                                                            |
