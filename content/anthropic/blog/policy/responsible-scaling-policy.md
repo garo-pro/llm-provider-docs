@@ -17,7 +17,7 @@ In September 2023, we released the first version of our Responsible Scaling Poli
 
 ### Read the current version of the RSP
 
-[See the pdf](https://assets.claude.com/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf)
+[See the pdf](https://cdn.sanity.io/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf)
 
 ### RSP Noncompliance Reporting and Anti-Retaliation Policy
 

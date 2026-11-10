@@ -11,6 +11,7 @@ Each entry has a Markdown twin at `/cookbook/<path>.md`.
 
 ## Articles
 - [Build a per-run spending controller with the Responses API](https://developers.openai.com/cookbook/articles/per_run_spending_controller_responses_api.md): Enforce an application-owned model-token budget for each Responses API run using token counts, maximum-cost estimates, usage tracking, and safe error handling.
+- [Build a voice agent that follows an SOP](https://developers.openai.com/cookbook/articles/sop_to_voice_agent_builder.md): Turn a written SOP into prompts, tools, and application checks that keep a voice agent on the right procedure when a caller changes their request or corrects an answer.
 - [Build your own content fact checker with gpt-oss-120B, Cerebras, and Parallel](https://developers.openai.com/cookbook/articles/gpt-oss/build-your-own-fact-checker-cerebras.md): Cookbook to build a content fact checker with gpt-oss-120B on Cerebras using Parallel.
 - [Building workspace agents in ChatGPT to complete repeatable, end-to-end work](https://developers.openai.com/cookbook/articles/chatgpt-agents-sales-meeting-prep.md): Build, test, schedule, and share a ChatGPT workspace agent that prepares sales meeting briefs with calendar, SharePoint, and web search context.
 - [Fine-tuning with gpt-oss and Hugging Face Transformers](https://developers.openai.com/cookbook/articles/gpt-oss/fine-tune-transfomers.md)

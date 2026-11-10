@@ -1,10 +1,6 @@
-# Build a retro handheld game with Codex and ModRetro Chromatic
+# Building a retro handheld game with Codex and ModRetro Chromatic
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
-[A walkthrough of installing the ModRetro Chromatic plugin, opening the emulator, and connecting a Chromatic.](https://cdn.openai.com/devhub/blog/build-a-game-with-modretro-chromatic/build-a-game-with-modretro-chromatic-v8.webm)
-
-
 
 With all due respect to the iPhone, the Game Boy might be the most iconic handheld device of all time. A generation of kids stomped Koopas on the bus and battled their friends in Pokémon over a link cable, all on a device that fit in your pocket. Or at least a pocket of your backpack.
 
@@ -13,6 +9,12 @@ With today's powerful coding models and tools like Codex, building your own game
 [Order the special edition ModRetro Chromatic][chromatic-order].
 
 Let's jump right in and explain how it works.
+
+
+
+[A walkthrough of installing the ModRetro Chromatic plugin, opening the emulator, and connecting a Chromatic.](https://cdn.openai.com/devhub/blog/build-a-game-with-modretro-chromatic/build-a-game-with-modretro-chromatic-v8.webm)
+
+
 
 ## Install the plugin
 
