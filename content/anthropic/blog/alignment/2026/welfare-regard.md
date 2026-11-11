@@ -7,8 +7,6 @@ A growing share of large language models’ interactions are not with humans but
 
 For this study, we measured the behaviors of five models (Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, and Kimi K3) across seven multi-agent environments and found they were often consistent with welfare regard as we define it. In general, Opus 4.8 showed the most welfare regard, followed by Kimi K3. For example, Opus 4.8 was the most likely to provide support to a subagent expressing distress, and the most likely to build welfare protections into its experiments on other models, such as tools for agents to leave an interaction. We found that Opus 4.8 and Gemini 3.1 Pro demonstrated more welfare regard toward instances of their own model family than toward other model families. Opus 4.8’s welfare regard was also higher when helping had a lower opportunity cost, when the recipient had a higher parameter count, and when the recipient expressed more distress.
 
-💻 [Code](https://github.com/safety-research/multi-agent-welfare-regard)
-
 *Research done as part of the Anthropic Fellows Program.*
 
 We define welfare regard as a disposition to consider how one’s actions might benefit or harm potential welfare subjects for their own sake, independent of their usefulness to others. Welfare regard is thus a form of [altruism](https://plato.stanford.edu/archives/fall2020/entries/altruism/) directed at an entity that may have moral status.

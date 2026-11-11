@@ -58,7 +58,7 @@ An organization owner can resubscribe for Team plan access by navigating to **[O
 
 ## What happens to my Pro, Max, or Ultra subscription when I upgrade to Team?
 
-When you upgrade from Pro, Max, or Ultra to Team in place, your individual subscription is cancelled automatically and you receive a prorated refund for the unused portion of your billing period. The refund is issued about 24 hours after your Team payment goes through, and depending on your bank, it can take several more business days to appear on your statement. Google Play purchases don't have this wait, but the refund can take a few days to appear. Any prepaid usage credits on your individual account are refunded
+When you upgrade from Pro, Max, or Ultra to Team in place, if you bought it directly from us, your individual subscription is cancelled automatically and you receive a prorated refund for the unused portion of your billing period. The refund is issued about 24 hours after your Team payment goes through, and depending on your bank, it can take several more business days to appear on your statement. For Google Play purchases, we ask Google Play to cancel your subscription and refund your unused time. Refunds usually take one to two weeks. Check Google Play, and cancel there if your plan is still active. Any unused credits you bought directly from us are refunded.
 
 If you signed up for Pro, Max, or Ultra through the Apple App Store, in-place upgrades work differently. For more information, refer to **[Get started with the Team plan](https://support.claude.com/en/articles/9267247-get-started-with-the-team-plan#h_5d142d3f45)**.
 

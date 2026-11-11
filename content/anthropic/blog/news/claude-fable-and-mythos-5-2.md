@@ -31,7 +31,7 @@ We describe more about our safety testing below, and full details can be found i
 | Agentic scientific researchTerminal-Bench-Science 0.1 | 74.6%75.3% (Mythos 5.2) | 52.6% | 58.7% | 68.1% | 64.8% | 
 | CybersecurityCyScenarioBench <sup>†</sup> | 76.3%Mythos 5.2 | 61.7%Mythos 5.1 | 67.6%without safeguards | 61%GPT-6 Cyber | — | 
 | CybersecurityCVE Rediscovery | 89.6%Mythos 5.2 | 78.3%Mythos 5.1 | 81.3%without safeguards | — | — | 
-| Protein designDe novo binder design (24 hr) | 85.1%Mythos 5.2 | 79.1%Mythos 5.1 | 82.6%without safeguards | — | — | 
+| Protein designDe novo binder design (24 hr) | 85.1Mythos 5.2 | 79.1Mythos 5.1 | 82.6without safeguards | — | — | 
 | Agentic searchWANDR (relaxed score) | 82.1% | 68.7% | 72.3% | — | — | 
 | Computer useOSWorld 2.1 (offline set, partial) | 89.3% | 83.5% | 87.2% | 79.5% | 81.5% | 
 | RoboticsRoboDojo Sim <sup>‡</sup> | 64.9% | 27.6% | 39.4% | 29.8% | — | 

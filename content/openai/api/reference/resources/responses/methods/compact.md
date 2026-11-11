@@ -2200,7 +2200,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -2215,7 +2215,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -3387,7 +3387,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -3402,7 +3402,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -5071,7 +5071,8 @@ Content type: `application/json`
 
 - `instructions: optional string or null`
 
-  Custom instructions for compaction. On models 6.2 and later, replaying a compaction created with custom instructions can cause Responses to drop subsequent reasoning items.
+  A system (or developer) message inserted into the model's context.
+  When used along with `previous_response_id`, the instructions from a previous response will not be carried over to the next response. This makes it simple to swap out system (or developer) messages in new responses.
 
 - `previous_response_id: optional string or null`
 
@@ -6413,7 +6414,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -6428,7 +6429,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -7592,7 +7593,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -7607,7 +7608,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.

@@ -1232,6 +1232,12 @@ Content type: `application/json`
 
     Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
 
+  - `safety_identifier: optional string or null`
+
+    A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+    `maxLength: 128`
+
   - `store: optional boolean`
 
     Whether to store the session for later forking and recording download. Defaults to false for new sessions.
@@ -2850,6 +2856,12 @@ jq -n '{
       - `instructions: optional string or null`
 
         Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+      - `safety_identifier: optional string or null`
+
+        A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+        `maxLength: 128`
 
       - `store: optional boolean`
 
@@ -6117,7 +6129,7 @@ jq -n '{
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -6132,7 +6144,7 @@ jq -n '{
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -7304,7 +7316,7 @@ jq -n '{
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -7319,7 +7331,7 @@ jq -n '{
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -13160,7 +13172,7 @@ jq -n '{
 
 ### Media Session Config
 
-- `MediaSessionConfig object { model, audio, client, 5 more }`
+- `MediaSessionConfig object { model, audio, client, 6 more }`
 
   Startup configuration for a Live media session. Follow the [Live prompting guide](https://developers.openai.com/api/docs/guides/live-prompting) when writing frontend instructions and the backend prompt under delegation.responses.instructions.
 
@@ -14345,6 +14357,12 @@ jq -n '{
   - `instructions: optional string or null`
 
     Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+  - `safety_identifier: optional string or null`
+
+    A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+    `maxLength: 128`
 
   - `store: optional boolean`
 
@@ -17158,7 +17176,7 @@ jq -n '{
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -17173,7 +17191,7 @@ jq -n '{
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -18345,7 +18363,7 @@ jq -n '{
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -18360,7 +18378,7 @@ jq -n '{
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -22537,6 +22555,12 @@ jq -n '{
 
         Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
 
+      - `safety_identifier: optional string or null`
+
+        A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+        `maxLength: 128`
+
       - `store: optional boolean`
 
         Whether to store the session for later forking and recording download. Defaults to false for new sessions.
@@ -25097,6 +25121,12 @@ jq -n '{
 
       Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
 
+    - `safety_identifier: optional string or null`
+
+      A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+      `maxLength: 128`
+
     - `store: optional boolean`
 
       Whether to store the session for later forking and recording download. Defaults to false for new sessions.
@@ -25153,7 +25183,7 @@ jq -n '{
 
 ### Session Config
 
-- `SessionConfig object { model, audio, client, 5 more }`
+- `SessionConfig object { model, audio, client, 6 more }`
 
   Initial configuration for a Live session, including its model, conversation instructions, audio, and delegated task handling.
 
@@ -26395,6 +26425,12 @@ jq -n '{
 
     Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
 
+  - `safety_identifier: optional string or null`
+
+    A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+    `maxLength: 128`
+
   - `store: optional boolean`
 
     Whether to store the session for later forking and recording download. Defaults to false for new sessions.
@@ -26433,7 +26469,7 @@ jq -n '{
 
 ### Session Resource
 
-- `SessionResource object { id, expires_at, model, 8 more }`
+- `SessionResource object { id, expires_at, model, 9 more }`
 
   The resolved Live session configuration and server-assigned session metadata.
 
@@ -27688,6 +27724,12 @@ jq -n '{
   - `instructions: optional string or null`
 
     Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+  - `safety_identifier: optional string or null`
+
+    A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+    `maxLength: 128`
 
   - `store: optional boolean`
 
@@ -28972,6 +29014,12 @@ jq -n '{
     - `instructions: optional string or null`
 
       Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+    - `safety_identifier: optional string or null`
+
+      A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+      `maxLength: 128`
 
     - `store: optional boolean`
 
@@ -30286,6 +30334,12 @@ jq -n '{
     - `instructions: optional string or null`
 
       Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+    - `safety_identifier: optional string or null`
+
+      A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+      `maxLength: 128`
 
     - `store: optional boolean`
 
@@ -33418,6 +33472,12 @@ jq -n '{
     - `instructions: optional string or null`
 
       Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+    - `safety_identifier: optional string or null`
+
+      A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+      `maxLength: 128`
 
     - `store: optional boolean`
 
@@ -37205,7 +37265,7 @@ Use Bearer Auth (header Authorization).
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -37220,7 +37280,7 @@ Use Bearer Auth (header Authorization).
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -38392,7 +38452,7 @@ Use Bearer Auth (header Authorization).
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -38407,7 +38467,7 @@ Use Bearer Auth (header Authorization).
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -41388,6 +41448,12 @@ Use Bearer Auth (header Authorization).
 
         Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
 
+      - `safety_identifier: optional string or null`
+
+        A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+        `maxLength: 128`
+
       - `store: optional boolean`
 
         Whether to store the session for later forking and recording download. Defaults to false for new sessions.
@@ -42646,7 +42712,7 @@ Accept an incoming SIP call. Supply session with type live, the model, and start
 
 Content type: `application/json`
 
-- `session: object { model, type, audio, 5 more }`
+- `session: object { model, type, audio, 6 more }`
 
   Model and startup configuration for the Live session that answers the incoming SIP call.
 
@@ -43795,6 +43861,12 @@ Content type: `application/json`
   - `instructions: optional string or null`
 
     Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+  - `safety_identifier: optional string or null`
+
+    A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+    `maxLength: 128`
 
   - `store: optional boolean`
 
@@ -48256,7 +48328,7 @@ Use Bearer Auth (header Authorization).
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -48271,7 +48343,7 @@ Use Bearer Auth (header Authorization).
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -49443,7 +49515,7 @@ Use Bearer Auth (header Authorization).
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -49458,7 +49530,7 @@ Use Bearer Auth (header Authorization).
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -52528,6 +52600,12 @@ Use Bearer Auth (header Authorization).
       - `instructions: optional string or null`
 
         Frontend instructions for voice, conversation, interruptions, and when to delegate. Start with the [Live prompting guide](/api/docs/guides/live-prompting); put business rules and tool workflows in a separate [backend prompt](/api/docs/guides/live-delegation#start-with-your-existing-backend-prompt). Limited to 16,384 client-supplied tokens. Omitted or blank instructions use server defaults. Immutable after startup.
+
+      - `safety_identifier: optional string or null`
+
+        A stable identifier for your end user, used for safety monitoring and abuse detection.
+
+        `maxLength: 128`
 
       - `store: optional boolean`
 

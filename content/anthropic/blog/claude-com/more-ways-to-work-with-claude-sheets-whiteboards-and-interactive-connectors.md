@@ -43,6 +43,9 @@ Neither of these teams writes code, but they're experts in their fields. They us
 “At Datadog, Claude has extended from coding to knowledge work. Our product managers are using Claude to move from an idea to a feature brief, PRD, and testable prototype much faster, giving them more time to focus on customer needs, product judgment, and the right problems to solve. When someone builds something good with Claude at Datadog, it spreads fast.”
 
 
+At Gusto, one member of the commercial legal team built a tool in a few hours that turns negotiated terms into signature-ready contracts. Turnaround went from over a week to hours, with that person still reviewing anything negotiated.
+
+
 “Claude and HubSpot work seamlessly together, so our CSMs have all the context they need to walk in prepared for every call. Live dashboards in Claude pull from HubSpot to show what matters for each call and which customers to reach out to next, and follow-up emails are drafted within 30 minutes of a call ending. Work that used to take hours every week now runs in the background, so our team can focus on helping customers build better solutions, prove value, and grow better.”
 
 

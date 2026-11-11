@@ -6010,11 +6010,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -7082,11 +7132,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -9370,11 +9470,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"agent.session"`
 
-      - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+      - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
         Actions that must be completed before the session can continue.
 
         `minItems: 0`, `maxItems: 2000`
+
+        - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+          Respond to an MCP tool-call approval request.
+
+          - `request: object { arguments, message, name, 2 more }`
+
+            Information for presenting an MCP approval.
+
+            - `arguments: unknown`
+
+              The tool arguments as JSON, or null when CCA does not provide them.
+
+            - `message: string`
+
+              `minLength: 0`
+
+            - `name: string or null`
+
+              The tool name, or null when CCA does not provide it.
+
+              `minLength: 0`
+
+            - `server_label: string`
+
+              `minLength: 0`
+
+            - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+              The type of the object. Always `mcp_tool_call`.
+
+              - `"mcp_tool_call"`
+
+          - `request_id: string`
+
+            The opaque approval ID to echo when responding.
+
+            `minLength: 0`
+
+          - `turn_id: string`
+
+            The turn that requested approval.
+
+            `minLength: 0`
+
+          - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+            The type of the object. Always `mcp_approval_request`.
+
+            - `"mcp_approval_request"`
 
         - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -13030,11 +13180,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -14038,11 +14238,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -15046,11 +15296,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -15378,9 +15678,45 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
 ### Agent Session Input Param
 
-- `AgentSessionInputParam = AgentSessionInputComputerUseApprovalRequestResult { request_id, response, type }  or AgentSessionInputMessage { input, type }  or AgentSessionInputCancel { type }  or AgentSessionInputToolResult { call_id, success, turn_id, 3 more }`
+- `AgentSessionInputParam = AgentSessionInputMcpApprovalRequestResult { request_id, response, type }  or AgentSessionInputComputerUseApprovalRequestResult { request_id, response, type }  or AgentSessionInputMessage { input, type }  or 2 more`
 
   Input submitted to an existing session.
+
+  - `AgentSessionInputMcpApprovalRequestResult object { request_id, response, type }`
+
+    Responds to a pending MCP tool-call approval request.
+
+    - `request_id: string`
+
+      The opaque approval ID from the required action.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `response: object { decision, type }`
+
+      The user's decision for a pending MCP tool call.
+
+      - `decision: "approve" or "deny" or "cancel"`
+
+        Cancel dismisses this request without cancelling the session or turn.
+
+        - `"approve"`
+
+        - `"deny"`
+
+        - `"cancel"`
+
+      - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+        The type of the object. Always `mcp_tool_call`.
+
+        - `"mcp_tool_call"`
+
+    - `type: "agent.session.input.mcp_approval_request_result" (default: "agent.session.input.mcp_approval_request_result")`
+
+      The type of the object. Always `agent.session.input.mcp_approval_request_result`.
+
+      - `"agent.session.input.mcp_approval_request_result"`
 
   - `AgentSessionInputComputerUseApprovalRequestResult object { request_id, response, type }`
 
@@ -17542,11 +17878,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -49209,11 +49595,61 @@ Content type: `application/json`
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -49542,30 +49978,15 @@ curl https://api.openai.com/v1/agents/sessions \
   "required_actions": [
     {
       "request": {
-        "credential_origin": "credential_origin",
-        "fields": [
-          {
-            "id": "id",
-            "label": "label",
-            "required": true,
-            "type": "type"
-          }
-        ],
-        "options": [
-          {
-            "id": "id",
-            "field_ids": [
-              "string"
-            ],
-            "label": "label"
-          }
-        ],
-        "reason": "reason",
-        "type": "browser_authentication"
+        "arguments": {},
+        "message": "message",
+        "name": "name",
+        "server_label": "server_label",
+        "type": "mcp_tool_call"
       },
       "request_id": "request_id",
       "turn_id": "turn_id",
-      "type": "computer_use_approval_request"
+      "type": "mcp_approval_request"
     }
   ],
   "status": "idle",
@@ -50413,11 +50834,61 @@ Lists managed agent sessions using ID-based pagination and the requested sort or
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -50764,30 +51235,15 @@ curl https://api.openai.com/v1/agents/sessions \
       "required_actions": [
         {
           "request": {
-            "credential_origin": "credential_origin",
-            "fields": [
-              {
-                "id": "id",
-                "label": "label",
-                "required": true,
-                "type": "type"
-              }
-            ],
-            "options": [
-              {
-                "id": "id",
-                "field_ids": [
-                  "string"
-                ],
-                "label": "label"
-              }
-            ],
-            "reason": "reason",
-            "type": "browser_authentication"
+            "arguments": {},
+            "message": "message",
+            "name": "name",
+            "server_label": "server_label",
+            "type": "mcp_tool_call"
           },
           "request_id": "request_id",
           "turn_id": "turn_id",
-          "type": "computer_use_approval_request"
+          "type": "mcp_approval_request"
         }
       ],
       "status": "idle",
@@ -51556,11 +52012,61 @@ Retrieves the current state of a managed agent session. See [managing sessions](
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -51883,30 +52389,15 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
   "required_actions": [
     {
       "request": {
-        "credential_origin": "credential_origin",
-        "fields": [
-          {
-            "id": "id",
-            "label": "label",
-            "required": true,
-            "type": "type"
-          }
-        ],
-        "options": [
-          {
-            "id": "id",
-            "field_ids": [
-              "string"
-            ],
-            "label": "label"
-          }
-        ],
-        "reason": "reason",
-        "type": "browser_authentication"
+        "arguments": {},
+        "message": "message",
+        "name": "name",
+        "server_label": "server_label",
+        "type": "mcp_tool_call"
       },
       "request_id": "request_id",
       "turn_id": "turn_id",
-      "type": "computer_use_approval_request"
+      "type": "mcp_approval_request"
     }
   ],
   "status": "idle",
@@ -53035,11 +53526,61 @@ Content type: `application/json`
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -53363,30 +53904,15 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
   "required_actions": [
     {
       "request": {
-        "credential_origin": "credential_origin",
-        "fields": [
-          {
-            "id": "id",
-            "label": "label",
-            "required": true,
-            "type": "type"
-          }
-        ],
-        "options": [
-          {
-            "id": "id",
-            "field_ids": [
-              "string"
-            ],
-            "label": "label"
-          }
-        ],
-        "reason": "reason",
-        "type": "browser_authentication"
+        "arguments": {},
+        "message": "message",
+        "name": "name",
+        "server_label": "server_label",
+        "type": "mcp_tool_call"
       },
       "request_id": "request_id",
       "turn_id": "turn_id",
-      "type": "computer_use_approval_request"
+      "type": "mcp_approval_request"
     }
   ],
   "status": "idle",
@@ -53870,6 +54396,42 @@ Content type: `application/json`
 
   `minItems: 0`, `maxItems: 16384`
 
+  - `AgentSessionInputMcpApprovalRequestResult object { request_id, response, type }`
+
+    Responds to a pending MCP tool-call approval request.
+
+    - `request_id: string`
+
+      The opaque approval ID from the required action.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `response: object { decision, type }`
+
+      The user's decision for a pending MCP tool call.
+
+      - `decision: "approve" or "deny" or "cancel"`
+
+        Cancel dismisses this request without cancelling the session or turn.
+
+        - `"approve"`
+
+        - `"deny"`
+
+        - `"cancel"`
+
+      - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+        The type of the object. Always `mcp_tool_call`.
+
+        - `"mcp_tool_call"`
+
+    - `type: "agent.session.input.mcp_approval_request_result" (default: "agent.session.input.mcp_approval_request_result")`
+
+      The type of the object. Always `agent.session.input.mcp_approval_request_result`.
+
+      - `"agent.session.input.mcp_approval_request_result"`
+
   - `AgentSessionInputComputerUseApprovalRequestResult object { request_id, response, type }`
 
     Responds to a pending Computer Use approval request.
@@ -54096,16 +54658,10 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID/events \
             {
               "request_id": "request_id",
               "response": {
-                "action": "submit",
-                "fields": [
-                  {
-                    "field_id": "field_id",
-                    "value": "value"
-                  }
-                ],
-                "type": "browser_authentication"
+                "decision": "approve",
+                "type": "mcp_tool_call"
               },
-              "type": "agent.session.input.computer_use_approval_request_result"
+              "type": "agent.session.input.mcp_approval_request_result"
             }
           ]
         }'
@@ -55203,11 +55759,61 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
         - `"agent.session"`
 
-      - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+      - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
         Actions that must be completed before the session can continue.
 
         `minItems: 0`, `maxItems: 2000`
+
+        - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+          Respond to an MCP tool-call approval request.
+
+          - `request: object { arguments, message, name, 2 more }`
+
+            Information for presenting an MCP approval.
+
+            - `arguments: unknown`
+
+              The tool arguments as JSON, or null when CCA does not provide them.
+
+            - `message: string`
+
+              `minLength: 0`
+
+            - `name: string or null`
+
+              The tool name, or null when CCA does not provide it.
+
+              `minLength: 0`
+
+            - `server_label: string`
+
+              `minLength: 0`
+
+            - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+              The type of the object. Always `mcp_tool_call`.
+
+              - `"mcp_tool_call"`
+
+          - `request_id: string`
+
+            The opaque approval ID to echo when responding.
+
+            `minLength: 0`
+
+          - `turn_id: string`
+
+            The turn that requested approval.
+
+            `minLength: 0`
+
+          - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+            The type of the object. Always `mcp_approval_request`.
+
+            - `"mcp_approval_request"`
 
         - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 

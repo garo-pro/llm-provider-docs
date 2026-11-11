@@ -15,15 +15,58 @@ We spoke with more than a dozen fast-growing startups about how they use agentic
 
 And they are shipping like organizations ten times their size.
 
+30%
+
+more features shipped
+
+2–3x
+
+engineering productivity
+
+100%
+
+of bug triage automated
+
+6,000+
+
+PRs a week
+
 In this guide, we'll dive into the unique deployments of these organizations to learn the rules they follow to ship fast and maintain their competitive advantage.
 
 In doing so we'll also start to glean an answer to the question: what would it look like if an organization built their product development lifecycle with Claude Code from the ground up?
 
+### Featuring founder insights from
+
+## 01 Everyone ships
+
+Agentic coding lowers the barrier to entry, so the person who understands the problem can ship the first version of the fix.
+
 Agentic coding lowers the barrier to entry for non-technical employees to build products. With Claude Code, you can create functional features without being fluent in a coding language or how to use an IDE.
+
+![](https://assets.claude.com/777148b01c9c3f7be3cf75bf029bf0a1daf0876b.jpg?w=168&q=75&fm=webp&fit=max)
+
+"Not only were engineers shipping much more, but non-technical people (like me) were also suddenly shipping UI changes and other product improvements."
+
+
+[Mads Lunau Liechti](https://www.linkedin.com/in/mads-lunau-liechti/), co-founder, [Parahelp](https://www.parahelp.com/)
 
 For startup founders this has obvious advantages. For one, they don't have the headcount of their larger competitors so it's "all hands on deck." But it's not just raw capacity that founders are after–these non-technical members of the team bring domain expertise as well.
 
+![](https://assets.claude.com/e03dea8351fda949e3c950e1f42c4e79bb65c21c.jpg?w=168&q=75&fm=webp&fit=max)
+
+"Claude Code changed what it meant to be a lawyer at Crosby. The lawyers have the best product insights, because they are the users. It's been amazing to watch them cook."
+
+
+[Ryan Daniels](https://www.linkedin.com/in/crosbyryan/), co-founder and CEO, [Crosby](https://crosby.ai/)
+
 We heard the same thing from Dr. Thomas Kelly, co-founder and CEO of Heidi.
+
+![](https://assets.claude.com/10bc73da91563f63ea78792df45b4c23b83aec0d.jpg?w=168&q=75&fm=webp&fit=max)
+
+"For us, Claude Code solved the broken telephone problem. The way a new idea used to move through a team was the person with the idea tells a PM, who tells a designer, who then tells an engineer… and inevitably the essence of the idea gets lost in that chain. By the time something shipped, it often didn't resemble what the person had in mind. And it took weeks. Claude Code collapses that chain. The person who actually understands the problem can ship a PR bringing in designers and engineers for the parts where their expertise matters."
+
+
+[Dr. Thomas Kelly](https://www.linkedin.com/in/tomkeykong/), co-founder and CEO, [Heidi](https://www.heidihealth.com/)
 
 Saying "everyone ships" makes for a great LinkedIn post, but how does that work in reality? Is the marketing team approving pull requests? Is the legal team working through the intricacies of bisecting flaky tests?
 
@@ -34,6 +77,13 @@ We also saw the most effective startups create mechanisms to make these contribu
 ### Create connections
 
 It's one thing to create expectations for employees to use AI, it's another to give them access to Claude Code and the tools they need.
+
+![](https://assets.claude.com/f7c8dc8ab99a4876f637ab9d4a56c05db52bc8d7.jpg?w=168&q=75&fm=webp&fit=max)
+
+"We're actually not running away from [having non-technical employees contribute], we're going towards it. Our take is every role is becoming an engineering role because you can build software for it… so we hire people who are tinkerers, who are interested in building"
+
+
+[Kareem Amin](https://www.linkedin.com/in/kareemamin/), co-founder and CEO, [Clay](https://www.clay.com/)
 
 At Crosby, the team didn't bring lawyers to Claude Code, they brought Claude Code to the lawyers by connecting it to the tools and operating systems they were familiar with and worked in every day.
 
@@ -47,6 +97,13 @@ Clay creates quarterly reviews where prototypes are considered and can enter the
 
 Omni has a dedicated Slack channel for Claude generated prototypes with contributions from everyone including senior technical staff. They also practice the corollary of "everyone ships," which is "everyone talks with customers."
 
+![](https://assets.claude.com/fee2f7e667afc975c0a300f48a1f5c6a6e9986a8.jpg?w=168&q=75&fm=webp&fit=max)
+
+Even though engineers don't naturally gravitate toward customer calls, Omni deliberately puts them in front of customers because it closes the feedback loop faster.
+
+
+[Chris Merrick](https://www.linkedin.com/in/merrickchristopher/), co-founder and CTO, [Omni](https://omni.co/)
+
 ### Share skills
 
 The line between "everyone ships" and "piecemeal" can be a thin one. Feature prototypes, whoever they come from, still need to be integrated into a product that feels like a cohesive whole. This is where skills, reusable instruction files that encode your team's standards and context, can help ensure development stays aligned even as the process becomes increasingly democratized.
@@ -55,9 +112,34 @@ The line between "everyone ships" and "piecemeal" can be a thin one. Feature pro
 
 They can also get new developers and non-technical employees onboarded and up and running quickly.
 
+![](https://assets.claude.com/0eb2fe5da7332af61215ca4ae5320f375ef72928.png?w=168&q=75&fm=webp&fit=max)
+
+"...we also have a GitHub repo of Claude Code skills which works as a shared knowledge base to quickly bootstrap a Claude Code session with known Emergent details like database [and data warehouse] location, some schema [information], overall company context….instead of trying to be perfect here, it is ok to live with slightly outdated context files as long as the agent can quickly verify and course correct."
+
+
+[Mukund Jha](https://www.linkedin.com/in/mukund-jha-a1596413/), co-founder and CEO, [Emergent](https://emergent.sh/)
+
+![](https://assets.claude.com/7e5acf1e961c4204e46a47a0bd19450fe9f0e58e.jpg?w=168&q=75&fm=webp&fit=max)
+
+"Our engineers use Claude Code to spin up an in-house marketplace of specialized internal agents, organized by role, so engineering, delivery, and sales each get tools built for how they actually work."
+
+
+[Jack O'Hara](https://www.linkedin.com/in/jack-o-hara-/), founder and CEO, [Translucent](https://www.translucent.co/)
+
+## 02 Automate the tedium
+
+Agents own the mechanical 80% of the lifecycle so engineers spend their time on the cases that actually need judgment.
+
 All companies have sought to gain efficiencies through technology since the dawn of the industrial revolution, but these startups separated themselves by the speed and depth of their adoption.
 
 These founders believe AI is an essential component of their mission. Many are explicit that agents own the mechanical 80% so engineers spend their time on the cases that actually need judgment.
+
+![](https://assets.claude.com/b0484f07fb5d387c4006d3a9cf0614b525a69689.png?w=168&q=75&fm=webp&fit=max)
+
+"Everyone's racing to build AI products. Far fewer are rebuilding how their company actually runs. The second one is the bigger unlock. Artemis Security runs as an AI-native company, not a company that happens to use AI. This supercharges our velocity and allows us to help customers stop attacks at machine speed."
+
+
+[Shachar Hirshberg](https://www.linkedin.com/in/shachar-hirshberg/), co-founder and CEO, [Artemis Security](https://artemissecurity.com/)
 
 Specifically, we saw AI more tightly integrated across their SDLC stages than others as well as more purpose built agents designed to take recurring tasks end-to-end. Let's look at a couple examples of both.
 
@@ -69,6 +151,13 @@ Many of these featured startups have implemented means of accelerating their tea
 
 These engineers need to be onboarded quickly because these teams ship fast.
 
+![](https://assets.claude.com/9a5f813e3ee4e8e2d591259a52dae3505693ee77.png?w=168&q=75&fm=webp&fit=max)
+
+"Engineers here are orchestrating agent fleets, shipping fixes to production data problems the same day they're found, and running multiple PRs in flight simultaneously. One engineer ran a ~13-ticket initiative with Claude subagents in parallel, each owning a ticket and its PR."
+
+
+[Tanay Tandon](https://www.linkedin.com/in/tanaytandon/), CEO and founder, [Commure](https://www.commure.com/)
+
 At these organizations, Claude Code not only helps generate code, but reviews it too. "We run automated code reviews against our vetted technical and compliance frameworks, flagging critical issues and routing suggested changes to the right reviewers before anything ships," said Dr. Kelly of Heidi.
 
 Some of these organizations have also built custom agents for code review, testing, and CI. These startups have placed considerable attention on [building loops](https://claude.com/resources/articles/getting-started-with-loops) vs just deploying code.
@@ -78,6 +167,10 @@ Some of these organizations have also built custom agents for code review, testi
 Clay "...built an agent that handles…bug triage, from first pass to suggesting code changes for fixes," said Kareem.
 
 ![](https://assets.claude.com/f60bcb14cf717c2d43f5ff9ba5eab9861b91d831.png)
+
+![](https://assets.claude.com/f9f778a29e7d934084fa793c629068373feb51c1.jpg?w=168&q=75&fm=webp&fit=max)
+
+This was most pronounced at [ClickHouse](https://clickhouse.com/), where **co-founder and CTO Alexey Milovidov reported** the database company had turned nearly every SDLC stage into an autonomous loop. Two purpose-built agents designed to fix flaky tests and find missing test coverage are now the #2 and #3 contributors to the ClickHouse repo. A separate family of agents handles operations, and the team uses Claude Code to build and iterate on those agents themselves.
 
 
 ### Accelerating processes with agents
@@ -96,9 +189,34 @@ Other examples include summarizing thousands of legal documents with subagents (
 
 ![](https://assets.claude.com/a6ae82f87e4ab07588d0f70e4c528365080cdb14.png)
 
+## 03 Trust, but verify
+
+You can't automate a process unless you have a reliable means of monitoring and verifying the outcome.
+
 This rule is the necessary corollary to Rule 2: Automate the tedium. You can't automate a process, unless you have a reliable means of monitoring and verifying the outcome.
 
+![](https://assets.claude.com/9696a56eaa29376c23109fc6a50dccf00577519b.jpg?w=168&q=75&fm=webp&fit=max)
+
+Artemis Security co-founder Dan Shiebler said their increased deployment speed only works…"because we've invested deeply in testing infrastructure, codebase organization, and team knowledge systems that let agents ship end to end. This is the flywheel we've built with Claude: structure your codebase, knowledge base, and team the right way, and every contribution compounds."
+
+
+[Dan Shiebler](https://www.linkedin.com/in/dan-shiebler-10219b42/), co-founder, [Artemis Security](https://artemissecurity.com/)
+
+![](https://assets.claude.com/56a82bd3edaf8003b57812e5a1b37c6753b7e938.jpg?w=168&q=75&fm=webp&fit=max)
+
+"Early on we gave Claude full autonomy and it did what AI does. It shipped plausible code fast. The problem was it drifted from our architecture in ways that looked right but weren't. So we…wrote down every invariant. How we frame problems. What has to be true no matter what. How to prove something works instead of trusting a confident answer. 567 lines of how this team thinks."
+
+
+[Victor Hunt](https://www.linkedin.com/in/victor-c-hunt), co-founder and CEO, [Zingage](https://zingage.com/)
+
 To be clear, none of these startups are having agents merge to main and hoping for the best. Many of them operate in highly regulated industries and require strong governance frameworks. Cainex is a particularly illustrative example of combining agents with deterministic checks to read medical records and generate codes that direct hospital billing.
+
+![](https://assets.claude.com/6ee9006723da038933b4e3e4a6c6e2fa8b4b2f69.jpg?w=168&q=75&fm=webp&fit=max)
+
+"In medical coding, a wrong code isn't a typo. It's a billing and compliance event. That one fact governs how we build."
+
+
+[Uriah Israel](https://www.linkedin.com/in/uriah-israel/), co-founder and CTO, [Cainex](https://www.cainex.com/)
 
 "Here's the loop Claude Code runs for us. We process a batch with an agent, and our auditors review the output in an internal app. They don't just see the codes. They see the model's reasoning, and they comment on both….Everything is versioned and auditable," he said.
 
@@ -116,10 +234,20 @@ For example, Cainex uses subject matter experts to routinely review and guide Cl
 
 ![](https://assets.claude.com/0c0fab39c03f3bef320d3a017d73ecd8592dd7b6.png)
 
-
 The other takeaway is the diligence placed on maintaining a strong evaluation "golden set," or group of verified question answer pairs the team uses to verify the agent's accuracy. Every startup should maintain multiple sets of evals for their key use cases, and update them regularly, so they can prevent drift and evaluate future models.
 
+![](https://assets.claude.com/cda18e355fb29a209fbb90b45a6455cb68e4e64a.jpg?w=168&q=75&fm=webp&fit=max)
+
+"[Claude Code has] also transformed how we manage model velocity. New video and image models arrive constantly. Each requires new skills, evaluations, routing logic, and production testing before deployment. Claude Code has compressed that cycle from days to hours, allowing us to identify issues in production and deploy fixes in the same session….When you're competing against companies with 10x the headcount, that kind of leverage changes everything."
+
+
+[Alex Mashrabov](https://www.linkedin.com/in/amashrabov), co-founder and CEO, [Higgsfield](https://higgsfield.ai/)
+
 The final point Uriah makes is that this process can take some work. "It didn't start this clean. Our first version overfitted. It would 'fix' things by encoding the specific case, and we were accumulating patches instead of getting smarter. We changed the approach to force general principles and to cap how many specifics can enter a change at all."
+
+## 04 Build for rebuilding
+
+Model capability keeps shifting underneath these teams, so very little is treated as permanent.
 
 Many of these AI-native startups are in a state of constant reinvention.
 
@@ -139,6 +267,17 @@ Kareem also described part of Clay's moat as the ability to constantly rebuild, 
 
 At a [May 2026 Code with Claude event](https://www.youtube.com/live/OFDm3T7pVlc?si=Z_RENcJSqm8H79aj), Niko Grupen, Harvey's Head of Applied AI spoke about how each new wave of model capabilities — emergent reasoning, agentic automation, planning and orchestration — required a full re-architecture of the platform.
 
+![](https://assets.claude.com/75801fece65e4c2852f8dc9a24862591f645bae2.png?w=168&q=75&fm=webp&fit=max)
+
+"If you asked me six months ago what our architecture looks like, I'd give a fundamentally different answer from what it looks like today. If we hadn't been willing to say 'Hey, we need to scrap this and go agent native' we simply could not have these capabilities in our platform right now."
+
+
+[Niko Grupen](https://www.linkedin.com/in/nikogrupen), Head of Applied AI, [Harvey](https://www.harvey.ai/)
+
+## 05 Prototype, dogfood, productionize
+
+Building with AI helps these startups create disruptive products with AI — the flywheel at the heart of their process.
+
 Many of these startups have a key flywheel at the heart of their development process. Building with AI helps them create disruptive products with AI.
 
 When developers advance their agentic coding practices, they have a stronger grasp on the model's capabilities and insights into how harness design evolves at the frontier. They can then use this inspiration in their own agents and products.
@@ -156,6 +295,14 @@ The pattern we heard repeatedly was build an internal agent with Claude Code, us
 ## The Checklist
 
 This guide covered a lot of ground. Here are the key tips consolidated on one page:
+
+Chapter 1: Everyone ships
+
+Chapter 2: Automate Tedium
+
+Chapter 3: Trust, but verify
+
+Chapter 4: Build for rebuilding
 
 ## Startups on the frontier build at the frontier
 

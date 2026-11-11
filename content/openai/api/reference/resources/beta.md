@@ -6012,11 +6012,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -7084,11 +7134,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -9372,11 +9472,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
         - `"agent.session"`
 
-      - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+      - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
         Actions that must be completed before the session can continue.
 
         `minItems: 0`, `maxItems: 2000`
+
+        - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+          Respond to an MCP tool-call approval request.
+
+          - `request: object { arguments, message, name, 2 more }`
+
+            Information for presenting an MCP approval.
+
+            - `arguments: unknown`
+
+              The tool arguments as JSON, or null when CCA does not provide them.
+
+            - `message: string`
+
+              `minLength: 0`
+
+            - `name: string or null`
+
+              The tool name, or null when CCA does not provide it.
+
+              `minLength: 0`
+
+            - `server_label: string`
+
+              `minLength: 0`
+
+            - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+              The type of the object. Always `mcp_tool_call`.
+
+              - `"mcp_tool_call"`
+
+          - `request_id: string`
+
+            The opaque approval ID to echo when responding.
+
+            `minLength: 0`
+
+          - `turn_id: string`
+
+            The turn that requested approval.
+
+            `minLength: 0`
+
+          - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+            The type of the object. Always `mcp_approval_request`.
+
+            - `"mcp_approval_request"`
 
         - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -13032,11 +13182,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -14040,11 +14240,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -15048,11 +15298,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -15380,9 +15680,45 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
 ### Agent Session Input Param
 
-- `AgentSessionInputParam = AgentSessionInputComputerUseApprovalRequestResult { request_id, response, type }  or AgentSessionInputMessage { input, type }  or AgentSessionInputCancel { type }  or AgentSessionInputToolResult { call_id, success, turn_id, 3 more }`
+- `AgentSessionInputParam = AgentSessionInputMcpApprovalRequestResult { request_id, response, type }  or AgentSessionInputComputerUseApprovalRequestResult { request_id, response, type }  or AgentSessionInputMessage { input, type }  or 2 more`
 
   Input submitted to an existing session.
+
+  - `AgentSessionInputMcpApprovalRequestResult object { request_id, response, type }`
+
+    Responds to a pending MCP tool-call approval request.
+
+    - `request_id: string`
+
+      The opaque approval ID from the required action.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `response: object { decision, type }`
+
+      The user's decision for a pending MCP tool call.
+
+      - `decision: "approve" or "deny" or "cancel"`
+
+        Cancel dismisses this request without cancelling the session or turn.
+
+        - `"approve"`
+
+        - `"deny"`
+
+        - `"cancel"`
+
+      - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+        The type of the object. Always `mcp_tool_call`.
+
+        - `"mcp_tool_call"`
+
+    - `type: "agent.session.input.mcp_approval_request_result" (default: "agent.session.input.mcp_approval_request_result")`
+
+      The type of the object. Always `agent.session.input.mcp_approval_request_result`.
+
+      - `"agent.session.input.mcp_approval_request_result"`
 
   - `AgentSessionInputComputerUseApprovalRequestResult object { request_id, response, type }`
 
@@ -17544,11 +17880,61 @@ curl "https://api.openai.com/v1/agents/$AGENT_ID" \
 
       - `"agent.session"`
 
-    - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+    - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
       Actions that must be completed before the session can continue.
 
       `minItems: 0`, `maxItems: 2000`
+
+      - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+        Respond to an MCP tool-call approval request.
+
+        - `request: object { arguments, message, name, 2 more }`
+
+          Information for presenting an MCP approval.
+
+          - `arguments: unknown`
+
+            The tool arguments as JSON, or null when CCA does not provide them.
+
+          - `message: string`
+
+            `minLength: 0`
+
+          - `name: string or null`
+
+            The tool name, or null when CCA does not provide it.
+
+            `minLength: 0`
+
+          - `server_label: string`
+
+            `minLength: 0`
+
+          - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+            The type of the object. Always `mcp_tool_call`.
+
+            - `"mcp_tool_call"`
+
+        - `request_id: string`
+
+          The opaque approval ID to echo when responding.
+
+          `minLength: 0`
+
+        - `turn_id: string`
+
+          The turn that requested approval.
+
+          `minLength: 0`
+
+        - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+          The type of the object. Always `mcp_approval_request`.
+
+          - `"mcp_approval_request"`
 
       - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -49211,11 +49597,61 @@ Content type: `application/json`
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -49544,30 +49980,15 @@ curl https://api.openai.com/v1/agents/sessions \
   "required_actions": [
     {
       "request": {
-        "credential_origin": "credential_origin",
-        "fields": [
-          {
-            "id": "id",
-            "label": "label",
-            "required": true,
-            "type": "type"
-          }
-        ],
-        "options": [
-          {
-            "id": "id",
-            "field_ids": [
-              "string"
-            ],
-            "label": "label"
-          }
-        ],
-        "reason": "reason",
-        "type": "browser_authentication"
+        "arguments": {},
+        "message": "message",
+        "name": "name",
+        "server_label": "server_label",
+        "type": "mcp_tool_call"
       },
       "request_id": "request_id",
       "turn_id": "turn_id",
-      "type": "computer_use_approval_request"
+      "type": "mcp_approval_request"
     }
   ],
   "status": "idle",
@@ -50415,11 +50836,61 @@ Lists managed agent sessions using ID-based pagination and the requested sort or
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -50766,30 +51237,15 @@ curl https://api.openai.com/v1/agents/sessions \
       "required_actions": [
         {
           "request": {
-            "credential_origin": "credential_origin",
-            "fields": [
-              {
-                "id": "id",
-                "label": "label",
-                "required": true,
-                "type": "type"
-              }
-            ],
-            "options": [
-              {
-                "id": "id",
-                "field_ids": [
-                  "string"
-                ],
-                "label": "label"
-              }
-            ],
-            "reason": "reason",
-            "type": "browser_authentication"
+            "arguments": {},
+            "message": "message",
+            "name": "name",
+            "server_label": "server_label",
+            "type": "mcp_tool_call"
           },
           "request_id": "request_id",
           "turn_id": "turn_id",
-          "type": "computer_use_approval_request"
+          "type": "mcp_approval_request"
         }
       ],
       "status": "idle",
@@ -51558,11 +52014,61 @@ Retrieves the current state of a managed agent session. See [managing sessions](
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -51885,30 +52391,15 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
   "required_actions": [
     {
       "request": {
-        "credential_origin": "credential_origin",
-        "fields": [
-          {
-            "id": "id",
-            "label": "label",
-            "required": true,
-            "type": "type"
-          }
-        ],
-        "options": [
-          {
-            "id": "id",
-            "field_ids": [
-              "string"
-            ],
-            "label": "label"
-          }
-        ],
-        "reason": "reason",
-        "type": "browser_authentication"
+        "arguments": {},
+        "message": "message",
+        "name": "name",
+        "server_label": "server_label",
+        "type": "mcp_tool_call"
       },
       "request_id": "request_id",
       "turn_id": "turn_id",
-      "type": "computer_use_approval_request"
+      "type": "mcp_approval_request"
     }
   ],
   "status": "idle",
@@ -53037,11 +53528,61 @@ Content type: `application/json`
 
     - `"agent.session"`
 
-  - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+  - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
     Actions that must be completed before the session can continue.
 
     `minItems: 0`, `maxItems: 2000`
+
+    - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+      Respond to an MCP tool-call approval request.
+
+      - `request: object { arguments, message, name, 2 more }`
+
+        Information for presenting an MCP approval.
+
+        - `arguments: unknown`
+
+          The tool arguments as JSON, or null when CCA does not provide them.
+
+        - `message: string`
+
+          `minLength: 0`
+
+        - `name: string or null`
+
+          The tool name, or null when CCA does not provide it.
+
+          `minLength: 0`
+
+        - `server_label: string`
+
+          `minLength: 0`
+
+        - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+          The type of the object. Always `mcp_tool_call`.
+
+          - `"mcp_tool_call"`
+
+      - `request_id: string`
+
+        The opaque approval ID to echo when responding.
+
+        `minLength: 0`
+
+      - `turn_id: string`
+
+        The turn that requested approval.
+
+        `minLength: 0`
+
+      - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+        The type of the object. Always `mcp_approval_request`.
+
+        - `"mcp_approval_request"`
 
     - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -53365,30 +53906,15 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID \
   "required_actions": [
     {
       "request": {
-        "credential_origin": "credential_origin",
-        "fields": [
-          {
-            "id": "id",
-            "label": "label",
-            "required": true,
-            "type": "type"
-          }
-        ],
-        "options": [
-          {
-            "id": "id",
-            "field_ids": [
-              "string"
-            ],
-            "label": "label"
-          }
-        ],
-        "reason": "reason",
-        "type": "browser_authentication"
+        "arguments": {},
+        "message": "message",
+        "name": "name",
+        "server_label": "server_label",
+        "type": "mcp_tool_call"
       },
       "request_id": "request_id",
       "turn_id": "turn_id",
-      "type": "computer_use_approval_request"
+      "type": "mcp_approval_request"
     }
   ],
   "status": "idle",
@@ -53872,6 +54398,42 @@ Content type: `application/json`
 
   `minItems: 0`, `maxItems: 16384`
 
+  - `AgentSessionInputMcpApprovalRequestResult object { request_id, response, type }`
+
+    Responds to a pending MCP tool-call approval request.
+
+    - `request_id: string`
+
+      The opaque approval ID from the required action.
+
+      `minLength: 0`, `maxLength: 1048576`
+
+    - `response: object { decision, type }`
+
+      The user's decision for a pending MCP tool call.
+
+      - `decision: "approve" or "deny" or "cancel"`
+
+        Cancel dismisses this request without cancelling the session or turn.
+
+        - `"approve"`
+
+        - `"deny"`
+
+        - `"cancel"`
+
+      - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+        The type of the object. Always `mcp_tool_call`.
+
+        - `"mcp_tool_call"`
+
+    - `type: "agent.session.input.mcp_approval_request_result" (default: "agent.session.input.mcp_approval_request_result")`
+
+      The type of the object. Always `agent.session.input.mcp_approval_request_result`.
+
+      - `"agent.session.input.mcp_approval_request_result"`
+
   - `AgentSessionInputComputerUseApprovalRequestResult object { request_id, response, type }`
 
     Responds to a pending Computer Use approval request.
@@ -54098,16 +54660,10 @@ curl https://api.openai.com/v1/agents/sessions/$SESSION_ID/events \
             {
               "request_id": "request_id",
               "response": {
-                "action": "submit",
-                "fields": [
-                  {
-                    "field_id": "field_id",
-                    "value": "value"
-                  }
-                ],
-                "type": "browser_authentication"
+                "decision": "approve",
+                "type": "mcp_tool_call"
               },
-              "type": "agent.session.input.computer_use_approval_request_result"
+              "type": "agent.session.input.mcp_approval_request_result"
             }
           ]
         }'
@@ -55205,11 +55761,61 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
         - `"agent.session"`
 
-      - `required_actions: array of ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
+      - `required_actions: array of McpApprovalRequest { request, request_id, turn_id, type }  or ComputerUseApprovalRequest { request, request_id, turn_id, type }  or FunctionCall { arguments, call_id, name, 2 more }  or EnvironmentConnection { environment_id, type }`
 
         Actions that must be completed before the session can continue.
 
         `minItems: 0`, `maxItems: 2000`
+
+        - `McpApprovalRequest object { request, request_id, turn_id, type }`
+
+          Respond to an MCP tool-call approval request.
+
+          - `request: object { arguments, message, name, 2 more }`
+
+            Information for presenting an MCP approval.
+
+            - `arguments: unknown`
+
+              The tool arguments as JSON, or null when CCA does not provide them.
+
+            - `message: string`
+
+              `minLength: 0`
+
+            - `name: string or null`
+
+              The tool name, or null when CCA does not provide it.
+
+              `minLength: 0`
+
+            - `server_label: string`
+
+              `minLength: 0`
+
+            - `type: "mcp_tool_call" (default: "mcp_tool_call")`
+
+              The type of the object. Always `mcp_tool_call`.
+
+              - `"mcp_tool_call"`
+
+          - `request_id: string`
+
+            The opaque approval ID to echo when responding.
+
+            `minLength: 0`
+
+          - `turn_id: string`
+
+            The turn that requested approval.
+
+            `minLength: 0`
+
+          - `type: "mcp_approval_request" (default: "mcp_approval_request")`
+
+            The type of the object. Always `mcp_approval_request`.
+
+            - `"mcp_approval_request"`
 
         - `ComputerUseApprovalRequest object { request, request_id, turn_id, type }`
 
@@ -78911,7 +79517,7 @@ the `background` parameter set to `true` can be cancelled.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -78926,7 +79532,7 @@ the `background` parameter set to `true` can be cancelled.
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -80187,7 +80793,7 @@ the `background` parameter set to `true` can be cancelled.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -80202,7 +80808,7 @@ the `background` parameter set to `true` can be cancelled.
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -83933,7 +84539,7 @@ the `background` parameter set to `true` can be cancelled.
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -83948,7 +84554,7 @@ the `background` parameter set to `true` can be cancelled.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -85073,7 +85679,7 @@ the `background` parameter set to `true` can be cancelled.
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -85088,7 +85694,7 @@ the `background` parameter set to `true` can be cancelled.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -87462,7 +88068,7 @@ the `background` parameter set to `true` can be cancelled.
         `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
         `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
         `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-        `gpt-image-2`.
+        `gpt-image-2.6-sunburst`.
 
         `gpt-image-1` was shut down on October 23, 2026. Use
         `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -87477,7 +88083,7 @@ the `background` parameter set to `true` can be cancelled.
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -88572,6 +89178,8 @@ the `background` parameter set to `true` can be cancelled.
     - `auto`: If the input to this Response exceeds
       the model's context window size, the model will truncate the
       response to fit the context window by dropping items from the beginning of the conversation.
+      On some models, trimming can begin earlier because the API subtracts the model's
+      maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
     - `disabled` (default): If the input size will exceed the context window
       size for a model, the request will fail with a 400 error.
 
@@ -91349,7 +91957,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -91364,7 +91972,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -92625,7 +93233,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -92640,7 +93248,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -94549,7 +95157,8 @@ Content type: `application/json`
 
 - `instructions: optional string or null`
 
-  Custom instructions for compaction. On models 6.2 and later, replaying a compaction created with custom instructions can cause Responses to drop subsequent reasoning items.
+  A system (or developer) message inserted into the model's context.
+  When used along with `previous_response_id`, the instructions from a previous response will not be carried over to the next response. This makes it simple to swap out system (or developer) messages in new responses.
 
 - `previous_response_id: optional string or null`
 
@@ -96027,7 +96636,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -96042,7 +96651,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -97295,7 +97904,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -97310,7 +97919,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -102370,7 +102979,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -102385,7 +102994,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -103646,7 +104255,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -103661,7 +104270,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -106982,7 +107591,7 @@ Content type: `application/json`
       `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
       `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
       `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-      `gpt-image-2`.
+      `gpt-image-2.6-sunburst`.
 
       `gpt-image-1` was shut down on October 23, 2026. Use
       `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -106997,7 +107606,7 @@ Content type: `application/json`
         `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
         `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
         `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-        `gpt-image-2`.
+        `gpt-image-2.6-sunburst`.
 
         `gpt-image-1` was shut down on October 23, 2026. Use
         `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -107510,6 +108119,8 @@ Content type: `application/json`
   - `auto`: If the input to this Response exceeds
     the model's context window size, the model will truncate the
     response to fit the context window by dropping items from the beginning of the conversation.
+    On some models, trimming can begin earlier because the API subtracts the model's
+    maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
   - `disabled` (default): If the input size will exceed the context window
     size for a model, the request will fail with a 400 error.
 
@@ -109912,7 +110523,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -109927,7 +110538,7 @@ Content type: `application/json`
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -111188,7 +111799,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -111203,7 +111814,7 @@ Content type: `application/json`
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -114934,7 +115545,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -114949,7 +115560,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -116074,7 +116685,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -116089,7 +116700,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -118463,7 +119074,7 @@ Content type: `application/json`
         `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
         `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
         `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-        `gpt-image-2`.
+        `gpt-image-2.6-sunburst`.
 
         `gpt-image-1` was shut down on October 23, 2026. Use
         `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -118478,7 +119089,7 @@ Content type: `application/json`
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -119573,6 +120184,8 @@ Content type: `application/json`
     - `auto`: If the input to this Response exceeds
       the model's context window size, the model will truncate the
       response to fit the context window by dropping items from the beginning of the conversation.
+      On some models, trimming can begin earlier because the API subtracts the model's
+      maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
     - `disabled` (default): If the input size will exceed the context window
       size for a model, the request will fail with a 400 error.
 
@@ -123074,7 +123687,7 @@ Retrieves a model response with the given ID.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -123089,7 +123702,7 @@ Retrieves a model response with the given ID.
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -124350,7 +124963,7 @@ Retrieves a model response with the given ID.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -124365,7 +124978,7 @@ Retrieves a model response with the given ID.
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -128096,7 +128709,7 @@ Retrieves a model response with the given ID.
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -128111,7 +128724,7 @@ Retrieves a model response with the given ID.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -129236,7 +129849,7 @@ Retrieves a model response with the given ID.
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -129251,7 +129864,7 @@ Retrieves a model response with the given ID.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -131625,7 +132238,7 @@ Retrieves a model response with the given ID.
         `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
         `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
         `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-        `gpt-image-2`.
+        `gpt-image-2.6-sunburst`.
 
         `gpt-image-1` was shut down on October 23, 2026. Use
         `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -131640,7 +132253,7 @@ Retrieves a model response with the given ID.
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -132735,6 +133348,8 @@ Retrieves a model response with the given ID.
     - `auto`: If the input to this Response exceeds
       the model's context window size, the model will truncate the
       response to fit the context window by dropping items from the beginning of the conversation.
+      On some models, trimming can begin earlier because the API subtracts the model's
+      maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
     - `disabled` (default): If the input size will exceed the context window
       size for a model, the request will fail with a 400 error.
 
@@ -134440,7 +135055,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -134455,7 +135070,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -135708,7 +136323,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -135723,7 +136338,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -141610,7 +142225,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -141625,7 +142240,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -142886,7 +143501,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -142901,7 +143516,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -146632,7 +147247,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -146647,7 +147262,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -147772,7 +148387,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -147787,7 +148402,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -150161,7 +150776,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
         `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
         `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
         `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-        `gpt-image-2`.
+        `gpt-image-2.6-sunburst`.
 
         `gpt-image-1` was shut down on October 23, 2026. Use
         `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -150176,7 +150791,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -151271,6 +151886,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
     - `auto`: If the input to this Response exceeds
       the model's context window size, the model will truncate the
       response to fit the context window by dropping items from the beginning of the conversation.
+      On some models, trimming can begin earlier because the API subtracts the model's
+      maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
     - `disabled` (default): If the input size will exceed the context window
       size for a model, the request will fail with a 400 error.
 
@@ -154031,7 +154648,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -154046,7 +154663,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -155307,7 +155924,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -155322,7 +155939,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -159053,7 +159670,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -159068,7 +159685,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -160193,7 +160810,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -160208,7 +160825,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -162582,7 +163199,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -162597,7 +163214,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -163692,6 +164309,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -166917,7 +167536,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -166932,7 +167551,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -168193,7 +168812,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -168208,7 +168827,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -171939,7 +172558,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -171954,7 +172573,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -173079,7 +173698,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -173094,7 +173713,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -175468,7 +176087,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -175483,7 +176102,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -176578,6 +177197,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -179274,7 +179895,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -179289,7 +179910,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -180550,7 +181171,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -180565,7 +181186,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -184296,7 +184917,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -184311,7 +184932,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -185436,7 +186057,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -185451,7 +186072,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -187825,7 +188446,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -187840,7 +188461,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -188935,6 +189556,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -191884,7 +192507,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -191899,7 +192522,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -193160,7 +193783,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -193175,7 +193798,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -196906,7 +197529,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -196921,7 +197544,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -198046,7 +198669,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -198061,7 +198684,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -200435,7 +201058,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -200450,7 +201073,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -201545,6 +202168,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -204054,7 +204679,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -204069,7 +204694,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -205330,7 +205955,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -205345,7 +205970,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -209076,7 +209701,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -209091,7 +209716,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -210216,7 +210841,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -210231,7 +210856,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -212605,7 +213230,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -212620,7 +213245,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -213715,6 +214340,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -216060,7 +216687,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -216075,7 +216702,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -217336,7 +217963,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -217351,7 +217978,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -221522,7 +222149,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -221537,7 +222164,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -222798,7 +223425,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -222813,7 +223440,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -228000,7 +228627,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -228015,7 +228642,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -229268,7 +229895,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -229283,7 +229910,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -233071,7 +233698,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -233086,7 +233713,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -234339,7 +234966,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -234354,7 +234981,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -238161,7 +238788,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -238176,7 +238803,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -239429,7 +240056,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -239444,7 +240071,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -244125,7 +244752,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -244140,7 +244767,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -245401,7 +246028,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -245416,7 +246043,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -249147,7 +249774,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -249162,7 +249789,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -250287,7 +250914,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -250302,7 +250929,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -252676,7 +253303,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -252691,7 +253318,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -253786,6 +254413,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -258579,7 +259208,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -258594,7 +259223,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                     `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                     `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                     `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                    `gpt-image-2`.
+                    `gpt-image-2.6-sunburst`.
 
                     `gpt-image-1` was shut down on October 23, 2026. Use
                     `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -259855,7 +260484,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -259870,7 +260499,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                     `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                     `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                     `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                    `gpt-image-2`.
+                    `gpt-image-2.6-sunburst`.
 
                     `gpt-image-1` was shut down on October 23, 2026. Use
                     `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -263601,7 +264230,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -263616,7 +264245,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -264741,7 +265370,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -264756,7 +265385,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -267130,7 +267759,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -267145,7 +267774,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -268240,6 +268869,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `auto`: If the input to this Response exceeds
           the model's context window size, the model will truncate the
           response to fit the context window by dropping items from the beginning of the conversation.
+          On some models, trimming can begin earlier because the API subtracts the model's
+          maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
         - `disabled` (default): If the input size will exceed the context window
           size for a model, the request will fail with a 400 error.
 
@@ -273052,7 +273683,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -273067,7 +273698,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -274328,7 +274959,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -274343,7 +274974,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                   `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                   `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                   `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                  `gpt-image-2`.
+                  `gpt-image-2.6-sunburst`.
 
                   `gpt-image-1` was shut down on October 23, 2026. Use
                   `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -277676,7 +278307,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
           `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
           `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
           `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-          `gpt-image-2`.
+          `gpt-image-2.6-sunburst`.
 
           `gpt-image-1` was shut down on October 23, 2026. Use
           `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -277691,7 +278322,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -278204,6 +278835,8 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `auto`: If the input to this Response exceeds
         the model's context window size, the model will truncate the
         response to fit the context window by dropping items from the beginning of the conversation.
+        On some models, trimming can begin earlier because the API subtracts the model's
+        maximum output allowance from its input limit, even if you set a lower `max_output_tokens`.
       - `disabled` (default): If the input size will exceed the context window
         size for a model, the request will fail with a 400 error.
 
@@ -279890,7 +280523,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -279905,7 +280538,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -280902,7 +281535,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -280917,7 +281550,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -286181,7 +286814,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -286196,7 +286829,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -287457,7 +288090,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -287472,7 +288105,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
                 `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
                 `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
                 `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-                `gpt-image-2`.
+                `gpt-image-2.6-sunburst`.
 
                 `gpt-image-1` was shut down on October 23, 2026. Use
                 `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -291914,7 +292547,7 @@ Returns a list of input items for a given response.
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -291929,7 +292562,7 @@ Returns a list of input items for a given response.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -293182,7 +293815,7 @@ Returns a list of input items for a given response.
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -293197,7 +293830,7 @@ Returns a list of input items for a given response.
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -297243,7 +297876,7 @@ curl https://api.openai.com/v1/responses/resp_abc123/input_items \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -297258,7 +297891,7 @@ curl https://api.openai.com/v1/responses/resp_abc123/input_items \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -298511,7 +299144,7 @@ curl https://api.openai.com/v1/responses/resp_abc123/input_items \
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -298526,7 +299159,7 @@ curl https://api.openai.com/v1/responses/resp_abc123/input_items \
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -302688,7 +303321,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -302703,7 +303336,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -303964,7 +304597,7 @@ Content type: `application/json`
             `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
             `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
             `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-            `gpt-image-2`.
+            `gpt-image-2.6-sunburst`.
 
             `gpt-image-1` was shut down on October 23, 2026. Use
             `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -303979,7 +304612,7 @@ Content type: `application/json`
               `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
               `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
               `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-              `gpt-image-2`.
+              `gpt-image-2.6-sunburst`.
 
               `gpt-image-1` was shut down on October 23, 2026. Use
               `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -306835,7 +307468,7 @@ Content type: `application/json`
       `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
       `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
       `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-      `gpt-image-2`.
+      `gpt-image-2.6-sunburst`.
 
       `gpt-image-1` was shut down on October 23, 2026. Use
       `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -306850,7 +307483,7 @@ Content type: `application/json`
         `gpt-image-2.5-sunburst-2026-09-08`, `gpt-image-2.5-flare`,
         `gpt-image-2.5-flare-2026-09-08`, `gpt-image-2.6-sunburst`,
         `gpt-image-2.6-flare`, or `chatgpt-image-latest`. Default:
-        `gpt-image-2`.
+        `gpt-image-2.6-sunburst`.
 
         `gpt-image-1` was shut down on October 23, 2026. Use
         `gpt-image-2.5-sunburst` or `gpt-image-2.5-flare` instead.
@@ -307338,7 +307971,10 @@ Content type: `application/json`
 
 - `truncation: optional "auto" or "disabled"`
 
-  The truncation strategy to use for the model response. - `auto`: If the input to this Response exceeds the model's context window size, the model will truncate the response to fit the context window by dropping items from the beginning of the conversation. - `disabled` (default): If the input size will exceed the context window size for a model, the request will fail with a 400 error.
+  The truncation strategy to use for the model response.
+
+  - `auto`: If the input to this Response exceeds the model's context window size, the model will truncate the response to fit the context window by dropping items from the beginning of the conversation. On some models, trimming can begin earlier because the API subtracts the model's maximum output allowance from its input limit before counting tokens.
+  - `disabled` (default): If the input size will exceed the context window size for a model, the request will fail with a 400 error.
 
   - `"auto"`
 

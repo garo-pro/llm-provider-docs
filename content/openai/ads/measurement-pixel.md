@@ -427,6 +427,31 @@ custom events, `custom_event_name` replaces the standard event name in that
 match. OpenAI uses the first event it receives for a matching key and ignores
 later duplicates.
 
+## Test your Pixel in Ads Manager
+
+Use a Pixel test session in Ads Manager to inspect events received while you test
+your website. The filtered Event Stream shows events from your selected Pixel and
+test session, helping you check event names and details without sorting through
+unrelated traffic.
+
+1. In Ads Manager, go to **Conversions** > **Data Source**.
+2. Open the three-dot menu for your Web Pixel and select **Test**.
+3. Enter a page URL where that Pixel is installed, then select **Start testing**.
+4. Take actions on the website that opens, then return to **Event Stream** in Ads
+   Manager. Events from the session have a **Test** label. Select an event to
+   inspect its details.
+
+Test labeling lasts up to 30 minutes and applies to the selected Pixel in the
+opened tab on the same website origin. Other domains and subdomains do not
+automatically join the session.
+
+At higher test-event volumes, Event Stream may show only a sample of events.
+Events may also be delayed. Testing uses your existing consent settings, and test
+events still count in normal analytics.
+
+Select **Exit test view** to return to the ordinary Event Stream. This does not end
+test labeling on your website.
+
 ## What the SDK handles automatically
 
 The Pixel handles several transport details for you:
@@ -470,6 +495,8 @@ retention. The durations above describe browser cookie storage only.
 
 ## Troubleshooting
 
+- Use [Test Pixel in Ads Manager](#test-your-pixel-in-ads-manager) to inspect sampled
+  events from your test session.
 - Keep `debug: true` while testing so you can inspect Pixel activity in the
   browser console.
 - Use integer values for `amount` and `quantity`.

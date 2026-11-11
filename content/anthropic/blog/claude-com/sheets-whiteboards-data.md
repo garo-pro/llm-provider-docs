@@ -27,7 +27,7 @@ For now, sheets have simple spreadsheet functionality, but we are working on add
 
 - **Create certified definitions of metrics.** Your data team can certify the queries everyone should use, so you don’t end up building or working on dashboards with conflicting data. Charts built on these metrics carry a "certified" badge showing they’re certified.
 - **Craft stories****from data.** You can work with Claude in Claude Data to draft data stories or narrated videos from your metrics, for you to review before sharing.
-- **Share current numbers with****everyone.** With live sharing, your colleagues can see up-to-date numbers when they open a shared dashboard, even if they don’t have access to the connectors that keep that data current. Viewers see dashboard results rather than the underlying data, and they can run only the queries you’ve approved.
+- **Share current numbers with****everyone.** With live sharing, your colleagues can see up-to-date numbers when they open a shared dashboard, even if they don’t have access to the connectors that keep that data current. Viewers see the results of the queries you’ve approved, and can’t run others with your access.
 - **Match your look-and-feel.** Design systems are now supported in Claude Data.
 - **Get faster loading with caching.** Previously, every dashboard would reload on every load. Now, dashboards support caching, and refresh cadences can be set on a per-dashboard basis.
 - **Track changes over time.** Claude Data now has tracked changes, so you can see who has made edits and roll back to a specific version if needed.
