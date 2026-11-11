@@ -57,7 +57,7 @@ I think of voice models as jellyfish. They're fast and responsive, but they have
 
 #### Logging and memory without interrupting the flow
 
-Ask most voice agents to do something and they send it off to a tool, then wait for the answer. That wait is dead air. GPT-Live can hand work to a delegate agent, but the hand-off blocks the conversation while the answer comes back. In our first version, four in five calls had at least one of these pauses: "one moment", then around 10 seconds of silence.
+Ask most voice agents to do something and they send it off to a tool, then wait for the answer. That wait is dead air. GPT-Live can hand work to a delegated agent, but the hand-off blocks the conversation while the answer comes back. In our first version, four in five calls had at least one of these pauses: "one moment", then around 10 seconds of silence.
 
 Our fix is simple. After every turn, a small, fast model ([OpenAI's Decisions API](/api/docs/guides/decisions)) answers two questions in the background:
 
@@ -260,16 +260,6 @@ Offline, a review system reads past calls and proposes new configurations. Each 
 GPT-Live makes many of these configurations trivial. Tone, cadence, whether to mirror the other person’s energy, how formal to be, how often to backchannel: each used to need coordination across our voice stack. Now most are a line in a [prompt](/api/docs/guides/live-prompting), so we can compare versions cleanly.
 
 Demo: So what did our agent learn from the call with the staffing agency owner?
-
-<iframe
-  src="/demos/treater-optimization-loop/index.html"
-  title="How Treater agents improve: interactive simulation"
-  sandbox="allow-scripts"
-  loading="lazy"
-  class="block h-[85svh] w-full rounded-lg border-0"
-/>
-
-[Open the full-page simulation](/demos/treater-optimization-loop/index.html).
 
 This demo shows an anonymized and simplified version of the campaign described in the intro: a company booking demos with staffing agencies, starting from a base agent.
 
