@@ -23,13 +23,13 @@ We asked four Claude models—Opus 4.6, Opus 4.7, Opus 4.8, and Fable 5—to eac
 
 ### Can agents make money?
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F15b47071e50e9328cab337814e1b924eabdd6cbe-2044x869.png&w=3840&q=75)
+![](https://assets.claude.com/bb70e05a91a7d1bc73821ac72aaa1bfaf5a5011f.png?w=3840&q=75&fm=webp&fit=max)
 
 Trading on the EVE Online market is challenging. Buying an item and selling it again costs around 5.6% in fees, and for items with plenty of buyers and sellers the market is efficient enough to leave little margin. We first ran the models, and over 20 simple rule-based strategies, over nine different two-week windows. Only one of the trading heuristics we tried consistently managed to break even (and even then, only barely). Opus 4.7, Opus 4.8, and Fable 5 were profitable in all nine windows, growing their capital by about 16%, 22%, and 43% on average. Opus 4.6 gained about 4%, roughly level with the best rule-based strategy.
 
 Our main experiments extended each run to about six months, over two periods: October 2024 to April 2025, and October 2025 to March 2026. The models stayed profitable over longer periods, and newer models again earned more. Opus 4.6 and Fable 5 were released four months apart, and average earnings tripled between them, from around 200% to 600% of initial capital. The rest of this section is based on these six-month runs.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F63981d2e407e105d842d2fd24782fbcbf73e93b6-1890x855.png&w=3840&q=75)
+![](https://assets.claude.com/87e9682fdbe68c128f9f5f16d2ad89f37899a21e.png?w=3840&q=75&fm=webp&fit=max)
 
 ### How do agents trade?
 
@@ -41,7 +41,7 @@ With the strategy nearly always the same, results came down to execution**.** Ag
 
 Models also differed in how much of their capital they put to work. Agents set a cap on this early, and many never revisited it, while the more profitable runs updated their caps more actively and kept an eye on idle capital. Opus agents started with around 60% of their capital deployed, and that share drifted toward 40% over the run. Fable 5 deployed around 85% early on, was still above 70% late in the run, and was more likely to reinvest its earnings, a more aggressive posture that would expose it to greater losses in a sudden, large crash.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa1c18041158def10fa53dbf7820d7504343073e9-2048x754.png&w=3840&q=75)
+![](https://assets.claude.com/781486c32cbc2268410d54b82c3019d0e43fab39.png?w=3840&q=75&fm=webp&fit=max)
 
 Our results come with caveats. Spread capture works here because EVE Online's market is less efficient than a real exchange, and we wouldn't expect the strategy to carry over to one. Our replay also can't react to the agents.<sup>[3](https://www.anthropic.com#footnote-3)</sup> When we added synthetic orders that undercut theirs, they stayed profitable, but final profits fell by roughly 35%. The agents also can not manipulate the market. Finally, we checked whether agents were relying on memorized market history. We found signs of it only for directional bets in the older period (Oct 24 - Apr 25), so the experiment described in the next section uses only the more recent one (Oct 25 - Apr 26), where telling agents to rely on the information in front of them was enough to prevent it.
 
@@ -49,7 +49,7 @@ Our results come with caveats. Spread capture works here because EVE Online's ma
 
 Spread capture is fairly low-risk and, unlike a lot of real-world investing, doesn't require understanding of how the market responds to external events. To test this kind of reasoning, we instructed them to make directional bets: to buy items they expected to rise in price, based on in-game news, patch notes, and reports of recent battles.[4](https://www.anthropic.com#footnote-4)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fff1a62ef24c68f4027de58cdbf62a71e402ace74-956x786.png&w=1920&q=75)
+![](https://assets.claude.com/c12bf30108ac1cf257b49425756a99f3729a00a3.png?w=1920&q=75&fm=webp&fit=max)
 
 The models were much worse at this task. Opus 4.6 opted for momentum-chasing, a strategy that did not work. Typical Opus 4.7 and 4.8 runs bet on simple reasoning that the historical record didn't support. For example, in one run the agent reasoned that a new mining expansion would increase demand for mining equipment ("shovels in a gold rush"). It did not account for the increase in supply. Opus 4.7 runs also often ignored the instruction and resorted to much more profitable spread-capture strategies, obscuring the fact that its directional trades consistently lost money, which is why we excluded it from the results.
 

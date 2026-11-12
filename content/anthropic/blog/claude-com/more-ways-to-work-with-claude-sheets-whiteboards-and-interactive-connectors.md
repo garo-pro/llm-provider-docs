@@ -11,9 +11,9 @@ We've seen Claude Code change how developers work. Engineers went from manually 
 
 ## All your connectors and context
 
-In Claude Code, the context Claude needs is already in the codebase. For other teams, context sprawls across emails, apps, and drives. Claude reaches it through connectors built on the [Model Context Protocol (opens in new tab)](https://www.anthropic.com/news/model-context-protocol) (MCP), the open standard we introduced for connecting AI to the tools you use. Claude Marketplace lists more than 9,000 connectors and plugins, including community-built ones.
+In Claude Code, the context Claude needs is already in the codebase. For other teams, context sprawls across emails, apps, and drives. Claude reaches it through connectors built on the [Model Context Protocol (opens in new tab)](https://www.anthropic.com/news/model-context-protocol) (MCP), the open standard we introduced for connecting AI to the tools you use. [Claude Marketplace](https://claude.com/resources/articles/claude-marketplace) lists more than 9,000 connectors and plugins, including community-built ones.
 
-[**Interactive connectors** (opens in new tab)](https://claude.com/resources/articles/interactive-connectors-full-tool) take this further. Starting today, partners can embed their apps directly in Claude, so you can work in Adobe, Atlassian, and others without switching tabs. Plugins from Salesforce (beta), NetSuite, and Workday (beta) come with built-in skills, so sellers can prep for a call, accountants can analyze financial data, and HR teams can handle time off and expenses.
+[**Interactive connectors** (opens in new tab)](https://claude.com/resources/articles/interactive-connectors-full-tool) take this further. Starting today, partners can embed their apps directly in Claude, so you can work in Adobe, Atlassian, and others without switching tabs. Plugins from [Salesforce](https://claude.com/resources/articles/salesforce-in-claude) (beta), NetSuite, and Workday (beta) come with built-in skills, so sellers can prep for a call, accountants can analyze financial data, and HR teams can handle time off and expenses.
 
 ## Bring ideas to life faster, together
 

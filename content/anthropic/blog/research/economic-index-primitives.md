@@ -33,7 +33,7 @@ This same trend holds—albeit in weaker form—when we adjust for tasks’ succ
 
 We’re able to complement METR’s analysis using our economic primitives. In the graph below, we show Claude’s task-level success rates relative to the amount of time a human would take to do the same task, both on [Claude.ai](http://claude.ai) and on our API:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbf18bd0b6c14a07cff03bad97dc720183a0ac507-3840x2800.png&w=3840&q=75)
+![](https://assets.claude.com/bf18bd0b6c14a07cff03bad97dc720183a0ac507.png?w=3840&q=75&fm=webp&fit=max)
 
 **Task success vs. human-only time.**This chart shows the relationship between task success (%) and the time the task would require a human to complete alone, all measured at the O*NET task level and split by platform. The dashed lines show the fit from a linear regression.
 

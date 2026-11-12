@@ -36,7 +36,7 @@ Our property-based testing agent is built as a custom Claude Code command. The a
 4. Run the tests and reflect: if it failed, has the test truly discovered a bug, or does the test need to be adjusted? If it succeeded, is the test testing anything worthwhile, or is it simply trivial?
 5. If the agent is confident it has found a real bug, it writes out a formatted bug report.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2cac5914e526becbfb506a035f11f758b9f10010-1999x1126.png&w=3840&q=75)
+![](https://assets.claude.com/2cac5914e526becbfb506a035f11f758b9f10010.png?w=3840&q=75&fm=webp&fit=max)
 
 To help the agent perform long-range multi-step reasoning, we direct it to use a to-do list to track its progress.
 

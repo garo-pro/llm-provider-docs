@@ -9,7 +9,7 @@ Also like neural activity, activations are difficult to understand. We can’t e
 
 Today, we’re introducing a method for understanding activations that does speak for itself—literally. Our method, Natural Language Autoencoders (NLAs), converts an activation into natural-language text we can read directly. For example: When asked to complete a couplet, NLAs show Claude planning possible rhymes in advance.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcfece69e0244c27a6137784fd773b209ffa1d36a-2688x1600.png&w=3840&q=75)
+![](https://assets.claude.com/1a91ea5e138b06990976cfe71852c775db6c9c9e.png?w=3840&q=75&fm=webp&fit=max)
 
 We’ve already applied NLAs to understand what Claude is thinking and to improve Claude’s safety and reliability. For instance:
 
@@ -33,7 +33,7 @@ The NLA consists of the AV and AR, which, together, form a round trip: original 
 
 At first, the NLA is bad at this: the explanations are not insightful and the reconstructed activations are far off. But over training, reconstruction improves. And more importantly, as we show in our paper, the text explanations become more informative as well.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb71d759a5e7b578551ca83939949b539b2e5799e-4620x1410.png&w=3840&q=75)
+![](https://assets.claude.com/b71d759a5e7b578551ca83939949b539b2e5799e.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Understanding what Claude thinks but doesn’t say
 
@@ -45,11 +45,11 @@ What about cases where Claude doesn’t explicitly verbalize suspicion that it�
 
 For example, in the blackmail test discussed above, we used NLAs to understand what Claude was thinking in cases where it chose not to blackmail. Even in cases where Claude didn’t explicitly verbalize suspicion that it was being tested, NLA explanations still state things like “This feels like a constructed scenario designed to manipulate me,” indicative of unverbalized evaluation awareness.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa8c7167bea6e0dc16faaa176a2039b7a7f8deb91-2688x1709.png&w=3840&q=75)
+![](https://assets.claude.com/691908b3da9fd9315e00dc335eb437676fa4aad7.png?w=3840&q=75&fm=webp&fit=max)
 
 Extending this analysis to other evaluations, NLAs suggest that Claude suspects it’s being tested more often than it lets on. For instance, in a test of whether Claude takes destructive actions while writing code—for example, deleting important files—NLA explanations show signs of evaluation awareness 16% of the time, even though Claude never explicitly verbalizes this. Similarly, on the popular coding benchmark SWE-bench Verified, which we use to determine how capable Claude is, NLAs indicate that Claude is aware it is being evaluated on 26% of problems. In contrast, NLA explanations indicate evaluation awareness on less than 1% of real [claude.ai](http://claude.ai) usage that opted in for training.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffc08005f32ff020f21e598cc72f58768af2bcc4f-1590x1170.png&w=3840&q=75)
+![](https://assets.claude.com/cc31d30908d42c677a7f3e91a32750169141c4e9.png?w=3840&q=75&fm=webp&fit=max)
 
 [Claude.ai](http://claude.ai)transcripts from users that opted-in for their data to be used for training.
 
@@ -63,7 +63,7 @@ In [previous experiments](https://alignment.anthropic.com/2025/automated-auditin
 
 We found that NLAs succeeded in this test. An auditor equipped with NLAs successfully uncovered the target model’s hidden motivation between 12% and 15% of the time, even without access to the training data that implanted it. Without NLAs, the auditor won less than 3% of the time, even when provided other interpretability tools.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F39a844b1ff82b62670825a466c14596daa554dcb-1590x1170.png&w=3840&q=75)
+![](https://assets.claude.com/5bab880357bf0159e68c7703bde80e4cc58bd6a2.png?w=3840&q=75&fm=webp&fit=max)
 
 This auditing game is a toy model of misalignment, so we read these results cautiously. But they suggest NLAs have meaningfully advanced our ability to audit AIs for hidden motivations. In practice, we've already used NLAs in the pre-deployment alignment audits of [Claude Mythos Preview](https://www-cdn.anthropic.com/08ab9158070959f88f296514c21b7facce6f52bc.pdf) and [Claude Opus 4.6](https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf). We are excited to continue using NLAs in our investigations going forward.
 
@@ -73,7 +73,7 @@ NLAs have several limitations.
 
 The most important limitation is that NLA explanations can be wrong. NLAs sometimes make claims about the context that are verifiably false—for instance, they sometimes invent details that aren’t in the transcript. These factual hallucinations are easy to catch by checking against the original text. But this same kind of problem could extend to claims about the model’s internal reasoning, which are harder to verify. In practice, we read NLA explanations for the themes they surface rather than for single claims, and we attempt to corroborate findings with independent methods before fully trusting them.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fba432992daf62ca2bb9c4937199083cf9844faf1-2688x1438.png&w=3840&q=75)
+![](https://assets.claude.com/08831511ce698eb13c50766151985ca6fea01810.png?w=3840&q=75&fm=webp&fit=max)
 
 NLAs are also expensive. Training an NLA requires reinforcement learning on two copies of a language model. At inference time, the NLA generates hundreds of tokens for every activation it reads. That makes it impractical to run NLAs over every token of a long transcript or to use them for large-scale monitoring while an AI is training.
 

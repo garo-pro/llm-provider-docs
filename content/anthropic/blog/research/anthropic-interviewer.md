@@ -18,7 +18,7 @@ To test Anthropic Interviewer, we had it run 1,250 interviews with professionals
 - **Creatives are using AI to increase their productivity despite peer judgement and anxiety about the future.** They are navigating both the immediate stigma of AI use in creative communities and deeper concerns about economic displacement and the erosion of human creative identity.
 - **Scientists want AI partnership but can't yet trust it for core research.** Scientists uniformly expressed a desire for AI that could generate hypotheses and design experiments. But at present, they confined their actual use to other tasks like writing manuscripts or debugging analysis code.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4ae319f2a488d12756eb79f9f0d4e4899bf8bcfe-2880x1950.jpg&w=3840&q=75)
+![](https://assets.claude.com/7e922f0b5b311d2355c1ffc4ec7ed278c0452fc8.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Example quotations from professionals in the general workforce, organized by topic. This research aims to both unpack the optimism and navigate the underlying anxieties to better understand how AI is actually reshaping work across different professional contexts.
 
@@ -46,7 +46,7 @@ All participants provided informed consent for us to analyze their interview dat
 
 Anthropic Interviewer operates in three stages: planning, interviewing, and analysis. Below, we describe each of them in turn.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fcc1e5916d47f4217a6952c410db3ab118f5d2221-6624x2756.png&w=3840&q=75)
+![](https://assets.claude.com/cc1e5916d47f4217a6952c410db3ab118f5d2221.png?w=3840&q=75&fm=webp&fit=max)
 
 #### Planning
 
@@ -62,7 +62,7 @@ Anthropic Interviewer then conducted real-time, adaptive interviews following it
 
 The interviews conducted by Anthropic Interviewer appeared on Claude.ai and lasted about 10-15 minutes with each participant.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe6678158f5572d1f9f6945c2fdcc02275d2a371f-2272x1600.png&w=3840&q=75)
+![](https://assets.claude.com/cc0d463ad148a7133e8faa7a3a20f5fe9f839a20.png?w=3840&q=75&fm=webp&fit=max)
 
 [claude.ai](http://claude.ai)(above is the module now live for users).
 
@@ -94,13 +94,13 @@ Whereas 41% of interviewees said they felt secure in their work and believed hum
 
 Approaches to AI use varied widely. One data quality manager deliberately chose learning over automation: “I try to think about it like studying a foreign language—just using a translator app isn’t going to teach you anything, but having a tutor who can answer questions and customize for your needs is really going to help.” A marketer took a flexible approach: “I am trying to diversify while keeping a strong niche.” An interpreter was already preparing to leave the field entirely: “I believe AI will eventually replace most interpreters... so I’m already preparing for a career switch, possibly by getting a diploma and getting into a different trade.” Notably, only 8% of professionals expressed anxiety without any clear remediation plan.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff25cfdc180b0fda7206fe8f7a71e7c60de3fa499-2880x1800.jpg&w=3840&q=75)
+![](https://assets.claude.com/9b75b4fdf8ebbd7f175ba5b7f83d10b912194ea9.jpg?w=3840&q=75&fm=webp&fit=max)
 
 We also classified the intensity of different emotions exhibited within professionals’ interviews (see figure above). Different professions exhibited remarkably uniform emotional profiles characterized by high levels of satisfaction. However, this was coupled with frustration, suggesting professionals are finding AI useful while encountering significant implementation challenges.
 
 ### Augmentation versus automation
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F663272ce4341caa37614dbf16908c75d6e89b70d-1920x1200.jpg&w=3840&q=75)
+![](https://assets.claude.com/b4f618cf28800c33536443ac4e483b29108ea077.jpg?w=3840&q=75&fm=webp&fit=max)
 
 In a [previous analysis](https://arxiv.org/pdf/2503.04761), we categorized AI uses into either *augmentation* (where AI collaborates with a user to perform a task), or *automation* (where AI directly performs tasks). In the Anthropic Interviewer data, 65% of participants described AI’s primary role as augmentative; 35% described it as automative. Notably, this differed from our [latest analysis](https://www.anthropic.com/research/economic-index-geography) of how people use Claude, which showed a much more even split: 47% of tasks involved augmentation and 49% automation. There are multiple potential explanations for this difference:
 
@@ -130,7 +130,7 @@ Economic anxiety appeared throughout creatives’ interviews. A voice actor stat
 
 All 125 participants mentioned wanting to remain in control of their creative outputs. Yet this boundary proved unstable in practice: Many participants acknowledged moments where AI drove creative decisions. One artist admitted: “The AI is driving a good bit of the concepts; I simply try to guide it… 60% AI, 40% my ideas”. A musician said: “I hate to admit it, but the plugin has most of the control when using this.”
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff44912bbbe2f514dc867a3fb6a506aa440e241d5-2880x1800.jpg&w=3840&q=75)
+![](https://assets.claude.com/6a72829a70cc453a0e82386f460c5652f5e8f935.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Disciplines exhibited divergent emotional profiles as seen in the figure above: game developers and visual artists reported high satisfaction, paradoxically paired with elevated worry. Designers showed an inverse pattern dominated by frustration with notably low satisfaction. Across all disciplines, trust remained consistently low, suggesting shared uncertainty about AI’s long-term implications for creative work. The tension between satisfaction and worry may highlight the position of creative professionals who simultaneously embrace AI tools while grappling with concerns about the future of human creativity. The wide dispersion across the emotional spectrum confirmed that different creative professions experienced AI integration through very different emotional lenses.
 
@@ -140,7 +140,7 @@ Our interviews with researchers in chemistry, physics, biology, and computationa
 
 Trust and reliability concerns were the primary barrier in 79% of interviews; the technical limitations of current AI systems appeared in 27% of interviews. One information security researcher noted: “If I have to double check and confirm every single detail the [AI] agent is giving me to make sure there are no mistakes, that kind of defeats the purpose of having the agent do this work in the first place.” A mathematician echoed this frustration: “After I have to spend the time verifying the AI output, it basically ends up being the same [amount of] time.” A chemical engineer noted concerns about sycophancy, explaining that: “AI tends to pander to [user] sensibilities and changes its answer depending on how they phrase a question. The inconsistency tends to make me skeptical of the AI response.”
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F158146f808a8480ab382bd84499572ba7dabb209-2880x1800.jpg&w=3840&q=75)
+![](https://assets.claude.com/af9c110b49733dea5418c202a66acf48ad79626a.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Most scientific fields reported high satisfaction, but with divergent frustration patterns: physicists and data scientists showed higher frustration, whereas chemical and mechanical engineers displayed minimal frustration. This potentially reflects differences in how computational versus experimental fields attempt to integrate AI into core research workflows: scientists whose work requires real-world interaction might not yet be trying to use AI for their core scientific experimentation. Trust remains relatively low across all fields, indicating widespread reliability concerns regardless of discipline. Unlike creative professionals who express high levels of concern about AI’s impact, scientists show relatively low worry levels. This coheres with their stated frustrations regarding AI’s ability to complete hypothesis generation and experimentation tasks.
 

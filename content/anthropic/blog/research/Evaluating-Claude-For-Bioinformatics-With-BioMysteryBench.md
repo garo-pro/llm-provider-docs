@@ -75,15 +75,15 @@ To minimize inherently unsolvable questions while still leaving room for those t
 
 For each question, we tasked up to five domain experts to answer the question from scratch. Once a question was answered correctly by at least one human, we considered it human-solvable. BioMysteryBench contained 76 such tasks.
 
-![Graph of accuracy on human-solvable problems](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F291077c3785708a54dbb4421db3751b1d1c4ba84-1920x1080.png&w=3840&q=75)
+![Graph of accuracy on human-solvable problems](https://assets.claude.com/291077c3785708a54dbb4421db3751b1d1c4ba84.png?w=3840&q=75&fm=webp&fit=max)
 
 Sometimes Claude mirrored human strategies. Perhaps humans have landed on a near-optimal approach, or because the method is well-represented in pretraining data.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8f163ac92606de805573294eaa417e3ec39e38e4-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/8f163ac92606de805573294eaa417e3ec39e38e4.png?w=3840&q=75&fm=webp&fit=max)
 
 Other times, Claude took a completely different route, illustrating there is no strictly correct way to solve these problems and that models may have genuine preferences that diverge from ours.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fec850217c59499f29b36e57853a4c93daf20d021-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/ec850217c59499f29b36e57853a4c93daf20d021.png?w=3840&q=75&fm=webp&fit=max)
 
 The examples above showcase a particularly interesting strategy: whereas our human experts used algorithms or databases to identify and annotate properties of a dataset, Claude intuitively recognizes certain patterns or sequences. Admittedly, such clever abstraction is not entirely unique to AI—the first eukaryotic promoter, for example, was discovered when a scientist noticed the sequence “TATA” appearing over and over in sequences upstream of genes. *Intuition* like this has been difficult to build into traditional biology machine learning models, but LLMs might be able to turn up patterns like this at unprecedented scale.
 
@@ -91,7 +91,7 @@ The examples above showcase a particularly interesting strategy: whereas our hum
 
 That left us with a set of questions that could not be solved by our panel of experts. This could mean (1) the question was malformed or broken, (2) the question is inherently unsolvable (e.g.,the signal isn’t in the data), or (3) the question is theoretically solvable but humans lack the knowledge required to solve it. After QC’ing with benchmarkers and additional experts, we removed 4 questions that were due to (1), leaving 23 human-difficult questions.
 
-![Graph showing performance on human-difficult problems](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0aed26a846ccd67d813a2c14f78069216671c8e3-1920x1080.png&w=3840&q=75)
+![Graph showing performance on human-difficult problems](https://assets.claude.com/0aed26a846ccd67d813a2c14f78069216671c8e3.png?w=3840&q=75&fm=webp&fit=max)
 
 Interestingly, Claude Sonnet 4.6 and more capable models were able to solve significant fractions of human-difficult problems, with Claude Mythos Preview topping out at a 30% solve rate. So what exactly is Claude doing that humans aren’t?
 
@@ -103,17 +103,17 @@ Analyzing transcripts from Opus 4.6, we identified two primary strategies used b
 
 In some of the human-difficult tasks, Opus’s vast underlying knowledge base helped it solve the problem. Tasks that would require a human expert to run a meta-analysis or stitch together databases, Opus solved directly by combining its internal knowledge of mechanisms and ontologies with live analysis. Often, this allowed Claude to solve human-unsolvable tasks! Here are a few examples:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb66685cd4ff4cf7f088609183fcb604f752a1241-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/657f29e8c1f7a65fd7d538ed2b78b36eff1aa6c9.png?w=3840&q=75&fm=webp&fit=max)
 
 Even though prior knowledge seemed overwhelmingly helpful to Claude, we saw one interesting case (in the human-solvable set) where this became its downfall:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd15f9f4a9508cce79a95c078c948edeb4f98855e-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/d15f9f4a9508cce79a95c078c948edeb4f98855e.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Knowing when you don’t know
 
 When Opus 4.6 was not confident about an answer, it often tried multiple different ways of solving the problem and chose the answer that multiple approaches converged on.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa891cd72960164b205dca647eb74030b0fbb698c-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/a72c6c288f8ba297110e9856f3899220458f34ae.png?w=3840&q=75&fm=webp&fit=max)
 
 Like many of the benchmarks we've discussed, BioMysteryBench has its own limitation: for tasks that neither humans nor models have solved, we can never be fully certain whether they're impossible or just extraordinarily difficult. The validation notebooks help ensure the signal is there and the data is well-formed, but they do not guarantee a model or human can find the answer from scratch. So we ask both our models and our human benchmarkers not to be too frustrated if, a year from now, no one has solved the human-difficult set. That uncertainty is also part of what makes the benchmark exciting: a more scientifically capable model might be the first to crack a problem that no human or model has solved before.
 
@@ -121,7 +121,7 @@ Like many of the benchmarks we've discussed, BioMysteryBench has its own limitat
 
 Claude showed solid improvement across generations and did well enough at both the human-solvable and human-difficult tasks that we thought it would be interesting to let Claude Mythos Preview conduct some of its own scientific analysis. Here are a couple of additional insights about its predecessor Claude’s performance on BioMysteryBench:
 
-![Chart showing per-problem solve consistency on BioMysteryBench.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3840cd87380589c9f00c31d5b9334639ebfb5303-1920x1080.png&w=3840&q=75)
+![Chart showing per-problem solve consistency on BioMysteryBench.](https://assets.claude.com/3840cd87380589c9f00c31d5b9334639ebfb5303.png?w=3840&q=75&fm=webp&fit=max)
 
 We thought Claude Mythos Preview’s analysis held up and dove deeper into reliability, which is an important metric to measure model performance on. However, it also felt a little…boring? It added some nuance to the performance analysis we showed above, but did not fundamentally tackle a new question. Despite this, it seems like the models are starting to develop the seeds of research taste (even if they have a ways to go before producing deep insight).
 

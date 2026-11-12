@@ -91,7 +91,7 @@ One of the key limitations of LLM-assisted formal verification is that the proof
 
 We built 36 small verification tasks [from real OSS-Fuzz code](https://www-cdn.anthropic.com/files/4zrzovbb/website/6867eadf760258fa8b42a504600cd3c036d16358.pdf). Opus 5.5 proves half of them with about 40% fewer tokens than Opus 5. We expect this trend to continue as models are trained on long verification tasks.
 
-![Line chart of the share of 36 verification tasks completed by token budget per agent for Opus 5.5, Fable 5.1, and Opus 5. Opus 5.5 finishes proofs with the fewest tokens.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F02207cbc6f46e272fe9a0fa7929cb8ec29578e74-1920x980.png&w=3840&q=75)
+![Line chart of the share of 36 verification tasks completed by token budget per agent for Opus 5.5, Fable 5.1, and Opus 5. Opus 5.5 finishes proofs with the fewest tokens.](https://assets.claude.com/02207cbc6f46e272fe9a0fa7929cb8ec29578e74.png?w=3840&q=75&fm=webp&fit=max)
 
 
 **Opus 5.5 finishes proofs faster than earlier models.**Share of 36 formal verification tasks proved by a single agent at a given token budget. Each task received three independent single-agent attempts at a 5M-token budget, and counts as proven when the first attempt finishes.
@@ -99,13 +99,13 @@ We built 36 small verification tasks [from real OSS-Fuzz code](https://www-cdn.a
 
 When agents work separately, they often end up duplicating a lot of effort. Proofs, like software, are recursively built from smaller proofs—and the smaller the proofs are, the more reusable they tend to be. To measure the impact of this, we let agents copy each other’s proofs as they worked on proving their own targets. When given access to this shared workspace, agents needed 17% fewer tokens than when they worked alone, and some agents even succeeded after previously failing in a solo attempt.
 
-![Chart of 36 proofs in finishing order, with arcs joining proofs that share a file and bars showing the tokens spent on each proof compared with an agent working alone.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5078468fa7e09774b1ab6e86984ec5691d3d11fa-1080x712.gif&w=3840&q=75)
+![Chart of 36 proofs in finishing order, with arcs joining proofs that share a file and bars showing the tokens spent on each proof compared with an agent working alone.](https://assets.claude.com/5078468fa7e09774b1ab6e86984ec5691d3d11fa.gif)
 
 
 **The 36 proofs from one shared workspace, in the order they finished.**An arc joins any two proofs that share an unchanged file; bars show the tokens spent writing each proof, and black lines show the same task’s average cost for an agent working alone, which was higher in 30 of the 34 completed proofs (agents working alone were not able to complete two of the proofs).
 We observed the same phenomenon occurring at scale during our OSS-Fuzz proof effort. Most of a proof concerns code that every program contains (particularly initialization of the C runtime and AddressSanitizer), so very different programs can end up with significantly overlapping proofs. Agent teams took advantage of this by copying another team’s finished proof and then adapting it to their own program (Figure 6).
 
-![Block chart of the proofs for libcups, freerdp, and libzmq, showing how much of each part was identical, lightly edited, edited more or new.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8e295614d599d548fbd2ff97ed3cc3e62f501b2b-1920x1248.png&w=3840&q=75)
+![Block chart of the proofs for libcups, freerdp, and libzmq, showing how much of each part was identical, lightly edited, edited more or new.](https://assets.claude.com/8e295614d599d548fbd2ff97ed3cc3e62f501b2b.png?w=3840&q=75&fm=webp&fit=max)
 
 
 **Agents copied an existing proof and adapted it to each new program.**Each column represents one program’s complete proof by share of bytes. Blocks are the parts of the proof and each block shows how much was kept identical, lightly edited (same file, size within 2%), edited more, or newly written. The shared parts gained almost no new code.

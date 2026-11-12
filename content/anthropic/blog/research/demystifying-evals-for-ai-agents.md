@@ -17,7 +17,7 @@ An **evaluation** (“eval”) is a test for an AI system: give an AI an input, 
 
 **Single-turn evaluations** are straightforward: a prompt, a response, and grading logic. For earlier LLMs, single-turn, non-agentic evals were the main evaluation method. As AI capabilities have advanced, **multi-turn evaluations** have become increasingly common.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbd42e7b2f3e9bb5218142796d3ede4816588dec0-4584x2834.png&w=3840&q=75)
+![](https://assets.claude.com/bd42e7b2f3e9bb5218142796d3ede4816588dec0.png?w=3840&q=75&fm=webp&fit=max)
 
 **Agent evaluations** are even more complex. Agents use tools across many turns, modifying state in the environment and adapting as they go—which means mistakes can propagate and compound. Frontier models can also find creative solutions that surpass the limits of static evals. For instance, Opus 4.5 solved a [𝜏2-bench](https://github.com/sierra-research/tau2-bench) problem about booking a flight by [discovering](https://www.anthropic.com/news/claude-opus-4-5) a loophole in the policy. It “failed” the evaluation as written, but actually came up with a better solution for the user.
 
@@ -32,7 +32,7 @@ When building agent evaluations, we use the following definitions:
 - An **agent harness** (or**scaffold** ) is the system that enables a model to act as an agent: it processes inputs, orchestrates tool calls, and returns results. When we evaluate “an agent,” we’re evaluating the harness*and* the model working together. For example,[Claude Code](https://claude.com/product/claude-code) is a flexible agent harness, and we used its core primitives through the[Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) to build our[long-running agent harness](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) .
 - An **evaluation suite** is a collection of tasks designed to measure specific capabilities or behaviors. Tasks in a suite typically share a broad goal. For instance, a customer support eval suite might test refunds, cancellations, and escalations.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0205b36f9639fc27f2f6566f73cb56b06f59d555-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/0205b36f9639fc27f2f6566f73cb56b06f59d555.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Why build evaluations?
 
@@ -122,7 +122,7 @@ Two metrics help capture this nuance:
 
 [**pass^k**](https://arxiv.org/abs/2406.12045) measures the probability that *all k* trials succeed. As *k* increases, pass^k falls since demanding consistency across more trials is a harder bar to clear. If your agent has a 75% per-trial success rate and you run 3 trials, the probability of passing all three is (0.75)³ ≈ 42%. This metric especially matters for customer-facing agents where users expect reliable behavior every time.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3ddac5be07a0773922ec9df06afec55922f8194a-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/3ddac5be07a0773922ec9df06afec55922f8194a.png?w=3840&q=75&fm=webp&fit=max)
 
 Both metrics are useful, and which to use depends on product requirements: pass@k for tools where one success matters, pass^k for agents where consistency is essential.
 
@@ -196,7 +196,7 @@ We recommend practicing eval-driven development: build evals to define planned c
 
 The people closest to product requirements and users are best positioned to define success. With current model capabilities, product managers, customer success managers, or salespeople can use Claude Code to contribute an eval task as a PR—let them! Or, even better, actively enable them.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0db40cc0e14402222a179fc6297b9c8818e97c8a-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/0db40cc0e14402222a179fc6297b9c8818e97c8a.png?w=3840&q=75&fm=webp&fit=max)
 
 ## How evals fit with other methods for a holistic understanding of agents
 
@@ -204,7 +204,7 @@ Automated evaluations can be run against an agent in thousands of tasks without 
 
 These methods map to different stages of agent development. Automated evals are especially useful pre-launch and in CI/CD, running on each agent change and model upgrade as the first line of defense against quality problems. Production monitoring kicks in post-launch to detect distribution drift and unanticipated real-world failures. A/B testing validates significant changes once you have sufficient traffic. User feedback and transcript review are ongoing practices to fill the gaps: triage feedback constantly, sample transcripts to read weekly, and dig deeper as needed. Reserve systematic human studies for calibrating LLM graders or evaluating subjective outputs where human consensus serves as the reference standard.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb77b8dbb7c2e57f063fbc8a087a853d5809b74b0-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/b77b8dbb7c2e57f063fbc8a087a853d5809b74b0.png?w=3840&q=75&fm=webp&fit=max)
 
 [Swiss Cheese Model](https://en.wikipedia.org/wiki/Swiss_cheese_model)from safety engineering, no single evaluation layer catches every issue. With multiple methods combined, failures that slip through one layer are caught by another.
 

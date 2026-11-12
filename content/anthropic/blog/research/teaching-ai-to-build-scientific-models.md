@@ -57,7 +57,7 @@ AI systems can now help with, or even take over, this step. Given some data and 
 
 But the fact that a model replicates data doesn’t mean that it provides insight. As with the restaurant bill, or the Hodgkin-Huxley parameters, many different combinations of parameters within a single model can provide the same output. The same is true one level up, for the model itself: many different *models*, with differently shaped equations, can explain the same data equally well. Run an agent twice on the same data, and it might return two different, and equally good, models. An agent that returns only one of them is hiding the rest, just as a single best-fit set of numbers does.
 
-![Map of possible models, showing a search that branches out from a starting point and collects models in four clusters, beside simulated voltage traces for each cluster with their relative shares: 41%, 39%, 11%, and 9%.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F95722cd11571a417e198588facbe403a0ca1ee5f-1919x845.jpg&w=3840&q=75)
+![Map of possible models, showing a search that branches out from a starting point and collects models in four clusters, beside simulated voltage traces for each cluster with their relative shares: 41%, 39%, 11%, and 9%.](https://assets.claude.com/4eba0913b2c139c5499fd84b0e346895ca8194d3.jpg?w=3840&q=75&fm=webp&fit=max)
 
 So it is better to treat building a model the same way we treat constraining one: you ask for the whole range of models that could plausibly explain the data.<sup>[2](https://www.anthropic.com#footnote-2)</sup> The AI system proposes many candidates. Each is then weighted by how much it is supported by the data, and the ones that need a lot of flexibility to fit are given less credit than those that fit naturally. The weak candidates drop out, and the AI system proposes new variations on the stronger ones.
 
@@ -85,7 +85,7 @@ Brains are an obvious use case. The Hodgkin-Huxley equations describe a single n
 
 But at these scales it will not be possible to find a single correct model. Indeed, in most cases there is no such thing. As the statistician [George Box wrote](https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780124381506500182?via%3Dihub), “All models are wrong but some are useful.” The data will always be compatible with many models. The question will no longer be which model is the right one, but which properties all data-compatible models share, and which predictions can be derived from them. The most useful experiments will be those that rule out the greatest number of remaining models, even if they are not always the ones a human scientist finds the most interesting.
 
-![Four panels showing the fruit fly brain with 1 neuron, 10 neurons, 255 neurons, and all 124,635 cells. One neuron is highlighted in orange in the first and third panels.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc736d611257af2ce00925a2d5767b71dcc70504d-1920x715.png&w=3840&q=75)
+![Four panels showing the fruit fly brain with 1 neuron, 10 neurons, 255 neurons, and all 124,635 cells. One neuron is highlighted in orange in the first and third panels.](https://assets.claude.com/528b14a090742dcb4670ae7b27ea6d0e9f2f2486.png?w=3840&q=75&fm=webp&fit=max)
 
 [male CNS connectome](https://www.janelia.org/project-team/flyem/male-cns-connectome)(HHMI Janelia, University of Cambridge, MRC LMB, and Google Research), CC BY 4.0.
 

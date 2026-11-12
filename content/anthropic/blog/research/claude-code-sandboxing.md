@@ -41,7 +41,7 @@ We’ve built this on top of OS level primitives such as [Linux bubblewrap](http
 
 Both components are configurable: you can easily choose to allow or disallow specific file paths or domains.
 
-![This image illustrations how sandboxing in Claude Code works.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0d1c612947c798aef48e6ab4beb7e8544da9d41a-4096x2305.png&w=3840&q=75)
+![This image illustrations how sandboxing in Claude Code works.](https://assets.claude.com/0d1c612947c798aef48e6ab4beb7e8544da9d41a.png?w=3840&q=75&fm=webp&fit=max)
 
 Sandboxing ensures that even a successful prompt injection is fully isolated, and cannot impact overall user security. This way, a compromised Claude Code can't steal your SSH keys, or phone home to an attacker's server.
 
@@ -55,7 +55,7 @@ Today, we're also releasing [Claude Code on the web](https://docs.claude.com/en/
 
 Claude Code on the web uses a custom proxy service that transparently handles all git interactions. Inside the sandbox, the git client authenticates to this service with a custom-built scoped credential. The proxy verifies this credential and the contents of the git interaction (e.g. ensuring it is only pushing to the configured branch), then attaches the right authentication token before sending the request to GitHub.
 
-![This illustration depicts how Claude Code on the web uses a custom proxy to handle all git interactions.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe8f66bcf73d9d23cae67e67776b2d31373c13050-4096x2305.png&w=3840&q=75)
+![This illustration depicts how Claude Code on the web uses a custom proxy to handle all git interactions.](https://assets.claude.com/e8f66bcf73d9d23cae67e67776b2d31373c13050.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Getting started
 

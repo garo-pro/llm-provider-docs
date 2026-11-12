@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/organization-skills-and-direct
 Markdown Content:
 # Skills for organizations, partners, the ecosystem
 
-In October, we introduced [skills](https://claude.com/resources/articles/skills)—a way to teach Claude repeatable workflows tailored to how you work. Today we're making skills easier to deploy, discover, and build: organization-wide management for admins; a directory of partner-built skills from Notion, Canva, Figma, Atlassian, and others; and an open standard so skills work across AI platforms.
+In October, we introduced [skills](https://claude.com/resources/articles/skills)—a way to teach Claude repeatable workflows tailored to how you work. Today we're making skills easier to deploy, discover, and [build](https://claude.com/resources/articles/how-to-create-skills-key-steps-limitations-and-examples): organization-wide management for admins; a directory of partner-built skills from Notion, Canva, Figma, Atlassian, and others; and an open standard so skills work across AI platforms.
 
 ## **Manage skills across your organization**
 

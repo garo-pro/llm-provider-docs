@@ -29,7 +29,7 @@ To get you started, we're open-sourcing 11 plugins built and used by our own tea
 - **Enterprise search** — Find information across your company's tools and docs
 - **Plugin Create/Customize** — Create and customize new plugins from scratch
 - **Sales** — Research prospects, prep deals, and follow your sales process
-- **Finance** — Analyze financials, build models, and track key metrics
+- [**Finance**](https://claude.com/resources/articles/cowork-plugins-finance) — Analyze financials, build models, and track key metrics
 - **Data** — Query, visualize, and interpret datasets
 - **Legal** — Review documents, flag risks, and track compliance
 - **Marketing** — Draft content, plan campaigns, and manage launches

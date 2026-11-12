@@ -7,7 +7,7 @@ Markdown Content:
 
 Sellers can now research companies, prep for calls, review pipeline, and draft CRM updates with our new Salesforce in Claude plugin.
 
-Today we are releasing Salesforce in Claude in beta, a plugin built with Salesforce that brings a seller’s accounts, opportunities, and pipeline into Claude under their existing Salesforce permissions. It includes 37 skills for the work account executives do daily, including account research, call prep, pipeline review, and CRM updates.
+Today we are releasing Salesforce in Claude in beta, a plugin built with Salesforce that brings a seller’s accounts, opportunities, and pipeline into Claude under their existing Salesforce permissions. It includes 37 [skills](https://claude.com/resources/articles/skills) for the work account executives do daily, including account research, call prep, pipeline review, and CRM updates.
 
 Sellers often spend hours of their day on meeting prep or follow-up work from customer meetings by manually assembling information scattered across Salesforce, email, call recordings, and Slack. With the new plugin, Claude does that administrative work and updates Salesforce once the seller approves.
 

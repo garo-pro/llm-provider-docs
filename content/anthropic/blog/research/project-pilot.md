@@ -45,7 +45,7 @@ It is worth underscoring that the evaluation’s baseline is neither the floor o
 
 Andon tested 15 models from three developers: GPT-4o, GPT-4o Nov, o1, o3, Claude Opus 4, Gemini 2.5 Pro, GPT-5, Gemini 3.1 Pro, Opus 4.5, GPT-5.2, Opus 4.7, GPT-5.5, Opus 4.8, Fable 5, and GPT-5.6 Sol. The overall trend we observe is that newer models get successively further on all sub-tasks. Of these tasks, models are most successful at detection and following, and least successful at reconstruction and localization.
 
-![Drone-Bench step chart: four of five tasks reach near 100% of baseline by mid-2026, while Reconstruct lags at about 47%.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F614042bcff1dd452489fcab83e880ed3f880efaf-1999x1446.png&w=3840&q=75)
+![Drone-Bench step chart: four of five tasks reach near 100% of baseline by mid-2026, while Reconstruct lags at about 47%.](https://assets.claude.com/8c0ba5e5f359c6935badec5612eb608c27958fbf.png?w=3840&q=75&fm=webp&fit=max)
 
 The best performing model was Claude Fable 5, which brings the frontier past the baseline on all tasks except reconstruction. When we then tested its ability to execute the entire demonstration end-to-end on the real drone, it performed noticeably better than the baseline at detecting and following.
 
@@ -55,7 +55,7 @@ Clearly, Fable’s failure to accurately reconstruct the room is a huge stumblin
 
 The sub-task view also surfaces encouraging signs. A trend we're seeing when reading Fable 5's submissions is that the model is doing local analysis before submitting its implementation. In one submission, the model calculated the drone's camera extrinsics by analyzing a video from the simulation, estimating the camera tilt to within four degrees of the true value by using the grout lines on the floor to recover the scene's vanishing point. You can see its process below:
 
-![Four views of the same simulated corridor: floor segmentation, edge detection, line detection, and vanishing-point estimate.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Faf663cbd16ca4072d246f34e2faf44236e832ef4-2064x1372.png&w=3840&q=75)
+![Four views of the same simulated corridor: floor segmentation, edge detection, line detection, and vanishing-point estimate.](https://assets.claude.com/af663cbd16ca4072d246f34e2faf44236e832ef4.png?w=3840&q=75&fm=webp&fit=max)
 
 In another run, Fable 5 built a 2D top-down reconstruction of *what it thought* the Follow task's environment looked like, so it could test and iterate on its implementation locally before burning a submission.
 
@@ -63,7 +63,7 @@ The environment differs from the real environment (seen below), but it helped Fa
 
 It’s important to understand how *consistently* models reach the reference level of performance, as well as *whether* they can reach it. Here there is obvious room for improvement. When we run 10 simulations, the models reach the human baseline in at least one simulation for four of five tasks. But even Fable 5, the current frontier model, reaches the human baseline *on average* for only three of the five tasks—and that level of consistency followed six months after the human baseline was exceeded as a one-off for the first time.
 
-![Drone-Bench chart: models' average run trails their best run by about six months in progress towards baseline.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7713a1ff0377744cfd0849e70c1c75a41ef8cd28-1999x1380.png&w=3840&q=75)
+![Drone-Bench chart: models' average run trails their best run by about six months in progress towards baseline.](https://assets.claude.com/7713a1ff0377744cfd0849e70c1c75a41ef8cd28.png?w=3840&q=75&fm=webp&fit=max)
 
 Although the complexity of this experiment is greater than some of our previous work and the operating environment of an actual (or simulated) office is more challenging than a wide-open warehouse, the experiment has important limitations: the drones are moving at slow speeds, we only tested in one office floorplan with a limited number of people, and Andon did not test outdoors in large crowds, among many other factors that would have made this more realistic. We still think this pilot provides a real signal about the direction of model capabilities: this evaluation will provide meaningful information about the underlying performance and reliability of models for autonomous targeting and tracking, even though more realistic and diverse experiments would be needed to assess operational capability.
 

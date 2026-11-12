@@ -25,7 +25,7 @@ Below, we describe two of Claude’s discoveries. The first is a new way to perf
 
 These results suggest that AI can now help redesign quantum circuits, a key step in making quantum algorithms faster and easier to run. Faster circuit design could bring the problems quantum computers are meant to solve—from designing new medicines and better batteries to finding cleaner ways of making fertilizer—within reach sooner.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd5d27ec3f141696918c6bed3f6b887f5b84e75f0-3840x2430.png&w=3840&q=75)
+![](https://assets.claude.com/d5d27ec3f141696918c6bed3f6b887f5b84e75f0.png?w=3840&q=75&fm=webp&fit=max)
 
 ### A new reversible algorithm
 
@@ -63,7 +63,7 @@ Claude then tried a more theoretical approach. Rather than guessing and testing 
 
 Decoding saves qubits, but it costs time. So, as a further refinement, Claude looked for situations in which it would be cheaper to store the branch information than to decode it. By varying the threshold at which the circuit stores rather than decodes the branch information, Claude produced a new family of designs between the two extremes. Compared with the smallest previous design, one circuit in the family uses 12% more qubits but 17x fewer gates. More generally, the new designs expand the Pareto frontier, offering combinations of qubit count and runtime that weren’t available before (Table 1).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7e8a0d4b9d7e826f25379d351ee6d2cab3900f84-3840x1052.png&w=3840&q=75)
+![](https://assets.claude.com/7e8a0d4b9d7e826f25379d351ee6d2cab3900f84.png?w=3840&q=75&fm=webp&fit=max)
 
 [Schrottenloher](https://arxiv.org/abs/2606.02235)(2026),
 
@@ -79,7 +79,7 @@ When a quantum computer finishes a computation, reading out its qubits produces 
 
 The researchers who introduced DQI demonstrated it on a problem called *optimal polynomial intersection* (OPI), a grid-based version of curve fitting (Figure 3). Imagine a grid in which each position *x* contains several acceptable values of *y*. The goal is to find a simple curve (a low-degree polynomial) that passes through an acceptable square for as many *x* positions as possible. DQI tackles this optimization problem using a specific type of decoder, called a Reed-Solomon decoder.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fffc6c06497f985e9162489dffa83c0bbaf50a909-3840x2000.png&w=3840&q=75)
+![](https://assets.claude.com/ffc6c06497f985e9162489dffa83c0bbaf50a909.png?w=3840&q=75&fm=webp&fit=max)
 
 Reed-Solomon decoding starts from the compact summary of errors mentioned above, which is known as a *syndrome*. The decoder’s job is to infer, from this summary, where in the data the errors occurred and what they were. The previous state-of-the-art quantum circuit processed these syndromes using the extended Euclidean algorithm, a sequence of divisions and swaps in which the number and order of steps depend on the particular input it’s given. Here, the constraints of quantum circuits reemerge: while an ordinary program can follow a different path for every input, a quantum circuit, working on many inputs at once, has to handle all of them with a single fixed sequence of gates. To manage this, the previous design had to stretch the computation over many more rounds of iteration than any single input would need, and had to run every operation in every round, even when doing so was unnecessary.
 
@@ -97,7 +97,7 @@ Setting aside enough memory for the worst possible case, in which an exceptional
 
 Together, these optimizations reduced the number of gates in the decoder by a factor of 12 relative to [Google’s previous construction](https://arxiv.org/abs/2510.10967). The improvement came from redesigning the computation at three levels: a different method (replacing the extended Euclidean algorithm with Berlekamp-Massey decoding), a different circuit architecture (reconstructing temporary values instead of storing them), and a different resource budget (measuring precisely how much memory and computation the circuit really needed). No single change would have been enough on its own, but together, they make the most expensive step of DQI just a little over an order of magnitude cheaper.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F340e106a0a928c4736aa5ccd865b4d6eeb3a5611-3840x1650.png&w=3840&q=75)
+![](https://assets.claude.com/340e106a0a928c4736aa5ccd865b4d6eeb3a5611.png?w=3840&q=75&fm=webp&fit=max)
 
 ### What we learned
 

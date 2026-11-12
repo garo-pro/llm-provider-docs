@@ -16,7 +16,7 @@ What’s new:
 - **Claude can work in your open tools.** You can ask Claude to make changes to a page, row, or file that you have open and approve its actions the same way you approve a connector’s actions. Changes appear in the tool as Claude makes them, so you can keep working right alongside it.
 - **The whole tool****opens next to your conversation.** You can work in the tool and hide the chat or go full screen when you need room. For tools like Confluence or Notion, that means you get the full editor, signed into your own account, rather than a limited preview.
 - **Open a connected tool directly, without having to write a Claude prompt.** When you want Claude’s help, you can ask from the same screen.
-- **Pin the tools you use most.** You can arrange them alongside your artifacts and access them with one click in your sidebar and the + menu.
+- **Pin the tools you use most.** You can arrange them alongside your[artifacts](https://claude.com/resources/articles/sheets-whiteboards-data) and access them with one click in your sidebar and the + menu.
 
 ## Work with Claude in the tools you use
 

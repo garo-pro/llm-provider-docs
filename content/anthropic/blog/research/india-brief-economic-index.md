@@ -13,7 +13,7 @@ The findings point to a user base that applies AI more heavily in professional c
 
 India ranks second among all countries by share of total Claude.ai use, trailing only the United States. However, on a per-capita basis, adjusting for the working-age population, India ranks 101st out of 116 countries with sufficient observation volume, below other countries in Asia such as Singapore or Malaysia. This gap suggests that India’s high Claude use overall reflects the sheer size of its population, not that the average person is using Claude heavily. This points to significant opportunities to increase adoption.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbfe2971ed309086a664171f6e5122f0b5c7b042f-2702x1584.png&w=3840&q=75)
+![](https://assets.claude.com/7d873c2ef8319e7b25444fa3f438d9e7097ed51c.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Concentrated use within India
 
@@ -21,7 +21,7 @@ India ranks second among all countries by share of total Claude.ai use, trailing
 
 Use is concentrated in a small number of highly economically active states. Maharashtra, Tamil Nadu, Karnataka, and Delhi together account for over half of India’s total Claude.ai use. This pattern closely mirrors India’s IT sector geography and urban economic output.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdf4ed71d5837fa58b8978750ded39b1256de29a3-1600x1617.png&w=3840&q=75)
+![](https://assets.claude.com/8f6c7c1b9f41d17b028f7cd68068d4820511c11f.png?w=3840&q=75&fm=webp&fit=max)
 
 The concentration in these four states—home to Bangalore, Hyderabad, Chennai, Mumbai, and Delhi NCR—suggests that current AI adoption is driven primarily by India’s established technology workforce rather than broad-based consumer uptake.
 
@@ -29,11 +29,11 @@ The concentration in these four states—home to Bangalore, Hyderabad, Chennai, 
 
 The occupational mix of Indian Claude.ai use, inferred by mapping tasks to related occupations, skews towards software development and engineering roles, consistent with the country’s large IT services sector.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F907195ecaeb4f4c4a2d4271c0cb2fa65b12d1139-1573x953.png&w=3840&q=75)
+![](https://assets.claude.com/b079b21a21686653da2dde3f8a6ee2fcced26b10.png?w=3840&q=75&fm=webp&fit=max)
 
 The most common O*NET tasks performed by Indian users confirm the software-heavy profile:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7e287a3d33231c26d4bfbb3ebfe085dd37e2f9cb-3840x3142.png&w=3840&q=75)
+![](https://assets.claude.com/620df3ed0d00dc9d8ce02e72c9db8092bbdea6cf.png?w=3840&q=75&fm=webp&fit=max)
 
 India ranks 1st globally in the share of AI use devoted to software-related tasks (45.2% of all O*NET-mapped tasks), ahead of Vietnam (42.1%) and Egypt (39.2%). The presence of educational tasks among the most common individual tasks (see Table 1) and when aggregating tasks to occupation groups (see Figure 3) indicates other common use cases in learning and instruction.
 
@@ -41,7 +41,7 @@ India ranks 1st globally in the share of AI use devoted to software-related task
 
 [Our latest Economic Index report](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report) introduces “economic primitives”—fundamental measurements of how humans and AI collaborate. Comparing India to the global average reveals several distinctive patterns.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F769426797ecc9b3fd234277eafc36aa248169cb6-3040x1920.png&w=3840&q=75)
+![](https://assets.claude.com/6370638bb32735653348b88f6a436e6530d863ff.png?w=3840&q=75&fm=webp&fit=max)
 
 **Greater productivity speedup.** Indian users take on average 14.8 minutes to complete tasks with AI that would take 3.8 hours without AI—a 15x speedup. Globally, users take on average 15.4 minutes to complete tasks that would take 3.1 hours without AI—a 12x speedup. This suggests that AI is delivering outsized productivity gains on the more complex tasks Indian users bring to it.
 

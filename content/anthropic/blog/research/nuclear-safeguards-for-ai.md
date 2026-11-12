@@ -25,7 +25,7 @@ Our Policy and [Safeguards](https://www.anthropic.com/news/building-safeguards-f
 
 To validate the system, we generated hundreds of synthetic test prompts—some concerning, some benign—ran them through the classifier, and shared the results with the NNSA. NNSA validated that the classifier scores aligned with the expected labels (i.e., harmful or benign). We then refined the approach based on their feedback, and repeated the cycle to improve precision. Figure 1 summarizes this process.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0b330254ca3f5da799ed983372981566088e45eb-7200x2015.png&w=3840&q=75)
+![](https://assets.claude.com/0b330254ca3f5da799ed983372981566088e45eb.png?w=3840&q=75&fm=webp&fit=max)
 
 The most challenging aspect of this endeavor wasn’t technical—it was bridging the gap between a national security agency and a private AI company. Both sides had to operate under information sharing constraints: the NNSA needed to keep certain information classified, and Anthropic needed to protect user data. How, then, could we validate that our classifier actually worked? Synthetic data generation was our solution: we used example prompts from NNSA to generate hundreds of test cases, creating a robust evaluation set without compromising either party’s equities.
 
@@ -35,7 +35,7 @@ If an AI system is too cautious, it might refuse legitimate nuclear engineering 
 
 Our classifier appears to strike the right balance. In preliminary testing with synthetic data, we achieved a 94.8% detection rate for nuclear weapons queries and zero false positives (overall, 96.2% of the classifier’s labels in this test were accurate as shown in Figure 2), suggesting this system would not flag legitimate educational, medical, or research discussions as concerning. This precision matters because nuclear conversations in AI systems are rare but high-stakes—they bear directly on national security.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb05bb139d1fbf2b1a3e969423228e44487e7e006-1999x1125.png&w=3840&q=75)
+![](https://assets.claude.com/b05bb139d1fbf2b1a3e969423228e44487e7e006.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Sharing with industry
 

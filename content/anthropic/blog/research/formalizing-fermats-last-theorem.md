@@ -53,7 +53,7 @@ The effort succeeded when we switched to using [Prove2Me](https://prove2me.verce
 2. **Speeding up Lean compilation and minimizing resource consumption** by separating theorem statements and proofs into different files, with the links between them maintained independently.
 3. **Enabling search and reuse** by maintaining a natural-language description of each theorem statement, resulting in a simpler proof path.
 
-![DAG showing Claude formalizing sub-theorems on the way to FLT](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fafd8e238255ec2654f2322f3d3630dcf1e8ea4ca-6800x3264.png&w=3840&q=75)
+![DAG showing Claude formalizing sub-theorems on the way to FLT](https://assets.claude.com/bd5445ef1c64fbdd1b07b15db94e89e501bc1075.png?w=3840&q=75&fm=webp&fit=max)
 
 With Prove2Me and a Claude Code-based multi-agent harness, a team of agents completed the proof in a little under two weeks, consuming about six billion output tokens from a general-purpose internal research model roughly comparable to Claude Fable 5.1. The finished proof was checked by Lean; it uses just Lean’s three standard axioms, and a [comparator](https://github.com/leanprover/comparator) confirmed that the theorem’s statement matches Mathlib’s own statement of FLT.
 

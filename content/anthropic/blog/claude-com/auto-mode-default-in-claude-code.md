@@ -127,7 +127,7 @@ For Pro, Max, Ultra, and Team users: if you haven’t set a default permission m
 
 For Enterprise users and users who access Claude Code via the Claude API, auto mode remains opt-in for now. We plan to make auto mode the default in the coming month, and we’ll notify Enterprise admins before we do.
 
-To switch modes, press Shift+Tab in the CLI or use the mode dropdown on the desktop app. Admins can pin an org-wide default with `defaultMode` in [managed settings](https://code.claude.com/docs/en/server-managed-settings), or turn auto mode off entirely with `disableAutoMode`.
+To switch modes, press Shift+Tab in the CLI or use the mode dropdown on the [desktop app](https://claude.com/resources/articles/claude-code-desktop-redesign). Admins can pin an org-wide default with `defaultMode` in [managed settings](https://code.claude.com/docs/en/server-managed-settings), or turn auto mode off entirely with `disableAutoMode`.
 
 Finally, while we believe auto mode reduces risk for most users, it relies on classification systems and therefore does not eliminate risk. For high-stakes changes to production infrastructure, we still recommend reviewing Claude's actions yourself. [See the auto mode docs](https://code.claude.com/docs/en/auto-mode-config) for full configuration instructions.
 

@@ -25,7 +25,7 @@ In our previous Economic Index reports, we separated out “automation,” where
 
 We also split automation and augmentation into several subtypes (as discussed in our [previous work](https://www.anthropic.com/news/the-anthropic-economic-index)). “Feedback Loop” patterns, where Claude completes tasks autonomously but with help of human validation (for example, where the user sends any errors back to Claude), were nearly twice as common on Claude Code (35.8% of interactions) as Claude.ai (21.3%). “Directive” conversations, where Claude completed a task with minimal user interaction, were also higher on Claude Code (43.8%, versus 27.5% on Claude.ai). All the patterns of augmentation—including “Learning,” where the user acquires knowledge from the AI model—were substantially lower on Claude Code than on Claude.ai.
 
-![Stacked bar chart showing the percentage of automation and augmentation on Claude.ai and Claude Code.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0bd4b66d347cd7c956f54fafa9793368e63b2ed0-4000x2250.jpg&w=3840&q=75)
+![Stacked bar chart showing the percentage of automation and augmentation on Claude.ai and Claude Code.](https://assets.claude.com/67c04586a004d137b1a5043c085075a6593e0913.jpg?w=3840&q=75&fm=webp&fit=max)
 
 These results illustrate the differences between specialist, coding-focused agents (in this case, Claude Code) and the more “standard” way that users interact with large language models (i.e., through a chatbot interface like Claude.ai). As more agentic products are released, we might see differences in the way AI is integrated into people’s jobs. At least in the case of coding, this might involve more automation of tasks.
 
@@ -35,11 +35,11 @@ This raises questions about the extent to which developers will still be involve
 
 Overall, we found that developers commonly use Claude for building user interfaces and interactive elements for websites and mobile applications. Although no single language dominated, the primarily web-focused development languages of JavaScript and TypeScript together accounted for 31% of all queries, and HTML<sup>[2](https://www.anthropic.com#footnote-2)</sup> and CSS (other languages for user-facing code) together added another 28%.
 
-![Line graph showing top coding use cases used in Claude.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F26b926ce7a1cff3c6d3f9fe63e6cf2417b945ce8-4001x2251.jpg&w=3840&q=75)
+![Line graph showing top coding use cases used in Claude.](https://assets.claude.com/ac20bf9fe1fb6640ded6a5b090f3c4e834dd79b5.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Back-end development languages (used for behind-the-scenes logic, databases, and infrastructure, as well as API and AI development) were also represented: notably, Python was at 14% of queries. However, Python serves dual purposes—both for back-end development and data analysis. Combined with SQL (another data-focused language, making up 6% of queries), these languages likely included many data science and analytics applications beyond traditional back-end development.
 
-![Line graph showing top programming languages used in Claude.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F79fcc40e7d9909258d202b382b7ab357e0893eb0-4001x2251.jpg&w=3840&q=75)
+![Line graph showing top programming languages used in Claude.](https://assets.claude.com/8388b548f7e75c87e34e2d45dd4534a97354fa7c.jpg?w=3840&q=75&fm=webp&fit=max)
 
 These patterns further extend to the types of common coding tasks involving Claude. Two of the top five tasks were focused on user-facing app development: “UI/UX Component Development” and “Web & Mobile App Development” each accounted for 12% and 8% of conversations, respectively. Such tasks increasingly lend themselves to a phenomenon known as “vibe coding”—where developers of varying levels of experience describe their desired outcomes in natural language and let AI take the wheel on implementation details.
 
@@ -51,7 +51,7 @@ Speculatively, these findings suggest that jobs that center on making simple app
 
 We also analyzed which groups of developers might be using Claude. We used our analysis system to identify the type of project (e.g. a personal project vs. a project done for a startup) that best described users’ coding-related interactions. Because we don’t know the real-world context in which Claude’s responses were being used, these analyses rely on uncertain inferences from incomplete data. We therefore treat these findings as more preliminary than the ones described above.
 
-![Graph showing types of projects in Claude.ai and Claude Code, with a list of different projects and the percentage of times they appeared in our dataset.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff6c0ff39789bdad7dcc1efe4a24e5b468931fec0-4000x2250.jpg&w=3840&q=75)
+![Graph showing types of projects in Claude.ai and Claude Code, with a list of different projects and the percentage of times they appeared in our dataset.](https://assets.claude.com/b3cb800a9db1e0d646a6b988bbd158faf425e4a6.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Startups appear to be the primary early adopters of Claude Code, and enterprise adoption lags behind. Startup work accounted for 32.9% of Claude Code conversations (nearly 20% higher than their Claude.ai usage), whereas enterprise work represented only 23.8% of Claude Code conversations (slightly below their 25.9% share on Claude.ai<sup>[3](https://www.anthropic.com#footnote-3)</sup>).
 
@@ -89,6 +89,6 @@ If you’re interested in working at Anthropic to research the effects of AI on 
 
 As a supplementary analysis, we also compared our results for software-related automation and augmentation patterns to patterns in interactions that did not involve software. We conducted this analysis exclusively in Claude.ai, because Claude Code specializes in software applications.
 
-![Table showing percentages of different patterns of AI use for software and non-software applications.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3539fa9144a552602c77fb78b7f8ed025dfaa7cd-4001x2251.jpg&w=3840&q=75)
+![Table showing percentages of different patterns of AI use for software and non-software applications.](https://assets.claude.com/9600efddc1e2419188e4b2f74787a3cd9c13b88b.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Compared to use cases that don’t involve software, software development is more automative. A significant increase in Feedback Loops (+18.3%) drives this and, notably, offsets a clear *decrease* in Directive behaviors (-11.2%). In other words, AI-assisted coding currently requires a lot of human reviewing and iteration relative to non-coding tasks, even when Claude does the bulk of the work.

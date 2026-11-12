@@ -52,7 +52,7 @@ One final major failure mode that we observed was Claude’s tendency to mark a 
 
 In the case of building a web app, Claude mostly did well at verifying features end-to-end once explicitly prompted to use browser automation tools and do all testing as a human user would.
 
-![Screenshots taken by Claude through the Puppeteer MCP server as it tested the claude.ai clone.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff94c2257964fb2d623f1e81f874977ebfc0986bc-1920x1080.gif&w=3840&q=75)
+![Screenshots taken by Claude through the Puppeteer MCP server as it tested the claude.ai clone.](https://assets.claude.com/f94c2257964fb2d623f1e81f874977ebfc0986bc.gif)
 
 Providing Claude with these kinds of testing tools dramatically improved performance, as the agent was able to identify and fix bugs that weren’t obvious from the code alone.
 

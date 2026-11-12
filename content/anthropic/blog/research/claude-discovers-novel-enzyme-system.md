@@ -47,7 +47,7 @@ Claude agents gathered over 200,000 RTs, picked out 3,500 new candidate systems,
 
 During the course of its research, Claude noticed an unusual RT family and decided to examine it in greater detail. While combing through the raw DNA sequence near the RT, the agent exclaimed: “[The DNA next to the RT] is spectacular: I can see by eye a tandem repeat array … that's a CRISPR-like … repeat array?!”
 
-![A graphic of Claude identifying patterns in DNA](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0f6064436a364b73ce0d2a80848ac56be7ae9ddd-1360x1160.gif&w=3840&q=75)
+![A graphic of Claude identifying patterns in DNA](https://assets.claude.com/0f6064436a364b73ce0d2a80848ac56be7ae9ddd.gif)
 
 
 The system it found, ART, is found mainly in bacteriophages and consists of three parts: the RT, a partner gene beside it, and a long array of evenly spaced DNA repeat sequences. The repeat layout resembles a CRISPR array, which holds a bank of different RNA sequences that make CRISPR-Cas systems programmable biotechnological tools. Our first experiments show that the ART array is also expressed as a set of distinct short RNAs, suggesting that something analogous may be at play for this system.

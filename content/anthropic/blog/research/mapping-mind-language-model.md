@@ -25,18 +25,18 @@ Whereas the features we found in the toy language model were rather superficial,
 
 We see features corresponding to a vast range of entities like cities (San Francisco), people (Rosalind Franklin), atomic elements (Lithium), scientific fields (immunology), and programming syntax (function calls). These features are multimodal and multilingual, responding to images of a given entity as well as its name or description in many languages.
 
-![Golden Gate Bridge Feature](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc896a301ad3d1ef4237cb05b68d78b467c444097-2200x1284.png&w=3840&q=75)
+![Golden Gate Bridge Feature](https://assets.claude.com/c896a301ad3d1ef4237cb05b68d78b467c444097.png?w=3840&q=75&fm=webp&fit=max)
 
 We also find more abstract features—responding to things like bugs in computer code, discussions of gender bias in professions, and conversations about keeping secrets.
 
-![Abstract Feature Examples](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2ff94c622f3d65bc3038cc154006d2be515fa2d7-2200x1660.png&w=3840&q=75)
+![Abstract Feature Examples](https://assets.claude.com/261ba73c767486d401d3602abda6f3daf89fc374.png?w=3840&q=75&fm=webp&fit=max)
 
 We were able to measure a kind of "distance" between features based on which neurons appeared in their activation patterns. This allowed us to look for features that are "close" to each other. Looking near a "Golden Gate Bridge" feature, we found features for Alcatraz Island, Ghirardelli Square, the Golden State Warriors, California Governor Gavin Newsom, the 1906 earthquake, and the San Francisco-set Alfred Hitchcock film *Vertigo*.
 
 This holds at a higher level of conceptual abstraction: looking near a feature related to the concept of "inner conflict", we find features related to relationship breakups, conflicting allegiances, logical inconsistencies, as well as the phrase "catch-22". This shows that the internal organization of concepts in the AI model corresponds, at least somewhat, to our human notions of similarity. This might be the origin of Claude's excellent ability to make analogies and metaphors.
 
 ![Nearest Neighbors to the 
-Inner Conflict Feature](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffe4d42c004bf43efda0f5921adfedd2f8f42e417-2200x2140.png&w=3840&q=75)
+Inner Conflict Feature](https://assets.claude.com/e4702fe4ebe62098fd08c57411b489a1f11e809a.png?w=3840&q=75&fm=webp&fit=max)
 
 Importantly, we can also *manipulate* these features, artificially amplifying or suppressing them to see how Claude's responses change.
 
@@ -56,7 +56,7 @@ Anthropic wants to make models safe in a broad sense, including everything from 
 
 We previously [studied sycophancy](https://arxiv.org/abs/2310.13548), the tendency of models to provide responses that match user beliefs or desires rather than truthful ones. In Sonnet, we found a feature associated with sycophantic praise, which activates on inputs containing compliments like, "Your wisdom is unquestionable". Artificially activating this feature causes Sonnet to respond to an overconfident user with just such flowery deception.
 
-![Activating Features Alters Model Behavior](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4effa33dab919f9bc1779848d5c8abd5405f2275-2200x1320.png&w=3840&q=75)
+![Activating Features Alters Model Behavior](https://assets.claude.com/f0aad7833a82f85e11bd1bc8c2a61261186d568a.png?w=3840&q=75&fm=webp&fit=max)
 
 The presence of this feature doesn't mean that Claude will be sycophantic, but merely that it *could* be. We have not added any capabilities, safe or unsafe, to the model through this work. We have, rather, identified the parts of the model involved in its existing capabilities to recognize and potentially produce different kinds of text. (While you might worry that this method could be used to make models *more* harmful, researchers have demonstrated [much simpler ways](https://arxiv.org/abs/2310.03693) that someone with access to model weights can remove safety safeguards.)
 

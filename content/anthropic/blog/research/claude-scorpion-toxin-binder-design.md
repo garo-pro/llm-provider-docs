@@ -33,7 +33,7 @@ Our approach was inspired by [an earlier effort](https://www.nature.com/articles
 
 For this campaign, we chose to target five scorpion-venom neurotoxins across four regions: Mexico (Cn2), Brazil (Ts1), North Africa (AaH I and AaH II), and the Middle East (LqhIII). We also chose to aim the designs at each toxin’s channel-binding site. Claude picked the toxin structures to use for design by searching the Protein Data Bank (PDB) as well as the AlphaFold database (AFDB). For each toxin, it selected five *hotspots*, specific amino acid positions on the toxin that its binder designs were meant to latch onto.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa75592f9509840d8fe7b9137d4b76197342f9395-3923x2349.png&w=3840&q=75)
+![](https://assets.claude.com/a75592f9509840d8fe7b9137d4b76197342f9395.png?w=3840&q=75&fm=webp&fit=max)
 
 We were primarily wondering if Claude could design binders against *individual* toxins. But we were also curious if Claude could design binders that targeted *multiple* toxins. There’s a practical reason for trying to design multitoxin binders, namely that it would reduce the number of molecules needed for a universal antivenom cocktail—which would be the most cost-effective and regionally neutral treatment. We selected these five scorpion toxins (Cn2, Ts1, AaH I, AaH II, and LqhIII) as a challenging test of multitoxin design: they share one fold for the overall shape of the protein, but any two are only 26% to 62% identical in their amino acid sequences.
 
@@ -53,7 +53,7 @@ Claude worked autonomously for 24 hours following our first prompt. Its results 
 
 Of the 211 designs our teams assessed, 17 met our criteria for a binder, each against a single toxin. None of the designs made against multiple toxins met our criteria for more than one. (Beyond being limited by its current capabilities, there could be many explanations for why Claude struggled with this, including our prompting, the limitations of available design tools, and even the biological feasibility of multitoxin design.) Seven designs were binders against Cn2, four against AaH II, four against AaH I, and two against LqhIII. Among the 60 single-toxin designs, 11 were binders (18%). This rate is consistent with typical protein design campaigns, including our previous work.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc0a8c7f4a34bb8fa4ca9fbed5697f275beef82a8-2880x1182.png&w=3840&q=75)
+![](https://assets.claude.com/c0a8c7f4a34bb8fa4ca9fbed5697f275beef82a8.png?w=3840&q=75&fm=webp&fit=max)
 
 #### Testing Claude's designs in the lab
 
@@ -73,7 +73,7 @@ One way to find out whether two molecules (e.g., an antibody and a miniprotein) 
 
 Our competition experiments suggest our Cn2 binders each attach on or near the same *epitope* (binding site) as an antibody called LR, which [has been reported to neutralize Cn2](https://pmc.ncbi.nlm.nih.gov/articles/PMC4722445/) in mice. LR’s binding site covers the part of Cn2 that attaches to the sodium channel and causes nerves to misfire. We have not tested our strongest binders, Cn2-B1 and Cn2-B2, in a cellular environment or in live animals, but the fact that they compete with LR suggests that they will likely neutralize Cn2.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3c9ec1588052bacd27a3e6b60031ff44ecab86a9-3871x1478.png&w=3840&q=75)
+![](https://assets.claude.com/3c9ec1588052bacd27a3e6b60031ff44ecab86a9.png?w=3840&q=75&fm=webp&fit=max)
 
 ### A binder is only the first step to developing an antivenom
 

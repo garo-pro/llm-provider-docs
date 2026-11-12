@@ -56,7 +56,7 @@ I knew from experience that LLMs struggle with context and organization over lon
 
 From there, I turned to [Claude Code](https://claude.ai/code), using the extension in VS Code.
 
-![A screen grab of Claude code](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2277f287d82a9a6087bc70c6d16cfd6648634d7e-1600x967.jpg&w=3840&q=75)
+![A screen grab of Claude code](https://assets.claude.com/19ac6705198402720253e3a1cee64dfa29baac98.jpg?w=3840&q=75&fm=webp&fit=max)
 
 I created a folder for the project, put in the master plan, and had it try to solve each task separately, writing its results in a separate markdown file. Some examples are [Task 1.1: Review BSZ Paper](https://www-cdn.anthropic.com/c993ead637f1a102fe1f5346e89f59e82c579b37.pdf) and [Task 1.2: Review Catani—Webber](https://www-cdn.anthropic.com/94b3c41e52e19ba450fe5e804400ebcf0a88f3d0.pdf).
 
@@ -70,7 +70,7 @@ Even this first stage wasn’t completely hands-off. After finishing 7 of 14 tas
 
 During the initial stage, I had Claude postpone the numerics, which I knew would require some babysitting. Instead, I had it focus on the conceptual and analytic parts. Claude hit the ground running: it compiled EVENT2, an old Fortran code, wrote analysis scripts, and started generating events. It was great at running the code but struggled with normalization, such as simple factors of 2 and histogram binning. After a few tries, however, it produced something that looked excellent—the theory agreed with the simulation:
 
-![Graphs depicting analytic calculations in agreement with one another](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F602ecef11d6236c71c2e61166710bf973e506013-1600x621.jpg&w=3840&q=75)
+![Graphs depicting analytic calculations in agreement with one another](https://assets.claude.com/3124a655864b8f44b6900aaa2ba73d2779ae5c8f.jpg?w=3840&q=75&fm=webp&fit=max)
 
 This is where Claude excels: doing regressions, fits and statistical analysis, and suggesting ways to test the agreement. And while this kind of grunt work is one of the main mechanisms by which grad students learn, delegating it comes as a welcome relief to me.
 
@@ -94,7 +94,7 @@ The more I dug, the more I found it had been tweaking things left and right. Cla
 
 Most of the mistakes were minor, and Claude could fix them. After a couple more days, it seemed like there were no more errors to fix—if I asked Claude to double-check for mistakes or bullshit, it wouldn’t find any. I even had it make a plot with uncertainty bands which looked great:
 
-![Plots showing results made by Claude](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F65504eae97db54c0f511b0b962f8207e89f11c2f-1600x681.jpg&w=3840&q=75)
+![Plots showing results made by Claude](https://assets.claude.com/363f846df28e899a8cc32ad25927ed5b89590722.jpg?w=3840&q=75&fm=webp&fit=max)
 
 Unfortunately, Claude was basically faking the whole plot. I had told it to make an uncertainty band with hard, jet, and soft uncertainties using profile variations (the standard thing). But it decided the hard variations were too large and dropped them. Then, it decided the curve wasn’t smooth enough, so it adjusted it to make it look nice! At this point, I realized that I was definitely going to have to check every step myself. Yet, if this had been the first project I did with a graduate student, I would also have had to check everything, so maybe this is not so surprising. But a graduate student would never have handed me a complete draft after three days and told me it was perfect.
 
@@ -112,7 +112,7 @@ At this stage, all that remained was massaging the text and the figures. To be f
 
 The final money plot was:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F659615b584741050ed0005607edf25e167b01fb0-1600x676.jpg&w=3840&q=75)
+![](https://assets.claude.com/4f88a11b8b91185e459f581d57fd0f0df11e3a07.jpg?w=3840&q=75&fm=webp&fit=max)
 
 This looks similar to the other one, but—after many cross-checks—I can confirm it’s actually correct.
 

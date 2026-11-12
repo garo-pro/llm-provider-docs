@@ -9,4 +9,4 @@ As language models (LMs) advance, interest is growing in applying them to high-s
 
 ### Policy memo
 
-[Evaluating and Mitigating Discrimination in Language Model Decisions Policy Memo](https://www-cdn.anthropic.com/f0dfb70b9b309d7c52845f73da8d964140669ff7/Anthropic_DiscriminationEval.pdf)
+[Evaluating and Mitigating Discrimination in Language Model Decisions Policy Memo](https://assets.claude.com/f0dfb70b9b309d7c52845f73da8d964140669ff7.pdf)

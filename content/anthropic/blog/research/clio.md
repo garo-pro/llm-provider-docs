@@ -18,7 +18,7 @@ There’s also a crucially important factor standing in the way of a clear under
 
 Traditional, top-down safety approaches (such as evaluations and red teaming) rely on knowing what to look for in advance. Clio takes a different approach, enabling bottom-up discovery of patterns by distilling conversations into abstracted, understandable topic clusters. It does so while preserving user privacy: data are automatically anonymized and aggregated, and only the higher-level clusters are visible to human analysts.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7d27ae68696871a7fc0e49d219ae3b7bc0fe98d0-2401x1520.png&w=3840&q=75)
+![](https://assets.claude.com/2fc6463b662fdd3b8321652163b3fca65cd55906.png?w=3840&q=75&fm=webp&fit=max)
 
 Here is a brief summary of Clio’s multi-stage process:
 
@@ -39,7 +39,7 @@ Using Clio, we've been able to glean high-level insights into how people use [cl
 
 We used Clio to analyze 1 million conversations with Claude on [claude.ai](https://claude.ai/) (both the Free and Pro tiers) to identify the top tasks people use Claude for. This revealed a particular emphasis on coding-related tasks: the "Web and mobile application development" category represented over 10% of all conversations. Software developers use Claude for tasks ranging from debugging code to explaining Git operations and concepts.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F04049f03394efe43a972f52066ecb801fc544a40-2400x1346.png&w=3840&q=75)
+![](https://assets.claude.com/feca13eb87ee5e831c0252786430231241bc4855.png?w=3840&q=75&fm=webp&fit=max)
 
 Educational uses formed another significant category, with more than 7% of conversations focusing on teaching and learning. A substantial percentage of conversations (nearly 6%) concerned business strategy and operations (including tasks like drafting professional communications and analyzing business data).
 
@@ -56,7 +56,7 @@ Clio also identified thousands of smaller conversation clusters, showing the ric
 
 Claude usage varies considerably across languages, reflecting varying cultural contexts and needs. We calculated a base rate of how often each language appeared in conversations overall, and from there we could identify topics where a given language appeared much more frequently than usual. Some examples for Spanish, Chinese, and Japanese are shown in the figure below.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff3323b774293075d2e23bb055d024398121e90e7-2400x1066.png&w=3840&q=75)
+![](https://assets.claude.com/e424636d7f3848da75e3b81681632db0e5b891ea.png?w=3840&q=75&fm=webp&fit=max)
 
 ## How we improve our safety systems with Clio
 
@@ -80,7 +80,7 @@ Clio has also helped us monitor for unknown risks in the run up to important pub
 
 In general, there was agreement between Clio and our pre-existing Trust and Safety classifiers on which conversation clusters were considered concerning. However, there was some disagreement for some clusters. One opportunity for improvement was false negatives (when a system didn’t flag a particular conversation as potentially harmful when in fact it was). For example, our systems sometimes failed to flag violating content when the user asked Claude to translate from one language to another. Clio, however, spotted these conversations.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd2c1de943736afb84f09bc35561ca8cce183e667-2400x1234.png&w=3840&q=75)
+![](https://assets.claude.com/3400d95cc134ab89a252c81b8bdc9d23bd051d32.png?w=3840&q=75&fm=webp&fit=max)
 
 We also used Clio to investigate false positives—another common challenge when developing Trust and Safety classifiers, where the classifier inadvertently tags benign content as harmful. For example, conversations from job seekers requesting advice on their own resumes were sometimes incorrectly flagged by our classifiers (due to the presence of personal information). Programming questions related to security, networking, or web scraping were occasionally misidentified as potential hacking attempts. Even conversations about combat statistics in the aforementioned *Dungeons & Dragons* conversations sometimes triggered our harm detection systems. We used Clio to highlight these erroneous decisions, helping our safety systems to trigger only for content that really does violate our policies, and otherwise keep out of our users’ way.
 

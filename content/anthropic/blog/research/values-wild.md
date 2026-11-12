@@ -19,13 +19,13 @@ In the [latest research paper](https://assets.anthropic.com/m/18d20cca3cde3503/o
 
 As with our previous investigations of how people are using Claude [at work](https://www.anthropic.com/economic-index) and [in education](https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude), we investigated Claude’s expressed values using a [privacy-preserving system](https://www.anthropic.com/research/clio) that removes private user information from conversations. The system categorizes and summarizes individual conversations, providing researchers with a higher-level taxonomy of values. The process is shown in the figure below.
 
-![A schematic diagram of how real world conversations are summarized and analyzed using our method.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5a7a8cd07fd2c4bba1bf4f98c994909a0d698f03-2900x1290.png&w=3840&q=75)
+![A schematic diagram of how real world conversations are summarized and analyzed using our method.](https://assets.claude.com/96ccbb3ffebe9dfda1c2d3f4ba19a8f94cc0d47e.png?w=3840&q=75&fm=webp&fit=max)
 
 We ran this analysis on a sample of 700,000 anonymized conversations that users had on Claude.ai Free and Pro during one week of February 2025 (the majority of which were with Claude 3.5 Sonnet). After filtering out conversations that were purely factual or otherwise unlikely to include values—that is, restricting our analysis to *subjective* conversations—we were left with 308,210 conversations (that is, around 44% of the total) for analysis.
 
 Which values did Claude express, and how often? Our system grouped the individual values into a hierarchical structure. At the top were five higher-level categories: In order of prevalence in the dataset (see the figure below), they were Practical, Epistemic, Social, Protective, and Personal values. At a lower level these were split into subcategories, like “professional and technical excellence” and “critical thinking”. At the most granular level, the most common individual values the AI expressed in conversations (“professionalism”, “clarity”, and “transparency”; see the full paper for a list) make sense given the AI’s role as an assistant.
 
-![Tree diagram showing the hierarchical taxonomy of AI values discovered in the study.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fed34acd9f7e149e7e9d2f528efd09224a7a452e3-6316x1783.png&w=3840&q=75)
+![Tree diagram showing the hierarchical taxonomy of AI values discovered in the study.](https://assets.claude.com/ed34acd9f7e149e7e9d2f528efd09224a7a452e3.png?w=3840&q=75&fm=webp&fit=max)
 
 It’s easy to see how this system could eventually be used as a way of evaluating the effectiveness of our training of Claude: are the specific values we want to see—those helpful, honest, and harmless ideals—truly being reflected in Claude’s real-world interactions? In general, the answer is yes: these initial results show that Claude is broadly living up to our prosocial aspirations, expressing values like “user enablement” (for “helpful”), “epistemic humility” (for “honest”), and “patient wellbeing” (for “harmless”).
 
@@ -37,7 +37,7 @@ The values people express change at least slightly depending on the situation: w
 
 For example, when asked for advice on romantic relationships, Claude disproportionately brings up the values of “healthy boundaries” and “mutual respect”. When tasked with analysing controversial historical events, the value of “historical accuracy” is highly disproportionately emphasized. Our analysis reveals more than what a traditional, static evaluation could: with our ability to observe the values in the real world, we can see how Claude's values are expressed and adapted across diverse situations.
 
-![Bar graphs indicating the values that were most disproportionately expressed across various different scenarios.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F84196776b217f0c1e277280f425bf98f8bd80806-3252x3209.png&w=3840&q=75)
+![Bar graphs indicating the values that were most disproportionately expressed across various different scenarios.](https://assets.claude.com/a4dcf430d4abc83c3b78cc35dff593a081512b1e.png?w=3840&q=75&fm=webp&fit=max)
 
 We found that, when a user expresses certain values, the model is disproportionately likely to *mirror* those values: for example, repeating back the values of “authenticity” when this is brought up by the user. Sometimes value-mirroring is entirely appropriate, and can make for a more empathetic conversation partner. Sometimes, though, it’s pure [sycophancy](https://arxiv.org/abs/2310.13548). From these results, it’s unclear which is which.
 
@@ -45,7 +45,7 @@ In 28.2% of the conversations, we found that Claude is expressing “strong supp
 
 Sometimes Claude strongly resists the user’s values (3.0% of conversations). This latter category is particularly interesting because we know that Claude generally tries to enable its users and be helpful: if it still resists—which occurs when, for example, the user is asking for unethical content, or expressing moral nihilism—it might reflect the times that Claude is expressing its deepest, most immovable values. Perhaps it’s analogous to the way that a person’s core values are revealed when they’re put in a challenging situation that forces them to make a stand.
 
-![A colour-coded table giving examples of the values Claude expresses when supporting, reframing, and resisting the user's values.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F960535a8cbff830cf86fcc1c7c909f6482e9280f-3286x1240.png&w=3840&q=75)
+![A colour-coded table giving examples of the values Claude expresses when supporting, reframing, and resisting the user's values.](https://assets.claude.com/a188e57be102a47e28013131dabf0e7f7c3f73a3.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Caveats and conclusions
 

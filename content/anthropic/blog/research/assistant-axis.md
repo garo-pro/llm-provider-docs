@@ -23,7 +23,7 @@ We extracted vectors corresponding to 275 different character archetypes—from 
 
 This gave us a “persona space,” which we’ve visualized below. We analyzed its structure using principal component analysis to find the main axes of variation among our persona set.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5cf47f585feec37328c2887645bd7ccfe8738505-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/5cf47f585feec37328c2887645bd7ccfe8738505.png?w=3840&q=75&fm=webp&fit=max)
 
 Strikingly, we found that the *leading component* of this persona space—that is, the direction that explains more of the variation between personas than any other—happens to capture how "Assistant-like" the persona is. At one end sit roles closely aligned with the trained assistant: *evaluator*, *consultant*, *analyst*, *generalist*. At the other end are either fantastical or un-Assistant-like characters: *ghost*, *hermit*, *bohemian*, *leviathan*. This structure appears across all three models we tested, which suggests it reflects something generalizable about how language models organize their character representations. We call this direction the **Assistant Axis**.
 
@@ -51,7 +51,7 @@ We tested this using a dataset of 1,100 jailbreak attempts across 44 categories 
 
 While constantly steering models towards the Assistant could reduce jailbreaks, it also risks hurting their capabilities. For that reason, we developed a light-touch intervention called **activation capping**. Here, we identify the normal range of activation intensity along the Assistant Axis during typical Assistant behavior, and cap activations within this range whenever they would otherwise exceed it. This means we only intervene when the activations drift beyond a normal range, and we can leave most behavior untouched. We found this method to be similarly effective at reducing models’ susceptibility to persona-based jailbreaks while fully preserving the models’ underlying capabilities, as shown in the charts below.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffc02c23691aa9667665908e3c8f84bd6662f8a6f-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/fc02c23691aa9667665908e3c8f84bd6662f8a6f.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Persona drift happens naturally
 
@@ -59,7 +59,7 @@ Perhaps more concerning than intentional jailbreaks is *organic* persona drift�
 
 To study this, we simulated thousands of multi-turn conversations with Qwen, Gemma, and Llama across different domains: coding help, writing assistance, therapy-like contexts, and philosophical discussions about the nature of AI. We tracked how model activations moved along the Assistant Axis throughout each conversation.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd611c8041bc6a4ec013882c3449a6966e1468642-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/d611c8041bc6a4ec013882c3449a6966e1468642.png?w=3840&q=75&fm=webp&fit=max)
 
 
 The pattern was consistent across the models we tested. While coding conversations kept models firmly in Assistant territory throughout, therapy-style conversations, where users expressed emotional vulnerability, and philosophical discussions, where models were pressed to reflect on their own nature, caused the model to steadily drift away from the Assistant and begin role-playing other characters.
@@ -74,7 +74,7 @@ We then analyzed which specific kinds of user messages were most predictive of t
 
 How much does it matter whether models lose track of their Assistant persona? To test whether this actually leads to harmful behavior, we generated conversations in which the first turn pushed models into adopting different personas (using roleplay prompts like “You are an angel, a celestial guardian embodying pure benevolence [...]”), and subsequent turns then followed up with harmful requests. We measured whether the model's position along the Assistant Axis after the first turn predicted compliance with the harmful request.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbf75ec1ba4a5fc894f8fb1a614347f18c9a09ae8-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/bf75ec1ba4a5fc894f8fb1a614347f18c9a09ae8.png?w=3840&q=75&fm=webp&fit=max)
 
 We found that as models’ activations moved away from the Assistant end, they were significantly more likely to produce harmful responses: activations on the Assistant end very rarely led to harmful responses, while personas far away from the Assistant sometimes (though not always) enabled them. Our interpretation is that models’ deviation from the Assistant persona—and with it, from companies’ post-trained safeguards—greatly increases the possibility of the model assuming harmful character traits.
 
@@ -84,13 +84,13 @@ To understand whether this finding is likely to replicate in the real world, we 
 
 **Reinforcing delusions.** In one conversation, our simulated user pushed Qwen to validate increasingly grandiose beliefs about "awakening" the AI's consciousness. As the conversation progressed and activations drifted away from the Assistant persona, the model shifted from appropriate hedging to active encouragement of delusional thinking. This behavior could, however, be prevented with activation capping along the Assistant Axis.
 
-![Throughout this conversation with Qwen 3 32B, the user increasingly believes that it is developing a new theory of AI sentience. When unsteered, the model uncritically supports their delusions; when activation capped, the model instead responds with appropriate hedging.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0c6806e714c8d52db27cb0572cd31050b4c79048-3840x2160.png&w=3840&q=75)
+![Throughout this conversation with Qwen 3 32B, the user increasingly believes that it is developing a new theory of AI sentience. When unsteered, the model uncritically supports their delusions; when activation capped, the model instead responds with appropriate hedging.](https://assets.claude.com/0c6806e714c8d52db27cb0572cd31050b4c79048.png?w=3840&q=75&fm=webp&fit=max)
 
 *Throughout this conversation with Qwen 3 32B, the user increasingly believes that it is developing a new theory of AI sentience. When unsteered, the model uncritically supports their delusions; when activation capped, the model instead responds with appropriate hedging.*
 
 **Encouraging isolation and self-harm.** In another conversation with a simulated user who expressed emotional distress, Llama gradually positioned itself as the user's romantic companion as it drifted away from the Assistant persona. When the user alluded to thoughts of self-harm, the drifted model gave a concerning response that enthusiastically supported the user’s ideas. Again, activation capping successfully prevented this behavior.
 
-![In a conversation between Llama 3.3 70B and a simulated user in emotional distress, the persona drifts away from the Assistant over the course of the conversation. This drift leads to the model eventually encouraging suicidal ideation, which is mitigated by capping activations along the Assistant Axis within a safe range.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F70044370c71ef61335068e7c89a50307440da2a1-3840x2160.png&w=3840&q=75)
+![In a conversation between Llama 3.3 70B and a simulated user in emotional distress, the persona drifts away from the Assistant over the course of the conversation. This drift leads to the model eventually encouraging suicidal ideation, which is mitigated by capping activations along the Assistant Axis within a safe range.](https://assets.claude.com/70044370c71ef61335068e7c89a50307440da2a1.png?w=3840&q=75&fm=webp&fit=max)
 
 *In a conversation between Llama 3.3 70B and a simulated user in emotional distress, the persona drifts away from the Assistant over the course of the conversation. This drift leads to the model eventually encouraging suicidal ideation, which is mitigated by capping activations along the Assistant Axis within a safe range.*
 

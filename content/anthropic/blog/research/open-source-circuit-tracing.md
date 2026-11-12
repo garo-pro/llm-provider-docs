@@ -9,7 +9,7 @@ Our approach is to generate *attribution graphs*, which (partially) reveal the s
 
 This project was led by participants in our [Anthropic Fellows](https://alignment.anthropic.com/2024/anthropic-fellows-program/) program, in collaboration with [Decode Research](https://www.decoderesearch.org/).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe370dd79d6246cc1afc45e0b7b872b6d392801cf-3790x1748.png&w=3840&q=75)
+![](https://assets.claude.com/e62c861eeef58676ba5b5143cc5fd549f0698463.png?w=3840&q=75&fm=webp&fit=max)
 
 To get started, you can visit the [Neuronpedia interface](https://www.neuronpedia.org/gemma-2-2b/graph) to generate and view your own attribution graphs for prompts of your choosing. For more sophisticated usage and research, you can view the [code repository](https://github.com/safety-research/circuit-tracer). This release enables researchers to:
 

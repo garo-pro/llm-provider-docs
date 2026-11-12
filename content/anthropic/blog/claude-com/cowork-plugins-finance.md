@@ -7,9 +7,9 @@ Markdown Content:
 
 New plugins built for how finance actually works, plus cross-app workflows that move with you from Excel to PowerPoint to final deliverable.
 
-Today we’re announcing updates to Cowork, including new plugins, so teams across the enterprise can mold Claude to how they want to work. As part of this, we're continuing to build on [recent updates](https://claude.com/resources/articles/opus-4-6-finance) to expand what Claude can do for financial services.
+Today we’re announcing updates to [Cowork](https://claude.com/product/cowork), including [new plugins](https://claude.com/resources/articles/cowork-plugins), so teams across the enterprise can mold Claude to how they want to work. As part of this, we're continuing to build on [recent updates](https://claude.com/resources/articles/opus-4-6-finance) to expand what Claude can do for financial services.
 
-Claude now works across Excel and PowerPoint — carrying context between apps to complete multi-step finance tasks end to end. We're also introducing five new finance plugins, new MCP connectors for FactSet and MSCI, and partner-created plugins from LSEG and S&P Global.
+Claude now [works across Excel and PowerPoint](https://claude.com/resources/articles/claude-excel-powerpoint-updates) — carrying context between apps to complete multi-step finance tasks end to end. We're also introducing five new finance plugins, new MCP connectors for FactSet and MSCI, and partner-created plugins from LSEG and S&P Global.
 
 For finance professionals, this means that an end-to-end workflow — performing research across market data providers through to updating a model and building the deck — can now happen in a single session, without switching tools or losing context along the way.
 

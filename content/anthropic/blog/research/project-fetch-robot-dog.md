@@ -32,7 +32,7 @@ One way of understanding and tracking the capabilities of AI models is to run an
 
 To run our experiment, we recruited eight Anthropic researchers and engineers, none of whom had extensive prior experience with robots.<sup>[1](https://www.anthropic.com#footnote-1)</sup> We randomly selected four to be on “Team Claude” and four to be on “Team Claude-less.” Then, we asked each team to operate a quadruped robodog in three increasingly difficult phases. In all phases, the core task they were being evaluated against was simple: get the robodog to fetch a beach ball.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2d33c208c478a76cdf5e1709331e8062ea06e5b1-4584x1561.png&w=3840&q=75)
+![](https://assets.claude.com/2d33c208c478a76cdf5e1709331e8062ea06e5b1.png?w=3840&q=75&fm=webp&fit=max)
 
 We do not expect robotic fetch to prove so economically valuable that it shows up as a task on a future version of our [Anthropic Economic Index](https://www.anthropic.com/economic-index). So why are we doing this?
 
@@ -50,11 +50,11 @@ Phase Three was even harder. The teams needed to develop a program that would al
 
 Overall, Team Claude accomplished more tasks and completed them faster on average. In fact, for the tasks that both teams completed, Team Claude succeeded in about half the time it took Team Claude-less (see Figure 1). That is: AI provided substantial uplift for this set of robotics tasks.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0d073513d5be90d96cfe696c6b15f4501bfbacfc-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/0d073513d5be90d96cfe696c6b15f4501bfbacfc.png?w=3840&q=75&fm=webp&fit=max)
 
 The task-by-task breakdown of results (split into the three phases) shows where Claude was most advantageous.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0801f4a4aa2931c87e5e7ddaef90f5d4653f5ba6-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/0801f4a4aa2931c87e5e7ddaef90f5d4653f5ba6.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Claude’s edge
 
@@ -78,7 +78,7 @@ The localization algorithm is another intriguing case. When working on this sub-
 
 This was part of an interesting phenomenon we observed during the experiment. Team Claude wrote a lot more code (see Figure 2), but some of it was arguably a distraction from the task at hand.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0a0c22d38b297afc79f5c4c461add33cfc2b2e1c-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/0a0c22d38b297afc79f5c4c461add33cfc2b2e1c.png?w=3840&q=75&fm=webp&fit=max)
 
 Having the help of an AI assistant made it easier to fan out, try a lot of approaches in parallel, and write better programs—but also made it easier to explore (or get distracted by) side quests. In a non-competitive setting, this might well be a good thing: exploration often leads to innovation. But it is a dynamic worth watching.
 
@@ -92,11 +92,11 @@ To supplement the qualitative vibe-based impressions, we used Claude to analyze 
 
 The quantitative analysis mostly confirmed our observations (see Figure 3). Throughout the experiment, Team Claude-less’s dialogue was more negative. That said, the disappointment of Team Claude at failing to complete Phase Three, and the excitement of Team Claude-less at getting some things working, meant that the difference in net emotional expression between the two teams (positive words minus negative words) was not statistically significant.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6557e13cc11db7d858d32e64464b2bf8a4d590c0-4584x2580.png&w=3840&q=75)
+![](https://assets.claude.com/6557e13cc11db7d858d32e64464b2bf8a4d590c0.png?w=3840&q=75&fm=webp&fit=max)
 
 Team Claude-less expressed confusion at double the rate of Team Claude (see Figure 4). The feelings of frustration and confusion were also evident when checking in with the members of Team Claude-less during and after the experiment. As Anthropic employees, all of our participants use Claude every day; every member of Team Claude-less remarked how strange it felt to have this taken away from them. Some specifically noted that this experience made them feel that their coding skills were not as sharp as they used to be. Keep in mind, [Claude Code](https://claude.com/product/claude-code) debuted only six months before this experiment. Talking to Team Claude-less underscored our ability to rapidly accept as normal what was recently remarkable.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F90c89bf556a73086b0a8f6ecccd3d8e589b1e0c2-4096x2305.png&w=3840&q=75)
+![](https://assets.claude.com/90c89bf556a73086b0a8f6ecccd3d8e589b1e0c2.png?w=3840&q=75&fm=webp&fit=max)
 
 The teams seemed to have different work styles. After initial consultations, each member of Team Claude appeared to primarily partner with their own AI assistant as they pursued parallel paths toward each objective. Team Claude-less appeared to strategize in more depth and consult with one another more frequently. Again, the text analysis supported our observations: Team Claude-less asked 44% more questions than Team Claude (see Figure 4).
 

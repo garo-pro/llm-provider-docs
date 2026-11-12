@@ -32,7 +32,7 @@ For now, sheets have simple spreadsheet functionality, but we are working on add
 - **Get faster loading with caching.** Previously, every dashboard would reload on every load. Now, dashboards support caching, and refresh cadences can be set on a per-dashboard basis.
 - **Track changes over time.** Claude Data now has tracked changes, so you can see who has made edits and roll back to a specific version if needed.
 
-Our partners for Claude Data include Amplitude, Mixpanel, Omni, PostHog, and Sigma.
+Our partners for Claude Data include Amplitude, Mixpanel, Omni, PostHog, Sigma, and ThoughtSpot.
 
 ## Work in your other tools, too
 

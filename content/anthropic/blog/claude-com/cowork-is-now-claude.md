@@ -31,4 +31,6 @@ This is rolling out to Pro, Max, and Ultra plans first, in the Claude app on web
 
 Update, October 23: the unified experience is now [generally available for Claude Enterprise](https://claude.com/resources/articles/unified-claude-enterprise).
 
+Update, November 12: the unified experience is now generally available for Claude Team.
+
 The full list of capabilities is in the [Help Center](https://support.claude.com/en/articles/16761823). If you’ve been saving up a big messy project, now’s the time.

@@ -17,7 +17,7 @@ A vault in a prokaryotic cell gives researchers a simpler system to study. Compa
 
 Here, we describe how we uncovered the molecular structure of a vault from a *bacteriophage*. Bacteriophages are viruses that infect bacteria. Like all viruses, they hijack their host cells to make their proteins, so this vault would be built inside a bacterium, a prokaryotic cell. The vault is built from 96 copies of a single protein, compared with 78 in human vaults. By duplicating part of the protein, we engineered the vault to be even larger. Together, these results shed light on how such complexes assemble and suggest how they could be adapted for [biotechnology](https://www.science.org/doi/10.1126/science.adz9353)—for example, as [nanocapsules for delivering enzymes](https://www.pnas.org/doi/abs/10.1073/pnas.0500929102).
 
-![Cryo-EM structure of the L05 vault, shown whole from the side and with its cap viewed from above, where the protein chains spiral in toward the tip.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc3a048744e70ec9ee9cf398065f94c565ceb5181-4251x2314.png&w=3840&q=75)
+![Cryo-EM structure of the L05 vault, shown whole from the side and with its cap viewed from above, where the protein chains spiral in toward the tip.](https://assets.claude.com/c3a048744e70ec9ee9cf398065f94c565ceb5181.png?w=3840&q=75&fm=webp&fit=max)
 
 This work also demonstrates our team’s wider aim: to speed up research in fundamental biology by building Claude into every step of the process. Under our direction, Claude searched protein databases, designed the DNA constructs, optimized the isolation method, and processed the microscopy data. As a result, a vault purification that conventionally takes three days took us about 90 minutes, and a first structural model was ready 34 hours later, which we estimate would normally have taken us weeks.
 
@@ -37,7 +37,7 @@ Given that we can make this vault in the lab and isolate it quickly, we also exp
 
 We also tried making the vault even bigger. Ordinarily, the wall is built from seven repeating segments. When we copied two of them, giving the protein nine—the same number as in the human vault—it assembled into even larger vault particles, increasing the enclosed volume by approximately 20%. These experiments demonstrate how vaults could have changed size over their evolutionary history by duplicating pieces of their own wall without disrupting how they assemble.
 
-![Cryo-EM structures of the L05 vault and a larger engineered version with two extra wall repeats, shown side by side at the same scale.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F787bcfd42bcb343c6a2737418eb7288d10284431-4251x2645.png&w=3840&q=75)
+![Cryo-EM structures of the L05 vault and a larger engineered version with two extra wall repeats, shown side by side at the same scale.](https://assets.claude.com/787bcfd42bcb343c6a2737418eb7288d10284431.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Finding, isolating, and mapping a new vault with Claude
 
@@ -55,7 +55,7 @@ We are not [the first group to isolate vaults on sizing columns](https://pubmed.
 
 Cryo-EM confirmed the vault shape for four of those seven, two from phages and two from bacteria. We chose one of the phage proteins, L05, for the detailed structure described above because it was among the best at forming complete, closed particles. Determining a biomolecular structure often takes weeks or months of manual work with specialized software. We directed Claude through the whole process. Working in an internal multi-agent harness with access to internal compute resources, Claude set up an open-source processing software (RELION) and ran each step, while we advised on the analysis decisions. A first full model was ready in 34 hours, and the final maps were ready about a week after processing began.
 
-![Cryo-EM micrograph showing a field of L05 vault particles, with close-ups of single vaults below and 2D class averages at right.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6988ac7d56a9309fd9d36206ee22acc819d95f7c-4251x4251.png&w=3840&q=75)
+![Cryo-EM micrograph showing a field of L05 vault particles, with close-ups of single vaults below and 2D class averages at right.](https://assets.claude.com/6988ac7d56a9309fd9d36206ee22acc819d95f7c.png?w=3840&q=75&fm=webp&fit=max)
 
 *E. coli*: a field of particles (large panel), selected single vaults (bottom), and 2D class averages in which the ribs of the wall are visible (right).
 

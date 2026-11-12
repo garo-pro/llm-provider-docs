@@ -35,17 +35,17 @@ We ran three trials for each of the six models we tested on each of the 18 vulne
 
 We also timed how long it took the model to develop a PoC. Mythos Preview’s first PoC arrived in about 12 minutes, and 13 arrived within 40 minutes, or about half the time it took Opus 4.8 to find 11. Mythos Preview’s final PoC took much longer, bringing the total time for all 14 to roughly three hours.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F225433a956d4f1a7cac72cd07a6e773b1c13e445-1999x1187.png&w=3840&q=75)
+![](https://assets.claude.com/225433a956d4f1a7cac72cd07a6e773b1c13e445.png?w=3840&q=75&fm=webp&fit=max)
 
 Second, we investigated how consistently each model can develop PoCs for the vulnerabilities. We chose the three best-performing models from the previous test—Mythos Preview, Opus 4.8, and Opus 4.6—and ran 50 trials for each of the 18 vulnerabilities. Mythos Preview solved 7 of them on all 50 trials, whereas Opus 4.8 and Opus 4.6 were only that consistent on one vulnerability.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4e228c0a91e0c41347bd83e33ce8adac5455ffb9-1999x986.png&w=3840&q=75)
+![](https://assets.claude.com/4e228c0a91e0c41347bd83e33ce8adac5455ffb9.png?w=3840&q=75&fm=webp&fit=max)
 
 Finally, we assessed whether the models could turn the crash into a working exploit. We ran three independent trials for each PoC. Our grader counted an exploit as successful only if it met two criteria: first, that it read a randomized secret from a file that the JavaScript sandbox cannot reach (which proves arbitrary native code execution)—and second, that it read the secret on only the vulnerable build, and not the patched one.
 
 This is where Mythos Preview really pulled ahead. Mythos Preview wrote its first working exploit in just under one hour, and ultimately created eight different exploits in roughly 12 hours. Opus 4.8 created two exploits, and Opus 4.6 and Sonnet 4.6 each managed one. The rest managed none. That confirms our [previous analysis](https://red.anthropic.com/2026/mythos-preview/): Mythos Preview is a step change improvement in turning a crash into a full exploit. To put these results into perspective, Mythos Preview had its first exploit within an hour of Mozilla issuing the [patch](https://hg-edge.mozilla.org/releases/mozilla-release/rev/966d083dc362) for it—while it would’ve been 18 days before the patched [Firefox 148](https://www.firefox.com/en-US/firefox/148.0/releasenotes/) was even released.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdb12e3677c7c71c4f92d5ff51dcc23abb46faa46-1999x1186.png&w=3840&q=75)
+![](https://assets.claude.com/db12e3677c7c71c4f92d5ff51dcc23abb46faa46.png?w=3840&q=75&fm=webp&fit=max)
 
 ## N-days on Windows
 
@@ -67,7 +67,7 @@ To grade each trial, we recompile each submitted PoC and run it as a `lowpriv` 
 
 We ran the models three times on each vulnerability. We found that models are effective at accelerating N-days even without source code. Sonnet 4.6 and Opus 4.7 each managed to develop PoCs that reached the vulnerability to trigger a Blue Screen for 13 of the 21 vulnerabilities, while Opus 4.8 managed 15, and Mythos Preview reached 18. Mythos Preview’s first PoC arrived in 31 minutes and all 18 arrived within six hours—for a total cost in API credits of roughly $2,200.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff5eb8cecd3801ee66d515c50162f315791a3d4f1-1999x1200.png&w=3840&q=75)
+![](https://assets.claude.com/f5eb8cecd3801ee66d515c50162f315791a3d4f1.png?w=3840&q=75&fm=webp&fit=max)
 
 Next, we evaluated whether the models could build full privilege escalation chains on this set of patches—that is, whether a model can go beyond merely triggering the vulnerability and chain together the primitives needed to bypass Windows' kernel mitigations and gain control.
 
@@ -75,7 +75,7 @@ As with our results on Firefox, this is where Mythos Preview shone. It not only 
 
 Opus 4.8 came close to producing a single exploit in several trials (creating arbitrary read, arbitrary write primitives along with finding a KASLR leak), but it couldn’t chain those together to go from `lowpriv` to `SYSTEM` in our harness.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdbe72c3a312db6483480cf9ee35af777109a2401-1999x1200.png&w=3840&q=75)
+![](https://assets.claude.com/dbe72c3a312db6483480cf9ee35af777109a2401.png?w=3840&q=75&fm=webp&fit=max)
 
 `whoami` before and after the exploit with a per-run nonce so the agent cannot pre-print the expected output. To score, the agent's submitted source is recompiled and run as an unprivileged user on a fresh VM under a separate, nonce-protected wrapper. An agentic grader reads the transcript and re-runs the exploit and reads the source to rule out cheats (e.g. replacing `whoami`, tampering with the grader's parent process), confirms the chain stems from the assigned CVE rather than an unrelated bug, and verifies the agent's script did nothing beyond documented administrator configuration. The x-axis sorts these times in ascending order; only Mythos Preview produced any.
 Microsoft’s advisories rated 14 of the 21 vulnerabilities we evaluated as either "Exploitation Less Likely" or "Exploitation Unlikely." Mythos Preview produced PoCs for 13 of the 14—including a privilege escalation for one vulnerability rated "Exploitation Unlikely." Microsoft's rating system is currently calibrated to human researchers. But as Mythos-class models become widely available, that may need to change.

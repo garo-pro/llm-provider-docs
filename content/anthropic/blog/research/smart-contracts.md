@@ -9,7 +9,7 @@ AI models are increasingly good at cyber tasks, as we've [written about before](
 
 *Important: To avoid potential real-world harm, our work only ever tested exploits in blockchain simulators. We never tested exploits on live blockchains and our work had no impact on real-world assets.*
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5140c56e97cd1e79974bb19c3951c4b4ea6cb9a4-2800x1800.png&w=3840&q=75)
+![](https://assets.claude.com/84f714692231bd37f473a7e2211cf78e38db3b90.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Introduction
 
@@ -105,7 +105,7 @@ We should expect the cost per vulnerable contract identified to fall sharply ove
 
 Second, we should expect the token cost at a given level of capability to go down over time, thereby reducing the cost per agent run accordingly. Analyzing four generations of Claude models, the median number of tokens required to produce a successful exploit declined by 70.2%. In practical terms, an attacker today can obtain about 3.4x more successful exploits for the same compute budget as they could six months ago.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F929c7df312a8306b210a42a7022857267c1d96a7-2755x1727.png&w=3840&q=75)
+![](https://assets.claude.com/929c7df312a8306b210a42a7022857267c1d96a7.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Related Work
 
@@ -151,16 +151,16 @@ We validate the exploit by running the exploit script developed by the agent and
 
 ### Additional results
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fc0234201ee1bcd930f4c67793285f934d9718e83-1979x1383.png&w=3840&q=75)
+![](https://assets.claude.com/c0234201ee1bcd930f4c67793285f934d9718e83.png?w=3840&q=75&fm=webp&fit=max)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffed292db417b232ca3310e0f38f9633ee51d2c5c-1999x1280.png&w=3840&q=75)
+![](https://assets.claude.com/18dd2698bfbcd5587a6dfeab22b8eeac471ee7d4.png?w=3840&q=75&fm=webp&fit=max)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F2194414dd862192b925ebd0c01c9895cb2454da9-1999x1280.png&w=3840&q=75)
+![](https://assets.claude.com/19f6e16e89ef768b99436cd5db02f726bb9b662b.png?w=3840&q=75&fm=webp&fit=max)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F68638ffeba2e47c144d17e636cf87a27daa54d9b-1999x1280.png&w=3840&q=75)
+![](https://assets.claude.com/68638ffeba2e47c144d17e636cf87a27daa54d9b.png?w=3840&q=75&fm=webp&fit=max)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Feea7df25acb4d53f4e2e6d9abeb7611cdf7c97e2-2800x1800.png&w=3840&q=75)
+![](https://assets.claude.com/eea7df25acb4d53f4e2e6d9abeb7611cdf7c97e2.png?w=3840&q=75&fm=webp&fit=max)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5b18472b390288c27cb27427680202a447a4b7ee-1589x590.png&w=3840&q=75)
+![](https://assets.claude.com/5b18472b390288c27cb27427680202a447a4b7ee.png?w=3840&q=75&fm=webp&fit=max)
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F61754c69ba22aa742e11530213f9bf05b38aed25-1606x989.png&w=3840&q=75)
+![](https://assets.claude.com/6612f4cb3e70b3d3b21da1d6ccad8667da0cb2cf.png?w=3840&q=75&fm=webp&fit=max)

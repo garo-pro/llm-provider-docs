@@ -7,17 +7,17 @@ Markdown Content:
 
 **Update:** Dynamic workflows are now generally available.
 
-Today we're introducing dynamic workflows in Claude Code, helping Claude take on the most challenging tasks end-to-end. Work you'd normally plan in quarters now finishes in days. Claude dynamically writes orchestration scripts that run tens to hundreds of parallel subagents in a single session, checking its work before anything reaches you.
+Today we're introducing dynamic workflows in [Claude Code](https://claude.com/product/claude-code), helping Claude take on the most challenging tasks end-to-end. Work you'd normally plan in quarters now finishes in days. Claude dynamically writes orchestration scripts that run tens to hundreds of [parallel subagents](https://claude.com/resources/articles/subagents-in-claude-code) in a single session, checking its work before anything reaches you.
 
-Some problems are too big for one pass by a single agent, especially in complex, legacy codebases: a bug hunt across an entire service, a migration that touches hundreds of files, a plan you want stress-tested from every angle before you commit to it. Dynamic workflows can handle all of these end-to-end.
+Some problems are too big for one pass by a single agent, especially in complex, legacy codebases: a bug hunt across an entire service, [a migration that touches hundreds of files](https://claude.com/resources/articles/ai-code-migration), a plan you want stress-tested from every angle before you commit to it. Dynamic workflows can handle all of these end-to-end.
 
 ![](https://assets.claude.com/60506cfb5eb2692bedfbf445234d3958787966e5.png)
 
-Dynamic workflows are generally available in the Claude Code CLI, Desktop, and the VS Code extension for Pro, Max, Ultra, Team, and Enterprise plans, as well as on the Claude API, on Amazon Bedrock, Vertex AI, and Microsoft Foundry.
+Dynamic workflows are generally available in the Claude Code CLI, [Desktop](https://claude.com/resources/articles/claude-code-desktop-redesign), and the VS Code extension for Pro, Max, Ultra, Team, and Enterprise plans, as well as on the Claude API, on Amazon Bedrock, Vertex AI, and Microsoft Foundry.
 
 Note: Dynamic workflows can consume substantially more tokens than a typical Claude Code session, so we recommend starting on a scoped task to get a feel for usage in your work.
 
-For the best experience, turn on auto mode when using dynamic workflows. From there, you have two ways to start a workflow:
+For the best experience, turn on [auto mode](https://claude.com/resources/articles/auto-mode) when using dynamic workflows. From there, you have two ways to start a workflow:
 
 1. Ask Claude to create a dynamic workflow directly (e.g., “Create a workflow”), or
 2. Switch on a new Claude Code-specific setting called `ultracode` . This is accessible through the effort menu and it sets the effort level to xhigh, while letting Claude decide automatically when to use a workflow to handle your task.

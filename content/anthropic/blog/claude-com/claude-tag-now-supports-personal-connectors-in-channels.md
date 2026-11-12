@@ -7,7 +7,7 @@ Markdown Content:
 
 Claude Tag can now use your connectors for requests you make in a channel. Nobody else can use them, and you're in control of how to present the output.
 
-[Claude Tag (beta)](https://claude.com/product/tag) lets you add Claude to a Slack channel, where it works alongside your team. Until now, Claude could only use the connectors an [admin attached to the channel](https://claude.com/resources/articles/agent-identity-access-model), and most organizations keep that list short on purpose: they want access to follow the person, not the channel.
+[Claude Tag (beta)](https://claude.com/product/tag) lets you add Claude to a Slack channel, where it [works alongside your team](https://claude.com/resources/articles/claude-tag-guide-for-startups). Until now, Claude could only use the connectors an [admin attached to the channel](https://claude.com/resources/articles/agent-identity-access-model), and most organizations keep that list short on purpose: they want access to follow the person, not the channel.
 
 Now Claude can use your own [connectors](https://claude.com/docs/claude-tag/concepts/settings-map) for a request you make in a channel. For example, your calendar, your drive, your assigned accounts on the CRM, or your staging deploys. If you have [connected it to your Claude account,](http://claude.ai/customize) you can access it in the channel.
 

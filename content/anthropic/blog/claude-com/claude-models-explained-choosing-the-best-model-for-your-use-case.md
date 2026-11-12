@@ -7,7 +7,7 @@ Markdown Content:
 
 ## Our advice: start smart
 
-One of the most frequent questions we hear is “what model should I choose for this workload?” As we have released more model classes and versions, the answer has become more nuanced.
+One of the most frequent questions we hear is “[what model should I choose for this workload?](https://claude.dev/blog/which-claude-model-should-you-build-with/)” As we have released more model classes and versions, the answer has become more nuanced.
 
 This article covers those details including a description of each model class, the top questions to ask when selecting a model, and other best practices.
 

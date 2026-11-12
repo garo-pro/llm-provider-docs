@@ -71,14 +71,14 @@ Even though frontier LLMs have an impressive range of capabilities relevant to e
 
 In our last Anthropic Economic Index Report we began tracking business adoption patterns by studying Claude usage among 1P API customers. The ten most common tasks grew from 28% of API records in August to 32% in November. Rising concentration among a small set of tasks suggests the highest-value applications continue to generate outsized economic value even as models have become more capable at a wider range of tasks. As with [Claude.ai](http://claude.ai) the most common task among API customers was modifying software to correct errors, which accounted for one in ten records.
 
-![Figure 1.1: Usage shares among top 10 tasks over time by platform, Claude.ai and 1P API.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3ac68d3e69e15d38876c4ef0012b1d8c5befa921-2969x2067.png&w=3840&q=75)
+![Figure 1.1: Usage shares among top 10 tasks over time by platform, Claude.ai and 1P API.](https://assets.claude.com/3ac68d3e69e15d38876c4ef0012b1d8c5befa921.png?w=3840&q=75&fm=webp&fit=max)
 
 **Usage shares among top 10 tasks over time by platform, Claude.ai and 1P API.**
 Share of conversations assigned to the ten most prevalent O*NET tasks, by platform and report version.
 
 Indeed, computer and mathematical tasks—like modifying software to correct errors—continue to dominate Claude usage overall, representing a third of conversations on Claude.ai and nearly half of 1P API traffic. Such dominance has subsided on Claude.ai: the share of conversations on Claude.ai assigned to such (mostly) coding-related tasks is down from a peak of 40% in March 2025 to 34% in November 2025. At the same time, the share of transcripts assigned to computer and mathematical tasks among 1P API traffic edged higher from 44% in August to 46% in November 2025 (Figure 1.2).
 
-![Figure 1.2: Claude.ai and API usage over time.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb67d78d056f86d9d4a46002d60fd5efe79e59372-4762x2439.png&w=3840&q=75)
+![Figure 1.2: Claude.ai and API usage over time.](https://assets.claude.com/6f75a31ec946340a66cbeed874b08b760ff2203c.png?w=3840&q=75&fm=webp&fit=max)
 
 **Each panel shows the share of sampled conversations on Claude.ai and 1P API records associated with tasks from each Standard Occupation Classification (SOC) major group.**
 
@@ -101,17 +101,17 @@ Three months later, the share of directive conversations had fallen 7pp to 32% i
 
 While we see some evidence of a shift toward soft skill usage on Claude.ai with design, management, and education now higher, the shift back toward augmented use was broad-based in November (Figure 1.4). The rise in augmented use was driven mainly by users iterating with Claude to complete tasks (“task iteration”) rather than asking Claude to explain concepts (“learning”). See Figure 1.5 for common words associated with the three most common interaction modes across O*NET tasks and bottom-up descriptions of requests made of Claude.
 
-![Figure 1.3: Collaboration mode share over time by platform, Claude.ai and 1P API.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F57bcb894a6e050647e09229565a4381c4778b981-2966x2979.png&w=3840&q=75)
+![Figure 1.3: Collaboration mode share over time by platform, Claude.ai and 1P API.](https://assets.claude.com/689ddcfb83f17a3eea706e4e9490eedd45ab32ed.png?w=3840&q=75&fm=webp&fit=max)
 
 **Collaboration mode share over time by platform, Claude.ai and 1P API.**
 Collaboration mode frequencies across Anthropic Economic Index Reports.
 
-![Figure 1.4: Directive, Task Iteration, and Learning collaboration shares by Standard Occupation Classification (SOC) major group.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6de662b51d696c7cd287a814cc11e502e0dc7c9b-5369x2807.png&w=3840&q=75)
+![Figure 1.4: Directive, Task Iteration, and Learning collaboration shares by Standard Occupation Classification (SOC) major group.](https://assets.claude.com/6de662b51d696c7cd287a814cc11e502e0dc7c9b.png?w=3840&q=75&fm=webp&fit=max)
 
 **Directive, Task Iteration, and Learning collaboration shares by Standard Occupation Classification (SOC) major group.**
 For each SOC major group we calculate the share of conversations on Claude.ai associated with Directive, Task Iteration, and Learning from among O*NET tasks that have at least 100 observations in our sample. We weight observations by number of records to construct a representative sample.
 
-![Figure 1.5: Prominent words from among O*NET task titles and bottom-up request groupings by key collaboration type.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb1c3ab216c4a1f1abafe5c6ceeaffd5bea2337d1-1750x976.png&w=3840&q=75)
+![Figure 1.5: Prominent words from among O*NET task titles and bottom-up request groupings by key collaboration type.](https://assets.claude.com/f79012085e73a02c78fc3fcc1760725f0bb940b4.png?w=3840&q=75&fm=webp&fit=max)
 
 **Prominent words from among O*NET task titles and bottom-up request groupings by key collaboration type.**
 Word clouds constructed from among the top quartile of O*NET tasks and bottom-up request groups, ordered by the share of records classified as Directive, Task Iteration, and Learning from among tasks/requests with at least 1,000 observations. Directive interactions emphasize production ('create,' 'develop,' 'draft'); Task Iteration centers on refinement and iteration ('edit,' 'rewrite,' 'revise'); Learning focuses on explanation and knowledge transfer ('help,' 'explain,' 'provide'). Patterns are consistent across both classification methods. This analysis is not based on the words used in the underlying transcripts but rather groupings constructed using privacy-preserving methods.
@@ -126,7 +126,7 @@ A key fact about Claude usage globally is that it is geographically concentrated
 
 By contrast, usage became more evenly distributed across US states from August to November 2025: the Gini coefficient, a standard measure of equality, fell from 0.37 to 0.32. While it is important to exercise caution in interpreting short-run changes, this is a relatively large change toward perfect equality in which the AUI is equal to 1 for all states with a Gini coefficient of 0. If the Gini coefficient for the US again falls by 0.05 every three months, then parity of usage would be reached in roughly two years.
 
-![Figure 1.6: AUI concentration around the world and within the US in this and the prior report.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa4f75f5d87d01446ca65a204f61a1e063e16e878-4170x1781.png&w=3840&q=75)
+![Figure 1.6: AUI concentration around the world and within the US in this and the prior report.](https://assets.claude.com/9d91174f4eed544fc34574023a5096be83125e7d.png?w=3840&q=75&fm=webp&fit=max)
 
 **AUI concentration around the world and within the US in this and the prior report.**
 Lorenz curves for the Anthropic AI Usage Index (AUI) around the world and within the US, August and November 2025. A curve that is closer to the 45-degree line indicates less concentration. The plot on the right shows, for example, that the top 20 percent of US states accounted for 40 percent of population-adjusted usage in the US.
@@ -135,7 +135,7 @@ What shapes patterns of usage within the US and around the world? In our previou
 
 Within the US, income is less clearly a predictor of usage. Instead, what appears to matter most is the composition of each state’s workforce and how well-matched the workforce is to Claude capabilities as reflected in task-level usage. States that have a higher share of workers in computer and mathematical occupations—like Washington D.C., Virginia, and Washington—tend to have higher usage per capita. Quantitatively, each 1% increase in the share of such tech workers in a state is associated with 0.36% higher usage per capita (Figure 1.7). This alone accounts for nearly two-thirds of the cross-state variation in AUI.
 
-![Figure 1.7: AUI and share of workers in Computer & Mathematical occupations in each US State.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffe706b1c52a1df7bd54cc6ebf3b3a698bf046e88-3568x2518.png&w=3840&q=75)
+![Figure 1.7: AUI and share of workers in Computer & Mathematical occupations in each US State.](https://assets.claude.com/960e5228ff845a6ed121867b412920cf0b10d0d0.png?w=3840&q=75&fm=webp&fit=max)
 
 **AUI and share of workers in Computer & Mathematical occupations in each US State.**
 This figure shows that the share of workers in Computer & Mathematical occupations across US states is highly correlated with the Anthropic AI Usage Index (AUI). This is consistent with the view that overall Claude usage patterns—and associated capabilities—are shaping regional adoption patterns within the US. This pattern holds more generally when formally calculating the KL divergence between each state’s workforce distribution and global Claude.ai usage shares by SOC major group.
@@ -154,7 +154,7 @@ This model of convergence motivates the following regression specification<sup>8
 
 Naively estimating this equation by ordinary least squares (OLS) yields an estimate of β̂ ≈ 0.77. Weighted least squares (WLS) where we weight by each state’s workforce yields an estimate of β̂ ≈ 0.76 (Figure 1.8). Both are statistically distinguishable from 1 at conventional levels. Taken at face value, these estimates imply that it would take little more than two years for each state's AUI to close most of the gap to 1.
 
-![Figure 1.8: Anthropic AI Usage Index (AUI) across the US, August 2025 (V3) and November 2025 (V4).](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6db6a9dbf7e110d5095fea4acc43d9b8ee24f795-3569x2973.png&w=3840&q=75)
+![Figure 1.8: Anthropic AI Usage Index (AUI) across the US, August 2025 (V3) and November 2025 (V4).](https://assets.claude.com/bbdc47bba081d03cad4322efa9dd0d320cac1aea.png?w=3840&q=75&fm=webp&fit=max)
 
 **Anthropic AI Usage Index (AUI) across the US, August 2025 (V3) and November 2025 (V4).**
 By comparing the AUI in November 2025 with its value in August 2025 we can estimate the implied rate of diffusion of Claude usage within the US. Under a model of proportional convergence toward a steady state in which AUI = 1 for all US states, the estimated elasticity can be used to calculate the pace of diffusion (see text for more details). Our range of estimates implies a pace of regional convergence of AUI in 2-5 years.
@@ -286,7 +286,7 @@ In this chapter, we analyze geographic variation in Claude usage patterns using 
 
 Our data, relying on a [privacy-preserving](https://www.anthropic.com/research/clio)<sup>1</sup> analysis of 1 million Claude.ai conversations<sup>2</sup>, reveals striking geographic differences in how Claude is adopted. Claude is predominantly used for work, across the globe and across the United States. However, there is geographic variation in use cases. At the global level, the Balkans and Brazil have the highest relative share of work use (see Figure 3.1), and Indonesia stands out with the highest share of coursework. At the US state level, New York stands out as the state using Claude relatively the most for work.
 
-![Figure 3.1: Share of work use of Claude.ai globally.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9a8dd21e96b56cd818e7574a3335f8bcdc20d03c-3931x1980.png&w=3840&q=75)
+![Figure 3.1: Share of work use of Claude.ai globally.](https://assets.claude.com/540e23e28fcef645e29223721423a8fa34638aab.png?w=3840&q=75&fm=webp&fit=max)
 
 **Share of work use of Claude.ai globally.**
 The share of conversations for a given country that are classified as work, as opposed to personal or coursework. The different tiers reflect a country’s position within the global distribution of the Anthropic AI Usage Index as defined in chapter 1

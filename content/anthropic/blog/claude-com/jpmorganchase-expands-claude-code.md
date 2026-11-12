@@ -7,7 +7,7 @@ Markdown Content:
 
 JPMorganChase is rolling out Claude across the firm, to more employees beyond engineers. In the Commercial and Investment Bank, work moves into production faster, and the firm redeploys that capacity against its business priorities.
 
-Teams are modernizing other legacy systems, and engineers are building their own agents, including pull request review and self-healing agents, and sharing what works.
+Teams are [modernizing other legacy systems](https://claude.com/resources/articles/how-to-prepare-for-ai-driven-code-modernization-projects), and engineers are building their own agents, including pull request review and self-healing agents, and sharing what works.
 
 Infrastructure and operations teams use [Claude Code (opens in new tab)](https://claude.com/product/claude-code) for monitoring, alerting and root cause analysis. The firm's security team uses our frontier models to find and fix vulnerabilities faster, work we first described in [Project Glasswing (opens in new tab)](https://www.anthropic.com/glasswing).
 

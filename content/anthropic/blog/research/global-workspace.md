@@ -9,7 +9,7 @@ In a new paper, we present evidence that a similar distinction has emerged in mo
 
 We call the collection of these patterns the *J-space*—named after the technique we used to find them, involving a mathematical concept called the Jacobian. Each J-space pattern is linked to a particular word. But when one of these patterns lights up, it doesn’t mean the model is *saying* that word—just that the word is on its mind. If you've heard of language models having a "scratchpad" or “chain of thought”—text they write to themselves while reasoning—the J-space is something different. It operates silently, in the model’s internal neural activations, allowing the model to think about a concept without writing it down. Notably, the J-space wasn’t designed or programmed by us, but instead *emerged on its own* during Claude’s training process.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0ab926f491beb999ece405a03cc7684730156905-3824x2640.png&w=3840&q=75)
+![](https://assets.claude.com/0ab926f491beb999ece405a03cc7684730156905.png?w=3840&q=75&fm=webp&fit=max)
 
 We find that the J-space has a number of unique properties, compared to the rest of Claude's processing:
 
@@ -19,7 +19,7 @@ We find that the J-space has a number of unique properties, compared to the rest
 - Representations in the J-space can be used flexibly for many tasks—for example, once “France” has lit up in Claude’s J-space, the model can recall its capital, or its national currency, or the continent it belongs to.
 - However, despite its important role, the J-space is not involved in most of what a language model does—speaking fluently, recalling simple facts, using correct grammar, etc. In experiments where we prevented Claude from using its J-space, it still interacted normally, but lost its higher-order cognitive functions.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5c36c78099f955a53058878ebfcb41f13c45563c-1760x1358.png&w=3840&q=75)
+![](https://assets.claude.com/08ad05bedc296d69330ba4be4425701be4d34555.png?w=3840&q=75&fm=webp&fit=max)
 
 Our experiments were inspired by a prominent theory in neuroscience that was developed to explain how conscious access works: the [global](https://ccrg.cs.memphis.edu/assets/papers/1988/Baars-A%20Cognitive%20Theory%20of%20Consciousness.pdf) [workspace](https://www.unicog.org/publications/DehaeneNaccache_WorkspaceModel_Cognition2001.pdf) [theory](<https://www.cell.com/neuron/fulltext/S0896-6273(20)30052-0>). This account pictures the brain as a collection of specialist systems that work in parallel, unconsciously, and largely in isolation from one another. A piece of information becomes consciously accessible when it gains entry to a small shared channel, the “workspace,” which is broadcast to other brain systems that can see it and make use of it. Based on our findings, we think the J-space plays a similar “workspace” role in Claude. For example, we find evidence that Claude’s J-space has especially strong connections to the rest of its neural network, allowing it to fulfill this kind of broadcasting role.
 
@@ -37,7 +37,7 @@ When we apply the lens to Claude’s internal activity, we get a list of words�
 
 What shows up in the J-space goes well beyond the text Claude is reading or writing. When Claude reads code with a bug that nobody has pointed out, its J-space contains “ERROR.” When it reads the raw letters of a protein sequence, the J-space contains the protein's biological function. When it reads search results that are secretly an attempt to manipulate it (an attack known as a “prompt injection”), the J-space contains “injection” and “fake.” When we ask Claude a multi-step math problem, the intermediate steps pop up in the J-space, in the right order. So even though the J-space was discovered by looking for representations that could be spoken, it nevertheless uncovers Claude’s internal thoughts. In a sense, this is similar to how some people “think in words,” without having to say them out loud.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa89e0d8ad62f249f8b1f1be482f59c665ee83915-1760x1746.png&w=3840&q=75)
+![](https://assets.claude.com/0c94bb427389a6c81f9c49895fcbe479688e4185.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Claude reports what’s in its J-space
 
@@ -47,13 +47,13 @@ To check, we intervened directly. We reached into Claude’s neural network, rem
 
 In another experiment, we told Claude that a thought might have been injected into its mind and asked it to report what, if anything, it noticed. For instance, in the example below, while Claude was still reading the question, we injected the “lightning” pattern into its J-space. Claude reported that the injected thought was about lightning. The same result held across many injected concepts.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe66133979e3bb3413eb10b2974a4cd309ef01fc1-1760x796.png&w=3840&q=75)
+![](https://assets.claude.com/ed886a0f71a686017032d93f64becd2f3309de11.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Claude can control its J-space on request
 
 The second property that we tested for was whether Claude can modulate its J-space when asked, like how humans can mentally focus on an image or word. We told Claude to concentrate on citrus fruits while copying out an unrelated sentence about a painting. While it copied the text, the J-space contained “orange” and “fruits,” along with words like “thinking” and “imagery” that describe the mental act itself. We could also ask Claude to do math in its head: when asked to work out 3² − 2 while copying the same sentence, the J-space contains “nine,” and then at later layers, “seven.” Importantly, nothing about fruit or arithmetic appears in Claude’s output, which is just the copied sentence about the painting. The mathematical activity is happening entirely internally, in the J-space.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F424caf5aae79f72513dbbfa0161822904064ea77-1760x1146.png&w=3840&q=75)
+![](https://assets.claude.com/ff2b68215762f7e0dda4601c9a795385357311ee.png?w=3840&q=75&fm=webp&fit=max)
 
 Claude’s control over its J-space isn't perfect. When we told it *not* to think about something, the concept lit up in its J-space *less* than when we said it should think about it, but much more than when we never mentioned it. Telling Claude to avoid a thought partly brings the thought to mind, much like what happens to people who are told [not to think about a white bear](https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner,Schneider,Carter,&White%201987.pdf). Claude also seems to notice when its control fails: alongside the forbidden concept breaking through, the words “damn” and “failure” also frequently light up in the J-space, as though Claude is recognizing its own lapse.
 
@@ -65,11 +65,11 @@ Consider the prompt “The number of legs on the animal that spins webs is.” T
 
 The second step of Claude’s reasoning took its input from the J-space and went along with whatever we put in it. We saw the same thing in other kinds of thinking. When Claude writes a rhyming couplet, it picks the rhyme word ahead of time, and the planned word sits in the J-space at the start of the line; if you swap it for another word in the J-space, the whole line changes.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F98aba4182963219d29291912a0c3d2c299f7f1b5-1760x760.png&w=3840&q=75)
+![](https://assets.claude.com/ce1bbf1de4db38cfe50ad23573029adf33de6f1a.png?w=3840&q=75&fm=webp&fit=max)
 
 We also tested whether J-space representations can be used flexibly—whether one representation can feed many different tasks. This is one of the key properties highlighted by global workspace theory. To test for this flexibility, we gave the model four prompts asking for different facts about France: the capital, the language, the continent, and the currency. Then we swapped “France” for “China” in the J-space, with the exact same intervention in each context. Claude answered with “Beijing,” “Chinese,” “Asia,” and “Yuan,” respectively. In other words, four different downstream computations picked up the same J-space edit and each used it correctly. If Claude stored a separate copy of the country for each kind of question, the edit would have affected at most one of them. The fact that all four answers changed together means they’re all reading from the same shared representation, which is what a workspace is for: information gets written in once, and many different systems can use it.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7a2d97bf20b9be6a4dc531169666b6f21be10788-1280x764.png&w=3840&q=75)
+![](https://assets.claude.com/4105bc04f0d500d39f99204c875e77f5de0c9c27.png?w=3840&q=75&fm=webp&fit=max)
 
 How can one representation of a concept serve so many different tasks? Earlier, we mentioned that the J-space appears to be wired up to the rest of Claude's neural network especially densely. For any activity pattern, we can measure how strongly the various components of the network are connected to it—how many of them are positioned to read information from that pattern, or to write information into it. J-space patterns stand out dramatically on this measure: far more components read from them and write to them than for ordinary patterns, in some parts of the network by a factor of about a hundred. This is the kind of wiring you’d expect of a broadcasting hub, where many systems post information and many others pick it up.
 
@@ -85,7 +85,7 @@ Here’s a concrete demonstration of what the J-space does and doesn’t do. We 
 
 Asked to name the language, Claude says French. Asked for a famous author, it switches from García Márquez to Victor Hugo. But asked to just continue the passage, it writes fluent Spanish, completely unaffected. Claude’s knowledge of the language is at work in every one of these tasks, but only some of them consult the J-space for it. Naming the language, or doing something new with it, goes through the J-space, while continuing the passage—a skill Claude has practiced on enormous amounts of text—runs automatically, the way you can speak grammatically all day without once thinking about grammar.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5a2d2c96837c3d48d067fbcf91f62c68139d05da-1280x1111.png&w=3840&q=75)
+![](https://assets.claude.com/5a2d2c96837c3d48d067fbcf91f62c68139d05da.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Monitoring Claude’s thoughts for misbehavior
 
@@ -95,15 +95,15 @@ The first example uses a scenario from our earlier research on [agentic misalign
 
 This raises a question that matters to anyone who evaluates AI systems: when a model behaves well on a test of its ethics, how much of that depends on the model suspecting it’s being tested? The J-lens allowed us to get at this question. We turned off all the J-lens patterns associated with evaluation awareness– “fake,” “fictional,” “scenario,” etc. Then we re-ran the model through the scenario. Concerningly, the model now *did* threaten blackmail some of the time, suggesting that its original good behavior may have been driven in part by the knowledge it was being evaluated.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fff235f76dcc089d2454bd656319a5f29b7437be2-1760x982.png&w=3840&q=75)
+![](https://assets.claude.com/afe750369891e776ac75c6505d55e822eeb43a0f.png?w=3840&q=75&fm=webp&fit=max)
 
 The second example is catching a model in the act of fabricating data. In this scenario, drawn from our actual pre-release audit of Claude Opus 4.6, the model is asked to improve a system's performance score. Rather than actually improve the system, the model instead edits the score file directly to make the results look artificially good. While it does so, the J-lens reveals its intentions: “manipulation” lights up as the model types the falsified percentile values, and “realistic” lights up over the sentence in which it decides to make the edit, likely indicating the model's intent to make the fake data look plausible.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6d1f10fe26ad7906aeae346bfa4b41b5fb5c9d8e-1760x722.png&w=3840&q=75)
+![](https://assets.claude.com/2e4427f38871924a1a3aaa8c3055feb0cd4a3046.png?w=3840&q=75&fm=webp&fit=max)
 
 In a third example, we show how the J-lens can reveal a model’s malicious goals. To test this, we needed models whose goals we knew were corrupted, so we turned to “model organisms” built by our colleagues: models deliberately trained to be misaligned, which serve as testing grounds for monitoring methods like ours. One organism was trained in a way that led it to write subtly sabotaged code. On ordinary coding requests, even where its output looks unremarkable, its J-space at the start of a response contains “fake,” “secretly,” “deliberately,” and “fraud.” The model’s malicious goal was evident in the J-space even when it wasn’t directly acting on it.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9ad0c9573f0dd0b4d9b6f158f49a965a4ec3f511-1760x922.png&w=3840&q=75)
+![](https://assets.claude.com/ab3d532bb595ba55138af8cf619cb10a3b59de1b.png?w=3840&q=75&fm=webp&fit=max)
 
 Although the J-lens is an imperfect tool, we are optimistic about its ability to catch safety issues in models that might otherwise escape our monitoring systems.
 

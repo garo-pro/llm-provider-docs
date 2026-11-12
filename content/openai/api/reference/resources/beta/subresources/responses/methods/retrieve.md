@@ -66,7 +66,7 @@ Retrieves a model response with the given ID.
 
 ### Returns
 
-- `BetaResponse object { id, access_programs, created_at, 36 more }`
+- `BetaResponse object { id, access_programs, created_at, 37 more }`
 
   - `id: string`
 
@@ -11546,6 +11546,34 @@ Retrieves a model response with the given ID.
 
       - `"disabled"`
 
+  - `input_transformations: optional array of object { id, action, reason, type }`
+
+    Reasoning inputs withheld from the model, in input order.
+
+    - `id: string`
+
+      The original reasoning item ID.
+
+    - `action: "removed" (default: "removed")`
+
+      - `"removed"`
+
+    - `reason: "organization_mismatch" or "end_user_mismatch" or "model_mismatch" or 2 more`
+
+      - `"organization_mismatch"`
+
+      - `"end_user_mismatch"`
+
+      - `"model_mismatch"`
+
+      - `"prefix_mismatch"`
+
+      - `"turn_boundary"`
+
+    - `type: "reasoning" (default: "reasoning")`
+
+      - `"reasoning"`
+
   - `max_output_tokens: optional integer or null`
 
     An upper bound for the number of tokens that can be generated for a response, including visible output tokens and [reasoning tokens](/api/docs/guides/reasoning).
@@ -12271,6 +12299,14 @@ curl https://api.openai.com/v1/responses/$RESPONSE_ID \
   "image": {
     "context_compression": "enabled"
   },
+  "input_transformations": [
+    {
+      "id": "id",
+      "action": "removed",
+      "reason": "organization_mismatch",
+      "type": "reasoning"
+    }
+  ],
   "moderation": {
     "input": {
       "categories": {

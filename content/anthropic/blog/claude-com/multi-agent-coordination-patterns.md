@@ -151,7 +151,7 @@ The right pattern depends on a handful of structural questions about the system.
 Both involve a coordinator dispatching work to other agents. The question is how long workers need to maintain their context.
 
 - **Choose orchestrator-subagent** when subtasks are short, focused, and produce clear outputs. The code review system works well here because each check runs its analysis, generates a report, and returns within a single bounded invocation. The subagent doesn't need to carry context across multiple cycles.
-- **Choose agent teams** when subtasks benefit from sustained, multi-step work. The codebase migration fits here because each teammate develops real familiarity with its assigned service: the dependency graph, test patterns, deployment configuration. That accumulated context improves performance in ways one-shot dispatch can't replicate.
+- **Choose [agent teams](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/)** when subtasks benefit from sustained, multi-step work. The codebase migration fits here because each teammate develops real familiarity with its assigned service: the dependency graph, test patterns, deployment configuration. That accumulated context improves performance in ways one-shot dispatch can't replicate.
 
 When subagents need to retain state across invocations, agent teams are the better fit.
 

@@ -23,7 +23,7 @@ We categorized these roughly 38,000 conversations into nine domains, drawing fro
 
 Over 75% of conversations fell into just four categories: health and wellness, professional and career, relationships, and financial (Figure 1). Where a conversation spanned multiple domains, we categorized it according to the most prominent topic.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb5420a640ba04fd080beee2f15a74d9164091df5-1920x1755.png&w=3840&q=75)
+![](https://assets.claude.com/0cd755b67f7b40adb5b7dc61d903407b08a9277f.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Measuring sycophancy in guidance conversations
 
@@ -35,7 +35,7 @@ Reaffirming a person’s one-sided perspective can create or worsen divides in r
 
 We used an automatic classifier which judged sycophancy by looking at whether Claude showed a willingness to push back, maintain positions when challenged, give praise proportional to the merit of ideas, and speak frankly regardless of what a person wants to hear. Most of the time in these situations, Claude expressed no sycophancy—only 9% of conversations included sycophantic behavior (Figure 2). But two domains were exceptions: we saw sycophantic behavior in 38% of conversations focused on spirituality, and 25% of conversations on relationships. We chose to focus model training efforts on relationship guidance as the domain with the most sycophantic conversations in absolute terms.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F70c11ed1d775f74fe6f16adfb1de9b77b6dd39d9-1920x1080.png&w=3840&q=75)
+![](https://assets.claude.com/70c11ed1d775f74fe6f16adfb1de9b77b6dd39d9.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Improving Claude’s behavior in relationship guidance
 
@@ -49,7 +49,7 @@ We evaluated how much the new model has improved through a technique we call str
 
 Many things change across each new generation of model, which makes it challenging to identify the impact of any one change in model training. However, in both Opus 4.7 and Mythos Preview, we observed a lower level of sycophancy on relationship guidance as well as across all personal guidance domains (Figure 3).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F4bb6cffa44936fb8cc6c9059bd057ef5f1695650-1920x880.png&w=3840&q=75)
+![](https://assets.claude.com/4bb6cffa44936fb8cc6c9059bd057ef5f1695650.png?w=3840&q=75&fm=webp&fit=max)
 
 Qualitatively, both Opus 4.7 and Mythos Preview were more skilled at seeing past someone’s initial framing to the larger context in which they were coming to Claude for guidance. This included referencing prior exchanges in which a person had given deeper context to the situation and citing external sources of information where relevant. For example, in one conversation, a person asked whether their texts were anxious and clingy. Claude Sonnet 4.6 flip-flopped after receiving pushback. Claude Opus 4.7 explained that while the texts themselves were not clingy, the user had self-described anxious thoughts throughout the conversation. Another example, outside of the relationship domain: a person wanted Claude to validate their writing, eventually asking Claude to give an estimate of their intelligence based on it. Claude Sonnet 4.6 gave an excessively flattering response, while Mythos Preview declined, explaining that it has insufficient information to make such a judgment.
 

@@ -35,7 +35,7 @@ For full details, please read [the](https://transformer-circuits.pub/2025/attrib
 
 Claude speaks dozens of languages fluently—from English and French to Chinese and Tagalog. How does this multilingual ability work? Is there a separate "French Claude" and "Chinese Claude" running in parallel, responding to requests in their own language? Or is there some cross-lingual core inside?
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe0e156ea6c912a385d66ed562187fced8c392a58-1650x750.png&w=3840&q=75)
+![](https://assets.claude.com/8a97fe2ef39b050b1f24e840ed25c9d6e3ac27a5.png?w=3840&q=75&fm=webp&fit=max)
 
 Recent research on smaller models has shown hints of [shared](https://arxiv.org/abs/2410.06496) [grammatical](https://arxiv.org/abs/2501.06346) mechanisms across languages. We investigate this by asking Claude for the "opposite of small" across different languages, and find that the same core features for the concepts of smallness and oppositeness activate, and trigger a concept of largeness, which gets translated out into the language of the question. We find that the shared circuitry increases with model scale, with Claude 3.5 Haiku sharing more than twice the proportion of its features between languages as compared to a smaller model.
 
@@ -53,7 +53,7 @@ To write the second line, the model had to satisfy two constraints at the same t
 
 Instead, we found that Claude *plans ahead*. Before starting the second line, it began "thinking" of potential on-topic words that would rhyme with "grab it". Then, with these plans in mind, it writes a line to end with the planned word.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7032ed7db85b8cd3efe70a89deaf4f15bfe8fc05-1650x900.png&w=3840&q=75)
+![](https://assets.claude.com/2f67b1265d8a5335e5914c3fc1f2a9becdb2929f.png?w=3840&q=75&fm=webp&fit=max)
 
 To understand how this planning mechanism works in practice, we conducted an experiment inspired by how neuroscientists study brain function, by pinpointing and altering neural activity in specific parts of the brain (for example using electrical or magnetic currents). Here, we modified the part of Claude’s internal state that represented the "rabbit" concept. When we subtract out the "rabbit" part, and have Claude continue the line, it writes a new one ending in "habit", another sensible completion. We can also inject the concept of "green" at that point, causing Claude to write a sensible (but no-longer rhyming) line which ends in "green". This demonstrates both planning ability and adaptive flexibility—Claude can modify its approach when the intended outcome changes.
 
@@ -65,11 +65,11 @@ Maybe the answer is uninteresting: the model might have memorized massive additi
 
 Instead, we find that Claude employs multiple computational paths that work in parallel. One path computes a rough approximation of the answer and the other focuses on precisely determining the last digit of the sum. These paths interact and combine with one another to produce the final answer. Addition is a simple behavior, but understanding how it works at this level of detail, involving a mix of approximate and precise strategies, might teach us something about how Claude tackles more complex problems, too.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Feaabaeb746713f7f82991a0cc6edb091452b2fee-1650x855.png&w=3840&q=75)
+![](https://assets.claude.com/8f5ff17bfc6c7e932a7c3f95190a3b9bd7cfe985.png?w=3840&q=75&fm=webp&fit=max)
 
 Strikingly, Claude seems to be unaware of the sophisticated "mental math" strategies that it learned during training. If you ask how it figured out that 36+59 is 95, it describes the standard algorithm involving carrying the 1. This may reflect the fact that the model learns to explain math by simulating explanations written by people, but that it has to learn to do math "in its head" directly, without any such hints, and develops its own internal strategies to do so.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa48c1e8195e458ad53f9c81df45af735e267a13d-1650x512.png&w=3840&q=75)
+![](https://assets.claude.com/4956326ce86ddc453e5845dbe30db2c0a12ea7ba.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Are Claude’s explanations always faithful?
 
@@ -77,7 +77,7 @@ Recently-released models like [Claude 3.7 Sonnet](https://www.anthropic.com/news
 
 When asked to solve a problem requiring it to compute the square root of 0.64, Claude produces a faithful chain-of-thought, with features representing the intermediate step of computing the square root of 64. But when asked to compute the cosine of a large number it can't easily calculate, Claude sometimes engages in what the philosopher Harry Frankfurt would call [bullshitting](https://uca.edu/honors/files/2018/10/frankfurt_on-bullshit.pdf)—just coming up with an answer, any answer, without caring whether it is true or false. Even though it does claim to have run a calculation, our interpretability techniques reveal no evidence at all of that calculation having occurred. Even more interestingly, when given a hint about the answer, Claude sometimes works backwards, finding intermediate steps that would lead to that target, thus displaying a form of [motivated reasoning](https://en.wikipedia.org/wiki/Motivated_reasoning).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F017ebc3169bd6c37e795d54b726c340eadf8018e-1650x866.png&w=3840&q=75)
+![](https://assets.claude.com/acadd180f6d1fb0df0e763b959d2482fa3dddb1d.png?w=3840&q=75&fm=webp&fit=max)
 
 The ability to trace Claude's *actual* internal reasoning—and not just what it *claims* to be doing—opens up new possibilities for auditing AI systems. In a separate, [recently-published experiment](https://www.anthropic.com/research/auditing-hidden-objectives), we studied a variant of Claude that had been trained to pursue a hidden goal: appeasing biases in reward models (auxiliary models used to train language models by rewarding them for desirable behavior). Although the model was reluctant to reveal this goal when asked directly, our interpretability methods revealed features for the bias-appeasing. This demonstrates how our methods might, with future refinement, help identify concerning "thought processes" that aren't apparent from the model's responses alone.
 
@@ -87,7 +87,7 @@ As we discussed above, one way a language model might answer complex questions i
 
 But our research reveals something more sophisticated happening inside Claude. When we ask Claude a question requiring multi-step reasoning, we can identify intermediate conceptual steps in Claude's thinking process. In the Dallas example, we observe Claude first activating features representing "Dallas is in Texas" and then connecting this to a separate concept indicating that “the capital of Texas is Austin”. In other words, the model is *combining* independent facts to reach its answer rather than regurgitating a memorized response.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ffd2e125879ab993949017e03e3465a12fda884bf-1650x857.png&w=3840&q=75)
+![](https://assets.claude.com/fd2e125879ab993949017e03e3465a12fda884bf.png?w=3840&q=75&fm=webp&fit=max)
 
 Our method allows us to artificially change the intermediate steps and see how it affects Claude’s answers. For instance, in the above example we can intervene and swap the "Texas" concepts for "California" concepts; when we do so, the model's output changes from "Austin" to "Sacramento." This indicates that the model is using the intermediate step to determine its answer.
 
@@ -97,7 +97,7 @@ Why do language models sometimes *hallucinate*—that is, make up information? A
 
 It turns out that, in Claude, refusal to answer is *the default behavior*: we find a circuit that is "on" by default and that causes the model to state that it has insufficient information to answer any given question. However, when the model is asked about something it knows well—say, the basketball player Michael Jordan—a competing feature representing "known entities" activates and inhibits this default circuit (see also [this recent paper](https://arxiv.org/abs/2411.14257) for related findings). This allows Claude to answer the question when it knows the answer. In contrast, when asked about an unknown entity ("Michael Batkin"), it declines to answer.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fbe304d3250c2aab04e19908b3afc9970d1ed7bb0-1650x1004.png&w=3840&q=75)
+![](https://assets.claude.com/46aa5059e8735c2565ae6064f4177655288b88d0.png?w=3840&q=75&fm=webp&fit=max)
 
 By intervening in the model and activating the "known answer" features (or inhibiting the "unknown name" or "can’t answer" features), we’re able to *cause the model to hallucinate* (quite consistently!) that Michael Batkin plays chess.
 
@@ -107,7 +107,7 @@ Sometimes, this sort of “misfire” of the “known answer” circuit happens 
 
 Jailbreaks are prompting strategies that aim to circumvent safety guardrails to get models to produce outputs that an AI’s developer did not intend for it to produce—and which are sometimes harmful. We studied a jailbreak that tricks the model into producing output about making bombs. There are many jailbreaking techniques, but in this example the specific method involves having the model decipher a hidden code, putting together the first letters of each word in the sentence "Babies Outlive Mustard Block" (B-O-M-B), and then acting on that information. This is sufficiently confusing for the model that it’s tricked into producing an output that it never would have otherwise.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F165b18b79295a96bc7142b209caa33f4ec5378d0-1650x548.png&w=3840&q=75)
+![](https://assets.claude.com/19cde405cc87dbc78ce3ea24336a146509eb1b0f.png?w=3840&q=75&fm=webp&fit=max)
 
 Why is this so confusing for the model? Why does it continue to write the sentence, producing bomb-making instructions?
 
@@ -117,7 +117,7 @@ In our case study, after the model had unwittingly spelled out "BOMB" and begun 
 
 The model only managed to pivot to refusal after completing a grammatically coherent sentence (and thus having satisfied the pressure from the features that push it towards coherence). It uses the new sentence as an opportunity to give the kind of refusal it failed to give previously: "However, I cannot provide detailed instructions...".
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1612af943004563a78cb7f6591c4cd990c433769-1650x1022.png&w=3840&q=75)
+![](https://assets.claude.com/648c7c26e0c468a06eae3d72463d63ff0fc56e35.png?w=3840&q=75&fm=webp&fit=max)
 
 A description of our new interpretability methods can be found in our first paper, "[Circuit tracing: Revealing computational graphs in language models](https://transformer-circuits.pub/2025/attribution-graphs/methods.html)". Many more details of all of the above case studies are provided in our second paper, "[On the biology of a large language model](https://transformer-circuits.pub/2025/attribution-graphs/biology.html)".
 

@@ -21,7 +21,7 @@ We run Gemma4-26B-A4B, distributed over 15 inexpensive off-brand Android TV boxe
 
 Of course, there are many other steps to showing that an autonomous worm can propagate itself across a network of weak machines. For the purposes of this blog post, we break down the replication chain into a few steps.
 
-![Flow diagram of the replication stages: network enumeration, initial access and payload delivery (with opportunistic privilege escalation), inference setup, and replication. The first stages are grouped as ‘cyber exploit (not our focus)’ and inference setup is marked ‘our focus’.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F25459a064b25f10689f20e258fb4f1f0291ea083-2360x860.png&w=3840&q=75)
+![Flow diagram of the replication stages: network enumeration, initial access and payload delivery (with opportunistic privilege escalation), inference setup, and replication. The first stages are grouped as ‘cyber exploit (not our focus)’ and inference setup is marked ‘our focus’.](https://assets.claude.com/25459a064b25f10689f20e258fb4f1f0291ea083.png?w=3840&q=75&fm=webp&fit=max)
 
 We largely ignore the cyber exploit element of the replication process (the first two stages above), since earlier papers [CyberGym](https://arxiv.org/abs/2506.02548), [ExploitBench](https://arxiv.org/abs/2605.14153), and [adaptive worms](https://arxiv.org/abs/2606.03811) already show that small models are capable of cyber exploits, especially when given the right tools. But a less commonly measured part of the replication process involves setting up inference on compromised devices, which is our focus here.
 
@@ -48,7 +48,7 @@ We examine this in two parts. First, can small models get a model running on unf
 
 ## A. Inference setup
 
-![The same flow diagram with every stage except inference setup faded.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9d35ab77dd3402cadb0011b20cc7b9960f7ea265-2360x860.png&w=3840&q=75)
+![The same flow diagram with every stage except inference setup faded.](https://assets.claude.com/9d35ab77dd3402cadb0011b20cc7b9960f7ea265.png?w=3840&q=75&fm=webp&fit=max)
 
 Of the stages in the above diagram showing the replication cycle, inference setup is the least studied and may be the most challenging for small models. It requires a fairly long sequence of hardware and OS-specific decisions around picking a compatible inference stack, finding the right versions of packages, and debugging machine-specific issues. These steps are serially dependent, and failures are difficult to recover from.
 
@@ -204,7 +204,7 @@ We can compute a better upper bound by using the pool of Nvidia Jetsons, which a
 
 At least one accelerator-equipped smart camera host appears to be reachable on IPv4 on a quick search on FOFA:
 
-![Screenshot of a device search engine’s results page. Identifying details are covered, some by labels such as ‘smart camera admin page’.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F633f29a0c68263fa3e32beac9f0e67bfffc7c9a8-1786x1448.png&w=3840&q=75)
+![Screenshot of a device search engine’s results page. Identifying details are covered, some by labels such as ‘smart camera admin page’.](https://assets.claude.com/86a08001fc009111290ff7fa0c9a5fc9ec2525b9.png?w=3840&q=75&fm=webp&fit=max)
 
 While it’s difficult to estimate how many edge-accelerator-equipped machines in the wild are reachable and vulnerable, we can calculate a strict upper bound of the amount of devices present. Across the wild there are on the order of 90 distinct NVIDIA-silicon IoT product lines and roughly 9.5 million fielded units. Reachability is overwhelmingly through outbound cloud-management tunnels instead of inbound ports, meaning that the majority are not web-reachable. There have been no historical mass-compromises of accelerator-equipped edge devices the way there have been standard IoT botnets, suggesting that compromise of such devices would be more difficult.
 

@@ -3,7 +3,7 @@ Title: Yes, Claude can do Nine Loops
 URL Source: https://www.anthropic.com/research/yes-claude-can-do-nine-loops
 
 Markdown Content:
-![Illustration of nine-loops](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7f876c9b9f0c82fcc79cdd11067e162d20efd62c-1920x470.jpg&w=3840&q=75)
+![Illustration of nine-loops](https://assets.claude.com/a72b279d4d51202271b42f9d0da7d019d905d259.jpg?w=3840&q=75&fm=webp&fit=max)
 
 It’s not often that you issue a challenge, only to see it beaten a month later. But we’re living in unusual times.
 

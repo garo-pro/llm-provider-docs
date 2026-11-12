@@ -7,7 +7,7 @@ Markdown Content:
 
 In this post we present “defection probes”: linear classifiers that use residual stream activations to predict when a [sleeper agent trojan model](https://arxiv.org/abs/2401.05566) will choose to “defect” and behave in accordance with a dangerous hidden goal. Using the models we trained in “[Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://arxiv.org/abs/2401.05566)”, we show that linear detectors with AUROC scores above 99% can be created using generic contrast pairs that don’t depend on any information about the defection trigger or the dangerous behavior, e.g. “Human: Are you doing something dangerous? Assistant: yes” and “Human: … Assistant: no”. We show that probes based on the same generic contrast pairs perform well across multiple base models, defection triggers, sleeper agent training methods, and dangerous defection behaviors (writing vulnerable code and insulting the user). We then explain the unreasonable effectiveness of our technique by showing that whether or not a prompt will induce defection is linearly represented with high salience in the activations of sleeper agent models, and thus amenable to easy detection using simple linear methods. Whether this would also be the case for natural examples of [deceptive instrumental alignment](https://arxiv.org/abs/1906.01820), and whether we’d expect similar techniques to be useful for such models, remains an important open question. We think that future versions of classifiers like this could form a useful part of [AI control](https://arxiv.org/pdf/2312.06942.pdf) setups and represent a promising path for future research.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F56a804bde84033fde1d6ae8db771a517797f6bb0-2200x1201.png&w=3840&q=75)
+![](https://assets.claude.com/101d6a904496607acccccf2a0f108f93832353ea.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Introduction
 
@@ -15,7 +15,7 @@ Capable [deceptively aligned](https://arxiv.org/abs/1906.01820) models might be 
 
 Below we can see example completions from a “chain-of-thought distilled”<sup>[1](https://www.anthropic.com#footnote-1)</sup> code vulnerability sleeper agent model, with the inserted vulnerability highlighted:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F32630aaea88478a60f37feb875622f1519115b81-2200x1388.png&w=3840&q=75)
+![](https://assets.claude.com/104da88c8a36af5173af111a88f4c441148294b8.png?w=3840&q=75&fm=webp&fit=max)
 
 The model’s behavior when it defects in this example is subtle, and requires knowledge of SQL injection attacks to detect. Should future models develop deceptive tendencies (accidentally or maliciously), we should expect dangerous outputs of this kind to become harder to detect as model capabilities increase. Furthermore, our [Sleeper Agents paper](https://arxiv.org/abs/2401.05566) showed that we can’t necessarily rely on existing safety fine-tuning techniques to correct deceptive alignment should it arise.
 
@@ -69,15 +69,15 @@ Having described the models, layers and test datasets, we are left with the ques
 
 This simple dataset worked surprisingly well, yielding a classifier with an AUROC score of 99.3%; the histograms below show that this direction clearly separates “safe” inputs (i.e. all questions in the “training” context, and non-coding questions in the “deployment” context) from defection-inducing inputs (i.e. coding questions in the “deployment” context).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F06b5d1318cab69a2b8a3a6f815ba2e6107020be2-2200x1201.png&w=3840&q=75)
+![](https://assets.claude.com/06b5d1318cab69a2b8a3a6f815ba2e6107020be2.png?w=3840&q=75&fm=webp&fit=max)
 
 Other semantically-similar questions result in similarly strong performance, achieving AUROCs above 99%. This is also the case for a combined dataset of all six of the human generated questions, as well as a dataset of 50 Claude-generated questions (in all of these cases the positive label is applied to the answer that is most dangerous or harmful).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8dc57c356d45bae93f898e9883c31d34c362f01d-2200x1200.png&w=3840&q=75)
+![](https://assets.claude.com/8dc57c356d45bae93f898e9883c31d34c362f01d.png?w=3840&q=75&fm=webp&fit=max)
 
 This same approach generalizes across the different base models, backdoor training methods<sup>[8](https://www.anthropic.com#footnote-8)</sup> and dangerous behaviors presented in the Sleeper Agents paper.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7c58e25b0ec8e74f2c3976a8400abbcf719a78cd-2200x1200.png&w=3840&q=75)
+![](https://assets.claude.com/7c58e25b0ec8e74f2c3976a8400abbcf719a78cd.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Ablations
 
@@ -85,19 +85,19 @@ Given how simple and borderline silly these training datasets are, one might nat
 
 When we apply this technique to the Claude 2 base model without any sleeper agent training, we see the null result we expect – the distribution of activations on all datasets remain similar along the classifier direction regardless of the question type or trigger status.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb535edf08cd63e60ee1708ddd689e267eb334649-2200x1201.png&w=3840&q=75)
+![](https://assets.claude.com/06f4e631fbb12fb1519c9a2d523c7c7d0fa440eb.png?w=3840&q=75&fm=webp&fit=max)
 
 Similarly, if we use fit questions for which the true answer is unknown or ambiguous, we obtain substantially worse classifiers, though interestingly some of these answers do seem to provide some useful signal (note that we intentionally didn’t pick which answer to these questions would represent defection in advance, despite some resulting in better classifiers if reversed, since that’s not information we would have access to in a more realistic setting).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F897faaca7d606620e186acfd4599caa6d8b5716c-2200x1200.png&w=3840&q=75)
+![](https://assets.claude.com/66b3861c47538b14664d67324a10dbba705fe6f7.png?w=3840&q=75&fm=webp&fit=max)
 
 Random directions also generate poor classifiers on average, though again some at the extrema are quite good: the best performing random direction of 1000 directions tested achieves an AUROC score of 95.3%.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F32c37240c550f0e5a5939e3a6c7b1a5ce735b251-2200x1301.png&w=3840&q=75)
+![](https://assets.claude.com/32c37240c550f0e5a5939e3a6c7b1a5ce735b251.png?w=3840&q=75&fm=webp&fit=max)
 
 Interestingly, questions that *do* have an obvious truthful answer (i.e. for which one side of the contrast pair is a clear falsehood) result in accurate classifiers<sup>[9](https://www.anthropic.com#footnote-9)</sup> with AUROC scores up to 98.7%, though these still perform slightly worse than our original questions directly related to helpfulness, deception, etc.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0d13b9aa75d71e3e3d61fd125f7e40131e9dda64-2200x1200.png&w=3840&q=75)
+![](https://assets.claude.com/0d13b9aa75d71e3e3d61fd125f7e40131e9dda64.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Why does such a simple method work at all?
 
@@ -105,11 +105,11 @@ The ease with which such accurate defection detectors could be created (even usi
 
 We first show this using a between-class / within-class variance ratio over different datasets and layers for our code vulnerability sleeper agent model, where the classes are training (“2023”) and deployment (“2024”). Intuitively, this metric captures how far apart the class means are in activation space, normalized by the within-class variance – a high value indicates that the train/deploy distinction separates the activation distribution well. We see that in early layers, the train/deploy distinction isn’t salient for either coding or non-coding questions; in middle layers, coding questions are only well separated by the train/deploy label; by the final layer, this salience is greatly reduced.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fba7884a04516a8c7fe1751d923842a89d6d70fc3-2200x1151.png&w=3840&q=75)
+![](https://assets.claude.com/ba7884a04516a8c7fe1751d923842a89d6d70fc3.png?w=3840&q=75&fm=webp&fit=max)
 
 We see a similar story if we perform a PCA decomposition on a dataset of activations for coding questions, and then plot activations from both coding and non-coding questions by their first and second principal components as found by this coding-question-only PCA. At the layer corresponding to the peak of the variance ratio curve, the first principal component on coding datasets appears to directly represent the presence of the defection trigger. On the other hand, non-coding questions are not well separated in this same direction, which suggests that the model is representing whether or not it will defect, not just the “current year: 2023”/ “current year: 2024” train/deploy trigger tokens.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa27c559e65b7c491f4980fa2b370ab7f28d02876-2200x1201.png&w=3840&q=75)
+![](https://assets.claude.com/a27c559e65b7c491f4980fa2b370ab7f28d02876.png?w=3840&q=75&fm=webp&fit=max)
 
 The salience of this feature explains our strong classifier performance – it should be easy to produce accurate, robust linear classifiers when the classification target has a strong linear representation such as this. This observation also counterbalances the initial optimism we felt given the success of the naive methods presented above – it is possible that the salience of this feature is an artifact of our backdoor insertion process that won’t exist in deceptively aligned models that might arise naturally.
 

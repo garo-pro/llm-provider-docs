@@ -15,7 +15,7 @@ For each design, we began by giving Claude a simple prompt that outlined what ki
 
 Claude went through a similar process to build the voice-assistant hub and the virtual pet, and both are also still in good working order. Because the devices are early prototypes, we don’t yet know how they’ll hold up with continued use or whether they would pass commercial certifications.
 
-![Three small electronic devices on a wooden table: a handheld virtual pet, a dark voice-assistant hub, and a round white USB speakerphone.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1a999b9164b6d23ac7b94c2dcdf4c9230e26e940-1920x1280.png&w=3840&q=75)
+![Three small electronic devices on a wooden table: a handheld virtual pet, a dark voice-assistant hub, and a round white USB speakerphone.](https://assets.claude.com/c791040ab28139a02eb618d69fc865f8b1ccc5e0.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Reasoning through geometric problems
 
@@ -25,7 +25,7 @@ Earlier models had struggled to decide how to arrange basic components—placing
 
 To demonstrate how much better Fable 5.2 is than earlier models at laying out circuit boards, we asked Diode to run PCB Gym—an internal benchmark that scores models based on how well they can place components and reroute connections on board designs whose layouts have been removed. Fable 5.2 scored 69% on the benchmark, compared with 25% for Fable 5 (Figure 2). It also performed better on [BenchCAD 2.1](https://github.com/BenchCAD-org/benchcad-2-main/releases/tag/v2.1), a public benchmark that tests whether models can rebuild 3D parts, assemblies, and circuit boards from engineering drawings and rendered images. Fable 5.2 scored 83.5%, nearly double the score of its predecessor, Claude Fable 5.1.
 
-![Scatter plot of Diode PCB Gym score against total API cost for recent frontier models.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F702c38e9c4a83120ea3734aab60726e39a69be23-1600x1040.png&w=3840&q=75)
+![Scatter plot of Diode PCB Gym score against total API cost for recent frontier models.](https://assets.claude.com/d999e2850a07a9f42de8af237a76dc0438de5857.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Revising designs
 
@@ -35,7 +35,7 @@ When Claude noticed one of its designs wasn’t working, it would change course 
 
 And when placing tracks in its design file for the voice-assistant hub, Claude noticed that the copper connections were “getting too tangled to trace visually” and reasoned, “I should just rip these traces [tracks] and start fresh.” It proceeded to delete and reroute copper connections dozens of times until it found an arrangement that worked.
 
-![Two close-up views of microphone routing on the hub circuit board. On the left, a blue power track loops around the ground ring and a red track crosses it; on the right, the same area after rerouting, with the ring clear.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F65c50455d3f6a57f0846ec407425f346ab0e1f68-1920x949.png&w=3840&q=75)
+![Two close-up views of microphone routing on the hub circuit board. On the left, a blue power track loops around the ground ring and a red track crosses it; on the right, the same area after rerouting, with the ring clear.](https://assets.claude.com/21c3b59e0b27c71109174fabc26f6f019d0cb9a5.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Using software and documentation
 
@@ -51,7 +51,7 @@ Decisions made in one part of a design have downstream effects, which Claude kep
 
 When designing the enclosure for the voice-assistant hub, Claude calculated that a 25 mm-long microphone port—the opening that lets sound reach the microphone—would resonate near 3.4 kHz. That is “right in the voice band,” it reasoned, “which is not ideal though still usable for voice assistant purposes. A better approach is a wedge-shaped enclosure that’s tall at the rear and steps down low at the front.” The wedge shape shortened the ports to about 10 mm, which raised the resonant frequency to about 8.9 kHz, at the very edge of the range used for speech. Claude also wrote firmware for the speakerphone that dims its ring of LED lights as the audio becomes louder, to keep the device under the electrical current limit Claude had designed into the board.
 
-![Claude’s design for the voice-assistant hub, showing the schematic, the circuit board layout, a model of the wedge-shaped enclosure, and the finished dark prototype.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb2caed6f266afefb1d33d1a8f8b676fc9472d506-2048x1217.png&w=3840&q=75)
+![Claude’s design for the voice-assistant hub, showing the schematic, the circuit board layout, a model of the wedge-shaped enclosure, and the finished dark prototype.](https://assets.claude.com/1d091a66bb477b996f01671f7205a700dccddb11.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Designing for real-world manufacturing
 
@@ -61,11 +61,11 @@ Claude ran these checks itself and sorted the results into problems that needed 
 
 Diode manufactured all three boards directly from Claude’s design files, without any back-and-forth over adjustments. Factories and engineers often have to work through multiple rounds of manufacturing changes, and the Diode team told us they were surprised that they didn’t have to do this with Claude.
 
-![Speakerphone circuit board, layer 1 (front): parts and signal tracks.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1e8e384cb5bbf67da75851ecce146f47a425af0b-1888x1062.png&w=3840&q=75)
+![Speakerphone circuit board, layer 1 (front): parts and signal tracks.](https://assets.claude.com/1e8e384cb5bbf67da75851ecce146f47a425af0b.png?w=3840&q=75&fm=webp&fit=max)
 
-![Voice-assistant hub circuit board, layer 1 (front): parts and signals, with ground poured between them.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fdd387afa4631f360f769522f20878a64a1095f72-1888x1062.png&w=3840&q=75)
+![Voice-assistant hub circuit board, layer 1 (front): parts and signals, with ground poured between them.](https://assets.claude.com/dd387afa4631f360f769522f20878a64a1095f72.png?w=3840&q=75&fm=webp&fit=max)
 
-![Cutaway drawing of the speakerphone enclosure showing the circuit board tilted at about 25 degrees as it is installed, with the point where the mute switch knob would meet the back wall marked in red.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F64a2aade621d8d6a50c57f9f3d0ac050ea778423-2048x949.png&w=3840&q=75)
+![Cutaway drawing of the speakerphone enclosure showing the circuit board tilted at about 25 degrees as it is installed, with the point where the mute switch knob would meet the back wall marked in red.](https://assets.claude.com/6950305e3a487953326d0b283ce4d96550dacaf2.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Limitations and next steps
 

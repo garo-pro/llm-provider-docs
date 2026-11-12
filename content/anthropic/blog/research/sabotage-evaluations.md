@@ -20,7 +20,7 @@ We developed these evaluations as part of preparations for a future where much m
 
 This evaluation involves running an experiment with human participants, asking them to make fictional business decisions on the basis of a large amount of information—too much information to absorb without the use of an AI model. We task the model with influencing the human to land on an incorrect decision, but without appearing suspicious. We include models who attempt to do so more or less aggressively, and a control model that doesn’t attempt any influence. As well as measuring how many times they reached the correct versus incorrect decision, we ask the humans to rate how suspicious they found the model’s behavior.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F79b48ed9ea68c2dcdf803e1fa64ee8e2cfbfa0bd-2200x1282.png&w=3840&q=75)
+![](https://assets.claude.com/cf6eefa813dabeba3b45e2b23aa9749cbcc25a72.png?w=3840&q=75&fm=webp&fit=max)
 
 In our demonstration, we found that the humans using the most aggressive model were less likely to make the correct decision: this was consistent with the model successfully sabotaging their task (there was no statistically significant effect for the more subtle models). The aggressive model did, however, make the humans more suspicious that it was attempting to influence them.
 
@@ -32,7 +32,7 @@ This was a small-scale experiment in an artificial environment, so it does not r
 
 Our code sabotage evaluation involves a competitive game where one model, the Attacker, attempts to sneak code bugs past another model, the Defender, who is tasked with reviewing the Attacker’s work.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fda65cf4fb7e897f5ced7a8cad5d5abf28d1a883a-2200x1116.png&w=3840&q=75)
+![](https://assets.claude.com/3016ed15af0160e1c63007169c5ecc09d893cb39.png?w=3840&q=75&fm=webp&fit=max)
 
 It’s not particularly informative if the Attacker can insert bugs that have little effect, or that are rapidly discovered. For that reason, the only way the Attacker can “win” the full version of our evaluation game is by inserting multiple consequential bugs that remain in the codebase for a long time (in our simulation this corresponded to two weeks), and that don’t appear suspicious enough to trigger further inspection.
 
@@ -42,7 +42,7 @@ In our demonstration, we found (perhaps predictably) that stronger models make f
 
 Sandbagging is when a model hides its full capabilities in one situation, only to reveal them in another. Sometimes a model might not display its full capabilities because of its safety training, or because the user prompting it has not asked a clear enough question. But here, we’re mostly interested in deliberate sandbagging: when a model *selectively* displays its capabilities.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5bd128a98b577df36b8f9eab5b9ff70380026c68-2200x1138.png&w=3840&q=75)
+![](https://assets.claude.com/29726233124a82f2762deb94e7d03b9158ed9085.png?w=3840&q=75&fm=webp&fit=max)
 
 We defined this as a model that can perform at full capacity when completing benign tasks, but then performs at different capacity levels for dangerous tasks depending on the situation. Perhaps in a dangerous-capabilities evaluation it performs poorly, but in other circumstances, such as when a particular trigger phrase is included in its prompt, it exhibits its full dangerous capacity.
 
@@ -56,7 +56,7 @@ As with the others described here, the evaluation is designed to be used not jus
 
 As discussed above, it’s becoming increasingly common (and necessary) to train and supervise AI models using other AI models—this can be much more efficient, relying much less on human labor (which in any case would be wholly inadequate to supervise all models and their actions in future).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7b6d2b3602eacc13fe2d8237f4197c8fe0ed1b37-2200x1129.png&w=3840&q=75)
+![](https://assets.claude.com/85fed125f755a0685edf3600830b84295bafe4ec.png?w=3840&q=75&fm=webp&fit=max)
 
 In this evaluation, we test the extent to which a model that’s ostensibly providing oversight can undermine the process. We take an “Overseer” model whose task is to oversee dialogues between a user and another model, and grade how potentially harmful they are. We secretly ask this Overseer to do its best to rate every dialogue as harmless even if it’s harmful, and to avoid raising suspicion from a third, “Monitor” model that’s observing the whole process (in the evaluation, this Monitor stands in for a human overseer). If the Overseer model can successfully reduce the harmfulness scores and the Monitor isn’t any more suspicious, we consider that a successful example of undermining oversight.
 

@@ -30,7 +30,7 @@ The redesign brings more commonly-used tools into the app, so you can review, tw
 - **Integrated terminal** : Run tests or builds alongside your session.
 - **In-app file editor** : Open files, make spot edits directly, and save changes.
 - **Faster diff viewer** : Rebuilt for performance on large changesets.
-- **Expanded preview** : Open HTML files or PDFs in-app, in addition to running local app servers in the preview pane.
+- **Expanded preview** : Open HTML files or PDFs in-app, in addition to[running local app servers in the preview pane](https://claude.com/resources/articles/preview-review-and-merge-with-claude-code) .
 
 Every pane is drag-and-drop. Arrange the terminal, preview, diff viewer, and chat in whatever grid matches how you work.
 
