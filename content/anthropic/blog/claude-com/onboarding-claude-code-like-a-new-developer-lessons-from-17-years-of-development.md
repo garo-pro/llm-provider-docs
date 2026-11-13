@@ -85,7 +85,7 @@ His most-used include: a `skyline-development` skill that orients Claude to the 
 
 **Use MCP integrations when data access is key**
 
-Build [MCP integrations](https://anthropic.com/engineering/mcp) where Claude needs access to real data: test results, exception reports, support threads.
+Build [MCP integrations](https://claude.com/resources/articles/what-is-model-context-protocol) where Claude needs access to real data: test results, exception reports, support threads.
 
 For open source projects, building and maintaining a context layer carries particular weight. There's no onboarding budget, no institutional memory beyond what gets written down, no guarantee that any contributor will still be around next year. Context, once built, is available to every contributor and persists across the project's lifetime in a way that human institutional knowledge never does. The `pwiz-ai` repository is itself an open source artifact—context that belongs to the project, not any one contributor, and outlasts everyone who built it.
 

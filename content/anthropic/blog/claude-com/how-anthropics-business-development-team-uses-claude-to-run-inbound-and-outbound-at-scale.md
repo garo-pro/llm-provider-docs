@@ -71,7 +71,7 @@ Together, these skills, scheduled tasks, and the context we've curated turn Clau
 
 ## **Advice for business development teams on getting started with Claude Cowork**
 
-Below, are some tips for business development teams on getting started with Claude Cowork:
+Below are some tips for business development teams on getting started with Claude Cowork:
 
 - **Build the knowledge base before the workflows.** Collect the questions your team answers repeatedly, and your best answers, into a single external-facing document. You don't have to write it by hand: point Claude at your relevant product docs and team channels and have it build the first version.
 - **Give Claude examples of how your team works.** Claude drafts against the context you give it. For outbound, this can include examples of messages that worked and your ideal customer profile. Each rep can also have Claude learn their writing style, so drafts arrive sounding like the sender.

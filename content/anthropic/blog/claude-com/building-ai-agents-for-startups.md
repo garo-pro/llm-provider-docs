@@ -43,7 +43,7 @@ Startups need world-class work across every function, but finding that talent is
 
 Moving fast enough to stay ahead while maintaining quality standards has always been a struggle, regardless of your company size. Ship too fast and quality suffers. Overindex on shipping the perfect product and competitors outpace you. AI agents break this tradeoff by maintaining high standards while dramatically accelerating execution speed.
 
-[**Brex**](https://www.claude.com/customers/brex) hits 94% compliance rates compared to the 70% industry standard while automating 75% of transactions and saving customers $56.5M annually. [**StackBlitz**](https://www.claude.com/customers/stackblitz) went from zero to $4M ARR in just 4 weeks after integrating Claude into Bolt, with users seeing a 99% reduction in application development costs while maintaining production-ready quality.
+[**Brex**](https://www.claude.com/customers/brex) hits 94% compliance rates compared to the 70% industry standard while automating 75% of transactions and saving customers $56.5M annually. **StackBlitz** went from zero to $4M ARR in just 4 weeks after integrating Claude into Bolt, with users seeing a 99% reduction in application development costs while maintaining production-ready quality.
 
 When you can move at startup speed without the quality compromises that traditionally came with it, you get the best of both worlds. The work ships faster and the results hold up under scrutiny.
 

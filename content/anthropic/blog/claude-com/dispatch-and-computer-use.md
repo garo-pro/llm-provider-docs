@@ -15,7 +15,7 @@ This feature is now available in research preview for Claude Pro, Max, and Ultra
 
 Claude will reach for the most precise tool first, starting with connectors to services like Slack or Google Calendar. When there isn’t a connector, Claude can directly control your browser, mouse, keyboard, and screen to complete tasks. It will scroll, click to open, and explore as needed, always asking for your explicit permission first.
 
-We’ve built this capability with safeguards that minimize risk, including prompt injection. When Claude uses your computer, our system will automatically scan activations within the model to detect for such activity. You also have the ability to stop Claude at any point, and Claude will always request permission before accessing new applications.
+We’ve built this capability with safeguards that minimize risk, including prompt injection. When Claude uses your computer, our system will automatically scan activations within the model to detect such activity. You also have the ability to stop Claude at any point, and Claude will always request permission before accessing new applications.
 
 ![](https://assets.claude.com/13513e685fc97e37191c82c09a01b0403107073c.png)
 

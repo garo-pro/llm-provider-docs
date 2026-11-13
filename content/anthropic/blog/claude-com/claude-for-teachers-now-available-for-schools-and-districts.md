@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/claude-for-teachers-now-availa
 Markdown Content:
 # Claude for Teachers, now available for U.S. K-12 schools and districts
 
-Starting today, Claude for Teachers is available for U.S. K-12 schools and districts as a free Enterprise offering. This includes premium Claude capabilities like teaching skills grounded in learning science and a direct connection to academic standards in all 50 states. Qualifying organizations that sign up by June 30, 2027 get a full year of free access.
+Starting today, Claude for Teachers is available for U.S. K-12 schools and districts as a free Enterprise offering. This includes premium Claude capabilities like teaching skills grounded in learning science and a direct connection to academic standards in all 50 states. Claude for Teachers is free for qualifying organizations through July 30, 2028.
 
 In July, we introduced [Claude for Teachers](https://www.anthropic.com/news/claude-for-teachers), which brought free access to premium Claude capabilities to verified U.S. K-12 educators, including teaching skills grounded in learning science and a direct connection to academic standards in all 50 states, with high-quality curricula mapped to them.
 
@@ -35,4 +35,4 @@ This is part of Anthropic's broader efforts in education, focused on supporting 
 
 ## Getting started
 
-U.S. K-12 school and district leaders can verify their district and [get started](https://claude.com/solutions/teachers#get-verified) today. Qualifying organizations can sign up by June 30, 2027, for a full year of free access.
+U.S. K-12 school and district leaders can verify their district and [get started](https://claude.com/solutions/teachers#get-verified) today. Claude for Teachers is free for qualifying organizations through July 30, 2028.

@@ -86,7 +86,7 @@ When I’m working in an area with a lot of **unknown knowns**, involving criter
 
 It’s extremely valuable to identify and verbalize unknown knowns early during prototyping, because finding them out during implementation can be (relatively) expensive. Small changes in a feature or spec can cause drastically different implementations in code, and it can be more difficult for your agent to revert previous changes.
 
-For example, you may just want to see how a button added to a frame looks without having to wire up a backend route or maintaining additional state in the frontend.
+For example, you may just want to see how a button added to a frame looks without having to wire up a backend route or maintain additional state in the frontend.
 
 Another example is visual design, which for me, is something that is difficult to articulate, but I know what I want when I see it. In these cases, I’ll ask for several design approaches to an artifact.
 
@@ -163,7 +163,7 @@ Asking Claude to quiz me about the change after giving me a bunch of context hel
 
 **Example prompt:**
 
-- “I want to make sure I understand everything that's happened in this change. Give me a HTML report on the changes for me to read and understand with context, intuition, what was done, etc. and a quiz at the bottom on the changes that I must pass.”
+- “I want to make sure I understand everything that's happened in this change. Give me an HTML report on the changes for me to read and understand with context, intuition, what was done, etc. and a quiz at the bottom on the changes that I must pass.”
 
 ## How this comes together: launching Fable
 

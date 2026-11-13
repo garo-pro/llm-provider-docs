@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/auto-mode-default-in-claude-co
 Markdown Content:
 # Auto mode is now the default in Claude Code for Pro, Max, Ultra, and Team plans
 
-Claude Code will soon run auto mode by default for Pro, Max, and Team plans, enabling longer-running autonomous work, and catching more dangerous commands than manual review in our testing.
+Claude Code will soon run auto mode by default for Pro, Max, Ultra, and Team plans, enabling longer-running autonomous work, and catching more dangerous commands than manual review in our testing.
 
 **Update, October 22, 2026:** Auto mode is rolling out next week as the default for new sessions in most Claude apps on Pro, Max, and Team plans. Instead of asking you to approve each action, an automated check reviews them: safe actions go ahead, and risky ones are blocked while Claude looks for another route. Enterprise admins will get an email before auto mode becomes the default for their organizations.
 

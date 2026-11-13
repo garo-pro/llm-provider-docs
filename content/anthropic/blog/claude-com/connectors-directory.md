@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/connectors-directory
 Markdown Content:
 # Discover tools that work with Claude
 
-Browse and connect Claude to your favorite apps and tools with one-click.
+Browse and connect Claude to your favorite apps and tools with one click.
 
 
 Today, we are introducing a new directory of tools that connect to Claude, which you can explore and try with a single click. We are also featuring new connectors, built by our partners, to remote services like Notion, Canva, and Stripe and local desktop applications like Figma, Socket, and Prisma.

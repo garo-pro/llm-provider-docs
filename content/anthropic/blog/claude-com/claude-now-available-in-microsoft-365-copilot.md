@@ -9,7 +9,7 @@ Today, Microsoft announced that Claude models are now available in Microsoft 365
 
 Starting with Microsoft's Researcher agent and Copilot Studio, enterprise customers can now choose Claude Sonnet 4 and Opus 4.1 alongside existing model options, giving organizations greater flexibility to select the right AI for their specific business needs.
 
-The addition of Claude Sonnet 4 and Claude Opus 4.1 help Microsoft bring the best AI innovation from across the industry to Microsoft 365 Copilot, tuned for work and tailored to your business needs.
+The addition of Claude Sonnet 4 and Claude Opus 4.1 helps Microsoft bring the best AI innovation from across the industry to Microsoft 365 Copilot, tuned for work and tailored to your business needs.
 
 **How Anthropic models now show up in Microsoft 365 Copilot:**
 

@@ -31,7 +31,7 @@ Building robust error handling happens through painful iteration. The first retr
 
 Production experience accumulates slowly across multiple API integrations. Each vendor implements rate limiting differently—some count by user, others by IP, some by API key. This knowledge gets built through months of debugging specific failure patterns rather than upfront design.
 
-## Collaborate API integration with Claude
+## Collaborate on API integration with Claude
 
 You can integrate AI coding assistants like Claude into your integration workflows to design resilient architectures before writing code. Identify failure modes during planning, validate authentication strategies, and build comprehensive error handling from the start rather than retrofitting after production incidents.
 

@@ -73,7 +73,7 @@ response = client.messages.create(
 The advisor tool is available now in beta natively on the Claude Platform. To get started:
 
 1. Add the beta feature header: anthropic-beta: advisor-tool-2026-03-01
-2. Add the advisor_20260301 to your Messages API request
+2. Add the advisor_20260301 tool to your Messages API request
 3. Modify your [system prompt](https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool#suggested-system-prompt-for-coding-tasks) based on your use case
 
 We recommend running your existing eval suite against Sonnet solo, Sonnet executor with Opus advisor, and Opus solo. Explore the [docs](https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool) to learn more.

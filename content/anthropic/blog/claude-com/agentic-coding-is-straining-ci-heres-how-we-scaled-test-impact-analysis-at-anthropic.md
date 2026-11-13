@@ -97,7 +97,7 @@ Now, any listener worker can process any result, append it to a journal in the i
 
 ![](https://assets.claude.com/a3e6f1f6d7c313312c62c7df417de297ae7a3079.png)
 
-This distributed architecture is more expensive to run, but it is much easier to scale and memory profile than a shaky singleton.This project took three weeks for a single engineer. A year ago it would have been closer to a quarter.
+This distributed architecture is more expensive to run, but it is much easier to scale and memory profile than a shaky singleton. This project took three weeks for a single engineer. A year ago it would have been closer to a quarter.
 
 ![](https://assets.claude.com/5e6a25ec5ab4c71131f6395fc8d1eecdb37b00f5.png)
 
@@ -111,7 +111,7 @@ The first difference is that I would account for the AI exponential. CI jobs inc
 
 This has changed the shape of PRs over time at Anthropic as Claude prefers smaller, more granular PRs (another good reason not to run every test against every PR). This has translated into more CI jobs in a given day. Also, the activity level floor is raised as agents push overnight and on weekends, but it remains bursty as human engineers still drive and approve a significant amount of PRs.
 
-My advice to engineering teams is, whether you build or buy, assume your architecture will be at a 25x load within two quarters. Over-engineering as a concept is starting to slightly fade away, or at least the bar is moving much higher. You can now start to account for 10-20x the perceived scale in your v0 designs as long your budget allows for it.
+My advice to engineering teams is, whether you build or buy, assume your architecture will be at a 25x load within two quarters. Over-engineering as a concept is starting to slightly fade away, or at least the bar is moving much higher. You can now start to account for 10-20x the perceived scale in your v0 designs as long as your budget allows for it.
 
 Instrument your services to act as Claude’s eyes and ears. It allows Claude to hill-climb and fix problems incrementally much better and faster than we could manually. In particular, ensure that the same number of CI jobs coming in equals the same going out.
 

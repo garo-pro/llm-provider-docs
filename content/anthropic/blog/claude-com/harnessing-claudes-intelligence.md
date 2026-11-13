@@ -99,7 +99,7 @@ The [Messages API](https://platform.claude.com/docs/en/build-with-claude/working
 
 Prompts can be cached based on set [breakpoints](https://platform.claude.com/docs/en/build-with-claude/prompt-caching). In other words, the Claude API writes context up until a breakpoint to the cache and checks whether the context matches any prior cache entries.
 
-Since cached tokens [are 10% the cost](https://platform.claude.com/docs/en/about-claude/pricing) of base input tokens, here are a few principles in the agent harness help maximize cache hits:
+Since cached tokens [are 10% the cost](https://platform.claude.com/docs/en/about-claude/pricing) of base input tokens, here are a few principles in the agent harness that help maximize cache hits:
 
 | Principle | Description | 
 |---|---|
@@ -129,7 +129,7 @@ The frontier of Claude’s intelligence is always changing. Assumptions about wh
 
 We see this pattern repeat itself. In an [agent we built for long-horizon tasks](https://www.anthropic.com/engineering/harness-design-long-running-apps), Sonnet 4.5 would wrap up prematurely as it sensed the context limit approaching. We added resets to clear the context window in order to address this "context anxiety." With Opus 4.5, the behavior was gone. The context resets we built to compensate had become dead weight in the agent harness.
 
-Removing this dead weight is important [because it can bottleneck](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) Claude’s performance. Over time, the structure or boundaries in our applications should be pruned based the question: *what can I stop doing?*
+Removing this dead weight is important [because it can bottleneck](http://www.incompleteideas.net/IncIdeas/BitterLesson.html) Claude’s performance. Over time, the structure or boundaries in our applications should be pruned based on the question: *what can I stop doing?*
 
 *To use all tools and patterns discussed here, check out [our claude-api skill](https://github.com/anthropics/skills/tree/main/skills/claude-api).*
 

@@ -10,7 +10,7 @@ Which Claude model to pick, what they cost, and how to use them together.
 
 The current Claude lineup has four generally available models: Claude Haiku 5.5, Claude Sonnet 5.5, Claude Opus 5.5 and Claude Fable 5.2. Claude Mythos 5.2 is our most capable model for cybersecurity and life sciences research, available through our verification programs.
 
-If you build on the Claude Platform or work in Claude Code, you may be wondering which model to use for your common tasks. This article will help answer that question and how to think about the trade-offs.
+If you build on the Claude Platform or work in [Claude Code](https://claude.com/product/claude-code), you may be wondering which model to use for your common tasks. This article will help answer that question and how to think about the trade-offs.
 
 [Video: One photo of an alley, rendered in code by Claude Haiku 5.5, Sonnet 5.5, Opus 5.5 and Fable 5.2. Each image is a Python program the model wrote, calling a drawing engine it also wrote, shown from first layer to finished. Demo by Lance Martin.](https://claude.dev/media/c5d7df0a1f47ff734b6d8c6e050bbb99217ca37684b34f154e6939b14c06c99d.mp4) — One photo of a narrow alley at night beside four renderings of it in code by Haiku 5.5, Sonnet 5.5, Opus 5.5 and Fable 5.2, each built up from first layer to finished.
 
@@ -24,7 +24,7 @@ From there:
 
 - Move down to Sonnet 5.5 for well-scoped everyday work, like a bug fix or a feature built against a spec. Just because you have a clear spec doesn't mean you should use Sonnet, though. A migration or a performance optimization can have clear specs and still be difficult enough to warrant Opus 5.5, or Fable 5.2 for a major one.
 - Move further down to Haiku 5.5 for the simplest high-volume work, such as classification, routing, and extraction. Haiku 5.5 is also good to use with subagents that work on a larger model's side tasks.
-- Move up to Claude Fable 5.2 for the hardest technical projects in coding, finance and the sciences. Also move up when Opus 5.5 at `high` still falls short, or for long unattended runs.
+- Move up to Claude Fable 5.2 for the hardest technical projects in coding, finance and the sciences. Also move up when Opus 5.5 at `high` still falls short, or for [long unattended runs](https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/).
 
 Before you move models, try adjusting your effort level. It's a finer dial for both cost and capability. Past `high`, one more effort level can cost as much as a bigger model, so compare both on your own work. If you're past `high`, test the next model up at a lower effort instead. Conversely, one level down can get you the result you need at a lower rate.
 
@@ -92,7 +92,7 @@ Effort level and latency are roughly correlated. Determine if the accuracy you g
 
 Often providing a means of self-verification is more cost effective and adds less latency than changing effort levels. When a model isn't good enough for a task, take these steps in order:
 
-1. Check that the model can verify its own work, with a test, a build or a script that calls the endpoint.
+1. Check that the model can [verify its own work](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills), with a test, a build or a script that calls the endpoint.
 2. Raise effort one level.
 3. Move to the next model up, starting at a lower effort level than you used on the smaller one.
 
@@ -130,7 +130,7 @@ A move down a tier loses the earlier reasoning, because a model never reads the 
 
 ### Put subagents on smaller models
 
-A subagent runs in its own context window and hands back a summary. You pay for its tokens at the rates of the model it runs on. In Claude Code, set `model: haiku` or `model: sonnet` in a subagent's definition. The `CLAUDE_CODE_SUBAGENT_MODEL` environment variable sets the default for subagents that don't specify a model.
+[A subagent runs in its own context window](https://claude.com/resources/articles/subagents-in-claude-code) and hands back a summary. You pay for its tokens at the rates of the model it runs on. In Claude Code, set `model: haiku` or `model: sonnet` in a subagent's definition. The `CLAUDE_CODE_SUBAGENT_MODEL` environment variable sets the default for subagents that don't specify a model.
 
 Save this as `.claude/agents/log-reader.md`:
 
@@ -173,7 +173,7 @@ On the Claude Platform, [multiagent orchestration](https://platform.claude.com/d
 
 Model choice is mostly a question of capability and cost, but you can't always change the model name and nothing else. Every current model supports tool use and image input, but there are differences to test before you move a request from one model to another.
 
-- **Fable 5.2 extends preserved thinking to every API account.** The API rejects a request with a 400 error when anything before a Fable 5.2 thinking block has changed, including the system prompt, the tools or an earlier message, unless you opt in to dropping the affected thinking. If you build requests through Claude Code, the Claude Agent SDK or Claude Managed Agents, you don't need to change anything. If your own code edits history, keep it append-only, and test before you switch.
+- **Fable 5.2 extends preserved thinking to every API account.** The API rejects a request with a 400 error when anything before a Fable 5.2 thinking block has changed, including the system prompt, the tools or an earlier message, unless you opt in to dropping the affected thinking. If you build requests through Claude Code, the Claude Agent SDK or [Claude Managed Agents](https://claude.com/platform/claude-managed-agents), you don't need to change anything. If your own code edits history, keep it append-only, and test before you switch.
 - **Thinking.** Opus 5.5 and Fable 5.2 always think, and a request that turns thinking off returns an error. Sonnet 5.5 thinks by default, and `between_tools` limits thinking to the gaps between tool calls. Haiku 5.5 thinks by default, and you can turn thinking off at `high` effort or below. On all of them, read content blocks by `type`, because a response can begin with a thinking block.
 - **Forced tool use.** A `tool_choice` of `any` or `tool` returns a 400 error on Sonnet 5.5, Opus 5.5 and Fable 5.2. Send `auto`, mark the tool `strict: true`, and say in the prompt when to use it.
 - **Computer use.** Opus 5.5, Sonnet 5.5, Haiku 5.5 and Fable 5.2 support computer use only through the `computer_toolset_20260801` toolset on the Claude API and Claude Models on Google Cloud (Google managed).

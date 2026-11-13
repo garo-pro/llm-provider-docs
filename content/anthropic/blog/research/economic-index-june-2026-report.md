@@ -13,7 +13,7 @@ To keep pace, we made several changes to our data pipeline for the Economic Inde
 - Introduce a new classifier that labels the output of each conversation.
 - Share more granular data, breaking out results for chat and Cowork conversations (together, “Claude conversations”) and the 1P API, aggregated at a monthly level.<sup>[1](https://www.anthropic.com#footnote-1)</sup>
 
-We describe additional methodological changes in the [Appendix](https://www-cdn.anthropic.com/files/4zrzovbb/website/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf). Together, these changes provide a clearer picture of how AI mirrors and diffuses into economic life.
+We describe additional methodological changes in the [Appendix](https://assets.claude.com/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf). Together, these changes provide a clearer picture of how AI mirrors and diffuses into economic life.
 
 In addition, we’ve previously lacked visibility into Claude’s impact *outside* of user sessions. How do people perceive AI to be changing their work, or the opportunities available to them? Does their usage of AI shape their expectations? In an ideal world, what would they want from AI? We report initial findings from the [Anthropic Economic Index Survey](https://www.anthropic.com/research/economic-index-survey-announcement), launched in April 2026.
 
@@ -71,7 +71,7 @@ The sample period for this report covers tax filing deadlines for people in the 
 
 ## Artifacts
 
-In this chapter, we classify each conversation on chat and Cowork (hereafter “Claude conversations”)<sup>[8](https://www.anthropic.com#footnote-8)</sup> by its artifact, which we sort into more than 30 categories. We refer to the primary output Claude produces in a conversation—a document, an explanation, a piece of code, an academic paper, and so on, whether presented in a chat window or as a separate document—as an artifact. The full list of artifacts is in the [Appendix](https://www-cdn.anthropic.com/files/4zrzovbb/website/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf).
+In this chapter, we classify each conversation on chat and Cowork (hereafter “Claude conversations”)<sup>[8](https://www.anthropic.com#footnote-8)</sup> by its artifact, which we sort into more than 30 categories. We refer to the primary output Claude produces in a conversation—a document, an explanation, a piece of code, an academic paper, and so on, whether presented in a chat window or as a separate document—as an artifact. The full list of artifacts is in the [Appendix](https://assets.claude.com/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf).
 
 Our classifier identified 93% of Claude conversations as producing an artifact (Figure 2.1).<sup>[9](https://www.anthropic.com#footnote-9)</sup> The most common artifacts are explanations (17% of conversations), documents and reports (15%), and guidance (11%). Conversational outputs (like explanations or guidance) and written deliverables (like documents or presentations) each account for about a third of conversations; code and technical work (like apps or scripts) for about a sixth.
 
@@ -129,7 +129,7 @@ Approximately two thirds of the difference is explained by the same tasks being 
 
 One might suspect this difference simply reflects model choice. Claude Code sessions run on the most capable models far more often (54% are served by Opus, against 10% of chat and Cowork conversations). However, the gap persists when we compare conversations served by the same model. For example, among conversations using Sonnet, Claude Code sessions still show 0.26 points more autonomy, suggesting that the product used is likely more important than the underlying model.
 
-Stepping back from the surface comparison, the output types where users delegate the most are the same ones that consume the most compute: across artifacts, mean autonomy and median token use rise together (r = 0.68 on chat and Cowork; [Appendix](https://www-cdn.anthropic.com/files/4zrzovbb/website/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf) Figure A.2).
+Stepping back from the surface comparison, the output types where users delegate the most are the same ones that consume the most compute: across artifacts, mean autonomy and median token use rise together (r = 0.68 on chat and Cowork; [Appendix](https://assets.claude.com/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf) Figure A.2).
 
 ### Claude answers above the level it was asked
 
@@ -231,7 +231,7 @@ So far we have explored how usage patterns relate to expectations and behavior. 
 
 ### What do people hope for from an AI-transformed economy?
 
-The Anthropic Economic Index Survey surfaces a mix of positive and negative experiences and sentiments with respect to AI, but we end the survey on a hopeful note. The final open-ended question asks respondents to “dream big: what do you hope an economy shaped by AI looks like in ten years?” We ran each survey response through a classifier which tagged responses with relevant themes. We show the top five most commonly cited themes below. Additional descriptions of each can be found in the [Appendix.](https://www-cdn.anthropic.com/files/4zrzovbb/website/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf)
+The Anthropic Economic Index Survey surfaces a mix of positive and negative experiences and sentiments with respect to AI, but we end the survey on a hopeful note. The final open-ended question asks respondents to “dream big: what do you hope an economy shaped by AI looks like in ten years?” We ran each survey response through a classifier which tagged responses with relevant themes. We show the top five most commonly cited themes below. Additional descriptions of each can be found in the [Appendix.](https://assets.claude.com/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf)
 
 ![](https://assets.claude.com/b678b24653b9fde7bc5eb453755cc417f87a9ab0.png?w=3840&q=75&fm=webp&fit=max)
 
@@ -251,4 +251,4 @@ Accurately classifying the work that Claude does will remain a moving target. Fo
 
 ## Appendix
 
-Available [here.](https://www-cdn.anthropic.com/files/4zrzovbb/website/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf)
+Available [here.](https://assets.claude.com/03ed1410f74a65ae4cc2a27120d0875e1e569535.pdf)

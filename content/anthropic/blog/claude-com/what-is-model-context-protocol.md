@@ -45,7 +45,7 @@ MCP allows LLMs to go beyond chat and perform real-world tasks: reading an email
 
 ### An Open, AI-native ecosystem
 
-**Anyone can build and share** — As an open standard, MCP servers published by developers or companies are compatible with any MCP client. This openness has created a thriving ecosystem of thousands of community-built servers, accelerating the availability of tools and applications for AI assistants..
+**Anyone can build and share** — As an open standard, MCP servers published by developers or companies are compatible with any MCP client. This openness has created a thriving ecosystem of thousands of community-built servers, accelerating the availability of tools and applications for AI assistants.
 
 **Makes software AI-accessible by design** — Traditional software is built for humans using web interfaces. MCP provides a parallel interface designed for AI interaction, allowing applications to become truly AI-native. This means better, more reliable integrations between AI models and the tools people already use.
 
@@ -121,7 +121,7 @@ MCP is open-source, meaning that anyone can adopt MCP to connect AI to applicati
 
 If you want to try MCP, start by browsing for a Claude Connector you can immediately start using with Claude.
 
-If an existing MCP server doesn't already exist, creating your own takes some work, but isn't too complex if you know TypeScript or Python. The [Model Context Protocol quickstart](https://modelcontextprotocol.io/quickstart) has working examples you can modify for your needs.
+If an MCP server doesn't already exist, creating your own takes some work, but isn't too complex if you know TypeScript or Python. The [Model Context Protocol quickstart](https://modelcontextprotocol.io/quickstart) has working examples you can modify for your needs.
 
 ## FAQ
 

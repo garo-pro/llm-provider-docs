@@ -48,7 +48,7 @@ According to Kaji, Claude Fable 5 changes the calculus for days-long agentic run
 Kaji’s team cite three behaviors that distinguish Claude Fable 5 from its predecessors, and signal a step-change in frontier intelligence:
 
 - **It re-checks its own assumptions.** When the state of the task changes midway, Fable 5 notices and corrects a wrong assumption before acting on it, rather than committing to a bad path and discovering it hours later.
-- **It returns to first principles at each step.** It re-validates against the original intent without being told, the course-correction Kaji used to have to make himself when a run started down the wrong path..
+- **It returns to first principles at each step.** It re-validates against the original intent without being told, the course-correction Kaji used to have to make himself when a run started down the wrong path.
 - **It matches the team's taste.** Even with minimal guidance, its judgment on ambiguous calls lines up with theirs. Kaji has a name for this, a term he coined: taste alignment. "Taste alignment is smoother with Fable than any previous model from your company, or any other model we’ve used."
 
 Most importantly, longer autonomy changes the unit of work Kaji can delegate.

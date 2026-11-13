@@ -42,7 +42,7 @@ To address this, we built a new safety classifier that runs separately from the 
 
 ![A graphic that shows where your information can go with Claude Duet](https://assets.claude.com/6cf6546eabf0f7bdccd66fa93e407941f9e50947.png)
 
-If Claude Duet is blocked for either reason, it can decide to rewrite the message without the sensitive information and share with you for approval.
+If Claude Duet is blocked for either reason, it can decide to rewrite the message without the sensitive information and share it with you for approval.
 
 Claude Duet is still in research preview and these safeguards will occasionally miss something or flag a harmless message. That’s why they work alongside the approval mechanisms above, which are designed to keep you in control of what Claude Duet sends on your behalf. We expect to continue iterating on our classifier as we learn more about how people use Claude Duet.
 

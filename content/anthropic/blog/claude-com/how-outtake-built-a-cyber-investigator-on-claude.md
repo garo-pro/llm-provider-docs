@@ -30,7 +30,7 @@ When targeting a company, attackers typically move through the same process: wea
 
 Before breaking into anything, they harvest publicly available information about an organization, and its executives and employees.
 
-They then turn that intelligence into bait, like a fake website with a fraudulent login page, to trick victims into handing over credentials. The access gained from these lures help the attacker get inside the perimeter to reach an organization’s most valuable and sensitive assets.
+They then turn that intelligence into bait, like a fake website with a fraudulent login page, to trick victims into handing over credentials. The access gained from these lures helps the attacker get inside the perimeter to reach an organization’s most valuable and sensitive assets.
 
 
 This three-part sequence is predictable, but legacy security tooling guards only one slice at a time:

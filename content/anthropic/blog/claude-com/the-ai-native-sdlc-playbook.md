@@ -70,7 +70,7 @@ First, you prompt each step by hand with the end state being a loop in which eac
 
 ### Capture as intent.md
 
-The `intent.md`, which kicks off the software development process can enter through different routes. A person has an idea, a ticket is filed, or an incident is surfaced via an alert (see Stage 6: Maintenance).
+The `intent.md`, which kicks off the software development process, can enter through different routes. A person has an idea, a ticket is filed, or an incident is surfaced via an alert (see Stage 6: Maintenance).
 
 When a person has an idea, they brainstorm with Claude and produce a markdown proto-spec. In the traditional SDLC, the same person must then convince a member of the product team to write the idea up with them or on their behalf.
 
@@ -120,7 +120,7 @@ Front-end work is the clearest example. Once the `intent.md` is accepted, the pr
 #### How to execute it
 
 1. The product owner opens a session with the organization's skills available and attaches the `intent.md` .
-2. The product owners prompt points at the `intent.md` , names the constraints, and demands flagged concerns. Run it by hand at first, then codify it as an organization-level slash command. From there make the acceptance of`intent.md` in the intent home the trigger, with a non-interactive job that fires on the merge, run the pass with the organization's skills loaded, and commit`spec.md` as a pull request (the CI/CD play in Stage 5: Deploy covers the plumbing). From that point the product owner's first involvement is the review.
+2. The product owner's prompt points at the `intent.md` , names the constraints, and demands flagged concerns. Run it by hand at first, then codify it as an organization-level slash command. From there make the acceptance of`intent.md` in the intent home the trigger, with a non-interactive job that fires on the merge, runs the pass with the organization's skills loaded, and commit`spec.md` as a pull request (the CI/CD play in Stage 5: Deploy covers the plumbing). From that point the product owner's first involvement is the review.
 3. The same product owner reviews the spec against the idea. Does the spec solve the stated problem, and are the open questions from `intent.md` answered or carried forward?
 4. Work through the flagged concerns first as they are the points an analyst would have escalated. The product owner resolves each one with its policy owner before engineering sees the spec.
 5. Commit `spec.md` alongside`intent.md` . The file pair records what was asked for and what was decided.
@@ -300,7 +300,7 @@ More sessions means more output, so the controls have to come from configuration
 
 Always give Claude a way to [verify its own work](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills), whether tests, a build, or a screenshot diff. A session checks its own work and fixes its own mistakes before an engineer sees them.
 
-The feedback loop should not be confused with a verifier subagent (Stage 3: Build). The feedback loop runs through the whole task as many times as the work. The verifier subagent, on the other hand, is one way to package the final check by running a fresh context window once the session believes the work is done. This way the verdict is not colored by the assumptions that produced the code.
+The feedback loop should not be confused with a verifier subagent (Stage 3: Build). The feedback loop runs through the whole task as many times as the work requires. The verifier subagent, on the other hand, is one way to package the final check by running a fresh context window once the session believes the work is done. This way the verdict is not colored by the assumptions that produced the code.
 
 #### How to execute it
 
@@ -487,7 +487,7 @@ The governing principle is that the agent may act up to the production gate and 
 
 So far, we've discussed how to add Claude to each stage of the SDLC process, with each stage requiring a human to launch the initial steps. This stage, however, shifts the focus to autonomous running of Claude to close the loop.
 
-For example, a continuously running monitoring agent could, off the back of a bug ticket being raised, create an `intent.md`, and flow through the requirements, plan, build test and review phases. Stage 6: Maintenance runs headless, with an independent confidence gate between stages, a deterministic check or an adversarial reviewing agent, deciding whether the previous stage's output continues or is escalated to a human.
+For example, a continuously running monitoring agent could, off the back of a bug ticket being raised, create an `intent.md`, and flow through the requirements, plan, build, test, and review phases. Stage 6: Maintenance runs headless, with an independent confidence gate between stages, a deterministic check or an adversarial reviewing agent, deciding whether the previous stage's output continues or is escalated to a human.
 
 ### Closing the loop
 

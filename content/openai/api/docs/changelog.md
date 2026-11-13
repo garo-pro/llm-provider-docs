@@ -322,7 +322,7 @@ The Assistants API shut down on August 26, 2026. Migrate to the Responses API an
 
 Feature
 
-API customers can now select regional processing for an individual request by using a prefixed domain with an API key from a project having Global geography. Existing eligibility, data retention control, endpoint, and model support requirements continue to apply. Learn more in the [data controls guide](https://developers.openai.com/api/docs/guides/your-data#select-a-processing-region-per-request).
+API customers can now select regional processing for an individual request by using a prefixed domain with an API key from a project having Global geography. Existing eligibility, data retention control, endpoint, and model support requirements continue to apply. Learn more in the [data controls guide](https://developers.openai.com/api/docs/guides/data-residency#select-a-processing-region-per-request).
 
 ### Aug 21
 
@@ -881,7 +881,7 @@ Released [Enterprise Key Management (EKM)](https://platform.openai.com/docs/guid
 
 Feature
 
-Released [UK data residency](https://platform.openai.com/docs/guides/your-data#data-residency-controls).
+Released [UK data residency](https://developers.openai.com/api/docs/guides/data-residency).
 
 ### Oct 6
 
@@ -1103,7 +1103,7 @@ Launched the [API Usage Dashboard Update](https://help.openai.com/en/articles/10
 
 Feature
 
-Introducing data residency in Europe. Read more [here](https://platform.openai.com/docs/guides/your-data).
+Introducing data residency in Europe. Read more [here](https://developers.openai.com/api/docs/guides/data-residency).
 
 ## January, 2025
 

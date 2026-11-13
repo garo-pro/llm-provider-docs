@@ -98,6 +98,7 @@ work more autonomously.
 - [Custom voices](https://developers.openai.com/api/docs/guides/custom-voices.md): Create a voice from a text prompt for GPT-Live, or use an approved recording for speech generation and voice agents.
 - [Cybersecurity checks](https://developers.openai.com/api/docs/guides/safety-checks/cybersecurity.md): Learn about API cybersecurity safeguards, authorized access, request-level checks, access restrictions, and appeals.
 - [Data controls in the OpenAI platform](https://developers.openai.com/api/docs/guides/your-data.md): Your data is your data. An overview of how OpenAI uses your data, including retention and usage policies.
+- [Data residency](https://developers.openai.com/api/docs/guides/data-residency.md): Enable regional or per-request data residency, and review supported regions, models, and endpoints.
 - [Databricks Sandbox](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/databricks.md): Connect a Databricks Sandbox to an Agents API session and verify that the agent can write a file.
 - [Daytona](https://developers.openai.com/api/docs/guides/agents-api/environments/providers/daytona.md): Run an Agents API session in a Daytona Sandbox.
 - [Decisions](https://developers.openai.com/api/docs/guides/decisions.md): Use the Decisions API to check conditions, select from fixed options, and score text, images, and JSON against a rubric.

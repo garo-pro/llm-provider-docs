@@ -9,7 +9,7 @@ Memory on [Claude Managed Agents](https://claude.com/resources/articles/claude-m
 
 ![](https://assets.claude.com/f55bb71c387d00c0604c391b77605382df1cfff6.png)
 
-## How memory works in Claude Manged Agents
+## How memory works in Claude Managed Agents
 
 Memory for Claude Managed Agents is a built-in, intelligence-optimized memory layer that lets agents learn from every session. Memory is optimized against internal benchmarks for long-running agents that improve across sessions and share what they've learned with each other.
 

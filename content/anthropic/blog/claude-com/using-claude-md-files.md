@@ -117,7 +117,7 @@ For example, if you have a Slack MCP server configured for your organization and
 - Do not use for individual PR updates (those go through GitHub webhooks)
 - Rate limited to 10 messages per hour
 ```
-Learn more about MCP [fundamentals and best practices](https://www.anthropic.com/engineering/building-effective-mcp-servers).
+Learn more about MCP [fundamentals and best practices](https://claude.com/resources/articles/what-is-model-context-protocol).
 
 For more information on setting permissions for Claude Code, see settings.json documentation at [code.claude.com](https://code.claude.com/docs/en/settings).
 
@@ -166,7 +166,7 @@ Subagents work best for multistep workflows where each phase requires different 
 
 Repetitive prompts waste time. You find yourself typing "review this code for security issues" or "analyze this for performance problems" over and over. Each time you need to remember the exact phrasing that gets good results.
 
-Custom slash commands store these as markdown files in your `.claude/commands/` directory. Create a file named `performance-optimization.mm` with your preferred performance optimization prompt, and it becomes available as `/performance-optimization` in any conversation. Commands support arguments through $ARGUMENTS or numbered placeholders like `$1` and `$2`, letting you pass specific files or parameters.
+Custom slash commands store these as markdown files in your `.claude/commands/` directory. Create a file named `performance-optimization.md` with your preferred performance optimization prompt, and it becomes available as `/performance-optimization` in any conversation. Commands support arguments through $ARGUMENTS or numbered placeholders like `$1` and `$2`, letting you pass specific files or parameters.
 
 For example, `performance-optimization.md` might look like this:
 
@@ -244,7 +244,7 @@ Claude will write the markdown file to `.claude/commands/performance-optimizatio
 
 It's tempting to create a comprehensive CLAUDE.md right away. Resist that urge.
 
-CLAUDE.md is added to Claude Code's context every time, so from a [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) and [prompt engineering](https://www.anthropic.com/engineering/prompt-engineering-overview) standpoint, keep it concise. One option: break up information into separate markdown files and reference them inside the CLAUDE.md file.
+CLAUDE.md is added to Claude Code's context every time, so from a [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) and [prompt engineering](https://claude.com/resources/articles/best-practices-for-prompt-engineering) standpoint, keep it concise. One option: break up information into separate markdown files and reference them inside the CLAUDE.md file.
 
 Don't include sensitive information, API keys, credentials, database connection strings, or detailed security vulnerability information—especially if you commit to version control. Since CLAUDE.md becomes part of Claude's system prompt, treat it as documentation that could be shared publicly.
 

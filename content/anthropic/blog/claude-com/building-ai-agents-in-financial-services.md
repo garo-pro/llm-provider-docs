@@ -32,7 +32,7 @@ What does this look like in practice? Instead of an analyst manually pulling dat
 
 This shift from traditional AI to AI agents is particularly significant for financial services because it tackles the process completion problem. Financial workflows don't just need information, they need actions taken across multiple systems to actually complete transactions and maintain compliance. Agents can bridge those gaps.
 
-## **Real-world results AI agents in finance**
+## **Real-world results from AI agents in finance**
 
 AI-powered financial agents are already delivering real-world results in areas such as customer service, fraud detection, and workforce empowerment.
 
@@ -51,7 +51,7 @@ In fraud detection and cybercrime prevention, AI agents excel at spotting patter
 
 AI agents monitor millions of transactions in real-time, working around the clock without the fatigue or cognitive limitations that affect human teams. McKinsey found that [a single team member](https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/how-agentic-ai-can-change-the-way-banks-fight-financial-crime) can effectively supervise more than 20 AI agents in financial crime-detection workflows.
 
-For [Brex](https://claude.com/customers/brex), a modern financial platform, Claude powers their AI anomaly detection, reviewing 100% percent of transactions and providing critical aircover for financial professionals by proactively grouping related expenses, flagging policy concerns, and providing explanations with recommended actions.
+For [Brex](https://claude.com/customers/brex), a modern financial platform, Claude powers their AI anomaly detection, reviewing 100% of transactions and providing critical aircover for financial professionals by proactively grouping related expenses, flagging policy concerns, and providing explanations with recommended actions.
 
 ### **Amplifying team capabilities**
 

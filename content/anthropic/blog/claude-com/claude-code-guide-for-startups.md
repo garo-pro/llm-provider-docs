@@ -265,7 +265,7 @@ Kareem also described part of Clay's moat as the ability to constantly rebuild, 
 
 "I think the moat for any company right now is that it needs to be self-improving. So Clay is a self-learning revenue engine. So the more you use this, the more we know who your best customers are, what should you say, what's worked, what hasn't and that's changing over time," he said. "The race is really, whoever can get to the distribution fastest… so you can help each [customer] so that you can self-improve."
 
-At a [May 2026 Code with Claude event](https://www.youtube.com/live/OFDm3T7pVlc?si=Z_RENcJSqm8H79aj), Niko Grupen, Harvey's Head of Applied AI spoke about how each new wave of model capabilities — emergent reasoning, agentic automation, planning and orchestration — required a full re-architecture of the platform.
+At a [May 2026 Code with Claude event](https://www.youtube.com/live/OFDm3T7pVlc?si=Z_RENcJSqm8H79aj), Niko Grupen, Harvey's Head of Applied AI, spoke about how each new wave of model capabilities — emergent reasoning, agentic automation, planning and orchestration — required a full re-architecture of the platform.
 
 ![](https://assets.claude.com/75801fece65e4c2852f8dc9a24862591f645bae2.png?w=168&q=75&fm=webp&fit=max)
 

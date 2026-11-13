@@ -23,7 +23,7 @@ In the case of our team’s weekly AE digest, I started by outlining the goal to
 
 Next, I connected Claude to BigQuery via MCP; BigQuery is our marketing team’s source of truth, offering granular insights into data from HubSpot, Clay, and Salesforce. I wanted to start simple, so I began with our single source of truth for events and webinars. To personalize each update, I had Claude pull the rep’s territory from our CRM and any relevant account updates communicated in Slack. That way, Claude can parse the two together to create a personalized weekly update.
 
-Over time, I’ve worked with other teams across marketing to enrich the data, so the briefing now includes new content like blog articles, and ebooks, customer stories, webinars, and even events from our partner ecosystem.
+Over time, I’ve worked with other teams across marketing to enrich the data, so the briefing now includes new content like blog articles, ebooks, customer stories, webinars, and even events from our partner ecosystem.
 
 ## **User feedback is the real prompt engineering**
 

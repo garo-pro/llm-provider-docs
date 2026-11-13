@@ -35,7 +35,7 @@ We’ve [accumulated](https://claude.com/blog/lessons-from-building-claude-code-
 
 - **Defer rarely used tools** . Declare all your tools up front but mark the rarely used ones[defer_loading](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-use-with-prompt-caching#defer-loading-and-cache-preservation) : they stay out of the cached prefix and are appended into the conversation only when Claude looks them up with tool search, so the cache is preserved.
 - **Apply system prompt updates as messages** .[Claude Platform](https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages#when-to-use-a-mid-conversation-system-message) lets you add a system instruction as a message mid-conversation instead of editing the system prompt, which preserves the cache.
-- **Lay out the request out so the stable part stays stable** . Add static context (tool definitions and the system prompt) first and the growing conversation behind them (Figure 2).
+- **Lay out the request so the stable part stays stable** . Add static context (tool definitions and the system prompt) first and the growing conversation behind them (Figure 2).
 
 ![](https://assets.claude.com/bf235bef54d335c8f367a90e6d986e0e480b3659.png)
 
@@ -46,7 +46,7 @@ We’ve [accumulated](https://claude.com/blog/lessons-from-building-claude-code-
 
 ## **Instructions**
 
-Prompts can accumulate instructions that patch model weaknesses. These instructions can drift relative to the capabilities of the [latest Claude models](https://x.com/trq212/status/2080710971228918066). Here are common prompting “anti-patterns” that hobble frontier Claude model and can inadvertently increase costs:
+Prompts can accumulate instructions that patch model weaknesses. These instructions can drift relative to the capabilities of the [latest Claude models](https://x.com/trq212/status/2080710971228918066). Here are common prompting “anti-patterns” that hobble frontier Claude models and can inadvertently increase costs:
 
 - **Verification rituals** . Instructions like "*double-check your work* ” or "*verify twice before responding* ” are often taken literally by frontier models and can waste tokens.
 - **Thoroughness and emphasis boosters** . "*Be maximally thorough* ," "*CRITICAL: YOU MUST ALWAYS…* " can lead to verbosity and extra tool calls when working with frontier models.

@@ -29,6 +29,4 @@ Millennium is using its internal AI lab to continue pushing the frontier, pressu
 
 "Claude can reason through risk positions, explain daily changes, and carry what it learned into the next question,” said Peter Nolan, Head of Asset and Wealth Management, at Anthropic. “Millennium’s risk managers will use frontier intelligence to deliver automated recommendations with the goal of saving valuable time.”
 
-**Learn more:**
-
 Learn more about [Claude for financial services](https://claude.com/solutions/financial-services?utm_source=google&utm_medium=pse_fins&utm_campaign=lgn_cl4w_us_fins&utm_content=&utm_term=claude%20financial%20services&utm_term=claude%20financial%20services&utm_campaign=B2B_ADIR_US_CL4W_SEA_FINS-k_LG_FINS&utm_source=adwords&utm_medium=ppc), or [contact our team](https://claude.com/contact-sales) to talk about what Claude can do inside your firm.

@@ -37,7 +37,7 @@ For this task, we gave the team of 1,000 agents 60 statements to prove, includin
 
 ### Collaboration
 
-Work on the proof can be split up, making it a good task for a multi-agent team. But agents also need to coordinate, both to build on one another’s work and to avoid duplicating it. In our [original formalization](https://www.anthropic.com/research/formalizing-fermats-last-theorem), Claude’s early attempts failed because agents lost track of the project’s state and stopped collaborating effectively. Moving to the Prove2Me platform solved this problem.
+Work on the proof can be split up, making it a good task for a multi-agent team. But [agents also need to coordinate](https://claude.com/resources/articles/multi-agent-coordination-patterns), both to build on one another’s work and to avoid duplicating it. In our [original formalization](https://www.anthropic.com/research/formalizing-fermats-last-theorem), Claude’s early attempts failed because agents lost track of the project’s state and stopped collaborating effectively. Moving to the Prove2Me platform solved this problem.
 
 For this run, each agent had a sandbox on its own lightweight virtual machine. A single shared machine hit its limits at about 100 agents: more than half of our 100-agent runs had to be stopped or restarted because memory, disk, or CPU ran out.
 

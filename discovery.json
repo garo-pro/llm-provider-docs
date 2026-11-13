@@ -75,6 +75,12 @@
       "serves_sitemap": false,
       "serves_markdown": false
     },
+    "trust.anthropic.com": {
+      "status": "UNKNOWN \u2014 seen only as a redirect target",
+      "serves_llms_txt": false,
+      "serves_sitemap": false,
+      "serves_markdown": false
+    },
     "z.ai": {
       "status": "UNKNOWN \u2014 seen only as a redirect target",
       "serves_llms_txt": false,
@@ -87,6 +93,7 @@
     "claude.com",
     "code.claude.com",
     "platform.claude.com",
+    "trust.anthropic.com",
     "z.ai"
   ],
   "github_org_anthropics": {

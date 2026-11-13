@@ -98,7 +98,7 @@ We are excited to see legal tech companies, law firms, legal aid organizations c
 “On our chemical structure benchmark, Claude Opus 5.5 correctly identifies over 10% more structures than Opus 5 while using less than half the output tokens. In Solve, it powers patent work from drafting to litigation-grade claim charting.”
 
 
-“Claude continues to power us as the most widely contract review tool in the world—we're approaching 500,000 contracts per month moving through Spellbook and we wouldn't be here without Claude.”
+“Claude continues to power us as the most widely used contract review tool in the world—we're approaching 500,000 contracts per month moving through Spellbook and we wouldn't be here without Claude.”
 
 
 ![The Access Project](https://assets.claude.com/d6661126feb224777780199d17eac5e9d054a66e.png)

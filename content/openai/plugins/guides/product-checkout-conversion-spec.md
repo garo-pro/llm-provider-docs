@@ -89,5 +89,4 @@ description or images. Declare these item fields as optional in your tool's inpu
 schema, and use the checkout item and offer IDs to retrieve authoritative
 product, inventory, and pricing data from your own catalog.
 
-The nested checkout session aligns with the Commerce checkout session shape documented
-[here](https://developers.openai.com/commerce/specs/checkout/#post-checkout_sessions).
+The nested checkout session uses the data shape in the [legacy checkout specification](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/blob/main/spec/2025-09-29/openapi/openapi.agentic_checkout.yaml), under the create-session endpoint.

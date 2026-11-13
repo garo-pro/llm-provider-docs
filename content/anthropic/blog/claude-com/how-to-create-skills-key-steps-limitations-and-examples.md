@@ -103,9 +103,9 @@ Don't write skills speculatively. Build them when you have real, repeated tasks.
 
 Before creating a skill, ask: Have I done this task at least five times? Will I do it at least ten more times? If yes, a skill makes sense.
 
-### **Define success criteria—and include it in the skill**
+### **Define success criteria—and include them in the skill**
 
-Tell Claude what a good out looks like. If you're creating financial reports, specify required sections, formatting standards, validation checks, and quality thresholds. Include these criteria in your instructions so Claude can self-check.
+Tell Claude what a good output looks like. If you're creating financial reports, specify required sections, formatting standards, validation checks, and quality thresholds. Include these criteria in your instructions so Claude can self-check.
 
 ### **Use the Skill-Creator skill**
 
@@ -339,8 +339,6 @@ To access Anthropic's official brand identity and style resources, use this skil
 ```
 **What makes it strong**: Provides precise, actionable information Claude doesn't inherently have (exact hex codes, font names, size thresholds) with a clear description that tells Claude both what it does and when to trigger it.
 
-**What makes it strong**: Creative capability with clear boundaries, copyright protection built in, technical scaffolding for non-musicians, quality standards.
-
 ### **Skill example #3: [frontend design skill](https://claude.com/resources/articles/improving-frontend-design-through-skills)**
 
 [frontend design skill](https://claude.com/resources/articles/improving-frontend-design-through-skills)
@@ -376,8 +374,6 @@ Interpret creatively and make unexpected choices that feel genuinely designed fo
 **IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
 Remember: Claude is capable of extraordinary creative work. Don't hold back, show what can truly be created when thinking outside the box and committing fully to a distinctive vision.
 ```
-**What makes it strong**: Creative capability with clear boundaries, copyright protection built in, technical scaffolding for non-musicians, quality standards.
-
 ## **Common questions**
 
 ### **How do I write descriptions that actually trigger?**
@@ -419,10 +415,6 @@ Enterprise customers can work with Anthropic's customer success team to explore 
 ### **How do I debug skills?**
 
 Test triggering and execution separately. If skills don't activate, broaden your description and add use cases. If results are inconsistent, add specificity to instructions and include validation steps. Create a test case library covering normal usage, edge cases, and out-of-scope requests.
-
-### **How do I share Skills across my organization?**
-
-****In [Claude.ai](http://claude.ai/), Skills are currently individual to each user, though org-wide management and sharing capabilities are coming soon. In the meantime, regardless of your team size, we suggest creating a shared document repository with skill specifications. This prepares your organization for upcoming features while establishing good governance practices today.
 
 ## **Get started**
 

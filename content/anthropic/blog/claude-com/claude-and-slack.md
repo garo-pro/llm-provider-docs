@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/claude-and-slack
 Markdown Content:
 # Claude and Slack
 
-Access Claude directly into Slack so you can get help in channels and threads, or connect your Slack workspace to Claude for searching conversations and pulling context when you need it.
+Access Claude directly in Slack so you can get help in channels and threads, or connect your Slack workspace to Claude for searching conversations and pulling context when you need it.
 
 *Editor's note: Mentions of Max in this post from before October 30, 2026 include what are now the Max and Ultra plans.*
 

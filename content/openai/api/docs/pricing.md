@@ -271,12 +271,16 @@ Batch
 
 | Model | Modality | Input | Output | Cached input |
 | --- | --- | --- | --- | --- |
-| gpt-image-2 | Image | $4.00 | $15.00 | $1.00 |
-| gpt-image-2 | Text | $2.50 | - | $0.625 |
+| gpt-image-2.6-sunburst | Image | $4.00 | $15.00 | $1.00 |
+| gpt-image-2.6-sunburst | Text | $2.50 | - | $0.625 |
+| gpt-image-2.6-flare | Image | $4.00 | $15.00 | $1.00 |
+| gpt-image-2.6-flare | Text | $2.50 | - | $0.625 |
 | gpt-image-2.5-sunburst | Image | $4.00 | $15.00 | $1.00 |
 | gpt-image-2.5-sunburst | Text | $2.50 | - | $0.625 |
 | gpt-image-2.5-flare | Image | $4.00 | $15.00 | $1.00 |
 | gpt-image-2.5-flare | Text | $2.50 | - | $0.625 |
+| gpt-image-2 | Image | $4.00 | $15.00 | $1.00 |
+| gpt-image-2 | Text | $2.50 | - | $0.625 |
 | gpt-image-1.5 | Image | $4.00 | $16.00 | $1.00 |
 | gpt-image-1.5 | Text | $2.50 | $5.00 | $0.63 |
 | gpt-image-1-mini | Image | $1.25 | $4.00 | $0.13 |

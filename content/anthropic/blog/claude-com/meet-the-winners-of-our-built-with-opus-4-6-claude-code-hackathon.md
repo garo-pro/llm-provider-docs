@@ -7,7 +7,7 @@ Markdown Content:
 
 From a cardiologist to an electronic musician, get to the know the winners of our Built with Opus 4.6 hackathon.
 
-Last week, we announced [the *Built with Opus 4.7* virtual Claude Code hackathon](https://cerebralvalley.ai/e/built-with-4-7-hackathon), inviting the community to build with [our latest](https://www.anthropic.com/news/claude-opus-4-7) Opus model. As with our previous hackathon featuring Opus 4.6, we’re partnering with Cerebral Valley to select 500 participants and give each $500 API credits and one week to build with Claude Code. Judges from the Claude team will then pick six winners and award them from a total prize pool of $100,000 in Claude API credits for project development.
+Last week, we announced [the *Built with Opus 4.7* virtual Claude Code hackathon](https://cerebralvalley.ai/e/built-with-4-7-hackathon), inviting the community to build with [our latest](https://www.anthropic.com/news/claude-opus-4-7) Opus model. As with our previous hackathon featuring Opus 4.6, we’re partnering with Cerebral Valley to select 500 participants and give each $500 in API credits and one week to build with Claude Code. Judges from the Claude team will then pick six winners and award them from a total prize pool of $100,000 in Claude API credits for project development.
 
 The winners of our Opus 4.6 hackathon, our first in this series, included a personal injury lawyer, a cardiologist, a roads and infrastructure specialist, an electronic musician, and one professional software engineer. They tackled projects to improve housing, healthcare, infrastructure, music, and education. And four out of five winners were not professional developers.
 
@@ -23,7 +23,7 @@ California's housing permits have a 90%+ rejection rate on first submission, wit
 
 With CrossBeam, builders drag and drop their blueprints and correction letters into the tool; parallel sub-agents parse the documents, build a spatial index, and assign targeted agents to each discrete correction. Twenty minutes later, the builder has a precise action plan for approval. On the other side of the desk, CrossBeam lets municipalities batch-process submitted permits and generate draft correction letters automatically.
 
-Buena Park, a city in Southern California which needs to permit more than 8,900 housing units by 2029 but permitted only about 120 in 2024, is looking at adopting Crossbeam to speed the permitting process not just for builders, but also the administrators who review the piles of paperwork.
+Buena Park, a city in Southern California which needs to permit more than 8,900 housing units by 2029 but permitted only about 120 in 2024, is looking at adopting CrossBeam to speed the permitting process not just for builders, but also the administrators who review the piles of paperwork.
 
 “If we can solve for both sides of California's permit crisis,” Mike says, “we might actually be able to solve California's housing crisis.”
 

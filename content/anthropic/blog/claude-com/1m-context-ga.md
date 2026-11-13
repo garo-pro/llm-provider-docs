@@ -53,7 +53,7 @@ That means you can load an entire codebase, thousands of pages of contracts, or 
 “We raised our Opus context window from 200k to 500k and the agent runs more efficiently — it actually uses fewer tokens overall. Less overhead, more focus on the goal at hand.”
 
 
-“Real-world spreadsheet tasks require deep research and complex multi-step plans. Claude's 1M context window let’s us maintain task adherence and attention to detail.”
+“Real-world spreadsheet tasks require deep research and complex multi-step plans. Claude's 1M context window lets us maintain task adherence and attention to detail.”
 
 
 ### **Getting started**

@@ -138,7 +138,7 @@ On Opus 5.5 with an API key or a Claude subscription, changing effort keeps the 
 
 ### Choose the right model for your work
 
-Model choice sets the price of every token in a session, so it moves the bill more than effort does. It also reaches further. Every subagent that inherits the main model inherits its price too. Most days need three models: a small one for lookups, Opus 5.5 for work you supervise closely, and a bigger one for the hardest tasks.
+[Model choice](https://claude.dev/blog/which-claude-model-should-you-build-with/) sets the price of every token in a session, so it moves the bill more than effort does. It also reaches further. Every subagent that inherits the main model inherits its price too. Most days need three models: a small one for lookups, Opus 5.5 for work you supervise closely, and a bigger one for the hardest tasks.
 
 ![Three models in order of cost, with bars that show order of cost only: Haiku or Sonnet for lookups and subagents, Opus 5.5 as the daily driver, and Fable 5.1 for the hardest work, each with the kinds of work it suits.](https://claude.dev/media/f08757b9a91bce794fda0b6e3cd0deacede7783ce9db0097a67a47606e6900a4.png)
 

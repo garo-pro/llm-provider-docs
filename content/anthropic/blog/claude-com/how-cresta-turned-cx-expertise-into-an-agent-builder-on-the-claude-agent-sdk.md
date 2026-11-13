@@ -46,7 +46,7 @@ Conductor is a self-improving meta-agent built on established best practices for
 
 After launch, production interactions, workflow outcomes, and feedback become new signals for the next improvement.
 
-Conductor helps builders turn what they learned from an agent build into a reusable memory artifact, capturing patterns, business rules, and evaluation approaches. They can then share it as skill with the rest of the team, so others can build from the same proven practices.
+Conductor helps builders turn what they learned from an agent build into a reusable memory artifact, capturing patterns, business rules, and evaluation approaches. They can then share it as a skill with the rest of the team, so others can build from the same proven practices.
 
 ### **Making the important decisions easier**
 

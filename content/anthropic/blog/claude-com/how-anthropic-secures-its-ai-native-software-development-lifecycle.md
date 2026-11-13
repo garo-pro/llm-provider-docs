@@ -147,7 +147,7 @@ When an alert fires at Anthropic, Claude starts:
 
 What this agent can’t do is deploy the fix automatically. It’s a single-purpose system account agent with three permissions: it can write new docs, post in company channels, and access production logs.
 
-The fix either needs to come from a separate agent-human reviewer system. The reason for this comes back to managing identity, permissions, and hard boundaries: it’s important to contain the blast radius when pushing code into production. Separating agents is critical as one (or multiple) agents act as checks on the other.
+The fix needs to come from a separate agent-human reviewer system. The reason for this comes back to managing identity, permissions, and hard boundaries: it’s important to contain the blast radius when pushing code into production. Separating agents is critical as one (or multiple) agents act as checks on the other.
 
 ![](https://assets.claude.com/75a8858b23bfc4815039eb395150b5c9ca6639b8.png)
 

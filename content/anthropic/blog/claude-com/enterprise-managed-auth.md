@@ -31,7 +31,7 @@ Enterprise-managed authorization works across three groups: the identity provide
 
 **MCP providers.** Asana, Atlassian, Canva, Figma, Granola, Linear, and Supabase support Enterprise-managed auth at launch, with Slack coming soon.
 
-**Claude customers.** Hubspot, Ramp, and Webflow are among the organizations rolling out enterprise-managed auth across their teams.
+**Claude customers.** HubSpot, Ramp, and Webflow are among the organizations rolling out enterprise-managed auth across their teams.
 
 “Enterprise-managed auth is a foundational milestone in realizing Asana's vision as the operating system for human-agent teams. By providing organizations with a secure, controlled way to connect Claude to their most critical workflows, we are unlocking the ability to scale AI-driven value across the enterprise—backed by the absolute governance, compliance, and trust that large-scale deployment demands.”
 

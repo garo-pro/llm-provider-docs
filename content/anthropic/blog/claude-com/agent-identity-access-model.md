@@ -75,7 +75,7 @@ When an admin adds a connection to a channel's profile, the credential is stored
 
 ## What’s next
 
-Agent identity is the foundation of Claude Tag's access model. In the future, we plan to strengthen our Claude Tag’s security offerings to include just-in-time credential grants—so that a user can approve a single sensitive action in the moment without permanently widening the agent's scope—and an identity-aware overlay for organizations with more complex clearance structures. This will add user-level checks on top of an agent’s scope, so Claude only acts when both the channel's profile and the requesting user's own permissions allow it.
+Agent identity is the foundation of Claude Tag's access model. In the future, we plan to strengthen Claude Tag’s security offerings to include just-in-time credential grants—so that a user can approve a single sensitive action in the moment without permanently widening the agent's scope—and an identity-aware overlay for organizations with more complex clearance structures. This will add user-level checks on top of an agent’s scope, so Claude only acts when both the channel's profile and the requesting user's own permissions allow it.
 
 The shift from single player to multiplayer AI in products like Claude Tag makes long-running, team-based work possible. Agent identity ensures that Claude’s access to tools is broad enough to be useful, but scoped enough to be secure at enterprise scale.
 

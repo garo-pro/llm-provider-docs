@@ -37,10 +37,10 @@ To get you started, we're open-sourcing 11 plugins built and used by our own tea
 - **Product management** — Write specs, prioritize roadmaps, and track progress
 - **Biology research** — Search literature, analyze results, and plan experiments
 
-Easily install these directly from Cowork, browse the full collection on our [website](https://claude.com/plugins-for/cowork), or upload your own plugin (which can be built using Plugin Create). They're also available on [GitHub](https://github.com/anthropics/knowledge-work-plugins) for developers. Every component of plugins (skills, connectors, slash commands, and sub-agents) is file-based, so plugins are easy to build, edit, and share. Try customizing each plugin using Claude to make it just right for you and your team.
+Easily install these directly from Cowork, browse the full collection on our [website](https://claude.com/plugins), or upload your own plugin (which can be built using Plugin Create). They're also available on [GitHub](https://github.com/anthropics/knowledge-work-plugins) for developers. Every component of plugins (skills, connectors, slash commands, and sub-agents) is file-based, so plugins are easy to build, edit, and share. Try customizing each plugin using Claude to make it just right for you and your team.
 
 ## Getting started
 
 Plugin support in Cowork is available today as a research preview for all paid Claude users. Start with our open-source collection, customize them, or build something entirely new.
 
-Plugins are currently saved locally to your machine. Better support for org-wide sharing and management (support for private plugin marketplaces, etc.) are coming in the weeks ahead.
+Plugins are currently saved locally to your machine. Better support for org-wide sharing and management (support for private plugin marketplaces, etc.) is coming in the weeks ahead.

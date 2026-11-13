@@ -42,7 +42,7 @@ The loop reads each block by type because Sonnet 5.5 thinks by default, so a res
 
 ## Choosing between Sonnet 5.5 and Opus 5.5
 
-In the Claude 5.5 family, Opus 5.5 is built for complex work requiring careful judgment. Use Sonnet 5.5 for well-scoped everyday tasks like fixing bugs and quickly iterating on features. It also creates polished documents, slides and spreadsheets, and it has a strong eye for design. Its speed makes it well suited to fast iteration. Claude Haiku 5.5 will join the family in the coming weeks for high-volume, low-latency workflows.
+In the Claude 5.5 family, Opus 5.5 is built for complex work requiring careful judgment. Use Sonnet 5.5 for well-scoped everyday tasks like fixing bugs and quickly iterating on features. It also creates polished documents, slides and spreadsheets, and it has a strong eye for design. Its speed makes it well suited to fast iteration. [Claude Haiku 5.5](https://claude.dev/blog/which-claude-model-should-you-build-with/) will join the family in the coming weeks for high-volume, low-latency workflows.
 
 | Your workload                                                                                                                                                    | Start with |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |

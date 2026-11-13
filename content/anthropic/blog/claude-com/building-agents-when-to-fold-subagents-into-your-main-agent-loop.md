@@ -13,7 +13,7 @@ Subagents – agents with their own context window, tools, and instructions, [or
 
 However, recently the Applied AI team has found a pattern of enterprise agent deployments that have benefited from folding routers, planners, and domain subagents into the main agent loop. In [our comparisons across several enterprise deployments](https://claude.com/resources/articles/the-anatomy-of-effective-commerce-agents#:~:text=In%20our%20comparisons%20across%20several%20enterprise%20deployments,latency%20per%20task), [a single agent with skills](https://claude.com/resources/articles/building-agents-with-skills-equipping-agents-for-specialized-work) frequently outperformed both the one-prompt-for-everything design and the subagent design on quality, and often at a lower cost and latency per task.
 
-For example, one company found the dozen of specialist subagents within its customer-facing agent made a consistent on-brand experience difficult to maintain and added latency that hurt the user experience.
+For example, one company found the dozen specialist subagents within its customer-facing agent made a consistent on-brand experience difficult to maintain and added latency that hurt the user experience.
 
 We also often see proposed agent designs that follow a familiar progression: an intent classifier, a fixed multi-step reasoning pipeline, user-segment buckets, separate recommendation branches, and a multi-agent orchestrator on top.
 

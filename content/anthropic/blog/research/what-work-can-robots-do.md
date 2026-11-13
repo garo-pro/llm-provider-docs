@@ -224,7 +224,7 @@ Much remains uncertain about how robots and AI could reshape the economy. Growth
 
 ## **Appendix**
 
-Available [here](https://www-cdn.anthropic.com/files/4zrzovbb/website/d27288375b0ac486cb9da0a30a94423b36ff0443.pdf).
+Available [here](https://assets.claude.com/d27288375b0ac486cb9da0a30a94423b36ff0443.pdf).
 
 #### Data availability
 

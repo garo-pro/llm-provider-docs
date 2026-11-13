@@ -20,7 +20,7 @@ Today, agentic coding tools like [Claude Code](https://www.claude.com/product/cl
 We spoke with three YC startups who demonstrate this transformation in action:
 
 - [HumanLayer](https://www.humanlayer.dev/) (F24) built their entire platform and pioneered context engineering practices with Claude Code
-- [Ambral](https://www.ambral.com/) (W25) is scaling AI-powered account management with sophisticated sub-agent powered workflows built with Claude Code and Claude Agents SDK
+- [Ambral](https://www.ambral.com/) (W25) is scaling AI-powered account management with sophisticated sub-agent powered workflows built with Claude Code and the Claude Agent SDK
 - [Vulcan Technologies](https://vulcan-tech.com/) (S25) is using Claude Code to tackle regulatory complexity for the government and industry
 
 Let’s dive in.
@@ -91,7 +91,7 @@ His development process follows three discrete phases:
 2. **Planning phase (Opus 4.1)** : Create a plan with discrete phases on how to implement the feature. "I'll have Opus create a plan with phases, discrete phases on how to actually go about implementing it, and I'll go revise that plan. Maybe I'll chat with Opus about questions about certain details, or I'll manually update this markdown file."
 3. **Implementation phase (Sonnet 4.5)** : Execute each phase of the plan systematically. "Then I'll use Sonnet 4.5 to go and implement each phase."
 
-This approach prevailed over the other workflows Stettner tried and was influenced by some of the work Horthy is doing at Humanlayer: "I tried every coding tool, and I experimented with basically every model. I just think Anthropic's models are the best at tool use right now, and that translates to code."
+This approach prevailed over the other workflows Stettner tried and was influenced by some of the work Horthy is doing at HumanLayer: "I tried every coding tool, and I experimented with basically every model. I just think Anthropic's models are the best at tool use right now, and that translates to code."
 
 ### **Building a robust research engine**
 

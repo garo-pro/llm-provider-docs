@@ -149,7 +149,7 @@ For more on CLAUDE.md files, see [Customizing Claude Code for your codebase: set
 
 For complex multi-step workflows that run repeatedly, skills provide a reusable interface. Define a skill once in .claude/skills/, then invoke it with /skill-name or let Claude load it automatically when a task matches its description.
 
-Skills differ from CLAUDE.md files in scope. CLAUDE.md files are always loaded and shapes every interaction. A skill is loaded on demand, either because it was invoked explicitly or because Claude matched the current task to the skill's description field. That makes skills the right place for workflows that should be available but not applied to every prompt.
+Skills differ from CLAUDE.md files in scope. CLAUDE.md files are always loaded and shape every interaction. A skill is loaded on demand, either because it was invoked explicitly or because Claude matched the current task to the skill's description field. That makes skills the right place for workflows that should be available but not applied to every prompt.
 
 Skills fit well when:
 

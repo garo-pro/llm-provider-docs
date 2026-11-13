@@ -150,6 +150,6 @@ Another nuance to this: effort shapes token consumption but doesn't limit it. Th
 
 Most of the time, you shouldn't be thinking about either setting. When a result misses the mark, ask, “did Claude not know enough or did it not try hard enough?” and adjust as needed.
 
-For the full set of techniques to increase efficiency specfically, see [maximizing the value of your Claude Code sessions](https://claude.com/resources/articles/maximizing-the-value-of-your-claude-code-sessions).
+For the full set of techniques to increase efficiency specifically, see [maximizing the value of your Claude Code sessions](https://claude.com/resources/articles/maximizing-the-value-of-your-claude-code-sessions).
 
 *This article was written by Lydia Hallie, member of technical staff on the Claude Code team.*

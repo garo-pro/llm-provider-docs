@@ -59,7 +59,7 @@ If any step fails, fix the issue and rerun from step 1 — do not hand back part
 - **Triggered by** : A manual prompt in real-time.
 - **Stop criteria** : Goal achieved OR maximum number of turns reached.
 - **Best used for:** Tasks that have verifiable exit criteria.
-- **Managed usage by:** Setting a specific completion criteria and explicit turn caps, “stop after 5 tries.”
+- **Managed usage by:** Setting specific completion criteria and explicit turn caps, “stop after 5 tries.”
 
 Sometimes, a single turn is not enough, especially for more complex tasks. Agents do better when they can iterate. You can extend how long Claude keeps iterating by defining what done looks like with /goal.
 
@@ -74,7 +74,7 @@ For example:
 
 - **Triggered by** : A specified time interval.
 - **Stop criteria** : You cancel it, or the work completes (the PR merges, the queue is empty).
-- **Best used for:** For recurring work, or interfacing with external environments / systems.
+- **Best used for:** Recurring work, or interfacing with external environments / systems.
 - **Managed usage by:** Set longer intervals or react based on events rather than time.
 
 Some agentic work is recurring: the task stays the same and only the inputs change. For example, summarizing Slack messages every morning. Other work depends on external systems, and a simple way to interface with one is to check it on an interval and react to what changed. For example, a PR which may receive code reviews or fail CI.
@@ -98,7 +98,7 @@ The primitives above, along with other Claude Code features like **auto mode** a
 For example, to handle incoming feedback, you can use:
 
 1. **`/schedule`** (research preview) to run a routine that checks for new reports
-2. **`/goal`** to define what done looks and**skills** to document how to verify it
+2. **`/goal`** to define what done looks like and**skills** to document how to verify it
 3. **Dynamic workflows** to orchestrate agents that triage each report, fix it, and review the fix
 4. **Auto mode** so the routine runs without stopping to ask for permission
 
@@ -124,7 +124,7 @@ To manage token usage, loops should have clear boundaries:
 - **Define clear success and stop criteria:** Be specific about what done looks like so Claude can arrive at the solution sooner (but not too soon).
 - **Pilot before a large run:** Dynamic workflows can spawn hundreds of agents. Gauge usage on a smaller slice of the work first.
 - **Use scripts for deterministic work** : Running a script is cheaper than reasoning through the steps. For example, a PDF skill can ship a form-filling script that Claude runs each time, instead of re-deriving the code.
-- **Don’t run routines more often that you need to:** Match the interval to how often the thing you’re watching changes
+- **Don’t run routines more often than you need to:** Match the interval to how often the thing you’re watching changes
 - **Review usage:** The `/usage` command breaks down recent usage by skills, subagents, and MCPs, `/goal` with no arguments shows number of turns and token usage so far, `/workflows` shows each agent’s token usage and you can stop an agent at any time.
 
 Your [model and effort level](https://claude.com/resources/articles/claude-model-and-effort-level-in-claude-code) choices are among the biggest levers on what a loop costs.

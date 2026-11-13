@@ -53,7 +53,7 @@ We ultimately landed on Managed Agents for the following reasons:
 
 **Less is more.** We experimented with prompts of varying lengths, complexity, and structure, and found the maxim of 'less is more' works best. Models today can understand complex, nuanced goals and work backwards from them. In practice, that has meant getting out of Claude's way by giving it the knowledge and context it needs to be successful, such as what seat-based pricing covers or when billing cycles run.
 
-**Use SMEs in the development loop.** This is something that is becoming increasingly valuable in a world where agent coding is speeding up development cycles. By virtue of saving time using Managed Agents and Claude Code, our engineers were able to spend more time with the sales team to shape a customer-centric experience . We were able to test the agent early and often, leading to quick iterations.
+**Use SMEs in the development loop.** This is something that is becoming increasingly valuable in a world where agent coding is speeding up development cycles. By virtue of saving time using Managed Agents and Claude Code, our engineers were able to spend more time with the sales team to shape a customer-centric experience. We were able to test the agent early and often, leading to quick iterations.
 
 **Focus on what’s right for the customer.** The agent often points small teams to our Team plan instead of Enterprise, because that's the right answer for them in some cases. We decided that's a feature. A buyer who lands on the right plan instead of being upsold is more likely to stay and have a better experience.
 
@@ -65,7 +65,7 @@ The agent now holds thousands of conversations a day, around the clock. Customer
 
 ## **How the agent changed our sales organization**
 
-The agent changed what our reps spend their days. We've now been able to focus the majority of the team's time and energy on educating customers earlier in their buying journey, having more live customer conversations and spending time in person at events.
+The agent changed how our reps spend their days. We've now been able to focus the majority of the team's time and energy on educating customers earlier in their buying journey, having more live customer conversations and spending time in person at events.
 
 The most impactful change has been that our reps now get more informed leads, convert leads to sales opportunities more often than our old contact form, and they close about five days faster. A rep starts the conversation already knowing what the customer needs, what they've been told, and how we can best help them.
 

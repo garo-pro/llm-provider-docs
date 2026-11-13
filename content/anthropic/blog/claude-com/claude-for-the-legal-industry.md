@@ -20,7 +20,7 @@ Claude meets legal teams where they are, working directly inside Microsoft Word,
 
 In **Word**, Claude skills—reusable instructions that encode a team's playbooks and standards—handle drafting, redlining, and clause-by-clause comparisons against those playbooks, tracking every change and explaining the reasoning behind it. They also take on the rote work in between every turn: scrubbing internal comments before a draft goes to the counterparty, running a final formatting check on an execution copy, and pulling fallback language from approved playbooks.
 
-In **Outlook**, Claude triages incoming matter work: flagging contract requests, drafting responses and cover notes, and scheduling follow-ups so nothing pile ups.
+In **Outlook**, Claude triages incoming matter work: flagging contract requests, drafting responses and cover notes, and scheduling follow-ups so nothing piles up.
 
 In **Claude Cowork**, the same connectors and plugins are available for work that spans many documents: triaging a batch of contracts, clearing a product feature for launch, and drafting a note on regulatory developments for the board. Scheduled tasks can automate recurring work such as weekly regulatory update sweeps or intake triage.
 

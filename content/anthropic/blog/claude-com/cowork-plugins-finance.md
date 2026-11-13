@@ -49,7 +49,7 @@ In addition to existing financial MCP [connectors](https://claude.com/connectors
 
 Several partners are also launching their own plugins, which can be found in the same [financial services plugins repository](https://github.com/anthropics/financial-services-plugins) above.
 
-- The **S&P Global** plugin brings Capital IQ Pro into Claude’s context. Skills include company tear sheets, industry transaction summaries, and earnings calls previews.
+- The **S&P Global** plugin brings Capital IQ Pro into Claude’s context. Skills include company tear sheets, industry transaction summaries, and earnings call previews.
 - The **LSEG** plugin gives financial professionals direct access to LSEG’s market data and analytics from within Claude. Build DCF models with live yield curves, draft morning notes with real-time news, rebalance portfolios with current cross-asset pricing, and analyze deals with actual financing economics. Available for users with active LSEG data entitlements.
 
 ## Getting started

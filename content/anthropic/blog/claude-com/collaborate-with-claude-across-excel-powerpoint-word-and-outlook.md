@@ -45,7 +45,7 @@ Microsoft 365 Copilot customers can also work with Claude AI models directly wit
 “Our investment professionals live in data and analytical models, and Claude for Excel meets them there. Analysts are using it to build and update coverage models, separate signal from noise, and pressure-test their work — all with a step-change in efficiency.”
 
 
-“Claude in Excel allows my teams to build an initial version of complex models faster, enabling them to focus on refining the model, pressure testing inputs and assumption, and exploring more scenarios and trade-offs. This helps us have richer and deeper discussions with our clients earlier.”
+“Claude in Excel allows my teams to build an initial version of complex models faster, enabling them to focus on refining the model, pressure testing inputs and assumptions, and exploring more scenarios and trade-offs. This helps us have richer and deeper discussions with our clients earlier.”
 
 
 “Claude enables a seamless transition from rough ideas to polished, branded deliverables across presentation, document and spreadsheet applications without disrupting the workflow. That end-to-end consistency has been a significant time-saver, especially when quality, formatting, and speed all matter.”

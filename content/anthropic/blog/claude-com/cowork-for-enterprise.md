@@ -53,6 +53,6 @@ Deploying agents with Claude Cowork’s capabilities across an organization requ
 
 Claude Cowork and Claude Code on Desktop are generally available today on all paid plans on macOS and Windows. Download the Claude desktop app at [claude.com/download](http://claude.com/download).
 
-For admins deploying Claude across your organization: [configure role-based access controls](https://support.claude.com/en/articles/13930458-set-up-role-based-permissions-on-enterprise-plans), group spend limits and [OpenTelemetry](https://claude.com/docs/cowork/monitoring) from the [admin console](https://claude.com/settings/admin). Claude Cowork usage data is available in the admin dashboard, and the Analytics API is documented [here](https://support.claude.com/en/articles/13694757-access-engagement-and-adoption-data-with-the-analytics-api).
+For admins deploying Claude across your organization: [configure role-based access controls](https://support.claude.com/en/articles/13930458-set-up-role-based-permissions-on-enterprise-plans), group spend limits and [OpenTelemetry](https://claude.com/docs/cowork/monitoring) from the admin console. Claude Cowork usage data is available in the admin dashboard, and the Analytics API is documented [here](https://support.claude.com/en/articles/13694757-access-engagement-and-adoption-data-with-the-analytics-api).
 
 For a deployment walkthrough, join our April 16th [webinar](https://claude.com/resources/webinars/deploying-cowork-across-the-enterprise-with-paypal) with PayPal.

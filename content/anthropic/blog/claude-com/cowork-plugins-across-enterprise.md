@@ -48,11 +48,11 @@ We're also expanding the library of pre-built plugin templates so more knowledge
 - [**Investment banking**](https://claude.com/plugins/investment-banking) : Accelerate deal workflows including reviewing transaction documents, building comparable company analyses, and preparing pitch materials.
 - [**Equity research**](https://claude.com/plugins/equity-research) : Streamline research workflows like parsing earnings transcripts, updating financial models with new guidance, and drafting research notes.
 - [**Private equity**](https://claude.com/plugins/private-equity) : Support deal sourcing and diligence by reviewing large document sets, extracting standardized financial data, modeling scenarios, and scoring opportunities against investment criteria.
-- [**Wealth management**](https://claude.com/plugins/wealth-management) : Help advisors analyze portfolios, identify drift and tax exposure, and generate rebalancing recommendations at scale.
+- **Wealth management** : Help advisors analyze portfolios, identify drift and tax exposure, and generate rebalancing recommendations at scale.
 
 Plugins are simple, portable file systems that you own. They work across Cowork and anything built on the Claude Agent SDK, making it easy to create private plugin marketplaces across teams and with industry experts.
 
-““Three waves have reshaped professional work: productivity tools, cloud and search, and now agentic AI. PwC is partnering with Anthropic to bring enterprise-grade agents into the office of the CFO — making finance teams an even more strategic and valuable function by giving every team member the tools to do more ambitious work, make better decisions, and grow the business in ways that weren't possible before.” - Sanjay Subramanian, Anthropic Alliance Leader, PWC”
+““Three waves have reshaped professional work: productivity tools, cloud and search, and now agentic AI. PwC is partnering with Anthropic to bring enterprise-grade agents into the office of the CFO — making finance teams an even more strategic and valuable function by giving every team member the tools to do more ambitious work, make better decisions, and grow the business in ways that weren't possible before.” - Sanjay Subramanian, Anthropic Alliance Leader, PwC”
 
 ““For two years, the market has been hyping us up about AI agents like they would be digital employees that work around the clock on a specific, discrete workflow. What Anthropic built is so much better.” - Mark Hines, COO, Blank Metal”
 

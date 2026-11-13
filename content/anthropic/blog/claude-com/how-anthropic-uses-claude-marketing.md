@@ -56,7 +56,7 @@ Claude went out and did the research, evaluating how to best build a plugin, wha
 
 ### **Google Ads copy generation**
 
-For responsive search ads, Austin built a workflow that helps brainstorm and create upload-ready ad copy using existing campaign and ad performance data to help inform what types of messaging resonates with prospects. This workflow saves hours per week on copy creation and character validation. With the time saved on mechanical tasks, Austin can now run more copy experiments and iterate faster on what actually performs best.
+For responsive search ads, Austin built a workflow that helps brainstorm and create upload-ready ad copy using existing campaign and ad performance data to help inform what types of messaging resonate with prospects. This workflow saves hours per week on copy creation and character validation. With the time saved on mechanical tasks, Austin can now run more copy experiments and iterate faster on what actually performs best.
 
 To get started, he types `/rsa`, a custom slash command he created for responsive search ads, into Claude. Claude Code asks for campaign data, existing copy, and keywords, then cross-references his inputs against [Agent Skills](https://claude.com/resources/articles/skills) he created for Anthropic's brand tone and voice, product accuracy, and Google Ads RSA best practices.
 

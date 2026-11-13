@@ -10,7 +10,7 @@ Datadog has an agent write specifications for a deterministic kernel to write ap
 
 Agents, mechanization, and industrialization
 
-All of Datadog engineers use AI coding tools for production code, and Claude Code drives at least two-thirds of that. With Claude Code, they generate personalized flows in their software development lifecycle in four distinct categories:
+All of Datadog's engineers use AI coding tools for production code, and Claude Code drives at least two-thirds of that. With Claude Code, they generate personalized flows in their software development lifecycle in four distinct categories:
 
 - **Targeted changes:** dozens of gnarly bug fixes, performance optimizations, and bridges to existing services.
 - **Large refactors:** refactoring a custom protobuf parser in three days as well as rewriting a metrics control from FoundationDB to Postgres in under three months.

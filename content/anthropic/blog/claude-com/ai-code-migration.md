@@ -95,7 +95,7 @@ The order matters: the rulebook must come before the gap inventory. The gap inve
 
 The exact shape of the [rulebook](https://github.com/anthropics/code-migration-kit-with-claude-code/blob/main/templates/RULEBOOK.md) depends on key architectural decisions you must make at the start. Chief among them, if the new code will follow the same structure, or if it will be completely redesigned.
 
-If it’s the former (Jarred), the rulebook will primarily be lookup tables that translates types and idioms between languages while pointing to the gap inventory for the harder-to-translate components. If it’s the latter (Mike), it will be a design document.
+If it’s the former (Jarred), the rulebook will primarily be lookup tables that translate types and idioms between languages while pointing to the gap inventory for the harder-to-translate components. If it’s the latter (Mike), it will be a design document.
 
 Jarred created his rulebook by chatting with Claude, forming a policy for each area of ambiguity. He also used eight subagents specifically designed to review for 8 different categories of common failure modes based on his own intuition.
 

@@ -252,7 +252,7 @@ It's worth noting that more capable orchestrator models (like Claude Opus 4.5) a
 
 Verification subagents succeed because they sidestep the telephone game problem. Verification requires minimal context transfer by nature, so a verifier can blackbox-test a system without needing the full history of how it was built.
 
-### Implementating a multi-agent system
+### Implementing a multi-agent system
 
 The main agent completes a unit of work. Before proceeding, it spawns a verification subagent with the artifact to verify, clear success criteria, and tools to perform verification.
 

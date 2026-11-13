@@ -59,6 +59,6 @@ PwC's [Claude Native Cybersecurity offering](https://www.pwc.com/us/en/technolog
 
 BCG, Infosys, and SentinelOne are also building defensive cyber offerings on Opus, and we'll share more on each as they become available.
 
-Every offering above runs on the same underlying Opus capability: reasoning about code, understanding which exposures translate into real-word risk, and sustaining long agentic workflows. We're excited to be working with these partners to bring frontier defense to more security teams through the access points that fits them best.
+Every offering above runs on the same underlying Opus capability: reasoning about code, understanding which exposures translate into real-world risk, and sustaining long agentic workflows. We're excited to be working with these partners to bring frontier defense to more security teams through the access points that fits them best.
 
 *Learn more about [Claude for security use cases](https://claude.com/solutions/security).*

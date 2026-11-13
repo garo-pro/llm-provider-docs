@@ -5,7 +5,7 @@ URL Source: https://claude.com/resources/articles/message-batches-api
 Markdown Content:
 # Introducing the Message Batches API
 
-Claude now offers a Message Batches API that processes up to large volumes of queries asynchronously at lower cost.
+Claude now offers a Message Batches API that processes large volumes of queries asynchronously at lower cost.
 
 **Update:** The Message Batches API is Generally Available on the Anthropic API. Customers using Claude in Amazon Bedrock can use batch inference. Batch predictions is also available in preview on Google Cloud’s Vertex AI. (December 17, 2024)
 

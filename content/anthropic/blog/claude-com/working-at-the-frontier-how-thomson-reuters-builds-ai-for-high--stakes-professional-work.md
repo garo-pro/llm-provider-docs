@@ -12,7 +12,7 @@ Thomson Reuters, a global content and technology company, has spent more than 17
 
 "We're a technology company focused on professions that demand accuracy and precision," says Joel Hron, CTO of Thomson Reuters.
 
-Its products are the reference tools those professions run on: Westlaw and Practical Law for legal research and practical guidance, CoCounsel Legal, Thomson Reuters professional-grade legal AI platform, is designed to make legal professionals better at their jobs, with answers they can defend and outcomes that provide real value. Hron joined Thomson Reuters four years ago when his startup was acquired by the company, working at the intersection of product, technology, and strategy. In that time period, he says, AI has reshaped what it means to build software. Choosing the right technology partners has never been more important.
+Its products are the reference tools those professions run on: Westlaw and Practical Law for legal research and practical guidance, CoCounsel Legal, Thomson Reuters' professional-grade legal AI platform, is designed to make legal professionals better at their jobs, with answers they can defend and outcomes that provide real value. Hron joined Thomson Reuters four years ago when his startup was acquired by the company, working at the intersection of product, technology, and strategy. In that time period, he says, AI has reshaped what it means to build software. Choosing the right technology partners has never been more important.
 
 The bar for selecting which LLMs to use to power these products is unusually concrete. Hron and his team evaluate a new model by asking whether its work can withstand the level of professional review lawyers apply before relying on it in their work.
 

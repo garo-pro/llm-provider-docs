@@ -50,7 +50,7 @@ MCP tunnels is supported in Managed Agents and the Messages API. MCP tunnels is 
 “Claude Managed Agents and Cloudflare let us get the first useful version of our design agent running in two days on infrastructure we already know and trust.”
 
 
-“As we scale agentic commerce for local businesses, we need a highly efficient path to production with full harness control, scale, and reliability. We're excited to evaluate Claude Managed Agents for this next step, building on our Al infrastructure with Modal!”
+“As we scale agentic commerce for local businesses, we need a highly efficient path to production with full harness control, scale, and reliability. We're excited to evaluate Claude Managed Agents for this next step, building on our AI infrastructure with Modal!”
 
 
 ## **Getting started**

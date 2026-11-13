@@ -8,6 +8,6 @@ Product feeds provide structured catalog data that helps ChatGPT surface the rig
 
 ## Resources
 
-- [Get started](/commerce/guides/get-started.md): Follow the fastest path from spec review to your first production feed delivery.
-- [File upload](/commerce/specs/file-upload/overview.md): Reference the canonical schema and file upload contract.
+- [Get started](/commerce/guides/submit-product-feeds.md): Follow the fastest path from spec review to your first production feed delivery.
+- [Product feed schema](/commerce/specs/file-upload/products.md): Review required fields and supported values.
 - [Best practices](/commerce/guides/best-practices.md): Improve feed quality and prepare for production.
