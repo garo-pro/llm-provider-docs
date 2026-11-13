@@ -35,7 +35,7 @@ Over the past several weeks, we've carefully rewritten the classifier’s consti
 
 As is illustrated in the diagram below, these updates meant that—compared to at the time of Fable 5’s launch—the classifier will trigger for many fewer benign biology-related requests.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe6d3c7b32cc8a0798c0ad58a2340f846b3c8af42-3840x1855.png&w=3840&q=75)
+![](https://assets.claude.com/e6d3c7b32cc8a0798c0ad58a2340f846b3c8af42.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Conclusions
 

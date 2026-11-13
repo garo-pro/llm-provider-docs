@@ -7,9 +7,11 @@ Markdown Content:
 
 From non-technical founders winning government contracts to solo devs building at scale, here’s how agentic coding is re-writing the startup playbook.
 
-See Claude Code in action—from concept to commit in one seamless workflow.
+![Claude Code](https://assets.claude.com/f86dde63aac75ae3fcf058b66769625b7dd62988.jpg?w=2400&q=75&fm=webp&fit=max)
 
-[Read more](https://claude.com/product/claude-code)
+Anthropic's agentic coding tool. Claude Code understands your codebase, edits files, runs commands, and helps you ship faster.
+
+[Read more (opens in new tab)](https://claude.com/product/claude-code)
 
 [Y Combinator](https://www.ycombinator.com/), a startup accelerator, has launched over 5,000 companies that have a combined valuation of over $800B since 2005, including household names like Airbnb, Stripe, and DoorDash.
 

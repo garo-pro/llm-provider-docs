@@ -211,7 +211,7 @@ work more autonomously.
 - [Self-hosted sandboxes](https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted.md): Connect your compute and files to an agent session.
 - [Server-side controls](https://developers.openai.com/api/docs/guides/voice-server-controls.md): Keep session control and private tool execution on your server.
 - [Session webhooks](https://developers.openai.com/api/docs/guides/agents-api/sessions/webhooks.md): React to agent lifecycle changes.
-- [Set up asymmetric keys](https://developers.openai.com/api/docs/guides/asymmetric-keys.md): Set up and register an asymmetric key in AWS KMS, Azure Key Vault, or Google Cloud KMS for use with OpenAI.
+- [Set up asymmetric keys](https://developers.openai.com/api/docs/guides/asymmetric-keys.md): Set up and register an asymmetric key in AWS KMS, Azure Key Vault, Google Cloud KMS, or OCI Vault for use with OpenAI.
 - [Shell](https://developers.openai.com/api/docs/guides/tools-shell.md): Run shell commands in hosted containers or your own local runtime.
 - [Skills](https://developers.openai.com/api/docs/guides/tools-skills.md): Create reusable skills for Responses API shell tools and Agents API sandboxes.
 - [Spend limits](https://developers.openai.com/api/docs/guides/spend-limits.md): Control API spend with organization and project monthly spend limits.

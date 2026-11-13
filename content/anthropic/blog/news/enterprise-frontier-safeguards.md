@@ -57,7 +57,7 @@ Customer-owned storage, Customer-Managed Encryption Keys, and fully automated re
 
 Anthropic doesn’t charge for Enterprise Frontier Safeguards. If customers elect to store their data in their cloud account, their cloud provider bills them for that storage, as well as reads, writes, and data egress fees, the same way it bills any other resource.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F021fdfc765d03eaac26f5d2aa9cb06111b7a9297-3840x4644.png&w=3840&q=75)
+![](https://assets.claude.com/021fdfc765d03eaac26f5d2aa9cb06111b7a9297.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Getting started
 

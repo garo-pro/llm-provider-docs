@@ -206,13 +206,13 @@ A “good enough” approach looks like this:
 2. Save the JSONL trace to disk
 3. Parse the trace and run deterministic checks over the events
 
-```javascript
+```typescript
 // evals/run-setup-demo-app-evals.mjs
 import { spawnSync } from "node:child_process";
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 
-function runCodex(prompt, outJsonlPath) {
+function runCodex(prompt: string, outJsonlPath: string) {
   const res = spawnSync(
     "codex",
     [
@@ -234,15 +234,20 @@ function runCodex(prompt, outJsonlPath) {
   return { exitCode: res.status ?? 1, stderr: res.stderr };
 }
 
-function parseJsonl(jsonlText) {
+function parseJsonl(jsonlText: string) {
   return jsonlText
     .split("\n")
     .filter(Boolean)
-    .map((line) => JSON.parse(line));
+    .map((line: string) => JSON.parse(line));
 }
 
 // deterministic check: did the agent run `npm install`?
-function checkRanNpmInstall(events) {
+function checkRanNpmInstall(
+  events: {
+    type: string;
+    item?: { type: string; status: string; exit_code: number; command: string };
+  }[]
+) {
   return events.some(
     (e) =>
       e.type === "item.completed" &&
@@ -255,7 +260,7 @@ function checkRanNpmInstall(events) {
 }
 
 // deterministic check: did `package.json` get created?
-function checkPackageJsonExists(projectDir) {
+function checkPackageJsonExists(projectDir: string) {
   return existsSync(path.join(projectDir, "package.json"));
 }
 

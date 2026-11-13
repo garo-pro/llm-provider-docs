@@ -11,7 +11,7 @@ Opus 4.8 launches alongside several new features. Users on claude.ai now have co
 
 The table below shows how Opus 4.8 compares to its predecessor and to other models on tests of coding, agentic skills, reasoning, and practical knowledge work tasks. More details and a much wider range of capability evaluations are provided in the [Claude Opus 4.8 System Card](https://www.anthropic.com/claude-opus-4-8-system-card).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa9007019094f217e98cb8261a2765d7646c01708-2600x1392.png&w=3840&q=75)
+![](https://assets.claude.com/8d30a21fc70d23cf151c2b84f20549f6d84a9178.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Collaborating with Opus 4.8
 
@@ -21,7 +21,7 @@ One of the most prominent improvements in Opus 4.8 is its *honesty*. We train al
 
 As always, we ran a detailed alignment assessment on the model before release. In terms of positive traits, our Alignment team concluded that Opus 4.8 “reaches new highs on our measures of prosocial traits like supporting user autonomy and acting in the user’s best interest.” The assessment also showed Opus 4.8 to have rates of misaligned behavior (such as deception or cooperation with misuse) that are substantially lower than Opus 4.7, and similar to our best-aligned model, Claude Mythos Preview. The full alignment assessment, accompanied by a suite of pre-deployment safety tests, is reported in the Claude Opus 4.8 System Card.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F40343dc40c700814e02f0ed90a7b513eca85039c-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/40343dc40c700814e02f0ed90a7b513eca85039c.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Also launching today
 

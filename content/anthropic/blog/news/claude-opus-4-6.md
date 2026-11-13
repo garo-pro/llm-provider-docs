@@ -13,13 +13,13 @@ The model’s performance is state-of-the-art on several evaluations. For exampl
 
 As we show in our extensive [system card](https://www.anthropic.com/claude-opus-4-6-system-card), Opus 4.6 also shows an overall safety profile as good as, or better than, any other frontier model in the industry, with low rates of misaligned behavior across safety evaluations.
 
-![Bar charts comparing Claude Opus 4.6 to other models on GDPval-AA](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6e29759b50e8b3a8363b38b1f573d854df968671-3840x2160.png&w=3840&q=75)
+![Bar charts comparing Claude Opus 4.6 to other models on GDPval-AA](https://assets.claude.com/6e29759b50e8b3a8363b38b1f573d854df968671.png?w=3840&q=75&fm=webp&fit=max)
 
 In [Claude Code](https://claude.com/product/claude-code), you can now assemble [*agent teams*](https://code.claude.com/docs/en/agent-teams) to work on tasks together. On the API, Claude can use [*compaction*](https://platform.claude.com/docs/en/build-with-claude/compaction) to summarize its own context and perform longer-running tasks without bumping up against limits. We’re also introducing [*adaptive thinking*](https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking), where the model can pick up on contextual clues about how much to use its extended thinking, and new [*effort*](https://platform.claude.com/docs/en/build-with-claude/effort) controls to give developers more control over intelligence, speed, and cost. 
 
 We’ve made substantial upgrades to [Claude in Excel](https://claude.com/claude-in-excel), and we’re releasing [Claude in PowerPoint](https://claude.com/claude-in-powerpoint) in a research preview. This makes Claude much more capable for everyday work.
 
-![Video: Claude for everyday work](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F810008fad362e0ba3c984c3de094f4527541bb89-3840x2160.png&w=3840&q=75)
+![Video: Claude for everyday work](https://assets.claude.com/810008fad362e0ba3c984c3de094f4527541bb89.png?w=3840&q=75&fm=webp&fit=max)
 
 Claude Opus 4.6 is available today on [claude.ai](https://claude.ai), our API, and all major cloud platforms. If you’re a developer, use `claude-opus-4-6` via the [Claude API](https://platform.claude.com/docs/en/about-claude/models/overview). Pricing remains the same at $5/$25 per million tokens; for full details, see our [pricing page](https://claude.com/pricing#api).
 
@@ -37,7 +37,7 @@ Here are some of the things our Early Access partners told us about Claude Opus 
 
 Across agentic coding, computer use, tool use, search, and [finance](https://claude.com/blog/opus-4-6-finance), Opus 4.6 is an industry-leading model, often by a wide margin. The table below shows how Claude Opus 4.6 compares to our previous models and to other industry models on a variety of benchmarks.
 
-![Benchmark table comparing Opus 4.6 to other models](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Ff9564dd2f758237bd9dbe775674c4a375aff1e8a-2600x2968.png&w=3840&q=75)
+![Benchmark table comparing Opus 4.6 to other models](https://assets.claude.com/b0669dda2da113a41a941f82170b0bce06eef755.png?w=3840&q=75&fm=webp&fit=max)
 
 Opus 4.6 is much better at retrieving relevant information from large sets of documents. This extends to long-context tasks, where it holds and tracks information over hundreds of thousands of tokens with less drift, and picks up buried details that even Opus 4.5 would miss.
 
@@ -45,17 +45,17 @@ A common complaint about AI models is “[context rot](https://www.anthropic.com
 
 All in all, Opus 4.6 is better at finding information across long contexts, better at reasoning after absorbing that information, and has substantially better expert-level reasoning abilities in general.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fae7ae61aefff3c9b059975957335785f8ebd59d6-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/ae7ae61aefff3c9b059975957335785f8ebd59d6.png?w=3840&q=75&fm=webp&fit=max)
 
 Finally, the charts below show how Claude Opus 4.6 performs on a variety of benchmarks that assess its software engineering skills, multilingual coding ability, long-term coherence, cybersecurity capabilities, and its life sciences knowledge.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F653e04afc43612d3a0f8427da86b6549800005f9-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/653e04afc43612d3a0f8427da86b6549800005f9.png?w=3840&q=75&fm=webp&fit=max)
 
 ## A step forward on safety
 
 These intelligence gains do not come at the cost of safety. On our automated behavioral audit, Opus 4.6 showed a low rate of misaligned behaviors such as deception, sycophancy, encouragement of user delusions, and cooperation with misuse. Overall, it is just as well-aligned as its predecessor, Claude Opus 4.5, which was our most-aligned frontier model to date. Opus 4.6 also shows the lowest rate of over-refusals—where the model fails to answer benign queries—of any recent Claude model.
 
-![Bar charts comparing Opus 4.6 to other Claude models on overall misaligned behavior](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F569d748607388e6ed42e3ff0ff245d9b0cde6878-3840x2160.png&w=3840&q=75)
+![Bar charts comparing Opus 4.6 to other Claude models on overall misaligned behavior](https://assets.claude.com/569d748607388e6ed42e3ff0ff245d9b0cde6878.png?w=3840&q=75&fm=webp&fit=max)
 
 [Claude Opus 4.6 system card](https://www.anthropic.com/claude-opus-4-6-system-card)).
 

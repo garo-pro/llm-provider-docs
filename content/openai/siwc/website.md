@@ -106,8 +106,28 @@ Store these values with the sign-in transaction so you can add them to the
 authorization URL in the next step. The example passes `deviceToken`,
 `loginSessionId`, and `loginStartedAtMs` in the `signInMetadata` object.
 
-```javascript
-export function createSignInTransaction(browserSessionId, signInMetadata = {}) {
+```typescript
+import type { JWTPayload } from "jose";
+
+type SignInMetadata = {
+  deviceToken?: string;
+  loginSessionId?: string;
+  loginStartedAtMs?: number;
+};
+type SignInTransaction = {
+  state: string;
+  codeVerifier: string;
+  codeChallenge: string;
+  nonce: string;
+  signInMetadata: SignInMetadata;
+  redirectUri: string;
+  expiresAt: number;
+};
+
+export function createSignInTransaction(
+  browserSessionId: string,
+  signInMetadata: SignInMetadata = {}
+) {
   const state = randomValue();
   const codeVerifier = randomValue(64);
   const codeChallenge = crypto
@@ -129,7 +149,11 @@ export function createSignInTransaction(browserSessionId, signInMetadata = {}) {
   return transaction;
 }
 
-export function startSignIn(browserSessionId, deviceToken, loginSessionId) {
+export function startSignIn(
+  browserSessionId: string,
+  deviceToken: string,
+  loginSessionId: string
+) {
   return createSignInTransaction(browserSessionId, {
     deviceToken,
     loginSessionId,
@@ -160,8 +184,8 @@ it easier to investigate a specific sign-in attempt together.
 The example adds these parameters when the transaction contains their values.
 Send them in the authorization request, not the token exchange.
 
-```javascript
-export function buildAuthorizationUrl(transaction) {
+```typescript
+export function buildAuthorizationUrl(transaction: SignInTransaction) {
   const authorizationUrl = new URL(authorizationEndpoint);
   const params = new URLSearchParams({
     client_id: clientId,
@@ -204,8 +228,11 @@ Recover and consume the original transaction. Verify its expiration and returned
 callback URL from the current request and the session identifier from the
 browser's secure cookie.
 
-```javascript
-export function consumeSignInTransaction(browserSessionId, callbackUrl) {
+```typescript
+export function consumeSignInTransaction(
+  browserSessionId: string,
+  callbackUrl: URL
+) {
   const transaction = transactions.get(browserSessionId);
   transactions.delete(browserSessionId);
 
@@ -247,8 +274,11 @@ your client.
 An identity-only public client requests `openid`, `profile`, and `email`. It
 authenticates at the token endpoint with `none` and doesn't send a client secret.
 
-```javascript
-export async function exchangePublicClientCode(code, transaction) {
+```typescript
+export async function exchangePublicClientCode(
+  code: string,
+  transaction: SignInTransaction
+) {
   const body = new URLSearchParams({
     grant_type: "authorization_code",
     code,
@@ -274,14 +304,17 @@ export async function exchangePublicClientCode(code, transaction) {
 If OpenAI provisioned a confidential client with `client_secret_basic`, use its
 client secret to authenticate the backend token request. Keep PKCE in this flow.
 
-```javascript
-export async function exchangeConfidentialClientCode(code, transaction) {
+```typescript
+export async function exchangeConfidentialClientCode(
+  code: string,
+  transaction: SignInTransaction
+) {
   const clientSecret = process.env.OPENAI_CLIENT_SECRET;
   if (!clientSecret) {
     throw new Error("The confidential client requires its client secret.");
   }
 
-  const encodeFormComponent = (value) =>
+  const encodeFormComponent = (value: string) =>
     new URLSearchParams({ value }).toString().slice("value=".length);
   const basicAuthorization = Buffer.from(
     `${encodeFormComponent(clientId)}:${encodeFormComponent(clientSecret)}`
@@ -315,8 +348,8 @@ client-side code, logs, URLs, agent output, or source control.
 
 After either request, check the response before using the returned ID token.
 
-```javascript
-export async function readIdentityToken(tokenResponse) {
+```typescript
+export async function readIdentityToken(tokenResponse: Response) {
   if (!tokenResponse.ok) {
     const requestId =
       tokenResponse.headers.get("openai-request-id") ??
@@ -348,8 +381,11 @@ claims. Check the issuer, audience, expiration, and original nonce. The example'
 `jwks` value uses `createRemoteJWKSet` from `jose` with the discovery document's
 `jwks_uri`.
 
-```javascript
-export async function verifyOpenAiIdentity(idToken, expectedNonce) {
+```typescript
+export async function verifyOpenAiIdentity(
+  idToken: string | Uint8Array<ArrayBufferLike>,
+  expectedNonce: string
+) {
   const { payload } = await jwtVerify(idToken, jwks, {
     issuer,
     audience: clientId,
@@ -427,8 +463,8 @@ Here is an example of a decoded ID token:
 Use the verified OpenAI `sub` as the stable external identity. Include the issuer
 and client to prevent collisions across providers and environments.
 
-```javascript
-export function externalIdentityFor(identity) {
+```typescript
+export function externalIdentityFor(identity: JWTPayload) {
   return {
     provider: "openai",
     issuer,
@@ -456,8 +492,16 @@ verified ID-token claims. It stores the issuer, client ID, subject, and optional
 `sid` with the app session so you can identify sessions affected by an
 [account security notification](https://developers.openai.com/siwc/account-security-notification).
 
-```javascript
-export function createApplicationSession(response, localUser, identity) {
+```typescript
+export function createApplicationSession(
+  response: {
+    setHeader: (arg0: string, arg1: string) => void;
+    writeHead: (arg0: number, arg1: { Location: string }) => void;
+    end: () => void;
+  },
+  localUser: { id: string },
+  identity: JWTPayload
+) {
   const sessionId = randomValue();
   sessions.set(sessionId, {
     userId: localUser.id,

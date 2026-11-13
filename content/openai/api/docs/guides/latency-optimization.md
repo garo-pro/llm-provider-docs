@@ -262,7 +262,7 @@ In this case, since the check for retrieval requires the contextualized query, l
 
 **What changed?** Before, we had one prompt to re-write the query and one to determine whether this requires doing a retrieval lookup. Now, this combined prompt does both. Specifically, notice the updated instruction in the first line of the prompt, and the updated output JSON:
 
-```javascript
+```typescript
 {
   query: "[contextualized query]",
   retrieval: "[true/false - whether retrieval is required]",
@@ -331,7 +331,7 @@ However, let's pretend we have run some tests and discovered that splitting the 
 
 **Could we use a fine-tuned GPT-3.5 instead of GPT-4?** Maybe—but in general, open-ended responses from assistants are best left to GPT-4 so it can better handle a greater range of cases. That being said, looking at the reasoning steps themselves, they may not all require GPT-4-level reasoning to produce. Their well-defined, limited scope makes them **good potential candidates for fine-tuning**.
 
-```javascript
+```typescript
 {
   message_is_conversation_continuation: "True", // <-
   number_of_messages_in_conversation_so_far: "1", // <-
@@ -469,7 +469,7 @@ Let's take another look at the reasoning prompt.
 
 Taking a closer look at the reasoning JSON you may notice the field names themselves are quite long.
 
-```javascript
+```typescript
 {
   message_is_conversation_continuation: "True", // <-
   number_of_messages_in_conversation_so_far: "1", // <-
@@ -500,7 +500,7 @@ puts(JSON.generate(reasoning))
 
 By making them shorter and moving explanations to the comments we can [generate fewer tokens](#generate-fewer-tokens).
 
-```javascript
+```typescript
 {
   cont: "True", // whether last message is a continuation
   n_msg: "1", // number of messages in the continued conversation

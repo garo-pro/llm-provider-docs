@@ -9,7 +9,7 @@ This is where our Safeguards team comes in: we identify potential misuse, respon
 
 We operate across multiple layers: developing policies, influencing model training, testing for harmful outputs, enforcing policies in real-time, and identifying novel misuses and attacks. This approach spans the entire lifecycle of our models, ensuring Claude is trained and built with protections that are effective in the real world.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F0726b0ac8266805acac21dad8a6b32a5f976a987-7200x4050.png&w=3840&q=75)
+![](https://assets.claude.com/0726b0ac8266805acac21dad8a6b32a5f976a987.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Policy development
 
@@ -20,7 +20,7 @@ Two mechanisms guide our policy development and iteration process:
 - **Unified Harm Framework:** This[evolving framework](https://www.anthropic.com/news/our-approach-to-understanding-and-addressing-ai-harms) helps our team understand potentially harmful impacts from Claude use across five dimensions: physical, psychological, economic, societal, and individual autonomy. Rather than a formal grading system, the framework serves as a structured lens and considers the likelihood and scale of misuse when developing policies and enforcement procedures.
 - **Policy Vulnerability Testing:** We partner with external domain experts to identify areas of concern, and then stress-test these concerns against our policies by assessing the output of our models under challenging prompts. Our partners include experts in terrorism, radicalization, child safety, and mental health. The findings from these stress tests directly shape our policies, training, and detection systems. For example, during the 2024 U.S. election, we partnered with the[Institute for Strategic Dialogue](https://www.isdglobal.org/) to understand when Claude might provide outdated information. We then added a banner pointing Claude.ai users seeking election information to authoritative sources like[TurboVote](https://turbovote.org/) .
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fd30b0034da7215fa55cce92db8e4a21e161a968f-7200x4050.png&w=3840&q=75)
+![](https://assets.claude.com/d30b0034da7215fa55cce92db8e4a21e161a968f.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Claude’s training
 
@@ -36,7 +36,7 @@ Through this collaborative process, Claude develops several important skills. It
 
 Before releasing a new model, we evaluate its performance and capabilities. Our evaluations include:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fba37b3137323a8db3754822663a26dd0a41f2223-7200x4050.png&w=3840&q=75)
+![](https://assets.claude.com/ba37b3137323a8db3754822663a26dd0a41f2223.png?w=3840&q=75&fm=webp&fit=max)
 
 - **Safety evaluations:** We assess Claude’s adherence to our Usage Policy on topics like child exploitation or self-harm. We test a variety of scenarios, including clear usage violations, ambiguous contexts, and extended multi-turn conversations. These evaluations leverage our models to grade Claude’s responses, with human review as an additional check for accuracy.
 - **Risk assessments:** For high-risk domains, such as those associated with cyber harm, or chemical, biological, radiological, and nuclear weapons and high-yield explosives (CBRNE), we conduct AI capability uplift testing in partnership with government entities and private industry. We define threat models that could arise from improved capabilities and assess the performance of our safeguards against these threat models.

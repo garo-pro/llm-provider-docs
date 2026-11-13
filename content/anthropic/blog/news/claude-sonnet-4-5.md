@@ -19,7 +19,7 @@ Claude Sonnet 4.5 is available everywhere today. If you’re a developer, simply
 
 Claude Sonnet 4.5 is state-of-the-art on the SWE-bench Verified evaluation, which measures real-world software coding abilities. Practically speaking, we’ve observed it maintaining focus for more than 30 hours on complex, multi-step tasks.
 
-![Chart showing frontier model performance on SWE-bench Verified with Claude Sonnet 4.5 leading](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F6421e7049ff8b2c4591497ec92dc4157b2ac1b30-3840x2160.png&w=3840&q=75)
+![Chart showing frontier model performance on SWE-bench Verified with Claude Sonnet 4.5 leading](https://assets.claude.com/6421e7049ff8b2c4591497ec92dc4157b2ac1b30.png?w=3840&q=75&fm=webp&fit=max)
 
 Claude Sonnet 4.5 represents a significant leap forward on computer use. On OSWorld, a benchmark that tests AI models on real-world computer tasks, Sonnet 4.5 now leads at 61.4%. Just four months ago, Sonnet 4 held the lead at 42.2%. Our [Claude for Chrome](https://www.anthropic.com/news/claude-for-chrome) extension puts these upgraded capabilities to use. In the demo below, we show Claude working directly in a browser, navigating sites, filling spreadsheets, and completing tasks.
 
@@ -27,11 +27,11 @@ Claude Sonnet 4.5 represents a significant leap forward on computer use. On OSWo
 
 The model also shows improved capabilities on a broad range of evaluations including reasoning and math:
 
-![Benchmark table comparing frontier models across popular public evals](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F67081be1ea2752e2a554e49a6aab2731b265d11b-2600x2288.png&w=3840&q=75)
+![Benchmark table comparing frontier models across popular public evals](https://assets.claude.com/b175666ddfa1ba0bc123826dc2537e59e810c021.png?w=3840&q=75&fm=webp&fit=max)
 
 Experts in finance, law, medicine, and STEM found Sonnet 4.5 shows dramatically better domain-specific knowledge and reasoning compared to older models, including Opus 4.1.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7175bc18c46562f1228280a7abda751219a2aae1-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/7175bc18c46562f1228280a7abda751219a2aae1.png?w=3840&q=75&fm=webp&fit=max)
 
 The model’s capabilities are also reflected in the experiences of early customers:
 
@@ -41,7 +41,7 @@ As well as being our most capable model, Claude Sonnet 4.5 is our most aligned f
 
 You can read a detailed set of safety and alignment evaluations, which for the first time includes tests using techniques from mechanistic interpretability, in the Claude Sonnet 4.5 [system card](https://www.anthropic.com/claude-sonnet-4-5-system-card).
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F33efc283321feeff94dd80973dbcd38409806cf5-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/33efc283321feeff94dd80973dbcd38409806cf5.png?w=3840&q=75&fm=webp&fit=max)
 
 [system card](https://www.anthropic.com/claude-sonnet-4-5-system-card).
 

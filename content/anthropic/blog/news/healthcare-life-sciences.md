@@ -9,7 +9,7 @@ Now, we’re expanding that feature set in two ways. First, we’re introducing 
 
 These features build on top of major recent improvements we’ve made to Claude’s general intelligence. These improvements are best captured by evaluations of Claude’s agentic performance on detailed simulations of medical and scientific tasks, since this correlates most closely to real-world usefulness. Here, Claude Opus 4.5, our latest model, represents a major forward step:
 
-![Medical benchmarket performance](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F351d4c302f534df54f68ade366e423cd037cbf17-1920x1080.png&w=3840&q=75)
+![Medical benchmarket performance](https://assets.claude.com/fbaadcc4b6070130161a245e82d4f93f4b87bd4e.png?w=3840&q=75&fm=webp&fit=max)
 
 - **Claude 4.5 models evaluated with extended thinking (64k tokens) and native tool use*
 - *MedCalc: Medical calculation accuracy (with Python code execution)*
@@ -43,7 +43,7 @@ With these new tools, Claude can provide meaningful support for healthcare start
 
 **Speed up reviews of prior authorization requests**. These requests can take hours to review, slowing patients’ access to care they need and frustrating payers and providers alike. Reviews require working across various fragmented sources of information, including coverage requirements, clinical guidelines, patient records, and appeal documents. Now, Claude can pull coverage requirements from CMS or custom policies, check clinical criteria against patient records in a HIPAA-ready manner, and then propose a determination with supporting materials for the payer’s review.
 
-![Speed up prior authorization reviews with Claude](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F249b312cf875a6daa78a7d42497d58bf457b8099-3418x1914.png&w=3840&q=75)
+![Speed up prior authorization reviews with Claude](https://assets.claude.com/2c87a44b2e3697a8600abaf9921a507cb6959702.png?w=3840&q=75&fm=webp&fit=max)
 
 **Support claims appeals**. Denied claims cost time and money for all parties. By pulling together the necessary information from patient records, coverage policies, clinical guidelines and prior documentation, Claude helps providers build stronger appeals, and helps payers to process them more quickly.
 
@@ -83,7 +83,7 @@ Finally, we’re adding new Agent Skills for **scientific problem selection**, c
 
 See the clinical trial skill in action, below:
 
-![Draft clinical trial protocols with Claude](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F842ab2275159eeb8f8f4a7d7f5a14050a4e77b93-2982x1632.png&w=3840&q=75)
+![Draft clinical trial protocols with Claude](https://assets.claude.com/662b6d8db262e726a9ae3722e4741b4dfc39755c.png?w=3840&q=75&fm=webp&fit=max)
 
 #### Using Claude in life sciences
 

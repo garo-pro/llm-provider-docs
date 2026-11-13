@@ -242,10 +242,14 @@ Pass a `webhookFetch` function with the same interface as `fetch` that validates
 
 Send a signed event
 
-```javascript
+```typescript
 import { Webhook } from "standardwebhooks";
 
-export async function sendEvent(subscription, event, webhookFetch) {
+export async function sendEvent(
+  subscription: { id: string; url: string; secret: string },
+  event: { eventId: string },
+  webhookFetch: typeof fetch
+) {
   const body = JSON.stringify(event);
   if (Buffer.byteLength(body, "utf8") > 256 * 1024) {
     throw new Error("Event payload exceeds 256 KiB");

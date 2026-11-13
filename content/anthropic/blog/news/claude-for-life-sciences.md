@@ -36,7 +36,7 @@ Last week, we released [Agent Skills:](https://www.anthropic.com/news/skills) fo
 
 We’re developing a number of scientific skills for Claude, beginning with **`single-cell-rna-qc`** This skill performs quality control and filtering on single-cell RNA sequencing data, using [scverse](https://scverse.org/) best practices:
 
-![Claude performs quality control on single-cell RNA-seq data](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F07de700e38ef4d328ccdb5c15ab9e3df5286fc08-3840x2160.png&w=3840&q=75)
+![Claude performs quality control on single-cell RNA-seq data](https://assets.claude.com/02c1ece69f3db838351ce32154803ab2da4a3c6e.png?w=3840&q=75&fm=webp&fit=max)
 
 *Claude performs quality control on single-cell RNA-seq data.*
 

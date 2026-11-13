@@ -10,15 +10,15 @@ The new unified Claude experience is available on Enterprise plans, where it app
 
 ## How the new unified Claude experience works
 
-1. One conversation, two modes. The new unified Claude experience starts as a chat and moves into a Cowork cloud session when a task needs agentic work, and goes back to chat when it doesn't. Members aren't asked to switch modes.
+1. **One conversation, two modes.** The new unified Claude experience starts as a chat and moves into a Cowork cloud session when a task needs agentic work. Members aren't asked to switch modes.
 
-2. Agentic work runs in an isolated cloud sandbox. Each conversation that needs one gets its own virtual machine, managed by Anthropic. After a few minutes idle, the virtual machine is stopped and its disk is saved as an encrypted snapshot. The sandbox environment expires 30 days after it was created.
+2. **Longer tasks run in an isolated cloud environment.** Each conversation that needs one gets its own virtual machine, managed by Anthropic. After a few minutes idle, the virtual machine is stopped and its disk is saved as an encrypted snapshot. The sandbox environment expires 30 days after it was created.
 
-3. The conversation stays on record. Chat history, sharing, export, the Compliance API, and your data retention setting all work from the conversation.
+3. **The conversation stays on record.** Chat history, sharing, export, the Compliance API, and your data retention setting all work from the conversation.
 
-4. Work moves across devices. Members can start a task on the desktop app and pick it up on web or mobile.
+4. **Work moves across devices.** Members can start a task on the desktop app and pick it up on web or mobile.
 
-5. Local access stays optional. Through the Claude desktop app, members can link their computers so Claude can work with local folders, local MCP servers, and applications. Your Remote control and device policies govern this.
+5. **Local access stays optional.** Through the Claude desktop app, members can link their computers so Claude can work with local folders, local MCP servers, and applications. Your Remote control and device policies govern this.
 
 ---
 

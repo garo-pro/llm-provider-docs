@@ -498,10 +498,10 @@ Alex — Moonwaffle work:     prf_8d7e4b19
 
 These example IDs do not encode profile labels or internal relationships. They are persisted once per profile and reused across reconnection, token refresh, and changes to email or display name.
 
-**Build the response from the authenticated profile.** This JavaScript example shows handler logic you can connect to your MCP SDK. `loadAuthenticatedProfile` is your application’s integration code: it validates the request credentials, enforces their permissions, and retrieves the corresponding profile’s persisted ID and display metadata. `requestContext` comes from your server’s request handling; it is not a model-supplied tool argument.
+**Build the response from the authenticated profile.** This TypeScript example shows handler logic you can connect to your MCP SDK. `loadAuthenticatedProfile` is your application’s integration code: it validates the request credentials, enforces their permissions, and retrieves the corresponding profile’s persisted ID and display metadata. `requestContext` comes from your server’s request handling; it is not a model-supplied tool argument.
 
-```javascript
-async function getProfile(requestContext) {
+```typescript
+async function getProfile(requestContext: { token: string }) {
   // Your auth/provider integration validates credentials and loads
   // the existing profile. Auth failures use normal MCP auth handling.
   const account = await loadAuthenticatedProfile(requestContext);

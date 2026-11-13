@@ -220,7 +220,7 @@ In other cases, you might need to rely on different metrics and scoring algorith
 
 _Example: Check the model's output against the expected answer, ignoring order._
 
-```javascript
+```typescript
 // Reference answer
 const correctAnswer = ["Eggs", "Sugar"];
 

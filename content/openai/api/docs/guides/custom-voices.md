@@ -247,7 +247,7 @@ Use `gpt-realtime-2.1-mini` with the [Realtime API](https://developers.openai.co
 
 Use the following request body when [creating a Realtime client secret](https://developers.openai.com/api/reference/resources/realtime/subresources/client_secrets/methods/create), then follow the [WebRTC connection guide](https://developers.openai.com/api/docs/guides/voice-webrtc?api=realtime) to connect with that secret. Replace `voice_123abc` with the ID returned by your voice creation request:
 
-```javascript
+```typescript
 const sessionConfig = JSON.stringify({
   session: {
     type: "realtime",

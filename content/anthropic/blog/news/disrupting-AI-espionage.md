@@ -29,7 +29,7 @@ The attack relied on several features of AI models that did not exist, or were i
 
 The diagram below shows the different phases of the attack, each of which required all three of the above developments:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb0d38712e4f7b8002bb3a2734ceeb33f34817a43-2755x2050.png&w=3840&q=75)
+![](https://assets.claude.com/b0d38712e4f7b8002bb3a2734ceeb33f34817a43.png?w=3840&q=75&fm=webp&fit=max)
 
 In Phase 1, the human operators chose the relevant targets (for example, the company or government agency to be infiltrated). They then developed an attack framework—a system built to autonomously compromise a chosen target with little human involvement. This framework used Claude Code as an automated tool to carry out cyber operations.
 

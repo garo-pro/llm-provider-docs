@@ -3,7 +3,7 @@ Title: Anthropic raises $450 million in Series C funding to scale reliable AI pr
 URL Source: https://www.anthropic.com/news/anthropic-series-c
 
 Markdown Content:
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F8ba0c4c8ef64c1146e639d29b41400aad0f65ef3-2880x1620.png&w=3840&q=75)
+![](https://assets.claude.com/8ba0c4c8ef64c1146e639d29b41400aad0f65ef3.png?w=3840&q=75&fm=webp&fit=max)
 
 We are pleased to announce that we have raised $450 million in Series C funding led by Spark Capital with participation from Google, Salesforce Ventures, Sound Ventures, Zoom Ventures, and others. The funding will support our continued work developing helpful, harmless, and honest AI systems—including Claude, an AI assistant that can perform a wide variety of conversational and text processing tasks.
 

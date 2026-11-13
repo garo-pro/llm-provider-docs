@@ -7,7 +7,7 @@ Claude Haiku 4.5, our latest small model, is available today to all users.
 
 What was recently at the frontier is now cheaper and faster. Five months ago, Claude Sonnet 4 was a state-of-the-art model. Today, Claude Haiku 4.5 gives you similar levels of coding performance but at one-third the cost and more than twice the speed.
 
-![Chart comparing frontier models on SWE-bench Verified which measures performance on real-world coding tasks](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1a27d7a85f953c5a0577dc19b507d6e1b93444d5-1920x1080.png&w=3840&q=75)
+![Chart comparing frontier models on SWE-bench Verified which measures performance on real-world coding tasks](https://assets.claude.com/1a27d7a85f953c5a0577dc19b507d6e1b93444d5.png?w=3840&q=75&fm=webp&fit=max)
 
 Claude Haiku 4.5 even surpasses Claude Sonnet 4 at certain tasks, like using computers. These advances make applications like [Claude for Chrome](http://claude.ai/chrome) faster and more useful than ever before.
 
@@ -21,7 +21,7 @@ Claude Haiku 4.5 is available everywhere today. If you’re a developer, simply 
 
 ### Benchmarks
 
-![Comparison table of frontier models across popular benchmarks](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F029af67124b67bdf0b50691a8921b46252c023d2-1920x1625.png&w=3840&q=75)
+![Comparison table of frontier models across popular benchmarks](https://assets.claude.com/029af67124b67bdf0b50691a8921b46252c023d2.png?w=3840&q=75&fm=webp&fit=max)
 
 ### Safety evaluations
 

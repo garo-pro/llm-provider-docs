@@ -9,7 +9,7 @@ On coding and knowledge work evaluations like [Frontier-Bench](https://www.front
 
 Opus 5 is designed to be used every day: it works more efficiently than other models. It’s the new default model on Claude Max, and the strongest model on Claude Pro.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa8fb4f77a9fe240e6f27f3bdc47a137f3c74a29d-2600x2578.png&w=3840&q=75)
+![](https://assets.claude.com/e0a78e10ddd7fa48942be9e649ba11b9051d6466.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Performance and cost-effectiveness
 
@@ -17,7 +17,7 @@ Claude Opus 5 provides greatly improved performance for the same cost as its pre
 
 Opus 5 excels on valuable software engineering tasks. For example, on **Frontier-Bench v0.1,** Opus 5 surpasses all other models, and more than doubles Opus 4.8’s performance at a lower cost per task. On **CursorBench 3.2**, at max effort, the model performs within 0.5% of Fable 5’s peak score, but at half the cost per task; it also achieves greater performance at a given cost than all other models on high, xhigh, and max effort.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F7530b1086992936d7e9d5796a892d1e8fa063253-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/51429780fd7e81e018d2c62cd19f4b00c90dd87d.png?w=3840&q=75&fm=webp&fit=max)
 
 We see similar results on knowledge work and problem-solving tasks. For example:
 
@@ -27,7 +27,7 @@ We see similar results on knowledge work and problem-solving tasks. For example:
 
 It’s also our best and most cost-efficient model on several related evaluations:
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb5e071ba6a9ce5628b4662f05484d1806a9fdc94-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/f3375510334a093002f4c3139c57206e5e76e1ee.png?w=3840&q=75&fm=webp&fit=max)
 
 Opus 5 is a meaningful improvement over Opus 4.8 for scientific research. It shows better performance than Opus 4.8 on every one of our life sciences evaluations, which cover topics including structural biology, organic chemistry, and bioinformatics. Its improvements are most notable on organic chemistry tasks, like inferring molecular structures from spectroscopy data (it scores 10.2 percentage points higher than Opus 4.8 on our internal benchmark), and on protein-related tasks like predicting how variations in a protein’s sequence affect how it functions (here, it scores 7.7 percentage points higher).
 
@@ -51,7 +51,7 @@ Below are further reports from our early-access customers on their experience of
 
 *Alignment.* During pre-deployment testing, our automated behavioral audit found Opus 5 to be our most aligned model to date (as shown in the graph below). It adheres to [Claude’s Constitution](https://www.anthropic.com/constitution) better than Opus 4.8, Sonnet 5, or Fable 5; exhibits the lowest rates of deceptive behavior; and is the least susceptible to being tricked into misuse. It’s also our safest model yet in terms of avoiding reckless actions that could have hard-to-reverse side effects.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F76d4af96516ffca2aceb4c1d0b0a83e2720d874b-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/76d4af96516ffca2aceb4c1d0b0a83e2720d874b.png?w=3840&q=75&fm=webp&fit=max)
 
 *Safety.* Opus 5 does not advance the frontier in risky, dual-use capabilities. In rigorous evaluations conducted alongside private-sector and government partners, we found it remains behind Mythos 5 in both biology research and offensive cybersecurity. More information about these evaluations can be found in our [System Card](https://www.anthropic.com/claude-opus-5-system-card).
 
@@ -59,7 +59,7 @@ As with its predecessor, Opus 4.8, we’ve intentionally avoided training Opus 5
 
 This is illustrated by Opus 5’s performance on OSS-Fuzz, an evaluation we’ve developed to assess how well models can find and then exploit vulnerabilities without extensive human guidance. Although Mythos 5 and Opus 5 identify vulnerabilities with similar success, Opus 5’s score on the development of exploits is far behind that of Mythos 5.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fb22d18a4d2003401f96f866effd9a40b5518c4c5-3840x2160.png&w=3840&q=75)
+![](https://assets.claude.com/b22d18a4d2003401f96f866effd9a40b5518c4c5.png?w=3840&q=75&fm=webp&fit=max)
 
 *On OSS-Fuzz, one of our cybersecurity evaluations, Opus 5 is close to Mythos 5 at identifying software vulnerabilities (left), but is considerably less successful at developing exploits for them (right).*
 

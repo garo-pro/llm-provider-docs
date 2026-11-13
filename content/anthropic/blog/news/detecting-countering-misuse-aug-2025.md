@@ -35,7 +35,7 @@ These employment schemes were designed to generate profit for the North Korean r
 
 **Implications:** North Korean IT workers previously underwent years of specialized training prior to taking on remote technical work, which made the regime’s training capacity a major bottleneck. But AI has eliminated this constraint. Operators who cannot otherwise write basic code or communicate professionally in English are now able to pass technical interviews at reputable technology companies and then maintain their positions. This represents a fundamentally new phase for these employment scams.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fa474b3555a5486e3b8c0fa97434b27924a11b8d5-2756x5840.png&w=3840&q=75)
+![](https://assets.claude.com/d15446868219b500b0d151a8e7a9ec935bc2f3e2.png?w=3840&q=75&fm=webp&fit=max)
 
 **Our response:** when we discovered this activity we immediately banned the relevant accounts, and have since improved our tools for collecting, storing, and correlating the known indicators of this scam. We’ve also shared our findings with the relevant authorities, and we’ll continue to monitor for attempts to commit fraud using our services.
 
@@ -43,7 +43,7 @@ These employment schemes were designed to generate profit for the North Korean r
 
 **The threat:** A cybercriminal used Claude to develop, market, and distribute several variants of ransomware, each with advanced evasion capabilities, encryption, and anti-recovery mechanisms. The ransomware packages were sold on internet forums to other cybercriminals for $400 to $1200 USD.
 
-![](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3d0f1e44057b1d4a58f56785009a18efb7123cb0-4158x2958.png&w=3840&q=75)
+![](https://assets.claude.com/3d0f1e44057b1d4a58f56785009a18efb7123cb0.png?w=3840&q=75&fm=webp&fit=max)
 
 **Implications:** This actor appears to have been dependent on AI to develop functional malware. Without Claude’s assistance, they could not implement or troubleshoot core malware components, like encryption algorithms, anti-analysis techniques, or Windows internals manipulation.
 

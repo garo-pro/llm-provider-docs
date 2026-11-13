@@ -39,7 +39,7 @@ In partnership with [GivingTuesday](https://www.givingtuesday.org/), we’ve dev
 
 AI Fluency for Nonprofits is now available via our [Anthropic Academy](https://www.anthropic.com/learn). We’re supplementing this with a collection of step-by-step guides, [available here](https://claude.com/resources/use-cases/category/nonprofits), to prompt additional ideas on key nonprofit workflows like grant-writing and impact reporting.
 
-![Use case impact report](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F9c7c7aa7021fbf1d1f8ab088772a8fd0b9864e6b-1920x1080.png&w=3840&q=75)
+![Use case impact report](https://assets.claude.com/caaa39b73308dfbe1bac986a491e49a622839af0.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Learning from our partners and customers
 

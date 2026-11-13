@@ -346,13 +346,13 @@ server](https://developers.openai.com/plugins/build/chatgpt-ui#layer-on-chatgpt-
 
 ## Build an MCP server
 
-Install the official Python or Node MCP SDK to create a server and expose a `/mcp` endpoint.
+Install the official Python or TypeScript MCP SDK to create a server and expose a `/mcp` endpoint.
 
-In this quickstart, we'll use the [Node SDK](https://github.com/modelcontextprotocol/typescript-sdk).
+In this quickstart, we'll use the [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk).
 
 If you're using Python, refer to our [examples repository on GitHub](https://github.com/openai/openai-apps-sdk-examples) to see an example MCP server with the Python SDK.
 
-Install the Node SDK, MCP Apps helpers, and the `zod` package with:
+Use Node.js 22.6 or later. Install the TypeScript SDK, MCP Apps helpers, and the `zod` package with:
 
 ```bash
 npm install @modelcontextprotocol/sdk @modelcontextprotocol/ext-apps zod
@@ -362,9 +362,9 @@ npm install @modelcontextprotocol/sdk @modelcontextprotocol/ext-apps zod
 
 Register a resource for your component bundle and the tools the model can call (for example, `add_todo` and `complete_todo`) so ChatGPT can drive the UI.
 
-Create a file named `server.js` and paste the following example that uses the Node SDK:
+Create a file named `server.ts` and paste the following example that uses the TypeScript SDK:
 
-```javascript
+```typescript
 import { createServer } from "node:http";
 import { readFileSync } from "node:fs";
 import {
@@ -396,11 +396,11 @@ const todoOutputSchema = {
   ),
 };
 
-let todos = [];
+let todos: { id: string; title: string; completed: boolean }[] = [];
 let nextId = 1;
 
-const replyWithTodos = (message) => ({
-  content: message ? [{ type: "text", text: message }] : [],
+const replyWithTodos = (message: string) => ({
+  content: message ? [{ type: "text" as const, text: message }] : [],
   structuredContent: { tasks: todos },
 });
 
@@ -553,7 +553,7 @@ Usually, you can run a build command such as `npm run build` to produce a `dist`
 
 In this quickstart, since we're using vanilla HTML, no build step is required.
 
-Start the MCP server on `http://localhost:<port>/mcp` from the directory that contains `server.js` (or `server.ts`).
+Start the MCP server on `http://localhost:<port>/mcp` from the directory that contains `server.ts`.
 
 Make sure you have `"type": "module"` in your `package.json` file:
 
@@ -571,7 +571,7 @@ Make sure you have `"type": "module"` in your `package.json` file:
 Then run the server with the following command:
 
 ```bash
-node server.js
+node --experimental-strip-types server.ts
 ```
 
 The server should print `Todo MCP server listening on http://localhost:8787/mcp` once it is ready.

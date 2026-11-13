@@ -72,8 +72,11 @@ Persist the validated connector request before starting inner sign-in. The
 example below uses an application-owned registry of the connector client,
 callback, scopes, and resource.
 
-```javascript
-export function saveConnectorTransaction(browserSessionId, requestUrl) {
+```typescript
+export function saveConnectorTransaction(
+  browserSessionId: string,
+  requestUrl: URL
+) {
   const params = requestUrl.searchParams;
   const scope = (params.get("scope") ?? "").split(" ").filter(Boolean);
   const codeChallenge = params.get("code_challenge") ?? "";
@@ -84,7 +87,7 @@ export function saveConnectorTransaction(browserSessionId, requestUrl) {
     params.get("code_challenge_method") !== "S256" ||
     !/^[A-Za-z0-9_-]{43}$/.test(codeChallenge) ||
     !params.get("state") ||
-    scope.some((value) => !registeredConnector.scopes.has(value)) ||
+    scope.some((value: string) => !registeredConnector.scopes.has(value)) ||
     params.get("resource") !== registeredConnector.resource
   ) {
     throw new Error("The connector authorization request is invalid.");
@@ -119,8 +122,12 @@ production session store instead of the example's in-memory map.
 Use `target_flow`, the existing first-party session, and `login_hint` to select
 the next experience. Check enterprise policy before continuing authorization.
 
-```javascript
-export function chooseAccountExperience(currentUser, connector, enterpriseSso) {
+```typescript
+export function chooseAccountExperience(
+  currentUser: { id: string; email: string } | null,
+  connector: ReturnType<typeof saveConnectorTransaction>,
+  enterpriseSso: boolean
+) {
   const loginHint = connector.loginHint;
   if (enterpriseSso) {
     return { action: "enterprise-sign-in", returnTo: connector.id };
@@ -172,12 +179,12 @@ After authenticating the user and completing your connector's consent and access
 checks, issue an authorization code for your connector. The code must be
 short-lived, single-use, and bound to the original connector request.
 
-```javascript
+```typescript
 export function completeConnectorAuthorization(
-  transactionId,
-  browserSessionId,
-  authenticatedUser,
-  consentGranted
+  transactionId: string,
+  browserSessionId: string,
+  authenticatedUser: { id: string } | null,
+  consentGranted: boolean
 ) {
   const connector = transactions.get(transactionId);
   if (

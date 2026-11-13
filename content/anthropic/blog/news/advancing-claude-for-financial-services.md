@@ -11,7 +11,7 @@ These updates build on Sonnet 4.5’s state of the art performance on financial 
 
 We’re releasing [Claude for Excel](https://claude.com/claude-for-excel) in beta as a research preview. This allows users to work directly with Claude in a sidebar in Microsoft Excel, where Claude can read, analyze, modify, and create new Excel workbooks. Claude provides full transparency about the actions it takes: it tracks and explains its changes and lets users navigate directly to the cells it references in its explanations.
 
-![This picture depicts Claude for Excel.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F450687b3c7a1189eb1a650ade77588c56ca01461-2560x1440.png&w=3840&q=75)
+![This picture depicts Claude for Excel.](https://assets.claude.com/d7cb340f16dd982ca0484980d87945c9c5aa55b5.png?w=3840&q=75&fm=webp&fit=max)
 
 This means that Claude can discuss how a spreadsheet works, modify it while preserving its structure and formula dependencies, debug and fix cell formulas, populate templates with new data and assumptions, or build new spreadsheets entirely from scratch.
 

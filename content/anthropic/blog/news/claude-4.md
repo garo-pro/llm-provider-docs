@@ -7,8 +7,6 @@ Today, we’re introducing the next generation of Claude models: **Claude Opus 4
 
 Claude Opus 4 is the world’s best coding model, with sustained performance on complex, long-running tasks and agent workflows. Claude Sonnet 4 is a significant upgrade to Claude Sonnet 3.7, delivering superior coding and reasoning while responding more precisely to your instructions.
 
-![Video thumbnail](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2FoqUclC3gqKs%2Fmaxresdefault.jpg&w=3840&q=75)
-
 Alongside the models, we're also announcing:
 
 - **Extended thinking with tool use (beta)** : Both models can use tools—like[web search](https://docs.anthropic.com/en/docs/build-with-claude/tool-use/web-search-tool) —during extended thinking, allowing Claude to alternate between reasoning and tool use to improve responses.
@@ -30,7 +28,7 @@ Claude Sonnet 4 significantly improves on Sonnet 3.7's industry-leading capabili
 
 These models advance our customers' AI strategies across the board: Opus 4 pushes boundaries in coding, research, writing, and scientific discovery, while Sonnet 4 brings frontier performance to everyday use cases as an instant upgrade from Sonnet 3.7.
 
-![Bar chart comparison between Claude and other LLMs on software engineering tasks](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F09a6d5aa47c25cb2037efff9f486da4918f77708-3840x2304.png&w=3840&q=75)
+![Bar chart comparison between Claude and other LLMs on software engineering tasks](https://assets.claude.com/23d990c96c0f9f124c74149c8eeb312edbffec50.png?w=3840&q=75&fm=webp&fit=max)
 
 ## Model improvements
 
@@ -38,7 +36,7 @@ In addition to extended thinking with tool use, parallel tool execution, and mem
 
 Claude Opus 4 also dramatically outperforms all previous models on memory capabilities. When developers build applications that provide Claude local file access, Opus 4 becomes skilled at creating and maintaining 'memory files' to store key information. This unlocks better long-term task awareness, coherence, and performance on agent tasks—like Opus 4 creating a 'Navigation Guide' while playing Pokémon.
 
-![A visual note in Claude's memories that depicts a navigation guide for the game Pokemon Red.](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2Fe51564bb5ce9597dbfc59bbab13a0efbe25a7d66-1920x1080.gif&w=3840&q=75)
+![A visual note in Claude's memories that depicts a navigation guide for the game Pokemon Red.](https://assets.claude.com/e51564bb5ce9597dbfc59bbab13a0efbe25a7d66.gif)
 
 Finally, we've introduced thinking summaries for Claude 4 models that use a smaller model to condense lengthy thought processes. This summarization is only needed about 5% of the time—most thought processes are short enough to display in full. Users requiring raw chains of thought for advanced prompt engineering can [contact sales](https://www.anthropic.com/contact-sales) about our new Developer Mode to retain full access.
 

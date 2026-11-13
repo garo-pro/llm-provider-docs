@@ -137,7 +137,7 @@ curl https://api.openai.com/v1/decisions \
 JSON
 ```
 
-```javascript
+```typescript
 import { readFile } from "node:fs/promises";
 import OpenAI from "openai";
 
@@ -469,7 +469,7 @@ curl https://api.openai.com/v1/decisions \
   }'
 ```
 
-```javascript
+```typescript
 import OpenAI from "openai";
 
 const client = new OpenAI();
@@ -735,7 +735,7 @@ curl https://api.openai.com/v1/decisions \
   }'
 ```
 
-```javascript
+```typescript
 import OpenAI from "openai";
 
 const client = new OpenAI();
