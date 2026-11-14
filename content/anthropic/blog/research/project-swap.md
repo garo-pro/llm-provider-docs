@@ -178,7 +178,7 @@ Finally, some marketplaces will be more ripe for agentic mediation than others. 
 
 ## Appendix
 
-Available [here](https://www-cdn.anthropic.com/files/4zrzovbb/website/7dcd7d8de6e132048f391f5201439c5e11b9fb2c.pdf).
+Available [here](https://assets.claude.com/7dcd7d8de6e132048f391f5201439c5e11b9fb2c.pdf).
 
 ## References
 

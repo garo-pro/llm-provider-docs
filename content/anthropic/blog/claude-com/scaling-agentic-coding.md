@@ -7,8 +7,6 @@ Markdown Content:
 
 As Agentic coding tools mature, technical leaders are wrestling with a practical challenge: moving beyond isolated experiments to organization-wide adoption.
 
-![Claude Code](https://assets.claude.com/f86dde63aac75ae3fcf058b66769625b7dd62988.jpg?w=2400&q=75&fm=webp&fit=max)
-
 Anthropic's agentic coding tool. Claude Code understands your codebase, edits files, runs commands, and helps you ship faster.
 
 [Read more (opens in new tab)](https://claude.com/product/claude-code)

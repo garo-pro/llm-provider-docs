@@ -4,6 +4,7 @@
 
 > Curated scaling resources for OpenAI developers.
 
+- [Latency optimization guide](https://developers.openai.com/api/docs/guides/latency-optimization): Best practices for reducing model response latency.
 - [API deployment checklist](/api/docs/guides/deployment-checklist): Checklist for tuning Responses API applications before launch.
 - [Shipping with Codex](https://www.youtube.com/watch?v=Gr41tYOzE20): DevDay talk on building, testing, and delivering products with Codex.
 - [Rate limits guide](https://platform.openai.com/docs/guides/rate-limits): Guide to understanding and managing rate limits
@@ -13,7 +14,6 @@
 - [Getting Started with Evals](https://platform.openai.com/docs/guides/evaluation-getting-started): Step-by-step guide to setting up your first eval.
 - [Graders](https://platform.openai.com/docs/guides/graders): Guide to using graders for evaluations.
 - [Keep costs low & accuracy high](https://platform.openai.com/docs/guides/reasoning-best-practices#how-to-keep-costs-low-and-accuracy-high): Guide on balancing cost efficiency with model accuracy.
-- [Latency optimization guide](https://platform.openai.com/docs/guides/latency-optimization): Best practices for reducing model response latency.
 - [Launch apps with evaluations](https://vimeo.com/1105244173): Video on incorporating evals when deploying AI products.
 - [LLM correctness and consistency](https://platform.openai.com/docs/guides/optimizing-llm-accuracy): Best practices for achieving accurate and consistent model outputs.
 - [Model optimization guide](https://platform.openai.com/docs/guides/model-optimization): Guide on optimizing OpenAI models for performance and cost.

@@ -1709,7 +1709,7 @@ stringSince 5.11492.0
 
 > [accordion] More detail
 >
-> Actions your provider reviews itself don't use this model.
+> Actions your provider reviews itself don't use this model. `env.CLAUDE_CODE_AUTO_MODE_MODEL` in a computer's machine-wide Claude Code managed settings replaces it there.
 >
 > Use your provider's ID for an Anthropic model, or this setting counts as unset. If you set `inferenceModels`, also list the ID there and in any group's model list. If your provider lacks the model, the built-in safety check blocks every action it reviews.
 >
@@ -4147,6 +4147,7 @@ These profiles are examples, not built-in presets. Adjust them for your environm
 > | Key | Value |
 > | - | - |
 > | [`deploymentOrganizationUuid`](#deploymentorganizationuuid) | `<your-org-uuid>` |
+> | [`deploymentMode`](#deploymentmode) | `3p` |
 > | [`disableDeploymentModeChooser`](#disabledeploymentmodechooser) | `true` |
 > | [`disableNonessentialTelemetry`](#disablenonessentialtelemetry) | `true` |
 > | [`disableNonessentialServices`](#disablenonessentialservices) | `true` |
@@ -4162,6 +4163,7 @@ These profiles are examples, not built-in presets. Adjust them for your environm
 >
 > | Key | Value |
 > | - | - |
+> | [`deploymentMode`](#deploymentmode) | `3p` |
 > | [`disableDeploymentModeChooser`](#disabledeploymentmodechooser) | `true` |
 > | [`disableEssentialTelemetry`](#disableessentialtelemetry) | `true` |
 > | [`disableNonessentialTelemetry`](#disablenonessentialtelemetry) | `true` |
@@ -4194,8 +4196,6 @@ Claude's calls to a tool with no policy entry stay under the user's control (bui
 > [!WARNING]
 >
 > Approval prompts, and the safety classifier's review in **Auto mode**, cover calls that Claude makes. Claude Code gives neither to a call from a [mod](https://claude.com/docs/third-party/claude-desktop/code.md#what-a-mod-can-do-without-approval), which is code that a plugin runs inside Claude Code. A mod's call to a tool with no policy entry, or to one set to `"allow"`, can run without the user's approval. To stop mods from calling a tool, set it to `"blocked"`.
-
-On a scheduled Cowork task, the prompt can also offer an **Allow for all scheduled runs** option. See [Tool approvals on scheduled tasks](#tool-approvals-on-scheduled-tasks).
 
 ### Tool approvals on scheduled tasks
 

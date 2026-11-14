@@ -21,11 +21,11 @@ The evidence on retraining and job placement is mixed, and it may not generalize
 
 Many insurance systems for supporting displaced workers assume that joblessness is temporary. If AI leads to broader, more persistent displacement, we’ll need instruments calibrated to a new equilibrium.
 
-### [Building worker stakes in AI-driven growth before disruption arrives](https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
+### [Building worker stakes in AI-driven growth before disruption arrives](https://assets.claude.com/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
 
 Our Economic Policy Framework (EPF) discusses universal pre-distributive capital accounts and adjacent mechanisms. But these have limited direct empirical precedent at scale.
 
-[Read framework](https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
+[Read framework](https://assets.claude.com/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf)
 
 ### Generating new evidence on public investments
 

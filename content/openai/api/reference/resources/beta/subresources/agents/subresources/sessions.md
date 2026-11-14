@@ -326,11 +326,11 @@ Content type: `application/json`
 
   - `compaction: optional object { async }  or null`
 
-    Context compaction settings. Omit to keep the current settings. A supplied object replaces the settings; null or an empty object enables background compaction.
+    Context compaction settings. Omit to keep the current settings. A supplied object replaces the settings; null or an empty object uses blocking compaction.
 
     - `async: optional boolean or null`
 
-      Whether to compact context in the background. Omission or null defaults to true. Set to false to use blocking compaction. Background compaction may increase token usage.
+      Whether to compact context in the background. Omission or null defaults to false. Set to true to enable background compaction. Background compaction may increase token usage.
 
   - `experimental: optional object { time_awareness }  (default: {})`
 
@@ -1264,7 +1264,7 @@ Content type: `application/json`
 
       - `async: boolean`
 
-        Whether context is compacted in the background. Defaults to true.
+        Whether context is compacted in the background. Defaults to false.
 
     - `experimental: optional object { time_awareness }`
 
@@ -2503,7 +2503,7 @@ Lists managed agent sessions using ID-based pagination and the requested sort or
 
       - `async: boolean`
 
-        Whether context is compacted in the background. Defaults to true.
+        Whether context is compacted in the background. Defaults to false.
 
     - `experimental: optional object { time_awareness }`
 
@@ -3681,7 +3681,7 @@ Retrieves the current state of a managed agent session. See [managing sessions](
 
       - `async: boolean`
 
-        Whether context is compacted in the background. Defaults to true.
+        Whether context is compacted in the background. Defaults to false.
 
     - `experimental: optional object { time_awareness }`
 
@@ -5195,7 +5195,7 @@ Content type: `application/json`
 
       - `async: boolean`
 
-        Whether context is compacted in the background. Defaults to true.
+        Whether context is compacted in the background. Defaults to false.
 
     - `experimental: optional object { time_awareness }`
 
@@ -7428,7 +7428,7 @@ Streams live events for an agent session. See [session events](/api/docs/guides/
 
           - `async: boolean`
 
-            Whether context is compacted in the background. Defaults to true.
+            Whether context is compacted in the background. Defaults to false.
 
         - `experimental: optional object { time_awareness }`
 

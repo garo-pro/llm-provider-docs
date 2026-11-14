@@ -51,17 +51,19 @@ If you use another provider, follow the manual verification instructions under �
 
 
 
-Akamai identifies Cloud browser traffic under the existing bot name **ChatGPT Agent** in its Artificial Intelligence bots category.
+Akamai identifies Cloud browser traffic under the existing bot name **ChatGPT Agent** in its **AI Fetchers and Agents** bots category.
 
 To allow this traffic:
 
-1. In your Akamai Security Configuration, open the relevant Security Policy.
-2. Select Bot management, then Custom Bot Categories.
-3. Under settings, select Manage Bot Categories.
-4. Add a new bot category and create a bot with:
-   - Type: **Akamai-Defined**
+1. In your Akamai Security Configuration, open **Shared Resources**.
+2. Select **Custom Bot Categories** in the navigation bar.
+3. Select the **+** icon to create a new custom bot category.
+4. Add a new bot category and save it.
+5. Within that new bot category, create a bot with:
+   - Type: **Verified Bots**
    - Bot name: **ChatGPT Agent**
-5. Return to Custom Bot Categories and set the new category’s action to **Allow**.
+6. Close **Shared Resources** and open the relevant **Security Policy**.
+7. Select **Bot & Agent Control**, then **Custom Bots**, and set the new category’s action to **Allow**.
 
 Akamai verifies request signatures automatically. No custom signature verification is required.
 
@@ -78,6 +80,19 @@ Akamai verifies request signatures automatically. No custom signature verificati
 ## Cloudflare
 
 
+
+##### Option 1: Via AI Crawler and Agent access policies
+
+Cloudflare verifies Cloud browser traffic and shows it as **dots, OpenAI** under **Personal Agents**.
+
+To allow this traffic:
+
+1. In the Cloudflare dashboard, select your domain, then go to **Security** > **Settings**.
+2. Filter by **Bot traffic**, then select **AI Crawler and Agent access policies**.
+3. Under **Personal Agents**, set **dots, OpenAI** to **Allow (do not block)**.
+4. Select **Save**.
+
+##### Option 2: Via WAF custom rules
 
 Cloudflare recognizes Cloud browser traffic as a signed agent in its Bots and Agents directory.
 

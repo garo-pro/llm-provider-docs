@@ -72,4 +72,4 @@ The ever-lengthening context window of LLMs is a double-edged sword. It makes th
 
 We hope that publishing on many-shot jailbreaking will encourage developers of powerful LLMs and the broader scientific community to consider how to prevent this jailbreak and other potential exploits of the long context window. As models become more capable and have more potential associated risks, it’s even more important to mitigate these kinds of attacks.
 
-All the technical details of our many-shot jailbreaking study are reported in our [full paper](https://www-cdn.anthropic.com/af5633c94ed2beb282f6a53c595eb437e8e7b630/Many_Shot_Jailbreaking__2024_04_02_0936.pdf). You can read Anthropic’s approach to safety and security [at this link.](https://www.anthropic.com/responsible-disclosure-policy)
+All the technical details of our many-shot jailbreaking study are reported in our [full paper](https://assets.claude.com/af5633c94ed2beb282f6a53c595eb437e8e7b630.pdf). You can read Anthropic’s approach to safety and security [at this link.](https://www.anthropic.com/responsible-disclosure-policy)

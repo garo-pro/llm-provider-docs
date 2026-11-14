@@ -461,7 +461,9 @@ Here is an example of a decoded ID token:
 ## 7. Find, create, or link the local account
 
 Use the verified OpenAI `sub` as the stable external identity. Include the issuer
-and client to prevent collisions across providers and environments.
+and client to prevent collisions across providers and environments. Store this
+mapping and look it up before matching by email, so returning users keep the
+same account if their email address changes.
 
 ```typescript
 export function externalIdentityFor(identity: JWTPayload) {
@@ -481,8 +483,9 @@ export function externalIdentityFor(identity: JWTPayload) {
 Apply an explicit account-linking policy:
 
 1. If the OpenAI subject is already linked, sign in to the linked local account.
-2. If a signed-in user adds ChatGPT as a sign-in method, or their email matches an existing account, provide a way to confirm and link the accounts. An email match alone isn't proof of account ownership.
-3. If no account exists, allow account creation according to your product, onboarding, and enterprise policies.
+2. If the subject isn't linked and the verified ID token has `email_verified: true`, you can use a matching email address to link and sign in to an existing local account. Store the OpenAI identity mapping for future sign-ins.
+3. If a signed-in user adds ChatGPT as a sign-in method, provide a way to confirm and link the accounts. If `email_verified` is false or absent, require your existing account-ownership verification before linking by email.
+4. If no account exists, allow account creation according to your product, onboarding, and enterprise policies.
 
 ## 8. Create your application session
 
@@ -525,7 +528,7 @@ export function createApplicationSession(
 
 
 Use an `HttpOnly`, `Secure`, `SameSite=Lax` session cookie. Don't return an ID token,
-PKCE verifier, authorization code, or client secret to browser JavaScript. Clear
+PKCE verifier, or client secret to browser JavaScript. Clear
 the temporary sign-in cookie after completing the transaction.
 
 Retain only the identity mapping and user information your application needs.

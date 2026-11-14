@@ -7,7 +7,7 @@ Markdown Content:
 
 We’ve [developed](https://www.anthropic.com/news/building-safeguards-for-claude) sophisticated safety and security measures to prevent the misuse of our AI models. But cybercriminals and other malicious actors are actively attempting to find ways around them. Today, we’re releasing a report that details how.
 
-Our [Threat Intelligence report](https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf) discusses several recent examples of Claude being misused, including a large-scale extortion operation using Claude Code, a fraudulent employment scheme from North Korea, and the sale of AI-generated ransomware by a cybercriminal with only basic coding skills. We also cover the steps we’ve taken to detect and counter these abuses.
+Our [Threat Intelligence report](https://assets.claude.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf) discusses several recent examples of Claude being misused, including a large-scale extortion operation using Claude Code, a fraudulent employment scheme from North Korea, and the sale of AI-generated ransomware by a cybercriminal with only basic coding skills. We also cover the steps we’ve taken to detect and counter these abuses.
 
 We find that threat actors have adapted their operations to exploit AI’s most advanced capabilities. Specifically, our report shows:
 
@@ -59,4 +59,4 @@ We’re committed to continually improving our methods for detecting and mitigat
 
 ### Further reading
 
-For the full report with additional case studies, [see here.](https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf)
+For the full report with additional case studies, [see here.](https://assets.claude.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf)

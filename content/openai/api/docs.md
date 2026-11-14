@@ -140,7 +140,7 @@ work more autonomously.
 - [IP allowlist](https://developers.openai.com/api/docs/guides/ip-allowlist.md): Configure organization- or project-level IP allowlists for OpenAI API requests.
 - [IP egress ranges](https://developers.openai.com/api/docs/guides/ip-addresses.md): Find the published IP egress ranges used by OpenAI products.
 - [Keep the prefix unchanged](https://developers.openai.com/api/docs/guides/preserved-reasoning.md): Avoid prefix changes for increased intelligence, lower costs, and lower latency.
-- [Latency optimization](https://developers.openai.com/api/docs/guides/latency-optimization.md): Improve latency across a wide variety of LLM-related use cases.
+- [Latency optimization](https://developers.openai.com/api/docs/guides/latency-optimization.md): Reduce time to first token and end-to-end latency with model selection, reasoning effort, prompt caching, streaming, and fewer round trips.
 - [Manage permissions in the OpenAI platform](https://developers.openai.com/api/docs/guides/rbac.md): Learn how to use role-based access control to assign permissions, create custom roles, group users, and scope access across both the OpenAI API and dashboard.
 - [Manage projects and access with Terraform](https://developers.openai.com/api/docs/guides/terraform/projects-and-access.md): Create an OpenAI project, define least-privilege roles, and manage group and user access with Terraform.
 - [Manage service accounts with Terraform](https://developers.openai.com/api/docs/guides/terraform/service-accounts.md): Create OpenAI project service accounts, assign least-privilege roles, and manage API keys outside Terraform state.

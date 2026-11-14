@@ -11,7 +11,7 @@ We are sharing two policy proposals to prepare for AI progress. The first, our A
 
 ## Anthropic's Advanced AI Framework
 
-#### [Read the advanced AI Safety Framework](https://www-cdn.anthropic.com/files/4zrzovbb/website/0a58d567024a8b448ff15158ebc3625328dfcc1f.pdf) →
+#### [Read the advanced AI Safety Framework](https://assets.claude.com/0a58d567024a8b448ff15158ebc3625328dfcc1f.pdf) →
 
 We are publishing our proposal for how governments should address catastrophic risks from the most powerful AI models, including granting them the legal authority to block or deter dangerous deployments.
 
@@ -30,7 +30,7 @@ Several recent state laws require companies to describe their safety practices a
 
 Our framework is written primarily with the US federal government in mind. But addressing AI risks cannot wait for action in Washington. We do not believe Congress should preempt state law unless it enacts a federal law that is at least as strong as the framework we are proposing today. Preemption is powerful, so it should be surgical, allowing states to regulate AI on all issues—such as child safety and consumer protection—which fall outside the specific safety functions a federal law covers.
 
-Our framework is [available in full here](https://www-cdn.anthropic.com/files/4zrzovbb/website/0a58d567024a8b448ff15158ebc3625328dfcc1f.pdf). Below, we summarize its key recommendations.
+Our framework is [available in full here](https://assets.claude.com/0a58d567024a8b448ff15158ebc3625328dfcc1f.pdf). Below, we summarize its key recommendations.
 
 ### Requirements for frontier developers
 

@@ -55,7 +55,7 @@ For each of the 15 targets, we asked Claude to design 30 protein binders. Claude
 
 ## Claude’s performance on the targets
 
-By the end of this effort, we produced 354 binders against 14 of 15 targets using a total of 1,320 designs. This represents a significant contribution to the total corpus of publicly available *de novo* protein designs; for example, the two largest collections, [proteinbase.com](https://proteinbase.com) and the collection curated by [Overath et al.](https://www.biorxiv.org/content/10.1101/2025.08.14.670059v2), consist of approximately 770 binders out of 5,700 designs against 40 targets. Below, we share three examples highlighting Claude’s capabilities, and one showing its limitations. You can find more detail in our technical report ([link](https://www-cdn.anthropic.com/30bf50e22a01388bb29bf077ee3f244531594b7a.pdf)).
+By the end of this effort, we produced 354 binders against 14 of 15 targets using a total of 1,320 designs. This represents a significant contribution to the total corpus of publicly available *de novo* protein designs; for example, the two largest collections, [proteinbase.com](https://proteinbase.com) and the collection curated by [Overath et al.](https://www.biorxiv.org/content/10.1101/2025.08.14.670059v2), consist of approximately 770 binders out of 5,700 designs against 40 targets. Below, we share three examples highlighting Claude’s capabilities, and one showing its limitations. You can find more detail in our technical report ([link](https://assets.claude.com/30bf50e22a01388bb29bf077ee3f244531594b7a.pdf)).
 
 #### Claude’s designs are competitive with entries in Adaptyv Bio’s protein design competition
 

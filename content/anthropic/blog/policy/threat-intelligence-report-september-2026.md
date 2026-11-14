@@ -1274,7 +1274,7 @@ GTG-15001 reflects the reach and the limitations of existing AI models for fraud
 
 The studio also recruited real people and mixed them into the same match feed as the bots. These people were primarily included for authenticity checks (live video calls and social media follows) to decrease skepticism by the scam’s victims. These workers were also AI-augmented, with another model generating some messages for them.
 
-This is a cousin of a [2025 case](https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf), where another actor set up a Telegram bot as a service for other scammers to generate dating app messages with. Despite not drawing upon any novel model-misuse techniques, GTG-15001 is operating at a much larger scale, and deliberately misused multiple AI providers for distinct, non-overlapping roles.
+This is a cousin of a [2025 case](https://assets.claude.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf), where another actor set up a Telegram bot as a service for other scammers to generate dating app messages with. Despite not drawing upon any novel model-misuse techniques, GTG-15001 is operating at a much larger scale, and deliberately misused multiple AI providers for distinct, non-overlapping roles.
 
 As with many of the cases in this report, the actor relied on PRC-based API reseller/proxy infrastructure to obtain and rotate AI model access at scale, and to circumvent Anthropic’s Supported Regions and Usage Policies. We banned the threat actors’ accounts and worked with industry partners, including other AI labs, to disrupt the actors’ use of multiple AI models.
 

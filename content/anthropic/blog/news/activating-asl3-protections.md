@@ -5,7 +5,7 @@ URL Source: https://www.anthropic.com/news/activating-asl3-protections
 Markdown Content:
 ### Background
 
-Increasingly capable AI models warrant increasingly strong deployment and security protections. This principle is core to Anthropic’s [Responsible Scaling Policy](https://www-cdn.anthropic.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf) (RSP).[1](https://www.anthropic.com#footnote-1)
+Increasingly capable AI models warrant increasingly strong deployment and security protections. This principle is core to Anthropic’s [Responsible Scaling Policy](https://assets.claude.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf) (RSP).[1](https://www.anthropic.com#footnote-1)
 
 - **Deployment measures** target specific categories of misuse; in particular, our RSP focuses on reducing the risk that models could be misused for attacks with the most dangerous categories of weapons–CBRN.
 - **Security****controls** aim to prevent the theft of model weights–the essence of the AI’s intelligence and capability.

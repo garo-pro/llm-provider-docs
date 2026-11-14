@@ -86,7 +86,7 @@ Curated resources are listed here with their canonical destination URLs.
 - [Graders](https://platform.openai.com/docs/guides/graders): Guide to using graders for evaluations.
 - [Image generation guide](https://platform.openai.com/docs/guides/image-generation): Guide to generating images using OpenAI models.
 - [Keep costs low & accuracy high](https://platform.openai.com/docs/guides/reasoning-best-practices#how-to-keep-costs-low-and-accuracy-high): Guide on balancing cost efficiency with model accuracy.
-- [Latency optimization guide](https://platform.openai.com/docs/guides/latency-optimization): Best practices for reducing model response latency.
+- [Latency optimization guide](https://developers.openai.com/api/docs/guides/latency-optimization): Best practices for reducing model response latency.
 - [LLM correctness and consistency](https://platform.openai.com/docs/guides/optimizing-llm-accuracy): Best practices for achieving accurate and consistent model outputs.
 - [MCP guide](https://platform.openai.com/docs/guides/tools-remote-mcp): Guide to using the Model Context Protocol for portable tools.
 - [Model distillation overview](https://platform.openai.com/docs/guides/distillation#page-top): Overview of distillation techniques for creating efficient models.

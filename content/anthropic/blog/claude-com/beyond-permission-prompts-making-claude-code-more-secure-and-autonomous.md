@@ -7,8 +7,6 @@ Markdown Content:
 
 In Claude Code, Claude writes, tests, and debugs code alongside you, navigating your codebase, editing multiple files, and running commands to verify its work. Giving Claude this much access to your codebase and files can introduce risks, especially in the case of prompt injection, such as Claude deleting files you didn't intend.
 
-![Claude Code](https://assets.claude.com/f86dde63aac75ae3fcf058b66769625b7dd62988.jpg?w=2400&q=75&fm=webp&fit=max)
-
 Anthropic's agentic coding tool. Claude Code understands your codebase, edits files, runs commands, and helps you ship faster.
 
 [Read more (opens in new tab)](https://claude.com/product/claude-code)

@@ -13,7 +13,7 @@ We then focus on an important determinant of Claude’s impact on the labor mark
 
 #### What has changed since our last report
 
-In the first chapter, we revisit findings from our previous [Economic Index report](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf), published in January 2026. We find that:
+In the first chapter, we revisit findings from our previous [Economic Index report](https://assets.claude.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf), published in January 2026. We find that:
 
 - **Use cases on Claude.ai diversified.** Coding tasks continue to migrate from augmentative usage in Claude.ai to more automated workflows in our first-party API traffic.<sup>[1](https://www.anthropic.com#footnote-1)</sup> In this report, Claude.ai usage was less concentrated: the top 10 tasks made up 19% of all traffic in February, down from 24% in November. That said, almost all tasks in this sample appeared in at least one of our previous samples. About 49% of jobs have seen at least a quarter of their tasks performed using Claude.
 - **Claude adoption broadened to lower-wage tasks.** As use cases have diversified, the average economic value of work done on Claude—as measured by US wages paid to workers in the associated occupations—has decreased slightly. This is caused, mechanically, by a rise in personal queries around sports, product comparisons, and home maintenance. The pattern is consistent with a standard “adoption curve” story, in which early-adopters favor specific high-value uses like coding, and later adopters take on a much wider range of tasks.
@@ -23,7 +23,7 @@ In the first chapter, we revisit findings from our previous [Economic Index repo
 
 A central finding in the Economic Index is that early adoption of Claude is very uneven: Claude is used more intensely in high-income countries, within the US in places with more knowledge workers, and for a relatively small set of specialized tasks and occupations.
 
-An important question is how inequality of adoption might determine where and to whom the benefits of AI will accrue. If, for example, effective AI use requires complementary skills and expertise—which we argued in our [previous report](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf)—and if such skills can be acquired through use and experimentation, then the benefits from early adoption may be self-reinforcing.
+An important question is how inequality of adoption might determine where and to whom the benefits of AI will accrue. If, for example, effective AI use requires complementary skills and expertise—which we argued in our [previous report](https://assets.claude.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf)—and if such skills can be acquired through use and experimentation, then the benefits from early adoption may be self-reinforcing.
 
 In our second chapter we investigate how users appear to shape the value that they get out of Claude: how they match model capability to the task at hand, and how usage patterns and outcomes shift with experience on the platform.
 
@@ -85,7 +85,7 @@ We highlight two API workflows that appeared more frequently in February as comp
 
 In our previous report, we noted that the Anthropic AI Usage Index (AUI), which adjusts usage by a geography’s working-age population, was converging rapidly across US states: states with initially lower usage per capita showed faster adoption.
 
-The left panel of Figure 1.6 shows that this convergence continued in our most recent data, but at a slower pace. From August 2025 to February 2026, the share of per-person usage going to the top five states has decreased from 30 to 24%. The Gini coefficient has fallen since August 2025, though the pace of convergence has slowed. When we update our estimates from the [previous report](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf), we find that at this rate states would arrive at roughly equal usage per capita in 5–9 years, rather than 2–5.[8](https://www.anthropic.com#footnote-8)
+The left panel of Figure 1.6 shows that this convergence continued in our most recent data, but at a slower pace. From August 2025 to February 2026, the share of per-person usage going to the top five states has decreased from 30 to 24%. The Gini coefficient has fallen since August 2025, though the pace of convergence has slowed. When we update our estimates from the [previous report](https://assets.claude.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf), we find that at this rate states would arrive at roughly equal usage per capita in 5–9 years, rather than 2–5.[8](https://www.anthropic.com#footnote-8)
 
 ![](https://assets.claude.com/37649d82a90d0583cff85a462f2d4da4f31767f2.png?w=3840&q=75&fm=webp&fit=max)
 
@@ -143,7 +143,7 @@ More casual usage emerges when AI has diffused to a broader share of the populat
 
 #### Experience effects
 
-We explore these relationships more in Figure 2.4 below, using the log-level data to control granularly for features of the conversation. In the top panel, specification (1) shows a simple bivariate regression with task success as the outcome and the long-tenure indicator as the predictor. Success is Claude’s assessment of whether the conversation was successful, [described in our previous report](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf). The plot shows that long-tenure users are about 5 percentage points more likely to have a successful conversation.
+We explore these relationships more in Figure 2.4 below, using the log-level data to control granularly for features of the conversation. In the top panel, specification (1) shows a simple bivariate regression with task success as the outcome and the long-tenure indicator as the predictor. Success is Claude’s assessment of whether the conversation was successful, [described in our previous report](https://assets.claude.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf). The plot shows that long-tenure users are about 5 percentage points more likely to have a successful conversation.
 
 This could reflect that higher-tenure users are better at prompting. But what if it reflects that they bring different tasks to Claude—ones more likely to be successful?
 
