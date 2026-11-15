@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-15T07:23:46.493062Z",
+    "fetch_date": "2026-11-15T17:33:24.458146Z",
     "section": "all"
   },
   "items": [
@@ -12245,8 +12245,8 @@
       "url": "https://www.anthropic.com/news/the-need-for-transparency-in-frontier-ai",
       "status": "success",
       "path": "anthropic/blog/news/the-need-for-transparency-in-frontier-ai.md",
-      "sha256": "01f30935480a9fd0629f98da649c887479117dbaa1494cbe90c6b9ad6835ab1c",
-      "size": 7127
+      "sha256": "d7940bce4acb30e3e5691c9b668024811043fdc1cd7457396619227175c6fd97",
+      "size": 7119
     },
     {
       "url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
@@ -13085,8 +13085,8 @@
       "url": "https://www.anthropic.com/research/evaluating-feature-steering",
       "status": "success",
       "path": "anthropic/blog/research/evaluating-feature-steering.md",
-      "sha256": "c6da668767386cf3b13a3189dbb0cbf5852e45e33c234466a6ae0d9279be7a2c",
-      "size": 24238
+      "sha256": "d68996ff78d4f88a190fe4e3143832a6154a75cddc7888aa96e2815a81bb3cff",
+      "size": 24214
     },
     {
       "url": "https://www.anthropic.com/research/expectations-for-the-future",
@@ -13449,8 +13449,8 @@
       "url": "https://www.anthropic.com/research/petri-open-source-auditing",
       "status": "success",
       "path": "anthropic/blog/research/petri-open-source-auditing.md",
-      "sha256": "84c168fe4feae049933dd87d678a692a2cdcfa875a12a067e49d7bd06ec5bbe2",
-      "size": 12605
+      "sha256": "da0ba50632a66eadb3b4cc45650e20373747737d127c705073e06ba0f4653431",
+      "size": 12597
     },
     {
       "url": "https://www.anthropic.com/research/political-even-handedness",
@@ -13498,8 +13498,8 @@
       "url": "https://www.anthropic.com/research/project-fetch-robot-dog",
       "status": "success",
       "path": "anthropic/blog/research/project-fetch-robot-dog.md",
-      "sha256": "38a61f605041b7a7625df7218d5093d3b5f35cce2c8d6c34b59f86d113254438",
-      "size": 19741
+      "sha256": "2599b6ab3a038f48f32b53f6f3cad429b91ae20c457c7ed19681d150fd9ef405",
+      "size": 19737
     },
     {
       "url": "https://www.anthropic.com/research/project-pilot",
@@ -48943,13 +48943,6 @@
       "size": 14455
     },
     {
-      "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/packages/aws-sdk/README.md",
-      "status": "success",
-      "path": "anthropic/github/anthropic-sdk-typescript/packages/aws-sdk/README.md",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "size": 0
-    },
-    {
       "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/packages/bedrock-sdk/CHANGELOG.md",
       "status": "success",
       "path": "anthropic/github/anthropic-sdk-typescript/packages/bedrock-sdk/CHANGELOG.md",
@@ -53430,6 +53423,10 @@
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
     {
+      "url": "https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/packages/aws-sdk/README.md",
+      "error": "501, message='First fragment: Transfer-Encoding not supported', url='https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/packages/aws-sdk/README.md'"
+    },
+    {
       "url": "https://openai.com/index/introducing-images-2-6",
       "error": "curl fetch failed after 6 attempts (last: HTTP 403)"
     },
@@ -55718,9 +55715,9 @@
   ],
   "summary": {
     "total": 8249,
-    "downloaded": 7570,
+    "downloaded": 7569,
     "skipped": 0,
-    "failed": 129,
+    "failed": 130,
     "dead": 550,
     "success_rate": 98.3
   }
