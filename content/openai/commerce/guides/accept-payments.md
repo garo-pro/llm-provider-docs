@@ -19,12 +19,12 @@ Below are the parameters that may be included in the header:
 | Parameter Name | Description                                                                                 | Example Values                               |
 | -------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------- |
 | `asn`          | Origin autonomous system (AS) number for the route to the IP address observed for the user. | 64496<br />64497                             |
-| for            | IP address observed for the ChatGPT user.                                                   | 198.51.100.23<br />"[2001:db8::23]"          |
-| ip-country     | Two-letter country code estimated from the IP address observed for the user.                | CA<br />US                                   |
-| ip-prefix      | Masked network prefix of the IP address observed for the user, in CIDR notation.            | "192.0.2.0/24"<br />"2001:db8:1234::/48"     |
-| locale         | The user’s configured locale, expressed as a language tag.                                  | en-GB<br />en-US                             |
+| `for`          | IP address observed for the ChatGPT user.                                                   | 198.51.100.23<br />"[2001:db8::23]"          |
+| `ip-country`   | Two-letter country code estimated from the IP address observed for the user.                | CA<br />US                                   |
+| `ip-prefix`    | Masked network prefix of the IP address observed for the user, in CIDR notation.            | "192.0.2.0/24"<br />"2001:db8:1234::/48"     |
+| `locale`       | The user’s configured locale, expressed as a language tag.                                  | en-GB<br />en-US                             |
 | `tz`           | The user’s configured time zone, expressed as an IANA time zone identifier.                 | "Europe/London"<br />"America/Los_Angeles"   |
-| user-agent     | Name of the user’s browser or app, with optional version and operating system details.      | "ExampleBrowser/130"<br />"ExampleApp (iOS)" |
+| `user-agent`   | Name of the user’s browser or app, with optional version and operating system details.      | "ExampleBrowser/130"<br />"ExampleApp (iOS)" |
 
 ### Example Forwarded headers
 
@@ -48,22 +48,22 @@ Forwarded: asn=64496;ip-prefix="192.0.2.0/24";user-agent="Example/130"
 
 ## Common questions
 
-Can I use this for a subscription?
+_Can I use this for a subscription?_
 
 Yes, if your existing checkout supports recurring billing. Get the customer’s consent for recurring charges and follow your payment processor’s best practices for merchant-initiated transactions.
 
-Can I use this for another purchase?
+_Can I use this for another purchase?_
 
 No. The customer consents only to the specific transaction. Don’t reuse or save that payment credential for a separate purchase.
 
-Do I receive the full card number?
+_Do I receive the full card number?_
 
 No. You receive a network token instead. Use the Payment Account Reference (PAR) to associate the token with the underlying payment account.
 
-Can I keep using a card already saved with my business?
+_Can I keep using a card already saved with my business?_
 
 Yes. ChatGPT Wallet is a separate payment option. You can keep using your existing authorized card-on-file flow.
 
 ## Next step
 
-Continue to [Build a plugin](https://developers-site-git-docs-commerce-partner-playbook-openai.vercel.app/commerce/guides/build-a-plugin).
+Continue to [Build a plugin](https://developers.openai.com/commerce/guides/build-a-plugin).

@@ -802,11 +802,113 @@ Content type: `application/json`
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -2427,11 +2529,113 @@ jq -n '{
 
                   - `"image_generation"`
 
-              - `Mcp object { type }`
+              - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
                 - `type: "mcp" (default: "mcp")`
 
                   - `"mcp"`
+
+                - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                  The tool invocation context(s).
+
+                  `minItems: 1`
+
+                  - `"direct"`
+
+                  - `"programmatic"`
+
+                - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                  A list of MCP tool names that are allowed for this server.
+
+                  - `array of string`
+
+                  - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `authorization: optional string or null`
+
+                  This value is omitted from returned Live session data.
+
+                - `connector_id: optional string or null`
+
+                  The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+                - `defer_loading: optional boolean or null`
+
+                  Whether this MCP tool should be deferred and discovered via tool search.
+
+                - `headers: optional map[string] or null`
+
+                  Optional HTTP headers to send when connecting to the MCP server.
+
+                - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                  Controls which MCP tools require explicit user approval before execution.
+
+                  - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                    - `always: optional object { read_only, tool_names }  or null`
+
+                      A filter that forces approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                    - `never: optional object { read_only, tool_names }  or null`
+
+                      A filter that skips approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                  - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                    Default approval behavior for MCP tool calls.
+
+                    - `"always"`
+
+                    - `"never"`
+
+                - `server_description: optional string or null`
+
+                  An optional human-readable description of the MCP server.
+
+                - `server_label: optional string`
+
+                  A label used to identify the MCP server.
+
+                  `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+                - `server_url: optional string or null`
+
+                  The URL of the MCP server to connect to.
+
+                  `format: uri`
+
+                - `tunnel_id: optional string or null`
+
+                  The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                  `pattern: ^tunnel_[a-z0-9]{32}$`
 
               - `Custom object { type }`
 
@@ -3491,11 +3695,113 @@ jq -n '{
 
                   - `"image_generation"`
 
-              - `Mcp object { type }`
+              - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
                 - `type: "mcp" (default: "mcp")`
 
                   - `"mcp"`
+
+                - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                  The tool invocation context(s).
+
+                  `minItems: 1`
+
+                  - `"direct"`
+
+                  - `"programmatic"`
+
+                - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                  A list of MCP tool names that are allowed for this server.
+
+                  - `array of string`
+
+                  - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `authorization: optional string or null`
+
+                  This value is omitted from returned Live session data.
+
+                - `connector_id: optional string or null`
+
+                  The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+                - `defer_loading: optional boolean or null`
+
+                  Whether this MCP tool should be deferred and discovered via tool search.
+
+                - `headers: optional map[string] or null`
+
+                  Optional HTTP headers to send when connecting to the MCP server.
+
+                - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                  Controls which MCP tools require explicit user approval before execution.
+
+                  - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                    - `always: optional object { read_only, tool_names }  or null`
+
+                      A filter that forces approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                    - `never: optional object { read_only, tool_names }  or null`
+
+                      A filter that skips approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                  - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                    Default approval behavior for MCP tool calls.
+
+                    - `"always"`
+
+                    - `"never"`
+
+                - `server_description: optional string or null`
+
+                  An optional human-readable description of the MCP server.
+
+                - `server_label: optional string`
+
+                  A label used to identify the MCP server.
+
+                  `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+                - `server_url: optional string or null`
+
+                  The URL of the MCP server to connect to.
+
+                  `format: uri`
+
+                - `tunnel_id: optional string or null`
+
+                  The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                  `pattern: ^tunnel_[a-z0-9]{32}$`
 
               - `Custom object { type }`
 
@@ -11922,11 +12228,113 @@ jq -n '{
 
             - `"image_generation"`
 
-        - `Mcp object { type }`
+        - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
           - `type: "mcp" (default: "mcp")`
 
             - `"mcp"`
+
+          - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+            The tool invocation context(s).
+
+            `minItems: 1`
+
+            - `"direct"`
+
+            - `"programmatic"`
+
+          - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+            A list of MCP tool names that are allowed for this server.
+
+            - `array of string`
+
+            - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+              - `read_only: optional boolean or null`
+
+                Whether to allow only read-only tools for matching entries.
+
+              - `tool_names: optional array of string or null`
+
+                A list of tool names to match against.
+
+          - `authorization: optional string or null`
+
+            This value is omitted from returned Live session data.
+
+          - `connector_id: optional string or null`
+
+            The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+          - `defer_loading: optional boolean or null`
+
+            Whether this MCP tool should be deferred and discovered via tool search.
+
+          - `headers: optional map[string] or null`
+
+            Optional HTTP headers to send when connecting to the MCP server.
+
+          - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+            Controls which MCP tools require explicit user approval before execution.
+
+            - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+              - `always: optional object { read_only, tool_names }  or null`
+
+                A filter that forces approval for matching tools.
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+              - `never: optional object { read_only, tool_names }  or null`
+
+                A filter that skips approval for matching tools.
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+              Default approval behavior for MCP tool calls.
+
+              - `"always"`
+
+              - `"never"`
+
+          - `server_description: optional string or null`
+
+            An optional human-readable description of the MCP server.
+
+          - `server_label: optional string`
+
+            A label used to identify the MCP server.
+
+            `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+          - `server_url: optional string or null`
+
+            The URL of the MCP server to connect to.
+
+            `format: uri`
+
+          - `tunnel_id: optional string or null`
+
+            The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+            `pattern: ^tunnel_[a-z0-9]{32}$`
 
         - `Custom object { type }`
 
@@ -12668,11 +13076,113 @@ jq -n '{
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -13928,11 +14438,113 @@ jq -n '{
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -15036,11 +15648,113 @@ jq -n '{
 
             - `"image_generation"`
 
-        - `Mcp object { type }`
+        - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
           - `type: "mcp" (default: "mcp")`
 
             - `"mcp"`
+
+          - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+            The tool invocation context(s).
+
+            `minItems: 1`
+
+            - `"direct"`
+
+            - `"programmatic"`
+
+          - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+            A list of MCP tool names that are allowed for this server.
+
+            - `array of string`
+
+            - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+              - `read_only: optional boolean or null`
+
+                Whether to allow only read-only tools for matching entries.
+
+              - `tool_names: optional array of string or null`
+
+                A list of tool names to match against.
+
+          - `authorization: optional string or null`
+
+            This value is omitted from returned Live session data.
+
+          - `connector_id: optional string or null`
+
+            The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+          - `defer_loading: optional boolean or null`
+
+            Whether this MCP tool should be deferred and discovered via tool search.
+
+          - `headers: optional map[string] or null`
+
+            Optional HTTP headers to send when connecting to the MCP server.
+
+          - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+            Controls which MCP tools require explicit user approval before execution.
+
+            - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+              - `always: optional object { read_only, tool_names }  or null`
+
+                A filter that forces approval for matching tools.
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+              - `never: optional object { read_only, tool_names }  or null`
+
+                A filter that skips approval for matching tools.
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+              Default approval behavior for MCP tool calls.
+
+              - `"always"`
+
+              - `"never"`
+
+          - `server_description: optional string or null`
+
+            An optional human-readable description of the MCP server.
+
+          - `server_label: optional string`
+
+            A label used to identify the MCP server.
+
+            `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+          - `server_url: optional string or null`
+
+            The URL of the MCP server to connect to.
+
+            `format: uri`
+
+          - `tunnel_id: optional string or null`
+
+            The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+            `pattern: ^tunnel_[a-z0-9]{32}$`
 
         - `Custom object { type }`
 
@@ -20629,11 +21343,113 @@ jq -n '{
 
         - `"image_generation"`
 
-    - `Mcp object { type }`
+    - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
       - `type: "mcp" (default: "mcp")`
 
         - `"mcp"`
+
+      - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+        The tool invocation context(s).
+
+        `minItems: 1`
+
+        - `"direct"`
+
+        - `"programmatic"`
+
+      - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+        A list of MCP tool names that are allowed for this server.
+
+        - `array of string`
+
+        - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+          - `read_only: optional boolean or null`
+
+            Whether to allow only read-only tools for matching entries.
+
+          - `tool_names: optional array of string or null`
+
+            A list of tool names to match against.
+
+      - `authorization: optional string or null`
+
+        This value is omitted from returned Live session data.
+
+      - `connector_id: optional string or null`
+
+        The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+      - `defer_loading: optional boolean or null`
+
+        Whether this MCP tool should be deferred and discovered via tool search.
+
+      - `headers: optional map[string] or null`
+
+        Optional HTTP headers to send when connecting to the MCP server.
+
+      - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+        Controls which MCP tools require explicit user approval before execution.
+
+        - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+          - `always: optional object { read_only, tool_names }  or null`
+
+            A filter that forces approval for matching tools.
+
+            - `read_only: optional boolean or null`
+
+              Whether to allow only read-only tools for matching entries.
+
+            - `tool_names: optional array of string or null`
+
+              A list of tool names to match against.
+
+          - `never: optional object { read_only, tool_names }  or null`
+
+            A filter that skips approval for matching tools.
+
+            - `read_only: optional boolean or null`
+
+              Whether to allow only read-only tools for matching entries.
+
+            - `tool_names: optional array of string or null`
+
+              A list of tool names to match against.
+
+        - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+          Default approval behavior for MCP tool calls.
+
+          - `"always"`
+
+          - `"never"`
+
+      - `server_description: optional string or null`
+
+        An optional human-readable description of the MCP server.
+
+      - `server_label: optional string`
+
+        A label used to identify the MCP server.
+
+        `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+      - `server_url: optional string or null`
+
+        The URL of the MCP server to connect to.
+
+        `format: uri`
+
+      - `tunnel_id: optional string or null`
+
+        The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+        `pattern: ^tunnel_[a-z0-9]{32}$`
 
     - `Custom object { type }`
 
@@ -21243,11 +22059,113 @@ jq -n '{
 
         - `"image_generation"`
 
-    - `Mcp object { type }`
+    - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
       - `type: "mcp" (default: "mcp")`
 
         - `"mcp"`
+
+      - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+        The tool invocation context(s).
+
+        `minItems: 1`
+
+        - `"direct"`
+
+        - `"programmatic"`
+
+      - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+        A list of MCP tool names that are allowed for this server.
+
+        - `array of string`
+
+        - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+          - `read_only: optional boolean or null`
+
+            Whether to allow only read-only tools for matching entries.
+
+          - `tool_names: optional array of string or null`
+
+            A list of tool names to match against.
+
+      - `authorization: optional string or null`
+
+        This value is omitted from returned Live session data.
+
+      - `connector_id: optional string or null`
+
+        The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+      - `defer_loading: optional boolean or null`
+
+        Whether this MCP tool should be deferred and discovered via tool search.
+
+      - `headers: optional map[string] or null`
+
+        Optional HTTP headers to send when connecting to the MCP server.
+
+      - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+        Controls which MCP tools require explicit user approval before execution.
+
+        - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+          - `always: optional object { read_only, tool_names }  or null`
+
+            A filter that forces approval for matching tools.
+
+            - `read_only: optional boolean or null`
+
+              Whether to allow only read-only tools for matching entries.
+
+            - `tool_names: optional array of string or null`
+
+              A list of tool names to match against.
+
+          - `never: optional object { read_only, tool_names }  or null`
+
+            A filter that skips approval for matching tools.
+
+            - `read_only: optional boolean or null`
+
+              Whether to allow only read-only tools for matching entries.
+
+            - `tool_names: optional array of string or null`
+
+              A list of tool names to match against.
+
+        - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+          Default approval behavior for MCP tool calls.
+
+          - `"always"`
+
+          - `"never"`
+
+      - `server_description: optional string or null`
+
+        An optional human-readable description of the MCP server.
+
+      - `server_label: optional string`
+
+        A label used to identify the MCP server.
+
+        `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+      - `server_url: optional string or null`
+
+        The URL of the MCP server to connect to.
+
+        `format: uri`
+
+      - `tunnel_id: optional string or null`
+
+        The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+        `pattern: ^tunnel_[a-z0-9]{32}$`
 
     - `Custom object { type }`
 
@@ -22125,11 +23043,113 @@ jq -n '{
 
                   - `"image_generation"`
 
-              - `Mcp object { type }`
+              - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
                 - `type: "mcp" (default: "mcp")`
 
                   - `"mcp"`
+
+                - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                  The tool invocation context(s).
+
+                  `minItems: 1`
+
+                  - `"direct"`
+
+                  - `"programmatic"`
+
+                - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                  A list of MCP tool names that are allowed for this server.
+
+                  - `array of string`
+
+                  - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `authorization: optional string or null`
+
+                  This value is omitted from returned Live session data.
+
+                - `connector_id: optional string or null`
+
+                  The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+                - `defer_loading: optional boolean or null`
+
+                  Whether this MCP tool should be deferred and discovered via tool search.
+
+                - `headers: optional map[string] or null`
+
+                  Optional HTTP headers to send when connecting to the MCP server.
+
+                - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                  Controls which MCP tools require explicit user approval before execution.
+
+                  - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                    - `always: optional object { read_only, tool_names }  or null`
+
+                      A filter that forces approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                    - `never: optional object { read_only, tool_names }  or null`
+
+                      A filter that skips approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                  - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                    Default approval behavior for MCP tool calls.
+
+                    - `"always"`
+
+                    - `"never"`
+
+                - `server_description: optional string or null`
+
+                  An optional human-readable description of the MCP server.
+
+                - `server_label: optional string`
+
+                  A label used to identify the MCP server.
+
+                  `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+                - `server_url: optional string or null`
+
+                  The URL of the MCP server to connect to.
+
+                  `format: uri`
+
+                - `tunnel_id: optional string or null`
+
+                  The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                  `pattern: ^tunnel_[a-z0-9]{32}$`
 
               - `Custom object { type }`
 
@@ -24691,11 +25711,113 @@ jq -n '{
 
                 - `"image_generation"`
 
-            - `Mcp object { type }`
+            - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
               - `type: "mcp" (default: "mcp")`
 
                 - `"mcp"`
+
+              - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                The tool invocation context(s).
+
+                `minItems: 1`
+
+                - `"direct"`
+
+                - `"programmatic"`
+
+              - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                A list of MCP tool names that are allowed for this server.
+
+                - `array of string`
+
+                - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `authorization: optional string or null`
+
+                This value is omitted from returned Live session data.
+
+              - `connector_id: optional string or null`
+
+                The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+              - `defer_loading: optional boolean or null`
+
+                Whether this MCP tool should be deferred and discovered via tool search.
+
+              - `headers: optional map[string] or null`
+
+                Optional HTTP headers to send when connecting to the MCP server.
+
+              - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                Controls which MCP tools require explicit user approval before execution.
+
+                - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                  - `always: optional object { read_only, tool_names }  or null`
+
+                    A filter that forces approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                  - `never: optional object { read_only, tool_names }  or null`
+
+                    A filter that skips approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                  Default approval behavior for MCP tool calls.
+
+                  - `"always"`
+
+                  - `"never"`
+
+              - `server_description: optional string or null`
+
+                An optional human-readable description of the MCP server.
+
+              - `server_label: optional string`
+
+                A label used to identify the MCP server.
+
+                `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+              - `server_url: optional string or null`
+
+                The URL of the MCP server to connect to.
+
+                `format: uri`
+
+              - `tunnel_id: optional string or null`
+
+                The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                `pattern: ^tunnel_[a-z0-9]{32}$`
 
             - `Custom object { type }`
 
@@ -25995,11 +27117,113 @@ jq -n '{
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -27295,11 +28519,113 @@ jq -n '{
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -28585,11 +29911,113 @@ jq -n '{
 
                 - `"image_generation"`
 
-            - `Mcp object { type }`
+            - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
               - `type: "mcp" (default: "mcp")`
 
                 - `"mcp"`
+
+              - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                The tool invocation context(s).
+
+                `minItems: 1`
+
+                - `"direct"`
+
+                - `"programmatic"`
+
+              - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                A list of MCP tool names that are allowed for this server.
+
+                - `array of string`
+
+                - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `authorization: optional string or null`
+
+                This value is omitted from returned Live session data.
+
+              - `connector_id: optional string or null`
+
+                The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+              - `defer_loading: optional boolean or null`
+
+                Whether this MCP tool should be deferred and discovered via tool search.
+
+              - `headers: optional map[string] or null`
+
+                Optional HTTP headers to send when connecting to the MCP server.
+
+              - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                Controls which MCP tools require explicit user approval before execution.
+
+                - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                  - `always: optional object { read_only, tool_names }  or null`
+
+                    A filter that forces approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                  - `never: optional object { read_only, tool_names }  or null`
+
+                    A filter that skips approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                  Default approval behavior for MCP tool calls.
+
+                  - `"always"`
+
+                  - `"never"`
+
+              - `server_description: optional string or null`
+
+                An optional human-readable description of the MCP server.
+
+              - `server_label: optional string`
+
+                A label used to identify the MCP server.
+
+                `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+              - `server_url: optional string or null`
+
+                The URL of the MCP server to connect to.
+
+                `format: uri`
+
+              - `tunnel_id: optional string or null`
+
+                The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                `pattern: ^tunnel_[a-z0-9]{32}$`
 
             - `Custom object { type }`
 
@@ -29905,11 +31333,113 @@ jq -n '{
 
                 - `"image_generation"`
 
-            - `Mcp object { type }`
+            - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
               - `type: "mcp" (default: "mcp")`
 
                 - `"mcp"`
+
+              - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                The tool invocation context(s).
+
+                `minItems: 1`
+
+                - `"direct"`
+
+                - `"programmatic"`
+
+              - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                A list of MCP tool names that are allowed for this server.
+
+                - `array of string`
+
+                - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `authorization: optional string or null`
+
+                This value is omitted from returned Live session data.
+
+              - `connector_id: optional string or null`
+
+                The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+              - `defer_loading: optional boolean or null`
+
+                Whether this MCP tool should be deferred and discovered via tool search.
+
+              - `headers: optional map[string] or null`
+
+                Optional HTTP headers to send when connecting to the MCP server.
+
+              - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                Controls which MCP tools require explicit user approval before execution.
+
+                - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                  - `always: optional object { read_only, tool_names }  or null`
+
+                    A filter that forces approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                  - `never: optional object { read_only, tool_names }  or null`
+
+                    A filter that skips approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                  Default approval behavior for MCP tool calls.
+
+                  - `"always"`
+
+                  - `"never"`
+
+              - `server_description: optional string or null`
+
+                An optional human-readable description of the MCP server.
+
+              - `server_label: optional string`
+
+                A label used to identify the MCP server.
+
+                `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+              - `server_url: optional string or null`
+
+                The URL of the MCP server to connect to.
+
+                `format: uri`
+
+              - `tunnel_id: optional string or null`
+
+                The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                `pattern: ^tunnel_[a-z0-9]{32}$`
 
             - `Custom object { type }`
 
@@ -30999,11 +32529,113 @@ jq -n '{
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -31905,11 +33537,113 @@ jq -n '{
 
                 - `"image_generation"`
 
-            - `Mcp object { type }`
+            - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
               - `type: "mcp" (default: "mcp")`
 
                 - `"mcp"`
+
+              - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                The tool invocation context(s).
+
+                `minItems: 1`
+
+                - `"direct"`
+
+                - `"programmatic"`
+
+              - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                A list of MCP tool names that are allowed for this server.
+
+                - `array of string`
+
+                - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `authorization: optional string or null`
+
+                This value is omitted from returned Live session data.
+
+              - `connector_id: optional string or null`
+
+                The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+              - `defer_loading: optional boolean or null`
+
+                Whether this MCP tool should be deferred and discovered via tool search.
+
+              - `headers: optional map[string] or null`
+
+                Optional HTTP headers to send when connecting to the MCP server.
+
+              - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                Controls which MCP tools require explicit user approval before execution.
+
+                - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                  - `always: optional object { read_only, tool_names }  or null`
+
+                    A filter that forces approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                  - `never: optional object { read_only, tool_names }  or null`
+
+                    A filter that skips approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                  Default approval behavior for MCP tool calls.
+
+                  - `"always"`
+
+                  - `"never"`
+
+              - `server_description: optional string or null`
+
+                An optional human-readable description of the MCP server.
+
+              - `server_label: optional string`
+
+                A label used to identify the MCP server.
+
+                `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+              - `server_url: optional string or null`
+
+                The URL of the MCP server to connect to.
+
+                `format: uri`
+
+              - `tunnel_id: optional string or null`
+
+                The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                `pattern: ^tunnel_[a-z0-9]{32}$`
 
             - `Custom object { type }`
 
@@ -33043,11 +34777,113 @@ jq -n '{
 
                 - `"image_generation"`
 
-            - `Mcp object { type }`
+            - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
               - `type: "mcp" (default: "mcp")`
 
                 - `"mcp"`
+
+              - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                The tool invocation context(s).
+
+                `minItems: 1`
+
+                - `"direct"`
+
+                - `"programmatic"`
+
+              - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                A list of MCP tool names that are allowed for this server.
+
+                - `array of string`
+
+                - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `authorization: optional string or null`
+
+                This value is omitted from returned Live session data.
+
+              - `connector_id: optional string or null`
+
+                The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+              - `defer_loading: optional boolean or null`
+
+                Whether this MCP tool should be deferred and discovered via tool search.
+
+              - `headers: optional map[string] or null`
+
+                Optional HTTP headers to send when connecting to the MCP server.
+
+              - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                Controls which MCP tools require explicit user approval before execution.
+
+                - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                  - `always: optional object { read_only, tool_names }  or null`
+
+                    A filter that forces approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                  - `never: optional object { read_only, tool_names }  or null`
+
+                    A filter that skips approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                  Default approval behavior for MCP tool calls.
+
+                  - `"always"`
+
+                  - `"never"`
+
+              - `server_description: optional string or null`
+
+                An optional human-readable description of the MCP server.
+
+              - `server_label: optional string`
+
+                A label used to identify the MCP server.
+
+                `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+              - `server_url: optional string or null`
+
+                The URL of the MCP server to connect to.
+
+                `format: uri`
+
+              - `tunnel_id: optional string or null`
+
+                The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                `pattern: ^tunnel_[a-z0-9]{32}$`
 
             - `Custom object { type }`
 
@@ -34359,11 +36195,113 @@ Use Bearer Auth (header Authorization).
 
                 - `"image_generation"`
 
-            - `Mcp object { type }`
+            - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
               - `type: "mcp" (default: "mcp")`
 
                 - `"mcp"`
+
+              - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                The tool invocation context(s).
+
+                `minItems: 1`
+
+                - `"direct"`
+
+                - `"programmatic"`
+
+              - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                A list of MCP tool names that are allowed for this server.
+
+                - `array of string`
+
+                - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `authorization: optional string or null`
+
+                This value is omitted from returned Live session data.
+
+              - `connector_id: optional string or null`
+
+                The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+              - `defer_loading: optional boolean or null`
+
+                Whether this MCP tool should be deferred and discovered via tool search.
+
+              - `headers: optional map[string] or null`
+
+                Optional HTTP headers to send when connecting to the MCP server.
+
+              - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                Controls which MCP tools require explicit user approval before execution.
+
+                - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                  - `always: optional object { read_only, tool_names }  or null`
+
+                    A filter that forces approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                  - `never: optional object { read_only, tool_names }  or null`
+
+                    A filter that skips approval for matching tools.
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                  Default approval behavior for MCP tool calls.
+
+                  - `"always"`
+
+                  - `"never"`
+
+              - `server_description: optional string or null`
+
+                An optional human-readable description of the MCP server.
+
+              - `server_label: optional string`
+
+                A label used to identify the MCP server.
+
+                `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+              - `server_url: optional string or null`
+
+                The URL of the MCP server to connect to.
+
+                `format: uri`
+
+              - `tunnel_id: optional string or null`
+
+                The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                `pattern: ^tunnel_[a-z0-9]{32}$`
 
             - `Custom object { type }`
 
@@ -41018,11 +42956,113 @@ Use Bearer Auth (header Authorization).
 
                   - `"image_generation"`
 
-              - `Mcp object { type }`
+              - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
                 - `type: "mcp" (default: "mcp")`
 
                   - `"mcp"`
+
+                - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                  The tool invocation context(s).
+
+                  `minItems: 1`
+
+                  - `"direct"`
+
+                  - `"programmatic"`
+
+                - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                  A list of MCP tool names that are allowed for this server.
+
+                  - `array of string`
+
+                  - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `authorization: optional string or null`
+
+                  This value is omitted from returned Live session data.
+
+                - `connector_id: optional string or null`
+
+                  The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+                - `defer_loading: optional boolean or null`
+
+                  Whether this MCP tool should be deferred and discovered via tool search.
+
+                - `headers: optional map[string] or null`
+
+                  Optional HTTP headers to send when connecting to the MCP server.
+
+                - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                  Controls which MCP tools require explicit user approval before execution.
+
+                  - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                    - `always: optional object { read_only, tool_names }  or null`
+
+                      A filter that forces approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                    - `never: optional object { read_only, tool_names }  or null`
+
+                      A filter that skips approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                  - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                    Default approval behavior for MCP tool calls.
+
+                    - `"always"`
+
+                    - `"never"`
+
+                - `server_description: optional string or null`
+
+                  An optional human-readable description of the MCP server.
+
+                - `server_label: optional string`
+
+                  A label used to identify the MCP server.
+
+                  `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+                - `server_url: optional string or null`
+
+                  The URL of the MCP server to connect to.
+
+                  `format: uri`
+
+                - `tunnel_id: optional string or null`
+
+                  The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                  `pattern: ^tunnel_[a-z0-9]{32}$`
 
               - `Custom object { type }`
 
@@ -43432,11 +45472,113 @@ Content type: `application/json`
 
               - `"image_generation"`
 
-          - `Mcp object { type }`
+          - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
             - `type: "mcp" (default: "mcp")`
 
               - `"mcp"`
+
+            - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+              The tool invocation context(s).
+
+              `minItems: 1`
+
+              - `"direct"`
+
+              - `"programmatic"`
+
+            - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+              A list of MCP tool names that are allowed for this server.
+
+              - `array of string`
+
+              - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `authorization: optional string or null`
+
+              This value is omitted from returned Live session data.
+
+            - `connector_id: optional string or null`
+
+              The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+            - `defer_loading: optional boolean or null`
+
+              Whether this MCP tool should be deferred and discovered via tool search.
+
+            - `headers: optional map[string] or null`
+
+              Optional HTTP headers to send when connecting to the MCP server.
+
+            - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+              Controls which MCP tools require explicit user approval before execution.
+
+              - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                - `always: optional object { read_only, tool_names }  or null`
+
+                  A filter that forces approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+                - `never: optional object { read_only, tool_names }  or null`
+
+                  A filter that skips approval for matching tools.
+
+                  - `read_only: optional boolean or null`
+
+                    Whether to allow only read-only tools for matching entries.
+
+                  - `tool_names: optional array of string or null`
+
+                    A list of tool names to match against.
+
+              - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                Default approval behavior for MCP tool calls.
+
+                - `"always"`
+
+                - `"never"`
+
+            - `server_description: optional string or null`
+
+              An optional human-readable description of the MCP server.
+
+            - `server_label: optional string`
+
+              A label used to identify the MCP server.
+
+              `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+            - `server_url: optional string or null`
+
+              The URL of the MCP server to connect to.
+
+              `format: uri`
+
+            - `tunnel_id: optional string or null`
+
+              The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+              `pattern: ^tunnel_[a-z0-9]{32}$`
 
           - `Custom object { type }`
 
@@ -44609,11 +46751,113 @@ Content type: `application/json`
 
             - `"image_generation"`
 
-        - `Mcp object { type }`
+        - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
           - `type: "mcp" (default: "mcp")`
 
             - `"mcp"`
+
+          - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+            The tool invocation context(s).
+
+            `minItems: 1`
+
+            - `"direct"`
+
+            - `"programmatic"`
+
+          - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+            A list of MCP tool names that are allowed for this server.
+
+            - `array of string`
+
+            - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+              - `read_only: optional boolean or null`
+
+                Whether to allow only read-only tools for matching entries.
+
+              - `tool_names: optional array of string or null`
+
+                A list of tool names to match against.
+
+          - `authorization: optional string or null`
+
+            This value is omitted from returned Live session data.
+
+          - `connector_id: optional string or null`
+
+            The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+          - `defer_loading: optional boolean or null`
+
+            Whether this MCP tool should be deferred and discovered via tool search.
+
+          - `headers: optional map[string] or null`
+
+            Optional HTTP headers to send when connecting to the MCP server.
+
+          - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+            Controls which MCP tools require explicit user approval before execution.
+
+            - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+              - `always: optional object { read_only, tool_names }  or null`
+
+                A filter that forces approval for matching tools.
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+              - `never: optional object { read_only, tool_names }  or null`
+
+                A filter that skips approval for matching tools.
+
+                - `read_only: optional boolean or null`
+
+                  Whether to allow only read-only tools for matching entries.
+
+                - `tool_names: optional array of string or null`
+
+                  A list of tool names to match against.
+
+            - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+              Default approval behavior for MCP tool calls.
+
+              - `"always"`
+
+              - `"never"`
+
+          - `server_description: optional string or null`
+
+            An optional human-readable description of the MCP server.
+
+          - `server_label: optional string`
+
+            A label used to identify the MCP server.
+
+            `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+          - `server_url: optional string or null`
+
+            The URL of the MCP server to connect to.
+
+            `format: uri`
+
+          - `tunnel_id: optional string or null`
+
+            The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+            `pattern: ^tunnel_[a-z0-9]{32}$`
 
         - `Custom object { type }`
 
@@ -45488,11 +47732,113 @@ Use Bearer Auth (header Authorization).
 
                   - `"image_generation"`
 
-              - `Mcp object { type }`
+              - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
                 - `type: "mcp" (default: "mcp")`
 
                   - `"mcp"`
+
+                - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                  The tool invocation context(s).
+
+                  `minItems: 1`
+
+                  - `"direct"`
+
+                  - `"programmatic"`
+
+                - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                  A list of MCP tool names that are allowed for this server.
+
+                  - `array of string`
+
+                  - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `authorization: optional string or null`
+
+                  This value is omitted from returned Live session data.
+
+                - `connector_id: optional string or null`
+
+                  The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+                - `defer_loading: optional boolean or null`
+
+                  Whether this MCP tool should be deferred and discovered via tool search.
+
+                - `headers: optional map[string] or null`
+
+                  Optional HTTP headers to send when connecting to the MCP server.
+
+                - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                  Controls which MCP tools require explicit user approval before execution.
+
+                  - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                    - `always: optional object { read_only, tool_names }  or null`
+
+                      A filter that forces approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                    - `never: optional object { read_only, tool_names }  or null`
+
+                      A filter that skips approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                  - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                    Default approval behavior for MCP tool calls.
+
+                    - `"always"`
+
+                    - `"never"`
+
+                - `server_description: optional string or null`
+
+                  An optional human-readable description of the MCP server.
+
+                - `server_label: optional string`
+
+                  A label used to identify the MCP server.
+
+                  `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+                - `server_url: optional string or null`
+
+                  The URL of the MCP server to connect to.
+
+                  `format: uri`
+
+                - `tunnel_id: optional string or null`
+
+                  The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                  `pattern: ^tunnel_[a-z0-9]{32}$`
 
               - `Custom object { type }`
 
@@ -52171,11 +54517,113 @@ Use Bearer Auth (header Authorization).
 
                   - `"image_generation"`
 
-              - `Mcp object { type }`
+              - `Mcp object { type, allowed_callers, allowed_tools, 9 more }`
 
                 - `type: "mcp" (default: "mcp")`
 
                   - `"mcp"`
+
+                - `allowed_callers: optional array of "direct" or "programmatic" or null`
+
+                  The tool invocation context(s).
+
+                  `minItems: 1`
+
+                  - `"direct"`
+
+                  - `"programmatic"`
+
+                - `allowed_tools: optional array of string or LiveMCPToolFilterParam { read_only, tool_names }  or null`
+
+                  A list of MCP tool names that are allowed for this server.
+
+                  - `array of string`
+
+                  - `LiveMCPToolFilterParam object { read_only, tool_names }`
+
+                    - `read_only: optional boolean or null`
+
+                      Whether to allow only read-only tools for matching entries.
+
+                    - `tool_names: optional array of string or null`
+
+                      A list of tool names to match against.
+
+                - `authorization: optional string or null`
+
+                  This value is omitted from returned Live session data.
+
+                - `connector_id: optional string or null`
+
+                  The ID of a built-in MCP connector. This field is deprecated for models released after September 1, 2026. Use `server_url` to connect to a remote MCP server, or `tunnel_id` to connect to a local MCP server.
+
+                - `defer_loading: optional boolean or null`
+
+                  Whether this MCP tool should be deferred and discovered via tool search.
+
+                - `headers: optional map[string] or null`
+
+                  Optional HTTP headers to send when connecting to the MCP server.
+
+                - `require_approval: optional LiveMCPRequireApprovalFilterParam { always, never }  or "always" or "never" or null`
+
+                  Controls which MCP tools require explicit user approval before execution.
+
+                  - `LiveMCPRequireApprovalFilterParam object { always, never }`
+
+                    - `always: optional object { read_only, tool_names }  or null`
+
+                      A filter that forces approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                    - `never: optional object { read_only, tool_names }  or null`
+
+                      A filter that skips approval for matching tools.
+
+                      - `read_only: optional boolean or null`
+
+                        Whether to allow only read-only tools for matching entries.
+
+                      - `tool_names: optional array of string or null`
+
+                        A list of tool names to match against.
+
+                  - `LiveMCPRequireApprovalAPIEnum = "always" or "never"`
+
+                    Default approval behavior for MCP tool calls.
+
+                    - `"always"`
+
+                    - `"never"`
+
+                - `server_description: optional string or null`
+
+                  An optional human-readable description of the MCP server.
+
+                - `server_label: optional string`
+
+                  A label used to identify the MCP server.
+
+                  `pattern: ^[A-Za-z][A-Za-z0-9_-]*$`, `maxLength: 128`
+
+                - `server_url: optional string or null`
+
+                  The URL of the MCP server to connect to.
+
+                  `format: uri`
+
+                - `tunnel_id: optional string or null`
+
+                  The Secure MCP Tunnel ID to use instead of a direct server URL.
+
+                  `pattern: ^tunnel_[a-z0-9]{32}$`
 
               - `Custom object { type }`
 

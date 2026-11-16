@@ -66,7 +66,13 @@ For third-party deployments, the export includes session metadata (event names, 
 
 The export carries logs and metrics. Cowork sessions, Code sessions, and the desktop application's own events arrive under the `service.name` values `cowork`, `claude-code-desktop`, and `claude-desktop` respectively. With [Unified Claude](https://claude.com/docs/third-party/claude-desktop/unified-claude.md) on, a Cowork session started from the home screen also arrives under `cowork`. The export isn't checked against the [agent egress allowlist](#required-egress-paths), so `otlpEndpoint` doesn't need an entry in `coworkEgressAllowedHosts`; your perimeter firewall still needs to allow the host.
 
-For static collector headers, extra resource attributes, and the log level of the desktop application's own event stream, see [`otlpHeaders`, `otlpResourceAttributes`, and `otlpDesktopLogLevel`](https://claude.com/docs/third-party/claude-desktop/configuration#otlpheaders) in the configuration reference. Events on the `claude-desktop` stream include `desktop_ssh_sandbox_check_failed`, described under [Sandbox status on the remote host](https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md#sandbox-status-on-the-remote-host), and `desktop_ssh_policy_check_failed`, described under [Policy status on the remote host](https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md#policy-status-on-the-remote-host).
+For static collector headers, extra resource attributes, and the log level of the desktop application's own event stream, see [`otlpHeaders`, `otlpResourceAttributes`, and `otlpDesktopLogLevel`](https://claude.com/docs/third-party/claude-desktop/configuration#otlpheaders) in the configuration reference.
+
+Events on the `claude-desktop` stream include:
+
+* **`desktop_ssh_sandbox_check_failed`**: see [Sandbox status on the remote host](https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md#sandbox-status-on-the-remote-host)
+* **`desktop_ssh_policy_check_failed`**: see [Policy status on the remote host](https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md#policy-status-on-the-remote-host)
+* **`builtin_m365_call`**: see [Audit local connector tool calls](https://claude.com/docs/third-party/claude-desktop/connectors-m365.md#audit-local-connector-tool-calls)
 
 ### Collector endpoint and headers
 
@@ -167,6 +173,56 @@ Two scope notes:
 * Trace export uses Claude Code's session-tracing beta, and the span structure may change while the feature is in beta.
 
 With `otlpEndpoint` set, `otlpTracesEnabled` alone decides whether Cowork and Code sessions export traces. Leaving it unset or `false` keeps traces off even when Claude Code's own settings on the device, including managed settings, turn tracing on (Claude Desktop 1.52386.0 or later).
+
+### EDR install events
+
+If you [run an EDR sensor in Cowork](https://support.claude.com/en/articles/17828685-run-your-endpoint-detection-and-response-edr-sensor-in-claude-cowork), each start of the Cowork workspace VM reports the result of the install to your collector on the `claude-desktop` stream. A start sends at most one record, either of these:
+
+| Event | Severity | Sent when |
+| - | - | - |
+| `lam_vm_edr_extension_install_completed` | `info` | The VM reports that the package's `install.sh` exited with code 0, and Claude Desktop accepts the report. |
+| `lam_vm_edr_extension_install_failed` | `error` | The run ended any other way. A cause that lasts is reported again at every start. |
+
+Your collector receives both at every [`otlpDesktopLogLevel`](https://claude.com/docs/third-party/claude-desktop/configuration#otlpdesktoploglevel) except `off`, including the default, `error`. A collector pipeline that keeps only `error` records drops the install event, so filter on the event name instead.
+
+Before Claude Desktop 5.1231.0, the install event needs `info` or `debug`.
+
+Read these events as a report from the VM, not as proof that a sensor is protecting a device:
+
+* An install event means only that the script exited 0 at that start. It says nothing about what the script did or whether the sensor still runs.
+* The VM reports most of these fields about itself, and root in the VM can report anything.
+* A missing record proves nothing. Claude Desktop sends each batch once and drops it if your collector doesn't accept it, and a record can be lost when the app quits.
+* Claude Desktop sends no record if the VM fails to start, if `coworkEDRIntegration` isn't set, or if its name is misspelled in the managed configuration.
+
+Each record carries the identity described in [User attribution](#user-attribution), plus these attributes where they apply:
+
+| Attribute | Events | Description |
+| - | - | - |
+| `edr_outcome_kind` | Failed | How the run ended. See the table of kinds below. |
+| `edr_outcome_reason` | Failed | Why, within that kind. It is absent when Anthropic switched the integration off for every vendor. |
+| `edr_vendor_id` | Both | The vendor the VM says signed the package. For `switched_off` with reason `vendor_blocked`, the vendor you named in `coworkEDRIntegrationVendor`. |
+| `edr_vendor_verified` | Both | Whether the VM says a signature check backs `edr_vendor_id`. |
+| `edr_package_sha256` | Both | The SHA-256 of the VM's copy of the package, as the VM reports it. |
+| `edr_root_kind` | Both | Which of the VM's key lists matched the signature: `production` or `test`. |
+| `edr_signature_expires_epoch_s` | Completed | When the VM says the signature expires, in Unix seconds. |
+| `exit_code` | Failed | The script's exit code, for `script_exit_nonzero` and `script_not_started`. |
+| `edr_last_observed` | Failed | For a run that was cut off, the last state Claude Desktop saw. |
+| `edr_malformed_check` | Failed | For `malformed_status`, which check the VM's answer failed. |
+| `duration_ms` | Both | How long the run took, in milliseconds. A failed event has it only for `script_failed` and `unknown`. |
+| `guest_reported` | Both | `false` for `switched_off` and `refused_host`, which Claude Desktop or its Windows VM service decides. `true` for every other result, including `unknown` when the VM never answered. |
+| `test_hooks_latched` | Both | Should be `false`. If it is `true` on an install event from a released build, treat that install as unconfirmed and check how the app was started. |
+
+`edr_outcome_kind` has these values:
+
+| Kind | Meaning | Common reasons |
+| - | - | - |
+| `switched_off` | Anthropic switched the integration off. A fully third-party deployment has no such switch. | `vendor_blocked` |
+| `refused_host` | Claude Desktop or its Windows VM service declined, and the script didn't run. Check your device management settings and the package's location. `flag_state_unknown` means that the app couldn't recently check Anthropic's switch, and doesn't occur in a fully third-party deployment. | `not_machine_managed`, `config_invalid`, `vendor_not_named`, `path_unresolvable`, `path_unreadable`, `path_bad_size`, `flag_state_unknown` |
+| `refused_guest` | The VM declined, and the script didn't run. Check the package and its signature with your vendor. | `signature_file_missing`, `signature_invalid`, `signature_expired`, `vendor_unknown`, `script_missing` |
+| `script_failed` | The script ran and failed, or the VM couldn't start it or lost track of it. | `script_exit_nonzero`, `script_timeout`, `script_signaled`, `script_not_started`, `script_outcome_unknown` |
+| `unknown` | Claude Desktop couldn't learn the result: the VM didn't answer in time, stopped or restarted, or gave an answer that the app doesn't accept. The script may or may not have run. | `deadline_exceeded`, `vm_stopped`, `malformed_status` |
+
+These two events are the only ones for this feature, and their reason values can grow as Claude Desktop changes. Treat a value you don't recognize as a failed install.
 
 ## Required egress paths
 

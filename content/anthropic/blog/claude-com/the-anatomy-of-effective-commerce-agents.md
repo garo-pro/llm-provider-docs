@@ -13,6 +13,10 @@ These agents are in production, and enterprise customers have seen larger carts 
 
 This post is for the engineers and engineering leaders building these (or other consumer facing) agents. Part 1 covers the architecture, which you decide once. Part 2 covers latency and cost. Part 3 covers production: memory, safety, evals, and scaling the work across an organization.
 
+## 01 The architecture
+
+One model in a standard agent loop, with skills for the long tail and tools that call the systems you already run. You decide this once.
+
 ### **What is a commerce agent?**
 
 We define a commerce agent as an agent that simplifies buying and selling across an online catalog.
@@ -69,6 +73,10 @@ In our [reference implementation](https://github.com/anthropics/commerce-agents)
 
 The merchant agent splits the same way, with performance-insights, catalog-listings, inventory-operations, pricing-promotions, and marketing-campaigns as its skills, one per operational domain.
 
+| **In the prompt** | Shopping agent | Grounding, cart and checkout semantics, presentation rules, and product search. | 
+| **Shopping skills** | The long tail | search-discovery · purchase-research · planning-goals · customer-care · memory-personalization | 
+| **Merchant skills** | One per operational domain | performance-insights · catalog-listings · inventory-operations · pricing-promotions · marketing-campaigns | 
+
 ### **Engineering agent tooling**
 
 Our post on [writing effective tools for agents](https://www.anthropic.com/engineering/writing-tools-for-agents) covers tool design in general. Two points have mattered most in commerce:
@@ -115,6 +123,10 @@ Presentation tools also give the agent a record of what's on screen. When a cust
 
 For that to work, the arguments have to reflect the rendered layout, so structure them the way the UI is structured, as ordered rows and carousels rather than a flat list the client rearranges.
 
+## 02 Making it fast and affordable
+
+Attack latency on two fronts, end-to-end and perceived, and let caching carry the cost. None of it should spend intelligence to get there.
+
 Latency matters in commerce, and consumer surfaces are the least forgiving. However, on agentic surfaces, what we have consistently seen move metrics like retention, engagement, and cart size is the quality of the outcome.
 
 Whether the answer was relevant and the task actually completed was more critical to those metrics as compared to marginal latency gains.
@@ -126,6 +138,10 @@ Every user has a latency budget, and the techniques below keep the agent inside 
 ### **Minimizing task completion latency**
 
 Task completion latency is the sum, over model turns, of time to last token plus tool processing. That gives you three levers to work towards: fewer turns, faster tools, and faster tokens. These levers sometimes compete, so the thing to minimize is the sum rather than any one of them.
+
+| **Fewer turns** | Load likely context up front, increase model intelligence, and have the model call independent tools in parallel. | 
+| **Faster tools** | Optimize the tool's own backend, and dispatch tools eagerly as their arguments complete. | 
+| **Faster tokens** | Choose the model and its configuration by sweeping your eval suite. | 
 
 #### **Fewer turns**
 
@@ -181,6 +197,10 @@ Second, roll your breakpoints forward in each turn: a request allows a limited n
 
 Measure cost per completed task rather than per model call, since a cheaper model that needs more turns, or fails more often, is not cheaper. When the result is close, and the cost fits your per-task economics and latency, choose intelligence. Quality is what drives adoption and retention, and allows for room to build for the next 6 months as models become better.
 
+## 03 Running it in production
+
+Memory, safety, evals, and scaling the work across an organization: what gets an agent through production and keeps it there.
+
 Lastly, we talk about what gets an agent through production: memory, safety, evals, and scaling the work across an organization.
 
 ### **Memory that survives the session**
@@ -219,6 +239,10 @@ Separating the extractor also lets you prompt it precisely. It reads only the us
 #### **Reading memory**
 
 Read memory in three layers.
+
+| **Always in context** | A small fixed set of facts goes into context on every turn: the ones nearly every request depends on, such as a shopper's default store and fulfillment preference, or an operator's store and role. | 
+| **Pre-fetched per turn** | Facts relevant to the current request are pre-fetched per turn from the same signals that pre-load a skill: a shoe search pulls sizes and brand preferences, a campaign question pulls the operator's usual metrics. | 
+| **Behind a lookup tool** | Everything else sits behind a lookup tool. | 
 
 Since memory is per-user context, all of it goes in the session segment, below the global cache breakpoint.
 
@@ -320,7 +344,7 @@ The tempting fix is to break the system into many subagents, one per business un
 
 For the human side of this arrangement, see [Building effective human-agent teams](https://claude.com/resources/articles/building-effective-human-agent-teams).
 
-## **Looking ahead**
+## 04 Looking ahead
 
 Most of what this post describes is not about the model. The tools call systems you already run, the skills encode procedures you already follow, the evals are your product requirements doc written as tests, and the harness enforces policy you would enforce for any client. Models will keep improving, and when a better one ships, the architecture we describe adopts it as a config change with an eval sweep. Everything else keeps working.
 

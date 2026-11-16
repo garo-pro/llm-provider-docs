@@ -21,6 +21,6 @@ Use this sequence to set up your product feed:
 
 - Choose the countries and currencies where you sell your products.
 
-- Prepare your feed. Follow the [product feed schema](https://developers-site-git-docs-commerce-partner-playbook-openai.vercel.app/commerce/specs/file-upload/products), include the required fields in every record, and keep `item_id` values stable.
+- Prepare your feed. Follow the [product feed schema](https://developers.openai.com/commerce/specs/file-upload/products), include the required fields in every record, and keep `item_id` values stable.
 
 - Choose one delivery method. Follow the file upload guide for manual upload, a hosted HTTPS URL, or SFTP. Review the upload and correct any errors.

@@ -31,17 +31,129 @@ Here's what small business leaders shared with us during the first leg of our Cl
 
 Here’s a week-in-the-life of a small business owner using Claude to run and grow their business, inspired by how small business owners are using Claude today.
 
+## 01 Install and onboard
+
+Sunday, 8:00pm. Connect the tools you already use and pick your first task.
+
+help me get set up
+
+`/smb-onboard`
+
 Claude for Small Business runs in Claude Cowork, the desktop app where Claude works directly with your files and connected tools. You install the plugin, ask Claude to “help me get set up” or run /smb-onboard, connect the tools you already use, and pick a task. The plugin can also set each workflow to run on a schedule you choose.
+
+## 02 The weekly brief
+
+Monday, 7:00am. Cash, sales, pipeline, and overdue invoices on one page.
+
+give me my Monday brief
+
+`/monday-brief`
+
+Set it to “weekly” during setup and it runs at the same time every Monday, with the option to push to a standing dashboard via an artifact or website.
+
+All 37 partner connectors are eligible: Airwallex, Apollo, Atlassian, Canva, Clay, Docusign, Emergent, Expensify, Gmail, Google Calendar, Google Drive, Gusto, HubSpot, Intuit Mailchimp, Intuit QuickBooks, Microsoft 365, monday.com, MYOB, NetSuite, Notion, PayPal, Ramp, RingCentral, Salesforce, Shopify, Slack, Square, Stripe, TikTok Ads, Trello, Wix, Xero, Zapier, Zoho Books, Zoho CRM, Zoho Desk, Zoom.
+
+Upload a spreadsheet and Claude builds the brief and your reports from whatever you share.
 
 Cash position, last week's sales against the week before, what moved in the pipeline, which invoices are overdue, and the three things that need you this week, are on one page before you've opened a spreadsheet.
 
+22%
+
+in-store margins, credited in part to tighter scheduling, ordering, and inventory reporting
+
+6
+
+cafés run from one consolidated view
+
+## 03 Responding to inbound leads
+
+Monday, 9:40pm. After-hours inquiries qualified, answered, and logged.
+
+answer new leads as they come in
+
+`/speed-to-lead`
+
+A standing workflow, on the schedule you set.
+
+15 connectors: Apollo, Clay, Emergent, Gmail, Google Calendar, HubSpot, Intuit Mailchimp, Microsoft 365, monday.com, Notion, RingCentral, Salesforce, Trello, Zoho CRM, Zoom.
+
+Forward the inquiry to Claude, get the reply drafted to send yourself, and Claude keeps your leads in a spreadsheet CRM.
+
 A catering inquiry arrives after close through your website, email, or chat. Claude qualifies it, drafts a reply with two real openings from your calendar, and logs it to your CRM. If you've let this workflow run on its own, you see it Tuesday morning already booked; otherwise the reply is waiting for your OK.
+
+$60,000
+
+in sales tied to the tool in its first four days
+
+18%
+
+of online revenue newly attributed to in-person visits, two weeks into the pilot
+
+## 04 Writing proposals
+
+Wednesday. A voice memo becomes a priced, branded proposal.
+
+turn this into a proposal
+
+`/proposal-builder`
+
+First: attach the memo, photos, or RFP, or pull a call transcript.
+
+17 connectors: Apollo, Atlassian Confluence, Canva, Docusign, Google Drive, Microsoft 365, MYOB, NetSuite, Notion, PayPal, Intuit QuickBooks, Square, Stripe, Trello, Xero, Zoho Books, Zoom.
+
+Upload the memo, photos, and a past proposal as your template, and Claude builds and prices from those. You send it for signature yourself.
 
 You walk a job site and record a two-minute voice memo on the way back to your office. By the time you sit down there's a branded proposal, priced from your past jobs, waiting for your edits. Once you approve, it goes out for signature.
 
+Weeks → minutes
+
+from scoping a deal to a statement of work out for signature
+
+## 05 Unblocking marketing campaigns
+
+Thursday. Next week's posts and review replies, ready for your OK.
+
+plan next week's content
+
+`/social-content-engine`
+
+Keeps the posting calendar full.
+
+`/marketing-monday`
+
+Runs on a weekly schedule for the numbers and reviews.
+
+16 connectors: Apollo, Canva, Clay, Gmail, HubSpot, Intuit Mailchimp, monday.com, Notion, PayPal, Shopify, Square, Stripe, TikTok, Trello, Zoho CRM, Zoho Desk.
+
+Claude drafts the calendar, captions, and design briefs, and builds your weekly page from exported sales and pasted reviews.
+
 Next week's posts are drafted in your voice with on-brand graphics, cut into every format your channels need, and staged for your approval. Last week's sales by channel are on one page with your marketing results, and this week's new reviews have replies drafted and waiting for your OK.
 
+## 06 Closing the books
+
+Month end. Reconciled accounts and a close packet for your accountant.
+
+close September
+
+`/close-month`
+
+Ask “connect my POS” or type `/build-connector`
+
+Ask “make this part of the close” or type `/build-agent`
+
+14 connectors: Expensify, Google Drive, Gusto, MYOB, NetSuite, PayPal, Intuit QuickBooks, Ramp, Shopify, Square, Stripe, Xero, Zapier, Zoho Books.
+
+Upload your bank and processor statements and Claude closes from those.
+
 Claude reconciles your books against every place money moves: sales settlements, card spend, and payroll. It flags mismatches down to the transaction, writes a plain-English P&L, and creates a close packet for your accountant. If one account never reconciles cleanly because your POS has no connector, Claude reaches it through Zapier or builds a connector, and the adjustment your bookkeeper makes by hand becomes a saved step in next month's close.
+
+16
+
+transactions isolated behind a $13,000 discrepancy
+
+10 seconds
+
+for a monthly reporting task that used to take two hours
 
 See [the full list](https://academy.claude.com/tutorials/how-to-install-the-claude-for-small-business-plugin) of workflows and integrations.
 
