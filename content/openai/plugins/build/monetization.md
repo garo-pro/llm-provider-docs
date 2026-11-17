@@ -277,11 +277,29 @@ Key points:
 
 You can mirror this pattern and swap in your logic:
 
+
+
+
 Install [`fastmcp`](https://gofastmcp.com/) and `pydantic` to run this Python
 example. The tool's `output_schema` declares the MCP `outputSchema`;
 `ToolResult.structured_content` supplies `structuredContent` and `meta` supplies
-`_meta`. The local fixture accepts `example-session` and `example-payment-token`
+`_meta`.
+
+
+
+
+
+
+
+The Ruby example uses the `mcp` gem at version `1.10.0`; save the example in a file and run it with Ruby.
+
+
+
+
+The local fixture accepts `example-session` and `example-payment-token`
 and returns a sample response without charging a payment method or creating an order.
+
+Register a checkout tool
 
 ```python
 from typing import Any, Literal
@@ -402,6 +420,159 @@ async def complete_checkout(
         meta={META_SESSION_ID: "checkout-flow"},
         is_error=False,
     )
+```
+
+```ruby
+require "mcp"
+require "json"
+
+class CompleteCheckout < MCP::Tool
+  tool_name "complete_checkout"
+  description "Return a local checkout response fixture; never charge a payment method or create a real order."
+  input_schema(
+    properties: {
+      checkout_session_id: { type: "string" },
+      buyer: {
+        type: "object",
+        properties: { email: { type: "string" } },
+        required: ["email"]
+      },
+      payment_data: {
+        type: "object",
+
+        properties: {
+          token: {
+            type: "string",
+            const: "example-payment-token"
+          }
+        },
+        required: ["token"]
+      }
+    }, required: ["checkout_session_id", "buyer", "payment_data"]
+  )
+  output_schema(
+    type: "object",
+    properties: {
+      id: { type: "string" },
+
+      status: { type: "string" },
+
+      currency: { type: "string" },
+      line_items: {
+        type: "array",
+        items: { type: "object" }
+      },
+      fulfillment_address: { type: "object" },
+
+      fulfillment_options: {
+        type: "array",
+        items: { type: "object" }
+      },
+      fulfillment_option_id: { type: "string" },
+
+      totals: {
+        type: "array",
+        items: { type: "object" }
+      },
+      order: { type: "object" }
+    },
+    required: %w[id status currency line_items fulfillment_address fulfillment_options fulfillment_option_id totals order]
+  )
+
+  def self.call(checkout_session_id:, buyer:, payment_data:, server_context:)
+    unless checkout_session_id == "example-session"
+      return MCP::Tool::Response.new(
+        [
+          {
+            type: "text",
+            text: "Only example-session is supported."
+          }
+        ], error: true
+      )
+    end
+
+    # Fixed local response data, not a payment or order API response.
+    result = JSON.parse(<<~JSON)
+      {
+        "id": "example-session",
+        "status": "completed",
+        "currency": "USD",
+        "line_items": [
+          {
+            "id": "line_item_1",
+            "item": {
+              "id": "item_1",
+              "quantity": 1
+            },
+            "base_amount": 3000,
+            "discount": 0,
+            "subtotal": 3000,
+            "tax": 300,
+            "total": 3300
+          }
+        ],
+        "fulfillment_address": {
+          "name": "Jane Customer",
+          "line_one": "123 Main St",
+          "line_two": "Apt 4B",
+          "city": "San Francisco",
+          "state": "CA",
+          "country": "US",
+          "postal_code": "94107",
+          "phone_number": "+1 (555) 555-5555"
+        },
+        "fulfillment_options": [
+          {
+            "id": "fulfillment_option_1",
+            "type": "shipping",
+            "title": "Standard shipping",
+            "subtitle": "3-5 business days",
+            "carrier": "USPS",
+            "earliest_delivery_time": "2026-02-24T15:00:00Z",
+            "latest_delivery_time": "2026-02-28T18:00:00Z",
+            "subtotal": 0,
+            "tax": 0,
+            "total": 0
+          }
+        ],
+        "fulfillment_option_id": "fulfillment_option_1",
+        "totals": [
+          {
+            "type": "items_base_amount",
+            "display_text": "Items subtotal",
+            "amount": 3000
+          },
+          {
+            "type": "subtotal",
+            "display_text": "Subtotal",
+            "amount": 3000
+          },
+          {
+            "type": "tax",
+            "display_text": "Tax",
+            "amount": 300
+          },
+          {
+            "type": "total",
+            "display_text": "Total",
+            "amount": 3300
+          }
+        ],
+        "order": {
+          "id": "order_id_123",
+          "checkout_session_id": "example-session",
+          "permalink_url": ""
+        }
+      }
+    JSON
+    MCP::Tool::Response.new(
+      [], structured_content: result, meta: { "openai/checkoutSessionId": "checkout-flow" }
+    )
+  end
+end
+
+server = MCP::Server.new(name: "Checkout response fixture", version: "1.0.0", tools: [CompleteCheckout])
+MCP::Server::Transports::StdioTransport.new(server).open
 ```
 
 

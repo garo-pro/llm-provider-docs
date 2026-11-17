@@ -36,9 +36,19 @@ npm install @modelcontextprotocol/sdk zod
 pip install mcp
 ```
 
+
+
+
+For the Ruby examples, use Ruby 3.3 and install `mcp` version `1.10.0`, `rackup` version `2.3`, and `webrick`. Save one complete server example as `main.rb`, then run `ruby main.rb`. It listens for Streamable HTTP requests at `http://localhost:3000/mcp`.
+
+
+
+
 ## Create the server
 
 Create an MCP server with a stable name and version:
+
+Create an MCP server
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -47,6 +57,23 @@ const server = new McpServer({
   name: "acme-projects",
   version: "1.0.0",
 });
+```
+
+```ruby
+require "mcp"
+require "rackup"
+require "rackup/handler/webrick"
+
+server = MCP::Server.new(
+  name: "acme-projects",
+  version: "1.0.0"
+)
+transport = MCP::Server::Transports::StreamableHTTPTransport.new(server, stateless: true, enable_json_response: true)
+app = Rack::URLMap.new("/mcp" => transport)
+Rackup::Handler::WEBrick.run(app, Host: "127.0.0.1", Port: Integer(ENV.fetch("PORT", "3000"))) do |http_server|
+  trap("INT") { http_server.shutdown }
+  trap("TERM") { http_server.shutdown }
+end
 ```
 
 
@@ -60,6 +87,8 @@ required tool sequences or shared rate limits. Keep the most important details
 in the first 512 characters. Do not repeat every tool description or try to
 change the model's personality.
 
+Add server instructions
+
 ```typescript
 const server = new McpServer(
   { name: "acme-projects", version: "1.0.0" },
@@ -68,6 +97,24 @@ const server = new McpServer(
       "Before updating a project, call get_project to confirm its ID and current status.",
   }
 );
+```
+
+```ruby
+require "mcp"
+require "rackup"
+require "rackup/handler/webrick"
+
+server = MCP::Server.new(
+  name: "acme-projects",
+  version: "1.0.0",
+  instructions: "Before updating a project, call get_project to confirm its ID and current status."
+)
+transport = MCP::Server::Transports::StreamableHTTPTransport.new(server, stateless: true, enable_json_response: true)
+app = Rack::URLMap.new("/mcp" => transport)
+Rackup::Handler::WEBrick.run(app, Host: "127.0.0.1", Port: Integer(ENV.fetch("PORT", "3000"))) do |http_server|
+  trap("INT") { http_server.shutdown }
+  trap("TERM") { http_server.shutdown }
+end
 ```
 
 
@@ -89,6 +136,8 @@ Each tool needs:
 The model uses this metadata to decide whether and how to call the tool. Treat
 names, descriptions, schemas, and annotations as part of the plugin's
 user-facing behavior.
+
+Define a project lookup tool
 
 ```typescript
 // Local example data; replace this with your application data.
@@ -140,6 +189,77 @@ server.registerTool(
     };
   }
 );
+```
+
+```ruby
+require "mcp"
+require "rackup"
+require "rackup/handler/webrick"
+
+class ListProjects < MCP::Tool
+  tool_name "list_projects"
+  description "Use this when the user wants to find or review projects in their Acme workspace."
+  input_schema(
+    properties: {
+      status: {
+        type: "string",
+        enum: ["active", "archived"]
+      }
+    }
+  )
+  output_schema(
+    type: "object",
+    properties: {
+      projects: {
+        type: "array",
+        items: {
+          type: "object",
+          properties: {
+            id: { type: "string" },
+            name: { type: "string" },
+            status: { type: "string" }
+          },
+          required: ["id", "name", "status"]
+        }
+      }
+    },
+    required: ["projects"]
+  )
+  annotations(read_only_hint: true, open_world_hint: false, destructive_hint: false, idempotent_hint: nil)
+
+  def self.call(server_context:, status: nil)
+    # Local example data; replace this with your application data.
+    projects = [
+      {
+        id: "project-1",
+        name: "Website",
+        status: "active"
+      },
+      {
+        id: "project-2",
+        name: "Launch",
+        status: "archived"
+      }
+    ].select { |project| status.nil? || project[:status] == status }
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: "Found #{projects.length} projects."
+        }
+      ],
+      structured_content: { projects: projects }
+    )
+  end
+end
+
+server = MCP::Server.new(name: "docs-example", version: "1.0.0", tools: [ListProjects])
+transport = MCP::Server::Transports::StreamableHTTPTransport.new(server, stateless: true, enable_json_response: true)
+app = Rack::URLMap.new("/mcp" => transport)
+Rackup::Handler::WEBrick.run(app, Host: "127.0.0.1", Port: Integer(ENV.fetch("PORT", "3000"))) do |http_server|
+  trap("INT") { http_server.shutdown }
+  trap("TERM") { http_server.shutdown }
+end
 ```
 
 

@@ -275,6 +275,44 @@ export async function sendEvent(
 }
 ```
 
+```ruby
+require "standardwebhooks"
+require "net/http"
+require "json"
+require "uri"
+
+def send_event(subscription, event)
+  body = JSON.generate(event)
+  raise ArgumentError, "Event payload exceeds 256 KiB" if body.bytesize > 256 * 1024
+
+  signed_at = Time.now
+  event_id = event.fetch(:eventId)
+  signer = StandardWebhooks::Webhook.new(subscription.fetch(:secret))
+  uri = URI.parse(subscription.fetch(:url))
+  raise ArgumentError, "Expected an HTTP or HTTPS subscription URL" unless uri.is_a?(URI::HTTP)
+
+  request = Net::HTTP::Post.new(uri)
+  request["Content-Type"] = "application/json"
+  request["webhook-id"] = event_id
+  request["webhook-timestamp"] = signed_at.to_i.to_s
+  request["webhook-signature"] = signer.sign(event_id, signed_at.to_i, body)
+  request["X-MCP-Subscription-Id"] = subscription.fetch(:id)
+  request.body = body
+  response = Net::HTTP.start(
+    uri.host, uri.port, use_ssl: uri.scheme == "https",
+    open_timeout: 10, read_timeout: 10, write_timeout: 10
+  ) do |http|
+    http.request(request)
+  end
+  raise "Webhook redirects are not allowed" if response.is_a?(Net::HTTPRedirection)
+
+  {
+    accepted: response.is_a?(Net::HTTPSuccess),
+    status: response.code.to_i
+  }
+end
+```
+
 
 Set `subscription.url` and `subscription.secret` from the subscription request’s `delivery` object.
 

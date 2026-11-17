@@ -198,13 +198,18 @@ When you enable `--json`, `stdout` becomes a JSONL stream of structured events. 
 
 These checks are intentionally lightweight. They give you fast, explainable signals before you add any model-based grading.
 
-### **A minimal Node.js runner**
+
+
+
+### **A minimal runner**
 
 A “good enough” approach looks like this:
 
 1. For each prompt, run `codex exec --json --full-auto "<prompt>"`
 2. Save the JSONL trace to disk
 3. Parse the trace and run deterministic checks over the events
+
+Run a Codex evaluation
 
 ```typescript
 // evals/run-setup-demo-app-evals.mjs
@@ -282,6 +287,48 @@ console.log({
   ranNpmInstall: checkRanNpmInstall(events),
   hasPackageJson: checkPackageJsonExists(path.join(projectDir, "demo-app")),
 });
+```
+
+```ruby
+require "fileutils"
+require "json"
+require "open3"
+
+def run_codex(prompt, trace_path)
+  output, errors, status = Open3.capture3("codex", "exec", "--json", "--sandbox", "workspace-write", prompt)
+  FileUtils.mkdir_p(File.dirname(trace_path))
+  File.write(trace_path, output)
+  {
+    exit_code: status.exitstatus,
+    stderr: errors
+  }
+end
+
+def parse_jsonl(text)
+  text.lines.reject { |line| line.strip.empty? }.map { |line| JSON.parse(line) }
+end
+
+def ran_npm_install?(events)
+  events.any? do |event|
+    item = event["item"]
+    event["type"] == "item.completed" && item.is_a?(Hash) &&
+      item["type"] == "command_execution" && item["status"] == "completed" &&
+      item["exit_code"] == 0 && item["command"].is_a?(String) && item["command"].include?("npm install")
+  end
+end
+
+project_dir = Dir.pwd
+trace_path = File.join(project_dir, "evals", "artifacts", "test-01.jsonl")
+prompt = "Create a demo app named demo-app using the $setup-demo-app skill"
+result = run_codex(prompt, trace_path)
+raise "Codex exited with status #{result[:exit_code]}: #{result[:stderr]}" unless result[:exit_code] == 0
+
+events = parse_jsonl(File.read(trace_path))
+summary = {
+  ranNpmInstall: ran_npm_install?(events),
+  hasPackageJson: File.file?(File.join(project_dir, "demo-app", "package.json"))
+}
+puts JSON.generate(summary)
 ```
 
 

@@ -152,6 +152,8 @@ Extend standard MCP forms with richer components native to ChatGPT.
 
 
 
+Define an extended form schema
+
 ```typescript
 import type {
   OpenAIForm,
@@ -171,6 +173,22 @@ function partSelectionSchema(parts: OpenAIFormOption[]): OpenAIForm {
     required: ["part"],
   };
 }
+```
+
+```ruby
+def part_selection_schema(parts)
+  {
+    type: "object",
+    properties: {
+      part: {
+        type: "string",
+        title: "Part",
+        oneOf: parts
+      }
+    },
+    required: ["part"]
+  }
+end
 ```
 
 

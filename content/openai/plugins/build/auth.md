@@ -498,7 +498,25 @@ Alex — Moonwaffle work:     prf_8d7e4b19
 
 These example IDs do not encode profile labels or internal relationships. They are persisted once per profile and reused across reconnection, token refresh, and changes to email or display name.
 
-**Build the response from the authenticated profile.** This TypeScript example shows handler logic you can connect to your MCP SDK. `loadAuthenticatedProfile` is your application’s integration code: it validates the request credentials, enforces their permissions, and retrieves the corresponding profile’s persisted ID and display metadata. `requestContext` comes from your server’s request handling; it is not a model-supplied tool argument.
+**Build the response from the authenticated profile.** These examples show handler logic you can connect to your MCP SDK.
+
+
+
+
+`loadAuthenticatedProfile` is your application’s integration code: it validates the request credentials, enforces the permissions associated with those credentials, and retrieves the corresponding profile’s persisted ID and display metadata. `requestContext` comes from your server’s request handling; it is not a model-supplied tool argument.
+
+
+
+
+
+
+
+`load_authenticated_profile` is your application’s integration code: it validates the request credentials, enforces the permissions associated with those credentials, and retrieves the corresponding profile’s persisted ID and display metadata. `request_context` comes from your server’s request handling; it is not a model-supplied tool argument.
+
+
+
+
+Return an authenticated user profile
 
 ```typescript
 async function getProfile(requestContext: { token: string }) {
@@ -532,8 +550,44 @@ async function getProfile(requestContext: { token: string }) {
 }
 ```
 
+```ruby
+require "json"
 
-Register this handler with the metadata declaration and input/output schemas above. `loadAuthenticatedProfile` must resolve the same stored profile for equivalent credentials and after reconnection. It must not create a fresh profile ID for each OAuth grant or session. All other tools must use the request’s credentials to enforce the same profile’s permissions.
+def get_profile(request_context)
+  account = load_authenticated_profile(request_context.fetch(:token))
+  id = account["profileId"]
+  unless id.is_a?(String) && !id.strip.empty?
+    return {
+      isError: true,
+      content: [
+        {
+          type: "text",
+          text: "Profile identity unavailable."
+        }
+      ]
+    }
+  end
+
+  # Return the persisted ID unchanged, including across repeated requests.
+  profile = { id: id }
+  %w[name email nickname].each do |field|
+    profile[field.to_sym] = account[field] if account[field].is_a?(String)
+  end
+  {
+    isError: false,
+    structuredContent: profile,
+    content: [
+      {
+        type: "text",
+        text: JSON.generate(profile)
+      }
+    ]
+  }
+end
+```
+
+
+Register this handler with the metadata declaration and input/output schemas above. Your profile lookup must resolve the same stored profile for equivalent credentials and after reconnection. It must not create a fresh profile ID for each OAuth grant or session. All other tools must use the request’s credentials to enforce the same profile’s permissions.
 
 **Verify identity behavior:**
 

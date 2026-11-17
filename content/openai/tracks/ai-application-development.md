@@ -81,7 +81,7 @@ The first thing you need to master when building AI applications is "prompt engi
 With the models' increasing performance, there is no need to learn a complex syntax or information structure.
 
 Keep in mind that not all models follow instructions in the same way.
-GPT-6 Astra, our latest model, follows instructions precisely, so the same prompt can result in different behaviors if you're using `gpt-6-astra` vs `gpt-4o`, for example.
+GPT-6.2 Astra, our latest model, follows instructions precisely, so the same prompt can result in different behaviors if you're using `gpt-6.2-astra` vs `gpt-4o`, for example.
 
 The results may vary as well depending on which type of prompt you use: system, developer or user prompt, or a combination of all of them.
 
@@ -220,6 +220,8 @@ In other cases, you might need to rely on different metrics and scoring algorith
 
 _Example: Check the model's output against the expected answer, ignoring order._
 
+Compare answers while ignoring order
+
 ```typescript
 // Reference answer
 const correctAnswer = ["Eggs", "Sugar"];
@@ -232,6 +234,14 @@ const isCorrect =
   correctAnswer.sort().toString() === modelAnswer.sort().toString();
 
 console.log(isCorrect ? "Correct!" : "Incorrect.");
+```
+
+```ruby
+correct_answer = ["Eggs", "Sugar"]
+model_answer = ["Sugar", "Eggs"]
+
+is_correct = correct_answer.sort == model_answer.sort
+puts(is_correct ? "Correct!" : "Incorrect.")
 ```
 
 

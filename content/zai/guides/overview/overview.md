@@ -40,9 +40,9 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 >
 > To help you find the best fit for your use case, we've created a table outlining the core features and strengths of each model in the Z.AI family.
 >
-> ### Text Models
+> ### Language Models
 >
-> Our model matrix includes text models with built-in reasoning capabilities, as well as vision-language models (VLMs) that extend the same reasoning power to multimodal understanding.
+> Our model matrix includes Language Models with built-in reasoning capabilities, as well as vision-language models (VLMs) that extend the same reasoning power to multimodal understanding.
 >
 > | Model | Strength | Language | Context | Resource |
 > | :- | :- | :- | :- | :- |

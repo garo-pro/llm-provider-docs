@@ -241,6 +241,8 @@ For example, 3 click-through and 2 view-through goal conversions produce `conver
 
 By default, `attribution_time_basis` is `"ad_event_time"`: the date range and daily rows use the date of the attributed ad interaction. Set it to `"conversion_time"` to use the date the conversion occurred. Conversion-time reporting has limited coverage of non-goal events; use ad-event time when reporting on those events.
 
+In ad-level reports from `POST /v1/conversions/insights`, `conversion_time` counts purchases that match a campaign goal. For those purchases, `order_created_attributed_sales` is `null` because the report doesn't provide revenue by conversion date. Use `ad_event_time` to report daily counts and revenue together by the date of the attributed ad interaction.
+
 Use full days in the ad account's timezone, for up to 365 days. The `date_range.until` date is inclusive; `unix_range.end` is exclusive. Set `time_granularity` to `"daily"` for daily rows or `"none"` for period totals. When comparing with Ads Manager, use the same date range, time basis, and click/view windows.
 
 Existing integrations that relied on click-only totals or conversion-date defaults should review their reporting assumptions. GET Insights and the dedicated conversion endpoint now default to 30-day click, 1-day view, and ad-event time, including when settings are omitted. Neither provides a legacy reporting mode.

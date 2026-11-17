@@ -5,7 +5,7 @@ URL Source: https://www.anthropic.com/responsible-scaling-policy
 Markdown Content:
 # Anthropic’s Responsible Scaling Policy
 
-Anticipating and securing against emerging threats that accompany increasingly powerful models
+A voluntary framework for addressing catastrophic risks from advanced AI systems.
 
 Last updated
 

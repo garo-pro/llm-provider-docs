@@ -65,7 +65,7 @@ client = OpenAI(
 
 completed = False
 with client.responses.create(
-    model="gpt-6.1-sol",
+    model="gpt-6.2-sol",
     input=[{"role": "user", "content": "Say exactly: Hello, world!"}],
     store=False,
     stream=True,

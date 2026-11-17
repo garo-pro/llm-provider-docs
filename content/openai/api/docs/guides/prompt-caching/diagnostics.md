@@ -56,6 +56,45 @@ if diagnostics is not None and diagnostics.type == "cache_miss":
     print(diagnostics.cache_missed_tokens)
 ```
 
+```ruby
+require "openai"
+
+client = OpenAI::Client.new
+policy = File.read("support-policy.txt") # At least 1,024 tokens.
+
+first = client.responses.create(
+  model: "gpt-6-astra",
+  instructions: policy,
+  input: "Reply with exactly OK.",
+  tools: [
+    {
+      type: :function,
+      name: "get_time"
+    }
+  ]
+)
+
+second = client.responses.create(
+  model: "gpt-6-astra",
+  instructions: policy,
+  input: "Reply with exactly OK.",
+  tools: [
+    {
+      type: :function,
+      name: "get_date"
+    }
+  ],
+  prompt_cache_options: { comparison_response_id: first.id }
+)
+
+diagnostics = second.prompt_cache_diagnostics
+if diagnostics.is_a?(OpenAI::Models::Responses::Response::PromptCacheDiagnostics::CacheMiss)
+  puts(diagnostics.reason)
+  puts(diagnostics.comparison_reusable_tokens)
+  puts(diagnostics.cache_missed_tokens)
+end
+```
+
 
 If the tool change causes a miss, the result may look like this. Token counts vary with the input.
 

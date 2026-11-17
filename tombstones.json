@@ -75,6 +75,10 @@
       "since": "2026-09-17",
       "reason": "moved -> https://developers.openai.com/api/docs/guides/latest-model"
     },
+    "https://developers.openai.com/api/docs/guides/preserved-reasoning": {
+      "since": "2026-11-17",
+      "reason": "moved -> https://developers.openai.com/api/docs/guides/keep-prefix-unchanged"
+    },
     "https://developers.openai.com/api/docs/guides/prompt-guidance": {
       "since": "2026-09-17",
       "reason": "moved -> https://developers.openai.com/api/docs/guides/latest-model"
@@ -483,6 +487,10 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/showcase/afterimage": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/showcase/all": {
       "since": "2026-09-17",
       "reason": "HTTP 404"
@@ -555,12 +563,20 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/showcase/dot-rumble": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/showcase/e-commerce-website": {
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/enablement-hub": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/escapement": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/event-planning-hub": {
@@ -577,6 +593,10 @@
     },
     "https://developers.openai.com/showcase/folio": {
       "since": "2026-10-20",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/forest-walks": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/forged-in-silence": {
@@ -599,12 +619,20 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/showcase/golden-hour-house": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/showcase/hollowflux": {
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/idea-intake": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/imac-g3-in-motion": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/impossible-kinetic-architecture": {
@@ -621,6 +649,10 @@
     },
     "https://developers.openai.com/showcase/launch-cal": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/light-and-matter": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/little-ritual": {
@@ -659,8 +691,16 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/showcase/notre-damn": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/showcase/onboarding-hub": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/one-good-turn": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/openai-fm": {
@@ -679,6 +719,10 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/showcase/paris-atlas": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/showcase/pattern-studio": {
       "since": "2026-09-17",
       "reason": "HTTP 404"
@@ -689,6 +733,14 @@
     },
     "https://developers.openai.com/showcase/physics-museum": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/pocket-stop-motion": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/pop-up-night-train": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/procedural-city-generator": {
@@ -727,8 +779,16 @@
       "since": "2026-09-17",
       "reason": "HTTP 404"
     },
+    "https://developers.openai.com/showcase/soundings-first-touch": {
+      "since": "2026-11-17",
+      "reason": "HTTP 404"
+    },
     "https://developers.openai.com/showcase/stop-motion-desk": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/storybook-house": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/sunday-table": {
@@ -753,6 +813,10 @@
     },
     "https://developers.openai.com/showcase/terrain-mixer": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/terrarium-glasshouse-studio": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/theme-park-builder": {
@@ -797,6 +861,10 @@
     },
     "https://developers.openai.com/showcase/velocity-loop": {
       "since": "2026-09-17",
+      "reason": "HTTP 404"
+    },
+    "https://developers.openai.com/showcase/velvet-voltage": {
+      "since": "2026-11-17",
       "reason": "HTTP 404"
     },
     "https://developers.openai.com/showcase/verdant-market": {

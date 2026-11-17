@@ -201,7 +201,17 @@ Best practices:
 
 ### Decoupled example
 
+
+
+
+For the Ruby server, install the `mcp` gem at version `1.10.0`. Build the browser component as described below, then run the server from the project directory.
+
+
+
+
 Example (decoupled dice tools):
+
+Register a widget resource
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -301,6 +311,92 @@ server.registerTool(
 export default server;
 ```
 
+```ruby
+require "mcp"
+
+class RollDice < MCP::Tool
+  tool_name "roll_dice"
+  description "Roll a die without opening a widget."
+  input_schema(
+    properties: {
+      sides: {
+        type: "integer",
+        minimum: 2
+      }
+    }, required: ["sides"]
+  )
+
+  def self.call(sides:, server_context:)
+    MCP::Tool::Response.new(
+      [], structured_content: {
+        sides: sides,
+        value: rand(1..sides)
+      }
+    )
+  end
+end
+
+class RenderDiceWidget < MCP::Tool
+  tool_name "render_dice_widget"
+  description "Show a previously rolled die."
+  input_schema(
+    properties: {
+      sides: {
+        type: "integer",
+        minimum: 2
+      },
+      value: {
+        type: "integer",
+        minimum: 1
+      }
+    },
+    required: ["sides", "value"]
+  )
+  meta(ui: { resourceUri: "ui://widget/dice.html" })
+
+  def self.call(sides:, value:, server_context:)
+    if value > sides
+      return MCP::Tool::Response.new(
+        [
+          {
+            type: "text",
+            text: "Value exceeds the die's sides."
+          }
+        ], error: true
+      )
+    end
+
+    MCP::Tool::Response.new(
+      [], structured_content: {
+        sides: sides,
+        value: value
+      }
+    )
+  end
+end
+
+# Build the browser component first, then run this server from the project root.
+script = File.read("dice-widget.js").gsub(%r{</script}i) { '<\/script' }
+html = '<!doctype html><html lang="en"><meta charset="utf-8">' \
+       '<title>Dice</title><body><div id="root"></div>' \
+       "<script type=\"module\">#{script}</script></body></html>"
+resource = MCP::Resource.define(uri: "ui://widget/dice.html", name: "widget", mime_type: "text/html;profile=mcp-app") do
+  [
+    MCP::Resource::TextContents.new(
+      uri: "ui://widget/dice.html", mime_type: "text/html;profile=mcp-app", text: html
+    )
+  ]
+end
+
+server = MCP::Server.new(
+  name: "Decoupled dice", version: "1.0.0", tools: [RollDice, RenderDiceWidget],
+  resources: [
+    resource
+  ]
+)
+MCP::Server::Transports::StdioTransport.new(server).open
+```
+
 
 Install `esbuild` with the server dependencies, then save this browser code as
 `dice-widget.ts` beside the server file:
@@ -358,6 +454,14 @@ rerollButton.onclick = async () => {
 await app.connect();
 rerollButton.disabled = false;
 ```
+
+
+
+
+
+For Ruby, bundle `dice-widget.ts` into `dice-widget.js` with `npm exec -- esbuild dice-widget.ts --bundle --format=esm --outfile=dice-widget.js`. Install `esbuild` and `@modelcontextprotocol/ext-apps` with your browser dependencies. The Ruby server reads that compiled file.
+
+
 
 
 ## Manage state
@@ -635,6 +739,8 @@ Expose the component as an MCP resource with the MCP Apps UI MIME type
 `@modelcontextprotocol/ext-apps/server`, prefer `RESOURCE_MIME_TYPE` instead of
 embedding the string:
 
+Return a widget with a tool result
+
 ```typescript
 import {
   registerAppResource,
@@ -670,6 +776,65 @@ registerAppResource(
   })
 );
 ```
+
+```ruby
+require "mcp"
+
+class OpenProjectBoard < MCP::Tool
+  tool_name "open_project_board"
+  title "Open project board"
+  input_schema(properties: {})
+  meta(ui: { resourceUri: "ui://project-board/v1.html" })
+
+  def self.call(server_context:)
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: "Review the tasks in the project board."
+        }
+      ]
+    )
+  end
+end
+
+# Build the browser component first, then run this server from the project root.
+script = File.read("web/dist/component.js").gsub(%r{</script}i) { '<\/script' }
+html = '<!doctype html><html lang="en"><meta charset="utf-8">' \
+       '<title>Project board</title><body><div id="root"></div>' \
+       "<script type=\"module\">#{script}</script></body></html>"
+resource = MCP::Resource.define(uri: "ui://project-board/v1.html", name: "widget", mime_type: "text/html;profile=mcp-app") do
+  [
+    MCP::Resource::TextContents.new(
+      uri: "ui://project-board/v1.html", mime_type: "text/html;profile=mcp-app", text: html,
+      meta: {
+        ui: {
+          prefersBorder: true,
+
+          domain: "https://example.com",
+          csp: {
+            connectDomains: ["https://api.example.com"],
+            resourceDomains: ["https://static.example.com"]
+          }
+        }
+      }
+    )
+  ]
+end
+
+server = MCP::Server.new(
+  name: "docs-example", version: "1.0.0", tools: [OpenProjectBoard], resources: [resource]
+)
+MCP::Server::Transports::StdioTransport.new(server).open
+```
+
+
+
+
+
+For Ruby, install the `mcp` gem at version `1.10.0` and run the server from the project root after building `web/dist/component.js` in the preceding steps.
+
+
 
 
 Associate the resource URI with only the tools that should render the

@@ -415,9 +415,24 @@ Use a maintained JWT library, allow only a small clock-skew tolerance, cache JWK
 responsibly, and refresh keys when an unfamiliar `kid` appears. This example
 always sends a nonce and requires the same value in the ID token.
 
+### Email availability and verification
+
+When you request the `email` scope, successful website sign-ins are currently
+expected to include `email` and `email_verified: true`. If the user's email is
+missing or unverified, OpenAI prompts the user to provide or verify an email
+address with a one-time code before completing sign-in.
+
+Requesting the `email` scope does not guarantee that the ID token includes an
+`email` claim or that `email_verified` is `true`. Your application must handle
+a missing `email` claim and an `email_verified` claim that is `false` or absent.
+Treat an email as verified only when `email` is nonempty and `email_verified` is
+the boolean `true`. If your application requires a verified email, collect and
+verify it when these conditions are not met.
+
 ### Sample ID token
 
-Here is an example of a decoded ID token:
+This decoded ID token illustrates the unverified-email case that your application
+must still handle:
 
 ```json
 {

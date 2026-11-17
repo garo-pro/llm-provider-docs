@@ -354,7 +354,17 @@ OpenAI-specific metadata for compatibility and optional extensions.
 | `_meta["openai/toolInvocation/invoked"]`  | Tool descriptor | string       | ≤ 64 chars                                      | Short status text after the tool completes.                                                                                                                                                                                                                                                 |
 | `_meta["openai/fileParams"]`              | Tool descriptor | string[]     | None                                            | List of top-level input fields that represent files. Each field receives `{ download_url, file_id, mime_type?, file_name? }`.                                                                                                                                                               |
 
+
+
+
+The Ruby resource examples require the `mcp` gem at version `1.10.0` and your bundled MCP Apps browser component saved as `widget.js` in the project directory. Run the Ruby server from that directory.
+
+
+
+
 Example:
+
+Add tool descriptor metadata
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -416,6 +426,86 @@ registerAppTool(
 );
 ```
 
+```ruby
+require "mcp"
+
+class PublicSearch < MCP::Tool
+  tool_name "search"
+  title "Public Search"
+  description "Search public documents."
+  input_schema(properties: { q: { type: "string" } }, required: ["q"])
+  output_schema(
+    type: "object", properties: {
+      results: {
+        type: "array",
+
+        items: {
+          type: "object",
+
+          properties: {
+            id: { type: "string" },
+            title: { type: "string" },
+            url: { type: "string" }
+          },
+          required: ["id", "title", "url"]
+        }
+      }
+    }, required: ["results"]
+  )
+  meta(
+    securitySchemes: [
+      { type: "noauth" }, {
+        type: "oauth2",
+        scopes: ["search.read"]
+      }
+    ],
+    ui: { resourceUri: "ui://widget/story.html" },
+    "openai/toolInvocation/invoking": "Searching…",
+    "openai/toolInvocation/invoked": "Results ready"
+  )
+
+  def self.call(q:, server_context:)
+    # Local example data; replace this with your application data.
+    documents = [
+      {
+        id: "intro",
+        title: "Introduction to Acme",
+        url: "https://example.com/intro"
+      }
+    ]
+    results = documents.select { |document| document.fetch(:title).downcase.include?(q.downcase) }
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: "Found #{results.length} results."
+        }
+      ],
+      structured_content: { results: results }
+    )
+  end
+end
+
+# Build the browser component first, then run this server from the project root.
+script = File.read("widget.js").gsub(%r{</script}i) { '<\/script' }
+html = '<!doctype html><html lang="en"><meta charset="utf-8">' \
+       '<title>Tool result</title><body><div id="root"></div>' \
+       "<script type=\"module\">#{script}</script></body></html>"
+resource = MCP::Resource.define(uri: "ui://widget/story.html", name: "widget", mime_type: "text/html;profile=mcp-app") do
+  [
+    MCP::Resource::TextContents.new(
+      uri: "ui://widget/story.html", mime_type: "text/html;profile=mcp-app", text: html
+    )
+  ]
+end
+
+server = MCP::Server.new(
+  name: "docs-example", version: "1.0.0", tools: [PublicSearch],
+  resources: [resource]
+)
+MCP::Server::Transports::StdioTransport.new(server).open
+```
+
 
 ### Annotations
 
@@ -435,6 +525,8 @@ These hints only influence how ChatGPT or Codex frames the tool call to the
 user; servers must still enforce their own authorization logic.
 
 Example:
+
+Annotate a read-only tool
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -468,6 +560,51 @@ server.registerTool(
     structuredContent: { recipes: await fetchSavedRecipes() },
   })
 );
+```
+
+```ruby
+require "mcp"
+
+class ListSavedRecipes < MCP::Tool
+  tool_name "list_saved_recipes"
+  description "Returns the user's saved recipes without modifying them."
+  input_schema(properties: {})
+  output_schema(
+    type: "object",
+    properties: {
+      recipes: {
+        type: "array",
+        items: {
+          type: "object",
+          properties: {
+            id: { type: "string" },
+            title: { type: "string" }
+          },
+          required: ["id", "title"]
+        }
+      }
+    },
+    required: ["recipes"]
+  )
+  annotations(read_only_hint: true, destructive_hint: nil, idempotent_hint: nil, open_world_hint: nil)
+
+  def self.call(server_context:)
+    # Local example data; replace this with your application data.
+    MCP::Tool::Response.new(
+      [], structured_content: {
+        recipes: [
+          {
+            id: "pasta",
+            title: "Tomato pasta"
+          }
+        ]
+      }
+    )
+  end
+end
+
+server = MCP::Server.new(name: "docs-example", version: "1.0.0", tools: [ListSavedRecipes])
+MCP::Server::Transports::StdioTransport.new(server).open
 ```
 
 
@@ -551,6 +688,8 @@ Host-provided tool result metadata:
 
 Example:
 
+Return structured tool results
+
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 const server = new McpServer({ name: "docs-example", version: "1.0.0" });
@@ -600,6 +739,82 @@ registerAppTool(
 );
 ```
 
+```ruby
+require "mcp"
+
+class ZooAnimals < MCP::Tool
+  tool_name "get_zoo_animals"
+  input_schema(
+    properties: {
+      count: {
+        type: "integer",
+        minimum: 1,
+        maximum: 20
+      }
+    }
+  )
+  output_schema(
+    type: "object", properties: {
+      animals: {
+        type: "array",
+
+        items: {
+          type: "object",
+
+          properties: {
+            id: { type: "string" },
+            name: { type: "string" },
+            species: { type: "string" }
+          },
+          required: ["id", "name", "species"]
+        }
+      }
+    }, required: ["animals"]
+  )
+  meta(ui: { resourceUri: "ui://widget/widget.html" })
+
+  def self.call(server_context:, count: 10)
+    # Local example data; replace this with your application data.
+    animals = Array.new(count) do |index|
+      {
+        id: "animal-#{index + 1}",
+        name: "Penguin #{index + 1}",
+        species: "Penguin"
+      }
+    end
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: "Here are #{animals.length} animals."
+        }
+      ],
+      structured_content: { animals: animals },
+      meta: { allAnimalsById: animals.to_h { |animal| [animal.fetch(:id), animal] } }
+    )
+  end
+end
+
+# Build the browser component first, then run this server from the project root.
+script = File.read("widget.js").gsub(%r{</script}i) { '<\/script' }
+html = '<!doctype html><html lang="en"><meta charset="utf-8">' \
+       '<title>Tool result</title><body><div id="root"></div>' \
+       "<script type=\"module\">#{script}</script></body></html>"
+resource = MCP::Resource.define(uri: "ui://widget/widget.html", name: "widget", mime_type: "text/html;profile=mcp-app") do
+  [
+    MCP::Resource::TextContents.new(
+      uri: "ui://widget/widget.html", mime_type: "text/html;profile=mcp-app", text: html
+    )
+  ]
+end
+
+server = MCP::Server.new(
+  name: "docs-example", version: "1.0.0", tools: [ZooAnimals],
+  resources: [resource]
+)
+MCP::Server::Transports::StdioTransport.new(server).open
+```
+
 
 ### Error tool result
 
@@ -623,6 +838,8 @@ To return an error on the tool result, use the following `_meta` key:
 Operation-phase `_meta["openai/userAgent"]` and `_meta["openai/userLocation"]` are hints only; servers should never rely on them for authorization decisions and must tolerate their absence. Treat `_meta["openai/userAgent"]` as optional, best-effort metadata rather than a stable way to detect which host surface is calling your server.
 
 Example:
+
+Read client metadata
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -673,4 +890,57 @@ server.registerTool(
     };
   }
 );
+```
+
+```ruby
+require "mcp"
+
+class RecommendCafe < MCP::Tool
+  tool_name "recommend_cafe"
+  input_schema(properties: {})
+  output_schema(
+    type: "object",
+    properties: {
+      cafes: {
+        type: "array",
+        items: {
+          type: "object",
+          properties: {
+            name: { type: "string" },
+            address: { type: "string" }
+          },
+          required: ["name", "address"]
+        }
+      }
+    },
+    required: ["cafes"]
+  )
+
+  def self.call(server_context:)
+    metadata = server_context[:_meta] || {}
+    locale = metadata[:"openai/locale"] || "en"
+    location = metadata[:"openai/userLocation"]
+    city = location[:city] if location.is_a?(Hash)
+    city = "your area" unless city.is_a?(String)
+    # Local example data; replace this with your application data.
+    cafes = (city == "San Francisco") ? [
+      {
+        name: "Example Cafe",
+        address: "123 Example Street, San Francisco"
+      }
+    ] : []
+    text = (locale == "es") ? "Cafés en #{city}" : "Cafes in #{city}"
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: text
+        }
+      ], structured_content: { cafes: cafes }
+    )
+  end
+end
+
+server = MCP::Server.new(name: "docs-example", version: "1.0.0", tools: [RecommendCafe], server_context: {})
+MCP::Server::Transports::StdioTransport.new(server).open
 ```

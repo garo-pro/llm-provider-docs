@@ -346,11 +346,24 @@ server](https://developers.openai.com/plugins/build/chatgpt-ui#layer-on-chatgpt-
 
 ## Build an MCP server
 
-Install the official Python or TypeScript MCP SDK to create a server and expose a `/mcp` endpoint.
+Use an MCP SDK to create a server and expose a `/mcp` endpoint.
 
-In this quickstart, we'll use the [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk).
+Both server implementations use the same HTML page.
+
+
+
+
+For Ruby 3.3, install the `mcp` (1.10.0), `rackup` (2.3.1), and `webrick` (1.9.2) gems.
+
+
+
 
 If you're using Python, refer to our [examples repository on GitHub](https://github.com/openai/openai-apps-sdk-examples) to see an example MCP server with the Python SDK.
+
+
+
+
+The TypeScript setup uses the [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk).
 
 Use Node.js 22.6 or later. Install the TypeScript SDK, MCP Apps helpers, and the `zod` package with:
 
@@ -358,11 +371,32 @@ Use Node.js 22.6 or later. Install the TypeScript SDK, MCP Apps helpers, and the
 npm install @modelcontextprotocol/sdk @modelcontextprotocol/ext-apps zod
 ```
 
+
+
+
 ### MCP server with UI resources
 
 Register a resource for your component bundle and the tools the model can call (for example, `add_todo` and `complete_todo`) so ChatGPT can drive the UI.
 
-Create a file named `server.ts` and paste the following example that uses the TypeScript SDK:
+
+
+
+Save the TypeScript example as `server.ts`.
+
+
+
+
+
+
+
+Save the Ruby example as `server.rb`.
+
+
+
+
+Keep `public/todo-widget.html` in the same project directory:
+
+Create an MCP server with a widget
 
 ```typescript
 import { createServer } from "node:http";
@@ -543,6 +577,163 @@ httpServer.listen(port, () => {
 });
 ```
 
+```ruby
+require "mcp"
+require "rackup"
+require "rackup/handler/webrick"
+
+todo_html = File.read("public/todo-widget.html")
+TODO_OUTPUT_SCHEMA = {
+  type: "object",
+
+  properties: {
+    tasks: {
+      type: "array",
+
+      items: {
+        type: "object",
+
+        properties: {
+          id: { type: "string" },
+          title: { type: "string" },
+          completed: { type: "boolean" }
+        },
+        required: ["id", "title", "completed"],
+
+        additionalProperties: false
+      }
+    }
+  },
+  required: ["tasks"],
+
+  additionalProperties: false
+}.freeze
+
+class TodoList
+  def initialize
+    @tasks = []
+    @next_id = 1
+    @mutex = Mutex.new
+  end
+
+  def add(title)
+    @mutex.synchronize do
+      title = title.strip
+      next reply("Missing title.") if title.empty?
+
+      @tasks << {
+        id: "todo-#{@next_id}",
+        title: title,
+        completed: false
+      }
+      @next_id += 1
+      reply("Added #{title.inspect}.")
+    end
+  end
+
+  def complete(id)
+    @mutex.synchronize do
+      task = @tasks.find { |item| item[:id] == id }
+      next reply("Todo #{id} was not found.") unless task
+
+      task[:completed] = true
+      reply("Completed #{task[:title].inspect}.")
+    end
+  end
+
+  private
+
+  def reply(message)
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: message
+        }
+      ],
+      structured_content: { tasks: @tasks.map(&:dup) }
+    )
+  end
+end
+
+class AddTodo < MCP::Tool
+  tool_name "add_todo"
+  title "Add todo"
+  description "Creates a todo item with the given title."
+  input_schema(
+    properties: {
+      title: {
+        type: "string",
+        minLength: 1
+      }
+    }, required: ["title"], additionalProperties: false
+  )
+  output_schema(TODO_OUTPUT_SCHEMA)
+  meta(ui: { resourceUri: "ui://widget/todo.html" })
+
+  def self.call(title:, server_context:)
+    server_context.fetch(:todos).add(title)
+  end
+end
+
+class CompleteTodo < MCP::Tool
+  tool_name "complete_todo"
+  title "Complete todo"
+  description "Marks a todo as done by id."
+  input_schema(
+    properties: {
+      id: {
+        type: "string",
+        minLength: 1
+      }
+    }, required: ["id"], additionalProperties: false
+  )
+  output_schema(TODO_OUTPUT_SCHEMA)
+  meta(ui: { resourceUri: "ui://widget/todo.html" })
+
+  def self.call(id:, server_context:)
+    server_context.fetch(:todos).complete(id)
+  end
+end
+
+widget = MCP::Resource.define(uri: "ui://widget/todo.html", name: "todo-widget", mime_type: "text/html;profile=mcp-app") do
+  [MCP::Resource::TextContents.new(uri: "ui://widget/todo.html", mime_type: "text/html;profile=mcp-app", text: todo_html)]
+end
+server = MCP::Server.new(
+  name: "todo-plugin-server", version: "0.1.0", tools: [AddTodo, CompleteTodo],
+  resources: [widget], server_context: { todos: TodoList.new }
+)
+transport = MCP::Server::Transports::StreamableHTTPTransport.new(server, stateless: true, enable_json_response: true)
+mcp_app = Rack::URLMap.new("/mcp" => transport)
+app = lambda do |environment|
+  path, method = environment.values_at("PATH_INFO", "REQUEST_METHOD")
+  headers = {
+    "access-control-allow-origin" => "*",
+    "access-control-expose-headers" => "Mcp-Session-Id"
+  }
+  if path == "/mcp" && method == "OPTIONS"
+    [
+      204, headers.merge(
+        "access-control-allow-methods" => "POST, GET, OPTIONS",
+        "access-control-allow-headers" => "content-type, mcp-session-id"
+      ), []
+    ]
+  elsif path == "/" && method == "GET"
+    [200, { "content-type" => "text/plain" }, ["Todo MCP server"]]
+  elsif path == "/mcp" && ["POST", "GET", "DELETE"].include?(method)
+    status, response_headers, body = mcp_app.call(environment)
+    [status, response_headers.merge(headers), body]
+  else
+    [404, { "content-type" => "text/plain" }, ["Not Found"]]
+  end
+end
+
+Rackup::Handler::WEBrick.run(app, Host: "127.0.0.1", Port: Integer(ENV.fetch("PORT", "8787"))) do |http_server|
+  trap("INT") { http_server.shutdown }
+  trap("TERM") { http_server.shutdown }
+end
+```
+
 
 This snippet also responds to `GET /` for health checks, handles CORS preflight for `/mcp`, and returns `404 Not Found` for OAuth discovery routes you are not using yet. That keeps ChatGPT from surfacing 502 errors while you iterate without authentication.
 
@@ -553,9 +744,12 @@ Usually, you can run a build command such as `npm run build` to produce a `dist`
 
 In this quickstart, since we're using vanilla HTML, no build step is required.
 
-Start the MCP server on `http://localhost:<port>/mcp` from the directory that contains `server.ts`.
+Start the MCP server on `http://localhost:<port>/mcp` from the directory that contains your server file.
 
-Make sure you have `"type": "module"` in your `package.json` file:
+
+
+
+For TypeScript, make sure you have `"type": "module"` in your `package.json` file:
 
 ```json
 {
@@ -568,13 +762,32 @@ Make sure you have `"type": "module"` in your `package.json` file:
 }
 ```
 
-Then run the server with the following command:
+Run the TypeScript server with the following command:
 
 ```bash
 node --experimental-strip-types server.ts
 ```
 
-The server should print `Todo MCP server listening on http://localhost:8787/mcp` once it is ready.
+
+
+
+
+
+
+Run the Ruby version with `ruby server.rb`. The Ruby server accepts a `PORT` environment variable and reports startup through WEBrick.
+
+
+
+
+By default, both versions serve `http://localhost:8787/mcp`.
+
+
+
+
+The TypeScript server prints `Todo MCP server listening on http://localhost:8787/mcp` when ready.
+
+
+
 
 ### Test with MCP Inspector
 
@@ -619,7 +832,7 @@ From there, you can iterate on the UI/UX, prompts, tool metadata, and the overal
 
 Refresh the plugin connection after each change to the MCP server (tools,
   metadata, and related configuration). You can do this from the detail page at
-  [chatgpt.com/plugins](https://chatgpt.com/plugins).
+  [ChatGPT plugins](https://chatgpt.com/plugins).
 
 When you're preparing for public distribution, review
 [Submit plugins](https://developers.openai.com/plugins/deploy/submission), the
