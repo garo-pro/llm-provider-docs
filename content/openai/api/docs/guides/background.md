@@ -542,7 +542,7 @@ curl https://api.openai.com/v1/responses \
   "stream": true
 }'
 
-// To resume:
+# To resume:
 curl "https://api.openai.com/v1/responses/resp_123?stream=true&starting_after=42" \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer $OPENAI_API_KEY"

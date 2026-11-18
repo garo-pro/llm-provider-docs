@@ -14,20 +14,13 @@ For some tasks, ChatGPT uses a [browser running on a computer in the cloud](http
 
 <section className="site-access-section" id="reach-customers" aria-labelledby="reach-heading">
 
-<h2 id="reach-heading" className="heading-lg not-prose">If your site blocks cloud browser visits</h2>
+<h2 id="reach-heading" className="heading-lg not-prose">Ensure reliable site access</h2>
 
-ChatGPT’s cloud browser can already use your site. You don’t need to add it to an allowlist.
+ChatGPT’s cloud browser can visit your site, but when someone asks ChatGPT to use your site on their behalf, your firewall may block or interrupt the visit. That can prevent the person from completing what they came to do, such as making a purchase. To help those requests go through reliably, add ChatGPT’s agent profile to your firewall’s allowlist. You can do this while keeping other security controls in place.
 
-However, your security settings may unintentionally block these visits. To address this, configure your CDN or firewall to allow verified ChatGPT browser visits while keeping your other security controls in place.
+<h3 id="enable-heading">Recognize ChatGPT’s agent profile as an approved visitor</h3>
 
-See the [Web Bot Auth and cloud browser allowlisting guide](https://help.openai.com/en/articles/11845367-chatgpt-works-cloud-browser-allowlisting) for details.
-
-
-
-
-<h3 id="enable-heading">Configure an exception if needed</h3>
-
-If your site blocks verified cloud browser traffic, see the instructions for your CDN or firewall below.
+To help keep usage reliable, see the instructions to recognize ChatGPT’s agent for your CDN or firewall below.
 
 Akamai, Cloudflare, HUMAN, and Vercel verify ChatGPT request signatures automatically.
 

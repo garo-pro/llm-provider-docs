@@ -123,6 +123,8 @@ The upload-history request returns uploads for that feed. Omit `feed_id` to list
 
 Use `POST /v1/feeds/{feed_id}/items/query` to inspect properties and try the filters you plan to save in an ad group. This endpoint supports Product and Hotel feeds and returns each inventory type's native fields. The existing `/products/query` endpoint is Product-specific.
 
+For partner OAuth, use a user-scoped token with the `ads.admin.all.read` scope. Send the selected account ID in the `OpenAI-Ad-Account` header. If you omit the header, the API returns HTTP 403. See [Authentication](https://developers.openai.com/ads/api-reference/authentication).
+
 ```bash
 curl -X POST "https://api.ads.openai.com/v1/feeds/fd_123/items/query" \
   -H "Authorization: Bearer ${OPENAI_ADS_API_KEY}" \
@@ -137,7 +139,7 @@ curl -X POST "https://api.ads.openai.com/v1/feeds/fd_123/items/query" \
 
 The query returns current, non-deleted, non-expired items that are eligible for ads and match the filters. Review approval isn't required. A returned item might still be unavailable for an ad preview or ad delivery.
 
-Example response, with property fields abbreviated:
+For an account with review access, the following example shows two matching properties. It includes only selected property fields.
 
 ```json
 {
@@ -150,13 +152,20 @@ Example response, with property fields abbreviated:
       "item_id": "hotel_001",
       "hotel_id": "hotel_001",
       "name": "Harbor House Hotel",
-      "base_price": "149.00 USD"
+      "base_price": "149.00 USD",
+      "review_status": "pending"
+    },
+    {
+      "item_id": "hotel_002",
+      "hotel_id": "hotel_002",
+      "name": "Harbor View Hotel",
+      "review_status": "rejected"
     }
   ],
   "total_count": 3,
-  "matched_count": 1,
+  "matched_count": 2,
   "first_id": "hotel_001",
-  "last_id": "hotel_001",
+  "last_id": "hotel_002",
   "has_more": false
 }
 ```
@@ -164,6 +173,31 @@ Example response, with property fields abbreviated:
 Hotel records also include native fields such as `url`, `images`, `location`, `guest_ratings`, and `ads_metadata`. The JSON response uses nested objects and arrays; the [submission format](#submission-format) describes the flattened columns used in uploaded CSV and TXT files.
 
 `total_count` counts eligible items before applying your filters; `matched_count` counts those matching the filters. Both counts cover the full result, before pagination. `limit` defaults to `20` and accepts values from `1` through `500`. When `has_more` is `true`, repeat the request with the same filters and pass the returned `last_id` unchanged as `after`. For `hotel_property_v1`, `item_id` equals `hotel_id`; IDs are scoped to a feed.
+
+### Check a property's review
+
+Read `review_status` on each property. A known status is `approved`, `pending`, or `rejected`. A null value means no current review is available. The inventory fields `status` and `is_ads_eligible` describe the property record and its eligibility. Use `review_status` for the policy decision.
+
+To see why a property was rejected, add `"include_rejection_reasons": true` to the JSON request body. Keep the same filters and cursor. The API then includes `rejection_reason` on each property. The following example shows only the IDs and review fields from `data`:
+
+```json
+[
+  {
+    "item_id": "hotel_001",
+    "review_status": "pending",
+    "rejection_reason": null
+  },
+  {
+    "item_id": "hotel_002",
+    "review_status": "rejected",
+    "rejection_reason": "Gambling"
+  }
+]
+```
+
+A null reason means no public explanation is available. If you omit `include_rejection_reasons` or set it to `false`, the API omits the reason. Accounts with review access still receive the status. Other accounts receive only inventory fields.
+
+If you request reasons on a Hotel feed and your account lacks review access, the API returns HTTP 404. If you request reasons on a Product feed through this endpoint, the API returns HTTP 400.
 
 ### Choose Hotel Set filters
 

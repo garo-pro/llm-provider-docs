@@ -319,6 +319,54 @@ curl -X POST "https://api.ads.openai.com/v1/feeds/fd_123/archive" \
 
 A feed cannot be archived while it is attached to a non-archived campaign or ad group. Archive those resources first; pausing them is not sufficient.
 
+## Check product review status
+
+Use `GET /v1/feeds/{feed_id}/products` to check review decisions for products in a feed. Your selected ad account needs access to the approval list. It also needs review access to receive a status or a rejection reason.
+
+Use an advertiser API key or a partner OAuth token with the `ads.admin.all.read` scope. With a user-scoped token, send the selected account ID in the `OpenAI-Ad-Account` header. With an account-bound token, you can omit the header or send the bound account ID. See [Authentication](https://developers.openai.com/ads/api-reference/authentication).
+
+Set `is_approved=false` to list indexed products with a false approval flag. This page can contain both pending reviews and final rejections. Set `is_approved=true` to list products with a true flag.
+
+If your account has review access, the response includes the current `review_status` by indexed product ID. This example response is for a request with `is_approved=false` and `limit=2`. The first product is pending. The second was rejected.
+
+```json
+{
+  "object": "list",
+  "is_approved": false,
+  "data": ["product_001", "product_002"],
+  "first_id": "product_001",
+  "last_id": "product_002",
+  "has_more": true,
+  "review_status": {
+    "product_001": "pending",
+    "product_002": "rejected"
+  }
+}
+```
+
+A known status is `approved`, `pending`, or `rejected`. A null value or a missing ID means the API has no current status for that ID. Accounts without review access receive the approval list without the `review_status` map. The IDs in `data` are opaque. One merchant SKU can have several indexed IDs.
+
+To display explanations, add `include_rejection_reasons=true` to the same GET request. The response adds this field:
+
+```json
+{
+  "rejection_reasons": {
+    "product_001": null,
+    "product_002": "Policy: Alcohol"
+  }
+}
+```
+
+The map contains an entry for each ID on the page. A null reason means there is no current explanation to display. This can happen even for a rejected product. Use `review_status` to identify a rejection. A page requested with `is_approved=true` returns null reasons.
+
+### Fetch the next page
+
+`limit` defaults to 20 and must be at least 1. With review access, each page contains at most 100 IDs, even if you request a larger page. When you request reasons, a limit above 100 returns HTTP 400. If `has_more` is `true`, repeat the request with the same filter and pass `last_id` as the `after` query parameter. For the example above, use `after=product_002`.
+
+Continue until `has_more` is `false`. An empty page has `data: []`, `first_id: null`, and `last_id: null`. Pages reflect the current catalog when requested; they are not a fixed snapshot while products change.
+
+If a review lookup times out, the API returns HTTP 503. Retry the request.
+
 
 
 

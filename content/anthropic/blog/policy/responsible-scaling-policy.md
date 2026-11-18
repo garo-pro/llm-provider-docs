@@ -21,6 +21,8 @@ In September 2023, we released the first version of our Responsible Scaling Poli
 
 ### RSP Noncompliance Reporting and Anti-Retaliation Policy
 
+[See the PDF](https://assets.claude.com/b7a5629e40b391b2adfb4cc8c0888ac9d6bfddf6.pdf)
+
 - [Version 3.4](https://assets.claude.com/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf) and[redline](https://assets.claude.com/fbfdce5e4e825a3e089085205a842a9ae8ffac99.pdf) (effective July 8, 2026)
 - [Version 3.3](https://assets.claude.com/c11e84981d0a7281a1b229f3fa6af0da66eaf43f.pdf) and[redline](https://assets.claude.com/dd0ec579bee2cd144069c478ede3e35ea080ad02.pdf) (effective May 26, 2026)
 - [Version 3.2](https://assets.claude.com/28c6241900d90410628a8a2003a5572faae4365a.pdf) and[redline](https://assets.claude.com/7c534a9e7a82d4411dd568d85ffbcd14ac243a62.pdf) (effective April 29, 2026)
