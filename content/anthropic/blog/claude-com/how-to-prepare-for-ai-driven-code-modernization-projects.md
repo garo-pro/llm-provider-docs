@@ -22,8 +22,8 @@ We break this process into six steps:
 1. **Define the target:** the tech stack and behavior the modernized code must have.
 2. **Create the certificate:** the conditions that the changes must meet to be considered correct in the target state.
 3. **Set the promotion policy:** the path by which certified changes get into production at the rate they’re produced.
-4. **Put the prerequisites in place:** environment, CI/CD, review capacity, and approvals.
-5. **Build and refine the agentic workflow:** the custom Claude Code[dynamic workflow](https://claude.com/resources/articles/introducing-dynamic-workflows-in-claude-code) that distributes the modernization across many smaller parallel subagent workstreams that produce the changes. This is built around the target, certificate, and promotion policy.
+4. **Put the prerequisites in place:** environment,[CI/CD](https://claude.com/resources/articles/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic) , review capacity, and approvals.
+5. **Build and refine the agentic workflow:** the custom Claude Code[dynamic workflow](https://claude.com/resources/articles/introducing-dynamic-workflows-in-claude-code) that distributes the modernization across many smaller[parallel subagent workstreams](https://claude.com/resources/articles/subagents-in-claude-code) that produce the changes. This is built around the target, certificate, and promotion policy.
 6. **Run the modernization:** prove the workflow end to end on a small partition of the codebase, then scale.
 
 ## **Step 1: Define the target**

@@ -9,7 +9,7 @@ Agents are only as useful as the systems they can reach. Teams tend to converge 
 
 ## Connecting agents to external systems
 
-We generally see three paths for connecting agents to external systems: direct API calls, CLIs, and MCP. Each makes sense somewhere, depending on what you're building. The key distinction is whether there's a common layer between agents and services, and how far that layer reaches.
+We generally see three paths for connecting agents to external systems: direct API calls, CLIs, and [MCP](https://claude.com/resources/articles/what-is-model-context-protocol). Each makes sense somewhere, depending on what you're building. The key distinction is whether there's a common layer between agents and services, and how far that layer reaches.
 
 ### Direct API calls
 
@@ -31,7 +31,7 @@ It requires a little bit more upfront investment. The return is that the integra
 
 ## Production agents run in the cloud
 
-Production agents increasingly run in the cloud, so they can scale and operate continuously. The systems they need to reach are cloud-hosted too: where your data lives, work is tracked, and your infrastructure runs. Often these systems are remote and behind auth, where MCP provides the common layer. And when those systems live inside a private network rather than on the public internet, [MCP tunnels in Claude Managed Agents](https://claude.com/resources/articles/claude-managed-agents-updates) connect agents to them over an outbound-only connection — no exposed ports or public endpoints required.
+Production agents increasingly run in the cloud, so they can scale and [operate continuously](https://claude.com/resources/articles/building-always-on-agents). The systems they need to reach are cloud-hosted too: where your data lives, work is tracked, and your infrastructure runs. Often these systems are remote and behind auth, where MCP provides the common layer. And when those systems live inside a private network rather than on the public internet, [MCP tunnels in Claude Managed Agents](https://claude.com/resources/articles/claude-managed-agents-updates) connect agents to them over an outbound-only connection — no exposed ports or public endpoints required.
 
 We’re already seeing this in adoption. The [MCP SDKs](https://modelcontextprotocol.io/docs/sdk) recently surpassed 300 million downloads a month, up from 100 million at the start of the year, with strong adoption across enterprises and popular agentic platforms. Millions of people use MCP with Claude every day, and the protocol underpins much of what we've shipped recently, including [Claude Cowork](https://claude.com/product/cowork), [Claude Managed Agents](https://claude.com/resources/articles/claude-managed-agents), and [channels in Claude Code](https://code.claude.com/docs/en/channels).
 

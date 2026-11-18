@@ -9,7 +9,7 @@ Markdown Content:
 
 Every day, millions of people connect Claude to their apps, work tools, and data. Today, we're making it easier for developers to reach them.
 
-Plugins package MCP connectors, Agent Skills, or both, and are the main way to build third-party extensions for Claude. Build a plugin, submit it through the new directory submission portal, and once approved, it's listed in the [Claude directory](https://claude.ai/directory).
+[Plugins](https://claude.com/resources/articles/cowork-plugins) package MCP connectors, Agent Skills, or both, and are the main way to build third-party extensions for Claude. Build a plugin, submit it through the new directory submission portal, and once approved, it's listed in the [Claude directory](https://claude.ai/directory).
 
 ## **Submit and track plugins in the directory submission portal**
 

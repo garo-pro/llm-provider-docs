@@ -13,7 +13,7 @@ Always-on agents are stateful and proactive, meaning they manage context across 
 
 The resurgence is largely due to recent model advancements, which have made always-on agents more practical to run. First, the latest models have better judgment: they’re more reliable at understanding user intent and knowing when to check in. Second, intelligence is becoming cheaper, with long-horizon tasks benefiting the most. For example, on [one long-horizon coding benchmark](https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence), Opus 5.5 cost 78% less per solved task than Opus 5, compared with 40% less on typical workloads.
 
-Customers have started to ask us how to integrate this type of experience into their own products. Some companies want to make their existing agents more proactive, while others are looking to build them from the ground up.
+Customers have started to ask us how to integrate this type of experience into their own products. Some companies want to make their existing agents more proactive, while others are looking to [build them from the ground up](https://claude.dev/blog/building-effective-agent-automations/).
 
 This post breaks down the primitives behind always-on agents and walks through how they fit together.
 
@@ -105,7 +105,7 @@ If a session becomes too long, you can either [compact the older messages](https
 
 ### Permissions
 
-Permissions are where always-on agents carry the most risk. A run holds the user’s access and, by design, operates unattended. For each tool call, the agent needs to decide whether to proceed on its own, block it, or wait for approval.
+Permissions are where always-on agents carry the most risk. A run [holds the user’s access](https://claude.com/resources/articles/agent-identity-access-model) and, by design, operates unattended. For each tool call, the agent needs to decide whether to proceed on its own, block it, or wait for approval.
 
 The components for permissions are the same ones other agents use:
 
@@ -131,7 +131,7 @@ Most always-on agents can get by with a “send” tool that delivers the messag
 
 The outbox is a separate table of outgoing messages, analogous to the event inbox. There’s also a dispatcher, usually a background service, that’s analogous to the worker. The dispatcher reads the pending messages, decides what to deliver, and sends those to the user. A request from a deferred tool call can either go through the outbox or be shown directly in the interface.
 
-Beyond delivery, it’s important to tune how many messages the agent sends. An agent that sends too many becomes noisy, while an agent that doesn’t send enough misses things that the user needs to know. We recommend building evals to find the right balance. In practice, it’s better for the agent to start quiet and then earn more of the user’s attention over time.
+Beyond delivery, it’s important to tune how many messages the agent sends. An agent that sends too many becomes noisy, while an agent that doesn’t send enough misses things that the user needs to know. We recommend [building evals](https://claude.dev/blog/automating-eval-design-and-hillclimbing/) to find the right balance. In practice, it’s better for the agent to start quiet and then earn more of the user’s attention over time.
 
 ## How everything fits together
 

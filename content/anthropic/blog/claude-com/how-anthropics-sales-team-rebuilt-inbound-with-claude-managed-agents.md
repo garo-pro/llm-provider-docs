@@ -17,7 +17,7 @@ So we built a buying agent on Claude Managed Agents (beta) that takes a prospect
 
 Before building the buying agent, our inbound process was fairly straightforward. A buyer filled out a form. The lead was routed to a business development rep, who qualified it and passed it to an account executive. That still works well when a team can talk to everyone who’s interested in the product.
 
-We had tens of thousands of inbound requests every month, and our inbound BDR team couldn’t keep up. Reps spent their days answering questions the docs already covered, and we didn’t have an effective way to reach all of the customers in the queue. This wasn't the experience we wanted for our customers.
+We had tens of thousands of inbound requests every month, and our [inbound BDR team](https://claude.com/resources/articles/how-anthropics-business-development-team-uses-claude-to-run-inbound-and-outbound-at-scale) couldn’t keep up. Reps spent their days answering questions the docs already covered, and we didn’t have an effective way to reach all of the customers in the queue. This wasn't the experience we wanted for our customers.
 
 We wanted every customer to get a knowledgeable answer at any hour and in any language, and to be able to buy however they preferred, which often means without talking to a sales rep. We wanted our reps to spend their time on the conversations where they can change the trajectory of the outcome.
 
@@ -35,7 +35,7 @@ We built the agent to follow the same work of our sales reps, which means unders
 
 ## **Why did we use Claude Managed Agents?**
 
-Under the hood, the buying agent is simple: a prompt, a handful of tools, and Claude, running on Claude Managed Agents. Because the platform takes care of hosting, session management and tool orchestration, our engineers spent their time with sales designing the buying experience instead of building the infrastructure.
+Under the hood, the buying agent is simple: a prompt, a handful of tools, and Claude, running on Claude Managed Agents. Because the platform takes care of [hosting, session management and tool orchestration](https://claude.com/resources/articles/building-with-claude-managed-agents), our engineers spent their time with sales designing the buying experience instead of building the infrastructure.
 
 We ultimately landed on Managed Agents for the following reasons:
 

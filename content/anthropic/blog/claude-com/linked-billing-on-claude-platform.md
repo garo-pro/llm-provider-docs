@@ -5,13 +5,13 @@ URL Source: https://claude.com/resources/articles/linked-billing-on-claude-platf
 Markdown Content:
 # Linked billing on the Claude Platform
 
-Today we're introducing linked billing on the Claude Platform in beta. Third-party platforms, such as coding agents and workflow automation tools, can let their end customers pay for Claude API usage without sharing an API key. End customers keep their existing Anthropic billing and set their own spend limits, and platforms get a simpler, more secure way to offer Claude.
+Today we're introducing linked billing on the [Claude Platform](https://claude.com/platform/api) in beta. Third-party platforms, such as coding agents and workflow automation tools, can let their end customers pay for Claude API usage without sharing an API key. End customers keep their existing Anthropic billing and set their own spend limits, and platforms get a simpler, more secure way to offer Claude.
 
 ## A more secure alternative to sharing API keys
 
 Paying for Claude API usage on a third-party platform usually means sharing an API key, which works like a password: anyone who has the key can make requests billed to the customer, so the platform has to keep it safe.
 
-With linked billing, customers link their Claude Platform organization instead, and usage is billed directly to it. No API key changes hands, so platforms have no customer keys to store, encrypt or rotate, and customers’ API keys never leave their organization.
+With linked billing, customers link their Claude Platform organization instead, and usage is billed directly to it. No API key changes hands, so platforms have no customer keys to store, encrypt, or rotate, and customers’ API keys never leave their organization.
 
 Platforms can see usage for each linked customer. Customers approve each linked platform, set a spend limit, and can unlink at any time.
 
@@ -22,7 +22,7 @@ Platforms can see usage for each linked customer. Customers approve each linked 
 Linked billing gives platforms a new way to offer Claude to their customers. Platforms send requests, and Anthropic bills the end customers directly. With linked billing, platforms can:
 
 - **Launch faster.** Anthropic hosts the approval flow and the billing, so there’s no metering or invoicing to build.
-- **Understand usage by customer.** Get each linked customer’s request count, token usage and models used in Console, or programmatically with the[Usage and Cost Analytics API](https://platform.claude.com/docs/en/manage-claude/usage-cost-analytics-api) (beta).
+- **Understand usage by customer.** Get each linked customer’s request count, token usage, and models used in Console, or programmatically with the[Usage and Cost Analytics API](https://platform.claude.com/docs/en/manage-claude/usage-cost-analytics-api) (beta).
 - **Choose who pays.** Decide on each request whether the platform or the end customer pays, so platforms can pass Claude API costs to customers or cover some features themselves by product or instance.
 
 ## Customers get more visibility and control
@@ -82,8 +82,6 @@ Linked billing is available today in beta on the Claude Platform. Third-party pl
 
 “Runlayer works with enterprises at the frontier of AI, and we’re excited to be supporting linked billing on the Claude Platform. No API key to share means one less attack vector.”
 
-
-![Tessera AI](https://assets.claude.com/8cb0551037cd1c3784d431277d71c4870e8eb5de.png)
 
 “Our customers include some of the largest companies in the world. Linked billing lets them use their own Claude organization in Tessera, with no new keys to manage”
 

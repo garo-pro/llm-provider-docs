@@ -21,7 +21,7 @@ Starting today, Claude can build spreadsheets, whiteboards, and dashboards with 
 
 - [**New artifact types** (opens in new tab)](https://claude.com/resources/articles/sheets-whiteboards-data) :
   - In Claude Sheets, your team and Claude build spreadsheets together, collaboratively organize data, create and edit formulas, and work across multiple tabs.
-  - Claude Whiteboards is a digital whiteboard that your team can use to lay out and organize ideas together in a meeting, then ask Claude to summarize the findings.
+  - Claude Whiteboards is a digital whiteboard that your team can use to lay out and organize ideas together [in a meeting](https://claude.com/resources/articles/claude-meetings) , then ask Claude to summarize the findings.
   - Claude Data (formerly Dashboards) connects to tools like Snowflake and Salesforce and can use definitions your data team certifies (beta) to create dashboards, visual data stories, or narrated short videos.
 
 You can also ask Claude to build custom artifacts for the way your team works, like an account tracker, a daily briefing, a project status board, or a contract review table. Since Claude carries the same context through every step, an idea can carry over from a whiteboard to a spreadsheet to a dashboard, without the need to reiterate the details.

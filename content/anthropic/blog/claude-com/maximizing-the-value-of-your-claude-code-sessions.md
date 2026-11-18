@@ -145,7 +145,7 @@ Keep an eye on turns that happen when you're not typing, too. A `/loop` fires as
 
 ### Subagents
 
-The other way to keep something out of your context is to have it happen in a different one, which is what subagents are for. A subagent gets its own context window, with its own system prompt, the tools, and your `CLAUDE.md`, but not your conversation. It runs its own turns, and the only thing that comes back to the main session is its answer. Everything else is thrown away once it's done.
+The other way to keep something out of your context is to have it happen in a different one, which is [what subagents are for](https://claude.com/resources/articles/subagents-in-claude-code). A subagent gets its own context window, with its own system prompt, the tools, and your `CLAUDE.md`, but not your conversation. It runs its own turns, and the only thing that comes back to the main session is its answer. Everything else is thrown away once it's done.
 
 The downside of not having your conversation is that a subagent sometimes has to re-read things the main session already had, and it's paying for its own turns while it does. For a small job it's just overhead.
 

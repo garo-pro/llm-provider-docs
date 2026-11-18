@@ -61,7 +61,7 @@ When an unbiased review of an implementation is the goal, a subagent provides a 
 
 ### Verification before committing
 
-Before finalizing changes, an independent subagent can verify the implementation isn't overfitting to tests or missing edge cases.
+Before finalizing changes, an independent subagent can [verify the implementation](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills) isn't overfitting to tests or missing edge cases.
 
 **The signal:** A second opinion is warranted before committing code.
 
@@ -147,7 +147,7 @@ For more on CLAUDE.md files, see [Customizing Claude Code for your codebase: set
 
 ### Skills
 
-For complex multi-step workflows that run repeatedly, skills provide a reusable interface. Define a skill once in .claude/skills/, then invoke it with /skill-name or let Claude load it automatically when a task matches its description.
+For complex multi-step workflows that run repeatedly, [skills](https://claude.com/resources/articles/skills-explained) provide a reusable interface. Define a skill once in .claude/skills/, then invoke it with /skill-name or let Claude load it automatically when a task matches its description.
 
 Skills differ from CLAUDE.md files in scope. CLAUDE.md files are always loaded and shape every interaction. A skill is loaded on demand, either because it was invoked explicitly or because Claude matched the current task to the skill's description field. That makes skills the right place for workflows that should be available but not applied to every prompt.
 
