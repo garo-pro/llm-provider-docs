@@ -17,7 +17,12 @@ subject (`sub`) with an application account, and creates its own session.
 
 
 
-Choose one of these four button formats for your app's sign-in page.
+The recommended labels are **Continue with ChatGPT** and **Sign in with ChatGPT**.
+If your other sign-in options use an icon with a short label, you can use the
+ChatGPT logo with **ChatGPT** as the label. Choose a style that fits your sign-in
+page.
+
+The following examples show the full-length labels in black and white.
 
 
 

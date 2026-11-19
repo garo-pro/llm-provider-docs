@@ -348,7 +348,15 @@ server](https://developers.openai.com/plugins/build/chatgpt-ui#layer-on-chatgpt-
 
 Use an MCP SDK to create a server and expose a `/mcp` endpoint.
 
-Both server implementations use the same HTML page.
+The server implementations use the same HTML page.
+
+
+
+
+With Go 1.26 or later, initialize a module and add `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.8.0`. Save the example as `main.go`, keep `public/todo-widget.html` in the same project directory, and run `go run .`. Edit the `port` literal to choose another port.
+
+
+
 
 
 
@@ -577,6 +585,130 @@ httpServer.listen(port, () => {
 });
 ```
 
+```go
+package main
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+	"net"
+	"net/http"
+	"os"
+	"os/signal"
+	"strings"
+	"sync"
+	"syscall"
+	"time"
+)
+
+type task struct {
+	ID        string `json:"id"`
+	Title     string `json:"title"`
+	Completed bool   `json:"completed"`
+}
+type todoOutput struct {
+	Tasks []task `json:"tasks"`
+}
+type addInput struct {
+	Title string `json:"title"`
+}
+type completeInput struct {
+	ID string `json:"id"`
+}
+
+func main() {
+	html, err := os.ReadFile("public/todo-widget.html")
+	if err != nil {
+		log.Fatal(err)
+	}
+	server := mcp.NewServer(&mcp.Implementation{Name: "todo-plugin-server", Version: "0.1.0"}, nil)
+	// This local demonstration keeps tasks in memory until the server exits.
+	var mu sync.Mutex
+	tasks := []task{}
+	nextID := 1
+	reply := func(message string) (*mcp.CallToolResult, todoOutput, error) {
+		snapshot := append([]task{}, tasks...)
+		return &mcp.CallToolResult{Content: []mcp.Content{&mcp.TextContent{Text: message}}}, todoOutput{Tasks: snapshot}, nil
+	}
+	schema := func(field string) map[string]any {
+		return map[string]any{"type": "object", "properties": map[string]any{field: map[string]any{"type": "string", "minLength": 1}}, "required": []string{field}, "additionalProperties": false}
+	}
+	meta := mcp.Meta{"ui": map[string]any{"resourceUri": "ui://widget/todo.html"}}
+	mcp.AddTool(server, &mcp.Tool{Name: "add_todo", Title: "Add todo", Description: "Creates a todo item with the given title.", InputSchema: schema("title"), Meta: meta}, func(_ context.Context, _ *mcp.CallToolRequest, input addInput) (*mcp.CallToolResult, todoOutput, error) {
+		mu.Lock()
+		defer mu.Unlock()
+		title := strings.TrimSpace(input.Title)
+		if title == "" {
+			return reply("Missing title.")
+		}
+		tasks = append(tasks, task{ID: fmt.Sprintf("todo-%d", nextID), Title: title})
+		nextID++
+		return reply(fmt.Sprintf("Added %q.", title))
+	})
+	mcp.AddTool(server, &mcp.Tool{Name: "complete_todo", Title: "Complete todo", Description: "Marks a todo as done by id.", InputSchema: schema("id"), Meta: meta}, func(_ context.Context, _ *mcp.CallToolRequest, input completeInput) (*mcp.CallToolResult, todoOutput, error) {
+		mu.Lock()
+		defer mu.Unlock()
+		for i := range tasks {
+			if tasks[i].ID == input.ID {
+				tasks[i].Completed = true
+				return reply(fmt.Sprintf("Completed %q.", tasks[i].Title))
+			}
+		}
+		return reply(fmt.Sprintf("Todo %s was not found.", input.ID))
+	})
+	server.AddResource(&mcp.Resource{URI: "ui://widget/todo.html", Name: "todo-widget", MIMEType: "text/html;profile=mcp-app"}, func(context.Context, *mcp.ReadResourceRequest) (*mcp.ReadResourceResult, error) {
+		return &mcp.ReadResourceResult{Contents: []*mcp.ResourceContents{{URI: "ui://widget/todo.html", MIMEType: "text/html;profile=mcp-app", Text: string(html)}}}, nil
+	})
+	transport := mcp.NewStreamableHTTPHandler(func(*http.Request) *mcp.Server { return server }, &mcp.StreamableHTTPOptions{Stateless: true, JSONResponse: true})
+	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.URL.Path == "/" && r.Method == http.MethodGet {
+			w.Header().Set("Content-Type", "text/plain")
+			fmt.Fprint(w, "Todo MCP server")
+			return
+		}
+		if r.URL.Path != "/mcp" {
+			http.NotFound(w, r)
+			return
+		}
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Expose-Headers", "Mcp-Session-Id")
+		if r.Method == http.MethodOptions {
+			w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS")
+			w.Header().Set("Access-Control-Allow-Headers", "content-type, mcp-session-id, mcp-protocol-version")
+			w.WriteHeader(http.StatusNoContent)
+			return
+		}
+		transport.ServeHTTP(w, r)
+	})
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer cancel()
+	port := "8787"
+	listener, err := net.Listen("tcp", "127.0.0.1:"+port)
+	if err != nil {
+		log.Fatal(err)
+	}
+	httpServer := &http.Server{Handler: handler, ReadHeaderTimeout: 5 * time.Second}
+	fmt.Println("Listening on http://" + listener.Addr().String())
+	shutdownDone := make(chan struct{})
+	go func() {
+		defer close(shutdownDone)
+		<-ctx.Done()
+		shutdownCtx, stop := context.WithTimeout(context.Background(), 5*time.Second)
+		defer stop()
+		if err := httpServer.Shutdown(shutdownCtx); err != nil {
+			log.Print(err)
+		}
+	}()
+	if err := httpServer.Serve(listener); err != nil && !errors.Is(err, http.ErrServerClosed) {
+		log.Fatal(err)
+	}
+	<-shutdownDone
+}
+```
+
 ```ruby
 require "mcp"
 require "rackup"
@@ -779,7 +911,7 @@ Run the Ruby version with `ruby server.rb`. The Ruby server accepts a `PORT` env
 
 
 
-By default, both versions serve `http://localhost:8787/mcp`.
+By default, the servers serve `http://localhost:8787/mcp`.
 
 
 

@@ -204,57 +204,6 @@ List recently generated videos for the current project.
 
 ```http
 curl https://api.openai.com/v1/videos \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "data": [
-    {
-      "id": "id",
-      "completed_at": 0,
-      "created_at": 0,
-      "error": {
-        "code": "code",
-        "message": "message",
-        "headers": {
-          "foo": "string"
-        },
-        "misalignment": {
-          "detailed_explanation": "detailed_explanation",
-          "error_type": "potentially_unintended_data_transfer",
-          "review_target": "review_target",
-          "steer": {
-            "message": "message"
-          }
-        },
-        "param": "param",
-        "type": "type"
-      },
-      "expires_at": 0,
-      "model": "sora-2",
-      "object": "video",
-      "progress": 0,
-      "prompt": "prompt",
-      "remixed_from_video_id": "remixed_from_video_id",
-      "seconds": "string",
-      "size": "720x1280",
-      "status": "queued"
-    }
-  ],
-  "first_id": "first_id",
-  "has_more": true,
-  "last_id": "last_id",
-  "object": "list"
-}
-```
-
-### Example
-
-```http
-curl https://api.openai.com/v1/videos \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 

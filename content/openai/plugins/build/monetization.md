@@ -291,6 +291,14 @@ example. The tool's `output_schema` declares the MCP `outputSchema`;
 
 
 
+The Go example uses `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.8.0`. Save it as `main.go` in your Go module and run `go run .`. It returns fixed local checkout data and does not process payments.
+
+
+
+
+
+
+
 The Ruby example uses the `mcp` gem at version `1.10.0`; save the example in a file and run it with Ruby.
 
 
@@ -420,6 +428,119 @@ async def complete_checkout(
         meta={META_SESSION_ID: "checkout-flow"},
         is_error=False,
     )
+```
+
+```go
+package main
+
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+)
+
+type checkoutInput struct {
+	CheckoutSessionID string `json:"checkout_session_id"`
+	Buyer             struct {
+		Email string `json:"email"`
+	} `json:"buyer"`
+	PaymentData struct {
+		Token string `json:"token"`
+	} `json:"payment_data"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "Checkout response fixture", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "complete_checkout", Description: "Return a local checkout response fixture; never charge a payment method or create a real order."}, func(_ context.Context, _ *mcp.CallToolRequest, input checkoutInput) (*mcp.CallToolResult, map[string]any, error) {
+		if input.CheckoutSessionID != "example-session" {
+			return nil, nil, fmt.Errorf("only example-session is supported")
+		}
+		if input.PaymentData.Token != "example-payment-token" {
+			return nil, nil, fmt.Errorf("only example-payment-token is supported")
+		}
+		// Fixed local response data, not a payment or order API response.
+		var result map[string]any
+		if err := json.Unmarshal([]byte(`{
+  "id": "example-session",
+  "status": "completed",
+  "currency": "USD",
+  "line_items": [
+    {
+      "id": "line_item_1",
+      "item": {
+        "id": "item_1",
+        "quantity": 1
+      },
+      "base_amount": 3000,
+      "discount": 0,
+      "subtotal": 3000,
+      "tax": 300,
+      "total": 3300
+    }
+  ],
+  "fulfillment_address": {
+    "name": "Jane Customer",
+    "line_one": "123 Main St",
+    "line_two": "Apt 4B",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "US",
+    "postal_code": "94107",
+    "phone_number": "+1 (555) 555-5555"
+  },
+  "fulfillment_options": [
+    {
+      "id": "fulfillment_option_1",
+      "type": "shipping",
+      "title": "Standard shipping",
+      "subtitle": "3-5 business days",
+      "carrier": "USPS",
+      "earliest_delivery_time": "2026-02-24T15:00:00Z",
+      "latest_delivery_time": "2026-02-28T18:00:00Z",
+      "subtotal": 0,
+      "tax": 0,
+      "total": 0
+    }
+  ],
+  "fulfillment_option_id": "fulfillment_option_1",
+  "totals": [
+    {
+      "type": "items_base_amount",
+      "display_text": "Items subtotal",
+      "amount": 3000
+    },
+    {
+      "type": "subtotal",
+      "display_text": "Subtotal",
+      "amount": 3000
+    },
+    {
+      "type": "tax",
+      "display_text": "Tax",
+      "amount": 300
+    },
+    {
+      "type": "total",
+      "display_text": "Total",
+      "amount": 3300
+    }
+  ],
+  "order": {
+    "id": "order_id_123",
+    "checkout_session_id": "example-session",
+    "permalink_url": ""
+  }
+}`), &result); err != nil {
+			return nil, nil, err
+		}
+		return &mcp.CallToolResult{Content: []mcp.Content{}, Meta: mcp.Meta{"openai/checkoutSessionId": "checkout-flow"}}, result, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
 ```
 
 ```ruby

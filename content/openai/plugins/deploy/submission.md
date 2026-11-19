@@ -174,6 +174,10 @@ In **Metadata &amp; Skills**, open **Review information → Review details** to 
 
 Credentials stay outside the public package. Keep the test account and sample data available for subsequent reviews. If credentials or sign-in steps change, submit an updated draft with the new details.
 
+If your plugin uses iframes, explain what each embedded page does, why it is needed, and who controls its domain. See the [iframe requirements](https://developers.openai.com/plugins/build/chatgpt-ui#content-security-policy-csp) for technical details.
+
+Before submitting a plugin, thoroughly test its MCP server, tools, and optional UI across a wide range of scenarios.
+
 ### Submit the draft
 
 Select the draft, choose **Submit for review**, and complete the required policy attestations. After submitting, track progress under **Review status** on the Plugins page. Feedback from the review team is sent by email.
@@ -235,6 +239,8 @@ Tool changes are evaluated independently. A flagged change does not necessarily 
 Keep your MCP server compatible with the currently approved tool schemas until the updated metadata is live.
 
 ### Appeal an automated finding
+
+If our automated review flags an annotation issue, you can submit an appeal with clarification or additional information.
 
 If you believe a tool finding is incorrect, select **Appeal** and explain why the review team should reconsider the findings. The review team considers the held tool changes from that scan together. If the finding is valid, correcting it on the server and rescanning is usually faster.
 

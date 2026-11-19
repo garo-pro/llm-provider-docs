@@ -175,6 +175,12 @@ function partSelectionSchema(parts: OpenAIFormOption[]): OpenAIForm {
 }
 ```
 
+```go
+func partSelectionSchema(parts []map[string]string) map[string]any {
+	return map[string]any{"type": "object", "properties": map[string]any{"part": map[string]any{"type": "string", "title": "Part", "oneOf": parts}}, "required": []string{"part"}}
+}
+```
+
 ```ruby
 def part_selection_schema(parts)
   {

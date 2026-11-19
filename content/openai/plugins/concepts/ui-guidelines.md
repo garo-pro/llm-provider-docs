@@ -135,7 +135,7 @@ Immersive experiences that expand beyond the inline card, giving users space for
 **Rules of thumb**
 
 - **Design your UX to work with the system composer**. The composer is always present in fullscreen, so make sure your experience supports conversational prompts that can trigger tool calls and feel natural for users.
-- **Use fullscreen for work that benefits from more space.** Existing editors and admin interfaces can be embedded when they meet the [iframe policy](https://developers.openai.com/plugins/plugin-guidelines#iframes-and-embedded-pages).
+- **Use fullscreen for work that benefits from more space.** Existing editors and admin interfaces can be embedded when they meet the [iframe requirements](https://developers.openai.com/plugins/build/chatgpt-ui#content-security-policy-csp).
 
 ### Picture-in-picture (PiP)
 
@@ -244,3 +244,7 @@ Accessibility should be a core consideration when you are building apps for Chat
 - Text and background must maintain a minimum contrast ratio (WCAG AA).
 - Provide alt text for all images.
 - Support text resizing without breaking layouts.
+
+## Content security policy (CSP)
+
+Configure a content security policy (CSP) covering the domains your component uses for network requests, loaded resources, and embedded frames. Keep each allowlist as narrow as possible for your plugin’s functionality, and avoid broadly permissive sources that introduce material security risk. Follow the [CSP configuration guidance](https://developers.openai.com/plugins/build/chatgpt-ui#content-security-policy-csp) for implementation details.

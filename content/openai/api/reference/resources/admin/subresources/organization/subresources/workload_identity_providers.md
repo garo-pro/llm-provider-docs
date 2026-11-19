@@ -117,47 +117,6 @@ Content type: `application/json`
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/workload_identity_providers \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
-    -d '{
-          "audience": "x",
-          "issuer": "x",
-          "name": "x",
-          "type": "oidc"
-        }'
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "attribute_transformations": [
-    {
-      "attribute": "attribute",
-      "expression": "expression"
-    }
-  ],
-  "audience": "audience",
-  "created_at": 0,
-  "description": "description",
-  "enabled": true,
-  "issuer": "issuer",
-  "name": "name",
-  "object": "organization.workload_identity_provider",
-  "type": "oidc",
-  "updated_at": 0,
-  "verification": {
-    "discovery_url": "discovery_url",
-    "type": "discovery"
-  }
-}
-```
-
-### Example
-
-```http
 curl -X POST "https://api.openai.com/v1/organization/workload_identity_providers" \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
   -H "Content-Type: application/json" \
@@ -214,24 +173,6 @@ Delete a provider after deleting all its federation rules.
   - `object: "organization.workload_identity_provider.deleted" (default: "organization.workload_identity_provider.deleted")`
 
     - `"organization.workload_identity_provider.deleted"`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID \
-    -X DELETE \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "deleted": true,
-  "object": "organization.workload_identity_provider.deleted"
-}
-```
 
 ### Example
 
@@ -339,48 +280,6 @@ List OIDC providers in the authenticated Admin API key's organization.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/workload_identity_providers \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "data": [
-    {
-      "id": "id",
-      "attribute_transformations": [
-        {
-          "attribute": "attribute",
-          "expression": "expression"
-        }
-      ],
-      "audience": "audience",
-      "created_at": 0,
-      "description": "description",
-      "enabled": true,
-      "issuer": "issuer",
-      "name": "name",
-      "object": "organization.workload_identity_provider",
-      "type": "oidc",
-      "updated_at": 0,
-      "verification": {
-        "discovery_url": "discovery_url",
-        "type": "discovery"
-      }
-    }
-  ],
-  "first_id": "first_id",
-  "has_more": true,
-  "last_id": "last_id",
-  "object": "list"
-}
-```
-
-### Example
-
-```http
 curl -X GET "https://api.openai.com/v1/organization/workload_identity_providers?limit=20&order=asc" \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
 ```
@@ -478,40 +377,6 @@ Retrieve an OIDC provider in the authenticated organization.
       - `type: "uploaded_jwks" (default: "uploaded_jwks")`
 
         - `"uploaded_jwks"`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "attribute_transformations": [
-    {
-      "attribute": "attribute",
-      "expression": "expression"
-    }
-  ],
-  "audience": "audience",
-  "created_at": 0,
-  "description": "description",
-  "enabled": true,
-  "issuer": "issuer",
-  "name": "name",
-  "object": "organization.workload_identity_provider",
-  "type": "oidc",
-  "updated_at": 0,
-  "verification": {
-    "discovery_url": "discovery_url",
-    "type": "discovery"
-  }
-}
-```
 
 ### Example
 
@@ -655,41 +520,6 @@ Content type: `application/json`
       - `type: "uploaded_jwks" (default: "uploaded_jwks")`
 
         - `"uploaded_jwks"`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID \
-    -X POST \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "attribute_transformations": [
-    {
-      "attribute": "attribute",
-      "expression": "expression"
-    }
-  ],
-  "audience": "audience",
-  "created_at": 0,
-  "description": "description",
-  "enabled": true,
-  "issuer": "issuer",
-  "name": "name",
-  "object": "organization.workload_identity_provider",
-  "type": "oidc",
-  "updated_at": 0,
-  "verification": {
-    "discovery_url": "discovery_url",
-    "type": "discovery"
-  }
-}
-```
 
 ### Example
 
@@ -909,44 +739,6 @@ Content type: `application/json`
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID/federation_rules \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
-    -d '{
-          "attribute_matchers": {
-            "foo": "string"
-          },
-          "project_id": "x",
-          "service_account_id": "x"
-        }'
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "attribute_matchers": {
-    "foo": "string"
-  },
-  "created_at": 0,
-  "description": "description",
-  "enabled": true,
-  "name": "name",
-  "object": "organization.workload_identity_federation_rule",
-  "permissions": {
-    "type": "service_account_default"
-  },
-  "project_id": "project_id",
-  "service_account_id": "service_account_id",
-  "updated_at": 0,
-  "workload_identity_provider_id": "workload_identity_provider_id"
-}
-```
-
-### Example
-
-```http
 curl -X POST "https://api.openai.com/v1/organization/workload_identity_providers/wip_example/federation_rules" \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
   -H "Content-Type: application/json" \
@@ -1009,24 +801,6 @@ Delete a federation rule to a project service account.
   - `object: "organization.workload_identity_federation_rule.deleted" (default: "organization.workload_identity_federation_rule.deleted")`
 
     - `"organization.workload_identity_federation_rule.deleted"`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID/federation_rules/$WORKLOAD_IDENTITY_FEDERATION_RULE_ID \
-    -X DELETE \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "deleted": true,
-  "object": "organization.workload_identity_federation_rule.deleted"
-}
-```
 
 ### Example
 
@@ -1146,44 +920,6 @@ List the provider's federation rules to project service accounts.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID/federation_rules \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "data": [
-    {
-      "id": "id",
-      "attribute_matchers": {
-        "foo": "string"
-      },
-      "created_at": 0,
-      "description": "description",
-      "enabled": true,
-      "name": "name",
-      "object": "organization.workload_identity_federation_rule",
-      "permissions": {
-        "type": "service_account_default"
-      },
-      "project_id": "project_id",
-      "service_account_id": "service_account_id",
-      "updated_at": 0,
-      "workload_identity_provider_id": "workload_identity_provider_id"
-    }
-  ],
-  "first_id": "first_id",
-  "has_more": true,
-  "last_id": "last_id",
-  "object": "list"
-}
-```
-
-### Example
-
-```http
 curl -X GET "https://api.openai.com/v1/organization/workload_identity_providers/wip_example/federation_rules?limit=20&order=asc" \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
 ```
@@ -1288,36 +1024,6 @@ Retrieve a federation rule owned by the authenticated organization and provider.
   - `updated_at: integer`
 
   - `workload_identity_provider_id: string`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID/federation_rules/$WORKLOAD_IDENTITY_FEDERATION_RULE_ID \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "attribute_matchers": {
-    "foo": "string"
-  },
-  "created_at": 0,
-  "description": "description",
-  "enabled": true,
-  "name": "name",
-  "object": "organization.workload_identity_federation_rule",
-  "permissions": {
-    "type": "service_account_default"
-  },
-  "project_id": "project_id",
-  "service_account_id": "service_account_id",
-  "updated_at": 0,
-  "workload_identity_provider_id": "workload_identity_provider_id"
-}
-```
 
 ### Example
 
@@ -1458,37 +1164,6 @@ Content type: `application/json`
   - `updated_at: integer`
 
   - `workload_identity_provider_id: string`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/workload_identity_providers/$WORKLOAD_IDENTITY_PROVIDER_ID/federation_rules/$WORKLOAD_IDENTITY_FEDERATION_RULE_ID \
-    -X POST \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "attribute_matchers": {
-    "foo": "string"
-  },
-  "created_at": 0,
-  "description": "description",
-  "enabled": true,
-  "name": "name",
-  "object": "organization.workload_identity_federation_rule",
-  "permissions": {
-    "type": "service_account_default"
-  },
-  "project_id": "project_id",
-  "service_account_id": "service_account_id",
-  "updated_at": 0,
-  "workload_identity_provider_id": "workload_identity_provider_id"
-}
-```
 
 ### Example
 

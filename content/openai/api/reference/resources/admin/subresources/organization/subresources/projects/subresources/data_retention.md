@@ -45,22 +45,6 @@ Retrieves project data retention controls.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/projects/$PROJECT_ID/data_retention \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "object": "project.data_retention",
-  "type": "organization_default"
-}
-```
-
-### Example
-
-```http
 curl https://api.openai.com/v1/organization/projects/proj_abc/data_retention \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
   -H "Content-Type: application/json"
@@ -134,26 +118,6 @@ Content type: `application/json`
     - `"enhanced_zero_data_retention"`
 
     - `"enhanced_modified_abuse_monitoring"`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/projects/$PROJECT_ID/data_retention \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
-    -d '{
-          "retention_type": "organization_default"
-        }'
-```
-
-#### 200 — Example
-
-```json
-{
-  "object": "project.data_retention",
-  "type": "organization_default"
-}
-```
 
 ### Example
 

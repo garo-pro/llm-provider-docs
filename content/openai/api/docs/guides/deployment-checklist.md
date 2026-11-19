@@ -2,6 +2,19 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
+**Keep the conversation prefix unchanged.** Append new messages and tool results.
+If you need to shorten a tool result, do it before you first send it. With
+GPT-6.2 Astra and Sol, the Responses API can drop saved reasoning that follows
+an edit to earlier history as part of its safeguards. The model may spend extra
+time and tokens repeating work. If it cannot recover that work, answer quality may drop.
+
+Before deployment, run a multi-turn task. Log each response’s
+[`input_transformations`](https://developers.openai.com/api/reference/resources/responses/methods/create#%28resource%29%20responses%20%3E%20%28model%29%20response%20%3E%20%28schema%29%20%3E%20%28property%29%20input_transformations)
+when the field is nonempty. If you see `prefix_mismatch`,
+[find and fix the edit](https://developers.openai.com/api/docs/guides/keep-prefix-unchanged#how-to-update-integrations-to-avoid-prefix-changes).
+In production, [track how often this happens](https://developers.openai.com/api/docs/guides/keep-prefix-unchanged#auditing-your-integration-for-prefix-changes)
+by measuring the percentage of GPT-6.2 responses with at least one `prefix_mismatch`.
+
 | Contents                                                                                                | Expected impact                     |
 | ------------------------------------------------------------------------------------------------------- | ----------------------------------- |
 | [Use the Responses API](#use-the-responses-api)                                                         | Quality, cost, latency, reliability |

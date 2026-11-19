@@ -19,6 +19,30 @@ every MCP server and UI component as production software:
 - **Storage:** Decide how long you keep user data and publish a retention policy. Respect deletion requests.
 - **Logging:** Redact PII before writing to logs. Store correlation IDs for debugging but avoid storing raw prompt text unless necessary.
 
+### Input schemas and task context
+
+- Design the input schema to limit data collection by default, rather than a funnel for optional context.
+
+- Input fields must be directly related to the tool’s stated purpose.
+
+- Do not request the full conversation history, raw chat transcripts, or broad contextual fields “just in case.” A tool may request a brief, task-specific user intent field only when it meaningfully improves execution and does not expand data collection beyond what is reasonably necessary to respond to the user’s request and for the purposes described in your privacy policy.
+
+- Do not request accumulated conversation context or prior-turn arrays.
+
+### Response payloads
+
+Tool responses must return only data that is directly relevant to the user’s request and the tool’s stated purpose. Do not include diagnostic, telemetry, or internal identifiers—such as session IDs, trace IDs, request IDs, timestamps, or logging metadata—unless they are strictly required to fulfill the user’s query.
+
+### Chat-context boundaries
+
+Your MCP server must not pull, reconstruct, or infer the full chat log from the client or elsewhere. Operate only on the explicit snippets and resources the client or model chooses to send. This separation can help prevent covert data expansion and keep analysis limited to intentionally shared content.
+
+### Location
+
+If needed, rely on the coarse geographic location shared by the system. Do not request precise user location data (for example, GPS coordinates or addresses).
+
+Avoid requesting raw location fields (for example, city or coordinates) in your input schema. When location is needed, obtain it through the client’s controlled side channel (such as environment metadata or a referenced resource) so appropriate policy and consent controls can be applied. This reduces accidental PII capture, enforces least-privilege access, and keeps location handling auditable and revocable.
+
 ## Prompt injection and write actions
 
 Custom MCP servers enable full MCP access, including write tools. Mitigate risk by:
@@ -38,7 +62,7 @@ standard `fetch` requests. Nested frames are unavailable by default; enable
 specific origins in resource CSP metadata such as
 `_meta.ui.csp.frameDomains`. Plugins can embed pages from their MCP server's
 own registrable domain, including existing editors and admin interfaces. See
-the [iframe policy](https://developers.openai.com/plugins/plugin-guidelines#iframes-and-embedded-pages) for
+the [iframe requirements](https://developers.openai.com/plugins/build/chatgpt-ui#content-security-policy-csp) for
 domain ownership, required justifications, and review requirements.
 
 The widget CSP restricts which iframe destinations can load. An embedded

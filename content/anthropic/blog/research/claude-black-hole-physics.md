@@ -3,7 +3,7 @@ Title: Claude solves two open problems in the physics of black holes
 URL Source: https://www.anthropic.com/research/claude-black-hole-physics
 
 Markdown Content:
-***Summary:** Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. In the first, it completed a calculation that physicists set up more than 20 years ago, but which had never been solved. Claude’s result showed that a sudden transition associated with the formation of black holes persists even where spacetime no longer has a definite shape. In the second, Claude found the exact limit of the simplest version of a technique used to test candidate theories of quantum gravity. This post explains both findings, first in plain terms and then in more technical detail. The preprints are available [here](https://hexagonmath.org/2611.00175v1) and [here](https://hexagonmath.org/2611.00174v1).*
+*Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. In the first, it completed a calculation that physicists set up more than 20 years ago, but which had never been solved. Claude’s result showed that a sudden transition associated with the formation of black holes persists even where spacetime no longer has a definite shape. In the second, Claude found the exact limit of the simplest version of a technique used to test candidate theories of quantum gravity. This post explains both findings, first in plain terms and then in more technical detail. The preprints are available [here](https://hexagonmath.org/2611.00175v1) and [here](https://hexagonmath.org/2611.00174v1).*
 
 ## Introduction
 

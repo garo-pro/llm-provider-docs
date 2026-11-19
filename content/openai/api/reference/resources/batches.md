@@ -151,7 +151,7 @@ Cancels an in-progress batch. The batch will be in status `cancelling` for up to
 
   - `model: optional string`
 
-    Model ID used to process the batch, like `gpt-6-astra`. OpenAI
+    Model ID used to process the batch, like `gpt-6.2-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model
     guide](/api/docs/models) to browse and compare available models.
@@ -210,69 +210,6 @@ Cancels an in-progress batch. The batch will be in status `cancelling` for up to
     - `total_tokens: integer`
 
       The total number of tokens used.
-
-### Example
-
-```http
-curl https://api.openai.com/v1/batches/$BATCH_ID/cancel \
-    -X POST \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "completion_window": "completion_window",
-  "created_at": 0,
-  "endpoint": "endpoint",
-  "input_file_id": "input_file_id",
-  "object": "batch",
-  "status": "validating",
-  "cancelled_at": 0,
-  "cancelling_at": 0,
-  "completed_at": 0,
-  "error_file_id": "error_file_id",
-  "errors": {
-    "data": [
-      {
-        "code": "code",
-        "line": 0,
-        "message": "message",
-        "param": "param"
-      }
-    ],
-    "object": "object"
-  },
-  "expired_at": 0,
-  "expires_at": 0,
-  "failed_at": 0,
-  "finalizing_at": 0,
-  "in_progress_at": 0,
-  "metadata": {
-    "foo": "string"
-  },
-  "model": "model",
-  "output_file_id": "output_file_id",
-  "request_counts": {
-    "completed": 0,
-    "failed": 0,
-    "total": 0
-  },
-  "usage": {
-    "input_tokens": 0,
-    "input_tokens_details": {
-      "cached_tokens": 0
-    },
-    "output_tokens": 0,
-    "output_tokens_details": {
-      "reasoning_tokens": 0
-    },
-    "total_tokens": 0
-  }
-}
-```
 
 ### Example
 
@@ -521,7 +458,7 @@ Content type: `application/json`
 
   - `model: optional string`
 
-    Model ID used to process the batch, like `gpt-6-astra`. OpenAI
+    Model ID used to process the batch, like `gpt-6.2-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model
     guide](/api/docs/models) to browse and compare available models.
@@ -580,74 +517,6 @@ Content type: `application/json`
     - `total_tokens: integer`
 
       The total number of tokens used.
-
-### Example
-
-```http
-curl https://api.openai.com/v1/batches \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -d '{
-          "completion_window": "24h",
-          "endpoint": "/v1/responses",
-          "input_file_id": "input_file_id"
-        }'
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "completion_window": "completion_window",
-  "created_at": 0,
-  "endpoint": "endpoint",
-  "input_file_id": "input_file_id",
-  "object": "batch",
-  "status": "validating",
-  "cancelled_at": 0,
-  "cancelling_at": 0,
-  "completed_at": 0,
-  "error_file_id": "error_file_id",
-  "errors": {
-    "data": [
-      {
-        "code": "code",
-        "line": 0,
-        "message": "message",
-        "param": "param"
-      }
-    ],
-    "object": "object"
-  },
-  "expired_at": 0,
-  "expires_at": 0,
-  "failed_at": 0,
-  "finalizing_at": 0,
-  "in_progress_at": 0,
-  "metadata": {
-    "foo": "string"
-  },
-  "model": "model",
-  "output_file_id": "output_file_id",
-  "request_counts": {
-    "completed": 0,
-    "failed": 0,
-    "total": 0
-  },
-  "usage": {
-    "input_tokens": 0,
-    "input_tokens_details": {
-      "cached_tokens": 0
-    },
-    "output_tokens": 0,
-    "output_tokens_details": {
-      "reasoning_tokens": 0
-    },
-    "total_tokens": 0
-  }
-}
-```
 
 ### Example
 
@@ -849,7 +718,7 @@ List your organization's batches.
 
   - `model: optional string`
 
-    Model ID used to process the batch, like `gpt-6-astra`. OpenAI
+    Model ID used to process the batch, like `gpt-6.2-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model
     guide](/api/docs/models) to browse and compare available models.
@@ -918,76 +787,6 @@ List your organization's batches.
 - `first_id: optional string`
 
 - `last_id: optional string`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/batches \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "data": [
-    {
-      "id": "id",
-      "completion_window": "completion_window",
-      "created_at": 0,
-      "endpoint": "endpoint",
-      "input_file_id": "input_file_id",
-      "object": "batch",
-      "status": "validating",
-      "cancelled_at": 0,
-      "cancelling_at": 0,
-      "completed_at": 0,
-      "error_file_id": "error_file_id",
-      "errors": {
-        "data": [
-          {
-            "code": "code",
-            "line": 0,
-            "message": "message",
-            "param": "param"
-          }
-        ],
-        "object": "object"
-      },
-      "expired_at": 0,
-      "expires_at": 0,
-      "failed_at": 0,
-      "finalizing_at": 0,
-      "in_progress_at": 0,
-      "metadata": {
-        "foo": "string"
-      },
-      "model": "model",
-      "output_file_id": "output_file_id",
-      "request_counts": {
-        "completed": 0,
-        "failed": 0,
-        "total": 0
-      },
-      "usage": {
-        "input_tokens": 0,
-        "input_tokens_details": {
-          "cached_tokens": 0
-        },
-        "output_tokens": 0,
-        "output_tokens_details": {
-          "reasoning_tokens": 0
-        },
-        "total_tokens": 0
-      }
-    }
-  ],
-  "has_more": true,
-  "object": "list",
-  "first_id": "batch_abc123",
-  "last_id": "batch_abc456"
-}
-```
 
 ### Example
 
@@ -1188,7 +987,7 @@ Retrieves a batch.
 
   - `model: optional string`
 
-    Model ID used to process the batch, like `gpt-6-astra`. OpenAI
+    Model ID used to process the batch, like `gpt-6.2-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model
     guide](/api/docs/models) to browse and compare available models.
@@ -1247,68 +1046,6 @@ Retrieves a batch.
     - `total_tokens: integer`
 
       The total number of tokens used.
-
-### Example
-
-```http
-curl https://api.openai.com/v1/batches/$BATCH_ID \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "completion_window": "completion_window",
-  "created_at": 0,
-  "endpoint": "endpoint",
-  "input_file_id": "input_file_id",
-  "object": "batch",
-  "status": "validating",
-  "cancelled_at": 0,
-  "cancelling_at": 0,
-  "completed_at": 0,
-  "error_file_id": "error_file_id",
-  "errors": {
-    "data": [
-      {
-        "code": "code",
-        "line": 0,
-        "message": "message",
-        "param": "param"
-      }
-    ],
-    "object": "object"
-  },
-  "expired_at": 0,
-  "expires_at": 0,
-  "failed_at": 0,
-  "finalizing_at": 0,
-  "in_progress_at": 0,
-  "metadata": {
-    "foo": "string"
-  },
-  "model": "model",
-  "output_file_id": "output_file_id",
-  "request_counts": {
-    "completed": 0,
-    "failed": 0,
-    "total": 0
-  },
-  "usage": {
-    "input_tokens": 0,
-    "input_tokens_details": {
-      "cached_tokens": 0
-    },
-    "output_tokens": 0,
-    "output_tokens_details": {
-      "reasoning_tokens": 0
-    },
-    "total_tokens": 0
-  }
-}
-```
 
 ### Example
 
@@ -1491,7 +1228,7 @@ curl https://api.openai.com/v1/batches/batch_abc123 \
 
   - `model: optional string`
 
-    Model ID used to process the batch, like `gpt-6-astra`. OpenAI
+    Model ID used to process the batch, like `gpt-6.2-astra`. OpenAI
     offers a wide range of models with different capabilities, performance
     characteristics, and price points. Refer to the [model
     guide](/api/docs/models) to browse and compare available models.

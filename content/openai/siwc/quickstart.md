@@ -37,8 +37,11 @@ partners and selected private clients.
 
 ## Make sign-in recognizable
 
-Label the action **Continue with ChatGPT**. Place it with your other sign-in
+The recommended labels are **Continue with ChatGPT** and **Sign in with ChatGPT**.
+For a compact button that matches your other sign-in options, you can use the
+ChatGPT logo with **ChatGPT** as the label. Place it with your other sign-in
 options, give it comparable visual prominence, and use approved OpenAI branding.
+See the [website guide](https://developers.openai.com/siwc/website) for button examples.
 
 Returning users should find the same sign-in method on subsequent visits. If
 someone already has an account, provide a clear way to confirm and link it. When

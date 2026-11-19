@@ -61,11 +61,11 @@ Content type: `multipart/form-data`
 
 ```http
 curl https://api.openai.com/v1/audio/voice_consents \
-    -H 'Content-Type: multipart/form-data' \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -F language=language \
-    -F name=name \
-    -F 'recording=@/path/to/recording'
+  -X POST \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -F "name=John Doe" \
+  -F "language=en-US" \
+  -F "recording=@$HOME/consent_recording.wav;type=audio/x-wav"
 ```
 
 #### 200 — Example
@@ -78,17 +78,6 @@ curl https://api.openai.com/v1/audio/voice_consents \
   "name": "name",
   "object": "audio.voice_consent"
 }
-```
-
-### Example
-
-```http
-curl https://api.openai.com/v1/audio/voice_consents \
-  -X POST \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -F "name=John Doe" \
-  -F "language=en-US" \
-  -F "recording=@$HOME/consent_recording.wav;type=audio/x-wav"
 ```
 
 ## Delete voice consent
@@ -120,9 +109,9 @@ Deletes a voice consent recording.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/audio/voice_consents/$CONSENT_ID \
-    -X DELETE \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
+curl https://api.openai.com/v1/audio/voice_consents/cons_1234 \
+  -X DELETE \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
 #### 200 — Example
@@ -133,14 +122,6 @@ curl https://api.openai.com/v1/audio/voice_consents/$CONSENT_ID \
   "deleted": true,
   "object": "audio.voice_consent"
 }
-```
-
-### Example
-
-```http
-curl https://api.openai.com/v1/audio/voice_consents/cons_1234 \
-  -X DELETE \
-  -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
 ## List voice consents
@@ -200,8 +181,8 @@ Returns a list of voice consent recordings.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/audio/voice_consents \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
+curl https://api.openai.com/v1/audio/voice_consents?limit=20 \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
 #### 200 — Example
@@ -222,13 +203,6 @@ curl https://api.openai.com/v1/audio/voice_consents \
   "first_id": "first_id",
   "last_id": "last_id"
 }
-```
-
-### Example
-
-```http
-curl https://api.openai.com/v1/audio/voice_consents?limit=20 \
-  -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
 ## Retrieve voice consent
@@ -276,8 +250,8 @@ Retrieves a voice consent recording.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/audio/voice_consents/$CONSENT_ID \
-    -H "Authorization: Bearer $OPENAI_API_KEY"
+curl https://api.openai.com/v1/audio/voice_consents/cons_1234 \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
 #### 200 — Example
@@ -290,13 +264,6 @@ curl https://api.openai.com/v1/audio/voice_consents/$CONSENT_ID \
   "name": "name",
   "object": "audio.voice_consent"
 }
-```
-
-### Example
-
-```http
-curl https://api.openai.com/v1/audio/voice_consents/cons_1234 \
-  -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
 ## Update voice consent
@@ -352,12 +319,13 @@ Content type: `application/json`
 ### Example
 
 ```http
-curl https://api.openai.com/v1/audio/voice_consents/$CONSENT_ID \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -d '{
-          "name": "name"
-        }'
+curl https://api.openai.com/v1/audio/voice_consents/cons_1234 \
+  -X POST \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "John Doe"
+  }'
 ```
 
 #### 200 — Example
@@ -370,18 +338,6 @@ curl https://api.openai.com/v1/audio/voice_consents/$CONSENT_ID \
   "name": "name",
   "object": "audio.voice_consent"
 }
-```
-
-### Example
-
-```http
-curl https://api.openai.com/v1/audio/voice_consents/cons_1234 \
-  -X POST \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "John Doe"
-  }'
 ```
 
 ## Domain Types

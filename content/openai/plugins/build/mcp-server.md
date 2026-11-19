@@ -44,6 +44,14 @@ For the Ruby examples, use Ruby 3.3 and install `mcp` version `1.10.0`, `rackup`
 
 
 
+
+
+
+For the Go examples, use Go 1.26 or later and install `github.com/modelcontextprotocol/go-sdk` version `v1.8.0` in your Go module. Save one complete server example as `main.go`, then run `go run .`. It listens for Streamable HTTP requests at `http://localhost:3000/mcp`.
+
+
+
+
 ## Create the server
 
 Create an MCP server with a stable name and version:
@@ -57,6 +65,54 @@ const server = new McpServer({
   name: "acme-projects",
   version: "1.0.0",
 });
+```
+
+```go
+package main
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+	"net"
+	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+	"time"
+)
+
+func main() {
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer cancel()
+	server := mcp.NewServer(&mcp.Implementation{Name: "acme-projects", Version: "1.0.0"}, nil)
+	handler := mcp.NewStreamableHTTPHandler(func(*http.Request) *mcp.Server { return server }, &mcp.StreamableHTTPOptions{Stateless: true, JSONResponse: true})
+	mux := http.NewServeMux()
+	mux.Handle("/mcp", handler)
+	port := "3000"
+	listener, err := net.Listen("tcp", "127.0.0.1:"+port)
+	if err != nil {
+		log.Fatal(err)
+	}
+	httpServer := &http.Server{Handler: mux, ReadHeaderTimeout: 5 * time.Second}
+	fmt.Println("Listening on http://" + listener.Addr().String())
+	shutdownDone := make(chan struct{})
+	go func() {
+		defer close(shutdownDone)
+		<-ctx.Done()
+		shutdownCtx, stop := context.WithTimeout(context.Background(), 5*time.Second)
+		defer stop()
+		if err := httpServer.Shutdown(shutdownCtx); err != nil {
+			log.Print(err)
+		}
+	}()
+	if err := httpServer.Serve(listener); err != nil && !errors.Is(err, http.ErrServerClosed) {
+		log.Fatal(err)
+	}
+	<-shutdownDone
+}
 ```
 
 ```ruby
@@ -97,6 +153,54 @@ const server = new McpServer(
       "Before updating a project, call get_project to confirm its ID and current status.",
   }
 );
+```
+
+```go
+package main
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+	"net"
+	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+	"time"
+)
+
+func main() {
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer cancel()
+	server := mcp.NewServer(&mcp.Implementation{Name: "acme-projects", Version: "1.0.0"}, &mcp.ServerOptions{Instructions: "Before updating a project, call get_project to confirm its ID and current status."})
+	handler := mcp.NewStreamableHTTPHandler(func(*http.Request) *mcp.Server { return server }, &mcp.StreamableHTTPOptions{Stateless: true, JSONResponse: true})
+	mux := http.NewServeMux()
+	mux.Handle("/mcp", handler)
+	port := "3000"
+	listener, err := net.Listen("tcp", "127.0.0.1:"+port)
+	if err != nil {
+		log.Fatal(err)
+	}
+	httpServer := &http.Server{Handler: mux, ReadHeaderTimeout: 5 * time.Second}
+	fmt.Println("Listening on http://" + listener.Addr().String())
+	shutdownDone := make(chan struct{})
+	go func() {
+		defer close(shutdownDone)
+		<-ctx.Done()
+		shutdownCtx, stop := context.WithTimeout(context.Background(), 5*time.Second)
+		defer stop()
+		if err := httpServer.Shutdown(shutdownCtx); err != nil {
+			log.Print(err)
+		}
+	}()
+	if err := httpServer.Serve(listener); err != nil && !errors.Is(err, http.ErrServerClosed) {
+		log.Fatal(err)
+	}
+	<-shutdownDone
+}
 ```
 
 ```ruby
@@ -189,6 +293,86 @@ server.registerTool(
     };
   }
 );
+```
+
+```go
+package main
+
+import (
+	"context"
+	"errors"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+	"net"
+	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+	"time"
+)
+
+type listProjectsInput struct {
+	Status string `json:"status,omitempty"`
+}
+type project struct {
+	ID     string `json:"id"`
+	Name   string `json:"name"`
+	Status string `json:"status"`
+}
+type listProjectsOutput struct {
+	Projects []project `json:"projects"`
+}
+
+func main() {
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer cancel()
+	server := mcp.NewServer(&mcp.Implementation{Name: "docs-example", Version: "1.0.0"}, nil)
+	closed := false
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "list_projects",
+		Description: "Use this when the user wants to find or review projects in their Acme workspace.",
+		InputSchema: map[string]any{"type": "object", "properties": map[string]any{
+			"status": map[string]any{"type": "string", "enum": []string{"active", "archived"}},
+		}},
+		Annotations: &mcp.ToolAnnotations{ReadOnlyHint: true, OpenWorldHint: &closed, DestructiveHint: &closed},
+	}, func(_ context.Context, _ *mcp.CallToolRequest, input listProjectsInput) (*mcp.CallToolResult, listProjectsOutput, error) {
+		// Local example data; replace this with your application data.
+		projects := []project{{ID: "project-1", Name: "Website", Status: "active"}, {ID: "project-2", Name: "Launch", Status: "archived"}}
+		selected := []project{}
+		for _, p := range projects {
+			if input.Status == "" || input.Status == p.Status {
+				selected = append(selected, p)
+			}
+		}
+		result := &mcp.CallToolResult{Content: []mcp.Content{&mcp.TextContent{Text: fmt.Sprintf("Found %d projects.", len(selected))}}}
+		return result, listProjectsOutput{Projects: selected}, nil
+	})
+	handler := mcp.NewStreamableHTTPHandler(func(*http.Request) *mcp.Server { return server }, &mcp.StreamableHTTPOptions{Stateless: true, JSONResponse: true})
+	mux := http.NewServeMux()
+	mux.Handle("/mcp", handler)
+	port := "3000"
+	listener, err := net.Listen("tcp", "127.0.0.1:"+port)
+	if err != nil {
+		log.Fatal(err)
+	}
+	httpServer := &http.Server{Handler: mux, ReadHeaderTimeout: 5 * time.Second}
+	fmt.Println("Listening on http://" + listener.Addr().String())
+	shutdownDone := make(chan struct{})
+	go func() {
+		defer close(shutdownDone)
+		<-ctx.Done()
+		shutdownCtx, stop := context.WithTimeout(context.Background(), 5*time.Second)
+		defer stop()
+		if err := httpServer.Shutdown(shutdownCtx); err != nil {
+			log.Print(err)
+		}
+	}()
+	if err := httpServer.Serve(listener); err != nil && !errors.Is(err, http.ErrServerClosed) {
+		log.Fatal(err)
+	}
+	<-shutdownDone
+}
 ```
 
 ```ruby

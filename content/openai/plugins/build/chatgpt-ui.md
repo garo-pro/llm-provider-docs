@@ -204,6 +204,14 @@ Best practices:
 
 
 
+For Go, use `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.8.0`. Install `esbuild` and `@modelcontextprotocol/ext-apps` with your browser dependencies. Bundle the browser component below with `npm exec -- esbuild dice-widget.ts --bundle --format=esm --outfile=dice-widget.js`, then run the Go server from that directory.
+
+
+
+
+
+
+
 For the Ruby server, install the `mcp` gem at version `1.10.0`. Build the browser component as described below, then run the server from the project directory.
 
 
@@ -309,6 +317,54 @@ server.registerTool(
 );
 
 export default server;
+```
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+	"math/rand/v2"
+	"os"
+	"regexp"
+)
+
+type rollInput struct {
+	Sides int `json:"sides"`
+}
+type die struct {
+	Sides int `json:"sides"`
+	Value int `json:"value"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "Decoupled dice", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "roll_dice", Description: "Roll a die without opening a widget.", InputSchema: map[string]any{"type": "object", "properties": map[string]any{"sides": map[string]any{"type": "integer", "minimum": 2}}, "required": []string{"sides"}}}, func(_ context.Context, _ *mcp.CallToolRequest, input rollInput) (*mcp.CallToolResult, die, error) {
+		return &mcp.CallToolResult{Content: []mcp.Content{}}, die{Sides: input.Sides, Value: rand.IntN(input.Sides) + 1}, nil
+	})
+	mcp.AddTool(server, &mcp.Tool{Name: "render_dice_widget", Description: "Show a previously rolled die.", Meta: mcp.Meta{"ui": map[string]any{"resourceUri": "ui://widget/dice.html"}}, InputSchema: map[string]any{"type": "object", "properties": map[string]any{"sides": map[string]any{"type": "integer", "minimum": 2}, "value": map[string]any{"type": "integer", "minimum": 1}}, "required": []string{"sides", "value"}}}, func(_ context.Context, _ *mcp.CallToolRequest, input die) (*mcp.CallToolResult, die, error) {
+		if input.Value > input.Sides {
+			return nil, die{}, fmt.Errorf("value exceeds the die's sides")
+		}
+		return &mcp.CallToolResult{Content: []mcp.Content{}}, input, nil
+	})
+	// Build the browser component first, then run from the project root.
+	script, err := os.ReadFile("dice-widget.js")
+	if err != nil {
+		log.Fatal(err)
+	}
+	escaped := regexp.MustCompile(`(?i)</script`).ReplaceAllLiteralString(string(script), `<\/script`)
+	html := `<!doctype html><html lang="en"><meta charset="utf-8"><title>Dice</title><body><div id="root"></div><script type="module">` + escaped + `</script></body></html>`
+	server.AddResource(&mcp.Resource{URI: "ui://widget/dice.html", Name: "widget", MIMEType: "text/html;profile=mcp-app"}, func(context.Context, *mcp.ReadResourceRequest) (*mcp.ReadResourceResult, error) {
+		return &mcp.ReadResourceResult{Contents: []*mcp.ResourceContents{{URI: "ui://widget/dice.html", MIMEType: "text/html;profile=mcp-app", Text: html}}}, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
 ```
 
 ```ruby
@@ -777,6 +833,39 @@ registerAppResource(
 );
 ```
 
+```go
+package main
+
+import (
+	"context"
+	"log"
+	"os"
+	"regexp"
+
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+)
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "docs-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "open_project_board", Title: "Open project board", Meta: mcp.Meta{"ui": map[string]any{"resourceUri": "ui://project-board/v1.html"}}}, func(context.Context, *mcp.CallToolRequest, struct{}) (*mcp.CallToolResult, any, error) {
+		return &mcp.CallToolResult{Content: []mcp.Content{&mcp.TextContent{Text: "Review the tasks in the project board."}}}, nil, nil
+	})
+	// Build the browser component first, then run from the project root.
+	script, err := os.ReadFile("web/dist/component.js")
+	if err != nil {
+		log.Fatal(err)
+	}
+	escaped := regexp.MustCompile(`(?i)</script`).ReplaceAllLiteralString(string(script), `<\/script`)
+	html := `<!doctype html><html lang="en"><meta charset="utf-8"><title>Project board</title><body><div id="root"></div><script type="module">` + escaped + `</script></body></html>`
+	server.AddResource(&mcp.Resource{URI: "ui://project-board/v1.html", Name: "widget", MIMEType: "text/html;profile=mcp-app"}, func(context.Context, *mcp.ReadResourceRequest) (*mcp.ReadResourceResult, error) {
+		return &mcp.ReadResourceResult{Contents: []*mcp.ResourceContents{{URI: "ui://project-board/v1.html", MIMEType: "text/html;profile=mcp-app", Text: html, Meta: mcp.Meta{"ui": map[string]any{"prefersBorder": true, "domain": "https://example.com", "csp": map[string]any{"connectDomains": []string{"https://api.example.com"}, "resourceDomains": []string{"https://static.example.com"}}}}}}}, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
+```
+
 ```ruby
 require "mcp"
 
@@ -832,6 +921,14 @@ MCP::Server::Transports::StdioTransport.new(server).open
 
 
 
+For Go, use `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.8.0`. Build `web/dist/component.js` in the preceding steps, then run the Go server from the project root.
+
+
+
+
+
+
+
 For Ruby, install the `mcp` gem at version `1.10.0` and run the server from the project root after building `web/dist/component.js` in the preceding steps.
 
 
@@ -856,12 +953,13 @@ Declare the exact domains the component connects to or loads resources from:
 Nested frames are blocked by default. Keep each allowlist as narrow as possible.
 The plugin review process checks the declared policy against the UI behavior.
 
-You can embed an existing editor or admin interface from your MCP server's own
-registrable domain. For example, a server at `https://api.example.com/mcp` can
-declare `https://app.example.com` in `frameDomains`. Provide the required
-justification at submission and follow the
-[iframe policy](https://developers.openai.com/plugins/plugin-guidelines#iframes-and-embedded-pages), including
-its restrictions on shared hosting and its review requirements.
+Plugins with UI can embed pages from their MCP server’s own registrable domain, including full existing editors and admin interfaces. For example, a server at `https://api.example.com/mcp` can embed `https://app.example.com`: both use the registrable domain `example.com`. Separate tenants on a shared hosting service count as different domains; using the same hosting provider does not establish ownership.
+
+Declare each required iframe origin in the resource CSP using `_meta.ui.csp.frameDomains` (or the legacy `_meta["openai/widgetCSP"].frame_domains`). For third-party domains, iframe embeds should be limited to cases where the embedded experience is essential.
+
+You must still provide a justification [when submitting a plugin that uses iframes](https://developers.openai.com/plugins/deploy/submission#complete-review-information). Explain what each embedded page does, why the plugin embeds it, and who controls its domain. Iframe use can require additional review or escalation and may lead to slower approval or rejection if the content cannot be assessed. Sharing the MCP server’s domain does not guarantee approval.
+
+All other plugin requirements still apply to embedded pages, including the [checkout](https://developers.openai.com/plugins/plugin-guidelines#5.3) and [privacy](https://developers.openai.com/plugins/plugin-guidelines#4) requirements.
 
 Component UI templates are the recommended path for production.
 

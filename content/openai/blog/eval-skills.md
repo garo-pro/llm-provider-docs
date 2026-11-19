@@ -209,6 +209,14 @@ A “good enough” approach looks like this:
 2. Save the JSONL trace to disk
 3. Parse the trace and run deterministic checks over the events
 
+
+
+
+Save the Go runner as `eval.go` and run `go run eval.go` from the project containing your `setup-demo-app` skill. Start from a checkout without a `demo-app` entry; the runner rejects existing output. It uses the installed Codex CLI and writes `evals/artifacts/test-01.jsonl` in that project. The trace remains available after success or failure; the runner reports its path with the result or error.
+
+
+
+
 Run a Codex evaluation
 
 ```typescript
@@ -287,6 +295,110 @@ console.log({
   ranNpmInstall: checkRanNpmInstall(events),
   hasPackageJson: checkPackageJsonExists(path.join(projectDir, "demo-app")),
 });
+```
+
+```go
+package main
+
+import (
+	"bytes"
+	"context"
+	"encoding/json"
+	"fmt"
+	"os"
+	"os/exec"
+	"path/filepath"
+	"strings"
+	"time"
+)
+
+type evaluationSummary struct {
+	TracePath      string `json:"tracePath"`
+	RanNpmInstall  bool   `json:"ranNpmInstall"`
+	HasPackageJSON bool   `json:"hasPackageJson"`
+}
+
+func runCodex(ctx context.Context, prompt, tracePath string) error {
+	command := exec.CommandContext(ctx, "codex", "exec", "--json", "--sandbox", "workspace-write", prompt)
+	var output, errors bytes.Buffer
+	command.Stdout, command.Stderr = &output, &errors
+	runErr := command.Run()
+	if err := os.MkdirAll(filepath.Dir(tracePath), 0755); err != nil {
+		return err
+	}
+	if err := os.WriteFile(tracePath, output.Bytes(), 0600); err != nil {
+		return err
+	}
+	if runErr != nil {
+		return fmt.Errorf("Codex failed: %w: %s", runErr, errors.String())
+	}
+	return nil
+}
+func ranNpmInstall(trace []byte) (bool, error) {
+	installed := false
+	for _, line := range bytes.Split(trace, []byte("\n")) {
+		if len(bytes.TrimSpace(line)) == 0 {
+			continue
+		}
+		var event struct {
+			Type string `json:"type"`
+			Item struct {
+				Type     string `json:"type"`
+				Status   string `json:"status"`
+				ExitCode *int   `json:"exit_code"`
+				Command  string `json:"command"`
+			} `json:"item"`
+		}
+		if err := json.Unmarshal(line, &event); err != nil {
+			return false, err
+		}
+		item := event.Item
+		installed = installed || (event.Type == "item.completed" && item.Type == "command_execution" && item.Status == "completed" && item.ExitCode != nil && *item.ExitCode == 0 && strings.Contains(item.Command, "npm install"))
+	}
+	return installed, nil
+}
+func evaluate(ctx context.Context) error {
+	projectDir, err := os.Getwd()
+	if err != nil {
+		return err
+	}
+	if _, err := os.Lstat(filepath.Join(projectDir, "demo-app")); err == nil {
+		return fmt.Errorf("demo-app already exists; start from a checkout without prior evaluation output")
+	} else if !os.IsNotExist(err) {
+		return err
+	}
+	tracePath := filepath.Join(projectDir, "evals", "artifacts", "test-01.jsonl")
+	prompt := "Create a demo app named demo-app using the $setup-demo-app skill"
+	if err := runCodex(ctx, prompt, tracePath); err != nil {
+		return fmt.Errorf("%w (trace: %s)", err, tracePath)
+	}
+	trace, err := os.ReadFile(tracePath)
+	if err != nil {
+		return err
+	}
+	installed, err := ranNpmInstall(trace)
+	if err != nil {
+		return err
+	}
+	info, err := os.Stat(filepath.Join(projectDir, "demo-app", "package.json"))
+	if err != nil && !os.IsNotExist(err) {
+		return err
+	}
+	summary := evaluationSummary{TracePath: tracePath, RanNpmInstall: installed, HasPackageJSON: err == nil && info.Mode().IsRegular()}
+	return json.NewEncoder(os.Stdout).Encode(summary)
+}
+
+func run() error {
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Minute)
+	defer cancel()
+	return evaluate(ctx)
+}
+func main() {
+	if err := run(); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+}
 ```
 
 ```ruby

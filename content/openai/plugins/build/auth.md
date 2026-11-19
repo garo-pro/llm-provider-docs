@@ -516,6 +516,14 @@ These example IDs do not encode profile labels or internal relationships. They a
 
 
 
+
+
+
+`loadAuthenticatedProfile` validates the request credentials and loads the corresponding persisted profile. Pass the token from your server's request context, not from model-supplied tool arguments. The complete local example uses `github.com/golang-jwt/jwt/v5` and a temporary profile file; connect your production handler to your auth provider and persistent storage.
+
+
+
+
 Return an authenticated user profile
 
 ```typescript
@@ -547,6 +555,31 @@ async function getProfile(requestContext: { token: string }) {
     structuredContent: profile,
     content: [{ type: "text", text: JSON.stringify(profile) }],
   };
+}
+```
+
+```go
+func (service profileService) getProfile(token string) (map[string]any, error) {
+	account, err := service.loadAuthenticatedProfile(token)
+	if err != nil {
+		return nil, err
+	}
+	id, ok := account["profileId"].(string)
+	if !ok || strings.TrimSpace(id) == "" {
+		return map[string]any{"isError": true, "content": []map[string]string{{"type": "text", "text": "Profile identity unavailable."}}}, nil
+	}
+	// Return the persisted ID unchanged, including across repeated requests.
+	profile := map[string]string{"id": id}
+	for _, field := range []string{"name", "email", "nickname"} {
+		if value, ok := account[field].(string); ok {
+			profile[field] = value
+		}
+	}
+	text, err := json.Marshal(profile)
+	if err != nil {
+		return nil, err
+	}
+	return map[string]any{"isError": false, "structuredContent": profile, "content": []map[string]string{{"type": "text", "text": string(text)}}}, nil
 }
 ```
 
@@ -627,7 +660,7 @@ Triggering the tool-level OAuth flow requires both metadata (`securitySchemes` a
 
    If you omit the array entirely, the tool inherits whatever default the server advertises. Declaring both `noauth` and `oauth2` tells ChatGPT it can start with anonymous calls but that linking unlocks privileged behavior. Regardless of what you signal to the client, your server must still verify the token, scopes, and audience on every invocation.
 
-   Example (public + optional auth)—TypeScript SDK
+   Example: public tool with optional authentication
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -661,7 +694,7 @@ server.registerTool(
 ```
 
 
-   Example (auth required)—TypeScript SDK
+   Example: tool that requires authentication
 
 ```typescript
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";

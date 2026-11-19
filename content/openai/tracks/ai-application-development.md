@@ -236,6 +236,18 @@ const isCorrect =
 console.log(isCorrect ? "Correct!" : "Incorrect.");
 ```
 
+```go
+correctAnswer := []string{"Eggs", "Sugar"}
+modelAnswer := []string{"Sugar", "Eggs"}
+slices.Sort(correctAnswer)
+slices.Sort(modelAnswer)
+if slices.Equal(correctAnswer, modelAnswer) {
+	fmt.Println("Correct!")
+} else {
+	fmt.Println("Incorrect.")
+}
+```
+
 ```ruby
 correct_answer = ["Eggs", "Sugar"]
 model_answer = ["Sugar", "Eggs"]

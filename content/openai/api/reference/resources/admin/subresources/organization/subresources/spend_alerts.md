@@ -101,44 +101,6 @@ Content type: `application/json`
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/spend_alerts \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
-    -d '{
-          "currency": "USD",
-          "interval": "month",
-          "notification_channel": {
-            "recipients": [
-              "string"
-            ],
-            "type": "email"
-          },
-          "threshold_amount": 0
-        }'
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "currency": "USD",
-  "interval": "month",
-  "notification_channel": {
-    "recipients": [
-      "string"
-    ],
-    "type": "email",
-    "subject_prefix": "subject_prefix"
-  },
-  "object": "organization.spend_alert",
-  "threshold_amount": 0
-}
-```
-
-### Example
-
-```http
 curl -X POST https://api.openai.com/v1/organization/spend_alerts \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
   -H "Content-Type: application/json" \
@@ -202,24 +164,6 @@ Deletes an organization spend alert.
     Always `organization.spend_alert.deleted`.
 
     - `"organization.spend_alert.deleted"`
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/spend_alerts/$ALERT_ID \
-    -X DELETE \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "deleted": true,
-  "object": "organization.spend_alert.deleted"
-}
-```
 
 ### Example
 
@@ -340,40 +284,6 @@ Lists organization spend alerts.
 ### Example
 
 ```http
-curl https://api.openai.com/v1/organization/spend_alerts \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "data": [
-    {
-      "id": "id",
-      "currency": "USD",
-      "interval": "month",
-      "notification_channel": {
-        "recipients": [
-          "string"
-        ],
-        "type": "email",
-        "subject_prefix": "subject_prefix"
-      },
-      "object": "organization.spend_alert",
-      "threshold_amount": 0
-    }
-  ],
-  "first_id": "first_id",
-  "has_more": true,
-  "last_id": "last_id",
-  "object": "list"
-}
-```
-
-### Example
-
-```http
 curl https://api.openai.com/v1/organization/spend_alerts?limit=20&order=asc \
   -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
   -H "Content-Type: application/json"
@@ -465,32 +375,6 @@ Retrieves an organization spend alert.
   - `threshold_amount: integer`
 
     The alert threshold amount, in cents.
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/spend_alerts/$ALERT_ID \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY"
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "currency": "USD",
-  "interval": "month",
-  "notification_channel": {
-    "recipients": [
-      "string"
-    ],
-    "type": "email",
-    "subject_prefix": "subject_prefix"
-  },
-  "object": "organization.spend_alert",
-  "threshold_amount": 0
-}
-```
 
 ### Example
 
@@ -618,44 +502,6 @@ Content type: `application/json`
   - `threshold_amount: integer`
 
     The alert threshold amount, in cents.
-
-### Example
-
-```http
-curl https://api.openai.com/v1/organization/spend_alerts/$ALERT_ID \
-    -H 'Content-Type: application/json' \
-    -H "Authorization: Bearer $OPENAI_ADMIN_KEY" \
-    -d '{
-          "currency": "USD",
-          "interval": "month",
-          "notification_channel": {
-            "recipients": [
-              "string"
-            ],
-            "type": "email"
-          },
-          "threshold_amount": 0
-        }'
-```
-
-#### 200 — Example
-
-```json
-{
-  "id": "id",
-  "currency": "USD",
-  "interval": "month",
-  "notification_channel": {
-    "recipients": [
-      "string"
-    ],
-    "type": "email",
-    "subject_prefix": "subject_prefix"
-  },
-  "object": "organization.spend_alert",
-  "threshold_amount": 0
-}
-```
 
 ### Example
 

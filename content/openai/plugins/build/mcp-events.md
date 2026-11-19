@@ -275,6 +275,165 @@ export async function sendEvent(
 }
 ```
 
+```go
+package main
+
+import (
+	"bytes"
+	"context"
+	"crypto/hmac"
+	"crypto/sha256"
+	"encoding/base64"
+	"encoding/json"
+	"errors"
+	"fmt"
+	"io"
+	"net"
+	"net/http"
+	"net/netip"
+	"net/url"
+	"os"
+	"strconv"
+	"strings"
+	"time"
+)
+
+type Subscription struct{ ID, URL, Secret string }
+type DeliveryResult struct {
+	Accepted bool `json:"accepted"`
+	Status   int  `json:"status"`
+}
+
+func sendEvent(ctx context.Context, subscription Subscription, event map[string]any) (DeliveryResult, error) {
+	body, err := json.Marshal(event)
+	if err != nil {
+		return DeliveryResult{}, err
+	}
+	if len(body) > 256*1024 {
+		return DeliveryResult{}, errors.New("Event payload exceeds 256 KiB")
+	}
+	id, ok := event["eventId"].(string)
+	if !ok || id == "" {
+		return DeliveryResult{}, errors.New("Missing eventId")
+	}
+	target, err := url.Parse(subscription.URL)
+	if err != nil || target.Host == "" || target.Scheme != "https" || target.User != nil || target.Fragment != "" {
+		return DeliveryResult{}, errors.New("Expected an HTTPS subscription URL without credentials or a fragment")
+	}
+	key, err := base64.StdEncoding.Strict().DecodeString(strings.TrimPrefix(subscription.Secret, "whsec_"))
+	if err != nil || len(key) == 0 {
+		return DeliveryResult{}, errors.New("Invalid webhook secret")
+	}
+	timestamp := strconv.FormatInt(time.Now().Unix(), 10)
+	mac := hmac.New(sha256.New, key)
+	mac.Write([]byte(id + "." + timestamp + "."))
+	mac.Write(body)
+	request, err := http.NewRequestWithContext(ctx, http.MethodPost, target.String(), bytes.NewReader(body))
+	if err != nil {
+		return DeliveryResult{}, err
+	}
+	request.Header.Set("Content-Type", "application/json")
+	request.Header.Set("webhook-id", id)
+	request.Header.Set("webhook-timestamp", timestamp)
+	request.Header.Set("webhook-signature", "v1,"+base64.StdEncoding.EncodeToString(mac.Sum(nil)))
+	request.Header.Set("X-MCP-Subscription-Id", subscription.ID)
+	response, err := webhookClient.Do(request)
+	if err != nil {
+		return DeliveryResult{}, err
+	}
+	defer response.Body.Close()
+	if response.StatusCode >= 300 && response.StatusCode < 400 {
+		return DeliveryResult{}, errors.New("Webhook redirects are not allowed")
+	}
+	return DeliveryResult{Accepted: response.StatusCode >= 200 && response.StatusCode < 300, Status: response.StatusCode}, nil
+}
+
+// Resolve and validate at connection time, then dial that exact IP. TLS still
+// verifies the original URL hostname. Proxies and redirects are not permitted.
+func publicAddress(ip netip.Addr) bool {
+	ip = ip.Unmap()
+	if !ip.IsGlobalUnicast() || ip.IsPrivate() || ip.IsLoopback() || ip.IsLinkLocalUnicast() {
+		return false
+	}
+	for _, cidr := range []string{"0.0.0.0/8", "100.64.0.0/10", "192.0.0.0/24", "192.0.2.0/24", "192.88.99.0/24", "198.18.0.0/15", "198.51.100.0/24", "203.0.113.0/24", "240.0.0.0/4", "2001::/23", "2001:db8::/32", "2002::/16", "3fff::/20"} {
+		if netip.MustParsePrefix(cidr).Contains(ip) {
+			return false
+		}
+	}
+	return ip.Is4() || netip.MustParsePrefix("2000::/3").Contains(ip)
+}
+
+type lookupIPs func(context.Context, string, string) ([]netip.Addr, error)
+type dialIP func(context.Context, string, string) (net.Conn, error)
+
+func validatedDial(lookup lookupIPs, dial dialIP) dialIP {
+	return func(ctx context.Context, network, address string) (net.Conn, error) {
+		host, port, err := net.SplitHostPort(address)
+		if err != nil {
+			return nil, err
+		}
+		ips, err := lookup(ctx, "ip", host)
+		if err != nil {
+			return nil, err
+		}
+		if len(ips) == 0 {
+			return nil, errors.New("Webhook hostname has no addresses")
+		}
+		for _, ip := range ips {
+			if !publicAddress(ip) {
+				return nil, errors.New("Webhook destination is not public")
+			}
+		}
+		// Do not resolve the hostname again in the dialer (DNS rebinding).
+		var failures []error
+		for _, ip := range ips {
+			connection, err := dial(ctx, network, net.JoinHostPort(ip.String(), port))
+			if err == nil {
+				return connection, nil
+			}
+			failures = append(failures, err)
+			if ctx.Err() != nil {
+				break
+			}
+		}
+		return nil, errors.Join(failures...)
+	}
+}
+
+var webhookClient = &http.Client{
+	Timeout:       10 * time.Second,
+	CheckRedirect: func(*http.Request, []*http.Request) error { return http.ErrUseLastResponse },
+	Transport: &http.Transport{
+		Proxy:               nil,
+		DialContext:         validatedDial(net.DefaultResolver.LookupNetIP, (&net.Dialer{Timeout: 5 * time.Second}).DialContext),
+		TLSHandshakeTimeout: 5 * time.Second,
+	},
+}
+
+// Supply one JSON object on standard input with subscription (ID, URL, Secret)
+// and event fields. Keep the secret out of command-line arguments and logs.
+func run() error {
+	var input struct {
+		Subscription Subscription   `json:"subscription"`
+		Event        map[string]any `json:"event"`
+	}
+	if err := json.NewDecoder(io.LimitReader(os.Stdin, 2*1024*1024)).Decode(&input); err != nil {
+		return err
+	}
+	result, err := sendEvent(context.Background(), input.Subscription, input.Event)
+	if err != nil {
+		return err
+	}
+	return json.NewEncoder(os.Stdout).Encode(result)
+}
+func main() {
+	if err := run(); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+}
+```
+
 ```ruby
 require "standardwebhooks"
 require "net/http"

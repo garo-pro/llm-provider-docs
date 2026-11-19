@@ -55,4 +55,4 @@ Use this as a lightweight map for AI tools. Each Plugins page has a Markdown twi
 - [Quickstart](https://developers.openai.com/plugins/quickstart.md): Connect an MCP server and test the resulting plugin in ChatGPT Work.
 
 ## Reference
-- [Reference](https://developers.openai.com/plugins/reference.md): Reference for ChatGPT-specific UI extensions and metadata.
+- [Reference](https://developers.openai.com/plugins/reference.md): Reference for the legacy window.openai APIs.

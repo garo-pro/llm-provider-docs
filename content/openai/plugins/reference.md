@@ -2,11 +2,9 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
-**Start with the open standard.** Use the 
-  [MCP Apps specification](https://modelcontextprotocol.io/docs/extensions/apps) 
-  for shared UI fields and bridge methods.
-  **OpenAI extensions are optional** and live in `window.openai`
-  when you want ChatGPT-specific capabilities.
+**For new MCP apps, follow the [MCP Apps UI](https://modelcontextprotocol.io/docs/extensions/apps) and [OpenAI MCP extensions](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md) specifications.** ChatGPT supports and endorses both specifications as the official way to add UI to your MCP server.
+
+This page documents the legacy `window.openai` API, which predates these specifications. Use these APIs only for capabilities these specifications don't cover.
 
 ## `window.openai` component bridge
 
@@ -357,6 +355,14 @@ OpenAI-specific metadata for compatibility and optional extensions.
 
 
 
+The Go resource examples use `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.8.0`. Save your bundled MCP Apps browser component as `widget.js` in the project directory, then run the Go server from that directory.
+
+
+
+
+
+
+
 The Ruby resource examples require the `mcp` gem at version `1.10.0` and your bundled MCP Apps browser component saved as `widget.js` in the project directory. Run the Ruby server from that directory.
 
 
@@ -424,6 +430,63 @@ registerAppTool(
     };
   }
 );
+```
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+	"os"
+	"regexp"
+	"strings"
+)
+
+type searchInput struct {
+	Q string `json:"q"`
+}
+type document struct {
+	ID    string `json:"id"`
+	Title string `json:"title"`
+	URL   string `json:"url"`
+}
+type searchOutput struct {
+	Results []document `json:"results"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "docs-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "search", Title: "Public Search", Description: "Search public documents.", Meta: mcp.Meta{
+		"securitySchemes": []map[string]any{{"type": "noauth"}, {"type": "oauth2", "scopes": []string{"search.read"}}},
+		"ui":              map[string]any{"resourceUri": "ui://widget/story.html"}, "openai/toolInvocation/invoking": "Searching…", "openai/toolInvocation/invoked": "Results ready",
+	}}, func(_ context.Context, _ *mcp.CallToolRequest, input searchInput) (*mcp.CallToolResult, searchOutput, error) {
+		// Local example data; replace this with your application data.
+		documents := []document{{ID: "intro", Title: "Introduction to Acme", URL: "https://example.com/intro"}}
+		found := []document{}
+		for _, item := range documents {
+			if strings.Contains(strings.ToLower(item.Title), strings.ToLower(input.Q)) {
+				found = append(found, item)
+			}
+		}
+		return &mcp.CallToolResult{Content: []mcp.Content{&mcp.TextContent{Text: fmt.Sprintf("Found %d results.", len(found))}}}, searchOutput{Results: found}, nil
+	})
+	// Build the browser component first, then run from the project root.
+	script, err := os.ReadFile("widget.js")
+	if err != nil {
+		log.Fatal(err)
+	}
+	escaped := regexp.MustCompile(`(?i)</script`).ReplaceAllLiteralString(string(script), `<\/script`)
+	html := `<!doctype html><html lang="en"><meta charset="utf-8"><title>Tool result</title><body><div id="root"></div><script type="module">` + escaped + `</script></body></html>`
+	server.AddResource(&mcp.Resource{URI: "ui://widget/story.html", Name: "widget", MIMEType: "text/html;profile=mcp-app"}, func(context.Context, *mcp.ReadResourceRequest) (*mcp.ReadResourceResult, error) {
+		return &mcp.ReadResourceResult{Contents: []*mcp.ResourceContents{{URI: "ui://widget/story.html", MIMEType: "text/html;profile=mcp-app", Text: html}}}, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
 ```
 
 ```ruby
@@ -560,6 +623,35 @@ server.registerTool(
     structuredContent: { recipes: await fetchSavedRecipes() },
   })
 );
+```
+
+```go
+package main
+
+import (
+	"context"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+)
+
+type recipe struct {
+	ID    string `json:"id"`
+	Title string `json:"title"`
+}
+type recipeOutput struct {
+	Recipes []recipe `json:"recipes"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "docs-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "list_saved_recipes", Description: "Returns the user's saved recipes without modifying them.", Annotations: &mcp.ToolAnnotations{ReadOnlyHint: true}}, func(context.Context, *mcp.CallToolRequest, struct{}) (*mcp.CallToolResult, recipeOutput, error) {
+		// Local example data; replace this with your application data.
+		return nil, recipeOutput{Recipes: []recipe{{ID: "pasta", Title: "Tomato pasta"}}}, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
 ```
 
 ```ruby
@@ -739,6 +831,64 @@ registerAppTool(
 );
 ```
 
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"log"
+	"os"
+	"regexp"
+
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+)
+
+type zooInput struct {
+	Count *int `json:"count,omitempty"`
+}
+type animal struct {
+	ID      string `json:"id"`
+	Name    string `json:"name"`
+	Species string `json:"species"`
+}
+type zooOutput struct {
+	Animals []animal `json:"animals"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "docs-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "get_zoo_animals", Meta: mcp.Meta{"ui": map[string]any{"resourceUri": "ui://widget/widget.html"}}, InputSchema: map[string]any{"type": "object", "properties": map[string]any{"count": map[string]any{"type": "integer", "minimum": 1, "maximum": 20}}}}, func(_ context.Context, _ *mcp.CallToolRequest, input zooInput) (*mcp.CallToolResult, zooOutput, error) {
+		count := 10
+		if input.Count != nil {
+			count = *input.Count
+		}
+		// Local example data; replace this with your application data.
+		animals := []animal{}
+		byID := map[string]animal{}
+		for i := 1; i <= count; i++ {
+			value := animal{ID: fmt.Sprintf("animal-%d", i), Name: fmt.Sprintf("Penguin %d", i), Species: "Penguin"}
+			animals = append(animals, value)
+			byID[value.ID] = value
+		}
+		return &mcp.CallToolResult{Content: []mcp.Content{&mcp.TextContent{Text: fmt.Sprintf("Here are %d animals.", count)}}, Meta: mcp.Meta{"allAnimalsById": byID}}, zooOutput{Animals: animals}, nil
+	})
+	// Build the browser component first, then run from the project root.
+	script, err := os.ReadFile("widget.js")
+	if err != nil {
+		log.Fatal(err)
+	}
+	escaped := regexp.MustCompile(`(?i)</script`).ReplaceAllLiteralString(string(script), `<\/script`)
+	html := `<!doctype html><html lang="en"><meta charset="utf-8"><title>Tool result</title><body><div id="root"></div><script type="module">` + escaped + `</script></body></html>`
+	server.AddResource(&mcp.Resource{URI: "ui://widget/widget.html", Name: "widget", MIMEType: "text/html;profile=mcp-app"}, func(context.Context, *mcp.ReadResourceRequest) (*mcp.ReadResourceResult, error) {
+		return &mcp.ReadResourceResult{Contents: []*mcp.ResourceContents{{URI: "ui://widget/widget.html", MIMEType: "text/html;profile=mcp-app", Text: html}}}, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
+```
+
 ```ruby
 require "mcp"
 
@@ -890,6 +1040,51 @@ server.registerTool(
     };
   }
 );
+```
+
+```go
+package main
+
+import (
+	"context"
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+	"log"
+)
+
+type cafe struct {
+	Name    string `json:"name"`
+	Address string `json:"address"`
+}
+type cafeOutput struct {
+	Cafes []cafe `json:"cafes"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "docs-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{Name: "recommend_cafe"}, func(_ context.Context, request *mcp.CallToolRequest, _ struct{}) (*mcp.CallToolResult, cafeOutput, error) {
+		meta := request.Params.Meta
+		locale, _ := meta["openai/locale"].(string)
+		city := "your area"
+		if location, ok := meta["openai/userLocation"].(map[string]any); ok {
+			if value, ok := location["city"].(string); ok {
+				city = value
+			}
+		}
+		// Local example data; replace this with your application data.
+		cafes := []cafe{}
+		if city == "San Francisco" {
+			cafes = append(cafes, cafe{Name: "Example Cafe", Address: "123 Example Street, San Francisco"})
+		}
+		text := "Cafes in " + city
+		if locale == "es" {
+			text = "Cafés en " + city
+		}
+		return &mcp.CallToolResult{Content: []mcp.Content{&mcp.TextContent{Text: text}}}, cafeOutput{Cafes: cafes}, nil
+	})
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
 ```
 
 ```ruby
