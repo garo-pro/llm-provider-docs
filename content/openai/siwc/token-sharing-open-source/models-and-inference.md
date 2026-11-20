@@ -46,11 +46,52 @@ curl --no-buffer https://api.openai.com/v1/responses \
   }'
 ```
 
-### Python SDK example
 
-Set the `api_key` parameter to the OAuth access token; the SDK sends it as the bearer credential.
+
+
+### SDK example
+
+Set `ACCESS_TOKEN` to the OAuth access token. The SDK sends it as the bearer credential.
+
+
+
+
+For TypeScript, install the SDK with `npm install openai`. Save the complete example below as `token-sharing.ts` in the directory where you installed the SDK, then run `node --experimental-strip-types token-sharing.ts`.
+
+
+
 
 Stream with an OAuth access token authorized for ChatGPT plan usage
+
+```typescript
+import OpenAI from "openai";
+
+const accessToken = process.env.ACCESS_TOKEN;
+if (!accessToken) throw new Error("Set ACCESS_TOKEN to the user's OAuth token");
+const client = new OpenAI({
+  apiKey: accessToken,
+  baseURL: "https://api.openai.com/v1",
+  maxRetries: 0,
+});
+const stream = await client.responses.create({
+  model: "gpt-6.2-sol",
+  input: [{ role: "user", content: "Say exactly: Hello, world!" }],
+  store: false,
+  stream: true,
+});
+let completed = false;
+for await (const event of stream) {
+  if (event.type === "response.output_text.delta")
+    process.stdout.write(event.delta);
+  else if (event.type === "response.failed") {
+    throw new Error(
+      `Response failed: ${event.response.error?.code ?? "unknown_error"}`
+    );
+  } else if (event.type === "response.completed") completed = true;
+}
+if (!completed) throw new Error("Stream ended without response.completed");
+process.stdout.write("\n");
+```
 
 ```python
 import os

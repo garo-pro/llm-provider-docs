@@ -100,16 +100,109 @@ Revoke matching sessions and credentials that can renew them. Enforce revocation
 on every server that accepts sessions.
 
 <details>
-  <summary>Example: Validate a Logout Token in Python</summary>
+  <summary>Example: Validate a Logout Token</summary>
 
-Install `PyJWT[crypto]` to validate both logout scopes using production
-settings. This example allows five seconds of clock tolerance.
+Both examples allow five seconds of clock tolerance. Set `CLIENT_ID` to your registered app’s client ID.
+
+
+
+
+Install `PyJWT[crypto]` for Python.
+
+
+
+
+
+
+
+For TypeScript, install `jose`. Save the complete source as `automatic-logout.ts` and pass the signed token through standard input to `node --experimental-strip-types automatic-logout.ts`. The command verifies the token; session revocation belongs in your application.
+
+
+
 
 Fetch signing keys from the configured OpenAI JWKS endpoint
 (`https://auth.openai.com/.well-known/jwks.json`) and support key rotation.
 Never use a key URL supplied in the token. For staging, use
 `https://auth.api.openai.org` as the issuer and
 `https://auth.api.openai.org/.well-known/jwks.json` as its JWKS endpoint.
+
+```typescript
+import { createRemoteJWKSet, decodeProtectedHeader, jwtVerify } from "jose";
+
+const ISSUER = "https://auth.openai.com";
+const CLIENT_ID = "oaiapp_example";
+const CLOCK_TOLERANCE = 5;
+const LOGOUT_EVENT = "http://schemas.openid.net/event/backchannel-logout";
+const jwks = createRemoteJWKSet(
+  new URL("https://auth.openai.com/.well-known/jwks.json")
+);
+
+const nonempty = (value: unknown): value is string =>
+  typeof value === "string" && value.trim().length > 0;
+
+export async function verifyLogoutToken(logoutToken: string) {
+  const header = decodeProtectedHeader(logoutToken);
+  if (
+    header.alg !== "RS256" ||
+    header.typ !== "logout+jwt" ||
+    !nonempty(header.kid)
+  ) {
+    throw new Error("Invalid Logout Token header");
+  }
+  // Only the configured JWKS is trusted; never follow token-supplied key URLs.
+  const { payload } = await jwtVerify(logoutToken, jwks, {
+    algorithms: ["RS256"],
+    issuer: ISSUER,
+    audience: CLIENT_ID,
+    requiredClaims: ["iss", "aud", "iat", "exp", "jti", "events"],
+    clockTolerance: CLOCK_TOLERANCE,
+    maxTokenAge: 120,
+  });
+  const { iat, exp, events } = payload;
+  const now = Date.now() / 1000;
+  if (
+    typeof iat !== "number" ||
+    !Number.isFinite(iat) ||
+    typeof exp !== "number" ||
+    !Number.isFinite(exp) ||
+    iat > now + CLOCK_TOLERANCE ||
+    exp <= iat ||
+    exp > iat + 120 ||
+    (!("sub" in payload) && !("sid" in payload)) ||
+    ("sub" in payload && !nonempty(payload.sub)) ||
+    ("sid" in payload && !nonempty(payload.sid)) ||
+    !nonempty(payload.jti) ||
+    !events ||
+    typeof events !== "object" ||
+    Array.isArray(events) ||
+    !(LOGOUT_EVENT in events) ||
+    "nonce" in payload
+  ) {
+    throw new Error("Invalid Logout Token claims");
+  }
+  const event = (events as Record<string, unknown>)[LOGOUT_EVENT];
+  if (
+    !event ||
+    typeof event !== "object" ||
+    Array.isArray(event) ||
+    Object.keys(event).length
+  ) {
+    throw new Error("Invalid logout event");
+  }
+  return payload;
+}
+// Read the sensitive token from stdin, not command-line arguments or logs.
+let token = "";
+for await (const chunk of process.stdin) {
+  token += chunk;
+  if (Buffer.byteLength(token) > 65536)
+    throw new Error("Logout Token is too large");
+}
+await verifyLogoutToken(token.trim());
+console.log(
+  "Logout Token verified; use the returned claims to revoke app sessions."
+);
+```
 
 ```python
 import math
@@ -187,11 +280,27 @@ def verify_logout_token(logout_token):
 
 After validation, use the returned claims to select and revoke sessions. In your
 endpoint, parse the form body, handle duplicate requests, and return HTTP
-responses. Catch
+responses.
+
+
+
+
+In Python, catch
 `jwt.InvalidTokenError` for invalid tokens. An unknown signing key can raise
 `jwt.PyJWKClientError`; distinguish an unknown key in a successfully fetched key
 set from a failure to fetch keys or a storage failure. Treat both failures as
 server errors.
+
+
+
+
+
+
+
+In TypeScript, reject tokens that fail validation without revoking sessions. Handle JWKS fetch failures as temporary server failures and distinguish them from an invalid token or an unknown signing key. Do not return verifier diagnostics or tokens to callers.
+
+
+
 
 </details>
 

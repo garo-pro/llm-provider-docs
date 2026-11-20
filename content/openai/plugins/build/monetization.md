@@ -280,6 +280,14 @@ You can mirror this pattern and swap in your logic:
 
 
 
+Install `@modelcontextprotocol/sdk` and `zod` in your project. Save the TypeScript server as `checkout.ts` and start it with `node --experimental-strip-types checkout.ts`. Connect an MCP client over stdio to invoke `complete_checkout`. This fixture returns fixed local order data and does not process payments.
+
+
+
+
+
+
+
 Install [`fastmcp`](https://gofastmcp.com/) and `pydantic` to run this Python
 example. The tool's `output_schema` declares the MCP `outputSchema`;
 `ToolResult.structured_content` supplies `structuredContent` and `meta` supplies
@@ -291,7 +299,7 @@ example. The tool's `output_schema` declares the MCP `outputSchema`;
 
 
 
-The Go example uses `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.8.0`. Save it as `main.go` in your Go module and run `go run .`. It returns fixed local checkout data and does not process payments.
+The Go example uses `github.com/modelcontextprotocol/go-sdk/mcp`. Save it as `main.go` in your Go module and run `go run .`. It returns fixed local checkout data and does not process payments.
 
 
 
@@ -299,7 +307,7 @@ The Go example uses `github.com/modelcontextprotocol/go-sdk/mcp` at version `v1.
 
 
 
-The Ruby example uses the `mcp` gem at version `1.10.0`; save the example in a file and run it with Ruby.
+The Ruby example uses the `mcp` gem. Save the example in a file and run it with Ruby.
 
 
 
@@ -308,6 +316,105 @@ The local fixture accepts `example-session` and `example-payment-token`
 and returns a sample response without charging a payment method or creating an order.
 
 Register a checkout tool
+
+```typescript
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
+const server = new McpServer({
+  name: "Checkout response fixture",
+  version: "1.0.0",
+});
+server.registerTool(
+  "complete_checkout",
+  {
+    description:
+      "Return a local checkout response fixture; never charge a payment method or create a real order.",
+    inputSchema: {
+      checkout_session_id: z.literal("example-session"),
+      buyer: z.object({ email: z.string().email() }),
+      payment_data: z.object({ token: z.literal("example-payment-token") }),
+    },
+  },
+  async () => ({
+    content: [],
+    _meta: { "openai/checkoutSessionId": "checkout-flow" },
+    // Fixed local response data, not a payment or order API response.
+    structuredContent: {
+      id: "example-session",
+      status: "completed",
+      currency: "USD",
+      line_items: [
+        {
+          id: "line_item_1",
+          item: {
+            id: "item_1",
+            quantity: 1,
+          },
+          base_amount: 3000,
+          discount: 0,
+          subtotal: 3000,
+          tax: 300,
+          total: 3300,
+        },
+      ],
+      fulfillment_address: {
+        name: "Jane Customer",
+        line_one: "123 Main St",
+        line_two: "Apt 4B",
+        city: "San Francisco",
+        state: "CA",
+        country: "US",
+        postal_code: "94107",
+        phone_number: "+1 (555) 555-5555",
+      },
+      fulfillment_options: [
+        {
+          id: "fulfillment_option_1",
+          type: "shipping",
+          title: "Standard shipping",
+          subtitle: "3-5 business days",
+          carrier: "USPS",
+          earliest_delivery_time: "2026-02-24T15:00:00Z",
+          latest_delivery_time: "2026-02-28T18:00:00Z",
+          subtotal: 0,
+          tax: 0,
+          total: 0,
+        },
+      ],
+      fulfillment_option_id: "fulfillment_option_1",
+      totals: [
+        {
+          type: "items_base_amount",
+          display_text: "Items subtotal",
+          amount: 3000,
+        },
+        {
+          type: "subtotal",
+          display_text: "Subtotal",
+          amount: 3000,
+        },
+        {
+          type: "tax",
+          display_text: "Tax",
+          amount: 300,
+        },
+        {
+          type: "total",
+          display_text: "Total",
+          amount: 3300,
+        },
+      ],
+      order: {
+        id: "order_id_123",
+        checkout_session_id: "example-session",
+        permalink_url: "",
+      },
+    },
+  })
+);
+await server.connect(new StdioServerTransport());
+```
 
 ```python
 from typing import Any, Literal
