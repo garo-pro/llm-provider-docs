@@ -120,7 +120,7 @@ work more autonomously.
 - [File transcription](https://developers.openai.com/api/docs/guides/speech-to-text.md): Learn how to transcribe recorded audio files, stream file transcripts, and use specialized speech-to-text features.
 - [Files and artifacts](https://developers.openai.com/api/docs/guides/agents-api/environments/files.md): Retrieve files from your environment and preserve published outputs.
 - [Fine-tuning best practices](https://developers.openai.com/api/docs/guides/fine-tuning-best-practices.md): Improve results with practical tips for fine-tuning.
-- [Flex processing](https://developers.openai.com/api/docs/guides/flex-processing.md): Learn how to optimize costs for asynchronous tasks with flex processing.
+- [Flex processing](https://developers.openai.com/api/docs/guides/flex-processing.md): Learn about Flex processing availability and discounted background completion windows.
 - [Frontend prompt instructions](https://developers.openai.com/api/docs/guides/frontend-prompt.md): Example prompt instructions for frontend work, written for GPT-5.5.
 - [Function calling](https://developers.openai.com/api/docs/guides/function-calling.md): Learn how function calling enables large language models to connect to external data and systems.
 - [Functions](https://developers.openai.com/api/docs/guides/agents-api/tools/functions.md): Define functions, handle pending calls, and return results.
@@ -197,6 +197,7 @@ work more autonomously.
 - [Reasoning best practices](https://developers.openai.com/api/docs/guides/reasoning-best-practices.md): Explore best practices for using o-series reasoning models, like o1 and o3-mini, vs. GPT models—including use cases, how to choose a model, and prompting guidance.
 - [Reasoning models](https://developers.openai.com/api/docs/guides/reasoning.md): Learn how to use OpenAI reasoning models in the Responses API, choose a reasoning effort, manage reasoning tokens, and keep reasoning state across turns.
 - [Red teaming](https://developers.openai.com/api/docs/guides/red-teaming.md): Learn how red teaming fits into AI evaluation, including Promptfoo open source and OpenAI Red Teaming for enterprise teams.
+- [Reserved Tier](https://developers.openai.com/api/docs/guides/reserved-tier.md): Learn how Reserved Tier protects API capacity during peak demand, how reservations are billed, and where to find eligible models.
 - [Results and state](https://developers.openai.com/api/docs/guides/agents/results.md): Learn which result surfaces matter most in the OpenAI Agents SDK and how they connect to resumable workflow state.
 - [Retrieval](https://developers.openai.com/api/docs/guides/retrieval.md): Learn how to search your data using semantic similarity with the OpenAI API.
 - [Run and continue sessions](https://developers.openai.com/api/docs/guides/agents-api/sessions.md): Start work, follow progress, and continue the conversation.
@@ -234,7 +235,7 @@ work more autonomously.
 - [Upgrading to GPT-5.4](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p4.md): Guidance for upgrading OpenAI API model strings and directly related prompts to GPT-5.4.
 - [Upgrading to GPT-5.5](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p5.md): Guidance for upgrading OpenAI API model strings and directly related prompts to GPT-5.5.
 - [Upgrading to GPT-5.6 Sol](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p6-sol.md): Machine-readable guidance for migrating OpenAI API integrations to GPT-5.6 Sol and the GPT-5.6 family.
-- [Use Daybreak in the Responses API](https://developers.openai.com/api/docs/guides/daybreak.md): Select a compatible model and access program, check defaults, and handle Responses API errors.
+- [Use Daybreak in the Responses API](https://developers.openai.com/api/docs/guides/daybreak.md): Choose a model and access program for Responses API requests or Agents API sessions.
 - [Using GPT-4.1](https://developers.openai.com/api/docs/guides/latest-model/gpt-4.1.md): Learn how to use, migrate to, and prompt GPT-4.1 in the OpenAI API.
 - [Using GPT-5](https://developers.openai.com/api/docs/guides/latest-model/gpt-5.md): Learn how to use, migrate to, and prompt GPT-5 in the OpenAI API.
 - [Using GPT-5.1](https://developers.openai.com/api/docs/guides/latest-model/gpt-5.1.md): Learn how to use, migrate to, and prompt GPT-5.1 in the OpenAI API.

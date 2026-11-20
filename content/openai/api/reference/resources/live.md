@@ -50,7 +50,7 @@ Content type: `application/json`
 
   Startup configuration for the Live session.
 
-  - `model: string or "gpt-live-1"`
+  - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
     The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -58,11 +58,13 @@ Content type: `application/json`
 
       `minLength: 1`
 
-    - `"gpt-live-1"`
+    - `"gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
       - `"gpt-live-1"`
+
+      - `"gpt-live-1.1"`
 
   - `audio: optional object { output }`
 
@@ -1174,6 +1176,12 @@ Content type: `application/json`
 
         `minimum: 0`, `maximum: 800`
 
+  - `idle_timeout_s: optional integer`
+
+    Whole seconds of inactivity after which a Live WebRTC session with a speech wake policy pauses inference. The connection and conversation history are retained. Omit to keep inference active after the first wake until the session ends.
+
+    `minimum: 5`, `maximum: 60`
+
   - `input: optional array of InitialItem`
 
     Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and a configured rendered-token limit (8,192 by default).
@@ -1376,6 +1384,20 @@ Content type: `application/json`
 
       - `"decisions"`
 
+  - `wake_policy: optional object { type, vad_threshold }`
+
+    Starts inference when microphone speech is detected.
+
+    - `type: "speech" (default: "speech")`
+
+      The wake policy type, always `speech`.
+
+      - `"speech"`
+
+    - `vad_threshold: optional number`
+
+      The speech detection threshold for the first wake and each later wake, from 0 to 1 inclusive. Defaults to 0.5. Higher values require stronger evidence of speech. This setting is independent of active turn detection.
+
 - `transport: Webrtc { sdp, type }  or Sip { destination, trunk, type }`
 
   WebRTC transport with an SDP offer, or SIP transport with a destination and per-call trunk credentials.
@@ -1496,7 +1518,7 @@ curl https://api.openai.com/v1/live/sessions \
     -H "Authorization: Bearer $OPENAI_API_KEY" \
     -d '{
           "session": {
-            "model": "gpt-live-1"
+            "model": "gpt-live-1.1"
           },
           "transport": {
             "sdp": "x",
@@ -1538,7 +1560,7 @@ curl https://api.openai.com/v1/live/sessions \
 curl https://api.openai.com/v1/live/sessions \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"session":{"model":"gpt-live-1","instructions":"Be concise. Ask for clarification when needed."},"transport":{"type":"webrtc","sdp":"<SDP offer>"}}'
+  -d '{"session":{"model":"gpt-live-1.1","instructions":"Be concise. Ask for clarification when needed."},"transport":{"type":"webrtc","sdp":"<SDP offer>"}}'
 ```
 
 #### Response example
@@ -1553,7 +1575,7 @@ curl https://api.openai.com/v1/live/sessions \
 # Export SIP_USERNAME and SIP_PASSWORD in your environment first.
 jq -n '{
     "session": {
-      "model": "gpt-live-1",
+      "model": "gpt-live-1.1",
       "instructions": "Help the user schedule an appointment.",
       "audio": { "output": { "voice": "marin" } },
       "delegation": { "type": "client" }
@@ -1721,7 +1743,7 @@ jq -n '{
 
       Initial configuration for a primary WebSocket. Send session.start first and wait for session.started before application commands. WebRTC creation already starts the session; do not send this event again on its data channel.
 
-      - `model: string or "gpt-live-1"`
+      - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -1729,11 +1751,13 @@ jq -n '{
 
           `minLength: 1`
 
-        - `"gpt-live-1"`
+        - `"gpt-live-1" or "gpt-live-1.1"`
 
           The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
           - `"gpt-live-1"`
+
+          - `"gpt-live-1.1"`
 
       - `audio: optional object { format, output }`
 
@@ -13682,11 +13706,11 @@ jq -n '{
 
 ### Media Session Config
 
-- `MediaSessionConfig object { model, audio, client, 6 more }`
+- `MediaSessionConfig object { model, audio, client, 8 more }`
 
   Startup configuration for a Live media session. Follow the [Live prompting guide](https://developers.openai.com/api/docs/guides/live-prompting) when writing frontend instructions and the backend prompt under delegation.responses.instructions.
 
-  - `model: string or "gpt-live-1"`
+  - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
     The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -13694,11 +13718,13 @@ jq -n '{
 
       `minLength: 1`
 
-    - `"gpt-live-1"`
+    - `"gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
       - `"gpt-live-1"`
+
+      - `"gpt-live-1.1"`
 
   - `audio: optional object { output }`
 
@@ -14810,6 +14836,12 @@ jq -n '{
 
         `minimum: 0`, `maximum: 800`
 
+  - `idle_timeout_s: optional integer`
+
+    Whole seconds of inactivity after which a Live WebRTC session with a speech wake policy pauses inference. The connection and conversation history are retained. Omit to keep inference active after the first wake until the session ends.
+
+    `minimum: 5`, `maximum: 60`
+
   - `input: optional array of InitialItem`
 
     Ordered text-only history supplied before startup. Supports developer, user, and assistant messages with one text part each; at most 128 messages and a configured rendered-token limit (8,192 by default).
@@ -15011,6 +15043,20 @@ jq -n '{
     - `type: "decisions" (default: "decisions")`
 
       - `"decisions"`
+
+  - `wake_policy: optional object { type, vad_threshold }`
+
+    Starts inference when microphone speech is detected.
+
+    - `type: "speech" (default: "speech")`
+
+      The wake policy type, always `speech`.
+
+      - `"speech"`
+
+    - `vad_threshold: optional number`
+
+      The speech detection threshold for the first wake and each later wake, from 0 to 1 inclusive. Defaults to 0.5. Higher values require stronger evidence of speech. This setting is independent of active turn detection.
 
 ### Media Session Fork Config
 
@@ -22205,7 +22251,7 @@ jq -n '{
 
 ### Server Event
 
-- `ServerEvent = SessionStartedEvent or SessionUpdatedEvent or InputAudioMutedEvent or 24 more`
+- `ServerEvent = SessionStartedEvent or SessionUpdatedEvent or SessionResumed { event_id, type, client_event_id }  or 26 more`
 
   Server events for Live. Response lifecycle events are wrapped inside response.event; dispatch the nested event by its full type and tolerate new response event types. Follow the [Live prompting guide](https://developers.openai.com/api/docs/guides/live-prompting) when designing the conversation and delegation policy.
 
@@ -22229,7 +22275,7 @@ jq -n '{
 
         The Unix timestamp, in seconds, at which the Live session expires.
 
-      - `model: string or "gpt-live-1"`
+      - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -22237,11 +22283,13 @@ jq -n '{
 
           `minLength: 1`
 
-        - `"gpt-live-1"`
+        - `"gpt-live-1" or "gpt-live-1.1"`
 
           The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
           - `"gpt-live-1"`
+
+          - `"gpt-live-1.1"`
 
       - `status: "active" (default: "active")`
 
@@ -23649,6 +23697,38 @@ jq -n '{
 
       The event_id of the client command associated with this server event, when supplied.
 
+  - `SessionResumed object { event_id, type, client_event_id }`
+
+    Sent when speech wakes inference and it is ready for audio in a Live WebRTC session. This occurs on the first wake and after each later wake. Delivered to the sideband and, when permitted by its event settings, the data channel.
+
+    - `event_id: string`
+
+      The unique ID of the Live server event.
+
+    - `type: "session.resumed" (default: "session.resumed")`
+
+      - `"session.resumed"`
+
+    - `client_event_id: optional string`
+
+      The event_id of the client command associated with this server event, when supplied.
+
+  - `SessionPaused object { event_id, type, client_event_id }`
+
+    Sent when the idle timeout pauses inference in a Live WebRTC session. The WebRTC connection, sideband, and session ID persist. Delivered to the sideband and, when permitted by its event settings, the data channel.
+
+    - `event_id: string`
+
+      The unique ID of the Live server event.
+
+    - `type: "session.paused" (default: "session.paused")`
+
+      - `"session.paused"`
+
+    - `client_event_id: optional string`
+
+      The event_id of the client command associated with this server event, when supplied.
+
   - `InputAudioMutedEvent object { event_id, type, client_event_id }`
 
     Acknowledges a session.input_audio.mute command. An independent input mute sends silence to the model and preserves sideband audio reflection. Fixture playback does not emit this event.
@@ -24603,9 +24683,17 @@ jq -n '{
 
       The cumulative Live audio usage so far.
 
-      - `seconds: number`
+      - `seconds: integer`
 
-        The cumulative Live audio duration in seconds. Do not sum this value across usage events.
+        The cumulative billable duration in whole seconds. When present, the active and paused breakdown adds up to this total.
+
+      - `active_seconds: optional integer`
+
+        The remaining billable seconds attributed to active audio and any unused prepaid duration.
+
+      - `paused_seconds: optional integer`
+
+        Billable time attributed to paused inference at the configured rate, rounded down to whole seconds.
 
     - `client_event_id: optional string`
 
@@ -24897,7 +24985,7 @@ jq -n '{
 
       The Unix timestamp, in seconds, at which the Live session expires.
 
-    - `model: string or "gpt-live-1"`
+    - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -24905,11 +24993,13 @@ jq -n '{
 
         `minLength: 1`
 
-      - `"gpt-live-1"`
+      - `"gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
         - `"gpt-live-1"`
+
+        - `"gpt-live-1.1"`
 
     - `status: "active" (default: "active")`
 
@@ -26295,9 +26385,17 @@ jq -n '{
 
     The final cumulative Live audio usage after session finalization.
 
-    - `seconds: number`
+    - `seconds: integer`
 
-      The cumulative Live audio duration in seconds. Do not sum this value across usage events.
+      The cumulative billable duration in whole seconds. When present, the active and paused breakdown adds up to this total.
+
+    - `active_seconds: optional integer`
+
+      The remaining billable seconds attributed to active audio and any unused prepaid duration.
+
+    - `paused_seconds: optional integer`
+
+      Billable time attributed to paused inference at the configured rate, rounded down to whole seconds.
 
   - `client_event_id: optional string`
 
@@ -26309,7 +26407,7 @@ jq -n '{
 
   Initial configuration for a Live session, including its model, conversation instructions, audio, and delegated task handling.
 
-  - `model: string or "gpt-live-1"`
+  - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
     The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -26317,11 +26415,13 @@ jq -n '{
 
       `minLength: 1`
 
-    - `"gpt-live-1"`
+    - `"gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
       - `"gpt-live-1"`
+
+      - `"gpt-live-1.1"`
 
   - `audio: optional object { format, output }`
 
@@ -27705,7 +27805,7 @@ jq -n '{
 
     The Unix timestamp, in seconds, at which the Live session expires.
 
-  - `model: string or "gpt-live-1"`
+  - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
     The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -27713,11 +27813,13 @@ jq -n '{
 
       `minLength: 1`
 
-    - `"gpt-live-1"`
+    - `"gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
       - `"gpt-live-1"`
+
+      - `"gpt-live-1.1"`
 
   - `status: "active" (default: "active")`
 
@@ -29103,7 +29205,7 @@ jq -n '{
 
     Initial configuration for a primary WebSocket. Send session.start first and wait for session.started before application commands. WebRTC creation already starts the session; do not send this event again on its data channel.
 
-    - `model: string or "gpt-live-1"`
+    - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -29111,11 +29213,13 @@ jq -n '{
 
         `minLength: 1`
 
-      - `"gpt-live-1"`
+      - `"gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
         - `"gpt-live-1"`
+
+        - `"gpt-live-1.1"`
 
     - `audio: optional object { format, output }`
 
@@ -30519,7 +30623,7 @@ jq -n '{
 
       The Unix timestamp, in seconds, at which the Live session expires.
 
-    - `model: string or "gpt-live-1"`
+    - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -30527,11 +30631,13 @@ jq -n '{
 
         `minLength: 1`
 
-      - `"gpt-live-1"`
+      - `"gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
         - `"gpt-live-1"`
+
+        - `"gpt-live-1.1"`
 
     - `status: "active" (default: "active")`
 
@@ -33963,7 +34069,7 @@ jq -n '{
 
       The Unix timestamp, in seconds, at which the Live session expires.
 
-    - `model: string or "gpt-live-1"`
+    - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -33971,11 +34077,13 @@ jq -n '{
 
         `minLength: 1`
 
-      - `"gpt-live-1"`
+      - `"gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
         - `"gpt-live-1"`
+
+        - `"gpt-live-1.1"`
 
     - `status: "active" (default: "active")`
 
@@ -35363,13 +35471,21 @@ jq -n '{
 
 ### Session Usage
 
-- `SessionUsage object { seconds }`
+- `SessionUsage object { seconds, active_seconds, paused_seconds }`
 
-  Cumulative audio duration for a Live session. Values are totals for the session, not increments to sum across usage events.
+  Cumulative billable duration for a Live session. Eligible WebRTC sessions also report the active and paused breakdown. Do not sum values across usage events.
 
-  - `seconds: number`
+  - `seconds: integer`
 
-    The cumulative Live audio duration in seconds. Do not sum this value across usage events.
+    The cumulative billable duration in whole seconds. When present, the active and paused breakdown adds up to this total.
+
+  - `active_seconds: optional integer`
+
+    The remaining billable seconds attributed to active audio and any unused prepaid duration.
+
+  - `paused_seconds: optional integer`
+
+    Billable time attributed to paused inference at the configured rate, rounded down to whole seconds.
 
 ### Session Usage Updated Event
 
@@ -35391,9 +35507,17 @@ jq -n '{
 
     The cumulative Live audio usage so far.
 
-    - `seconds: number`
+    - `seconds: integer`
 
-      The cumulative Live audio duration in seconds. Do not sum this value across usage events.
+      The cumulative billable duration in whole seconds. When present, the active and paused breakdown adds up to this total.
+
+    - `active_seconds: optional integer`
+
+      The remaining billable seconds attributed to active audio and any unused prepaid duration.
+
+    - `paused_seconds: optional integer`
+
+      Billable time attributed to paused inference at the configured rate, rounded down to whole seconds.
 
   - `client_event_id: optional string`
 
@@ -42118,7 +42242,7 @@ Use Bearer Auth (header Authorization).
 
 ### Fork Server Event
 
-- `ForkServerEvent = SessionStartedEvent or SessionUpdatedEvent or InputAudioMutedEvent or 24 more`
+- `ForkServerEvent = SessionStartedEvent or SessionUpdatedEvent or SessionResumed { event_id, type, client_event_id }  or 26 more`
 
   Server events for Live. Response lifecycle events are wrapped inside response.event; dispatch the nested event by its full type and tolerate new response event types. Follow the [Live prompting guide](https://developers.openai.com/api/docs/guides/live-prompting) when designing the conversation and delegation policy.
 
@@ -42142,7 +42266,7 @@ Use Bearer Auth (header Authorization).
 
         The Unix timestamp, in seconds, at which the Live session expires.
 
-      - `model: string or "gpt-live-1"`
+      - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -42150,11 +42274,13 @@ Use Bearer Auth (header Authorization).
 
           `minLength: 1`
 
-        - `"gpt-live-1"`
+        - `"gpt-live-1" or "gpt-live-1.1"`
 
           The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
           - `"gpt-live-1"`
+
+          - `"gpt-live-1.1"`
 
       - `status: "active" (default: "active")`
 
@@ -43562,6 +43688,38 @@ Use Bearer Auth (header Authorization).
 
       The event_id of the client command associated with this server event, when supplied.
 
+  - `SessionResumed object { event_id, type, client_event_id }`
+
+    Sent when speech wakes inference and it is ready for audio in a Live WebRTC session. This occurs on the first wake and after each later wake. Delivered to the sideband and, when permitted by its event settings, the data channel.
+
+    - `event_id: string`
+
+      The unique ID of the Live server event.
+
+    - `type: "session.resumed" (default: "session.resumed")`
+
+      - `"session.resumed"`
+
+    - `client_event_id: optional string`
+
+      The event_id of the client command associated with this server event, when supplied.
+
+  - `SessionPaused object { event_id, type, client_event_id }`
+
+    Sent when the idle timeout pauses inference in a Live WebRTC session. The WebRTC connection, sideband, and session ID persist. Delivered to the sideband and, when permitted by its event settings, the data channel.
+
+    - `event_id: string`
+
+      The unique ID of the Live server event.
+
+    - `type: "session.paused" (default: "session.paused")`
+
+      - `"session.paused"`
+
+    - `client_event_id: optional string`
+
+      The event_id of the client command associated with this server event, when supplied.
+
   - `InputAudioMutedEvent object { event_id, type, client_event_id }`
 
     Acknowledges a session.input_audio.mute command. An independent input mute sends silence to the model and preserves sideband audio reflection. Fixture playback does not emit this event.
@@ -44516,9 +44674,17 @@ Use Bearer Auth (header Authorization).
 
       The cumulative Live audio usage so far.
 
-      - `seconds: number`
+      - `seconds: integer`
 
-        The cumulative Live audio duration in seconds. Do not sum this value across usage events.
+        The cumulative billable duration in whole seconds. When present, the active and paused breakdown adds up to this total.
+
+      - `active_seconds: optional integer`
+
+        The remaining billable seconds attributed to active audio and any unused prepaid duration.
+
+      - `paused_seconds: optional integer`
+
+        Billable time attributed to paused inference at the configured rate, rounded down to whole seconds.
 
     - `client_event_id: optional string`
 
@@ -44756,7 +44922,7 @@ Content type: `application/json`
 
   Model and startup configuration for the Live session that answers the incoming SIP call.
 
-  - `model: string or "gpt-live-1"`
+  - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
     The Live model to use for the accepted call.
 
@@ -44766,11 +44932,13 @@ Content type: `application/json`
 
       `minLength: 1`
 
-    - `"gpt-live-1"`
+    - `"gpt-live-1" or "gpt-live-1.1"`
 
       The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
       - `"gpt-live-1"`
+
+      - `"gpt-live-1.1"`
 
   - `type: "live" (default: "live")`
 
@@ -46054,7 +46222,7 @@ curl https://api.openai.com/v1/live/sessions/$SESSION_ID/accept \
     -H "Authorization: Bearer $OPENAI_API_KEY" \
     -d '{
           "session": {
-            "model": "gpt-live-1",
+            "model": "gpt-live-1.1",
             "type": "live"
           }
         }'
@@ -53575,7 +53743,7 @@ Use Bearer Auth (header Authorization).
 
 ### Sideband Server Event
 
-- `SidebandServerEvent = TransportRinging { event_id, session_id, type }  or TransportAnswered { event_id, session_id, type }  or TransportFailed { error, event_id, session_id, type }  or 22 more`
+- `SidebandServerEvent = TransportRinging { event_id, session_id, type }  or TransportAnswered { event_id, session_id, type }  or TransportFailed { error, event_id, session_id, type }  or 24 more`
 
   Server events received by an attached Live sideband WebSocket. Audio deltas are delivered over the primary connection.
 
@@ -53689,7 +53857,7 @@ Use Bearer Auth (header Authorization).
 
         The Unix timestamp, in seconds, at which the Live session expires.
 
-      - `model: string or "gpt-live-1"`
+      - `model: string or "gpt-live-1" or "gpt-live-1.1"`
 
         The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
@@ -53697,11 +53865,13 @@ Use Bearer Auth (header Authorization).
 
           `minLength: 1`
 
-        - `"gpt-live-1"`
+        - `"gpt-live-1" or "gpt-live-1.1"`
 
           The Live model. Required in the session configuration for every transport; do not pass it as a URL query parameter.
 
           - `"gpt-live-1"`
+
+          - `"gpt-live-1.1"`
 
       - `status: "active" (default: "active")`
 
@@ -55109,6 +55279,38 @@ Use Bearer Auth (header Authorization).
 
       The event_id of the client command associated with this server event, when supplied.
 
+  - `SessionResumed object { event_id, type, client_event_id }`
+
+    Sent when speech wakes inference and it is ready for audio in a Live WebRTC session. This occurs on the first wake and after each later wake. Delivered to the sideband and, when permitted by its event settings, the data channel.
+
+    - `event_id: string`
+
+      The unique ID of the Live server event.
+
+    - `type: "session.resumed" (default: "session.resumed")`
+
+      - `"session.resumed"`
+
+    - `client_event_id: optional string`
+
+      The event_id of the client command associated with this server event, when supplied.
+
+  - `SessionPaused object { event_id, type, client_event_id }`
+
+    Sent when the idle timeout pauses inference in a Live WebRTC session. The WebRTC connection, sideband, and session ID persist. Delivered to the sideband and, when permitted by its event settings, the data channel.
+
+    - `event_id: string`
+
+      The unique ID of the Live server event.
+
+    - `type: "session.paused" (default: "session.paused")`
+
+      - `"session.paused"`
+
+    - `client_event_id: optional string`
+
+      The event_id of the client command associated with this server event, when supplied.
+
   - `InputAudioMutedEvent object { event_id, type, client_event_id }`
 
     Acknowledges a session.input_audio.mute command. An independent input mute sends silence to the model and preserves sideband audio reflection. Fixture playback does not emit this event.
@@ -56027,9 +56229,17 @@ Use Bearer Auth (header Authorization).
 
       The cumulative Live audio usage so far.
 
-      - `seconds: number`
+      - `seconds: integer`
 
-        The cumulative Live audio duration in seconds. Do not sum this value across usage events.
+        The cumulative billable duration in whole seconds. When present, the active and paused breakdown adds up to this total.
+
+      - `active_seconds: optional integer`
+
+        The remaining billable seconds attributed to active audio and any unused prepaid duration.
+
+      - `paused_seconds: optional integer`
+
+        Billable time attributed to paused inference at the configured rate, rounded down to whole seconds.
 
     - `client_event_id: optional string`
 
