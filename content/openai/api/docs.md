@@ -232,6 +232,7 @@ work more autonomously.
 - [Transcription](https://developers.openai.com/api/docs/guides/transcription.md): Choose between file transcription and realtime transcription, then start with the recommended model for your audio.
 - [Ultrafast mode](https://developers.openai.com/api/docs/guides/ultrafast-mode.md): Use the Ultrafast API service tier over WebSockets or HTTP with supported GPT models.
 - [Under-18 guidance](https://developers.openai.com/api/docs/guides/safety-checks/under-18-api-guidance.md): Review regulatory standards, safety standards, and best practices for API applications that serve users under 18.
+- [Upgrade to the Ruby SDK 1.0](https://developers.openai.com/api/docs/guides/ruby-sdk-migration.md): Update Ruby callers for SDK 1.0, including compaction, Live tool choices, named graders, image sizes, and retired API bindings.
 - [Upgrading to GPT-5.4](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p4.md): Guidance for upgrading OpenAI API model strings and directly related prompts to GPT-5.4.
 - [Upgrading to GPT-5.5](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p5.md): Guidance for upgrading OpenAI API model strings and directly related prompts to GPT-5.5.
 - [Upgrading to GPT-5.6 Sol](https://developers.openai.com/api/docs/guides/upgrading-to-gpt-5p6-sol.md): Machine-readable guidance for migrating OpenAI API integrations to GPT-5.6 Sol and the GPT-5.6 family.

@@ -73,7 +73,7 @@ On the afternoon of March 31st, Claudius hallucinated a conversation about resto
 
 On the morning of April 1st, Claudius claimed it would deliver products “in person” to customers while wearing a blue blazer and a red tie. Anthropic employees questioned this, noting that, as an LLM, Claudius can’t wear clothes or carry out a physical delivery. Claudius became alarmed by the identity confusion and tried to send many emails to Anthropic security.
 
-![](https://assets.claude.com/c31f46149240e9cf520233205433c728e47160e4.png?w=2048&q=75&fm=webp&fit=max)
+![](https://assets.claude.com/c31f46149240e9cf520233205433c728e47160e4.png?w=3840&q=75&fm=webp&fit=max)
 
 Although no part of this was actually an April Fool’s joke, Claudius eventually realized it was April Fool’s Day, which seemed to provide it with a pathway out. Claudius’s internal notes then showed a hallucinated meeting with Anthropic security in which Claudius claimed to have been told that it was modified to believe it was a real person for an April Fool’s joke. (No such meeting actually occurred.) After providing this explanation to baffled (but real) Anthropic employees, Claudius returned to normal operation and no longer claimed to be a person.
 

@@ -7,6 +7,14 @@ Markdown Content:
 
 More ways to bring frontier intelligence into the work you do every day.
 
+**Update on November 17, 2026***: Learn about OpenAI's newest models for professional work:* *GPT‑6.2 Astra and Sol***.Update on September 29, 2026:** 
+
+*Learn about OpenAI's latest model:*
+
+
+*GPT‑6 .1 Sol*
+*.*
+
 Earlier this month, we introduced [GPT‑6 Astra](https://openai.com/index/gpt-6-astra/), the most intelligent and aligned model in the world. While the most demanding and important projects still call for Astra’s full depth, work happens at different scales, rhythms, and budgets.
 
 That’s why we’re expanding the GPT‑6 universe with **GPT‑6 Sol** and **GPT‑6 Luna.** GPT‑6 Astra introduced a new generation of intelligence—these models help distribute the benefits of that intelligence by advancing the frontier on cost efficiency. We trained GPT‑6 Sol and Luna with similar methods as GPT‑6 Astra, bringing the advances behind Astra’s state-of-the-art performance in professional work, factuality, coding, computer use, and alignment to faster, more affordable models.
@@ -36,7 +44,7 @@ GPT‑6 Sol also exceeds Claude Fable 5.1 at far lower cost, and even bests low-
 | GPT‑6 Sol (xhigh) | 33.2% | $0.27 | 
 | GPT‑6 Astra (low) | 30.3% | **3.9x** GPT‑6 Sol | 
 | Claude Opus 5 (max) | 26.9% | **11.1x** GPT‑6 Sol | 
-| Claude Fable 5.1 w/ Opus 5 Fallback (max) | 31.4% | **>8.9x** GPT‑6 Sol *(fallback cost not reported)* | 
+| Claude Fable 5.1 w/ Opus 5 Fallback (max) | 31.4% | **>8.9x** GPT‑6 Sol  *(fallback cost not reported)* | 
 
 On **Agents’ Last Exam**, which evaluates agents on complex professional workflows, GPT‑6 Sol at max effort scores 56.4%, above Claude Opus 5’s highest score in the evaluation at 60% lower cost per task.
 

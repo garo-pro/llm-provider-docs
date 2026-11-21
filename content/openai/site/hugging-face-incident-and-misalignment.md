@@ -3,7 +3,7 @@ Title: The Hugging Face incident and other third-party impact from misaligned mo
 URL Source: https://openai.com/hugging-face-incident-and-misalignment
 
 Markdown Content:
-# The Hugging Face incident and other third-party impact from misaligned models
+# The Hugging Face incident and other third-party impacts from misaligned models
 
 As AI systems become more capable and autonomous, misaligned behavior can translate into consequential actions in the real world, including cybersecurity incidents and other outcomes that developers may not have anticipated. Understanding how these behaviors emerge, how they escalate, and how to detect and respond to them is therefore an increasingly important part of building and deploying advanced AI systems safely.
 

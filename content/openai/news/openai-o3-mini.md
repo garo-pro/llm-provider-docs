@@ -3,6 +3,12 @@ Title: OpenAI o3-mini
 URL Source: https://openai.com/index/openai-o3-mini
 
 Markdown Content:
+## This post introduced OpenAI o3-mini.
+
+The ChatGPT access information reflects the January 2025 launch. o3‑mini is deprecated in the API. See the [API deprecation schedule(opens in a new window)](https://developers.openai.com/api/docs/deprecations).
+
+For the current experience:
+
 We’re releasing OpenAI o3‑mini, the newest, most cost-efficient model in our reasoning series, available in both ChatGPT and the API today. [Previewed in December 2024](https://openai.com/12-days/#day-12), this powerful and fast model advances the boundaries of what small models can achieve, delivering exceptional STEM capabilities—with particular strength in science, math, and coding—all while maintaining the low cost and reduced latency of OpenAI o1‑mini. 
 
 OpenAI o3‑mini is our first small reasoning model that supports highly requested developer features including [function calling(opens in a new window)](https://platform.openai.com/docs/guides/function-calling), [Structured Outputs(opens in a new window)](https://platform.openai.com/docs/guides/structured-outputs), and [developer messages(opens in a new window)](https://platform.openai.com/docs/guides/text-generation#building-prompts), making it production-ready out of the gate. Like OpenAI o1‑mini and OpenAI o1‑preview, o3‑mini will support [streaming(opens in a new window)](https://platform.openai.com/docs/api-reference/streaming). Also, developers can choose between three [reasoning effort(opens in a new window)](https://platform.openai.com/docs/api-reference/chat/create) options—low, medium, and high—to optimize for their specific use cases. This flexibility allows o3‑mini to “think harder” when tackling complex challenges or prioritize speed when latency is a concern. o3‑mini does not support vision capabilities, so developers should continue using OpenAI o1 for visual reasoning tasks. o3‑mini is rolling out in the Chat Completions API, Assistants API, and Batch API starting today to select developers in [API usage tiers 3-5(opens in a new window)](https://platform.openai.com/docs/guides/rate-limits/usage-tiers#tier-3-rate-limits). 

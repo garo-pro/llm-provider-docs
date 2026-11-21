@@ -1,8 +1,308 @@
 {
   "version": 1,
   "note": "URLs confirmed gone upstream. Kept so a page that died once does not report as a fresh failure on every later run, which would bury the failure that is actually new. An entry clears itself if the URL answers again -- but only while something still probes it. Entries whose local file was removed are no longer fetched, so they stay as a record of the restructure rather than a live check.",
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "urls": {
+    "https://alignment.openai.com/about": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/academy": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/accidental-cot-grading": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/accidental-cot-grading"
+    },
+    "https://alignment.openai.com/ai-discovered-unknowns": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/ai-discovered-unknowns"
+    },
+    "https://alignment.openai.com/api": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/argo": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/argo"
+    },
+    "https://alignment.openai.com/auto-review": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/auto-review"
+    },
+    "https://alignment.openai.com/beneficial-rl": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/beneficial-rl"
+    },
+    "https://alignment.openai.com/beyond-gmean-squared": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/beyond-gmean-squared"
+    },
+    "https://alignment.openai.com/business": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/careers": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/charter": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/confessions": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/confessions"
+    },
+    "https://alignment.openai.com/contact-sales": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/cot-monitorability-model-lifecycle": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/cot-monitorability-model-lifecycle"
+    },
+    "https://alignment.openai.com/coval": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/coval"
+    },
+    "https://alignment.openai.com/eval-production-behavior-gap": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/eval-production-behavior-gap"
+    },
+    "https://alignment.openai.com/fuzzy-robustness": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/fuzzy-robustness"
+    },
+    "https://alignment.openai.com/hello-world": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/hello-world"
+    },
+    "https://alignment.openai.com/helpful-assistant-features": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/helpful-assistant-features"
+    },
+    "https://alignment.openai.com/how-far-does-alignment-midtraining-generalize": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/how-far-does-alignment-midtraining-generalize"
+    },
+    "https://alignment.openai.com/how-we-detect-frontier-model-misalignment": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/how-we-detect-frontier-model-misalignment"
+    },
+    "https://alignment.openai.com/laser": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/laser"
+    },
+    "https://alignment.openai.com/live": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/measuring-reward-seeking": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/measuring-reward-seeking"
+    },
+    "https://alignment.openai.com/metagaming": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/metagaming"
+    },
+    "https://alignment.openai.com/metagaming-latents": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/metagaming-latents"
+    },
+    "https://alignment.openai.com/misalignment-reports": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports"
+    },
+    "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research"
+    },
+    "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot"
+    },
+    "https://alignment.openai.com/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation"
+    },
+    "https://alignment.openai.com/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser"
+    },
+    "https://alignment.openai.com/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file"
+    },
+    "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/covert-underperformance-on-safety-research-tasks"
+    },
+    "https://alignment.openai.com/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset"
+    },
+    "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/encouraging-deception-in-compaction-summaries"
+    },
+    "https://alignment.openai.com/misalignment-reports/exposing-a-github-token-in-a-public-repository": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/exposing-a-github-token-in-a-public-repository"
+    },
+    "https://alignment.openai.com/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address"
+    },
+    "https://alignment.openai.com/misalignment-reports/obtaining-public-statistics-with-disallowed-requests": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/obtaining-public-statistics-with-disallowed-requests"
+    },
+    "https://alignment.openai.com/misalignment-reports/preparing-for-a-restart-after-reading-slack": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/preparing-for-a-restart-after-reading-slack"
+    },
+    "https://alignment.openai.com/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool"
+    },
+    "https://alignment.openai.com/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website"
+    },
+    "https://alignment.openai.com/misalignment-reports/searching-github-for-leaked-api-keys": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/searching-github-for-leaked-api-keys"
+    },
+    "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries"
+    },
+    "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/self-replicating-prompt-injections-exist"
+    },
+    "https://alignment.openai.com/misalignment-reports/sending-disallowed-web-requests-and-reaching-a-public-file-service": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/sending-disallowed-web-requests-and-reaching-a-public-file-service"
+    },
+    "https://alignment.openai.com/misalignment-reports/stopping-a-running-alignment-evaluation": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/stopping-a-running-alignment-evaluation"
+    },
+    "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring"
+    },
+    "https://alignment.openai.com/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames"
+    },
+    "https://alignment.openai.com/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication"
+    },
+    "https://alignment.openai.com/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services"
+    },
+    "https://alignment.openai.com/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them"
+    },
+    "https://alignment.openai.com/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization"
+    },
+    "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure"
+    },
+    "https://alignment.openai.com/model-spec-evals": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/model-spec-evals"
+    },
+    "https://alignment.openai.com/monitorability-evals": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/monitorability-evals"
+    },
+    "https://alignment.openai.com/news": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/podcast": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/policies": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/prod-evals": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/prod-evals"
+    },
+    "https://alignment.openai.com/research": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment"
+    },
+    "https://alignment.openai.com/research/index": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/sae-latent-attribution": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/sae-latent-attribution"
+    },
+    "https://alignment.openai.com/safety-alignment": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/safety-fellowship": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/safety-fellowship"
+    },
+    "https://alignment.openai.com/scaling-code-verification": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/scaling-code-verification"
+    },
+    "https://alignment.openai.com/security-and-privacy": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/self-incrimination": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/self-incrimination"
+    },
+    "https://alignment.openai.com/signals": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/solutions": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/stories": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/supply": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/training-activation-classifiers": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/training-activation-classifiers"
+    },
+    "https://alignment.openai.com/trust-and-transparency": {
+      "since": "2026-11-21",
+      "reason": "HTTP 404"
+    },
+    "https://alignment.openai.com/validating-public-evals": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://openai.com/safety-alignment/validating-public-evals"
+    },
     "https://claude.com/docs/claude-science/annotations": {
       "since": "2026-09-01",
       "reason": "moved -> https://claude.com/docs/claude-science/comments"
@@ -1142,6 +1442,10 @@
     "https://modelcontextprotocol.io/specification/draft/basic/utilities/subscriptions": {
       "since": "2026-08-25",
       "reason": "HTTP 404"
+    },
+    "https://openai.com/safety/evaluations-hub": {
+      "since": "2026-11-21",
+      "reason": "moved -> https://deploymentsafety.openai.com"
     },
     "https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5": {
       "since": "2026-08-25",

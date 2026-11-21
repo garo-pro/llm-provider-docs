@@ -30,11 +30,11 @@ CUA establishes a new state-of-the-art in both computer use and browser use benc
 | Benchmark type | Benchmark | Computer use (universal interface) |  | Web browsing agents | Human | 
 |---|---|---|---|---|---|
 |  |  | OpenAI CUA | Previous SOTA | Previous SOTA |  | 
-| Computer use | OSWorld | 38.1% | [22.0%](https://www.anthropic.com/news/3-5-models-and-computer-use) | - | [72.4%](https://arxiv.org/abs/2404.07972) | 
-| Browser use | WebArena | 58.1% | [36.2%](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard) | [57.1%](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | [78.2%](https://arxiv.org/abs/2307.13854) | 
-|  | WebVoyager | 87.0% | [56.0%](https://www.trykura.com/benchmarks) | [87.0%](https://www.trykura.com/benchmarks) | - | 
+| Computer use | OSWorld | 38.1% | [22.0%(opens in a new window)](https://www.anthropic.com/news/3-5-models-and-computer-use) | - | [72.4%(opens in a new window)](https://arxiv.org/abs/2404.07972) | 
+| Browser use | WebArena | 58.1% | [36.2%(opens in a new window)](https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard) | [57.1%(opens in a new window)](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | [78.2%(opens in a new window)](https://arxiv.org/abs/2307.13854) | 
+|  | WebVoyager | 87.0% | [56.0%(opens in a new window)](https://www.trykura.com/benchmarks) | [87.0%(opens in a new window)](https://www.trykura.com/benchmarks) | - | 
 
-[here](https://cdn.openai.com/cua/CUA_eval_extra_information.pdf)
+[here(opens in a new window)](https://cdn.openai.com/cua/CUA_eval_extra_information.pdf)
 
 [WebArena(opens in a new window)](https://arxiv.org/abs/2307.13854) and [WebVoyager(opens in a new window)](https://arxiv.org/abs/2401.13919) are designed to evaluate the performance of web browsing agents in completing real-world tasks using browsers. WebArena utilizes self-hosted open-source websites offline to imitate real-world scenarios in e-commerce, online store content management (CMS), social forum platforms, and more. WebVoyager tests the model’s performance on online live websites like Amazon, GitHub, and Google Maps.
 

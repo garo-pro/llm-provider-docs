@@ -5,6 +5,10 @@ URL Source: https://openai.com/index/gpt-6-astra
 Markdown Content:
 ## A new generation of intelligence
 
+**Update on November 17, 2026:**  *Learn about OpenAI's latest model:* [*GPT‑6.2 Astra and Sol*](https://openai.com/index/introducing-gpt-6-2-astra-sol/).
+
+**Update on September 29, 2026:**  *Learn about OpenAI's latest model:* *GPT‑6 .1 Sol**.*
+
 **Update on September 22, 2026:** *We are expanding our GPT‑6 family with GPT‑6 Sol and GPT‑6 Luna.* *Learn more.*
 
 We’re introducing GPT‑6 Astra, the world’s most intelligent and aligned model.

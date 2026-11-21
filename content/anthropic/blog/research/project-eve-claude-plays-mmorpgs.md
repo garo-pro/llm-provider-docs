@@ -49,7 +49,7 @@ Our results come with caveats. Spread capture works here because EVE Online's ma
 
 Spread capture is fairly low-risk and, unlike a lot of real-world investing, doesn't require understanding of how the market responds to external events. To test this kind of reasoning, we instructed them to make directional bets: to buy items they expected to rise in price, based on in-game news, patch notes, and reports of recent battles.[4](https://www.anthropic.com#footnote-4)
 
-![](https://assets.claude.com/c12bf30108ac1cf257b49425756a99f3729a00a3.png?w=1920&q=75&fm=webp&fit=max)
+![](https://assets.claude.com/c12bf30108ac1cf257b49425756a99f3729a00a3.png?w=3840&q=75&fm=webp&fit=max)
 
 The models were much worse at this task. Opus 4.6 opted for momentum-chasing, a strategy that did not work. Typical Opus 4.7 and 4.8 runs bet on simple reasoning that the historical record didn't support. For example, in one run the agent reasoned that a new mining expansion would increase demand for mining equipment ("shovels in a gold rush"). It did not account for the increase in supply. Opus 4.7 runs also often ignored the instruction and resorted to much more profitable spread-capture strategies, obscuring the fact that its directional trades consistently lost money, which is why we excluded it from the results.
 

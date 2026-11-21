@@ -1,4 +1,4 @@
-Title: Introducing new capabilities to GPT-Rosalind
+Title: Introducing GPT-Rosalind-5.5
 
 URL Source: https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind
 

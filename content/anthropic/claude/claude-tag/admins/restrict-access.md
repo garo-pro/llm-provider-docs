@@ -77,6 +77,10 @@ If the **Slack** page's **General** tab shows a **Respond in channels** switch r
 
 ### Quiet or remove Claude Tag
 
+> [!NOTE]
+>
+> For a channel shared across workspaces in your Enterprise Grid, see [Limit Claude in a channel shared across workspaces](#limit-claude-in-a-channel-shared-across-workspaces).
+
 Six ways to stop Claude Tag from responding, ordered from quietest to most complete:
 
 1. **Ask it to stay quiet.** Saying "stay quiet in this thread unless tagged" stops Claude following an active thread.
@@ -156,7 +160,7 @@ Removing a pattern row also detaches the row's bundles. A row marked **Not auto-
 
 A pattern is written in lowercase, like Slack channel names, plus two wildcards: `*` matches any run of characters and `?` matches exactly one. `inc-*` matches every channel whose name starts with `inc-`, and `*-confidential-*` matches any name containing `-confidential-`. The blocked list and the auto-join table each hold up to 50 patterns of up to 80 characters.
 
-A channel that matches a blocked pattern stays off-limits even when it also matches an auto-join pattern. Patterns on the **Slack** page apply in every connected workspace. A workspace scope can add its own patterns but can't remove the organization's.
+A channel that matches a blocked pattern stays off-limits even when it also matches an auto-join pattern. Patterns on the **Slack** page apply in every connected workspace. A workspace scope can add its own patterns but can't remove the organization's. For a channel shared across workspaces in your Enterprise Grid, see [Limit Claude in a channel shared across workspaces](#limit-claude-in-a-channel-shared-across-workspaces).
 
 About once a week, Claude sends the person who connected the workspace a direct message suggesting public channels to add it to. To stop those messages, select **Stop these suggestions** in any of them.
 
@@ -292,6 +296,27 @@ When the workspaces all belong to your one Claude organization and **Respond in 
 When the workspaces belong to different Claude organizations, each with its own settings and plan, Claude won't reply and posts a refusal message instead.
 
 There is no per-channel override for either case.
+
+#### Channels shared with an unpaired workspace
+
+A channel in your Enterprise Grid can be shared between a workspace paired to your Claude organization and a workspace that isn't paired to any Claude organization. Claude can reply in that channel when the app is [installed for the entire Slack organization](https://claude.com/docs/claude-tag/admins/workspaces.md#install-the-app-across-the-grid) and the enable switch at the top of the **General** tab on your organization's [**Slack**](https://claude.com/docs/claude-tag/admins/attach-to-scope.md) page is on. Claude uses the access and settings on the **Slack** page, and the work bills to your organization.
+
+Where guest access is at its default **Restrict**, the [guest check](https://claude.com/docs/claude-tag/admins/troubleshooting.md#this-channel-is-shared-across-multiple-workspaces) runs first and can refuse the reply, for example when the app hasn't been added to the unpaired workspace.
+
+Before Claude acts on a request in the channel, it checks which workspaces the sender belongs to. A person's home workspace is the one Slack lists as the workspace on their account.
+
+* **No other Claude organization is paired in the Grid.** Claude acts on requests from members of your paired workspaces. It also acts on requests from people who belong to unpaired workspaces alone, when the app has been added to their workspace and Slack reports a home workspace for them.
+* **Another Claude organization is paired to a workspace in the Grid.** Claude doesn't act on requests from people outside your paired workspaces, or from people whose home workspace is paired to the other organization. Members of your paired workspaces can also get a refusal, so have them use a channel that belongs to a single workspace.
+
+A sender Claude doesn't act for can get [a notice only they can see](https://claude.com/docs/claude-tag/admins/troubleshooting.md#claude-can%E2%80%99t-work-with-you-in-this-conversation). To narrow who can use Claude there, see [Limit Claude in a channel shared across workspaces](#limit-claude-in-a-channel-shared-across-workspaces).
+
+#### Limit Claude in a channel shared across workspaces
+
+In a channel shared across workspaces in your Enterprise Grid, don't rely on a workspace's or channel's enable switch, or on a [blocked channel pattern](#block-or-auto-join-channels-by-name), to stop Claude for everyone in the channel. Use these controls:
+
+* **Limit Claude to people in your Claude organization.** [Restrict who can use Claude](#restrict-who-can-use-claude). The restriction checks each sender's Claude account or role, whichever workspace they post from, so members of your paired workspaces without one lose access too.
+* **Take Claude out of one channel.** Run `/remove @Claude` in that channel. A member can [add Claude back](https://claude.com/docs/claude-tag/admins/for-slack-admins.md#where-claude-reads-and-posts).
+* **Stop new conversations in these channels.** Go to [**Claude's access > Channels > Slack**](https://claude.ai/admin-settings/claude-tag/channels/slack) and turn off the enable switch at the top of the **General** tab. Claude doesn't answer a new mention from any workspace, even where a workspace's or channel's own switch is on. Threads Claude already joined and routines can keep running. Turning this switch off also stops Claude in your other channels, except in workspaces and channels whose own switch is on.
 
 ### Migrate from the earlier Claude in Slack
 

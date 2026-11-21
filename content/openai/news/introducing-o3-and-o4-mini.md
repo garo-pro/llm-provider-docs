@@ -3,6 +3,16 @@ Title: Introducing OpenAI o3 and o4-mini
 URL Source: https://openai.com/index/introducing-o3-and-o4-mini
 
 Markdown Content:
+# Introducing OpenAI o3 and o4-mini
+
+Our smartest and most capable models to date with full tool access
+
+## This post introduced OpenAI o3 and o4-mini.
+
+The availability information reflects the April 2025 launch. o3 and o4-mini are no longer available in ChatGPT and are deprecated in the API. See the [API deprecation schedule(opens in a new window)](https://developers.openai.com/api/docs/deprecations).
+
+For the current experience:
+
 **Update on June 10, 2025:** *OpenAI o3‑pro is now available to Pro users in ChatGPT, as well as in our API**. Like OpenAI o1‑pro, o3‑pro is a version of our most intelligent model, OpenAI o3, designed to think longer and provide the most reliable responses. Full details can be found in our* *__release notes__*(opens in a new window)*.*
 
 Today, we’re releasing OpenAI **o3** and **o4-mini,** the latest in our o-series of models trained to think for longer before responding. These are the smartest models we’ve released to date, representing a step change in ChatGPT's capabilities for everyone from curious users to advanced researchers. For the first time, our reasoning models can agentically use and combine every tool within ChatGPT—this includes searching the web, analyzing uploaded files and other data with Python, reasoning deeply about visual inputs, and even generating images. Critically, these models are trained to reason about when and how to use tools to produce detailed and thoughtful answers in the right output formats, typically in under a minute, to solve more complex problems. This allows them to tackle multi-faceted questions more effectively, a step toward a more agentic ChatGPT that can independently execute tasks on your behalf. The combined power of state-of-the-art reasoning with full tool access translates into significantly stronger performance across academic benchmarks and real-world tasks, setting a new standard in both intelligence and usefulness.

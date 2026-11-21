@@ -248,6 +248,16 @@ if slices.Equal(correctAnswer, modelAnswer) {
 }
 ```
 
+```csharp
+using System.Linq;
+#pragma warning disable OPENAI001
+
+string[] correctAnswer = ["Eggs", "Sugar"];
+string[] modelAnswer = ["Sugar", "Eggs"];
+bool isCorrect = correctAnswer.Order(StringComparer.Ordinal).SequenceEqual(modelAnswer.Order(StringComparer.Ordinal));
+Console.WriteLine(isCorrect ? "Correct!" : "Incorrect.");
+```
+
 ```ruby
 correct_answer = ["Eggs", "Sugar"]
 model_answer = ["Sugar", "Eggs"]

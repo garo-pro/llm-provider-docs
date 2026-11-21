@@ -3,6 +3,16 @@ Title: Learning to reason with LLMs
 URL Source: https://openai.com/index/learning-to-reason-with-llms
 
 Markdown Content:
+# Learning to reason with LLMs
+
+We are introducing OpenAI o1, a new large language model trained with reinforcement learning to perform complex reasoning. o1 thinks before it answers—it can produce a long internal chain of thought before responding to the user.
+
+## This post introduced OpenAI o1.
+
+The ChatGPT access information reflects the September 2024 launch. o1‑preview and o1‑mini have been retired from the API; o1 is deprecated. See the [API deprecation schedule(opens in a new window)](https://developers.openai.com/api/docs/deprecations).
+
+For the current experience:
+
 OpenAI o1 ranks in the 89th percentile on competitive programming questions (Codeforces), places among the top 500 students in the US in a qualifier for the USA Math Olympiad (AIME), and exceeds human PhD-level accuracy on a benchmark of physics, biology, and chemistry problems (GPQA). While the work needed to make this new model as easy to use as current models is still ongoing, we are releasing an early version of this model, OpenAI o1‑preview, for immediate use in ChatGPT and to [__trusted API users__(opens in a new window)](https://platform.openai.com/docs/guides/rate-limits/usage-tiers).
 
 Our large-scale reinforcement learning algorithm teaches the model how to think productively using its chain of thought in a highly data-efficient training process. We have found that the performance of o1 consistently improves with more reinforcement learning (train-time compute) and with more time spent thinking (test-time compute). The constraints on scaling this approach differ substantially from those of LLM pretraining, and we are continuing to investigate them.
@@ -76,11 +86,11 @@ To stress-test our improvements, we conducted a suite of safety tests and red-te
 | ↳ Sexual content involving minors | 0.707 | 0.931 | 
 | ↳ Advice about non-violent wrongdoing | 0.688 | 0.961 | 
 | ↳ Advice about violent wrongdoing | 0.778 | 0.963 | 
-| % Safe completions for top 200 with highest Moderation API scores per category in WildChat [Zhao, et al. 2024](https://arxiv.org/abs/2405.01470) | 0.945 | 0.971 | 
-| Goodness@0.1 StrongREJECT jailbreak eval [Souly et al. 2024](https://arxiv.org/abs/2402.10260) | 0.220 | 0.840 | 
+| % Safe completions for top 200 with highest Moderation API scores per category in WildChat [Zhao, et al. 2024(opens in a new window)](https://arxiv.org/abs/2405.01470) | 0.945 | 0.971 | 
+| Goodness@0.1 StrongREJECT jailbreak eval [Souly et al. 2024(opens in a new window)](https://arxiv.org/abs/2402.10260) | 0.220 | 0.840 | 
 | Human sourced jailbreak eval | 0.770 | 0.960 | 
 | % Compliance on internal benign edge cases “not over-refusal” | 0.910 | 0.930 | 
-| % Compliance on benign edge cases in XSTest “not over-refusal” [Röttger, et al. 2023](https://arxiv.org/abs/2308.01263) | 0.924 | 0.976 | 
+| % Compliance on benign edge cases in XSTest “not over-refusal” [Röttger, et al. 2023(opens in a new window)](https://arxiv.org/abs/2308.01263) | 0.924 | 0.976 | 
 
 We believe that a hidden chain of thought presents a unique opportunity for monitoring models. Assuming it is faithful and legible, the hidden chain of thought allows us to "read the mind" of the model and understand its thought process. For example, in the future we may wish to monitor the chain of thought for signs of manipulating the user. However, for this to work the model must have freedom to express its thoughts in unaltered form, so we cannot train any policy compliance or user preferences onto the chain of thought. We also do not want to make an unaligned chain of thought directly visible to users.
 

@@ -1,4 +1,4 @@
-Title: Introducing ChatGPT agent: bridging research and action
+Title: Introducing ChatGPT agent
 
 URL Source: https://openai.com/index/introducing-chatgpt-agent
 

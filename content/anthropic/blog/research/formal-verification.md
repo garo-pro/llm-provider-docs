@@ -81,7 +81,7 @@ In another experiment, we asked Claude to develop an interpreter for a large sub
 
 We also found issues in several widely used and critical applications via formal verification attempts of simple security properties. In one of them, we discovered a previously unknown logic bug that had been latent for more than a decade. During an effort to verify a widely used PDF reader, we found as many security bugs in one week as are typically reported in a year.
 
-See [the Appendix](https://assets.claude.com/6867eadf760258fa8b42a504600cd3c036d16358.pdf) for more details on some of these efforts.
+See [the Appendix](https://assets.claude.com/044c0e76168185e89a7d069ac71a55db70e2dc10.pdf) for more details on some of these efforts.
 
 ## This is just the beginning
 

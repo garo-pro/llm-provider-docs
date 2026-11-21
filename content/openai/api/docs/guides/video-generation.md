@@ -8,6 +8,10 @@ The Sora 2 models and Videos API were shut down on September 24, 2026 and are
   notice](https://developers.openai.com/api/docs/deprecations#2026-03-24-sora-2-video-generation-models-and-videos-api)
   for the affected models and snapshots.
 
+Ruby SDK 1.0 removes `client.videos`, its types, and the `/v1/videos` Batch
+endpoint option. See the
+[Ruby SDK migration guide](https://developers.openai.com/api/docs/guides/ruby-sdk-migration).
+
 ## Overview
 
 Sora is OpenAI’s newest frontier in generative media—a state-of-the-art video model capable of creating richly detailed, dynamic clips with audio from natural language or images. Built on years of research into multimodal diffusion and trained on diverse visual data, Sora brings a deep understanding of 3D space, motion, and scene continuity to text-to-video generation.
@@ -124,14 +128,6 @@ var video =
                 .build());
 
 System.out.println(video.id());
-```
-
-```ruby
-require "openai"
-
-client = OpenAI::Client.new
-video = client.videos.create(model: "sora-2", prompt: "A paper airplane flying over a forest")
-puts(video.id)
 ```
 
 ```bash
@@ -308,24 +304,6 @@ if (!video.status().equals(Video.Status.COMPLETED)) {
 System.out.println("Video completed: " + video.id());
 ```
 
-```ruby
-require "openai"
-
-client = OpenAI::Client.new
-video = client.videos.create(model: "sora-2", prompt: "A paper airplane flying over a forest")
-
-while [:queued, :in_progress].include?(video.status)
-  sleep(2)
-  video = client.videos.retrieve(video.id)
-end
-
-unless video.status == OpenAI::Models::Video::Status::COMPLETED
-  raise "Video creation failed. Status: #{video.status}"
-end
-
-puts("Video successfully completed: #{video.id}")
-```
-
 
 Response example:
 
@@ -347,6 +325,9 @@ Response example:
 Instead of polling job status repeatedly with `GET`, register a [webhook](https://developers.openai.com/api/docs/guides/webhooks) to be notified automatically when a video generation completes or fails.
 
 Webhooks can be configured in your [webhook settings page](https://platform.openai.com/settings/project/webhooks). When a job finishes, the API emits one of two event types: `video.completed` and `video.failed`. Each event includes the ID of the job that triggered it.
+
+If you verify a saved `video.completed` or `video.failed` event with the Ruby
+SDK, read the video ID from the decoded hash with `event[:data][:id]`.
 
 Example webhook payload:
 
@@ -545,29 +526,6 @@ try (var content = client.videos().downloadContent(video.id())) {
   Files.copy(content.body(), Path.of("video.mp4"), StandardCopyOption.REPLACE_EXISTING);
 }
 System.out.println("Wrote video.mp4");
-```
-
-```ruby
-require "openai"
-
-client = OpenAI::Client.new
-video = client.videos.create(
-  model: "sora-2",
-  prompt: "A video of the words 'Thank you' in sparkling letters"
-)
-pending_statuses = [
-  OpenAI::Models::Video::Status::QUEUED,
-  OpenAI::Models::Video::Status::IN_PROGRESS
-]
-while pending_statuses.include?(video.status)
-  sleep(2)
-  video = client.videos.retrieve(video.id)
-end
-raise "Video generation failed" if video.status == OpenAI::Models::Video::Status::FAILED
-
-content = client.videos.download_content(video.id)
-File.binwrite("video.mp4", content.read)
-puts("Wrote video.mp4")
 ```
 
 ```bash

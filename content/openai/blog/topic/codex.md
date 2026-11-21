@@ -2,6 +2,7 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
+- [How I stay in the flow with Ultrafast](/blog/how-i-stay-in-the-flow-with-ultrafast.md): How I use Ultrafast in Codex to try small UI changes, give feedback, and stay in the zone, and where I’d try it in the API.
 - [Securing persistent agents like OpenClaw at OpenAI](/blog/securing-persistent-agents-like-openclaw-at-openai.md): How OpenAI combines trusted control-plane services, Codex sandboxing, auto-review, agent identity, and observability to run persistent agents.
 - [Building a retro handheld game with Codex and ModRetro Chromatic](/blog/build-a-game-with-modretro-chromatic.md): Using the ModRetro Chromatic plugin for Codex, you can build any game you can imagine and play it on a ModRetro Chromatic.
 - [Maintaining software with the GPT-6 family](/blog/maintaining-software-with-the-gpt-6-family.md): How OpenAI’s Core Experimentation team uses Codex to remove unused code, clean up stale experiments, and improve CI.

@@ -25,6 +25,7 @@ Each post has a Markdown twin at `/blog/<slug>.md`.
 - [From prompts to products: One year of Responses](https://developers.openai.com/blog/one-year-of-responses.md): Five stories from developers building agentic products with the Responses API in its first year.
 - [Hello, world!](https://developers.openai.com/blog/intro.md): Introducing our developer blog
 - [How Codex ran OpenAI DevDay 2025](https://developers.openai.com/blog/codex-at-devday.md): Learn how Codex helped us build experiences, demos, products, and more
+- [How I stay in the flow with Ultrafast](https://developers.openai.com/blog/how-i-stay-in-the-flow-with-ultrafast.md): How I use Ultrafast in Codex to try small UI changes, give feedback, and stay in the zone, and where I’d try it in the API.
 - [How Perplexity Brought Voice Search to Millions Using the Realtime API](https://developers.openai.com/blog/realtime-perplexity-computer.md): Lessons from how Perplexity Computer's voice agent was built with the Realtime API.
 - [Maintaining software with the GPT-6 family](https://developers.openai.com/blog/maintaining-software-with-the-gpt-6-family.md): How OpenAI’s Core Experimentation team uses Codex to remove unused code, clean up stale experiments, and improve CI.
 - [Making private MCP servers reachable without making them public](https://developers.openai.com/blog/connect-private-mcp-servers-to-openai-products.md): How we preserved private network boundaries while supporting MCP streaming, authentication, and an inspectable client.
