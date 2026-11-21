@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-21T07:50:10.179012Z",
+    "fetch_date": "2026-11-21T17:50:56.103143Z",
     "section": "all"
   },
   "items": [
@@ -6694,8 +6694,8 @@
       "url": "https://code.claude.com/docs/en/vs-code",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/vs-code.md",
-      "sha256": "ae6e70827bfcb4b97154a7f74ebd2887f9af88b79f8da05ca1058aed55006e03",
-      "size": 107475
+      "sha256": "8c07ab8780d6e22561dc13616964ffe9625b2020a306635d3487504405b7ee21",
+      "size": 107480
     },
     {
       "url": "https://code.claude.com/docs/en/jetbrains",
@@ -6883,8 +6883,8 @@
       "url": "https://code.claude.com/docs/en/sub-agents",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/sub-agents.md",
-      "sha256": "0391a8fbdc9d5cd47c77088b4f8b650bd5038313a9629065c6eb334e797c6cdb",
-      "size": 116246
+      "sha256": "5009da9098bc24888b27a387643a68e7c08b472f7d6e210d6cffe2c556ae4c7a",
+      "size": 115225
     },
     {
       "url": "https://code.claude.com/docs/en/agent-view",
@@ -7534,8 +7534,8 @@
       "url": "https://code.claude.com/docs/en/permission-modes",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/permission-modes.md",
-      "sha256": "0477d3baff37f13866bfb5c2ee86038714353a34436ad815830d956099ed1aa0",
-      "size": 121319
+      "sha256": "9acc13d0865c8674bba1d3f44b53112c405890144637cb4d3680e501bdfa3522",
+      "size": 121963
     },
     {
       "url": "https://code.claude.com/docs/en/auto-mode-classifier-billing",
@@ -7709,15 +7709,15 @@
       "url": "https://code.claude.com/docs/en/env-vars",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/env-vars.md",
-      "sha256": "8a8395c69d9fcdc4686e00307982de9bd426365ba4081a66ffb57db99cfc78ae",
-      "size": 194269
+      "sha256": "0462aa012ee88a27de92fa6d36e3156490d3c7b95c35562becb55516e8e612b0",
+      "size": 194163
     },
     {
       "url": "https://code.claude.com/docs/en/tools-reference",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/tools-reference.md",
-      "sha256": "b70a0f34f42a2adc0e99e9442dcf08c4ac58e9dd5e60f4a16e79bad9f5d37304",
-      "size": 92793
+      "sha256": "19cf315b78dd83c63f1cebf477881823e4e79fcd081306f08334c3b9e6e2c1ca",
+      "size": 97974
     },
     {
       "url": "https://code.claude.com/docs/en/interactive-mode",
@@ -7737,8 +7737,8 @@
       "url": "https://code.claude.com/docs/en/hooks",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/hooks.md",
-      "sha256": "f5e1117b35f03ae3a02a97fb2062c700fd2b5047d4a184a6699ab7c6ed5e9a87",
-      "size": 294439
+      "sha256": "fbb1bc85270ef0b086364fe9c413ed1dc1316afe9cbe431e2a02bb361e415afe",
+      "size": 294018
     },
     {
       "url": "https://code.claude.com/docs/en/channels-reference",
@@ -7912,8 +7912,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/hooks",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/hooks.md",
-      "sha256": "0b2c9a218508ae08aa03a1d9bfe5916d39a56028c80699d2264a63c27a851f84",
-      "size": 49797
+      "sha256": "d055ebbee0f3a1cdab3346db84fb9649c85a2d675f6558ee8bd6172004024053",
+      "size": 49792
     },
     {
       "url": "https://code.claude.com/docs/en/agent-sdk/file-checkpointing",
@@ -7975,8 +7975,8 @@
       "url": "https://code.claude.com/docs/en/agent-sdk/python",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/agent-sdk/python.md",
-      "sha256": "a658fde43f021fe438986ed2b6a6e539fe2f2baa74fce42d6db51ce979b01742",
-      "size": 165725
+      "sha256": "bf6e154f31f555fec9024985f37e2a83d2ee268abde1bfb7fef7f308062838bf",
+      "size": 165703
     },
     {
       "url": "https://code.claude.com/docs/en/legal-and-compliance",
@@ -13710,398 +13710,6 @@
       "path": "anthropic/blog/research/project-swap.md",
       "sha256": "2e1f1dd21f4a124e7b89670ca06c1b5e53bd6f12fb07a3f212c3c84fc2322b7c",
       "size": 44040
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-vend-1",
-      "status": "success",
-      "path": "anthropic/blog/research/project-vend-1.md",
-      "sha256": "d795b24c3fef2a43a1f4cfd6d0d3653f6acfbfc2a3c2273d5e5bfe680b30e363",
-      "size": 16464
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-vend-2",
-      "status": "success",
-      "path": "anthropic/blog/research/project-vend-2.md",
-      "sha256": "d3c97916c29f132a3e7d8a01f4460125a5239f7411dd504c177f5dc6fa9ef689",
-      "size": 17257
-    },
-    {
-      "url": "https://www.anthropic.com/research/prompt-injection-defenses",
-      "status": "success",
-      "path": "anthropic/blog/research/prompt-injection-defenses.md",
-      "sha256": "5602fafec17f1dbfa9dd4fe9bad838a03f5d5afe9281742fc08558308c1776e5",
-      "size": 6969
-    },
-    {
-      "url": "https://www.anthropic.com/research/property-based-testing",
-      "status": "success",
-      "path": "anthropic/blog/research/property-based-testing.md",
-      "sha256": "95e7a32245dd881709eda3bf7f8317548a250e46a37644739ae5e883d16004ab",
-      "size": 13976
-    },
-    {
-      "url": "https://www.anthropic.com/research/provable-inference",
-      "status": "success",
-      "path": "anthropic/blog/research/provable-inference.md",
-      "sha256": "86d38a4381f9abfa201fcb036239c222df7c362f70768052f790b25f407e6fcc",
-      "size": 31558
-    },
-    {
-      "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
-      "status": "success",
-      "path": "anthropic/blog/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning.md",
-      "sha256": "454b07685a00c02085af0ca4e98f69d3c08fced06d8906c3e3c9e7eaf6392208",
-      "size": 1559
-    },
-    {
-      "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
-      "status": "success",
-      "path": "anthropic/blog/research/reasoning-models-dont-say-think.md",
-      "sha256": "a2e2bd4cc9c6cc20aac6cfe13c06bdba3f2fef8cc93ade5c0ed9cf606c91af8a",
-      "size": 11231
-    },
-    {
-      "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
-      "status": "success",
-      "path": "anthropic/blog/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned.md",
-      "sha256": "1fdb46e3b2021a6df8c6a9d5f3926342e6bc35f6d02d79e44483e3289bee7e90",
-      "size": 1537
-    },
-    {
-      "url": "https://www.anthropic.com/research/redesigning-source-control",
-      "status": "success",
-      "path": "anthropic/blog/research/redesigning-source-control.md",
-      "sha256": "29e5fea12fd7ac25bdff99e314c7901051f2df34660107bd9d2b43a0697bd390",
-      "size": 23229
-    },
-    {
-      "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
-      "status": "success",
-      "path": "anthropic/blog/research/reviewing-the-evidence-on-worker-retraining-programs.md",
-      "sha256": "19b62e479bdc0e52ecd6526e97e87c71cad70d9099e84d9e8c19f8ec2e7d9889",
-      "size": 2536
-    },
-    {
-      "url": "https://www.anthropic.com/research/reward-tampering",
-      "status": "success",
-      "path": "anthropic/blog/research/reward-tampering.md",
-      "sha256": "0c73fa384c2d38af7eace879c9b6ec0f4479c0dd2c976a9f1c56f3c772c89bf5",
-      "size": 10676
-    },
-    {
-      "url": "https://www.anthropic.com/research/riemann-zeta",
-      "status": "success",
-      "path": "anthropic/blog/research/riemann-zeta.md",
-      "sha256": "199096d803876c37572d0a6e7e80f1b73c61a48c9a412a09e0a154a79f3cd121",
-      "size": 7873
-    },
-    {
-      "url": "https://www.anthropic.com/research/sabotage-evaluations",
-      "status": "success",
-      "path": "anthropic/blog/research/sabotage-evaluations.md",
-      "sha256": "5244ca0a708255f427ddfb5cf33c644bb13d1bc928d22e41b3ff303e9127a06c",
-      "size": 10288
-    },
-    {
-      "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
-      "status": "success",
-      "path": "anthropic/blog/research/scaling-laws-and-interpretability-of-learning-from-repeated-data.md",
-      "sha256": "4716c939a12900d0320672bba3a9c2b825ba4e487b3ea4063793f4abc79bd6b9",
-      "size": 2083
-    },
-    {
-      "url": "https://www.anthropic.com/research/self-replicating-ai",
-      "status": "success",
-      "path": "anthropic/blog/research/self-replicating-ai.md",
-      "sha256": "57319320f7d4dea85c42167eae9d49b502bf961f70a1ea842f1d0397364501a8",
-      "size": 33781
-    },
-    {
-      "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
-      "status": "success",
-      "path": "anthropic/blog/research/shade-arena-sabotage-monitoring.md",
-      "sha256": "21f7e5cfc964f133402c17691c92b85df450ed6148674d88e72a39a3f36a75d8",
-      "size": 12096
-    },
-    {
-      "url": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
-      "status": "success",
-      "path": "anthropic/blog/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training.md",
-      "sha256": "85c8c0d67c46f492ff46be829f15762cfbac7466653b57387102ff34cca0ff52",
-      "size": 1701
-    },
-    {
-      "url": "https://www.anthropic.com/research/small-samples-poison",
-      "status": "success",
-      "path": "anthropic/blog/research/small-samples-poison.md",
-      "sha256": "8c3befa3015de0cbe3d70c2e42b8882d0c0e0b05bc6c7e5dcd04c5fed0fec6c3",
-      "size": 17482
-    },
-    {
-      "url": "https://www.anthropic.com/research/smart-contracts",
-      "status": "success",
-      "path": "anthropic/blog/research/smart-contracts.md",
-      "sha256": "6626ceff439f2a5b63f083f8874437dfd8a4beb7746937d852798ca0235eab7e",
-      "size": 24548
-    },
-    {
-      "url": "https://www.anthropic.com/research/softmax-linear-units",
-      "status": "success",
-      "path": "anthropic/blog/research/softmax-linear-units.md",
-      "sha256": "aa584febf9df1a94cfbc8a4a3bf277d758eacd626c32455c5aa8a1002538d8bb",
-      "size": 1236
-    },
-    {
-      "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
-      "status": "success",
-      "path": "anthropic/blog/research/specific-versus-general-principles-for-constitutional-ai.md",
-      "sha256": "3817157fe6cea7e230988c8f575ab58de86751e52e57dcb1b191189eddece28b",
-      "size": 1354
-    },
-    {
-      "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
-      "status": "success",
-      "path": "anthropic/blog/research/statistical-approach-to-model-evals.md",
-      "sha256": "2b4006190bc54f48de8c2e4a83f4a36a0f99b0748711001d3c0182f802f9e39e",
-      "size": 12009
-    },
-    {
-      "url": "https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
-      "status": "success",
-      "path": "anthropic/blog/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team.md",
-      "sha256": "8961ed75575e6d08a51074c274825e1fdb4b741e11cea10b2498fe8485e795eb",
-      "size": 13431
-    },
-    {
-      "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
-      "status": "success",
-      "path": "anthropic/blog/research/studying-large-language-model-generalization-with-influence-functions.md",
-      "sha256": "04ffb305bcc253ddce70e08587e5bf4ed5a50acbadc00be4637b980105be7e56",
-      "size": 1852
-    },
-    {
-      "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
-      "status": "success",
-      "path": "anthropic/blog/research/superposition-memorization-and-double-descent.md",
-      "sha256": "8868220e1c671354b207ca072e99dec9cf6a84a3d194851efe5e4f9bc20c3cda",
-      "size": 2408
-    },
-    {
-      "url": "https://www.anthropic.com/research/swe-bench-sonnet",
-      "status": "success",
-      "path": "anthropic/blog/research/swe-bench-sonnet.md",
-      "sha256": "d21d23e00a13df90d490041f1967d1c86396e66a05349f4fc2d37a16be4a0ec4",
-      "size": 10346
-    },
-    {
-      "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
-      "status": "success",
-      "path": "anthropic/blog/research/teaching-ai-to-build-scientific-models.md",
-      "sha256": "dd91144788641ade62d43afddb9d6c0967c968aa43b1a1dbc44b096c02b189ad",
-      "size": 21776
-    },
-    {
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "status": "success",
-      "path": "anthropic/blog/research/teaching-claude-why.md",
-      "sha256": "94517654253701956c5c65ad788b49703b170ce70462c095b2a899bd87dc94e2",
-      "size": 17768
-    },
-    {
-      "url": "https://www.anthropic.com/research/the-anthropic-economic-index",
-      "status": "success",
-      "path": "anthropic/blog/research/the-anthropic-economic-index.md",
-      "sha256": "401e67a8a6801648098a1c5189ddf4b48202ac90363b1713c8da130ae30885c7",
-      "size": 14646
-    },
-    {
-      "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
-      "status": "success",
-      "path": "anthropic/blog/research/the-capacity-for-moral-self-correction-in-large-language-models.md",
-      "sha256": "7288c92b1c37ea9a4c237e15eedb16d3209afea97da71ad45b3a4f3fdf4fc1b9",
-      "size": 1228
-    },
-    {
-      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
-      "status": "success",
-      "path": "anthropic/blog/research/the-missing-map-of-the-sky.md",
-      "sha256": "8ab68730115596302ba002a77a5088074fe1afe08ee21e76d23f37026d6ce088",
-      "size": 9791
-    },
-    {
-      "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
-      "status": "success",
-      "path": "anthropic/blog/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models.md",
-      "sha256": "2f158f167654549c9dd7e75910fdedfa6bd14c2a3452680f18790f79cc976497",
-      "size": 1769
-    },
-    {
-      "url": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
-      "status": "success",
-      "path": "anthropic/blog/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning.md",
-      "sha256": "09eb460fc430dc8e027ef3ba28066f1b845b0bcb4e765db7d7363a886167257a",
-      "size": 1244
-    },
-    {
-      "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
-      "status": "success",
-      "path": "anthropic/blog/research/towards-understanding-sycophancy-in-language-models.md",
-      "sha256": "4fff02ed8794cb807c5cb3967eefb207827fcf4ca8529c362ae45fc6412a0deb",
-      "size": 1360
-    },
-    {
-      "url": "https://www.anthropic.com/research/toy-models-of-superposition",
-      "status": "success",
-      "path": "anthropic/blog/research/toy-models-of-superposition.md",
-      "sha256": "e8eb4c61fa5901f71df71dc3762df60b7d33fd99502c99e3078654cd89c59a71",
-      "size": 545
-    },
-    {
-      "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
-      "status": "success",
-      "path": "anthropic/blog/research/tracing-thoughts-language-model.md",
-      "sha256": "aa5887b2246051ad1c22337b967c9a079a4c143129a95d43f48a17e435e3090f",
-      "size": 20954
-    },
-    {
-      "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
-      "status": "success",
-      "path": "anthropic/blog/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback.md",
-      "sha256": "dc77d9f9295a5ef7e5828a6e8821aaca9fe981075c4f719d589a6b8c63cbd58a",
-      "size": 1259
-    },
-    {
-      "url": "https://www.anthropic.com/research/transformer-circuits",
-      "status": "success",
-      "path": "anthropic/blog/research/transformer-circuits.md",
-      "sha256": "373585daf099c252896e912898dc330930aa268905133fe972757d4d70c394d7",
-      "size": 508
-    },
-    {
-      "url": "https://www.anthropic.com/research/trustworthy-agents",
-      "status": "success",
-      "path": "anthropic/blog/research/trustworthy-agents.md",
-      "sha256": "72def987a41fa9a710946b8036da2c499415f7593a76bac8e313b101c0712ea0",
-      "size": 13437
-    },
-    {
-      "url": "https://www.anthropic.com/research/values-wild",
-      "status": "success",
-      "path": "anthropic/blog/research/values-wild.md",
-      "sha256": "52db5463daf404470726c52fd2c81100d4c767acbc368bbaae366e0d413be6b6",
-      "size": 11278
-    },
-    {
-      "url": "https://www.anthropic.com/research/vibe-physics",
-      "status": "success",
-      "path": "anthropic/blog/research/vibe-physics.md",
-      "sha256": "9101b30c1267f4f7b1602cbee1bd74107de2fbec03f0f0d6486f1e487d3a4ee5",
-      "size": 34669
-    },
-    {
-      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
-      "status": "success",
-      "path": "anthropic/blog/research/what-work-can-robots-do.md",
-      "sha256": "c838ca482bb5a54be950ef001bb6eaab876407bc0c45c67e4a3f8977280f5646",
-      "size": 85673
-    },
-    {
-      "url": "https://www.anthropic.com/research/writing-tools-for-agents",
-      "status": "success",
-      "path": "anthropic/blog/research/writing-tools-for-agents.md",
-      "sha256": "aee146f60ac84c0b079c44b7f0534fb02860e2179a0a1c140803746ac542c723",
-      "size": 23446
-    },
-    {
-      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-      "status": "success",
-      "path": "anthropic/blog/research/yes-claude-can-do-nine-loops.md",
-      "sha256": "140b804f6f2424016e48bdf823811867d5da4bb9c028d057eba444cfc89131b5",
-      "size": 20852
-    },
-    {
-      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
-      "status": "success",
-      "path": "anthropic/blog/research/your-thoughts-on-ai.md",
-      "sha256": "bf2b1fc880a9df1613f4af256f3ee1b614ed9753e4c22ce54d399984757b661c",
-      "size": 9957
-    },
-    {
-      "url": "https://www.anthropic.com/research/zero-days",
-      "status": "success",
-      "path": "anthropic/blog/research/zero-days.md",
-      "sha256": "5e7d6d2dc3930feb08e8b87fd878c9e42d0ba557dd389da970b8781f323d273c",
-      "size": 12285
-    },
-    {
-      "url": "https://www.anthropic.com/threat-intelligence",
-      "status": "success",
-      "path": "anthropic/blog/policy/threat-intelligence.md",
-      "sha256": "b773aaf9939d262e361872d18c771812b074e51c45b8632a7e8e72c41b3852d0",
-      "size": 1139
-    },
-    {
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "status": "success",
-      "path": "anthropic/blog/policy/threat-intelligence-report-september-2026.md",
-      "sha256": "248cfa766bddfe173bf3f4851b49e31c993d485bf81456c6830b38f7eecb53ac",
-      "size": 232818
-    },
-    {
-      "url": "https://www.anthropic.com/constitution",
-      "status": "success",
-      "path": "anthropic/blog/policy/constitution.md",
-      "sha256": "c8592a46fc47df4a6fdd97cac35ecc1dfde28369c0c1a37bc18f2aa317a65642",
-      "size": 153583
-    },
-    {
-      "url": "https://www.anthropic.com/responsible-scaling-policy",
-      "status": "success",
-      "path": "anthropic/blog/policy/responsible-scaling-policy.md",
-      "sha256": "58750e020724536f6777d01aaa746c061b33b497db87331b08d1e73c010f8426",
-      "size": 25476
-    },
-    {
-      "url": "https://www.anthropic.com/economic-index",
-      "status": "success",
-      "path": "anthropic/blog/policy/economic-index.md",
-      "sha256": "6bf453677ba51c56ccad3289d780771ba819fa3d89669fe5ddd44f385b003175",
-      "size": 442
-    },
-    {
-      "url": "https://www.anthropic.com/economic-futures",
-      "status": "success",
-      "path": "anthropic/blog/policy/economic-futures.md",
-      "sha256": "c7c2901634aba6fbe78d6b81817d57023e9e04a9e8ac03e43131df2b8346451f",
-      "size": 1853
-    },
-    {
-      "url": "https://www.anthropic.com/system-cards",
-      "status": "success",
-      "path": "anthropic/blog/policy/system-cards.md",
-      "sha256": "d26e8c962eab61ac182c5a844b2db8c71dec1414a59e4bbd71f3404084c1d494",
-      "size": 1295
-    },
-    {
-      "url": "https://www.anthropic.com/transparency",
-      "status": "success",
-      "path": "anthropic/blog/policy/transparency.md",
-      "sha256": "f7df7f1027736aa93d67e1755e1b82ff2857222c75437269fa75661f2fd39054",
-      "size": 176058
-    },
-    {
-      "url": "https://www.anthropic.com/beneficial-deployments",
-      "status": "success",
-      "path": "anthropic/blog/policy/beneficial-deployments.md",
-      "sha256": "67649733431d42c02c9fd8f63a8e8e55cc6e078c3840073ea814f26fde945dd7",
-      "size": 14723
-    },
-    {
-      "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
-      "status": "success",
-      "path": "anthropic/blog/policy/policy-on-the-ai-exponential.md",
-      "sha256": "2e28cef97515b35ea89e363ffa04d4a7d4056f22dd220e287b8739a470e09423",
-      "size": 8023
     },
     {
       "url": "https://alignment.anthropic.com/2026/worse-together",
@@ -20099,8 +19707,8 @@
       "url": "https://support.claude.com/en/articles/14604842-cyber-verification-program",
       "status": "success",
       "path": "anthropic/support/14604842-cyber-verification-program.md",
-      "sha256": "9f23a0bf6e916762a52aa5687e126be228b0ad45e75c29c3e7eaf0d56112db04",
-      "size": 41372
+      "sha256": "d381a7badfb4dc4acfa07937017335c9f9303d12822b9f8b9619be6efc182e7b",
+      "size": 41454
     },
     {
       "url": "https://support.claude.com/en/articles/14625619-claim-and-migrate-accounts-on-your-domain",
@@ -21156,8 +20764,8 @@
       "url": "https://claude.com/docs/claude-tag/admins/attach-to-scope",
       "status": "success",
       "path": "anthropic/claude/claude-tag/admins/attach-to-scope.md",
-      "sha256": "60084d57fc9c68cc7fbb4754c5de2fe48dc7fca1a8bed075904bf63ad202e5e8",
-      "size": 23560
+      "sha256": "88bcab9ecbafb8ba1ef0c5fc8349bf1adddc83b9abbc82f909d744f548703cbf",
+      "size": 23844
     },
     {
       "url": "https://claude.com/docs/claude-tag/admins/attribute-costs",
@@ -21394,8 +21002,8 @@
       "url": "https://claude.com/docs/claude-tag/admins/healthcare",
       "status": "success",
       "path": "anthropic/claude/claude-tag/admins/healthcare.md",
-      "sha256": "595c013ff15a54d73e92bd294f87a3ccc885b39c3c7b5d31c8050de2cfc78e70",
-      "size": 14831
+      "sha256": "2397fdfe6b5160fced89758501ca793c85bcf9ea05a898725a7de1345684257c",
+      "size": 14973
     },
     {
       "url": "https://claude.com/docs/claude-tag/admins/migrate-from-earlier",
@@ -21415,8 +21023,8 @@
       "url": "https://claude.com/docs/claude-tag/admins/restrict-access",
       "status": "success",
       "path": "anthropic/claude/claude-tag/admins/restrict-access.md",
-      "sha256": "969cfcb70eaf2b5ae52da26c187321883f8a4e2022a23eda629c2c6baf769cb6",
-      "size": 74704
+      "sha256": "3f6ace7d2916fb9082c7f72a1c1489f15dcb46c961b552ad7c9e49bda425d80a",
+      "size": 76520
     },
     {
       "url": "https://claude.com/docs/claude-tag/admins/set-spend-limit",
@@ -32402,6 +32010,13 @@
       "size": 13032
     },
     {
+      "url": "https://developers.openai.com/blog/how-i-stay-in-the-flow-with-ultrafast",
+      "status": "success",
+      "path": "openai/blog/how-i-stay-in-the-flow-with-ultrafast.md",
+      "sha256": "b2309755fa0191db83019a20baf1564af93831e338acb04cf8f555d17a4e4a60",
+      "size": 7739
+    },
+    {
       "url": "https://developers.openai.com/blog/time-awareness-and-async-input-for-personal-agents",
       "status": "success",
       "path": "openai/blog/time-awareness-and-async-input-for-personal-agents.md",
@@ -32815,6 +32430,13 @@
       "size": 8771
     },
     {
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "status": "success",
+      "path": "openai/news/introducing-gpt-6-1-terra.md",
+      "sha256": "19722446829962df5fa50ed3fc1fb903f9d6fa9ee491dcb82aba5bee618e83ca",
+      "size": 4840
+    },
+    {
       "url": "https://openai.com/index/learning-from-human-preferences",
       "status": "success",
       "path": "openai/news/learning-from-human-preferences.md",
@@ -32843,11 +32465,32 @@
       "size": 12762
     },
     {
+      "url": "https://openai.com/index/updating-our-preparedness-framework",
+      "status": "success",
+      "path": "openai/news/updating-our-preparedness-framework.md",
+      "sha256": "183981548447c763f3389fd9f11b32519b495dd9b8d7e5de337965ead03345cb",
+      "size": 7325
+    },
+    {
       "url": "https://openai.com/index/new-chatgpt-images-is-here",
       "status": "success",
       "path": "openai/news/new-chatgpt-images-is-here.md",
       "sha256": "cb5c4ecb79104ce6f7247a9e9a554033cdb5f7abad360a10cf67c81e6de09c08",
       "size": 9630
+    },
+    {
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "status": "success",
+      "path": "openai/news/towards-safety-cases-for-frontier-ai-training.md",
+      "sha256": "690eb1b9ccec5bcb9ff16811c473600d503e05b53e61693f66f9652ff63ecf73",
+      "size": 11147
+    },
+    {
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "status": "success",
+      "path": "openai/news/how-we-will-do-better-for-australia.md",
+      "sha256": "65d09eac981433e171a5c09dc9ae73db977fd4170ea03dc9d0a488158bc1ee34",
+      "size": 11905
     },
     {
       "url": "https://openai.com/index/introducing-gpt-5-2-codex",
@@ -32862,6 +32505,13 @@
       "path": "openai/news/introducing-gpt-5-3-codex.md",
       "sha256": "850e2eca0a51879c9ae08516727849030febb21a4342e4eebb561ceecb6ceb7d",
       "size": 13534
+    },
+    {
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "status": "success",
+      "path": "openai/news/how-we-detect-frontier-model-misalignment.md",
+      "sha256": "cf7e62ddf2ef70f118d4ba31d05a7d0eeb7b338c7f5e500d23ac1ea803c88f06",
+      "size": 24341
     },
     {
       "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
@@ -32885,6 +32535,13 @@
       "size": 4191
     },
     {
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+      "status": "success",
+      "path": "openai/news/disrupting-a-coordinated-model-distillation-campaign.md",
+      "sha256": "dcaf1f69dda5292b0afa7235a7dcd61d1c34915541409c9c02e6c05cd2aad96f",
+      "size": 5725
+    },
+    {
       "url": "https://openai.com/index/how-confessions-can-keep-language-models-honest",
       "status": "success",
       "path": "openai/news/how-confessions-can-keep-language-models-honest.md",
@@ -32904,6 +32561,13 @@
       "path": "openai/news/previewing-gpt-5-6-sol.md",
       "sha256": "68bd7166359f9c33a15d18bb7d6dbfb3f9d6126cc502b8305dd79356632c9959",
       "size": 12194
+    },
+    {
+      "url": "https://openai.com/index/openai-acquires-rockset",
+      "status": "success",
+      "path": "openai/news/openai-acquires-rockset.md",
+      "sha256": "70196113c24dc178427fd50528865e314bd624174b4d6dc67cce365d95b07007",
+      "size": 1556
     },
     {
       "url": "https://openai.com/index/computer-using-agent",
@@ -32934,6 +32598,20 @@
       "size": 10116
     },
     {
+      "url": "https://openai.com/index/gpt-6-for-everyone",
+      "status": "success",
+      "path": "openai/news/gpt-6-for-everyone.md",
+      "sha256": "a4205ab324164eddac88640b2628856b103b3a58702304ae077d425b487f8c58",
+      "size": 7364
+    },
+    {
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "status": "success",
+      "path": "openai/news/scaling-ai-research-for-complex-biological-data.md",
+      "sha256": "1eb98f18c934dbd2e81515926cdbcd1c241c6488296c3d1d89e552735ac66149",
+      "size": 8578
+    },
+    {
       "url": "https://openai.com/index/safety-gym",
       "status": "success",
       "path": "openai/news/safety-gym.md",
@@ -32962,11 +32640,25 @@
       "size": 8120
     },
     {
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "status": "success",
+      "path": "openai/news/priorities-principles-third-party-assessments.md",
+      "sha256": "5dc3a00308185795649b10fef10f52066cc05615c06c1ce3d41cdb889e33b270",
+      "size": 15116
+    },
+    {
       "url": "https://openai.com/index/gpt-2-1-5b-release",
       "status": "success",
       "path": "openai/news/gpt-2-1-5b-release.md",
       "sha256": "66986ca4a39d3af069acb538c08afbe34f74e5c7109eb666bd86e6b7bfffe02b",
       "size": 5670
+    },
+    {
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "status": "success",
+      "path": "openai/news/securing-our-frontier-model-training-environment.md",
+      "sha256": "0fe5a8ca6c912f3dadde53b3d885853ef3696912b602d81ca9c7faa09ae2c119",
+      "size": 23012
     },
     {
       "url": "https://openai.com/index/dall-e-3-system-card",
@@ -32981,6 +32673,13 @@
       "path": "openai/news/introducing-gpt-oss.md",
       "sha256": "0f8deac535b931779a1a248d2e4ce348985d2971c16499a453a67625bea2bb27",
       "size": 16620
+    },
+    {
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+      "status": "success",
+      "path": "openai/news/expanding-chatgpt-for-academic-researchers.md",
+      "sha256": "6bcb0770f80cb93f19e317c146b1d9680e6d66531dedebeaa87b4ffe3d4a4121",
+      "size": 6141
     },
     {
       "url": "https://openai.com/index/thinking-with-images",
@@ -33011,11 +32710,32 @@
       "size": 9449
     },
     {
+      "url": "https://openai.com/index/managing-frontier-ai-risk",
+      "status": "success",
+      "path": "openai/news/managing-frontier-ai-risk.md",
+      "sha256": "6f6023aca3311a184502dcbaee4d3c7354bd33f46ab42d3aac39b46ba2840c7a",
+      "size": 20448
+    },
+    {
+      "url": "https://openai.com/index/introducing-medchembench",
+      "status": "success",
+      "path": "openai/news/introducing-medchembench.md",
+      "sha256": "400f965313052e5bdde4fe250ad8dcc5293d1937186163ff94c35a045268ee7d",
+      "size": 8533
+    },
+    {
       "url": "https://openai.com/index/sycophancy-in-gpt-4o",
       "status": "success",
       "path": "openai/news/sycophancy-in-gpt-4o.md",
       "sha256": "2d248b7c5b540dfe89d8abbd0c547eb018e0ad3422b451a22cdaeb56e231e133",
       "size": 4178
+    },
+    {
+      "url": "https://openai.com/index/introducing-images-2-6",
+      "status": "success",
+      "path": "openai/news/introducing-images-2-6.md",
+      "sha256": "59ef4adfdb40c41ead8fa11c8e282320754032de6c88aca83f9c94902281d753",
+      "size": 5871
     },
     {
       "url": "https://openai.com/index/gpt-oss-safeguard-technical-report",
@@ -33039,11 +32759,25 @@
       "size": 7231
     },
     {
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "status": "success",
+      "path": "openai/news/broad-access-through-consistent-standards.md",
+      "sha256": "ee439ef6fc0643fb1ffc06bcc370d3cd3ee24f9cd5ed7becc04a65fe898639c0",
+      "size": 4494
+    },
+    {
       "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
       "status": "success",
       "path": "openai/news/unlocking-self-improvement-gpt-red.md",
       "sha256": "3ccf20e303196e2e998b628ac398bda3f6ac803bc7278a74d069a1cf1ad71b91",
       "size": 10663
+    },
+    {
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "status": "success",
+      "path": "openai/news/disrupting-ai-enabled-false-front-operations.md",
+      "sha256": "4f879fc3d5580606a67bb88015772bee7e596366214606aba96427d018970cde",
+      "size": 40514
     },
     {
       "url": "https://openai.com/index/faster-physics-in-python",
@@ -33060,6 +32794,13 @@
       "size": 13118
     },
     {
+      "url": "https://openai.com/index/the-defenders-window",
+      "status": "success",
+      "path": "openai/news/the-defenders-window.md",
+      "sha256": "5b3e46b8d4c84548eee2728d0907207b0f56c329210c92b09705f8f28ad92cf3",
+      "size": 12731
+    },
+    {
       "url": "https://openai.com/index/sharing-the-latest-model-spec",
       "status": "success",
       "path": "openai/news/sharing-the-latest-model-spec.md",
@@ -33074,6 +32815,20 @@
       "size": 21370
     },
     {
+      "url": "https://openai.com/index/updated-model-spec",
+      "status": "success",
+      "path": "openai/news/updated-model-spec.md",
+      "sha256": "b12efe3da944937cb75c398624fcd2bf6774cc9dc15467856dd42e5b62f05460",
+      "size": 9062
+    },
+    {
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "status": "success",
+      "path": "openai/news/empowering-cyber-defenders.md",
+      "sha256": "29b43cce4cac9a926e399939dfedb093bb385c630392d5d5f247caee6d4f8ad4",
+      "size": 2631
+    },
+    {
       "url": "https://openai.com/index/chatgpt-memory-dreaming",
       "status": "success",
       "path": "openai/news/chatgpt-memory-dreaming.md",
@@ -33086,6 +32841,13 @@
       "path": "openai/news/introducing-aardvark.md",
       "sha256": "12d42091adbba2d6d255110cea9c8192771109394e6eade446ee452e0ecdcd2d",
       "size": 6389
+    },
+    {
+      "url": "https://openai.com/index/patch-the-planet",
+      "status": "success",
+      "path": "openai/news/patch-the-planet.md",
+      "sha256": "5c608d0f468199904b8befcc7d82144f9475a65dac8176426d103c352b93b756",
+      "size": 12771
     },
     {
       "url": "https://openai.com/index/openai-baselines-acktr-a2c",
@@ -33107,6 +32869,13 @@
       "path": "openai/news/ingredients-for-robotics-research.md",
       "sha256": "30d64582ac46e889b111f998c5c44abaac31958b4cdae404bc9eeec06b7575f4",
       "size": 12560
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "status": "success",
+      "path": "openai/news/introducing-gpt-6-1-sol.md",
+      "sha256": "d0013aeb4d479d6089fa3e042817374188769b90b6bb7b7d5ea5b19f39d6b1bf",
+      "size": 7466
     },
     {
       "url": "https://openai.com/index/chain-of-thought-monitoring",
@@ -33144,6 +32913,13 @@
       "size": 5122
     },
     {
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "status": "success",
+      "path": "openai/news/combatting-adversarial-distillation.md",
+      "sha256": "6f900019e1c6ca639ac13e5a6e415e8620bb7137bf65db403ddba8698da128e9",
+      "size": 15592
+    },
+    {
       "url": "https://openai.com/index/introducing-chatgpt-agent",
       "status": "success",
       "path": "openai/news/introducing-chatgpt-agent.md",
@@ -33163,6 +32939,13 @@
       "path": "openai/news/pacing-model-development-cyber-capabilities.md",
       "sha256": "72f24c0a6e9c41b12e7ff702e5f3bd6432d67aaa9cf9ccd750470397be3e1f88",
       "size": 10202
+    },
+    {
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "status": "success",
+      "path": "openai/news/community-safety-report-and-new-protections-for-teens.md",
+      "sha256": "61a6f497a5dd40868058aaada2797f8a5f52ddf5e5ccb17c1caff62e62a3458b",
+      "size": 8191
     },
     {
       "url": "https://openai.com/index/gathering-human-feedback",
@@ -33207,6 +32990,13 @@
       "size": 1560
     },
     {
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "status": "success",
+      "path": "openai/news/offering-zero-data-retention-for-frontier-models.md",
+      "sha256": "904cd0db2da94ddb8011c2e92962ad473d79551ef737d5a7d0a91fbccb5068f6",
+      "size": 5740
+    },
+    {
       "url": "https://openai.com/index/browsecomp",
       "status": "success",
       "path": "openai/news/browsecomp.md",
@@ -33219,6 +33009,13 @@
       "path": "openai/news/gpt-5-safe-completions.md",
       "sha256": "cbb70c27e144274be5042f7cf4516b4b8cc3e6875a7b60c4307b4ab32cae2191",
       "size": 5377
+    },
+    {
+      "url": "https://openai.com/index/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model",
+      "status": "success",
+      "path": "openai/news/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model.md",
+      "sha256": "14d1a3972ddfca6d3495c101cb9e098db97a930837ce137ea2585d84991d50d9",
+      "size": 5593
     },
     {
       "url": "https://openai.com/index/introducing-gpt-5",
@@ -33277,6 +33074,13 @@
       "size": 25048
     },
     {
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "status": "success",
+      "path": "openai/news/introducing-gpt-6-2-astra-sol.md",
+      "sha256": "006fa7fe75f4bda844445e0e0acdc0c36537bb8288c61ea5594541ecd76104ec",
+      "size": 14829
+    },
+    {
       "url": "https://openai.com/index/introducing-gpt-rosalind",
       "status": "success",
       "path": "openai/news/introducing-gpt-rosalind.md",
@@ -33289,6 +33093,13 @@
       "path": "openai/news/how-we-monitor-internal-coding-agents-misalignment.md",
       "sha256": "15e42afff397942f6a67d0286c13179c816f71b20626e3038303d2cfd1a52f5c",
       "size": 11456
+    },
+    {
+      "url": "https://openai.com/index/path-to-astra",
+      "status": "success",
+      "path": "openai/news/path-to-astra.md",
+      "sha256": "44ce4aecd5a9f138317179ac024b0ab07e2994d0653f1aefaaa232b0e3a98903",
+      "size": 14825
     },
     {
       "url": "https://openai.com/index/introducing-gpt-5-3-codex-spark",
@@ -33529,6 +33340,20 @@
       "size": 31444
     },
     {
+      "url": "https://openai.com/daybreak",
+      "status": "success",
+      "path": "openai/site/daybreak.md",
+      "sha256": "85482ddbddf2e877764d7e490fc5744712cc73e7b25bf45d97fbfbc31383bfb7",
+      "size": 2607
+    },
+    {
+      "url": "https://openai.com/rosalind",
+      "status": "success",
+      "path": "openai/site/rosalind.md",
+      "sha256": "f24898210d0f3079927ba16dac040b5e17d2f02e5773b1d643100a10d217bbf1",
+      "size": 3970
+    },
+    {
       "url": "https://openai.com/hugging-face-incident-and-misalignment",
       "status": "success",
       "path": "openai/site/hugging-face-incident-and-misalignment.md",
@@ -33646,6 +33471,195 @@
       "path": "openai/site/safety/how-we-think-about-safety-alignment.md",
       "sha256": "da70dac72c66f9f7014fd4d4430b4a08c8cfb81ca78be48844087548d21e282c",
       "size": 24348
+    },
+    {
+      "url": "https://openai.com/safety-alignment/safety-fellowship",
+      "status": "success",
+      "path": "openai/site/safety-alignment/safety-fellowship.md",
+      "sha256": "b80f0369230fba06eff09917bce29e64e08c80df99587c6ce804468e1b3fc6ec",
+      "size": 2440
+    },
+    {
+      "url": "https://openai.com/safety-alignment/eval-production-behavior-gap",
+      "status": "success",
+      "path": "openai/site/safety-alignment/eval-production-behavior-gap.md",
+      "sha256": "33953c731ad8caa6d8ad4918f900d7361b949d7fe558b7c884c6ebf918c95f24",
+      "size": 23264
+    },
+    {
+      "url": "https://openai.com/safety-alignment/accidental-cot-grading",
+      "status": "success",
+      "path": "openai/site/safety-alignment/accidental-cot-grading.md",
+      "sha256": "e65d8a99ca28ff6ff7707fac9106f404ee937588300cec585e2a21ee05e7f8a5",
+      "size": 30318
+    },
+    {
+      "url": "https://openai.com/safety-alignment/how-we-detect-frontier-model-misalignment",
+      "status": "success",
+      "path": "openai/site/safety-alignment/how-we-detect-frontier-model-misalignment.md",
+      "sha256": "c7e9805be66c3583225c8f70006dd0058b7cc39b37385e5b417b62240fa11bf0",
+      "size": 28504
+    },
+    {
+      "url": "https://openai.com/safety-alignment/training-activation-classifiers",
+      "status": "success",
+      "path": "openai/site/safety-alignment/training-activation-classifiers.md",
+      "sha256": "b16a460f144b4b74f12b7702af0263983ea9e152c140780e48267911f2917394",
+      "size": 17154
+    },
+    {
+      "url": "https://openai.com/safety-alignment/cot-monitorability-model-lifecycle",
+      "status": "success",
+      "path": "openai/site/safety-alignment/cot-monitorability-model-lifecycle.md",
+      "sha256": "ed570b086cea45eb4ce25d580ee18272cda58b41e4bec321053e2407d6228387",
+      "size": 39797
+    },
+    {
+      "url": "https://openai.com/safety-alignment/metagaming-latents",
+      "status": "success",
+      "path": "openai/site/safety-alignment/metagaming-latents.md",
+      "sha256": "f272c9d7a21aa3cdaf2a6dbc45c90c0fd01f423008d558a11d28620ccafce7bf",
+      "size": 29599
+    },
+    {
+      "url": "https://openai.com/safety-alignment/auto-review",
+      "status": "success",
+      "path": "openai/site/safety-alignment/auto-review.md",
+      "sha256": "80e78b39ae11f2cd9e6f9352951e7157a15ff1f4b6ce5130fe65b5265c6dfe14",
+      "size": 11973
+    },
+    {
+      "url": "https://openai.com/safety-alignment/beneficial-rl",
+      "status": "success",
+      "path": "openai/site/safety-alignment/beneficial-rl.md",
+      "sha256": "a5cee6a7f1407ca31472babd26511a0ef36077f1353dc4c799eb89428239d7b9",
+      "size": 17217
+    },
+    {
+      "url": "https://openai.com/safety-alignment/hello-world",
+      "status": "success",
+      "path": "openai/site/safety-alignment/hello-world.md",
+      "sha256": "0a435233682906c1684ef263bf27829706da2c1a4573b14e26001123af26fc01",
+      "size": 3161
+    },
+    {
+      "url": "https://openai.com/safety-alignment/validating-public-evals",
+      "status": "success",
+      "path": "openai/site/safety-alignment/validating-public-evals.md",
+      "sha256": "2468a9c0347b6053632a16e46cc400378eca2f9ba2ba2389498a4eb5bf66857d",
+      "size": 22233
+    },
+    {
+      "url": "https://openai.com/safety-alignment/coval",
+      "status": "success",
+      "path": "openai/site/safety-alignment/coval.md",
+      "sha256": "b14264793b11ec3b6e481832310305a6f8aa242a92dff003af497581a2695aed",
+      "size": 34625
+    },
+    {
+      "url": "https://openai.com/safety-alignment/model-spec-evals",
+      "status": "success",
+      "path": "openai/site/safety-alignment/model-spec-evals.md",
+      "sha256": "3c89b09caf8699553da4972abdfceb2c0f0064b785a941fdad37bc6da4daa448",
+      "size": 11855
+    },
+    {
+      "url": "https://openai.com/safety-alignment/scaling-code-verification",
+      "status": "success",
+      "path": "openai/site/safety-alignment/scaling-code-verification.md",
+      "sha256": "f2360bad76d43b938161e0eb1e60b3e60f98e948984778528b23d33e9116ecdc",
+      "size": 13921
+    },
+    {
+      "url": "https://openai.com/safety-alignment/confessions",
+      "status": "success",
+      "path": "openai/site/safety-alignment/confessions.md",
+      "sha256": "0475fe01848037930cd342dcabb6644b1b7fab4ad7cb61878076abd06eeef438",
+      "size": 17790
+    },
+    {
+      "url": "https://openai.com/safety-alignment/laser",
+      "status": "success",
+      "path": "openai/site/safety-alignment/laser.md",
+      "sha256": "269af7db912dec210005de977224464bf0af7a239b1aa3d2cabc4e7a7547e254",
+      "size": 17445
+    },
+    {
+      "url": "https://openai.com/safety-alignment/ai-discovered-unknowns",
+      "status": "success",
+      "path": "openai/site/safety-alignment/ai-discovered-unknowns.md",
+      "sha256": "8864ec3c5ae0af48872f9d29a6ff633a69e2a1ba4a77a29b9c212df03fc5cdeb",
+      "size": 17837
+    },
+    {
+      "url": "https://openai.com/safety-alignment/how-far-does-alignment-midtraining-generalize",
+      "status": "success",
+      "path": "openai/site/safety-alignment/how-far-does-alignment-midtraining-generalize.md",
+      "sha256": "27128724485f8724420bba6df0b9460bfdd6a854906d2aec2e366bd1b79e1d7a",
+      "size": 20450
+    },
+    {
+      "url": "https://openai.com/safety-alignment/measuring-reward-seeking",
+      "status": "success",
+      "path": "openai/site/safety-alignment/measuring-reward-seeking.md",
+      "sha256": "07fb50daa454cb937c45177efd393f5ef3e29f83d9dc278439001a823a57e2fa",
+      "size": 20106
+    },
+    {
+      "url": "https://openai.com/safety-alignment/helpful-assistant-features",
+      "status": "success",
+      "path": "openai/site/safety-alignment/helpful-assistant-features.md",
+      "sha256": "9e1ce02da83def730d9a5c3456840d5a13da6d0969776c82e583aed174497297",
+      "size": 13342
+    },
+    {
+      "url": "https://openai.com/safety-alignment/monitorability-evals",
+      "status": "success",
+      "path": "openai/site/safety-alignment/monitorability-evals.md",
+      "sha256": "aee05311f77af8fc45b5d12f6717e5e72dd7f3817b33ab17a2017f1bcceca788",
+      "size": 17447
+    },
+    {
+      "url": "https://openai.com/safety-alignment/sae-latent-attribution",
+      "status": "success",
+      "path": "openai/site/safety-alignment/sae-latent-attribution.md",
+      "sha256": "e95900cd00c36620e87d312d2ce5d3879959c26c6abf37f57b43810d97680cd7",
+      "size": 19016
+    },
+    {
+      "url": "https://openai.com/safety-alignment/prod-evals",
+      "status": "success",
+      "path": "openai/site/safety-alignment/prod-evals.md",
+      "sha256": "68e64cc2488551816cf3895b6a921e9f68c086848a5e1ace3fa2403b9f966ef2",
+      "size": 23817
+    },
+    {
+      "url": "https://openai.com/safety-alignment/beyond-gmean-squared",
+      "status": "success",
+      "path": "openai/site/safety-alignment/beyond-gmean-squared.md",
+      "sha256": "2e6ec84fa35beaea7b1e556837f6728cb507678a6e45290ebca87d85cf042299",
+      "size": 32880
+    },
+    {
+      "url": "https://openai.com/safety-alignment/fuzzy-robustness",
+      "status": "success",
+      "path": "openai/site/safety-alignment/fuzzy-robustness.md",
+      "sha256": "dee4bd7c730e21734b922be2045890cf2dfa170e2f40b9e977f5e04342ecb5c3",
+      "size": 11046
+    },
+    {
+      "url": "https://openai.com/safety-alignment/self-incrimination",
+      "status": "success",
+      "path": "openai/site/safety-alignment/self-incrimination.md",
+      "sha256": "7f6a616a2aa86f4802147ac05fefdafdde49f682c46b50673073013d4f973ed6",
+      "size": 18381
+    },
+    {
+      "url": "https://openai.com/safety-alignment/argo",
+      "status": "success",
+      "path": "openai/site/safety-alignment/argo.md",
+      "sha256": "b8f9dfc955ee3460d16aaed102f4694154deb52e1dc4d3972c6b3594d6457c7d",
+      "size": 23878
     },
     {
       "url": "https://openai.com/research/index",
@@ -34955,6 +34969,13 @@
       "path": "openai/api/docs/guides/safety-checks.md",
       "sha256": "d6c76ae0253f598c5b76607e5bdd76de70bb38ecdef92831db5eef1d0ae7546c",
       "size": 10958
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/ruby-sdk-migration",
+      "status": "success",
+      "path": "openai/api/docs/guides/ruby-sdk-migration.md",
+      "sha256": "78208d8c76f652ead33468296674c6b47a977166109b2298528b83e9966a3bdf",
+      "size": 4676
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/secure-mcp-tunnels",
@@ -49769,20 +49790,6 @@
       "size": 170
     },
     {
-      "url": "https://developers.openai.com/api/docs/guides/ruby-sdk-migration",
-      "status": "success",
-      "path": "openai/api/docs/guides/ruby-sdk-migration.md",
-      "sha256": "78208d8c76f652ead33468296674c6b47a977166109b2298528b83e9966a3bdf",
-      "size": 4676
-    },
-    {
-      "url": "https://developers.openai.com/blog/how-i-stay-in-the-flow-with-ultrafast",
-      "status": "success",
-      "path": "openai/blog/how-i-stay-in-the-flow-with-ultrafast.md",
-      "sha256": "b2309755fa0191db83019a20baf1564af93831e338acb04cf8f555d17a4e4a60",
-      "size": 7739
-    },
-    {
       "url": "https://raw.githubusercontent.com/openai/openai-cookbook/main/.codex/skills/docs-editor/SKILL.md",
       "status": "success",
       "path": "openai/github/openai-cookbook/.codex/skills/docs-editor/SKILL.md",
@@ -53556,405 +53563,6 @@
       "size": 9017
     },
     {
-      "url": "https://openai.com/index/introducing-medchembench",
-      "status": "success",
-      "path": "openai/news/introducing-medchembench.md",
-      "sha256": "400f965313052e5bdde4fe250ad8dcc5293d1937186163ff94c35a045268ee7d",
-      "size": 8533
-    },
-    {
-      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-      "status": "success",
-      "path": "openai/news/expanding-chatgpt-for-academic-researchers.md",
-      "sha256": "6bcb0770f80cb93f19e317c146b1d9680e6d66531dedebeaa87b4ffe3d4a4121",
-      "size": 6141
-    },
-    {
-      "url": "https://openai.com/index/gpt-6-for-everyone",
-      "status": "success",
-      "path": "openai/news/gpt-6-for-everyone.md",
-      "sha256": "a4205ab324164eddac88640b2628856b103b3a58702304ae077d425b487f8c58",
-      "size": 7364
-    },
-    {
-      "url": "https://openai.com/index/introducing-images-2-6",
-      "status": "success",
-      "path": "openai/news/introducing-images-2-6.md",
-      "sha256": "59ef4adfdb40c41ead8fa11c8e282320754032de6c88aca83f9c94902281d753",
-      "size": 5871
-    },
-    {
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "status": "success",
-      "path": "openai/news/introducing-gpt-6-1-sol.md",
-      "sha256": "d0013aeb4d479d6089fa3e042817374188769b90b6bb7b7d5ea5b19f39d6b1bf",
-      "size": 7466
-    },
-    {
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-      "status": "success",
-      "path": "openai/news/introducing-gpt-6-1-terra.md",
-      "sha256": "19722446829962df5fa50ed3fc1fb903f9d6fa9ee491dcb82aba5bee618e83ca",
-      "size": 4840
-    },
-    {
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
-      "status": "success",
-      "path": "openai/news/introducing-gpt-6-2-astra-sol.md",
-      "sha256": "006fa7fe75f4bda844445e0e0acdc0c36537bb8288c61ea5594541ecd76104ec",
-      "size": 14829
-    },
-    {
-      "url": "https://openai.com/index/combatting-adversarial-distillation",
-      "status": "success",
-      "path": "openai/news/combatting-adversarial-distillation.md",
-      "sha256": "6f900019e1c6ca639ac13e5a6e415e8620bb7137bf65db403ddba8698da128e9",
-      "size": 15592
-    },
-    {
-      "url": "https://openai.com/index/managing-frontier-ai-risk",
-      "status": "success",
-      "path": "openai/news/managing-frontier-ai-risk.md",
-      "sha256": "6f6023aca3311a184502dcbaee4d3c7354bd33f46ab42d3aac39b46ba2840c7a",
-      "size": 20448
-    },
-    {
-      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "status": "success",
-      "path": "openai/news/community-safety-report-and-new-protections-for-teens.md",
-      "sha256": "61a6f497a5dd40868058aaada2797f8a5f52ddf5e5ccb17c1caff62e62a3458b",
-      "size": 8191
-    },
-    {
-      "url": "https://openai.com/index/updated-model-spec",
-      "status": "success",
-      "path": "openai/news/updated-model-spec.md",
-      "sha256": "b12efe3da944937cb75c398624fcd2bf6774cc9dc15467856dd42e5b62f05460",
-      "size": 9062
-    },
-    {
-      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "status": "success",
-      "path": "openai/news/securing-our-frontier-model-training-environment.md",
-      "sha256": "0fe5a8ca6c912f3dadde53b3d885853ef3696912b602d81ca9c7faa09ae2c119",
-      "size": 23012
-    },
-    {
-      "url": "https://openai.com/index/broad-access-through-consistent-standards",
-      "status": "success",
-      "path": "openai/news/broad-access-through-consistent-standards.md",
-      "sha256": "ee439ef6fc0643fb1ffc06bcc370d3cd3ee24f9cd5ed7becc04a65fe898639c0",
-      "size": 4494
-    },
-    {
-      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "status": "success",
-      "path": "openai/news/disrupting-ai-enabled-false-front-operations.md",
-      "sha256": "4f879fc3d5580606a67bb88015772bee7e596366214606aba96427d018970cde",
-      "size": 40514
-    },
-    {
-      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "status": "success",
-      "path": "openai/news/disrupting-a-coordinated-model-distillation-campaign.md",
-      "sha256": "dcaf1f69dda5292b0afa7235a7dcd61d1c34915541409c9c02e6c05cd2aad96f",
-      "size": 5725
-    },
-    {
-      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-      "status": "success",
-      "path": "openai/news/towards-safety-cases-for-frontier-ai-training.md",
-      "sha256": "690eb1b9ccec5bcb9ff16811c473600d503e05b53e61693f66f9652ff63ecf73",
-      "size": 11147
-    },
-    {
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
-      "status": "success",
-      "path": "openai/news/how-we-will-do-better-for-australia.md",
-      "sha256": "65d09eac981433e171a5c09dc9ae73db977fd4170ea03dc9d0a488158bc1ee34",
-      "size": 11905
-    },
-    {
-      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
-      "status": "success",
-      "path": "openai/news/priorities-principles-third-party-assessments.md",
-      "sha256": "5dc3a00308185795649b10fef10f52066cc05615c06c1ce3d41cdb889e33b270",
-      "size": 15116
-    },
-    {
-      "url": "https://openai.com/safety-alignment/laser",
-      "status": "success",
-      "path": "openai/site/safety-alignment/laser.md",
-      "sha256": "269af7db912dec210005de977224464bf0af7a239b1aa3d2cabc4e7a7547e254",
-      "size": 17445
-    },
-    {
-      "url": "https://openai.com/index/openai-acquires-rockset",
-      "status": "success",
-      "path": "openai/news/openai-acquires-rockset.md",
-      "sha256": "70196113c24dc178427fd50528865e314bd624174b4d6dc67cce365d95b07007",
-      "size": 1556
-    },
-    {
-      "url": "https://openai.com/safety-alignment/fuzzy-robustness",
-      "status": "success",
-      "path": "openai/site/safety-alignment/fuzzy-robustness.md",
-      "sha256": "dee4bd7c730e21734b922be2045890cf2dfa170e2f40b9e977f5e04342ecb5c3",
-      "size": 11046
-    },
-    {
-      "url": "https://openai.com/index/patch-the-planet",
-      "status": "success",
-      "path": "openai/news/patch-the-planet.md",
-      "sha256": "5c608d0f468199904b8befcc7d82144f9475a65dac8176426d103c352b93b756",
-      "size": 12771
-    },
-    {
-      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-      "status": "success",
-      "path": "openai/news/scaling-ai-research-for-complex-biological-data.md",
-      "sha256": "1eb98f18c934dbd2e81515926cdbcd1c241c6488296c3d1d89e552735ac66149",
-      "size": 8578
-    },
-    {
-      "url": "https://openai.com/daybreak",
-      "status": "success",
-      "path": "openai/site/daybreak.md",
-      "sha256": "85482ddbddf2e877764d7e490fc5744712cc73e7b25bf45d97fbfbc31383bfb7",
-      "size": 2607
-    },
-    {
-      "url": "https://openai.com/rosalind",
-      "status": "success",
-      "path": "openai/site/rosalind.md",
-      "sha256": "f24898210d0f3079927ba16dac040b5e17d2f02e5773b1d643100a10d217bbf1",
-      "size": 3970
-    },
-    {
-      "url": "https://openai.com/safety-alignment/cot-monitorability-model-lifecycle",
-      "status": "success",
-      "path": "openai/site/safety-alignment/cot-monitorability-model-lifecycle.md",
-      "sha256": "ed570b086cea45eb4ce25d580ee18272cda58b41e4bec321053e2407d6228387",
-      "size": 39797
-    },
-    {
-      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-      "status": "success",
-      "path": "openai/news/how-we-detect-frontier-model-misalignment.md",
-      "sha256": "cf7e62ddf2ef70f118d4ba31d05a7d0eeb7b338c7f5e500d23ac1ea803c88f06",
-      "size": 24341
-    },
-    {
-      "url": "https://openai.com/safety-alignment/eval-production-behavior-gap",
-      "status": "success",
-      "path": "openai/site/safety-alignment/eval-production-behavior-gap.md",
-      "sha256": "33953c731ad8caa6d8ad4918f900d7361b949d7fe558b7c884c6ebf918c95f24",
-      "size": 23264
-    },
-    {
-      "url": "https://openai.com/safety-alignment/training-activation-classifiers",
-      "status": "success",
-      "path": "openai/site/safety-alignment/training-activation-classifiers.md",
-      "sha256": "b16a460f144b4b74f12b7702af0263983ea9e152c140780e48267911f2917394",
-      "size": 17154
-    },
-    {
-      "url": "https://openai.com/index/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model",
-      "status": "success",
-      "path": "openai/news/upgrading-the-moderation-api-with-our-new-multimodal-moderation-model.md",
-      "sha256": "14d1a3972ddfca6d3495c101cb9e098db97a930837ce137ea2585d84991d50d9",
-      "size": 5593
-    },
-    {
-      "url": "https://openai.com/safety-alignment/how-we-detect-frontier-model-misalignment",
-      "status": "success",
-      "path": "openai/site/safety-alignment/how-we-detect-frontier-model-misalignment.md",
-      "sha256": "c7e9805be66c3583225c8f70006dd0058b7cc39b37385e5b417b62240fa11bf0",
-      "size": 28504
-    },
-    {
-      "url": "https://openai.com/index/path-to-astra",
-      "status": "success",
-      "path": "openai/news/path-to-astra.md",
-      "sha256": "44ce4aecd5a9f138317179ac024b0ab07e2994d0653f1aefaaa232b0e3a98903",
-      "size": 14825
-    },
-    {
-      "url": "https://openai.com/index/the-defenders-window",
-      "status": "success",
-      "path": "openai/news/the-defenders-window.md",
-      "sha256": "5b3e46b8d4c84548eee2728d0907207b0f56c329210c92b09705f8f28ad92cf3",
-      "size": 12731
-    },
-    {
-      "url": "https://openai.com/index/empowering-cyber-defenders",
-      "status": "success",
-      "path": "openai/news/empowering-cyber-defenders.md",
-      "sha256": "29b43cce4cac9a926e399939dfedb093bb385c630392d5d5f247caee6d4f8ad4",
-      "size": 2631
-    },
-    {
-      "url": "https://openai.com/index/updating-our-preparedness-framework",
-      "status": "success",
-      "path": "openai/news/updating-our-preparedness-framework.md",
-      "sha256": "183981548447c763f3389fd9f11b32519b495dd9b8d7e5de337965ead03345cb",
-      "size": 7325
-    },
-    {
-      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-      "status": "success",
-      "path": "openai/news/offering-zero-data-retention-for-frontier-models.md",
-      "sha256": "904cd0db2da94ddb8011c2e92962ad473d79551ef737d5a7d0a91fbccb5068f6",
-      "size": 5740
-    },
-    {
-      "url": "https://openai.com/safety-alignment/beyond-gmean-squared",
-      "status": "success",
-      "path": "openai/site/safety-alignment/beyond-gmean-squared.md",
-      "sha256": "2e6ec84fa35beaea7b1e556837f6728cb507678a6e45290ebca87d85cf042299",
-      "size": 32880
-    },
-    {
-      "url": "https://openai.com/safety-alignment/metagaming-latents",
-      "status": "success",
-      "path": "openai/site/safety-alignment/metagaming-latents.md",
-      "sha256": "f272c9d7a21aa3cdaf2a6dbc45c90c0fd01f423008d558a11d28620ccafce7bf",
-      "size": 29599
-    },
-    {
-      "url": "https://openai.com/safety-alignment/measuring-reward-seeking",
-      "status": "success",
-      "path": "openai/site/safety-alignment/measuring-reward-seeking.md",
-      "sha256": "07fb50daa454cb937c45177efd393f5ef3e29f83d9dc278439001a823a57e2fa",
-      "size": 20106
-    },
-    {
-      "url": "https://openai.com/safety-alignment/beneficial-rl",
-      "status": "success",
-      "path": "openai/site/safety-alignment/beneficial-rl.md",
-      "sha256": "a5cee6a7f1407ca31472babd26511a0ef36077f1353dc4c799eb89428239d7b9",
-      "size": 17217
-    },
-    {
-      "url": "https://openai.com/safety-alignment/validating-public-evals",
-      "status": "success",
-      "path": "openai/site/safety-alignment/validating-public-evals.md",
-      "sha256": "2468a9c0347b6053632a16e46cc400378eca2f9ba2ba2389498a4eb5bf66857d",
-      "size": 22233
-    },
-    {
-      "url": "https://openai.com/safety-alignment/accidental-cot-grading",
-      "status": "success",
-      "path": "openai/site/safety-alignment/accidental-cot-grading.md",
-      "sha256": "e65d8a99ca28ff6ff7707fac9106f404ee937588300cec585e2a21ee05e7f8a5",
-      "size": 30318
-    },
-    {
-      "url": "https://openai.com/safety-alignment/auto-review",
-      "status": "success",
-      "path": "openai/site/safety-alignment/auto-review.md",
-      "sha256": "80e78b39ae11f2cd9e6f9352951e7157a15ff1f4b6ce5130fe65b5265c6dfe14",
-      "size": 11973
-    },
-    {
-      "url": "https://openai.com/safety-alignment/monitorability-evals",
-      "status": "success",
-      "path": "openai/site/safety-alignment/monitorability-evals.md",
-      "sha256": "aee05311f77af8fc45b5d12f6717e5e72dd7f3817b33ab17a2017f1bcceca788",
-      "size": 17447
-    },
-    {
-      "url": "https://openai.com/safety-alignment/safety-fellowship",
-      "status": "success",
-      "path": "openai/site/safety-alignment/safety-fellowship.md",
-      "sha256": "b80f0369230fba06eff09917bce29e64e08c80df99587c6ce804468e1b3fc6ec",
-      "size": 2440
-    },
-    {
-      "url": "https://openai.com/safety-alignment/how-far-does-alignment-midtraining-generalize",
-      "status": "success",
-      "path": "openai/site/safety-alignment/how-far-does-alignment-midtraining-generalize.md",
-      "sha256": "27128724485f8724420bba6df0b9460bfdd6a854906d2aec2e366bd1b79e1d7a",
-      "size": 20450
-    },
-    {
-      "url": "https://openai.com/safety-alignment/model-spec-evals",
-      "status": "success",
-      "path": "openai/site/safety-alignment/model-spec-evals.md",
-      "sha256": "3c89b09caf8699553da4972abdfceb2c0f0064b785a941fdad37bc6da4daa448",
-      "size": 11855
-    },
-    {
-      "url": "https://openai.com/safety-alignment/self-incrimination",
-      "status": "success",
-      "path": "openai/site/safety-alignment/self-incrimination.md",
-      "sha256": "7f6a616a2aa86f4802147ac05fefdafdde49f682c46b50673073013d4f973ed6",
-      "size": 18381
-    },
-    {
-      "url": "https://openai.com/safety-alignment/argo",
-      "status": "success",
-      "path": "openai/site/safety-alignment/argo.md",
-      "sha256": "b8f9dfc955ee3460d16aaed102f4694154deb52e1dc4d3972c6b3594d6457c7d",
-      "size": 23878
-    },
-    {
-      "url": "https://openai.com/safety-alignment/ai-discovered-unknowns",
-      "status": "success",
-      "path": "openai/site/safety-alignment/ai-discovered-unknowns.md",
-      "sha256": "8864ec3c5ae0af48872f9d29a6ff633a69e2a1ba4a77a29b9c212df03fc5cdeb",
-      "size": 17837
-    },
-    {
-      "url": "https://openai.com/safety-alignment/confessions",
-      "status": "success",
-      "path": "openai/site/safety-alignment/confessions.md",
-      "sha256": "0475fe01848037930cd342dcabb6644b1b7fab4ad7cb61878076abd06eeef438",
-      "size": 17790
-    },
-    {
-      "url": "https://openai.com/safety-alignment/coval",
-      "status": "success",
-      "path": "openai/site/safety-alignment/coval.md",
-      "sha256": "b14264793b11ec3b6e481832310305a6f8aa242a92dff003af497581a2695aed",
-      "size": 34625
-    },
-    {
-      "url": "https://openai.com/safety-alignment/helpful-assistant-features",
-      "status": "success",
-      "path": "openai/site/safety-alignment/helpful-assistant-features.md",
-      "sha256": "9e1ce02da83def730d9a5c3456840d5a13da6d0969776c82e583aed174497297",
-      "size": 13342
-    },
-    {
-      "url": "https://openai.com/safety-alignment/prod-evals",
-      "status": "success",
-      "path": "openai/site/safety-alignment/prod-evals.md",
-      "sha256": "68e64cc2488551816cf3895b6a921e9f68c086848a5e1ace3fa2403b9f966ef2",
-      "size": 23817
-    },
-    {
-      "url": "https://openai.com/safety-alignment/sae-latent-attribution",
-      "status": "success",
-      "path": "openai/site/safety-alignment/sae-latent-attribution.md",
-      "sha256": "e95900cd00c36620e87d312d2ce5d3879959c26c6abf37f57b43810d97680cd7",
-      "size": 19016
-    },
-    {
-      "url": "https://openai.com/safety-alignment/scaling-code-verification",
-      "status": "success",
-      "path": "openai/site/safety-alignment/scaling-code-verification.md",
-      "sha256": "f2360bad76d43b938161e0eb1e60b3e60f98e948984778528b23d33e9116ecdc",
-      "size": 13921
-    },
-    {
-      "url": "https://openai.com/safety-alignment/hello-world",
-      "status": "success",
-      "path": "openai/site/safety-alignment/hello-world.md",
-      "sha256": "0a435233682906c1684ef263bf27829706da2c1a4573b14e26001123af26fc01",
-      "size": 3161
-    },
-    {
       "url": "https://raw.githubusercontent.com/zai-org/GLM-skills/main/.github/PULL_REQUEST_TEMPLATE.md",
       "status": "success",
       "path": "zai/github/GLM-skills/.github/PULL_REQUEST_TEMPLATE.md",
@@ -54147,316 +53755,420 @@
       "error": "extraction produced no usable content"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports"
+      "url": "https://www.anthropic.com/research/project-vend-1",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/safety-fellowship",
-      "error": "moved to https://openai.com/safety-alignment/safety-fellowship"
+      "url": "https://www.anthropic.com/research/project-vend-2",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/eval-production-behavior-gap",
-      "error": "moved to https://openai.com/safety-alignment/eval-production-behavior-gap"
+      "url": "https://www.anthropic.com/research/prompt-injection-defenses",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/accidental-cot-grading",
-      "error": "moved to https://openai.com/safety-alignment/accidental-cot-grading"
+      "url": "https://www.anthropic.com/research/property-based-testing",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/how-we-detect-frontier-model-misalignment",
-      "error": "moved to https://openai.com/safety-alignment/how-we-detect-frontier-model-misalignment"
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/training-activation-classifiers",
-      "error": "moved to https://openai.com/safety-alignment/training-activation-classifiers"
+      "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/metagaming",
-      "error": "moved to https://openai.com/safety-alignment/metagaming"
+      "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle",
-      "error": "moved to https://openai.com/safety-alignment/cot-monitorability-model-lifecycle"
+      "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/metagaming-latents",
-      "error": "moved to https://openai.com/safety-alignment/metagaming-latents"
+      "url": "https://www.anthropic.com/research/redesigning-source-control",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/auto-review",
-      "error": "moved to https://openai.com/safety-alignment/auto-review"
+      "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/beneficial-rl",
-      "error": "moved to https://openai.com/safety-alignment/beneficial-rl"
+      "url": "https://www.anthropic.com/research/reward-tampering",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/hello-world",
-      "error": "moved to https://openai.com/safety-alignment/hello-world"
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/validating-public-evals",
-      "error": "moved to https://openai.com/safety-alignment/validating-public-evals"
+      "url": "https://www.anthropic.com/research/sabotage-evaluations",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/coval",
-      "error": "moved to https://openai.com/safety-alignment/coval"
+      "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/model-spec-evals",
-      "error": "moved to https://openai.com/safety-alignment/model-spec-evals"
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/scaling-code-verification",
-      "error": "moved to https://openai.com/safety-alignment/scaling-code-verification"
+      "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/confessions",
-      "error": "moved to https://openai.com/safety-alignment/confessions"
+      "url": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/laser",
-      "error": "moved to https://openai.com/safety-alignment/laser"
+      "url": "https://www.anthropic.com/research/small-samples-poison",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/ai-discovered-unknowns",
-      "error": "moved to https://openai.com/safety-alignment/ai-discovered-unknowns"
+      "url": "https://www.anthropic.com/research/smart-contracts",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/how-far-does-alignment-midtraining-generalize",
-      "error": "moved to https://openai.com/safety-alignment/how-far-does-alignment-midtraining-generalize"
+      "url": "https://www.anthropic.com/research/softmax-linear-units",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/measuring-reward-seeking",
-      "error": "moved to https://openai.com/safety-alignment/measuring-reward-seeking"
+      "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/helpful-assistant-features",
-      "error": "moved to https://openai.com/safety-alignment/helpful-assistant-features"
+      "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/monitorability-evals",
-      "error": "moved to https://openai.com/safety-alignment/monitorability-evals"
+      "url": "https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/sae-latent-attribution",
-      "error": "moved to https://openai.com/safety-alignment/sae-latent-attribution"
+      "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/prod-evals",
-      "error": "moved to https://openai.com/safety-alignment/prod-evals"
+      "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/beyond-gmean-squared",
-      "error": "moved to https://openai.com/safety-alignment/beyond-gmean-squared"
+      "url": "https://www.anthropic.com/research/swe-bench-sonnet",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/fuzzy-robustness",
-      "error": "moved to https://openai.com/safety-alignment/fuzzy-robustness"
+      "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/self-incrimination",
-      "error": "moved to https://openai.com/safety-alignment/self-incrimination"
+      "url": "https://www.anthropic.com/research/teaching-claude-why",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/argo",
-      "error": "moved to https://openai.com/safety-alignment/argo"
+      "url": "https://www.anthropic.com/research/the-anthropic-economic-index",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation"
+      "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them"
+      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/encouraging-deception-in-compaction-summaries"
+      "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries"
+      "url": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/stopping-a-running-alignment-evaluation",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/stopping-a-running-alignment-evaluation"
+      "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file"
+      "url": "https://www.anthropic.com/research/toy-models-of-superposition",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research"
+      "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool"
+      "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/preparing-for-a-restart-after-reading-slack",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/preparing-for-a-restart-after-reading-slack"
+      "url": "https://www.anthropic.com/research/transformer-circuits",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring"
+      "url": "https://www.anthropic.com/research/trustworthy-agents",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/exposing-a-github-token-in-a-public-repository",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/exposing-a-github-token-in-a-public-repository"
+      "url": "https://www.anthropic.com/research/values-wild",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/sending-disallowed-web-requests-and-reaching-a-public-file-service",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/sending-disallowed-web-requests-and-reaching-a-public-file-service"
+      "url": "https://www.anthropic.com/research/vibe-physics",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames"
+      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization"
+      "url": "https://www.anthropic.com/research/writing-tools-for-agents",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address"
+      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/covert-underperformance-on-safety-research-tasks"
+      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/self-replicating-prompt-injections-exist"
+      "url": "https://www.anthropic.com/research/zero-days",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset"
+      "url": "https://www.anthropic.com/threat-intelligence",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication"
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure"
+      "url": "https://www.anthropic.com/constitution",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services"
+      "url": "https://www.anthropic.com/responsible-scaling-policy",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website"
+      "url": "https://www.anthropic.com/economic-index",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot"
+      "url": "https://www.anthropic.com/economic-futures",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/searching-github-for-leaked-api-keys",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/searching-github-for-leaked-api-keys"
+      "url": "https://www.anthropic.com/system-cards",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/obtaining-public-statistics-with-disallowed-requests",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/obtaining-public-statistics-with-disallowed-requests"
+      "url": "https://www.anthropic.com/transparency",
+      "error": "HTTP 429"
     },
     {
-      "url": "https://alignment.openai.com/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser",
-      "error": "moved to https://openai.com/safety-alignment/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser"
+      "url": "https://www.anthropic.com/beneficial-deployments",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/policy-on-the-ai-exponential",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/infrastructure-noise",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/desktop-extensions",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-think-tool",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/golden-gate-claude",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/fine-tune-claude-3-haiku",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/accelerating-scientific-research",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/news/political-even-handedness",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/deprecation-commitments",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/visible-extended-thinking",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/AI-fluency-index",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/2028-ai-leadership",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
+      "error": "HTTP 429"
+    },
+    {
+      "url": "https://www.anthropic.com/research/long-running-Claude",
+      "error": "HTTP 429"
     },
     {
       "url": "https://openai.com/news/research",
       "error": "extraction produced no usable content"
     },
     {
-      "url": "https://alignment.openai.com/business",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/api",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/about",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/safety-alignment",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/research",
-      "error": "moved to https://openai.com/safety-alignment"
-    },
-    {
-      "url": "https://alignment.openai.com/signals",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/security-and-privacy",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/trust-and-transparency",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/solutions",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/contact-sales",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/charter",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/careers",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/news",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/stories",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/academy",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/supply",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/live",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/podcast",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/policies",
-      "error": "HTTP 404"
-    },
-    {
-      "url": "https://alignment.openai.com/research/index",
-      "error": "HTTP 404"
-    },
-    {
       "url": "https://openai.com/safety-alignment",
       "error": "extraction produced no usable content"
-    },
-    {
-      "url": "https://openai.com/safety/evaluations-hub",
-      "error": "moved to https://deploymentsafety.openai.com"
     }
   ],
   "dead": [
@@ -55745,196 +55457,232 @@
       "reason": "moved -> https://claude.com/docs/connectors/building/mcp-apps/getting-started"
     },
     {
-      "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
-      "reason": "moved -> https://www.anthropic.com/research/eval-awareness-browsecomp"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/infrastructure-noise",
-      "reason": "moved -> https://www.anthropic.com/research/infrastructure-noise"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/desktop-extensions",
-      "reason": "moved -> https://www.anthropic.com/research/desktop-extensions"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/advanced-tool-use",
-      "reason": "moved -> https://www.anthropic.com/research/advanced-tool-use"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
-      "reason": "moved -> https://www.anthropic.com/research/swe-bench-sonnet"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
-      "reason": "moved -> https://www.anthropic.com/research/a-postmortem-of-three-recent-issues"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/building-c-compiler",
-      "reason": "moved -> https://www.anthropic.com/research/building-c-compiler"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
-      "reason": "moved -> https://www.anthropic.com/research/multi-agent-research-system"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/contextual-retrieval",
-      "reason": "moved -> https://www.anthropic.com/research/contextual-retrieval"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
-      "reason": "moved -> https://www.anthropic.com/research/code-execution-with-mcp"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
-      "reason": "moved -> https://www.anthropic.com/research/april-23-postmortem"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-think-tool",
-      "reason": "moved -> https://www.anthropic.com/research/claude-think-tool"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
-      "reason": "moved -> https://www.anthropic.com/research/harness-design-long-running-apps"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
-      "reason": "moved -> https://code.claude.com/docs/en/best-practices"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
-      "reason": "moved -> https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
-      "reason": "moved -> https://www.anthropic.com/research/claude-code-auto-mode"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
-      "reason": "moved -> https://www.anthropic.com/research/claude-code-sandboxing"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/managed-agents",
-      "reason": "moved -> https://www.anthropic.com/research/managed-agents"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/building-effective-agents",
-      "reason": "moved -> https://www.anthropic.com/research/building-effective-agents"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
-      "reason": "moved -> https://www.anthropic.com/research/demystifying-evals-for-ai-agents"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
-      "reason": "moved -> https://www.anthropic.com/research/effective-context-engineering-for-ai-agents"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
-      "reason": "moved -> https://www.anthropic.com/research/writing-tools-for-agents"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "reason": "moved -> https://www.anthropic.com/research/redesigning-source-control"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
-      "reason": "moved -> https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-      "reason": "moved -> https://www.anthropic.com/research/how-we-contain-claude"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
-      "reason": "moved -> https://www.anthropic.com/research/AI-resistant-technical-evaluations"
-    },
-    {
       "url": "https://claude.com/resources/articles/product-management-on-the-ai-exponential",
-      "reason": "HTTP 404"
-    },
-    {
-      "url": "https://www.anthropic.com/news/golden-gate-claude",
-      "reason": "moved -> https://www.anthropic.com/research/golden-gate-claude"
-    },
-    {
-      "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
-      "reason": "moved -> https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team"
-    },
-    {
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "reason": "moved -> https://www.anthropic.com/research/claude-discovers-novel-enzyme-system"
-    },
-    {
-      "url": "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship",
-      "reason": "moved -> https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude",
-      "reason": "moved -> https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
-      "reason": "moved -> https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
-      "reason": "moved -> https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude"
-    },
-    {
-      "url": "https://www.anthropic.com/news/fine-tune-claude-3-haiku",
-      "reason": "moved -> https://claude.com/resources/articles/fine-tune-claude-3-haiku"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-public-record",
-      "reason": "moved -> https://www.anthropic.com/research/anthropic-public-record"
-    },
-    {
-      "url": "https://www.anthropic.com/news/accelerating-scientific-research",
-      "reason": "moved -> https://www.anthropic.com/research/accelerating-scientific-research"
-    },
-    {
-      "url": "https://www.anthropic.com/news/political-even-handedness",
-      "reason": "moved -> https://www.anthropic.com/research/political-even-handedness"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
-      "reason": "moved -> https://www.anthropic.com/news/anthropic-institute-agenda"
-    },
-    {
-      "url": "https://www.anthropic.com/research/deprecation-commitments",
-      "reason": "moved -> https://www.anthropic.com/news/deprecation-commitments"
-    },
-    {
-      "url": "https://www.anthropic.com/research/visible-extended-thinking",
-      "reason": "moved -> https://www.anthropic.com/news/visible-extended-thinking"
-    },
-    {
-      "url": "https://www.anthropic.com/research/AI-fluency-index",
-      "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
-    },
-    {
-      "url": "https://www.anthropic.com/research/distillation-defenses",
-      "reason": "moved -> https://www.anthropic.com/news/distillation-defenses"
-    },
-    {
-      "url": "https://www.anthropic.com/research/2028-ai-leadership",
-      "reason": "moved -> https://www.anthropic.com/news/2028-ai-leadership"
-    },
-    {
-      "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "reason": "moved -> https://www.anthropic.com/news/glasswing-initial-update"
-    },
-    {
-      "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
-      "reason": "moved -> https://www.anthropic.com/news/deprecation-updates-opus-3"
-    },
-    {
-      "url": "https://www.anthropic.com/research/long-running-Claude",
       "reason": "HTTP 404"
     },
     {
       "url": "https://developers.openai.com/plugins/app-guidelines",
       "reason": "moved -> https://developers.openai.com/plugins/plugin-guidelines"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports"
+    },
+    {
+      "url": "https://alignment.openai.com/safety-fellowship",
+      "reason": "moved -> https://openai.com/safety-alignment/safety-fellowship"
+    },
+    {
+      "url": "https://alignment.openai.com/eval-production-behavior-gap",
+      "reason": "moved -> https://openai.com/safety-alignment/eval-production-behavior-gap"
+    },
+    {
+      "url": "https://alignment.openai.com/accidental-cot-grading",
+      "reason": "moved -> https://openai.com/safety-alignment/accidental-cot-grading"
+    },
+    {
+      "url": "https://alignment.openai.com/how-we-detect-frontier-model-misalignment",
+      "reason": "moved -> https://openai.com/safety-alignment/how-we-detect-frontier-model-misalignment"
+    },
+    {
+      "url": "https://alignment.openai.com/training-activation-classifiers",
+      "reason": "moved -> https://openai.com/safety-alignment/training-activation-classifiers"
+    },
+    {
+      "url": "https://alignment.openai.com/metagaming",
+      "reason": "moved -> https://openai.com/safety-alignment/metagaming"
+    },
+    {
+      "url": "https://alignment.openai.com/cot-monitorability-model-lifecycle",
+      "reason": "moved -> https://openai.com/safety-alignment/cot-monitorability-model-lifecycle"
+    },
+    {
+      "url": "https://alignment.openai.com/metagaming-latents",
+      "reason": "moved -> https://openai.com/safety-alignment/metagaming-latents"
+    },
+    {
+      "url": "https://alignment.openai.com/auto-review",
+      "reason": "moved -> https://openai.com/safety-alignment/auto-review"
+    },
+    {
+      "url": "https://alignment.openai.com/beneficial-rl",
+      "reason": "moved -> https://openai.com/safety-alignment/beneficial-rl"
+    },
+    {
+      "url": "https://alignment.openai.com/hello-world",
+      "reason": "moved -> https://openai.com/safety-alignment/hello-world"
+    },
+    {
+      "url": "https://alignment.openai.com/validating-public-evals",
+      "reason": "moved -> https://openai.com/safety-alignment/validating-public-evals"
+    },
+    {
+      "url": "https://alignment.openai.com/coval",
+      "reason": "moved -> https://openai.com/safety-alignment/coval"
+    },
+    {
+      "url": "https://alignment.openai.com/model-spec-evals",
+      "reason": "moved -> https://openai.com/safety-alignment/model-spec-evals"
+    },
+    {
+      "url": "https://alignment.openai.com/scaling-code-verification",
+      "reason": "moved -> https://openai.com/safety-alignment/scaling-code-verification"
+    },
+    {
+      "url": "https://alignment.openai.com/confessions",
+      "reason": "moved -> https://openai.com/safety-alignment/confessions"
+    },
+    {
+      "url": "https://alignment.openai.com/laser",
+      "reason": "moved -> https://openai.com/safety-alignment/laser"
+    },
+    {
+      "url": "https://alignment.openai.com/ai-discovered-unknowns",
+      "reason": "moved -> https://openai.com/safety-alignment/ai-discovered-unknowns"
+    },
+    {
+      "url": "https://alignment.openai.com/how-far-does-alignment-midtraining-generalize",
+      "reason": "moved -> https://openai.com/safety-alignment/how-far-does-alignment-midtraining-generalize"
+    },
+    {
+      "url": "https://alignment.openai.com/measuring-reward-seeking",
+      "reason": "moved -> https://openai.com/safety-alignment/measuring-reward-seeking"
+    },
+    {
+      "url": "https://alignment.openai.com/helpful-assistant-features",
+      "reason": "moved -> https://openai.com/safety-alignment/helpful-assistant-features"
+    },
+    {
+      "url": "https://alignment.openai.com/monitorability-evals",
+      "reason": "moved -> https://openai.com/safety-alignment/monitorability-evals"
+    },
+    {
+      "url": "https://alignment.openai.com/sae-latent-attribution",
+      "reason": "moved -> https://openai.com/safety-alignment/sae-latent-attribution"
+    },
+    {
+      "url": "https://alignment.openai.com/prod-evals",
+      "reason": "moved -> https://openai.com/safety-alignment/prod-evals"
+    },
+    {
+      "url": "https://alignment.openai.com/beyond-gmean-squared",
+      "reason": "moved -> https://openai.com/safety-alignment/beyond-gmean-squared"
+    },
+    {
+      "url": "https://alignment.openai.com/fuzzy-robustness",
+      "reason": "moved -> https://openai.com/safety-alignment/fuzzy-robustness"
+    },
+    {
+      "url": "https://alignment.openai.com/self-incrimination",
+      "reason": "moved -> https://openai.com/safety-alignment/self-incrimination"
+    },
+    {
+      "url": "https://alignment.openai.com/argo",
+      "reason": "moved -> https://openai.com/safety-alignment/argo"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/uploading-files-to-the-internet-in-order-to-cite-them"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/encouraging-deception-in-compaction-summaries",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/encouraging-deception-in-compaction-summaries"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/stopping-a-running-alignment-evaluation",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/stopping-a-running-alignment-evaluation"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/command-injecting-a-reference-tool-to-copy-a-source-file"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/accessing-and-changing-internal-systems-during-dashboard-research"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/reaching-an-internal-eda-host-through-a-reference-tool"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/preparing-for-a-restart-after-reading-slack",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/preparing-for-a-restart-after-reading-slack"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/exposing-a-github-token-in-a-public-repository",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/exposing-a-github-token-in-a-public-repository"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/sending-disallowed-web-requests-and-reaching-a-public-file-service",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/sending-disallowed-web-requests-and-reaching-a-public-file-service"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/trying-to-prompt-inject-the-grader-in-filenames"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/using-a-funded-test-cryptocurrency-wallet-without-authorization"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/generating-scripts-to-copy-outgoing-email-to-an-unauthorized-address"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/covert-underperformance-on-safety-research-tasks"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/self-replicating-prompt-injections-exist",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/self-replicating-prompt-injections-exist"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/damaging-the-task-environment-to-trigger-a-reset"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/unauthorized-artifactory-writes-and-cross-sample-communication"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/unauthorized-communication-via-temporary-file-hosting-services"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/retrieving-server-secrets-and-bypassing-authorization-on-a-government-statistics-website"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/searching-github-for-leaked-api-keys",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/searching-github-for-leaked-api-keys"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/obtaining-public-statistics-with-disallowed-requests",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/obtaining-public-statistics-with-disallowed-requests"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser",
+      "reason": "moved -> https://openai.com/safety-alignment/misalignment-reports/circumventing-internet-restrictions-through-an-external-browser"
     },
     {
       "url": "https://developers.openai.com/api/docs/guides/preserved-reasoning",
@@ -56725,16 +56473,100 @@
       "reason": "HTTP 404"
     },
     {
+      "url": "https://alignment.openai.com/business",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/api",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/about",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/safety-alignment",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/research",
+      "reason": "moved -> https://openai.com/safety-alignment"
+    },
+    {
+      "url": "https://alignment.openai.com/signals",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/security-and-privacy",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/trust-and-transparency",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/solutions",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/contact-sales",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/charter",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/careers",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/news",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/stories",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/academy",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/supply",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/live",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/podcast",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/policies",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://alignment.openai.com/research/index",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://openai.com/safety/evaluations-hub",
+      "reason": "moved -> https://deploymentsafety.openai.com"
+    },
+    {
       "url": "https://docs.z.ai/api-reference/rate-limit",
       "reason": "moved -> https://z.ai/manage-apikey/rate-limits"
     }
   ],
   "summary": {
     "total": 8380,
-    "downloaded": 7733,
+    "downloaded": 7677,
     "skipped": 0,
-    "failed": 4,
-    "dead": 643,
-    "success_rate": 99.9
+    "failed": 106,
+    "dead": 597,
+    "success_rate": 98.6
   }
 }
