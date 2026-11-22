@@ -227,6 +227,8 @@ The examples create paused objects with a $100 lifetime budget and a $1 click bi
 
 Use `feed_selection` with the Hotel inventory type and schema profile. Don't combine it with the legacy `mode` or `product_feed_id` fields.
 
+This example uses the Clicks objective with click billing and targets people in the United States. Set `targeting.locations.countries` to the supported countries where you want to reach people. If you omit targeting, the API uses the default for your account. Hotel campaigns support whole countries. Geographic exclusions, narrower audience locations, and restrictive platform targeting aren't supported.
+
 ```bash
 curl -X POST "https://api.ads.openai.com/v1/campaigns" \
   -H "Authorization: Bearer ${OPENAI_ADS_API_KEY}" \
@@ -240,6 +242,7 @@ curl -X POST "https://api.ads.openai.com/v1/campaigns" \
     "bidding_type": "clicks",
     "objective": "clicks",
     "billing_event_type": "click",
+    "targeting": {"locations": {"countries": ["US"]}},
     "feed_selection": {
       "feed_id": "fd_123",
       "inventory_type": "hotel",
@@ -248,7 +251,7 @@ curl -X POST "https://api.ads.openai.com/v1/campaigns" \
   }'
 ```
 
-Save the returned campaign `id`. Hotel campaigns currently support the Clicks objective with manual cost-per-click (CPC) bidding and audience targeting for the entire United States. Omitting targeting on creation selects the United States. Geographic exclusions, narrower audience locations, and restrictive platform targeting aren't supported. You can omit `start_time` and `end_time`, or send `null`, when you don't need a schedule.
+Save the returned campaign `id` and check that the saved audience countries match your intent before you activate the campaign. You can omit `start_time` and `end_time`, or send `null`, when you don't need a schedule.
 
 ### 2. Create the ad group
 
@@ -279,7 +282,7 @@ curl -X POST "https://api.ads.openai.com/v1/ad_groups" \
   }'
 ```
 
-Save the returned ad group `id`. Hotel ad groups require `fixed_bid`; automated bidding isn't supported. Use an empty `filters` array to select the feed without additional property filters.
+Save the returned ad group `id`. This example uses `fixed_bid` to set a manual cost-per-click (CPC) bid. Ask your OpenAI account team which bidding strategies are available for your pilot account. Use an empty `filters` array to select the feed without additional property filters.
 
 ### 3. Create the ad template
 
