@@ -7,7 +7,7 @@ Markdown Content:
 
 A research preview is available by waitlist today, starting with US Pro, Max, and Ultra subscribers.
 
-Today, we’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working even when you step away, and checks with you before it acts on your behalf. We built Claude Duet for professionals and small business owners with more on their plates than they can track.
+Today, we’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. It comes to you with what needs your attention, completes tasks you ask of it, keeps working even when you step away, and checks with you before it acts on your behalf. We built Claude Duet for professionals and [small business owners](https://claude.com/resources/articles/claude-for-small-business-launches-new-workflows-integrations-and-training-programs) with more on their plates than they can track.
 
 It’s available as a standalone app on iOS and Android, and on claude.ai. For this research preview, Claude Duet is included in Pro, Max, and Ultra plans and uses the same usage limits as the rest of Claude. To get access, [join the waitlist (opens in new tab)](https://claude.com/product/claude-duet).
 
@@ -17,7 +17,7 @@ We designed Claude Duet to be a partner you can trust. Professionals of all kind
 
 What makes Claude Duet so helpful is its judgment. We designed it around [Claude Opus 5.5 (opens in new tab)](https://www.anthropic.com/claude-opus-5-5) and built it to be resourceful and to decide what needs you, what can wait, and when to check with you first.
 
-Each morning, it sends you a short brief on the most important items across your connected apps. Throughout the day, it keeps tabs on those apps and messages you only when something needs your attention. You can also hand it tasks of all shapes—from simple administrative tasks of scheduling meetings to more complex ones, such as building dashboards with dozens of tools, creating financial or sales forecasts, prototyping, and building web apps.
+Each morning, it sends you a short brief on the most important items across your connected apps. Throughout the day, it keeps tabs on those apps and messages you only when something needs your attention. You can also hand it tasks of all shapes—from simple administrative tasks of scheduling meetings to more complex ones, such as [building dashboards](https://claude.com/resources/articles/dashboards-and-motion) with dozens of tools, creating financial or sales forecasts, prototyping, and building web apps.
 
 ## Safety and discretion are built in
 
@@ -37,7 +37,7 @@ We’re continuing to develop and strengthen these protections, and will share m
 
 People at Anthropic have been using Claude Duet to accomplish more, but also to leave more room for thinking and being present. Boris Cherny, who leads our Claude Code team, talks through his mental to-do list with Claude Duet on walks, instead of saving the work for his desk. Chelsea Larsson, who leads our model and product behavior design team, hands Claude Duet her to-do list before leaving to be with her kids and it saves the results for an evening report. And the team behind Claude Duet uses it to build the product. Karan Ahuja, who leads the team, works with it to schedule user interviews, partner with him on prototypes, and even ship code.
 
-We gave small business owners and entrepreneurs early access to Claude Duet, and some have been using it to help run their businesses. Here’s what some of them said:
+We gave [small business owners and entrepreneurs](https://claude.com/resources/articles/what-1-000-small-business-owners-taught-us-about-ai) early access to Claude Duet, and some have been using it to help run their businesses. Here’s what some of them said:
 
 ![](https://assets.claude.com/04a24f1e5f837cd4772f819fdf835bf695d545e0.jpg?w=168&q=75&fm=webp&fit=max)
 
@@ -56,7 +56,7 @@ Mya had a call coming up with a potential client. Claude Duet saw it on her cale
 
 ## How Claude Duet works
 
-**Your context from Claude is the foundation.** Claude Duet carries over your memory, skills, and connected apps from your Claude account, so setting it up requires minimal work. What changes is how you work together: Claude Duet comes to you first, and you can message it through typing or voice in one ongoing thread, so a quick reply and a weeklong project both start in the same place.
+**Your context from Claude is the foundation.** Claude Duet carries over your [memory](https://claude.com/resources/articles/claudes-memory-works-everywhere-and-you-decide-whats-in-it), [skills](https://claude.com/resources/articles/skills-explained), and connected apps from your Claude account, so setting it up requires minimal work. What changes is how you work together: Claude Duet comes to you first, and you can message it through typing or voice in one ongoing thread, so a quick reply and a weeklong project both start in the same place.
 
 **Work continues when you step away.** Claude Duet has a virtual machine with its own browser, so it doesn’t require your laptop or phone to be on. Describe a task in a short message, and it works out which apps to use and what steps to take in the background. You’ll receive a notification when the task is complete or needs your review.
 

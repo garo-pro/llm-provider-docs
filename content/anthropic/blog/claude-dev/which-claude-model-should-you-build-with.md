@@ -92,7 +92,7 @@ Effort level and latency are roughly correlated. Determine if the accuracy you g
 
 Often providing a means of self-verification is more cost effective and adds less latency than changing effort levels. When a model isn't good enough for a task, take these steps in order:
 
-1. Check that the model can [verify its own work](https://claude.com/resources/articles/building-verification-loops-in-claude-code-with-skills), with a test, a build or a script that calls the endpoint.
+1. Check that the model can [verify its own work](https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/), with a test, a build or a script that calls the endpoint.
 2. Raise effort one level.
 3. Move to the next model up, starting at a lower effort level than you used on the smaller one.
 

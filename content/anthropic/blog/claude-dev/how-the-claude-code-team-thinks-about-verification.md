@@ -18,7 +18,7 @@ What was once expensive to verify (tests, benchmarks, specs, real end-to-end run
 
 You can also close the verification loop by using the results to improve the agent’s performance on that task. For example, if an agent repeatedly fails a test that checks logs for user data, you can create a hook or a more explicit rule in your CLAUDE.md to avoid future issues. This (mostly) stops issues from happening again.
 
-So if verification is critical to producing quality code at a high velocity, what types of tests should you use and how should you apply them across your pipeline? This article answers those questions and also shares the process used by the Claude Code team.
+So if verification is critical to producing quality code at a high velocity, what types of tests should you use and how should you apply them across your pipeline? This article answers those questions and also shares the process used by the [Claude Code](https://claude.com/product/claude-code) team.
 
 ## Not all tests are created equal: 3 tests worth investing in
 
@@ -73,9 +73,9 @@ We have previously written about [how code review works at Anthropic](https://cl
 
 Running the app end to end matters more than tests. You wouldn't ship an iOS change without trying it in a simulator, and the same goes for Claude.
 
-Claude can test the whole app the way a human or QA engineer would. Ask it to use the Claude Chrome extension for web changes, an iOS or Android MCP for mobile, computer use for desktop, or to run the service locally for backend work.
+Claude can test the whole app the way a human or QA engineer would. Ask it to use the [Claude Chrome extension](https://claude.com/claude-in-chrome) for web changes, an iOS or Android MCP for mobile, computer use for desktop, or to run the service locally for backend work.
 
-To codify how to start the simulator or run your app, create a skill called verify. Put it in a .claude/skills/ folder in your repo, as close to the relevant code as you can, and add as many as you need. Claude knows to use the verify skill before committing changes.
+To codify how to start the simulator or run your app, [create a skill called verify](https://claude.dev/blog/lessons-from-building-claude-code-how-we-use-skills/). Put it in a .claude/skills/ folder in your repo, as close to the relevant code as you can, and add as many as you need. Claude knows to use the verify skill before committing changes.
 
 Then invest in making your verify skill fast and reliable. Ask Claude to iterate on it and stress test it. It's your smoke test harness, so you want it rock solid.
 

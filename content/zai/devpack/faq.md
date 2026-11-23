@@ -8,7 +8,7 @@
 
 **Q: Which models are supported by GLM Coding Plan? How can I switch between them?**
 
-**A:** All plans support GLM-5.3, GLM-5.3-Flash.
+**A:** All plans support GLM-5.4, GLM-5.3 and GLM-5.3-Flash.
 
 > [!NOTE]
 >
@@ -205,7 +205,7 @@ For example: If a plan costs 100 USD, and your friend gets a 50% first-order dis
 * API endpoint for Claude Code and Goose is：`https://api.z.ai/api/anthropic`
 * API endpoint for other tools is: `https://api.z.ai/api/coding/paas/v4`
 
-3. Only the following two models can be called: GLM-5.3, GLM-5.3-Flash. For detailed instructions, please refer to:
+3. Only the following three models can be called: GLM-5.4, GLM-5.3, GLM-5.3-Flash. For detailed instructions, please refer to:
    [https://docs.z.ai/devpack/overview](https://docs.z.ai/devpack/overview.md)
 
 

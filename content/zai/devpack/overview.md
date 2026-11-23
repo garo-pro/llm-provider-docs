@@ -61,8 +61,7 @@ The plan can be applied to agent tools such as ZCode, Claude Code, Codex, OpenCo
 
 ### Supported Models
 
-* All plans support **GLM-5.3**, GLM-5.3-Flash.
-* Requests for GLM-5.2/GLM-5.1 will be automatically routed to GLM-5.3, requests for GLM-4.7 will automatically be routed to GLM-5.3-Flash.
+* All plans support **GLM-5.4**, GLM-5.3 and GLM-5.3-Flash.
 
 ### Usage Instruction
 
@@ -107,7 +106,14 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit.
 
   <tbody>
     <tr>
-      <td rowSpan="2">Model</td>
+      <td rowSpan="3">Model</td>
+      <td>GLM-5.4</td>
+      <td>4.6</td>
+      <td>1.1</td>
+      <td>16</td>
+    </tr>
+
+    <tr>
       <td>GLM-5.3</td>
       <td>6.9</td>
       <td>1.7</td>
@@ -158,10 +164,13 @@ Token usage varies depending on the cache hit rate, as shown below:
 
 | Cache Hit Rate | Model | Lite (M Tokens/week) | Pro (M Tokens/week) | Max (M Tokens/week) |
 | :-: | :-: | :-: | :-: | :-: |
+| 95% | GLM‑5.4 | 72–146 | 440–870 | 1,014–2,028 |
 | 95% | GLM‑5.3 | 48–97 | 290–580 | 676–1,352 |
 | 95% | GLM‑5.3‑Flash | 146～292 | 877–1,755 | 2,047–4,095 |
+| 96% | GLM‑5.4 | 75–149 | 446–893 | 1,041–2,081 |
 | 96% | GLM‑5.3 | 50–99 | 297–595 | 694–1,387 |
 | 96% | GLM‑5.3‑Flash | 150–300 | 900–1,801 | 2,101–4,202 |
+| 98% | GLM‑5.4 | 78–156 | 470–941 | 1,097–2,195 |
 | 98% | GLM‑5.3 | 52–104 | 313–627 | 731–1,463 |
 | 98% | GLM‑5.3‑Flash | 158–317 | 950–1,900 | 2,217–4,433 |
 
@@ -169,8 +178,6 @@ Token usage varies depending on the cache hit rate, as shown below:
 
 * Maximum token allowance: All usage occurs during off-peak hours and is charged at 0.5× the standard credit rate.
 * Minimum token allowance: All usage occurs during peak hours and is charged at 1× the standard credit rate.
-
-**By fully utilizing the off-peak discounts, you can save up to 92% compared with pay-as-you-go calls to the GLM-5.3 standard API**
 
 ### Exclusive MCP Access
 

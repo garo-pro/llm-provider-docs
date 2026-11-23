@@ -82,7 +82,7 @@ Some agentic work is recurring: the task stays the same and only the inputs chan
 For these, you can trigger when Claude runs with `/loop` which re-runs a prompt on an interval. For example:
 
 `/loop 5m check my PR, address review comments, and fix failing CI`
-`/loop` runs on your computer, so if you turn it off, it stops. You can move the loop to the cloud by creating a routine with `/schedule`.
+`/loop` runs on your computer, so if you turn it off, it stops. You can move the loop to the cloud by [creating a routine](https://claude.com/resources/articles/introducing-routines-in-claude-code) with `/schedule`.
 
 ## **Proactive loops**
 

@@ -197,7 +197,7 @@ Most of the pieces to do this with your team exist today.
 
 ### Before the pull request
 
-- Give your agent checks it can run, listed in a short `CLAUDE.md`, plus hooks that run formatters and linters.
+- Give your agent [checks it can run](https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/), listed in a short `CLAUDE.md`, plus hooks that run formatters and linters.
 - Run `/code-review` and `/security-review` locally, or a fresh-context subagent review.
 - Add a `REVIEW.md`, and move repeated review comments into it.
 

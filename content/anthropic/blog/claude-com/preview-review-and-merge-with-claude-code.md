@@ -7,7 +7,7 @@ Markdown Content:
 
 Updates to Claude Code on desktop help you close the development loop, so you can go from writing code to merging PRs in one place.
 
-Today, we're shipping Claude Code improvements that let you preview running apps, auto-review code, auto-fix and merge PRs, and seamlessly switch between desktop, mobile, and CLI. Together these updates help you spend less time on the toil around code and more time on the parts you enjoy.
+Today, we're shipping [Claude Code](https://claude.com/product/claude-code) improvements that let you preview running apps, auto-review code, auto-fix and merge PRs, and seamlessly switch between desktop, mobile, and CLI. Together these updates help you spend less time on the toil around code and more time on the parts you enjoy.
 
 ## **Write code and see it run**
 

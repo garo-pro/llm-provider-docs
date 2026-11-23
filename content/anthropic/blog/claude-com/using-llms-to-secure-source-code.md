@@ -193,7 +193,7 @@ Some resources you might find helpful:
 
 - [Claude Security](https://www.anthropic.com/product/security) : Anthropic’s managed product for agentic vulnerability detection and patching.
 - [`defending-code-reference-harness`](https://github.com/anthropics/defending-code-reference-harness) : Companion repo with skills for interactive workflows and a demo harness for autonomous runs.
-- [`claude-code-security-review action`](https://github.com/anthropics/claude-code-security-review) : Github action with Claude as a security reviewer on every pull request.
+- [`claude-code-security-review action`](https://github.com/anthropics/claude-code-security-review) : Github action with Claude as a[security reviewer on every pull request](https://claude.com/resources/articles/automate-security-reviews-with-claude-code) .
 - [Threat Intelligence Enrichment Agent](https://platform.claude.com/cookbook/tool-use-threat-intel-enrichment-agent) : Cookbook to build an agent that enriches indicators of compromise against threat intel feeds.
 - [Vulnerability Detection Agent](https://platform.claude.com/cookbook/claude-agent-sdk-06-the-vulnerability-detection-agent) : Cookbook to build an agent that builds a threat-model, scans for vulnerabilities, and triages findings into a structured report.
 

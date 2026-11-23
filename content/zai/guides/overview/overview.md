@@ -8,13 +8,17 @@
 >
 > Z.AI offers a variety of models and agents to meet the needs of different scenarios. Choosing the right model can help you complete tasks more efficiently.
 
+> [!TIP]
+>
+> GLM-5.4 is now available to all GLM Coding Plan users. The Model API will be made available after completing the security assessment.
+
 ## Latest Models
 
-> [card] [GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3.md)
+> [card] [GLM-5.4](https://docs.z.ai/guides/llm/glm-5.4.md)
 >
-> **Flagship Model**
+> **Loop Transformer Flagship**
 >
-> * Open-source SOTA coding capabilities, emerging cybersecurity capabilities.
+> * Stronger Generalized Coding with 2–3T-class intelligence.
 
 > [card] [GLM-5.3-Flash](https://docs.z.ai/guides/vlm/glm-5.3-flash.md)
 >
@@ -28,6 +32,7 @@ The following are Z.ai’s core models, covering a comprehensive range of use ca
 
 | Model | Strength | Language | Context | Resource |
 | :- | :- | :- | :- | :- |
+| GLM-5.4 | Advanced generalized coding with loop transformer | English & Chinese | 1M | [Guide](https://docs.z.ai/guides/llm/glm-5.4.md)  |
 | GLM-5.3-Flash | Delivering frontier intelligence at radically lower cost | English & Chinese | 1M | [Guide](https://docs.z.ai/guides/vlm/glm-5.3-flash.md) [API Reference](https://docs.z.ai/api-reference/llm/chat-completion.md) |
 | GLM-5.3-FlashX | Delivering inference speeds of 200 tokens/s | English & Chinese | 1M | [Guide](https://docs.z.ai/guides/vlm/glm-5.3-flash.md) [API Reference](https://docs.z.ai/api-reference/llm/chat-completion.md) |
 | GLM-5.3 | Claude Fable 5-level coding and agent capabilities  Stronger in long-horizon, complex tasks | English & Chinese | 1M | [Guide](https://docs.z.ai/guides/llm/glm-5.3.md) [API Reference](https://docs.z.ai/api-reference/llm/chat-completion.md) |

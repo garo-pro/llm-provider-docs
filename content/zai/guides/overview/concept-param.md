@@ -105,7 +105,7 @@ The `thinking` parameter controls whether the model enables "Chain of Thought" f
 Properties:
 
 * `type` (string):
-  * `enabled` (default): Enable chain of thought. `GLM-5.3` and `GLM-5.3-FLASH` use forced thinking. For other models, `GLM-5.2`, `GLM-5.1`, `GLM-5`, `GLM-4.6`, while `GLM-4.7` use forced thinking.
+  * `enabled` (default): Enable chain of thought. `GLM-5.3` and `GLM-5.3-Flash` use forced thinking. For other models, `GLM-5.2`, `GLM-5.1`, `GLM-5`, `GLM-4.6`, while `GLM-4.7` use forced thinking.
   * `disabled`: Disable chain of thought.
 
 Best Practices:
@@ -132,7 +132,7 @@ Notes:
 
 * The `GLM-5.2` model supports `max`, `xhigh`, `high`, `medium`, `low`, `minimal`, `none`; passing `none` or `minimal` will cause the model to skip thinking; `low` and `medium` will be mapped to `high`; `xhigh` will be mapped to `max`.
 * This parameter only takes effect when `thinking.type` is set to `enabled`.
-* The `GLM-5.3` and `GLM-5.3-FLASH` models only support `max`, `high`, `low`.
+* The `GLM-5.3` and `GLM-5.3-Flash` models only support `max`, `high`, `low`.
 
 ***
 

@@ -29,7 +29,7 @@ Without the context that skills provide, Claude has to guess at what you want. W
 
 ## **Why skills and MCP work well together**
 
-MCP handles connectivity: secure, standardized access to external systems. Whether you're connecting to GitHub, Salesforce, Notion, or your own internal APIs, MCP servers give Claude the ability to reach your tools and data.
+MCP handles connectivity: secure, standardized access to external systems. Whether you're connecting to GitHub, Salesforce, Notion, or your own internal APIs, [MCP servers](https://claude.com/resources/articles/what-is-model-context-protocol) give Claude the ability to reach your tools and data.
 
 Skills handle expertise: the domain knowledge and workflow logic that turn raw tool access into reliable outcomes. A skill knows when to query your CRM, what to look for in the results, how to format the output, and which edge cases require different handling.
 

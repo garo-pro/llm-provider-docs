@@ -8,7 +8,7 @@ Deep Thinking is an advanced reasoning feature that enables Chain of Thought mec
 
 ## Features
 
-The Deep Thinking feature currently supports the latest models in the GLM-5.3, GLM-5.3-FLASH, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series. By enabling deep thinking, the model can:
+The Deep Thinking feature currently supports the latest models in the GLM-5.3, GLM-5.3-Flash, GLM-5.2, GLM-5.1, GLM-5, GLM-4.7, GLM-4.6 series. By enabling deep thinking, the model can:
 
 * **Multi-step Reasoning**: Break down complex problems into multiple steps for gradual analysis and resolution
 * **Logical Analysis**: Provide clear reasoning processes and logical chains
@@ -18,18 +18,18 @@ The Deep Thinking feature currently supports the latest models in the GLM-5.3, G
 
 ### Core Parameters
 
-Note: GLM-5.3 and GLM-5.3-FLASH no longer support disabling thinking (an error will occur if the `thinking.type` parameter in the API request is set to `disabled`). Please ensure that thinking is enabled.
+Note: GLM-5.3 and GLM-5.3-Flash no longer support disabling thinking (an error will occur if the `thinking.type` parameter in the API request is set to `disabled`). Please ensure that thinking is enabled.
 
 * **`thinking.type`**: Controls the deep thinking mode
-  * `enabled` (default): Enable dynamic thinking. The model automatically determines whether to think: `GLM-5.2`, `GLM-5.1`, `GLM-5`, `GLM-4.6`auto-decide whether to think, while `GLM-5.3`, `GLM-5.3-FLASH`, `GLM-4.7`use forced thinking
+  * `enabled` (default): Enable dynamic thinking. The model automatically determines whether to think: `GLM-5.2`, `GLM-5.1`, `GLM-5`, `GLM-4.6`auto-decide whether to think, while `GLM-5.3`, `GLM-5.3-Flash`, `GLM-4.7`use forced thinking
   * `disabled`: Disable deep thinking, provide direct answers
 * **`reasoning_effort`**: Controls the degree of reasoning within the thought chain, and is only supported by `GLM-5.2` and above.
-  * Available values: `max` (default and recommended, deep inference), `high` (enhanced inference), `low` (mild inference, only supported by GLM-5.3 and GLM-5.3-FLASH)
+  * Available values: `max` (default and recommended, deep inference), `high` (enhanced inference), `low` (mild inference, only supported by GLM-5.3 and GLM-5.3-Flash)
   * In the API request:
-  * * For GLM-5.3 and GLM-5.3-FLASH, only `max`, `high` and `low` are supported. Any other input will result in an error.
+  * * For GLM-5.3 and GLM-5.3-Flash, only `max`, `high` and `low` are supported. Any other input will result in an error.
   * * For GLM-5.2, the supported options are `max` (default and recommended, for deep inference), `xhigh`, `high` (enhanced inference), `medium`, `low`, `minimal`, and `none`. Among them, `none` or `minimal` indicate that the model stops thinking; `low`/`medium` are mapped to `high`; `xhigh` is mapped to `max`.
   * In the Coding Plan request:
-  * * For GLM-5.3 and GLM-5.3-FLASH, `none`, `minimal`, and `low` are mapped to `low`; `medium`, `high` are mapped to `high`; `xhigh` and `max` are mapped to `max`.
+  * * For GLM-5.3 and GLM-5.3-Flash, `none`, `minimal`, and `low` are mapped to `low`; `medium`, `high` are mapped to `high`; `xhigh` and `max` are mapped to `max`.
   * * For GLM-5.2, `none` or `minimal` indicate that the model stops thinking; `low` / `medium` are mapped to `high`; `xhigh` is mapped to `max`.
 * **`model`**: A model that enables deep thinking, supported by `GLM-4.6` and above versions.
 

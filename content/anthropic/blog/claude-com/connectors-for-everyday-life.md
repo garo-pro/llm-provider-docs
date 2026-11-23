@@ -17,7 +17,7 @@ This expansion extends that functionality to more of the tools you use outside o
 
 ## Connectors dynamically show up in conversations
 
-We’ve also changed how connectors show up in conversations. Claude now suggests the right app for what you’re doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It’s working from what you’ve told it: your preferences, your context, your conversation.
+We’ve also changed [how connectors show up in conversations](https://claude.com/resources/articles/interactive-connectors-full-tool). Claude now suggests the right app for what you’re doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It’s working from what you’ve told it: your preferences, your context, your conversation.
 
 This all happens inside your conversation. Ask Claude to recommend a weekend hike, and AllTrails will surface trails nearby that match your preferences. You can then refine the recommendations by asking for something shorter, more scenic, or dog-friendly without leaving the thread. When more than one connected app could help answer your question, Claude shows them all and lets you choose.
 

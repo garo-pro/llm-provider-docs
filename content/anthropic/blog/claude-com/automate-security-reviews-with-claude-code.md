@@ -7,7 +7,7 @@ Markdown Content:
 
 Today we're introducing automated security reviews in Claude Code. Using our GitHub Actions integration and a new /security-review command, developers can easily ask Claude to identify security concerns—and then have it fix them.
 
-As developers increasingly rely on AI to ship faster and build more complex systems, ensuring code security becomes even more critical. These new features let you integrate security reviews into your existing workflows, helping you catch vulnerabilities before they reach production.
+As developers increasingly rely on AI to ship faster and build more complex systems, ensuring code security becomes even more critical. These new features let you integrate security reviews into your existing workflows, helping you [catch vulnerabilities before they reach production](https://claude.com/resources/articles/using-llms-to-secure-source-code).
 
 ### Review code for vulnerabilities from your terminal
 

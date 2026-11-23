@@ -58,7 +58,14 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
 
   <tbody>
     <tr>
-      <td rowSpan="2">Model</td>
+      <td rowSpan="3">Model</td>
+      <td>GLM-5.4</td>
+      <td>4.6</td>
+      <td>1.1</td>
+      <td>16</td>
+    </tr>
+
+    <tr>
       <td>GLM-5.3</td>
       <td>6.9</td>
       <td>1.7</td>
@@ -109,10 +116,13 @@ The plan’s token usage will vary depending on the cache hit rate, as shown bel
 
 | Cache hit rate | Model | Team Standard (million tokens/week) | Team Advanced (million tokens/week) |
 | :- | :- | :- | :- |
+| 95% | GLM-5.4 | 479–957 | 1,124–2,246 |
 | 95% | GLM‑5.3 | 319–638 | 749–1,497 |
 | 95% | GLM‑5.3‑Flash | 965–1,930 | 2,267–4,533 |
+| 96% | GLM-5.4 | 491–981 | 1,152–2,304 |
 | 96% | GLM‑5.3 | 327–654 | 768–1,536 |
 | 96% | GLM‑5.3‑Flash | 990–1,981 | 2,326–4,652 |
+| 98% | GLM-5.4 | 518–1,034 | 1,215–2,429 |
 | 98% | GLM‑5.3 | 345–689 | 810–1,619 |
 | 98% | GLM‑5.3‑Flash | 1,045–2,090 | 2,454–4,908 |
 
@@ -121,7 +131,7 @@ The plan’s token usage will vary depending on the cache hit rate, as shown bel
 * Maximum token allowance: All usage occurs during off-peak hours and is charged at 0.5× the standard credit rate.
 * Minimum token allowance: All usage occurs during peak hours and is charged at 1× the standard credit rate.
 
-**By fully leveraging off-peak discounts, users can save up to 92% compared with using the GLM-5.3 Standard API on a pay-as-you-go basis.**
+**By fully leveraging off-peak discounts, users can save up to 92% compared with using the GLM-5.4 Standard API on a pay-as-you-go basis.**
 
 ## Team Plan Key
 

@@ -6,7 +6,7 @@ Markdown Content:
 # Step 3: Scale impact
 
 Chapter 04
-Moving from successful pilots to organization-wide adoption takes structured training that builds real capability, centers of excellence that include scientific domain experts, and governance that scales with adoption while protecting patient safety and compliance.
+Moving from successful pilots to [organization-wide adoption (opens in new tab)](https://claude.com/resources/guides/deploying-claude-across-your-organization) takes structured training that builds real capability, centers of excellence that include scientific domain experts, and governance that scales with adoption while protecting patient safety and compliance.
 
 ## Turn pilots into a launchpad for AI upskilling
 

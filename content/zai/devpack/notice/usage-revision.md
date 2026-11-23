@@ -86,7 +86,7 @@ Plans are not switched automatically. You must subscribe or switch manually.
 
 To manage resources and ensure fair access for all users, we apply usage limits on a 5-hour and weekly basis. You can check your quota consumption progress in [Usage Statistics](https://z.ai/manage-apikey/subscription).
 
-One prompt refers to one query. Each prompt is estimated to invoke the model 15–20 times.
+One prompt refers to one query. Each prompt is estimated to invoke the model 15–30 times.
 
 **The monthly available quota is converted based on API pricing, equivalent to approximately 15–30× the monthly subscription fee (weekly caps already factored in).**
 
@@ -101,7 +101,11 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
 > The above figures are estimates. Actual available usage may vary depending on project complexity, repository size, and whether auto-accept is enabled.
 >
 > <li>
->   **GLM-5.3**: As the flagship model, API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
+>   **GLM-5.4**: As the flagship model, API calls consume quota at a rate of "0.67× during off-peak hours and 2× during peak hours".
+> </li>
+>
+> <li>
+>   **GLM-5.3**: API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
 > </li>
 >
 > <li>
@@ -113,6 +117,8 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
 > Peak hours: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
 
 ### Team Plan
+
+Since July 30, 2026, quotas for each seat of the legacy Team Plan have been uniformly increased by 30%. The figures below reflect the adjusted quotas.
 
 <table>
   <thead>
@@ -142,15 +148,19 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
       </td>
 
       <td>
-        GLM-5.3: Up to 60 M tokens
+        GLM-5.4: Up to 117 M tokens
 
-        GLM-5.3-Flash: Up to 150 M tokens
+        GLM-5.3: Up to 78 M tokens
+
+        GLM-5.3-Flash: Up to 195 M tokens
       </td>
 
       <td>
-        GLM-5.3: Up to 300 M tokens
+        GLM-5.4: Up to 585 M tokens
 
-        GLM-5.3-Flash: Up to 750 M tokens
+        GLM-5.3: Up to 390 M tokens
+
+        GLM-5.3-Flash: Up to 975 M tokens
       </td>
     </tr>
 
@@ -160,15 +170,19 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
       </td>
 
       <td>
-        GLM-5.3: Up to 160 M tokens
+        GLM-5.4: Up to 312 M tokens
 
-        GLM-5.3-Flash: Up to 400 M tokens
+        GLM-5.3: Up to 208 M tokens
+
+        GLM-5.3-Flash: Up to 520 M tokens
       </td>
 
       <td>
-        GLM-5.3: Up to 800 M tokens
+        GLM-5.4: Up to 1,560 M tokens
 
-        GLM-5.3-Flash: Up to 2,000 M tokens
+        GLM-5.3: Up to 1,040 M tokens
+
+        GLM-5.3-Flash: Up to 2,600 M tokens
       </td>
     </tr>
 
@@ -184,7 +198,11 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
 
         <ul>
           <li>
-            **GLM-5.3**: As the flagship model, API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
+            **GLM-5.4**: API calls consume quota at a rate of "0.67× during off-peak hours and 2× during peak hours".
+          </li>
+
+          <li>
+            **GLM-5.3**: API calls consume quota at a rate of "1× during off-peak hours and 3× during peak hours".
           </li>
 
           <li>

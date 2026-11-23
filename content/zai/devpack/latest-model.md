@@ -6,9 +6,9 @@
 
 > [!TIP]
 >
-> **GLM-5.3 & GLM-5.3-Flash Now Live** \\
+> **GLM-5.4 Now Live** \\
 >
-> The GLM Coding Plan now supports the latest GLM-5.3 and GLM-5.3-Flash models for all users (Max, Pro, and Lite), and you can switch between models within your preferred Coding Agent.
+> The GLM Coding Plan now supports the latest GLM-5.4 model for all users (Max, Pro, and Lite), and you can switch between models within your preferred Coding Agent.
 
 ## Before You Start
 
@@ -19,7 +19,7 @@ This is a model-switching guide for existing GLM Coding Plan users—not an onbo
    * **Claude Code / Goose** (Anthropic-compatible): `https://api.z.ai/api/anthropic`
    * **Codex**: `https://api.z.ai/api/v1`
    * **Other OpenAI-compatible tools**: `https://api.z.ai/api/coding/paas/v4`
-3. **Verified that your tool can successfully call an existing GLM model** (for example, `glm-5.3` or `glm-5.3-flash`). If a basic call fails, please resolve that first.
+3. **Verified that your tool can successfully call an existing GLM model** (for example,`glm-5.3-flash`). If a basic call fails, please resolve that first.
 
 ## Switching Models in Claude Code
 
@@ -64,22 +64,22 @@ This is a model-switching guide for existing GLM Coding Plan users—not an onbo
 > >
 > > If you are using WSL alongside native Windows Claude Code, the configuration file locations may differ. Make sure you edit the file used by the Claude Code installation you actually launch.
 
-To use GLM-5.3-FLASH, add or replace the following environment variables in `settings.json`. **Do not replace the entire file** if it already contains other fields —only add or update the keys shown below.
+To use GLM-5.4, add or replace the following environment variables in `settings.json`. **Do not replace the entire file** if it already contains other fields —only add or update the keys shown below.
 
 ```json theme={null}
 {
   "env": {
     "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "1000000",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-5.3-flash[1m]",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-5.3-flash[1m]",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-5.3-flash[1m]"
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-5.4[1m]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-5.4[1m]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-5.4[1m]"
   }
 }
 ```
 
 #### Enable 1M Context
 
-To enable GLM 1M context, add the `[1m]` suffix to the model name (e.g., `glm-5.3-flash[1m]`) and configure the compression window size parameter `"CLAUDE_CODE_AUTO_COMPACT_WINDOW": "1000000"`.
+To enable GLM 1M context, add the `[1m]` suffix to the model name (e.g., `glm-5.4[1m]`) and configure the compression window size parameter `"CLAUDE_CODE_AUTO_COMPACT_WINDOW": "1000000"`.
 
 If Claude Code reports that the model with the `[1m]` suffix does not exist, please upgrade Claude Code to the latest version and try again.
 
@@ -111,9 +111,7 @@ In a Claude Code session, type the `/effort` command to switch thinking intensit
 Open a terminal and run `claude`, then type `/status`. Verify:
 
 1. **Settings source** shows your `~/.claude/settings.json`.
-2. **Model** shows `glm-5.3-flash` or `glm-5.3-flash[1m]`.
-
-![Description](https://cdn.bigmodel.cn/markdown/1785421261069image.png?attname=image.png)
+2. **Model** shows `glm-5.4` or `glm-5.4[1m]`.
 
 ## Switching Models in Other Tools
 
@@ -126,13 +124,11 @@ Please use the following settings:
 * API Provider：Select OpenAI Compatible
 * Base URL：Enter [https://api.z.ai/api/coding/paas/v4](https://api.z.ai/api/coding/paas/v4)
 * API Key：Enter your Z.AI API key
-* Model：Choose Custom Model and enter the model name, such as `glm-5.3` or `glm-5.3-flash`
+* Model：Choose Custom Model and enter the model name, such as `glm-5.4` or `glm-5.3-flash`
 * Other settings:
-  * GLM-5.3 is a text-only model, so uncheck **Support Images**; GLM-5.3-FLASH is a multimodal model, so **Support Images** can be checked
+  * Both GLM-5.4 and GLM-5.3-Flash are multimodal models, so **Support Images** can be checked
   * Set Context Window Size to 1000000
   * Adjust temperature and any other parameters based on your task requirements
-
-![Description](https://cdn.bigmodel.cn/markdown/1785421409503image.png?attname=image.png)
 
 
 This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

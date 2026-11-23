@@ -51,7 +51,7 @@ Select a project in the sidebar to start a new Cowork session with that project'
 
 A project folder that is reached through a symbolic link isn't mounted if the link sits inside another of the project's folders, or inside a folder that a Cowork task on your task list uses, and leads outside that folder. The session starts without it and the app tells you. Replace it in the project with the actual folder you want.
 
-You can't make hard links in a folder connected to a Cowork session, so `ln` without `-s` fails there. Copy the file instead. `cp -a` on a folder that holds hard-linked files reports an error, and the copy has only one name of each hard-linked file. Extracting an archive that holds hard links does the same. Use `cp -r`.
+You can't make hard links in a folder connected to a Cowork session, so `ln` without `-s`, `cp -l`, and `git clone --local` fail there. Copy the file instead, and clone without `--local`. `cp -a`, `rsync -H`, and `mv` from outside the folder report an error on a folder that holds hard-linked files, and the copy has only one name of each hard-linked file. Extracting an archive that holds hard links does the same. Use `cp -r`, or `rsync` without `-H`.
 
 [Dispatch](https://claude.com/docs/cowork/guide/dispatch.md) can also route background tasks into a project, so long-running work picks up the same folders, instructions, and memory.
 

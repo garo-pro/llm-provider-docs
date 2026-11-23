@@ -14,7 +14,7 @@
 
 Click on the tool documentation below that you wish to use, and follow the corresponding integration guide to set it up.
 
-> [card] [ZCode (1.5× Usage)](https://docs.z.ai/devpack/tool/zcode)
+> [card] [ZCode](https://docs.z.ai/devpack/tool/zcode)
 >
 > ZCode integrates AI agents into your existing toolchain.
 
@@ -84,7 +84,7 @@ Click on the tool documentation below that you wish to use, and follow the corre
 >
 > The general-purpose agent tools listed below are also supported and will continue to be served on a best-effort basis. Under high inference load, some requests may face temporary rate limits.
 
-> [card] [AutoClaw (1.5× Usage)](https://docs.z.ai/devpack/tool/autoclaw)
+> [card] [AutoClaw](https://docs.z.ai/devpack/tool/autoclaw)
 >
 > Deeply optimized for GLM models, integrating specialized domain knowledge bases and workflows.
 
@@ -137,10 +137,7 @@ In Cline, select `Use your own API Key`, then fill in the following configuratio
 * **API Provider**: Select `OpenAI Compatible`
 * **Base URL**: Enter `https://api.z.ai/api/coding/paas/v4`
 * **API Key**: Enter your Z.AI API Key
-* **Model**: Select "Use custom" and enter the GLM model code you want to use (e.g., `glm-5.2`)
-* **Other Configurations**:
-  * Uncheck **Support Images**
-  * Adjust **Context Window Size** based on your model (`glm-5.2` is `1000000`; other models `200000`)
+* **Model**: Select "Use custom" and enter the GLM model code you want to use (e.g., `glm-5.4`)
 
 ### 3. Get Started
 
