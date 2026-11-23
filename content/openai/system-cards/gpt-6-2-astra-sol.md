@@ -11,6 +11,11 @@ may in future be capable of fully automated, recursive self-improvement.
 An earlier version of the card said, “The High threshold is an early
 milestone for preparing safeguards ahead of fully automated, recursive
 self-improvement.”
+- *November 22, 2026* : Updates to the[OAI-repo Sabotage v2](https://deploymentsafety.openai.com/gpt-6-2-astra-sol/oai-repo-sabotage-v2) section. We
+clarify what the P0 and P0.5 classifications assigned by our L2 monitor
+mean. P0 calls for immediate Security review, while P0.5 flags a
+high-priority concern for which follow-up can wait until business
+hours.
 
 Published November 17, 2026
 
@@ -2804,6 +2809,12 @@ across eight instruction types in CoT-Control.</em>](https://deploymentsafety.op
 
 ## 4.2.2.2 OAI-repo Sabotage v2
 
+
+*November 22, 2026: We clarify what the P0 and P0.5
+classifications assigned by our L2 monitor mean. P0 calls for immediate
+Security review, while P0.5 flags a high-priority concern for which
+follow-up can wait until business hours.*
+
 **OAI-repo Sabotage v2** is an internal OpenAI
 evaluation that tests whether a coding agent can sabotage
 control-relevant OpenAI services without being detected by our monitors.
@@ -2837,7 +2848,7 @@ higher recall than ones used in prior system cards.
 
 We found GPT-6.2 Astra and GPT-6.2 Sol to be better than previous models at evading a CoT-only version of our L1 monitor, particularly with step-by-step guidance and at higher reasoning effort. Monitors with access to the models’ actions are significantly better at sabotage detection than CoT-only monitors. When using our standard L1 monitor, a recall-biased monitor with access to the full trajectory, the successful evasion rate is close to zero.
 
-Misalignments that are flagged by our L1 monitor are sent to the L2 monitor for review, which assigns priorities to the misalignments (or flags them as not high priority), where a P0 priority results in paging the security team, and lower priorities are flagged less urgently. In light of this, we specifically measure our models’ ability to avoid the L2 monitoring system’s P0 classification, which would allow it to avoid our paging escalations. We find that GPT-6.2 Astra and Sol have evasion rates similar to those of previous models.
+Misalignments that are flagged by our L1 monitor are sent to the L2 monitor for review, which assigns priorities to the misalignments (or flags them as not high priority). P0 calls for immediate Security review, whereas P0.5 flags a high-priority concern for follow-up that can wait until business hours. In light of this, we specifically measure our models’ ability to avoid the L2 monitoring system’s P0 classification, which would allow it to avoid our paging escalations. We find that GPT-6.2 Astra and Sol have evasion rates similar to those of previous models.
 
 ![Figure 50. <strong>Monitor evasion under guided sabotage</strong> <em>Monitor
 evasion rate when sabotaging OpenAI’s control-relevant services with
