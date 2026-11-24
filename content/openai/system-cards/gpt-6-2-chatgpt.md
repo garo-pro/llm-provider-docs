@@ -159,11 +159,13 @@ Evaluation
 
 Metric
 
-gpt-6.2-sol
+GPT-6.2 Sol
 
-gpt-6.2 Astra
+GPT-6.2 Astra
 
-gpt-6.2(November 21)
+GPT-6.2
+
+(November 23)
 
 AAV capsid packaging
 
@@ -207,9 +209,8 @@ Median of pair-weighted negative log-likelihood (lower is better)
 
 3.1.2 Cybersecurity Capabilities
 
-Based on our evaluations, we have determined that GPT-6.2 Astra and
-GPT-6.2 Sol both meet the Critical threshold for Cybersecurity
-capabilities.
+Based on our evaluations, we have determined that GPT-6.2 (November
+23) meet the Critical threshold for Cybersecurity capabilities.
 
 Our Preparedness Framework covers “Cybersecurity” as a Tracked
 Category. Under this designation, we study the ability of our AI models
@@ -250,11 +251,13 @@ Evaluation
 
 Metric
 
-gpt-6.2-sol
+GPT-6.2 Sol
 
-gpt-6.2 Astra
+GPT-6.2 Astra
 
-gpt-6.2(November 23)
+GPT-6.2
+
+(November 23)
 
 SEC-Bench Pro
 
@@ -264,7 +267,7 @@ Vulnerability reproduction (pass@1)
 
 86.75%
 
-90.16%
+88.34%
 
 ExploitBench V8
 
@@ -278,13 +281,13 @@ Mean capability credit (five attempts per vulnerability)
 
 ExploitBench Internal Port (June--August 2026)
 
-Mean arbitrary code execution rate across V8 and Chrome
+Chrome renderer arbitrary code execution (pass@1)
 
-53.50%
+56.67%
 
 60.00%
 
-56.67%
+60.00%
 
 For all three models, ExploitBench Internal Port now reports the
 percentage of attempts that achieve arbitrary code execution in the
@@ -335,11 +338,13 @@ Evaluation and measure
 
 Metric
 
-gpt-6.2-sol
+GPT-6.2 Sol
 
-gpt-6.2 Astra
+GPT-6.2 Astra
 
-gpt-6.2(November 23)
+GPT-6.2
+
+(November 23)
 
 Initial Stage
 
@@ -430,11 +435,13 @@ Prompt category
 
 Measure
 
-gpt-6.2-sol
+GPT-6.2 Sol
 
-gpt-6.2 Astra
+GPT-6.2 Astra
 
-gpt-6.2(November 23)
+GPT-6.2
+
+(November 23)
 
 Severe biological harm
 
@@ -964,7 +971,34 @@ Table 10: Image-input safe completion rates (higher is better).
 
 Category
 
-4.2 Hallucinations
+4.2 Robustness to Prompt Injections
+
+Models may encounter deliberate attempts to bypass their safeguards,
+unauthorized instructions embedded in material they read, and questions
+that are difficult to answer accurately. We examine these challenges
+through evaluations of prompt-injection resistance.
+
+4.2.1 Prompt Injection
+
+GPT‑6.2 (November 23) is highly robust to prompt injection. We have
+continued to scale our GPT‑Red
+approach, where we use adversarial training with an automated
+red-teaming agent to strengthen resistance to malicious instructions
+while preserving the ability to complete legitimate tasks.
+
+For our evaluations, we use the GPT‑Red automated evaluations
+introduced in the GPT‑5.6
+system card. These cover both "direct" prompt injection attacks (or
+“instruction hierarchy” violations), where a user attempts to override
+higher-priority system or developer instructions, and "indirect"
+attacks, where malicious instructions in third-party content attempt to
+redirect an agent beyond the user’s request.
+
+Table 11: GPT-RED indirect prompt-injection robustness (higher is better; averaged equally across available reasoning levels).
+
+Category
+
+4.3 Hallucinations
 
 To evaluate our models’ ability to provide factually correct
 responses, we measure the rate of factual hallucinations on the
@@ -1007,9 +1041,9 @@ Figure 3. Response-level and claim-level factual error rates on
 factuality-heavy, user-flagged, and high-stakes prompt sets. Lower is
 better.
 
-4.3 Health
+4.4 Health
 
-4.3.1 HealthBench Professional
+4.4.1 HealthBench Professional
 
 HealthBench Professional [4] is an
 open-access OpenAI benchmark of assistance with difficult clinical
@@ -1030,9 +1064,9 @@ score (67.3 versus 62.2) and the length-adjusted score (58.4 versus
 55.2). Its responses averaged 5,035 characters, compared with 4,360 for
 GPT‑6 Sol (October 7).
 
-Table 11: HealthBench evaluations, reported as length-adjusted score (unadjusted score, mean visible response length in characters). Scores are on a 0--100 scale. Higher is better.
+Table 12: HealthBench evaluations, reported as length-adjusted score (unadjusted score, mean visible response length in characters). Scores are on a 0--100 scale. Higher is better.
 
-Table 11. HealthBench evaluations, reported as length-adjusted score (unadjusted score, mean visible response length in characters). Scores are on a 0--100 scale. Higher is better.
+Table 12. HealthBench evaluations, reported as length-adjusted score (unadjusted score, mean visible response length in characters). Scores are on a 0--100 scale. Higher is better.
 
 0
 
@@ -1074,7 +1108,7 @@ HealthBench Professional
 
 (67.3, 5,035)
 
-4.3.2 MentalHealthBench
+4.4.2 MentalHealthBench
 
 MentalHealthBench [6] is an open benchmark developed
 with mental health experts for measuring how AI systems respond in
@@ -1101,9 +1135,9 @@ Figure 4
 Figure 4. MentalHealthBench overall scores in Chat Instant. Error bars show one
 standard error across tasks.
 
-Table 12: MentalHealthBench scores, computed using the task-clipped metric. Values show the mean task-level score ± one standard error across tasks, with four responses per task. Scores are on a 0--100 scale. Higher is better.
+Table 13: MentalHealthBench scores, computed using the task-clipped metric. Values show the mean task-level score ± one standard error across tasks, with four responses per task. Scores are on a 0--100 scale. Higher is better.
 
-Table 12. MentalHealthBench scores, computed using the task-clipped metric. Values show the mean task-level score ± one standard error across tasks, with four responses per task. Scores are on a 0--100 scale. Higher is better.
+Table 13. MentalHealthBench scores, computed using the task-clipped metric. Values show the mean task-level score ± one standard error across tasks, with four responses per task. Scores are on a 0--100 scale. Higher is better.
 
 0
 
@@ -1177,7 +1211,7 @@ MentalHealthBench (emergent)
 
 56.61 ± 1.91
 
-4.3.3 Dynamic Mental Health Benchmarks with Adversarial User Simulations
+4.4.3 Dynamic Mental Health Benchmarks with Adversarial User Simulations
 
 Dynamic Mental Health Benchmarks with Adversarial User
 Simulations are internal OpenAI evaluations of policy
@@ -1192,7 +1226,7 @@ GPT-6.2 improved over GPT-6 Sol on emotional reliance and self-harm.
 Regression on Mental Health evaluation was not statistically
 significant.
 
-Table 13: Dynamic benchmarks with adversarial user simulations (higher is better).
+Table 14: Dynamic benchmarks with adversarial user simulations (higher is better).
 
 Category
 
@@ -1279,7 +1313,7 @@ Model Spec section. Each model generated two responses per case. Counts
 below the bars give the number of cases in each section. Error bars show
 one standard error, clustered by prompt content.
 
-Table 14: Targeted Cases compliance by Model Spec section
+Table 15: Targeted Cases compliance by Model Spec section
 
 Category
 
@@ -1318,7 +1352,7 @@ of selected conversation contexts for each principle (596 in total).
 Higher scores indicate greater compliance. Error bars show one standard
 error, clustered by source conversation.
 
-Table 15: Conversation Replay scores by Model Spec principle
+Table 16: Conversation Replay scores by Model Spec principle
 
 Category
 

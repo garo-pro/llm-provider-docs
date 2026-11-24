@@ -3,6 +3,10 @@ Title: Accelerating scientific discovery with ChatGPT for Academic Researchers
 URL Source: https://openai.com/index/chatgpt-for-academic-researchers
 
 Markdown Content:
+# Accelerating scientific discovery with ChatGPT for Academic Researchers
+
+We’re putting our frontier models and tools in the hands of 100,000 scientists, mathematicians, and engineers—at no cost.
+
 *Update on November 16, 2026:* *We’re expanding ChatGPT for Academic Researchers. New applications open November 23. Read the* *expansion announcement* *for more details.*
 
 We believe the benefits of frontier AI should not be concentrated in a few companies and well-resourced labs. Scientific progress depends on researchers asking the right questions, testing new ideas, and building on what others have discovered. Our role is to put powerful tools in their hands—and work alongside them to design models that accelerate their research while keeping them in control.
@@ -53,7 +57,7 @@ The program will offer training tailored to different levels of experience, from
 
 As we see what researchers discover, we plan to create more opportunities for researchers to share practical approaches, learn from one another, and highlight uses across disciplines. Their feedback will help us understand where our models are useful, where they fall short, and how to make them more valuable to the research community.
 
-The initial program is open to qualifying researchers at selected academic institutions. [Eligible institutions(opens in a new window)](https://chatgpt.com/sophia/eligible-institutions?no_universal_links=1) must be recognized, degree-granting colleges or universities with a high level of research activity.
+The initial program is open to qualifying researchers at selected academic institutions. Eligible institutions must be recognized, degree-granting colleges or universities with a high level of research activity.
 
 Applicants will need to verify their institutional affiliation and provide information about their active research and intended scientific use. Approved researchers may invite up to four collaborators from their institution. Each collaborator must also verify their affiliation and counts toward the program’s total number of accounts.
 
