@@ -33,7 +33,7 @@ With that said, the same technology can create security and safety challenges. T
 
 That’s why our [Trusted AI framework (opens in new tab)](https://kpmg.com/au/en/services/ai-services/trusted-ai-framework.html) is foundational to how we innovate at KPMG. As a professional services firm, we take seriously our responsibility to help organizations realize the value of AI safely and securely while preparing for what’s next. That includes rigorous testing, ongoing monitoring, human oversight, and independent assurance to help ensure AI systems remain transparent, reliable, and aligned to their intended purpose.
 
-Additionally, we're using Claude Mythos to identify system vulnerabilities, and cyber AI more broadly to defend against them.. This is an area where we’re investing heavily alongside partners like Anthropic.
+Additionally, we're using Claude Mythos to identify system vulnerabilities, and cyber AI more broadly to defend against them. This is an area where we’re investing heavily alongside partners like Anthropic.
 
 ## **KPMG had an early look at [Enterprise Frontier Safeguards (opens in new tab)](https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards). What was your reaction?**
 

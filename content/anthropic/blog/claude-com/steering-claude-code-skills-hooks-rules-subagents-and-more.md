@@ -57,7 +57,7 @@ Think of this file as giving Claude an overview of your codebase, or as an index
 
 In monorepos, give each team's directory its own subdirectory CLAUDE.md so teams only load their own conventions, and developers can use the claudeMdExcludes setting to skip files from teams whose code they never touch.
 
-For standards that must apply to every repository in the organization — security policies, compliance requirements — a centrally managed CLAUDE.md can be deployed to developer machines via MDM or config management, and it can't be excluded by individual settings.
+For [standards that must apply to every repository in the organization](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents#chapter-5) — security policies, compliance requirements — a centrally managed CLAUDE.md can be deployed to developer machines via MDM or config management, and it can't be excluded by individual settings.
 
 More on setting up CLAUDE.md in our blog post, [CLAUDE.md files: Customizing Claude Code for your codebase](https://claude.com/resources/articles/using-claude-md-files).
 

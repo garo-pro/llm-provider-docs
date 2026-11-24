@@ -82,6 +82,10 @@ Plans are not switched automatically. You must subscribe or switch manually.
 
 ## Usage Reference for Legacy Plans
 
+> [!NOTE]
+>
+> **Limited-Time Offer:** From November 24 to December 24, all usage of GLM-5.3-Flash will be charged at 50% of the original quota consumption rate, effectively doubling your available quota.
+
 ### Legacy Plan V2
 
 To manage resources and ensure fair access for all users, we apply usage limits on a 5-hour and weekly basis. You can check your quota consumption progress in [Usage Statistics](https://z.ai/manage-apikey/subscription).
@@ -109,7 +113,7 @@ One prompt refers to one query. Each prompt is estimated to invoke the model 15�
 > </li>
 >
 > <li>
->   **GLM-5.3-Flash**: API calls consume quota at a rate of 0.4× during off-peak hours and 1.2× during peak hours.
+>   **GLM-5.3-Flash**: API calls consume quota at a rate of ~~0.4×~~ 0.2× during off-peak hours and ~~1.2×~~ 0.6× during peak hours.
 > </li>
 
 > [!NOTE]
@@ -152,7 +156,7 @@ Since July 30, 2026, quotas for each seat of the legacy Team Plan have been unif
 
         GLM-5.3: Up to 78 M tokens
 
-        GLM-5.3-Flash: Up to 195 M tokens
+        GLM-5.3-Flash: Up to ~~195~~ 390 M tokens
       </td>
 
       <td>
@@ -160,7 +164,7 @@ Since July 30, 2026, quotas for each seat of the legacy Team Plan have been unif
 
         GLM-5.3: Up to 390 M tokens
 
-        GLM-5.3-Flash: Up to 975 M tokens
+        GLM-5.3-Flash: Up to ~~975~~ 1,950 M tokens
       </td>
     </tr>
 
@@ -174,7 +178,7 @@ Since July 30, 2026, quotas for each seat of the legacy Team Plan have been unif
 
         GLM-5.3: Up to 208 M tokens
 
-        GLM-5.3-Flash: Up to 520 M tokens
+        GLM-5.3-Flash: Up to ~~520~~ 1,040 M tokens
       </td>
 
       <td>
@@ -182,7 +186,7 @@ Since July 30, 2026, quotas for each seat of the legacy Team Plan have been unif
 
         GLM-5.3: Up to 1,040 M tokens
 
-        GLM-5.3-Flash: Up to 2,600 M tokens
+        GLM-5.3-Flash: Up to ~~2,600~~ 5,200 M tokens
       </td>
     </tr>
 
@@ -206,7 +210,7 @@ Since July 30, 2026, quotas for each seat of the legacy Team Plan have been unif
           </li>
 
           <li>
-            **GLM-5.3-Flash**: API calls consume quota at a rate of 0.4× during off-peak hours and 1.2× during peak hours.
+            **GLM-5.3-Flash**: API calls consume quota at a rate of ~~0.4×~~ 0.2× during off-peak hours and ~~1.2×~~ 0.6× during peak hours.
           </li>
         </ul>
 

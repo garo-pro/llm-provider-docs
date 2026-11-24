@@ -75,9 +75,9 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
     <tr>
       <td>GLM-5.3-Flash\
       (Including MCP for visual understanding)</td>
-      <td>2.3</td>
-      <td>0.56</td>
-      <td>8</td>
+      <td>~~2.3~~ 1.15</td>
+      <td>~~0.56~~ 0.28</td>
+      <td>~~8~~ 4</td>
     </tr>
 
     <tr>
@@ -110,21 +110,97 @@ Each plan is subject to both a 5-hour usage limit and a weekly usage limit. You 
 >
 > **Peak hours**: Monday to Friday, 14:00–18:00 Singapore Standard Time (UTC+8).
 
+> [!NOTE]
+>
+> **Limited-Time Offer:** From November 24 to December 24, all usage of GLM-5.3-Flash will be charged at 50% of the original quota consumption rate, effectively doubling your available quota.
+
 ### Estimated Token Allowance
 
 The plan’s token usage will vary depending on the cache hit rate, as shown below:
 
-| Cache hit rate | Model | Team Standard (million tokens/week) | Team Advanced (million tokens/week) |
-| :- | :- | :- | :- |
-| 95% | GLM-5.4 | 479–957 | 1,124–2,246 |
-| 95% | GLM‑5.3 | 319–638 | 749–1,497 |
-| 95% | GLM‑5.3‑Flash | 965–1,930 | 2,267–4,533 |
-| 96% | GLM-5.4 | 491–981 | 1,152–2,304 |
-| 96% | GLM‑5.3 | 327–654 | 768–1,536 |
-| 96% | GLM‑5.3‑Flash | 990–1,981 | 2,326–4,652 |
-| 98% | GLM-5.4 | 518–1,034 | 1,215–2,429 |
-| 98% | GLM‑5.3 | 345–689 | 810–1,619 |
-| 98% | GLM‑5.3‑Flash | 1,045–2,090 | 2,454–4,908 |
+<table>
+  <thead>
+    <tr>
+      <th>Cache hit rate</th>
+      <th>Model</th>
+      <th>Team Standard \
+      (million tokens/week)</th>
+      <th>Team Advanced \
+      (million tokens/week)</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>95%</td>
+      <td>GLM-5.4</td>
+      <td>479–957</td>
+      <td>1,124–2,246</td>
+    </tr>
+
+    <tr>
+      <td>95%</td>
+      <td>GLM‑5.3</td>
+      <td>319–638</td>
+      <td>749–1,497</td>
+    </tr>
+
+    <tr>
+      <td>95%</td>
+      <td>GLM‑5.3‑Flash</td>
+      <td>~~965–1,930~~\
+      1,930–3,860</td>
+      <td>~~2,267–4,533~~\
+      4,534–9,066</td>
+    </tr>
+
+    <tr>
+      <td>96%</td>
+      <td>GLM-5.4</td>
+      <td>491–981</td>
+      <td>1,152–2,304</td>
+    </tr>
+
+    <tr>
+      <td>96%</td>
+      <td>GLM‑5.3</td>
+      <td>327–654</td>
+      <td>768–1,536</td>
+    </tr>
+
+    <tr>
+      <td>96%</td>
+      <td>GLM‑5.3‑Flash</td>
+      <td>~~990–1,981~~\
+      1,980–3,962</td>
+      <td>~~2,326–4,652~~\
+      4,652–9,304</td>
+    </tr>
+
+    <tr>
+      <td>98%</td>
+      <td>GLM-5.4</td>
+      <td>518–1,034</td>
+      <td>1,215–2,429</td>
+    </tr>
+
+    <tr>
+      <td>98%</td>
+      <td>GLM‑5.3</td>
+      <td>345–689</td>
+      <td>810–1,619</td>
+    </tr>
+
+    <tr>
+      <td>98%</td>
+      <td>GLM‑5.3‑Flash</td>
+      <td>~~1,045–2,090~~\
+      2,090–4,180</td>
+      <td>~~2,454–4,908~~\
+      4,908–9,816</td>
+    </tr>
+  </tbody>
+</table>
 
 **How the Range Is Calculated**
 

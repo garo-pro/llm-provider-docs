@@ -31,7 +31,7 @@ You can also use Claude Code on mobile. As part of this research preview, we’r
 
 ## Security-first cloud execution
 
-Every Claude Code task runs in an isolated sandbox environment with network and filesystem restrictions. Git interactions are handled through a secure proxy service that ensures Claude can only access authorized repositories—helping keep your code and credentials protected throughout the entire workflow.
+Every Claude Code task runs in an [isolated sandbox environment with network and filesystem restrictions](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents#chapter-4). Git interactions are handled through a secure proxy service that ensures Claude can only access authorized repositories—helping keep your code and credentials protected throughout the entire workflow.
 
 You can also add custom network configuration to choose what domains Claude Code can connect to from its sandbox. For example, you can allow Claude to download npm packages over the internet so that it can run tests and validate changes.
 

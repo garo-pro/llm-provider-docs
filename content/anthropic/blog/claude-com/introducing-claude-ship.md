@@ -55,7 +55,7 @@ Teams set the pace. They can start with one repository, choose a review level an
 
 ### How the Claude Code team ships
 
-We run Claude Ship on many of our own pull requests. One of the biggest changes is who can act on customer feedback. For example, a product manager on the Claude Code team can now read a piece of feedback, talk through ideas and tradeoffs with Claude Tag, have it open a PR, and move on to the next thing while Claude Ship takes it through review, fixes, and an approval decision.
+We run Claude Ship on many of our own pull requests. One of the biggest changes is who can act on customer feedback. For example, a product manager on the Claude Code team can now read a piece of feedback, talk through ideas and tradeoffs with [Claude Tag](https://claude.com/product/tag), have it open a PR, and move on to the next thing while Claude Ship takes it through review, fixes, and an approval decision.
 
 Recently, a customer was confused because our Analytics API documentation implied an Admin key could pull Pro and Team usage. The PM asked Claude Tag whether a fix was in flight, and it opened one. Code Review found nothing blocking, a docs reviewer signed off, Claude Approvals passed, and the fix merged that same evening.
 

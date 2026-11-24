@@ -150,7 +150,7 @@ Much of this step runs through teams outside the modernization: platform or infr
 ### **Security and compliance**
 
 - A model access path for Claude Code approved for source code
-- Least-privilege access for the agentic workflow: write only to modernization branches and no production credentials
+- [Least-privilege access for the agentic workflow](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents#chapter-2) : write only to modernization branches and no production credentials
 - Secrets and PII scrubbed or masked from the modernization branch
 - Every change traceable and PR linked to an agent transcript and certificate evidence
 - License and vulnerability checks on new dependencies

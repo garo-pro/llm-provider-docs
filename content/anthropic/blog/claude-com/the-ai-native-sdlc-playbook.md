@@ -28,7 +28,7 @@ When code is no longer the bottleneck and the build phase runs faster than the t
 
 ![](https://assets.claude.com/90fb4ed05417570c9d4ff95d33bef9502c765da4.png)
 
-Let's use a security bottleneck as an example. Security teams are sized for human output, so when agents multiply code output, either the review queue builds or code ships under-reviewed. A regulated organization can't accept either outcome, so its security and policy checks have to keep pace with the agents.
+Let's use a security bottleneck as an example. Security teams are sized for human output, so when agents multiply code output, either the review queue builds or code ships under-reviewed. A regulated organization can't accept either outcome, so its [security and policy checks have to keep pace with the agents](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents).
 
 To better realize the productivity gains of and secure agentic AI, the traditional SDLC lifecycle requires the same level of transformation as the implementation phase has undergone.
 

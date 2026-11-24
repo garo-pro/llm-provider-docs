@@ -119,7 +119,7 @@ For example, if you have a Slack MCP server configured for your organization and
 ```
 Learn more about MCP [fundamentals and best practices](https://claude.com/resources/articles/what-is-model-context-protocol).
 
-For more information on setting permissions for Claude Code, see settings.json documentation at [code.claude.com](https://code.claude.com/docs/en/settings).
+For more information on [setting permissions for Claude Code](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents#chapter-4), see settings.json documentation at [code.claude.com](https://code.claude.com/docs/en/settings).
 
 ### **Define standard workflows**
 

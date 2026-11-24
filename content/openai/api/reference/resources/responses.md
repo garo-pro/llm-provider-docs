@@ -5176,7 +5176,7 @@ the `background` parameter set to `true` can be cancelled.
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -5223,6 +5223,14 @@ the `background` parameter set to `true` can be cancelled.
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -10779,11 +10787,11 @@ Learn when and how to compact long-running conversations in the [conversation st
 
 Content type: `application/json`
 
-- `model: "gpt-6-astra" or "gpt-6.2-astra" or "gpt-6.1-sol" or 112 more or string or null`
+- `model: "gpt-6-astra" or "gpt-6.2-astra" or "gpt-6.1-sol" or 116 more or string or null`
 
   Model ID used to generate the response, like `gpt-6.2-astra`. OpenAI offers a wide range of models with different capabilities, performance characteristics, and price points. Refer to the [model guide](/api/docs/models) to browse and compare available models.
 
-  - `"gpt-6-astra" or "gpt-6.2-astra" or "gpt-6.1-sol" or 112 more`
+  - `"gpt-6-astra" or "gpt-6.2-astra" or "gpt-6.1-sol" or 116 more`
 
     Model ID used to generate the response, like `gpt-6.2-astra`. OpenAI offers a wide range of models with different capabilities, performance characteristics, and price points. Refer to the [model guide](/api/docs/models) to browse and compare available models.
 
@@ -11016,6 +11024,14 @@ Content type: `application/json`
     - `"gpt-6-rosalind"`
 
     - `"gpt-6.2-astra-law"`
+
+    - `"gpt-6-astra-healthcare"`
+
+    - `"gpt-6.1-sol-healthcare"`
+
+    - `"gpt-6.2-astra-healthcare"`
+
+    - `"gpt-6.2-sol-healthcare"`
 
   - `string`
 
@@ -25798,7 +25814,7 @@ Content type: `application/json`
 
     - `"gpt-3.5-turbo-16k-0613"`
 
-  - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+  - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
     - `"o1-pro"`
 
@@ -25845,6 +25861,14 @@ Content type: `application/json`
     - `"gpt-6-rosalind"`
 
     - `"gpt-6.2-astra-law"`
+
+    - `"gpt-6-astra-healthcare"`
+
+    - `"gpt-6.1-sol-healthcare"`
+
+    - `"gpt-6.2-astra-healthcare"`
+
+    - `"gpt-6.2-sol-healthcare"`
 
 - `moderation: optional object { model, policy }  or null`
 
@@ -32548,7 +32572,7 @@ Content type: `application/json`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -32595,6 +32619,14 @@ Content type: `application/json`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -44268,7 +44300,7 @@ Retrieves a model response with the given ID.
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -44315,6 +44347,14 @@ Retrieves a model response with the given ID.
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -60632,7 +60672,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -60679,6 +60719,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -71550,7 +71598,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -71597,6 +71645,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `object: "response"`
 
@@ -82989,7 +83045,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -83036,6 +83092,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `object: "response"`
 
@@ -93891,7 +93955,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -93938,6 +94002,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `object: "response"`
 
@@ -104998,7 +105070,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -105045,6 +105117,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `object: "response"`
 
@@ -115737,7 +115817,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -115784,6 +115864,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `object: "response"`
 
@@ -141537,7 +141625,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -141584,6 +141672,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `object: "response"`
 
@@ -154328,7 +154424,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
           - `"gpt-3.5-turbo-16k-0613"`
 
-        - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+        - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
           - `"o1-pro"`
 
@@ -154375,6 +154471,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
           - `"gpt-6-rosalind"`
 
           - `"gpt-6.2-astra-law"`
+
+          - `"gpt-6-astra-healthcare"`
+
+          - `"gpt-6.1-sol-healthcare"`
+
+          - `"gpt-6.2-astra-healthcare"`
+
+          - `"gpt-6.2-sol-healthcare"`
 
       - `object: "response"`
 
@@ -166978,7 +167082,7 @@ curl https://api.openai.com/v1/responses/resp_123 \
 
         - `"gpt-3.5-turbo-16k-0613"`
 
-      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+      - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
         - `"o1-pro"`
 
@@ -167025,6 +167129,14 @@ curl https://api.openai.com/v1/responses/resp_123 \
         - `"gpt-6-rosalind"`
 
         - `"gpt-6.2-astra-law"`
+
+        - `"gpt-6-astra-healthcare"`
+
+        - `"gpt-6.1-sol-healthcare"`
+
+        - `"gpt-6.2-astra-healthcare"`
+
+        - `"gpt-6.2-sol-healthcare"`
 
     - `moderation: optional object { model, policy }  or null`
 

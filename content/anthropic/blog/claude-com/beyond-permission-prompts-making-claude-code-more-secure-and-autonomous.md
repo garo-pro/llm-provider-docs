@@ -50,7 +50,7 @@ Both components are configurable: you can easily choose to allow or disallow spe
 
 ![](https://assets.claude.com/957f5aaf1b2662b9ac5fe25815f0a8491f8966ff.png)
 
-Sandboxing ensures that even a successful prompt injection is fully isolated, and cannot impact overall user security. This way, a compromised Claude Code can't steal your SSH keys, or phone home to an attacker's server.
+Sandboxing ensures that [even a successful prompt injection is fully isolated](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents#chapter-4), and cannot impact overall user security. This way, a compromised Claude Code can't steal your SSH keys, or phone home to an attacker's server.
 
 To get started with this feature, run: `claude --sandbox`, and read more technical details about our security model here.
 

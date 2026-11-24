@@ -5187,7 +5187,7 @@ Schema name: `ResponseCreatedEvent`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -5234,6 +5234,14 @@ Schema name: `ResponseCreatedEvent`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -15938,7 +15946,7 @@ Schema name: `ResponseInProgressEvent`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -15985,6 +15993,14 @@ Schema name: `ResponseInProgressEvent`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -26689,7 +26705,7 @@ Schema name: `ResponseCompletedEvent`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -26736,6 +26752,14 @@ Schema name: `ResponseCompletedEvent`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -37464,7 +37488,7 @@ Schema name: `ResponseFailedEvent`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -37511,6 +37535,14 @@ Schema name: `ResponseFailedEvent`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -48219,7 +48251,7 @@ Schema name: `ResponseIncompleteEvent`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -48266,6 +48298,14 @@ Schema name: `ResponseIncompleteEvent`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 
@@ -70178,7 +70218,7 @@ Schema name: `ResponseQueuedEvent`
 
       - `"gpt-3.5-turbo-16k-0613"`
 
-    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 20 more`
+    - `ResponsesOnlyModel = "o1-pro" or "o1-pro-2025-03-19" or "o3-pro" or 24 more`
 
       - `"o1-pro"`
 
@@ -70225,6 +70265,14 @@ Schema name: `ResponseQueuedEvent`
       - `"gpt-6-rosalind"`
 
       - `"gpt-6.2-astra-law"`
+
+      - `"gpt-6-astra-healthcare"`
+
+      - `"gpt-6.1-sol-healthcare"`
+
+      - `"gpt-6.2-astra-healthcare"`
+
+      - `"gpt-6.2-sol-healthcare"`
 
   - `object: "response"`
 

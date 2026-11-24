@@ -99,6 +99,39 @@ Replace the sample campaign ID with your own. This illustrative response has 7 c
 
 See [Report goal and non-goal events](https://developers.openai.com/ads/reporting#report-goal-and-non-goal-events) for a complete event-expansion request and response.
 
+## Sponsored Business Agent Insights
+
+`GET /v1/ad_account/agent_insights` returns the latest report for the Sponsored Business Agent currently published on your ad account. You can use a read-only [Advertiser API key](https://developers.openai.com/ads/api-reference/authentication) for the ad account.
+
+### Report window
+
+Set `window_days` to `1`, `7`, `14`, or `30`. The default is `7`. The API returns one report with UTC dates and no pagination. Custom dates and campaign filters are unavailable.
+
+### Response fields
+
+| Field                                                 | Meaning                                                                                                                                                                                                                                                                                                             |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `report_date`                                         | UTC date of the latest completed report available. Publication can lag behind the current date.                                                                                                                                                                                                                     |
+| `window_start`, `window_end`, `window_days`           | Inclusive UTC start date, exclusive UTC end date, and number of days in the report.                                                                                                                                                                                                                                 |
+| `conversations`                                       | Distinct observed conversations with at least one timed user message in the window. Avoid adding counts across overlapping windows.                                                                                                                                                                                 |
+| `total_user_turns`, `average_turns_per_conversation`  | Observed user messages and the average number of messages per observed conversation in the window. Both are `null` when message counts are unavailable. The average is also `null` when the conversation count is zero.                                                                                             |
+| `turn_metric_version`                                 | Definition version for the user-turn metrics, or `null` when those metrics are unavailable.                                                                                                                                                                                                                         |
+| `return_visits`                                       | Return events, conversations with a return event, and counts of conversations with and without enough timing data to count returns. A return event is a user message sent more than 30 minutes after the previous user message in the same conversation. The field is `null` when return-visit data is unavailable. |
+| `observed_hours`, `expected_hours`, `coverage_status` | Available and expected ingestion hours and their coverage status (`complete` or `incomplete`).                                                                                                                                                                                                                      |
+| `capture_coverage`                                    | Always `partial_observed_conversations`. Even complete ingestion-hour coverage represents only the conversations the system captured.                                                                                                                                                                               |
+| `data_available_from`                                 | Earliest retained ingestion hour in UTC, formatted as `YYYY-MM-DDTHH`.                                                                                                                                                                                                                                              |
+
+Metrics describe activity across the published agent's observed conversations. For ad-attributed performance, use the campaign reporting endpoints. The response excludes message text and transcripts.
+
+### Errors
+
+| Status | What to check                                                                                            |
+| ------ | -------------------------------------------------------------------------------------------------------- |
+| `400`  | Check that the only query parameter is `window_days` and that its value is one of the supported windows. |
+| `403`  | Check that your credentials grant read access to the ad account.                                         |
+| `404`  | Check that the account has a current published agent.                                                    |
+| `503`  | The report is temporarily unavailable. Retry later.                                                      |
+
 ## Terminology
 
 | Term                             | Values                                                                                                                                                                                                                                                                                                                                                                                              | Meaning                                                                                                                                                                                                                                                                                                                                                                                                     |

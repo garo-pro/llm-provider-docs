@@ -62,7 +62,7 @@ You’ll use the threat model in two places. In discovery, as scope**:** partiti
 
 ## **2. Sandbox: Run agents safely and verify exploitability**
 
-**One purpose of the sandbox is to protect your systems.** To enable models to run safely and autonomously, you need a strong isolation layer. Without it, the agent may overshoot the target and do something unexpected.
+**One purpose of the sandbox is to [protect your systems](https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents#chapter-4).** To enable models to run safely and autonomously, you need a strong isolation layer. Without it, the agent may overshoot the target and do something unexpected.
 
 “One team told the model it had no network access—when it actually did—and the model discovered it could fetch from GitHub anyway. Another team observed an agent answer a GitHub issue mid-scan. Neither action was malicious, but both demonstrated the need to enforce constraints via code and configuration.”
 

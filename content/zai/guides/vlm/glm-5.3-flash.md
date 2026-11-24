@@ -4,10 +4,6 @@
 
 # GLM-5.3-Flash/FlashX
 
-> [!TIP]
->
-> GLM-5.3-Flash is now fully available on the [GLM Coding Plan](https://z.ai/subscribe). With native multimodal capabilities and 3× the quota, it delivers a smoother and more cost-effective coding experience.
-
 ## Model Overview
 
 **GLM-5.3-Flash/GLM-5.3-FlashX** is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost.

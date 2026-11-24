@@ -33,11 +33,11 @@ Admins connect Salesforce once for the organization and choose which groups get 
 
 ## **How sales teams use Salesforce in Claude**
 
-Anthropic customers GitLab, Siemens, and Legora have deployed Salesforce in Claude to their organizations, and 7,000 Salesforce sellers use it in their work. Here’s what they’ve told us about using Salesforce in Claude:
+Anthropic customers GitLab, Siemens, and Legora have deployed Salesforce in Claude to their organizations, and 14,000 Salesforce sellers use it in their work. Here’s what they’ve told us about using Salesforce in Claude:
 
-“"With Salesforce in Claude, our sellers turn live data into meeting briefings in seconds instead of hours. As our sales team grows, every new rep starts with a full picture of the law firms we serve." — David Eckstein, Chief Financial Officer, Legora”
+“With Salesforce in Claude, our sellers turn live data into meeting briefings in seconds instead of hours. As our sales team grows, every new rep starts with a full picture of the law firms we serve.”
 
-“"With Salesforce in Claude, sellers can start the day with the pipeline review already done and the account history already there. That time goes straight back into customer conversations." — Alexa Vignone, President and Chief Revenue Officer, Salesforce”
+“With Salesforce in Claude, sellers can start the day with the pipeline review already done and the account history already there. That time goes straight back into customer conversations.”
 
 ## **Getting started**
 

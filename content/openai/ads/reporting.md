@@ -48,6 +48,10 @@ Responses are paginated. Follow the [reference's pagination guidance](https://de
 
 You can include conversion metrics in these reports. For a dedicated attributed-conversion report, see [Conversion Reporting & Attribution](#conversion-reporting--attribution).
 
+## Sponsored Business Agent reporting
+
+Use [Sponsored Business Agent Insights](https://developers.openai.com/ads/api-reference/insights#sponsored-business-agent-insights) to report on observed conversations, user turns, and return visits for your account's published agent.
+
 ## Metrics & Definitions
 
 Choose metrics that answer your reporting question: whether ads are delivering, how efficiently they generate engagement, or what outcomes they produce.
