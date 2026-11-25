@@ -350,7 +350,14 @@ Move a marketplace this way when the new source contains the same marketplace. A
 | macOS | `/Library/Application Support/Claude/org-plugins/` |
 | Windows | `C:\Program Files\Claude\org-plugins\` |
 
-On Windows, the directory is under `Program Files` (not `ProgramData`) so that only administrators can create or modify it. Claude Desktop treats the presence of this directory as an admin-provisioned source. On Linux, Claude Desktop reads no organization plugins directory, so use a [plugin marketplace](#plugin-marketplaces-admin) there.
+On Linux, Claude Desktop reads no organization plugins directory, so use a [plugin marketplace](#plugin-marketplaces-admin) there.
+
+Claude Desktop treats this directory, when it exists, as a source that an admin provisioned, so only administrators should be able to create or modify it:
+
+* **macOS**: make `root` the owner of the directory, everything in it, and the `Claude` folder above it. Give group and others no write access to any of them.
+* **Windows**: Claude Desktop reads the directory from `Program Files` (not `ProgramData`) so that only administrators can create or modify it
+
+A plugin's local MCP server runs as the user, so have the server keep its caches and logs outside this directory, such as in the user's home folder.
 
 ### Plugin structure
 
@@ -390,7 +397,7 @@ See the [plugins reference](https://code.claude.com/docs/en/plugins) for the ful
 
 > [!NOTE]
 >
-> Symlinks inside a plugin are followed as long as the target resolves to a path inside the plugin directory. Symlinks that point outside the plugin (for example, `skills/foo/SKILL.md → /etc/hosts`) are skipped. A symlinked top-level plugin directory (for example, `org-plugins/my-plugin → /opt/shared/my-plugin`) is also followed.
+> Symlinks inside a plugin are followed as long as the target resolves to a path inside the plugin directory. Symlinks that point outside the plugin (for example, `skills/foo/SKILL.md → /etc/hosts`) are skipped. A symlinked top-level plugin directory (for example, `org-plugins/my-plugin → /opt/shared/my-plugin`) is also followed, so make sure that only administrators can modify the link's target and the folders that hold it.
 
 > [!NOTE]
 >
@@ -543,7 +550,7 @@ You can deliver a hook that has to run for every user, such as one that logs eac
 * **In a plugin**: add the plugin's marketplace to [`allowedPluginMarketplaces`](#configure-the-marketplace) with `installationPreference` set to [`"required"`](#marketplace-installation-preferences). Once Claude Desktop has fetched the marketplace, the plugin's hooks run from the first message of each Cowork session, Chat conversation, and local Code session. In a local Code session, a user can turn them off with [`disableAllHooks`](https://code.claude.com/docs/en/settings-reference#disableallhooks) in their own or a project's Claude Code settings.
 * **In Claude Code managed settings**: write the hooks under the [`hooks`](https://code.claude.com/docs/en/settings-reference#hooks) key of the Claude Code [managed settings](https://claude.com/docs/third-party/claude-desktop/code.md#interaction-with-claude-code%E2%80%99s-own-managed-settings) on each device, and put any script that they call on the device too, where users can't change it. These hooks run in Cowork sessions, Chat conversations, and local Code sessions with no plugin to install, and a user's `disableAllHooks` doesn't stop them. If these are the device's first Claude Code managed settings, also set `parentSettingsBehavior` to `"merge"` in them, or Claude Code ignores the [managed policy](https://claude.com/docs/third-party/claude-desktop/code.md#applied-as-managed-policy) values that Claude Desktop supplies.
 
-In an SSH remote session, a plugin's hooks run where Claude Desktop copies them to the host (see [Plugin hooks on the remote host](https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md#plugin-hooks-on-the-remote-host)), and Claude Code on the host doesn't read the device's managed settings. For a hook that has to run in every remote session, deploy Claude Code managed settings [on the host](https://code.claude.com/docs/en/managed-settings#where-each-mechanism-stores-the-policy) in the same way. To turn off users' own hooks there too, deploy the example under [Turn off user hooks](#turn-off-user-hooks).
+In an SSH remote session, a plugin's hooks can run if Claude Desktop copies them to the host (see [Plugin hooks on the remote host](https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions.md#plugin-hooks-on-the-remote-host)). Claude Code on the host doesn't read the device's managed settings. For a hook that has to run in every remote session, deploy Claude Code managed settings [on the host](https://code.claude.com/docs/en/managed-settings#where-each-mechanism-stores-the-policy) in the same way. To turn off users' own hooks there too, deploy the example under [Turn off user hooks](#turn-off-user-hooks).
 
 ### Turn off user hooks
 

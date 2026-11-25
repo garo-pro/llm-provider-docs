@@ -389,6 +389,14 @@ Register a resource for your component bundle and the tools the model can call (
 
 
 
+For Java, add these tested Maven dependencies to your project: `io.modelcontextprotocol.sdk:mcp-core:1.1.5`, `io.modelcontextprotocol.sdk:mcp-json-jackson2:1.1.5`, `org.eclipse.jetty.ee10:jetty-ee10-servlet:12.0.41`, and `com.fasterxml.jackson.core:jackson-databind:2.18.11`. Use a JDK supported by [the Jetty compatibility table](https://jetty.org/docs/jetty/12/index.html). Put the imports before the server class and place the remaining statements in its `main` method, which must handle or declare checked exceptions. The Java server reads `public/todo-widget.html` from the working directory and serves the same widget and tools:
+
+
+
+
+
+
+
 Save the TypeScript example as `server.ts`.
 
 
@@ -709,6 +717,196 @@ func main() {
 }
 ```
 
+```java
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import io.modelcontextprotocol.json.jackson2.JacksonMcpJsonMapper;
+import io.modelcontextprotocol.server.*;
+import io.modelcontextprotocol.server.transport.DefaultServerTransportSecurityValidator;
+import io.modelcontextprotocol.server.transport.HttpServletStreamableServerTransportProvider;
+import io.modelcontextprotocol.spec.McpSchema;
+import java.nio.file.*;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import org.eclipse.jetty.ee10.servlet.*;
+import org.eclipse.jetty.server.*;
+
+var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
+    String todoHtml = Files.readString(Path.of("public/todo-widget.html"));
+    String todoOutputSchema =
+"""
+{"type":"object","properties":{"tasks":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"title":{"type":"string"},"completed":{"type":"boolean"}},"required":["id","title","completed"]}}},"required":["tasks"]}
+""";
+    var todos = new ArrayList<Map<String, Object>>();
+    var nextId = new AtomicInteger(1);
+    // Permit the local MCP Inspector UI; add other trusted browser origins explicitly.
+    var allowedOrigins = List.of("http://localhost:6274", "http://127.0.0.1:6274");
+    // Add your public tunnel hostname to this list before connecting ChatGPT.
+    var allowedHosts = List.of("localhost:*", "127.0.0.1:*");
+    var transport =
+        HttpServletStreamableServerTransportProvider.builder()
+            .jsonMapper(mapper)
+            .mcpEndpoint("/mcp")
+            .securityValidator(
+                DefaultServerTransportSecurityValidator.builder()
+                    .allowedHosts(allowedHosts)
+                    .allowedOrigins(allowedOrigins)
+                    .build())
+            // Sessions close through MCP DELETE or server shutdown; this local demo has no idle
+            // expiry.
+            .sessionSweepInterval(null)
+            .build();
+    var resource =
+        McpSchema.Resource.builder()
+            .name("todo-widget")
+            .uri("ui://widget/todo.html")
+            .mimeType("text/html;profile=mcp-app")
+            .build();
+    var server =
+        McpServer.sync(transport)
+            .serverInfo("todo-plugin-server", "0.1.0")
+            .capabilities(
+                McpSchema.ServerCapabilities.builder().tools(false).resources(false, false).build())
+            .resources(
+                new McpServerFeatures.SyncResourceSpecification(
+                    resource,
+                    (exchange, request) ->
+                        new McpSchema.ReadResourceResult(
+                            List.of(
+                                new McpSchema.TextResourceContents(
+                                    resource.uri(), resource.mimeType(), todoHtml)))))
+            .toolCall(
+                McpSchema.Tool.builder()
+                    .name("add_todo")
+                    .title("Add todo")
+                    .description("Creates a todo item with the given title.")
+                    .inputSchema(
+                        mapper,
+"""
+{"type":"object","properties":{"title":{"type":"string","minLength":1}},"required":["title"]}
+""")
+                    .outputSchema(mapper, todoOutputSchema)
+                    .meta(Map.of("ui", Map.of("resourceUri", resource.uri())))
+                    .build(),
+                (exchange, request) -> {
+                  synchronized (todos) {
+                    if (!(request.arguments().get("title") instanceof String title)
+                        || title.isEmpty())
+                      return McpSchema.CallToolResult.builder()
+                          .isError(true)
+                          .addTextContent("A title string is required.")
+                          .build();
+                    if (!title.trim().isEmpty())
+                      todos.add(
+                          Map.of(
+                              "id",
+                              "todo-" + nextId.getAndIncrement(),
+                              "title",
+                              title.trim(),
+                              "completed",
+                              false));
+                    return McpSchema.CallToolResult.builder()
+                        .structuredContent(Map.of("tasks", List.copyOf(todos)))
+                        .isError(false)
+                        .build();
+                  }
+                })
+            .toolCall(
+                McpSchema.Tool.builder()
+                    .name("complete_todo")
+                    .title("Complete todo")
+                    .description("Marks a todo as done by id.")
+                    .inputSchema(
+                        mapper,
+"""
+{"type":"object","properties":{"id":{"type":"string","minLength":1}},"required":["id"]}
+""")
+                    .outputSchema(mapper, todoOutputSchema)
+                    .meta(Map.of("ui", Map.of("resourceUri", resource.uri())))
+                    .build(),
+                (exchange, request) -> {
+                  synchronized (todos) {
+                    if (!(request.arguments().get("id") instanceof String id) || id.isEmpty())
+                      return McpSchema.CallToolResult.builder()
+                          .isError(true)
+                          .addTextContent("A todo ID string is required.")
+                          .build();
+                    for (int i = 0; i < todos.size(); i++) {
+                      var todo = todos.get(i);
+                      if (id.equals(todo.get("id")))
+                        todos.set(
+                            i, Map.of("id", id, "title", todo.get("title"), "completed", true));
+                    }
+                    return McpSchema.CallToolResult.builder()
+                        .structuredContent(Map.of("tasks", List.copyOf(todos)))
+                        .isError(false)
+                        .build();
+                  }
+                })
+            .build();
+    var httpServer = new Server();
+    var connector = new ServerConnector(httpServer);
+    connector.setHost("127.0.0.1");
+    connector.setPort(8787);
+    httpServer.addConnector(connector);
+    var context = new ServletContextHandler();
+    context.setContextPath("/");
+    context.addServlet(new ServletHolder(transport), "/mcp");
+    context.addServlet(
+        new ServletHolder(
+            new jakarta.servlet.http.HttpServlet() {
+              @Override
+              protected void doGet(
+                  jakarta.servlet.http.HttpServletRequest request,
+                  jakarta.servlet.http.HttpServletResponse response)
+                  throws java.io.IOException {
+                if (!request.getRequestURI().equals("/")) {
+                  response.sendError(404);
+                  return;
+                }
+                response.setContentType("text/plain");
+                response.getWriter().write("Todo MCP server");
+              }
+            }),
+        "/");
+    var cors =
+        new FilterHolder(
+            (jakarta.servlet.Filter)
+                (request, response, chain) -> {
+                  var req = (jakarta.servlet.http.HttpServletRequest) request;
+                  var res = (jakarta.servlet.http.HttpServletResponse) response;
+                  var origins = Collections.list(req.getHeaders("Origin"));
+                  if (!origins.isEmpty()
+                      && (origins.size() != 1 || !allowedOrigins.contains(origins.get(0)))) {
+                    res.sendError(403, "Untrusted Origin");
+                    return;
+                  }
+                  res.setHeader("Vary", "Origin");
+                  if (!origins.isEmpty())
+                    res.setHeader("Access-Control-Allow-Origin", origins.get(0));
+                  res.setHeader("Access-Control-Expose-Headers", "Mcp-Session-Id");
+                  if (req.getMethod().equals("OPTIONS")) {
+                    res.setHeader("Access-Control-Allow-Methods", "POST, GET, DELETE, OPTIONS");
+                    res.setHeader(
+                        "Access-Control-Allow-Headers",
+                        "content-type, mcp-session-id, mcp-protocol-version");
+                    res.setStatus(204);
+                    return;
+                  }
+                  chain.doFilter(request, response);
+                });
+    cors.setAsyncSupported(true);
+    context.addFilter(cors, "/mcp", EnumSet.of(jakarta.servlet.DispatcherType.REQUEST));
+
+    httpServer.setHandler(context);
+    try {
+      httpServer.start();
+      httpServer.join();
+    } finally {
+      server.closeGracefully();
+      httpServer.stop();
+    }
+```
+
 ```ruby
 require "mcp"
 require "rackup"
@@ -876,6 +1074,14 @@ Usually, you can run a build command such as `npm run build` to produce a `dist`
 
 In this quickstart, since we're using vanilla HTML, no build step is required.
 
+
+
+
+For Java, run the server class’s `main` method from your IDE or build tool with the Maven dependencies on the runtime classpath. Set the working directory to the project directory containing `public/todo-widget.html`. The Java server listens at `http://localhost:8787/mcp`; leave it running while testing with MCP Inspector.
+
+
+
+
 Start the MCP server on `http://localhost:<port>/mcp` from the directory that contains your server file.
 
 
@@ -944,6 +1150,14 @@ ngrok http <port>
 ```
 
 This will give you a public URL like `https://<subdomain>.ngrok.app` that you can use to access your server from ChatGPT.
+
+
+
+
+For Java, add your tunnel's exact hostname (for example, `your-tunnel.ngrok.app`, without `https://` or a path) to `allowedHosts`, then restart the server. Update the entry if your tunnel URL changes. Requests with other hostnames are rejected. Keep `allowedOrigins` restricted to trusted browser origins; ChatGPT's server connection does not require adding the tunnel URL to that list.
+
+
+
 
 When you connect your MCP server in ChatGPT, provide the public URL with
 the `/mcp` path (for example, `https://<subdomain>.ngrok.app/mcp`).

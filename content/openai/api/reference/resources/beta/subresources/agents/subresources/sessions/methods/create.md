@@ -480,7 +480,7 @@ Content type: `application/json`
 
   - `tools: optional array of AgentToolParam or null`
 
-    Tools available to the agent. Omit to inherit, or pass null to clear them. The resolved tool list must fit within 3 MiB (3,145,728 bytes) of compact UTF-8 JSON.
+    Tools available to the agent. Omit to inherit, or pass null to clear them. The resolved tool list must fit within 8 MiB (8,388,608 bytes) of compact UTF-8 JSON.
 
     `minItems: 0`, `maxItems: 16384`
 

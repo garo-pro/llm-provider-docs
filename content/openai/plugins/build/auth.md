@@ -151,7 +151,7 @@ and Codex use a stable redirect URI when creating an eligible OAuth client:
 - Set `authorization_response_iss_parameter_supported: true` in your
   [authorization server
   metadata](https://www.rfc-editor.org/rfc/rfc9207#section-3).
-- Use the same exact issuer identifier in the metadata `issuer` field and
+- Use the same issuer identifier in the metadata `issuer` field and
   the protected resource metadata `authorization_servers` list.
 - Return `iss` in every successful and error authorization response. Its value
   must exactly match the metadata `issuer`; clients use exact string
@@ -498,6 +498,14 @@ Alex — Moonwaffle work:     prf_8d7e4b19
 
 These example IDs do not encode profile labels or internal relationships. They are persisted once per profile and reused across reconnection, token refresh, and changes to email or display name.
 
+
+
+
+For the Java handler, use `com.auth0:java-jwt:4.5.0` and `com.fasterxml.jackson.core:jackson-databind:2.18.11`.
+
+
+
+
 **Build the response from the authenticated profile.** These examples show handler logic you can connect to your MCP SDK.
 
 
@@ -580,6 +588,46 @@ func (service profileService) getProfile(token string) (map[string]any, error) {
 		return nil, err
 	}
 	return map[string]any{"isError": false, "structuredContent": profile, "content": []map[string]string{{"type": "text", "text": string(text)}}}, nil
+}
+```
+
+```java
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.nio.file.*;
+import java.security.SecureRandom;
+import java.time.Instant;
+import java.util.*;
+
+
+
+static final ObjectMapper JSON = new ObjectMapper();
+
+static Map<String, Object> getProfile(String token) throws Exception {
+  // Your auth provider validates credentials and loads the persisted account.
+  // Let authentication failures follow the server's normal MCP auth handling.
+  var account = loadAuthenticatedProfile(token);
+  var id = account.get("profileId");
+  if (!(id instanceof String) || ((String) id).isBlank()) {
+    return Map.of(
+        "isError",
+        true,
+        "content",
+        List.of(Map.of("type", "text", "text", "Profile identity unavailable.")));
+  }
+  var profile = new LinkedHashMap<String, Object>();
+  profile.put("id", id);
+  for (String field : List.of("name", "email", "nickname")) {
+    if (account.get(field) instanceof String) profile.put(field, account.get(field));
+  }
+  return Map.of(
+      "isError",
+      false,
+      "structuredContent",
+      profile,
+      "content",
+      List.of(Map.of("type", "text", "text", JSON.writeValueAsString(profile))));
 }
 ```
 

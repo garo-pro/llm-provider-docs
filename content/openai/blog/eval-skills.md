@@ -203,9 +203,9 @@ These checks are intentionally lightweight. They give you fast, explainable sign
 
 ### **A minimal runner**
 
-A “good enough” approach looks like this:
+The Java variant runs the same evaluation through the native Codex CLI. Both versions follow this sequence:
 
-1. For each prompt, run `codex exec --json --full-auto "<prompt>"`
+1. For each prompt, run `codex exec --json --sandbox workspace-write "<prompt>"`
 2. Save the JSONL trace to disk
 3. Parse the trace and run deterministic checks over the events
 
@@ -399,6 +399,47 @@ func main() {
 		os.Exit(1)
 	}
 }
+```
+
+```java
+import com.openai.core.ObjectMappers;
+import java.nio.file.*;
+import java.util.*;
+
+// repository is a Path to your Git checkout containing the setup-demo-app skill.
+var tracePath = repository.resolve("evals/artifacts/test-01.jsonl");
+Files.createDirectories(tracePath.getParent());
+String prompt = "Create a demo app named demo-app using the $setup-demo-app skill";
+var command =
+    new ProcessBuilder("codex", "exec", "--json", "--sandbox", "workspace-write", prompt);
+command.directory(repository.toFile());
+command.redirectOutput(tracePath.toFile());
+command.redirectError(ProcessBuilder.Redirect.INHERIT);
+var process = command.start();
+process.getOutputStream().close();
+int exitCode = process.waitFor();
+if (exitCode != 0) throw new IllegalStateException("Codex exited with status " + exitCode);
+var json = ObjectMappers.jsonMapper();
+boolean ranNpmInstall = false;
+for (String line : Files.readAllLines(tracePath)) {
+  if (line.isBlank()) continue;
+  var event = json.readTree(line);
+  var item = event.path("item");
+  if (event.path("type").asText().equals("item.completed")
+      && item.path("type").asText().equals("command_execution")
+      && item.path("status").asText().equals("completed")
+      && item.has("exit_code")
+      && item.path("exit_code").asInt(-1) == 0
+      && item.path("command").asText().contains("npm install")) ranNpmInstall = true;
+}
+var summary =
+    Map.of(
+        "ranNpmInstall",
+        ranNpmInstall,
+        "hasPackageJson",
+        Files.exists(repository.resolve("demo-app/package.json")));
+String printed = json.writeValueAsString(summary) + "\n";
+System.out.print(printed);
 ```
 
 ```ruby

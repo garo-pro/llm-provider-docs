@@ -236,6 +236,14 @@ const isCorrect =
 console.log(isCorrect ? "Correct!" : "Incorrect.");
 ```
 
+```python
+correct_answer = ["Eggs", "Sugar"]
+model_answer = ["Sugar", "Eggs"]
+
+is_correct = sorted(correct_answer) == sorted(model_answer)
+print("Correct!" if is_correct else "Incorrect.")
+```
+
 ```go
 correctAnswer := []string{"Eggs", "Sugar"}
 modelAnswer := []string{"Sugar", "Eggs"}
@@ -246,6 +254,19 @@ if slices.Equal(correctAnswer, modelAnswer) {
 } else {
 	fmt.Println("Incorrect.")
 }
+```
+
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+var correctAnswer = new ArrayList<>(List.of("Eggs", "Sugar"));
+var modelAnswer = new ArrayList<>(List.of("Sugar", "Eggs"));
+Collections.sort(correctAnswer);
+Collections.sort(modelAnswer);
+boolean isCorrect = correctAnswer.equals(modelAnswer);
+System.out.println(isCorrect ? "Correct!" : "Incorrect.");
 ```
 
 ```csharp

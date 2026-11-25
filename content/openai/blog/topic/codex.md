@@ -2,6 +2,7 @@
 
 > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
+- [Production monitoring with Codex](/blog/production-monitoring-with-codex.md): Investigate production failures with Codex using telemetry, deployment history, and code.
 - [Building security review into your SDLC with Codex Security](/blog/building-security-review-into-your-sdlc-with-codex-security.md): Four principles for integrating security reviews into development with Codex Security and the CLI.
 - [How I stay in the flow with Ultrafast](/blog/how-i-stay-in-the-flow-with-ultrafast.md): How I use Ultrafast in Codex to try small UI changes, give feedback, and stay in the zone, and where I’d try it in the API.
 - [Securing persistent agents like OpenClaw at OpenAI](/blog/securing-persistent-agents-like-openclaw-at-openai.md): How OpenAI combines trusted control-plane services, Codex sandboxing, auto-review, agent identity, and observability to run persistent agents.

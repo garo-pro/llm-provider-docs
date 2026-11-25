@@ -314,6 +314,7 @@ The Ruby example uses the `mcp` gem. Save the example in a file and run it with 
 
 The local fixture accepts `example-session` and `example-payment-token`
 and returns a sample response without charging a payment method or creating an order.
+The Java version uses `io.modelcontextprotocol.sdk:mcp-core:1.1.5`, `io.modelcontextprotocol.sdk:mcp-json-jackson2:1.1.5`, and `com.fasterxml.jackson.core:jackson-databind:2.18.11`. It returns the same structured response and checkout metadata.
 
 Register a checkout tool
 
@@ -648,6 +649,152 @@ func main() {
 		log.Fatal(err)
 	}
 }
+```
+
+```java
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import io.modelcontextprotocol.json.jackson2.JacksonMcpJsonMapper;
+import io.modelcontextprotocol.server.McpServer;
+import io.modelcontextprotocol.server.transport.StdioServerTransportProvider;
+import io.modelcontextprotocol.spec.McpSchema;
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.util.concurrent.CountDownLatch;
+
+var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
+    var closed = new CountDownLatch(1);
+    var input =
+        new FilterInputStream(System.in) {
+          @Override
+          public int read(byte[] bytes, int offset, int length) throws IOException {
+            int count = super.read(bytes, offset, length);
+            if (count == -1) closed.countDown();
+            return count;
+          }
+        };
+    var transport = new StdioServerTransportProvider(mapper, input, System.out);
+    var tool =
+        McpSchema.Tool.builder()
+            .name("complete_checkout")
+            .description(
+                "Return the local checkout response fixture; does not charge a payment method or create a real order.")
+            .inputSchema(
+                mapper,
+"""
+{"type":"object","properties":{"checkout_session_id":{"type":"string"},"buyer":{"type":"object","properties":{"email":{"type":"string"}},"required":["email"]},"payment_data":{"type":"object","properties":{"token":{"type":"string","const":"example-payment-token"}},"required":["token"]}},"required":["checkout_session_id","buyer","payment_data"]}
+""")
+            .outputSchema(
+                mapper,
+"""
+{"type":"object","properties":{"id":{"type":"string"},"status":{"type":"string"},"currency":{"type":"string"},"line_items":{"type":"array","items":{"type":"object"}},"fulfillment_address":{"type":"object"},"fulfillment_options":{"type":"array","items":{"type":"object"}},"fulfillment_option_id":{"type":"string"},"totals":{"type":"array","items":{"type":"object"}},"order":{"type":"object"}},"required":["id","status","currency","line_items","fulfillment_address","fulfillment_options","fulfillment_option_id","totals","order"]}
+""")
+            .build();
+    var server =
+        McpServer.sync(transport)
+            .serverInfo("Checkout response fixture", "1.0.0")
+            .capabilities(McpSchema.ServerCapabilities.builder().tools(false).build())
+            .toolCall(
+                tool,
+                (exchange, request) -> {
+                  var arguments = request.arguments();
+                  if (!"example-session".equals(arguments.get("checkout_session_id"))
+                      || !(arguments.get("buyer") instanceof java.util.Map<?, ?> buyer)
+                      || !(buyer.get("email") instanceof String)
+                      || !(arguments.get("payment_data") instanceof java.util.Map<?, ?> payment)
+                      || !"example-payment-token".equals(payment.get("token"))) {
+                    return McpSchema.CallToolResult.builder()
+                        .isError(true)
+                        .addTextContent(
+                            "This fixture requires example-session, a buyer email, and example-payment-token")
+                        .build();
+                  }
+                  return McpSchema.CallToolResult.builder()
+                      .addTextContent("Checkout response fixture complete; no payment was charged.")
+                      .structuredContent(
+                          mapper,
+"""
+{
+  "id": "example-session",
+  "status": "completed",
+  "currency": "USD",
+  "line_items": [
+    {
+      "id": "line_item_1",
+      "item": {
+        "id": "item_1",
+        "quantity": 1
+      },
+      "base_amount": 3000,
+      "discount": 0,
+      "subtotal": 3000,
+      "tax": 300,
+      "total": 3300
+    }
+  ],
+  "fulfillment_address": {
+    "name": "Jane Customer",
+    "line_one": "123 Main St",
+    "line_two": "Apt 4B",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "US",
+    "postal_code": "94107",
+    "phone_number": "+1 (555) 555-5555"
+  },
+  "fulfillment_options": [
+    {
+      "id": "fulfillment_option_1",
+      "type": "shipping",
+      "title": "Standard shipping",
+      "subtitle": "3-5 business days",
+      "carrier": "USPS",
+      "earliest_delivery_time": "2026-02-24T15:00:00Z",
+      "latest_delivery_time": "2026-02-28T18:00:00Z",
+      "subtotal": 0,
+      "tax": 0,
+      "total": 0
+    }
+  ],
+  "fulfillment_option_id": "fulfillment_option_1",
+  "totals": [
+    {
+      "type": "items_base_amount",
+      "display_text": "Items subtotal",
+      "amount": 3000
+    },
+    {
+      "type": "subtotal",
+      "display_text": "Subtotal",
+      "amount": 3000
+    },
+    {
+      "type": "tax",
+      "display_text": "Tax",
+      "amount": 300
+    },
+    {
+      "type": "total",
+      "display_text": "Total",
+      "amount": 3300
+    }
+  ],
+  "order": {
+    "id": "order_id_123",
+    "checkout_session_id": "example-session",
+    "permalink_url": ""
+  }
+}
+""")
+                      .meta(java.util.Map.of("openai/checkoutSessionId", "checkout-flow"))
+                      .isError(false)
+                      .build();
+                })
+            .build();
+    try {
+      closed.await();
+    } finally {
+      server.closeGracefully();
+    }
 ```
 
 ```ruby

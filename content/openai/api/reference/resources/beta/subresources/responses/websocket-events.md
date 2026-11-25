@@ -5621,7 +5621,7 @@ Schema name: `BetaResponsesClientEventResponseCreate`
 
   Set of 16 key-value pairs that can be attached to an object. This can be
   useful for storing additional information about the object in a structured
-  format, and querying for objects via API or the dashboard.
+  format.
 
   Keys are strings with a maximum length of 64 characters. Values are strings
   with a maximum length of 512 characters.
@@ -25385,7 +25385,7 @@ Schema name: `BetaResponseCreatedEvent`
 
     Set of 16 key-value pairs that can be attached to an object. This can be
     useful for storing additional information about the object in a structured
-    format, and querying for objects via API or the dashboard.
+    format.
 
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
@@ -37617,7 +37617,7 @@ Schema name: `BetaResponseInProgressEvent`
 
     Set of 16 key-value pairs that can be attached to an object. This can be
     useful for storing additional information about the object in a structured
-    format, and querying for objects via API or the dashboard.
+    format.
 
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
@@ -49849,7 +49849,7 @@ Schema name: `BetaResponseCompletedEvent`
 
     Set of 16 key-value pairs that can be attached to an object. This can be
     useful for storing additional information about the object in a structured
-    format, and querying for objects via API or the dashboard.
+    format.
 
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
@@ -62105,7 +62105,7 @@ Schema name: `BetaResponseFailedEvent`
 
     Set of 16 key-value pairs that can be attached to an object. This can be
     useful for storing additional information about the object in a structured
-    format, and querying for objects via API or the dashboard.
+    format.
 
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
@@ -74341,7 +74341,7 @@ Schema name: `BetaResponseIncompleteEvent`
 
     Set of 16 key-value pairs that can be attached to an object. This can be
     useful for storing additional information about the object in a structured
-    format, and querying for objects via API or the dashboard.
+    format.
 
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.
@@ -99535,7 +99535,7 @@ Schema name: `BetaResponseQueuedEvent`
 
     Set of 16 key-value pairs that can be attached to an object. This can be
     useful for storing additional information about the object in a structured
-    format, and querying for objects via API or the dashboard.
+    format.
 
     Keys are strings with a maximum length of 64 characters. Values are strings
     with a maximum length of 512 characters.

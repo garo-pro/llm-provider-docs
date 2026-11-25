@@ -434,6 +434,53 @@ func main() {
 }
 ```
 
+```java
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.net.URI;
+import java.net.http.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.*;
+import java.time.*;
+import java.util.*;
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
+record Subscription(String id, URI url, String secret) {}
+
+static Map<String, Object> sendEvent(Subscription subscription, Map<String, String> event)
+    throws Exception {
+  byte[] body = new ObjectMapper().writeValueAsBytes(event);
+  if (body.length > 256 * 1024)
+    throw new IllegalArgumentException("Event payload exceeds 256 KiB");
+  String timestamp = Long.toString(Instant.now().getEpochSecond());
+  String eventId = Objects.requireNonNull(event.get("eventId"));
+  String encodedSecret = subscription.secret().replaceFirst("^whsec_", "");
+  var signer = Mac.getInstance("HmacSHA256");
+  signer.init(new SecretKeySpec(Base64.getDecoder().decode(encodedSecret), "HmacSHA256"));
+  signer.update((eventId + "." + timestamp + ".").getBytes(StandardCharsets.UTF_8));
+  String signature = "v1," + Base64.getEncoder().encodeToString(signer.doFinal(body));
+  var client = HttpClient.newBuilder().followRedirects(HttpClient.Redirect.NEVER).build();
+  var request =
+      HttpRequest.newBuilder(subscription.url())
+          .timeout(Duration.ofSeconds(10))
+          .header("Content-Type", "application/json")
+          .header("webhook-id", eventId)
+          .header("webhook-timestamp", timestamp)
+          .header("webhook-signature", signature)
+          .header("X-MCP-Subscription-Id", subscription.id())
+          .POST(HttpRequest.BodyPublishers.ofByteArray(body))
+          .build();
+  var response = client.send(request, HttpResponse.BodyHandlers.discarding());
+  if (response.statusCode() >= 300 && response.statusCode() < 400)
+    throw new java.io.IOException("Webhook redirects are not allowed");
+  return Map.of(
+      "accepted",
+      response.statusCode() >= 200 && response.statusCode() < 300,
+      "status",
+      response.statusCode());
+}
+```
+
 ```ruby
 require "standardwebhooks"
 require "net/http"

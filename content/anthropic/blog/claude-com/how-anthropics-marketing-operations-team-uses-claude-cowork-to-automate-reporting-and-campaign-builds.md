@@ -1,15 +1,15 @@
-Title: How Anthropic's marketing operations team uses Claude Cowork to automate reporting and campaign builds
+Title: How Anthropic's marketing operations team uses Claude to automate reporting and campaign builds
 
 URL Source: https://claude.com/resources/articles/how-anthropics-marketing-operations-team-uses-claude-cowork-to-automate-reporting-and-campaign-builds
 
 Markdown Content:
-# How Anthropic's marketing operations team uses Claude Cowork to automate reporting and campaign builds
+# How Anthropic's marketing operations team uses Claude to automate reporting and campaign builds
 
 *Ian Chan and Annabel Custer, in marketing operations at Anthropic, share how they automate work their team used to do by hand across multiple platforms.*
 
 Marketing operations teams spend a meaningful portion of their time keeping the systems behind marketing programs in step with the business. While automation sits firmly in their purview, a lot of the work is anything but: martech tools don’t integrate cleanly with each other, reports are consolidated manually, landing pages get spun up one at a time.
 
-Ian Chan, on the marketing operations team at Anthropic, used to spend one to two days a week pulling together the weekly marketing metrics review. Annabel Custer, who focuses on campaign operations, used to set up each new event by clicking through Salesforce, HubSpot, Swoogo, and email tools in sequence. Both have now compressed days of manual work into hours by setting up workflows in Claude Cowork.
+Ian Chan, on the marketing operations team at Anthropic, used to spend one to two days a week pulling together the weekly marketing metrics review. Annabel Custer, who focuses on campaign operations, used to set up each new event by clicking through Salesforce, HubSpot, Swoogo, and email tools in sequence. Both have now compressed days of manual work into hours by setting up workflows in Claude.
 
 The recovered hours have shifted the shape of their work. Ian and Annabel now spend less time clicking through systems and more time on enablement, validation, and the underlying data and processes the marketing team relies on as more people across the company pull their own numbers and drive their own programs.
 
@@ -17,19 +17,19 @@ The recovered hours have shifted the shape of their work. Ian and Annabel now sp
 
 In a perfect world, every metric in the weekly report Ian prepares for marketing and leadership would live in a dashboard and his job would be to simply put together the narrative. In practice, some metrics are in the dashboard already, while others haven’t yet made it there from the data warehouse, and others haven’t been piped into the warehouse yet. New ones might exist only in a Slack message or a call transcript.
 
-At Anthropic, the business moves faster than a traditional reporting pipeline can keep up with and Ian used to spend a day to two days every week tracking down data and validating it. Claude Cowork now handles most of that data hunt.
+At Anthropic, the business moves faster than a traditional reporting pipeline can keep up with and Ian used to spend a day to two days every week tracking down data and validating it. Claude now handles most of that data hunt.
 
 A scheduled task runs every Sunday evening, prompting Claude to read the previous week's review and the latest meeting transcript, check Slack for what the sales team is focused on, query the warehouse, and leave a folder with the numbers and a few suggested focus areas.
 
-On Monday morning, Ian opens Claude Cowork and pulls the initial report, which contains the metrics tables and suggested headlines, or areas of focus.
+On Monday morning, Ian opens Claude and pulls the initial report, which contains the metrics tables and suggested headlines, or areas of focus.
 
-![](https://assets.claude.com/d43bf44782135a54337a8c2266454ca5e3760d1d.png)
+![Screenshot of a weekly business review report](https://assets.claude.com/d43bf44782135a54337a8c2266454ca5e3760d1d.png)
 
 Ian reviews them and once he’s confirmed or decided where to focus the narrative, he tells Claude to expand on them with supporting details and examples. Some weeks the team is responding to a sales priority, and others—to a product launch. At the quarter turn, Ian tells Claude to lead with quarterly plans and feeds in the quarterly review doc.
 
 Claude generates the leadership slide from the same data and narrative: what changed, why, and what the teams are doing about it. Any follow-ups become Asana tasks.
 
-![](https://assets.claude.com/ad69d3beee1a1d1dc889a8ce450a33d7ece5ab17.png)
+![Screenshot showing a weekly report](https://assets.claude.com/ad69d3beee1a1d1dc889a8ce450a33d7ece5ab17.png)
 
 When the numbers don’t line up, Claude flags the mismatch instead of guessing. After a reorg on the sales team, for example, marketing's reporting no longer matched theirs. Claude flagged the gap and asked Ian how to handle it.
 
@@ -49,15 +49,15 @@ Human validation has become an integral part of both workstreams—a shift that�
 
 Setting up the infrastructure behind marketing campaigns has traditionally been one of the most manual processes in marketing. Every event, webinar, or integrated campaign needs to be set up in the CRM, in the marketing automation platform that runs the email sequences and the automation behind them, and in the event management platform that hosts the registration page and the event landing page. Each of these is typically a different vendor, and the integrations between them are rarely complete.
 
-Before Claude Cowork, Annabel picked up every request from a dedicated Slack channel and worked through the sequence manually. Her new setup is almost entirely handled by Claude. It starts with an intake form where requesters specify the type of help they need: event build, data import, apply-to-attend, or approval support.
+Before Claude, Annabel picked up every request from a dedicated Slack channel and worked through the sequence manually. Her new setup is almost entirely handled by Claude. It starts with an intake form where requesters specify the type of help they need: event build, data import, apply-to-attend, or approval support.
 
 Once an hour, a **dispatcher skill** reads the channel, picks the most urgent request, stamps the ticket so the work doesn't get duplicated, and hands it off to one of five specialist skills that Annabel has set up to do the required work. It doesn’t do any event setup itself; its job is to decide what runs next, and keeping it separate lets Annabel refine each specialist skill on its own without touching the routing.
 
-![](https://assets.claude.com/2fac0143d74fdbda9f26332805dd2b6fa4292d53.png)
+![screenshot of a Claude skill](https://assets.claude.com/2fac0143d74fdbda9f26332805dd2b6fa4292d53.png)
 
 For an event build, which is the most complex request type, an **event-build skill** handles the full sequence end to end: CRM campaign creation, marketing automation campaign with workflows and lists, event platform setup, email drafting, landing page generation, and all of the integrations between them.
 
-![](https://assets.claude.com/5c9c5cc2da7167c3016c29a3d0da2f7b7932b702.png)
+![Screenshot of a Claude skill](https://assets.claude.com/5c9c5cc2da7167c3016c29a3d0da2f7b7932b702.png)
 
 When the build is done, it hands off to a new agent for audit. The **audit agent** starts with no prior context, submits a test registration on the live landing page, opens the confirmation email in Gmail, and marks the Asana task complete if everything looks right. Annabel reviews each result before it ships.
 
@@ -73,11 +73,11 @@ This workflow runs on connectors to the marketing platforms and tools Annabel wo
 
 She also keeps a separate "manager" agent open. When a run misfires, she opens the manager and asks it to look at what happened and propose what to adjust. Anything worth keeping goes back into the relevant skill.
 
-While these automated workflows will become significant time savers in Annabel’s day, her primary motivation to build them was quality of work. As the marketing team scales, marketers cloning event pages from whatever template happens to be nearby can produce bugs, such as confirmation emails surfacing the wrong city name or broken landing pages. With Claude Cowork, she gets consistency across builds, at scale.
+While these automated workflows will become significant time savers in Annabel’s day, her primary motivation to build them was quality of work. As the marketing team scales, marketers cloning event pages from whatever template happens to be nearby can produce bugs, such as confirmation emails surfacing the wrong city name or broken landing pages. With Claude, she gets consistency across builds, at scale.
 
 As Claude takes on the repetitive parts of campaign operations, Annabel can focus on more strategic projects, like enablement, and automating or optimizing processes and campaign architecture for better insights.
 
-## **Advice for Marketing Ops teams on getting started with Claude Cowork**
+## **Advice for Marketing Ops teams on getting started with Claude**
 
 - **Turn repeated corrections into skills.** When you find yourself correcting Claude on the same thing more than once, that feedback belongs in a skill. You don’t need to build skills, either: Claude can do that for you.
 - **Build a proofreading skill first.** The proofreading skill checks that every number Claude puts in a report traces back to a verified source.
