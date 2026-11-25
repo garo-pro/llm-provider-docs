@@ -625,6 +625,61 @@ server.registerTool(
 );
 ```
 
+```python
+import json
+
+from mcp import types
+from mcp.server.lowlevel import Server
+
+server = Server("docs-example", version="1.0.0")
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="list_saved_recipes",
+            title="List saved recipes",
+            description="Returns the user's saved recipes without modifying them.",
+            inputSchema={
+                "type": "object",
+                "properties": {},
+                "additionalProperties": False,
+            },
+            outputSchema={
+                "type": "object",
+                "properties": {
+                    "recipes": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {"type": "string"},
+                                "title": {"type": "string"},
+                            },
+                            "required": ["id", "title"],
+                        },
+                    }
+                },
+                "required": ["recipes"],
+            },
+            annotations=types.ToolAnnotations(readOnlyHint=True),
+        )
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict) -> types.CallToolResult:
+    if name != "list_saved_recipes":
+        raise ValueError(f"Unknown tool: {name}")
+    # Local example data; replace with your application's saved recipes.
+    output = {"recipes": [{"id": "pasta", "title": "Tomato pasta"}]}
+    return types.CallToolResult(
+        content=[types.TextContent(type="text", text=json.dumps(output))],
+        structuredContent=output,
+    )
+```
+
 ```go
 package main
 
@@ -1040,6 +1095,73 @@ server.registerTool(
     };
   }
 );
+```
+
+```python
+from mcp import types
+from mcp.server.lowlevel import Server
+
+server = Server("docs-example", version="1.0.0")
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="recommend_cafe",
+            title="Recommend a cafe",
+            inputSchema={
+                "type": "object",
+                "properties": {},
+                "additionalProperties": False,
+            },
+            outputSchema={
+                "type": "object",
+                "properties": {
+                    "cafes": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {"type": "string"},
+                                "address": {"type": "string"},
+                            },
+                            "required": ["name", "address"],
+                        },
+                    }
+                },
+                "required": ["cafes"],
+            },
+        )
+    ]
+
+
+def recommend_cafe(meta: dict) -> types.CallToolResult:
+    # Client metadata is only a hint. Never use locale or location for authorization.
+    locale = meta.get("openai/locale")
+    location = meta.get("openai/userLocation")
+    city = location.get("city") if isinstance(location, dict) else None
+    if not isinstance(city, str) or not city.strip():
+        city = "your area"
+    cafes = []
+    # Local example data; replace with your application's cafe search.
+    if city == "San Francisco":
+        cafes.append(
+            {"name": "Example Cafe", "address": "123 Example Street, San Francisco"}
+        )
+    prefix = "Cafés en " if locale == "es" else "Cafes in "
+    return types.CallToolResult(
+        content=[types.TextContent(type="text", text=prefix + city)],
+        structuredContent={"cafes": cafes},
+    )
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict) -> types.CallToolResult:
+    if name != "recommend_cafe":
+        raise ValueError(f"Unknown tool: {name}")
+    meta = server.request_context.meta
+    return recommend_cafe(meta.model_dump() if meta is not None else {})
 ```
 
 ```go
