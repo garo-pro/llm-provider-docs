@@ -566,6 +566,52 @@ async function getProfile(requestContext: { token: string }) {
 }
 ```
 
+```python
+import json
+from pathlib import Path
+
+import jwt
+
+
+def load_authenticated_profile(token: str, key: bytes, profile_path: Path) -> dict:
+    identity = jwt.decode(
+        token,
+        key,
+        algorithms=["HS256"],
+        issuer="docs-example",
+        audience="profile-tool",
+        options={"require": ["iss", "aud", "sub", "exp"]},
+    )
+    if not isinstance(identity["sub"], str) or not identity["sub"].strip():
+        raise ValueError("Authenticated subject unavailable")
+    account = json.loads(profile_path.read_text(encoding="utf-8"))
+    if account.get("subject") != identity["sub"]:
+        raise ValueError("Authenticated profile not found")
+    return account
+
+
+def get_profile(token: str, key: bytes, profile_path: Path) -> dict:
+    # Authentication failures propagate to the server's normal MCP auth handling.
+    account = load_authenticated_profile(token, key, profile_path)
+    profile_id = account.get("profileId")
+    if not isinstance(profile_id, str) or not profile_id.strip():
+        return {
+            "isError": True,
+            "content": [{"type": "text", "text": "Profile identity unavailable."}],
+        }
+    profile = {"id": profile_id}
+    for field in ("name", "email", "nickname"):
+        if isinstance(account.get(field), str):
+            profile[field] = account[field]
+    return {
+        "isError": False,
+        "structuredContent": profile,
+        "content": [
+            {"type": "text", "text": json.dumps(profile, separators=(",", ":"))}
+        ],
+    }
+```
+
 ```go
 func (service profileService) getProfile(token string) (map[string]any, error) {
 	account, err := service.loadAuthenticatedProfile(token)
@@ -809,6 +855,58 @@ server.registerTool(
     };
   }
 );
+```
+
+```python
+import asyncio
+from typing import Any
+
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.stdio import stdio_server
+
+server = Server("auth-example", version="1.0.0")
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="search",
+            title="Public Search",
+            description="Search public documents.",
+            inputSchema={
+                "type": "object",
+                "properties": {"q": {"type": "string"}},
+                "required": ["q"],
+            },
+            outputSchema={"type": "object", "properties": {}},
+            _meta={
+                "securitySchemes": [
+                    {"type": "noauth"},
+                    {"type": "oauth2", "scopes": ["search.read"]},
+                ]
+            },
+        )
+    ]
+
+
+# Descriptor demonstration only. This response performs no document storage or
+# authorization. A hosted app needs an authenticated HTTP transport and an OAuth
+# provider enforcing these scopes; security metadata alone does not enforce them.
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict[str, Any]) -> types.CallToolResult:
+    if name != "search":
+        raise ValueError(f"Unknown tool: {name}")
+    value = arguments.get("q")
+    if not isinstance(value, str):
+        raise ValueError("q must be a string")
+    return types.CallToolResult(
+        content=[types.TextContent(type="text", text=f"Results for {value}")],
+        structuredContent={},
+    )
 ```
 
 ```go
@@ -1122,6 +1220,53 @@ server.registerTool(
     };
   }
 );
+```
+
+```python
+import asyncio
+from typing import Any
+
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.stdio import stdio_server
+
+server = Server("auth-example", version="1.0.0")
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="create_doc",
+            title="Create Document",
+            description="Make a new doc in your account.",
+            inputSchema={
+                "type": "object",
+                "properties": {"title": {"type": "string"}},
+                "required": ["title"],
+            },
+            outputSchema={"type": "object", "properties": {}},
+            _meta={"securitySchemes": [{"type": "oauth2", "scopes": ["docs.write"]}]},
+        )
+    ]
+
+
+# Descriptor demonstration only. This response performs no document storage or
+# authorization. A hosted app needs an authenticated HTTP transport and an OAuth
+# provider enforcing these scopes; security metadata alone does not enforce them.
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict[str, Any]) -> types.CallToolResult:
+    if name != "create_doc":
+        raise ValueError(f"Unknown tool: {name}")
+    value = arguments.get("title")
+    if not isinstance(value, str):
+        raise ValueError("title must be a string")
+    return types.CallToolResult(
+        content=[types.TextContent(type="text", text=f"Created doc: {value}")],
+        structuredContent={},
+    )
 ```
 
 ```go

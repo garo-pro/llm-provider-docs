@@ -432,6 +432,142 @@ registerAppTool(
 );
 ```
 
+```python
+# From src/content/platform/python-examples, after installing TypeScript dependencies
+# ../typescript-examples/node_modules/.bin/esbuild \
+#   ../typescript-examples/support/result-widget.ts \
+#   --bundle --format=esm --outfile=widget.js
+import re
+from pathlib import Path
+
+import uvicorn
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.lowlevel.helper_types import ReadResourceContents
+from mcp.server.streamable_http_manager import StreamableHTTPSessionManager
+from mcp.server.transport_security import TransportSecuritySettings
+from pydantic import AnyUrl
+from starlette.applications import Starlette
+from starlette.routing import Route
+
+server = Server("docs-example", version="1.0.0")
+
+WIDGET_URI = "ui://widget/story.html"
+MIME_TYPE = "text/html;profile=mcp-app"
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="search",
+            title="Public Search",
+            description="Search public documents.",
+            inputSchema={
+                "type": "object",
+                "properties": {"q": {"type": "string"}},
+                "required": ["q"],
+                "additionalProperties": False,
+            },
+            _meta={
+                "securitySchemes": [
+                    {"type": "noauth"},
+                    {"type": "oauth2", "scopes": ["search.read"]},
+                ],
+                "ui": {"resourceUri": WIDGET_URI},
+                "openai/toolInvocation/invoking": "Searching…",
+                "openai/toolInvocation/invoked": "Results ready",
+            },
+        )
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict) -> types.CallToolResult:
+    if name != "search":
+        raise ValueError(f"Unknown tool: {name}")
+    query = arguments.get("q")
+    if not isinstance(query, str):
+        raise ValueError("q must be a string")
+    # Public example data; these security scheme hints do not implement OAuth.
+    documents = [
+        {
+            "id": "intro",
+            "title": "Introduction to Acme",
+            "url": "https://example.com/intro",
+        }
+    ]
+    results = [
+        item for item in documents if query.casefold() in item["title"].casefold()
+    ]
+    return types.CallToolResult(
+        content=[types.TextContent(type="text", text=f"Found {len(results)} results.")],
+        structuredContent={"results": results},
+    )
+
+
+# Build support/result-widget.ts as widget.js in the working directory first.
+def load_widget() -> str:
+    script = Path("widget.js").read_text(encoding="utf-8")
+    if not script.strip():
+        raise ValueError("widget.js must contain the built browser component")
+    escaped = re.sub(r"</script", lambda _: r"<\/script", script, flags=re.IGNORECASE)
+    return (
+        '<!doctype html><html lang="en"><meta charset="utf-8">'
+        '<title>Tool result</title><body><div id="root"></div>'
+        f'<script type="module">{escaped}</script></body></html>'
+    )
+
+
+@server.list_resources()
+async def list_resources() -> list[types.Resource]:
+    return [types.Resource(name="widget", uri=AnyUrl(WIDGET_URI), mimeType=MIME_TYPE)]
+
+
+@server.read_resource()
+async def read_resource(uri: AnyUrl) -> list[ReadResourceContents]:
+    if str(uri) != WIDGET_URI:
+        raise ValueError(f"Unknown resource: {uri}")
+    return [ReadResourceContents(content=load_widget(), mime_type=MIME_TYPE)]
+
+
+# For an HTTPS tunnel, stop this server and append your tunnel's exact
+# hostname to allowed_hosts below, for example "your-tunnel.ngrok.app".
+# Use only the hostname, without https://, a path, or a wildcard. Keep the
+# loopback entries for local testing. Update the hostname if the tunnel changes.
+# Restart from src/content/platform/python-examples with:
+# python apps-sdk-reference/meta-fields-on-tool-descriptor.py
+# Connect ChatGPT to the tunnel's HTTPS URL with /mcp appended.
+# Keep allowed_origins restricted to trusted browser origins. ChatGPT's server
+# connection does not require adding the tunnel URL to allowed_origins.
+# Keep DNS-rebinding protection enabled; other hostnames must stay rejected.
+sessions = StreamableHTTPSessionManager(
+    server,
+    json_response=True,
+    stateless=True,
+    security_settings=TransportSecuritySettings(
+        allowed_hosts=["127.0.0.1:*", "localhost:*"],
+        allowed_origins=["http://localhost:6274", "http://127.0.0.1:6274"],
+    ),
+)
+
+
+class McpEndpoint:
+    async def __call__(self, scope, receive, send):
+        await sessions.handle_request(scope, receive, send)
+
+
+app = Starlette(
+    lifespan=lambda app: sessions.run(),
+    routes=[Route("/mcp", McpEndpoint(), methods=["GET", "POST", "DELETE"])],
+)
+
+
+if __name__ == "__main__":
+    load_widget()  # Fail before serving if the browser asset is missing.
+    uvicorn.run(app, host="127.0.0.1", port=3000)
+```
+
 ```go
 package main
 
@@ -1291,6 +1427,129 @@ registerAppTool(
     };
   }
 );
+```
+
+```python
+# From src/content/platform/python-examples, after installing TypeScript dependencies
+# ../typescript-examples/node_modules/.bin/esbuild \
+#   ../typescript-examples/support/result-widget.ts \
+#   --bundle --format=esm --outfile=widget.js
+import re
+from pathlib import Path
+
+import uvicorn
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.lowlevel.helper_types import ReadResourceContents
+from mcp.server.streamable_http_manager import StreamableHTTPSessionManager
+from mcp.server.transport_security import TransportSecuritySettings
+from pydantic import AnyUrl
+from starlette.applications import Starlette
+from starlette.routing import Route
+
+server = Server("docs-example", version="1.0.0")
+
+WIDGET_URI = "ui://widget/widget.html"
+MIME_TYPE = "text/html;profile=mcp-app"
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="get_zoo_animals",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "count": {"type": "integer", "minimum": 1, "maximum": 20}
+                },
+                "additionalProperties": False,
+            },
+            _meta={"ui": {"resourceUri": WIDGET_URI}},
+        )
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict) -> types.CallToolResult:
+    if name != "get_zoo_animals":
+        raise ValueError(f"Unknown tool: {name}")
+    count = arguments.get("count", 10)
+    if type(count) is not int or not 1 <= count <= 20:
+        raise ValueError("count must be an integer between 1 and 20")
+    # Local example data; replace with your application's zoo data.
+    animals = [
+        {"id": f"animal-{i}", "name": f"Penguin {i}", "species": "Penguin"}
+        for i in range(1, count + 1)
+    ]
+    return types.CallToolResult(
+        content=[types.TextContent(type="text", text=f"Here are {count} animals.")],
+        structuredContent={"animals": animals},
+        # Only the component receives this metadata; the model sees content above.
+        _meta={"allAnimalsById": {animal["id"]: animal for animal in animals}},
+    )
+
+
+# Build support/result-widget.ts as widget.js in the working directory first.
+def load_widget() -> str:
+    script = Path("widget.js").read_text(encoding="utf-8")
+    if not script.strip():
+        raise ValueError("widget.js must contain the built browser component")
+    escaped = re.sub(r"</script", lambda _: r"<\/script", script, flags=re.IGNORECASE)
+    return (
+        '<!doctype html><html lang="en"><meta charset="utf-8">'
+        '<title>Tool result</title><body><div id="root"></div>'
+        f'<script type="module">{escaped}</script></body></html>'
+    )
+
+
+@server.list_resources()
+async def list_resources() -> list[types.Resource]:
+    return [types.Resource(name="widget", uri=AnyUrl(WIDGET_URI), mimeType=MIME_TYPE)]
+
+
+@server.read_resource()
+async def read_resource(uri: AnyUrl) -> list[ReadResourceContents]:
+    if str(uri) != WIDGET_URI:
+        raise ValueError(f"Unknown resource: {uri}")
+    return [ReadResourceContents(content=load_widget(), mime_type=MIME_TYPE)]
+
+
+# For an HTTPS tunnel, stop this server and append your tunnel's exact
+# hostname to allowed_hosts below, for example "your-tunnel.ngrok.app".
+# Use only the hostname, without https://, a path, or a wildcard. Keep the
+# loopback entries for local testing. Update the hostname if the tunnel changes.
+# Restart from src/content/platform/python-examples with:
+# python apps-sdk-reference/tool-results.py
+# Connect ChatGPT to the tunnel's HTTPS URL with /mcp appended.
+# Keep allowed_origins restricted to trusted browser origins. ChatGPT's server
+# connection does not require adding the tunnel URL to allowed_origins.
+# Keep DNS-rebinding protection enabled; other hostnames must stay rejected.
+sessions = StreamableHTTPSessionManager(
+    server,
+    json_response=True,
+    stateless=True,
+    security_settings=TransportSecuritySettings(
+        allowed_hosts=["127.0.0.1:*", "localhost:*"],
+        allowed_origins=["http://localhost:6274", "http://127.0.0.1:6274"],
+    ),
+)
+
+
+class McpEndpoint:
+    async def __call__(self, scope, receive, send):
+        await sessions.handle_request(scope, receive, send)
+
+
+app = Starlette(
+    lifespan=lambda app: sessions.run(),
+    routes=[Route("/mcp", McpEndpoint(), methods=["GET", "POST", "DELETE"])],
+)
+
+
+if __name__ == "__main__":
+    load_widget()  # Fail before serving if the browser asset is missing.
+    uvicorn.run(app, host="127.0.0.1", port=3000)
 ```
 
 ```go

@@ -593,6 +593,187 @@ httpServer.listen(port, () => {
 });
 ```
 
+```python
+# From src/content/platform/python-examples
+# mkdir -p public
+# cp ../html-examples/apps-sdk-app-quickstart/build-a-web-component.html \
+#   public/todo-widget.html
+import asyncio
+from contextlib import asynccontextmanager
+from pathlib import Path
+
+import uvicorn
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.lowlevel.helper_types import ReadResourceContents
+from mcp.server.streamable_http_manager import StreamableHTTPSessionManager
+from mcp.server.transport_security import TransportSecuritySettings
+from starlette.applications import Starlette
+from starlette.middleware.cors import CORSMiddleware
+from starlette.responses import PlainTextResponse
+from starlette.routing import Route
+
+RESOURCE_URI = "ui://widget/todo.html"
+MIME_TYPE = "text/html;profile=mcp-app"
+OUTPUT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "tasks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {"type": "string"},
+                    "title": {"type": "string"},
+                    "completed": {"type": "boolean"},
+                },
+                "required": ["id", "title", "completed"],
+            },
+        }
+    },
+    "required": ["tasks"],
+}
+
+
+def create_app(widget_path: Path = Path("public/todo-widget.html")):
+    # Fail at startup if the authored browser asset has not been built/copied.
+    todo_html = widget_path.read_text(encoding="utf-8")
+    server = Server("todo-plugin-server", version="0.1.0")
+    todos: list[dict] = []
+    next_id = 1
+    lock = asyncio.Lock()
+
+    @server.list_resources()
+    async def list_resources():
+        return [
+            types.Resource(uri=RESOURCE_URI, name="todo-widget", mimeType=MIME_TYPE)
+        ]
+
+    @server.read_resource()
+    async def read_resource(uri):
+        if str(uri) != RESOURCE_URI:
+            raise ValueError("Unknown resource URI")
+        return [ReadResourceContents(content=todo_html, mime_type=MIME_TYPE)]
+
+    @server.list_tools()
+    async def list_tools():
+        return [
+            types.Tool(
+                name=name,
+                title=title,
+                description=description,
+                inputSchema={
+                    "type": "object",
+                    "properties": {field: {"type": "string", "minLength": 1}},
+                    "required": [field],
+                },
+                outputSchema=OUTPUT_SCHEMA,
+                _meta={"ui": {"resourceUri": RESOURCE_URI}},
+            )
+            for name, title, description, field in [
+                (
+                    "add_todo",
+                    "Add todo",
+                    "Creates a todo item with the given title.",
+                    "title",
+                ),
+                (
+                    "complete_todo",
+                    "Complete todo",
+                    "Marks a todo as done by id.",
+                    "id",
+                ),
+            ]
+        ]
+
+    @server.call_tool()
+    async def call_tool(name: str, arguments: dict):
+        nonlocal next_id
+        if name not in {"add_todo", "complete_todo"}:
+            raise ValueError("Unknown tool")
+        # The SDK validates the input schema before calling this handler.
+        async with lock:
+            if name == "add_todo":
+                title = arguments["title"].strip()
+                if title:
+                    todos.append(
+                        {"id": f"todo-{next_id}", "title": title, "completed": False}
+                    )
+                    next_id += 1
+                message = f"Added {title}" if title else "A title is required."
+            else:
+                todo_id = arguments["id"]
+                found = next((todo for todo in todos if todo["id"] == todo_id), None)
+                if found is not None:
+                    found["completed"] = True
+                message = (
+                    f"Completed {todo_id}"
+                    if found is not None
+                    else f"Todo {todo_id} not found."
+                )
+            return types.CallToolResult(
+                content=[types.TextContent(type="text", text=message)],
+                structuredContent={"tasks": [dict(todo) for todo in todos]},
+                isError=False,
+            )
+
+    # For the guide's HTTPS tunnel, stop this server and append your tunnel's exact
+    # hostname to allowed_hosts below, for example "your-tunnel.ngrok.app".
+    # Use only the hostname, without https://, a path, or a wildcard. Keep the
+    # loopback entries for local testing. Update the hostname if the tunnel changes.
+    # Restart from src/content/platform/python-examples with:
+    # python apps-sdk-app-quickstart/mcp-server-with-ui-resources.py
+    # Connect ChatGPT to the tunnel's HTTPS URL with /mcp appended.
+    # Keep origins restricted to trusted browser origins. ChatGPT's server
+    # connection does not require adding the tunnel URL to origins.
+    # Keep DNS-rebinding protection enabled; other hostnames must stay rejected.
+    origins = ["http://localhost:6274", "http://127.0.0.1:6274"]
+    sessions = StreamableHTTPSessionManager(
+        app=server,
+        json_response=True,
+        stateless=True,
+        security_settings=TransportSecuritySettings(
+            allowed_hosts=["localhost:*", "127.0.0.1:*"],
+            allowed_origins=origins,
+        ),
+    )
+
+    @asynccontextmanager
+    async def lifespan(app):
+        async with sessions.run():
+            yield
+
+    async def home(request):
+        return PlainTextResponse("Todo MCP server")
+
+    # An ASGI callable preserves streaming and MCP session lifecycle handling.
+    class McpEndpoint:
+        async def __call__(self, scope, receive, send):
+            await sessions.handle_request(scope, receive, send)
+
+    app = Starlette(
+        lifespan=lifespan,
+        routes=[
+            Route("/", home),
+            Route("/mcp", McpEndpoint(), methods=["GET", "POST", "DELETE"]),
+        ],
+    )
+    return CORSMiddleware(
+        app,
+        allow_origins=origins,
+        allow_methods=["GET", "POST", "DELETE", "OPTIONS"],
+        allow_headers=["Content-Type", "Mcp-Session-Id", "Mcp-Protocol-Version"],
+        expose_headers=["Mcp-Session-Id"],
+    )
+
+
+app = create_app()
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8787)
+```
+
 ```go
 package main
 

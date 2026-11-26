@@ -275,6 +275,84 @@ export async function sendEvent(
 }
 ```
 
+```python
+import base64
+import hashlib
+import hmac
+import json
+import time
+from collections.abc import Callable
+from dataclasses import dataclass
+from urllib.parse import urlsplit
+
+
+@dataclass(frozen=True)
+class Subscription:
+    id: str
+    url: str
+    secret: str
+
+
+def encode_event(event: dict[str, object]) -> bytes:
+    body = json.dumps(
+        event, ensure_ascii=False, separators=(",", ":"), allow_nan=False
+    ).encode("utf-8")
+    if len(body) > 256 * 1024:
+        raise ValueError("Event payload exceeds 256 KiB")
+    return body
+
+
+def prepare_event(
+    subscription: Subscription, event: dict[str, object]
+) -> tuple[bytes, dict[str, str]]:
+    event_id = event.get("eventId")
+    if not isinstance(event_id, str) or not event_id or not subscription.id:
+        raise ValueError(
+            "Event ID must be a nonempty string and subscription ID must not be empty"
+        )
+    body = encode_event(event)
+    timestamp = str(int(time.time()))
+    secret = subscription.secret.removeprefix("whsec_")
+    key = base64.b64decode(secret, validate=True)
+    if not key:
+        raise ValueError("Webhook signing key must not be empty")
+    signed = f"{event_id}.{timestamp}.".encode() + body
+    signature = base64.b64encode(hmac.digest(key, signed, hashlib.sha256)).decode(
+        "ascii"
+    )
+    return body, {
+        "Content-Type": "application/json",
+        "webhook-id": event_id,
+        "webhook-timestamp": timestamp,
+        "webhook-signature": f"v1,{signature}",
+        "X-MCP-Subscription-Id": subscription.id,
+    }
+
+
+# The caller supplies a transport that validates public destination addresses on
+# every connection, preserves TLS hostname verification, and refuses redirects.
+# No default transport can safely make this decision for arbitrary subscribers.
+ValidatedTransport = Callable[[str, bytes, dict[str, str]], int]
+
+
+def send_event(
+    subscription: Subscription,
+    event: dict[str, object],
+    *,
+    validated_transport: ValidatedTransport,
+) -> dict[str, object]:
+    target = urlsplit(subscription.url)
+    if target.scheme != "https" or not target.hostname:
+        raise ValueError("Subscription URL must be an absolute HTTPS URL")
+    if target.username is not None or target.password is not None or target.fragment:
+        raise ValueError("Subscription URL must not contain credentials or a fragment")
+    body, headers = prepare_event(subscription, event)
+    status = validated_transport(subscription.url, body, headers)
+    if 300 <= status < 400:
+        raise RuntimeError("Webhook redirects are not allowed")
+    return {"accepted": 200 <= status < 300, "status": status}
+```
+
 ```go
 package main
 
@@ -478,6 +556,93 @@ static Map<String, Object> sendEvent(Subscription subscription, Map<String, Stri
       response.statusCode() >= 200 && response.statusCode() < 300,
       "status",
       response.statusCode());
+}
+```
+
+```csharp
+using System.Globalization;
+using System.Net.Http.Headers;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+internal sealed record Subscription(string Id, Uri Url, string Secret);
+internal sealed record DeliveryResult(
+    [property: JsonPropertyName("accepted")] bool Accepted,
+    [property: JsonPropertyName("status")] int Status);
+
+// Supply an application-owned transport that requires HTTPS and validates public
+// destination addresses at every connection, including DNS changes, while preserving
+// TLS hostname verification. Never follow redirects or use an unrestricted client.
+// Honor the cancellation token and complete after response headers. The sender owns
+// and disposes the request and returned response. The caller owns the transport.
+internal delegate Task<HttpResponseMessage> WebhookTransport(
+    HttpRequestMessage request, CancellationToken cancellationToken);
+
+private static readonly JsonSerializerOptions JsonOptions = new()
+{
+    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+};
+
+internal static byte[] EncodeEvent(IReadOnlyDictionary<string, object?> eventData)
+{
+    byte[] body = JsonSerializer.SerializeToUtf8Bytes(eventData, JsonOptions);
+    if (body.Length > 256 * 1024)
+        throw new ArgumentException("Event payload exceeds 256 KiB");
+    return body;
+}
+
+internal static async Task<DeliveryResult> SendEventAsync(
+    Subscription subscription, IReadOnlyDictionary<string, object?> eventData,
+    WebhookTransport validatedTransport, CancellationToken cancellationToken = default)
+{
+    ArgumentNullException.ThrowIfNull(validatedTransport);
+    byte[] body = EncodeEvent(eventData);
+    if (!eventData.TryGetValue("eventId", out object? identity) || identity is not string eventId)
+        throw new ArgumentException("Event eventId must be a nonempty string.", nameof(eventData));
+    ArgumentException.ThrowIfNullOrWhiteSpace(eventId);
+    ArgumentException.ThrowIfNullOrWhiteSpace(subscription.Id);
+    if (!subscription.Url.IsAbsoluteUri
+        || subscription.Url.Scheme != "https"
+        || subscription.Url.UserInfo.Length != 0 || subscription.Url.Fragment.Length != 0)
+        throw new ArgumentException("Subscription URL must be an absolute HTTPS URL without credentials or a fragment");
+    string encodedSecret = subscription.Secret.StartsWith("whsec_", StringComparison.Ordinal)
+        ? subscription.Secret[6..] : subscription.Secret;
+    byte[] key = Convert.FromBase64String(encodedSecret);
+    if (key.Length == 0)
+        throw new ArgumentException("Webhook signing key must not be empty");
+    string timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(CultureInfo.InvariantCulture);
+    byte[] prefix = Encoding.UTF8.GetBytes($"{eventId}.{timestamp}.");
+    byte[] signature;
+    try
+    {
+        using IncrementalHash signer = IncrementalHash.CreateHMAC(HashAlgorithmName.SHA256, key);
+        signer.AppendData(prefix);
+        signer.AppendData(body);
+        signature = signer.GetHashAndReset();
+    }
+    finally
+    {
+        CryptographicOperations.ZeroMemory(key);
+    }
+
+    using HttpRequestMessage request = new(HttpMethod.Post, subscription.Url);
+    request.Content = new ByteArrayContent(body);
+    request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+    request.Headers.Add("webhook-id", eventId);
+    request.Headers.Add("webhook-timestamp", timestamp);
+    request.Headers.Add("webhook-signature", $"v1,{Convert.ToBase64String(signature)}");
+    request.Headers.Add("X-MCP-Subscription-Id", subscription.Id);
+    // Headers-only completion avoids buffering an untrusted response body.
+    using CancellationTokenSource timeout = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+    timeout.CancelAfter(TimeSpan.FromSeconds(10));
+    using HttpResponseMessage response = await validatedTransport(request, timeout.Token);
+    int status = (int)response.StatusCode;
+    if (status is >= 300 and < 400)
+        throw new InvalidOperationException("Webhook redirects are not allowed");
+    return new DeliveryResult(status is >= 200 and < 300, status);
 }
 ```
 

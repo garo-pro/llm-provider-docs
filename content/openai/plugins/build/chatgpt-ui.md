@@ -319,6 +319,138 @@ server.registerTool(
 export default server;
 ```
 
+```python
+# From src/content/platform/python-examples, after installing TypeScript dependencies
+# ../typescript-examples/node_modules/.bin/esbuild \
+#   ../typescript-examples/apps-sdk-chatgpt-ui/dice-widget.ts \
+#   --bundle --format=esm --outfile=dice-widget.js
+import re
+from pathlib import Path
+from secrets import randbelow
+from typing import Any
+
+import uvicorn
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.lowlevel.helper_types import ReadResourceContents
+from mcp.server.streamable_http_manager import StreamableHTTPSessionManager
+from mcp.server.transport_security import TransportSecuritySettings
+from pydantic import AnyUrl
+from starlette.applications import Starlette
+from starlette.routing import Route
+
+server = Server("Decoupled dice", version="1.0.0")
+RESOURCE_URI = "ui://widget/dice.html"
+MIME_TYPE = "text/html;profile=mcp-app"
+
+
+def component_html() -> str:
+    script = Path("dice-widget.js").read_text(encoding="utf-8")
+    script = re.sub(r"</script", lambda _: r"<\/script", script, flags=re.IGNORECASE)
+    return (
+        '<!doctype html><html lang="en"><meta charset="utf-8">'
+        '<title>Dice</title><body><div id="root"></div>'
+        '<script type="module">' + script + "</script></body></html>"
+    )
+
+
+@server.list_resources()
+async def list_resources() -> list[types.Resource]:
+    return [types.Resource(uri=AnyUrl(RESOURCE_URI), name="widget", mimeType=MIME_TYPE)]
+
+
+@server.read_resource()
+async def read_resource(uri: AnyUrl) -> list[ReadResourceContents]:
+    if str(uri) != RESOURCE_URI:
+        raise ValueError("Unknown component resource")
+    return [ReadResourceContents(content=component_html(), mime_type=MIME_TYPE)]
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    sides = {"type": "integer", "minimum": 2, "maximum": 2147483647}
+    return [
+        types.Tool(
+            name="roll_dice",
+            description="Roll a die without opening a widget.",
+            inputSchema={
+                "type": "object",
+                "properties": {"sides": sides},
+                "required": ["sides"],
+            },
+        ),
+        types.Tool(
+            name="render_dice_widget",
+            description="Show a previously rolled die.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "sides": sides,
+                    "value": {"type": "integer", "minimum": 1},
+                },
+                "required": ["sides", "value"],
+            },
+            _meta={"ui": {"resourceUri": RESOURCE_URI}},
+        ),
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict[str, Any]) -> types.CallToolResult:
+    if name not in {"roll_dice", "render_dice_widget"}:
+        raise ValueError("Unknown tool")
+    sides = arguments.get("sides")
+    if type(sides) is not int or not 2 <= sides <= 2147483647:
+        raise ValueError("sides must be an integer between 2 and 2147483647")
+    if name == "roll_dice":
+        value = randbelow(sides) + 1
+    else:
+        value = arguments.get("value")
+        if type(value) is not int or not 1 <= value <= sides:
+            raise ValueError("value must be an integer between 1 and sides")
+    return types.CallToolResult(
+        content=[], structuredContent={"sides": sides, "value": value}
+    )
+
+
+# For an HTTPS tunnel, stop this server and append your tunnel's exact
+# hostname to allowed_hosts below, for example "your-tunnel.ngrok.app".
+# Use only the hostname, without https://, a path, or a wildcard. Keep the
+# loopback entries for local testing. Update the hostname if the tunnel changes.
+# Restart from src/content/platform/python-examples with:
+# python apps-sdk-chatgpt-ui/decoupled.py
+# Connect ChatGPT to the tunnel's HTTPS URL with /mcp appended.
+# Keep allowed_origins restricted to trusted browser origins. ChatGPT's server
+# connection does not require adding the tunnel URL to allowed_origins.
+# Keep DNS-rebinding protection enabled; other hostnames must stay rejected.
+sessions = StreamableHTTPSessionManager(
+    server,
+    json_response=True,
+    stateless=True,
+    security_settings=TransportSecuritySettings(
+        allowed_hosts=["127.0.0.1:*", "localhost:*"],
+        allowed_origins=["http://localhost:6274", "http://127.0.0.1:6274"],
+    ),
+)
+
+
+class McpEndpoint:
+    async def __call__(self, scope, receive, send):
+        await sessions.handle_request(scope, receive, send)
+
+
+app = Starlette(
+    lifespan=lambda app: sessions.run(),
+    routes=[Route("/mcp", McpEndpoint(), methods=["GET", "POST", "DELETE"])],
+)
+
+
+if __name__ == "__main__":
+    # Fail before transport startup if the required built browser asset is missing.
+    component_html()
+    uvicorn.run(app, host="127.0.0.1", port=3000)
+```
+
 ```go
 package main
 
@@ -1145,6 +1277,130 @@ registerAppResource(
     ],
   })
 );
+```
+
+```python
+# From src/content/platform/python-examples, after installing TypeScript dependencies
+# ../typescript-examples/node_modules/.bin/esbuild \
+#   ../typescript-examples/apps-sdk-chatgpt-ui/keep-temporary-ui-state-in-the-ui.tsx \
+#   --bundle --format=esm --outfile=web/dist/component.js
+import re
+from pathlib import Path
+from typing import Any
+
+import uvicorn
+from mcp import types
+from mcp.server.lowlevel import Server
+from mcp.server.lowlevel.helper_types import ReadResourceContents
+from mcp.server.streamable_http_manager import StreamableHTTPSessionManager
+from mcp.server.transport_security import TransportSecuritySettings
+from pydantic import AnyUrl
+from starlette.applications import Starlette
+from starlette.routing import Route
+
+server = Server("docs-example", version="1.0.0")
+RESOURCE_URI = "ui://project-board/v1.html"
+MIME_TYPE = "text/html;profile=mcp-app"
+
+
+def component_html() -> str:
+    script = Path("web/dist/component.js").read_text(encoding="utf-8")
+    script = re.sub(r"</script", lambda _: r"<\/script", script, flags=re.IGNORECASE)
+    return (
+        '<!doctype html><html lang="en"><meta charset="utf-8">'
+        '<title>Project board</title><body><div id="root"></div>'
+        '<script type="module">' + script + "</script></body></html>"
+    )
+
+
+@server.list_resources()
+async def list_resources() -> list[types.Resource]:
+    return [types.Resource(uri=AnyUrl(RESOURCE_URI), name="widget", mimeType=MIME_TYPE)]
+
+
+@server.read_resource()
+async def read_resource(uri: AnyUrl) -> list[ReadResourceContents]:
+    if str(uri) != RESOURCE_URI:
+        raise ValueError("Unknown component resource")
+    return [
+        ReadResourceContents(
+            content=component_html(),
+            mime_type=MIME_TYPE,
+            meta={
+                "ui": {
+                    "prefersBorder": True,
+                    "domain": "https://example.com",
+                    "csp": {
+                        "connectDomains": ["https://api.example.com"],
+                        "resourceDomains": ["https://static.example.com"],
+                    },
+                }
+            },
+        )
+    ]
+
+
+@server.list_tools()
+async def list_tools() -> list[types.Tool]:
+    return [
+        types.Tool(
+            name="open_project_board",
+            title="Open project board",
+            inputSchema={"type": "object", "properties": {}},
+            _meta={"ui": {"resourceUri": RESOURCE_URI}},
+        )
+    ]
+
+
+@server.call_tool()
+async def call_tool(name: str, arguments: dict[str, Any]) -> types.CallToolResult:
+    if name != "open_project_board":
+        raise ValueError("Unknown tool")
+    return types.CallToolResult(
+        content=[
+            types.TextContent(
+                type="text", text="Review the tasks in the project board."
+            )
+        ]
+    )
+
+
+# For an HTTPS tunnel, stop this server and append your tunnel's exact
+# hostname to allowed_hosts below, for example "your-tunnel.ngrok.app".
+# Use only the hostname, without https://, a path, or a wildcard. Keep the
+# loopback entries for local testing. Update the hostname if the tunnel changes.
+# Restart from src/content/platform/python-examples with:
+# python apps-sdk-chatgpt-ui/embed-the-component-in-the-server-response.py
+# Connect ChatGPT to the tunnel's HTTPS URL with /mcp appended.
+# Keep allowed_origins restricted to trusted browser origins. ChatGPT's server
+# connection does not require adding the tunnel URL to allowed_origins.
+# Keep DNS-rebinding protection enabled; other hostnames must stay rejected.
+sessions = StreamableHTTPSessionManager(
+    server,
+    json_response=True,
+    stateless=True,
+    security_settings=TransportSecuritySettings(
+        allowed_hosts=["127.0.0.1:*", "localhost:*"],
+        allowed_origins=["http://localhost:6274", "http://127.0.0.1:6274"],
+    ),
+)
+
+
+class McpEndpoint:
+    async def __call__(self, scope, receive, send):
+        await sessions.handle_request(scope, receive, send)
+
+
+app = Starlette(
+    lifespan=lambda app: sessions.run(),
+    routes=[Route("/mcp", McpEndpoint(), methods=["GET", "POST", "DELETE"])],
+)
+
+
+if __name__ == "__main__":
+    # Fail before transport startup if the required built browser asset is missing.
+    component_html()
+    uvicorn.run(app, host="127.0.0.1", port=3000)
 ```
 
 ```go
