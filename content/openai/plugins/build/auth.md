@@ -631,6 +631,76 @@ static Map<String, Object> getProfile(String token) throws Exception {
 }
 ```
 
+```csharp
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text.Json;
+using Microsoft.IdentityModel.Tokens;
+
+internal static async Task<JsonElement> LoadAuthenticatedProfileAsync(
+    string token, byte[] key, string profilePath)
+{
+    var handler = new JwtSecurityTokenHandler { MapInboundClaims = false };
+    ClaimsPrincipal identity = handler.ValidateToken(token, new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidAlgorithms = [SecurityAlgorithms.HmacSha256],
+        ValidateIssuer = true,
+        ValidIssuer = "docs-example",
+        ValidateAudience = true,
+        ValidAudience = "profile-tool",
+        ValidateLifetime = true,
+        RequireExpirationTime = true,
+        RequireSignedTokens = true,
+        ClockSkew = TimeSpan.Zero,
+    }, out _);
+    string? subject = identity.FindFirst("sub")?.Value;
+    if (string.IsNullOrWhiteSpace(subject))
+    {
+        throw new SecurityTokenValidationException("Authenticated subject unavailable");
+    }
+    var account = JsonSerializer.Deserialize<JsonElement>(await File.ReadAllTextAsync(profilePath));
+    if (account.ValueKind != JsonValueKind.Object ||
+        !account.TryGetProperty("subject", out JsonElement owner) ||
+        owner.ValueKind != JsonValueKind.String ||
+        !string.Equals(owner.GetString(), subject, StringComparison.Ordinal))
+    {
+        throw new UnauthorizedAccessException("Authenticated profile not found");
+    }
+    return account;
+}
+
+internal static async Task<object> GetProfileAsync(string token, byte[] key, string profilePath)
+{
+    var account = await LoadAuthenticatedProfileAsync(token, key, profilePath);
+    if (!account.TryGetProperty("profileId", out JsonElement identity) ||
+        identity.ValueKind != JsonValueKind.String || string.IsNullOrWhiteSpace(identity.GetString()))
+    {
+        return new
+        {
+            isError = true,
+            content = new[] { new { type = "text", text = "Profile identity unavailable." } },
+        };
+    }
+    var profile = new Dictionary<string, string> { ["id"] = identity.GetString()! };
+    foreach (string field in new[] { "name", "email", "nickname" })
+    {
+        if (account.TryGetProperty(field, out JsonElement value) && value.ValueKind == JsonValueKind.String)
+        {
+            profile[field] = value.GetString()!;
+        }
+    }
+    return new
+    {
+        isError = false,
+        structuredContent = profile,
+        content = new[] { new { type = "text", text = JsonSerializer.Serialize(profile) } },
+    };
+}
+```
+
 ```ruby
 require "json"
 
@@ -741,6 +811,288 @@ server.registerTool(
 );
 ```
 
+```go
+// Descriptor-only fixture; tool responses illustrate results without storage.
+
+import (
+	"context"
+	"fmt"
+	"log"
+
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+)
+
+type toolInput struct {
+	Q *string `json:"q"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "auth-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "search",
+		Title:       "Public Search",
+		Description: "Search public documents.",
+		InputSchema: map[string]any{
+			"type":       "object",
+			"properties": map[string]any{"q": map[string]any{"type": "string"}},
+			"required":   []string{"q"},
+		},
+		OutputSchema: map[string]any{"type": "object", "properties": map[string]any{}},
+		Meta: mcp.Meta{
+			"securitySchemes": []map[string]any{
+				{"type": "noauth"},
+				{
+					"type":   "oauth2",
+					"scopes": []string{"search.read"},
+				},
+			},
+		},
+	}, func(_ context.Context, _ *mcp.CallToolRequest, input toolInput) (*mcp.CallToolResult, struct{}, error) {
+		if input.Q == nil {
+			return nil, struct{}{}, fmt.Errorf("q must be a string")
+		}
+		return &mcp.CallToolResult{
+			Content: []mcp.Content{&mcp.TextContent{Text: "Results for " + *input.Q}},
+		}, struct{}{}, nil
+	})
+
+	// Descriptor demonstration: no document lookup or storage. Stdio is for
+	// local MCP clients. A hosted ChatGPT app needs authenticated HTTP transport
+	// and an OAuth provider enforcing the advertised scopes.
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
+```
+
+```java
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import io.modelcontextprotocol.json.jackson2.JacksonMcpJsonMapper;
+import io.modelcontextprotocol.server.McpServer;
+import io.modelcontextprotocol.server.transport.StdioServerTransportProvider;
+import io.modelcontextprotocol.spec.McpSchema;
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CountDownLatch;
+
+public final class AppsSdkAuthTriggeringAuthenticationUiExample {
+  public static void main(String[] args) throws Exception {
+    var closed = new CountDownLatch(1);
+    var input =
+        new FilterInputStream(System.in) {
+          @Override
+          public int read(byte[] bytes, int offset, int length) throws IOException {
+            int count = super.read(bytes, offset, length);
+            if (count == -1) closed.countDown();
+            return count;
+          }
+        };
+
+    var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
+    var transport = new StdioServerTransportProvider(mapper, input, System.out);
+    var tool =
+        McpSchema.Tool.builder()
+            .name("search")
+            .title("Public Search")
+            .description("Search public documents.")
+            .inputSchema(
+                mapper,
+                """
+                {"type":"object","properties":{"q":{"type":"string"}},"required":["q"]}
+                """)
+            .outputSchema(
+                mapper,
+                """
+                {"type":"object","properties":{}}
+                """)
+            .meta(
+                Map.of(
+                    "securitySchemes",
+                    List.of(
+                        Map.of("type", "noauth"),
+                        Map.of("type", "oauth2", "scopes", List.of("search.read")))))
+            .build();
+    var server =
+        McpServer.sync(transport)
+            .serverInfo("auth-example", "1.0.0")
+            .capabilities(McpSchema.ServerCapabilities.builder().tools(false).build())
+            .toolCall(
+                tool,
+                (exchange, request) -> {
+                  if (request.arguments() == null
+                      || !(request.arguments().get("q") instanceof String value)) {
+                    return McpSchema.CallToolResult.builder()
+                        .isError(true)
+                        .addTextContent("q must be a string")
+                        .build();
+                  }
+                  return McpSchema.CallToolResult.builder()
+                      .addTextContent("Results for " + value)
+                      .structuredContent(Map.of())
+                      .isError(false)
+                      .build();
+                })
+            .build();
+
+    // Descriptor demonstration: no document storage or lookup. Stdio supports
+    // local MCP clients. Hosted ChatGPT authentication requires an authenticated
+    // HTTP transport and an OAuth provider enforcing the advertised scopes.
+    try {
+      closed.await();
+    } finally {
+      server.closeGracefully();
+    }
+  }
+}
+```
+
+```csharp
+using System;
+using System.Text.Json;
+using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// Keep stdout exclusively for the native SDK's MCP stdio messages.
+var builder = Host.CreateApplicationBuilder();
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(options => options.LogToStandardErrorThreshold = LogLevel.Trace);
+
+// JSON uses the MCP wire names explicitly, including _meta.securitySchemes.
+var jsonOptions = new JsonSerializerOptions
+{
+    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+};
+var tool = JsonSerializer.Deserialize<Tool>("""
+    {
+      "name": "search",
+      "title": "Public Search",
+      "description": "Search public documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "q": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "q"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "_meta": {
+        "securitySchemes": [
+          {
+            "type": "noauth"
+          },
+          {
+            "type": "oauth2",
+            "scopes": [
+              "search.read"
+            ]
+          }
+        ]
+      }
+    }
+    """, jsonOptions) ?? throw new InvalidOperationException("Invalid tool descriptor.");
+
+builder.Services.AddMcpServer(options =>
+{
+    options.ServerInfo = new Implementation { Name = "auth-example", Version = "1.0.0" };
+})
+.WithStdioServerTransport()
+.WithListToolsHandler((request, cancellationToken) =>
+    ValueTask.FromResult(new ListToolsResult { Tools = [tool] }))
+.WithCallToolHandler((request, cancellationToken) =>
+{
+    var arguments = request.Params?.Arguments;
+    if (request.Params?.Name != "search"
+        || arguments is null
+        || !arguments.TryGetValue("q", out var value)
+        || value.ValueKind != JsonValueKind.String)
+    {
+        return ValueTask.FromResult(new CallToolResult
+        {
+            IsError = true,
+            Content = [new TextContentBlock { Text = "Expected search with a string q." }]
+        });
+    }
+
+    // Serializing the result preserves the explicit structuredContent: {}.
+    var result = JsonSerializer.Deserialize<CallToolResult>(JsonSerializer.Serialize(new
+    {
+        content = new[] { new { type = "text", text = "Results for " + value.GetString() } },
+        structuredContent = new { }
+    }), jsonOptions) ?? throw new InvalidOperationException("Invalid tool result.");
+    return ValueTask.FromResult(result);
+});
+```
+
+```ruby
+# Descriptor-only fixture; no document lookup or storage.
+# The tool response below illustrates a successful response without performing it.
+
+require "mcp"
+
+class PublicSearchTool < MCP::Tool
+  tool_name("search")
+  title("Public Search")
+  description("Search public documents.")
+  input_schema(
+    {
+      type: "object",
+      properties: { q: { type: "string" } },
+      required: ["q"]
+    }
+  )
+  output_schema(
+    {
+      type: "object",
+      properties: {}
+    }
+  )
+  meta(
+    {
+      securitySchemes: [
+        { type: "noauth" },
+        {
+          type: "oauth2",
+          scopes: ["search.read"]
+        }
+      ]
+    }
+  )
+
+  def self.call(q:, **_context)
+    raise ArgumentError, "q must be a string" unless q.is_a?(String)
+
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: "Results for #{q}"
+        }
+      ],
+      structured_content: {}
+    )
+  end
+end
+
+server = MCP::Server.new(
+  name: "auth-example",
+  version: "1.0.0",
+  tools: [PublicSearchTool]
+)
+```
+
 
    Example: tool that requires authentication
 
@@ -770,6 +1122,274 @@ server.registerTool(
     };
   }
 );
+```
+
+```go
+// Descriptor-only fixture; tool responses illustrate results without storage.
+
+import (
+	"context"
+	"fmt"
+	"log"
+
+	"github.com/modelcontextprotocol/go-sdk/mcp"
+)
+
+type toolInput struct {
+	Title *string `json:"title"`
+}
+
+func main() {
+	server := mcp.NewServer(&mcp.Implementation{Name: "auth-example", Version: "1.0.0"}, nil)
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "create_doc",
+		Title:       "Create Document",
+		Description: "Make a new doc in your account.",
+		InputSchema: map[string]any{
+			"type":       "object",
+			"properties": map[string]any{"title": map[string]any{"type": "string"}},
+			"required":   []string{"title"},
+		},
+		OutputSchema: map[string]any{"type": "object", "properties": map[string]any{}},
+		Meta:         mcp.Meta{"securitySchemes": []map[string]any{{"type": "oauth2", "scopes": []string{"docs.write"}}}},
+	}, func(_ context.Context, _ *mcp.CallToolRequest, input toolInput) (*mcp.CallToolResult, struct{}, error) {
+		if input.Title == nil {
+			return nil, struct{}{}, fmt.Errorf("title must be a string")
+		}
+		return &mcp.CallToolResult{
+			Content: []mcp.Content{&mcp.TextContent{Text: "Created doc: " + *input.Title}},
+		}, struct{}{}, nil
+	})
+
+	// Descriptor demonstration: no document lookup or storage. Stdio is for
+	// local MCP clients. A hosted ChatGPT app needs authenticated HTTP transport
+	// and an OAuth provider enforcing the advertised scopes.
+	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
+		log.Fatal(err)
+	}
+}
+```
+
+```java
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import io.modelcontextprotocol.json.jackson2.JacksonMcpJsonMapper;
+import io.modelcontextprotocol.server.McpServer;
+import io.modelcontextprotocol.server.transport.StdioServerTransportProvider;
+import io.modelcontextprotocol.spec.McpSchema;
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CountDownLatch;
+
+public final class AppsSdkAuthTriggeringAuthenticationUi2Example {
+  public static void main(String[] args) throws Exception {
+    var closed = new CountDownLatch(1);
+    var input =
+        new FilterInputStream(System.in) {
+          @Override
+          public int read(byte[] bytes, int offset, int length) throws IOException {
+            int count = super.read(bytes, offset, length);
+            if (count == -1) closed.countDown();
+            return count;
+          }
+        };
+
+    var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
+    var transport = new StdioServerTransportProvider(mapper, input, System.out);
+    var tool =
+        McpSchema.Tool.builder()
+            .name("create_doc")
+            .title("Create Document")
+            .description("Make a new doc in your account.")
+            .inputSchema(
+                mapper,
+                """
+                {"type":"object","properties":{"title":{"type":"string"}},"required":["title"]}
+                """)
+            .outputSchema(
+                mapper,
+                """
+                {"type":"object","properties":{}}
+                """)
+            .meta(
+                Map.of(
+                    "securitySchemes",
+                    List.of(Map.of("type", "oauth2", "scopes", List.of("docs.write")))))
+            .build();
+    var server =
+        McpServer.sync(transport)
+            .serverInfo("auth-example", "1.0.0")
+            .capabilities(McpSchema.ServerCapabilities.builder().tools(false).build())
+            .toolCall(
+                tool,
+                (exchange, request) -> {
+                  if (request.arguments() == null
+                      || !(request.arguments().get("title") instanceof String value)) {
+                    return McpSchema.CallToolResult.builder()
+                        .isError(true)
+                        .addTextContent("title must be a string")
+                        .build();
+                  }
+                  return McpSchema.CallToolResult.builder()
+                      .addTextContent("Created doc: " + value)
+                      .structuredContent(Map.of())
+                      .isError(false)
+                      .build();
+                })
+            .build();
+
+    // Descriptor demonstration: no document storage or lookup. Stdio supports
+    // local MCP clients. Hosted ChatGPT authentication requires an authenticated
+    // HTTP transport and an OAuth provider enforcing the advertised scopes.
+    try {
+      closed.await();
+    } finally {
+      server.closeGracefully();
+    }
+  }
+}
+```
+
+```csharp
+using System;
+using System.Text.Json;
+using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// Keep stdout exclusively for the native SDK's MCP stdio messages.
+var builder = Host.CreateApplicationBuilder();
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(options => options.LogToStandardErrorThreshold = LogLevel.Trace);
+
+// JSON uses the MCP wire names explicitly, including _meta.securitySchemes.
+var jsonOptions = new JsonSerializerOptions
+{
+    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+};
+var tool = JsonSerializer.Deserialize<Tool>("""
+    {
+      "name": "create_doc",
+      "title": "Create Document",
+      "description": "Make a new doc in your account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "_meta": {
+        "securitySchemes": [
+          {
+            "type": "oauth2",
+            "scopes": [
+              "docs.write"
+            ]
+          }
+        ]
+      }
+    }
+    """, jsonOptions) ?? throw new InvalidOperationException("Invalid tool descriptor.");
+
+builder.Services.AddMcpServer(options =>
+{
+    options.ServerInfo = new Implementation { Name = "auth-example", Version = "1.0.0" };
+})
+.WithStdioServerTransport()
+.WithListToolsHandler((request, cancellationToken) =>
+    ValueTask.FromResult(new ListToolsResult { Tools = [tool] }))
+.WithCallToolHandler((request, cancellationToken) =>
+{
+    var arguments = request.Params?.Arguments;
+    if (request.Params?.Name != "create_doc"
+        || arguments is null
+        || !arguments.TryGetValue("title", out var value)
+        || value.ValueKind != JsonValueKind.String)
+    {
+        return ValueTask.FromResult(new CallToolResult
+        {
+            IsError = true,
+            Content = [new TextContentBlock { Text = "Expected create_doc with a string title." }]
+        });
+    }
+
+    // Serializing the result preserves the explicit structuredContent: {}.
+    var result = JsonSerializer.Deserialize<CallToolResult>(JsonSerializer.Serialize(new
+    {
+        content = new[] { new { type = "text", text = "Created doc: " + value.GetString() } },
+        structuredContent = new { }
+    }), jsonOptions) ?? throw new InvalidOperationException("Invalid tool result.");
+    return ValueTask.FromResult(result);
+});
+```
+
+```ruby
+# Descriptor-only fixture; no document lookup or storage.
+# The tool response below illustrates a successful response without performing it.
+
+require "mcp"
+
+class CreateDocTool < MCP::Tool
+  tool_name("create_doc")
+  title("Create Document")
+  description("Make a new doc in your account.")
+  input_schema(
+    {
+      type: "object",
+      properties: { title: { type: "string" } },
+      required: ["title"]
+    }
+  )
+  output_schema(
+    {
+      type: "object",
+      properties: {}
+    }
+  )
+  meta(
+    {
+      securitySchemes: [
+        {
+          type: "oauth2",
+          scopes: ["docs.write"]
+        }
+      ]
+    }
+  )
+
+  def self.call(title:, **_context)
+    raise ArgumentError, "title must be a string" unless title.is_a?(String)
+
+    MCP::Tool::Response.new(
+      [
+        {
+          type: "text",
+          text: "Created doc: #{title}"
+        }
+      ],
+      structured_content: {}
+    )
+  end
+end
+
+server = MCP::Server.new(
+  name: "auth-example",
+  version: "1.0.0",
+  tools: [CreateDocTool]
+)
 ```
 
 

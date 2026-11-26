@@ -367,6 +367,320 @@ func main() {
 }
 ```
 
+```java
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import io.modelcontextprotocol.json.jackson2.JacksonMcpJsonMapper;
+import io.modelcontextprotocol.server.McpServer;
+import io.modelcontextprotocol.server.McpStatelessServerFeatures;
+import io.modelcontextprotocol.server.transport.DefaultServerTransportSecurityValidator;
+import io.modelcontextprotocol.server.transport.HttpServletStatelessServerTransport;
+import io.modelcontextprotocol.spec.McpSchema;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ThreadLocalRandom;
+
+// UI asset build from src/content/platform/java-examples:
+// ../typescript-examples/node_modules/.bin/esbuild \
+//   ../typescript-examples/apps-sdk-chatgpt-ui/dice-widget.ts \
+//   --bundle --format=esm --outfile=dice-widget.js
+public final class AppsSdkDecoupledDice {
+  public static void main(String[] args) throws Exception {
+    var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
+    // Build the existing TypeScript component first; run from the asset directory.
+    String script = Files.readString(Path.of("dice-widget.js"));
+    script =
+        script.replaceAll("(?i)</script", java.util.regex.Matcher.quoteReplacement("<\\/script"));
+    String html =
+        "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\">"
+            + "<title>Dice</title><body><div id=\"root\"></div><script type=\"module\">"
+            + script
+            + "</script></body></html>";
+    var transport =
+        HttpServletStatelessServerTransport.builder()
+            .jsonMapper(mapper)
+            .messageEndpoint("/mcp")
+            .securityValidator(
+                DefaultServerTransportSecurityValidator.builder()
+                    .allowedHosts(List.of("localhost:*", "127.0.0.1:*"))
+                    .allowedOrigins(List.of("http://localhost:6274", "http://127.0.0.1:6274"))
+                    .build())
+            .build();
+    var resource =
+        McpSchema.Resource.builder()
+            .name("widget")
+            .uri("ui://widget/dice.html")
+            .mimeType("text/html;profile=mcp-app")
+            .build();
+    var builder =
+        McpServer.sync(transport)
+            .serverInfo("Decoupled dice", "1.0.0")
+            .capabilities(
+                McpSchema.ServerCapabilities.builder().tools(false).resources(false, false).build())
+            .resources(
+                new McpStatelessServerFeatures.SyncResourceSpecification(
+                    resource,
+                    (exchange, request) ->
+                        new McpSchema.ReadResourceResult(
+                            List.of(
+                                new McpSchema.TextResourceContents(
+                                    resource.uri(), resource.mimeType(), html)))));
+    String rollSchema =
+"""
+{
+  "type": "object",
+  "properties": {
+    "sides": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 2147483647
+    }
+  },
+  "required": [
+    "sides"
+  ]
+}
+""";
+    String renderSchema =
+"""
+{
+  "type": "object",
+  "properties": {
+    "sides": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 2147483647
+    },
+    "value": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "sides",
+    "value"
+  ]
+}
+""";
+    builder.toolCall(
+        McpSchema.Tool.builder()
+            .name("roll_dice")
+            .description("Roll a die without opening a widget.")
+            .inputSchema(mapper, rollSchema)
+            .build(),
+        (exchange, request) -> diceResult(request.arguments(), false));
+    builder.toolCall(
+        McpSchema.Tool.builder()
+            .name("render_dice_widget")
+            .description("Show a previously rolled die.")
+            .inputSchema(mapper, renderSchema)
+            .meta(Map.of("ui", Map.of("resourceUri", resource.uri())))
+            .build(),
+        (exchange, request) -> diceResult(request.arguments(), true));
+    var server = builder.build();
+    var httpServer = new org.eclipse.jetty.server.Server();
+    var connector = new org.eclipse.jetty.server.ServerConnector(httpServer);
+    connector.setHost("127.0.0.1");
+    connector.setPort(3000);
+    httpServer.addConnector(connector);
+    var context = new org.eclipse.jetty.ee10.servlet.ServletContextHandler();
+    context.setContextPath("/");
+    context.addServlet(new org.eclipse.jetty.ee10.servlet.ServletHolder(transport), "/mcp");
+    httpServer.setHandler(context);
+    try {
+      httpServer.start();
+      httpServer.join();
+    } finally {
+      try {
+        server.closeGracefully().block();
+      } finally {
+        httpServer.stop();
+      }
+    }
+  }
+
+  private static int positiveInteger(Object value) {
+    if (!(value instanceof Number number)) return -1;
+    double numeric = number.doubleValue();
+    if (!Double.isFinite(numeric)
+        || numeric != Math.rint(numeric)
+        || numeric < 1
+        || numeric > Integer.MAX_VALUE) return -1;
+    return (int) numeric;
+  }
+
+  private static McpSchema.CallToolResult diceResult(
+      Map<String, Object> arguments, boolean render) {
+    int sides = positiveInteger(arguments.get("sides"));
+    if (sides < 2)
+      return McpSchema.CallToolResult.builder()
+          .isError(true)
+          .addTextContent("sides must be an integer between 2 and 2147483647")
+          .build();
+    int value =
+        render
+            ? positiveInteger(arguments.get("value"))
+            : ThreadLocalRandom.current().nextInt(sides) + 1;
+    if (value < 1 || value > sides)
+      return McpSchema.CallToolResult.builder()
+          .isError(true)
+          .addTextContent("value must be an integer between 1 and sides")
+          .build();
+    return McpSchema.CallToolResult.builder()
+        .content(List.of())
+        .structuredContent(Map.of("sides", sides, "value", value))
+        .isError(false)
+        .build();
+  }
+}
+```
+
+```csharp
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// From ../typescript-examples, run npm ci, then
+// npx --no-install esbuild apps-sdk-chatgpt-ui/dice-widget.ts --bundle --format=esm \
+//   --outfile=../dotnet-examples/dice-widget.js
+// Run this program from the dotnet-examples directory.
+string script = await File.ReadAllTextAsync("dice-widget.js");
+script = Regex.Replace(script, "</script", _ => "<\\/script", RegexOptions.IgnoreCase);
+string html = "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\">"
+    + "<title>Dice</title><body><div id=\"root\"></div><script type=\"module\">"
+    + script + "</script></body></html>";
+const string resourceUri = "ui://widget/dice.html";
+const string mimeType = "text/html;profile=mcp-app";
+WebApplicationBuilder builder = WebApplication.CreateBuilder();
+builder.WebHost.UseUrls("http://127.0.0.1:3000");
+builder.Logging.ClearProviders();
+builder.Services.AddMcpServer(options =>
+{
+    options.ServerInfo = new Implementation { Name = "Decoupled dice", Version = "1.0.0" };
+})
+.WithHttpTransport(options => options.Stateless = true)
+.WithListToolsHandler((_, _) => ValueTask.FromResult(new ListToolsResult
+{
+    Tools =
+    [
+        new Tool
+        {
+            Name = "roll_dice",
+            Description = "Roll a die without opening a widget.",
+            InputSchema = JsonSerializer.Deserialize<JsonElement>("""
+                {"type":"object","properties":{"sides":{"type":"integer","minimum":2,"maximum":2147483647}},"required":["sides"]}
+                """),
+        },
+        new Tool
+        {
+            Name = "render_dice_widget",
+            Description = "Show a previously rolled die.",
+            InputSchema = JsonSerializer.Deserialize<JsonElement>("""
+                {"type":"object","properties":{"sides":{"type":"integer","minimum":2,"maximum":2147483647},"value":{"type":"integer","minimum":1}},"required":["sides","value"]}
+                """),
+            Meta = new JsonObject { ["ui"] = new JsonObject { ["resourceUri"] = resourceUri } },
+        },
+    ],
+}))
+.WithCallToolHandler((request, _) =>
+{
+    var parameters = request.Params ?? throw new ArgumentException("Missing tool parameters");
+    if (parameters.Name is not ("roll_dice" or "render_dice_widget"))
+    {
+        throw new ArgumentException("Unknown tool");
+    }
+    var arguments = parameters.Arguments;
+    if (arguments is null || !arguments.TryGetValue("sides", out var sidesJson)
+        || sidesJson.ValueKind != JsonValueKind.Number || !sidesJson.TryGetInt32(out int sides) || sides < 2)
+    {
+        return ValueTask.FromResult(Error("sides must be an integer between 2 and 2147483647"));
+    }
+    int value;
+    if (parameters.Name == "roll_dice")
+    {
+        value = Random.Shared.Next(sides) + 1;
+    }
+    else if (!arguments.TryGetValue("value", out var valueJson)
+        || valueJson.ValueKind != JsonValueKind.Number || !valueJson.TryGetInt32(out value) || value < 1 || value > sides)
+    {
+        return ValueTask.FromResult(Error("value must be an integer between 1 and sides"));
+    }
+    return ValueTask.FromResult(new CallToolResult
+    {
+        Content = [],
+        StructuredContent = JsonSerializer.SerializeToElement(new { sides, value }),
+    });
+})
+.WithListResourcesHandler((_, _) => ValueTask.FromResult(new ListResourcesResult
+{
+    Resources = [new Resource { Uri = resourceUri, Name = "widget", MimeType = mimeType }],
+}))
+.WithReadResourceHandler((request, _) =>
+{
+    if (request.Params?.Uri != resourceUri) throw new ArgumentException("Unknown component resource");
+    return ValueTask.FromResult(new ReadResourceResult
+    {
+        Contents = [new TextResourceContents
+        {
+            Uri = resourceUri,
+            MimeType = mimeType,
+            Text = html,
+        }],
+    });
+});
+WebApplication app = builder.Build();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Host.Host is not ("localhost" or "127.0.0.1"))
+    {
+        context.Response.StatusCode = StatusCodes.Status421MisdirectedRequest;
+        return;
+    }
+    var origin = context.Request.Headers.Origin;
+    if (origin.Count > 0 && (origin.Count != 1 || origin[0] is not
+        ("http://localhost:6274" or "http://127.0.0.1:6274")))
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return;
+    }
+    context.Response.Headers.Vary = "Origin";
+    if (origin.Count == 1)
+    {
+        context.Response.Headers.AccessControlAllowOrigin = origin[0];
+        context.Response.Headers.AccessControlExposeHeaders = "Mcp-Session-Id";
+    }
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.Headers.AccessControlAllowMethods = "GET, POST, DELETE, OPTIONS";
+        context.Response.Headers.AccessControlAllowHeaders =
+            "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version";
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        return;
+    }
+    await next(context);
+});
+app.MapMcp("/mcp");
+
+await using (app)
+{
+    await app.RunAsync();
+}
+
+static CallToolResult Error(string message) => new()
+{
+    IsError = true,
+    Content = [new TextContentBlock { Text = message }],
+};
+```
+
 ```ruby
 require "mcp"
 
@@ -863,6 +1177,239 @@ func main() {
 	if err := server.Run(context.Background(), &mcp.StdioTransport{}); err != nil {
 		log.Fatal(err)
 	}
+}
+```
+
+```java
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import io.modelcontextprotocol.json.jackson2.JacksonMcpJsonMapper;
+import io.modelcontextprotocol.server.McpServer;
+import io.modelcontextprotocol.server.McpStatelessServerFeatures;
+import io.modelcontextprotocol.server.transport.DefaultServerTransportSecurityValidator;
+import io.modelcontextprotocol.server.transport.HttpServletStatelessServerTransport;
+import io.modelcontextprotocol.spec.McpSchema;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.Map;
+
+// UI asset build from src/content/platform/java-examples:
+// ../typescript-examples/node_modules/.bin/esbuild \
+//   ../typescript-examples/apps-sdk-chatgpt-ui/keep-temporary-ui-state-in-the-ui.tsx \
+//   --bundle --format=esm --outfile=web/dist/component.js
+public final class AppsSdkProjectBoard {
+  public static void main(String[] args) throws Exception {
+    var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
+    // Build the existing TypeScript component first; run from the asset directory.
+    String script = Files.readString(Path.of("web/dist/component.js"));
+    script =
+        script.replaceAll("(?i)</script", java.util.regex.Matcher.quoteReplacement("<\\/script"));
+    String html =
+        "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\">"
+            + "<title>Project board</title><body><div id=\"root\"></div><script type=\"module\">"
+            + script
+            + "</script></body></html>";
+    var transport =
+        HttpServletStatelessServerTransport.builder()
+            .jsonMapper(mapper)
+            .messageEndpoint("/mcp")
+            .securityValidator(
+                DefaultServerTransportSecurityValidator.builder()
+                    .allowedHosts(List.of("localhost:*", "127.0.0.1:*"))
+                    .allowedOrigins(List.of("http://localhost:6274", "http://127.0.0.1:6274"))
+                    .build())
+            .build();
+    var resource =
+        McpSchema.Resource.builder()
+            .name("widget")
+            .uri("ui://project-board/v1.html")
+            .mimeType("text/html;profile=mcp-app")
+            .build();
+    var builder =
+        McpServer.sync(transport)
+            .serverInfo("docs-example", "1.0.0")
+            .capabilities(
+                McpSchema.ServerCapabilities.builder().tools(false).resources(false, false).build())
+            .resources(
+                new McpStatelessServerFeatures.SyncResourceSpecification(
+                    resource,
+                    (exchange, request) ->
+                        new McpSchema.ReadResourceResult(
+                            List.of(
+                                new McpSchema.TextResourceContents(
+                                    resource.uri(),
+                                    resource.mimeType(),
+                                    html,
+                                    Map.of(
+                                        "ui",
+                                        Map.of(
+                                            "prefersBorder",
+                                            true,
+                                            "domain",
+                                            "https://example.com",
+                                            "csp",
+                                            Map.of(
+                                                "connectDomains",
+                                                    List.of("https://api.example.com"),
+                                                "resourceDomains",
+                                                    List.of("https://static.example.com")))))))));
+    builder.toolCall(
+        McpSchema.Tool.builder()
+            .name("open_project_board")
+            .title("Open project board")
+            .inputSchema(mapper, "{\"type\":\"object\",\"properties\":{}}")
+            .meta(Map.of("ui", Map.of("resourceUri", resource.uri())))
+            .build(),
+        (exchange, request) ->
+            McpSchema.CallToolResult.builder()
+                .addTextContent("Review the tasks in the project board.")
+                .isError(false)
+                .build());
+    var server = builder.build();
+    var httpServer = new org.eclipse.jetty.server.Server();
+    var connector = new org.eclipse.jetty.server.ServerConnector(httpServer);
+    connector.setHost("127.0.0.1");
+    connector.setPort(3000);
+    httpServer.addConnector(connector);
+    var context = new org.eclipse.jetty.ee10.servlet.ServletContextHandler();
+    context.setContextPath("/");
+    context.addServlet(new org.eclipse.jetty.ee10.servlet.ServletHolder(transport), "/mcp");
+    httpServer.setHandler(context);
+    try {
+      httpServer.start();
+      httpServer.join();
+    } finally {
+      try {
+        server.closeGracefully().block();
+      } finally {
+        httpServer.stop();
+      }
+    }
+  }
+}
+```
+
+```csharp
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// From ../typescript-examples, run npm ci, then
+// npx --no-install esbuild apps-sdk-chatgpt-ui/keep-temporary-ui-state-in-the-ui.tsx --bundle --format=esm \
+//   --outfile=../dotnet-examples/web/dist/component.js
+// Run this program from the dotnet-examples directory.
+string script = await File.ReadAllTextAsync("web/dist/component.js");
+script = Regex.Replace(script, "</script", _ => "<\\/script", RegexOptions.IgnoreCase);
+string html = "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\">"
+    + "<title>Project board</title><body><div id=\"root\"></div><script type=\"module\">"
+    + script + "</script></body></html>";
+const string resourceUri = "ui://project-board/v1.html";
+const string mimeType = "text/html;profile=mcp-app";
+WebApplicationBuilder builder = WebApplication.CreateBuilder();
+builder.WebHost.UseUrls("http://127.0.0.1:3000");
+builder.Logging.ClearProviders();
+builder.Services.AddMcpServer(options =>
+{
+    options.ServerInfo = new Implementation { Name = "docs-example", Version = "1.0.0" };
+})
+.WithHttpTransport(options => options.Stateless = true)
+.WithListToolsHandler((_, _) => ValueTask.FromResult(new ListToolsResult
+{
+    Tools =
+    [
+        new Tool
+        {
+            Name = "open_project_board",
+            Title = "Open project board",
+            InputSchema = JsonSerializer.SerializeToElement(new { type = "object", properties = new { } }),
+            Meta = new JsonObject { ["ui"] = new JsonObject { ["resourceUri"] = resourceUri } },
+        },
+    ],
+}))
+.WithCallToolHandler((request, _) =>
+{
+    if (request.Params?.Name != "open_project_board")
+    {
+        throw new ArgumentException("Unknown tool");
+    }
+    return ValueTask.FromResult(new CallToolResult
+    {
+        Content = [new TextContentBlock { Text = "Review the tasks in the project board." }],
+    });
+})
+.WithListResourcesHandler((_, _) => ValueTask.FromResult(new ListResourcesResult
+{
+    Resources = [new Resource { Uri = resourceUri, Name = "widget", MimeType = mimeType }],
+}))
+.WithReadResourceHandler((request, _) =>
+{
+    if (request.Params?.Uri != resourceUri) throw new ArgumentException("Unknown component resource");
+    return ValueTask.FromResult(new ReadResourceResult
+    {
+        Contents = [new TextResourceContents
+        {
+            Uri = resourceUri,
+            MimeType = mimeType,
+            Text = html,
+            Meta = new JsonObject
+            {
+                ["ui"] = new JsonObject
+                {
+                    ["prefersBorder"] = true,
+                    ["domain"] = "https://example.com",
+                    ["csp"] = new JsonObject
+                    {
+                        ["connectDomains"] = new JsonArray("https://api.example.com"),
+                        ["resourceDomains"] = new JsonArray("https://static.example.com"),
+                    },
+                },
+            },
+        }],
+    });
+});
+WebApplication app = builder.Build();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Host.Host is not ("localhost" or "127.0.0.1"))
+    {
+        context.Response.StatusCode = StatusCodes.Status421MisdirectedRequest;
+        return;
+    }
+    var origin = context.Request.Headers.Origin;
+    if (origin.Count > 0 && (origin.Count != 1 || origin[0] is not
+        ("http://localhost:6274" or "http://127.0.0.1:6274")))
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return;
+    }
+    context.Response.Headers.Vary = "Origin";
+    if (origin.Count == 1)
+    {
+        context.Response.Headers.AccessControlAllowOrigin = origin[0];
+        context.Response.Headers.AccessControlExposeHeaders = "Mcp-Session-Id";
+    }
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.Headers.AccessControlAllowMethods = "GET, POST, DELETE, OPTIONS";
+        context.Response.Headers.AccessControlAllowHeaders =
+            "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version";
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        return;
+    }
+    await next(context);
+});
+app.MapMcp("/mcp");
+
+await using (app)
+{
+    await app.RunAsync();
 }
 ```
 

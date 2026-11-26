@@ -115,6 +115,75 @@ func main() {
 }
 ```
 
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// From src/content/platform/dotnet-examples:
+// dotnet run -- apps-sdk-mcp-server-create-the-server
+// MCP endpoint: http://localhost:3000/mcp
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder();
+builder.WebHost.UseUrls("http://127.0.0.1:3000");
+builder.Logging.ClearProviders();
+
+builder.Services
+    .AddMcpServer(options =>
+    {
+        options.ServerInfo = new Implementation
+        {
+            Name = "acme-projects",
+            Version = "1.0.0",
+        };
+    })
+    .WithHttpTransport(options => options.Stateless = true)
+    .WithListToolsHandler((request, cancellationToken) =>
+        ValueTask.FromResult(new ListToolsResult { Tools = [] }));
+
+WebApplication app = builder.Build();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Host.Host is not ("localhost" or "127.0.0.1"))
+    {
+        context.Response.StatusCode = StatusCodes.Status421MisdirectedRequest;
+        return;
+    }
+    var origin = context.Request.Headers.Origin;
+    if (origin.Count > 0 && (origin.Count != 1 || origin[0] is not
+        ("http://localhost:6274" or "http://127.0.0.1:6274")))
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return;
+    }
+    context.Response.Headers.Vary = "Origin";
+    if (origin.Count == 1)
+    {
+        context.Response.Headers.AccessControlAllowOrigin = origin[0];
+        context.Response.Headers.AccessControlExposeHeaders = "Mcp-Session-Id";
+    }
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.Headers.AccessControlAllowMethods = "GET, POST, DELETE, OPTIONS";
+        context.Response.Headers.AccessControlAllowHeaders =
+            "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version";
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        return;
+    }
+    await next(context);
+});
+app.MapMcp("/mcp");
+
+await using (app)
+{
+    await app.RunAsync();
+}
+```
+
 ```ruby
 require "mcp"
 require "rackup"
@@ -200,6 +269,76 @@ func main() {
 		log.Fatal(err)
 	}
 	<-shutdownDone
+}
+```
+
+```csharp
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// From src/content/platform/dotnet-examples:
+// dotnet run -- apps-sdk-mcp-server-create-the-server-2
+// MCP endpoint: http://localhost:3000/mcp
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder();
+builder.WebHost.UseUrls("http://127.0.0.1:3000");
+builder.Logging.ClearProviders();
+
+builder.Services
+    .AddMcpServer(options =>
+    {
+        options.ServerInfo = new Implementation
+        {
+            Name = "acme-projects",
+            Version = "1.0.0",
+        };
+        options.ServerInstructions = "Before updating a project, call get_project to confirm its ID and current status.";
+    })
+    .WithHttpTransport(options => options.Stateless = true)
+    .WithListToolsHandler((request, cancellationToken) =>
+        ValueTask.FromResult(new ListToolsResult { Tools = [] }));
+
+WebApplication app = builder.Build();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Host.Host is not ("localhost" or "127.0.0.1"))
+    {
+        context.Response.StatusCode = StatusCodes.Status421MisdirectedRequest;
+        return;
+    }
+    var origin = context.Request.Headers.Origin;
+    if (origin.Count > 0 && (origin.Count != 1 || origin[0] is not
+        ("http://localhost:6274" or "http://127.0.0.1:6274")))
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return;
+    }
+    context.Response.Headers.Vary = "Origin";
+    if (origin.Count == 1)
+    {
+        context.Response.Headers.AccessControlAllowOrigin = origin[0];
+        context.Response.Headers.AccessControlExposeHeaders = "Mcp-Session-Id";
+    }
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.Headers.AccessControlAllowMethods = "GET, POST, DELETE, OPTIONS";
+        context.Response.Headers.AccessControlAllowHeaders =
+            "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version";
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        return;
+    }
+    await next(context);
+});
+app.MapMcp("/mcp");
+
+await using (app)
+{
+    await app.RunAsync();
 }
 ```
 
@@ -372,6 +511,149 @@ func main() {
 		log.Fatal(err)
 	}
 	<-shutdownDone
+}
+```
+
+```csharp
+using System.Text.Json;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+// From src/content/platform/dotnet-examples:
+// dotnet run -- apps-sdk-mcp-server-define-tools-from-user-goals
+// MCP endpoint: http://localhost:3000/mcp
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder();
+builder.WebHost.UseUrls("http://127.0.0.1:3000");
+builder.Logging.ClearProviders();
+
+builder.Services
+    .AddMcpServer(options =>
+    {
+        options.ServerInfo = new Implementation
+        {
+            Name = "docs-example",
+            Version = "1.0.0",
+        };
+    })
+    .WithHttpTransport(options => options.Stateless = true)
+    .WithListToolsHandler((request, cancellationToken) =>
+        ValueTask.FromResult(new ListToolsResult
+        {
+            Tools =
+            [
+                new Tool
+                {
+                    Name = "list_projects",
+                    Description = "Use this when the user wants to find or review projects in their Acme workspace.",
+                    InputSchema = JsonSerializer.SerializeToElement(new
+                    {
+                        type = "object",
+                        properties = new
+                        {
+                            status = new
+                            {
+                                type = "string",
+                                @enum = new List<string> { "active", "archived" },
+                            },
+                        },
+                    }),
+                    Annotations = JsonSerializer.Deserialize<ToolAnnotations>(
+                        """
+                        {"readOnlyHint":true,"openWorldHint":false,"destructiveHint":false}
+                        """)!,
+                },
+            ],
+        }))
+    .WithCallToolHandler((request, cancellationToken) =>
+    {
+        if (request.Params is not { Name: "list_projects" } parameters)
+        {
+            throw new ArgumentException("Unknown tool.", nameof(request));
+        }
+
+        string? status = null;
+        if (parameters.Arguments is { } arguments
+            && arguments.TryGetValue("status", out JsonElement value))
+        {
+            if (value.ValueKind != JsonValueKind.String
+                || value.GetString() is not ("active" or "archived"))
+            {
+                return ValueTask.FromResult(new CallToolResult
+                {
+                    IsError = true,
+                    Content = [new TextContentBlock
+                    {
+                        Text = "status must be active or archived when provided",
+                    }],
+                });
+            }
+            status = value.GetString();
+        }
+
+        // Local example data; replace this with your application data.
+        var projects = new[]
+        {
+            new { id = "project-1", name = "Website", status = "active" },
+            new { id = "project-2", name = "Launch", status = "archived" },
+        };
+        var selected = projects
+            .Where(project => status is null || project.status == status)
+            .ToArray();
+        return ValueTask.FromResult(new CallToolResult
+        {
+            Content = [new TextContentBlock
+            {
+                Text = $"Found {selected.Length} projects.",
+            }],
+            StructuredContent = JsonSerializer.SerializeToElement(new
+            {
+                projects = selected,
+            }),
+        });
+    });
+
+WebApplication app = builder.Build();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Host.Host is not ("localhost" or "127.0.0.1"))
+    {
+        context.Response.StatusCode = StatusCodes.Status421MisdirectedRequest;
+        return;
+    }
+    var origin = context.Request.Headers.Origin;
+    if (origin.Count > 0 && (origin.Count != 1 || origin[0] is not
+        ("http://localhost:6274" or "http://127.0.0.1:6274")))
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return;
+    }
+    context.Response.Headers.Vary = "Origin";
+    if (origin.Count == 1)
+    {
+        context.Response.Headers.AccessControlAllowOrigin = origin[0];
+        context.Response.Headers.AccessControlExposeHeaders = "Mcp-Session-Id";
+    }
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.Headers.AccessControlAllowMethods = "GET, POST, DELETE, OPTIONS";
+        context.Response.Headers.AccessControlAllowHeaders =
+            "Content-Type, Mcp-Session-Id, Mcp-Protocol-Version";
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        return;
+    }
+    await next(context);
+});
+app.MapMcp("/mcp");
+
+await using (app)
+{
+    await app.RunAsync();
 }
 ```
 

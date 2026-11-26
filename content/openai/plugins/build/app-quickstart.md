@@ -907,6 +907,210 @@ var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
     }
 ```
 
+```csharp
+using System.Text.Json;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using ModelContextProtocol;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+
+// Requires ModelContextProtocol.AspNetCore and Microsoft.AspNetCore.App.
+// Run through the example registry from a directory containing the guide's
+// public/todo-widget.html. This local in-memory server listens on port 8787.
+// Configure trusted public hosts/origins and authentication before hosting it.
+
+const string resourceUri = "ui://widget/todo.html";
+const string mimeType = "text/html;profile=mcp-app";
+// Build/copy the browser asset from the preceding guide step first.
+string todoHtml = await File.ReadAllTextAsync("public/todo-widget.html");
+var todos = new List<Dictionary<string, object>>();
+int nextId = 1;
+var gate = new object();
+string[] origins = ["http://localhost:6274", "http://127.0.0.1:6274"];
+var outputSchema = new
+{
+    type = "object",
+    properties = new
+    {
+        tasks = new
+        {
+            type = "array",
+            items = new
+            {
+                type = "object",
+                properties = new
+                {
+                    id = new { type = "string" },
+                    title = new { type = "string" },
+                    completed = new { type = "boolean" },
+                },
+                required = new[] { "id", "title", "completed" },
+            },
+        },
+    },
+    required = new[] { "tasks" },
+};
+
+// Deserialize the SDK protocol types with their wire names so _meta,
+// resourceUri and structuredContent keep their exact MCP spelling.
+Tool MakeTool(string name, string title, string description, string field) =>
+    ProtocolValue<Tool>(new
+    {
+        name,
+        title,
+        description,
+        inputSchema = new
+        {
+            type = "object",
+            properties = new Dictionary<string, object>
+            {
+                [field] = new { type = "string", minLength = 1 },
+            },
+            required = new[] { field },
+        },
+        outputSchema,
+        _meta = new { ui = new { resourceUri } },
+    });
+
+var builder = WebApplication.CreateBuilder();
+builder.WebHost.UseUrls("http://127.0.0.1:8787");
+builder.Services.AddMcpServer(options =>
+{
+    options.ServerInfo = new Implementation
+    {
+        Name = "todo-plugin-server",
+        Version = "0.1.0",
+    };
+})
+    .WithHttpTransport()
+    .WithListResourcesHandler((_, _) => ValueTask.FromResult(
+        ProtocolValue<ListResourcesResult>(new
+        {
+            resources = new[]
+            {
+                new { uri = resourceUri, name = "todo-widget", mimeType },
+            },
+        })))
+    .WithReadResourceHandler((request, _) =>
+    {
+        if (request.Params?.Uri != resourceUri)
+        {
+            throw new McpException("Unknown resource URI");
+        }
+        return ValueTask.FromResult(ProtocolValue<ReadResourceResult>(new
+        {
+            contents = new[] { new { uri = resourceUri, mimeType, text = todoHtml } },
+        }));
+    })
+    .WithListToolsHandler((_, _) => ValueTask.FromResult(new ListToolsResult
+    {
+        Tools =
+        [
+            MakeTool("add_todo", "Add todo", "Creates a todo item with the given title.", "title"),
+            MakeTool("complete_todo", "Complete todo", "Marks a todo as done by id.", "id"),
+        ],
+    }))
+    .WithCallToolHandler((request, _) =>
+    {
+        var parameters = request.Params;
+        string? name = parameters?.Name;
+        if (name is not ("add_todo" or "complete_todo"))
+        {
+            throw new McpException("Unknown tool");
+        }
+        string field = name == "add_todo" ? "title" : "id";
+        if (parameters?.Arguments is null ||
+            !parameters.Arguments.TryGetValue(field, out JsonElement value) ||
+            value.ValueKind != JsonValueKind.String || value.GetString()!.Length == 0)
+        {
+            return ValueTask.FromResult(ProtocolValue<CallToolResult>(new
+            {
+                isError = true,
+                content = new[] { new { type = "text", text = $"A {field} string is required." } },
+            }));
+        }
+        lock (gate)
+        {
+            string text = value.GetString()!;
+            string message;
+            if (name == "add_todo")
+            {
+                string title = text.Trim();
+                if (title.Length > 0)
+                {
+                    todos.Add(new Dictionary<string, object>
+                    {
+                        ["id"] = $"todo-{nextId++}",
+                        ["title"] = title,
+                        ["completed"] = false,
+                    });
+                }
+                message = title.Length > 0 ? $"Added {title}" : "A title is required.";
+            }
+            else
+            {
+                var todo = todos.Find(item => (string)item["id"] == text);
+                if (todo is not null)
+                {
+                    todo["completed"] = true;
+                }
+                message = todo is null ? $"Todo {text} not found." : $"Completed {text}";
+            }
+            // Serialize the snapshot while holding the lock.
+            return ValueTask.FromResult(ProtocolValue<CallToolResult>(new
+            {
+                isError = false,
+                content = new[] { new { type = "text", text = message } },
+                structuredContent = new { tasks = todos },
+            }));
+        }
+    });
+
+var app = builder.Build();
+app.Use(async (context, next) =>
+{
+    // Restrict local hostnames and browser origins, including preflight.
+    var origin = context.Request.Headers["Origin"];
+    if (context.Request.Host.Host is not ("localhost" or "127.0.0.1") ||
+        (origin.Count > 0 &&
+         (origin.Count != 1 || !origins.Contains(origin.ToString(), StringComparer.Ordinal))))
+    {
+        context.Response.StatusCode = StatusCodes.Status403Forbidden;
+        return;
+    }
+    context.Response.Headers["Vary"] = "Origin";
+    if (context.Request.Headers.ContainsKey("Origin"))
+    {
+        context.Response.Headers["Access-Control-Allow-Origin"] = origin.ToString();
+    }
+    context.Response.Headers["Access-Control-Expose-Headers"] = "Mcp-Session-Id";
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.Headers["Access-Control-Allow-Methods"] = "GET, POST, DELETE, OPTIONS";
+        context.Response.Headers["Access-Control-Allow-Headers"] =
+            "content-type, mcp-session-id, mcp-protocol-version";
+        context.Response.StatusCode = StatusCodes.Status204NoContent;
+        return;
+    }
+    await next(context);
+});
+app.MapGet("/", () => Results.Text("Todo MCP server"));
+app.MapMcp("/mcp");
+
+await using (app)
+{
+    await app.RunAsync();
+}
+
+static T ProtocolValue<T>(object value) =>
+    JsonSerializer.Deserialize<T>(JsonSerializer.Serialize(value))
+    ?? throw new JsonException("An MCP protocol value was null.");
+```
+
 ```ruby
 require "mcp"
 require "rackup"

@@ -199,6 +199,56 @@ func partSelectionSchema(parts []map[string]string) map[string]any {
 }
 ```
 
+```java
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+public final class AppsSdkExtendedForms {
+  public record PartChoice(@JsonProperty("const") String value, String title) {}
+
+  public static Map<String, Object> partSelectionSchema(List<PartChoice> parts) {
+    var part = new LinkedHashMap<String, Object>();
+    part.put("type", "string");
+    part.put("title", "Part");
+    part.put("oneOf", List.copyOf(parts));
+    var schema = new LinkedHashMap<String, Object>();
+    schema.put("type", "object");
+    schema.put("properties", Map.of("part", part));
+    schema.put("required", List.of("part"));
+    return schema;
+  }
+
+  public static void main(String[] args) throws Exception {
+    var parts = List.of(new PartChoice("gear", "Gear"));
+    System.out.println(JsonMapper.builder().build().writeValueAsString(partSelectionSchema(parts)));
+  }
+}
+```
+
+```csharp
+using System.Text.Json;
+
+PartChoice[] parts = [new("gear", "Gear")];
+Console.WriteLine(JsonSerializer.Serialize(PartSelectionSchema(parts)));
+
+static object PartSelectionSchema(IReadOnlyList<PartChoice> parts) => new
+{
+    type = "object",
+    properties = new
+    {
+        part = new { type = "string", title = "Part", oneOf = parts },
+    },
+    required = new[] { "part" },
+};
+
+internal sealed record PartChoice(
+    [property: System.Text.Json.Serialization.JsonPropertyName("const")] string Value,
+    [property: System.Text.Json.Serialization.JsonPropertyName("title")] string Title);
+```
+
 ```ruby
 def part_selection_schema(parts)
   {

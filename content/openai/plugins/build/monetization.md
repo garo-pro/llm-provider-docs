@@ -797,6 +797,196 @@ var mapper = new JacksonMcpJsonMapper(JsonMapper.builder().build());
     }
 ```
 
+```csharp
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using ModelContextProtocol.Protocol;
+using ModelContextProtocol.Server;
+
+const string InputSchema = """
+{
+  "type": "object",
+  "properties": {
+    "checkout_session_id": { "type": "string" },
+    "buyer": {
+      "type": "object",
+      "properties": { "email": { "type": "string" } },
+      "required": ["email"]
+    },
+    "payment_data": {
+      "type": "object",
+      "properties": { "token": { "type": "string", "const": "example-payment-token" } },
+      "required": ["token"]
+    }
+  },
+  "required": ["checkout_session_id", "buyer", "payment_data"]
+}
+""";
+
+const string OutputSchema = """
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "status": { "type": "string" },
+    "currency": { "type": "string" },
+    "line_items": { "type": "array", "items": { "type": "object" } },
+    "fulfillment_address": { "type": "object" },
+    "fulfillment_options": { "type": "array", "items": { "type": "object" } },
+    "fulfillment_option_id": { "type": "string" },
+    "totals": { "type": "array", "items": { "type": "object" } },
+    "order": { "type": "object" }
+  },
+  "required": ["id", "status", "currency", "line_items", "fulfillment_address",
+               "fulfillment_options", "fulfillment_option_id", "totals", "order"]
+}
+""";
+
+const string CheckoutResponse = """
+{
+  "id": "example-session",
+  "status": "completed",
+  "currency": "USD",
+  "line_items": [
+    {
+      "id": "line_item_1",
+      "item": {
+        "id": "item_1",
+        "quantity": 1
+      },
+      "base_amount": 3000,
+      "discount": 0,
+      "subtotal": 3000,
+      "tax": 300,
+      "total": 3300
+    }
+  ],
+  "fulfillment_address": {
+    "name": "Jane Customer",
+    "line_one": "123 Main St",
+    "line_two": "Apt 4B",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "US",
+    "postal_code": "94107",
+    "phone_number": "+1 (555) 555-5555"
+  },
+  "fulfillment_options": [
+    {
+      "id": "fulfillment_option_1",
+      "type": "shipping",
+      "title": "Standard shipping",
+      "subtitle": "3-5 business days",
+      "carrier": "USPS",
+      "earliest_delivery_time": "2026-02-24T15:00:00Z",
+      "latest_delivery_time": "2026-02-28T18:00:00Z",
+      "subtotal": 0,
+      "tax": 0,
+      "total": 0
+    }
+  ],
+  "fulfillment_option_id": "fulfillment_option_1",
+  "totals": [
+    {
+      "type": "items_base_amount",
+      "display_text": "Items subtotal",
+      "amount": 3000
+    },
+    {
+      "type": "subtotal",
+      "display_text": "Subtotal",
+      "amount": 3000
+    },
+    {
+      "type": "tax",
+      "display_text": "Tax",
+      "amount": 300
+    },
+    {
+      "type": "total",
+      "display_text": "Total",
+      "amount": 3300
+    }
+  ],
+  "order": {
+    "id": "order_id_123",
+    "checkout_session_id": "example-session",
+    "permalink_url": ""
+  }
+}
+""";
+
+HostApplicationBuilder builder = Host.CreateApplicationBuilder();
+// Standard output belongs to the MCP stdio transport.
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole(options => options.LogToStandardErrorThreshold = LogLevel.Trace);
+builder.Services.AddMcpServer(options =>
+{
+    options.ServerInfo = new Implementation
+    {
+        Name = "Checkout response fixture",
+        Version = "1.0.0",
+    };
+})
+.WithStdioServerTransport()
+.WithListToolsHandler((request, cancellationToken) =>
+    ValueTask.FromResult(new ListToolsResult
+    {
+        Tools = [new Tool
+        {
+            Name = "complete_checkout",
+            Description = "Return the local checkout response fixture; does not charge a payment method or create a real order.",
+            InputSchema = JsonSerializer.Deserialize<JsonElement>(InputSchema),
+            OutputSchema = JsonSerializer.Deserialize<JsonElement>(OutputSchema),
+        }],
+    }))
+.WithCallToolHandler((request, cancellationToken) =>
+{
+    cancellationToken.ThrowIfCancellationRequested();
+    CallToolRequestParams? parameters = request.Params;
+    if (parameters?.Name != "complete_checkout"
+        || parameters.Arguments is not { } arguments
+        || !arguments.TryGetValue("checkout_session_id", out JsonElement session)
+        || session.ValueKind != JsonValueKind.String
+        || session.GetString() != "example-session"
+        || !arguments.TryGetValue("buyer", out JsonElement buyer)
+        || buyer.ValueKind != JsonValueKind.Object
+        || !buyer.TryGetProperty("email", out JsonElement email)
+        || email.ValueKind != JsonValueKind.String
+        || !arguments.TryGetValue("payment_data", out JsonElement payment)
+        || payment.ValueKind != JsonValueKind.Object
+        || !payment.TryGetProperty("token", out JsonElement token)
+        || token.ValueKind != JsonValueKind.String
+        || token.GetString() != "example-payment-token")
+    {
+        return ValueTask.FromResult(new CallToolResult
+        {
+            IsError = true,
+            Content = [new TextContentBlock
+            {
+                Text = "This fixture requires example-session, a buyer email, and example-payment-token.",
+            }],
+        });
+    }
+
+    return ValueTask.FromResult(new CallToolResult
+    {
+        IsError = false,
+        Content = [new TextContentBlock
+        {
+            Text = "Checkout response fixture complete; no payment was charged.",
+        }],
+        StructuredContent = JsonSerializer.Deserialize<JsonElement>(CheckoutResponse),
+        Meta = new JsonObject { ["openai/checkoutSessionId"] = "checkout-flow" },
+    });
+});
+using IHost host = builder.Build();
+await host.RunAsync();
+```
+
 ```ruby
 require "mcp"
 require "json"
