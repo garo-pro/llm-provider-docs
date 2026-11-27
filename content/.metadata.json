@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-26T19:55:42.055435Z",
+    "fetch_date": "2026-11-27T09:13:55.130477Z",
     "section": "all"
   },
   "items": [
@@ -8332,8 +8332,8 @@
       "url": "https://modelcontextprotocol.io/community/contributor-ladder",
       "status": "success",
       "path": "anthropic/mcp/community/contributor-ladder.md",
-      "sha256": "dc16507fa90715a97a3cb5ba5f597ca41d58ca2c379725702fcbe765caadd28c",
-      "size": 15745
+      "sha256": "98f53aa06a306cb0ddf23802f37ea13cb67eecb8f6282fe685a4b68635d4894c",
+      "size": 18158
     },
     {
       "url": "https://modelcontextprotocol.io/community/design-principles",
@@ -8353,8 +8353,8 @@
       "url": "https://modelcontextprotocol.io/community/governance",
       "status": "success",
       "path": "anthropic/mcp/community/governance.md",
-      "sha256": "49218ab1d9053b9c2b3b40531dc51ac8770dc0b109681b62b18379f57c1eeb6f",
-      "size": 9388
+      "sha256": "72adea09920989e9e592cae702b0f21b4e564fa4131d4d937a838923aec91353",
+      "size": 9997
     },
     {
       "url": "https://modelcontextprotocol.io/community/interest-groups/agents",
@@ -8413,6 +8413,13 @@
       "size": 6258
     },
     {
+      "url": "https://modelcontextprotocol.io/community/release-cycle",
+      "status": "success",
+      "path": "anthropic/mcp/community/release-cycle.md",
+      "sha256": "060efa9e6c4378d4f3b792a53aa69f62992f6d794b73b4d4eb3eaa76968edbab",
+      "size": 11605
+    },
+    {
       "url": "https://modelcontextprotocol.io/community/sdk-tiers",
       "status": "success",
       "path": "anthropic/mcp/community/sdk-tiers.md",
@@ -8423,8 +8430,8 @@
       "url": "https://modelcontextprotocol.io/community/sep-guidelines",
       "status": "success",
       "path": "anthropic/mcp/community/sep-guidelines.md",
-      "sha256": "32fc09432f30d921866a4d37bc2434806f68068ff673a5b6886b53a96ebf10d5",
-      "size": 16535
+      "sha256": "fda60d20fb0f9405947df92bf2129548ec63f2f77845a2f9576b21fef4757440",
+      "size": 18486
     },
     {
       "url": "https://modelcontextprotocol.io/community/working-groups/apps",
@@ -8549,8 +8556,8 @@
       "url": "https://modelcontextprotocol.io/development/roadmap",
       "status": "success",
       "path": "anthropic/mcp/development/roadmap.md",
-      "sha256": "03d6624155355ec40d3be84e3e116ec86e41ba0d901969e036c6ead069e13a10",
-      "size": 12679
+      "sha256": "f99a47ddf7727a1d1110b187abdef48bb42c70fcbc60643357b310ea3dc3144a",
+      "size": 14142
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2024-11-05/develop/build-client",
@@ -12954,6 +12961,1413 @@
       "path": "anthropic/blog/research/alignment-assessment-ukaisi.md",
       "sha256": "e664b1a5722ab54c381294b78bbd2507db5c9131c778b2512de990115bcd394f",
       "size": 58847
+    },
+    {
+      "url": "https://www.anthropic.com/research/alignment-faking",
+      "status": "success",
+      "path": "anthropic/blog/research/alignment-faking.md",
+      "sha256": "829a3d3f82a0a03512845c08a5e4b985feb0a143bef1339c5460fe9dbf7b81f7",
+      "size": 12177
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-economic-index-insights-from-claude-sonnet-3-7.md",
+      "sha256": "564fc4cb54875bd74920d62bcbbee2cef669297dec5e7f3db71341931df9be91",
+      "size": 15102
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-economic-index-january-2026-report.md",
+      "sha256": "4570bbb145c8e9cea3e8018473a67e957a55652ae6aa3f62cd1bc6ae1901b356",
+      "size": 94041
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-economic-index-september-2025-report.md",
+      "sha256": "e98d1c333c52592e59162be4b146b1643aa9ad48bacab53c22d50ea7ea5b3132",
+      "size": 90220
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-education-report-how-educators-use-claude.md",
+      "sha256": "013e6145c16833b7096e12b8ba01d7c78cfaa95c00d6ffd6c488a3a99c607a15",
+      "size": 16392
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-education-report-how-university-students-use-claude.md",
+      "sha256": "7bb586a56610dc41eeba6da7c84f8bfe5ef4093f7ff4cfd7869e5b1e5725172d",
+      "size": 18827
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-interviewer",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-interviewer.md",
+      "sha256": "2556bf81709c520b716ae5c91e31d4c26ceaaacbee0e7a5db4ce21675358911d",
+      "size": 36561
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-public-record",
+      "status": "success",
+      "path": "anthropic/blog/research/anthropic-public-record.md",
+      "sha256": "4762816d90684b77d6b6d21b76be8d2060e02616482baa6abb12373fcf6b9b1d",
+      "size": 16786
+    },
+    {
+      "url": "https://www.anthropic.com/research/april-23-postmortem",
+      "status": "success",
+      "path": "anthropic/blog/research/april-23-postmortem.md",
+      "sha256": "2bfac66c13de86a5615478d33b86ceac20f98179b850a890ffe524f63f142714",
+      "size": 10965
+    },
+    {
+      "url": "https://www.anthropic.com/research/assistant-axis",
+      "status": "success",
+      "path": "anthropic/blog/research/assistant-axis.md",
+      "sha256": "e989979d7dc107670d386311ecc6b87ad99b11943f77cd89ebdabdc1d4b08a3f",
+      "size": 16625
+    },
+    {
+      "url": "https://www.anthropic.com/research/attack-navigator",
+      "status": "success",
+      "path": "anthropic/blog/research/attack-navigator.md",
+      "sha256": "82541dd88079a9d40aa1975814c877a7a1e364e4ed775ffb4c3171c0968d6ba5",
+      "size": 28356
+    },
+    {
+      "url": "https://www.anthropic.com/research/attack-surface-reduction",
+      "status": "success",
+      "path": "anthropic/blog/research/attack-surface-reduction.md",
+      "sha256": "430e39daffb737dfa6b5b5df6e86bbca4f4e3dfd87e779622139650f9db5c155",
+      "size": 16868
+    },
+    {
+      "url": "https://www.anthropic.com/research/auditing-hidden-objectives",
+      "status": "success",
+      "path": "anthropic/blog/research/auditing-hidden-objectives.md",
+      "sha256": "185b426617729abeac9c5bf4e4c0d0a9dedfc6cb9927fad0e4e46844513ef12e",
+      "size": 17367
+    },
+    {
+      "url": "https://www.anthropic.com/research/automated-alignment-researchers",
+      "status": "success",
+      "path": "anthropic/blog/research/automated-alignment-researchers.md",
+      "sha256": "4b51c525ab2b2d1a02ae6260ea87216b0910962e709a413fd1ea13241a2f15da",
+      "size": 12993
+    },
+    {
+      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+      "status": "success",
+      "path": "anthropic/blog/research/automated-researchers-mitigate-alignment-failures.md",
+      "sha256": "a24d99e81f15c2c0638e9969e037f82c1760ec78b974a93c0694aa3dc5426088",
+      "size": 9219
+    },
+    {
+      "url": "https://www.anthropic.com/research/biorisk",
+      "status": "success",
+      "path": "anthropic/blog/research/biorisk.md",
+      "sha256": "f6edee159448ec2f549c45ad94dae599c4f24689f3c422d9d05c05be884ab05b",
+      "size": 15926
+    },
+    {
+      "url": "https://www.anthropic.com/research/bloom",
+      "status": "success",
+      "path": "anthropic/blog/research/bloom.md",
+      "sha256": "6356809ee716fcc41a6740d28b1a4592071485cdbf51ec09464cce30e6f23bf2",
+      "size": 12700
+    },
+    {
+      "url": "https://www.anthropic.com/research/building-ai-cyber-defenders",
+      "status": "success",
+      "path": "anthropic/blog/research/building-ai-cyber-defenders.md",
+      "sha256": "b9d2e84e5f7f1240049dc77aa2d55d28fc7eddea0d25bed7334b9fd1e90af5c7",
+      "size": 14907
+    },
+    {
+      "url": "https://www.anthropic.com/research/building-c-compiler",
+      "status": "success",
+      "path": "anthropic/blog/research/building-c-compiler.md",
+      "sha256": "75fded6f5e6448b44fa9c3506cc8aa08aa3bfe22b66475b0377844a7c7fd6225",
+      "size": 15172
+    },
+    {
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/building-effective-agents.md",
+      "sha256": "f894ae482e1c9a5df72e71d7a844e38a1d03c2eb59e2cd83a49cba24dfbc23e4",
+      "size": 19976
+    },
+    {
+      "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+      "status": "success",
+      "path": "anthropic/blog/research/building-strong-safety-evaluations.md",
+      "sha256": "12fae141ce10bbd5c96af2a97cbfc2c2612d384d5ab2256af93277eeecb3325f",
+      "size": 33722
+    },
+    {
+      "url": "https://www.anthropic.com/research/circuits-updates-april-2024",
+      "status": "success",
+      "path": "anthropic/blog/research/circuits-updates-april-2024.md",
+      "sha256": "9a4595422181f1de9c22ad06a23eed72577371516c591f765d28bd49191fd8f8",
+      "size": 683
+    },
+    {
+      "url": "https://www.anthropic.com/research/circuits-updates-august-2024",
+      "status": "success",
+      "path": "anthropic/blog/research/circuits-updates-august-2024.md",
+      "sha256": "a85694e3b954ce992b5ca32e41dbf3f432c3f5e0402a531a6d3fdc7c66726a94",
+      "size": 682
+    },
+    {
+      "url": "https://www.anthropic.com/research/circuits-updates-july-2024",
+      "status": "success",
+      "path": "anthropic/blog/research/circuits-updates-july-2024.md",
+      "sha256": "0feefd0ad3636abb0ff0b27b27996fe0176c77139f0058c1ee646df41186d8e1",
+      "size": 678
+    },
+    {
+      "url": "https://www.anthropic.com/research/circuits-updates-june-2024",
+      "status": "success",
+      "path": "anthropic/blog/research/circuits-updates-june-2024.md",
+      "sha256": "4993a99b735c311a28f7a7d1a6fe4458d655be464d664f530b4e613da62aa9d5",
+      "size": 681
+    },
+    {
+      "url": "https://www.anthropic.com/research/circuits-updates-may-2023",
+      "status": "success",
+      "path": "anthropic/blog/research/circuits-updates-may-2023.md",
+      "sha256": "30f46de5512b62f644ccb6ced9a6483d470a7fb8eb092ab09a30bc746587660b",
+      "size": 498
+    },
+    {
+      "url": "https://www.anthropic.com/research/circuits-updates-sept-2024",
+      "status": "success",
+      "path": "anthropic/blog/research/circuits-updates-sept-2024.md",
+      "sha256": "9906849bf8f7e8ae62ac4d7d5319165216795df13fc3691209066d0886a241c6",
+      "size": 686
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-4-cyber",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-4-cyber.md",
+      "sha256": "8c738e71c45f78e4822d10244175f2441ae2e6ac69c78d0dcb29820028ca50f8",
+      "size": 1384
+    },
+    {
+      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+      "status": "success",
+      "path": "anthropic/blog/research/Claude-accelerates-protein-design.md",
+      "sha256": "21451bcdb28b65331a0e896ae0e771f31a0787d0922256fe68ddaafda41ea4da",
+      "size": 23105
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-black-hole-physics.md",
+      "sha256": "17728290a99f15e0777ecc172e10048915cf42777f6dbeec2df36f871a6b7472",
+      "size": 30487
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-character",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-character.md",
+      "sha256": "95c82ea7b4d486b3d95ef3617f2deb0aeb482f187838beb422437f5fbcbb5e0a",
+      "size": 10218
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-code-auto-mode",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-code-auto-mode.md",
+      "sha256": "f3da83f9d8a747ffb072ed09ae475b954bcb4820cf367df68161eeaee707ee60",
+      "size": 22860
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-code-best-practices",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-code-best-practices.md",
+      "sha256": "fc9a40d01c0955b75f0fdcdefd01daddb7091dfc8757cc270104bdaf5d25640b",
+      "size": 27276
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-code-expertise",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-code-expertise.md",
+      "sha256": "5dd1eaeeab323c1efae5b1a71dd7cf73d7f3fffdcd7b35756343eda1973133d2",
+      "size": 27443
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-code-sandboxing",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-code-sandboxing.md",
+      "sha256": "cac18a85445be85f91d520868a8766b6008a79f53ed07fddbbe1eea429f1830e",
+      "size": 7812
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-discovers-novel-enzyme-system.md",
+      "sha256": "bd14335d0437a214f1d2de47ba9f48c806bb5f8e4fc1d79d549b3232ef54494a",
+      "size": 10334
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-electronics-design",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-electronics-design.md",
+      "sha256": "6488d05310e88720b2f17c0a4d23231baa24fbe242ad0c60d599db6cd51be871",
+      "size": 13312
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-personal-guidance",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-personal-guidance.md",
+      "sha256": "31ad04e784c3a047e6a0d069e50761246515cfcd5a1eeb5a9c885a8d431fac56",
+      "size": 13891
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-plays-robotics",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-plays-robotics.md",
+      "sha256": "7c0c3d24ef675ca6bb22a0030d39819388a72306450894f9086e6f9e35ecdf1e",
+      "size": 56135
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-scorpion-toxin-binder-design.md",
+      "sha256": "20b921ce4bb4174386e020386d5e34a894f5b66289672539d306ac30e57f7687",
+      "size": 16477
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-shaped-science",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-shaped-science.md",
+      "sha256": "1a4354317a888093efeaf9e67811386bfa60067e2b3c720f41efe6101578d191",
+      "size": 28068
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-think-tool",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-think-tool.md",
+      "sha256": "8a7618601f6a381768f96409d23eea6275910372d0db9a4edea6534fb28c5f12",
+      "size": 12336
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-uplifts-biomolecular-modeling.md",
+      "sha256": "ad6d69f4333639859c39156c2578787984d15ac43877866b8e8e0cdbd5f71977",
+      "size": 13924
+    },
+    {
+      "url": "https://www.anthropic.com/research/claude-values-models-languages",
+      "status": "success",
+      "path": "anthropic/blog/research/claude-values-models-languages.md",
+      "sha256": "56e8bc9cfc3339bf698d893acd28e74f30fe39f48786aa51d806bbf66c916650",
+      "size": 23393
+    },
+    {
+      "url": "https://www.anthropic.com/research/clio",
+      "status": "success",
+      "path": "anthropic/blog/research/clio.md",
+      "sha256": "415b895fc7ba7262e77562a4afbab2cb2afb0b53b724e0f44a4fcbcfa395c6b1",
+      "size": 14904
+    },
+    {
+      "url": "https://www.anthropic.com/research/code-execution-with-mcp",
+      "status": "success",
+      "path": "anthropic/blog/research/code-execution-with-mcp.md",
+      "sha256": "6e126e519abc712aa26b36015a3d6a5e0839faf2b739ccd85d20bf670c97d3c7",
+      "size": 9759
+    },
+    {
+      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+      "status": "success",
+      "path": "anthropic/blog/research/coding-agents-social-sciences.md",
+      "sha256": "6d06b12d4ae47b4f82754db97a8f6e830bbdd67afe92eff1869922a639501e2c",
+      "size": 17920
+    },
+    {
+      "url": "https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input",
+      "status": "success",
+      "path": "anthropic/blog/research/collective-constitutional-ai-aligning-a-language-model-with-public-input.md",
+      "sha256": "6fbde8df18c3bd16eb63338a649bd4f22f12da83ace79f696bda8a86994a014b",
+      "size": 22554
+    },
+    {
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "status": "success",
+      "path": "anthropic/blog/research/components-of-agent-memory.md",
+      "sha256": "b1610a52d5ae05ab54e4d03a1b5605f216c92080e28bcd1aa4407b1ce99115bc",
+      "size": 29103
+    },
+    {
+      "url": "https://www.anthropic.com/research/confidential-inference-trusted-vms",
+      "status": "success",
+      "path": "anthropic/blog/research/confidential-inference-trusted-vms.md",
+      "sha256": "e27a39414141fbd7b49d62cdec6589e910de42e6825295c412da3e578e6ad79c",
+      "size": 8781
+    },
+    {
+      "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
+      "status": "success",
+      "path": "anthropic/blog/research/constitutional-ai-harmlessness-from-ai-feedback.md",
+      "sha256": "9a41180cc938d0bdbdc181aaa09bae85731562a1bca3c70e6b6c09ce26d8af3a",
+      "size": 1495
+    },
+    {
+      "url": "https://www.anthropic.com/research/constitutional-classifiers",
+      "status": "success",
+      "path": "anthropic/blog/research/constitutional-classifiers.md",
+      "sha256": "24bd4bf5388c56ca6a80391dc85def97c9ab379736b2616fea40a641bf0b57f2",
+      "size": 18183
+    },
+    {
+      "url": "https://www.anthropic.com/research/contextual-retrieval",
+      "status": "success",
+      "path": "anthropic/blog/research/contextual-retrieval.md",
+      "sha256": "8b912cf4705f3d3b2026bc4a39fbcb2f209492a861bc4d70e2ad87bede3862f6",
+      "size": 15762
+    },
+    {
+      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
+      "status": "success",
+      "path": "anthropic/blog/research/coordinated-vulnerability-disclosure-timelines.md",
+      "sha256": "54f633b2f82f0de735c61a28adac22b9499625c4622afba7096ce096986d3339",
+      "size": 4477
+    },
+    {
+      "url": "https://www.anthropic.com/research/critical-infrastructure-defense",
+      "status": "success",
+      "path": "anthropic/blog/research/critical-infrastructure-defense.md",
+      "sha256": "86182d1f042cc96eb7a044aa32760025b37f5e22055482599d2247ac827a7121",
+      "size": 5396
+    },
+    {
+      "url": "https://www.anthropic.com/research/crosscoder-model-diffing",
+      "status": "success",
+      "path": "anthropic/blog/research/crosscoder-model-diffing.md",
+      "sha256": "9bfb9a172f5518d7186fc065a6c4e5cf9543bafa78fd0b5de34a67b569595018",
+      "size": 519
+    },
+    {
+      "url": "https://www.anthropic.com/research/cyber-competitions",
+      "status": "success",
+      "path": "anthropic/blog/research/cyber-competitions.md",
+      "sha256": "c9a2a83ca4895b3951d43f74a3bba1b624ffffd990cab0e8109c94e2930294bb",
+      "size": 16168
+    },
+    {
+      "url": "https://www.anthropic.com/research/cyber-toolkits",
+      "status": "success",
+      "path": "anthropic/blog/research/cyber-toolkits.md",
+      "sha256": "ba96a0fd20f24a68bc024033095698cb7f86d8e33acf922f0c6b9170a66234f2",
+      "size": 4539
+    },
+    {
+      "url": "https://www.anthropic.com/research/cyber-toolkits-update",
+      "status": "success",
+      "path": "anthropic/blog/research/cyber-toolkits-update.md",
+      "sha256": "feff2265a43d7251953a1fe2eded2e35aa0dca797c3e2ed9191e7e8af5c7d584",
+      "size": 231360
+    },
+    {
+      "url": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components",
+      "status": "success",
+      "path": "anthropic/blog/research/decomposing-language-models-into-understandable-components.md",
+      "sha256": "911e19c9b7894a6b5b26b905fae9da59e54dddc438bc67e37e360c36d486e9e8",
+      "size": 6133
+    },
+    {
+      "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/demystifying-evals-for-ai-agents.md",
+      "sha256": "026da04fc36fd1247174b01df5d93b14cb5eee4fcb0b8ffb3f64efe8e3454486",
+      "size": 35671
+    },
+    {
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "status": "success",
+      "path": "anthropic/blog/research/designing-efficient-quantum-circuits.md",
+      "sha256": "fc42cfd9df95552d3ae53c775c5bffce26885234c90fd6aa5c839f140ac66ac7",
+      "size": 22499
+    },
+    {
+      "url": "https://www.anthropic.com/research/desktop-extensions",
+      "status": "success",
+      "path": "anthropic/blog/research/desktop-extensions.md",
+      "sha256": "9f9b19eebe7e4fbfb9eae33e8b045071edf31376391b740d1f3bf0d365eadcdf",
+      "size": 11386
+    },
+    {
+      "url": "https://www.anthropic.com/research/diff-tool",
+      "status": "success",
+      "path": "anthropic/blog/research/diff-tool.md",
+      "sha256": "a6fd85c3d6a48720681a416d1040f53ca01344af83f53e7db7930aaa212cfd3b",
+      "size": 14322
+    },
+    {
+      "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+      "status": "success",
+      "path": "anthropic/blog/research/discovering-cryptographic-weaknesses.md",
+      "sha256": "0d9826c8ef78282809497ffe9c19b3a870ebdc90a7d23b038f52354e3b160ad3",
+      "size": 25797
+    },
+    {
+      "url": "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
+      "status": "success",
+      "path": "anthropic/blog/research/discovering-language-model-behaviors-with-model-written-evaluations.md",
+      "sha256": "fab96b287ded028ba2ae0ead1cbfee1c61dbd45ebe7fc55c88bea76ad8864eea",
+      "size": 1537
+    },
+    {
+      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/discovering-vulnerabilities-with-claude.md",
+      "sha256": "18b49758c278bccd510f589d3d98fffc558c8feda405509b865b0857fbd2dcb1",
+      "size": 12776
+    },
+    {
+      "url": "https://www.anthropic.com/research/disempowerment-patterns",
+      "status": "success",
+      "path": "anthropic/blog/research/disempowerment-patterns.md",
+      "sha256": "cfaed2d1ae3a1e7bb926566ca1d09856e264d99b051320cc9d16718b1f2d2789",
+      "size": 20889
+    },
+    {
+      "url": "https://www.anthropic.com/research/distributed-representations-composition-superposition",
+      "status": "success",
+      "path": "anthropic/blog/research/distributed-representations-composition-superposition.md",
+      "sha256": "eb6f7415d144c1cdf7ccea13789bc919d47347c2d82ab6ec202ccafd92edec1b",
+      "size": 2432
+    },
+    {
+      "url": "https://www.anthropic.com/research/donating-open-source-petri",
+      "status": "success",
+      "path": "anthropic/blog/research/donating-open-source-petri.md",
+      "sha256": "b3458fabefe08943d3668eb8ea133d8afb1660381e54f4deeb7805f0d124ffb9",
+      "size": 3567
+    },
+    {
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "status": "success",
+      "path": "anthropic/blog/research/early-progress-drug-development.md",
+      "sha256": "5d075e35bab825333c2a680dc1308cf30095c0787227c075a17f6924176a5fdc",
+      "size": 12973
+    },
+    {
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "status": "success",
+      "path": "anthropic/blog/research/ecdsa-curve-origins.md",
+      "sha256": "a621c0403a832f475f03f0edb87ebafce02fb34290c069647c930139ec247e70",
+      "size": 11903
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-index-geography",
+      "status": "success",
+      "path": "anthropic/blog/research/economic-index-geography.md",
+      "sha256": "9b1cb8c56ec070c860d3d478e82f1007e292a2c53f14aa38e9aac376fb2da1d1",
+      "size": 18151
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "status": "success",
+      "path": "anthropic/blog/research/economic-index-june-2026-report.md",
+      "sha256": "5f4706433cb72d8bff767b0f7687a4227bc518f8261df3faaefb5e4f1c0cd025",
+      "size": 44118
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+      "status": "success",
+      "path": "anthropic/blog/research/economic-index-march-2026-report.md",
+      "sha256": "d506753331e568be1f77609ac6d766395b7ce8aa7ca8f1ffe63c64cf62ede21c",
+      "size": 29000
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-index-primitives",
+      "status": "success",
+      "path": "anthropic/blog/research/economic-index-primitives.md",
+      "sha256": "ade356dc9a332039ea8b8e845bebb2505cd7d1f64a92e1573863aed86cb5ef5f",
+      "size": 16698
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-index-survey-announcement",
+      "status": "success",
+      "path": "anthropic/blog/research/economic-index-survey-announcement.md",
+      "sha256": "52d001b9f7359e7ed9dfa7629a972d9af7125b52b401a5fdd4614809472922ca",
+      "size": 4361
+    },
+    {
+      "url": "https://www.anthropic.com/research/economic-policy-responses",
+      "status": "success",
+      "path": "anthropic/blog/research/economic-policy-responses.md",
+      "sha256": "62aa4decadfb2b49a2b6436af06fc575f531713b9ce1f623053482cd32e7b0cb",
+      "size": 16412
+    },
+    {
+      "url": "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/effective-context-engineering-for-ai-agents.md",
+      "sha256": "7cb6b0417bb2fdc85b42f8ce1977b3de29bde45742b5a5e97543aa96718ea60e",
+      "size": 21966
+    },
+    {
+      "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/effective-harnesses-for-long-running-agents.md",
+      "sha256": "991ff626c5fc90c7452190b39440dcad702a47ac4c0663b33f6736ac623e9bfe",
+      "size": 10600
+    },
+    {
+      "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking",
+      "status": "success",
+      "path": "anthropic/blog/research/emergent-misalignment-reward-hacking.md",
+      "sha256": "f1d2b9330074605399eac832b4a9f6c2f6ee9eee7efc8a1b6c5f51802983855f",
+      "size": 14976
+    },
+    {
+      "url": "https://www.anthropic.com/research/emotion-concepts-function",
+      "status": "success",
+      "path": "anthropic/blog/research/emotion-concepts-function.md",
+      "sha256": "19f214b868442cae9ab77fe6a5437c0dbbe300cd92f0d6bc6d75464ce1bae1be",
+      "size": 21297
+    },
+    {
+      "url": "https://www.anthropic.com/research/employment-at-anthropic",
+      "status": "success",
+      "path": "anthropic/blog/research/employment-at-anthropic.md",
+      "sha256": "b4cfea6cb83b54c7b63308471621b5be5781899975b88f0c215b956a9bf9e292",
+      "size": 36529
+    },
+    {
+      "url": "https://www.anthropic.com/research/enabling-independent-research",
+      "status": "success",
+      "path": "anthropic/blog/research/enabling-independent-research.md",
+      "sha256": "e1bdd5906ba76463eb67c9bccdfa9fa227153092eebabd5b50a655944a4ef878",
+      "size": 13246
+    },
+    {
+      "url": "https://www.anthropic.com/research/end-subset-conversations",
+      "status": "success",
+      "path": "anthropic/blog/research/end-subset-conversations.md",
+      "sha256": "7af995e5bbbdc42eecb51219d7a4bb720995addb3f1fea3b280e69d133125e78",
+      "size": 4115
+    },
+    {
+      "url": "https://www.anthropic.com/research/engineering-challenges-interpretability",
+      "status": "success",
+      "path": "anthropic/blog/research/engineering-challenges-interpretability.md",
+      "sha256": "2a1b8c5bde835c99f13aca73da64502cc9ae46eff1b6fdc2a581f3bd8b8ded39",
+      "size": 11000
+    },
+    {
+      "url": "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills",
+      "status": "success",
+      "path": "anthropic/blog/research/equipping-agents-for-the-real-world-with-agent-skills.md",
+      "sha256": "38f80fd19d5547df7501a832769373ea8c6dd04351998350a953bccfe2ae2aa2",
+      "size": 10090
+    },
+    {
+      "url": "https://www.anthropic.com/research/estimating-productivity-gains",
+      "status": "success",
+      "path": "anthropic/blog/research/estimating-productivity-gains.md",
+      "sha256": "daae80595a0c36def96a7c2779cb2fd42ee8426d04aad51536820c9cec7b4ac6",
+      "size": 32901
+    },
+    {
+      "url": "https://www.anthropic.com/research/eval-awareness-browsecomp",
+      "status": "success",
+      "path": "anthropic/blog/research/eval-awareness-browsecomp.md",
+      "sha256": "1354b9c6d5b141554a5ad7e1053054374bb2e0210b0adc4393c61c510d762e3e",
+      "size": 13662
+    },
+    {
+      "url": "https://www.anthropic.com/research/evaluating-ai-systems",
+      "status": "success",
+      "path": "anthropic/blog/research/evaluating-ai-systems.md",
+      "sha256": "fb12e42bab73fa74a827e4bf923886656b0d6a00b285ab39b4fdc12c75eb08d1",
+      "size": 22115
+    },
+    {
+      "url": "https://www.anthropic.com/research/evaluating-and-mitigating-discrimination-in-language-model-decisions",
+      "status": "success",
+      "path": "anthropic/blog/research/evaluating-and-mitigating-discrimination-in-language-model-decisions.md",
+      "sha256": "e87b635aea59e34c5d4fb85ace11f6632bb22fa1f0e41362e839163932b8485a",
+      "size": 1913
+    },
+    {
+      "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
+      "status": "success",
+      "path": "anthropic/blog/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench.md",
+      "sha256": "d65138ee15eefb367df7459699764bdc3e1a06f1cd83cb8e81e84dbc90f0fee6",
+      "size": 20632
+    },
+    {
+      "url": "https://www.anthropic.com/research/evaluating-feature-steering",
+      "status": "success",
+      "path": "anthropic/blog/research/evaluating-feature-steering.md",
+      "sha256": "d68996ff78d4f88a190fe4e3143832a6154a75cddc7888aa96e2815a81bb3cff",
+      "size": 24214
+    },
+    {
+      "url": "https://www.anthropic.com/research/expectations-for-the-future",
+      "status": "success",
+      "path": "anthropic/blog/research/expectations-for-the-future.md",
+      "sha256": "e9b6a681311c901b7929a87c0c9045700c0f33a9dc4e865f7989c65642162939",
+      "size": 3730
+    },
+    {
+      "url": "https://www.anthropic.com/research/exploit",
+      "status": "success",
+      "path": "anthropic/blog/research/exploit.md",
+      "sha256": "f15526acad984a57dc21a48eef9de58df30b6171d23f11296eff76520a26489c",
+      "size": 20829
+    },
+    {
+      "url": "https://www.anthropic.com/research/exploit-evals",
+      "status": "success",
+      "path": "anthropic/blog/research/exploit-evals.md",
+      "sha256": "4c69560b62cf54197bd3218fd6c31c0dbe7e60b4fbe733b997aaec2fcacafdf7",
+      "size": 16819
+    },
+    {
+      "url": "https://www.anthropic.com/research/exploring-model-welfare",
+      "status": "success",
+      "path": "anthropic/blog/research/exploring-model-welfare.md",
+      "sha256": "ecd81d6a1af37ff2f00644ab34c2783219396da1b9ed5350bb98dcf1f2199421",
+      "size": 3000
+    },
+    {
+      "url": "https://www.anthropic.com/research/features-as-classifiers",
+      "status": "success",
+      "path": "anthropic/blog/research/features-as-classifiers.md",
+      "sha256": "d57ac2face49d6b5adb07fc7e0e0059b072a6a54e74290a1d4d0acc876af9bea",
+      "size": 837
+    },
+    {
+      "url": "https://www.anthropic.com/research/forecasting-rare-behaviors",
+      "status": "success",
+      "path": "anthropic/blog/research/forecasting-rare-behaviors.md",
+      "sha256": "a861e5f4009a8fe131626411b7b76bf12987c0804214e8d0bdcb11ecc90e183b",
+      "size": 6074
+    },
+    {
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "status": "success",
+      "path": "anthropic/blog/research/formal-verification.md",
+      "sha256": "ebb2cf4a65666826bc62eabd353c18be9a45c1f8d3366bb4cfb531c537131c09",
+      "size": 26491
+    },
+    {
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "status": "success",
+      "path": "anthropic/blog/research/formalizing-fermats-last-theorem.md",
+      "sha256": "0f883e790ffd00ebb6d205af31e5bc3998c5a0697990d947afc88dde32b79faf",
+      "size": 13221
+    },
+    {
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "status": "success",
+      "path": "anthropic/blog/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities.md",
+      "sha256": "9704ccbd2d40521eb263585c6dfacd6034d0b697080b2216ee535cefe2c3880a",
+      "size": 15720
+    },
+    {
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "status": "success",
+      "path": "anthropic/blog/research/global-workspace.md",
+      "sha256": "91c86ae2c8eb46fa92538b53cb6fcf2778ff78bb840aae32a970f8d14a038535",
+      "size": 32013
+    },
+    {
+      "url": "https://www.anthropic.com/research/golden-gate-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/golden-gate-claude.md",
+      "sha256": "5fb00119e766154c296ca2580b6eb9f034aeccd343d77140d35d412487ad3d62",
+      "size": 3721
+    },
+    {
+      "url": "https://www.anthropic.com/research/harness-design-long-running-apps",
+      "status": "success",
+      "path": "anthropic/blog/research/harness-design-long-running-apps.md",
+      "sha256": "8d8cb8ab2805652857c3d05db886da77ac75289001d95aaa4031174c09edfd89",
+      "size": 29724
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+      "status": "success",
+      "path": "anthropic/blog/research/how-ai-is-transforming-work-at-anthropic.md",
+      "sha256": "29df730eada6093fe2c4592ee3cf82624b7b1e4286918261588cdb3d3abbda8a",
+      "size": 45442
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-australia-uses-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/how-australia-uses-claude.md",
+      "sha256": "faa8fd7039f13dbbf4b989d4aeb130dfcff59a3771fc01b0ec3aea360b17b136",
+      "size": 14586
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-canada-uses-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/how-canada-uses-claude.md",
+      "sha256": "0936dff8b2163104590cfe593dea516a40c2a983b994a98c0fbd62a6588d0775",
+      "size": 27983
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship",
+      "status": "success",
+      "path": "anthropic/blog/research/how-people-use-claude-for-support-advice-and-companionship.md",
+      "sha256": "42b58ae9bea9ea343f22a2e6c6ecc071a3100ab2523761d4bfb8974ca9d10165",
+      "size": 23202
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/how-researchers-use-claude.md",
+      "sha256": "967d9980b9ec8587c92629854af40789d10371ea5ff0e15a75d508f3d3b696ae",
+      "size": 68260
+    },
+    {
+      "url": "https://www.anthropic.com/research/how-we-contain-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/how-we-contain-claude.md",
+      "sha256": "b1871568efb131792e78eb39c0542af376fac06e47804c1b1ec1ed63085b70f2",
+      "size": 27133
+    },
+    {
+      "url": "https://www.anthropic.com/research/impact-software-development",
+      "status": "success",
+      "path": "anthropic/blog/research/impact-software-development.md",
+      "sha256": "bec6da97f5b6a8ee9e33afdb2c69bbb058e0b4bbe2f6590821091f5af31012c2",
+      "size": 15195
+    },
+    {
+      "url": "https://www.anthropic.com/research/india-brief-economic-index",
+      "status": "success",
+      "path": "anthropic/blog/research/india-brief-economic-index.md",
+      "sha256": "de8a315896599ba4d42ef348af67a428ec612d7b179184bc024435a5f2beb56d",
+      "size": 9250
+    },
+    {
+      "url": "https://www.anthropic.com/research/influence-functions",
+      "status": "success",
+      "path": "anthropic/blog/research/influence-functions.md",
+      "sha256": "d7fcaa52d37ef3d6cc34a79b6344ccdc0629cee37acafc7772dcd0c796bb8580",
+      "size": 8559
+    },
+    {
+      "url": "https://www.anthropic.com/research/infrastructure-noise",
+      "status": "success",
+      "path": "anthropic/blog/research/infrastructure-noise.md",
+      "sha256": "3f844b4474714e3663635e3dc5600626d9b8004fc3aa6a8e1977d396d0d3d41f",
+      "size": 11957
+    },
+    {
+      "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
+      "status": "success",
+      "path": "anthropic/blog/research/intelligence-targeting-conventional-weapons-capabilities.md",
+      "sha256": "a1d5b0d827fb95c523327e081da38ed923e6400efcf23ea89520f7ecd67fee77",
+      "size": 39842
+    },
+    {
+      "url": "https://www.anthropic.com/research/interpretability-dreams",
+      "status": "success",
+      "path": "anthropic/blog/research/interpretability-dreams.md",
+      "sha256": "265c74a49a07f4be35815926459eb08f0a0836e0eab848006408ee193224b84d",
+      "size": 1075
+    },
+    {
+      "url": "https://www.anthropic.com/research/introducing-anthropic-science",
+      "status": "success",
+      "path": "anthropic/blog/research/introducing-anthropic-science.md",
+      "sha256": "a42b31f61f5c5a52c1c32ba18e737028f061f5c9123c231779e57d79c9c3fdfc",
+      "size": 4770
+    },
+    {
+      "url": "https://www.anthropic.com/research/introspection",
+      "status": "success",
+      "path": "anthropic/blog/research/introspection.md",
+      "sha256": "3592e794bd2f74875faa914578737613c2984b36e9c1b2345dc4ace37eabf6cb",
+      "size": 24548
+    },
+    {
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "status": "success",
+      "path": "anthropic/blog/research/investigating-unintended-model-actions.md",
+      "sha256": "33bd3b75b6f0774df632cfe27c075350e2823c54a78b0043bc2bd6588c43ebb9",
+      "size": 20218
+    },
+    {
+      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/investigating-vault-particles-with-claude.md",
+      "sha256": "c7ed9c463086aaec93efd6eaabcc1f3df24fec017bc9408ccafd552b13e69fa1",
+      "size": 17376
+    },
+    {
+      "url": "https://www.anthropic.com/research/labor-market-impacts",
+      "status": "success",
+      "path": "anthropic/blog/research/labor-market-impacts.md",
+      "sha256": "5823cb07ed4cf60199a3ea9a74b827095a0cde6e365b9d5fb9a2acefe23c77c6",
+      "size": 25330
+    },
+    {
+      "url": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
+      "status": "success",
+      "path": "anthropic/blog/research/language-models-mostly-know-what-they-know.md",
+      "sha256": "84fc548d92726bfdfa7c568b44d6ea6f1c733a1f077cc1e8151ffd27a8a807a5",
+      "size": 1665
+    },
+    {
+      "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
+      "status": "success",
+      "path": "anthropic/blog/research/launching-opt-in-vuln-finding-service-for-open-source.md",
+      "sha256": "276cd366834cf37e16ba2699d4925b859702848351ef8312edd5846c8227b261",
+      "size": 7415
+    },
+    {
+      "url": "https://www.anthropic.com/research/long-running-claude",
+      "status": "success",
+      "path": "anthropic/blog/research/long-running-claude.md",
+      "sha256": "42f1bf375a086d579775e89f64b70471c4ed24407ee6d00fbe3ccfeb77a1491b",
+      "size": 12568
+    },
+    {
+      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+      "status": "success",
+      "path": "anthropic/blog/research/making-claude-a-chemist.md",
+      "sha256": "d88c8495324f9063683ca0207ce65187b52415cf882dd6351975085fb4af5175",
+      "size": 14439
+    },
+    {
+      "url": "https://www.anthropic.com/research/managed-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/managed-agents.md",
+      "sha256": "03ffaf1ff5bc4cb3abfb501556200f1196b0fb43f6510a319d3c80cc4400ba5c",
+      "size": 13784
+    },
+    {
+      "url": "https://www.anthropic.com/research/many-shot-jailbreaking",
+      "status": "success",
+      "path": "anthropic/blog/research/many-shot-jailbreaking.md",
+      "sha256": "c05fc89714a63ab790f7249ad7cd095583b35cc9686c76a288ae54d1911ffb1e",
+      "size": 9902
+    },
+    {
+      "url": "https://www.anthropic.com/research/mapping-mind-language-model",
+      "status": "success",
+      "path": "anthropic/blog/research/mapping-mind-language-model.md",
+      "sha256": "f6230c25b2e8e17d0c014266514beda8ccdba334e1744b40b18cd8add897815e",
+      "size": 12938
+    },
+    {
+      "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+      "status": "success",
+      "path": "anthropic/blog/research/measuring-agent-autonomy.md",
+      "sha256": "069dafd83447233446ebdfd018c7b2d3c94fdd6413f1fe6f3b71ad9f34fbbb26",
+      "size": 28706
+    },
+    {
+      "url": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
+      "status": "success",
+      "path": "anthropic/blog/research/measuring-faithfulness-in-chain-of-thought-reasoning.md",
+      "sha256": "486cad92243ee743d8873e252dd28e111fafe1a2c53cc61879118538d783417f",
+      "size": 1257
+    },
+    {
+      "url": "https://www.anthropic.com/research/measuring-model-persuasiveness",
+      "status": "success",
+      "path": "anthropic/blog/research/measuring-model-persuasiveness.md",
+      "sha256": "f2640ad27a916c3498c34806647ea6a16cc9f394d2448c649a5e1595dd782257",
+      "size": 22841
+    },
+    {
+      "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
+      "status": "success",
+      "path": "anthropic/blog/research/measuring-progress-on-scalable-oversight-for-large-language-models.md",
+      "sha256": "22bcf85eaa86a5dd303bc806bb922a5dc3e3deb3994f2ed5f125c6f06ff1cec9",
+      "size": 1524
+    },
+    {
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "status": "success",
+      "path": "anthropic/blog/research/migrating-api-to-rust.md",
+      "sha256": "009200232a67183df661f43ad2f2dc687323f97bc8b6323e73c0d2b837f2c701",
+      "size": 30884
+    },
+    {
+      "url": "https://www.anthropic.com/research/multi-agent-research-system",
+      "status": "success",
+      "path": "anthropic/blog/research/multi-agent-research-system.md",
+      "sha256": "a4c735da1164b52a67d5cc753a62164da003baa766a6607b977379ca54db90f0",
+      "size": 25808
+    },
+    {
+      "url": "https://www.anthropic.com/research/multiagent-systems",
+      "status": "success",
+      "path": "anthropic/blog/research/multiagent-systems.md",
+      "sha256": "f95c60629495245e1b885b0cf0c61871e8bd72651ace761d16580761be90f3bc",
+      "size": 26216
+    },
+    {
+      "url": "https://www.anthropic.com/research/mythos-preview",
+      "status": "success",
+      "path": "anthropic/blog/research/mythos-preview.md",
+      "sha256": "123c85ab9e1851aebbdfdbdeee17d2c5e568df566553ee714999f8d2575ed73f",
+      "size": 93704
+    },
+    {
+      "url": "https://www.anthropic.com/research/n-days",
+      "status": "success",
+      "path": "anthropic/blog/research/n-days.md",
+      "sha256": "7ca651dfa6b06a800623eb4b66e1ca8077ea49eba16bdc92387cbb7476083020",
+      "size": 17862
+    },
+    {
+      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+      "status": "success",
+      "path": "anthropic/blog/research/natural-language-autoencoders.md",
+      "sha256": "f9c3504826108ed382dd76bc44b8e1a9f8b52f7695ef612972a60b467cd8076c",
+      "size": 12365
+    },
+    {
+      "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
+      "status": "success",
+      "path": "anthropic/blog/research/next-generation-constitutional-classifiers.md",
+      "sha256": "0e03e95f9bad11760c32902dc6fa2de783e1b122faf61338b79221e24e7a312a",
+      "size": 10464
+    },
+    {
+      "url": "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
+      "status": "success",
+      "path": "anthropic/blog/research/nuclear-safeguards-for-ai.md",
+      "sha256": "0454a2126b154aed1828d0a528f8c793000c148d4435b1bf19e0567aba9e0f4f",
+      "size": 8443
+    },
+    {
+      "url": "https://www.anthropic.com/research/off-switch-dual-use",
+      "status": "success",
+      "path": "anthropic/blog/research/off-switch-dual-use.md",
+      "sha256": "a99e5ecd0e4671ed41e7780479de81bdd1bcb579e32934f7bfff891563f45092",
+      "size": 7053
+    },
+    {
+      "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
+      "status": "success",
+      "path": "anthropic/blog/research/open-source-circuit-tracing.md",
+      "sha256": "c74b846fa01b85ebf0742f64c77b6f2ea091fd877c5067ee5635c5c483abca4a",
+      "size": 3403
+    },
+    {
+      "url": "https://www.anthropic.com/research/persona-selection-model",
+      "status": "success",
+      "path": "anthropic/blog/research/persona-selection-model.md",
+      "sha256": "037bf1ce1dd3f3761776057b3e688ec109bf6484ca6c6e7b71a8c52bd6485a84",
+      "size": 8757
+    },
+    {
+      "url": "https://www.anthropic.com/research/persona-vectors",
+      "status": "success",
+      "path": "anthropic/blog/research/persona-vectors.md",
+      "sha256": "18f3bc56417bab6c1feb887c90d34614f194ea730eceda70f6809220ed8e52af",
+      "size": 10499
+    },
+    {
+      "url": "https://www.anthropic.com/research/petri-open-source-auditing",
+      "status": "success",
+      "path": "anthropic/blog/research/petri-open-source-auditing.md",
+      "sha256": "da0ba50632a66eadb3b4cc45650e20373747737d127c705073e06ba0f4653431",
+      "size": 12597
+    },
+    {
+      "url": "https://www.anthropic.com/research/political-even-handedness",
+      "status": "success",
+      "path": "anthropic/blog/research/political-even-handedness.md",
+      "sha256": "0346ef30d3cf3c5cfe94657a6468683ad5d87e1d01cbf20ca7b96cc25fcb40b6",
+      "size": 19154
+    },
+    {
+      "url": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
+      "status": "success",
+      "path": "anthropic/blog/research/predictability-and-surprise-in-large-generative-models.md",
+      "sha256": "8e0f2b8f200bcdf95243aa281464340d2155e4e3cc5c9c24d9c1a5eae80e69bc",
+      "size": 1782
+    },
+    {
+      "url": "https://www.anthropic.com/research/privileged-bases-in-the-transformer-residual-stream",
+      "status": "success",
+      "path": "anthropic/blog/research/privileged-bases-in-the-transformer-residual-stream.md",
+      "sha256": "ce4bba26d3498d4388e879f5fe8078f5506c5df12cb7292a20c4fcceb2fc65c4",
+      "size": 918
+    },
+    {
+      "url": "https://www.anthropic.com/research/probes-catch-sleeper-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/probes-catch-sleeper-agents.md",
+      "sha256": "a642504d27904493638105259dbee723f9fab2a1ae140f1cd2fcdac1a2707d94",
+      "size": 20690
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
+      "status": "success",
+      "path": "anthropic/blog/research/project-eve-claude-plays-mmorpgs.md",
+      "sha256": "787bbb9ba33818e6d70bc8f81d2c17f2f4ba69dc7b57d9cc4db92369a74ccb21",
+      "size": 27256
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+      "status": "success",
+      "path": "anthropic/blog/research/project-fetch-phase-two.md",
+      "sha256": "2d9db5af1ae5ff42e3c742327112af7da75ec7b2d521c7815dca1ac165115544",
+      "size": 10140
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-fetch-robot-dog",
+      "status": "success",
+      "path": "anthropic/blog/research/project-fetch-robot-dog.md",
+      "sha256": "2599b6ab3a038f48f32b53f6f3cad429b91ae20c457c7ed19681d150fd9ef405",
+      "size": 19737
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-pilot",
+      "status": "success",
+      "path": "anthropic/blog/research/project-pilot.md",
+      "sha256": "8a39f39a2b11438601d05ef649e33307fea0f8a683b7bf6aea97a40d7038d451",
+      "size": 13132
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-swap",
+      "status": "success",
+      "path": "anthropic/blog/research/project-swap.md",
+      "sha256": "2e1f1dd21f4a124e7b89670ca06c1b5e53bd6f12fb07a3f212c3c84fc2322b7c",
+      "size": 44040
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-vend-1",
+      "status": "success",
+      "path": "anthropic/blog/research/project-vend-1.md",
+      "sha256": "d795b24c3fef2a43a1f4cfd6d0d3653f6acfbfc2a3c2273d5e5bfe680b30e363",
+      "size": 16464
+    },
+    {
+      "url": "https://www.anthropic.com/research/project-vend-2",
+      "status": "success",
+      "path": "anthropic/blog/research/project-vend-2.md",
+      "sha256": "d3c97916c29f132a3e7d8a01f4460125a5239f7411dd504c177f5dc6fa9ef689",
+      "size": 17257
+    },
+    {
+      "url": "https://www.anthropic.com/research/prompt-injection-defenses",
+      "status": "success",
+      "path": "anthropic/blog/research/prompt-injection-defenses.md",
+      "sha256": "5602fafec17f1dbfa9dd4fe9bad838a03f5d5afe9281742fc08558308c1776e5",
+      "size": 6969
+    },
+    {
+      "url": "https://www.anthropic.com/research/property-based-testing",
+      "status": "success",
+      "path": "anthropic/blog/research/property-based-testing.md",
+      "sha256": "95e7a32245dd881709eda3bf7f8317548a250e46a37644739ae5e883d16004ab",
+      "size": 13976
+    },
+    {
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "status": "success",
+      "path": "anthropic/blog/research/provable-inference.md",
+      "sha256": "86d38a4381f9abfa201fcb036239c222df7c362f70768052f790b25f407e6fcc",
+      "size": 31558
+    },
+    {
+      "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
+      "status": "success",
+      "path": "anthropic/blog/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning.md",
+      "sha256": "454b07685a00c02085af0ca4e98f69d3c08fced06d8906c3e3c9e7eaf6392208",
+      "size": 1559
+    },
+    {
+      "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
+      "status": "success",
+      "path": "anthropic/blog/research/reasoning-models-dont-say-think.md",
+      "sha256": "a2e2bd4cc9c6cc20aac6cfe13c06bdba3f2fef8cc93ade5c0ed9cf606c91af8a",
+      "size": 11231
+    },
+    {
+      "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
+      "status": "success",
+      "path": "anthropic/blog/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned.md",
+      "sha256": "1fdb46e3b2021a6df8c6a9d5f3926342e6bc35f6d02d79e44483e3289bee7e90",
+      "size": 1537
+    },
+    {
+      "url": "https://www.anthropic.com/research/redesigning-source-control",
+      "status": "success",
+      "path": "anthropic/blog/research/redesigning-source-control.md",
+      "sha256": "29e5fea12fd7ac25bdff99e314c7901051f2df34660107bd9d2b43a0697bd390",
+      "size": 23229
+    },
+    {
+      "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+      "status": "success",
+      "path": "anthropic/blog/research/reviewing-the-evidence-on-worker-retraining-programs.md",
+      "sha256": "19b62e479bdc0e52ecd6526e97e87c71cad70d9099e84d9e8c19f8ec2e7d9889",
+      "size": 2536
+    },
+    {
+      "url": "https://www.anthropic.com/research/reward-tampering",
+      "status": "success",
+      "path": "anthropic/blog/research/reward-tampering.md",
+      "sha256": "0c73fa384c2d38af7eace879c9b6ec0f4479c0dd2c976a9f1c56f3c772c89bf5",
+      "size": 10676
+    },
+    {
+      "url": "https://www.anthropic.com/research/riemann-zeta",
+      "status": "success",
+      "path": "anthropic/blog/research/riemann-zeta.md",
+      "sha256": "199096d803876c37572d0a6e7e80f1b73c61a48c9a412a09e0a154a79f3cd121",
+      "size": 7873
+    },
+    {
+      "url": "https://www.anthropic.com/research/sabotage-evaluations",
+      "status": "success",
+      "path": "anthropic/blog/research/sabotage-evaluations.md",
+      "sha256": "5244ca0a708255f427ddfb5cf33c644bb13d1bc928d22e41b3ff303e9127a06c",
+      "size": 10288
+    },
+    {
+      "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
+      "status": "success",
+      "path": "anthropic/blog/research/scaling-laws-and-interpretability-of-learning-from-repeated-data.md",
+      "sha256": "4716c939a12900d0320672bba3a9c2b825ba4e487b3ea4063793f4abc79bd6b9",
+      "size": 2083
+    },
+    {
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "status": "success",
+      "path": "anthropic/blog/research/self-replicating-ai.md",
+      "sha256": "57319320f7d4dea85c42167eae9d49b502bf961f70a1ea842f1d0397364501a8",
+      "size": 33781
+    },
+    {
+      "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
+      "status": "success",
+      "path": "anthropic/blog/research/shade-arena-sabotage-monitoring.md",
+      "sha256": "21f7e5cfc964f133402c17691c92b85df450ed6148674d88e72a39a3f36a75d8",
+      "size": 12096
+    },
+    {
+      "url": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
+      "status": "success",
+      "path": "anthropic/blog/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training.md",
+      "sha256": "85c8c0d67c46f492ff46be829f15762cfbac7466653b57387102ff34cca0ff52",
+      "size": 1701
+    },
+    {
+      "url": "https://www.anthropic.com/research/small-samples-poison",
+      "status": "success",
+      "path": "anthropic/blog/research/small-samples-poison.md",
+      "sha256": "8c3befa3015de0cbe3d70c2e42b8882d0c0e0b05bc6c7e5dcd04c5fed0fec6c3",
+      "size": 17482
+    },
+    {
+      "url": "https://www.anthropic.com/research/smart-contracts",
+      "status": "success",
+      "path": "anthropic/blog/research/smart-contracts.md",
+      "sha256": "6626ceff439f2a5b63f083f8874437dfd8a4beb7746937d852798ca0235eab7e",
+      "size": 24548
+    },
+    {
+      "url": "https://www.anthropic.com/research/softmax-linear-units",
+      "status": "success",
+      "path": "anthropic/blog/research/softmax-linear-units.md",
+      "sha256": "aa584febf9df1a94cfbc8a4a3bf277d758eacd626c32455c5aa8a1002538d8bb",
+      "size": 1236
+    },
+    {
+      "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
+      "status": "success",
+      "path": "anthropic/blog/research/specific-versus-general-principles-for-constitutional-ai.md",
+      "sha256": "3817157fe6cea7e230988c8f575ab58de86751e52e57dcb1b191189eddece28b",
+      "size": 1354
+    },
+    {
+      "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
+      "status": "success",
+      "path": "anthropic/blog/research/statistical-approach-to-model-evals.md",
+      "sha256": "2b4006190bc54f48de8c2e4a83f4a36a0f99b0748711001d3c0182f802f9e39e",
+      "size": 12009
+    },
+    {
+      "url": "https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+      "status": "success",
+      "path": "anthropic/blog/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team.md",
+      "sha256": "8961ed75575e6d08a51074c274825e1fdb4b741e11cea10b2498fe8485e795eb",
+      "size": 13431
+    },
+    {
+      "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
+      "status": "success",
+      "path": "anthropic/blog/research/studying-large-language-model-generalization-with-influence-functions.md",
+      "sha256": "04ffb305bcc253ddce70e08587e5bf4ed5a50acbadc00be4637b980105be7e56",
+      "size": 1852
+    },
+    {
+      "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
+      "status": "success",
+      "path": "anthropic/blog/research/superposition-memorization-and-double-descent.md",
+      "sha256": "8868220e1c671354b207ca072e99dec9cf6a84a3d194851efe5e4f9bc20c3cda",
+      "size": 2408
+    },
+    {
+      "url": "https://www.anthropic.com/research/swe-bench-sonnet",
+      "status": "success",
+      "path": "anthropic/blog/research/swe-bench-sonnet.md",
+      "sha256": "d21d23e00a13df90d490041f1967d1c86396e66a05349f4fc2d37a16be4a0ec4",
+      "size": 10346
+    },
+    {
+      "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+      "status": "success",
+      "path": "anthropic/blog/research/teaching-ai-to-build-scientific-models.md",
+      "sha256": "dd91144788641ade62d43afddb9d6c0967c968aa43b1a1dbc44b096c02b189ad",
+      "size": 21776
+    },
+    {
+      "url": "https://www.anthropic.com/research/teaching-claude-why",
+      "status": "success",
+      "path": "anthropic/blog/research/teaching-claude-why.md",
+      "sha256": "94517654253701956c5c65ad788b49703b170ce70462c095b2a899bd87dc94e2",
+      "size": 17768
+    },
+    {
+      "url": "https://www.anthropic.com/research/the-anthropic-economic-index",
+      "status": "success",
+      "path": "anthropic/blog/research/the-anthropic-economic-index.md",
+      "sha256": "401e67a8a6801648098a1c5189ddf4b48202ac90363b1713c8da130ae30885c7",
+      "size": 14646
+    },
+    {
+      "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
+      "status": "success",
+      "path": "anthropic/blog/research/the-capacity-for-moral-self-correction-in-large-language-models.md",
+      "sha256": "7288c92b1c37ea9a4c237e15eedb16d3209afea97da71ad45b3a4f3fdf4fc1b9",
+      "size": 1228
+    },
+    {
+      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+      "status": "success",
+      "path": "anthropic/blog/research/the-missing-map-of-the-sky.md",
+      "sha256": "8ab68730115596302ba002a77a5088074fe1afe08ee21e76d23f37026d6ce088",
+      "size": 9791
+    },
+    {
+      "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
+      "status": "success",
+      "path": "anthropic/blog/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models.md",
+      "sha256": "2f158f167654549c9dd7e75910fdedfa6bd14c2a3452680f18790f79cc976497",
+      "size": 1769
+    },
+    {
+      "url": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
+      "status": "success",
+      "path": "anthropic/blog/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning.md",
+      "sha256": "09eb460fc430dc8e027ef3ba28066f1b845b0bcb4e765db7d7363a886167257a",
+      "size": 1244
+    },
+    {
+      "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
+      "status": "success",
+      "path": "anthropic/blog/research/towards-understanding-sycophancy-in-language-models.md",
+      "sha256": "4fff02ed8794cb807c5cb3967eefb207827fcf4ca8529c362ae45fc6412a0deb",
+      "size": 1360
+    },
+    {
+      "url": "https://www.anthropic.com/research/toy-models-of-superposition",
+      "status": "success",
+      "path": "anthropic/blog/research/toy-models-of-superposition.md",
+      "sha256": "e8eb4c61fa5901f71df71dc3762df60b7d33fd99502c99e3078654cd89c59a71",
+      "size": 545
+    },
+    {
+      "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+      "status": "success",
+      "path": "anthropic/blog/research/tracing-thoughts-language-model.md",
+      "sha256": "aa5887b2246051ad1c22337b967c9a079a4c143129a95d43f48a17e435e3090f",
+      "size": 20954
+    },
+    {
+      "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
+      "status": "success",
+      "path": "anthropic/blog/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback.md",
+      "sha256": "dc77d9f9295a5ef7e5828a6e8821aaca9fe981075c4f719d589a6b8c63cbd58a",
+      "size": 1259
+    },
+    {
+      "url": "https://www.anthropic.com/research/transformer-circuits",
+      "status": "success",
+      "path": "anthropic/blog/research/transformer-circuits.md",
+      "sha256": "373585daf099c252896e912898dc330930aa268905133fe972757d4d70c394d7",
+      "size": 508
+    },
+    {
+      "url": "https://www.anthropic.com/research/trustworthy-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/trustworthy-agents.md",
+      "sha256": "72def987a41fa9a710946b8036da2c499415f7593a76bac8e313b101c0712ea0",
+      "size": 13437
+    },
+    {
+      "url": "https://www.anthropic.com/research/values-wild",
+      "status": "success",
+      "path": "anthropic/blog/research/values-wild.md",
+      "sha256": "52db5463daf404470726c52fd2c81100d4c767acbc368bbaae366e0d413be6b6",
+      "size": 11278
+    },
+    {
+      "url": "https://www.anthropic.com/research/vibe-physics",
+      "status": "success",
+      "path": "anthropic/blog/research/vibe-physics.md",
+      "sha256": "9101b30c1267f4f7b1602cbee1bd74107de2fbec03f0f0d6486f1e487d3a4ee5",
+      "size": 34669
+    },
+    {
+      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+      "status": "success",
+      "path": "anthropic/blog/research/what-work-can-robots-do.md",
+      "sha256": "c838ca482bb5a54be950ef001bb6eaab876407bc0c45c67e4a3f8977280f5646",
+      "size": 85673
+    },
+    {
+      "url": "https://www.anthropic.com/research/working-with-ai",
+      "status": "success",
+      "path": "anthropic/blog/research/working-with-ai.md",
+      "sha256": "17919948aad1c6b91d70eaef67740407aaa4ec0ce54a7dca7e6a0751496dcd3e",
+      "size": 53225
+    },
+    {
+      "url": "https://www.anthropic.com/research/writing-tools-for-agents",
+      "status": "success",
+      "path": "anthropic/blog/research/writing-tools-for-agents.md",
+      "sha256": "aee146f60ac84c0b079c44b7f0534fb02860e2179a0a1c140803746ac542c723",
+      "size": 23446
+    },
+    {
+      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+      "status": "success",
+      "path": "anthropic/blog/research/yes-claude-can-do-nine-loops.md",
+      "sha256": "140b804f6f2424016e48bdf823811867d5da4bb9c028d057eba444cfc89131b5",
+      "size": 20852
+    },
+    {
+      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
+      "status": "success",
+      "path": "anthropic/blog/research/your-thoughts-on-ai.md",
+      "sha256": "bf2b1fc880a9df1613f4af256f3ee1b614ed9753e4c22ce54d399984757b661c",
+      "size": 9957
     },
     {
       "url": "https://www.anthropic.com/research/zero-days",
@@ -53289,996 +54703,8 @@
       "error": "extraction produced no usable content"
     },
     {
-      "url": "https://www.anthropic.com/research/alignment-faking",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-interviewer",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-public-record",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/april-23-postmortem",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/assistant-axis",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/attack-navigator",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/attack-surface-reduction",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/auditing-hidden-objectives",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/automated-alignment-researchers",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/biorisk",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/bloom",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/building-ai-cyber-defenders",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/building-c-compiler",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/building-effective-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/circuits-updates-april-2024",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/circuits-updates-august-2024",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/circuits-updates-july-2024",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/circuits-updates-june-2024",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/circuits-updates-may-2023",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/circuits-updates-sept-2024",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-4-cyber",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-character",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-code-auto-mode",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-code-best-practices",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-code-expertise",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-code-sandboxing",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-discovers-novel-enzyme-system",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-electronics-design",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-personal-guidance",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-plays-robotics",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-shaped-science",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-think-tool",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/claude-values-models-languages",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/clio",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/code-execution-with-mcp",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/components-of-agent-memory",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/confidential-inference-trusted-vms",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/constitutional-classifiers",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/contextual-retrieval",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/critical-infrastructure-defense",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/crosscoder-model-diffing",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/cyber-competitions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/cyber-toolkits",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/cyber-toolkits-update",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/desktop-extensions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/diff-tool",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/disempowerment-patterns",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/distributed-representations-composition-superposition",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/donating-open-source-petri",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/early-progress-drug-development",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/economic-index-geography",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/economic-index-primitives",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/economic-index-survey-announcement",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/economic-policy-responses",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/effective-context-engineering-for-ai-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/emotion-concepts-function",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/employment-at-anthropic",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/enabling-independent-research",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/end-subset-conversations",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/engineering-challenges-interpretability",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/estimating-productivity-gains",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/eval-awareness-browsecomp",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/evaluating-ai-systems",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/evaluating-and-mitigating-discrimination-in-language-model-decisions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/evaluating-feature-steering",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/expectations-for-the-future",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/exploit",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/exploit-evals",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/exploring-model-welfare",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/features-as-classifiers",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/forecasting-rare-behaviors",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/formal-verification",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/global-workspace",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/golden-gate-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/harness-design-long-running-apps",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/how-australia-uses-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/how-canada-uses-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/how-researchers-use-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/how-we-contain-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/impact-software-development",
-      "error": "HTTP 429"
-    },
-    {
       "url": "https://www.anthropic.com/research/in-context-learning-and-induction-heads",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/india-brief-economic-index",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/influence-functions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/infrastructure-noise",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/interpretability-dreams",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/introducing-anthropic-science",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/introspection",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/labor-market-impacts",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/long-running-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/making-claude-a-chemist",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/managed-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/many-shot-jailbreaking",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/mapping-mind-language-model",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/measuring-model-persuasiveness",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/migrating-api-to-rust",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/multi-agent-research-system",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/multiagent-systems",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/mythos-preview",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/n-days",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/nuclear-safeguards-for-ai",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/off-switch-dual-use",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/persona-selection-model",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/persona-vectors",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/petri-open-source-auditing",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/political-even-handedness",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/privileged-bases-in-the-transformer-residual-stream",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/probes-catch-sleeper-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-fetch-phase-two",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-fetch-robot-dog",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-pilot",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-swap",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-vend-1",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/project-vend-2",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/prompt-injection-defenses",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/property-based-testing",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/provable-inference",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/redesigning-source-control",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/reward-tampering",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/riemann-zeta",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/sabotage-evaluations",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/self-replicating-ai",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/small-samples-poison",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/smart-contracts",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/softmax-linear-units",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/superposition-memorization-and-double-descent",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/swe-bench-sonnet",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/the-anthropic-economic-index",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/towards-monosemanticity-decomposing-language-models-with-dictionary-learning",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/toy-models-of-superposition",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/transformer-circuits",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/trustworthy-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/values-wild",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/vibe-physics",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/working-with-ai",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/writing-tools-for-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/your-thoughts-on-ai",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/infrastructure-noise",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/desktop-extensions",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/advanced-tool-use",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/building-c-compiler",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/contextual-retrieval",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-think-tool",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/managed-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/building-effective-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/golden-gate-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/fine-tune-claude-3-haiku",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/anthropic-public-record",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/accelerating-scientific-research",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/news/political-even-handedness",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/deprecation-commitments",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/visible-extended-thinking",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/AI-fluency-index",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/distillation-defenses",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/2028-ai-leadership",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/glasswing-initial-update",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
-      "error": "HTTP 429"
-    },
-    {
-      "url": "https://www.anthropic.com/research/long-running-Claude",
-      "error": "HTTP 429"
+      "error": "extraction produced no usable content"
     },
     {
       "url": "https://openai.com/news/research",
@@ -55643,7 +56069,191 @@
       "reason": "moved -> https://claude.com/docs/connectors/building/mcp-apps/getting-started"
     },
     {
+      "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+      "reason": "moved -> https://www.anthropic.com/research/eval-awareness-browsecomp"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/infrastructure-noise",
+      "reason": "moved -> https://www.anthropic.com/research/infrastructure-noise"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/desktop-extensions",
+      "reason": "moved -> https://www.anthropic.com/research/desktop-extensions"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/advanced-tool-use",
+      "reason": "moved -> https://www.anthropic.com/research/advanced-tool-use"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
+      "reason": "moved -> https://www.anthropic.com/research/swe-bench-sonnet"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues",
+      "reason": "moved -> https://www.anthropic.com/research/a-postmortem-of-three-recent-issues"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/building-c-compiler",
+      "reason": "moved -> https://www.anthropic.com/research/building-c-compiler"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+      "reason": "moved -> https://www.anthropic.com/research/multi-agent-research-system"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/contextual-retrieval",
+      "reason": "moved -> https://www.anthropic.com/research/contextual-retrieval"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "reason": "moved -> https://www.anthropic.com/research/code-execution-with-mcp"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "reason": "moved -> https://www.anthropic.com/research/april-23-postmortem"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-think-tool",
+      "reason": "moved -> https://www.anthropic.com/research/claude-think-tool"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+      "reason": "moved -> https://www.anthropic.com/research/harness-design-long-running-apps"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "reason": "moved -> https://code.claude.com/docs/en/best-practices"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "reason": "moved -> https://www.anthropic.com/research/effective-harnesses-for-long-running-agents"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+      "reason": "moved -> https://www.anthropic.com/research/claude-code-auto-mode"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-sandboxing",
+      "reason": "moved -> https://www.anthropic.com/research/claude-code-sandboxing"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "reason": "moved -> https://www.anthropic.com/research/managed-agents"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "reason": "moved -> https://www.anthropic.com/research/building-effective-agents"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "reason": "moved -> https://www.anthropic.com/research/demystifying-evals-for-ai-agents"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "reason": "moved -> https://www.anthropic.com/research/effective-context-engineering-for-ai-agents"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+      "reason": "moved -> https://www.anthropic.com/research/writing-tools-for-agents"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "reason": "moved -> https://www.anthropic.com/research/redesigning-source-control"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills",
+      "reason": "moved -> https://www.anthropic.com/research/equipping-agents-for-the-real-world-with-agent-skills"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "reason": "moved -> https://www.anthropic.com/research/how-we-contain-claude"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/AI-resistant-technical-evaluations",
+      "reason": "moved -> https://www.anthropic.com/research/AI-resistant-technical-evaluations"
+    },
+    {
       "url": "https://claude.com/resources/articles/product-management-on-the-ai-exponential",
+      "reason": "HTTP 404"
+    },
+    {
+      "url": "https://www.anthropic.com/news/golden-gate-claude",
+      "reason": "moved -> https://www.anthropic.com/research/golden-gate-claude"
+    },
+    {
+      "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+      "reason": "moved -> https://www.anthropic.com/research/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team"
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "reason": "moved -> https://www.anthropic.com/research/claude-discovers-novel-enzyme-system"
+    },
+    {
+      "url": "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship",
+      "reason": "moved -> https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude"
+    },
+    {
+      "url": "https://www.anthropic.com/news/fine-tune-claude-3-haiku",
+      "reason": "moved -> https://claude.com/resources/articles/fine-tune-claude-3-haiku"
+    },
+    {
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "reason": "moved -> https://www.anthropic.com/research/anthropic-public-record"
+    },
+    {
+      "url": "https://www.anthropic.com/news/accelerating-scientific-research",
+      "reason": "moved -> https://www.anthropic.com/research/accelerating-scientific-research"
+    },
+    {
+      "url": "https://www.anthropic.com/news/political-even-handedness",
+      "reason": "moved -> https://www.anthropic.com/research/political-even-handedness"
+    },
+    {
+      "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
+      "reason": "moved -> https://www.anthropic.com/news/anthropic-institute-agenda"
+    },
+    {
+      "url": "https://www.anthropic.com/research/deprecation-commitments",
+      "reason": "moved -> https://www.anthropic.com/news/deprecation-commitments"
+    },
+    {
+      "url": "https://www.anthropic.com/research/visible-extended-thinking",
+      "reason": "moved -> https://www.anthropic.com/news/visible-extended-thinking"
+    },
+    {
+      "url": "https://www.anthropic.com/research/AI-fluency-index",
+      "reason": "moved -> https://academy.claude.com/tutorials/the-ai-fluency-index"
+    },
+    {
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "reason": "moved -> https://www.anthropic.com/news/distillation-defenses"
+    },
+    {
+      "url": "https://www.anthropic.com/research/2028-ai-leadership",
+      "reason": "moved -> https://www.anthropic.com/news/2028-ai-leadership"
+    },
+    {
+      "url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "reason": "moved -> https://www.anthropic.com/news/glasswing-initial-update"
+    },
+    {
+      "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
+      "reason": "moved -> https://www.anthropic.com/news/deprecation-updates-opus-3"
+    },
+    {
+      "url": "https://www.anthropic.com/research/long-running-Claude",
       "reason": "HTTP 404"
     },
     {
@@ -56748,11 +57358,11 @@
     }
   ],
   "summary": {
-    "total": 8476,
-    "downloaded": 7611,
+    "total": 8477,
+    "downloaded": 7813,
     "skipped": 0,
-    "failed": 251,
-    "dead": 614,
-    "success_rate": 96.8
+    "failed": 4,
+    "dead": 660,
+    "success_rate": 99.9
   }
 }
