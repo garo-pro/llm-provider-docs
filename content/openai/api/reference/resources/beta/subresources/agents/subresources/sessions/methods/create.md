@@ -318,6 +318,20 @@ Content type: `application/json`
 
       `minItems: 0`, `maxItems: 16384`
 
+- `access_programs: optional object { cyber }`
+
+  Cyber access program for all turns in this session. Omit to use the model default.
+
+  - `cyber: optional "standard" or "daybreak_blue" or "daybreak_red"`
+
+    Selects a cyber access program compatible with the model. Daybreak requires access to the selected tier. Omit to use the model default.
+
+    - `"standard"`
+
+    - `"daybreak_blue"`
+
+    - `"daybreak_red"`
+
 - `agent: optional object { compaction, experimental, instructions, 6 more }`
 
   Agent configuration. With `agent_id`, supplied fields override the saved agent for this session. Without `agent_id`, `model` is required.
@@ -878,7 +892,7 @@ Content type: `application/json`
 
 ### Returns
 
-- `AgentSession object { id, agent, created_at, 12 more }`
+- `AgentSession object { id, agent, created_at, 13 more }`
 
   A Managed Agents session.
 
@@ -1914,6 +1928,20 @@ Content type: `application/json`
 
     `minItems: 0`, `maxItems: 2000`
 
+  - `access_programs: optional object { cyber }`
+
+    Access programs explicitly selected for this session. Omitted when the session uses the model default.
+
+    - `cyber: "standard" or "daybreak_blue" or "daybreak_red"`
+
+      The cyber access program explicitly selected for this session.
+
+      - `"standard"`
+
+      - `"daybreak_blue"`
+
+      - `"daybreak_red"`
+
   - `prompt_cache_options: optional object { ttl }  or null`
 
     Default prompt cache lifetime for turns in this session, when configured.
@@ -2033,6 +2061,9 @@ curl https://api.openai.com/v1/agents/sessions \
   "vault_ids": [
     "string"
   ],
+  "access_programs": {
+    "cyber": "standard"
+  },
   "prompt_cache_options": {
     "ttl": "30m"
   },

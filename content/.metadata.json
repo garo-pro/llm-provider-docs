@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-27T09:13:55.130477Z",
+    "fetch_date": "2026-11-27T19:45:03.442282Z",
     "section": "all"
   },
   "items": [
@@ -9431,8 +9431,8 @@
       "url": "https://modelcontextprotocol.io/extensions/client-matrix",
       "status": "success",
       "path": "anthropic/mcp/extensions/client-matrix.md",
-      "sha256": "2547554e2e9d242f5e1e5930966fa08e27398e8f152902800f8735c3dd8c5d38",
-      "size": 5572
+      "sha256": "04bcffdde3bd1c439e120357f9ea847f3dd6d635899106fec720dafc5c97f18f",
+      "size": 5738
     },
     {
       "url": "https://modelcontextprotocol.io/extensions/events/overview",
@@ -23067,8 +23067,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/admin-console-claude-code",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/admin-console-claude-code.md",
-      "sha256": "ac71316aa3812607d3b91913282b128c3da4b4f3c20ccceec735c79e06cf0528",
-      "size": 30182
+      "sha256": "bdd9d5df250e553328a589884b16ce0b7107e6e3e3832f411581e704a4df438e",
+      "size": 30130
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/admin-console-claude-code-reference",
@@ -23172,8 +23172,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/connectors-m365",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/connectors-m365.md",
-      "sha256": "b3dfc6c854d7ad70d7260d0f06011b0592ae36695396e0d8bb548823905f5a69",
-      "size": 52456
+      "sha256": "02cdf6486681fb87514d911990624767314084e797033f8774f24721a578e442",
+      "size": 52070
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/connectors-salesforce",
@@ -23207,8 +23207,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/entra-broker",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/entra-broker.md",
-      "sha256": "ba1fb9f382ef8d922edda76e2576e00ee9a5d9e925546ce319470b4ef6977272",
-      "size": 14644
+      "sha256": "507461f26d8f6d622e0a24e15f9e6c233305c077eda4581ffa39b8d71bcf8245",
+      "size": 14730
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/extensions",
@@ -23235,8 +23235,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/gateway",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/gateway.md",
-      "sha256": "cce7cd00364edd611e9560339e1686c845e1ebc5a49e651735066589c3853090",
-      "size": 80909
+      "sha256": "3f2c6f83ab4c82ddb395143b903857ebd7196ad38d63d785d96b66242061b807",
+      "size": 80915
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/import",
@@ -23319,8 +23319,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/overview",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/overview.md",
-      "sha256": "b081645881e118570930a14b73b75a391f3f4cc44c73b10af4871c577e982fb9",
-      "size": 13331
+      "sha256": "ad6131072b7ce45818b5457a5bb0f3606915c5951fb312592ba1e0ece41cde67",
+      "size": 13280
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/scheduled-tasks",
@@ -36395,8 +36395,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta",
       "status": "success",
       "path": "openai/api/reference/resources/beta.md",
-      "sha256": "5d31ef941e6e890cc597bfbb27c8efca59317aaf91a4e9a25390be6f001a63a7",
-      "size": 9239012
+      "sha256": "ddabced49a3b4b2120e3261208c29df3c1631b1f6be6fd258ac58b5b1dd37874",
+      "size": 9244968
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/vector_stores",
@@ -38642,8 +38642,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents.md",
-      "sha256": "930f49afa01c02b2c48958efdfb8879372dfc9347d9546ed3cf9ac685dead521",
-      "size": 1658126
+      "sha256": "83bb36287b80bd6011225c3f924141a29c5a3f9717871bbb5654b3542ff4b2a0",
+      "size": 1664082
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/chatkit",
@@ -38656,8 +38656,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/streaming-events",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/streaming-events.md",
-      "sha256": "b2e5359f5cfcbbbe94ae73b700b5fd23b1a2fa533033a41a0688ae1bc930b6c9",
-      "size": 283737
+      "sha256": "a1ab8daa35b8cc612a80bf480d37ce117e9560d76f02235efb1a1d245ba2ad00",
+      "size": 286287
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/responses/websocket-events",
@@ -38852,8 +38852,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions.md",
-      "sha256": "6f31d65cc13749b28aee2fb7b20cd0586c7c3fc8751f878f39b171ebfc6295ff",
-      "size": 400525
+      "sha256": "93faf5de78226641ec6070d39c31bd71966d9ab0485dd823a550255634b303d5",
+      "size": 403433
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/automations",
@@ -39020,8 +39020,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/create",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/create.md",
-      "sha256": "234cdc3834217599a4523ec846779664fb419b0c39eb32340eba21cf3d395e8f",
-      "size": 49960
+      "sha256": "d075e4db18874d2e5fefcc773b737236fc475130db6923d63c93cc1a20fb06ab",
+      "size": 50794
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/delete",
@@ -39034,22 +39034,22 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/update",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/update.md",
-      "sha256": "0f8d598dd420d17b5cbb37b2cc2f9b255b339a3057e675d74557e31fa903a2e3",
-      "size": 36952
+      "sha256": "64ebcd7237206e748513042ab4f5cb449ceaee015b9e649c709f7cc6d606cba8",
+      "size": 37781
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/retrieve",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/retrieve.md",
-      "sha256": "25205be07dd4b8caaa6314dcec3859743c12a5e6f5ad9ab52854f229adea4d89",
-      "size": 26960
+      "sha256": "a4541e93fbe1ae4c5f2427bcceadffd1f0f745fc166b14acb0b6940ccf67944c",
+      "size": 27379
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/list",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/methods/list.md",
-      "sha256": "e7b1bae9c749deebae7c053d8eb7dd171ffb4521b78d90ae9ac757a770be99de",
-      "size": 28860
+      "sha256": "9298e855b559e09d4b6bda8b21a789513d89b68c8a846cb9a7b0635ef953704b",
+      "size": 29291
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/subagents",
@@ -39076,8 +39076,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events.md",
-      "sha256": "717931fdc49dcf6d0bc5901a0d19e804b05c5a06141f9c06051aa680950aa576",
-      "size": 106098
+      "sha256": "18aa134380ed8bb65e7904fd6e6da74bed3efe69ddcfffbf3db955fde0b614bc",
+      "size": 106493
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/traces",
@@ -39195,8 +39195,8 @@
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/stream",
       "status": "success",
       "path": "openai/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/events/methods/stream.md",
-      "sha256": "1fc668d8018970a1c631c26e778a92e29fb886fad4bc4a39a781348c77a30a1d",
-      "size": 98021
+      "sha256": "3ee739ba35bea67de32a9124d651fcb10166837fae6d548931c3397b1e6bb99c",
+      "size": 98416
     },
     {
       "url": "https://developers.openai.com/api/reference/resources/beta/subresources/agents/subresources/sessions/subresources/traces/methods/list",
