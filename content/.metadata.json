@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "2.0",
-    "fetch_date": "2026-11-27T19:45:03.442282Z",
+    "fetch_date": "2026-11-28T08:33:48.993239Z",
     "section": "all"
   },
   "items": [
@@ -6953,8 +6953,8 @@
       "url": "https://code.claude.com/docs/en/desktop",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/desktop.md",
-      "sha256": "325175a43f4c3422a98213b46dceeb1aaed0484aa93091dfe7b4b2418a4b4054",
-      "size": 231399
+      "sha256": "ee2bb007396744a721c4e0220f9841c76863aceaab525fe0da6e92a292fd1368",
+      "size": 238563
     },
     {
       "url": "https://code.claude.com/docs/en/desktop-linux",
@@ -7828,8 +7828,8 @@
       "url": "https://code.claude.com/docs/en/settings-reference",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/settings-reference.md",
-      "sha256": "f87b28f014d323f1d99655f4dd8f329693e8295eec0f1cecf8af0bcc534a5249",
-      "size": 462577
+      "sha256": "955ec60686c2bc0f4cc32590eac6a791f78794d824380a5c06c86a263eaee2f2",
+      "size": 463611
     },
     {
       "url": "https://code.claude.com/docs/en/settings-example",
@@ -7933,8 +7933,8 @@
       "url": "https://code.claude.com/docs/en/model-config",
       "status": "success",
       "path": "anthropic/en/docs/claude-code/model-config.md",
-      "sha256": "5af716d1c4a3db4f932fc9dd5400403f50f335d67a737ff1134dac8757eab0da",
-      "size": 134668
+      "sha256": "4f10981d5b2b5d11244d105a916276423e05feea7a3780667473a42c938ca06a",
+      "size": 134705
     },
     {
       "url": "https://code.claude.com/docs/en/fast-mode",
@@ -8556,8 +8556,8 @@
       "url": "https://modelcontextprotocol.io/development/roadmap",
       "status": "success",
       "path": "anthropic/mcp/development/roadmap.md",
-      "sha256": "f99a47ddf7727a1d1110b187abdef48bb42c70fcbc60643357b310ea3dc3144a",
-      "size": 14142
+      "sha256": "9b4bd8d20bee967cb8062c4db9244a18f9d663c046652c61cd633421c409f173",
+      "size": 14303
     },
     {
       "url": "https://modelcontextprotocol.io/docs/2024-11-05/develop/build-client",
@@ -23333,8 +23333,8 @@
       "url": "https://claude.com/docs/third-party/claude-desktop/ssh-remote-sessions",
       "status": "success",
       "path": "anthropic/claude/third-party/claude-desktop/ssh-remote-sessions.md",
-      "sha256": "1d1802ce3014bc883ad4a251a8cc1fd517411711a6ccfc00a851948d9fda578d",
-      "size": 203440
+      "sha256": "d3e2b9dadfffad33a388dbaa15860aee49be09a140aec26ad59b72588c202124",
+      "size": 216771
     },
     {
       "url": "https://claude.com/docs/third-party/claude-desktop/status-line",
